@@ -1,0 +1,62 @@
+{
+  "soQD": "556/QĐ-UBND",
+  "ngay": "09/02/2026",
+  "coQuan": "Sở Tư pháp",
+  "trichYeu": "Công bố 08 TTHC sửa đổi, bổ sung lĩnh vực nuôi con nuôi (thay thế một phần QĐ 2600 và QĐ 93)",
+  "capXa": [
+    {
+      "ma": "2.001263",
+      "ten": "Đăng ký việc nuôi con nuôi trong nước",
+      "thoiHan": "Xác minh: 3,5–12 ngày; kiểm tra/lấy ý kiến: 10 ngày; thay đổi ý kiến: 10 ngày; đăng ký giao nhận: 05 ngày (sau cắt giảm)",
+      "phi": "400.000đ/trường hợp (miễn: cha dượng/mẹ kế nhận con riêng; cô/cậu/dì/chú/bác nhận cháu; trẻ khuyết tật/HIV/bệnh hiểm nghèo; người có công)",
+      "linhVuc": "NUÔI CON NUÔI",
+      "cap": "Xã",
+      "nhanh": false,
+      "qd": "556/QĐ-UBND",
+      "diaDiem": "TT PVHCC cấp xã / thành phố",
+      "mienPhiTrucTuyen": true
+    },
+    {
+      "ma": "1.003005",
+      "ten": "Giải quyết việc người nước ngoài cư trú ở khu vực biên giới nước láng giềng nhận trẻ em Việt Nam làm con nuôi",
+      "thoiHan": "UBND xã kiểm tra/lấy ý kiến: 05 ngày; thay đổi ý kiến: 10 ngày; Sở Tư pháp: 04 ngày; đăng ký giao nhận: 05 ngày (sau cắt giảm)",
+      "phi": "4.500.000đ/trường hợp",
+      "linhVuc": "NUÔI CON NUÔI",
+      "cap": "Xã",
+      "nhanh": false,
+      "qd": "556/QĐ-UBND",
+      "diaDiem": "TT PVHCC cấp xã / thành phố",
+      "mienPhiTrucTuyen": true
+    },
+    {
+      "ma": "2.002349",
+      "ten": "Cấp giấy xác nhận công dân Việt Nam thường trú ở khu vực biên giới đủ điều kiện nhận trẻ em nước láng giềng cư trú biên giới làm con nuôi",
+      "thoiHan": "05 ngày (sau cắt giảm)",
+      "phi": "Không quy định",
+      "linhVuc": "NUÔI CON NUÔI",
+      "cap": "Xã",
+      "nhanh": false,
+      "qd": "556/QĐ-UBND",
+      "diaDiem": "TT PVHCC cấp xã / thành phố",
+      "mienPhiTrucTuyen": true
+    },
+    {
+      "ma": "2.002363",
+      "ten": "Ghi vào Sổ đăng ký nuôi con nuôi việc nuôi con nuôi đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài",
+      "thoiHan": "Ngay trong ngày; xác minh: tối đa 1,5 ngày (sau cắt giảm)",
+      "phi": "75.000đ (miễn: gia đình có công, hộ nghèo, người khuyết tật)",
+      "linhVuc": "NUÔI CON NUÔI",
+      "cap": "Xã",
+      "nhanh": false,
+      "qd": "556/QĐ-UBND",
+      "diaDiem": "TT PVHCC cấp xã / thành phố",
+      "mienPhiTrucTuyen": true
+    }
+  ],
+  "capTinh": [
+    "1.003976",
+    "1.004878",
+    "1.003160",
+    "1.003198"
+  ]
+}
