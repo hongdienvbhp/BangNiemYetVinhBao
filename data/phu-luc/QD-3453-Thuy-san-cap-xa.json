@@ -1,0 +1,53 @@
+{
+  "soQD": "3453/QĐ-UBND",
+  "ngay": "26/08/2026",
+  "coQuan": "Sở Nông nghiệp và Môi trường",
+  "canCuTrungUong": "3331/QĐ-BNNMT ngày 20/08/2026",
+  "trichYeu": "Công bố DM TTHC sửa đổi, bổ sung lĩnh vực thủy sản và kiểm ngư (03 tỉnh + 04 xã)",
+  "capXa": [
+    {
+      "ma": "1.003956",
+      "ten": "Công nhận và giao quyền quản lý cho tổ chức cộng đồng (thuộc địa bàn quản lý)",
+      "thoiHan": "Thông báo PA: 02 ngày; Thẩm định + trình Chủ tịch UBND xã: 16,5 ngày (sau cắt giảm)",
+      "linhVuc": "THỦY SẢN VÀ KIỂM NGƯ",
+      "cap": "Xã",
+      "nhanh": false,
+      "phi": "Chưa quy định",
+      "qd": "3453/QĐ-UBND",
+      "diaDiem": "TT PVHCC cấp xã / thành phố"
+    },
+    {
+      "ma": "1.004498",
+      "ten": "Sửa đổi, bổ sung nội dung quyết định công nhận và giao quyền quản lý cho tổ chức cộng đồng (thuộc địa bàn quản lý)",
+      "thoiHan": "Đổi tên/đại diện/Quy chế: 2,5 ngày; Sửa vị trí/ranh giới/PA: 16,5 ngày (sau cắt giảm)",
+      "linhVuc": "THỦY SẢN VÀ KIỂM NGƯ",
+      "cap": "Xã",
+      "nhanh": false,
+      "phi": "Chưa quy định",
+      "qd": "3453/QĐ-UBND",
+      "diaDiem": "TT PVHCC cấp xã / thành phố"
+    },
+    {
+      "ma": "1.004680",
+      "ten": "Xác nhận nguồn gốc loài thủy sản thuộc Phụ lục CITES; loài nguy cấp, quý, hiếm có nguồn gốc từ nuôi trồng",
+      "thoiHan": "03 ngày; cần kiểm tra thực tế: 3,5 ngày (sau cắt giảm)",
+      "linhVuc": "THỦY SẢN VÀ KIỂM NGƯ",
+      "cap": "Xã",
+      "nhanh": false,
+      "phi": "Chưa quy định",
+      "qd": "3453/QĐ-UBND",
+      "diaDiem": "TT PVHCC cấp xã / thành phố"
+    },
+    {
+      "ma": "1.004656",
+      "ten": "Xác nhận nguồn gốc loài thủy sản thuộc Phụ lục CITES; loài nguy cấp, quý, hiếm có nguồn gốc khai thác từ tự nhiên",
+      "thoiHan": "2,5 ngày làm việc (sau cắt giảm)",
+      "linhVuc": "THỦY SẢN VÀ KIỂM NGƯ",
+      "cap": "Xã",
+      "nhanh": false,
+      "phi": "Chưa quy định",
+      "qd": "3453/QĐ-UBND",
+      "diaDiem": "TT PVHCC cấp xã / thành phố"
+    }
+  ]
+}

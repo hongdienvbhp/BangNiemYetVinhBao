@@ -1,0 +1,37 @@
+{
+  "soQD": "4789/QĐ-UBND",
+  "ngay": "26/11/2025",
+  "coQuan": "Sở VHTTDL (chủ trì), phối hợp Sở Tài chính, Công an TP",
+  "trichYeu": "Công bố nhóm TTHC liên thông điện tử HKD – ANTT – Karaoke",
+  "nhom": {
+    "maNhom": "LIEN-THONG-HKD-ANTT-KARAOKE",
+    "ten": "Nhóm TTHC liên thông điện tử: (1) Đăng ký thành lập hộ kinh doanh – (2) Cấp Giấy chứng nhận đủ điều kiện về an ninh, trật tự – (3) Cấp Giấy phép đủ điều kiện kinh doanh dịch vụ karaoke",
+    "thoiHan": "Không quá 16 ngày làm việc",
+    "diaDiem": "TT PVHCC cấp thành phố; cấp xã",
+    "phi": [
+      "Lệ phí đăng ký thành lập HKD: theo HĐND tỉnh (TT 85/2019/TT-BTC)",
+      "Phí thẩm định ANTT: 300.000 đồng (TT 218/2016/TT-BTC)",
+      "Phí thẩm định GP karaoke: 1.000.000 đồng/phòng, tối đa 6.000.000 đồng/Giấy phép/lần (TT 110/2025/TT-BTC)"
+    ],
+    "dvctt": "Toàn trình",
+    "canCu": "NĐ 297/2025/NĐ-CP; QĐ 4422/QĐ-BVHTTDL; QĐ 4789/QĐ-UBND ngày 26/11/2025",
+    "cap": "Xã",
+    "qd": "4789/QĐ-UBND"
+  },
+  "thuTucHienThi": {
+    "ma": "LT.HKD-ANTT-KARAOKE",
+    "ten": "Liên thông điện tử: Đăng ký thành lập HKD + Cấp GCN đủ ĐK ANTT + Cấp GP đủ ĐK kinh doanh dịch vụ karaoke",
+    "linhVuc": "LIÊN THÔNG / HỘ KINH DOANH",
+    "cap": "Xã",
+    "nhanh": false,
+    "thoiHan": "Không quá 16 ngày làm việc",
+    "phi": "Lệ phí HKD (HĐND); ANTT 300.000đ; Karaoke 1.000.000đ/phòng (tối đa 6.000.000đ)",
+    "qd": "4789/QĐ-UBND",
+    "lienThong": true,
+    "thanhPhan": [
+      "Đăng ký thành lập hộ kinh doanh (1.001612)",
+      "Cấp Giấy chứng nhận đủ điều kiện về an ninh, trật tự",
+      "Cấp Giấy phép đủ điều kiện kinh doanh dịch vụ karaoke"
+    ]
+  }
+}
