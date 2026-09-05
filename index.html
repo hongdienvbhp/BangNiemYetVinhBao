@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bảng niêm yết công khai ~400 thủ tục hành chính thuộc thẩm quyền UBND xã Vĩnh Bảo, TP Hải Phòng. Tra cứu lĩnh vực, phí, thời hạn, nộp hồ sơ trực tuyến." />
+  <meta name="theme-color" content="#b71c1c" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Bảng Niêm Yết Thủ Tục Hành Chính - UBND xã Vĩnh Bảo</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="assets/logo-hcc.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/logo-hcc.png" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-area">
+        <img class="logo-hcc" src="assets/logo-hcc.png" alt="Logo Hành chính công" width="72" height="68" />
+        <div class="titles">
+          <h1>BẢNG NIÊM YẾT THỦ TỤC HÀNH CHÍNH</h1>
+          <p>THUỘC THẨM QUYỀN GIẢI QUYẾT CỦA UBND XÃ VĨNH BẢO</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <div class="nav-inner">
+      <button class="nav-btn active" data-tab="dashboard">📊 Dashboard</button>
+      <button class="nav-btn" data-tab="linh-vuc">🗂️ Lĩnh vực</button>
+      <button class="nav-btn" data-tab="thu-tuc">📋 Thủ tục</button>
+      <button class="nav-btn" data-tab="nganh">🏢 Ngành</button>
+      <button class="nav-btn" data-tab="qd-theo">📜 QĐ theo TTHC</button>
+      <button class="nav-btn" data-tab="qd-cong-bo">📌 QĐ công bố</button>
+      <button class="nav-btn" data-tab="phi">💰 Phí, lệ phí</button>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div class="filter-bar" id="filterBar">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="search" id="searchInput" placeholder="Tìm theo tên thủ tục, mã TTHC, lĩnh vực..." autocomplete="off" />
+        <button type="button" id="btnClearSearch" class="btn-clear-search" hidden aria-label="Xóa tìm kiếm">×</button>
+        <span class="search-result-count" id="searchResultCount" hidden></span>
+      </div>
+      <div class="filter-controls">
+        <select id="filterLinhVuc" class="filter-select" aria-label="Lọc theo lĩnh vực">
+          <option value="">Tất cả lĩnh vực</option>
+        </select>
+        <label class="filter-check">
+          <input type="checkbox" id="filterNhanh" />
+          <span>Trong ngày (T4)</span>
+        </label>
+        <label class="filter-check">
+          <input type="checkbox" id="filterMienPhi" />
+          <span>Miễn phí trực tuyến</span>
+        </label>
+        <label class="filter-check">
+          <input type="checkbox" id="filterPdg" />
+          <span>Phi địa giới</span>
+        </label>
+        <button type="button" id="btnClearFilter" class="btn-clear">Xóa lọc</button>
+      </div>
+      <div class="active-filters" id="activeFilters" hidden></div>
+    </div>
+
+    <section id="dashboard" class="tab-panel active">
+      <div class="section-header">
+        <h2>📊 TỔNG QUAN THỦ TỤC HÀNH CHÍNH</h2>
+        <span class="badge" id="dashUpdated">UBND xã Vĩnh Bảo</span>
+      </div>
+      <div class="dash-stats" id="dashStats"></div>
+      <div class="dash-grid">
+        <div class="dash-panel">
+          <h3>Top lĩnh vực (nhiều TTHC nhất)</h3>
+          <ul class="dash-list" id="dashTopLv"></ul>
+        </div>
+        <div class="dash-panel">
+          <h3>TTHC giải quyết trong ngày (Thứ Tư)</h3>
+          <ul class="dash-list" id="dashNhanh"></ul>
+        </div>
+      </div>
+      <div class="dash-actions">
+        <button type="button" class="btn-dash" data-goto="linh-vuc">Xem tất cả lĩnh vực →</button>
+        <button type="button" class="btn-dash" data-goto="thu-tuc">Xem danh sách thủ tục →</button>
+      </div>
+    </section>
+
+    <section id="linh-vuc" class="tab-panel">
+      <div class="section-header">
+        <h2>🗂️ DANH SÁCH LĨNH VỰC THỦ TỤC</h2>
+        <span class="badge" id="linhVucCount">0 lĩnh vực</span>
+      </div>
+      <div class="card-grid" id="linhVucGrid"></div>
+    </section>
+
+    <section id="thu-tuc" class="tab-panel">
+      <div class="section-header thu-tuc-header">
+        <div class="thu-tuc-title-row">
+          <button type="button" class="btn-back" id="btnBackLv" hidden>← Quay lại</button>
+          <h2 id="thuTucTitle">📋 DANH SÁCH THỦ TỤC HÀNH CHÍNH</h2>
+        </div>
+        <span class="badge" id="thuTucCount">0 thủ tục</span>
+      </div>
+      <div class="tt-filter-inline" id="ttFilterWrap" hidden>
+        <input type="search" id="ttLocalSearch" placeholder="Lọc thủ tục trong lĩnh vực này..." autocomplete="off" />
+      </div>
+      <div class="tt-card-list" id="thuTucList"></div>
+      <div class="table-wrap" id="thuTucTableWrap" hidden>
+        <table class="data-table" id="thuTucTable">
+          <thead>
+            <tr>
+              <th>STT</th>
+              <th>Mã TTHC</th>
+              <th>Tên thủ tục</th>
+              <th>Lĩnh vực</th>
+              <th>Cấp</th>
+              <th>Ghi chú</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <div class="detail-overlay" id="detailOverlay" hidden>
+      <div class="detail-sheet" role="dialog" aria-modal="true" aria-labelledby="detailTitle">
+        <div class="detail-topbar">
+          <button type="button" class="btn-back light" id="btnCloseDetail">← Trở ra</button>
+          <h2>CHI TIẾT THỦ TỤC HÀNH CHÍNH</h2>
+          <button type="button" class="btn-x" id="btnXDetail" aria-label="Đóng">×</button>
+        </div>
+        <div class="detail-body" id="detailBody"></div>
+      </div>
+    </div>
+
+    <section id="nganh" class="tab-panel">
+      <div class="section-header">
+        <h2>🏢 DANH SÁCH THEO NGÀNH</h2>
+        <span class="badge" id="nganhCount">0 ngành</span>
+      </div>
+      <div class="card-grid" id="nganhGrid"></div>
+    </section>
+
+    <section id="qd-theo" class="tab-panel">
+      <div class="section-header"><h2>📜 QUYẾT ĐỊNH / CĂN CỨ THEO NHÓM TTHC</h2></div>
+      <div id="qdTheoBox" class="doc-blocks"></div>
+      <div class="section-header" style="margin-top:1.5rem"><h2>🔄 QUY TRÌNH NỘI BỘ GIẢI QUYẾT TTHC</h2></div>
+      <div id="qtnbBox" class="flow-steps"></div>
+    </section>
+
+    <section id="qd-cong-bo" class="tab-panel">
+      <div class="section-header">
+        <h2>📌 QUYẾT ĐỊNH CÔNG BỐ / PHÊ DUYỆT DANH MỤC TTHC</h2>
+        <span class="badge">UBND TP Hải Phòng</span>
+      </div>
+      <p class="doc-intro">Danh mục các quyết định công bố TTHC liên quan thẩm quyền cấp xã trên địa bàn thành phố Hải Phòng (niêm yết tham khảo).</p>
+      <div id="qdCongBoBox" class="doc-list-cards"></div>
+    </section>
+
+    <section id="phi" class="tab-panel">
+      <div class="section-header"><h2>💰 PHÍ, LỆ PHÍ</h2></div>
+      <div id="phiBox"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <img src="assets/logo-hcc.png" alt="" width="40" height="38" />
+      <div>
+        <p><strong>UBND xã Vĩnh Bảo</strong> · Trung tâm Phục vụ hành chính công xã</p>
+        <p>Địa chỉ: Đường 20/8, xã Vĩnh Bảo, thành phố Hải Phòng</p>
+        <p>Hotline: <a href="tel:0823919686">0823.919.686</a> (Giám đốc TT) · <a href="tel:0967311138">0967.311.138</a> (Phó GĐ)</p>
+        <p class="footer-note">Một số TTHC giải quyết nhanh trong ngày vào <strong>thứ Tư hằng tuần</strong></p>
+        <p class="footer-sync" id="footerSync"></p>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="btn-top" id="btnTop" hidden aria-label="Về đầu trang">↑</button>
+  <div class="toast-host" id="toastHost" aria-live="polite"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/extra-data.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./sw.js").catch(() => {});
+      });
+    }
+  </script>
+</body>
+</html>
