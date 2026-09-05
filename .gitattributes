@@ -1,0 +1,43 @@
+# === Git LFS: chỉ file nhị phân (không diff được) ===
+# Cài: https://git-lfs.com  →  git lfs install
+
+# Ảnh / logo
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.gif filter=lfs diff=lfs merge=lfs -text
+*.webp filter=lfs diff=lfs merge=lfs -text
+*.ico filter=lfs diff=lfs merge=lfs -text
+
+# Office / bảng tính nguồn
+*.xlsx filter=lfs diff=lfs merge=lfs -text
+*.xls filter=lfs diff=lfs merge=lfs -text
+*.docx filter=lfs diff=lfs merge=lfs -text
+*.pdf filter=lfs diff=lfs merge=lfs -text
+
+# Gói nén
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.7z filter=lfs diff=lfs merge=lfs -text
+*.tar.gz filter=lfs diff=lfs merge=lfs -text
+
+# === Text: giữ Git thường (cần diff / review) ===
+# js/*.js, data/*.json, css/*.css, *.html, *.csv, *.svg, *.md
+# KHÔNG đưa vào LFS — tổng repo hiện ~150KB, LFS chỉ làm phức tạp
+
+# Chuẩn hóa xuống dòng
+* text=auto eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Binary rõ ràng (kể cả khi chưa LFS)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.xlsx binary
+*.xls binary
+*.pdf binary
+*.zip binary

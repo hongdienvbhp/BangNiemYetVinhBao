@@ -8,3 +8,7 @@ dist/
 .env
 .env.*
 *.local
+*.swp
+*~
+.idea/
+.vscode/
