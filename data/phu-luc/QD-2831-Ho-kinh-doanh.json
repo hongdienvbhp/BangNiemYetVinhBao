@@ -1,0 +1,86 @@
+{
+  "soQD": "2831/QĐ-UBND",
+  "ngay": "10/07/2025",
+  "coQuan": "Sở Tài chính",
+  "trichYeu": "Công bố DM TTHC mới, sửa đổi, bổ sung, bãi bỏ lĩnh vực HKD và doanh nghiệp",
+  "hkdCapXa": [
+    {
+      "ma": "1.014034",
+      "ten": "Đăng ký cập nhật, bổ sung thông tin trong hồ sơ đăng ký hộ kinh doanh; hiệu đính thông tin đăng ký hộ kinh doanh",
+      "linhVuc": "HỘ KINH DOANH",
+      "cap": "Xã",
+      "nhanh": false,
+      "thoiHan": "Cập nhật/bổ sung: 01 ngày; Hiệu đính: 03 ngày làm việc",
+      "phi": "Không quy định",
+      "tinhChat": "Mới",
+      "qd": "2831/QĐ-UBND"
+    },
+    {
+      "ma": "1.014035",
+      "ten": "Dừng thực hiện thủ tục đăng ký hộ kinh doanh",
+      "linhVuc": "HỘ KINH DOANH",
+      "cap": "Xã",
+      "nhanh": false,
+      "thoiHan": "03 ngày làm việc",
+      "phi": "Không quy định",
+      "tinhChat": "Mới",
+      "qd": "2831/QĐ-UBND"
+    },
+    {
+      "ma": "1.001612",
+      "ten": "Đăng ký thành lập hộ kinh doanh",
+      "linhVuc": "HỘ KINH DOANH",
+      "cap": "Xã",
+      "nhanh": false,
+      "thoiHan": "03 ngày làm việc",
+      "phi": "Không quy định",
+      "tinhChat": "Sửa đổi, bổ sung",
+      "qd": "2831/QĐ-UBND"
+    },
+    {
+      "ma": "2.000720",
+      "ten": "Đăng ký thay đổi nội dung đăng ký hộ kinh doanh",
+      "linhVuc": "HỘ KINH DOANH",
+      "cap": "Xã",
+      "nhanh": false,
+      "thoiHan": "03 ngày làm việc",
+      "phi": "Không quy định",
+      "tinhChat": "Sửa đổi, bổ sung",
+      "qd": "2831/QĐ-UBND"
+    },
+    {
+      "ma": "1.001570",
+      "ten": "Đăng ký tạm ngừng kinh doanh, tiếp tục kinh doanh trước thời hạn đã đăng ký của hộ kinh doanh",
+      "linhVuc": "HỘ KINH DOANH",
+      "cap": "Xã",
+      "nhanh": true,
+      "thoiHan": "01 ngày làm việc",
+      "phi": "Không quy định",
+      "tinhChat": "Sửa đổi, bổ sung",
+      "qd": "2831/QĐ-UBND"
+    },
+    {
+      "ma": "1.001266",
+      "ten": "Chấm dứt hoạt động hộ kinh doanh",
+      "linhVuc": "HỘ KINH DOANH",
+      "cap": "Xã",
+      "nhanh": false,
+      "thoiHan": "05 ngày làm việc",
+      "phi": "Không quy định",
+      "tinhChat": "Sửa đổi, bổ sung",
+      "qd": "2831/QĐ-UBND"
+    },
+    {
+      "ma": "2.000575",
+      "ten": "Cấp lại Giấy chứng nhận đăng ký hộ kinh doanh; Cấp đổi sang Giấy chứng nhận đăng ký hộ kinh doanh",
+      "linhVuc": "HỘ KINH DOANH",
+      "cap": "Xã",
+      "nhanh": false,
+      "thoiHan": "Cấp đổi: 03 ngày; Cấp lại (mất/cháy/rách): 01 ngày làm việc",
+      "phi": "Không quy định",
+      "tinhChat": "Sửa đổi, bổ sung",
+      "qd": "2831/QĐ-UBND"
+    }
+  ],
+  "ghiChu": "Toàn bộ 7 TTHC HKD thực hiện tại TT PVHCC cấp xã. DN tại TT PVHCC thành phố. 08 TTHC DN bị bãi bỏ theo NĐ 168/2025."
+}
