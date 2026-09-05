@@ -1,0 +1,24 @@
+{
+  "so": "23/2026/NQ-HĐND",
+  "ngay": "28/07/2026",
+  "hieuLuc": "08/08/2026",
+  "trichYeu": "Quy định mức thu phí, lệ phí thuộc thẩm quyền HĐND TP đối với TTHC thực hiện qua hình thức trực tuyến",
+  "mienPhiKhiTrucTuyen": {
+    "lePhi": [
+      "Lệ phí hộ tịch",
+      "Lệ phí cấp giấy phép lao động cho người nước ngoài",
+      "Lệ phí cấp GCN QSDĐ, QSH tài sản gắn liền với đất",
+      "Lệ phí cấp giấy phép xây dựng"
+    ],
+    "phi": [
+      "Phí đăng ký giao dịch bảo đảm",
+      "Phí thẩm định hồ sơ cấp GCN QSDĐ, QSH tài sản gắn liền với đất",
+      "Phí thẩm định cấp/cấp lại/điều chỉnh giấy phép môi trường",
+      "Phí thẩm định báo cáo ĐTM",
+      "Phí thẩm định hồ sơ cấp GP lĩnh vực tài nguyên nước",
+      "Phí bình tuyển, công nhận cây mẹ, cây đầu dòng, vườn giống LN, rừng giống",
+      "Phí thẩm định cấp GCN đủ ĐK kinh doanh cơ sở thể thao, CLB thể thao chuyên nghiệp"
+    ]
+  },
+  "ghiChuUI": "Khi nộp hồ sơ trực tuyến (Cổng DVCQG / VNeID): các loại phí/lệ phí nêu trên = 0 đồng theo NQ 23/2026/NQ-HĐND (HL 08/8/2026)."
+}
