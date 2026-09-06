@@ -19,8 +19,8 @@ window.TTHC_CONFIG = {
   /** URL CSV (Google Sheet xuất bản). Để "" nếu chưa dùng. */
   remoteCsvUrl: "",
 
-  /** URL JSON (mảng thủ tục hoặc object { thuTuc: [...] }). Ưu tiên hơn CSV nếu cả hai có. */
-  remoteJsonUrl: "data/thu-tuc.json",
+  /** URL JSON (mảng thủ tục hoặc object { thuTuc: [...] }). Chỉ bật khi file Master Data đã được tạo và kiểm duyệt. */
+  remoteJsonUrl: "",
 
   /** Số giờ giữ cache localStorage trước khi tải lại nguồn remote */
   refreshHours: 12,

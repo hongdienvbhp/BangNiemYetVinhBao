@@ -1,13 +1,8 @@
 # === Git LFS: chỉ file nhị phân (không diff được) ===
 # Cài: https://git-lfs.com  →  git lfs install
 
-# Ảnh / logo
-*.png filter=lfs diff=lfs merge=lfs -text
-*.jpg filter=lfs diff=lfs merge=lfs -text
-*.jpeg filter=lfs diff=lfs merge=lfs -text
-*.gif filter=lfs diff=lfs merge=lfs -text
-*.webp filter=lfs diff=lfs merge=lfs -text
-*.ico filter=lfs diff=lfs merge=lfs -text
+# Ảnh dùng trực tiếp trên website giữ trong Git thường để deploy tĩnh không phụ thuộc Git LFS.
+# Các đuôi ảnh vẫn được đánh dấu binary ở cuối file để Git không cố diff nội dung.
 
 # Office / bảng tính nguồn
 *.xlsx filter=lfs diff=lfs merge=lfs -text
@@ -21,8 +16,8 @@
 *.tar.gz filter=lfs diff=lfs merge=lfs -text
 
 # === Text: giữ Git thường (cần diff / review) ===
-# js/*.js, data/*.json, css/*.css, *.html, *.csv, *.svg, *.md
-# KHÔNG đưa vào LFS — tổng repo hiện ~150KB, LFS chỉ làm phức tạp
+# js/*.js, data/*.json, css/*.css, *.html, *.csv, *.svg, *.md và ảnh web
+# KHÔNG đưa các asset runtime nhỏ vào LFS — cần clone/deploy được trực tiếp.
 
 # Chuẩn hóa xuống dòng
 * text=auto eol=lf

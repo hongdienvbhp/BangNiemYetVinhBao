@@ -41,6 +41,11 @@
   </nav>
 
   <main class="main-content">
+    <aside class="data-notice" role="note">
+      <strong>Dữ liệu đang được rà soát, đối chiếu nguồn chính thức.</strong>
+      Các trường chưa đủ căn cứ được hiển thị là “Chưa xác minh”. Khi thực hiện TTHC, ưu tiên thông tin trên Cổng Dịch vụ công Quốc gia và quyết định công bố còn hiệu lực.
+    </aside>
+
     <div class="filter-bar" id="filterBar">
       <div class="search-box">
         <span class="search-icon">🔍</span>
@@ -111,6 +116,11 @@
         <input type="search" id="ttLocalSearch" placeholder="Lọc thủ tục trong lĩnh vực này..." autocomplete="off" />
       </div>
       <div class="tt-card-list" id="thuTucList"></div>
+      <nav class="pagination" id="pagination" aria-label="Phân trang danh sách thủ tục" hidden>
+        <button type="button" class="btn-page" id="btnPrevPage">← Trang trước</button>
+        <span class="page-info" id="pageInfo" aria-live="polite">Trang 1 / 1</span>
+        <button type="button" class="btn-page" id="btnNextPage">Trang sau →</button>
+      </nav>
       <div class="table-wrap" id="thuTucTableWrap" hidden>
         <table class="data-table" id="thuTucTable">
           <thead>
