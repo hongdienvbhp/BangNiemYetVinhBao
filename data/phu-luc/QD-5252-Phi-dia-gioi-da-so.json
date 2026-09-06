@@ -1,0 +1,52 @@
+{
+  "soQD": "5252/QĐ-UBND",
+  "ngay": "26/12/2025",
+  "gdDt": {
+    "capTinh": [
+      {"ma": "1.003734", "ten": "Đăng ký dự thi cấp chứng chỉ CNTT"},
+      {"ma": "1.005142", "ten": "Đăng ký dự thi tốt nghiệp THPT"},
+      {"ma": "1.009394", "ten": "Đăng ký xét tuyển chế độ cử tuyển"},
+      {"ma": "1.001942", "ten": "Đăng ký dự thi chọn HSG cấp quốc gia"},
+      {"ma": "1.013338", "ten": "Đăng ký dự thi chọn HSG cấp tỉnh"},
+      {"ma": "2.001959", "ten": "Xét tuyển sinh lớp 10 THPT"},
+      {"ma": "2.002284", "ten": "Xét tuyển sinh lớp 10 chuyên"},
+      {"ma": "1.005090", "ten": "Tuyển sinh trung học phổ thông"},
+      {"ma": "10.005090", "ten": "Tuyển sinh THPT (bổ sung)"},
+      {"ma": "10.005095", "ten": "Xét chuyển trường THPT"},
+      {"ma": "1.005098", "ten": "Chuyển trường THPT"},
+      {"ma": "1.005099", "ten": "Tiếp nhận học sinh THPT"},
+      {"ma": "2.001806", "ten": "Xét duyệt chế độ nội trú"},
+      {"ma": "3.000181", "ten": "Tuyển sinh trường phổ thông dân tộc nội trú"}
+    ],
+    "capXa": [
+      {"ma": "1.005108", "ten": "Thuyên chuyển đối tượng THBT THCS"},
+      {"ma": "3.000182", "ten": "Tuyển sinh trung học cơ sở"},
+      {"ma": "2.001904", "ten": "Tiếp nhận đối tượng THBT THCS"},
+      {"ma": "2.002771", "ten": "Xét duyệt trẻ em nhà trẻ bán trú hỗ trợ kinh phí, gạo"},
+      {"ma": "1.001622", "ten": "Hỗ trợ ăn trưa trẻ em mẫu giáo"},
+      {"ma": "1.008950", "ten": "Trợ cấp trẻ em mầm non con công nhân KCN"},
+      {"ma": "2.002770", "ten": "Xét duyệt học sinh/học viên bán trú hỗ trợ kinh phí, gạo"},
+      {"ma": "1.014337", "ten": "Hỗ trợ chi phí học tập CSGD mầm non/tiểu học/THCS tư thục…"},
+      {"ma": "1.014336", "ten": "Hỗ trợ chi phí học tập CSGD mầm non/phổ thông công lập"},
+      {"ma": "1.014335", "ten": "Miễn giảm học phí GDNN/ĐH tư thục…"},
+      {"ma": "1.005090", "ten": "Tuyển sinh (cấp xã tiếp nhận)"},
+      {"ma": "1.014333", "ten": "Hỗ trợ học tập (cấp xã)"},
+      {"ma": "1.014334", "ten": "Hỗ trợ học tập (cấp xã 2)"},
+      {"ma": "1.009002", "ten": "Chế độ hỗ trợ GD (cấp xã)"}
+    ]
+  },
+  "yTe": [
+    {"ma": "3.000448", "ten": "Cấp CFS thiết bị y tế loại A, B"},
+    {"ma": "3.000447", "ten": "Tiếp tục lưu hành TB YT loại A, B khi chủ không SX/phá sản"},
+    {"ma": "3.000449", "ten": "Công bố NL SX TB YT, chất ngoại kiểm ma túy/tiền chất"},
+    {"ma": "1.003039", "ten": "Công bố đủ ĐK mua bán TB YT loại B,C,D"},
+    {"ma": "1.003029", "ten": "Công bố tiêu chuẩn áp dụng TB YT loại A,B"},
+    {"ma": "1.003006", "ten": "Công bố đủ ĐK sản xuất TB YT"},
+    {"ma": "2.000997", "ten": "Cấp GCN tiêm chủng quốc tế / biện pháp dự phòng"},
+    {"ma": "2.000993", "ten": "Kiểm dịch y tế phương tiện vận tải"},
+    {"ma": "2.000981", "ten": "Kiểm dịch y tế hàng hóa"},
+    {"ma": "2.000972", "ten": "Cấp GCN kiểm dịch y tế thi thể, hài cốt"},
+    {"ma": "1.002204", "ten": "Kiểm dịch y tế mẫu vi sinh, mô, bộ phận cơ thể"}
+  ],
+  "ghiChu": "Xây dựng: chủ yếu đơn vị đăng kiểm; Công Thương: chủ yếu hệ thống online ecosys/online.gov.vn — không đưa bảng xã"
+}
