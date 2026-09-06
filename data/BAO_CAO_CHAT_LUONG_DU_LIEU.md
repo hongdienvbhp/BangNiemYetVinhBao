@@ -1,42 +1,45 @@
-# Báo cáo chất lượng dữ liệu TTHC — UBND xã Vĩnh Bảo
+# Báo cáo rà soát chất lượng dữ liệu TTHC — UBND xã Vĩnh Bảo
 
-Cập nhật: **2026-09-06**
+Cập nhật: **06/09/2026**
 
-## Tổng quan
+## 1. Kết quả kiểm tra repository
 
-| Chỉ số | Giá trị |
-|--------|---------|
-| Tổng TTHC | **473** |
-| Lĩnh vực | 67 |
-| Có thời hạn | **473 / 473** |
-| Có phí | **473 / 473** |
-| Phi địa giới | 123 |
-| Miễn phí trực tuyến | 141 |
-| Liên thông | 4 |
-| Trong ngày (T4) | 26 |
-| formalityId DVCQG | **1 / 473** |
+| Chỉ số | Kết quả kiểm tra |
+|---|---:|
+| Dòng dữ liệu có trường `ma` trong `js/data.js` | **400** |
+| Mã TTHC chuẩn hóa duy nhất theo logic hiện tại | **313** |
+| `formalityId` đã xác định chắc chắn trong repo | **1** |
+| Mã mẫu có `formalityId` | `2.000942` |
+| File Master Data `data/thu-tuc.json` | **Chưa có** |
+| Đồng bộ JSON tự động | **Tạm tắt** |
 
-## Ưu tiên đã xử lý
+## 2. Bất nhất đã phát hiện
 
-### 1. Làm giàu thoiHan / phi (xong)
-- Ưu tiên giá trị từ phụ lục QĐ (3433, 2893, 556, 2831…).
-- Phần còn thiếu gán mặc định theo lĩnh vực (cùng logic DETAIL_BY_LV trong app.js).
-- Kết quả: **100%** bản ghi có `thoiHan` và `phi`.
+Báo cáo trước đây từng ghi **473 TTHC**, 67 lĩnh vực, 473/473 có thời hạn và phí. Tuy nhiên các file nguồn tương ứng (`data/thu-tuc.json`, bản `js/data.js` 473 thủ tục và file mapping đầy đủ) **không có trong lịch sử Git của repository** tại thời điểm rà soát.
 
-### 2. formalityId DVCQG (đang chờ)
-- Cổng DVCQG không có API công khai map mã TTHC → UUID.
-- Hiện **1/473** (mẫu `2.000942`).
-- Cách làm: mở CSV `data/formalityId-mapping-mau.csv` → tra trên dichvucong.gov.vn → dán formalityId → gửi lại file.
+Vì vậy:
 
-### 3. GitHub (một phần)
-- Repo: https://github.com/hongdienvbhp/BangNiemYetVinhBao
-- Cần push nốt: `js/data.js`, `data/thu-tuc.json`, `js/app.js`, `css/styles.css`…
+- Không tiếp tục công bố số **473** như số liệu đã xác minh từ repository hiện tại.
+- Bộ dữ liệu phục hồi chỉ được coi là **nguồn cục bộ kế thừa để đối chiếu**, chưa phải Master Data hiện hành.
+- Cần dựng lại danh mục hiện hành từ quyết định công bố/sửa đổi/bãi bỏ và nguồn chính thức của thành phố trước khi bật đồng bộ JSON.
 
-## Đồng bộ file
+## 3. formalityId DVCQG
 
-| File | Vai trò |
-|------|---------|
-| `data/thu-tuc.json` | Nguồn JSON + remote sync |
-| `js/data.js` | `window.TTHC_DATA` load offline |
-| `data/formalityId-mapping-mau.csv` | Template điền UUID |
-| `js/app.js` | Link DVCQG (formalityId + UUID Vĩnh Bảo) |
+Đã có một ánh xạ xác định:
+
+| Mã TTHC | formalityId |
+|---|---|
+| `2.000942` | `019d2bfd-95d6-778f-889b-e3045003fa5e` |
+
+Ứng dụng đã được sửa theo nguyên tắc:
+
+- Có `formalityId` → tạo link chi tiết theo `/thu-tuc-hanh-chinh/{formalityId}` và link chọn/nộp hồ sơ theo địa bàn Hải Phòng – xã Vĩnh Bảo.
+- Chưa có `formalityId` → chỉ mở chức năng tra cứu; không tạo URL chi tiết giả định từ mã TTHC.
+
+## 4. Việc tiếp theo về dữ liệu
+
+1. Đối chiếu danh mục TTHC cấp xã từ các quyết định công bố còn hiệu lực.
+2. Loại bỏ thủ tục bị bãi bỏ/thay thế và bản ghi trùng.
+3. Chuẩn hóa trường: mã, tên, lĩnh vực, cơ quan/đơn vị, thời hạn, phí/lệ phí, hình thức DVCTT, phi địa giới, căn cứ và trạng thái xác minh.
+4. Bổ sung `formalityId` có bằng chứng.
+5. Sinh `data/thu-tuc.json` và chỉ sau đó bật `remoteJsonUrl` trong `js/config.js`.
