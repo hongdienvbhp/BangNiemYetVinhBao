@@ -12,7 +12,7 @@
 - TTHC mới được bổ sung từ quyết định thành phố: **37**
 - TTHC hiện có được cập nhật bởi quyết định thành phố: **1**
 - Chưa trích được tên đủ tin cậy: **0**
-- Có formalityId trong Master Data: **1**
+- Có formalityId trong Master Data: **14**
 - Được đánh dấu phi địa giới theo nguồn công bố: **56**
 
 > **Lưu ý phạm vi:** 193 là số TTHC trong tập niêm yết/tra cứu của Trung tâm PVHCC xã Vĩnh Bảo theo bằng chứng nguồn đã audit. Tập này có thể gồm TTHC cấp tỉnh được tiếp nhận tại Trung tâm PVHCC cấp xã; không được hiểu là toàn bộ đều thuộc thẩm quyền giải quyết của UBND xã.

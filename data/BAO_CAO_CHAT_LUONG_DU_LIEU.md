@@ -16,8 +16,10 @@ Cập nhật: **07/09/2026**
 | Mã mới từ 06 quyết định thành phố | **37** |
 | Mã hiện có được cập nhật bởi quyết định thành phố | **1** |
 | Mã phi địa giới theo nguồn công bố | **56** |
-| `formalityId` trong Master Data | **0** |
-| Mapping mẫu đã xác minh | `2.000942` |
+| `formalityId` trong Master Data | **14** |
+| Crosswalk 51 TTHC trọng điểm | **51 mã; 48 UUID trực tiếp; 3 keyword fallback** |
+| TTHC trọng điểm có trong Master hiện hành | **14/51** |
+| Khoảng trống cần kiểm chứng pháp lý | **37/51** |
 
 ## 2. Phạm vi số liệu
 
@@ -40,15 +42,17 @@ Kết hợp snapshot trước đó, tổng số mã bãi bỏ được giữ d�
 
 Số **473** từng ghi trong tài liệu cũ không có bộ file nguồn tương ứng trong lịch sử Git và không tái lập được. Dự án không còn dùng 473 làm tiêu chí hoàn thành hoặc số lượng mục tiêu.
 
-## 5. formalityId
+## 5. formalityId và 51 TTHC trọng điểm
 
-Đã giữ nguyên ánh xạ chắc chắn:
+Đã chuẩn hóa `data/priority-51-crosswalk.json` từ danh mục 51 TTHC và dữ liệu xác minh trước đây:
 
-| Mã TTHC | formalityId |
-|---|---|
-| `2.000942` | `019d2bfd-95d6-778f-889b-e3045003fa5e` |
+- 51/51 dòng có mã TTHC canonical;
+- 48/51 có `formalityId` trực tiếp, không trùng UUID;
+- 03 mã (`2.001283`, `2.000720`, `2.001009`) chưa xác minh được UUID trực tiếp nên giữ liên kết tìm kiếm DVCQG theo mã;
+- 14/51 mã hiện có trong Master Data và đã được gắn `priority51`; cả 14 mã này có UUID kỹ thuật;
+- 37/51 mã chưa có trong Master Data hiện hành được chuyển thành danh sách cần kiểm chứng pháp lý ở bước tiếp theo, không tự bổ sung.
 
-Fetcher ánh xạ hàng loạt từ snapshot kỹ thuật DVCQG chưa ổn định do giới hạn/timeout của dịch vụ bên thứ ba. Việc này không ảnh hưởng xác định trạng thái pháp lý. Website chỉ tạo link chi tiết trực tiếp khi UUID có căn cứ; nếu thiếu thì fallback sang chức năng tra cứu.
+Crosswalk chỉ dùng cho danh tính/mapping kỹ thuật. Nó không thay thế bằng chứng về hiệu lực, bãi bỏ, thẩm quyền, phí, thời hạn hoặc quyết định công bố. Website chỉ tạo link chi tiết trực tiếp khi UUID đã được ghi nhận; nếu thiếu thì fallback sang chức năng tra cứu.
 
 ## 6. Cổng kiểm soát tự động
 

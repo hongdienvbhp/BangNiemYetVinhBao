@@ -51,6 +51,7 @@ excluded_payload = load_json("data/master-data-excluded.json")
 city_updates = load_json("data/source-audit/city-updates-current.json")
 decision_manifest = load_json("data/source-audit/official-decision-manifest.json")
 source_index = load_json("data/source-audit/official-source-index.json")
+priority51_payload = load_json("data/priority-51-crosswalk.json")
 
 # Mọi src/href nội bộ trong HTML phải tồn tại.
 for _, ref in re.findall(r'\b(src|href)="([^"]+)"', index):
@@ -212,6 +213,69 @@ if needs_review_index:
     fail(f"Nguồn mới cần rà soát trước khi merge: {len(needs_review_index)} bài")
 if int(summary.get("cityNeedsReviewRows") or 0) > 0:
     fail(f"Có {summary.get('cityNeedsReviewRows')} dòng quyết định thành phố chưa đủ điều kiện tự động áp dụng")
+
+# Crosswalk 51 TTHC trọng điểm chỉ là lớp kỹ thuật, không phải căn cứ hiệu lực.
+priority51_rows = priority51_payload.get("items") if isinstance(priority51_payload, dict) else None
+if not isinstance(priority51_rows, list):
+    fail("data/priority-51-crosswalk.json thiếu items")
+    priority51_rows = []
+
+p51_ordinals = [row.get("ordinal") for row in priority51_rows]
+p51_codes = [str(row.get("code") or "").strip() for row in priority51_rows]
+p51_ids = [str(row.get("formalityId") or "").strip().lower() for row in priority51_rows if row.get("formalityId")]
+p51_fallback_codes = {
+    str(row.get("code") or "").strip()
+    for row in priority51_rows
+    if row.get("mappingMode") == "keyword_fallback"
+}
+if len(priority51_rows) != 51:
+    fail(f"Crosswalk trọng điểm phải có 51 dòng, hiện có {len(priority51_rows)}")
+if sorted(x for x in p51_ordinals if isinstance(x, int)) != list(range(1, 52)):
+    fail("Crosswalk trọng điểm thiếu/trùng STT 1..51")
+if len(p51_codes) != len(set(p51_codes)) or "" in p51_codes:
+    fail("Crosswalk trọng điểm có mã trống hoặc trùng")
+if len(p51_ids) != 48 or len(p51_ids) != len(set(p51_ids)):
+    fail(f"Crosswalk phải có 48 formalityId trực tiếp duy nhất, hiện có {len(p51_ids)}/{len(set(p51_ids))}")
+uuid_re = re.compile(r"^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$", re.I)
+for fid in p51_ids:
+    if not uuid_re.fullmatch(fid):
+        fail(f"formalityId trọng điểm không hợp lệ: {fid}")
+expected_fallback = {"2.001283", "2.000720", "2.001009"}
+if p51_fallback_codes != expected_fallback:
+    fail(f"Tập keyword fallback trọng điểm không đúng: {sorted(p51_fallback_codes)}")
+for row in priority51_rows:
+    code = str(row.get("code") or "").strip()
+    url = str(row.get("dvcUrl") or "")
+    if not url.startswith("https://dichvucong.gov.vn/"):
+        fail(f"{code}: URL crosswalk không thuộc DVCQG")
+    if row.get("legalStatusAssertion") != "none_from_priority_crosswalk":
+        fail(f"{code}: crosswalk không được khẳng định trạng thái pháp lý")
+
+p51_by_code = {str(row.get("code") or "").strip(): row for row in priority51_rows}
+master_by_code = {str(row.get("ma") or "").strip(): row for row in rows}
+p51_in_master = sorted(set(p51_by_code) & code_set)
+if len(p51_in_master) != 14:
+    fail(f"Số mã trọng điểm đang có trong Master phải là 14 ở snapshot này, hiện {len(p51_in_master)}")
+if len(set(p51_by_code) - code_set) != 37:
+    fail("Khoảng trống 51 TTHC so với Master không còn là 37; cần cập nhật báo cáo/kiểm chứng pháp lý")
+for code in p51_in_master:
+    cross = p51_by_code[code]
+    master_row = master_by_code[code]
+    if master_row.get("priority51") is not True:
+        fail(f"{code}: có trong crosswalk nhưng Master chưa đánh priority51")
+    if master_row.get("priority51Ordinal") != cross.get("ordinal"):
+        fail(f"{code}: priority51Ordinal lệch crosswalk")
+    fid = str(cross.get("formalityId") or "")
+    if fid and master_row.get("formalityId") != fid:
+        fail(f"{code}: formalityId Master lệch crosswalk")
+if summary.get("priority51CrosswalkTotal") != 51:
+    fail("summary.priority51CrosswalkTotal phải bằng 51")
+if summary.get("priority51InCurrentMaster") != 14:
+    fail("summary.priority51InCurrentMaster phải bằng 14")
+if summary.get("priority51Gap") != 37:
+    fail("summary.priority51Gap phải bằng 37")
+if summary.get("formalityIdMapped") != 14:
+    fail(f"Snapshot này phải có 14 formalityId trong Master, hiện {summary.get('formalityIdMapped')}")
 
 # Fallback phải chứa chính xác tập mã public của JSON.
 fallback_codes = set(re.findall(r'"ma":"([^"]+)"', fallback_js))

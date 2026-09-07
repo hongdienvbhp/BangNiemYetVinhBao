@@ -24,6 +24,7 @@ CANDIDATES = ROOT / "data/source-audit/web010-vinhbao-commune-code-candidates-20
 ATTACHMENTS = ROOT / "data/source-audit/vinhbao-tthc-attachment-evidence-20260906.json"
 DVC_MAPPING = ROOT / "data/source-audit/dvcqg-mapping-candidates-20260907.json"
 VERIFIED_DVC_CSV = ROOT / "data/formalityId-mapping-mau.csv"
+PRIORITY51_CROSSWALK = ROOT / "data/priority-51-crosswalk.json"
 CITY_UPDATES = ROOT / "data/source-audit/city-updates-current.json"
 LEGACY_JS = ROOT / "js/data.js"
 MASTER_JSON = ROOT / "data/thu-tuc.json"
@@ -289,6 +290,17 @@ def evidence_status(evidence: list[dict]) -> tuple[str, str | None, str | None]:
     return "needs_verification", active, repeal
 
 
+def load_priority51() -> dict[str, dict]:
+    if not PRIORITY51_CROSSWALK.exists():
+        return {}
+    payload = load_json(PRIORITY51_CROSSWALK)
+    return {
+        normalize_code(row.get("code", "")): row
+        for row in payload.get("items", [])
+        if normalize_code(row.get("code", ""))
+    }
+
+
 def load_dvc_mapping() -> dict[str, list[dict]]:
     grouped: dict[str, list[dict]] = defaultdict(list)
     if DVC_MAPPING.exists():
@@ -309,21 +321,36 @@ def load_dvc_mapping() -> dict[str, list[dict]]:
                     "is_ward": True,
                     "is_province": False,
                 })
+    for code, row in load_priority51().items():
+        if not row.get("formalityId"):
+            continue
+        grouped[code].append({
+            "code": code,
+            "formalityId": str(row.get("formalityId") or "").strip(),
+            "sourceUrl": row.get("dvcUrl") or "",
+            "scrapedAt": "2026-09-06",
+            "verificationStatus": "verified_priority51_crosswalk",
+            "is_ward": True,
+            "is_province": False,
+        })
     return grouped
 
 
 def choose_dvc_mapping(rows: list[dict]) -> dict | None:
     if not rows:
         return None
-    return sorted(
-        rows,
-        key=lambda x: (
-            bool(x.get("is_ward")),
-            bool(x.get("is_province")),
-            x.get("scrapedAt") or "",
-        ),
-        reverse=True,
-    )[0]
+
+    def rank(row: dict) -> tuple:
+        status = str(row.get("verificationStatus") or "").lower()
+        verified = status.startswith("verified_") or status.startswith("da_xac_minh")
+        return (
+            verified,
+            bool(row.get("is_ward")),
+            bool(row.get("is_province")),
+            row.get("scrapedAt") or "",
+        )
+
+    return sorted(rows, key=rank, reverse=True)[0]
 
 
 def compact_evidence(evidence: list[dict], attach_idx: dict[str, dict]) -> list[dict]:
@@ -608,6 +635,7 @@ def main() -> int:
     attachment_payload = load_json(ATTACHMENTS)
     attach_idx = attachment_index(attachment_payload)
     legacy = parse_legacy_rows(LEGACY_JS)
+    priority51 = load_priority51()
     dvc_map = load_dvc_mapping()
     public_rows: list[dict] = []
     excluded: list[dict] = []
@@ -719,6 +747,27 @@ def main() -> int:
 
     city_stats = apply_city_updates(public_rows, excluded, audit_rows, legacy, dvc_map)
 
+    for row in public_rows:
+        code = normalize_code(row.get("ma", ""))
+        priority = priority51.get(code)
+        row["priority51"] = bool(priority)
+        if not priority:
+            continue
+        row["priority51Ordinal"] = priority.get("ordinal")
+        row["priority51MappingStatus"] = priority.get("mappingStatus")
+        if priority.get("mappingMode") == "keyword_fallback":
+            row["dvcKeywordUrl"] = priority.get("dvcUrl") or ""
+        if priority.get("formalityId") and not row.get("formalityId"):
+            row["formalityId"] = priority.get("formalityId")
+            row["dvcMappingStatus"] = "verified_priority51_crosswalk"
+            row["dvcMappingSource"] = priority.get("dvcUrl") or ""
+
+    audit_by_code = {normalize_code(row.get("ma", "")): row for row in audit_rows}
+    for row in public_rows:
+        audit = audit_by_code.get(normalize_code(row.get("ma", "")))
+        if audit is not None:
+            audit["formalityId"] = row.get("formalityId") or ""
+
     public_rows.sort(key=lambda x: (fold(x.get("linhVuc", "")), fold(x.get("ten", "")), x.get("ma", "")))
     for i, row in enumerate(public_rows, 1):
         row["stt"] = i
@@ -738,6 +787,9 @@ def main() -> int:
         "unresolvedNameProcedures": sum(1 for x in audit_rows if not x["ten"]),
         "legacyMatchedCodes": sum(1 for x in audit_rows if x["legacy_match"]),
         "formalityIdMapped": sum(1 for x in public_rows if x.get("formalityId")),
+        "priority51InCurrentMaster": sum(1 for x in public_rows if x.get("priority51")),
+        "priority51CrosswalkTotal": len(priority51),
+        "priority51Gap": sum(1 for code in priority51 if code not in {normalize_code(x.get("ma", "")) for x in public_rows}),
         "phiDiaGioi": sum(1 for x in public_rows if x.get("phiDiaGioi")),
     }
     master = {

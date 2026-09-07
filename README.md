@@ -23,6 +23,8 @@ python -m http.server 8080
 - `data/master-data-audit.csv`: toàn bộ mã đã audit và URL nguồn.
 - `data/master-data-excluded.json`: mã bãi bỏ hoặc chưa đến ngày hiệu lực.
 - `data/BAO_CAO_MASTER_DATA_HIEN_HANH.md`: báo cáo Master Data được pipeline tái tạo theo snapshot đang áp dụng.
+- `data/priority-51-crosswalk.json`: crosswalk kỹ thuật cho 51 TTHC trọng điểm; không phải căn cứ hiệu lực pháp lý.
+- `data/BAO_CAO_51_TTHC_TRONG_DIEM_2026-09-07.md`: báo cáo 51 TTHC, UUID và khoảng trống so với Master Data.
 - `data/source-audit/`: snapshot nguồn, bằng chứng và PDF quyết định chính thức.
 
 ## Nguồn kiểm chứng đến 07/09/2026
@@ -83,7 +85,7 @@ https://dichvucong.gov.vn/thu-tuc-hanh-chinh/{formalityId}
 - UUID xã Vĩnh Bảo: `019bad30-cd84-7750-aaa5-8100fc7ceef8`
 - `provinceCode=31`, `wardCode=11824`
 
-Master Data hiện chưa có mapping UUID hàng loạt. Khi thiếu `formalityId`, website dùng tra cứu DVCQG thay vì tự dựng URL chi tiết từ mã TTHC.
+Danh sách 51 TTHC trọng điểm hiện được chuẩn hóa tại `data/priority-51-crosswalk.json`: 51/51 có mã canonical, 48/51 có `formalityId` trực tiếp và 03 mã còn dùng liên kết tìm kiếm DVCQG theo `keyword`. Ở snapshot Master Data hiện hành, 14/51 mã trọng điểm đang có trong tập công khai nên 14 `formalityId` được áp dụng vào `data/thu-tuc.json`; 37 mã còn lại chỉ được ghi nhận là khoảng trống cần kiểm chứng pháp lý, không tự động bổ sung. Khi một thủ tục chưa có `formalityId`, website tiếp tục dùng tra cứu DVCQG thay vì tự dựng UUID.
 
 ## Nguyên tắc dữ liệu
 
