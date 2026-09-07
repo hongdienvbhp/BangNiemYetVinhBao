@@ -48,7 +48,9 @@ read("css/styles.css")
 sw = read("sw.js")
 master = load_json("data/thu-tuc.json")
 excluded_payload = load_json("data/master-data-excluded.json")
-city_updates = load_json("data/source-audit/city-updates-20260907.json")
+city_updates = load_json("data/source-audit/city-updates-current.json")
+decision_manifest = load_json("data/source-audit/official-decision-manifest.json")
+source_index = load_json("data/source-audit/official-source-index.json")
 
 # Mọi src/href nội bộ trong HTML phải tồn tại.
 for _, ref in re.findall(r'\b(src|href)="([^"]+)"', index):
@@ -121,8 +123,12 @@ if summary.get("excludedProcedures") != len(excluded):
     fail("summary.excludedProcedures không khớp số dòng loại trừ")
 if summary.get("auditedCodes") != len(rows) + len(excluded):
     fail("summary.auditedCodes không bằng public + excluded")
-if master.get("sourceSnapshotDate") != "2026-09-07":
-    fail("Master Data chưa chốt snapshot 2026-09-07")
+snapshot_date = str(master.get("sourceSnapshotDate") or "")
+if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", snapshot_date):
+    fail("Master Data thiếu sourceSnapshotDate hợp lệ")
+city_as_of = str(city_updates.get("asOf") or "")
+if city_as_of and snapshot_date != city_as_of:
+    fail(f"Master Data và city-updates lệch snapshot: master={snapshot_date}, city={city_as_of}")
 
 bad_names = []
 for row in rows:
@@ -164,11 +170,48 @@ for code in ["1.000302", "1.000321", "3.000242", "1.013781", "3.000574", "1.0141
     if code not in code_set:
         fail(f"Thiếu TTHC hiện hành từ quyết định mới: {code}")
 
-# 6 quyết định công khai mới phải còn đầy đủ trong snapshot audit.
+# Các quyết định công khai nền phải còn đầy đủ trong snapshot audit.
 decision_nos = {str(x.get("decisionNo") or "") for x in city_updates.get("decisions", [])}
 for qd in {"3500/QĐ-UBND", "3501/QĐ-UBND", "3508/QĐ-UBND", "3509/QĐ-UBND", "3517/QĐ-UBND", "3523/QĐ-UBND"}:
     if qd not in decision_nos:
         fail(f"Thiếu quyết định trong source audit: {qd}")
+
+# Manifest/index là cổng provenance của pipeline tự động.
+manifest_rows = decision_manifest.get("decisions") if isinstance(decision_manifest, dict) else None
+if not isinstance(manifest_rows, list):
+    fail("official-decision-manifest.json thiếu decisions")
+    manifest_rows = []
+index_rows = source_index.get("articles") if isinstance(source_index, dict) else None
+if not isinstance(index_rows, list):
+    fail("official-source-index.json thiếu articles")
+    index_rows = []
+
+manifest_public = [row for row in manifest_rows if row.get("classification") == "public_tthc"]
+manifest_internal = [row for row in manifest_rows if row.get("classification") == "internal_process"]
+manifest_nos = [str(row.get("decisionNo") or "") for row in manifest_rows]
+if len(manifest_nos) != len(set(manifest_nos)):
+    fail("Manifest có decisionNo trùng")
+for row in manifest_public:
+    qd = str(row.get("decisionNo") or "?")
+    for field_name in ["decisionDate", "articleUrl", "pdfUrl", "filePath"]:
+        if not row.get(field_name):
+            fail(f"{qd}: manifest public thiếu {field_name}")
+    file_path = str(row.get("filePath") or "")
+    if file_path and not (ROOT / file_path).is_file():
+        fail(f"{qd}: manifest trỏ tới PDF không tồn tại: {file_path}")
+for row in manifest_internal:
+    qd = str(row.get("decisionNo") or "")
+    if qd and qd in decision_nos:
+        fail(f"Quyết định nội bộ bị đưa vào city-updates public: {qd}")
+
+article_urls = [str(row.get("articleUrl") or "").rstrip("/") for row in index_rows if row.get("articleUrl")]
+if len(article_urls) != len(set(article_urls)):
+    fail("official-source-index.json có articleUrl trùng")
+needs_review_index = [row for row in index_rows if row.get("classification") == "needs_review" or str(row.get("status") or "").startswith(("missing_", "unclassified_", "article_fetch_failed", "pdf_download_failed"))]
+if needs_review_index:
+    fail(f"Nguồn mới cần rà soát trước khi merge: {len(needs_review_index)} bài")
+if int(summary.get("cityNeedsReviewRows") or 0) > 0:
+    fail(f"Có {summary.get('cityNeedsReviewRows')} dòng quyết định thành phố chưa đủ điều kiện tự động áp dụng")
 
 # Fallback phải chứa chính xác tập mã public của JSON.
 fallback_codes = set(re.findall(r'"ma":"([^"]+)"', fallback_js))

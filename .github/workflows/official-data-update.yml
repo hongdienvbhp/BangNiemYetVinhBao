@@ -1,0 +1,160 @@
+name: Official TTHC Update
+
+on:
+  schedule:
+    # 07:30 Asia/Ho_Chi_Minh
+    - cron: "30 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: official-tthc-update
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      AUTO_BRANCH: auto/official-tthc-update
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          lfs: true
+
+      - name: Check existing automated PR
+        id: existing
+        shell: bash
+        run: |
+          set -euo pipefail
+          number="$(gh pr list --state open --head "$AUTO_BRANCH" --json number --jq '.[0].number // empty')"
+          if [ -n "$number" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "pr_number=$number" >> "$GITHUB_OUTPUT"
+            echo "Automated PR #$number is still open; skip duplicate scan."
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Setup Python
+        if: steps.existing.outputs.skip != 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install PDF dependency
+        if: steps.existing.outputs.skip != 'true'
+        run: python -m pip install --disable-pip-version-check pypdf==6.17.0
+
+      - name: Preserve before snapshot
+        if: steps.existing.outputs.skip != 'true'
+        run: cp data/thu-tuc.json /tmp/master-before.json
+
+      - name: Scan official sources
+        if: steps.existing.outputs.skip != 'true'
+        run: python scripts/update_official_sources.py --online
+
+      - name: Extract official decision evidence
+        if: steps.existing.outputs.skip != 'true'
+        run: python scripts/extract_city_updates.py --as-of "$(date +%F)"
+
+      - name: Rebuild Master Data
+        if: steps.existing.outputs.skip != 'true'
+        run: python scripts/build_master_data.py
+
+      - name: Candidate validation
+        if: steps.existing.outputs.skip != 'true'
+        id: validation
+        continue-on-error: true
+        run: |
+          python scripts/check_static_site.py
+          git diff --check
+
+      - name: Detect semantic/source changes
+        if: steps.existing.outputs.skip != 'true'
+        id: changes
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -n "$(git status --porcelain -- data js/master-data-fallback.js)" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build delta report
+        if: steps.existing.outputs.skip != 'true' && steps.changes.outputs.changed == 'true'
+        run: |
+          python scripts/build_master_delta.py             --before /tmp/master-before.json             --after data/thu-tuc.json             --json-out data/source-audit/latest-master-delta.json             --md-out data/BAO_CAO_CHENH_LECH_TTHC_MOI_NHAT.md
+
+      - name: Create Issue, branch and Pull Request
+        if: steps.existing.outputs.skip != 'true' && steps.changes.outputs.changed == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git checkout -B "$AUTO_BRANCH"
+          git add data js/master-data-fallback.js
+          git commit -m "chore: update official TTHC master data"
+
+          git push origin --delete "$AUTO_BRANCH" >/dev/null 2>&1 || true
+          git push -u origin "$AUTO_BRANCH"
+
+          validation="PASS"
+          if [ "${{ steps.validation.outcome }}" != "success" ]; then
+            validation="NEEDS_REVIEW"
+          fi
+
+          cat > /tmp/issue-body.md <<EOF
+          ## Tự động phát hiện thay đổi nguồn TTHC chính thức
+
+          Pipeline hằng ngày đã phát hiện thay đổi trên nguồn chính thức Hải Phòng/Vĩnh Bảo.
+
+          - Branch: `$AUTO_BRANCH`
+          - Validation trước PR: **$validation**
+          - Báo cáo delta: `data/BAO_CAO_CHENH_LECH_TTHC_MOI_NHAT.md`
+          - Audit nguồn: `data/source-audit/official-source-index.json`
+          - Manifest quyết định: `data/source-audit/official-decision-manifest.json`
+
+          Quy tắc: không merge nếu CI chưa xanh; không suy diễn hiệu lực/lĩnh vực; quyết định `needs_*` phải được rà soát.
+          EOF
+
+          issue_url="$(gh issue create             --title "Cập nhật TTHC chính thức tự động $(date +%F)"             --body-file /tmp/issue-body.md)"
+          issue_number="${issue_url##*/}"
+
+          cat > /tmp/pr-body.md <<EOF
+          Closes #$issue_number
+
+          ## Nội dung
+          - Quét nguồn chính thức Hải Phòng/Vĩnh Bảo.
+          - Lưu provenance và PDF/hash quyết định mới (nếu có).
+          - Tái tạo city-updates, Master Data JSON và fallback từ cùng pipeline.
+          - Sinh báo cáo chênh lệch trước/sau.
+
+          ## Kiểm soát
+          - Validation trước PR: **$validation**
+          - CI của PR là cổng bắt buộc.
+          - Workflow này **không tự merge**.
+          EOF
+
+          gh pr create             --base main             --head "$AUTO_BRANCH"             --title "Cập nhật Master Data TTHC từ nguồn chính thức $(date +%F)"             --body-file /tmp/pr-body.md
+
+      - name: Fail unchanged baseline if validation regressed
+        if: steps.existing.outputs.skip != 'true' && steps.changes.outputs.changed != 'true' && steps.validation.outcome != 'success'
+        run: |
+          echo "No source change, but the committed baseline failed validation."
+          exit 1
+
+      - name: No change
+        if: steps.existing.outputs.skip != 'true' && steps.changes.outputs.changed != 'true' && steps.validation.outcome == 'success'
+        run: echo "No official-source or Master Data changes detected."

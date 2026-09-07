@@ -1,82 +1,31 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Extract TTHC evidence from recent Hai Phong city decisions.
+"""Extract commune-relevant TTHC evidence from the official decision manifest.
 
-This supplements the Vinh Bao portal snapshot with city-level decisions
-published after that portal snapshot's practical cut-off (2026-08-31).
+Public Master Data is fed only by manifest entries classified as public_tthc.
+Internal/process-only decisions are retained in the manifest/index but skipped.
+
+For auto-discovered decisions, the extractor requires enough evidence to decide
+whether the decision is effective at the evaluation date. If no explicit
+effective-date clause can be found, the decision is marked for review instead
+of being treated as current.
 """
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 import re
 import unicodedata
+from datetime import date
 from pathlib import Path
 
 from pypdf import PdfReader
 
 ROOT = Path(__file__).resolve().parents[1]
-PDF_DIR = ROOT / "data/source-audit/city-updates-20260907"
-OUTPUT = ROOT / "data/source-audit/city-updates-20260907.json"
-AS_OF = "2026-09-07"
-
-DECISIONS = {
-    "3500/QĐ-UBND": {
-        "file": "QD-3500.pdf",
-        "decisionDate": "2026-08-30",
-        "publishedDate": "2026-09-03",
-        "effectiveDate": None,
-        "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3500-qd-ubnd-ngay-30-8-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958426",
-        "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3500-nv639240495312924587.pdf",
-        "field": "NỘI VỤ",
-    },
-    "3501/QĐ-UBND": {
-        "file": "QD-3501.pdf",
-        "decisionDate": "2026-09-01",
-        "publishedDate": "2026-09-03",
-        "effectiveDate": "2027-03-01",
-        "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3501-qd-ubnd-ngay-01-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958422",
-        "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3501-yt639240494398182291.pdf",
-        "field": "PHÒNG BỆNH",
-    },
-    "3508/QĐ-UBND": {
-        "file": "QD-3508.pdf",
-        "decisionDate": "2026-09-03",
-        "publishedDate": "2026-09-03",
-        "effectiveDate": None,
-        "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3508-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958460",
-        "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3508-xd639240506704881699.pdf",
-        "field": "ĐƯỜNG BỘ",
-    },
-    "3509/QĐ-UBND": {
-        "file": "QD-3509.pdf",
-        "decisionDate": "2026-09-03",
-        "publishedDate": "2026-09-03",
-        "effectiveDate": None,
-        "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3509-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958459",
-        "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3509-gd639240505714779683.pdf",
-        "field": "GIÁO DỤC VÀ ĐÀO TẠO",
-    },
-    "3517/QĐ-UBND": {
-        "file": "QD-3517.pdf",
-        "decisionDate": "2026-09-03",
-        "publishedDate": "2026-09-04",
-        "effectiveDate": None,
-        "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3517-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-959309",
-        "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3517-ct639241368528261775.pdf",
-        "field": "XUẤT CẢNH, NHẬP CẢNH",
-    },
-    "3523/QĐ-UBND": {
-        "file": "QD-3523.pdf",
-        "decisionDate": "2026-09-04",
-        "publishedDate": "2026-09-04",
-        "effectiveDate": None,
-        "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3523-qd-ubnd-ngay-04-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-959292",
-        "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3523-vh639241356960920960.pdf",
-        "field": "BÁO CHÍ",
-    },
-}
+MANIFEST = ROOT / "data/source-audit/official-decision-manifest.json"
+OUTPUT = ROOT / "data/source-audit/city-updates-current.json"
 
 CODE_RE = re.compile(r"\b\d{1,2}\.\d{3,6}\b")
 TIME_OR_COLUMN_RE = re.compile(
@@ -88,42 +37,46 @@ TIME_OR_COLUMN_RE = re.compile(
 
 
 def fold(value: str) -> str:
-    n = unicodedata.normalize("NFD", value or "")
-    return "".join(ch for ch in n if unicodedata.category(ch) != "Mn").lower()
+    normalized = unicodedata.normalize("NFD", value or "")
+    return "".join(ch for ch in normalized if unicodedata.category(ch) != "Mn").lower()
+
+
+def load_json(path: Path) -> dict:
+    return json.loads(path.read_text(encoding="utf-8-sig"))
 
 
 def sha256(path: Path) -> str:
-    h = hashlib.sha256()
-    with path.open("rb") as f:
-        for chunk in iter(lambda: f.read(1024 * 1024), b""):
-            h.update(chunk)
-    return h.hexdigest()
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
 
 
 def section_status(line: str, current: str) -> str:
-    f = fold(line)
-    if "danh muc" not in f and not re.match(r"^[a-d][.)]\s", f):
+    value = fold(line)
+    if "danh muc" not in value and not re.match(r"^[a-d][.)]\s", value):
         return current
-    if "bi bai bo" in f:
+    if "bi bai bo" in value:
         return "repealed"
-    if "thay the" in f:
+    if "thay the" in value:
         return "replaced_or_replacement"
-    if "sua doi" in f or "bo sung" in f:
+    if "sua doi" in value or "bo sung" in value:
         return "modified"
-    if "ban hanh moi" in f:
+    if "ban hanh moi" in value:
         return "new"
     return current
 
 
 def level_hint(line: str, current: str) -> str:
-    f = fold(line)
-    if "thu tuc hanh chinh" not in f and "cap xa" not in f:
+    value = fold(line)
+    if "thu tuc hanh chinh" not in value and "cap xa" not in value:
         return current
-    if "dung chung" in f and "cap xa" in f:
+    if "dung chung" in value and "cap xa" in value:
         return "shared_including_commune"
-    if "cap xa" in f:
+    if "cap xa" in value:
         return "commune"
-    if "cap tinh" in f:
+    if "cap tinh" in value:
         return "province"
     return current
 
@@ -133,47 +86,124 @@ def extract_name(lines: list[str], line_index: int, code: str) -> str:
     after = line.split(code, 1)[1].strip(" .:-") if code in line else ""
     parts = [after] if after else []
     for j in range(line_index + 1, min(len(lines), line_index + 16)):
-        s = re.sub(r"\s+", " ", lines[j]).strip()
-        if not s:
+        value = re.sub(r"\s+", " ", lines[j]).strip()
+        if not value:
             continue
-        if CODE_RE.search(s):
+        if CODE_RE.search(value):
             break
-        if TIME_OR_COLUMN_RE.match(s) and parts:
+        if TIME_OR_COLUMN_RE.match(value) and parts:
             break
-        if "STT" == s or "Mã TTHC" in s or "Tên TTHC" in s:
+        if value == "STT" or "Mã TTHC" in value or "Tên TTHC" in value:
             continue
-        parts.append(s)
+        parts.append(value)
         if len(" ".join(parts)) > 220:
             break
-    name = re.sub(r"\s+", " ", " ".join(parts)).strip(" .;:-|")
-    return name
+    return re.sub(r"\s+", " ", " ".join(parts)).strip(" .;:-|")
 
 
 def context_is_commune(lines: list[str], idx: int, level: str) -> bool:
     if level in {"commune", "shared_including_commune"}:
         return True
     context = " ".join(lines[max(0, idx - 20) : min(len(lines), idx + 80)])
-    f = fold(context)
-    compact = re.sub(r"[^a-z0-9]", "", f)
+    value = fold(context)
+    compact = re.sub(r"[^a-z0-9]", "", value)
     return (
-        ("trung tam" in f and ("cap xa" in f or "cac xa" in f or "pvhcc cac xa" in f))
-        or "trung tam phuc vu hcc cac xa" in f
+        ("trung tam" in value and ("cap xa" in value or "cac xa" in value or "pvhcc cac xa" in value))
+        or "trung tam phuc vu hcc cac xa" in value
         or "trungtamphucvuhanhchinhcongcapxa" in compact
         or "trungtamphucvuhcccacxa" in compact
     )
 
 
-def extract_decision(decision_no: str, meta: dict) -> dict:
-    path = PDF_DIR / meta["file"]
+def parse_iso_date(day: str, month: str, year: str) -> str:
+    return f"{int(year):04d}-{int(month):02d}-{int(day):02d}"
+
+
+def detect_effective_date(reader: PdfReader, decision_date: str) -> tuple[str | None, str]:
+    sample = "\n".join((page.extract_text() or "") for page in reader.pages[:5])
+    value = fold(sample)
+    numeric_patterns = [
+        r"co hieu luc(?: thi hanh)? ke tu ngay\s*(\d{1,2})[./-](\d{1,2})[./-](\d{4})",
+        r"co hieu luc(?: thi hanh)? tu ngay\s*(\d{1,2})[./-](\d{1,2})[./-](\d{4})",
+        r"co hieu luc(?: thi hanh)? ke tu ngay\s*(\d{1,2})\s+thang\s+(\d{1,2})\s+nam\s+(\d{4})",
+        r"co hieu luc(?: thi hanh)? tu ngay\s*(\d{1,2})\s+thang\s+(\d{1,2})\s+nam\s+(\d{4})",
+    ]
+    for pattern in numeric_patterns:
+        match = re.search(pattern, value, re.I)
+        if match:
+            return parse_iso_date(match.group(1), match.group(2), match.group(3)), "explicit_date_clause"
+
+    if re.search(r"co hieu luc(?: thi hanh)?(?: ke)? tu ngay ky", value, re.I):
+        return decision_date or None, "effective_from_signing_clause"
+
+    return None, "effective_clause_not_found"
+
+
+def merge_rows(rows: list[dict]) -> dict[str, dict]:
+    priority = {
+        "repealed": 5,
+        "replaced_or_replacement": 4,
+        "modified": 3,
+        "new": 2,
+        "published": 1,
+    }
+    merged: dict[str, dict] = {}
+    for row in rows:
+        code = row["code"]
+        previous = merged.get(code)
+        if not previous:
+            merged[code] = row
+            continue
+        if priority.get(row["sectionStatus"], 0) > priority.get(previous["sectionStatus"], 0):
+            previous["sectionStatus"] = row["sectionStatus"]
+        previous["communeReceptionEvidence"] = bool(
+            previous["communeReceptionEvidence"] or row["communeReceptionEvidence"]
+        )
+        if len(row.get("name") or "") > len(previous.get("name") or "") and len(row.get("name") or "") <= 240:
+            previous["name"] = row["name"]
+        previous["context"] = (previous.get("context", "") + " | " + row.get("context", ""))[:2400]
+    return merged
+
+
+def extract_decision(meta: dict, as_of: str) -> dict:
+    file_path = str(meta.get("filePath") or "")
+    if not file_path:
+        raise ValueError(f"{meta.get('decisionNo')}: missing filePath")
+    path = ROOT / file_path
+    if not path.is_file():
+        raise FileNotFoundError(f"{meta.get('decisionNo')}: missing PDF {file_path}")
+
     reader = PdfReader(str(path))
-    rows = []
+    decision_date = str(meta.get("decisionDate") or "")
+    effective_date = meta.get("effectiveDate")
+    effective_source = "manifest"
+    if not effective_date:
+        detected, source = detect_effective_date(reader, decision_date)
+        effective_date = detected
+        effective_source = source
+
+    ingest_status = str(meta.get("ingestStatus") or "")
+    if effective_date:
+        current_state = "future_effective" if effective_date > as_of else "current_or_immediate_unless_repealed"
+    elif ingest_status == "applied":
+        # Baseline decisions were manually verified before this automation existed.
+        current_state = "current_or_immediate_unless_repealed"
+        effective_source = "baseline_manual_verification"
+    else:
+        current_state = "needs_effective_date_review"
+
+    if not meta.get("field") and ingest_status != "applied":
+        current_state = "needs_field_review"
+
+    rows: list[dict] = []
     status = "published"
     level = ""
+    start_page = 2 if len(reader.pages) > 2 else 0
     for page_index, page in enumerate(reader.pages):
-        if page_index < 2:
+        if page_index < start_page:
             continue
         text = page.extract_text() or ""
-        lines = [re.sub(r"\s+", " ", x).strip() for x in text.splitlines()]
+        lines = [re.sub(r"\s+", " ", item).strip() for item in text.splitlines()]
         for i, line in enumerate(lines):
             if not line:
                 continue
@@ -181,97 +211,118 @@ def extract_decision(decision_no: str, meta: dict) -> dict:
             level = level_hint(line, level)
             for match in CODE_RE.finditer(line):
                 code = match.group(0)
-                name = extract_name(lines, i, code)
-                commune = context_is_commune(lines, i, level)
-                rows.append({
-                    "code": code,
-                    "name": name,
-                    "sectionStatus": status,
-                    "levelHint": level,
-                    "communeReceptionEvidence": commune,
-                    "page": page_index + 1,
-                    "context": " ".join(lines[max(0, i - 3) : min(len(lines), i + 18)])[:1800],
-                })
+                rows.append(
+                    {
+                        "code": code,
+                        "name": extract_name(lines, i, code),
+                        "sectionStatus": status,
+                        "levelHint": level,
+                        "communeReceptionEvidence": context_is_commune(lines, i, level),
+                        "page": page_index + 1,
+                        "context": " ".join(lines[max(0, i - 3) : min(len(lines), i + 18)])[:1800],
+                    }
+                )
 
-    # Merge repeated occurrences of the same code, preferring a named row with
-    # direct commune evidence and the most explicit section status.
-    priority = {"repealed": 5, "replaced_or_replacement": 4, "modified": 3, "new": 2, "published": 1}
-    merged = {}
-    for row in rows:
-        code = row["code"]
-        prev = merged.get(code)
-        if not prev:
-            merged[code] = row
-            continue
-        if priority.get(row["sectionStatus"], 0) > priority.get(prev["sectionStatus"], 0):
-            prev["sectionStatus"] = row["sectionStatus"]
-        prev["communeReceptionEvidence"] = bool(prev["communeReceptionEvidence"] or row["communeReceptionEvidence"])
-        if len(row.get("name") or "") > len(prev.get("name") or "") and len(row.get("name") or "") <= 240:
-            prev["name"] = row["name"]
-        prev["context"] = (prev.get("context", "") + " | " + row.get("context", ""))[:2400]
-
-    effective = meta.get("effectiveDate")
-    if effective and effective > AS_OF:
-        current_state = "future_effective"
-    else:
-        current_state = "current_or_immediate_unless_repealed"
-
+    merged = merge_rows(rows)
     return {
-        "decisionNo": decision_no,
-        "decisionDate": meta["decisionDate"],
-        "publishedDate": meta["publishedDate"],
-        "effectiveDate": effective,
+        "decisionNo": meta.get("decisionNo"),
+        "decisionDate": decision_date,
+        "publishedDate": meta.get("publishedDate") or "",
+        "effectiveDate": effective_date,
+        "effectiveDateSource": effective_source,
         "currentStateAtAsOf": current_state,
-        "field": meta["field"],
-        "articleUrl": meta["articleUrl"],
-        "pdfUrl": meta["pdfUrl"],
+        "classification": meta.get("classification"),
+        "ingestStatus": ingest_status,
+        "field": meta.get("field") or "",
+        "title": meta.get("title") or "",
+        "articleUrl": meta.get("articleUrl"),
+        "pdfUrl": meta.get("pdfUrl"),
+        "filePath": file_path,
         "pdfSha256": sha256(path),
         "pageCount": len(reader.pages),
-        "rows": sorted(merged.values(), key=lambda x: x["code"]),
+        "rows": sorted(merged.values(), key=lambda item: item["code"]),
     }
 
 
+def semantic_payload(payload: dict) -> dict:
+    clone = json.loads(json.dumps(payload, ensure_ascii=False))
+    clone.pop("asOf", None)
+    return clone
+
+
+def write_if_semantically_changed(payload: dict) -> bool:
+    rendered = json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
+    if OUTPUT.exists():
+        old = load_json(OUTPUT)
+        if semantic_payload(old) == semantic_payload(payload):
+            return False
+    OUTPUT.write_text(rendered, encoding="utf-8")
+    return True
+
+
 def main() -> int:
-    decisions = [extract_decision(no, meta) for no, meta in DECISIONS.items()]
-    all_rows = []
-    for d in decisions:
-        for row in d["rows"]:
-            all_rows.append({
-                "decisionNo": d["decisionNo"],
-                "decisionDate": d["decisionDate"],
-                "publishedDate": d["publishedDate"],
-                "effectiveDate": d["effectiveDate"],
-                "currentStateAtAsOf": d["currentStateAtAsOf"],
-                "field": d["field"],
-                "articleUrl": d["articleUrl"],
-                "pdfUrl": d["pdfUrl"],
-                "pdfSha256": d["pdfSha256"],
-                **row,
-            })
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--as-of", default=date.today().isoformat())
+    args = parser.parse_args()
+
+    manifest = load_json(MANIFEST)
+    public_meta = [
+        item
+        for item in manifest.get("decisions", [])
+        if item.get("classification") == "public_tthc" and item.get("filePath")
+    ]
+    decisions = [extract_decision(meta, args.as_of) for meta in public_meta]
+
+    all_rows: list[dict] = []
+    for decision in decisions:
+        for row in decision["rows"]:
+            all_rows.append(
+                {
+                    "decisionNo": decision["decisionNo"],
+                    "decisionDate": decision["decisionDate"],
+                    "publishedDate": decision["publishedDate"],
+                    "effectiveDate": decision["effectiveDate"],
+                    "effectiveDateSource": decision["effectiveDateSource"],
+                    "currentStateAtAsOf": decision["currentStateAtAsOf"],
+                    "classification": decision["classification"],
+                    "ingestStatus": decision["ingestStatus"],
+                    "field": decision["field"],
+                    "articleUrl": decision["articleUrl"],
+                    "pdfUrl": decision["pdfUrl"],
+                    "pdfSha256": decision["pdfSha256"],
+                    **row,
+                }
+            )
 
     payload = {
         "format": "haiphong-city-tthc-updates",
-        "version": 1,
-        "asOf": AS_OF,
+        "version": 2,
+        "asOf": args.as_of,
         "scope": (
-            "Public TTHC decisions newly published on Hai Phong commune portal after "
-            "the Vinh Bao source snapshot practical cut-off 2026-08-31. Internal "
-            "procedures/process-only decisions 3507 and 3521 are intentionally excluded."
+            "Public TTHC decisions in the official decision manifest. "
+            "Internal/process-only decisions are retained in the manifest/source index but excluded here."
         ),
         "decisions": decisions,
         "rows": all_rows,
         "summary": {
             "decisions": len(decisions),
-            "uniqueCodes": len({x["code"] for x in all_rows}),
-            "communeReceptionCodes": len({x["code"] for x in all_rows if x["communeReceptionEvidence"]}),
-            "repealedCodes": len({x["code"] for x in all_rows if x["sectionStatus"] == "repealed"}),
-            "futureEffectiveCodes": len({x["code"] for x in all_rows if x["currentStateAtAsOf"] == "future_effective"}),
+            "uniqueCodes": len({item["code"] for item in all_rows}),
+            "communeReceptionCodes": len(
+                {item["code"] for item in all_rows if item["communeReceptionEvidence"]}
+            ),
+            "repealedCodes": len(
+                {item["code"] for item in all_rows if item["sectionStatus"] == "repealed"}
+            ),
+            "futureEffectiveCodes": len(
+                {item["code"] for item in all_rows if item["currentStateAtAsOf"] == "future_effective"}
+            ),
+            "needsReviewDecisions": sum(
+                1 for item in decisions if str(item["currentStateAtAsOf"]).startswith("needs_")
+            ),
         },
     }
-    OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps(payload["summary"], ensure_ascii=False, indent=2))
-    for d in decisions:
-        print(d["decisionNo"], len(d["rows"]), "codes")
+    changed = write_if_semantically_changed(payload)
+    print(json.dumps({**payload["summary"], "outputChanged": changed, "asOf": args.as_of}, ensure_ascii=False, indent=2))
     return 0
 
 

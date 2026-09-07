@@ -22,6 +22,7 @@ python -m http.server 8080
 - `js/data.js`: dữ liệu legacy để đối chiếu/bổ sung metadata; không còn là danh mục hiện hành chính.
 - `data/master-data-audit.csv`: toàn bộ mã đã audit và URL nguồn.
 - `data/master-data-excluded.json`: mã bãi bỏ hoặc chưa đến ngày hiệu lực.
+- `data/BAO_CAO_MASTER_DATA_HIEN_HANH.md`: báo cáo Master Data được pipeline tái tạo theo snapshot đang áp dụng.
 - `data/source-audit/`: snapshot nguồn, bằng chứng và PDF quyết định chính thức.
 
 ## Nguồn kiểm chứng đến 07/09/2026
@@ -29,6 +30,42 @@ python -m http.server 8080
 Master Data kết hợp snapshot công bố TTHC trên cổng xã Vĩnh Bảo với các quyết định mới của UBND thành phố Hải Phòng: `3500/QĐ-UBND`, `3501/QĐ-UBND`, `3508/QĐ-UBND`, `3509/QĐ-UBND`, `3517/QĐ-UBND`, `3523/QĐ-UBND`.
 
 `3501/QĐ-UBND` có hiệu lực từ **01/03/2027**, nên 02 mã tương ứng được giữ ở nhóm tương lai và chưa hiển thị như TTHC hiện hành ngày 07/09/2026. Các quyết định/quy trình nội bộ không phải TTHC công khai cho người dân không được đưa vào Master Data public.
+
+## Tự động cập nhật nguồn chính thức
+
+Pipeline tự động được tổ chức theo chuỗi:
+
+`official-source-config → source-index → decision-manifest → PDF/hash → city-updates-current → Master Data → delta → CI`
+
+Các file/chương trình chính:
+
+- `data/source-audit/official-source-config.json`: danh sách nguồn chính thức được phép quét.
+- `data/source-audit/official-source-index.json`: chỉ mục URL bài/quyết định đã quan sát; ngăn quét lại lịch sử như dữ liệu mới.
+- `data/source-audit/official-decision-manifest.json`: manifest quyết định, phân biệt `public_tthc` và `internal_process`.
+- `scripts/update_official_sources.py`: phát hiện bài mới, trích metadata, tải PDF chính thức và lưu SHA-256.
+- `scripts/extract_city_updates.py`: đọc PDF từ manifest, xác định mã TTHC, trạng thái mục, tiếp nhận cấp xã và điều khoản hiệu lực.
+- `scripts/build_master_data.py`: hợp nhất với snapshot Vĩnh Bảo, áp dụng nguyên tắc quyết định mới hơn và sinh Master Data.
+- `scripts/build_master_delta.py`: so sánh trước/sau khi có thay đổi.
+- `.github/workflows/official-data-update.yml`: chạy **07:30 hằng ngày giờ Việt Nam** và có `workflow_dispatch` để chạy thủ công.
+
+Quy tắc tự động:
+
+1. Lần đầu chỉ ghi nhận baseline URL, không nhập lại quyết định lịch sử.
+2. Quyết định nội bộ được lưu dấu vết nhưng không đưa vào Master Data public.
+3. Quyết định công khai mới chỉ được tải/đưa vào extractor khi có PDF chính thức.
+4. Quyết định tự phát hiện nhưng chưa xác định được điều khoản hiệu lực hoặc lĩnh vực bị đánh dấu `needs_*`; builder không được phép áp dụng vào tập public và CI sẽ chặn merge.
+5. Khi phát hiện thay đổi, GitHub Actions tự tạo **Issue → branch `auto/official-tthc-update` → Pull Request**; workflow **không tự merge**.
+6. Nếu PR tự động cũ còn mở, lần chạy sau không tạo PR trùng.
+
+Chạy kiểm tra nguồn thủ công tại máy phát triển:
+
+```bash
+python -m pip install pypdf==6.17.0
+python scripts/update_official_sources.py --online
+python scripts/extract_city_updates.py --as-of 2026-09-07
+python scripts/build_master_data.py
+python scripts/check_static_site.py
+```
 
 ## formalityId — Cổng Dịch vụ công Quốc gia
 

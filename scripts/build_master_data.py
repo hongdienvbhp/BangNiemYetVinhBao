@@ -24,17 +24,31 @@ CANDIDATES = ROOT / "data/source-audit/web010-vinhbao-commune-code-candidates-20
 ATTACHMENTS = ROOT / "data/source-audit/vinhbao-tthc-attachment-evidence-20260906.json"
 DVC_MAPPING = ROOT / "data/source-audit/dvcqg-mapping-candidates-20260907.json"
 VERIFIED_DVC_CSV = ROOT / "data/formalityId-mapping-mau.csv"
-CITY_UPDATES = ROOT / "data/source-audit/city-updates-20260907.json"
+CITY_UPDATES = ROOT / "data/source-audit/city-updates-current.json"
 LEGACY_JS = ROOT / "js/data.js"
 MASTER_JSON = ROOT / "data/thu-tuc.json"
 FALLBACK_JS = ROOT / "js/master-data-fallback.js"
 AUDIT_CSV = ROOT / "data/master-data-audit.csv"
 EXCLUDED_JSON = ROOT / "data/master-data-excluded.json"
-REPORT_MD = ROOT / "data/BAO_CAO_MASTER_DATA_2026-09-07.md"
+REPORT_MD = ROOT / "data/BAO_CAO_MASTER_DATA_HIEN_HANH.md"
 
 BASE_SOURCE_SNAPSHOT_DATE = "2026-09-06"
-SOURCE_SNAPSHOT_DATE = "2026-09-07"
-BUILD_DATE = "2026-09-07"
+
+
+def _source_snapshot_date() -> str:
+    if CITY_UPDATES.exists():
+        try:
+            payload = json.loads(CITY_UPDATES.read_text(encoding="utf-8-sig"))
+            value = str(payload.get("asOf") or "").strip()
+            if re.fullmatch(r"\d{4}-\d{2}-\d{2}", value):
+                return value
+        except (OSError, json.JSONDecodeError):
+            pass
+    return "2026-09-07"
+
+
+SOURCE_SNAPSHOT_DATE = _source_snapshot_date()
+BUILD_DATE = SOURCE_SNAPSHOT_DATE
 OFFICIAL_SOURCE = "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh"
 CITY_OFFICIAL_SOURCE = "https://haiphong.gov.vn/thu-tuc-hanh-chinh-76761"
 
@@ -454,12 +468,12 @@ def make_city_record(row: dict, legacy_row: dict | None, dvc: dict | None) -> di
 
 def apply_city_updates(public_rows: list[dict], excluded: list[dict], audit_rows: list[dict], legacy: dict[str, dict], dvc_map: dict[str, list[dict]]) -> dict:
     if not CITY_UPDATES.exists():
-        return {"audited": 0, "current": 0, "new": 0, "updated": 0, "repealed": 0, "future": 0}
+        return {"audited": 0, "current": 0, "new": 0, "updated": 0, "repealed": 0, "future": 0, "needsReview": 0}
     payload = load_json(CITY_UPDATES)
     by_code = {normalize_code(x.get("ma", "")): x for x in public_rows}
     excluded_map = {normalize_code(x.get("ma", "")): x for x in excluded}
     audit_map = {normalize_code(x.get("ma", "")): x for x in audit_rows}
-    stats = {"audited": 0, "current": 0, "new": 0, "updated": 0, "repealed": 0, "future": 0}
+    stats = {"audited": 0, "current": 0, "new": 0, "updated": 0, "repealed": 0, "future": 0, "needsReview": 0}
     city_codes = set()
 
     for item in sorted(payload.get("rows", []), key=lambda x: (x.get("decisionDate") or "", x.get("decisionNo") or "", x.get("code") or "")):
@@ -471,9 +485,19 @@ def apply_city_updates(public_rows: list[dict], excluded: list[dict], audit_rows
         dvc = choose_dvc_mapping(dvc_map.get(code, []))
         decision_no = item.get("decisionNo") or ""
         source_date = item.get("decisionDate") or item.get("publishedDate") or ""
-        is_future = item.get("currentStateAtAsOf") == "future_effective"
-        is_repealed = item.get("sectionStatus") == "repealed" and not is_future
-        is_current = bool(item.get("communeReceptionEvidence")) and not is_future and not is_repealed
+        current_state = str(item.get("currentStateAtAsOf") or "")
+        needs_review = current_state.startswith("needs_")
+        is_future = current_state == "future_effective"
+        is_repealed = item.get("sectionStatus") == "repealed" and not is_future and not needs_review
+        is_current = (
+            bool(item.get("communeReceptionEvidence"))
+            and current_state == "current_or_immediate_unless_repealed"
+            and not is_repealed
+        )
+
+        if needs_review:
+            stats["needsReview"] += 1
+            continue
 
         if is_future:
             stats["future"] += 1
@@ -706,6 +730,7 @@ def main() -> int:
         "cityCurrentProcedures": city_stats["current"],
         "cityNewProcedures": city_stats["new"],
         "cityUpdatedProcedures": city_stats["updated"],
+        "cityNeedsReviewRows": city_stats["needsReview"],
         "publishedProcedures": len(public_rows),
         "excludedProcedures": len(excluded),
         "repealedProcedures": sum(1 for x in audit_rows if "repealed" in str(x.get("status", ""))),

@@ -1,0 +1,287 @@
+{
+  "format": "official-tthc-source-index",
+  "version": 1,
+  "baselineDate": "2026-09-07",
+  "articles": [
+    {
+      "sourceId": "vinhbao-official-tthc",
+      "sourceUrl": "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh",
+      "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-giam-ngheo/quyet-dinh-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-bi-bai-bo-linh-vuc-giam-ngheo-thuoc--949038",
+      "decisionNo": "",
+      "decisionDate": "",
+      "title": "Quyết định công bố danh mục thủ tục hành chính mới ban hành, bị bãi bỏ lĩnh vực giảm nghèo thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường",
+      "classification": "baseline_only",
+      "status": "baseline_only"
+    },
+    {
+      "sourceId": "vinhbao-official-tthc",
+      "sourceUrl": "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh",
+      "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-nong-nghiep-va-moi-truong/quyet-dinh-cong-bo-danh-muc-thu-tuc-hanh-chinh-bi-bai-bo-linh-vuc-nong-nghiep-thuoc-pham-vi-chuc-951511",
+      "decisionNo": "",
+      "decisionDate": "",
+      "title": "Quyết định công bố danh mục thủ tục hành chính bị bãi bỏ lĩnh vực nông nghiệp thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+      "classification": "baseline_only",
+      "status": "baseline_only"
+    },
+    {
+      "sourceId": "vinhbao-official-tthc",
+      "sourceUrl": "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh",
+      "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-phat-thanh-truyen-hinh-va-thong-tin-dien-tu/quyet-dinh-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-phat-t-951284",
+      "decisionNo": "",
+      "decisionDate": "",
+      "title": "Quyết định công bố danh mục thủ tục hành chính mới ban hành, được sửa đổi, bổ sung lĩnh vực phát thanh truyền hình và thông tin điện tử thuộc phạm vi quản lý của Sở Văn hoá, Thể thao và Du lịch",
+      "classification": "baseline_only",
+      "status": "baseline_only"
+    },
+    {
+      "sourceId": "vinhbao-official-tthc",
+      "sourceUrl": "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh",
+      "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tai-chinh-ke-hoach/quyet-dinh-cong-bo-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-thuoc-pham-vi-chuc-nang-qua-947762",
+      "decisionNo": "",
+      "decisionDate": "",
+      "title": "Quyết định công bố thủ tục hành chính được sửa đổi, bổ sung, bị bãi bỏ thuộc phạm vi chức năng quản lý của Sở Tài chính",
+      "classification": "baseline_only",
+      "status": "baseline_only"
+    },
+    {
+      "sourceId": "vinhbao-official-tthc",
+      "sourceUrl": "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh",
+      "articleUrl": "https://vinhbao.haiphong.gov.vn/nha-o-va-cong-so/quyet-dinh-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-trong-linh-vuc-nha-o-thuoc-p-947703",
+      "decisionNo": "",
+      "decisionDate": "",
+      "title": "Quyết định công bố danh mục thủ tục hành chính được sửa đổi, bổ sung trong lĩnh vực nhà ở thuộc phạm vi chức năng quản lý của Sở Xây dựng",
+      "classification": "baseline_only",
+      "status": "baseline_only"
+    },
+    {
+      "sourceId": "vinhbao-official-tthc",
+      "sourceUrl": "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh",
+      "articleUrl": "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh-noi-bo/quyet-dinh-cong-bo-thu-tuc-hanh-chinh-noi-bo-giua-cac-co-quan-hanh-chinh-nha-nuoc-linh-vuc-dat-d-951527",
+      "decisionNo": "",
+      "decisionDate": "",
+      "title": "Quyết định công bố thủ tục hành chính nội bộ giữa các cơ quan hành chính nhà nước lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+      "classification": "baseline_only",
+      "status": "baseline_only"
+    },
+    {
+      "sourceId": "vinhbao-official-tthc",
+      "sourceUrl": "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh",
+      "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+      "decisionNo": "3433/QĐ-UBND",
+      "decisionDate": "",
+      "title": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+      "classification": "baseline_only",
+      "status": "baseline_only"
+    },
+    {
+      "sourceId": "vinhbao-official-tthc",
+      "sourceUrl": "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh",
+      "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-thuy-san/quyet-dinh-so-3453-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-b-955989",
+      "decisionNo": "3453/QĐ-UBND",
+      "decisionDate": "",
+      "title": "Quyết định số 3453/QĐ-UBND của UBND thành phố công bố danh mục thủ tục hành chính được sửa đổi, bổ sung, lĩnh vực thủy sản và kiểm ngư thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường",
+      "classification": "baseline_only",
+      "status": "baseline_only"
+    },
+    {
+      "sourceId": "vinhbao-official-tthc",
+      "sourceUrl": "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh",
+      "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/quyet-dinh-so-3500-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-danh-muc-thu-tuc-hanh-chinh-ban-hanh-moi-d-957960",
+      "decisionNo": "3500/QĐ-UBND",
+      "decisionDate": "",
+      "title": "Quyết định số 3500/QĐ-UBND của UBND thành phố: công bố danh mục thủ tục hành chính ban hành mới, được sửa đổi, bổ sung và bị bãi bỏ lĩnh vực an toàn, vệ sinh lao động và lĩnh vực công chức thuộc phạm vi, chức năng quản lý của Sở Nội vụ",
+      "classification": "public_tthc",
+      "status": "applied"
+    },
+    {
+      "sourceId": "vinhbao-official-tthc",
+      "sourceUrl": "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh",
+      "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-y-te/quyet-dinh-so-3501-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-b-957957",
+      "decisionNo": "3501/QĐ-UBND",
+      "decisionDate": "",
+      "title": "Quyết định số 3501/QĐ-UBND của UBND thành phố: công bố Danh mục thủ tục hành chính được sửa đổi, bổ...",
+      "classification": "public_tthc",
+      "status": "applied"
+    },
+    {
+      "sourceId": "vinhbao-official-tthc",
+      "sourceUrl": "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh",
+      "articleUrl": "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh-noi-bo/quyet-dinh-so-3507-qd-ubnd-cua-ubnd-thanh-pho-ve-viec-phe-duyet-quy-trinh-noi-bo-giai-quyet-thu--958215",
+      "decisionNo": "3507/QĐ-UBND",
+      "decisionDate": "",
+      "title": "Quyết định số 3507/QĐ-UBND của UBND thành phố: Về việc phê duyệt quy trình nội bộ giải quyết thủ...",
+      "classification": "internal_process",
+      "status": "excluded_internal"
+    },
+    {
+      "sourceId": "vinhbao-official-tthc",
+      "sourceUrl": "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh",
+      "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213",
+      "decisionNo": "3508/QĐ-UBND",
+      "decisionDate": "",
+      "title": "Quyết định số 3508/QĐ-UBND: công bố danh mục thủ tục hành chính được sửa đổi, bổ sung, bị bãi bỏ...",
+      "classification": "public_tthc",
+      "status": "applied"
+    },
+    {
+      "sourceId": "haiphong-public-tthc-listing",
+      "sourceUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3204-qd-ubnd-ngay-11-8-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-947709",
+      "decisionNo": "3204/QĐ-UBND",
+      "decisionDate": "2026-08-11",
+      "title": "Công khai Quyết định số: 3204/QĐ-UBND ngày 11/8/2026 của UBND thành phố Hải Phòng về việc công bố thủ tục hành chính được sửa đổi, bổ sung, bị bãi bỏ thuộc phạm vi chức năng quản lý của Sở Tài chính",
+      "classification": "baseline_only",
+      "status": "baseline_only"
+    },
+    {
+      "sourceId": "haiphong-public-tthc-listing",
+      "sourceUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3249-qd-ubnd-ngay-14-8-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-950442",
+      "decisionNo": "3249/QĐ-UBND",
+      "decisionDate": "2026-08-14",
+      "title": "Công khai Quyết định số: 3249/QĐ-UBND ngày 14/8/2026 của UBND thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính mới ban hành, bị bãi bỏ lĩnh vực giảm nghèo thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường",
+      "classification": "baseline_only",
+      "status": "baseline_only"
+    },
+    {
+      "sourceId": "haiphong-public-tthc-listing",
+      "sourceUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3303-qd-ubnd-ngay-19-8-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-951271",
+      "decisionNo": "3303/QĐ-UBND",
+      "decisionDate": "2026-08-19",
+      "title": "Công khai Quyết định số: 3303/QĐ-UBND ngày 19/8/2026 của UBND thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính mới ban hành, được sửa đổi, bổ sung lĩnh vực phát thanh truyền hình và thông tin điện tử thuộc phạm vi quản lý của Sở Văn hoá, Thể thao và Du lịch",
+      "classification": "baseline_only",
+      "status": "baseline_only"
+    },
+    {
+      "sourceId": "haiphong-public-tthc-listing",
+      "sourceUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3309-qd-ubnd-ngay-19-8-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-951758",
+      "decisionNo": "3309/QĐ-UBND",
+      "decisionDate": "2026-08-19",
+      "title": "Công khai Quyết định số: 3309/QĐ-UBND ngày 19/8/2026 của UBND thành phố Hải Phòng về việc công bố thủ tục hành chính nội bộ giữa các cơ quan hành chính nhà nước lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+      "classification": "baseline_only",
+      "status": "baseline_only"
+    },
+    {
+      "sourceId": "haiphong-public-tthc-listing",
+      "sourceUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3316-qd-ubnd-ngay-19-8-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-951760",
+      "decisionNo": "3316/QĐ-UBND",
+      "decisionDate": "2026-08-19",
+      "title": "Công khai Quyết định số: 3316/QĐ-UBND ngày 19/8/2026 của UBND thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính bị bãi bỏ lĩnh vực nông nghiệp thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+      "classification": "baseline_only",
+      "status": "baseline_only"
+    },
+    {
+      "sourceId": "haiphong-public-tthc-listing",
+      "sourceUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3433-qd-ubnd-ngay-25-8-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-955980",
+      "decisionNo": "3433/QĐ-UBND",
+      "decisionDate": "2026-08-25",
+      "title": "Công khai Quyết định số: 3433/QĐ-UBND ngày 25/8/2026 của UBND thành phố Hải Phòng về việc công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+      "classification": "baseline_only",
+      "status": "baseline_only"
+    },
+    {
+      "sourceId": "haiphong-public-tthc-listing",
+      "sourceUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3453-qd-ubnd-ngay-26-8-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-955984",
+      "decisionNo": "3453/QĐ-UBND",
+      "decisionDate": "2026-08-26",
+      "title": "Công khai Quyết định số: 3453/QĐ-UBND ngày 26/8/2026 của UBND thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung, lĩnh vực thủy sản và kiểm ngư thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường",
+      "classification": "baseline_only",
+      "status": "baseline_only"
+    },
+    {
+      "sourceId": "vinhbao-official-tthc",
+      "sourceUrl": "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh",
+      "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dan-so-ba-me-tre-em/quyet-dinh-so-2778-qd-byt-ngay-28-8-2026-cua-bo-y-te-ve-viec-phe-duyet-phuong-an-tai-cau-truc-ca-957967",
+      "decisionNo": "",
+      "decisionDate": "2026-08-28",
+      "title": "Quyết định số 2778/QĐ-BYT ngày 28/8/2026 của Bộ Y tế: Về việc phê duyệt phương án tái cấu trúc các thủ tục hành chính lĩnh vực trẻ em và lĩnh vực Dân số, Bà mẹ - Trẻ em thuộc phạm vi quản lý của Bộ Y tế",
+      "classification": "baseline_only",
+      "status": "baseline_only"
+    },
+    {
+      "sourceId": "haiphong-public-tthc-listing",
+      "sourceUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3500-qd-ubnd-ngay-30-8-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958426",
+      "decisionNo": "3500/QĐ-UBND",
+      "decisionDate": "2026-08-30",
+      "title": "Công khai Quyết định số: 3500/QĐ-UBND ngày 30/8/2026 của UBND thành phố Hải Phòng Về việc công bố danh mục thủ tục hành chính ban hành mới, được sửa đổi, bổ sung và bị bãi bỏ lĩnh vực an toàn, vệ sinh lao động và lĩnh vực công chức thuộc phạm vi, chức năng quản lý của Sở Nội vụ",
+      "classification": "public_tthc",
+      "status": "applied"
+    },
+    {
+      "sourceId": "haiphong-public-tthc-listing",
+      "sourceUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3501-qd-ubnd-ngay-01-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958422",
+      "decisionNo": "3501/QĐ-UBND",
+      "decisionDate": "2026-09-01",
+      "title": "Công khai Quyết định số: 3501/QĐ-UBND ngày 01/9/2026 của UBND thành phố Hải Phòng Về việc công bố Danh mục thủ tục hành chính được sửa đổi, bổ sung lĩnh vực phòng bệnh thuộc phạm vi, chức năng quản lý của Sở Y tế",
+      "classification": "public_tthc",
+      "status": "applied"
+    },
+    {
+      "sourceId": "haiphong-public-tthc-listing",
+      "sourceUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3507-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-phe-duy-958466",
+      "decisionNo": "3507/QĐ-UBND",
+      "decisionDate": "2026-09-03",
+      "title": "Công khai Quyết định số: 3507/QĐ-UBND ngày 03/9/2026 của UBND thành phố Hải Phòng về việc phê duyệt quy trình nội bộ giải quyết thủ tục hành chính thuộc phạm vi, chức năng quản lý của Sở Khoa học và Công nghệ",
+      "classification": "internal_process",
+      "status": "excluded_internal"
+    },
+    {
+      "sourceId": "haiphong-public-tthc-listing",
+      "sourceUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3508-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958460",
+      "decisionNo": "3508/QĐ-UBND",
+      "decisionDate": "2026-09-03",
+      "title": "Công khai Quyết định số: 3508/QĐ-UBND ngày 03/9/2026 của UBND thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung, bị bãi bỏ trong lĩnh vực đường bộ thuộc phạm vi chức năng quản lý của Sở Xây dựng",
+      "classification": "public_tthc",
+      "status": "applied"
+    },
+    {
+      "sourceId": "haiphong-public-tthc-listing",
+      "sourceUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3509-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958459",
+      "decisionNo": "3509/QĐ-UBND",
+      "decisionDate": "2026-09-03",
+      "title": "Công khai Quyết định số: 3509/QĐ-UBND ngày 03/9/2026 của UBND thành phố Hải Phòng về việc công bố Danh mục thủ tục hành chính bị bãi bỏ lĩnh vực kiểm định chất lượng giáo dục; lĩnh vực giáo dục và đào tạo thuộc hệ thống giáo dục quốc dân thuộc phạm vi chức năng quản lý của Sở Giáo dục và Đào tạo",
+      "classification": "public_tthc",
+      "status": "applied"
+    },
+    {
+      "sourceId": "haiphong-public-tthc-listing",
+      "sourceUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3517-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-959309",
+      "decisionNo": "3517/QĐ-UBND",
+      "decisionDate": "2026-09-03",
+      "title": "Công khai Quyết định số: 3517/QĐ-UBND ngày 03/9/2026 của UBND thành phố Hải Phòng về việc công bố...",
+      "classification": "public_tthc",
+      "status": "applied"
+    },
+    {
+      "sourceId": "haiphong-public-tthc-listing",
+      "sourceUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3521-qd-ubnd-ngay-04-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-959289",
+      "decisionNo": "3521/QĐ-UBND",
+      "decisionDate": "2026-09-04",
+      "title": "Công khai Quyết định số: 3521/QĐ-UBND ngày 04/9/2026 của UBND thành phố Hải Phòng về việc công bố...",
+      "classification": "internal_process",
+      "status": "excluded_internal"
+    },
+    {
+      "sourceId": "haiphong-public-tthc-listing",
+      "sourceUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3523-qd-ubnd-ngay-04-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-959292",
+      "decisionNo": "3523/QĐ-UBND",
+      "decisionDate": "2026-09-04",
+      "title": "Công khai Quyết định số: 3523/QĐ-UBND ngày 04/9/2026 của UBND thành phố Hải Phòng về việc công bố...",
+      "classification": "public_tthc",
+      "status": "applied"
+    }
+  ]
+}
