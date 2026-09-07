@@ -20,7 +20,7 @@ window.TTHC_CONFIG = {
   remoteCsvUrl: "",
 
   /** URL JSON (mảng thủ tục hoặc object { thuTuc: [...] }). Chỉ bật khi file Master Data đã được tạo và kiểm duyệt. */
-  remoteJsonUrl: "",
+  remoteJsonUrl: "data/thu-tuc.json",
 
   /** Số giờ giữ cache localStorage trước khi tải lại nguồn remote */
   refreshHours: 12,
@@ -29,5 +29,5 @@ window.TTHC_CONFIG = {
   autoSyncOnLoad: true,
 
   /** Khóa cache (đổi version khi schema dữ liệu đổi) */
-  cacheKey: "tthc_vinhbao_v2"
+  cacheKey: "tthc_vinhbao_v3"
 };

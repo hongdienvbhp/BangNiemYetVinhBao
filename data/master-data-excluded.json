@@ -1,0 +1,636 @@
+{
+  "format": "bangniemyet-vinhbao-master-data-excluded",
+  "version": 1,
+  "sourceSnapshotDate": "2026-09-07",
+  "rows": [
+    {
+      "ma": "1.003596",
+      "ten": "Phê duyệt k ế hoạch khuyến nông địa phương (cấp xã) Nghị định số 268/2026/NĐ-CP",
+      "linhVuc": "NÔNG NGHIỆP",
+      "cap": "Xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "1646/QĐ-UBND; 3259/QĐ-BNNMT",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_official_evidence",
+      "nameSource": "official_attachment_snippet",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-08-20",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-nong-nghiep-va-moi-truong/quyet-dinh-cong-bo-danh-muc-thu-tuc-hanh-chinh-bi-bai-bo-linh-vuc-nong-nghiep-thuoc-pham-vi-chuc-951511",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/quyet-dinh-2026-cong-bo-dmtthc-bi-bai-bo-linh-vuc-nn-so-nnmt-ttr778-..signed639228154734203566.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-nong-nghiep-va-moi-truong/quyet-dinh-cong-bo-danh-muc-thu-tuc-hanh-chinh-bi-bai-bo-linh-vuc-nong-nghiep-thuoc-pham-vi-chuc-951511",
+          "articleTitle": "Quyết định công bố danh mục thủ tục hành chính bị bãi bỏ lĩnh vực nông nghiệp thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "publishedDate": "2026-08-20",
+          "classification": "public_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/quyet-dinh-2026-cong-bo-dmtthc-bi-bai-bo-linh-vuc-nn-so-nnmt-ttr778-..signed639228154734203566.pdf",
+          "attachmentSha256": "17d69e758bd6824a37603b871ac9133096bc097154ccdd3365b04d3fcd6d1341",
+          "decisionNumbers": [
+            "1646/QĐ-UBND",
+            "3259/QĐ-BNNMT"
+          ],
+          "repealContext": true
+        }
+      ],
+      "exclusionReason": "Bị bãi bỏ theo bằng chứng chính thức mới nhất trong snapshot"
+    },
+    {
+      "ma": "1.014311",
+      "ten": "Thủ tục cấp thẻ bảo hiểm y tế đối với Nghệ nhân nhân dân, Nghệ nhân ưu tú",
+      "linhVuc": "VĂN HÓA",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "04 tháng",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "1263/QĐ-SVHTTDL; 2025/QĐ-UBND; 3817/QĐ-UBND; 680/QĐ-CT; 3101/QĐ-BVHTTDL; 3257/QĐ-BVHTTDL",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_official_evidence",
+      "nameSource": "official_attachment_snippet",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2025-09-23",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-van-hoa/noi-dung-02-thu-tuc-hanh-chinh-moi-ban-hanh-trong-linh-vuc-di-san-van-hoa-thuoc-tham-quyen-giai--785067",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/9/1263-ngay-20.9-qd-bh-qtnb-tthc-moi-ban-hanh-linh-vuc-dsvh-cap-xa.signed638942443461051919.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-van-hoa/noi-dung-02-thu-tuc-hanh-chinh-moi-ban-hanh-trong-linh-vuc-di-san-van-hoa-thuoc-tham-quyen-giai--785067",
+          "articleTitle": "Nội dung 02 thủ tục hành chính mới ban hành trong lĩnh vực di sản văn hóa thuộc thẩm quyền giải quyết cấp xã; 01 thủ tục hành chính bị bãi bỏ trong lĩnh vực di sản văn hóa thuộc thẩm quyền giải quyết cấp xã",
+          "publishedDate": "2025-09-23",
+          "classification": "public_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/9/1263-ngay-20.9-qd-bh-qtnb-tthc-moi-ban-hanh-linh-vuc-dsvh-cap-xa.signed638942443461051919.pdf",
+          "attachmentSha256": "53335424e08681eb1ac728f11e0c5dae9247618b5cc5e949f220473f57902ecd",
+          "decisionNumbers": [
+            "1263/QĐ-SVHTTDL",
+            "2025/QĐ-UBND",
+            "3817/QĐ-UBND",
+            "680/QĐ-CT"
+          ],
+          "repealContext": false
+        },
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-van-hoa/noi-dung-02-thu-tuc-hanh-chinh-moi-ban-hanh-trong-linh-vuc-di-san-van-hoa-thuoc-tham-quyen-giai--785067",
+          "articleTitle": "Nội dung 02 thủ tục hành chính mới ban hành trong lĩnh vực di sản văn hóa thuộc thẩm quyền giải quyết cấp xã; 01 thủ tục hành chính bị bãi bỏ trong lĩnh vực di sản văn hóa thuộc thẩm quyền giải quyết cấp xã",
+          "publishedDate": "2025-09-23",
+          "classification": "public_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/9/3817-ngay-20.9-qdcong-bo-dmtthc-theo-qd-3101-3257..signed638942443410426259.pdf",
+          "attachmentSha256": "7af07db24b0c473b8f7639251061187d8416be7145bbe863021aa2b6c52ee89c",
+          "decisionNumbers": [
+            "3101/QĐ-BVHTTDL",
+            "3257/QĐ-BVHTTDL"
+          ],
+          "repealContext": true
+        }
+      ],
+      "exclusionReason": "Bị bãi bỏ theo bằng chứng chính thức mới nhất trong snapshot"
+    },
+    {
+      "ma": "1.013337",
+      "ten": "Đăng ký công bố hợp quy đối với các sản phẩm, hàng hóa được quản lý bởi các quy chuẩn kỹ thuật quốc gia do Bộ Lao động - Thương binh và Xã hội ban hành - Nghị định số 22/2026/NĐ -CP ngày 16/01/2026 của Chính phủ; - Thông tư số 14/2026/TT -BKHCN ngày",
+      "linhVuc": "NỘI VỤ",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3500/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-08-30",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3500-qd-ubnd-ngay-30-8-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958426",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3500-nv639240495312924587.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3500-qd-ubnd-ngay-30-8-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958426",
+          "articleTitle": "Quyết định 3500/QĐ-UBND",
+          "publishedDate": "2026-09-03",
+          "effectiveDate": null,
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3500-nv639240495312924587.pdf",
+          "attachmentSha256": "25f70374fdb8dd7b03b2f5aee14cd74b5cb09daa2f08e3ed3779c748e6214421",
+          "decisionNumbers": [
+            "3500/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 3500/QĐ-UBND"
+    },
+    {
+      "ma": "1.013723",
+      "ten": "Thủ tục kiểm tra nhà nước về chất lượng hàng hóa hàng hóa nhóm 2 nhập khẩu Nghị định số 37/2026/NĐ -CP ngày 23/01/2026 của Chính phủ",
+      "linhVuc": "NỘI VỤ",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3500/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-08-30",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3500-qd-ubnd-ngay-30-8-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958426",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3500-nv639240495312924587.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3500-qd-ubnd-ngay-30-8-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958426",
+          "articleTitle": "Quyết định 3500/QĐ-UBND",
+          "publishedDate": "2026-09-03",
+          "effectiveDate": null,
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3500-nv639240495312924587.pdf",
+          "attachmentSha256": "25f70374fdb8dd7b03b2f5aee14cd74b5cb09daa2f08e3ed3779c748e6214421",
+          "decisionNumbers": [
+            "3500/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 3500/QĐ-UBND"
+    },
+    {
+      "ma": "1.014116",
+      "ten": "Thủ tục tiếp nhận vào công chức không giữ chức vụ lãnh đạo, quản lý",
+      "linhVuc": "NỘI VỤ",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "29 tháng",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3500/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_attachment_snippet",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-08-30",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3500-qd-ubnd-ngay-30-8-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958426",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3500-nv639240495312924587.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3500-qd-ubnd-ngay-30-8-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958426",
+          "articleTitle": "Quyết định 3500/QĐ-UBND",
+          "publishedDate": "2026-09-03",
+          "effectiveDate": null,
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3500-nv639240495312924587.pdf",
+          "attachmentSha256": "25f70374fdb8dd7b03b2f5aee14cd74b5cb09daa2f08e3ed3779c748e6214421",
+          "decisionNumbers": [
+            "3500/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "exclusionReason": "Bị bãi bỏ theo 3500/QĐ-UBND"
+    },
+    {
+      "ma": "1.013860",
+      "ten": "Cấp giấy chứng nhận bị phơi nhi ễm với HIV do tai nạn r ủi ro nghề nghiệp",
+      "linhVuc": "PHÒNG BỆNH",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3501/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "future_effective_official_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-01",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3501-qd-ubnd-ngay-01-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958422",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3501-yt639240494398182291.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3501-qd-ubnd-ngay-01-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958422",
+          "articleTitle": "Quyết định 3501/QĐ-UBND",
+          "publishedDate": "2026-09-03",
+          "effectiveDate": "2027-03-01",
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3501-yt639240494398182291.pdf",
+          "attachmentSha256": "b8ed93fa8f53bb1a902973651f5323a6f7ca0163e164f72ef89ce13b30f88d12",
+          "decisionNumbers": [
+            "3501/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "futureEffectiveDate": "2027-03-01",
+      "exclusionReason": "Đã công bố nhưng chưa có hiệu lực đến 2027-03-01"
+    },
+    {
+      "ma": "1.013864",
+      "ten": "Cấp giấy chứng nhận bị phơi nhi ễm với HIV do tai nạn r ủi ro nghề nghiệp",
+      "linhVuc": "PHÒNG BỆNH",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3501/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "future_effective_official_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-01",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3501-qd-ubnd-ngay-01-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958422",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3501-yt639240494398182291.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3501-qd-ubnd-ngay-01-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958422",
+          "articleTitle": "Quyết định 3501/QĐ-UBND",
+          "publishedDate": "2026-09-03",
+          "effectiveDate": "2027-03-01",
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3501-yt639240494398182291.pdf",
+          "attachmentSha256": "b8ed93fa8f53bb1a902973651f5323a6f7ca0163e164f72ef89ce13b30f88d12",
+          "decisionNumbers": [
+            "3501/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "futureEffectiveDate": "2027-03-01",
+      "exclusionReason": "Đã công bố nhưng chưa có hiệu lực đến 2027-03-01"
+    },
+    {
+      "ma": "2.001034",
+      "ten": "Cấp Giấy phép vận tải đường bộ quốc tế giữa Việt Nam và Trung Quốc loại A, B, C, E, F, G cho phương tiện của Việt Nam Nghị định số 218/2026/NĐ-CP ngày 19 tháng 6 năm 2026 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 158/2024/NĐ-CP ngày 18",
+      "linhVuc": "ĐƯỜNG BỘ",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3508/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-03",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3508-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958460",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3508-xd639240506704881699.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3508-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958460",
+          "articleTitle": "Quyết định 3508/QĐ-UBND",
+          "publishedDate": "2026-09-03",
+          "effectiveDate": null,
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3508-xd639240506704881699.pdf",
+          "attachmentSha256": "525444c6f7c5736bdb20bcd302536e4f5327eceeeae0a922588dd1cb6dad07a7",
+          "decisionNumbers": [
+            "3508/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 3508/QĐ-UBND"
+    },
+    {
+      "ma": "2.002287",
+      "ten": "Cấp lại Giấy phép kinh doanh vận tải bằng xe ô tô, bằng xe bốn bánh có gắn động cơ trường h ợp Giấy phép kinh doanh bị mất, bị hỏng Nghị định số 218/2026/NĐ-CP ngày 19 tháng 6 năm 2026 của Chính phủ sửa đổi, bổ sung một số",
+      "linhVuc": "ĐƯỜNG BỘ",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3508/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-03",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3508-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958460",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3508-xd639240506704881699.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3508-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958460",
+          "articleTitle": "Quyết định 3508/QĐ-UBND",
+          "publishedDate": "2026-09-03",
+          "effectiveDate": null,
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3508-xd639240506704881699.pdf",
+          "attachmentSha256": "525444c6f7c5736bdb20bcd302536e4f5327eceeeae0a922588dd1cb6dad07a7",
+          "decisionNumbers": [
+            "3508/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 3508/QĐ-UBND"
+    },
+    {
+      "ma": "1.000280",
+      "ten": "Công nhận trường tiểu học đạt Sở Giáo dục",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3509/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-03",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3509-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958459",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3509-gd639240505714779683.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3509-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958459",
+          "articleTitle": "Quyết định 3509/QĐ-UBND",
+          "publishedDate": "2026-09-03",
+          "effectiveDate": null,
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3509-gd639240505714779683.pdf",
+          "attachmentSha256": "67f6ee5365fd6d824b5f6a575d88e3e048f2571c07d8468d72c1ce4a923bde75",
+          "decisionNumbers": [
+            "3509/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 3509/QĐ-UBND"
+    },
+    {
+      "ma": "1.000288",
+      "ten": "Công nhận trường m ầm non đạt chuẩn Quốc gia Thông tư số 57/2026/TT-BGDĐT ngày 07/07/2026 của B ộ trưởng B ộ Giáo d ục và Đào tạo quy định về bảo đảm chất lượng giáo d ục đối Sở Giáo dục và Đào tạo",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3509/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-03",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3509-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958459",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3509-gd639240505714779683.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3509-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958459",
+          "articleTitle": "Quyết định 3509/QĐ-UBND",
+          "publishedDate": "2026-09-03",
+          "effectiveDate": null,
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3509-gd639240505714779683.pdf",
+          "attachmentSha256": "67f6ee5365fd6d824b5f6a575d88e3e048f2571c07d8468d72c1ce4a923bde75",
+          "decisionNumbers": [
+            "3509/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 3509/QĐ-UBND"
+    },
+    {
+      "ma": "1.000691",
+      "ten": "Công nhận trường trung học đạt chuẩn Quốc gia Sở Giáo dục và Đào tạo",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3509/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-03",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3509-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958459",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3509-gd639240505714779683.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3509-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958459",
+          "articleTitle": "Quyết định 3509/QĐ-UBND",
+          "publishedDate": "2026-09-03",
+          "effectiveDate": null,
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3509-gd639240505714779683.pdf",
+          "attachmentSha256": "67f6ee5365fd6d824b5f6a575d88e3e048f2571c07d8468d72c1ce4a923bde75",
+          "decisionNumbers": [
+            "3509/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 3509/QĐ-UBND"
+    },
+    {
+      "ma": "1.000711",
+      "ten": "Cấp Chứng nhận trường trung học đ ạt ki ểm định ch ất lư ợng giáo dục Sở Giáo dục và Đào tạo II LĨNH VỰC GIÁO DỤC VÀ ĐÀO TẠO THUỘC HỆ THỐNG GIÁO DỤC QUỐC DÂN",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3509/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-03",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3509-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958459",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3509-gd639240505714779683.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3509-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958459",
+          "articleTitle": "Quyết định 3509/QĐ-UBND",
+          "publishedDate": "2026-09-03",
+          "effectiveDate": null,
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3509-gd639240505714779683.pdf",
+          "attachmentSha256": "67f6ee5365fd6d824b5f6a575d88e3e048f2571c07d8468d72c1ce4a923bde75",
+          "decisionNumbers": [
+            "3509/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 3509/QĐ-UBND"
+    },
+    {
+      "ma": "1.000713",
+      "ten": "Cấp Ch ứng nhận trường tiểu học đ ạt ki ểm định ch ất lư ợng giáo dục Sở Giáo dục và Đào tạo",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3509/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-03",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3509-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958459",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3509-gd639240505714779683.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3509-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958459",
+          "articleTitle": "Quyết định 3509/QĐ-UBND",
+          "publishedDate": "2026-09-03",
+          "effectiveDate": null,
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3509-gd639240505714779683.pdf",
+          "attachmentSha256": "67f6ee5365fd6d824b5f6a575d88e3e048f2571c07d8468d72c1ce4a923bde75",
+          "decisionNumbers": [
+            "3509/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 3509/QĐ-UBND"
+    },
+    {
+      "ma": "1.000715",
+      "ten": "Cấp Chứng nhận trường mầm non đ ạt ki ểm định chất lượng giáo dục Thông tư số 57/2026/TT-BGDĐT ngà y 07/07/2026 của B ộ trưởng B ộ Giáo d ục và Đào tạo quy định về bảo đảm chất lượng giáo d ục đối với cơ sở giáo dục mầm non, cơ sở giáo dục phổ",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3509/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-03",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3509-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958459",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3509-gd639240505714779683.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3509-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958459",
+          "articleTitle": "Quyết định 3509/QĐ-UBND",
+          "publishedDate": "2026-09-03",
+          "effectiveDate": null,
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3509-gd639240505714779683.pdf",
+          "attachmentSha256": "67f6ee5365fd6d824b5f6a575d88e3e048f2571c07d8468d72c1ce4a923bde75",
+          "decisionNumbers": [
+            "3509/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 3509/QĐ-UBND"
+    }
+  ]
+}

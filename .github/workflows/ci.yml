@@ -33,6 +33,7 @@ jobs:
         run: |
           node --check js/config.js
           node --check js/data.js
+          node --check js/master-data-fallback.js
           node --check js/extra-data.js
           node --check js/app.js
           node --check sw.js

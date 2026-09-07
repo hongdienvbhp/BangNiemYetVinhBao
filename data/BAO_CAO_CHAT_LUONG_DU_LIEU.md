@@ -1,45 +1,63 @@
-# Báo cáo rà soát chất lượng dữ liệu TTHC — UBND xã Vĩnh Bảo
+﻿# Báo cáo rà soát chất lượng dữ liệu TTHC — UBND xã Vĩnh Bảo
 
-Cập nhật: **06/09/2026**
+Cập nhật: **07/09/2026**
 
-## 1. Kết quả kiểm tra repository
+## 1. Trạng thái Master Data
 
-| Chỉ số | Kết quả kiểm tra |
+| Chỉ số | Kết quả |
 |---|---:|
-| Dòng dữ liệu có trường `ma` trong `js/data.js` | **400** |
-| Mã TTHC chuẩn hóa duy nhất theo logic hiện tại | **313** |
-| `formalityId` đã xác định chắc chắn trong repo | **1** |
-| Mã mẫu có `formalityId` | `2.000942` |
-| File Master Data `data/thu-tuc.json` | **Chưa có** |
-| Đồng bộ JSON tự động | **Tạm tắt** |
+| Mã đã audit | **208** |
+| TTHC hiện hành trong tập công khai | **193** |
+| Mã bị bãi bỏ/loại khỏi public | **13** |
+| Mã đã công bố nhưng chưa đến ngày hiệu lực | **2** |
+| Mã trùng trong public | **0** |
+| Tên chưa đạt cổng chất lượng | **0** |
+| Lĩnh vực chưa xác định | **0** |
+| Mã mới từ 06 quyết định thành phố | **37** |
+| Mã hiện có được cập nhật bởi quyết định thành phố | **1** |
+| Mã phi địa giới theo nguồn công bố | **56** |
+| `formalityId` trong Master Data | **0** |
+| Mapping mẫu đã xác minh | `2.000942` |
 
-## 2. Bất nhất đã phát hiện
+## 2. Phạm vi số liệu
 
-Báo cáo trước đây từng ghi **473 TTHC**, 67 lĩnh vực, 473/473 có thời hạn và phí. Tuy nhiên các file nguồn tương ứng (`data/thu-tuc.json`, bản `js/data.js` 473 thủ tục và file mapping đầy đủ) **không có trong lịch sử Git của repository** tại thời điểm rà soát.
+**193** là số TTHC trong tập niêm yết/tra cứu hiện hành của dự án theo nguồn đã audit đến 07/09/2026. Tập này có thể gồm TTHC cấp tỉnh có địa điểm tiếp nhận tại Trung tâm PVHCC cấp xã. Vì vậy không được diễn giải thành “193 TTHC thuộc thẩm quyền giải quyết của UBND xã”.
 
-Vì vậy:
+Dữ liệu legacy vẫn còn 400 dòng thô/313 mã chuẩn hóa duy nhất trong `js/data.js` để đối chiếu lịch sử. Đây **không còn là nguồn danh mục hiện hành chính**.
 
-- Không tiếp tục công bố số **473** như số liệu đã xác minh từ repository hiện tại.
-- Bộ dữ liệu phục hồi chỉ được coi là **nguồn cục bộ kế thừa để đối chiếu**, chưa phải Master Data hiện hành.
-- Cần dựng lại danh mục hiện hành từ quyết định công bố/sửa đổi/bãi bỏ và nguồn chính thức của thành phố trước khi bật đồng bộ JSON.
+## 3. Cập nhật quyết định mới
 
-## 3. formalityId DVCQG
+Đã bổ sung và audit 06 quyết định công khai mới của UBND thành phố Hải Phòng: `3500`, `3501`, `3508`, `3509`, `3517`, `3523/QĐ-UBND`.
 
-Đã có một ánh xạ xác định:
+- 51 mã xuất hiện trong 06 quyết định.
+- 38 thủ tục đang hiệu lực có bằng chứng tiếp nhận tại Trung tâm PVHCC cấp xã.
+- 11 mã bị bãi bỏ trong nhóm quyết định mới.
+- 02 mã của `3501/QĐ-UBND` có hiệu lực từ **01/03/2027**, chưa đưa vào public hiện hành.
+
+Kết hợp snapshot trước đó, tổng số mã bãi bỏ được giữ dấu vết là 13.
+
+## 4. Bất nhất 473 TTHC
+
+Số **473** từng ghi trong tài liệu cũ không có bộ file nguồn tương ứng trong lịch sử Git và không tái lập được. Dự án không còn dùng 473 làm tiêu chí hoàn thành hoặc số lượng mục tiêu.
+
+## 5. formalityId
+
+Đã giữ nguyên ánh xạ chắc chắn:
 
 | Mã TTHC | formalityId |
 |---|---|
 | `2.000942` | `019d2bfd-95d6-778f-889b-e3045003fa5e` |
 
-Ứng dụng đã được sửa theo nguyên tắc:
+Fetcher ánh xạ hàng loạt từ snapshot kỹ thuật DVCQG chưa ổn định do giới hạn/timeout của dịch vụ bên thứ ba. Việc này không ảnh hưởng xác định trạng thái pháp lý. Website chỉ tạo link chi tiết trực tiếp khi UUID có căn cứ; nếu thiếu thì fallback sang chức năng tra cứu.
 
-- Có `formalityId` → tạo link chi tiết theo `/thu-tuc-hanh-chinh/{formalityId}` và link chọn/nộp hồ sơ theo địa bàn Hải Phòng – xã Vĩnh Bảo.
-- Chưa có `formalityId` → chỉ mở chức năng tra cứu; không tạo URL chi tiết giả định từ mã TTHC.
+## 6. Cổng kiểm soát tự động
 
-## 4. Việc tiếp theo về dữ liệu
+`scripts/check_static_site.py` kiểm tra:
 
-1. Đối chiếu danh mục TTHC cấp xã từ các quyết định công bố còn hiệu lực.
-2. Loại bỏ thủ tục bị bãi bỏ/thay thế và bản ghi trùng.
-3. Chuẩn hóa trường: mã, tên, lĩnh vực, cơ quan/đơn vị, thời hạn, phí/lệ phí, hình thức DVCTT, phi địa giới, căn cứ và trạng thái xác minh.
-4. Bổ sung `formalityId` có bằng chứng.
-5. Sinh `data/thu-tuc.json` và chỉ sau đó bật `remoteJsonUrl` trong `js/config.js`.
+- JSON public, excluded và summary khớp nhau;
+- không có mã trùng, tên lỗi hoặc lĩnh vực chưa xác định;
+- mã bãi bỏ/chưa hiệu lực không lọt vào public;
+- các mã mới trọng yếu từ quyết định thành phố có mặt;
+- 06 quyết định mới còn đầy đủ trong source audit;
+- JSON và `js/master-data-fallback.js` có cùng tập mã;
+- runtime đã bật `data/thu-tuc.json`, cache v3 và không quay lại URL DVCQG kiểu cũ.

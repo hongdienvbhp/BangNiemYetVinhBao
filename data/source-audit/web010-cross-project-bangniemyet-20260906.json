@@ -1,0 +1,928 @@
+{
+  "format": "web010-cross-project-bangniemyet",
+  "version": 1,
+  "source_project": "BangNiemYetVinhBao",
+  "source_files": [
+    "js/data.js",
+    "js/extra-data.js"
+  ],
+  "note": "Đối chiếu hỗ trợ; dữ liệu dự án khác không thay thế nguồn quyết định chính thức và không tự publish.",
+  "summary": {
+    "bangniemyet_unique_codes": 289,
+    "commune_candidate_codes": 159,
+    "matched_codes": 40,
+    "matched_possible_repeal": 1
+  },
+  "matches": [
+    {
+      "procedure_code": "1.000419",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2026-01-12",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-827521",
+          "article_title": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Tư pháp",
+          "published_date": "2025-12-07",
+          "classification": "non_geo_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/12/phu-luc.signed-1-639007020695231661.pdf",
+          "attachment_sha256": "3d41527786cd25addd91fc634d811d145e67fa6d71284ed4b240d4e65db8ce4f",
+          "snippet": "động - Trung tâm Phục vụ hành chính công thành phố Hải Phòng. - Trung tâm Phục vụ hành chính công cấp xã. 4. 1.000419 Thủ tục đăng ký khai tử lưu động - Trung tâm Phục vụ hành chính công thành phố Hải Phòng. - Trung tâm Phục vụ hành chính công cấp xã. 5. 1.004746 Thủ tục đăng ký lại kết",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "1.000593",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2026-01-12",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-827521",
+          "article_title": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Tư pháp",
+          "published_date": "2025-12-07",
+          "classification": "non_geo_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/12/phu-luc.signed-1-639007020695231661.pdf",
+          "attachment_sha256": "3d41527786cd25addd91fc634d811d145e67fa6d71284ed4b240d4e65db8ce4f",
+          "snippet": "t hôn - Trung tâm Phục vụ hành chính công thành phố Hải Phòng. - Trung tâm Phục vụ hành chính công cấp xã. 2. 1.000593 Thủ tục đăng ký kết hôn lưu động - Trung tâm Phục vụ hành chính công thành phố Hải Phòng. - Trung tâm Phục vụ hành chính công cấp xã. 3. 1.003583 Thủ tục đăng ký khai si",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "1.000894",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2026-01-12",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-827521",
+          "article_title": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Tư pháp",
+          "published_date": "2025-12-07",
+          "classification": "non_geo_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/12/phu-luc.signed-1-639007020695231661.pdf",
+          "attachment_sha256": "3d41527786cd25addd91fc634d811d145e67fa6d71284ed4b240d4e65db8ce4f",
+          "snippet": "thủ tục hành chính Tên thủ tục hành chính Địa điểm tiếp nhận và trả kết quả I. Lĩnh vực Hộ tịch (07 TTHC) 1. 1.000894 Thủ tục đăng ký kết hôn - Trung tâm Phục vụ hành chính công thành phố Hải Phòng. - Trung tâm Phục vụ hành chính công cấp xã. 2. 1.000593 Thủ tục đăng ký kết hôn lưu động",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "1.003583",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2026-01-12",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-827521",
+          "article_title": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Tư pháp",
+          "published_date": "2025-12-07",
+          "classification": "non_geo_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/12/phu-luc.signed-1-639007020695231661.pdf",
+          "attachment_sha256": "3d41527786cd25addd91fc634d811d145e67fa6d71284ed4b240d4e65db8ce4f",
+          "snippet": "động - Trung tâm Phục vụ hành chính công thành phố Hải Phòng. - Trung tâm Phục vụ hành chính công cấp xã. 3. 1.003583 Thủ tục đăng ký khai sinh lưu động - Trung tâm Phục vụ hành chính công thành phố Hải Phòng. - Trung tâm Phục vụ hành chính công cấp xã. 4. 1.000419 Thủ tục đăng ký khai",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "1.003596",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2026-08-20",
+      "possible_repeal": true,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-nong-nghiep-va-moi-truong/quyet-dinh-cong-bo-danh-muc-thu-tuc-hanh-chinh-bi-bai-bo-linh-vuc-nong-nghiep-thuoc-pham-vi-chuc-951511",
+          "article_title": "Quyết định công bố danh mục thủ tục hành chính bị bãi bỏ lĩnh vực nông nghiệp thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "published_date": "2026-08-20",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/quyet-dinh-2026-cong-bo-dmtthc-bi-bai-bo-linh-vuc-nn-so-nnmt-ttr778-..signed639228154734203566.pdf",
+          "attachment_sha256": "17d69e758bd6824a37603b871ac9133096bc097154ccdd3365b04d3fcd6d1341",
+          "snippet": "HÀNH CHÍNH CẤP XÃ STT Mã số TTHC Tên thủ tục hành chính Tên VBQPPL quy định việc bãi bỏ thủ tục hành chính 1 1.003596 Phê duy ệt k ế hoạch khuyến nông đ ịa phương (cấp xã) Nghị định s ố 268/2026/NĐ-CP ngày 01/7/2026 của Chính ph ủ về khuyến nông (có hiệu lực từ 20/8/2026)",
+          "direct_commune": true,
+          "repeal_context": true
+        }
+      ]
+    },
+    {
+      "procedure_code": "1.004746",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2026-01-12",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-827521",
+          "article_title": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Tư pháp",
+          "published_date": "2025-12-07",
+          "classification": "non_geo_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/12/phu-luc.signed-1-639007020695231661.pdf",
+          "attachment_sha256": "3d41527786cd25addd91fc634d811d145e67fa6d71284ed4b240d4e65db8ce4f",
+          "snippet": "động - Trung tâm Phục vụ hành chính công thành phố Hải Phòng. - Trung tâm Phục vụ hành chính công cấp xã. 5. 1.004746 Thủ tục đăng ký lại kết hôn - Trung tâm Phục vụ hành chính công thành phố Hải Phòng. - Trung tâm Phục vụ hành chính công cấp xã. 6. 2.000806 Thủ tục đăng ký kết hôn có y",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "1.008725",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2026-04-25",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-giao-duc-mam-non/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-thay-the-bi-bai-bo-linh-vuc-giao-duc-mam-non-gi-891324",
+          "article_title": "Danh mục thủ tục hành chính được sửa đổi bổ sung, thay thế, bị bãi bỏ lĩnh vực giáo dục mầm non, giáo dục trung học, giáo dục nghề nghiệp, giáo dục và đào tạo thuộc hệ thống giáo dục quốc dân thuộc phạm vi, chức năng quản lý của Sở Giáo dục và Đào tạo",
+          "published_date": "2026-04-25",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/4/qd-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-gd-dt..signed639129677063242252.pdf",
+          "attachment_sha256": "65dc8f94f71bec1e11961c08e462dbfbb1ff031884ba7625876f4ba04dde32b3",
+          "snippet": "ti ết một s ố điều c ủa Lu ật G iáo dục B. THỦ TỤC HÀNH CHÍNH CẤP XÃ (01 TTHC) LĨNH VỰC GIÁO DỤC TRUNG HỌC 1. 1.008725 Chuyển đ ổi trư ờng ti ểu h ọc tư thục, trư ờng trung h ọc cơ s ở tư thục, trường phổ thông tư th ục có nhiều cấp học có cấp học cao nhất là trung h ọc cơ s ở do nhà đ ầ",
+          "direct_commune": true,
+          "repeal_context": false
+        },
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-giao-duc-nghe-nghiep/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-thay-the-bi-bai-bo-linh-vuc-giao-duc-mam-non-gi-891324",
+          "article_title": "Danh mục thủ tục hành chính được sửa đổi bổ sung, thay thế, bị bãi bỏ lĩnh vực giáo dục mầm non, giáo dục trung học, giáo dục nghề nghiệp, giáo dục và đào tạo thuộc hệ thống giáo dục quốc dân thuộc phạm vi, chức năng quản lý của Sở Giáo dục và Đào tạo",
+          "published_date": "2026-04-25",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/4/qd-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-gd-dt..signed639129677063242252.pdf",
+          "attachment_sha256": "65dc8f94f71bec1e11961c08e462dbfbb1ff031884ba7625876f4ba04dde32b3",
+          "snippet": "ti ết một s ố điều c ủa Lu ật G iáo dục B. THỦ TỤC HÀNH CHÍNH CẤP XÃ (01 TTHC) LĨNH VỰC GIÁO DỤC TRUNG HỌC 1. 1.008725 Chuyển đ ổi trư ờng ti ểu h ọc tư thục, trư ờng trung h ọc cơ s ở tư thục, trường phổ thông tư th ục có nhiều cấp học có cấp học cao nhất là trung h ọc cơ s ở do nhà đ ầ",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "1.009453",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2026-08-05",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-xay-dung-va-cong-thuong/quyet-dinh-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-thay-the-bi-bai-bo-thuoc-pha-945437",
+          "article_title": "Quyết định công bố danh mục thủ tục hành chính được sửa đổi, bổ sung, thay thế, bị bãi bỏ thuộc phạm vi chức năng quản lý của Sở Xây dựng",
+          "published_date": "2026-08-05",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/3095.quyet-dinh-2026-cong-bo-dmtthc-sua-doi-bo-sung-thay-the-bai-bo-so-xd-ttr252-..signed639217002722341280.pdf",
+          "attachment_sha256": "64b9f7e82c436cd2a3654b78776dac9112cca462996f59c1c5b96e4a8893dac8",
+          "snippet": "h Thời gian giải quyết Địa điểm thực hiện Phí/lệ phí (nếu có) Căn cứ pháp lý Theo quy định Sau khi cắt giảm 2 1.009453 - Trong thời hạn 02 ngày làm việc k ể từ ngày nhận đ ủ hồ sơ hợp l ệ theo quy định, Chi c ục Hàng h ải và Đường thuỷ, Sở Xây dựng trả lời Ủy ban nhân dân cấp xã. - Trong",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "1.009454",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2026-08-05",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-xay-dung-va-cong-thuong/quyet-dinh-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-thay-the-bi-bai-bo-thuoc-pha-945437",
+          "article_title": "Quyết định công bố danh mục thủ tục hành chính được sửa đổi, bổ sung, thay thế, bị bãi bỏ thuộc phạm vi chức năng quản lý của Sở Xây dựng",
+          "published_date": "2026-08-05",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/3095.quyet-dinh-2026-cong-bo-dmtthc-sua-doi-bo-sung-thay-the-bai-bo-so-xd-ttr252-..signed639217002722341280.pdf",
+          "attachment_sha256": "64b9f7e82c436cd2a3654b78776dac9112cca462996f59c1c5b96e4a8893dac8",
+          "snippet": "h mức thu, chế độ thu, nộp, quản lý và sử dụng phí, lệ phí trong lĩnh vực đường thủy n ội đ ịa và đư ờng sắt. 1.009454 Công b ố hoạt động bến thủy nội địa 22 C DANH MỤC THỦ TỤC HÀNH CHÍNH THA Y THẾ DÙNG CHUNG: Sở Xây dựng, UBND cấp xã STT Mã thủ tục hành chính Tên thủ tục hành chính được",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "1.012531",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2026-05-14",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-nong-nghiep-va-moi-truong/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-sua-doi-bo-sung-bi-bai-bo-thuoc-pham-vi-chuc-nang-cua-s-899192",
+          "article_title": "Danh mục thủ tục hành chính mới ban hành, sửa đổi, bổ sung, bị bãi bỏ thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường",
+          "published_date": "2026-05-14",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/5/noi-dung-lvuc-lam-nghiep-cap-xa639143765990263755.docx",
+          "attachment_sha256": "5937fed24db32086e9d4a0937c4c26f34f37c05573cf7ac053555503f3d8b5c1",
+          "snippet": "M NGHIỆP 1. Hỗ trợ lãi suất vốn vay ngân hàng để trồng rừng gỗ lớn đối với chủ rừng là hộ gia đình, cá nhân - 1. 012531 a) Trình tự thực hiện (1 ) Bước 1: Nộp, tiếp nhận hồ sơ Chủ rừng nộp 01 bộ hồ sơ đến Ủy ban nhân dân cấp xã bằng cách thức trực tiếp hoặc qua dịch vụ bưu chính hoặc trực",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "1.012753",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2025-08-19",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283",
+          "article_title": "Công khai thủ tục hành chính mới ban hành, được sửa đổi, bổ sung lĩnh vực lâm nghiệp, kiểm lâm, ứng phó sự cố tràn dầu, đất đai thuộc thẩm quyền giải quyết của cấp xã",
+          "published_date": "2025-08-19",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/noi-dung-linh-vuc-dat-dai-cap-xa638912181802758696.docx",
+          "attachment_sha256": "66de716894a3a5b5e5855dc14ff2878b6e31bc6797f9295d1997265b94c2c83a",
+          "snippet": "hứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất lần đầu đối với tổ chức đang sử dụng đất - 1.012753 (1) Trình tự thực hiện: Bước 1: Người yêu cầu đăng ký nộp hồ sơ đến Trung tâm Phục vụ hành chính công hoặc Văn phòng đăng ký đất đai . Khi nộp các giấy tờ quy định, ngườ",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "1.012796",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2025-08-19",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283",
+          "article_title": "Công khai thủ tục hành chính mới ban hành, được sửa đổi, bổ sung lĩnh vực lâm nghiệp, kiểm lâm, ứng phó sự cố tràn dầu, đất đai thuộc thẩm quyền giải quyết của cấp xã",
+          "published_date": "2025-08-19",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/noi-dung-linh-vuc-dat-dai-cap-xa638912181802758696.docx",
+          "attachment_sha256": "66de716894a3a5b5e5855dc14ff2878b6e31bc6797f9295d1997265b94c2c83a",
+          "snippet": "2 cấp, phân quyền, phân cấp trong lĩnh vực đất đai. 4. Đính chính Giấy chứng nhận đã cấp lần đầu có sai sót - 1.012796 (1) Trình tự thực hiện: Bước 1: Người yêu cầu đính chính nộp hồ sơ đến Trung tâm Phục vụ hành chính công . Khi nộp các giấy tờ quy định, người yêu cầu đăng ký được lựa c",
+          "direct_commune": true,
+          "repeal_context": false
+        },
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283",
+          "article_title": "Công khai thủ tục hành chính mới ban hành, được sửa đổi, bổ sung lĩnh vực lâm nghiệp, kiểm lâm, ứng phó sự cố tràn dầu, đất đai thuộc thẩm quyền giải quyết của cấp xã",
+          "published_date": "2025-08-19",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-phu-luc-i-qd-2304-1334-3717-bnn-tp-qp-bai-bo638912182070757189.pdf",
+          "attachment_sha256": "a92507bc18ab429f23c5ed93e2c965fde672ae7b692a1d80dcb0143e5f57d027",
+          "snippet": "y 09/6/2025; - Nghị định số 151/2025/NĐ -CP ngày 12/6/2025; - Quyết định số 2304/QĐ - BNNMT ngày 23/6/2025. 2 1.012796 Đính chính Giấy chứng nhận đã cấp lần đầu có sai sót - 08 ngày làm việc - 18 ngày làm việc Đối với các xã miền núi, hải đảo, vùng sâu, vùng xa, vùng có điều kiện kinh tế",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "1.012812",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2025-08-19",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283",
+          "article_title": "Công khai thủ tục hành chính mới ban hành, được sửa đổi, bổ sung lĩnh vực lâm nghiệp, kiểm lâm, ứng phó sự cố tràn dầu, đất đai thuộc thẩm quyền giải quyết của cấp xã",
+          "published_date": "2025-08-19",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/noi-dung-linh-vuc-dat-dai-cap-xa638912181802758696.docx",
+          "attachment_sha256": "66de716894a3a5b5e5855dc14ff2878b6e31bc6797f9295d1997265b94c2c83a",
+          "snippet": "NỘI DUNG TTHC LĨNH VỰC ĐẤT ĐAI THỦ TỤC HÀNH CHÍNH CẤP XÃ 1. Hoà giải tranh chấp đất đai - 1.012812 (1) Trình tự thực hiện: Bước 1 : Người có đơn yêu cầu giải quyết tranh chấp đất đai nộp đơn đến Trung tâm Phục vụ hành chính công hoặc Ủy ban nhân dân cấp xã. Trường hợp",
+          "direct_commune": true,
+          "repeal_context": false
+        },
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283",
+          "article_title": "Công khai thủ tục hành chính mới ban hành, được sửa đổi, bổ sung lĩnh vực lâm nghiệp, kiểm lâm, ứng phó sự cố tràn dầu, đất đai thuộc thẩm quyền giải quyết của cấp xã",
+          "published_date": "2025-08-19",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-danh-muc-kem-theo638912181889816666.doc",
+          "attachment_sha256": "1f104f1ed31b68d76e3f10a052e1a9fc07458bbfbd6c4ff6b096c111bb0668ca",
+          "snippet": "24/3/2021\u0002. - Quyết định số 24/2025/QĐ-TTg ngày 16/7/2025 của TTCP\u0002. \u0007\u0007\u0007II\u0007LĨNH VỰC ĐẤT ĐAI (14 THỦ TỤC)\u0007\u0007\u0007\u0007\u00071.012812\u0007Hoà giải tranh chấp đất đai\u0007- 30 ngày - 40 ngày đối với các xã miền núi, biên giới; đảo; vùng có điều kiện kinh tế - xã hội khó khăn; vùng có điều kiện kinh tế - xã hội",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "1.012817",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2025-08-19",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283",
+          "article_title": "Công khai thủ tục hành chính mới ban hành, được sửa đổi, bổ sung lĩnh vực lâm nghiệp, kiểm lâm, ứng phó sự cố tràn dầu, đất đai thuộc thẩm quyền giải quyết của cấp xã",
+          "published_date": "2025-08-19",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/noi-dung-linh-vuc-dat-dai-cap-xa638912181802758696.docx",
+          "attachment_sha256": "66de716894a3a5b5e5855dc14ff2878b6e31bc6797f9295d1997265b94c2c83a",
+          "snippet": "ịnh lại diện tích đất ở của hộ gia đình, cá nhân đã được cấp Giấy chứng nhận trước ngày 01 tháng 7 năm 2004 - 1.012817 (1) Trình tự thực hiện : Bước 1: Người yêu cầu đăng ký nộp hồ sơ đến Trung tâm Phục vụ hành chính công . Khi nộp các giấy tờ quy định, người yêu cầu đăng ký được lựa chọ",
+          "direct_commune": true,
+          "repeal_context": false
+        },
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283",
+          "article_title": "Công khai thủ tục hành chính mới ban hành, được sửa đổi, bổ sung lĩnh vực lâm nghiệp, kiểm lâm, ứng phó sự cố tràn dầu, đất đai thuộc thẩm quyền giải quyết của cấp xã",
+          "published_date": "2025-08-19",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-phu-luc-i-qd-2304-1334-3717-bnn-tp-qp-bai-bo638912182070757189.pdf",
+          "attachment_sha256": "a92507bc18ab429f23c5ed93e2c965fde672ae7b692a1d80dcb0143e5f57d027",
+          "snippet": "n nộp hồ sơ Căn cứ pháp lý Trực tiếp Trực tuyến trên DVCQG Dịch vụ bưu chính IV. Lĩnh vực đất đai (13 TTHC) 1 1.012817 Xác định lại diện tích đất ở của hộ gia đình, cá nhân đã được cấp Giấy chứng nhận trước ngày 01 tháng 7 năm 2004 - 20 ngày làm việc - 30 ngày làm việc Đối với các xã miề",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "1.012818",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2025-08-19",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283",
+          "article_title": "Công khai thủ tục hành chính mới ban hành, được sửa đổi, bổ sung lĩnh vực lâm nghiệp, kiểm lâm, ứng phó sự cố tràn dầu, đất đai thuộc thẩm quyền giải quyết của cấp xã",
+          "published_date": "2025-08-19",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/noi-dung-linh-vuc-dat-dai-cap-xa638912181802758696.docx",
+          "attachment_sha256": "66de716894a3a5b5e5855dc14ff2878b6e31bc6797f9295d1997265b94c2c83a",
+          "snippet": "người sử dụng đất, chủ sở hữu tài sản gắn liền với đất phát hiện và cấp lại Giấy chứng nhận sau khi thu hồi - 1.012818 ( 1 ) Trình tự thực hiện: Bước 1: Người yêu cầu nộp hồ sơ đến Trung tâm Phục vụ hành chính công . Bước 2: Cơ quan tiếp nhận hồ sơ có trách nhiệm: - Kiểm tra tính đầy đủ",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "1.013040",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2026-01-21",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-tai-chinh-ke-hoach/thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bai-bo-trong-linh-vuc-thue-thuoc-pham-vi-chuc-nang-qu-848957",
+          "article_title": "Thủ tục hành chính được sửa đổi, bổ sung và bãi bỏ trong lĩnh vực thuế thuộc phạm vi chức năng quản lý của Sở Tài chính",
+          "published_date": "2026-01-21",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/quyet-dinh-2025-cong-bo-dmtthc-so-tai-chinh-ttr04-qd-4510.btc-..signed639046149447716353.pdf",
+          "attachment_sha256": "b525be70c7ae1aa9e89b111d81d6cf8e9948968c28f77ffb3b3ba265291ebe5a",
+          "snippet": "hí, lệ phí Cung cấp DVCTT (x) Căn cứ pháp lý Theo quy định Sau cắt giảm Toàn trình Một phần I LĨNH VỰC THUẾ 1 1.013040 Thủ tục khai, nộp phí bảo vệ môi trường đối với khí thải - Tại Sở Nông nghiệp và Môi trường hoặc cơ quan chuyên môn được Ủy ban nhân dân cấp xã giao thực hiện: Tổ chức t",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "1.013724",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2026-01-15",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-viec-lam/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi-bai-bo-linh-vuc-viec-lam-an-toan-ve-sinh--762741",
+          "article_title": "Công bố Danh mục thủ tục hành chính mới ban hành và bị bãi bỏ lĩnh vực việc làm; an toàn, vệ sinh lao động trên địa bàn thành phố Hải Phòng",
+          "published_date": "2025-07-13",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/7/qd-cong-bo-tthc-linh-vuc-viec-lam-atld-qd-636..signed638880367760937972.pdf",
+          "attachment_sha256": "92c99370cd15cfa34cf6aa95fc59abe863c8db45b02b1c5487e6bdb51593e769",
+          "snippet": "hí (nếu có) Cách thức thực hiện Căn cứ pháp lý Trực tiếp Dịch vụ công trực tuyến Dịch vụ bưu chính công ích 1 1.013724 Vay vốn hỗ trợ tạo việc làm, duy trì và mở rộng việc làm từ Quỹ quốc gia về việc làm đối với người lao động 15 ngày Trung tâm Phục vụ hành chính công cấp xã Không quy đị",
+          "direct_commune": true,
+          "repeal_context": false
+        },
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-viec-lam/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi-bai-bo-linh-vuc-viec-lam-an-toan-ve-sinh--762741",
+          "article_title": "Công bố Danh mục thủ tục hành chính mới ban hành và bị bãi bỏ lĩnh vực việc làm; an toàn, vệ sinh lao động trên địa bàn thành phố Hải Phòng",
+          "published_date": "2025-07-13",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/7/qd-cong-bo-tthc-linh-vuc-viec-lam-atld-qd-636..signed638880367857473885.pdf",
+          "attachment_sha256": "92c99370cd15cfa34cf6aa95fc59abe863c8db45b02b1c5487e6bdb51593e769",
+          "snippet": "hí (nếu có) Cách thức thực hiện Căn cứ pháp lý Trực tiếp Dịch vụ công trực tuyến Dịch vụ bưu chính công ích 1 1.013724 Vay vốn hỗ trợ tạo việc làm, duy trì và mở rộng việc làm từ Quỹ quốc gia về việc làm đối với người lao động 15 ngày Trung tâm Phục vụ hành chính công cấp xã Không quy đị",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "1.013725",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2026-01-15",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-viec-lam/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi-bai-bo-linh-vuc-viec-lam-an-toan-ve-sinh--762741",
+          "article_title": "Công bố Danh mục thủ tục hành chính mới ban hành và bị bãi bỏ lĩnh vực việc làm; an toàn, vệ sinh lao động trên địa bàn thành phố Hải Phòng",
+          "published_date": "2025-07-13",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/7/qd-cong-bo-tthc-linh-vuc-viec-lam-atld-qd-636..signed638880367760937972.pdf",
+          "attachment_sha256": "92c99370cd15cfa34cf6aa95fc59abe863c8db45b02b1c5487e6bdb51593e769",
+          "snippet": "ố 104/2022/NĐ-CP ngày 21/12/2022 của Chính phủ - Nghị định số 6 129/2025/NĐ-CP ngày 11/6/2025 của Chính phủ 2 1.013725 Vay vốn hỗ trợ tạo việc làm, duy trì và mở rộng việc làm từ Quỹ quốc gia về việc làm đối với cơ sở sản xuất, kinh doanh 15 ngày Trung tâm Phục vụ hành chính công cấp xã",
+          "direct_commune": true,
+          "repeal_context": false
+        },
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-viec-lam/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi-bai-bo-linh-vuc-viec-lam-an-toan-ve-sinh--762741",
+          "article_title": "Công bố Danh mục thủ tục hành chính mới ban hành và bị bãi bỏ lĩnh vực việc làm; an toàn, vệ sinh lao động trên địa bàn thành phố Hải Phòng",
+          "published_date": "2025-07-13",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/7/qd-cong-bo-tthc-linh-vuc-viec-lam-atld-qd-636..signed638880367857473885.pdf",
+          "attachment_sha256": "92c99370cd15cfa34cf6aa95fc59abe863c8db45b02b1c5487e6bdb51593e769",
+          "snippet": "ố 104/2022/NĐ-CP ngày 21/12/2022 của Chính phủ - Nghị định số 6 129/2025/NĐ-CP ngày 11/6/2025 của Chính phủ 2 1.013725 Vay vốn hỗ trợ tạo việc làm, duy trì và mở rộng việc làm từ Quỹ quốc gia về việc làm đối với cơ sở sản xuất, kinh doanh 15 ngày Trung tâm Phục vụ hành chính công cấp xã",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "1.013734",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2025-07-13",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-quan-ly-lao-dong-ngoai-nuoc/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi-bai-bo-linh-vuc-quan-ly-lao-dong-ngoai-nu-762740",
+          "article_title": "Công bố Danh mục thủ tục hành chính mới ban hành và bị bãi bỏ lĩnh vực quản lý lao động ngoài nước trên địa bàn thành phố Hải Phòng",
+          "published_date": "2025-07-13",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/7/qd-quyet-dinh-cong-bo-tthc-qd-640..signed638880366333934920.pdf",
+          "attachment_sha256": "69895e9f35613e3ee931ed16bd3b5e4300d2edcf7f990144a383cf25f05620ed",
+          "snippet": "í (nếu có Cách thức thực hiện Căn cứ pháp lý Trực tiếp Dịch vụ công trực tuyến Dịch vụ bưu chính công ích 1. 1.013734 Đăng ký hợp đồng lao động trực tiếp giao kết 05 Trung tâm Phục vụ hành chính công cấp xã Không quy định x Toàn trình Nộp hồ sơ và trả kết quả - Luật Người lao động Việt",
+          "direct_commune": true,
+          "repeal_context": false
+        },
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-quan-ly-lao-dong-ngoai-nuoc/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi-bai-bo-linh-vuc-quan-ly-lao-dong-ngoai-nu-762740",
+          "article_title": "Công bố Danh mục thủ tục hành chính mới ban hành và bị bãi bỏ lĩnh vực quản lý lao động ngoài nước trên địa bàn thành phố Hải Phòng",
+          "published_date": "2025-07-13",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/7/qd-quyet-dinh-cong-bo-tthc-qd-640..signed638880366444336453.pdf",
+          "attachment_sha256": "69895e9f35613e3ee931ed16bd3b5e4300d2edcf7f990144a383cf25f05620ed",
+          "snippet": "í (nếu có Cách thức thực hiện Căn cứ pháp lý Trực tiếp Dịch vụ công trực tuyến Dịch vụ bưu chính công ích 1. 1.013734 Đăng ký hợp đồng lao động trực tiếp giao kết 05 Trung tâm Phục vụ hành chính công cấp xã Không quy định x Toàn trình Nộp hồ sơ và trả kết quả - Luật Người lao động Việt",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "1.013822",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2025-09-23",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-bao-tro-xa-hoi/danh-muc-thu-tuc-hanh-chinh-bi-bai-bo-linh-vuc-bao-tro-xa-hoi-thuoc-pham-vi-chuc-nang-quan-ly-cu-785078",
+          "article_title": "Danh mục thủ tục hành chính bị bãi bỏ lĩnh vực Bảo trợ xã hội thuộc phạm vi, chức năng quản lý của Sở Y tế.",
+          "published_date": "2025-09-23",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/9/qd-cong-bo-tthc-theo-qd-2944-byt-..signed638942452687051651.pdf",
+          "attachment_sha256": "46d7188f1765420ff4aded63296ef07902843a05eb3ce4f22ac9693f01b4a135",
+          "snippet": "n hóa phi v ật thể và chính sách đối với nghệ nhân, chủ thể di sản văn hóa phi vật thể Chủ tịch UBND cấp xã 2 1.013822 Hỗ trợ chi phí mai táng đối với nghệ nhân nhân dân, nghệ nhân ưu tú có thu nh ập th ấp, hoàn cảnh khó khăn Nghị định số 215/2025/NĐ- CP ngày 04/8/2025 của Chính phủ quy",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "1.013949",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2025-08-19",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283",
+          "article_title": "Công khai thủ tục hành chính mới ban hành, được sửa đổi, bổ sung lĩnh vực lâm nghiệp, kiểm lâm, ứng phó sự cố tràn dầu, đất đai thuộc thẩm quyền giải quyết của cấp xã",
+          "published_date": "2025-08-19",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/noi-dung-linh-vuc-dat-dai-cap-xa638912181802758696.docx",
+          "attachment_sha256": "66de716894a3a5b5e5855dc14ff2878b6e31bc6797f9295d1997265b94c2c83a",
+          "snippet": "đất; giao đất và giao rừng; cho thuê đất và cho thuê rừng, gia hạn sử dụng đất khi hết thời hạn sử dụng đất - 1.013949 (1) Trình tự thực hiện Bước 1: Người đề nghị nộp hồ sơ đến Trung tâm Phục vụ hành chính công. Khi nộp hồ sơ, người nộp hồ sơ được lựa chọn nộp bản sao giấy tờ và xuất tr",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "1.013950",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2025-08-19",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283",
+          "article_title": "Công khai thủ tục hành chính mới ban hành, được sửa đổi, bổ sung lĩnh vực lâm nghiệp, kiểm lâm, ứng phó sự cố tràn dầu, đất đai thuộc thẩm quyền giải quyết của cấp xã",
+          "published_date": "2025-08-19",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/noi-dung-linh-vuc-dat-dai-cap-xa638912181802758696.docx",
+          "attachment_sha256": "66de716894a3a5b5e5855dc14ff2878b6e31bc6797f9295d1997265b94c2c83a",
+          "snippet": ", CHO THUÊ ĐẤT (Ký, ghi rõ họ tên, chức vụ và đóng dấu (nếu có)) 7. Chuyển hình thức giao đất, cho thuê đất - 1.013950 (1) Trình tự thực hiện Bước 1: Người đề nghị nộp hồ sơ đến Trung tâm Phục vụ hành chính công. Khi nộp hồ sơ, người nộp hồ sơ được lựa chọn nộp bản sao giấy tờ và xuất tr",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "1.013952",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2025-08-19",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283",
+          "article_title": "Công khai thủ tục hành chính mới ban hành, được sửa đổi, bổ sung lĩnh vực lâm nghiệp, kiểm lâm, ứng phó sự cố tràn dầu, đất đai thuộc thẩm quyền giải quyết của cấp xã",
+          "published_date": "2025-08-19",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/noi-dung-linh-vuc-dat-dai-cap-xa638912181802758696.docx",
+          "attachment_sha256": "66de716894a3a5b5e5855dc14ff2878b6e31bc6797f9295d1997265b94c2c83a",
+          "snippet": "o đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất; điều chỉnh thời hạn sử dụng đất của dự án đầu tư - 1.013952 (1) Trình tự thực hiện Bước 1: Người đề nghị nộp hồ sơ đến Trung tâm Phục vụ hành chính công. Khi nộp hồ sơ, người nộp hồ sơ được lựa chọn nộp bản sao giấy tờ và xuất tr",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "1.013953",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2025-08-19",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283",
+          "article_title": "Công khai thủ tục hành chính mới ban hành, được sửa đổi, bổ sung lĩnh vực lâm nghiệp, kiểm lâm, ứng phó sự cố tràn dầu, đất đai thuộc thẩm quyền giải quyết của cấp xã",
+          "published_date": "2025-08-19",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/noi-dung-linh-vuc-dat-dai-cap-xa638912181802758696.docx",
+          "attachment_sha256": "66de716894a3a5b5e5855dc14ff2878b6e31bc6797f9295d1997265b94c2c83a",
+          "snippet": "yết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất và số liệu bàn giao đất trên thực địa - 1.013953 (1) Trình tự thực hiện Bước 1: Người đề nghị nộp hồ sơ đến Trung tâm Phục vụ hành chính công. Khi nộp hồ sơ, người nộp hồ sơ được lựa chọn nộp bản sao giấy tờ và xuất tr",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "1.013962",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2025-08-19",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283",
+          "article_title": "Công khai thủ tục hành chính mới ban hành, được sửa đổi, bổ sung lĩnh vực lâm nghiệp, kiểm lâm, ứng phó sự cố tràn dầu, đất đai thuộc thẩm quyền giải quyết của cấp xã",
+          "published_date": "2025-08-19",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/noi-dung-linh-vuc-dat-dai-cap-xa638912181802758696.docx",
+          "attachment_sha256": "66de716894a3a5b5e5855dc14ff2878b6e31bc6797f9295d1997265b94c2c83a",
+          "snippet": "ợc Nhà nước giao đất ở hoặc chưa được hưởng chính sách hỗ trợ về nhà ở theo quy định của pháp luật về nhà ở - 1.013962 (1) Trình tự thực hiện Bước 1: Hằng năm, Ủy ban nhân dân cấp xã thông báo cho cá nhân khác có nhu cầu sử dụng đất nộp hồ sơ đề nghị giao đất ở (căn cứ vào quỹ đất đã đượ",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "1.013965",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2025-08-19",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283",
+          "article_title": "Công khai thủ tục hành chính mới ban hành, được sửa đổi, bổ sung lĩnh vực lâm nghiệp, kiểm lâm, ứng phó sự cố tràn dầu, đất đai thuộc thẩm quyền giải quyết của cấp xã",
+          "published_date": "2025-08-19",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/noi-dung-linh-vuc-dat-dai-cap-xa638912181802758696.docx",
+          "attachment_sha256": "66de716894a3a5b5e5855dc14ff2878b6e31bc6797f9295d1997265b94c2c83a",
+          "snippet": "ng lĩnh vực đất đai. 13. Sử dụng đất kết hợp đa mục đích, gia hạn phương án sử dụng đất kết hợp đa mục đích - 1.013965 (1) Trình tự thực hiện: a) Trường hợp sử dụng đất kết hợp vào mục đích thương mại, dịch vụ Bước 1: Người có nhu cầu nộp hồ sơ đến Trung tâm Phục vụ hành chính công hoặc",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "1.013967",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2025-08-19",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283",
+          "article_title": "Công khai thủ tục hành chính mới ban hành, được sửa đổi, bổ sung lĩnh vực lâm nghiệp, kiểm lâm, ứng phó sự cố tràn dầu, đất đai thuộc thẩm quyền giải quyết của cấp xã",
+          "published_date": "2025-08-19",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/noi-dung-linh-vuc-dat-dai-cap-xa638912181802758696.docx",
+          "attachment_sha256": "66de716894a3a5b5e5855dc14ff2878b6e31bc6797f9295d1997265b94c2c83a",
+          "snippet": "ên, đóng dấu nếu có) 14. Giải quyết tranh chấp đất đai thuộc thẩm quyền của Chủ tịch Ủy ban nhân dân cấp xã - 1.013967 (1) Trình tự thực hiện: Bước 1 : Người có đơn yêu cầu giải quyết tranh chấp đất đai nộp đơn đến Trung tâm Phục vụ hành chính công hoặc Ủy ban nhân dân cấp xã. Trường hợp",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "1.013978",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2025-08-19",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283",
+          "article_title": "Công khai thủ tục hành chính mới ban hành, được sửa đổi, bổ sung lĩnh vực lâm nghiệp, kiểm lâm, ứng phó sự cố tràn dầu, đất đai thuộc thẩm quyền giải quyết của cấp xã",
+          "published_date": "2025-08-19",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/noi-dung-linh-vuc-dat-dai-cap-xa638912181802758696.docx",
+          "attachment_sha256": "66de716894a3a5b5e5855dc14ff2878b6e31bc6797f9295d1997265b94c2c83a",
+          "snippet": "iền với đất lần đầu đối với hộ gia đình, cá nhân, cộng đồng dân cư, người gốc Việt Nam định cư ở nước ngoài - 1.013978 (1) Trình tự thực hiện Bước 1: Người yêu cầu đăng ký nộp hồ sơ đến Trung tâm Phục vụ hành chính công. Khi nộp các giấy tờ quy định, người yêu cầu đăng ký được lựa chọn n",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "1.013979",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2025-08-19",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283",
+          "article_title": "Công khai thủ tục hành chính mới ban hành, được sửa đổi, bổ sung lĩnh vực lâm nghiệp, kiểm lâm, ứng phó sự cố tràn dầu, đất đai thuộc thẩm quyền giải quyết của cấp xã",
+          "published_date": "2025-08-19",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/noi-dung-linh-vuc-dat-dai-cap-xa638912181802758696.docx",
+          "attachment_sha256": "66de716894a3a5b5e5855dc14ff2878b6e31bc6797f9295d1997265b94c2c83a",
+          "snippet": "ặc cộng đồng dân cư hoặc mở rộng đường giao thông đối với trường hợp thửa đất chưa được cấp Giấy chứng nhận - 1.013979 (1) Trình tự thực hiện Bước 1: Người sử dụng đất nộp hồ sơ tới Trung tâm Phục vụ hành chính công hoặc Ủy ban nhân dân cấp xã. Trường hợp có biên bản họp giữa Ủy ban nhân",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "2.000424",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2025-12-07",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-827521",
+          "article_title": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Tư pháp",
+          "published_date": "2025-12-07",
+          "classification": "non_geo_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/12/phu-luc.signed-1-639007020695231661.pdf",
+          "attachment_sha256": "3d41527786cd25addd91fc634d811d145e67fa6d71284ed4b240d4e65db8ce4f",
+          "snippet": "thành phố Hải Phòng. - Trung tâm Phục vụ hành chính công cấp xã. IV. Lĩnh vực Hoà giải ở cơ sở (01 TTHC) 13. 2.000424 Thực hi ện h ỗ trợ khi hòa giải viên g ặp tai n ạn ho ặc rủi ro ảnh hư ởng đ ến s ức khỏe, tính m ạng khi th ực hiện hoạt động hòa giải ở cơ sở - Trung tâm Phục vụ hành",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "2.000806",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2026-01-12",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-827521",
+          "article_title": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Tư pháp",
+          "published_date": "2025-12-07",
+          "classification": "non_geo_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/12/phu-luc.signed-1-639007020695231661.pdf",
+          "attachment_sha256": "3d41527786cd25addd91fc634d811d145e67fa6d71284ed4b240d4e65db8ce4f",
+          "snippet": "t hôn - Trung tâm Phục vụ hành chính công thành phố Hải Phòng. - Trung tâm Phục vụ hành chính công cấp xã. 6. 2.000806 Thủ tục đăng ký kết hôn có yếu tố nước ngoài - Trung tâm Phục vụ hành chính công thành phố Hải Phòng. - Trung tâm Phục vụ hành chính công cấp xã. 7. 2.000513 Thủ tục đăn",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "2.000815",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2025-12-07",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-827521",
+          "article_title": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Tư pháp",
+          "published_date": "2025-12-07",
+          "classification": "non_geo_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/12/phu-luc.signed-1-639007020695231661.pdf",
+          "attachment_sha256": "3d41527786cd25addd91fc634d811d145e67fa6d71284ed4b240d4e65db8ce4f",
+          "snippet": "công thành phố Hải Phòng. - Trung tâm Phục vụ hành chính công cấp xã. XVI. Lĩnh vực Chứng thực (02 TTHC) 10. 2.000815 Chứng thực bản sao t ừ bản chính giấy t ờ, văn b ản do cơ quan, t ổ chức có thẩm quyền của Việt Nam; cơ quan, t ổ chức có th ẩm quy ền của nước ngoài; cơ quan, t ổ chức",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "2.000884",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2025-12-07",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-827521",
+          "article_title": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Tư pháp",
+          "published_date": "2025-12-07",
+          "classification": "non_geo_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/12/phu-luc.signed-1-639007020695231661.pdf",
+          "attachment_sha256": "3d41527786cd25addd91fc634d811d145e67fa6d71284ed4b240d4e65db8ce4f",
+          "snippet": "nhận - Trung tâm Phục vụ hành chính công thành phố Hải Phòng. - Trung tâm Phục vụ hành chính công cấp xã. 11. 2.000884 Thủ tục Chứng thực chữ ký trong các giấy tờ, văn bản (áp dụng cho cả trường hợp chứng thực điểm chỉ và trư ờng h ợp ngư ời yêu c ầu chứng thực không ký, không điểm chỉ đ",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "2.000942",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2025-12-07",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vuc-chung-thuc-thuoc-pham-vi--810099",
+          "article_title": "Danh mục thủ tục hành chính được sửa đổi, bổ sung và bị bãi bỏ lĩnh vực chứng thực thuộc phạm vi, chức năng quản lý của Sở Tư pháp.",
+          "published_date": "2025-11-11",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phuluc-i-qd-3152-bo-tu-phap638984589798308803.docx",
+          "attachment_sha256": "34ecf4683691477ce7bac69084d046b126f2382fe4552be2f6b7d430bfe3b249",
+          "snippet": "80 /2025/NĐ-CP ; - Nghị định số 23/2015/NĐ-CP ; - Thông tư số 01/2020/TT-BTP ; - Thông tư số 226/2016/TT-BTC; 2.000942 Cấp bản sao có chứng thực từ bản chính giao dịch đã được chứng thực Trung tâm Phục vụ hành chính công cấp xã nơi lưu trữ giao dịch 2.000 đồng/trang; từ trang thứ 3 trở l",
+          "direct_commune": true,
+          "repeal_context": false
+        },
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-827521",
+          "article_title": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Tư pháp",
+          "published_date": "2025-12-07",
+          "classification": "non_geo_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/12/phu-luc.signed-1-639007020695231661.pdf",
+          "attachment_sha256": "3d41527786cd25addd91fc634d811d145e67fa6d71284ed4b240d4e65db8ce4f",
+          "snippet": "ấp xã - Trung tâm Phục vụ hành chính công thành phố Hải Phòng. - Trung tâm Phục vụ hành chính công cấp xã. 9. 2.000942 Thủ tục c ấp b ản sao có chứng th ực t ừ bản chính hợp đồng, giao dịch đã được chứng thực - Trung tâm Phục vụ hành chính công thành phố Hải Phòng. - Trung tâm Phục vụ hà",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "2.000992",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2025-12-07",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vuc-chung-thuc-thuoc-pham-vi--810099",
+          "article_title": "Danh mục thủ tục hành chính được sửa đổi, bổ sung và bị bãi bỏ lĩnh vực chứng thực thuộc phạm vi, chức năng quản lý của Sở Tư pháp.",
+          "published_date": "2025-11-11",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phuluc-i-qd-3152-bo-tu-phap638984589798308803.docx",
+          "attachment_sha256": "34ecf4683691477ce7bac69084d046b126f2382fe4552be2f6b7d430bfe3b249",
+          "snippet": "01/2020/TT-BTP ; - Thông tư số 226/2016/TT-BTC; - Thông tư số 264/2016/TT-BTC; - Thông tư số 257/2016/TT-BTC. 2.000992 Chứng thực chữ ký người dịch mà người dịch là cộng tác viên dịch thuật của Ủy ban nhân dân cấp xã , tổ chức hành nghề công chứng 10.000 đồng/trường hợp - Nghị định số 28",
+          "direct_commune": true,
+          "repeal_context": false
+        },
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-827521",
+          "article_title": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Tư pháp",
+          "published_date": "2025-12-07",
+          "classification": "non_geo_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/12/phu-luc.signed-1-639007020695231661.pdf",
+          "attachment_sha256": "3d41527786cd25addd91fc634d811d145e67fa6d71284ed4b240d4e65db8ce4f",
+          "snippet": "nh công thành phố Hải Phòng. - Trung tâm Phục vụ hành chính công cấp xã. II. Lĩnh vực Chứng thực (04 TTHC) 8. 2.000992 Thủ tục chứng thực chữ ký người dịch mà người dịch là cộng tác viên dịch thuật của Ủy ban nhân dân cấp xã - Trung tâm Phục vụ hành chính công thành phố Hải Phòng. - Trun",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "2.001008",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2025-11-11",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vuc-chung-thuc-thuoc-pham-vi--810099",
+          "article_title": "Danh mục thủ tục hành chính được sửa đổi, bổ sung và bị bãi bỏ lĩnh vực chứng thực thuộc phạm vi, chức năng quản lý của Sở Tư pháp.",
+          "published_date": "2025-11-11",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phuluc-i-qd-3152-bo-tu-phap638984589798308803.docx",
+          "attachment_sha256": "34ecf4683691477ce7bac69084d046b126f2382fe4552be2f6b7d430bfe3b249",
+          "snippet": "80 /2025/NĐ-CP ; - Nghị định số 23/2015/NĐ-CP ; - Thông tư số 01/2020/TT-BTP ; - Thông tư số 226/2016/TT-BTC; 2.001008 Chứng thực chữ ký người dịch mà người dịch không phải là cộng tác viên dịch thuật của Ủy ban nhân dân cấp xã, tổ chức hành nghề công chứng - Nghị định số 280 /2025/NĐ-CP",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "2.001035",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2025-11-11",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vuc-chung-thuc-thuoc-pham-vi--810099",
+          "article_title": "Danh mục thủ tục hành chính được sửa đổi, bổ sung và bị bãi bỏ lĩnh vực chứng thực thuộc phạm vi, chức năng quản lý của Sở Tư pháp.",
+          "published_date": "2025-11-11",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phuluc-i-qd-3152-bo-tu-phap638984589798308803.docx",
+          "attachment_sha256": "34ecf4683691477ce7bac69084d046b126f2382fe4552be2f6b7d430bfe3b249",
+          "snippet": "ố 23/2015/NĐ-CP ; - Thông tư số 01/2020/TT-BTP ; - Thông tư số 226/2016/TT-BTC; II. Thủ tục hành chính cấp xã 2.001035 Chứng thực giao dịch liên quan đến tài sản là động sản, quyền sử dụng đất, nhà ở Không quá 02 (hai) ngày làm việc, kể từ ngày nhận đủ hồ sơ yêu cầu chứng thực hoặc có th",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "2.001263",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2025-12-07",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-827521",
+          "article_title": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Tư pháp",
+          "published_date": "2025-12-07",
+          "classification": "non_geo_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/12/phu-luc.signed-1-639007020695231661.pdf",
+          "attachment_sha256": "3d41527786cd25addd91fc634d811d145e67fa6d71284ed4b240d4e65db8ce4f",
+          "snippet": "ng thành phố Hải Phòng. - Trung tâm Phục vụ hành chính công cấp xã. III. Lĩnh vực Nuôi con nuôi (01 TTHC) 12. 2.001263 Đăng ký việc nuôi con nuôi trong nước - Trung tâm Phục vụ hành chính công thành phố Hải Phòng. - Trung tâm Phục vụ hành chính công cấp xã. IV. Lĩnh vực Hoà giải ở cơ sở",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "2.001942",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2026-08-28",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-tre-em/quyet-dinh-ve-viec-phe-duyet-phuong-an-tai-cau-truc-thu-tuc-hanh-chinh-linh-vuc-tre-em-thuoc-pha-843204",
+          "article_title": "Quyết định về việc phê duyệt phương án tái cấu trúc thủ tục hành chính lĩnh vực trẻ em thuộc phạm vi quản lý của Bộ Y tế",
+          "published_date": "2026-01-10",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/qd-tai-cau-truc-linh-vuc-tre-em.signed639036323689285465.pdf",
+          "attachment_sha256": "0bb4837bba52ad7a994a3ced7071bb5d54d6685db2ac87b669359b9b62bc1687",
+          "snippet": "Quyết định số /QĐ-BYT ngày tháng năm của Bộ trưởng Bộ Y tế) TT Mã TTHC Tên TTHC Thẩm quyền giải quyết TTHC 1 2.001942 Chuyển trẻ em đang được chăm sóc thay thế tại cơ sở trợ giúp xã hội đến cá nhân, gia đình nhận chăm sóc thay thế Ủy ban nhân dân cấp xã (nơi cư trú của cá nhân, người đạ",
+          "direct_commune": true,
+          "repeal_context": false
+        },
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dan-so-ba-me-tre-em/quyet-dinh-so-2778-qd-byt-ngay-28-8-2026-cua-bo-y-te-ve-viec-phe-duyet-phuong-an-tai-cau-truc-ca-957967",
+          "article_title": "Quyết định số 2778/QĐ-BYT ngày 28/8/2026 của Bộ Y tế: Về việc phê duyệt phương án tái cấu trúc các thủ tục hành chính lĩnh vực trẻ em và lĩnh vực Dân số, Bà mẹ - Trẻ em thuộc phạm vi quản lý của Bộ Y tế",
+          "published_date": "2026-08-28",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/2778.-quyet-dinh-phe-duyet-phuong-an-tai-cau-truc-tthc639240222202256647.pdf",
+          "attachment_sha256": "a839336e494dbe6f233ea9cb973870379581a379b388c1d0386bd5e266276b98",
+          "snippet": "i đại diện gia đình nhận chăm sóc thay thế không phải là người thân thích của trẻ em Ủy ban nhân dân cấp xã 2 2.001942 Chuyển trẻ em đang được chăm sóc thay thế tại cơ sở trợ giúp xã hội đến cá nhân, gia đình nhận chăm sóc thay thế Ủy ban nhân dân cấp xã (nơi cư trú của cá nhân, người đạ",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    },
+    {
+      "procedure_code": "2.002165",
+      "bangniemyet_match": true,
+      "latest_official_source_date": "2026-07-12",
+      "possible_repeal": false,
+      "verification_status": "cross_project_support_only",
+      "official_evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-boi-thuong-nha-nuoc/quyet-dinh-so-2661-qd-ubnd-ngay-12-7-2026-cua-uy-ban-nhan-dan-thanh-pho-hai-phong-ve-viec-cong-b-933107",
+          "article_title": "Quyết định số 2661/QĐ-UBND ngày 12/7/2026 của Ủy ban nhân dân thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung và bị bãi bỏ trong lĩnh vực bồi thường nhà nước thuộc phạm vi, chức năng quản lý nhà nước của Sở Tư pháp",
+          "published_date": "2026-07-12",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/7/qd-2661639196356943255565639197987966351622.pdf",
+          "attachment_sha256": "f26491cba8ed6f4c9ad619c40109d0e4a97af10bfdc4cabd675c46d1c785b9b2",
+          "snippet": "pháp; - Thông tư s ố 08/2025/TT- BTP ngày 12/6/2025 của Bộ Tư pháp. B THỦ TỤC HÀNH CHÍNH CẤP XÃ (01 TTHC) 1. 2.002165 Thủ tục gi ải quyết yêu c ầu bồi thư ờng t ại cơ quan tr ực tiếp qu ản lý người thi hành công v ụ gây thiệt hại - Trường hợp có yêu c ầu bồi thường thiệt h ại về tài s ả",
+          "direct_commune": true,
+          "repeal_context": false
+        }
+      ]
+    }
+  ]
+}
