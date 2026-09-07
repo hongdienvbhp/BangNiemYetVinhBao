@@ -52,6 +52,7 @@ city_updates = load_json("data/source-audit/city-updates-current.json")
 decision_manifest = load_json("data/source-audit/official-decision-manifest.json")
 source_index = load_json("data/source-audit/official-source-index.json")
 priority51_payload = load_json("data/priority-51-crosswalk.json")
+priority51_legal_payload = load_json("data/priority-51-legal-verification.json")
 
 # Mọi src/href nội bộ trong HTML phải tồn tại.
 for _, ref in re.findall(r'\b(src|href)="([^"]+)"', index):
@@ -253,11 +254,74 @@ for row in priority51_rows:
 
 p51_by_code = {str(row.get("code") or "").strip(): row for row in priority51_rows}
 master_by_code = {str(row.get("ma") or "").strip(): row for row in rows}
+excluded_by_code = {str(row.get("ma") or "").strip(): row for row in excluded}
 p51_in_master = sorted(set(p51_by_code) & code_set)
-if len(p51_in_master) != 14:
-    fail(f"Số mã trọng điểm đang có trong Master phải là 14 ở snapshot này, hiện {len(p51_in_master)}")
-if len(set(p51_by_code) - code_set) != 37:
-    fail("Khoảng trống 51 TTHC so với Master không còn là 37; cần cập nhật báo cáo/kiểm chứng pháp lý")
+
+# Ma trận kiểm chứng pháp lý của 37 mã từng thiếu ở bước trước.
+legal_rows = priority51_legal_payload.get("rows") if isinstance(priority51_legal_payload, dict) else None
+if not isinstance(legal_rows, list):
+    fail("data/priority-51-legal-verification.json thiếu rows")
+    legal_rows = []
+legal_codes = [str(row.get("code") or "").strip() for row in legal_rows]
+if len(legal_rows) != 37 or len(legal_codes) != len(set(legal_codes)) or "" in legal_codes:
+    fail(f"Ma trận pháp lý phải có 37 mã duy nhất, hiện {len(legal_rows)}/{len(set(legal_codes))}")
+legal_current = [row for row in legal_rows if row.get("legalStatus") == "current_official_commune_evidence"]
+legal_repealed = [row for row in legal_rows if row.get("legalStatus") == "repealed_official_evidence"]
+legal_other = [row for row in legal_rows if row.get("legalStatus") not in {"current_official_commune_evidence", "repealed_official_evidence"}]
+if len(legal_current) != 36 or len(legal_repealed) != 1 or legal_other:
+    fail(f"Ma trận pháp lý phải là 36 current + 1 repealed + 0 pending, hiện {len(legal_current)}/{len(legal_repealed)}/{len(legal_other)}")
+if {str(row.get("code") or "") for row in legal_repealed} != {"2.001009"}:
+    fail("Mã bãi bỏ trong ma trận 51 phải là 2.001009")
+
+source_validation = priority51_legal_payload.get("sourceValidation") or {}
+if source_validation.get("uniquePrimaryOfficialSources") != 11:
+    fail("Ma trận pháp lý phải ghi nhận 11 nguồn primary chính thức")
+if source_validation.get("currentPrimarySourcesChecked") != 10 or source_validation.get("currentPrimarySourcesContainingAssignedCodes") != 10:
+    fail("10 nguồn primary của nhóm current phải được kiểm tra và chứa đúng mã đã gán")
+repeal_validation = source_validation.get("repealedCodeIndependentVerification") or {}
+if repeal_validation.get("code") != "2.001009" or repeal_validation.get("decisionNo") != "4517/QĐ-UBND":
+    fail("Thiếu kiểm chứng độc lập QĐ 4517/QĐ-UBND cho mã 2.001009")
+
+allowed_legal_hosts = {"cdn.haiphong.gov.vn", "vinhbao.haiphong.gov.vn", "haiphong.gov.vn"}
+for row in legal_rows:
+    code = str(row.get("code") or "").strip()
+    if row.get("legalStatusBasis") != "official_haiphong_source":
+        fail(f"{code}: trạng thái pháp lý không được gắn nguồn chính thức Hải Phòng")
+    if row.get("dvcqgRole") != "technical_identity_only":
+        fail(f"{code}: DVCQG phải chỉ là lớp định danh kỹ thuật")
+    sources = row.get("sources") or []
+    if not sources:
+        fail(f"{code}: ma trận pháp lý thiếu nguồn")
+    for source in sources:
+        url = str(source.get("url") or "")
+        host = urlsplit(url).hostname or ""
+        if host not in allowed_legal_hosts:
+            fail(f"{code}: nguồn trạng thái pháp lý không thuộc hệ thống chính thức Hải Phòng: {url}")
+
+for item in legal_current:
+    code = str(item.get("code") or "").strip()
+    if code not in code_set:
+        fail(f"{code}: đã xác minh current cấp xã nhưng thiếu khỏi Master public")
+    row = master_by_code.get(code, {})
+    if row.get("priority51LegalVerificationStatus") != "current_official_commune_evidence":
+        fail(f"{code}: Master thiếu trạng thái kiểm chứng pháp lý Priority 51")
+    if row.get("priority51") is not True:
+        fail(f"{code}: thủ tục trọng điểm current chưa được đánh priority51")
+    if not row.get("sourceArticleUrl"):
+        fail(f"{code}: bản ghi current thiếu sourceArticleUrl")
+
+for item in legal_repealed:
+    code = str(item.get("code") or "").strip()
+    if code in code_set:
+        fail(f"{code}: thủ tục đã bãi bỏ vẫn còn trong Master public")
+    row = excluded_by_code.get(code)
+    if not row or row.get("verificationStatus") != "repealed_official_evidence":
+        fail(f"{code}: thủ tục bãi bỏ chưa được lưu đúng trong excluded")
+
+if len(p51_in_master) != 50:
+    fail(f"Sau kiểm chứng pháp lý phải có 50/51 mã trọng điểm trong Master public, hiện {len(p51_in_master)}")
+if set(p51_by_code) - code_set != {"2.001009"}:
+    fail(f"Sau kiểm chứng, khoảng trống Priority 51 chỉ được là mã bãi bỏ 2.001009: {sorted(set(p51_by_code) - code_set)}")
 for code in p51_in_master:
     cross = p51_by_code[code]
     master_row = master_by_code[code]
@@ -270,12 +334,24 @@ for code in p51_in_master:
         fail(f"{code}: formalityId Master lệch crosswalk")
 if summary.get("priority51CrosswalkTotal") != 51:
     fail("summary.priority51CrosswalkTotal phải bằng 51")
-if summary.get("priority51InCurrentMaster") != 14:
-    fail("summary.priority51InCurrentMaster phải bằng 14")
-if summary.get("priority51Gap") != 37:
-    fail("summary.priority51Gap phải bằng 37")
-if summary.get("formalityIdMapped") != 14:
-    fail(f"Snapshot này phải có 14 formalityId trong Master, hiện {summary.get('formalityIdMapped')}")
+if summary.get("priority51InCurrentMaster") != 50:
+    fail("summary.priority51InCurrentMaster phải bằng 50")
+if summary.get("priority51Gap") != 1:
+    fail("summary.priority51Gap phải bằng 1 (mã bãi bỏ 2.001009)")
+if summary.get("formalityIdMapped") != 48:
+    fail(f"Snapshot này phải có 48 formalityId trong Master, hiện {summary.get('formalityIdMapped')}")
+if summary.get("priority51LegalAudited") != 37:
+    fail("summary.priority51LegalAudited phải bằng 37")
+if summary.get("priority51LegalVerifiedCurrent") != 36:
+    fail("summary.priority51LegalVerifiedCurrent phải bằng 36")
+if summary.get("priority51LegalVerifiedRepealed") != 1:
+    fail("summary.priority51LegalVerifiedRepealed phải bằng 1")
+if summary.get("priority51LegalNeedsVerification") != 0:
+    fail("summary.priority51LegalNeedsVerification phải bằng 0")
+if summary.get("priority51LegalAddedCurrent") != 36:
+    fail("summary.priority51LegalAddedCurrent phải bằng 36 ở snapshot này")
+if summary.get("priority51LegalSupersededByNewerEvidence") != 0:
+    fail("Có bằng chứng chính thức mới hơn ma trận Priority 51; phải rà soát lại snapshot pháp lý trước khi merge")
 
 # Fallback phải chứa chính xác tập mã public của JSON.
 fallback_codes = set(re.findall(r'"ma":"([^"]+)"', fallback_js))

@@ -473,6 +473,54 @@
       "stt": 11
     },
     {
+      "ma": "1.001731",
+      "ten": "Hỗ trợ chi phí mai táng cho đối tượng bảo trợ xã hội",
+      "linhVuc": "BẢO TRỢ XÃ HỘI",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "2874/QĐ-UBND",
+      "formalityId": "019d2bfe-b7dd-7239-b166-b6cd79d326b8",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2025-07-16",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6819/tintuc/2025/7/dm-tthc-chuan-hoa-syt638893087955858786.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6819/tintuc/2025/7/dm-tthc-chuan-hoa-syt638893087955858786.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6819/tintuc/2025/7/dm-tthc-chuan-hoa-syt638893087955858786.pdf",
+          "articleTitle": "Danh mục TTHC chuẩn hóa ngành Y tế Hải Phòng thể hiện thủ tục thực hiện/tiếp nhận tại Trung tâm phục vụ hành chính công cấp xã.",
+          "publishedDate": "2025-07-16",
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6819/tintuc/2025/7/dm-tthc-chuan-hoa-syt638893087955858786.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [
+            "2874/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfe-b7dd-7239-b166-b6cd79d326b8&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 7,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 12
+    },
+    {
       "ma": "1.013822",
       "ten": "Hỗ trợ chi phí mai táng đối với nghệ nhân nhân dân, nghệ nhân ưu tú có thu nh ập th ấp, hoàn cảnh khó khăn",
       "linhVuc": "BẢO TRỢ XÃ HỘI",
@@ -512,7 +560,247 @@
         }
       ],
       "priority51": false,
-      "stt": 12
+      "stt": 13
+    },
+    {
+      "ma": "1.014028",
+      "ten": "Hỗ trợ chi phí mai táng đối với đối tượng hưởng trợ cấp hưu trí xã hội",
+      "linhVuc": "BẢO TRỢ XÃ HỘI",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "2874/QĐ-UBND",
+      "formalityId": "019d2bff-3508-7268-b54b-6ce79a8cbf0e",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2025-07-16",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6819/tintuc/2025/7/dm-tthc-chuan-hoa-syt638893087955858786.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6819/tintuc/2025/7/dm-tthc-chuan-hoa-syt638893087955858786.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6819/tintuc/2025/7/dm-tthc-chuan-hoa-syt638893087955858786.pdf",
+          "articleTitle": "Danh mục TTHC chuẩn hóa ngành Y tế Hải Phòng thể hiện thủ tục thực hiện/tiếp nhận tại Trung tâm phục vụ hành chính công cấp xã.",
+          "publishedDate": "2025-07-16",
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6819/tintuc/2025/7/dm-tthc-chuan-hoa-syt638893087955858786.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [
+            "2874/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bff-3508-7268-b54b-6ce79a8cbf0e&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 2,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 14
+    },
+    {
+      "ma": "1.014027",
+      "ten": "Thực hiện, điều chỉnh, thôi hưởng trợ cấp hưu trí xã hội",
+      "linhVuc": "BẢO TRỢ XÃ HỘI",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "2874/QĐ-UBND",
+      "formalityId": "019d2bff-2d80-74d8-8515-90f6f61822f0",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2025-07-16",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6819/tintuc/2025/7/dm-tthc-chuan-hoa-syt638893087955858786.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6819/tintuc/2025/7/dm-tthc-chuan-hoa-syt638893087955858786.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6819/tintuc/2025/7/dm-tthc-chuan-hoa-syt638893087955858786.pdf",
+          "articleTitle": "Danh mục TTHC chuẩn hóa ngành Y tế Hải Phòng thể hiện thủ tục thực hiện/tiếp nhận tại Trung tâm phục vụ hành chính công cấp xã.",
+          "publishedDate": "2025-07-16",
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6819/tintuc/2025/7/dm-tthc-chuan-hoa-syt638893087955858786.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [
+            "2874/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bff-2d80-74d8-8515-90f6f61822f0&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&provinceCode=31&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 1,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 15
+    },
+    {
+      "ma": "1.001776",
+      "ten": "Thực hiện, điều chỉnh, thôi hưởng trợ cấp xã hội hàng tháng, hỗ trợ kinh phí chăm sóc, nuôi dưỡng hàng tháng",
+      "linhVuc": "BẢO TRỢ XÃ HỘI",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "2874/QĐ-UBND",
+      "formalityId": "019d2bfe-b7e6-740b-9573-24f800e8664d",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2025-07-16",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6819/tintuc/2025/7/dm-tthc-chuan-hoa-syt638893087955858786.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6819/tintuc/2025/7/dm-tthc-chuan-hoa-syt638893087955858786.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6819/tintuc/2025/7/dm-tthc-chuan-hoa-syt638893087955858786.pdf",
+          "articleTitle": "Danh mục TTHC chuẩn hóa ngành Y tế Hải Phòng thể hiện thủ tục thực hiện/tiếp nhận tại Trung tâm phục vụ hành chính công cấp xã.",
+          "publishedDate": "2025-07-16",
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6819/tintuc/2025/7/dm-tthc-chuan-hoa-syt638893087955858786.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [
+            "2874/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfe-b7e6-740b-9573-24f800e8664d&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 6,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 16
+    },
+    {
+      "ma": "2.000286",
+      "ten": "Tiếp nhận đối tượng bảo trợ xã hội có hoàn cảnh đặc biệt khó khăn vào cơ sở trợ giúp xã hội",
+      "linhVuc": "BẢO TRỢ XÃ HỘI",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "2874/QĐ-UBND",
+      "formalityId": "019d2bff-44ae-736f-a3c1-fc73741af598",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2025-07-16",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6819/tintuc/2025/7/dm-tthc-chuan-hoa-syt638893087955858786.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6819/tintuc/2025/7/dm-tthc-chuan-hoa-syt638893087955858786.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6819/tintuc/2025/7/dm-tthc-chuan-hoa-syt638893087955858786.pdf",
+          "articleTitle": "Danh mục TTHC chuẩn hóa ngành Y tế Hải Phòng thể hiện thủ tục thực hiện/tiếp nhận tại Trung tâm phục vụ hành chính công cấp xã.",
+          "publishedDate": "2025-07-16",
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6819/tintuc/2025/7/dm-tthc-chuan-hoa-syt638893087955858786.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [
+            "2874/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bff-44ae-736f-a3c1-fc73741af598&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 5,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 17
+    },
+    {
+      "ma": "1.001699",
+      "ten": "Xác định, xác định lại mức độ khuyết tật và cấp Giấy xác nhận khuyết tật",
+      "linhVuc": "BẢO TRỢ XÃ HỘI",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "2874/QĐ-UBND",
+      "formalityId": "019d2bfe-b7cd-76e9-b909-bcf437629cb8",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2025-07-16",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6819/tintuc/2025/7/dm-tthc-chuan-hoa-syt638893087955858786.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6819/tintuc/2025/7/dm-tthc-chuan-hoa-syt638893087955858786.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6819/tintuc/2025/7/dm-tthc-chuan-hoa-syt638893087955858786.pdf",
+          "articleTitle": "Danh mục TTHC chuẩn hóa ngành Y tế Hải Phòng thể hiện thủ tục thực hiện/tiếp nhận tại Trung tâm phục vụ hành chính công cấp xã.",
+          "publishedDate": "2025-07-16",
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6819/tintuc/2025/7/dm-tthc-chuan-hoa-syt638893087955858786.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [
+            "2874/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfe-b7cd-76e9-b909-bcf437629cb8&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 14,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 18
     },
     {
       "ma": "2.002165",
@@ -552,7 +840,7 @@
         }
       ],
       "priority51": false,
-      "stt": 13
+      "stt": 19
     },
     {
       "ma": "2.000815",
@@ -595,7 +883,7 @@
       "priority51": true,
       "priority51Ordinal": 50,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 14
+      "stt": 20
     },
     {
       "ma": "2.001008",
@@ -633,7 +921,7 @@
         }
       ],
       "priority51": false,
-      "stt": 15
+      "stt": 21
     },
     {
       "ma": "2.001035",
@@ -676,7 +964,205 @@
       "priority51": true,
       "priority51Ordinal": 47,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 16
+      "stt": 22
+    },
+    {
+      "ma": "2.001406",
+      "ten": "Chứng thực văn bản phân chia di sản mà di sản là động sản, quyền sử dụng đất, nhà ở",
+      "linhVuc": "CHỨNG THỰC",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "019d2bfd-9daf-70da-8f48-223498332346",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-07",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6799/tintuc/2026/3/26.02-kh-ngay-thu-5-hanh-chinh.signed639080565000341409.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6799/tintuc/2026/3/26.02-kh-ngay-thu-5-hanh-chinh.signed639080565000341409.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6799/tintuc/2026/3/26.02-kh-ngay-thu-5-hanh-chinh.signed639080565000341409.pdf",
+          "articleTitle": "Nguồn chính thức năm 2026 tiếp tục niêm yết/thực hiện thủ tục tại Trung tâm PVHCC cấp xã; đối chiếu thêm danh mục sửa đổi, bổ sung trên Cổng Vĩnh Bảo.",
+          "publishedDate": null,
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6799/tintuc/2026/3/26.02-kh-ngay-thu-5-hanh-chinh.signed639080565000341409.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [],
+          "repealContext": false
+        },
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vuc-chung-thuc-thuoc-pham-vi--810099",
+          "articleTitle": "Nguồn đối chiếu bổ sung theo cùng mã thủ tục.",
+          "publishedDate": null,
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": null,
+          "attachmentSha256": null,
+          "decisionNumbers": [],
+          "repealContext": false
+        },
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vuc-chung-thuc-thuoc-pham-vi--810099",
+          "articleTitle": "Bằng chứng đối chiếu trong corpus nguồn chính thức Vĩnh Bảo",
+          "publishedDate": null,
+          "classification": "priority51_local_corpus_support",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phuluc-i-qd-3152-bo-tu-phap638984589798308803.docx",
+          "attachmentSha256": "34ecf4683691477ce7bac69084d046b126f2382fe4552be2f6b7d430bfe3b249",
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-9daf-70da-8f48-223498332346&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 44,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 23
+    },
+    {
+      "ma": "2.001016",
+      "ten": "Chứng thực văn bản từ chối nhận di sản",
+      "linhVuc": "CHỨNG THỰC",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "019d2bfd-95e6-7578-ba2d-d1b4373cd174",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-07",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6799/tintuc/2026/3/26.02-kh-ngay-thu-5-hanh-chinh.signed639080565000341409.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6799/tintuc/2026/3/26.02-kh-ngay-thu-5-hanh-chinh.signed639080565000341409.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6799/tintuc/2026/3/26.02-kh-ngay-thu-5-hanh-chinh.signed639080565000341409.pdf",
+          "articleTitle": "Nguồn chính thức năm 2026 tiếp tục niêm yết/thực hiện thủ tục tại Trung tâm PVHCC cấp xã; đối chiếu thêm danh mục sửa đổi, bổ sung trên Cổng Vĩnh Bảo.",
+          "publishedDate": null,
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6799/tintuc/2026/3/26.02-kh-ngay-thu-5-hanh-chinh.signed639080565000341409.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [],
+          "repealContext": false
+        },
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vuc-chung-thuc-thuoc-pham-vi--810099",
+          "articleTitle": "Nguồn đối chiếu bổ sung theo cùng mã thủ tục.",
+          "publishedDate": null,
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": null,
+          "attachmentSha256": null,
+          "decisionNumbers": [],
+          "repealContext": false
+        },
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vuc-chung-thuc-thuoc-pham-vi--810099",
+          "articleTitle": "Bằng chứng đối chiếu trong corpus nguồn chính thức Vĩnh Bảo",
+          "publishedDate": null,
+          "classification": "priority51_local_corpus_support",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phuluc-i-qd-3152-bo-tu-phap638984589798308803.docx",
+          "attachmentSha256": "34ecf4683691477ce7bac69084d046b126f2382fe4552be2f6b7d430bfe3b249",
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-95e6-7578-ba2d-d1b4373cd174&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 43,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 24
+    },
+    {
+      "ma": "2.000913",
+      "ten": "Chứng thực việc sửa đổi, bổ sung, hủy bỏ giao dịch",
+      "linhVuc": "CHỨNG THỰC",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "019d2bfd-8e59-72ab-ae1a-a2985865d253",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-07",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6799/tintuc/2026/3/26.02-kh-ngay-thu-5-hanh-chinh.signed639080565000341409.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6799/tintuc/2026/3/26.02-kh-ngay-thu-5-hanh-chinh.signed639080565000341409.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6799/tintuc/2026/3/26.02-kh-ngay-thu-5-hanh-chinh.signed639080565000341409.pdf",
+          "articleTitle": "Nguồn chính thức năm 2026 tiếp tục niêm yết/thực hiện thủ tục tại Trung tâm PVHCC cấp xã; đối chiếu thêm danh mục sửa đổi, bổ sung trên Cổng Vĩnh Bảo.",
+          "publishedDate": null,
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6799/tintuc/2026/3/26.02-kh-ngay-thu-5-hanh-chinh.signed639080565000341409.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [],
+          "repealContext": false
+        },
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vuc-chung-thuc-thuoc-pham-vi--810099",
+          "articleTitle": "Nguồn đối chiếu bổ sung theo cùng mã thủ tục.",
+          "publishedDate": null,
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": null,
+          "attachmentSha256": null,
+          "decisionNumbers": [],
+          "repealContext": false
+        },
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vuc-chung-thuc-thuoc-pham-vi--810099",
+          "articleTitle": "Bằng chứng đối chiếu trong corpus nguồn chính thức Vĩnh Bảo",
+          "publishedDate": null,
+          "classification": "priority51_local_corpus_support",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phuluc-i-qd-3152-bo-tu-phap638984589798308803.docx",
+          "attachmentSha256": "34ecf4683691477ce7bac69084d046b126f2382fe4552be2f6b7d430bfe3b249",
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-8e59-72ab-ae1a-a2985865d253&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 46,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 25
     },
     {
       "ma": "2.000942",
@@ -729,7 +1215,7 @@
       "priority51": true,
       "priority51Ordinal": 51,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 17
+      "stt": 26
     },
     {
       "ma": "2.000992",
@@ -782,7 +1268,7 @@
       "priority51": true,
       "priority51Ordinal": 49,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 18
+      "stt": 27
     },
     {
       "ma": "2.000884",
@@ -825,7 +1311,7 @@
       "priority51": true,
       "priority51Ordinal": 48,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 19
+      "stt": 28
     },
     {
       "ma": "1.012538",
@@ -863,7 +1349,7 @@
         }
       ],
       "priority51": false,
-      "stt": 20
+      "stt": 29
     },
     {
       "ma": "1.012537",
@@ -901,7 +1387,160 @@
         }
       ],
       "priority51": false,
-      "stt": 21
+      "stt": 30
+    },
+    {
+      "ma": "1.011609",
+      "ten": "Công nhận hộ làm nông nghiệp, lâm nghiệp, ngư nghiệp và diêm nghiệp có mức sống trung bình",
+      "linhVuc": "GIẢM NGHÈO",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": true,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "019d2bfa-5f79-70bf-bc74-661346debe8c",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-07",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6812/tintuc/2025/8/quyet-dinh-2025-cong-bo-dmttc-thuc-hien-phi-dia-gioi-so-nn-va-moi-truong-ttr443-..signed638917970880695305.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6812/tintuc/2025/8/quyet-dinh-2025-cong-bo-dmttc-thuc-hien-phi-dia-gioi-so-nn-va-moi-truong-ttr443-..signed638917970880695305.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6812/tintuc/2025/8/quyet-dinh-2025-cong-bo-dmttc-thuc-hien-phi-dia-gioi-so-nn-va-moi-truong-ttr443-..signed638917970880695305.pdf",
+          "articleTitle": "Danh mục TTHC phi địa giới lĩnh vực Giảm nghèo của Hải Phòng thể hiện điểm tiếp nhận tại Trung tâm Phục vụ hành chính công cấp xã.",
+          "publishedDate": null,
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6812/tintuc/2025/8/quyet-dinh-2025-cong-bo-dmttc-thuc-hien-phi-dia-gioi-so-nn-va-moi-truong-ttr443-..signed638917970880695305.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-5f79-70bf-bc74-661346debe8c&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 13,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 31
+    },
+    {
+      "ma": "1.011606",
+      "ten": "Công nhận hộ nghèo, hộ cận nghèo; hộ thoát nghèo, hộ thoát cận nghèo định kỳ hằng năm",
+      "linhVuc": "GIẢM NGHÈO",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": true,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "019d2bfa-5f68-74c6-89e9-78c8819cef86",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-07",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6812/tintuc/2025/8/quyet-dinh-2025-cong-bo-dmttc-thuc-hien-phi-dia-gioi-so-nn-va-moi-truong-ttr443-..signed638917970880695305.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6812/tintuc/2025/8/quyet-dinh-2025-cong-bo-dmttc-thuc-hien-phi-dia-gioi-so-nn-va-moi-truong-ttr443-..signed638917970880695305.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6812/tintuc/2025/8/quyet-dinh-2025-cong-bo-dmttc-thuc-hien-phi-dia-gioi-so-nn-va-moi-truong-ttr443-..signed638917970880695305.pdf",
+          "articleTitle": "Danh mục TTHC phi địa giới lĩnh vực Giảm nghèo của Hải Phòng thể hiện điểm tiếp nhận tại Trung tâm Phục vụ hành chính công cấp xã.",
+          "publishedDate": null,
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6812/tintuc/2025/8/quyet-dinh-2025-cong-bo-dmttc-thuc-hien-phi-dia-gioi-so-nn-va-moi-truong-ttr443-..signed638917970880695305.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [],
+          "repealContext": false
+        },
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-giam-ngheo/quyet-dinh-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-bi-bai-bo-linh-vuc-giam-ngheo-thuoc--949038",
+          "articleTitle": "Bằng chứng đối chiếu trong corpus nguồn chính thức Vĩnh Bảo",
+          "publishedDate": null,
+          "classification": "priority51_local_corpus_support",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/quyet-dinh-2026-cong-bo-dmtthc-linh-vuc-giam-ngheo-so-nnmt-ttr759-qd3121-..signed639223167668352534.pdf",
+          "attachmentSha256": "47269c1ae417851a0eae685a04e83e7979aeb00c0e1032f976f1a620a0b2e882",
+          "decisionNumbers": [
+            "1343/QĐ-UBND",
+            "3121/QĐ-BNNMT"
+          ],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-5f68-74c6-89e9-78c8819cef86&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 12,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 32
+    },
+    {
+      "ma": "2.002481",
+      "ten": "Chuyển trường đối với học sinh trung học cơ sở",
+      "linhVuc": "GIÁO DỤC",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": true,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "2851/QĐ-UBND",
+      "formalityId": "019d2bf8-cffd-7189-bb9d-b8436bafc764",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2025-07-14",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6805/tintuc/2025/12/thong-bao-danh-muc-thu-tuc-hanh-chinh-phi-dia-gioi.signed639004671669010703.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6805/tintuc/2025/12/thong-bao-danh-muc-thu-tuc-hanh-chinh-phi-dia-gioi.signed639004671669010703.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6805/tintuc/2025/12/thong-bao-danh-muc-thu-tuc-hanh-chinh-phi-dia-gioi.signed639004671669010703.pdf",
+          "articleTitle": "Danh mục TTHC phi địa giới lĩnh vực Giáo dục trung học thể hiện mã 2.002481 và Trung tâm Phục vụ hành chính công cấp xã.",
+          "publishedDate": "2025-07-14",
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6805/tintuc/2025/12/thong-bao-danh-muc-thu-tuc-hanh-chinh-phi-dia-gioi.signed639004671669010703.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [
+            "2851/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bf8-cffd-7189-bb9d-b8436bafc764&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 4,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 33
     },
     {
       "ma": "1.008725",
@@ -969,7 +1608,7 @@
         }
       ],
       "priority51": false,
-      "stt": 22
+      "stt": 34
     },
     {
       "ma": "1.009454",
@@ -1009,7 +1648,7 @@
         }
       ],
       "priority51": false,
-      "stt": 23
+      "stt": 35
     },
     {
       "ma": "1.009453",
@@ -1049,7 +1688,289 @@
         }
       ],
       "priority51": false,
-      "stt": 24
+      "stt": 36
+    },
+    {
+      "ma": "2.000635",
+      "ten": "Cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh",
+      "linhVuc": "HỘ TỊCH",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "93/QĐ-UBND",
+      "formalityId": "019d2bfd-867c-72db-b6a7-dcbd8c763807",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-01-10",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6811/tintuc/2026/2/qd-cong-bo-dm-tthc-sua-doi-bo-sung-cac-linh-vuc-thuoc-tham-quyen-cua-so-tu-phap..signed639056177100499762.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6811/tintuc/2026/2/qd-cong-bo-dm-tthc-sua-doi-bo-sung-cac-linh-vuc-thuoc-tham-quyen-cua-so-tu-phap..signed639056177100499762.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6811/tintuc/2026/2/qd-cong-bo-dm-tthc-sua-doi-bo-sung-cac-linh-vuc-thuoc-tham-quyen-cua-so-tu-phap..signed639056177100499762.pdf",
+          "articleTitle": "Quyết định/danh mục TTHC sửa đổi, bổ sung lĩnh vực Hộ tịch năm 2026 thể hiện tiếp nhận tại Trung tâm phục vụ hành chính công cấp xã.",
+          "publishedDate": "2026-01-10",
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6811/tintuc/2026/2/qd-cong-bo-dm-tthc-sua-doi-bo-sung-cac-linh-vuc-thuoc-tham-quyen-cua-so-tu-phap..signed639056177100499762.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [
+            "93/QĐ-UBND"
+          ],
+          "repealContext": false
+        },
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-ho-tich-quoc-tich-nuoi-con-nuoi-boi-th-844229",
+          "articleTitle": "Bằng chứng đối chiếu trong corpus nguồn chính thức Vĩnh Bảo",
+          "publishedDate": null,
+          "classification": "priority51_local_corpus_support",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-tu-phap.signed639038308976015274.pdf",
+          "attachmentSha256": "df70d5cccb9c8fc37bda4bc3c098e0c5b7206d9e6458e787eee653206698df80",
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-867c-72db-b6a7-dcbd8c763807&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 32,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 37
+    },
+    {
+      "ma": "1.004873",
+      "ten": "Thủ tục cấp Giấy xác nhận tình trạng hôn nhân",
+      "linhVuc": "HỘ TỊCH",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "019d2bfd-6eb3-7019-bf3f-fc58c9ee44b9",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-07",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+          "articleTitle": "Danh mục TTHC Bộ Tư pháp/Hải Phòng năm 2026 xác định thủ tục ở Cấp Xã, cơ quan thực hiện UBND cấp xã.",
+          "publishedDate": null,
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [],
+          "repealContext": false
+        },
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-ho-tich-quoc-tich-nuoi-con-nuoi-boi-th-844229",
+          "articleTitle": "Bằng chứng đối chiếu trong corpus nguồn chính thức Vĩnh Bảo",
+          "publishedDate": null,
+          "classification": "priority51_local_corpus_support",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-tu-phap.signed639038308976015274.pdf",
+          "attachmentSha256": "df70d5cccb9c8fc37bda4bc3c098e0c5b7206d9e6458e787eee653206698df80",
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-6eb3-7019-bf3f-fc58c9ee44b9&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 31,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 38
+    },
+    {
+      "ma": "2.002189",
+      "ten": "Thủ tục ghi vào Sổ hộ tịch việc kết hôn của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài",
+      "linhVuc": "HỘ TỊCH",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "019d2bfd-9dec-73f6-b213-be4bfb4f911b",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-07",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+          "articleTitle": "Danh mục TTHC Bộ Tư pháp/Hải Phòng năm 2026 xác định thủ tục ở Cấp Xã, cơ quan thực hiện UBND cấp xã.",
+          "publishedDate": null,
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [],
+          "repealContext": false
+        },
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-ho-tich-quoc-tich-nuoi-con-nuoi-boi-th-844229",
+          "articleTitle": "Bằng chứng đối chiếu trong corpus nguồn chính thức Vĩnh Bảo",
+          "publishedDate": null,
+          "classification": "priority51_local_corpus_support",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-tu-phap.signed639038308976015274.pdf",
+          "attachmentSha256": "df70d5cccb9c8fc37bda4bc3c098e0c5b7206d9e6458e787eee653206698df80",
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-9dec-73f6-b213-be4bfb4f911b&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 27,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 39
+    },
+    {
+      "ma": "1.004859",
+      "ten": "Thủ tục thay đổi, cải chính, bổ sung thông tin hộ tịch, xác định lại dân tộc",
+      "linhVuc": "HỘ TỊCH",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "019d2bfd-671e-714b-8fd6-8230c82f7867",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-07",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+          "articleTitle": "Danh mục TTHC Bộ Tư pháp/Hải Phòng năm 2026 xác định thủ tục ở Cấp Xã, cơ quan thực hiện UBND cấp xã.",
+          "publishedDate": null,
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [],
+          "repealContext": false
+        },
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-ho-tich-quoc-tich-nuoi-con-nuoi-boi-th-844229",
+          "articleTitle": "Bằng chứng đối chiếu trong corpus nguồn chính thức Vĩnh Bảo",
+          "publishedDate": null,
+          "classification": "priority51_local_corpus_support",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-tu-phap.signed639038308976015274.pdf",
+          "attachmentSha256": "df70d5cccb9c8fc37bda4bc3c098e0c5b7206d9e6458e787eee653206698df80",
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-671e-714b-8fd6-8230c82f7867&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 30,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 40
+    },
+    {
+      "ma": "1.004837",
+      "ten": "Thủ tục đăng ký giám hộ",
+      "linhVuc": "HỘ TỊCH",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "019d2bfd-671b-75fa-82fb-8ad05a37f638",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-07",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+          "articleTitle": "Danh mục TTHC Bộ Tư pháp/Hải Phòng năm 2026 xác định thủ tục ở Cấp Xã, cơ quan thực hiện UBND cấp xã.",
+          "publishedDate": null,
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [],
+          "repealContext": false
+        },
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-ho-tich-quoc-tich-nuoi-con-nuoi-boi-th-844229",
+          "articleTitle": "Bằng chứng đối chiếu trong corpus nguồn chính thức Vĩnh Bảo",
+          "publishedDate": null,
+          "classification": "priority51_local_corpus_support",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-tu-phap.signed639038308976015274.pdf",
+          "attachmentSha256": "df70d5cccb9c8fc37bda4bc3c098e0c5b7206d9e6458e787eee653206698df80",
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-671b-75fa-82fb-8ad05a37f638&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 42,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 41
     },
     {
       "ma": "1.000894",
@@ -1092,7 +2013,7 @@
       "priority51": true,
       "priority51Ordinal": 40,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 25
+      "stt": 42
     },
     {
       "ma": "2.000806",
@@ -1135,7 +2056,7 @@
       "priority51": true,
       "priority51Ordinal": 39,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 26
+      "stt": 43
     },
     {
       "ma": "1.000593",
@@ -1178,7 +2099,231 @@
       "priority51": true,
       "priority51Ordinal": 33,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 27
+      "stt": 44
+    },
+    {
+      "ma": "1.001193",
+      "ten": "Thủ tục đăng ký khai sinh",
+      "linhVuc": "HỘ TỊCH",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "019d2bfd-3fe0-70ac-b9d6-5e9e20d6eef7",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-07",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+          "articleTitle": "Danh mục TTHC Bộ Tư pháp/Hải Phòng năm 2026 xác định thủ tục ở Cấp Xã, cơ quan thực hiện UBND cấp xã.",
+          "publishedDate": null,
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [],
+          "repealContext": false
+        },
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-ho-tich-quoc-tich-nuoi-con-nuoi-boi-th-844229",
+          "articleTitle": "Bằng chứng đối chiếu trong corpus nguồn chính thức Vĩnh Bảo",
+          "publishedDate": null,
+          "classification": "priority51_local_corpus_support",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-tu-phap.signed639038308976015274.pdf",
+          "attachmentSha256": "df70d5cccb9c8fc37bda4bc3c098e0c5b7206d9e6458e787eee653206698df80",
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-3fe0-70ac-b9d6-5e9e20d6eef7&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 29,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 45
+    },
+    {
+      "ma": "1.004772",
+      "ten": "Thủ tục đăng ký khai sinh cho người đã có hồ sơ, giấy tờ cá nhân",
+      "linhVuc": "HỘ TỊCH",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "019d2bfd-6711-733d-b674-fc3d805e70c8",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-07",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+          "articleTitle": "Danh mục TTHC Bộ Tư pháp/Hải Phòng năm 2026 xác định thủ tục ở Cấp Xã, cơ quan thực hiện UBND cấp xã.",
+          "publishedDate": null,
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [],
+          "repealContext": false
+        },
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-ho-tich-quoc-tich-nuoi-con-nuoi-boi-th-844229",
+          "articleTitle": "Bằng chứng đối chiếu trong corpus nguồn chính thức Vĩnh Bảo",
+          "publishedDate": null,
+          "classification": "priority51_local_corpus_support",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-tu-phap.signed639038308976015274.pdf",
+          "attachmentSha256": "df70d5cccb9c8fc37bda4bc3c098e0c5b7206d9e6458e787eee653206698df80",
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-6711-733d-b674-fc3d805e70c8&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 34,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 46
+    },
+    {
+      "ma": "2.000528",
+      "ten": "Thủ tục đăng ký khai sinh có yếu tố nước ngoài",
+      "linhVuc": "HỘ TỊCH",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "019d2bfd-8662-763f-927f-dc039ede198c",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-07",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+          "articleTitle": "Danh mục TTHC Bộ Tư pháp/Hải Phòng năm 2026 xác định thủ tục ở Cấp Xã, cơ quan thực hiện UBND cấp xã.",
+          "publishedDate": null,
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [],
+          "repealContext": false
+        },
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-ho-tich-quoc-tich-nuoi-con-nuoi-boi-th-844229",
+          "articleTitle": "Bằng chứng đối chiếu trong corpus nguồn chính thức Vĩnh Bảo",
+          "publishedDate": null,
+          "classification": "priority51_local_corpus_support",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-tu-phap.signed639038308976015274.pdf",
+          "attachmentSha256": "df70d5cccb9c8fc37bda4bc3c098e0c5b7206d9e6458e787eee653206698df80",
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-8662-763f-927f-dc039ede198c&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 35,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 47
+    },
+    {
+      "ma": "1.000689",
+      "ten": "Thủ tục đăng ký khai sinh kết hợp đăng ký nhận cha, mẹ, con",
+      "linhVuc": "HỘ TỊCH",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "019d2bfd-3faf-768a-9224-9cb889436133",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-07",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+          "articleTitle": "Danh mục TTHC Bộ Tư pháp/Hải Phòng năm 2026 xác định thủ tục ở Cấp Xã, cơ quan thực hiện UBND cấp xã.",
+          "publishedDate": null,
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [],
+          "repealContext": false
+        },
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-ho-tich-quoc-tich-nuoi-con-nuoi-boi-th-844229",
+          "articleTitle": "Bằng chứng đối chiếu trong corpus nguồn chính thức Vĩnh Bảo",
+          "publishedDate": null,
+          "classification": "priority51_local_corpus_support",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-tu-phap.signed639038308976015274.pdf",
+          "attachmentSha256": "df70d5cccb9c8fc37bda4bc3c098e0c5b7206d9e6458e787eee653206698df80",
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-3faf-768a-9224-9cb889436133&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 41,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 48
     },
     {
       "ma": "1.003583",
@@ -1216,7 +2361,63 @@
         }
       ],
       "priority51": false,
-      "stt": 28
+      "stt": 49
+    },
+    {
+      "ma": "1.000656",
+      "ten": "Thủ tục đăng ký khai tử",
+      "linhVuc": "HỘ TỊCH",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "019d2bfd-3fac-7489-b53b-9c6c958f2da4",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-07",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+          "articleTitle": "Danh mục TTHC Bộ Tư pháp/Hải Phòng năm 2026 xác định thủ tục ở Cấp Xã, cơ quan thực hiện UBND cấp xã.",
+          "publishedDate": null,
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [],
+          "repealContext": false
+        },
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-ho-tich-quoc-tich-nuoi-con-nuoi-boi-th-844229",
+          "articleTitle": "Bằng chứng đối chiếu trong corpus nguồn chính thức Vĩnh Bảo",
+          "publishedDate": null,
+          "classification": "priority51_local_corpus_support",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-tu-phap.signed639038308976015274.pdf",
+          "attachmentSha256": "df70d5cccb9c8fc37bda4bc3c098e0c5b7206d9e6458e787eee653206698df80",
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-3fac-7489-b53b-9c6c958f2da4&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 28,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 50
     },
     {
       "ma": "1.000419",
@@ -1254,7 +2455,7 @@
         }
       ],
       "priority51": false,
-      "stt": 29
+      "stt": 51
     },
     {
       "ma": "1.004746",
@@ -1297,7 +2498,119 @@
       "priority51": true,
       "priority51Ordinal": 37,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 30
+      "stt": 52
+    },
+    {
+      "ma": "1.004884",
+      "ten": "Thủ tục đăng ký lại khai sinh",
+      "linhVuc": "HỘ TỊCH",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "019d2bfd-6eac-7598-b88b-15f8a61b366a",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-07",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+          "articleTitle": "Danh mục TTHC Bộ Tư pháp/Hải Phòng năm 2026 xác định thủ tục ở Cấp Xã, cơ quan thực hiện UBND cấp xã.",
+          "publishedDate": null,
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [],
+          "repealContext": false
+        },
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-ho-tich-quoc-tich-nuoi-con-nuoi-boi-th-844229",
+          "articleTitle": "Bằng chứng đối chiếu trong corpus nguồn chính thức Vĩnh Bảo",
+          "publishedDate": null,
+          "classification": "priority51_local_corpus_support",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-tu-phap.signed639038308976015274.pdf",
+          "attachmentSha256": "df70d5cccb9c8fc37bda4bc3c098e0c5b7206d9e6458e787eee653206698df80",
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-6eac-7598-b88b-15f8a61b366a&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 38,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 53
+    },
+    {
+      "ma": "1.005461",
+      "ten": "Đăng ký lại khai tử",
+      "linhVuc": "HỘ TỊCH",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "019d2bfd-6ebc-709e-8678-a9f8b66738f2",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-07",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+          "articleTitle": "Danh mục TTHC Bộ Tư pháp/Hải Phòng năm 2026 xác định thủ tục ở Cấp Xã, cơ quan thực hiện UBND cấp xã.",
+          "publishedDate": null,
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [],
+          "repealContext": false
+        },
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-ho-tich-quoc-tich-nuoi-con-nuoi-boi-th-844229",
+          "articleTitle": "Bằng chứng đối chiếu trong corpus nguồn chính thức Vĩnh Bảo",
+          "publishedDate": null,
+          "classification": "priority51_local_corpus_support",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-tu-phap.signed639038308976015274.pdf",
+          "attachmentSha256": "df70d5cccb9c8fc37bda4bc3c098e0c5b7206d9e6458e787eee653206698df80",
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-6ebc-709e-8678-a9f8b66738f2&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 36,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 54
     },
     {
       "ma": "2.000424",
@@ -1335,7 +2648,155 @@
         }
       ],
       "priority51": false,
-      "stt": 31
+      "stt": 55
+    },
+    {
+      "ma": "1.013702",
+      "ten": "Công nhận ban vận động thành lập hội",
+      "linhVuc": "HỘI",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "019d2bfb-1b5c-7417-b2be-9deaf8580018",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-07",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6823/tintuc/2026/4/danh_muc_tthc_bo_noi_vu639109961034637945.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6823/tintuc/2026/4/danh_muc_tthc_bo_noi_vu639109961034637945.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6823/tintuc/2026/4/danh_muc_tthc_bo_noi_vu639109961034637945.pdf",
+          "articleTitle": "Danh mục TTHC Bộ Nội vụ trên hạ tầng chính thức Hải Phòng xác định thủ tục lĩnh vực Hội thuộc cấp xã/UBND cấp xã.",
+          "publishedDate": null,
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6823/tintuc/2026/4/danh_muc_tthc_bo_noi_vu639109961034637945.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfb-1b5c-7417-b2be-9deaf8580018&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 10,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 56
+    },
+    {
+      "ma": "1.013703",
+      "ten": "Thành lập hội",
+      "linhVuc": "HỘI",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "019d2bfb-1b5e-74c5-be8d-c902d128672d",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-07",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6823/tintuc/2026/4/danh_muc_tthc_bo_noi_vu639109961034637945.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6823/tintuc/2026/4/danh_muc_tthc_bo_noi_vu639109961034637945.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6823/tintuc/2026/4/danh_muc_tthc_bo_noi_vu639109961034637945.pdf",
+          "articleTitle": "Danh mục TTHC Bộ Nội vụ trên hạ tầng chính thức Hải Phòng xác định thủ tục lĩnh vực Hội thuộc cấp xã/UBND cấp xã.",
+          "publishedDate": null,
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6823/tintuc/2026/4/danh_muc_tthc_bo_noi_vu639109961034637945.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfb-1b5e-74c5-be8d-c902d128672d&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 11,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 57
+    },
+    {
+      "ma": "2.001283",
+      "ten": "Cấp Giấy chứng nhận đủ điều kiện cửa hàng bán lẻ LPG chai",
+      "linhVuc": "KINH DOANH KHÍ",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-07",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6822/tintuc/2026/5/27.5-tb-niem-yet-tthc.signed639154720526079683.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6822/tintuc/2026/5/27.5-tb-niem-yet-tthc.signed639154720526079683.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6822/tintuc/2026/5/27.5-tb-niem-yet-tthc.signed639154720526079683.pdf",
+          "articleTitle": "Thông báo niêm yết TTHC chính thức Hải Phòng năm 2026 tiếp tục liệt kê mã 2.001283 trong nhóm Kinh doanh khí.",
+          "publishedDate": null,
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6822/tintuc/2026/5/27.5-tb-niem-yet-tthc.signed639154720526079683.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [],
+          "repealContext": false
+        },
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-xay-dung-va-cong-thuong/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-bi-bai-bo-thuoc-pham-vi-chuc-nang--911891",
+          "articleTitle": "Bằng chứng đối chiếu trong corpus nguồn chính thức Vĩnh Bảo",
+          "publishedDate": null,
+          "classification": "priority51_local_corpus_support",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/qd-cong-bo-dm-tthc-theo-qd-1177-cua-bo-ct..signed639165260606585979.pdf",
+          "attachmentSha256": "4344cd91fab152eba97ec780c1ed168619a90af8d1643d1975d42ef89d2b3a6f",
+          "decisionNumbers": [
+            "1177/QĐ-BCT"
+          ],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 18,
+      "priority51MappingStatus": "verified_keyword_fallback",
+      "dvcKeywordUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?keyword=2.001283&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0",
+      "stt": 58
     },
     {
       "ma": "1.012531",
@@ -1373,7 +2834,7 @@
         }
       ],
       "priority51": false,
-      "stt": 32
+      "stt": 59
     },
     {
       "ma": "2.002821",
@@ -1414,7 +2875,7 @@
         }
       ],
       "priority51": false,
-      "stt": 33
+      "stt": 60
     },
     {
       "ma": "1.013040",
@@ -1456,7 +2917,155 @@
         }
       ],
       "priority51": false,
-      "stt": 34
+      "stt": 61
+    },
+    {
+      "ma": "1.010833",
+      "ten": "Cấp giấy xác nhận thân nhân của người có công",
+      "linhVuc": "NGƯỜI CÓ CÔNG",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "019d2bfb-03d5-700b-9bb5-d92070224137",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-07",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6823/tintuc/2026/4/danh_muc_tthc_bo_noi_vu639109961034637945.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6823/tintuc/2026/4/danh_muc_tthc_bo_noi_vu639109961034637945.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6823/tintuc/2026/4/danh_muc_tthc_bo_noi_vu639109961034637945.pdf",
+          "articleTitle": "Danh mục TTHC Bộ Nội vụ trên hạ tầng chính thức Hải Phòng xác định thủ tục cấp xã/UBND cấp xã.",
+          "publishedDate": null,
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6823/tintuc/2026/4/danh_muc_tthc_bo_noi_vu639109961034637945.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [],
+          "repealContext": false
+        },
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
+          "articleTitle": "Bằng chứng đối chiếu trong corpus nguồn chính thức Vĩnh Bảo",
+          "publishedDate": null,
+          "classification": "priority51_local_corpus_support",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
+          "attachmentSha256": "abe382a3c76cf56635578d52d4e798c404ccc667f8b97b32952767d1f261cb4d",
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfb-03d5-700b-9bb5-d92070224137&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 15,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 62
+    },
+    {
+      "ma": "1.010803",
+      "ten": "Giải quyết chế độ trợ cấp thờ cúng liệt sĩ",
+      "linhVuc": "NGƯỜI CÓ CÔNG",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "019d2bfa-fc0c-7046-b5dc-04303a18608d",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-07",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6856/tintuc/2025/11/13.11.dmtthc.signed638989743120385193.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6856/tintuc/2025/11/13.11.dmtthc.signed638989743120385193.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6856/tintuc/2025/11/13.11.dmtthc.signed638989743120385193.pdf",
+          "articleTitle": "Danh mục TTHC lĩnh vực Người có công thể hiện mã thủ tục và Trung tâm Phục vụ hành chính công cấp xã.",
+          "publishedDate": null,
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6856/tintuc/2025/11/13.11.dmtthc.signed638989743120385193.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-fc0c-7046-b5dc-04303a18608d&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 9,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 63
+    },
+    {
+      "ma": "1.010824",
+      "ten": "Hưởng trợ cấp khi người có công đang hưởng trợ cấp ưu đãi từ trần",
+      "linhVuc": "NGƯỜI CÓ CÔNG",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "019d2bfa-fc36-7611-9219-adb6dee5774f",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-07",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6856/tintuc/2025/11/13.11.dmtthc.signed638989743120385193.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6856/tintuc/2025/11/13.11.dmtthc.signed638989743120385193.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6856/tintuc/2025/11/13.11.dmtthc.signed638989743120385193.pdf",
+          "articleTitle": "Danh mục TTHC lĩnh vực Người có công thể hiện mã thủ tục và Trung tâm Phục vụ hành chính công cấp xã.",
+          "publishedDate": null,
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6856/tintuc/2025/11/13.11.dmtthc.signed638989743120385193.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-fc36-7611-9219-adb6dee5774f&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 8,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 64
     },
     {
       "ma": "1.000479",
@@ -1496,7 +3105,7 @@
         }
       ],
       "priority51": false,
-      "stt": 35
+      "stt": 65
     },
     {
       "ma": "1.000464",
@@ -1536,7 +3145,7 @@
         }
       ],
       "priority51": false,
-      "stt": 36
+      "stt": 66
     },
     {
       "ma": "1.013022",
@@ -1574,7 +3183,7 @@
         }
       ],
       "priority51": false,
-      "stt": 37
+      "stt": 67
     },
     {
       "ma": "1.116316",
@@ -1616,7 +3225,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 38
+      "stt": 68
     },
     {
       "ma": "1.012942",
@@ -1654,7 +3263,7 @@
         }
       ],
       "priority51": false,
-      "stt": 39
+      "stt": 69
     },
     {
       "ma": "1.013017",
@@ -1692,7 +3301,7 @@
         }
       ],
       "priority51": false,
-      "stt": 40
+      "stt": 70
     },
     {
       "ma": "1.013020",
@@ -1730,7 +3339,7 @@
         }
       ],
       "priority51": false,
-      "stt": 41
+      "stt": 71
     },
     {
       "ma": "1.012945",
@@ -1768,7 +3377,7 @@
         }
       ],
       "priority51": false,
-      "stt": 42
+      "stt": 72
     },
     {
       "ma": "1.012948",
@@ -1806,7 +3415,7 @@
         }
       ],
       "priority51": false,
-      "stt": 43
+      "stt": 73
     },
     {
       "ma": "1.012947",
@@ -1844,7 +3453,7 @@
         }
       ],
       "priority51": false,
-      "stt": 44
+      "stt": 74
     },
     {
       "ma": "1.013021",
@@ -1882,7 +3491,7 @@
         }
       ],
       "priority51": false,
-      "stt": 45
+      "stt": 75
     },
     {
       "ma": "1.013018",
@@ -1920,7 +3529,7 @@
         }
       ],
       "priority51": false,
-      "stt": 46
+      "stt": 76
     },
     {
       "ma": "1.013019",
@@ -1958,7 +3567,7 @@
         }
       ],
       "priority51": false,
-      "stt": 47
+      "stt": 77
     },
     {
       "ma": "1.012946",
@@ -1996,7 +3605,7 @@
         }
       ],
       "priority51": false,
-      "stt": 48
+      "stt": 78
     },
     {
       "ma": "1.013023",
@@ -2034,7 +3643,7 @@
         }
       ],
       "priority51": false,
-      "stt": 49
+      "stt": 79
     },
     {
       "ma": "1.012929",
@@ -2072,7 +3681,7 @@
         }
       ],
       "priority51": false,
-      "stt": 50
+      "stt": 80
     },
     {
       "ma": "1.014111",
@@ -2127,7 +3736,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 51
+      "stt": 81
     },
     {
       "ma": "1.012943",
@@ -2165,7 +3774,7 @@
         }
       ],
       "priority51": false,
-      "stt": 52
+      "stt": 82
     },
     {
       "ma": "1.014113",
@@ -2207,7 +3816,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 53
+      "stt": 83
     },
     {
       "ma": "1.012629",
@@ -2245,7 +3854,7 @@
         }
       ],
       "priority51": false,
-      "stt": 54
+      "stt": 84
     },
     {
       "ma": "1.012664",
@@ -2283,7 +3892,7 @@
         }
       ],
       "priority51": false,
-      "stt": 55
+      "stt": 85
     },
     {
       "ma": "1.012657",
@@ -2321,7 +3930,7 @@
         }
       ],
       "priority51": false,
-      "stt": 56
+      "stt": 86
     },
     {
       "ma": "1.012659",
@@ -2359,7 +3968,7 @@
         }
       ],
       "priority51": false,
-      "stt": 57
+      "stt": 87
     },
     {
       "ma": "1.012632",
@@ -2397,7 +4006,7 @@
         }
       ],
       "priority51": false,
-      "stt": 58
+      "stt": 88
     },
     {
       "ma": "1.012641",
@@ -2435,7 +4044,7 @@
         }
       ],
       "priority51": false,
-      "stt": 59
+      "stt": 89
     },
     {
       "ma": "1.012660",
@@ -2473,7 +4082,7 @@
         }
       ],
       "priority51": false,
-      "stt": 60
+      "stt": 90
     },
     {
       "ma": "1.012672",
@@ -2511,7 +4120,7 @@
         }
       ],
       "priority51": false,
-      "stt": 61
+      "stt": 91
     },
     {
       "ma": "1.012637",
@@ -2549,7 +4158,7 @@
         }
       ],
       "priority51": false,
-      "stt": 62
+      "stt": 92
     },
     {
       "ma": "1.012605",
@@ -2587,7 +4196,7 @@
         }
       ],
       "priority51": false,
-      "stt": 63
+      "stt": 93
     },
     {
       "ma": "1.012655",
@@ -2625,7 +4234,7 @@
         }
       ],
       "priority51": false,
-      "stt": 64
+      "stt": 94
     },
     {
       "ma": "1.012646",
@@ -2663,7 +4272,7 @@
         }
       ],
       "priority51": false,
-      "stt": 65
+      "stt": 95
     },
     {
       "ma": "1.012648",
@@ -2701,7 +4310,7 @@
         }
       ],
       "priority51": false,
-      "stt": 66
+      "stt": 96
     },
     {
       "ma": "1.012658",
@@ -2739,7 +4348,7 @@
         }
       ],
       "priority51": false,
-      "stt": 67
+      "stt": 97
     },
     {
       "ma": "1.012661",
@@ -2777,7 +4386,7 @@
         }
       ],
       "priority51": false,
-      "stt": 68
+      "stt": 98
     },
     {
       "ma": "1.012645",
@@ -2815,7 +4424,7 @@
         }
       ],
       "priority51": false,
-      "stt": 69
+      "stt": 99
     },
     {
       "ma": "1.012644",
@@ -2853,7 +4462,7 @@
         }
       ],
       "priority51": false,
-      "stt": 70
+      "stt": 100
     },
     {
       "ma": "1.012656",
@@ -2891,7 +4500,7 @@
         }
       ],
       "priority51": false,
-      "stt": 71
+      "stt": 101
     },
     {
       "ma": "1.012653",
@@ -2929,7 +4538,7 @@
         }
       ],
       "priority51": false,
-      "stt": 72
+      "stt": 102
     },
     {
       "ma": "1.012606",
@@ -2967,7 +4576,7 @@
         }
       ],
       "priority51": false,
-      "stt": 73
+      "stt": 103
     },
     {
       "ma": "1.012607",
@@ -3005,7 +4614,7 @@
         }
       ],
       "priority51": false,
-      "stt": 74
+      "stt": 104
     },
     {
       "ma": "1.012639",
@@ -3043,7 +4652,7 @@
         }
       ],
       "priority51": false,
-      "stt": 75
+      "stt": 105
     },
     {
       "ma": "1.008675",
@@ -3087,7 +4696,7 @@
         }
       ],
       "priority51": false,
-      "stt": 76
+      "stt": 106
     },
     {
       "ma": "2.001576",
@@ -3139,7 +4748,7 @@
         }
       ],
       "priority51": false,
-      "stt": 77
+      "stt": 107
     },
     {
       "ma": "1.003814",
@@ -3191,7 +4800,7 @@
         }
       ],
       "priority51": false,
-      "stt": 78
+      "stt": 108
     },
     {
       "ma": "1.007916",
@@ -3235,7 +4844,7 @@
         }
       ],
       "priority51": false,
-      "stt": 79
+      "stt": 109
     },
     {
       "ma": "1.014953",
@@ -3287,7 +4896,7 @@
         }
       ],
       "priority51": false,
-      "stt": 80
+      "stt": 110
     },
     {
       "ma": "2.001263",
@@ -3325,7 +4934,7 @@
         }
       ],
       "priority51": false,
-      "stt": 81
+      "stt": 111
     },
     {
       "ma": "1.003705",
@@ -3365,7 +4974,7 @@
         }
       ],
       "priority51": false,
-      "stt": 82
+      "stt": 112
     },
     {
       "ma": "2.000609",
@@ -3405,7 +5014,7 @@
         }
       ],
       "priority51": false,
-      "stt": 83
+      "stt": 113
     },
     {
       "ma": "2.000324",
@@ -3445,7 +5054,7 @@
         }
       ],
       "priority51": false,
-      "stt": 84
+      "stt": 114
     },
     {
       "ma": "1.013734",
@@ -3499,7 +5108,7 @@
         }
       ],
       "priority51": false,
-      "stt": 85
+      "stt": 115
     },
     {
       "ma": "2.002020",
@@ -3541,7 +5150,7 @@
         }
       ],
       "priority51": false,
-      "stt": 86
+      "stt": 116
     },
     {
       "ma": "2.002043",
@@ -3583,7 +5192,7 @@
         }
       ],
       "priority51": false,
-      "stt": 87
+      "stt": 117
     },
     {
       "ma": "2.002042",
@@ -3625,7 +5234,7 @@
         }
       ],
       "priority51": false,
-      "stt": 88
+      "stt": 118
     },
     {
       "ma": "2.001610",
@@ -3667,7 +5276,7 @@
         }
       ],
       "priority51": false,
-      "stt": 89
+      "stt": 119
     },
     {
       "ma": "2.001942",
@@ -3740,7 +5349,7 @@
         }
       ],
       "priority51": false,
-      "stt": 90
+      "stt": 120
     },
     {
       "ma": "1.003915",
@@ -3781,7 +5390,7 @@
         }
       ],
       "priority51": false,
-      "stt": 91
+      "stt": 121
     },
     {
       "ma": "1.008928",
@@ -3822,7 +5431,7 @@
         }
       ],
       "priority51": false,
-      "stt": 92
+      "stt": 122
     },
     {
       "ma": "1.004878",
@@ -3860,7 +5469,7 @@
         }
       ],
       "priority51": false,
-      "stt": 93
+      "stt": 123
     },
     {
       "ma": "2.000977",
@@ -3898,7 +5507,7 @@
         }
       ],
       "priority51": false,
-      "stt": 94
+      "stt": 124
     },
     {
       "ma": "2.000970",
@@ -3936,7 +5545,7 @@
         }
       ],
       "priority51": false,
-      "stt": 95
+      "stt": 125
     },
     {
       "ma": "2.002039",
@@ -3974,7 +5583,7 @@
         }
       ],
       "priority51": false,
-      "stt": 96
+      "stt": 126
     },
     {
       "ma": "2.001225",
@@ -4015,7 +5624,7 @@
         }
       ],
       "priority51": false,
-      "stt": 97
+      "stt": 127
     },
     {
       "ma": "2.001680",
@@ -4053,7 +5662,7 @@
         }
       ],
       "priority51": false,
-      "stt": 98
+      "stt": 128
     },
     {
       "ma": "2.001687",
@@ -4091,7 +5700,7 @@
         }
       ],
       "priority51": false,
-      "stt": 99
+      "stt": 129
     },
     {
       "ma": "1.008926",
@@ -4132,7 +5741,7 @@
         }
       ],
       "priority51": false,
-      "stt": 100
+      "stt": 130
     },
     {
       "ma": "2.002036",
@@ -4170,7 +5779,7 @@
         }
       ],
       "priority51": false,
-      "stt": 101
+      "stt": 131
     },
     {
       "ma": "2.000592",
@@ -4208,7 +5817,7 @@
         }
       ],
       "priority51": false,
-      "stt": 102
+      "stt": 132
     },
     {
       "ma": "2.000513",
@@ -4246,7 +5855,7 @@
         }
       ],
       "priority51": false,
-      "stt": 103
+      "stt": 133
     },
     {
       "ma": "2.002038",
@@ -4284,7 +5893,7 @@
         }
       ],
       "priority51": false,
-      "stt": 104
+      "stt": 134
     },
     {
       "ma": "2.000829",
@@ -4322,7 +5931,7 @@
         }
       ],
       "priority51": false,
-      "stt": 105
+      "stt": 135
     },
     {
       "ma": "1.008927",
@@ -4363,7 +5972,7 @@
         }
       ],
       "priority51": false,
-      "stt": 106
+      "stt": 136
     },
     {
       "ma": "1.008925",
@@ -4404,7 +6013,7 @@
         }
       ],
       "priority51": false,
-      "stt": 107
+      "stt": 137
     },
     {
       "ma": "2.002139",
@@ -4445,7 +6054,7 @@
         }
       ],
       "priority51": false,
-      "stt": 108
+      "stt": 138
     },
     {
       "ma": "1.014389",
@@ -4486,7 +6095,7 @@
         }
       ],
       "priority51": false,
-      "stt": 109
+      "stt": 139
     },
     {
       "ma": "1.014390",
@@ -4527,7 +6136,53 @@
         }
       ],
       "priority51": false,
-      "stt": 110
+      "stt": 140
+    },
+    {
+      "ma": "1.003622",
+      "ten": "Thông báo tổ chức lễ hội cấp xã",
+      "linhVuc": "VĂN HÓA",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "019d2bfd-c4cb-734d-bb80-29723a707c08",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-07",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6815/tintuc/2025/7/dm-tthc-chuan-hoa-so-van-hoa-tt-trang-2638883643696552431.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6815/tintuc/2025/7/dm-tthc-chuan-hoa-so-van-hoa-tt-trang-2638883643696552431.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6815/tintuc/2025/7/dm-tthc-chuan-hoa-so-van-hoa-tt-trang-2638883643696552431.pdf",
+          "articleTitle": "Danh mục TTHC chuẩn hóa lĩnh vực Văn hóa thể hiện mã 1.003622 và địa điểm thực hiện tại Trung tâm phục vụ hành chính công cấp xã.",
+          "publishedDate": null,
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6815/tintuc/2025/7/dm-tthc-chuan-hoa-so-van-hoa-tt-trang-2638883643696552431.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-c4cb-734d-bb80-29723a707c08&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 3,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 141
     },
     {
       "ma": "1.014310",
@@ -4606,7 +6261,7 @@
         }
       ],
       "priority51": false,
-      "stt": 111
+      "stt": 142
     },
     {
       "ma": "1.014312",
@@ -4672,7 +6327,7 @@
         }
       ],
       "priority51": false,
-      "stt": 112
+      "stt": 143
     },
     {
       "ma": "1.013725",
@@ -4726,7 +6381,7 @@
         }
       ],
       "priority51": false,
-      "stt": 113
+      "stt": 144
     },
     {
       "ma": "1.013724",
@@ -4793,7 +6448,7 @@
         }
       ],
       "priority51": false,
-      "stt": 114
+      "stt": 145
     },
     {
       "ma": "3.000242",
@@ -4835,7 +6490,235 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 115
+      "stt": 146
+    },
+    {
+      "ma": "2.000575",
+      "ten": "Cấp lại Giấy chứng nhận đăng ký hộ kinh doanh, Cấp đổi sang Giấy chứng nhận đăng ký hộ kinh doanh",
+      "linhVuc": "ĐĂNG KÝ HỘ KINH DOANH",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "019d2bfc-d9d1-7475-8e58-1aa4479901eb",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-07",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6822/tintuc/2026/5/27.5-tb-niem-yet-tthc.signed639154720526079683.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6822/tintuc/2026/5/27.5-tb-niem-yet-tthc.signed639154720526079683.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6822/tintuc/2026/5/27.5-tb-niem-yet-tthc.signed639154720526079683.pdf",
+          "articleTitle": "Thông báo niêm yết TTHC chính thức Hải Phòng năm 2026 tiếp tục liệt kê nhóm thủ tục thành lập và hoạt động hộ kinh doanh.",
+          "publishedDate": null,
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6822/tintuc/2026/5/27.5-tb-niem-yet-tthc.signed639154720526079683.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfc-d9d1-7475-8e58-1aa4479901eb&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 22,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 147
+    },
+    {
+      "ma": "1.001266",
+      "ten": "Chấm dứt hoạt động hộ kinh doanh",
+      "linhVuc": "ĐĂNG KÝ HỘ KINH DOANH",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "019d2bfb-d748-72d1-848f-3607bc86e647",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-07",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6822/tintuc/2026/5/27.5-tb-niem-yet-tthc.signed639154720526079683.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6822/tintuc/2026/5/27.5-tb-niem-yet-tthc.signed639154720526079683.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6822/tintuc/2026/5/27.5-tb-niem-yet-tthc.signed639154720526079683.pdf",
+          "articleTitle": "Thông báo niêm yết TTHC chính thức Hải Phòng năm 2026 tiếp tục liệt kê nhóm thủ tục thành lập và hoạt động hộ kinh doanh.",
+          "publishedDate": null,
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6822/tintuc/2026/5/27.5-tb-niem-yet-tthc.signed639154720526079683.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfb-d748-72d1-848f-3607bc86e647&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 23,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 148
+    },
+    {
+      "ma": "1.001570",
+      "ten": "Tạm ngừng kinh doanh, tiếp tục kinh doanh trước thời hạn đã thông báo của hộ kinh doanh",
+      "linhVuc": "ĐĂNG KÝ HỘ KINH DOANH",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "019d2bfb-d768-7446-bd77-3bb11051041c",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-07",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6822/tintuc/2026/5/27.5-tb-niem-yet-tthc.signed639154720526079683.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6822/tintuc/2026/5/27.5-tb-niem-yet-tthc.signed639154720526079683.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6822/tintuc/2026/5/27.5-tb-niem-yet-tthc.signed639154720526079683.pdf",
+          "articleTitle": "Thông báo niêm yết TTHC chính thức Hải Phòng năm 2026 tiếp tục liệt kê nhóm thủ tục thành lập và hoạt động hộ kinh doanh.",
+          "publishedDate": null,
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6822/tintuc/2026/5/27.5-tb-niem-yet-tthc.signed639154720526079683.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfb-d768-7446-bd77-3bb11051041c&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 21,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 149
+    },
+    {
+      "ma": "1.001612",
+      "ten": "Đăng ký thành lập hộ kinh doanh",
+      "linhVuc": "ĐĂNG KÝ HỘ KINH DOANH",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-07",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6822/tintuc/2026/5/27.5-tb-niem-yet-tthc.signed639154720526079683.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6822/tintuc/2026/5/27.5-tb-niem-yet-tthc.signed639154720526079683.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6822/tintuc/2026/5/27.5-tb-niem-yet-tthc.signed639154720526079683.pdf",
+          "articleTitle": "Thông báo niêm yết TTHC chính thức Hải Phòng năm 2026 tiếp tục liệt kê nhóm thủ tục thành lập và hoạt động hộ kinh doanh.",
+          "publishedDate": null,
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6822/tintuc/2026/5/27.5-tb-niem-yet-tthc.signed639154720526079683.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 19,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 150
+    },
+    {
+      "ma": "2.000720",
+      "ten": "Đăng ký thay đổi nội dung đăng ký hộ kinh doanh",
+      "linhVuc": "ĐĂNG KÝ HỘ KINH DOANH",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2026-09-07",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6822/tintuc/2026/5/27.5-tb-niem-yet-tthc.signed639154720526079683.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6822/tintuc/2026/5/27.5-tb-niem-yet-tthc.signed639154720526079683.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6822/tintuc/2026/5/27.5-tb-niem-yet-tthc.signed639154720526079683.pdf",
+          "articleTitle": "Thông báo niêm yết TTHC chính thức Hải Phòng năm 2026 tiếp tục liệt kê nhóm thủ tục thành lập và hoạt động hộ kinh doanh.",
+          "publishedDate": null,
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6822/tintuc/2026/5/27.5-tb-niem-yet-tthc.signed639154720526079683.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51LegalVerificationStatus": "current_official_commune_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "daXacMinh": true,
+      "verificationStatus": "priority51_current_official_commune_evidence",
+      "tiepNhanCapXa": true,
+      "priority51": true,
+      "priority51Ordinal": 20,
+      "priority51MappingStatus": "verified_keyword_fallback",
+      "dvcKeywordUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?keyword=2.000720&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0",
+      "stt": 151
     },
     {
       "ma": "1.012786",
@@ -4897,7 +6780,7 @@
         }
       ],
       "priority51": false,
-      "stt": 116
+      "stt": 152
     },
     {
       "ma": "1.012783",
@@ -4959,7 +6842,7 @@
         }
       ],
       "priority51": false,
-      "stt": 117
+      "stt": 153
     },
     {
       "ma": "1.013825",
@@ -5021,7 +6904,7 @@
         }
       ],
       "priority51": false,
-      "stt": 118
+      "stt": 154
     },
     {
       "ma": "1.011445",
@@ -5083,7 +6966,7 @@
         }
       ],
       "priority51": false,
-      "stt": 119
+      "stt": 155
     },
     {
       "ma": "2.002750",
@@ -5125,7 +7008,7 @@
         }
       ],
       "priority51": false,
-      "stt": 120
+      "stt": 156
     },
     {
       "ma": "1.012805",
@@ -5187,7 +7070,7 @@
         }
       ],
       "priority51": false,
-      "stt": 121
+      "stt": 157
     },
     {
       "ma": "1.115649",
@@ -5228,7 +7111,7 @@
         }
       ],
       "priority51": false,
-      "stt": 122
+      "stt": 158
     },
     {
       "ma": "1.013823",
@@ -5290,7 +7173,7 @@
         }
       ],
       "priority51": false,
-      "stt": 123
+      "stt": 159
     },
     {
       "ma": "1.013828",
@@ -5352,7 +7235,7 @@
         }
       ],
       "priority51": false,
-      "stt": 124
+      "stt": 160
     },
     {
       "ma": "1.012812",
@@ -5411,7 +7294,7 @@
       "priority51": true,
       "priority51Ordinal": 25,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 125
+      "stt": 161
     },
     {
       "ma": "1.013946",
@@ -5473,7 +7356,7 @@
         }
       ],
       "priority51": false,
-      "stt": 126
+      "stt": 162
     },
     {
       "ma": "1.012784",
@@ -5535,7 +7418,7 @@
         }
       ],
       "priority51": false,
-      "stt": 127
+      "stt": 163
     },
     {
       "ma": "1.012821",
@@ -5597,7 +7480,7 @@
         }
       ],
       "priority51": false,
-      "stt": 128
+      "stt": 164
     },
     {
       "ma": "1.012791",
@@ -5659,7 +7542,7 @@
         }
       ],
       "priority51": false,
-      "stt": 129
+      "stt": 165
     },
     {
       "ma": "1.013128",
@@ -5701,7 +7584,7 @@
         }
       ],
       "priority51": false,
-      "stt": 130
+      "stt": 166
     },
     {
       "ma": "1.013945",
@@ -5763,7 +7646,7 @@
         }
       ],
       "priority51": false,
-      "stt": 131
+      "stt": 167
     },
     {
       "ma": "1.013947",
@@ -5825,7 +7708,7 @@
         }
       ],
       "priority51": false,
-      "stt": 132
+      "stt": 168
     },
     {
       "ma": "1.013988",
@@ -5887,7 +7770,7 @@
         }
       ],
       "priority51": false,
-      "stt": 133
+      "stt": 169
     },
     {
       "ma": "1.011443",
@@ -5949,7 +7832,7 @@
         }
       ],
       "priority51": false,
-      "stt": 134
+      "stt": 170
     },
     {
       "ma": "1.012766",
@@ -6011,7 +7894,7 @@
         }
       ],
       "priority51": false,
-      "stt": 135
+      "stt": 171
     },
     {
       "ma": "1.011441",
@@ -6073,7 +7956,7 @@
         }
       ],
       "priority51": false,
-      "stt": 136
+      "stt": 172
     },
     {
       "ma": "1.013992",
@@ -6135,7 +8018,7 @@
         }
       ],
       "priority51": false,
-      "stt": 137
+      "stt": 173
     },
     {
       "ma": "1.013831",
@@ -6197,7 +8080,7 @@
         }
       ],
       "priority51": false,
-      "stt": 138
+      "stt": 174
     },
     {
       "ma": "1.013977",
@@ -6259,7 +8142,7 @@
         }
       ],
       "priority51": false,
-      "stt": 139
+      "stt": 175
     },
     {
       "ma": "1.012793",
@@ -6321,7 +8204,7 @@
         }
       ],
       "priority51": false,
-      "stt": 140
+      "stt": 176
     },
     {
       "ma": "1.013980",
@@ -6383,7 +8266,7 @@
         }
       ],
       "priority51": false,
-      "stt": 141
+      "stt": 177
     },
     {
       "ma": "1.013833",
@@ -6445,7 +8328,7 @@
         }
       ],
       "priority51": false,
-      "stt": 142
+      "stt": 178
     },
     {
       "ma": "1.013995",
@@ -6507,7 +8390,7 @@
         }
       ],
       "priority51": false,
-      "stt": 143
+      "stt": 179
     },
     {
       "ma": "1.011442",
@@ -6569,7 +8452,7 @@
         }
       ],
       "priority51": false,
-      "stt": 144
+      "stt": 180
     },
     {
       "ma": "1.011444",
@@ -6631,7 +8514,7 @@
         }
       ],
       "priority51": false,
-      "stt": 145
+      "stt": 181
     },
     {
       "ma": "1.012756",
@@ -6693,7 +8576,7 @@
         }
       ],
       "priority51": false,
-      "stt": 146
+      "stt": 182
     },
     {
       "ma": "1.012787",
@@ -6755,7 +8638,7 @@
         }
       ],
       "priority51": false,
-      "stt": 147
+      "stt": 183
     },
     {
       "ma": "1.012781",
@@ -6817,7 +8700,7 @@
         }
       ],
       "priority51": false,
-      "stt": 148
+      "stt": 184
     },
     {
       "ma": "1.012782",
@@ -6879,7 +8762,7 @@
         }
       ],
       "priority51": false,
-      "stt": 149
+      "stt": 185
     },
     {
       "ma": "1.013994",
@@ -6941,7 +8824,7 @@
         }
       ],
       "priority51": false,
-      "stt": 150
+      "stt": 186
     },
     {
       "ma": "1.013993",
@@ -7003,7 +8886,7 @@
         }
       ],
       "priority51": false,
-      "stt": 151
+      "stt": 187
     },
     {
       "ma": "1.012785",
@@ -7065,7 +8948,7 @@
         }
       ],
       "priority51": false,
-      "stt": 152
+      "stt": 188
     },
     {
       "ma": "1.013827",
@@ -7127,7 +9010,7 @@
         }
       ],
       "priority51": false,
-      "stt": 153
+      "stt": 189
     },
     {
       "ma": "1.013826",
@@ -7189,7 +9072,7 @@
         }
       ],
       "priority51": false,
-      "stt": 154
+      "stt": 190
     },
     {
       "ma": "1.012790",
@@ -7251,7 +9134,7 @@
         }
       ],
       "priority51": false,
-      "stt": 155
+      "stt": 191
     },
     {
       "ma": "1.013950",
@@ -7291,7 +9174,7 @@
         }
       ],
       "priority51": false,
-      "stt": 156
+      "stt": 192
     },
     {
       "ma": "1.012789",
@@ -7353,7 +9236,7 @@
         }
       ],
       "priority51": false,
-      "stt": 157
+      "stt": 193
     },
     {
       "ma": "1.013967",
@@ -7393,7 +9276,7 @@
         }
       ],
       "priority51": false,
-      "stt": 158
+      "stt": 194
     },
     {
       "ma": "1.013962",
@@ -7433,7 +9316,7 @@
         }
       ],
       "priority51": false,
-      "stt": 159
+      "stt": 195
     },
     {
       "ma": "1.013949",
@@ -7478,7 +9361,7 @@
       "priority51": true,
       "priority51Ordinal": 24,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 160
+      "stt": 196
     },
     {
       "ma": "1.013965",
@@ -7518,7 +9401,7 @@
         }
       ],
       "priority51": false,
-      "stt": 161
+      "stt": 197
     },
     {
       "ma": "1.013979",
@@ -7558,7 +9441,7 @@
         }
       ],
       "priority51": false,
-      "stt": 162
+      "stt": 198
     },
     {
       "ma": "2.002675",
@@ -7606,7 +9489,7 @@
         }
       ],
       "priority51": false,
-      "stt": 163
+      "stt": 199
     },
     {
       "ma": "1.012818",
@@ -7651,7 +9534,7 @@
       "priority51": true,
       "priority51Ordinal": 17,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 164
+      "stt": 200
     },
     {
       "ma": "1.012817",
@@ -7711,7 +9594,7 @@
         }
       ],
       "priority51": false,
-      "stt": 165
+      "stt": 201
     },
     {
       "ma": "1.012753",
@@ -7751,7 +9634,7 @@
         }
       ],
       "priority51": false,
-      "stt": 166
+      "stt": 202
     },
     {
       "ma": "1.013978",
@@ -7796,7 +9679,7 @@
       "priority51": true,
       "priority51Ordinal": 16,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 167
+      "stt": 203
     },
     {
       "ma": "1.013953",
@@ -7836,7 +9719,7 @@
         }
       ],
       "priority51": false,
-      "stt": 168
+      "stt": 204
     },
     {
       "ma": "1.013952",
@@ -7876,7 +9759,7 @@
         }
       ],
       "priority51": false,
-      "stt": 169
+      "stt": 205
     },
     {
       "ma": "1.012796",
@@ -7941,7 +9824,7 @@
       "priority51": true,
       "priority51Ordinal": 26,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 170
+      "stt": 206
     },
     {
       "ma": "1.000703",
@@ -7983,7 +9866,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 171
+      "stt": 207
     },
     {
       "ma": "2.002286",
@@ -8025,7 +9908,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 172
+      "stt": 208
     },
     {
       "ma": "1.010704",
@@ -8067,7 +9950,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 173
+      "stt": 209
     },
     {
       "ma": "1.001023",
@@ -8109,7 +9992,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 174
+      "stt": 210
     },
     {
       "ma": "1.002856",
@@ -8151,7 +10034,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 175
+      "stt": 211
     },
     {
       "ma": "1.002877",
@@ -8193,7 +10076,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 176
+      "stt": 212
     },
     {
       "ma": "1.002817",
@@ -8235,7 +10118,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 177
+      "stt": 213
     },
     {
       "ma": "1.000302",
@@ -8277,7 +10160,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 178
+      "stt": 214
     },
     {
       "ma": "1.010702",
@@ -8319,7 +10202,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 179
+      "stt": 215
     },
     {
       "ma": "1.002861",
@@ -8361,7 +10244,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 180
+      "stt": 216
     },
     {
       "ma": "1.002829",
@@ -8403,7 +10286,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 181
+      "stt": 217
     },
     {
       "ma": "2.002288",
@@ -8445,7 +10328,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 182
+      "stt": 218
     },
     {
       "ma": "1.010707",
@@ -8487,7 +10370,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 183
+      "stt": 219
     },
     {
       "ma": "1.002046",
@@ -8529,7 +10412,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 184
+      "stt": 220
     },
     {
       "ma": "1.001577",
@@ -8571,7 +10454,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 185
+      "stt": 221
     },
     {
       "ma": "1.002063",
@@ -8613,7 +10496,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 186
+      "stt": 222
     },
     {
       "ma": "1.002286",
@@ -8655,7 +10538,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 187
+      "stt": 223
     },
     {
       "ma": "1.001737",
@@ -8697,7 +10580,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 188
+      "stt": 224
     },
     {
       "ma": "2.002285",
@@ -8739,7 +10622,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 189
+      "stt": 225
     },
     {
       "ma": "1.000321",
@@ -8781,7 +10664,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 190
+      "stt": 226
     },
     {
       "ma": "1.002268",
@@ -8823,7 +10706,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 191
+      "stt": 227
     },
     {
       "ma": "1.002334",
@@ -8865,7 +10748,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 192
+      "stt": 228
     },
     {
       "ma": "1.002847",
@@ -8907,27 +10790,33 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 193
+      "stt": 229
     }
   ],
   "summary": {
     "officialCandidateCodes": 159,
-    "auditedCodes": 208,
+    "auditedCodes": 245,
     "cityUpdateCodes": 51,
     "cityCurrentProcedures": 38,
     "cityNewProcedures": 37,
     "cityUpdatedProcedures": 1,
     "cityNeedsReviewRows": 0,
-    "publishedProcedures": 193,
-    "excludedProcedures": 15,
-    "repealedProcedures": 13,
+    "publishedProcedures": 229,
+    "excludedProcedures": 16,
+    "repealedProcedures": 14,
     "futureEffectiveProcedures": 2,
     "unresolvedNameProcedures": 0,
-    "legacyMatchedCodes": 43,
-    "formalityIdMapped": 14,
-    "priority51InCurrentMaster": 14,
+    "legacyMatchedCodes": 75,
+    "formalityIdMapped": 48,
+    "priority51InCurrentMaster": 50,
     "priority51CrosswalkTotal": 51,
-    "priority51Gap": 37,
-    "phiDiaGioi": 56
+    "priority51Gap": 1,
+    "priority51LegalAudited": 37,
+    "priority51LegalVerifiedCurrent": 36,
+    "priority51LegalVerifiedRepealed": 1,
+    "priority51LegalNeedsVerification": 0,
+    "priority51LegalAddedCurrent": 36,
+    "priority51LegalSupersededByNewerEvidence": 0,
+    "phiDiaGioi": 59
   }
 }

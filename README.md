@@ -2,7 +2,7 @@
 
 Trang web phục vụ niêm yết, tra cứu thủ tục hành chính liên quan hoạt động tiếp nhận tại Trung tâm Phục vụ hành chính công xã Vĩnh Bảo, thành phố Hải Phòng.
 
-> **Trạng thái dữ liệu chốt đến 07/09/2026:** đã audit **208 mã**, trong đó **193 TTHC hiện hành** được đưa vào tập công khai, **13 mã bị bãi bỏ** và **02 mã đã công bố nhưng chưa đến ngày hiệu lực**. Tập 193 có thể gồm TTHC cấp tỉnh được tiếp nhận tại Trung tâm PVHCC cấp xã; không đồng nhất với số TTHC thuộc thẩm quyền giải quyết của UBND xã.
+> **Trạng thái dữ liệu chốt đến 07/09/2026:** đã audit **245 mã**, trong đó **229 TTHC hiện hành** được đưa vào tập công khai, **14 mã bị bãi bỏ** và **02 mã đã công bố nhưng chưa đến ngày hiệu lực**. Tập 229 có thể gồm TTHC cấp tỉnh được tiếp nhận tại Trung tâm PVHCC cấp xã; không đồng nhất với số TTHC thuộc thẩm quyền giải quyết của UBND xã. Trong 51 TTHC trọng điểm, **50 mã đang public** và **01 mã (`2.001009`) được giữ ở excluded do có bằng chứng bãi bỏ chính thức**.
 
 Con số **473 TTHC** từng xuất hiện trong báo cáo cũ không tái lập được từ lịch sử Git và **không được dùng làm mục tiêu dữ liệu**.
 
@@ -24,7 +24,8 @@ python -m http.server 8080
 - `data/master-data-excluded.json`: mã bãi bỏ hoặc chưa đến ngày hiệu lực.
 - `data/BAO_CAO_MASTER_DATA_HIEN_HANH.md`: báo cáo Master Data được pipeline tái tạo theo snapshot đang áp dụng.
 - `data/priority-51-crosswalk.json`: crosswalk kỹ thuật cho 51 TTHC trọng điểm; không phải căn cứ hiệu lực pháp lý.
-- `data/BAO_CAO_51_TTHC_TRONG_DIEM_2026-09-07.md`: báo cáo 51 TTHC, UUID và khoảng trống so với Master Data.
+- `data/priority-51-legal-verification.json`: ma trận kiểm chứng pháp lý cho 37 mã trọng điểm từng thiếu khỏi Master Data; 36 current cấp xã, 01 bãi bỏ.
+- `data/BAO_CAO_51_TTHC_TRONG_DIEM_2026-09-07.md`: báo cáo 51 TTHC, UUID và kết quả kiểm chứng pháp lý.
 - `data/source-audit/`: snapshot nguồn, bằng chứng và PDF quyết định chính thức.
 
 ## Nguồn kiểm chứng đến 07/09/2026
@@ -37,7 +38,7 @@ Master Data kết hợp snapshot công bố TTHC trên cổng xã Vĩnh Bảo v�
 
 Pipeline tự động được tổ chức theo chuỗi:
 
-`official-source-config → source-index → decision-manifest → PDF/hash → city-updates-current → Master Data → delta → CI`
+`official-source-config → source-index → decision-manifest → PDF/hash → city-updates-current + priority-51-legal-verification → Master Data → delta → CI`
 
 Các file/chương trình chính:
 
@@ -85,7 +86,7 @@ https://dichvucong.gov.vn/thu-tuc-hanh-chinh/{formalityId}
 - UUID xã Vĩnh Bảo: `019bad30-cd84-7750-aaa5-8100fc7ceef8`
 - `provinceCode=31`, `wardCode=11824`
 
-Danh sách 51 TTHC trọng điểm hiện được chuẩn hóa tại `data/priority-51-crosswalk.json`: 51/51 có mã canonical, 48/51 có `formalityId` trực tiếp và 03 mã còn dùng liên kết tìm kiếm DVCQG theo `keyword`. Ở snapshot Master Data hiện hành, 14/51 mã trọng điểm đang có trong tập công khai nên 14 `formalityId` được áp dụng vào `data/thu-tuc.json`; 37 mã còn lại chỉ được ghi nhận là khoảng trống cần kiểm chứng pháp lý, không tự động bổ sung. Khi một thủ tục chưa có `formalityId`, website tiếp tục dùng tra cứu DVCQG thay vì tự dựng UUID.
+Danh sách 51 TTHC trọng điểm được chuẩn hóa tại `data/priority-51-crosswalk.json`: 51/51 có mã canonical, 48/51 có `formalityId` trực tiếp và 03 mã dùng liên kết tìm kiếm DVCQG theo `keyword`. Ma trận `data/priority-51-legal-verification.json` đã kiểm chứng 37 mã từng thiếu: 36 mã có bằng chứng chính thức current/cấp xã và đã được bổ sung vào Master Data; mã `2.001009` có bằng chứng bãi bỏ nên chỉ nằm trong `master-data-excluded.json`. Kết quả hiện tại: **50/51 mã trọng điểm public**, **48 formalityId trong Master Data**. DVCQG chỉ dùng định danh kỹ thuật, không quyết định hiệu lực pháp lý.
 
 ## Nguyên tắc dữ liệu
 
