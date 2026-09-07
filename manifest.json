@@ -1,7 +1,7 @@
 {
   "name": "Bảng Niêm Yết TTHC — UBND xã Vĩnh Bảo",
   "short_name": "TTHC Vĩnh Bảo",
-  "description": "Niêm yết thủ tục hành chính UBND xã Vĩnh Bảo, thành phố Hải Phòng",
+  "description": "Niêm yết, tra cứu thủ tục hành chính được tiếp nhận hoặc thực hiện tại Trung tâm Phục vụ hành chính công xã Vĩnh Bảo, thành phố Hải Phòng",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",

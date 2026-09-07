@@ -1,0 +1,37 @@
+{
+  "format": "official-tthc-source-config",
+  "version": 1,
+  "baselineDate": "2026-09-07",
+  "listingSources": [
+    {
+      "id": "vinhbao-official-tthc",
+      "url": "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh",
+      "authority": "Cổng thông tin điện tử xã Vĩnh Bảo, Hải Phòng"
+    },
+    {
+      "id": "haiphong-public-tthc-listing",
+      "url": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh",
+      "authority": "Cổng thông tin điện tử thuộc hệ thống Hải Phòng"
+    }
+  ],
+  "publicDecisionMarkers": [
+    "công bố danh mục thủ tục hành chính",
+    "công bố thủ tục hành chính"
+  ],
+  "allowedAttachmentHosts": [
+    "cdn.haiphong.gov.vn"
+  ],
+  "internalDecisionMarkers": [
+    "quy trình nội bộ",
+    "phê duyệt quy trình nội bộ",
+    "quy trình giải quyết thủ tục hành chính nội bộ"
+  ],
+  "knownAppliedDecisionNos": [
+    "3500/QĐ-UBND",
+    "3501/QĐ-UBND",
+    "3508/QĐ-UBND",
+    "3509/QĐ-UBND",
+    "3517/QĐ-UBND",
+    "3523/QĐ-UBND"
+  ]
+}

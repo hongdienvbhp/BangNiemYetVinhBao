@@ -19,7 +19,7 @@ from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE_CANDIDATES = ROOT / "data/source-audit/web010-vinhbao-commune-code-candidates-20260906.json"
-CITY_UPDATES = ROOT / "data/source-audit/city-updates-20260907.json"
+CITY_UPDATES = ROOT / "data/source-audit/city-updates-current.json"
 OUTPUT = ROOT / "data/source-audit/dvcqg-mapping-candidates-20260907.json"
 
 API = "https://datasets-server.huggingface.co/filter"

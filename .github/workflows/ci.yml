@@ -15,11 +15,35 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          lfs: true
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
+      - name: Install PDF dependency
+        run: python -m pip install --disable-pip-version-check pypdf==6.17.0
+
+      - name: Python syntax
+        run: |
+          python -m py_compile             scripts/update_official_sources.py             scripts/extract_city_updates.py             scripts/build_master_data.py             scripts/build_master_delta.py             scripts/fetch_dvc_mapping.py             scripts/check_static_site.py
+
+      - name: Rebuild committed snapshot deterministically
+        shell: bash
+        run: |
+          set -euo pipefail
+          AS_OF="$(python - <<'PY'
+          import json
+          from pathlib import Path
+          payload = json.loads(Path("data/source-audit/city-updates-current.json").read_text(encoding="utf-8"))
+          print(payload["asOf"])
+          PY
+          )"
+          python scripts/extract_city_updates.py --as-of "$AS_OF"
+          python scripts/build_master_data.py
+          git diff --exit-code --             data/source-audit/city-updates-current.json             data/thu-tuc.json             data/master-data-audit.csv             data/master-data-excluded.json             data/BAO_CAO_MASTER_DATA_HIEN_HANH.md             js/master-data-fallback.js
 
       - name: Static data and HTML audit
         run: python scripts/check_static_site.py

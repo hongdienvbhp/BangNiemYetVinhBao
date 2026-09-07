@@ -631,6 +631,69 @@
       ],
       "tiepNhanCapXa": true,
       "exclusionReason": "Bị bãi bỏ theo 3509/QĐ-UBND"
+    },
+    {
+      "ma": "2.001009",
+      "ten": "Chứng thực văn bản khai nhận di sản mà di sản là động sản, quyền sử dụng đất, nhà ở",
+      "linhVuc": "CHỨNG THỰC",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "4517/QĐ-UBND",
+      "formalityId": "",
+      "nameSource": "priority51_official_legal_verification",
+      "sourceSnapshotDate": "2026-09-07",
+      "sourceLatestDate": "2025-11-10",
+      "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6841/tintuc/2026/1/13-01-thong-bao-dmtthc-thuc-hien-theo-qd-so-93.10.01.signed639040640584481095.pdf",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6841/tintuc/2026/1/13-01-thong-bao-dmtthc-thuc-hien-theo-qd-so-93.10.01.signed639040640584481095.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6841/tintuc/2026/1/13-01-thong-bao-dmtthc-thuc-hien-theo-qd-so-93.10.01.signed639040640584481095.pdf",
+          "articleTitle": "Phụ lục II thủ tục hành chính bị bãi bỏ lĩnh vực Chứng thực, phần TTHC cấp xã, ghi mã 2.001009.",
+          "publishedDate": "2025-11-10",
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6841/tintuc/2026/1/13-01-thong-bao-dmtthc-thuc-hien-theo-qd-so-93.10.01.signed639040640584481095.pdf",
+          "attachmentSha256": null,
+          "decisionNumbers": [
+            "4517/QĐ-UBND"
+          ],
+          "repealContext": true
+        },
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vuc-chung-thuc-thuoc-pham-vi--811088",
+          "articleTitle": "Bài công khai Quyết định 4517/QĐ-UBND ngày 10/11/2025 về sửa đổi, bổ sung và bãi bỏ TTHC lĩnh vực chứng thực.",
+          "publishedDate": "2025-11-10",
+          "classification": "priority51_legal_verification",
+          "attachmentUrl": null,
+          "attachmentSha256": null,
+          "decisionNumbers": [
+            "4517/QĐ-UBND"
+          ],
+          "repealContext": true
+        },
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vuc-chung-thuc-thuoc-pham-vi--810099",
+          "articleTitle": "Bằng chứng đối chiếu trong corpus nguồn chính thức Vĩnh Bảo",
+          "publishedDate": null,
+          "classification": "priority51_local_corpus_support",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phuluc-ii-qd-3152-bo-tu-phap638984589860497185.docx",
+          "attachmentSha256": "db7fa730a6436fbf5ee72219358b2ad2ab2258a0e6f8dbbe6d7c57dd9c63d7bf",
+          "decisionNumbers": [],
+          "repealContext": true
+        }
+      ],
+      "priority51LegalVerificationStatus": "repealed_official_evidence",
+      "legalVerificationCheckedAt": "2026-09-07",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_official_evidence",
+      "exclusionReason": "Bị bãi bỏ theo 4517/QĐ-UBND"
     }
   ]
 }

@@ -1,0 +1,103 @@
+{
+  "format": "official-tthc-decision-manifest",
+  "version": 1,
+  "baselineDate": "2026-09-07",
+  "decisions": [
+    {
+      "decisionNo": "3500/QĐ-UBND",
+      "decisionDate": "2026-08-30",
+      "publishedDate": "2026-09-03",
+      "classification": "public_tthc",
+      "field": "NỘI VỤ",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3500-qd-ubnd-ngay-30-8-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958426",
+      "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3500-nv639240495312924587.pdf",
+      "filePath": "data/source-audit/city-updates-20260907/QD-3500.pdf",
+      "effectiveDate": null,
+      "ingestStatus": "applied"
+    },
+    {
+      "decisionNo": "3501/QĐ-UBND",
+      "decisionDate": "2026-09-01",
+      "publishedDate": "2026-09-03",
+      "classification": "public_tthc",
+      "field": "PHÒNG BỆNH",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3501-qd-ubnd-ngay-01-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958422",
+      "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3501-yt639240494398182291.pdf",
+      "filePath": "data/source-audit/city-updates-20260907/QD-3501.pdf",
+      "effectiveDate": "2027-03-01",
+      "ingestStatus": "applied"
+    },
+    {
+      "decisionNo": "3507/QĐ-UBND",
+      "decisionDate": "2026-09-03",
+      "publishedDate": "2026-09-03",
+      "classification": "internal_process",
+      "field": "",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3507-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-phe-duy-958466",
+      "pdfUrl": "",
+      "filePath": "",
+      "effectiveDate": null,
+      "ingestStatus": "excluded_internal"
+    },
+    {
+      "decisionNo": "3508/QĐ-UBND",
+      "decisionDate": "2026-09-03",
+      "publishedDate": "2026-09-03",
+      "classification": "public_tthc",
+      "field": "ĐƯỜNG BỘ",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3508-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958460",
+      "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3508-xd639240506704881699.pdf",
+      "filePath": "data/source-audit/city-updates-20260907/QD-3508.pdf",
+      "effectiveDate": null,
+      "ingestStatus": "applied"
+    },
+    {
+      "decisionNo": "3509/QĐ-UBND",
+      "decisionDate": "2026-09-03",
+      "publishedDate": "2026-09-03",
+      "classification": "public_tthc",
+      "field": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3509-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958459",
+      "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3509-gd639240505714779683.pdf",
+      "filePath": "data/source-audit/city-updates-20260907/QD-3509.pdf",
+      "effectiveDate": null,
+      "ingestStatus": "applied"
+    },
+    {
+      "decisionNo": "3517/QĐ-UBND",
+      "decisionDate": "2026-09-03",
+      "publishedDate": "2026-09-04",
+      "classification": "public_tthc",
+      "field": "XUẤT CẢNH, NHẬP CẢNH",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3517-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-959309",
+      "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3517-ct639241368528261775.pdf",
+      "filePath": "data/source-audit/city-updates-20260907/QD-3517.pdf",
+      "effectiveDate": null,
+      "ingestStatus": "applied"
+    },
+    {
+      "decisionNo": "3521/QĐ-UBND",
+      "decisionDate": "2026-09-04",
+      "publishedDate": "2026-09-04",
+      "classification": "internal_process",
+      "field": "",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3521-qd-ubnd-ngay-04-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-959289",
+      "pdfUrl": "",
+      "filePath": "",
+      "effectiveDate": null,
+      "ingestStatus": "excluded_internal"
+    },
+    {
+      "decisionNo": "3523/QĐ-UBND",
+      "decisionDate": "2026-09-04",
+      "publishedDate": "2026-09-04",
+      "classification": "public_tthc",
+      "field": "BÁO CHÍ",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3523-qd-ubnd-ngay-04-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-959292",
+      "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3523-vh639241356960920960.pdf",
+      "filePath": "data/source-audit/city-updates-20260907/QD-3523.pdf",
+      "effectiveDate": null,
+      "ingestStatus": "applied"
+    }
+  ]
+}

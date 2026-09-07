@@ -24,17 +24,33 @@ CANDIDATES = ROOT / "data/source-audit/web010-vinhbao-commune-code-candidates-20
 ATTACHMENTS = ROOT / "data/source-audit/vinhbao-tthc-attachment-evidence-20260906.json"
 DVC_MAPPING = ROOT / "data/source-audit/dvcqg-mapping-candidates-20260907.json"
 VERIFIED_DVC_CSV = ROOT / "data/formalityId-mapping-mau.csv"
-CITY_UPDATES = ROOT / "data/source-audit/city-updates-20260907.json"
+PRIORITY51_CROSSWALK = ROOT / "data/priority-51-crosswalk.json"
+PRIORITY51_LEGAL_VERIFICATION = ROOT / "data/priority-51-legal-verification.json"
+CITY_UPDATES = ROOT / "data/source-audit/city-updates-current.json"
 LEGACY_JS = ROOT / "js/data.js"
 MASTER_JSON = ROOT / "data/thu-tuc.json"
 FALLBACK_JS = ROOT / "js/master-data-fallback.js"
 AUDIT_CSV = ROOT / "data/master-data-audit.csv"
 EXCLUDED_JSON = ROOT / "data/master-data-excluded.json"
-REPORT_MD = ROOT / "data/BAO_CAO_MASTER_DATA_2026-09-07.md"
+REPORT_MD = ROOT / "data/BAO_CAO_MASTER_DATA_HIEN_HANH.md"
 
 BASE_SOURCE_SNAPSHOT_DATE = "2026-09-06"
-SOURCE_SNAPSHOT_DATE = "2026-09-07"
-BUILD_DATE = "2026-09-07"
+
+
+def _source_snapshot_date() -> str:
+    if CITY_UPDATES.exists():
+        try:
+            payload = json.loads(CITY_UPDATES.read_text(encoding="utf-8-sig"))
+            value = str(payload.get("asOf") or "").strip()
+            if re.fullmatch(r"\d{4}-\d{2}-\d{2}", value):
+                return value
+        except (OSError, json.JSONDecodeError):
+            pass
+    return "2026-09-07"
+
+
+SOURCE_SNAPSHOT_DATE = _source_snapshot_date()
+BUILD_DATE = SOURCE_SNAPSHOT_DATE
 OFFICIAL_SOURCE = "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh"
 CITY_OFFICIAL_SOURCE = "https://haiphong.gov.vn/thu-tuc-hanh-chinh-76761"
 
@@ -275,6 +291,28 @@ def evidence_status(evidence: list[dict]) -> tuple[str, str | None, str | None]:
     return "needs_verification", active, repeal
 
 
+def load_priority51() -> dict[str, dict]:
+    if not PRIORITY51_CROSSWALK.exists():
+        return {}
+    payload = load_json(PRIORITY51_CROSSWALK)
+    return {
+        normalize_code(row.get("code", "")): row
+        for row in payload.get("items", [])
+        if normalize_code(row.get("code", ""))
+    }
+
+
+def load_priority51_legal() -> dict[str, dict]:
+    if not PRIORITY51_LEGAL_VERIFICATION.exists():
+        return {}
+    payload = load_json(PRIORITY51_LEGAL_VERIFICATION)
+    return {
+        normalize_code(row.get("code", "")): row
+        for row in payload.get("rows", [])
+        if normalize_code(row.get("code", ""))
+    }
+
+
 def load_dvc_mapping() -> dict[str, list[dict]]:
     grouped: dict[str, list[dict]] = defaultdict(list)
     if DVC_MAPPING.exists():
@@ -295,21 +333,36 @@ def load_dvc_mapping() -> dict[str, list[dict]]:
                     "is_ward": True,
                     "is_province": False,
                 })
+    for code, row in load_priority51().items():
+        if not row.get("formalityId"):
+            continue
+        grouped[code].append({
+            "code": code,
+            "formalityId": str(row.get("formalityId") or "").strip(),
+            "sourceUrl": row.get("dvcUrl") or "",
+            "scrapedAt": "2026-09-06",
+            "verificationStatus": "verified_priority51_crosswalk",
+            "is_ward": True,
+            "is_province": False,
+        })
     return grouped
 
 
 def choose_dvc_mapping(rows: list[dict]) -> dict | None:
     if not rows:
         return None
-    return sorted(
-        rows,
-        key=lambda x: (
-            bool(x.get("is_ward")),
-            bool(x.get("is_province")),
-            x.get("scrapedAt") or "",
-        ),
-        reverse=True,
-    )[0]
+
+    def rank(row: dict) -> tuple:
+        status = str(row.get("verificationStatus") or "").lower()
+        verified = status.startswith("verified_") or status.startswith("da_xac_minh")
+        return (
+            verified,
+            bool(row.get("is_ward")),
+            bool(row.get("is_province")),
+            row.get("scrapedAt") or "",
+        )
+
+    return sorted(rows, key=rank, reverse=True)[0]
 
 
 def compact_evidence(evidence: list[dict], attach_idx: dict[str, dict]) -> list[dict]:
@@ -454,12 +507,12 @@ def make_city_record(row: dict, legacy_row: dict | None, dvc: dict | None) -> di
 
 def apply_city_updates(public_rows: list[dict], excluded: list[dict], audit_rows: list[dict], legacy: dict[str, dict], dvc_map: dict[str, list[dict]]) -> dict:
     if not CITY_UPDATES.exists():
-        return {"audited": 0, "current": 0, "new": 0, "updated": 0, "repealed": 0, "future": 0}
+        return {"audited": 0, "current": 0, "new": 0, "updated": 0, "repealed": 0, "future": 0, "needsReview": 0}
     payload = load_json(CITY_UPDATES)
     by_code = {normalize_code(x.get("ma", "")): x for x in public_rows}
     excluded_map = {normalize_code(x.get("ma", "")): x for x in excluded}
     audit_map = {normalize_code(x.get("ma", "")): x for x in audit_rows}
-    stats = {"audited": 0, "current": 0, "new": 0, "updated": 0, "repealed": 0, "future": 0}
+    stats = {"audited": 0, "current": 0, "new": 0, "updated": 0, "repealed": 0, "future": 0, "needsReview": 0}
     city_codes = set()
 
     for item in sorted(payload.get("rows", []), key=lambda x: (x.get("decisionDate") or "", x.get("decisionNo") or "", x.get("code") or "")):
@@ -471,9 +524,19 @@ def apply_city_updates(public_rows: list[dict], excluded: list[dict], audit_rows
         dvc = choose_dvc_mapping(dvc_map.get(code, []))
         decision_no = item.get("decisionNo") or ""
         source_date = item.get("decisionDate") or item.get("publishedDate") or ""
-        is_future = item.get("currentStateAtAsOf") == "future_effective"
-        is_repealed = item.get("sectionStatus") == "repealed" and not is_future
-        is_current = bool(item.get("communeReceptionEvidence")) and not is_future and not is_repealed
+        current_state = str(item.get("currentStateAtAsOf") or "")
+        needs_review = current_state.startswith("needs_")
+        is_future = current_state == "future_effective"
+        is_repealed = item.get("sectionStatus") == "repealed" and not is_future and not needs_review
+        is_current = (
+            bool(item.get("communeReceptionEvidence"))
+            and current_state == "current_or_immediate_unless_repealed"
+            and not is_repealed
+        )
+
+        if needs_review:
+            stats["needsReview"] += 1
+            continue
 
         if is_future:
             stats["future"] += 1
@@ -579,11 +642,188 @@ def apply_city_updates(public_rows: list[dict], excluded: list[dict], audit_rows
     return stats
 
 
+def priority51_legal_evidence(item: dict) -> list[dict]:
+    out: list[dict] = []
+    decision_no = str(item.get("decisionNo") or "").strip()
+    decision_date = item.get("decisionDate") or None
+    is_repealed = item.get("legalStatus") == "repealed_official_evidence"
+    for source in item.get("sources") or []:
+        url = str(source.get("url") or "").strip()
+        if not url:
+            continue
+        out.append({
+            "articleUrl": url,
+            "articleTitle": source.get("note") or "Kiểm chứng pháp lý 51 TTHC trọng điểm",
+            "publishedDate": decision_date,
+            "classification": "priority51_legal_verification",
+            "attachmentUrl": url if urlparse(url).path.lower().endswith((".pdf", ".doc", ".docx")) else None,
+            "attachmentSha256": None,
+            "decisionNumbers": [decision_no] if decision_no else [],
+            "repealContext": is_repealed,
+        })
+    for local in item.get("localCorpusEvidence") or []:
+        article_urls = local.get("articleUrls") or []
+        out.append({
+            "articleUrl": article_urls[0] if article_urls else None,
+            "articleTitle": "Bằng chứng đối chiếu trong corpus nguồn chính thức Vĩnh Bảo",
+            "publishedDate": None,
+            "classification": "priority51_local_corpus_support",
+            "attachmentUrl": local.get("attachmentUrl"),
+            "attachmentSha256": local.get("attachmentSha256"),
+            "decisionNumbers": local.get("decisionNumbers") or [],
+            "repealContext": is_repealed,
+        })
+    return out[:8]
+
+
+def make_priority51_legal_record(item: dict, legacy_row: dict, dvc: dict | None) -> dict:
+    code = normalize_code(item.get("code", ""))
+    name = str(item.get("canonicalName") or item.get("priorityName") or "").strip()
+    field = str(item.get("field") or "").strip() or "CHƯA XÁC MINH LĨNH VỰC"
+    decision_no = str(item.get("decisionNo") or "").strip()
+    decision_date = str(item.get("decisionDate") or "").strip()
+    checked_at = str(item.get("verificationCheckedAt") or SOURCE_SNAPSHOT_DATE)
+    sources = item.get("sources") or []
+    source_url = str((sources[0] if sources else {}).get("url") or "")
+    formality_id = (dvc or {}).get("formalityId") or ""
+    phi_dia_gioi = any("phi-dia-gioi" in str(x.get("url") or "").lower() for x in sources)
+    record = {
+        "ma": code,
+        "ten": name,
+        "linhVuc": field,
+        "cap": "Xã / điểm tiếp nhận cấp xã",
+        "nhanh": False,
+        "mienPhiTrucTuyen": False,
+        "phiDiaGioi": phi_dia_gioi,
+        "lienThong": bool(legacy_row.get("lienThong")),
+        "phi": "",
+        "phiOnline": "",
+        "thoiHan": "",
+        "dvctt": "",
+        "coQuan": "",
+        "quyetDinh": decision_no,
+        "formalityId": formality_id,
+        "nameSource": "priority51_official_legal_verification",
+        "sourceSnapshotDate": SOURCE_SNAPSHOT_DATE,
+        "sourceLatestDate": decision_date or checked_at,
+        "sourceArticleUrl": source_url,
+        "sourceAttachmentUrl": source_url if urlparse(source_url).path.lower().endswith((".pdf", ".doc", ".docx")) else None,
+        "sourceEvidence": priority51_legal_evidence(item),
+        "priority51LegalVerificationStatus": item.get("legalStatus"),
+        "legalVerificationCheckedAt": checked_at,
+    }
+    if dvc:
+        record["dvcMappingStatus"] = dvc.get("verificationStatus") or "verified_priority51_crosswalk"
+        record["dvcMappingSource"] = dvc.get("sourceUrl")
+        record["dvcMappingScrapedAt"] = dvc.get("scrapedAt")
+    return record
+
+
+def apply_priority51_legal_verification(
+    public_rows: list[dict],
+    excluded: list[dict],
+    audit_rows: list[dict],
+    legacy: dict[str, dict],
+    dvc_map: dict[str, list[dict]],
+    legal_map: dict[str, dict],
+) -> dict:
+    by_code = {normalize_code(x.get("ma", "")): x for x in public_rows}
+    excluded_map = {normalize_code(x.get("ma", "")): x for x in excluded}
+    audit_map = {normalize_code(x.get("ma", "")): x for x in audit_rows}
+    stats = {"audited": 0, "current": 0, "repealed": 0, "needsVerification": 0, "addedCurrent": 0, "alreadyCurrent": 0, "supersededByNewerEvidence": 0}
+
+    for code, item in sorted(legal_map.items()):
+        status = str(item.get("legalStatus") or "needs_verification")
+        stats["audited"] += 1
+        if status not in {"current_official_commune_evidence", "repealed_official_evidence"}:
+            stats["needsVerification"] += 1
+            continue
+
+        dvc = choose_dvc_mapping(dvc_map.get(code, []))
+        record = make_priority51_legal_record(item, legacy.get(code) or {}, dvc)
+        decision_date = str(item.get("decisionDate") or "").strip()
+        evidence_date = decision_date or str(item.get("verificationCheckedAt") or "").strip()
+        source_url = str(record.get("sourceArticleUrl") or "")
+        formality_id = str(record.get("formalityId") or "")
+
+        if status == "repealed_official_evidence":
+            stats["repealed"] += 1
+            current_existing = by_code.get(code)
+            current_date = str((current_existing or {}).get("sourceLatestDate") or "").strip()
+            if current_existing and current_date and evidence_date and current_date > evidence_date:
+                stats["supersededByNewerEvidence"] += 1
+                continue
+            by_code.pop(code, None)
+            record.update({
+                "daXacMinh": False,
+                "verificationStatus": "repealed_official_evidence",
+                "exclusionReason": (
+                    f"Bị bãi bỏ theo {record.get('quyetDinh')}"
+                    if record.get("quyetDinh") else "Bị bãi bỏ theo bằng chứng chính thức cấp xã"
+                ),
+            })
+            excluded_map[code] = record
+            audit_map[code] = {
+                "ma": code, "ten": record.get("ten") or "", "linhVuc": record.get("linhVuc") or "",
+                "status": "repealed_official_evidence", "publishable": False,
+                "active_date": "", "repeal_date": decision_date,
+                "name_source": "priority51_official_legal_verification", "legacy_match": bool(legacy.get(code)),
+                "name_similarity": "", "phi_dia_gioi": bool(record.get("phiDiaGioi")),
+                "formalityId": formality_id, "decision_numbers": record.get("quyetDinh") or "",
+                "article_url": source_url, "attachment_url": record.get("sourceAttachmentUrl") or "",
+                "reason": record.get("exclusionReason") or "",
+            }
+            continue
+
+        stats["current"] += 1
+        excluded_existing = excluded_map.get(code)
+        excluded_date = str((excluded_existing or {}).get("sourceLatestDate") or "").strip()
+        if excluded_existing and excluded_date and evidence_date and excluded_date >= evidence_date:
+            stats["supersededByNewerEvidence"] += 1
+            continue
+        if code in by_code:
+            stats["alreadyCurrent"] += 1
+            current = by_code[code]
+            current["priority51LegalVerificationStatus"] = status
+            current["legalVerificationCheckedAt"] = item.get("verificationCheckedAt") or SOURCE_SNAPSHOT_DATE
+            existing_urls = {str(x.get("articleUrl") or "") for x in current.get("sourceEvidence") or []}
+            additions = [x for x in record.get("sourceEvidence") or [] if str(x.get("articleUrl") or "") not in existing_urls]
+            if additions:
+                current["sourceEvidence"] = (list(current.get("sourceEvidence") or []) + additions)[:8]
+            continue
+
+        stats["addedCurrent"] += 1
+        record.update({
+            "daXacMinh": True,
+            "verificationStatus": "priority51_current_official_commune_evidence",
+            "tiepNhanCapXa": True,
+        })
+        by_code[code] = record
+        excluded_map.pop(code, None)
+        audit_map[code] = {
+            "ma": code, "ten": record.get("ten") or "", "linhVuc": record.get("linhVuc") or "",
+            "status": "priority51_current_official_commune_evidence", "publishable": True,
+            "active_date": decision_date or item.get("verificationCheckedAt") or SOURCE_SNAPSHOT_DATE,
+            "repeal_date": "", "name_source": "priority51_official_legal_verification",
+            "legacy_match": bool(legacy.get(code)), "name_similarity": "",
+            "phi_dia_gioi": bool(record.get("phiDiaGioi")), "formalityId": formality_id,
+            "decision_numbers": record.get("quyetDinh") or "", "article_url": source_url,
+            "attachment_url": record.get("sourceAttachmentUrl") or "", "reason": "",
+        }
+
+    public_rows[:] = list(by_code.values())
+    excluded[:] = list(excluded_map.values())
+    audit_rows[:] = sorted(audit_map.values(), key=lambda x: normalize_code(x.get("ma", "")))
+    return stats
+
+
 def main() -> int:
     candidates_payload = load_json(CANDIDATES)
     attachment_payload = load_json(ATTACHMENTS)
     attach_idx = attachment_index(attachment_payload)
     legacy = parse_legacy_rows(LEGACY_JS)
+    priority51 = load_priority51()
+    priority51_legal = load_priority51_legal()
     dvc_map = load_dvc_mapping()
     public_rows: list[dict] = []
     excluded: list[dict] = []
@@ -694,6 +934,30 @@ def main() -> int:
             excluded.append({**row, "exclusionReason": reason})
 
     city_stats = apply_city_updates(public_rows, excluded, audit_rows, legacy, dvc_map)
+    priority51_legal_stats = apply_priority51_legal_verification(
+        public_rows, excluded, audit_rows, legacy, dvc_map, priority51_legal
+    )
+
+    for row in public_rows:
+        code = normalize_code(row.get("ma", ""))
+        priority = priority51.get(code)
+        row["priority51"] = bool(priority)
+        if not priority:
+            continue
+        row["priority51Ordinal"] = priority.get("ordinal")
+        row["priority51MappingStatus"] = priority.get("mappingStatus")
+        if priority.get("mappingMode") == "keyword_fallback":
+            row["dvcKeywordUrl"] = priority.get("dvcUrl") or ""
+        if priority.get("formalityId") and not row.get("formalityId"):
+            row["formalityId"] = priority.get("formalityId")
+            row["dvcMappingStatus"] = "verified_priority51_crosswalk"
+            row["dvcMappingSource"] = priority.get("dvcUrl") or ""
+
+    audit_by_code = {normalize_code(row.get("ma", "")): row for row in audit_rows}
+    for row in public_rows:
+        audit = audit_by_code.get(normalize_code(row.get("ma", "")))
+        if audit is not None:
+            audit["formalityId"] = row.get("formalityId") or ""
 
     public_rows.sort(key=lambda x: (fold(x.get("linhVuc", "")), fold(x.get("ten", "")), x.get("ma", "")))
     for i, row in enumerate(public_rows, 1):
@@ -706,6 +970,7 @@ def main() -> int:
         "cityCurrentProcedures": city_stats["current"],
         "cityNewProcedures": city_stats["new"],
         "cityUpdatedProcedures": city_stats["updated"],
+        "cityNeedsReviewRows": city_stats["needsReview"],
         "publishedProcedures": len(public_rows),
         "excludedProcedures": len(excluded),
         "repealedProcedures": sum(1 for x in audit_rows if "repealed" in str(x.get("status", ""))),
@@ -713,6 +978,15 @@ def main() -> int:
         "unresolvedNameProcedures": sum(1 for x in audit_rows if not x["ten"]),
         "legacyMatchedCodes": sum(1 for x in audit_rows if x["legacy_match"]),
         "formalityIdMapped": sum(1 for x in public_rows if x.get("formalityId")),
+        "priority51InCurrentMaster": sum(1 for x in public_rows if x.get("priority51")),
+        "priority51CrosswalkTotal": len(priority51),
+        "priority51Gap": sum(1 for code in priority51 if code not in {normalize_code(x.get("ma", "")) for x in public_rows}),
+        "priority51LegalAudited": priority51_legal_stats["audited"],
+        "priority51LegalVerifiedCurrent": priority51_legal_stats["current"],
+        "priority51LegalVerifiedRepealed": priority51_legal_stats["repealed"],
+        "priority51LegalNeedsVerification": priority51_legal_stats["needsVerification"],
+        "priority51LegalAddedCurrent": priority51_legal_stats["addedCurrent"],
+        "priority51LegalSupersededByNewerEvidence": priority51_legal_stats["supersededByNewerEvidence"],
         "phiDiaGioi": sum(1 for x in public_rows if x.get("phiDiaGioi")),
     }
     master = {
@@ -761,8 +1035,12 @@ def main() -> int:
 ## Kết quả
 
 - Mã ứng viên cấp xã/điểm tiếp nhận cấp xã từ snapshot Vĩnh Bảo: **{summary['officialCandidateCodes']}**
-- Mã được audit sau khi bổ sung 06 quyết định thành phố: **{summary['auditedCodes']}**
+- Tổng mã được audit sau khi hợp nhất nguồn Vĩnh Bảo, quyết định thành phố và ma trận kiểm chứng 51 TTHC: **{summary['auditedCodes']}**
 - Mã xuất hiện trong 06 quyết định cập nhật thành phố: **{summary['cityUpdateCodes']}**
+- Mã Priority 51 được kiểm chứng pháp lý bổ sung: **{summary['priority51LegalAudited']}**
+  - Xác minh current/cấp xã: **{summary['priority51LegalVerifiedCurrent']}**
+  - Xác minh bãi bỏ: **{summary['priority51LegalVerifiedRepealed']}**
+  - Còn cần xác minh: **{summary['priority51LegalNeedsVerification']}**
 - TTHC hiện hành đưa vào tập công khai: **{summary['publishedProcedures']}**
 - TTHC loại khỏi tập công khai: **{summary['excludedProcedures']}**
   - Bị bãi bỏ: **{summary['repealedProcedures']}**
@@ -771,6 +1049,8 @@ def main() -> int:
 - TTHC hiện có được cập nhật bởi quyết định thành phố: **{summary['cityUpdatedProcedures']}**
 - Chưa trích được tên đủ tin cậy: **{summary['unresolvedNameProcedures']}**
 - Có formalityId trong Master Data: **{summary['formalityIdMapped']}**
+- TTHC trọng điểm đang nằm trong tập public: **{summary['priority51InCurrentMaster']}/{summary['priority51CrosswalkTotal']}**
+- Khoảng trống Priority 51 còn lại: **{summary['priority51Gap']}** (mã bãi bỏ không được phục hồi public)
 - Được đánh dấu phi địa giới theo nguồn công bố: **{summary['phiDiaGioi']}**
 
 > **Lưu ý phạm vi:** {summary['publishedProcedures']} là số TTHC trong tập niêm yết/tra cứu của Trung tâm PVHCC xã Vĩnh Bảo theo bằng chứng nguồn đã audit. Tập này có thể gồm TTHC cấp tỉnh được tiếp nhận tại Trung tâm PVHCC cấp xã; không được hiểu là toàn bộ đều thuộc thẩm quyền giải quyết của UBND xã.
@@ -781,6 +1061,7 @@ def main() -> int:
 - Quyết định 3500/QĐ-UBND, 3501/QĐ-UBND, 3508/QĐ-UBND, 3509/QĐ-UBND, 3517/QĐ-UBND, 3523/QĐ-UBND của UBND thành phố Hải Phòng.
 - QĐ 3501/QĐ-UBND có hiệu lực từ **01/03/2027**; 02 mã trong quyết định được lưu ở nhóm tương lai, chưa đưa vào tập hiện hành ngày 07/09/2026.
 - Quyết định/quy trình nội bộ như 3507, 3521, 3537 không được đưa vào Master Data công khai cho người dân.
+- `data/priority-51-legal-verification.json`: ma trận kiểm chứng pháp lý riêng cho 37 mã trọng điểm từng thiếu khỏi Master Data; DVCQG chỉ làm lớp định danh kỹ thuật.
 
 ## Quy tắc
 
@@ -791,6 +1072,7 @@ def main() -> int:
 5. Dữ liệu cũ chỉ bổ sung thuộc tính khi trùng mã; không tự xác nhận hiệu lực.
 6. Tên bị lỗi trích PDF được chuẩn hóa theo cùng mã từ dữ liệu kế thừa hoặc Cổng DVCQG; việc này không thay đổi căn cứ xác định trạng thái.
 7. formalityId là lớp ánh xạ kỹ thuật. Thiếu UUID không làm thay đổi trạng thái pháp lý; website fallback sang tra cứu DVCQG theo tên/mã.
+8. Danh sách 51 TTHC cũ không tự tạo thủ tục public. Mã chỉ được bổ sung khi ma trận kiểm chứng pháp lý có nguồn chính thức Hải Phòng/Vĩnh Bảo và trạng thái `current_official_commune_evidence`; mã `repealed_official_evidence` phải ở excluded.
 
 ## Tệp kiểm soát
 
