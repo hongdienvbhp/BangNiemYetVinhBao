@@ -1,0 +1,85 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate Master Data and static site
+        run: python scripts/check_static_site.py
+
+      - name: Build Pages artifact
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf _site
+          mkdir -p _site/css _site/js _site/assets _site/data
+          cp index.html manifest.json sw.js _site/
+          cp css/styles.css _site/css/
+          cp js/config.js js/data.js js/master-data-fallback.js js/extra-data.js js/app.js _site/js/
+          cp assets/logo-hcc.png assets/logo-hcc.svg _site/assets/
+          cp data/thu-tuc.json _site/data/
+          touch _site/.nojekyll
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root = Path("_site")
+          required = [
+              "index.html", "manifest.json", "sw.js", "css/styles.css",
+              "js/config.js", "js/data.js", "js/master-data-fallback.js",
+              "js/extra-data.js", "js/app.js", "assets/logo-hcc.png",
+              "assets/logo-hcc.svg", "data/thu-tuc.json",
+          ]
+          missing = [p for p in required if not (root / p).is_file()]
+          if missing:
+              raise SystemExit(f"Missing runtime files: {missing}")
+          payload = json.loads((root / "data/thu-tuc.json").read_text(encoding="utf-8-sig"))
+          if payload.get("summary", {}).get("publishedProcedures", 0) <= 0:
+              raise SystemExit("Master Data is empty")
+          print("Pages artifact procedures:", payload["summary"]["publishedProcedures"])
+          PY
+
+      - name: Configure Pages
+        if: github.event_name != 'pull_request'
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -89,15 +89,24 @@ for marker in [
 # Runtime phải ưu tiên JSON và có fallback cùng dữ liệu.
 if 'remoteJsonUrl: "data/thu-tuc.json"' not in config:
     fail("Chưa bật data/thu-tuc.json trong js/config.js")
-if 'cacheKey: "tthc_vinhbao_v3"' not in config:
-    fail("Cache key chưa nâng lên v3")
+cache_match = re.search(r'cacheKey:\s*"tthc_vinhbao_v(\d+)"', config)
+if not cache_match:
+    fail("Không xác định được version cache trong js/config.js")
+    cache_version = ""
+else:
+    cache_version = cache_match.group(1)
 for marker in ['js/data.js', 'js/master-data-fallback.js', 'js/app.js']:
     if marker not in index:
         fail(f"Thiếu script runtime trong index.html: {marker}")
 if not (index.find('js/data.js') < index.find('js/master-data-fallback.js') < index.find('js/app.js')):
     fail("Thứ tự script fallback không đúng")
-if "./js/master-data-fallback.js" not in sw or "tthc-vinhbao-v3" not in sw:
-    fail("Service Worker chưa cache fallback hoặc chưa nâng cache v3")
+sw_cache_match = re.search(r'const CACHE = "tthc-vinhbao-v(\d+)"', sw)
+if "./js/master-data-fallback.js" not in sw:
+    fail("Service Worker chưa cache master-data-fallback.js")
+elif not sw_cache_match:
+    fail("Không xác định được version cache trong Service Worker")
+elif cache_version and sw_cache_match.group(1) != cache_version:
+    fail(f"Version cache lệch nhau: config v{cache_version}, service worker v{sw_cache_match.group(1)}")
 
 # Master Data.
 rows = master.get("thuTuc") if isinstance(master, dict) else None

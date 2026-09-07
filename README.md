@@ -105,6 +105,14 @@ python scripts/check_static_site.py
 
 CI trên Pull Request chạy kiểm tra Master Data, HTML/assets và cú pháp JavaScript.
 
+## Phát hành website
+
+Website được phát hành bằng GitHub Pages qua `.github/workflows/pages.yml`. Workflow chạy kiểm tra Master Data trước khi đóng gói đúng 13 tài nguyên runtime và chỉ deploy khi `main` được cập nhật hoặc khi chạy thủ công; Pull Request chỉ chạy phần validation/build, không deploy.
+
+URL dự kiến sau khi GitHub Pages được bật cho repository:
+
+`https://hongdienvbhp.github.io/BangNiemYetVinhBao/`
+
 ## Liên hệ
 
 **Trung tâm Phục vụ hành chính công xã Vĩnh Bảo** — Đường 20/8, xã Vĩnh Bảo, thành phố Hải Phòng
