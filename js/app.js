@@ -321,7 +321,7 @@
         <div class="stat-card"><img src="${LOGO}" alt="" class="stat-logo" /><div class="stat-num">${total}</div><div class="stat-label">Tổng thủ tục</div></div>
         <div class="stat-card"><div class="stat-icon">🗂️</div><div class="stat-num">${lv}</div><div class="stat-label">Lĩnh vực</div></div>
         <div class="stat-card accent"><div class="stat-icon">⚡</div><div class="stat-num">${nhanh}</div><div class="stat-label">Trong ngày (T4)</div></div>
-        <div class="stat-card"><div class="stat-icon">🏛️</div><div class="stat-num">Xã</div><div class="stat-label">Cấp giải quyết</div></div>`;
+        <div class="stat-card"><div class="stat-icon">🏛️</div><div class="stat-num">PVHCC</div><div class="stat-label">Điểm tiếp nhận tại xã</div></div>`;
     }
     if (dashTopLv) {
       dashTopLv.innerHTML = top
@@ -344,21 +344,25 @@
     }
   }
 
-  function renderLinhVuc(list) {
+  function renderLinhVuc(list, procedures = data.thuTuc) {
     if (!grid) return;
-    const visible = list.filter((lv) => countByLinhVuc(lv.ten) > 0);
+    const counts = new Map();
+    procedures.forEach(t => counts.set(t.linhVuc, (counts.get(t.linhVuc) || 0) + 1));
+    const visible = list.filter(lv => counts.has(lv.ten));
     grid.innerHTML = visible
       .map((lv) => {
-        const n = countByLinhVuc(lv.ten);
+        const n = counts.get(lv.ten);
         const active = activeLinhVuc === lv.ten ? " is-active" : "";
-        return `<article class="field-card${active}" data-name="${esc(lv.ten)}" title="${esc(lv.ten)}">
-          <div class="icon"><img src="${LOGO}" alt="" /></div>
-          <div class="name">${esc(lv.ten)}</div>
-          <span class="count">${n} Thủ tục</span>
-        </article>`;
+        return `<button type="button" class="field-card${active}" data-name="${esc(lv.ten)}" title="${esc(lv.ten)}" aria-label="${esc(lv.ten)}: ${n} thủ tục">
+          <span class="icon"><img src="${LOGO}" alt="" /></span>
+          <span class="name">${esc(lv.ten)}</span>
+          <span class="count">${String(n).padStart(2, "0")} TTHC</span>
+          <span class="field-hint">Xem danh sách →</span>
+        </button>`;
       })
       .join("");
-    if (linhVucCount) linhVucCount.textContent = visible.length + " lĩnh vực";
+    if (linhVucCount) linhVucCount.textContent = visible.length + " lĩnh vực · " + procedures.length + " thủ tục";
+    if (!visible.length) grid.innerHTML = '<p class="tt-empty">Không có lĩnh vực phù hợp. Chọn “Tất cả lĩnh vực” để tra cứu lại.</p>';
   }
 
   function renderThuTuc(list, resetPage = false) {
@@ -532,7 +536,7 @@
       );
     }
 
-    renderLinhVuc(lvList);
+    renderLinhVuc(lvList, tt);
     renderThuTuc(tt, true);
     updateFilterUi(tt.length);
   }
@@ -551,7 +555,11 @@
 
   // Events
   navBtns.forEach((btn) => btn.addEventListener("click", () => switchTab(btn.dataset.tab)));
-  if (searchInput) searchInput.addEventListener("input", applyFilters);
+  if (searchInput) searchInput.addEventListener("input", () => {
+    if (ttLocalSearch) ttLocalSearch.value = "";
+    applyFilters();
+    switchTab(searchInput.value.trim() ? "thu-tuc" : "linh-vuc");
+  });
   if (ttLocalSearch) ttLocalSearch.addEventListener("input", applyFilters);
   if (filterLinhVuc) {
     filterLinhVuc.addEventListener("change", () => {
@@ -755,6 +763,54 @@
     btnTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
     syncTopButton();
   }
+
+  // Display controls operate on this browser only; the source dataset is unchanged.
+  const colorButton = document.getElementById("btnBoardColor");
+  const fullButton = document.getElementById("btnFullscreen");
+  function setBoardColor(white) {
+    document.body.classList.toggle("board-white", white);
+    colorButton?.setAttribute("aria-pressed", String(white));
+    if (colorButton) colorButton.textContent = white ? "Nền đỏ" : "Nền trắng";
+  }
+  try { setBoardColor(localStorage.getItem("vinhbao-board-color") === "white"); } catch (_) {}
+  colorButton?.addEventListener("click", () => {
+    const white = !document.body.classList.contains("board-white");
+    setBoardColor(white);
+    try { localStorage.setItem("vinhbao-board-color", white ? "white" : "red"); } catch (_) {}
+  });
+  const clock = document.getElementById("boardClock");
+  const clockFormat = new Intl.DateTimeFormat("vi-VN", { timeZone: "Asia/Ho_Chi_Minh", hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false });
+  function updateClock() {
+    if (!clock) return;
+    const now = new Date();
+    clock.dateTime = now.toISOString();
+    clock.textContent = clockFormat.format(now);
+  }
+  updateClock();
+  setInterval(updateClock, 1000);
+  if (fullButton) {
+    fullButton.hidden = !document.fullscreenEnabled;
+    fullButton.addEventListener("click", async () => {
+      try {
+        if (document.fullscreenElement) await document.exitFullscreen();
+        else await document.documentElement.requestFullscreen();
+      } catch (_) {
+        const host = document.getElementById("toastHost");
+        if (host) host.textContent = "Trình duyệt chưa cho phép toàn màn hình. Bạn có thể dùng phím F11.";
+      }
+    });
+    document.addEventListener("fullscreenchange", () => {
+      const full = Boolean(document.fullscreenElement);
+      fullButton.textContent = full ? "⛶ Thoát toàn màn hình" : "⛶ Toàn màn hình";
+      fullButton.setAttribute("aria-pressed", String(full));
+    });
+  }
+  document.getElementById("btnBoardHome")?.addEventListener("click", () => {
+    closeDetail();
+    btnClearFilter?.click();
+    switchTab("linh-vuc");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 
   fillLinhVucSelect();
   renderDashboard();

@@ -1002,3 +1002,39 @@ body {
   .detail-body { padding: 1rem; }
   .tt-card-main { padding: 0.85rem; }
 }
+
+
+/* Electronic noticeboard, adapted for the verified Vinh Bao dataset. */
+.site-header { background: #fff; color: var(--text); border-bottom: 4px solid var(--gold); box-shadow: var(--shadow); }
+.titles h1 { color: #bd2028; }
+.board-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; margin-bottom: 1rem; }
+.board-toolbar button { min-height: 48px; padding: .65rem 1rem; border: 1px solid var(--border); border-radius: 10px; background: #fff; color: #8f1720; cursor: pointer; font: 600 .9rem 'Be Vietnam Pro', sans-serif; }
+.board-toolbar button:first-child { background: #bd2028; color: #fff; border-color: #bd2028; }
+#boardClock { margin-left: auto; font-weight: 700; color: #bd2028; font-variant-numeric: tabular-nums; }
+#linhVucGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; }
+#linhVucGrid .field-card { position: relative; min-width: 0; min-height: 245px; padding: 24px 20px 20px; display: flex; flex-direction: column; align-items: stretch; gap: 14px; background: #c72029; color: #fff; border: 1px solid #fff; border-radius: 12px; box-shadow: 0 4px 12px #9b183025; font: inherit; cursor: pointer; text-align: center; }
+#linhVucGrid .field-card::before { content: ''; position: absolute; inset: 7px; border: 1px solid #ffffffb0; border-radius: 7px; pointer-events: none; }
+#linhVucGrid .field-card .icon { align-self: flex-start; width: 42px; height: 42px; margin: 0; padding: 4px; background: #fff; border-radius: 8px; }
+#linhVucGrid .field-card .icon img { width: 100%; height: 100%; object-fit: contain; }
+#linhVucGrid .field-card .name { flex: 1; display: flex; align-items: center; justify-content: center; margin: 0; font-size: 1rem; line-height: 1.5; font-weight: 700; color: inherit; overflow-wrap: anywhere; text-wrap: balance; }
+#linhVucGrid .field-card .count { position: absolute; top: 25px; right: 19px; border-radius: 5px; background: #fff; color: #a8141d; padding: 4px 7px; font-size: .8rem; font-weight: 700; }
+.field-hint { border-top: 1px dashed #ffffff88; padding-top: 12px; font-size: .78rem; }
+#linhVucGrid .field-card:hover { background: #a81922; transform: translateY(-3px); }
+.board-white #linhVucGrid .field-card { background: #fff; color: #931620; border-color: #c72029; }
+.board-white #linhVucGrid .field-card::before { border-color: #c7202980; }
+.board-white #linhVucGrid .field-card .count { background: #fbe9ea; }
+.board-white .field-hint { border-color: #c7202950; }
+button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid #1769aa; outline-offset: 4px; }
+.nav-btn, .btn-back, .filter-select { min-height: 44px; }
+.search-box input { min-width: 0; min-height: 32px; }
+@media (min-width: 1400px) { .header-inner, .nav-inner, .main-content { max-width: 1440px; } #linhVucGrid { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
+@media (max-width: 540px) {
+  #linhVucGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  #linhVucGrid .field-card { min-height: 230px; padding: 18px 14px; }
+  #linhVucGrid .field-card .name { font-size: .85rem; }
+  #linhVucGrid .field-card .icon { width: 32px; height: 32px; }
+  #linhVucGrid .field-card .count { top: 23px; right: 13px; font-size: .67rem; padding: 3px 4px; }
+  .board-toolbar { gap: .4rem; } .board-toolbar button { font-size: .78rem; padding: .5rem .7rem; }
+  #boardClock { font-size: .85rem; }
+}
+@media (prefers-reduced-motion: reduce) { #linhVucGrid .field-card { transition: none; } #linhVucGrid .field-card:hover { transform: none; } }
