@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
@@ -30,8 +30,8 @@
 
   <nav class="main-nav">
     <div class="nav-inner">
-      <button class="nav-btn active" data-tab="dashboard">📊 Dashboard</button>
-      <button class="nav-btn" data-tab="linh-vuc">🗂️ Lĩnh vực</button>
+      <button class="nav-btn active" data-tab="linh-vuc">🗂️ Niêm yết</button>
+      <button class="nav-btn" data-tab="dashboard">📊 Tổng quan</button>
       <button class="nav-btn" data-tab="thu-tuc">📋 Thủ tục</button>
       <button class="nav-btn" data-tab="nganh">🏢 Ngành</button>
       <button class="nav-btn" data-tab="qd-theo">📜 QĐ theo TTHC</button>
@@ -46,10 +46,16 @@
       Các trường chưa đủ căn cứ được hiển thị là “Chưa xác minh”. Khi thực hiện TTHC, ưu tiên thông tin trên Cổng Dịch vụ công Quốc gia và quyết định công bố còn hiệu lực.
     </aside>
 
+    <div class="board-toolbar" aria-label="Hiển thị bảng niêm yết">
+      <button type="button" id="btnBoardHome">⌂ Tất cả lĩnh vực</button>
+      <time id="boardClock" aria-label="Giờ Việt Nam"></time>
+      <button type="button" id="btnBoardColor" aria-pressed="false">Nền trắng</button>
+      <button type="button" id="btnFullscreen" aria-pressed="false">⛶ Toàn màn hình</button>
+    </div>
     <div class="filter-bar" id="filterBar">
       <div class="search-box">
         <span class="search-icon">🔍</span>
-        <input type="search" id="searchInput" placeholder="Tìm theo tên thủ tục, mã TTHC, lĩnh vực..." autocomplete="off" />
+        <input type="search" id="searchInput" aria-label="Tìm thủ tục theo tên, mã hoặc lĩnh vực" placeholder="Tìm theo tên thủ tục, mã TTHC, lĩnh vực..." autocomplete="off" />
         <button type="button" id="btnClearSearch" class="btn-clear-search" hidden aria-label="Xóa tìm kiếm">×</button>
         <span class="search-result-count" id="searchResultCount" hidden></span>
       </div>
@@ -74,7 +80,7 @@
       <div class="active-filters" id="activeFilters" hidden></div>
     </div>
 
-    <section id="dashboard" class="tab-panel active">
+    <section id="dashboard" class="tab-panel">
       <div class="section-header">
         <h2>📊 TỔNG QUAN THỦ TỤC HÀNH CHÍNH</h2>
         <span class="badge" id="dashUpdated">UBND xã Vĩnh Bảo</span>
@@ -96,9 +102,9 @@
       </div>
     </section>
 
-    <section id="linh-vuc" class="tab-panel">
+    <section id="linh-vuc" class="tab-panel active">
       <div class="section-header">
-        <h2>🗂️ DANH SÁCH LĨNH VỰC THỦ TỤC</h2>
+        <h2>CHỌN LĨNH VỰC ĐỂ TRA CỨU</h2>
         <span class="badge" id="linhVucCount">0 lĩnh vực</span>
       </div>
       <div class="card-grid" id="linhVucGrid"></div>

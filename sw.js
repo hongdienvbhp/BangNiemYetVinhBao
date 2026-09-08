@@ -1,5 +1,5 @@
 /* Service Worker nhẹ — cache static; dữ liệu JSON là tài nguyên tùy chọn. */
-const CACHE = "tthc-vinhbao-v4";
+const CACHE = "tthc-vinhbao-v5";
 const REQUIRED_ASSETS = [
   "./",
   "./index.html",
@@ -68,3 +68,4 @@ self.addEventListener("fetch", (event) => {
     )
   );
 });
+
