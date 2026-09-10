@@ -4,6 +4,20 @@
   "baselineDate": "2026-09-07",
   "decisions": [
     {
+      "decisionNo": "3537/QĐ-UBND",
+      "decisionDate": "",
+      "publishedDate": "",
+      "classification": "public_tthc",
+      "field": "",
+      "articleUrl": "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh-noi-bo/quyet-dinh-so-3537-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-noi-bo-giua-cac-co-quan-960451",
+      "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-tthc-noi-bo-moi-ban-hanh-so-tai-chinh-ttr387-qdbtc-2351-..signed639243914330256866.pdf",
+      "filePath": "data/source-audit/city-decisions/QD-3537.pdf",
+      "pdfSha256": "1a6285750f94fcab7269ad14eb1d2cedb24a2e3483f64c49818448aa2c827609",
+      "effectiveDate": null,
+      "ingestStatus": "auto_discovered",
+      "title": "Quyết định số 3537/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính nội bộ giữa các cơ quan hành chính nhà nước mới ban hành thuộc phạm vi chức năng quản lý của Sở Tài chính"
+    },
+    {
       "decisionNo": "3500/QĐ-UBND",
       "decisionDate": "2026-08-30",
       "publishedDate": "2026-09-03",
@@ -98,6 +112,34 @@
       "filePath": "data/source-audit/city-updates-20260907/QD-3523.pdf",
       "effectiveDate": null,
       "ingestStatus": "applied"
+    },
+    {
+      "decisionNo": "3582/QĐ-UBND",
+      "decisionDate": "2026-09-08",
+      "publishedDate": "",
+      "classification": "public_tthc",
+      "field": "",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3582-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961697",
+      "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3582-tp639245593448950620.pdf",
+      "filePath": "data/source-audit/city-decisions/QD-3582.pdf",
+      "pdfSha256": "b0a48827fadaeb41597251e626c378a29f0c458bc40c3476b7711aa310ef4b3c",
+      "effectiveDate": null,
+      "ingestStatus": "auto_discovered",
+      "title": "Công khai Quyết định số: 3582/QĐ-UBND ngày 08/9/2026 của UBND thành phố Hải Phòng về việc công bố danh mục nhóm thủ tục hành chính liên thông điện tử bị thay thế: đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế, cấp thẻ căn cước cho trẻ em dưới 6 tuổi và đăng ký khai tử, xóa đăng ký thường trú, giải quyết mai táng phí, tử tuất"
+    },
+    {
+      "decisionNo": "3584/QĐ-UBND",
+      "decisionDate": "2026-09-08",
+      "publishedDate": "",
+      "classification": "public_tthc",
+      "field": "XUẤT NHẬP KHẨU",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+      "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf",
+      "filePath": "data/source-audit/city-decisions/QD-3584.pdf",
+      "pdfSha256": "bb5d42104e2dfc3ead050faeef1662f2e761a61ef814aa19a058ca14f3c50c47",
+      "effectiveDate": null,
+      "ingestStatus": "auto_discovered",
+      "title": "Công khai Quyết định số: 3584/QĐ-UBND ngày 08/9/2026 của UBND thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính ban hành mới và được sửa đổi, bổ sung trong lĩnh vực xuất nhập khẩu thuộc phạm vi, chức năng quản lý của Sở Công Thương"
     }
   ]
 }
