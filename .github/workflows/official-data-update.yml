@@ -148,13 +148,16 @@ jobs:
           - Workflow này **không tự merge**.
           EOF
 
-          if ! pr_url="$(
-            gh pr create \
-              --base main \
-              --head "$AUTO_BRANCH" \
-              --title "Cập nhật Master Data TTHC từ nguồn chính thức $(date +%F)" \
-              --body-file /tmp/pr-body.md
-          )"; then
+          create_args=(
+            --base main
+            --head "$AUTO_BRANCH"
+            --title "Cập nhật Master Data TTHC từ nguồn chính thức $(date +%F)"
+            --body-file /tmp/pr-body.md
+          )
+          if [ "$validation" != "PASS" ]; then
+            create_args+=(--draft)
+          fi
+          if ! pr_url="$(gh pr create "${create_args[@]}")"; then
             echo "::error::Không thể tạo Pull Request bằng token hiện tại."
             {
               echo "## Manual PR handoff"
