@@ -1,16 +1,153 @@
 {
   "format": "bangniemyet-master-data-delta",
   "version": 1,
-  "beforeSnapshotDate": "2026-09-07",
+  "beforeSnapshotDate": "2026-09-10",
   "afterSnapshotDate": "2026-09-10",
   "summary": {
     "beforePublic": 229,
-    "afterPublic": 229,
-    "added": 0,
+    "afterPublic": 246,
+    "added": 17,
     "removed": 0,
     "changed": 0
   },
-  "added": [],
+  "added": [
+    {
+      "ma": "1.000421",
+      "ten": "Thủ tục Cấp sửa đổi, bổ sung, cấp lại Giấy phép quá cảnh",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "quyetDinh": "3584/QĐ-UBND",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf"
+    },
+    {
+      "ma": "1.000477",
+      "ten": "Thủ tục cấp Giấy phép quá cảnh hàng hóa cấm xuất khẩu, cấm nhập khẩu; hàng hóa tạm ngừng xuất khẩu, tạm ngừng nhập khẩu; hàng hóa cấm kinh doanh theo quy định pháp luật",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "quyetDinh": "3584/QĐ-UBND",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf"
+    },
+    {
+      "ma": "1.000890",
+      "ten": "Thủ tục cấp Giấy phép kinh doanh chuyển khẩu",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "quyetDinh": "3584/QĐ-UBND",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf"
+    },
+    {
+      "ma": "1.000905",
+      "ten": "Thủ tục cấp Giấy phép tạm xuất, tái nhập",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "quyetDinh": "3584/QĐ-UBND",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf"
+    },
+    {
+      "ma": "1.000957",
+      "ten": "Thủ tục cấp Giấy phép tạm nhập, tái xuất theo hình thức khác",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "quyetDinh": "3584/QĐ-UBND",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf"
+    },
+    {
+      "ma": "1.001062",
+      "ten": "Thủ tục cấp Giấy phép kinh doanh tạm nhập, tái xuất",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "quyetDinh": "3584/QĐ-UBND",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf"
+    },
+    {
+      "ma": "1.001238",
+      "ten": "Thủ tục cấp Giấy chứng nhận lưu hành tự do (CFS) đối với hàng hóa xuất khẩu",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "quyetDinh": "3584/QĐ-UBND",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf"
+    },
+    {
+      "ma": "1.002808",
+      "ten": "Thủ tục sửa đổi, bổ sung/ cấp lại Giấy phép gia công quân phục và Giấy phép nhập khẩu quân phục để làm mẫu",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "quyetDinh": "3584/QĐ-UBND",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf"
+    },
+    {
+      "ma": "1.004191",
+      "ten": "Thủ tục sửa đổi, bổ sung/cấp lại Giấy phép: kinh doanh tạm nhập, tái xuất; tạm nhập, tái xuất theo hình thức khác; tạm xuất, tái nhập; kinh doanh chuyển khẩu",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "quyetDinh": "3584/QĐ-UBND",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf"
+    },
+    {
+      "ma": "1.013771",
+      "ten": "Thủ tục cấp Giấy phép gia công hàng hóa thuộc diện hàng hóa cấm xuất khẩu, cấm nhập khẩu; hàng hóa tạm ngừng xuất khẩu, tạm ngừng nhập khẩu",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "quyetDinh": "3584/QĐ-UBND",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf"
+    },
+    {
+      "ma": "1.013778",
+      "ten": "Thủ tục gia hạn thời gian quá cảnh đối với hàng hóa quá cảnh",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "quyetDinh": "3584/QĐ-UBND",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf"
+    },
+    {
+      "ma": "1.116351",
+      "ten": "Thủ tục sửa đổi, bổ sung/ cấp lại Giấy phép gia công hàng hóa",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "quyetDinh": "3584/QĐ-UBND",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf"
+    },
+    {
+      "ma": "2.001192",
+      "ten": "Thủ tục cấp Giấy phép gia công quân phục xuất khẩu cho các lực lượng vũ trang nước ngoài",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "quyetDinh": "3584/QĐ-UBND",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf"
+    },
+    {
+      "ma": "2.001282",
+      "ten": "Thủ tục Cấp Giấy phép xuất khẩu, nhập khẩu hàng hóa thuộc diện áp dụng biện pháp tạm ngừng xuất khẩu, tạm ngừng nhập khẩu",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "quyetDinh": "3584/QĐ-UBND",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf"
+    },
+    {
+      "ma": "2.001315",
+      "ten": "Thủ tục cấp Giấy phép nhập khẩu quân phục để làm mẫu phục vụ hoạt động gia công",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "quyetDinh": "3584/QĐ-UBND",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf"
+    },
+    {
+      "ma": "2.002913",
+      "ten": "Liên thông điện tử: đăng ký khai tử, xóa đăng ký thường trú, giải quyết mai táng phí, tử tuất",
+      "linhVuc": "TƯ PHÁP",
+      "quyetDinh": "3582/QĐ-UBND",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3582-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961697",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3582-tp639245593448950620.pdf"
+    },
+    {
+      "ma": "3.000722",
+      "ten": "Liên thông điện tử: đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế, cấp thẻ căn cước cho trẻ em dưới 6 tuổi",
+      "linhVuc": "TƯ PHÁP",
+      "quyetDinh": "3582/QĐ-UBND",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3582-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961697",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3582-tp639245593448950620.pdf"
+    }
+  ],
   "removed": [],
   "changed": []
 }

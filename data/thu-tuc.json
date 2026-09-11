@@ -5472,6 +5472,90 @@
       "stt": 123
     },
     {
+      "ma": "3.000722",
+      "ten": "Liên thông điện tử: đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế, cấp thẻ căn cước cho trẻ em dưới 6 tuổi",
+      "linhVuc": "TƯ PHÁP",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3582/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_city_decision_commune_reception",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-10",
+      "sourceLatestDate": "2026-09-08",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3582-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961697",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3582-tp639245593448950620.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3582-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961697",
+          "articleTitle": "Quyết định 3582/QĐ-UBND",
+          "publishedDate": "2026-09-09",
+          "effectiveDate": "2026-09-08",
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3582-tp639245593448950620.pdf",
+          "attachmentSha256": "b0a48827fadaeb41597251e626c378a29f0c458bc40c3476b7711aa310ef4b3c",
+          "decisionNumbers": [
+            "3582/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "priority51": false,
+      "stt": 124
+    },
+    {
+      "ma": "2.002913",
+      "ten": "Liên thông điện tử: đăng ký khai tử, xóa đăng ký thường trú, giải quyết mai táng phí, tử tuất",
+      "linhVuc": "TƯ PHÁP",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3582/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_city_decision_commune_reception",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-10",
+      "sourceLatestDate": "2026-09-08",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3582-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961697",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3582-tp639245593448950620.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3582-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961697",
+          "articleTitle": "Quyết định 3582/QĐ-UBND",
+          "publishedDate": "2026-09-09",
+          "effectiveDate": "2026-09-08",
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3582-tp639245593448950620.pdf",
+          "attachmentSha256": "b0a48827fadaeb41597251e626c378a29f0c458bc40c3476b7711aa310ef4b3c",
+          "decisionNumbers": [
+            "3582/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "priority51": false,
+      "stt": 125
+    },
+    {
       "ma": "2.000977",
       "ten": "Lựa chọn, ký hợp đồng với luật sư",
       "linhVuc": "TƯ PHÁP",
@@ -5507,7 +5591,7 @@
         }
       ],
       "priority51": false,
-      "stt": 124
+      "stt": 126
     },
     {
       "ma": "2.000970",
@@ -5545,7 +5629,7 @@
         }
       ],
       "priority51": false,
-      "stt": 125
+      "stt": 127
     },
     {
       "ma": "2.002039",
@@ -5583,7 +5667,7 @@
         }
       ],
       "priority51": false,
-      "stt": 126
+      "stt": 128
     },
     {
       "ma": "2.001225",
@@ -5624,7 +5708,7 @@
         }
       ],
       "priority51": false,
-      "stt": 127
+      "stt": 129
     },
     {
       "ma": "2.001680",
@@ -5662,7 +5746,7 @@
         }
       ],
       "priority51": false,
-      "stt": 128
+      "stt": 130
     },
     {
       "ma": "2.001687",
@@ -5700,7 +5784,7 @@
         }
       ],
       "priority51": false,
-      "stt": 129
+      "stt": 131
     },
     {
       "ma": "1.008926",
@@ -5741,7 +5825,7 @@
         }
       ],
       "priority51": false,
-      "stt": 130
+      "stt": 132
     },
     {
       "ma": "2.002036",
@@ -5779,7 +5863,7 @@
         }
       ],
       "priority51": false,
-      "stt": 131
+      "stt": 133
     },
     {
       "ma": "2.000592",
@@ -5817,7 +5901,7 @@
         }
       ],
       "priority51": false,
-      "stt": 132
+      "stt": 134
     },
     {
       "ma": "2.000513",
@@ -5855,7 +5939,7 @@
         }
       ],
       "priority51": false,
-      "stt": 133
+      "stt": 135
     },
     {
       "ma": "2.002038",
@@ -5893,7 +5977,7 @@
         }
       ],
       "priority51": false,
-      "stt": 134
+      "stt": 136
     },
     {
       "ma": "2.000829",
@@ -5931,7 +6015,7 @@
         }
       ],
       "priority51": false,
-      "stt": 135
+      "stt": 137
     },
     {
       "ma": "1.008927",
@@ -5972,7 +6056,7 @@
         }
       ],
       "priority51": false,
-      "stt": 136
+      "stt": 138
     },
     {
       "ma": "1.008925",
@@ -6013,7 +6097,7 @@
         }
       ],
       "priority51": false,
-      "stt": 137
+      "stt": 139
     },
     {
       "ma": "2.002139",
@@ -6054,7 +6138,7 @@
         }
       ],
       "priority51": false,
-      "stt": 138
+      "stt": 140
     },
     {
       "ma": "1.014389",
@@ -6095,7 +6179,7 @@
         }
       ],
       "priority51": false,
-      "stt": 139
+      "stt": 141
     },
     {
       "ma": "1.014390",
@@ -6136,7 +6220,7 @@
         }
       ],
       "priority51": false,
-      "stt": 140
+      "stt": 142
     },
     {
       "ma": "1.003622",
@@ -6182,7 +6266,7 @@
       "priority51": true,
       "priority51Ordinal": 3,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 141
+      "stt": 143
     },
     {
       "ma": "1.014310",
@@ -6261,7 +6345,7 @@
         }
       ],
       "priority51": false,
-      "stt": 142
+      "stt": 144
     },
     {
       "ma": "1.014312",
@@ -6327,7 +6411,7 @@
         }
       ],
       "priority51": false,
-      "stt": 143
+      "stt": 145
     },
     {
       "ma": "1.013725",
@@ -6381,7 +6465,7 @@
         }
       ],
       "priority51": false,
-      "stt": 144
+      "stt": 146
     },
     {
       "ma": "1.013724",
@@ -6448,7 +6532,7 @@
         }
       ],
       "priority51": false,
-      "stt": 145
+      "stt": 147
     },
     {
       "ma": "3.000242",
@@ -6490,7 +6574,637 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 146
+      "stt": 148
+    },
+    {
+      "ma": "1.001238",
+      "ten": "Thủ tục cấp Giấy chứng nhận lưu hành tự do (CFS) đối với hàng hóa xuất khẩu",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3584/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_city_decision_commune_reception",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-10",
+      "sourceLatestDate": "2026-09-08",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+          "articleTitle": "Quyết định 3584/QĐ-UBND",
+          "publishedDate": "2026-09-09",
+          "effectiveDate": "2026-09-08",
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf",
+          "attachmentSha256": "bb5d42104e2dfc3ead050faeef1662f2e761a61ef814aa19a058ca14f3c50c47",
+          "decisionNumbers": [
+            "3584/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "priority51": false,
+      "stt": 149
+    },
+    {
+      "ma": "1.013771",
+      "ten": "Thủ tục cấp Giấy phép gia công hàng hóa thuộc diện hàng hóa cấm xuất khẩu, cấm nhập khẩu; hàng hóa tạm ngừng xuất khẩu, tạm ngừng nhập khẩu",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3584/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_city_decision_commune_reception",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-10",
+      "sourceLatestDate": "2026-09-08",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+          "articleTitle": "Quyết định 3584/QĐ-UBND",
+          "publishedDate": "2026-09-09",
+          "effectiveDate": "2026-09-08",
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf",
+          "attachmentSha256": "bb5d42104e2dfc3ead050faeef1662f2e761a61ef814aa19a058ca14f3c50c47",
+          "decisionNumbers": [
+            "3584/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "priority51": false,
+      "stt": 150
+    },
+    {
+      "ma": "2.001192",
+      "ten": "Thủ tục cấp Giấy phép gia công quân phục xuất khẩu cho các lực lượng vũ trang nước ngoài",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3584/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_city_decision_commune_reception",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-10",
+      "sourceLatestDate": "2026-09-08",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+          "articleTitle": "Quyết định 3584/QĐ-UBND",
+          "publishedDate": "2026-09-09",
+          "effectiveDate": "2026-09-08",
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf",
+          "attachmentSha256": "bb5d42104e2dfc3ead050faeef1662f2e761a61ef814aa19a058ca14f3c50c47",
+          "decisionNumbers": [
+            "3584/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "priority51": false,
+      "stt": 151
+    },
+    {
+      "ma": "1.000890",
+      "ten": "Thủ tục cấp Giấy phép kinh doanh chuyển khẩu",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3584/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_city_decision_commune_reception",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-10",
+      "sourceLatestDate": "2026-09-08",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+          "articleTitle": "Quyết định 3584/QĐ-UBND",
+          "publishedDate": "2026-09-09",
+          "effectiveDate": "2026-09-08",
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf",
+          "attachmentSha256": "bb5d42104e2dfc3ead050faeef1662f2e761a61ef814aa19a058ca14f3c50c47",
+          "decisionNumbers": [
+            "3584/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "priority51": false,
+      "stt": 152
+    },
+    {
+      "ma": "1.001062",
+      "ten": "Thủ tục cấp Giấy phép kinh doanh tạm nhập, tái xuất",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3584/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_city_decision_commune_reception",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-10",
+      "sourceLatestDate": "2026-09-08",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+          "articleTitle": "Quyết định 3584/QĐ-UBND",
+          "publishedDate": "2026-09-09",
+          "effectiveDate": "2026-09-08",
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf",
+          "attachmentSha256": "bb5d42104e2dfc3ead050faeef1662f2e761a61ef814aa19a058ca14f3c50c47",
+          "decisionNumbers": [
+            "3584/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "priority51": false,
+      "stt": 153
+    },
+    {
+      "ma": "2.001315",
+      "ten": "Thủ tục cấp Giấy phép nhập khẩu quân phục để làm mẫu phục vụ hoạt động gia công",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3584/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_city_decision_commune_reception",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-10",
+      "sourceLatestDate": "2026-09-08",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+          "articleTitle": "Quyết định 3584/QĐ-UBND",
+          "publishedDate": "2026-09-09",
+          "effectiveDate": "2026-09-08",
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf",
+          "attachmentSha256": "bb5d42104e2dfc3ead050faeef1662f2e761a61ef814aa19a058ca14f3c50c47",
+          "decisionNumbers": [
+            "3584/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "priority51": false,
+      "stt": 154
+    },
+    {
+      "ma": "1.000477",
+      "ten": "Thủ tục cấp Giấy phép quá cảnh hàng hóa cấm xuất khẩu, cấm nhập khẩu; hàng hóa tạm ngừng xuất khẩu, tạm ngừng nhập khẩu; hàng hóa cấm kinh doanh theo quy định pháp luật",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3584/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_city_decision_commune_reception",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-10",
+      "sourceLatestDate": "2026-09-08",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+          "articleTitle": "Quyết định 3584/QĐ-UBND",
+          "publishedDate": "2026-09-09",
+          "effectiveDate": "2026-09-08",
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf",
+          "attachmentSha256": "bb5d42104e2dfc3ead050faeef1662f2e761a61ef814aa19a058ca14f3c50c47",
+          "decisionNumbers": [
+            "3584/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "priority51": false,
+      "stt": 155
+    },
+    {
+      "ma": "1.000957",
+      "ten": "Thủ tục cấp Giấy phép tạm nhập, tái xuất theo hình thức khác",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3584/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_city_decision_commune_reception",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-10",
+      "sourceLatestDate": "2026-09-08",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+          "articleTitle": "Quyết định 3584/QĐ-UBND",
+          "publishedDate": "2026-09-09",
+          "effectiveDate": "2026-09-08",
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf",
+          "attachmentSha256": "bb5d42104e2dfc3ead050faeef1662f2e761a61ef814aa19a058ca14f3c50c47",
+          "decisionNumbers": [
+            "3584/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "priority51": false,
+      "stt": 156
+    },
+    {
+      "ma": "1.000905",
+      "ten": "Thủ tục cấp Giấy phép tạm xuất, tái nhập",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3584/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_city_decision_commune_reception",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-10",
+      "sourceLatestDate": "2026-09-08",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+          "articleTitle": "Quyết định 3584/QĐ-UBND",
+          "publishedDate": "2026-09-09",
+          "effectiveDate": "2026-09-08",
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf",
+          "attachmentSha256": "bb5d42104e2dfc3ead050faeef1662f2e761a61ef814aa19a058ca14f3c50c47",
+          "decisionNumbers": [
+            "3584/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "priority51": false,
+      "stt": 157
+    },
+    {
+      "ma": "2.001282",
+      "ten": "Thủ tục Cấp Giấy phép xuất khẩu, nhập khẩu hàng hóa thuộc diện áp dụng biện pháp tạm ngừng xuất khẩu, tạm ngừng nhập khẩu",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3584/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_city_decision_commune_reception",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-10",
+      "sourceLatestDate": "2026-09-08",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+          "articleTitle": "Quyết định 3584/QĐ-UBND",
+          "publishedDate": "2026-09-09",
+          "effectiveDate": "2026-09-08",
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf",
+          "attachmentSha256": "bb5d42104e2dfc3ead050faeef1662f2e761a61ef814aa19a058ca14f3c50c47",
+          "decisionNumbers": [
+            "3584/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "priority51": false,
+      "stt": 158
+    },
+    {
+      "ma": "1.000421",
+      "ten": "Thủ tục Cấp sửa đổi, bổ sung, cấp lại Giấy phép quá cảnh",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3584/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_city_decision_commune_reception",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-10",
+      "sourceLatestDate": "2026-09-08",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+          "articleTitle": "Quyết định 3584/QĐ-UBND",
+          "publishedDate": "2026-09-09",
+          "effectiveDate": "2026-09-08",
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf",
+          "attachmentSha256": "bb5d42104e2dfc3ead050faeef1662f2e761a61ef814aa19a058ca14f3c50c47",
+          "decisionNumbers": [
+            "3584/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "priority51": false,
+      "stt": 159
+    },
+    {
+      "ma": "1.013778",
+      "ten": "Thủ tục gia hạn thời gian quá cảnh đối với hàng hóa quá cảnh",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3584/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_city_decision_commune_reception",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-10",
+      "sourceLatestDate": "2026-09-08",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+          "articleTitle": "Quyết định 3584/QĐ-UBND",
+          "publishedDate": "2026-09-09",
+          "effectiveDate": "2026-09-08",
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf",
+          "attachmentSha256": "bb5d42104e2dfc3ead050faeef1662f2e761a61ef814aa19a058ca14f3c50c47",
+          "decisionNumbers": [
+            "3584/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "priority51": false,
+      "stt": 160
+    },
+    {
+      "ma": "1.116351",
+      "ten": "Thủ tục sửa đổi, bổ sung/ cấp lại Giấy phép gia công hàng hóa",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3584/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_city_decision_commune_reception",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-10",
+      "sourceLatestDate": "2026-09-08",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+          "articleTitle": "Quyết định 3584/QĐ-UBND",
+          "publishedDate": "2026-09-09",
+          "effectiveDate": "2026-09-08",
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf",
+          "attachmentSha256": "bb5d42104e2dfc3ead050faeef1662f2e761a61ef814aa19a058ca14f3c50c47",
+          "decisionNumbers": [
+            "3584/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "priority51": false,
+      "stt": 161
+    },
+    {
+      "ma": "1.002808",
+      "ten": "Thủ tục sửa đổi, bổ sung/ cấp lại Giấy phép gia công quân phục và Giấy phép nhập khẩu quân phục để làm mẫu",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3584/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_city_decision_commune_reception",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-10",
+      "sourceLatestDate": "2026-09-08",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+          "articleTitle": "Quyết định 3584/QĐ-UBND",
+          "publishedDate": "2026-09-09",
+          "effectiveDate": "2026-09-08",
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf",
+          "attachmentSha256": "bb5d42104e2dfc3ead050faeef1662f2e761a61ef814aa19a058ca14f3c50c47",
+          "decisionNumbers": [
+            "3584/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "priority51": false,
+      "stt": 162
+    },
+    {
+      "ma": "1.004191",
+      "ten": "Thủ tục sửa đổi, bổ sung/cấp lại Giấy phép: kinh doanh tạm nhập, tái xuất; tạm nhập, tái xuất theo hình thức khác; tạm xuất, tái nhập; kinh doanh chuyển khẩu",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3584/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_city_decision_commune_reception",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-10",
+      "sourceLatestDate": "2026-09-08",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3584-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961695",
+          "articleTitle": "Quyết định 3584/QĐ-UBND",
+          "publishedDate": "2026-09-09",
+          "effectiveDate": "2026-09-08",
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3548-ct639245592166822661.pdf",
+          "attachmentSha256": "bb5d42104e2dfc3ead050faeef1662f2e761a61ef814aa19a058ca14f3c50c47",
+          "decisionNumbers": [
+            "3584/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "priority51": false,
+      "stt": 163
     },
     {
       "ma": "2.000575",
@@ -6536,7 +7250,7 @@
       "priority51": true,
       "priority51Ordinal": 22,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 147
+      "stt": 164
     },
     {
       "ma": "1.001266",
@@ -6582,7 +7296,7 @@
       "priority51": true,
       "priority51Ordinal": 23,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 148
+      "stt": 165
     },
     {
       "ma": "1.001570",
@@ -6628,7 +7342,7 @@
       "priority51": true,
       "priority51Ordinal": 21,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 149
+      "stt": 166
     },
     {
       "ma": "1.001612",
@@ -6674,7 +7388,7 @@
       "priority51": true,
       "priority51Ordinal": 19,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 150
+      "stt": 167
     },
     {
       "ma": "2.000720",
@@ -6718,7 +7432,7 @@
       "priority51Ordinal": 20,
       "priority51MappingStatus": "verified_keyword_fallback",
       "dvcKeywordUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?keyword=2.000720&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0",
-      "stt": 151
+      "stt": 168
     },
     {
       "ma": "1.012786",
@@ -6780,7 +7494,7 @@
         }
       ],
       "priority51": false,
-      "stt": 152
+      "stt": 169
     },
     {
       "ma": "1.012783",
@@ -6842,7 +7556,7 @@
         }
       ],
       "priority51": false,
-      "stt": 153
+      "stt": 170
     },
     {
       "ma": "1.013825",
@@ -6904,7 +7618,7 @@
         }
       ],
       "priority51": false,
-      "stt": 154
+      "stt": 171
     },
     {
       "ma": "1.011445",
@@ -6966,7 +7680,7 @@
         }
       ],
       "priority51": false,
-      "stt": 155
+      "stt": 172
     },
     {
       "ma": "2.002750",
@@ -7008,7 +7722,7 @@
         }
       ],
       "priority51": false,
-      "stt": 156
+      "stt": 173
     },
     {
       "ma": "1.012805",
@@ -7070,7 +7784,7 @@
         }
       ],
       "priority51": false,
-      "stt": 157
+      "stt": 174
     },
     {
       "ma": "1.115649",
@@ -7111,7 +7825,7 @@
         }
       ],
       "priority51": false,
-      "stt": 158
+      "stt": 175
     },
     {
       "ma": "1.013823",
@@ -7173,7 +7887,7 @@
         }
       ],
       "priority51": false,
-      "stt": 159
+      "stt": 176
     },
     {
       "ma": "1.013828",
@@ -7235,7 +7949,7 @@
         }
       ],
       "priority51": false,
-      "stt": 160
+      "stt": 177
     },
     {
       "ma": "1.012812",
@@ -7294,7 +8008,7 @@
       "priority51": true,
       "priority51Ordinal": 25,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 161
+      "stt": 178
     },
     {
       "ma": "1.013946",
@@ -7356,7 +8070,7 @@
         }
       ],
       "priority51": false,
-      "stt": 162
+      "stt": 179
     },
     {
       "ma": "1.012784",
@@ -7418,7 +8132,7 @@
         }
       ],
       "priority51": false,
-      "stt": 163
+      "stt": 180
     },
     {
       "ma": "1.012821",
@@ -7480,7 +8194,7 @@
         }
       ],
       "priority51": false,
-      "stt": 164
+      "stt": 181
     },
     {
       "ma": "1.012791",
@@ -7542,7 +8256,7 @@
         }
       ],
       "priority51": false,
-      "stt": 165
+      "stt": 182
     },
     {
       "ma": "1.013128",
@@ -7584,7 +8298,7 @@
         }
       ],
       "priority51": false,
-      "stt": 166
+      "stt": 183
     },
     {
       "ma": "1.013945",
@@ -7646,7 +8360,7 @@
         }
       ],
       "priority51": false,
-      "stt": 167
+      "stt": 184
     },
     {
       "ma": "1.013947",
@@ -7708,7 +8422,7 @@
         }
       ],
       "priority51": false,
-      "stt": 168
+      "stt": 185
     },
     {
       "ma": "1.013988",
@@ -7770,7 +8484,7 @@
         }
       ],
       "priority51": false,
-      "stt": 169
+      "stt": 186
     },
     {
       "ma": "1.011443",
@@ -7832,7 +8546,7 @@
         }
       ],
       "priority51": false,
-      "stt": 170
+      "stt": 187
     },
     {
       "ma": "1.012766",
@@ -7894,7 +8608,7 @@
         }
       ],
       "priority51": false,
-      "stt": 171
+      "stt": 188
     },
     {
       "ma": "1.011441",
@@ -7956,7 +8670,7 @@
         }
       ],
       "priority51": false,
-      "stt": 172
+      "stt": 189
     },
     {
       "ma": "1.013992",
@@ -8018,7 +8732,7 @@
         }
       ],
       "priority51": false,
-      "stt": 173
+      "stt": 190
     },
     {
       "ma": "1.013831",
@@ -8080,7 +8794,7 @@
         }
       ],
       "priority51": false,
-      "stt": 174
+      "stt": 191
     },
     {
       "ma": "1.013977",
@@ -8142,7 +8856,7 @@
         }
       ],
       "priority51": false,
-      "stt": 175
+      "stt": 192
     },
     {
       "ma": "1.012793",
@@ -8204,7 +8918,7 @@
         }
       ],
       "priority51": false,
-      "stt": 176
+      "stt": 193
     },
     {
       "ma": "1.013980",
@@ -8266,7 +8980,7 @@
         }
       ],
       "priority51": false,
-      "stt": 177
+      "stt": 194
     },
     {
       "ma": "1.013833",
@@ -8328,7 +9042,7 @@
         }
       ],
       "priority51": false,
-      "stt": 178
+      "stt": 195
     },
     {
       "ma": "1.013995",
@@ -8390,7 +9104,7 @@
         }
       ],
       "priority51": false,
-      "stt": 179
+      "stt": 196
     },
     {
       "ma": "1.011442",
@@ -8452,7 +9166,7 @@
         }
       ],
       "priority51": false,
-      "stt": 180
+      "stt": 197
     },
     {
       "ma": "1.011444",
@@ -8514,7 +9228,7 @@
         }
       ],
       "priority51": false,
-      "stt": 181
+      "stt": 198
     },
     {
       "ma": "1.012756",
@@ -8576,7 +9290,7 @@
         }
       ],
       "priority51": false,
-      "stt": 182
+      "stt": 199
     },
     {
       "ma": "1.012787",
@@ -8638,7 +9352,7 @@
         }
       ],
       "priority51": false,
-      "stt": 183
+      "stt": 200
     },
     {
       "ma": "1.012781",
@@ -8700,7 +9414,7 @@
         }
       ],
       "priority51": false,
-      "stt": 184
+      "stt": 201
     },
     {
       "ma": "1.012782",
@@ -8762,7 +9476,7 @@
         }
       ],
       "priority51": false,
-      "stt": 185
+      "stt": 202
     },
     {
       "ma": "1.013994",
@@ -8824,7 +9538,7 @@
         }
       ],
       "priority51": false,
-      "stt": 186
+      "stt": 203
     },
     {
       "ma": "1.013993",
@@ -8886,7 +9600,7 @@
         }
       ],
       "priority51": false,
-      "stt": 187
+      "stt": 204
     },
     {
       "ma": "1.012785",
@@ -8948,7 +9662,7 @@
         }
       ],
       "priority51": false,
-      "stt": 188
+      "stt": 205
     },
     {
       "ma": "1.013827",
@@ -9010,7 +9724,7 @@
         }
       ],
       "priority51": false,
-      "stt": 189
+      "stt": 206
     },
     {
       "ma": "1.013826",
@@ -9072,7 +9786,7 @@
         }
       ],
       "priority51": false,
-      "stt": 190
+      "stt": 207
     },
     {
       "ma": "1.012790",
@@ -9134,7 +9848,7 @@
         }
       ],
       "priority51": false,
-      "stt": 191
+      "stt": 208
     },
     {
       "ma": "1.013950",
@@ -9174,7 +9888,7 @@
         }
       ],
       "priority51": false,
-      "stt": 192
+      "stt": 209
     },
     {
       "ma": "1.012789",
@@ -9236,7 +9950,7 @@
         }
       ],
       "priority51": false,
-      "stt": 193
+      "stt": 210
     },
     {
       "ma": "1.013967",
@@ -9276,7 +9990,7 @@
         }
       ],
       "priority51": false,
-      "stt": 194
+      "stt": 211
     },
     {
       "ma": "1.013962",
@@ -9316,7 +10030,7 @@
         }
       ],
       "priority51": false,
-      "stt": 195
+      "stt": 212
     },
     {
       "ma": "1.013949",
@@ -9361,7 +10075,7 @@
       "priority51": true,
       "priority51Ordinal": 24,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 196
+      "stt": 213
     },
     {
       "ma": "1.013965",
@@ -9401,7 +10115,7 @@
         }
       ],
       "priority51": false,
-      "stt": 197
+      "stt": 214
     },
     {
       "ma": "1.013979",
@@ -9441,7 +10155,7 @@
         }
       ],
       "priority51": false,
-      "stt": 198
+      "stt": 215
     },
     {
       "ma": "2.002675",
@@ -9489,7 +10203,7 @@
         }
       ],
       "priority51": false,
-      "stt": 199
+      "stt": 216
     },
     {
       "ma": "1.012818",
@@ -9534,7 +10248,7 @@
       "priority51": true,
       "priority51Ordinal": 17,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 200
+      "stt": 217
     },
     {
       "ma": "1.012817",
@@ -9594,7 +10308,7 @@
         }
       ],
       "priority51": false,
-      "stt": 201
+      "stt": 218
     },
     {
       "ma": "1.012753",
@@ -9634,7 +10348,7 @@
         }
       ],
       "priority51": false,
-      "stt": 202
+      "stt": 219
     },
     {
       "ma": "1.013978",
@@ -9679,7 +10393,7 @@
       "priority51": true,
       "priority51Ordinal": 16,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 203
+      "stt": 220
     },
     {
       "ma": "1.013953",
@@ -9719,7 +10433,7 @@
         }
       ],
       "priority51": false,
-      "stt": 204
+      "stt": 221
     },
     {
       "ma": "1.013952",
@@ -9759,7 +10473,7 @@
         }
       ],
       "priority51": false,
-      "stt": 205
+      "stt": 222
     },
     {
       "ma": "1.012796",
@@ -9824,7 +10538,7 @@
       "priority51": true,
       "priority51Ordinal": 26,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 206
+      "stt": 223
     },
     {
       "ma": "1.000703",
@@ -9866,7 +10580,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 207
+      "stt": 224
     },
     {
       "ma": "2.002286",
@@ -9908,7 +10622,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 208
+      "stt": 225
     },
     {
       "ma": "1.010704",
@@ -9950,7 +10664,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 209
+      "stt": 226
     },
     {
       "ma": "1.001023",
@@ -9992,7 +10706,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 210
+      "stt": 227
     },
     {
       "ma": "1.002856",
@@ -10034,7 +10748,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 211
+      "stt": 228
     },
     {
       "ma": "1.002877",
@@ -10076,7 +10790,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 212
+      "stt": 229
     },
     {
       "ma": "1.002817",
@@ -10118,7 +10832,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 213
+      "stt": 230
     },
     {
       "ma": "1.000302",
@@ -10160,7 +10874,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 214
+      "stt": 231
     },
     {
       "ma": "1.010702",
@@ -10202,7 +10916,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 215
+      "stt": 232
     },
     {
       "ma": "1.002861",
@@ -10244,7 +10958,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 216
+      "stt": 233
     },
     {
       "ma": "1.002829",
@@ -10286,7 +11000,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 217
+      "stt": 234
     },
     {
       "ma": "2.002288",
@@ -10328,7 +11042,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 218
+      "stt": 235
     },
     {
       "ma": "1.010707",
@@ -10370,7 +11084,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 219
+      "stt": 236
     },
     {
       "ma": "1.002046",
@@ -10412,7 +11126,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 220
+      "stt": 237
     },
     {
       "ma": "1.001577",
@@ -10454,7 +11168,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 221
+      "stt": 238
     },
     {
       "ma": "1.002063",
@@ -10496,7 +11210,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 222
+      "stt": 239
     },
     {
       "ma": "1.002286",
@@ -10538,7 +11252,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 223
+      "stt": 240
     },
     {
       "ma": "1.001737",
@@ -10580,7 +11294,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 224
+      "stt": 241
     },
     {
       "ma": "2.002285",
@@ -10622,7 +11336,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 225
+      "stt": 242
     },
     {
       "ma": "1.000321",
@@ -10664,7 +11378,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 226
+      "stt": 243
     },
     {
       "ma": "1.002268",
@@ -10706,7 +11420,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 227
+      "stt": 244
     },
     {
       "ma": "1.002334",
@@ -10748,7 +11462,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 228
+      "stt": 245
     },
     {
       "ma": "1.002847",
@@ -10790,20 +11504,20 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 229
+      "stt": 246
     }
   ],
   "summary": {
     "officialCandidateCodes": 159,
-    "auditedCodes": 245,
+    "auditedCodes": 266,
     "cityUpdateCodes": 72,
-    "cityCurrentProcedures": 38,
-    "cityNewProcedures": 37,
+    "cityCurrentProcedures": 55,
+    "cityNewProcedures": 54,
     "cityUpdatedProcedures": 1,
-    "cityNeedsReviewRows": 21,
-    "publishedProcedures": 229,
-    "excludedProcedures": 16,
-    "repealedProcedures": 14,
+    "cityNeedsReviewRows": 0,
+    "publishedProcedures": 246,
+    "excludedProcedures": 20,
+    "repealedProcedures": 18,
     "futureEffectiveProcedures": 2,
     "unresolvedNameProcedures": 0,
     "legacyMatchedCodes": 75,

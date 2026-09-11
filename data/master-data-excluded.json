@@ -633,6 +633,170 @@
       "exclusionReason": "Bị bãi bỏ theo 3509/QĐ-UBND"
     },
     {
+      "ma": "2.000986",
+      "ten": "Liên thông thủ tục hành chính về đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi",
+      "linhVuc": "TƯ PHÁP",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3582/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-10",
+      "sourceLatestDate": "2026-09-08",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3582-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961697",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3582-tp639245593448950620.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3582-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961697",
+          "articleTitle": "Quyết định 3582/QĐ-UBND",
+          "publishedDate": "2026-09-09",
+          "effectiveDate": "2026-09-08",
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3582-tp639245593448950620.pdf",
+          "attachmentSha256": "b0a48827fadaeb41597251e626c378a29f0c458bc40c3476b7711aa310ef4b3c",
+          "decisionNumbers": [
+            "3582/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 3582/QĐ-UBND"
+    },
+    {
+      "ma": "2.001023",
+      "ten": "Liên thông các thủ tục hành chính về đăng ký khai sinh, cấp Thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi",
+      "linhVuc": "TƯ PHÁP",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3582/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-10",
+      "sourceLatestDate": "2026-09-08",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3582-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961697",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3582-tp639245593448950620.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3582-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961697",
+          "articleTitle": "Quyết định 3582/QĐ-UBND",
+          "publishedDate": "2026-09-09",
+          "effectiveDate": "2026-09-08",
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3582-tp639245593448950620.pdf",
+          "attachmentSha256": "b0a48827fadaeb41597251e626c378a29f0c458bc40c3476b7711aa310ef4b3c",
+          "decisionNumbers": [
+            "3582/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 3582/QĐ-UBND"
+    },
+    {
+      "ma": "2.002621",
+      "ten": "Đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi",
+      "linhVuc": "TƯ PHÁP",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3582/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-10",
+      "sourceLatestDate": "2026-09-08",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3582-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961697",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3582-tp639245593448950620.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3582-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961697",
+          "articleTitle": "Quyết định 3582/QĐ-UBND",
+          "publishedDate": "2026-09-09",
+          "effectiveDate": "2026-09-08",
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3582-tp639245593448950620.pdf",
+          "attachmentSha256": "b0a48827fadaeb41597251e626c378a29f0c458bc40c3476b7711aa310ef4b3c",
+          "decisionNumbers": [
+            "3582/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 3582/QĐ-UBND"
+    },
+    {
+      "ma": "2.002622",
+      "ten": "Đăng ký khai tử, xóa đăng ký thường trú, giải quyết mai táng phí, tử tuất",
+      "linhVuc": "TƯ PHÁP",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3582/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-10",
+      "sourceLatestDate": "2026-09-08",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3582-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961697",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3582-tp639245593448950620.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3582-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961697",
+          "articleTitle": "Quyết định 3582/QĐ-UBND",
+          "publishedDate": "2026-09-09",
+          "effectiveDate": "2026-09-08",
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3582-tp639245593448950620.pdf",
+          "attachmentSha256": "b0a48827fadaeb41597251e626c378a29f0c458bc40c3476b7711aa310ef4b3c",
+          "decisionNumbers": [
+            "3582/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 3582/QĐ-UBND"
+    },
+    {
       "ma": "2.001009",
       "ten": "Chứng thực văn bản khai nhận di sản mà di sản là động sản, quyền sử dụng đất, nhà ở",
       "linhVuc": "CHỨNG THỰC",

@@ -148,10 +148,10 @@
       "sourceUrl": "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh",
       "articleUrl": "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh-noi-bo/quyet-dinh-so-3537-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-noi-bo-giua-cac-co-quan-960451",
       "decisionNo": "3537/QĐ-UBND",
-      "decisionDate": "",
+      "decisionDate": "2026-09-04",
       "title": "Quyết định số 3537/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính nội bộ giữa các cơ quan hành chính nhà nước mới ban hành thuộc phạm vi chức năng quản lý của Sở Tài chính",
-      "classification": "public_tthc",
-      "status": "auto_discovered"
+      "classification": "internal_process",
+      "status": "excluded_internal"
     },
     {
       "sourceId": "haiphong-public-tthc-listing",
