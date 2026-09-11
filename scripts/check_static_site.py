@@ -54,6 +54,18 @@ source_index = load_json("data/source-audit/official-source-index.json")
 priority51_payload = load_json("data/priority-51-crosswalk.json")
 priority51_legal_payload = load_json("data/priority-51-legal-verification.json")
 
+# Thẻ thủ tục phải thao tác được chỉ bằng bàn phím và trả focus sau khi đóng.
+keyboard_markers = {
+    'tabindex="0" role="button"': "Thẻ thủ tục thiếu semantics/focus bàn phím",
+    'aria-label="Xem chi tiết: ${esc(tt.ten)}"': "Thẻ thủ tục thiếu tên truy cập",
+    'thuTucList.addEventListener("keydown"': "Thiếu xử lý bàn phím cho danh sách thủ tục",
+    'e.key !== "Enter" && e.key !== " "': "Thiếu kích hoạt bằng Enter/Space",
+    'trigger.isConnected) trigger.focus()': "Thiếu khôi phục focus sau khi đóng chi tiết",
+}
+for marker, message in keyboard_markers.items():
+    if marker not in app:
+        fail(message)
+
 # Mọi src/href nội bộ trong HTML phải tồn tại.
 for _, ref in re.findall(r'\b(src|href)="([^"]+)"', index):
     if not ref or ref.startswith(("http://", "https://", "tel:", "mailto:", "#", "data:")):

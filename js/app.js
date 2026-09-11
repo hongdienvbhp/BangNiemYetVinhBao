@@ -248,6 +248,7 @@
   let activeLinhVuc = "";
   let lastList = [];
   let currentPage = 1;
+  let lastDetailTrigger = null;
 
   function countByLinhVuc(ten) {
     return data.thuTuc.filter((tt) => tt.linhVuc === ten).length;
@@ -400,7 +401,7 @@
     thuTucList.innerHTML = pageItems
       .map((tt, i) => {
         const ordinal = (currentPage - 1) * PAGE_SIZE + i + 1;
-        return `<article class="tt-card" data-id="${tt._id}">
+        return `<article class="tt-card" data-id="${tt._id}" tabindex="0" role="button" aria-label="Xem chi tiết: ${esc(tt.ten)}">
           <div class="tt-card-main">
             <span class="tt-stt">${ordinal}</span>
             <div class="tt-card-body">
@@ -414,8 +415,9 @@
       .join("");
   }
 
-  function openDetail(tt) {
+  function openDetail(tt, trigger = null) {
     if (!detailOverlay || !detailBody || !tt) return;
+    lastDetailTrigger = trigger instanceof HTMLElement ? trigger : document.activeElement;
     const steps = (tt.quyTrinh || [])
       .map((s, i) => `<li><span class="step-n">Bước ${i + 1}</span><span>${esc(s)}</span></li>`)
       .join("");
@@ -487,11 +489,16 @@
 
     detailOverlay.hidden = false;
     document.body.style.overflow = "hidden";
+    document.getElementById("btnXDetail")?.focus();
   }
 
   function closeDetail() {
-    if (detailOverlay) detailOverlay.hidden = true;
+    if (!detailOverlay || detailOverlay.hidden) return;
+    detailOverlay.hidden = true;
     document.body.style.overflow = "";
+    const trigger = lastDetailTrigger;
+    lastDetailTrigger = null;
+    if (trigger instanceof HTMLElement && trigger.isConnected) trigger.focus();
   }
 
   function fillLinhVucSelect() {
@@ -626,10 +633,21 @@
   }
 
   if (thuTucList) {
+    const activateProcedureCard = (card) => {
+      if (!card) return;
+      openDetail(byId[card.dataset.id], card);
+    };
+
     thuTucList.addEventListener("click", (e) => {
+      activateProcedureCard(e.target.closest(".tt-card"));
+    });
+
+    thuTucList.addEventListener("keydown", (e) => {
+      if (e.key !== "Enter" && e.key !== " ") return;
       const card = e.target.closest(".tt-card");
       if (!card) return;
-      openDetail(byId[card.dataset.id]);
+      e.preventDefault();
+      activateProcedureCard(card);
     });
   }
 
