@@ -187,6 +187,19 @@ for qd in {"3500/QĐ-UBND", "3501/QĐ-UBND", "3508/QĐ-UBND", "3509/QĐ-UBND", "
     if qd not in decision_nos:
         fail(f"Thiếu quyết định trong source audit: {qd}")
 
+# QĐ 3582 có mã cũ và mã thay thế nằm chung hàng; phải giữ đúng hai phía.
+city_rows_by_code = {
+    str(row.get("code") or ""): row
+    for row in city_updates.get("rows", [])
+    if row.get("decisionNo") == "3582/QĐ-UBND"
+}
+for code in {"2.001023", "2.002621", "2.000986", "2.002622"}:
+    if city_rows_by_code.get(code, {}).get("sectionStatus") != "repealed":
+        fail(f"{code}: mã bị thay thế theo QĐ 3582 chưa được loại đúng")
+for code in {"3.000722", "2.002913"}:
+    if city_rows_by_code.get(code, {}).get("sectionStatus") != "new":
+        fail(f"{code}: mã thay thế theo QĐ 3582 chưa được ghi nhận đúng")
+
 # Manifest/index là cổng provenance của pipeline tự động.
 manifest_rows = decision_manifest.get("decisions") if isinstance(decision_manifest, dict) else None
 if not isinstance(manifest_rows, list):

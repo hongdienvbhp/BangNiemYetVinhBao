@@ -35,6 +35,50 @@ TIME_OR_COLUMN_RE = re.compile(
     re.IGNORECASE,
 )
 
+# Quyết định 3582 trình bày mã cũ và mã thay thế trong cùng một hàng bảng.
+# Trích xuất văn bản thuần không giữ được ranh giới cột, nên khóa lại đúng quan
+# hệ thay thế đã thể hiện trực tiếp trong phụ lục chính thức.
+DECISION_ROW_OVERRIDES = {
+    "3582/QĐ-UBND": {
+        "2.001023": {
+            "name": "Liên thông các thủ tục hành chính về đăng ký khai sinh, cấp Thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi",
+            "sectionStatus": "repealed",
+        },
+        "2.002621": {
+            "name": "Đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi",
+            "sectionStatus": "repealed",
+        },
+        "2.000986": {
+            "name": "Liên thông thủ tục hành chính về đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi",
+            "sectionStatus": "repealed",
+        },
+        "2.002622": {
+            "name": "Đăng ký khai tử, xóa đăng ký thường trú, giải quyết mai táng phí, tử tuất",
+            "sectionStatus": "repealed",
+        },
+        "3.000722": {
+            "name": "Liên thông điện tử: đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế, cấp thẻ căn cước cho trẻ em dưới 6 tuổi",
+            "sectionStatus": "new",
+        },
+        "2.002913": {
+            "name": "Liên thông điện tử: đăng ký khai tử, xóa đăng ký thường trú, giải quyết mai táng phí, tử tuất",
+            "sectionStatus": "new",
+        },
+    },
+    # Ba tên trong QĐ 3584 tiếp tục ở đầu trang kế tiếp của phụ lục.
+    "3584/QĐ-UBND": {
+        "1.004191": {
+            "name": "Thủ tục sửa đổi, bổ sung/cấp lại Giấy phép: kinh doanh tạm nhập, tái xuất; tạm nhập, tái xuất theo hình thức khác; tạm xuất, tái nhập; kinh doanh chuyển khẩu",
+        },
+        "1.000477": {
+            "name": "Thủ tục cấp Giấy phép quá cảnh hàng hóa cấm xuất khẩu, cấm nhập khẩu; hàng hóa tạm ngừng xuất khẩu, tạm ngừng nhập khẩu; hàng hóa cấm kinh doanh theo quy định pháp luật",
+        },
+        "1.013771": {
+            "name": "Thủ tục cấp Giấy phép gia công hàng hóa thuộc diện hàng hóa cấm xuất khẩu, cấm nhập khẩu; hàng hóa tạm ngừng xuất khẩu, tạm ngừng nhập khẩu",
+        },
+    },
+}
+
 
 def fold(value: str) -> str:
     normalized = unicodedata.normalize("NFD", value or "")
@@ -224,6 +268,9 @@ def extract_decision(meta: dict, as_of: str) -> dict:
                 )
 
     merged = merge_rows(rows)
+    for code, override in DECISION_ROW_OVERRIDES.get(str(meta.get("decisionNo") or ""), {}).items():
+        if code in merged:
+            merged[code].update(override)
     return {
         "decisionNo": meta.get("decisionNo"),
         "decisionDate": decision_date,
