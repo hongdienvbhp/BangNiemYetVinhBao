@@ -29,6 +29,6 @@ window.TTHC_CONFIG = {
   autoSyncOnLoad: true,
 
   /** Khóa cache (đổi version khi schema dữ liệu đổi) */
-  cacheKey: "tthc_vinhbao_v5"
+  cacheKey: "tthc_vinhbao_v6"
 };
 
