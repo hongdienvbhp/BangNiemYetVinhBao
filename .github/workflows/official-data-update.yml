@@ -19,7 +19,8 @@ jobs:
   monitor:
     runs-on: ubuntu-latest
     env:
-      GH_TOKEN: ${{ github.token }}
+      # Prefer an optional repository secret when Actions PR creation is disabled.
+      GH_TOKEN: ${{ secrets.PORTFOLIO_GH_TOKEN || github.token }}
       AUTO_BRANCH: auto/official-tthc-update
 
     steps:
@@ -120,13 +121,13 @@ jobs:
 
           Pipeline hằng ngày đã phát hiện thay đổi trên nguồn chính thức Hải Phòng/Vĩnh Bảo.
 
-          - Branch: `$AUTO_BRANCH`
+          - Branch: **$AUTO_BRANCH**
           - Validation trước PR: **$validation**
-          - Báo cáo delta: `data/BAO_CAO_CHENH_LECH_TTHC_MOI_NHAT.md`
-          - Audit nguồn: `data/source-audit/official-source-index.json`
-          - Manifest quyết định: `data/source-audit/official-decision-manifest.json`
+          - Báo cáo delta: data/BAO_CAO_CHENH_LECH_TTHC_MOI_NHAT.md
+          - Audit nguồn: data/source-audit/official-source-index.json
+          - Manifest quyết định: data/source-audit/official-decision-manifest.json
 
-          Quy tắc: không merge nếu CI chưa xanh; không suy diễn hiệu lực/lĩnh vực; quyết định `needs_*` phải được rà soát.
+          Quy tắc: không merge nếu CI chưa xanh; không suy diễn hiệu lực/lĩnh vực; quyết định needs_* phải được rà soát.
           EOF
 
           issue_url="$(gh issue create             --title "Cập nhật TTHC chính thức tự động $(date +%F)"             --body-file /tmp/issue-body.md)"
@@ -147,7 +148,29 @@ jobs:
           - Workflow này **không tự merge**.
           EOF
 
-          gh pr create             --base main             --head "$AUTO_BRANCH"             --title "Cập nhật Master Data TTHC từ nguồn chính thức $(date +%F)"             --body-file /tmp/pr-body.md
+          create_args=(
+            --base main
+            --head "$AUTO_BRANCH"
+            --title "Cập nhật Master Data TTHC từ nguồn chính thức $(date +%F)"
+            --body-file /tmp/pr-body.md
+          )
+          if [ "$validation" != "PASS" ]; then
+            create_args+=(--draft)
+          fi
+          if ! pr_url="$(gh pr create "${create_args[@]}")"; then
+            echo "::error::Không thể tạo Pull Request bằng token hiện tại."
+            {
+              echo "## Manual PR handoff"
+              echo
+              echo "Branch: $AUTO_BRANCH"
+              echo "Issue: #$issue_number"
+              echo
+              echo "GitHub Actions token hiện tại không được phép tạo/approve Pull Request."
+              echo "Bật Allow GitHub Actions to create and approve pull requests hoặc cấu hình secret PORTFOLIO_GH_TOKEN với quyền contents/issues/pull-requests phù hợp."
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+          echo "Pull request: $pr_url"
 
       - name: Fail unchanged baseline if validation regressed
         if: steps.existing.outputs.skip != 'true' && steps.changes.outputs.changed != 'true' && steps.validation.outcome != 'success'
