@@ -120,6 +120,15 @@ elif not sw_cache_match:
 elif cache_version and sw_cache_match.group(1) != cache_version:
     fail(f"Version cache lệch nhau: config v{cache_version}, service worker v{sw_cache_match.group(1)}")
 
+# Application shell phải ưu tiên mạng để người dùng nhận bản deploy mới.
+for marker, message in {
+    'event.request.mode === "navigate" || isCodeAsset': "Service Worker chưa network-first cho điều hướng và tài sản code",
+    '["document", "script", "style"].includes(event.request.destination)': "Service Worker thiếu danh sách tài sản code cần làm mới",
+    'caches.match(event.request, { ignoreSearch: true })': "Service Worker thiếu fallback offline bỏ qua cache-buster",
+}.items():
+    if marker not in sw:
+        fail(message)
+
 # Master Data.
 rows = master.get("thuTuc") if isinstance(master, dict) else None
 summary = master.get("summary") if isinstance(master, dict) else None
