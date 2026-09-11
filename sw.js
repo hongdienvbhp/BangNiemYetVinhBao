@@ -1,5 +1,5 @@
 /* Service Worker nhẹ — cache static; dữ liệu JSON là tài nguyên tùy chọn. */
-const CACHE = "tthc-vinhbao-v5";
+const CACHE = "tthc-vinhbao-v6";
 const REQUIRED_ASSETS = [
   "./",
   "./index.html",
@@ -54,8 +54,27 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
+  const isCodeAsset =
+    url.origin === self.location.origin &&
+    ["document", "script", "style"].includes(event.request.destination);
+
+  if (event.request.mode === "navigate" || isCodeAsset) {
+    event.respondWith(
+      fetch(event.request)
+        .then((response) => {
+          if (response.ok) {
+            const clone = response.clone();
+            caches.open(CACHE).then((cache) => cache.put(event.request, clone));
+          }
+          return response;
+        })
+        .catch(() => caches.match(event.request, { ignoreSearch: true }))
+    );
+    return;
+  }
+
   event.respondWith(
-    caches.match(event.request).then(
+    caches.match(event.request, { ignoreSearch: true }).then(
       (hit) =>
         hit ||
         fetch(event.request).then((response) => {
