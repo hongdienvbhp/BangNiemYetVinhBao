@@ -4,18 +4,36 @@
   "baselineDate": "2026-09-07",
   "decisions": [
     {
-      "decisionNo": "3537/QĐ-UBND",
-      "decisionDate": "2026-09-04",
-      "publishedDate": "2026-09-07",
-      "classification": "internal_process",
-      "field": "",
-      "articleUrl": "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh-noi-bo/quyet-dinh-so-3537-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-noi-bo-giua-cac-co-quan-960451",
-      "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-tthc-noi-bo-moi-ban-hanh-so-tai-chinh-ttr387-qdbtc-2351-..signed639243914330256866.pdf",
-      "filePath": "data/source-audit/city-decisions/QD-3537.pdf",
-      "pdfSha256": "1a6285750f94fcab7269ad14eb1d2cedb24a2e3483f64c49818448aa2c827609",
+      "decisionNo": "3603/QĐ-UBND",
+      "decisionDate": "2026-09-09",
+      "publishedDate": "2026-09-11",
+      "classification": "public_tthc",
+      "field": "TÀI CHÍNH",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3603-qd-ubnd-ngay-09-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-963108",
+      "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dmtthc-so-tai-chinh-chuan-hoa-qd-2428-2452-ttr397-..signed639246459769567858.pdf",
+      "filePath": "data/source-audit/city-decisions/QD-3603.pdf",
+      "pdfSha256": "b4cc414184fae92ade736513a60a2e184e6f41980c23f4ee64ec60e2302aae8f",
       "effectiveDate": null,
-      "ingestStatus": "excluded_internal",
-      "title": "Quyết định số 3537/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính nội bộ giữa các cơ quan hành chính nhà nước mới ban hành thuộc phạm vi chức năng quản lý của Sở Tài chính"
+      "ingestStatus": "reviewed_no_commune_change",
+      "reviewedAt": "2026-09-13",
+      "reviewConclusion": "no_commune_semantic_change",
+      "title": "Quyết định số 3603/QĐ-UBND của UBND thành phố: công bố danh mục thủ tục hành chính mới ban hành, sửa đổi, bổ sung thuộc phạm vi chức năng quản lý của Sở Tài chính"
+    },
+    {
+      "decisionNo": "3604/QĐ-UBND",
+      "decisionDate": "2026-09-09",
+      "publishedDate": "2026-09-11",
+      "classification": "public_tthc",
+      "field": "XÂY DỰNG",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3604-qd-ubnd-ngay-09-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-963090",
+      "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-theo-1549-1536-so-xay-dung-ttr316-9.9..signed639246459065860248.pdf",
+      "filePath": "data/source-audit/city-decisions/QD-3604.pdf",
+      "pdfSha256": "32414e8a22aaa5708e20216e01c2898438b5643afafc9e9791f7145dced2e340",
+      "effectiveDate": null,
+      "ingestStatus": "reviewed_no_commune_change",
+      "reviewedAt": "2026-09-13",
+      "reviewConclusion": "no_commune_semantic_change",
+      "title": "Quyết định số 3604/QĐ-UBND của UBND thành phố: công bố danh mục thủ tục hành chính được sửa đổi, bổ sung, bãi bỏ thuộc phạm vi chức năng quản lý của Sở Xây dựng"
     },
     {
       "decisionNo": "3500/QĐ-UBND",
@@ -114,6 +132,20 @@
       "ingestStatus": "applied"
     },
     {
+      "decisionNo": "3537/QĐ-UBND",
+      "decisionDate": "2026-09-04",
+      "publishedDate": "2026-09-07",
+      "classification": "internal_process",
+      "field": "",
+      "articleUrl": "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh-noi-bo/quyet-dinh-so-3537-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-noi-bo-giua-cac-co-quan-960451",
+      "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-tthc-noi-bo-moi-ban-hanh-so-tai-chinh-ttr387-qdbtc-2351-..signed639243914330256866.pdf",
+      "filePath": "data/source-audit/city-decisions/QD-3537.pdf",
+      "pdfSha256": "1a6285750f94fcab7269ad14eb1d2cedb24a2e3483f64c49818448aa2c827609",
+      "effectiveDate": null,
+      "ingestStatus": "excluded_internal",
+      "title": "Quyết định số 3537/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính nội bộ giữa các cơ quan hành chính nhà nước mới ban hành thuộc phạm vi chức năng quản lý của Sở Tài chính"
+    },
+    {
       "decisionNo": "3582/QĐ-UBND",
       "decisionDate": "2026-09-08",
       "publishedDate": "2026-09-09",
@@ -140,6 +172,37 @@
       "effectiveDate": "2026-09-08",
       "ingestStatus": "auto_discovered",
       "title": "Công khai Quyết định số: 3584/QĐ-UBND ngày 08/9/2026 của UBND thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính ban hành mới và được sửa đổi, bổ sung trong lĩnh vực xuất nhập khẩu thuộc phạm vi, chức năng quản lý của Sở Công Thương"
+    },
+    {
+      "decisionNo": "3626/QĐ-UBND",
+      "decisionDate": "2026-09-10",
+      "publishedDate": "2026-09-11",
+      "classification": "public_tthc",
+      "field": "THANH TRA",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3626-qd-ubnd-ngay-10-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-963093",
+      "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3626-thanh-tra639247396433436237.pdf",
+      "filePath": "data/source-audit/city-decisions/QD-3626.pdf",
+      "pdfSha256": "ffdec7c0b9fc75d5fe35f76e03dc7a710080498fa6a1a7770144f9dc9efe662a",
+      "effectiveDate": null,
+      "ingestStatus": "applied",
+      "implementationEvidenceUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6820/tintuc/2026/9/thong-bao-cong-khai-thu-tuc-hanh-chinh.signed639247384190568745.pdf",
+      "title": "Công khai Quyết định số: 3626/QĐ-UBND ngày 10/9/2026 của UBND thành phố Hải Phòng về việc công bố Danh mục thủ tục hành chính chuẩn hóa thuộc phạm vi chức năng quản lý của Thanh tra thành phố"
+    },
+    {
+      "decisionNo": "3627/QĐ-UBND",
+      "decisionDate": "2026-09-10",
+      "publishedDate": "2026-09-11",
+      "classification": "public_tthc",
+      "field": "KHOA HỌC VÀ CÔNG NGHỆ",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3627-qd-ubnd-ngay-10-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-963097",
+      "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3627-khcn639247397546280150.pdf",
+      "filePath": "data/source-audit/city-decisions/QD-3627.pdf",
+      "pdfSha256": "592f23bfe89dfd5113096ba3c1017df00c7cdeb0f87b8811f3cdb733ce87c05d",
+      "effectiveDate": null,
+      "ingestStatus": "reviewed_no_commune_change",
+      "reviewedAt": "2026-09-13",
+      "reviewConclusion": "no_commune_semantic_change",
+      "title": "Công khai Quyết định số: 3627/QĐ-UBND ngày 10/9/2026 của UBND thành phố Hải Phòng Về việc công bố Danh mục thủ tục hành chính bị bãi bỏ thuộc phạm vi chức năng quản lý của Sở Khoa học và Công nghệ"
     }
   ]
 }

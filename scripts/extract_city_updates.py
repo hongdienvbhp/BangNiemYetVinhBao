@@ -77,6 +77,42 @@ DECISION_ROW_OVERRIDES = {
             "name": "Thủ tục cấp Giấy phép gia công hàng hóa thuộc diện hàng hóa cấm xuất khẩu, cấm nhập khẩu; hàng hóa tạm ngừng xuất khẩu, tạm ngừng nhập khẩu",
         },
     },
+    # QĐ 3626 tách riêng Phụ lục B cấp xã và Phụ lục C dùng chung.
+    # Khóa theo chính phụ lục ký số để dữ liệu công dân chỉ nhận đúng cấp xã.
+    "3626/QĐ-UBND": {
+        "2.001909": {
+            "name": "Thủ tục tiếp công dân tại cấp xã",
+            "field": "TIẾP CÔNG DÂN",
+            "levelHint": "commune",
+            "communeReceptionEvidence": True,
+        },
+        "2.001801": {
+            "name": "Thủ tục xử lý đơn tại cấp xã",
+            "field": "XỬ LÝ ĐƠN",
+            "levelHint": "commune",
+            "communeReceptionEvidence": True,
+        },
+        "2.002409": {
+            "name": "Thủ tục giải quyết khiếu nại lần đầu tại xã",
+            "field": "KHIẾU NẠI",
+            "levelHint": "commune",
+            "communeReceptionEvidence": True,
+        },
+        "2.002396": {
+            "name": "Giải quyết tố cáo cấp xã",
+            "field": "TỐ CÁO",
+            "levelHint": "commune",
+            "communeReceptionEvidence": True,
+        },
+        "2.002401": {
+            "levelHint": "shared",
+            "communeReceptionEvidence": False,
+        },
+        "2.002403": {
+            "levelHint": "shared",
+            "communeReceptionEvidence": False,
+        },
+    },
 }
 
 
@@ -116,8 +152,8 @@ def level_hint(line: str, current: str) -> str:
     value = fold(line)
     if "thu tuc hanh chinh" not in value and "cap xa" not in value:
         return current
-    if "dung chung" in value and "cap xa" in value:
-        return "shared_including_commune"
+    if "dung chung" in value:
+        return "shared_including_commune" if "cap xa" in value else "shared"
     if "cap xa" in value:
         return "commune"
     if "cap tinh" in value:
@@ -227,10 +263,13 @@ def extract_decision(meta: dict, as_of: str) -> dict:
         effective_source = source
 
     ingest_status = str(meta.get("ingestStatus") or "")
-    if effective_date:
+    if ingest_status == "reviewed_no_commune_change":
+        current_state = "reviewed_no_commune_change"
+        effective_source = "manual_scope_review"
+    elif effective_date:
         current_state = "future_effective" if effective_date > as_of else "current_or_immediate_unless_repealed"
     elif ingest_status == "applied":
-        # Baseline decisions were manually verified before this automation existed.
+        # Decisions marked applied have independent manual implementation evidence.
         current_state = "current_or_immediate_unless_repealed"
         effective_source = "baseline_manual_verification"
     else:
