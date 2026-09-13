@@ -797,6 +797,129 @@
       "exclusionReason": "Bị bãi bỏ theo 3582/QĐ-UBND"
     },
     {
+      "ma": "1.009444",
+      "ten": "Gia hạn hoạt động cảng, bến thủy nội địa Thông tư số 21/2026/TTBXD ngày 15/5/2026 của Bộ trưởng Bộ Xây dựng quy định về quản lý kết cấu hạ tầng đường thủy nội địa Sở Xây dựng, UBND cấp xã",
+      "linhVuc": "XÂY DỰNG",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3604/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-13",
+      "sourceLatestDate": "2026-09-09",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3604-qd-ubnd-ngay-09-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-963090",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-theo-1549-1536-so-xay-dung-ttr316-9.9..signed639246459065860248.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3604-qd-ubnd-ngay-09-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-963090",
+          "articleTitle": "Quyết định 3604/QĐ-UBND",
+          "publishedDate": "2026-09-11",
+          "effectiveDate": null,
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-theo-1549-1536-so-xay-dung-ttr316-9.9..signed639246459065860248.pdf",
+          "attachmentSha256": "32414e8a22aaa5708e20216e01c2898438b5643afafc9e9791f7145dced2e340",
+          "decisionNumbers": [
+            "3604/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 3604/QĐ-UBND"
+    },
+    {
+      "ma": "2.002253",
+      "ten": "Thủ tục cấp Giấy xác nhận đăng ký hoạt động xét t ặng gi ải thưởng ch ất lư ợng sản phẩm, hàng hóa của tổ chức, cá nhân",
+      "linhVuc": "KHOA HỌC VÀ CÔNG NGHỆ",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3627/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-13",
+      "sourceLatestDate": "2026-09-10",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3627-qd-ubnd-ngay-10-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-963097",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3627-khcn639247397546280150.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3627-qd-ubnd-ngay-10-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-963097",
+          "articleTitle": "Quyết định 3627/QĐ-UBND",
+          "publishedDate": "2026-09-11",
+          "effectiveDate": null,
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3627-khcn639247397546280150.pdf",
+          "attachmentSha256": "592f23bfe89dfd5113096ba3c1017df00c7cdeb0f87b8811f3cdb733ce87c05d",
+          "decisionNumbers": [
+            "3627/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 3627/QĐ-UBND"
+    },
+    {
+      "ma": "3.000474",
+      "ten": "Thủ tục cấp Giấy xác nhận đăng ký hoạt động xét t ặng gi ải thưởng ch ất lư ợng sản phẩm, hàng hóa của tổ chức, cá nhân (đối với các gi ải thưởng do cơ quan nhà nước, tổ chức chính tr ị, tổ chức chính trị - xã hội, tổ chức chính trị",
+      "linhVuc": "KHOA HỌC VÀ CÔNG NGHỆ",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3627/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-13",
+      "sourceLatestDate": "2026-09-10",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3627-qd-ubnd-ngay-10-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-963097",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3627-khcn639247397546280150.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3627-qd-ubnd-ngay-10-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-963097",
+          "articleTitle": "Quyết định 3627/QĐ-UBND",
+          "publishedDate": "2026-09-11",
+          "effectiveDate": null,
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3627-khcn639247397546280150.pdf",
+          "attachmentSha256": "592f23bfe89dfd5113096ba3c1017df00c7cdeb0f87b8811f3cdb733ce87c05d",
+          "decisionNumbers": [
+            "3627/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 3627/QĐ-UBND"
+    },
+    {
       "ma": "2.001009",
       "ten": "Chứng thực văn bản khai nhận di sản mà di sản là động sản, quyền sử dụng đất, nhà ở",
       "linhVuc": "CHỨNG THỰC",

@@ -2743,6 +2743,48 @@
       "stt": 57
     },
     {
+      "ma": "2.002409",
+      "ten": "Thủ tục giải quyết khiếu nại lần đầu tại xã",
+      "linhVuc": "KHIẾU NẠI",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3626/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_city_decision_commune_reception",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-13",
+      "sourceLatestDate": "2026-09-10",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3626-qd-ubnd-ngay-10-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-963093",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3626-thanh-tra639247396433436237.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3626-qd-ubnd-ngay-10-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-963093",
+          "articleTitle": "Quyết định 3626/QĐ-UBND",
+          "publishedDate": "2026-09-11",
+          "effectiveDate": null,
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3626-thanh-tra639247396433436237.pdf",
+          "attachmentSha256": "ffdec7c0b9fc75d5fe35f76e03dc7a710080498fa6a1a7770144f9dc9efe662a",
+          "decisionNumbers": [
+            "3626/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "priority51": false,
+      "stt": 58
+    },
+    {
       "ma": "2.001283",
       "ten": "Cấp Giấy chứng nhận đủ điều kiện cửa hàng bán lẻ LPG chai",
       "linhVuc": "KINH DOANH KHÍ",
@@ -2796,7 +2838,7 @@
       "priority51Ordinal": 18,
       "priority51MappingStatus": "verified_keyword_fallback",
       "dvcKeywordUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?keyword=2.001283&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0",
-      "stt": 58
+      "stt": 59
     },
     {
       "ma": "1.012531",
@@ -2834,7 +2876,7 @@
         }
       ],
       "priority51": false,
-      "stt": 59
+      "stt": 60
     },
     {
       "ma": "2.002821",
@@ -2875,7 +2917,7 @@
         }
       ],
       "priority51": false,
-      "stt": 60
+      "stt": 61
     },
     {
       "ma": "1.013040",
@@ -2917,7 +2959,7 @@
         }
       ],
       "priority51": false,
-      "stt": 61
+      "stt": 62
     },
     {
       "ma": "1.010833",
@@ -2973,7 +3015,7 @@
       "priority51": true,
       "priority51Ordinal": 15,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 62
+      "stt": 63
     },
     {
       "ma": "1.010803",
@@ -3019,7 +3061,7 @@
       "priority51": true,
       "priority51Ordinal": 9,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 63
+      "stt": 64
     },
     {
       "ma": "1.010824",
@@ -3065,7 +3107,7 @@
       "priority51": true,
       "priority51Ordinal": 8,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 64
+      "stt": 65
     },
     {
       "ma": "1.000479",
@@ -3105,7 +3147,7 @@
         }
       ],
       "priority51": false,
-      "stt": 65
+      "stt": 66
     },
     {
       "ma": "1.000464",
@@ -3145,7 +3187,7 @@
         }
       ],
       "priority51": false,
-      "stt": 66
+      "stt": 67
     },
     {
       "ma": "1.013022",
@@ -3183,7 +3225,7 @@
         }
       ],
       "priority51": false,
-      "stt": 67
+      "stt": 68
     },
     {
       "ma": "1.116316",
@@ -3225,7 +3267,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 68
+      "stt": 69
     },
     {
       "ma": "1.012942",
@@ -3263,7 +3305,7 @@
         }
       ],
       "priority51": false,
-      "stt": 69
+      "stt": 70
     },
     {
       "ma": "1.013017",
@@ -3301,7 +3343,7 @@
         }
       ],
       "priority51": false,
-      "stt": 70
+      "stt": 71
     },
     {
       "ma": "1.013020",
@@ -3339,7 +3381,7 @@
         }
       ],
       "priority51": false,
-      "stt": 71
+      "stt": 72
     },
     {
       "ma": "1.012945",
@@ -3377,7 +3419,7 @@
         }
       ],
       "priority51": false,
-      "stt": 72
+      "stt": 73
     },
     {
       "ma": "1.012948",
@@ -3415,7 +3457,7 @@
         }
       ],
       "priority51": false,
-      "stt": 73
+      "stt": 74
     },
     {
       "ma": "1.012947",
@@ -3453,7 +3495,7 @@
         }
       ],
       "priority51": false,
-      "stt": 74
+      "stt": 75
     },
     {
       "ma": "1.013021",
@@ -3491,7 +3533,7 @@
         }
       ],
       "priority51": false,
-      "stt": 75
+      "stt": 76
     },
     {
       "ma": "1.013018",
@@ -3529,7 +3571,7 @@
         }
       ],
       "priority51": false,
-      "stt": 76
+      "stt": 77
     },
     {
       "ma": "1.013019",
@@ -3567,7 +3609,7 @@
         }
       ],
       "priority51": false,
-      "stt": 77
+      "stt": 78
     },
     {
       "ma": "1.012946",
@@ -3605,7 +3647,7 @@
         }
       ],
       "priority51": false,
-      "stt": 78
+      "stt": 79
     },
     {
       "ma": "1.013023",
@@ -3643,7 +3685,7 @@
         }
       ],
       "priority51": false,
-      "stt": 79
+      "stt": 80
     },
     {
       "ma": "1.012929",
@@ -3681,7 +3723,7 @@
         }
       ],
       "priority51": false,
-      "stt": 80
+      "stt": 81
     },
     {
       "ma": "1.014111",
@@ -3736,7 +3778,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 81
+      "stt": 82
     },
     {
       "ma": "1.012943",
@@ -3774,7 +3816,7 @@
         }
       ],
       "priority51": false,
-      "stt": 82
+      "stt": 83
     },
     {
       "ma": "1.014113",
@@ -3816,7 +3858,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 83
+      "stt": 84
     },
     {
       "ma": "1.012629",
@@ -3854,7 +3896,7 @@
         }
       ],
       "priority51": false,
-      "stt": 84
+      "stt": 85
     },
     {
       "ma": "1.012664",
@@ -3892,7 +3934,7 @@
         }
       ],
       "priority51": false,
-      "stt": 85
+      "stt": 86
     },
     {
       "ma": "1.012657",
@@ -3930,7 +3972,7 @@
         }
       ],
       "priority51": false,
-      "stt": 86
+      "stt": 87
     },
     {
       "ma": "1.012659",
@@ -3968,7 +4010,7 @@
         }
       ],
       "priority51": false,
-      "stt": 87
+      "stt": 88
     },
     {
       "ma": "1.012632",
@@ -4006,7 +4048,7 @@
         }
       ],
       "priority51": false,
-      "stt": 88
+      "stt": 89
     },
     {
       "ma": "1.012641",
@@ -4044,7 +4086,7 @@
         }
       ],
       "priority51": false,
-      "stt": 89
+      "stt": 90
     },
     {
       "ma": "1.012660",
@@ -4082,7 +4124,7 @@
         }
       ],
       "priority51": false,
-      "stt": 90
+      "stt": 91
     },
     {
       "ma": "1.012672",
@@ -4120,7 +4162,7 @@
         }
       ],
       "priority51": false,
-      "stt": 91
+      "stt": 92
     },
     {
       "ma": "1.012637",
@@ -4158,7 +4200,7 @@
         }
       ],
       "priority51": false,
-      "stt": 92
+      "stt": 93
     },
     {
       "ma": "1.012605",
@@ -4196,7 +4238,7 @@
         }
       ],
       "priority51": false,
-      "stt": 93
+      "stt": 94
     },
     {
       "ma": "1.012655",
@@ -4234,7 +4276,7 @@
         }
       ],
       "priority51": false,
-      "stt": 94
+      "stt": 95
     },
     {
       "ma": "1.012646",
@@ -4272,7 +4314,7 @@
         }
       ],
       "priority51": false,
-      "stt": 95
+      "stt": 96
     },
     {
       "ma": "1.012648",
@@ -4310,7 +4352,7 @@
         }
       ],
       "priority51": false,
-      "stt": 96
+      "stt": 97
     },
     {
       "ma": "1.012658",
@@ -4348,7 +4390,7 @@
         }
       ],
       "priority51": false,
-      "stt": 97
+      "stt": 98
     },
     {
       "ma": "1.012661",
@@ -4386,7 +4428,7 @@
         }
       ],
       "priority51": false,
-      "stt": 98
+      "stt": 99
     },
     {
       "ma": "1.012645",
@@ -4424,7 +4466,7 @@
         }
       ],
       "priority51": false,
-      "stt": 99
+      "stt": 100
     },
     {
       "ma": "1.012644",
@@ -4462,7 +4504,7 @@
         }
       ],
       "priority51": false,
-      "stt": 100
+      "stt": 101
     },
     {
       "ma": "1.012656",
@@ -4500,7 +4542,7 @@
         }
       ],
       "priority51": false,
-      "stt": 101
+      "stt": 102
     },
     {
       "ma": "1.012653",
@@ -4538,7 +4580,7 @@
         }
       ],
       "priority51": false,
-      "stt": 102
+      "stt": 103
     },
     {
       "ma": "1.012606",
@@ -4576,7 +4618,7 @@
         }
       ],
       "priority51": false,
-      "stt": 103
+      "stt": 104
     },
     {
       "ma": "1.012607",
@@ -4614,7 +4656,7 @@
         }
       ],
       "priority51": false,
-      "stt": 104
+      "stt": 105
     },
     {
       "ma": "1.012639",
@@ -4652,7 +4694,7 @@
         }
       ],
       "priority51": false,
-      "stt": 105
+      "stt": 106
     },
     {
       "ma": "1.008675",
@@ -4696,7 +4738,7 @@
         }
       ],
       "priority51": false,
-      "stt": 106
+      "stt": 107
     },
     {
       "ma": "2.001576",
@@ -4748,7 +4790,7 @@
         }
       ],
       "priority51": false,
-      "stt": 107
+      "stt": 108
     },
     {
       "ma": "1.003814",
@@ -4800,7 +4842,7 @@
         }
       ],
       "priority51": false,
-      "stt": 108
+      "stt": 109
     },
     {
       "ma": "1.007916",
@@ -4844,7 +4886,7 @@
         }
       ],
       "priority51": false,
-      "stt": 109
+      "stt": 110
     },
     {
       "ma": "1.014953",
@@ -4896,7 +4938,7 @@
         }
       ],
       "priority51": false,
-      "stt": 110
+      "stt": 111
     },
     {
       "ma": "2.001263",
@@ -4934,7 +4976,7 @@
         }
       ],
       "priority51": false,
-      "stt": 111
+      "stt": 112
     },
     {
       "ma": "1.003705",
@@ -4974,7 +5016,7 @@
         }
       ],
       "priority51": false,
-      "stt": 112
+      "stt": 113
     },
     {
       "ma": "2.000609",
@@ -5014,7 +5056,7 @@
         }
       ],
       "priority51": false,
-      "stt": 113
+      "stt": 114
     },
     {
       "ma": "2.000324",
@@ -5054,7 +5096,7 @@
         }
       ],
       "priority51": false,
-      "stt": 114
+      "stt": 115
     },
     {
       "ma": "1.013734",
@@ -5108,7 +5150,7 @@
         }
       ],
       "priority51": false,
-      "stt": 115
+      "stt": 116
     },
     {
       "ma": "2.002020",
@@ -5150,7 +5192,7 @@
         }
       ],
       "priority51": false,
-      "stt": 116
+      "stt": 117
     },
     {
       "ma": "2.002043",
@@ -5192,7 +5234,7 @@
         }
       ],
       "priority51": false,
-      "stt": 117
+      "stt": 118
     },
     {
       "ma": "2.002042",
@@ -5234,7 +5276,7 @@
         }
       ],
       "priority51": false,
-      "stt": 118
+      "stt": 119
     },
     {
       "ma": "2.001610",
@@ -5276,7 +5318,91 @@
         }
       ],
       "priority51": false,
-      "stt": 119
+      "stt": 120
+    },
+    {
+      "ma": "2.001909",
+      "ten": "Thủ tục tiếp công dân tại cấp xã",
+      "linhVuc": "TIẾP CÔNG DÂN",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3626/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_city_decision_commune_reception",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-13",
+      "sourceLatestDate": "2026-09-10",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3626-qd-ubnd-ngay-10-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-963093",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3626-thanh-tra639247396433436237.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3626-qd-ubnd-ngay-10-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-963093",
+          "articleTitle": "Quyết định 3626/QĐ-UBND",
+          "publishedDate": "2026-09-11",
+          "effectiveDate": null,
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3626-thanh-tra639247396433436237.pdf",
+          "attachmentSha256": "ffdec7c0b9fc75d5fe35f76e03dc7a710080498fa6a1a7770144f9dc9efe662a",
+          "decisionNumbers": [
+            "3626/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "priority51": false,
+      "stt": 121
+    },
+    {
+      "ma": "2.002396",
+      "ten": "Giải quyết tố cáo cấp xã",
+      "linhVuc": "TỐ CÁO",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3626/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_city_decision_commune_reception",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-13",
+      "sourceLatestDate": "2026-09-10",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3626-qd-ubnd-ngay-10-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-963093",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3626-thanh-tra639247396433436237.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3626-qd-ubnd-ngay-10-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-963093",
+          "articleTitle": "Quyết định 3626/QĐ-UBND",
+          "publishedDate": "2026-09-11",
+          "effectiveDate": null,
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3626-thanh-tra639247396433436237.pdf",
+          "attachmentSha256": "ffdec7c0b9fc75d5fe35f76e03dc7a710080498fa6a1a7770144f9dc9efe662a",
+          "decisionNumbers": [
+            "3626/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "priority51": false,
+      "stt": 122
     },
     {
       "ma": "2.001942",
@@ -5349,7 +5475,7 @@
         }
       ],
       "priority51": false,
-      "stt": 120
+      "stt": 123
     },
     {
       "ma": "1.003915",
@@ -5390,7 +5516,7 @@
         }
       ],
       "priority51": false,
-      "stt": 121
+      "stt": 124
     },
     {
       "ma": "1.008928",
@@ -5431,7 +5557,7 @@
         }
       ],
       "priority51": false,
-      "stt": 122
+      "stt": 125
     },
     {
       "ma": "1.004878",
@@ -5469,7 +5595,7 @@
         }
       ],
       "priority51": false,
-      "stt": 123
+      "stt": 126
     },
     {
       "ma": "3.000722",
@@ -5511,7 +5637,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 124
+      "stt": 127
     },
     {
       "ma": "2.002913",
@@ -5553,7 +5679,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 125
+      "stt": 128
     },
     {
       "ma": "2.000977",
@@ -5591,7 +5717,7 @@
         }
       ],
       "priority51": false,
-      "stt": 126
+      "stt": 129
     },
     {
       "ma": "2.000970",
@@ -5629,7 +5755,7 @@
         }
       ],
       "priority51": false,
-      "stt": 127
+      "stt": 130
     },
     {
       "ma": "2.002039",
@@ -5667,7 +5793,7 @@
         }
       ],
       "priority51": false,
-      "stt": 128
+      "stt": 131
     },
     {
       "ma": "2.001225",
@@ -5708,7 +5834,7 @@
         }
       ],
       "priority51": false,
-      "stt": 129
+      "stt": 132
     },
     {
       "ma": "2.001680",
@@ -5746,7 +5872,7 @@
         }
       ],
       "priority51": false,
-      "stt": 130
+      "stt": 133
     },
     {
       "ma": "2.001687",
@@ -5784,7 +5910,7 @@
         }
       ],
       "priority51": false,
-      "stt": 131
+      "stt": 134
     },
     {
       "ma": "1.008926",
@@ -5825,7 +5951,7 @@
         }
       ],
       "priority51": false,
-      "stt": 132
+      "stt": 135
     },
     {
       "ma": "2.002036",
@@ -5863,7 +5989,7 @@
         }
       ],
       "priority51": false,
-      "stt": 133
+      "stt": 136
     },
     {
       "ma": "2.000592",
@@ -5901,7 +6027,7 @@
         }
       ],
       "priority51": false,
-      "stt": 134
+      "stt": 137
     },
     {
       "ma": "2.000513",
@@ -5939,7 +6065,7 @@
         }
       ],
       "priority51": false,
-      "stt": 135
+      "stt": 138
     },
     {
       "ma": "2.002038",
@@ -5977,7 +6103,7 @@
         }
       ],
       "priority51": false,
-      "stt": 136
+      "stt": 139
     },
     {
       "ma": "2.000829",
@@ -6015,7 +6141,7 @@
         }
       ],
       "priority51": false,
-      "stt": 137
+      "stt": 140
     },
     {
       "ma": "1.008927",
@@ -6056,7 +6182,7 @@
         }
       ],
       "priority51": false,
-      "stt": 138
+      "stt": 141
     },
     {
       "ma": "1.008925",
@@ -6097,7 +6223,7 @@
         }
       ],
       "priority51": false,
-      "stt": 139
+      "stt": 142
     },
     {
       "ma": "2.002139",
@@ -6138,7 +6264,7 @@
         }
       ],
       "priority51": false,
-      "stt": 140
+      "stt": 143
     },
     {
       "ma": "1.014389",
@@ -6179,7 +6305,7 @@
         }
       ],
       "priority51": false,
-      "stt": 141
+      "stt": 144
     },
     {
       "ma": "1.014390",
@@ -6220,7 +6346,7 @@
         }
       ],
       "priority51": false,
-      "stt": 142
+      "stt": 145
     },
     {
       "ma": "1.003622",
@@ -6266,7 +6392,7 @@
       "priority51": true,
       "priority51Ordinal": 3,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 143
+      "stt": 146
     },
     {
       "ma": "1.014310",
@@ -6345,7 +6471,7 @@
         }
       ],
       "priority51": false,
-      "stt": 144
+      "stt": 147
     },
     {
       "ma": "1.014312",
@@ -6411,7 +6537,7 @@
         }
       ],
       "priority51": false,
-      "stt": 145
+      "stt": 148
     },
     {
       "ma": "1.013725",
@@ -6465,7 +6591,7 @@
         }
       ],
       "priority51": false,
-      "stt": 146
+      "stt": 149
     },
     {
       "ma": "1.013724",
@@ -6532,7 +6658,49 @@
         }
       ],
       "priority51": false,
-      "stt": 147
+      "stt": 150
+    },
+    {
+      "ma": "2.001801",
+      "ten": "Thủ tục xử lý đơn tại cấp xã",
+      "linhVuc": "XỬ LÝ ĐƠN",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3626/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_city_decision_commune_reception",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-13",
+      "sourceLatestDate": "2026-09-10",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3626-qd-ubnd-ngay-10-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-963093",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3626-thanh-tra639247396433436237.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3626-qd-ubnd-ngay-10-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-963093",
+          "articleTitle": "Quyết định 3626/QĐ-UBND",
+          "publishedDate": "2026-09-11",
+          "effectiveDate": null,
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3626-thanh-tra639247396433436237.pdf",
+          "attachmentSha256": "ffdec7c0b9fc75d5fe35f76e03dc7a710080498fa6a1a7770144f9dc9efe662a",
+          "decisionNumbers": [
+            "3626/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "priority51": false,
+      "stt": 151
     },
     {
       "ma": "3.000242",
@@ -6574,7 +6742,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 148
+      "stt": 152
     },
     {
       "ma": "1.001238",
@@ -6616,7 +6784,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 149
+      "stt": 153
     },
     {
       "ma": "1.013771",
@@ -6658,7 +6826,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 150
+      "stt": 154
     },
     {
       "ma": "2.001192",
@@ -6700,7 +6868,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 151
+      "stt": 155
     },
     {
       "ma": "1.000890",
@@ -6742,7 +6910,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 152
+      "stt": 156
     },
     {
       "ma": "1.001062",
@@ -6784,7 +6952,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 153
+      "stt": 157
     },
     {
       "ma": "2.001315",
@@ -6826,7 +6994,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 154
+      "stt": 158
     },
     {
       "ma": "1.000477",
@@ -6868,7 +7036,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 155
+      "stt": 159
     },
     {
       "ma": "1.000957",
@@ -6910,7 +7078,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 156
+      "stt": 160
     },
     {
       "ma": "1.000905",
@@ -6952,7 +7120,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 157
+      "stt": 161
     },
     {
       "ma": "2.001282",
@@ -6994,7 +7162,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 158
+      "stt": 162
     },
     {
       "ma": "1.000421",
@@ -7036,7 +7204,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 159
+      "stt": 163
     },
     {
       "ma": "1.013778",
@@ -7078,7 +7246,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 160
+      "stt": 164
     },
     {
       "ma": "1.116351",
@@ -7120,7 +7288,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 161
+      "stt": 165
     },
     {
       "ma": "1.002808",
@@ -7162,7 +7330,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 162
+      "stt": 166
     },
     {
       "ma": "1.004191",
@@ -7204,7 +7372,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 163
+      "stt": 167
     },
     {
       "ma": "2.000575",
@@ -7250,7 +7418,7 @@
       "priority51": true,
       "priority51Ordinal": 22,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 164
+      "stt": 168
     },
     {
       "ma": "1.001266",
@@ -7296,7 +7464,7 @@
       "priority51": true,
       "priority51Ordinal": 23,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 165
+      "stt": 169
     },
     {
       "ma": "1.001570",
@@ -7342,7 +7510,7 @@
       "priority51": true,
       "priority51Ordinal": 21,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 166
+      "stt": 170
     },
     {
       "ma": "1.001612",
@@ -7388,7 +7556,7 @@
       "priority51": true,
       "priority51Ordinal": 19,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 167
+      "stt": 171
     },
     {
       "ma": "2.000720",
@@ -7432,7 +7600,7 @@
       "priority51Ordinal": 20,
       "priority51MappingStatus": "verified_keyword_fallback",
       "dvcKeywordUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?keyword=2.000720&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0",
-      "stt": 168
+      "stt": 172
     },
     {
       "ma": "1.012786",
@@ -7494,7 +7662,7 @@
         }
       ],
       "priority51": false,
-      "stt": 169
+      "stt": 173
     },
     {
       "ma": "1.012783",
@@ -7556,7 +7724,7 @@
         }
       ],
       "priority51": false,
-      "stt": 170
+      "stt": 174
     },
     {
       "ma": "1.013825",
@@ -7618,7 +7786,7 @@
         }
       ],
       "priority51": false,
-      "stt": 171
+      "stt": 175
     },
     {
       "ma": "1.011445",
@@ -7680,7 +7848,7 @@
         }
       ],
       "priority51": false,
-      "stt": 172
+      "stt": 176
     },
     {
       "ma": "2.002750",
@@ -7722,7 +7890,7 @@
         }
       ],
       "priority51": false,
-      "stt": 173
+      "stt": 177
     },
     {
       "ma": "1.012805",
@@ -7784,7 +7952,7 @@
         }
       ],
       "priority51": false,
-      "stt": 174
+      "stt": 178
     },
     {
       "ma": "1.115649",
@@ -7825,7 +7993,7 @@
         }
       ],
       "priority51": false,
-      "stt": 175
+      "stt": 179
     },
     {
       "ma": "1.013823",
@@ -7887,7 +8055,7 @@
         }
       ],
       "priority51": false,
-      "stt": 176
+      "stt": 180
     },
     {
       "ma": "1.013828",
@@ -7949,7 +8117,7 @@
         }
       ],
       "priority51": false,
-      "stt": 177
+      "stt": 181
     },
     {
       "ma": "1.012812",
@@ -8008,7 +8176,7 @@
       "priority51": true,
       "priority51Ordinal": 25,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 178
+      "stt": 182
     },
     {
       "ma": "1.013946",
@@ -8070,7 +8238,7 @@
         }
       ],
       "priority51": false,
-      "stt": 179
+      "stt": 183
     },
     {
       "ma": "1.012784",
@@ -8132,7 +8300,7 @@
         }
       ],
       "priority51": false,
-      "stt": 180
+      "stt": 184
     },
     {
       "ma": "1.012821",
@@ -8194,7 +8362,7 @@
         }
       ],
       "priority51": false,
-      "stt": 181
+      "stt": 185
     },
     {
       "ma": "1.012791",
@@ -8256,7 +8424,7 @@
         }
       ],
       "priority51": false,
-      "stt": 182
+      "stt": 186
     },
     {
       "ma": "1.013128",
@@ -8298,7 +8466,7 @@
         }
       ],
       "priority51": false,
-      "stt": 183
+      "stt": 187
     },
     {
       "ma": "1.013945",
@@ -8360,7 +8528,7 @@
         }
       ],
       "priority51": false,
-      "stt": 184
+      "stt": 188
     },
     {
       "ma": "1.013947",
@@ -8422,7 +8590,7 @@
         }
       ],
       "priority51": false,
-      "stt": 185
+      "stt": 189
     },
     {
       "ma": "1.013988",
@@ -8484,7 +8652,7 @@
         }
       ],
       "priority51": false,
-      "stt": 186
+      "stt": 190
     },
     {
       "ma": "1.011443",
@@ -8546,7 +8714,7 @@
         }
       ],
       "priority51": false,
-      "stt": 187
+      "stt": 191
     },
     {
       "ma": "1.012766",
@@ -8608,7 +8776,7 @@
         }
       ],
       "priority51": false,
-      "stt": 188
+      "stt": 192
     },
     {
       "ma": "1.011441",
@@ -8670,7 +8838,7 @@
         }
       ],
       "priority51": false,
-      "stt": 189
+      "stt": 193
     },
     {
       "ma": "1.013992",
@@ -8732,7 +8900,7 @@
         }
       ],
       "priority51": false,
-      "stt": 190
+      "stt": 194
     },
     {
       "ma": "1.013831",
@@ -8794,7 +8962,7 @@
         }
       ],
       "priority51": false,
-      "stt": 191
+      "stt": 195
     },
     {
       "ma": "1.013977",
@@ -8856,7 +9024,7 @@
         }
       ],
       "priority51": false,
-      "stt": 192
+      "stt": 196
     },
     {
       "ma": "1.012793",
@@ -8918,7 +9086,7 @@
         }
       ],
       "priority51": false,
-      "stt": 193
+      "stt": 197
     },
     {
       "ma": "1.013980",
@@ -8980,7 +9148,7 @@
         }
       ],
       "priority51": false,
-      "stt": 194
+      "stt": 198
     },
     {
       "ma": "1.013833",
@@ -9042,7 +9210,7 @@
         }
       ],
       "priority51": false,
-      "stt": 195
+      "stt": 199
     },
     {
       "ma": "1.013995",
@@ -9104,7 +9272,7 @@
         }
       ],
       "priority51": false,
-      "stt": 196
+      "stt": 200
     },
     {
       "ma": "1.011442",
@@ -9166,7 +9334,7 @@
         }
       ],
       "priority51": false,
-      "stt": 197
+      "stt": 201
     },
     {
       "ma": "1.011444",
@@ -9228,7 +9396,7 @@
         }
       ],
       "priority51": false,
-      "stt": 198
+      "stt": 202
     },
     {
       "ma": "1.012756",
@@ -9290,7 +9458,7 @@
         }
       ],
       "priority51": false,
-      "stt": 199
+      "stt": 203
     },
     {
       "ma": "1.012787",
@@ -9352,7 +9520,7 @@
         }
       ],
       "priority51": false,
-      "stt": 200
+      "stt": 204
     },
     {
       "ma": "1.012781",
@@ -9414,7 +9582,7 @@
         }
       ],
       "priority51": false,
-      "stt": 201
+      "stt": 205
     },
     {
       "ma": "1.012782",
@@ -9476,7 +9644,7 @@
         }
       ],
       "priority51": false,
-      "stt": 202
+      "stt": 206
     },
     {
       "ma": "1.013994",
@@ -9538,7 +9706,7 @@
         }
       ],
       "priority51": false,
-      "stt": 203
+      "stt": 207
     },
     {
       "ma": "1.013993",
@@ -9600,7 +9768,7 @@
         }
       ],
       "priority51": false,
-      "stt": 204
+      "stt": 208
     },
     {
       "ma": "1.012785",
@@ -9662,7 +9830,7 @@
         }
       ],
       "priority51": false,
-      "stt": 205
+      "stt": 209
     },
     {
       "ma": "1.013827",
@@ -9724,7 +9892,7 @@
         }
       ],
       "priority51": false,
-      "stt": 206
+      "stt": 210
     },
     {
       "ma": "1.013826",
@@ -9786,7 +9954,7 @@
         }
       ],
       "priority51": false,
-      "stt": 207
+      "stt": 211
     },
     {
       "ma": "1.012790",
@@ -9848,7 +10016,7 @@
         }
       ],
       "priority51": false,
-      "stt": 208
+      "stt": 212
     },
     {
       "ma": "1.013950",
@@ -9888,7 +10056,7 @@
         }
       ],
       "priority51": false,
-      "stt": 209
+      "stt": 213
     },
     {
       "ma": "1.012789",
@@ -9950,7 +10118,7 @@
         }
       ],
       "priority51": false,
-      "stt": 210
+      "stt": 214
     },
     {
       "ma": "1.013967",
@@ -9990,7 +10158,7 @@
         }
       ],
       "priority51": false,
-      "stt": 211
+      "stt": 215
     },
     {
       "ma": "1.013962",
@@ -10030,7 +10198,7 @@
         }
       ],
       "priority51": false,
-      "stt": 212
+      "stt": 216
     },
     {
       "ma": "1.013949",
@@ -10075,7 +10243,7 @@
       "priority51": true,
       "priority51Ordinal": 24,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 213
+      "stt": 217
     },
     {
       "ma": "1.013965",
@@ -10115,7 +10283,7 @@
         }
       ],
       "priority51": false,
-      "stt": 214
+      "stt": 218
     },
     {
       "ma": "1.013979",
@@ -10155,7 +10323,7 @@
         }
       ],
       "priority51": false,
-      "stt": 215
+      "stt": 219
     },
     {
       "ma": "2.002675",
@@ -10203,7 +10371,7 @@
         }
       ],
       "priority51": false,
-      "stt": 216
+      "stt": 220
     },
     {
       "ma": "1.012818",
@@ -10248,7 +10416,7 @@
       "priority51": true,
       "priority51Ordinal": 17,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 217
+      "stt": 221
     },
     {
       "ma": "1.012817",
@@ -10308,7 +10476,7 @@
         }
       ],
       "priority51": false,
-      "stt": 218
+      "stt": 222
     },
     {
       "ma": "1.012753",
@@ -10348,7 +10516,7 @@
         }
       ],
       "priority51": false,
-      "stt": 219
+      "stt": 223
     },
     {
       "ma": "1.013978",
@@ -10393,7 +10561,7 @@
       "priority51": true,
       "priority51Ordinal": 16,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 220
+      "stt": 224
     },
     {
       "ma": "1.013953",
@@ -10433,7 +10601,7 @@
         }
       ],
       "priority51": false,
-      "stt": 221
+      "stt": 225
     },
     {
       "ma": "1.013952",
@@ -10473,7 +10641,7 @@
         }
       ],
       "priority51": false,
-      "stt": 222
+      "stt": 226
     },
     {
       "ma": "1.012796",
@@ -10538,7 +10706,7 @@
       "priority51": true,
       "priority51Ordinal": 26,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 223
+      "stt": 227
     },
     {
       "ma": "1.000703",
@@ -10580,7 +10748,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 224
+      "stt": 228
     },
     {
       "ma": "2.002286",
@@ -10622,7 +10790,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 225
+      "stt": 229
     },
     {
       "ma": "1.010704",
@@ -10664,7 +10832,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 226
+      "stt": 230
     },
     {
       "ma": "1.001023",
@@ -10706,7 +10874,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 227
+      "stt": 231
     },
     {
       "ma": "1.002856",
@@ -10748,7 +10916,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 228
+      "stt": 232
     },
     {
       "ma": "1.002877",
@@ -10790,7 +10958,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 229
+      "stt": 233
     },
     {
       "ma": "1.002817",
@@ -10832,7 +11000,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 230
+      "stt": 234
     },
     {
       "ma": "1.000302",
@@ -10874,7 +11042,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 231
+      "stt": 235
     },
     {
       "ma": "1.010702",
@@ -10916,7 +11084,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 232
+      "stt": 236
     },
     {
       "ma": "1.002861",
@@ -10958,7 +11126,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 233
+      "stt": 237
     },
     {
       "ma": "1.002829",
@@ -11000,7 +11168,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 234
+      "stt": 238
     },
     {
       "ma": "2.002288",
@@ -11042,7 +11210,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 235
+      "stt": 239
     },
     {
       "ma": "1.010707",
@@ -11084,7 +11252,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 236
+      "stt": 240
     },
     {
       "ma": "1.002046",
@@ -11126,7 +11294,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 237
+      "stt": 241
     },
     {
       "ma": "1.001577",
@@ -11168,7 +11336,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 238
+      "stt": 242
     },
     {
       "ma": "1.002063",
@@ -11210,7 +11378,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 239
+      "stt": 243
     },
     {
       "ma": "1.002286",
@@ -11252,7 +11420,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 240
+      "stt": 244
     },
     {
       "ma": "1.001737",
@@ -11294,7 +11462,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 241
+      "stt": 245
     },
     {
       "ma": "2.002285",
@@ -11336,7 +11504,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 242
+      "stt": 246
     },
     {
       "ma": "1.000321",
@@ -11378,7 +11546,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 243
+      "stt": 247
     },
     {
       "ma": "1.002268",
@@ -11420,7 +11588,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 244
+      "stt": 248
     },
     {
       "ma": "1.002334",
@@ -11462,7 +11630,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 245
+      "stt": 249
     },
     {
       "ma": "1.002847",
@@ -11504,20 +11672,20 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 246
+      "stt": 250
     }
   ],
   "summary": {
     "officialCandidateCodes": 159,
-    "auditedCodes": 266,
+    "auditedCodes": 273,
     "cityUpdateCodes": 95,
-    "cityCurrentProcedures": 55,
-    "cityNewProcedures": 54,
+    "cityCurrentProcedures": 59,
+    "cityNewProcedures": 58,
     "cityUpdatedProcedures": 1,
-    "cityNeedsReviewRows": 23,
-    "publishedProcedures": 246,
-    "excludedProcedures": 20,
-    "repealedProcedures": 18,
+    "cityNeedsReviewRows": 0,
+    "publishedProcedures": 250,
+    "excludedProcedures": 23,
+    "repealedProcedures": 21,
     "futureEffectiveProcedures": 2,
     "unresolvedNameProcedures": 0,
     "legacyMatchedCodes": 75,

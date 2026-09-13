@@ -1026,7 +1026,9 @@ def main() -> int:
     )
 
     with AUDIT_CSV.open("w", encoding="utf-8-sig", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=list(audit_rows[0].keys()))
+        writer = csv.DictWriter(
+            f, fieldnames=list(audit_rows[0].keys()), lineterminator="\n"
+        )
         writer.writeheader()
         writer.writerows(audit_rows)
 

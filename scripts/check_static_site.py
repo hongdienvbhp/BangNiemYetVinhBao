@@ -149,6 +149,33 @@ if "" in code_set:
     fail("Có TTHC public thiếu mã")
 if len(codes) != len(code_set):
     fail("Có mã TTHC trùng trong Master Data public")
+
+# QĐ 3626: Phụ lục B có đúng bốn TTHC cấp xã; Phụ lục C dùng chung không
+# được kế thừa nhầm ngữ cảnh cấp xã vào bảng niêm yết phục vụ công dân.
+qd3626_expected = {
+    "2.001909": "TIẾP CÔNG DÂN",
+    "2.001801": "XỬ LÝ ĐƠN",
+    "2.002409": "KHIẾU NẠI",
+    "2.002396": "TỐ CÁO",
+}
+qd3626_rows = [
+    item for item in city_updates.get("rows", [])
+    if item.get("decisionNo") == "3626/QĐ-UBND"
+]
+qd3626_commune = {
+    str(item.get("code") or ""): str(item.get("field") or "")
+    for item in qd3626_rows
+    if item.get("communeReceptionEvidence")
+}
+if qd3626_commune != qd3626_expected:
+    fail(f"QĐ 3626 phải có đúng bốn TTHC cấp xã: {qd3626_commune}")
+if not set(qd3626_expected).issubset(code_set):
+    fail("Master Data chưa công bố đủ bốn TTHC cấp xã của QĐ 3626")
+for shared_code in {"2.002401", "2.002403"}:
+    shared = next((item for item in qd3626_rows if item.get("code") == shared_code), None)
+    if shared and shared.get("communeReceptionEvidence"):
+        fail(f"QĐ 3626: thủ tục dùng chung {shared_code} bị gắn nhầm cấp xã")
+
 if summary.get("publishedProcedures") != len(rows):
     fail("summary.publishedProcedures không khớp số dòng public")
 if summary.get("excludedProcedures") != len(excluded):
