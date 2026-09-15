@@ -1,11 +1,11 @@
 {
   "format": "bangniemyet-master-data-delta",
   "version": 1,
-  "beforeSnapshotDate": "2026-09-10",
-  "afterSnapshotDate": "2026-09-13",
+  "beforeSnapshotDate": "2026-09-13",
+  "afterSnapshotDate": "2026-09-15",
   "summary": {
-    "beforePublic": 246,
-    "afterPublic": 246,
+    "beforePublic": 250,
+    "afterPublic": 250,
     "added": 0,
     "removed": 0,
     "changed": 0
