@@ -161,9 +161,11 @@ def parse_decision_identity(url: str, text: str = "") -> tuple[str, str]:
 
 def is_candidate_link(url: str, anchor_text: str) -> bool:
     value = fold(url + " " + anchor_text)
-    if "quyet-dinh" in value or "quyet dinh" in value:
-        return True
-    return "thu-tuc-hanh-chinh" in value and "cong-bo" in value
+    has_decision_signal = "quyet-dinh" in value or "quyet dinh" in value
+    has_tthc_signal = "thu-tuc-hanh-chinh" in value or "thu tuc hanh chinh" in value
+    # Listing pages include site-wide "Tin m?i" links. Require an explicit TTHC
+    # signal so unrelated decisions elsewhere on the portal are never staged.
+    return has_decision_signal and has_tthc_signal
 
 
 def classify_title(title: str, config: dict) -> str:
