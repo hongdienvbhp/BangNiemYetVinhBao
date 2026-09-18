@@ -1,22 +1,186 @@
 {
   "format": "official-tthc-source-config",
-  "version": 1,
+  "version": 2,
   "baselineDate": "2026-09-07",
+  "sourcePolicy": {
+    "primaryDecisionSources": "Trang công khai TTHC của cơ quan quản lý chuyên ngành/UBND có thẩm quyền trên hạ tầng chính thức Hải Phòng.",
+    "officialLocalMirrors": "Trang công khai TTHC của UBND xã, phường, đặc khu dùng để phát hiện sớm và đối chiếu chéo; không tự thay thế căn cứ quyết định công bố.",
+    "procedureCatalogs": "Danh mục/tra cứu TTHC trực tiếp dùng kiểm tra độ phủ, mã TTHC và thông tin nghiệp vụ; không tự suy diễn hiệu lực pháp lý."
+  },
   "listingSources": [
     {
       "id": "vinhbao-official-tthc",
       "url": "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh",
-      "authority": "Cổng thông tin điện tử xã Vĩnh Bảo, Hải Phòng"
+      "authority": "UBND xã Vĩnh Bảo, Hải Phòng",
+      "authorityType": "ubnd_commune",
+      "sourceRole": "official_local_mirror",
+      "legalUse": "cross_check_and_local_publication"
     },
     {
       "id": "haiphong-public-tthc-listing",
       "url": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh",
-      "authority": "Cổng thông tin điện tử thuộc hệ thống Hải Phòng"
+      "authority": "Cổng thông tin điện tử thuộc hệ thống Hải Phòng",
+      "authorityType": "ubnd_local",
+      "sourceRole": "official_local_mirror",
+      "legalUse": "cross_check_only"
+    },
+    {
+      "id": "haiphong-dept-justice",
+      "url": "https://sotp.haiphong.gov.vn/cong-khai-thu-tuc-hanh-chinh",
+      "authority": "Sở Tư pháp thành phố Hải Phòng",
+      "authorityType": "department",
+      "sourceRole": "primary_decision_listing",
+      "legalUse": "primary_publication"
+    },
+    {
+      "id": "haiphong-dept-finance",
+      "url": "https://sotc.haiphong.gov.vn/",
+      "authority": "Sở Tài chính thành phố Hải Phòng",
+      "authorityType": "department",
+      "sourceRole": "primary_decision_listing",
+      "legalUse": "primary_publication"
+    },
+    {
+      "id": "haiphong-dept-home-affairs",
+      "url": "https://sonoivu.haiphong.gov.vn/thu-tuc-hanh-chinh",
+      "authority": "Sở Nội vụ thành phố Hải Phòng",
+      "authorityType": "department",
+      "sourceRole": "primary_decision_listing",
+      "legalUse": "primary_publication"
+    },
+    {
+      "id": "haiphong-dept-science-tech",
+      "url": "https://sokhcn.haiphong.gov.vn/thu-tuc-hanh-chinh",
+      "authority": "Sở Khoa học và Công nghệ thành phố Hải Phòng",
+      "authorityType": "department",
+      "sourceRole": "primary_decision_listing",
+      "legalUse": "primary_publication"
+    },
+    {
+      "id": "haiphong-dept-industry-trade",
+      "url": "https://socongthuong.haiphong.gov.vn/thu-tuc-hanh-chinh",
+      "authority": "Sở Công Thương thành phố Hải Phòng",
+      "authorityType": "department",
+      "sourceRole": "primary_decision_listing",
+      "legalUse": "primary_publication"
+    },
+    {
+      "id": "haiphong-dept-health",
+      "url": "https://soyte.haiphong.gov.vn/thu-tuc-hanh-chinh",
+      "authority": "Sở Y tế thành phố Hải Phòng",
+      "authorityType": "department",
+      "sourceRole": "primary_decision_listing",
+      "legalUse": "primary_publication"
+    },
+    {
+      "id": "haiphong-dept-culture-tourism",
+      "url": "https://sovhttdl.haiphong.gov.vn/thu-tuc-hanh-chinh",
+      "authority": "Sở Văn hóa, Thể thao và Du lịch thành phố Hải Phòng",
+      "authorityType": "department",
+      "sourceRole": "primary_decision_listing",
+      "legalUse": "primary_publication"
+    },
+    {
+      "id": "haiphong-dept-agri-env",
+      "url": "https://sonnmt.haiphong.gov.vn/thu-tuc-hanh-chinh",
+      "authority": "Sở Nông nghiệp và Môi trường thành phố Hải Phòng",
+      "authorityType": "department",
+      "sourceRole": "primary_decision_listing",
+      "legalUse": "primary_publication"
+    },
+    {
+      "id": "haiphong-dept-construction-commune",
+      "url": "https://soxaydung.haiphong.gov.vn/thu-tuc-hanh-chinh-cap-xa",
+      "authority": "Sở Xây dựng thành phố Hải Phòng",
+      "authorityType": "department",
+      "sourceRole": "procedure_catalog",
+      "legalUse": "identity_and_coverage_cross_check"
+    },
+    {
+      "id": "haiphong-education-procedure-catalog",
+      "url": "https://haiphong.edu.vn/ThuTucHanhChinhmb?id=1",
+      "authority": "Sở Giáo dục và Đào tạo thành phố Hải Phòng",
+      "authorityType": "department",
+      "sourceRole": "procedure_catalog",
+      "legalUse": "identity_and_coverage_cross_check"
+    },
+    {
+      "id": "haiphong-education-public-tthc",
+      "url": "https://haiphong.edu.vn/cai-cach-hanh-chinh/cong-khai-thu-tuc-hanh-chinh/ctmb/7635/6414",
+      "authority": "Sở Giáo dục và Đào tạo thành phố Hải Phòng",
+      "authorityType": "department",
+      "sourceRole": "primary_decision_listing",
+      "legalUse": "primary_publication"
+    },
+    {
+      "id": "haiphong-local-dai-son",
+      "url": "https://daison.haiphong.gov.vn/thu-tuc-hanh-chinh",
+      "authority": "UBND xã Đại Sơn, Hải Phòng",
+      "authorityType": "ubnd_commune",
+      "sourceRole": "official_local_mirror",
+      "legalUse": "cross_check_only"
+    },
+    {
+      "id": "haiphong-local-nhi-chieu",
+      "url": "https://nhichieu.haiphong.gov.vn/thu-tuc-hanh-chinh",
+      "authority": "UBND phường Nhị Chiểu, Hải Phòng",
+      "authorityType": "ubnd_ward",
+      "sourceRole": "official_local_mirror",
+      "legalUse": "cross_check_only"
+    },
+    {
+      "id": "haiphong-local-an-duong",
+      "url": "https://anduong.haiphong.gov.vn/thu-tuc-hanh-chinh",
+      "authority": "UBND phường An Dương, Hải Phòng",
+      "authorityType": "ubnd_ward",
+      "sourceRole": "official_local_mirror",
+      "legalUse": "cross_check_only"
+    },
+    {
+      "id": "haiphong-local-ngo-quyen",
+      "url": "https://ngoquyen.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh",
+      "authority": "UBND phường Ngô Quyền, Hải Phòng",
+      "authorityType": "ubnd_ward",
+      "sourceRole": "official_local_mirror",
+      "legalUse": "cross_check_only"
+    },
+    {
+      "id": "haiphong-local-gia-vien",
+      "url": "https://giavien.haiphong.gov.vn/cong-bo-thu-tuc-hanh-chinh",
+      "authority": "UBND phường Gia Viên, Hải Phòng",
+      "authorityType": "ubnd_ward",
+      "sourceRole": "official_local_mirror",
+      "legalUse": "cross_check_only"
+    },
+    {
+      "id": "haiphong-local-bach-long-vy",
+      "url": "https://bachlongvy.haiphong.gov.vn/thu-tuc-hanh-chinh",
+      "authority": "UBND đặc khu Bạch Long Vỹ, Hải Phòng",
+      "authorityType": "ubnd_special_zone",
+      "sourceRole": "official_local_mirror",
+      "legalUse": "cross_check_only"
+    },
+    {
+      "id": "haiphong-local-cat-hai",
+      "url": "https://cathai.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh",
+      "authority": "UBND đặc khu Cát Hải, Hải Phòng",
+      "authorityType": "ubnd_special_zone",
+      "sourceRole": "official_local_mirror",
+      "legalUse": "cross_check_only"
+    },
+    {
+      "id": "haiphong-local-thach-khoi-agri",
+      "url": "https://thachkhoi.haiphong.gov.vn/linh-vuc-nong-nghiep",
+      "authority": "UBND phường Thạch Khôi, Hải Phòng",
+      "authorityType": "ubnd_ward",
+      "sourceRole": "official_local_mirror",
+      "legalUse": "cross_check_only"
     }
   ],
   "publicDecisionMarkers": [
     "công bố danh mục thủ tục hành chính",
-    "công bố thủ tục hành chính"
+    "công bố thủ tục hành chính",
+    "công khai danh mục thủ tục hành chính"
   ],
   "allowedAttachmentHosts": [
     "cdn.haiphong.gov.vn"
@@ -24,7 +188,8 @@
   "internalDecisionMarkers": [
     "quy trình nội bộ",
     "phê duyệt quy trình nội bộ",
-    "quy trình giải quyết thủ tục hành chính nội bộ"
+    "quy trình giải quyết thủ tục hành chính nội bộ",
+    "thủ tục hành chính nội bộ"
   ],
   "knownAppliedDecisionNos": [
     "3500/QĐ-UBND",
