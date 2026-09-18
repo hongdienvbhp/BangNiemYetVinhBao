@@ -177,6 +177,12 @@ def classify_title(title: str, config: dict) -> str:
     for marker in config.get("internalDecisionMarkers", []):
         if fold(marker) in value:
             return "internal_process"
+    # Local portals can republish ministry decisions and occasionally carry a
+    # misleading QD-UBND slug. Do not ingest those as city legal decisions.
+    if re.search(r"\bcua bo\b", value) and not any(
+        marker in value for marker in ("ubnd thanh pho", "uy ban nhan dan thanh pho")
+    ):
+        return "external_reference"
     for marker in config.get("publicDecisionMarkers", []):
         if fold(marker) in value:
             return "public_tthc"
@@ -324,6 +330,45 @@ def discover_candidates(config: dict) -> tuple[list[Candidate], list[dict[str, s
     )
 
 
+def source_ids_requiring_baseline(config: dict, index_rows: list[dict]) -> set[str]:
+    """Return configured source IDs that have never been observed in the source index.
+
+    A newly registered listing source must be baselined on its first successful scan.
+    Otherwise every historic URL already present on that listing is misclassified as a
+    new decision and can trigger an expensive historic PDF backfill.
+    """
+    configured = {
+        str(source.get("id") or "")
+        for source in config.get("listingSources", [])
+        if source.get("id")
+    }
+    observed = {
+        str(row.get("sourceId") or "")
+        for row in index_rows
+        if row.get("sourceId")
+    }
+    return configured - observed
+
+
+def reconcile_missing_manifest_dates(manifest_by_no: dict[str, dict], candidates: list[Candidate]) -> dict[str, str]:
+    """Fill a missing decision date only when official listings agree on one date."""
+    dates_by_no: dict[str, set[str]] = {}
+    for candidate in candidates:
+        if candidate.decision_no and candidate.decision_date:
+            dates_by_no.setdefault(candidate.decision_no, set()).add(candidate.decision_date)
+
+    enriched: dict[str, str] = {}
+    for decision_no, entry in manifest_by_no.items():
+        if entry.get("classification") != "public_tthc" or entry.get("decisionDate"):
+            continue
+        dates = dates_by_no.get(decision_no, set())
+        if len(dates) == 1:
+            decision_date = next(iter(dates))
+            entry["decisionDate"] = decision_date
+            enriched[decision_no] = decision_date
+    return enriched
+
+
 def index_record(candidate: Candidate, *, classification: str, title: str = "", status: str = "") -> dict:
     return {
         "sourceId": candidate.source_id,
@@ -383,6 +428,7 @@ def main() -> int:
             index_rows.append(record)
 
     initializing = args.initialize or not INDEX_PATH.exists()
+    source_baselines = source_ids_requiring_baseline(config, index_rows)
 
     candidates, source_errors = discover_candidates(config)
     new_articles = [x for x in candidates if x.article_url.rstrip("/") not in known_urls]
@@ -404,12 +450,13 @@ def main() -> int:
         "manifestChanged": False,
         "indexChanged": False,
         "initialBaseline": initializing,
+        "newSourceBaselines": sorted(source_baselines),
         "sourceErrors": source_errors,
         "sourceErrorCount": len(source_errors),
     }
 
     for candidate in work_articles:
-        if initializing:
+        if initializing or candidate.source_id in source_baselines:
             known = manifest_by_no.get(candidate.decision_no)
             classification = known.get("classification", "baseline_only") if known else "baseline_only"
             status = known.get("ingestStatus", "baseline_only") if known else "baseline_only"
@@ -481,6 +528,17 @@ def main() -> int:
             stats["internalDecisionsRecorded"] += 1
             continue
 
+        if classification == "external_reference":
+            set_index_record(
+                index_record(
+                    candidate,
+                    classification="external_reference",
+                    title=details["title"],
+                    status="excluded_external_authority",
+                )
+            )
+            continue
+
         if classification != "public_tthc" or not details.get("pdfUrl"):
             reason = "missing_official_pdf" if classification == "public_tthc" else "unclassified_article"
             set_index_record(
@@ -524,6 +582,8 @@ def main() -> int:
         )
         stats["publicDecisionsAdded"] += 1
         stats["pdfsDownloaded"] += 1
+
+    stats["manifestDatesEnriched"] = reconcile_missing_manifest_dates(manifest_by_no, candidates)
 
     index["articles"] = sorted(
         index.get("articles", []),

@@ -1,19 +1,19 @@
-# Báo cáo Master Data TTHC – snapshot 2026-09-13
+# Báo cáo Master Data TTHC – snapshot 2026-09-18
 
 ## Kết quả
 
 - Mã ứng viên cấp xã/điểm tiếp nhận cấp xã từ snapshot Vĩnh Bảo: **159**
-- Tổng mã được audit sau khi hợp nhất nguồn Vĩnh Bảo, quyết định thành phố và ma trận kiểm chứng 51 TTHC: **273**
-- Mã xuất hiện trong 06 quyết định cập nhật thành phố: **95**
+- Tổng mã được audit sau khi hợp nhất nguồn Vĩnh Bảo, quyết định thành phố và ma trận kiểm chứng 51 TTHC: **282**
+- Mã xuất hiện trong 06 quyết định cập nhật thành phố: **104**
 - Mã Priority 51 được kiểm chứng pháp lý bổ sung: **37**
   - Xác minh current/cấp xã: **36**
   - Xác minh bãi bỏ: **1**
   - Còn cần xác minh: **0**
-- TTHC hiện hành đưa vào tập công khai: **250**
-- TTHC loại khỏi tập công khai: **23**
-  - Bị bãi bỏ: **21**
+- TTHC hiện hành đưa vào tập công khai: **254**
+- TTHC loại khỏi tập công khai: **28**
+  - Bị bãi bỏ: **26**
   - Đã công bố nhưng chưa đến ngày hiệu lực: **2**
-- TTHC mới được bổ sung từ quyết định thành phố: **58**
+- TTHC mới được bổ sung từ quyết định thành phố: **62**
 - TTHC hiện có được cập nhật bởi quyết định thành phố: **1**
 - Chưa trích được tên đủ tin cậy: **0**
 - Có formalityId trong Master Data: **48**
@@ -21,7 +21,7 @@
 - Khoảng trống Priority 51 còn lại: **1** (mã bãi bỏ không được phục hồi public)
 - Được đánh dấu phi địa giới theo nguồn công bố: **59**
 
-> **Lưu ý phạm vi:** 250 là số TTHC trong tập niêm yết/tra cứu của Trung tâm PVHCC xã Vĩnh Bảo theo bằng chứng nguồn đã audit. Tập này có thể gồm TTHC cấp tỉnh được tiếp nhận tại Trung tâm PVHCC cấp xã; không được hiểu là toàn bộ đều thuộc thẩm quyền giải quyết của UBND xã.
+> **Lưu ý phạm vi:** 254 là số TTHC trong tập niêm yết/tra cứu của Trung tâm PVHCC xã Vĩnh Bảo theo bằng chứng nguồn đã audit. Tập này có thể gồm TTHC cấp tỉnh được tiếp nhận tại Trung tâm PVHCC cấp xã; không được hiểu là toàn bộ đều thuộc thẩm quyền giải quyết của UBND xã.
 
 ## Nguồn cập nhật đến 07/09/2026
 

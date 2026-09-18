@@ -79,6 +79,14 @@ DECISION_ROW_OVERRIDES = {
     },
     # QĐ 3626 tách riêng Phụ lục B cấp xã và Phụ lục C dùng chung.
     # Khóa theo chính phụ lục ký số để dữ liệu công dân chỉ nhận đúng cấp xã.
+    "3643/QĐ-UBND": {
+        "2.000552": {
+            "name": "Cấp lại Giấy phép hoạt động đối với trạm, điểm sơ cấp cứu chữ thập đỏ khi thay đổi địa điểm",
+        },
+        "1.006780": {
+            "name": "Cấp lại Giấy phép hoạt động đối với trạm, điểm sơ cấp cứu chữ thập đỏ do mất, rách, hỏng hoặc sai sót thông tin",
+        },
+    },
     "3626/QĐ-UBND": {
         "2.001909": {
             "name": "Thủ tục tiếp công dân tại cấp xã",
