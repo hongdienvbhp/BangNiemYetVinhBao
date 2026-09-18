@@ -86,6 +86,9 @@ def dedupe(rows):
                 if key in ("name","field") and (old.startswith(new) or new.startswith(old)):
                     prev[key]=new if len(new) > len(old) else old
                     continue
+                if key == "agency":
+                    prev[key]="; ".join(dict.fromkeys([*old.split("; "), *new.split("; ")]))
+                    continue
                 raise RuntimeError(f"Conflicting official baseline {code} {key}: {old!r} != {new!r}")
             if not old and new: prev[key]=new
     return sorted(out.values(),key=lambda r:r["code"])
