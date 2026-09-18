@@ -37,24 +37,14 @@ def a1_url(spreadsheet_id: str, range_a1: str) -> str:
     encoded = quote(range_a1, safe="!:'")
     return f"https://sheets.googleapis.com/v4/spreadsheets/{spreadsheet_id}/values/{encoded}"
 
-def auth_session(credentials_json: str = ""):
+def auth_session():
     # Lazy import keeps --dry-run usable without Google client dependencies.
-    # Prefer GitHub OIDC -> Google Workload Identity Federation (ADC) so the
-    # repository never needs a long-lived service-account private key.
+    # GitHub Actions uses OIDC -> Workload Identity Federation and exports
+    # Application Default Credentials; no service-account private key is used.
     from google.auth import default as google_auth_default
     from google.auth.transport.requests import AuthorizedSession
 
-    if credentials_json:
-        # Backward-compatible escape hatch for local recovery only. Production
-        # GitHub Actions authenticates through ADC created by google-github-actions/auth.
-        from google.oauth2 import service_account
-        try:
-            info = json.loads(credentials_json)
-        except json.JSONDecodeError as exc:
-            raise RuntimeError("GOOGLE_SERVICE_ACCOUNT_JSON is not valid JSON") from exc
-        creds = service_account.Credentials.from_service_account_info(info, scopes=SCOPES)
-    else:
-        creds, _ = google_auth_default(scopes=SCOPES)
+    creds, _ = google_auth_default(scopes=SCOPES)
     return AuthorizedSession(creds)
 
 def api_json(resp: Any, context: str) -> dict[str, Any]:
@@ -211,11 +201,45 @@ def sync_target(
         ])
 
     append_values(session, spreadsheet_id, f"{LOG_SHEET}!A:I", logs)
+
+    # Read back through the same short-lived WIF credentials. This is the
+    # production proof that Google accepted the write and the published rows
+    # match the canonical automatic fields rather than only returning HTTP 2xx.
+    verified_by_code, _ = existing_rows(session, spreadsheet_id)
+    expected_codes = set(new_by_code)
+    actual_codes = set(verified_by_code)
+    if expected_codes != actual_codes:
+        missing = sorted(expected_codes - actual_codes)[:20]
+        unexpected = sorted(actual_codes - expected_codes)[:20]
+        raise RuntimeError(
+            f"Google Sheet read-back code mismatch for {scope_name}: "
+            f"missing={missing}, unexpected={unexpected}"
+        )
+
+    mismatches: list[str] = []
+    for code, expected in new_by_code.items():
+        actual = verified_by_code[code]
+        for field in AUTO_FIELDS:
+            before = str(expected.get(field, "") or "")
+            after = str(actual.get(field, "") or "")
+            if before != after:
+                mismatches.append(f"{code}:{field}")
+                if len(mismatches) >= 20:
+                    break
+        if len(mismatches) >= 20:
+            break
+    if mismatches:
+        raise RuntimeError(
+            f"Google Sheet read-back value mismatch for {scope_name}: {mismatches}"
+        )
+
     return {
         "scope":scope_name,
         "rows":len(ordered),
         "changedCodes":len(logs),
         "heldForReview":sum(1 for row in ordered if row.get("Tình trạng hiệu lực") == "Cần xác minh"),
+        "readBackVerified":True,
+        "verifiedRows":len(actual_codes),
     }
 
 def parse_args() -> argparse.Namespace:
@@ -224,7 +248,6 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--plan-out", type=Path)
     p.add_argument("--commune-sheet-id", default=os.getenv("TTHC_SHEET_CAP_XA_ID",""))
     p.add_argument("--city-sheet-id", default=os.getenv("TTHC_SHEET_CAP_TP_ID",""))
-    p.add_argument("--credentials-json", default=os.getenv("GOOGLE_SERVICE_ACCOUNT_JSON",""))
     p.add_argument(
         "--city-baseline-complete",
         action="store_true",
@@ -252,7 +275,7 @@ def main() -> int:
 
     if not args.commune_sheet_id:
         raise RuntimeError("Missing TTHC_SHEET_CAP_XA_ID")
-    session = auth_session(args.credentials_json)
+    session = auth_session()
     summary["commune"] = sync_target(
         session, args.commune_sheet_id, "Cấp xã", sync_plan["commune"]["rows"]
     )
