@@ -21,9 +21,6 @@ from pathlib import Path
 from typing import Any
 from urllib.parse import quote
 
-from google.auth.transport.requests import AuthorizedSession
-from google.oauth2 import service_account
-
 from google_sheets_projection import (
     AUTO_FIELDS,
     HEADERS,
@@ -40,7 +37,11 @@ def a1_url(spreadsheet_id: str, range_a1: str) -> str:
     encoded = quote(range_a1, safe="!:'")
     return f"https://sheets.googleapis.com/v4/spreadsheets/{spreadsheet_id}/values/{encoded}"
 
-def auth_session(credentials_json: str) -> AuthorizedSession:
+def auth_session(credentials_json: str):
+    # Lazy import keeps --dry-run usable without Google client dependencies.
+    from google.auth.transport.requests import AuthorizedSession
+    from google.oauth2 import service_account
+
     try:
         info = json.loads(credentials_json)
     except json.JSONDecodeError as exc:
