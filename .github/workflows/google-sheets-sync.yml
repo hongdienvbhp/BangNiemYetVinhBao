@@ -56,11 +56,14 @@ jobs:
           python - <<'PY'
           import json
           p=json.load(open("/tmp/google-sheets-plan.json", encoding="utf-8"))
+          from collections import Counter
+          reasons=Counter((x.get("scope",""), x.get("reason","")) for x in p.get("reviewQueue",[]))
           print(json.dumps({
               "communeRows":p["commune"]["count"],
               "cityRowsObserved":p["city"]["count"],
               "cityCoverage":p["city"]["coverage"],
               "reviewCount":p["reviewCount"],
+              "reviewBreakdown":{f"{k[0]}:{k[1]}":v for k,v in sorted(reasons.items())},
           }, ensure_ascii=False, indent=2))
           PY
 
@@ -125,8 +128,10 @@ jobs:
           set -euo pipefail
           count="$(python - <<'PY'
           import json
+          import os
           p=json.load(open("/tmp/google-sheets-sync-plan.json", encoding="utf-8"))
-          q=[x for x in p.get("reviewQueue",[]) if not (x.get("scope")=="city" and x.get("reason")=="partial_city_baseline")]
+          city_complete=os.getenv("TTHC_CITY_BASELINE_COMPLETE","").lower() in {"1","true","yes"}
+          q=[x for x in p.get("reviewQueue",[]) if city_complete or x.get("scope")!="city"]
           print(len(q))
           PY
           )"
