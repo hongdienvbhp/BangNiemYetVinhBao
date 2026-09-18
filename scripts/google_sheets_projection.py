@@ -218,8 +218,15 @@ def build_city_rows() -> tuple[list[dict[str, str]], list[dict[str, Any]]]:
     for raw in city_update_candidates():
         code = canonical_code(raw)
         section = fold(raw.get("sectionStatus"))
-        status = "Bãi bỏ" if section == "repealed" else "Còn hiệu lực"
-        note = "Bãi bỏ" if section == "repealed" else ("Thêm mới" if section == "new" else "Điều chỉnh")
+        if section == "repealed":
+            status, note = "Bãi bỏ", "Bãi bỏ"
+        elif section == "new":
+            status, note = "Còn hiệu lực", "Thêm mới"
+        elif section == "modified":
+            status, note = "Còn hiệu lực", "Điều chỉnh"
+        else:
+            status, note = "Cần xác minh", "Điều chỉnh"
+            review.append({"scope":"city","code":code,"reason":"ambiguous_city_section_status","sectionStatus":raw.get("sectionStatus","")})
         if raw.get("effectiveDate") and first(raw.get("effectiveDate")) > first(load(CITY_UPDATES, {}).get("asOf","")):
             status = "Chưa hiệu lực"
         level_hint = first(raw.get("levelHint"))
@@ -244,9 +251,12 @@ def dedupe_rows(rows: list[dict[str, str]], review: list[dict[str, Any]], scope:
         if previous and previous != row:
             prev_date = previous.get("Ngày kiểm tra/cập nhật","")
             new_date = row.get("Ngày kiểm tra/cập nhật","")
-            if new_date > prev_date or (new_date == prev_date and rank.get(row.get("Tình trạng hiệu lực",""),0) >= rank.get(previous.get("Tình trạng hiệu lực",""),0)):
+            if new_date > prev_date or (new_date == prev_date and rank.get(row.get("Tình trạng hiệu lực",""),0) > rank.get(previous.get("Tình trạng hiệu lực",""),0)):
                 by_code[code] = row
-            review.append({"scope":scope,"code":code,"reason":"duplicate_evidence_reconciled"})
+            elif new_date == prev_date and rank.get(row.get("Tình trạng hiệu lực",""),0) == rank.get(previous.get("Tình trạng hiệu lực",""),0):
+                material = ("Thủ tục hành chính","Lĩnh vực","Quyết định ban hành/công bố","Tình trạng hiệu lực")
+                if any(row.get(k,"") != previous.get(k,"") for k in material):
+                    review.append({"scope":scope,"code":code,"reason":"same_date_material_conflict"})
         else:
             by_code[code] = row
     return sorted(by_code.values(), key=lambda r:(fold(r.get("Lĩnh vực")), fold(r.get("Thủ tục hành chính")), r.get("Mã TTHC","")))
