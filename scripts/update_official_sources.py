@@ -278,11 +278,21 @@ def download_pdf(url: str, decision_no: str) -> tuple[str, str]:
     return path.relative_to(ROOT).as_posix(), digest
 
 
-def discover_candidates(config: dict) -> list[Candidate]:
+def discover_candidates(config: dict) -> tuple[list[Candidate], list[dict[str, str]]]:
     found: dict[str, Candidate] = {}
+    source_errors: list[dict[str, str]] = []
     for source in config.get("listingSources", []):
         source_url = source["url"]
-        body, content_type = fetch_bytes(source_url)
+        try:
+            body, content_type = fetch_bytes(source_url)
+        except Exception as exc:
+            source_errors.append({
+                "sourceId": str(source.get("id", "")),
+                "sourceUrl": source_url,
+                "authority": str(source.get("authority", "")),
+                "error": f"{type(exc).__name__}: {exc}",
+            })
+            continue
         page = decode_html(body, content_type)
         parser = PageParser()
         parser.feed(page)
@@ -308,7 +318,10 @@ def discover_candidates(config: dict) -> list[Candidate]:
                 decision_no=decision_no,
                 decision_date=decision_date,
             )
-    return sorted(found.values(), key=lambda x: (x.decision_date, x.decision_no, x.article_url))
+    return (
+        sorted(found.values(), key=lambda x: (x.decision_date, x.decision_no, x.article_url)),
+        source_errors,
+    )
 
 
 def index_record(candidate: Candidate, *, classification: str, title: str = "", status: str = "") -> dict:
@@ -371,7 +384,7 @@ def main() -> int:
 
     initializing = args.initialize or not INDEX_PATH.exists()
 
-    candidates = discover_candidates(config)
+    candidates, source_errors = discover_candidates(config)
     new_articles = [x for x in candidates if x.article_url.rstrip("/") not in known_urls]
     retry_articles = [
         x for x in candidates
@@ -391,6 +404,8 @@ def main() -> int:
         "manifestChanged": False,
         "indexChanged": False,
         "initialBaseline": initializing,
+        "sourceErrors": source_errors,
+        "sourceErrorCount": len(source_errors),
     }
 
     for candidate in work_articles:
@@ -521,7 +536,8 @@ def main() -> int:
 
     stats["indexChanged"] = write_json_if_changed(INDEX_PATH, index)
     stats["manifestChanged"] = write_json_if_changed(MANIFEST_PATH, manifest)
-    print(json.dumps(stats, ensure_ascii=False, indent=2))
+    # Keep CLI output safe on Windows legacy console encodings; persisted JSON remains UTF-8.
+    print(json.dumps(stats, ensure_ascii=True, indent=2))
 
     # Scanner failures do not mutate legal status; review-required records are auditable.
     return 0
