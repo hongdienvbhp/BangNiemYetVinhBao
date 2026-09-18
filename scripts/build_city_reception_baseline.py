@@ -83,8 +83,8 @@ def dedupe(rows):
         for key in ("name","field","agency"):
             old=space(str(prev.get(key,""))); new=space(str(row.get(key,"")))
             if old and new and old != new:
-                if key in ("name","field") and (old.startswith(new) or new.startswith(old)):
-                    prev[key]=new if len(new) > len(old) else old
+                if key in ("name","field"):
+                    prev[key]=max((old,new), key=lambda value: (len(value), value))
                     continue
                 if key == "agency":
                     prev[key]="; ".join(dict.fromkeys([*old.split("; "), *new.split("; ")]))
