@@ -94,7 +94,9 @@ def delta_notes(delta: dict[str, Any]) -> dict[str, str]:
             notes[str(row["ma"])] = "Điều chỉnh"
     for row in delta.get("removed", []):
         if row.get("ma"):
-            notes[str(row["ma"])] = "Bãi bỏ"
+            # A delta only proves that the code left the public projection. It is
+            # not, by itself, legal evidence that the procedure was repealed.
+            notes[str(row["ma"])] = "Loại khỏi danh mục công khai; cần xác minh hiệu lực"
     return notes
 
 def base_projection(
@@ -158,7 +160,13 @@ def build_commune_rows() -> tuple[list[dict[str, str]], list[dict[str, Any]]]:
         if scope == "commune":
             code = canonical_code(raw)
             status = status_for_excluded(raw)
-            rows.append(base_projection(raw, status=status, note=notes.get(code, "Bãi bỏ" if status=="Bãi bỏ" else "Điều chỉnh")))
+            status_note = {
+                "Bãi bỏ": "Bãi bỏ",
+                "Hết hiệu lực": "Hết hiệu lực",
+                "Chưa hiệu lực": "Chưa hiệu lực",
+                "Cần xác minh": "Cần xác minh",
+            }.get(status, "Điều chỉnh")
+            rows.append(base_projection(raw, status=status, note=status_note))
             if status == "Cần xác minh":
                 review.append({"scope":"commune","code":code,"reason":"excluded_status_uncertain"})
         elif scope == "unknown":
@@ -213,7 +221,13 @@ def build_city_rows() -> tuple[list[dict[str, str]], list[dict[str, Any]]]:
         if scope_for_master(raw) == "city":
             code = canonical_code(raw)
             status = status_for_excluded(raw)
-            rows.append(base_projection(raw, status=status, note=notes.get(code, "Bãi bỏ" if status=="Bãi bỏ" else "Điều chỉnh")))
+            status_note = {
+                "Bãi bỏ": "Bãi bỏ",
+                "Hết hiệu lực": "Hết hiệu lực",
+                "Chưa hiệu lực": "Chưa hiệu lực",
+                "Cần xác minh": "Cần xác minh",
+            }.get(status, "Điều chỉnh")
+            rows.append(base_projection(raw, status=status, note=status_note))
 
     for raw in city_update_candidates():
         code = canonical_code(raw)

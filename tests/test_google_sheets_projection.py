@@ -3,6 +3,7 @@ import unittest
 from scripts.google_sheets_projection import (
     HEADERS,
     dedupe_rows,
+    delta_notes,
     merge_manual_fields,
     scope_for_master,
     status_for_excluded,
@@ -17,6 +18,11 @@ class GoogleSheetsProjectionTests(unittest.TestCase):
         )
         self.assertEqual(scope_for_master({"cap": "Xã / điểm tiếp nhận cấp xã"}), "commune")
         self.assertEqual(scope_for_master({"cap": "Cấp xã"}), "commune")
+
+    def test_removed_delta_does_not_imply_legal_repeal(self):
+        notes = delta_notes({"removed": [{"ma": "1.000001"}]})
+        self.assertIn("cần xác minh", notes["1.000001"].lower())
+        self.assertNotEqual(notes["1.000001"], "Bãi bỏ")
 
     def test_excluded_status_is_evidence_driven(self):
         self.assertEqual(

@@ -13,6 +13,15 @@ Luồng chuẩn:
 
 `official source → source-index → decision-manifest/PDF/hash → extract → canonical Master Data → delta → CI/review gate → merge main → Google Sheets sync → nhật ký/cảnh báo`
 
+### Integration boundary trong hệ sinh thái Vĩnh Bảo
+
+- `BangNiemYetVinhBao`: canonical owner của danh mục TTHC, evidence/provenance, trạng thái kiểm chứng và publication projection.
+- `tthc-monitor`: consumer read-only của Master TTHC; owner của snapshot hồ sơ, mapping trách nhiệm theo dõi, cảnh báo sắp hạn/quá hạn và báo cáo giám sát. Không write-back dữ liệu TTHC hoặc hồ sơ vào `BangNiemYetVinhBao`.
+- Vĩnh Bảo AI Operating System: governance/integration/orchestration hub khi kết nối các dự án; không tạo thêm Master TTHC cạnh tranh và không thay đổi ownership nghiệp vụ của hai repository trên.
+- Google Sheets: terminal read model phục vụ công khai, đối soát và báo cáo; không phải integration source và không write-back canonical.
+
+Mọi tích hợp sau này phải đi theo `canonical source → shared interface/integration layer → consumer/view`, không đồng bộ vòng tròn giữa các repository.
+
 ## 2. Cổng an toàn
 
 1. Chỉ chạy live sync sau khi thay đổi canonical đã merge vào `main`.

@@ -95,6 +95,11 @@ def existing_rows(session: Any, spreadsheet_id: str) -> tuple[dict[str, dict[str
         code = row[IDX["Mã TTHC"]].strip()
         if not code:
             continue
+        if code in result:
+            raise RuntimeError(
+                f"Duplicate Mã TTHC in {DETAIL_SHEET}: {code}. "
+                "Refusing to collapse ambiguous Sheet rows."
+            )
         result[code] = {name: row[i] for i, name in enumerate(HEADERS)}
     return result, len(values)
 
@@ -167,11 +172,10 @@ def sync_target(
         new_by_code.values(),
         key=lambda r: (r.get("Lĩnh vực","").casefold(), r.get("Thủ tục hành chính","").casefold(), r.get("Mã TTHC","")),
     )
-    end_row = max(old_physical_count + 10, len(ordered) + 20, 50) + 3
-    batch_clear(session, spreadsheet_id, [
-        f"{DETAIL_SHEET}!B4:Z{end_row}",
-        f"{DETAIL_SHEET}!AB4:AC{end_row}",
-    ])
+    if not ordered:
+        raise RuntimeError(
+            f"Refusing to sync an empty {scope_name} projection; existing Sheet data was not modified."
+        )
 
     b_to_z: list[list[str]] = []
     ab_to_ac: list[list[str]] = []
@@ -185,7 +189,19 @@ def sync_target(
         data.append({"range":f"{DETAIL_SHEET}!B4:Z{len(b_to_z)+3}","majorDimension":"ROWS","values":b_to_z})
         data.append({"range":f"{DETAIL_SHEET}!AB4:AC{len(ab_to_ac)+3}","majorDimension":"ROWS","values":ab_to_ac})
     if data:
+        # Write the new read model before clearing stale tail rows. If the write
+        # fails, the previously published Sheet remains intact instead of being
+        # cleared first and left partially empty.
         batch_update_values(session, spreadsheet_id, data)
+
+    stale_start = len(ordered) + 4
+    stale_end = old_physical_count + 3
+    if stale_start <= stale_end:
+        batch_clear(session, spreadsheet_id, [
+            f"{DETAIL_SHEET}!B{stale_start}:Z{stale_end}",
+            f"{DETAIL_SHEET}!AB{stale_start}:AC{stale_end}",
+        ])
+
     append_values(session, spreadsheet_id, f"{LOG_SHEET}!A:I", logs)
     return {
         "scope":scope_name,
