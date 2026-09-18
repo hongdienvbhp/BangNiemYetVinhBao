@@ -137,6 +137,10 @@ class PageParser(HTMLParser):
 class Candidate:
     source_id: str
     source_url: str
+    source_authority: str
+    authority_type: str
+    source_role: str
+    legal_use: str
     article_url: str
     anchor_text: str
     decision_no: str
@@ -295,6 +299,10 @@ def discover_candidates(config: dict) -> list[Candidate]:
             found[key] = Candidate(
                 source_id=source.get("id", ""),
                 source_url=source_url,
+                source_authority=source.get("authority", ""),
+                authority_type=source.get("authorityType", ""),
+                source_role=source.get("sourceRole", ""),
+                legal_use=source.get("legalUse", ""),
                 article_url=article_url,
                 anchor_text=anchor,
                 decision_no=decision_no,
@@ -307,6 +315,10 @@ def index_record(candidate: Candidate, *, classification: str, title: str = "", 
     return {
         "sourceId": candidate.source_id,
         "sourceUrl": candidate.source_url,
+        "sourceAuthority": candidate.source_authority,
+        "authorityType": candidate.authority_type,
+        "sourceRole": candidate.source_role,
+        "legalUse": candidate.legal_use,
         "articleUrl": candidate.article_url,
         "decisionNo": candidate.decision_no,
         "decisionDate": candidate.decision_date,
@@ -414,6 +426,10 @@ def main() -> int:
         candidate = Candidate(
             source_id=candidate.source_id,
             source_url=candidate.source_url,
+            source_authority=candidate.source_authority,
+            authority_type=candidate.authority_type,
+            source_role=candidate.source_role,
+            legal_use=candidate.legal_use,
             article_url=candidate.article_url,
             anchor_text=candidate.anchor_text,
             decision_no=decision_no,

@@ -68,14 +68,20 @@ jobs:
           PY
 
   sync:
-    if: github.event_name != 'pull_request'
+    # Never live-sync from a feature/PR branch. A manual dispatch is allowed
+    # only when the selected ref is main; normal live sync follows a push to main.
+    if: >-
+      (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
+      (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
     needs: validate
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ github.token }}
       GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
-      TTHC_SHEET_CAP_XA_ID: ${{ secrets.TTHC_SHEET_CAP_XA_ID }}
-      TTHC_SHEET_CAP_TP_ID: ${{ secrets.TTHC_SHEET_CAP_TP_ID }}
+      # File IDs are not credentials. Keep optional repository variables for
+      # portability, with the two approved production read-model IDs as defaults.
+      TTHC_SHEET_CAP_XA_ID: ${{ vars.TTHC_SHEET_CAP_XA_ID || '1tUBoVAWEZcqTD6onoeN-PJVmy_Ffz_CAav9u1-aKIYA' }}
+      TTHC_SHEET_CAP_TP_ID: ${{ vars.TTHC_SHEET_CAP_TP_ID || '1PhUDRljGGErXnolqxRj9jPdJSacLFkBTGFJjUBTqVXk' }}
       TTHC_CITY_BASELINE_COMPLETE: ${{ vars.TTHC_CITY_BASELINE_COMPLETE }}
 
     steps:
@@ -97,6 +103,9 @@ jobs:
           missing=()
           [ -n "${GOOGLE_SERVICE_ACCOUNT_JSON:-}" ] || missing+=("GOOGLE_SERVICE_ACCOUNT_JSON")
           [ -n "${TTHC_SHEET_CAP_XA_ID:-}" ] || missing+=("TTHC_SHEET_CAP_XA_ID")
+          if [ "${TTHC_CITY_BASELINE_COMPLETE:-}" = "true" ] && [ -z "${TTHC_SHEET_CAP_TP_ID:-}" ]; then
+            missing+=("TTHC_SHEET_CAP_TP_ID")
+          fi
           if [ "${#missing[@]}" -gt 0 ]; then
             printf 'Missing: %s\n' "${missing[*]}" >> "$GITHUB_STEP_SUMMARY"
             existing="$(gh issue list --state open --search 'Google Sheets sync blocked in:title' --json number --jq '.[0].number // empty')"

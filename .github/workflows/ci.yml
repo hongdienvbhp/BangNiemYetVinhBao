@@ -30,6 +30,9 @@ jobs:
         run: |
           python -m py_compile             scripts/update_official_sources.py             scripts/extract_city_updates.py             scripts/build_master_data.py             scripts/build_master_delta.py             scripts/fetch_dvc_mapping.py             scripts/check_static_site.py
 
+      - name: Python unit tests
+        run: python -m unittest discover -s tests -v
+
       - name: Rebuild committed snapshot deterministically
         shell: bash
         run: |

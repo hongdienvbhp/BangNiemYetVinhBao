@@ -6,8 +6,10 @@
 
 Hai Google Sheets là **read model**, không phải nguồn sự thật và không được write-back ngược vào canonical:
 
-- File cấp xã: danh mục thuộc thẩm quyền cấp xã.
-- File cấp thành phố: danh mục thuộc thẩm quyền cấp thành phố.
+- `01_Danh_muc_TTHC_cap_xa_Vinh_Bao` — ID `1tUBoVAWEZcqTD6onoeN-PJVmy_Ffz_CAav9u1-aKIYA`.
+- `02_Danh_muc_TTHC_cap_thanh_pho_Hai_Phong` — ID `1PhUDRljGGErXnolqxRj9jPdJSacLFkBTGFJjUBTqVXk`.
+
+Mỗi file giữ 6 sheet nghiệp vụ (`01_CHI_TIET_TTHC` đến `06_TONG_HOP_CHUNG`) và 2 sheet kỹ thuật `NGUON_DU_LIEU`, `NHAT_KY_CAP_NHAT`. Live sync chỉ được ghi vào file đích đã kiểm tra đúng header/schema.
 
 Luồng chuẩn:
 
@@ -54,13 +56,13 @@ Các sheet 02–04 lọc duy nhất `Còn hiệu lực`. Sheet chi tiết và t�
 
 ## 4. Credential để GitHub Actions ghi Google Sheets
 
-Cần một Google Cloud service account có quyền Google Sheets API. Repository secrets:
+Cần một Google Cloud service account có quyền Google Sheets API. **Secret bắt buộc duy nhất cho xác thực**:
 
-- `GOOGLE_SERVICE_ACCOUNT_JSON`: toàn bộ JSON key của service account.
-- `TTHC_SHEET_CAP_XA_ID`: ID file Google Sheet cấp xã.
-- `TTHC_SHEET_CAP_TP_ID`: ID file Google Sheet cấp thành phố.
+- `GOOGLE_SERVICE_ACCOUNT_JSON`: toàn bộ JSON key của service account, lưu bằng GitHub Actions Secret; tuyệt đối không commit vào repository.
 
-Cần share **Editor** hai file Google Sheets cho email `client_email` trong service-account JSON.
+Hai production Sheet ID đã được cấu hình làm default trong workflow. Có thể override bằng repository variables `TTHC_SHEET_CAP_XA_ID` và `TTHC_SHEET_CAP_TP_ID` khi đổi file đích.
+
+Trước live sync phải share **Editor** cả hai file cho `client_email` trong service-account JSON. Đây là thao tác quyền Google bắt buộc, không thể thay thế bằng việc chỉ biết Sheet ID.
 
 Repository variable:
 
@@ -108,10 +110,20 @@ Live sync chỉ clear/write các vùng `B:Z` và `AB:AC`, vì vậy không ghi �
 - Lỗi Google API/header mismatch: workflow fail; không được coi là sync thành công.
 - Header Sheet chi tiết phải đúng 29 cột canonical. Sai header là blocker để tránh ghi lệch cột.
 - City baseline chưa đầy đủ: city sync bị skip có chủ đích; không coi dataset quan sát được là danh mục thành phố đầy đủ.
+- Workflow live-sync bị khóa ở `main`: chạy trên branch/PR chỉ validate/dry-run, kể cả khi người dùng bấm `workflow_dispatch` trên feature branch.
+- Muốn ghi thật cả 02 file: `GOOGLE_SERVICE_ACCOUNT_JSON` phải tồn tại, cả hai file phải share Editor cho `client_email`, và `TTHC_CITY_BASELINE_COMPLETE=true` chỉ được bật sau khi đối chiếu đủ danh mục cấp thành phố từ các nguồn chính thức mở rộng.
 
 ## 8. Nguồn chính thức
 
-Source registry hiện ưu tiên cổng thuộc hệ thống Hải Phòng/Vĩnh Bảo và PDF trên `cdn.haiphong.gov.vn`. DVCQG được dùng để đối chiếu định danh/kỹ thuật khi có đường dẫn xác minh; không quyết định hiệu lực pháp lý.
+Source registry áp dụng 3 lớp:
+
+1. **Primary decision listing**: trang công khai TTHC của các Sở quản lý chuyên ngành (Tư pháp, Tài chính, Nội vụ, Khoa học và Công nghệ, Công Thương, Y tế, Văn hóa-Thể thao-Du lịch, Nông nghiệp và Môi trường, Giáo dục và Đào tạo) để phát hiện quyết định công bố và tài liệu chính thức.
+2. **Procedure catalog**: danh mục TTHC trực tiếp của Sở Xây dựng, Giáo dục và các nguồn tương tự để đối chiếu Mã TTHC, cấp thực hiện và độ phủ; không tự quyết định hiệu lực.
+3. **Official local mirror**: trang công khai TTHC của Vĩnh Bảo và các xã/phường/đặc khu Hải Phòng như Đại Sơn, Nhị Chiểu, An Dương, Ngô Quyền, Gia Viên, Bạch Long Vỹ, Cát Hải, Thạch Khôi để phát hiện sớm và đối chiếu chéo. Mirror không được tự ghi đè căn cứ pháp lý từ nguồn có thẩm quyền.
+
+PDF bằng chứng chỉ được tự tải từ host cho phép `cdn.haiphong.gov.vn`; mỗi bản ghi giữ `sourceId`, cơ quan nguồn, loại nguồn, mục đích sử dụng và URL bài viết để truy vết provenance.
+
+DVCQG được dùng để đối chiếu định danh/kỹ thuật và kiểm tra độ phủ khi có đường dẫn xác minh; không quyết định hiệu lực pháp lý.
 
 Hai đường tra cứu chính thức Hải Phòng trên DVCQG hiện tương ứng:
 - cấp tỉnh: `cap_thuc_hien=1&co_quan_cong_bo=387628`;
