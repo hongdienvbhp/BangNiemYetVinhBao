@@ -25,6 +25,7 @@ from google_sheets_projection import (
     AUTO_FIELDS,
     HEADERS,
     IDX,
+    MANUAL_FIELDS,
     merge_manual_fields,
     plan as build_plan,
 )
@@ -78,6 +79,31 @@ def padded(row: list[Any], size: int) -> list[str]:
     values = ["" if value is None else str(value) for value in row]
     return values + [""] * max(0, size - len(values))
 
+def merge_duplicate_existing_rows(
+    code: str,
+    first_row: dict[str, str],
+    duplicate_row: dict[str, str],
+) -> dict[str, str]:
+    """Collapse a duplicate Sheet code only when manual data is non-conflicting.
+
+    Automatic fields are overwritten from canonical Git data during sync, so a
+    duplicate conflict matters only for human-maintained fields that must be
+    preserved. Any conflicting non-empty manual values fail closed.
+    """
+    merged = dict(first_row)
+    for field in MANUAL_FIELDS:
+        left = str(first_row.get(field, "") or "").strip()
+        right = str(duplicate_row.get(field, "") or "").strip()
+        if left and right and left != right:
+            raise RuntimeError(
+                f"Duplicate Mã TTHC in {DETAIL_SHEET}: {code}; "
+                f"conflicting manual field {field!r}. Refusing automatic collapse."
+            )
+        if not left and right:
+            merged[field] = duplicate_row.get(field, "")
+    return merged
+
+
 def existing_rows(session: Any, spreadsheet_id: str) -> tuple[dict[str, dict[str, str]], int]:
     header = read_values(session, spreadsheet_id, f"{DETAIL_SHEET}!A3:AC3")
     actual = padded(header[0] if header else [], len(HEADERS))[:len(HEADERS)]
@@ -93,12 +119,11 @@ def existing_rows(session: Any, spreadsheet_id: str) -> tuple[dict[str, dict[str
         code = row[IDX["Mã TTHC"]].strip()
         if not code:
             continue
+        current = {name: row[i] for i, name in enumerate(HEADERS)}
         if code in result:
-            raise RuntimeError(
-                f"Duplicate Mã TTHC in {DETAIL_SHEET}: {code}. "
-                "Refusing to collapse ambiguous Sheet rows."
-            )
-        result[code] = {name: row[i] for i, name in enumerate(HEADERS)}
+            result[code] = merge_duplicate_existing_rows(code, result[code], current)
+        else:
+            result[code] = current
     return result, len(values)
 
 def row_vector(row: dict[str, str]) -> list[str]:
