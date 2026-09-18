@@ -65,7 +65,7 @@ def extract_rows(reader):
             if agency: carried=agency
             rows.append({
                 "code":code,
-                "name":column(items,lower,upper,180.0,443.0),
+                "name":column(items,lower,upper,160.0,443.0),
                 "field":column(items,lower,upper,443.0,700.0),
                 "agency":agency,
                 "page":page_no,
