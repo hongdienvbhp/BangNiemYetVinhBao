@@ -37,16 +37,24 @@ def a1_url(spreadsheet_id: str, range_a1: str) -> str:
     encoded = quote(range_a1, safe="!:'")
     return f"https://sheets.googleapis.com/v4/spreadsheets/{spreadsheet_id}/values/{encoded}"
 
-def auth_session(credentials_json: str):
+def auth_session(credentials_json: str = ""):
     # Lazy import keeps --dry-run usable without Google client dependencies.
+    # Prefer GitHub OIDC -> Google Workload Identity Federation (ADC) so the
+    # repository never needs a long-lived service-account private key.
+    from google.auth import default as google_auth_default
     from google.auth.transport.requests import AuthorizedSession
-    from google.oauth2 import service_account
 
-    try:
-        info = json.loads(credentials_json)
-    except json.JSONDecodeError as exc:
-        raise RuntimeError("GOOGLE_SERVICE_ACCOUNT_JSON is not valid JSON") from exc
-    creds = service_account.Credentials.from_service_account_info(info, scopes=SCOPES)
+    if credentials_json:
+        # Backward-compatible escape hatch for local recovery only. Production
+        # GitHub Actions authenticates through ADC created by google-github-actions/auth.
+        from google.oauth2 import service_account
+        try:
+            info = json.loads(credentials_json)
+        except json.JSONDecodeError as exc:
+            raise RuntimeError("GOOGLE_SERVICE_ACCOUNT_JSON is not valid JSON") from exc
+        creds = service_account.Credentials.from_service_account_info(info, scopes=SCOPES)
+    else:
+        creds, _ = google_auth_default(scopes=SCOPES)
     return AuthorizedSession(creds)
 
 def api_json(resp: Any, context: str) -> dict[str, Any]:
@@ -242,8 +250,6 @@ def main() -> int:
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0
 
-    if not args.credentials_json:
-        raise RuntimeError("Missing GOOGLE_SERVICE_ACCOUNT_JSON")
     if not args.commune_sheet_id:
         raise RuntimeError("Missing TTHC_SHEET_CAP_XA_ID")
     session = auth_session(args.credentials_json)
