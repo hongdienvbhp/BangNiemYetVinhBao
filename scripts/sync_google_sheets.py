@@ -53,22 +53,22 @@ def api_json(resp: Any, context: str) -> dict[str, Any]:
         raise RuntimeError(f"{context}: HTTP {resp.status_code}: {resp.text[:800]}")
     return resp.json() if resp.text else {}
 
-def read_values(session: AuthorizedSession, spreadsheet_id: str, range_a1: str) -> list[list[Any]]:
+def read_values(session: Any, spreadsheet_id: str, range_a1: str) -> list[list[Any]]:
     resp = session.get(a1_url(spreadsheet_id, range_a1), timeout=45)
     return api_json(resp, f"read {range_a1}").get("values", [])
 
-def batch_clear(session: AuthorizedSession, spreadsheet_id: str, ranges: list[str]) -> None:
+def batch_clear(session: Any, spreadsheet_id: str, ranges: list[str]) -> None:
     url = f"https://sheets.googleapis.com/v4/spreadsheets/{spreadsheet_id}/values:batchClear"
     resp = session.post(url, json={"ranges": ranges}, timeout=45)
     api_json(resp, "batchClear")
 
-def batch_update_values(session: AuthorizedSession, spreadsheet_id: str, data: list[dict[str, Any]]) -> None:
+def batch_update_values(session: Any, spreadsheet_id: str, data: list[dict[str, Any]]) -> None:
     url = f"https://sheets.googleapis.com/v4/spreadsheets/{spreadsheet_id}/values:batchUpdate"
     payload = {"valueInputOption": "USER_ENTERED", "data": data}
     resp = session.post(url, json=payload, timeout=60)
     api_json(resp, "batchUpdate values")
 
-def append_values(session: AuthorizedSession, spreadsheet_id: str, range_a1: str, rows: list[list[Any]]) -> None:
+def append_values(session: Any, spreadsheet_id: str, range_a1: str, rows: list[list[Any]]) -> None:
     if not rows:
         return
     url = a1_url(spreadsheet_id, range_a1) + ":append?valueInputOption=USER_ENTERED&insertDataOption=INSERT_ROWS"
@@ -79,7 +79,7 @@ def padded(row: list[Any], size: int) -> list[str]:
     values = ["" if value is None else str(value) for value in row]
     return values + [""] * max(0, size - len(values))
 
-def existing_rows(session: AuthorizedSession, spreadsheet_id: str) -> tuple[dict[str, dict[str, str]], int]:
+def existing_rows(session: Any, spreadsheet_id: str) -> tuple[dict[str, dict[str, str]], int]:
     header = read_values(session, spreadsheet_id, f"{DETAIL_SHEET}!A3:AC3")
     actual = padded(header[0] if header else [], len(HEADERS))[:len(HEADERS)]
     if actual != HEADERS:
@@ -122,7 +122,7 @@ def unresolved_old_row(old: dict[str, str]) -> dict[str, str]:
     return row
 
 def sync_target(
-    session: AuthorizedSession,
+    session: Any,
     spreadsheet_id: str,
     scope_name: str,
     projected_rows: list[dict[str, str]],
