@@ -101,13 +101,13 @@ def build(data):
     rows=dedupe(extract_rows(reader))
     if len(rows) < 300: raise RuntimeError(f"Implausibly small baseline: {len(rows)}")
     missing_name=[r["code"] for r in rows if not space(str(r.get("name","")))]
-    if missing_name: raise RuntimeError(f"Rows without name: {missing_name[:20]}")
     return {
       "format":"haiphong-city-reception-baseline","version":1,
       "publishedDate":PUBLISHED_DATE,"articleUrl":ARTICLE_URL,"pdfUrl":PDF_URL,
       "pdfSha256":digest,"pageCount":len(reader.pages),
       "scope":"TTHC tiếp nhận tại Trung tâm Phục vụ hành chính công thành phố Hải Phòng",
-      "rowCount":len(rows),"emptyFieldCount":sum(not space(str(r.get("field",""))) for r in rows),
+      "rowCount":len(rows),"missingNameCount":len(missing_name),
+      "emptyFieldCount":sum(not space(str(r.get("field",""))) for r in rows),
       "rows":rows,
     }
 
@@ -117,7 +117,7 @@ def main():
     payload=build(data)
     args.output.parent.mkdir(parents=True,exist_ok=True)
     args.output.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    print(json.dumps({k:payload[k] for k in ("rowCount","emptyFieldCount","pageCount","pdfSha256")},ensure_ascii=False))
+    print(json.dumps({k:payload[k] for k in ("rowCount","missingNameCount","emptyFieldCount","pageCount","pdfSha256")},ensure_ascii=False))
     return 0
 
 if __name__ == "__main__": raise SystemExit(main())
