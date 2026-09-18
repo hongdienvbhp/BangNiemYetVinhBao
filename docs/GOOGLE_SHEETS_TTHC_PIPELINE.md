@@ -56,9 +56,9 @@ Các sheet 02–04 lọc duy nhất `Còn hiệu lực`. Sheet chi tiết và t�
 
 ## 4. Credential để GitHub Actions ghi Google Sheets
 
-Cần một Google Cloud service account có quyền Google Sheets API. **Secret bắt buộc duy nhất cho xác thực**:
+Cần một Google Cloud service account có quyền Google Sheets API. **Xác thực production không dùng service-account key dài hạn**:
 
-- `GOOGLE_SERVICE_ACCOUNT_JSON`: toàn bộ JSON key của service account, lưu bằng GitHub Actions Secret; tuyệt đối không commit vào repository.
+- GitHub Actions dùng OIDC + Google Workload Identity Federation để nhận credential ngắn hạn. Không tạo/không lưu private key trong repository hoặc GitHub Secret.
 
 Hai production Sheet ID đã được cấu hình làm default trong workflow. Có thể override bằng repository variables `TTHC_SHEET_CAP_XA_ID` và `TTHC_SHEET_CAP_TP_ID` khi đổi file đích.
 
@@ -111,7 +111,7 @@ Live sync chỉ clear/write các vùng `B:Z` và `AB:AC`, vì vậy không ghi �
 - Header Sheet chi tiết phải đúng 29 cột canonical. Sai header là blocker để tránh ghi lệch cột.
 - City baseline chưa đầy đủ: city sync bị skip có chủ đích; không coi dataset quan sát được là danh mục thành phố đầy đủ.
 - Workflow live-sync bị khóa ở `main`: chạy trên branch/PR chỉ validate/dry-run, kể cả khi người dùng bấm `workflow_dispatch` trên feature branch.
-- Muốn ghi thật cả 02 file: `GOOGLE_SERVICE_ACCOUNT_JSON` phải tồn tại, cả hai file phải share Editor cho `client_email`, và `TTHC_CITY_BASELINE_COMPLETE=true` chỉ được bật sau khi đối chiếu đủ danh mục cấp thành phố từ các nguồn chính thức mở rộng.
+- Muốn ghi thật cả 02 file: Workload Identity Federation phải hoạt động, cả hai file phải share Editor cho service account, và `TTHC_CITY_BASELINE_COMPLETE=true` chỉ được bật sau khi đối chiếu đủ danh mục cấp thành phố từ các nguồn chính thức mở rộng.
 
 ## 8. Nguồn chính thức
 
