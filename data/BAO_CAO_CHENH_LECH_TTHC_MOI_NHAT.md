@@ -1,9 +1,9 @@
 # BÁO CÁO CHÊNH LỆCH MASTER DATA TTHC
 
-- Snapshot trước: **2026-09-10**
-- Snapshot sau: **2026-09-13**
-- TTHC công khai trước: **246**
-- TTHC công khai sau: **246**
+- Snapshot trước: **2026-09-13**
+- Snapshot sau: **2026-09-18**
+- TTHC công khai trước: **250**
+- TTHC công khai sau: **250**
 - Thêm mới: **0**
 - Loại khỏi danh mục công khai: **0**
 - Thay đổi thông tin: **0**

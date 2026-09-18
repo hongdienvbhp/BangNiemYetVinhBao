@@ -1,10 +1,10 @@
-# Báo cáo Master Data TTHC – snapshot 2026-09-13
+# Báo cáo Master Data TTHC – snapshot 2026-09-18
 
 ## Kết quả
 
 - Mã ứng viên cấp xã/điểm tiếp nhận cấp xã từ snapshot Vĩnh Bảo: **159**
 - Tổng mã được audit sau khi hợp nhất nguồn Vĩnh Bảo, quyết định thành phố và ma trận kiểm chứng 51 TTHC: **273**
-- Mã xuất hiện trong 06 quyết định cập nhật thành phố: **95**
+- Mã xuất hiện trong 06 quyết định cập nhật thành phố: **104**
 - Mã Priority 51 được kiểm chứng pháp lý bổ sung: **37**
   - Xác minh current/cấp xã: **36**
   - Xác minh bãi bỏ: **1**

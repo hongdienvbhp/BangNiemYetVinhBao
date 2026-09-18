@@ -184,6 +184,36 @@
       "status": "auto_discovered"
     },
     {
+      "sourceId": "vinhbao-official-tthc",
+      "sourceUrl": "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh",
+      "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-nong-nghiep-va-moi-truong/quyet-dinh-so-3726-qd-ubnd-cua-ubnd-thanh-pho-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-bi-bai-965890",
+      "decisionNo": "3726/QĐ-UBND",
+      "decisionDate": "",
+      "title": "Quyết định số 3726/QĐ-UBND của UBND thành phố: Về việc công bố danh mục thủ tục hành chính bị bãi bỏ lĩnh vực chăn nuôi và thú y thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường",
+      "classification": "public_tthc",
+      "status": "auto_discovered"
+    },
+    {
+      "sourceId": "vinhbao-official-tthc",
+      "sourceUrl": "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh",
+      "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-xay-dung-va-cong-thuong/quyet-dinh-so-3727-qd-ubnd-cua-ubnd-thanh-pho-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-bi-bai-965897",
+      "decisionNo": "3727/QĐ-UBND",
+      "decisionDate": "",
+      "title": "Quyết định số 3727/QĐ-UBND của UBND thành phố: Về việc công bố danh mục thủ tục hành chính bị bãi bỏ trong lĩnh vực vật liệu xây dựng thuộc phạm vi chức năng quản lý của Sở Xây dựng",
+      "classification": "public_tthc",
+      "status": "auto_discovered"
+    },
+    {
+      "sourceId": "vinhbao-official-tthc",
+      "sourceUrl": "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh",
+      "articleUrl": "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh-noi-bo/quyet-dinh-so-3766-qd-ubnd-cua-ubnd-thanh-pho-ve-viec-phe-duyet-quy-trinh-noi-bo-giai-quyet-thu--965886",
+      "decisionNo": "3766/QĐ-UBND",
+      "decisionDate": "",
+      "title": "Quyết định số 3766/QĐ-UBND của UBND thành phố: Về việc phê duyệt quy trình nội bộ giải quyết thủ tục hành chính lĩnh vực xuất cảnh, nhập cảnh thuộc phạm vi, chức năng quản lý của Sở Công Thương",
+      "classification": "internal_process",
+      "status": "excluded_internal"
+    },
+    {
       "sourceId": "haiphong-public-tthc-listing",
       "sourceUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh",
       "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3204-qd-ubnd-ngay-11-8-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-947709",
@@ -376,6 +406,16 @@
     {
       "sourceId": "haiphong-public-tthc-listing",
       "sourceUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-2841-qd-ubnd-ngay-08-9-2026-cua-bo-y-te-ve-viec-phe-duyet-phuong-an-tai--965138",
+      "decisionNo": "2841/QĐ-UBND",
+      "decisionDate": "2026-09-08",
+      "title": "Công khai Quyết định số: 2841/QĐ-UBND ngày 08/9/2026 của Bộ y tế về việc phê duyệt phương án tái cấu trúc quy trình giải quyết đối với các thủ tục hành chính lĩnh vực dược phẩm",
+      "classification": "needs_review",
+      "status": "unclassified_article"
+    },
+    {
+      "sourceId": "haiphong-public-tthc-listing",
+      "sourceUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh",
       "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3582-qd-ubnd-ngay-08-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-961697",
       "decisionNo": "3582/QĐ-UBND",
       "decisionDate": "2026-09-08",
@@ -432,6 +472,76 @@
       "title": "Công khai Quyết định số: 3627/QĐ-UBND ngày 10/9/2026 của UBND thành phố Hải Phòng Về việc công bố Danh mục thủ tục hành chính bị bãi bỏ thuộc phạm vi chức năng quản lý của Sở Khoa học và Công nghệ",
       "classification": "public_tthc",
       "status": "auto_discovered"
+    },
+    {
+      "sourceId": "haiphong-public-tthc-listing",
+      "sourceUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3640-qd-ubnd-ngay-11-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-phe-duy-965144",
+      "decisionNo": "3640/QĐ-UBND",
+      "decisionDate": "2026-09-11",
+      "title": "Công khai Quyết định số: 3640/QĐ-UBND ngày 11/9/2026 của UBND thành phố Hải Phòng về việc phê duyệt quy trình nội bộ giải quyết thủ tục hành chính thuộc phạm vi chức năng quản lý của Sở Tài chính",
+      "classification": "internal_process",
+      "status": "excluded_internal"
+    },
+    {
+      "sourceId": "haiphong-public-tthc-listing",
+      "sourceUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3643-qd-ubnd-ngay-11-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-965145",
+      "decisionNo": "3643/QĐ-UBND",
+      "decisionDate": "2026-09-11",
+      "title": "Công khai Quyết định số: 3643/QĐ-UBND ngày 11/9/2026 của UBND thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung lĩnh vực khám chữa bệnh thuộc phạm vi, chức năng quản lý của Sở Y tế",
+      "classification": "public_tthc",
+      "status": "auto_discovered"
+    },
+    {
+      "sourceId": "haiphong-public-tthc-listing",
+      "sourceUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3657-qd-ubnd-ngay-12-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-965140",
+      "decisionNo": "3657/QĐ-UBND",
+      "decisionDate": "2026-09-12",
+      "title": "Công khai Quyết định số: 3657/QĐ-UBND ngày 12/9/2026 của UBND thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính cắt giảm thời gian giải quyết và phê duyệt quy trình nội bộ giải quyết thủ tục hành chính áp dụng theo “cơ chế luồng xanh” đối với một số thủ tục hành chính trong lĩnh vực đất đai thuộc thẩm quyền giải quyết của Sở Nông nghiệp và Môi trường",
+      "classification": "internal_process",
+      "status": "excluded_internal"
+    },
+    {
+      "sourceId": "haiphong-public-tthc-listing",
+      "sourceUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3661-qd-ubnd-ngay-13-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-965142",
+      "decisionNo": "3661/QĐ-UBND",
+      "decisionDate": "2026-09-13",
+      "title": "Công khai Quyết định số: 3661/QĐ-UBND ngày 13/9/2026 của UBND thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính cắt giảm thời gian giải quyết và phê duyệt quy trình nội bộ giải quyết thủ tục hành chính áp dụng theo “cơ chế luồng xanh” đối với một số thủ tục hành chính lĩnh vực đầu tư thuộc thẩm quyền giải quyết của Sở Tài chính",
+      "classification": "internal_process",
+      "status": "excluded_internal"
+    },
+    {
+      "sourceId": "haiphong-public-tthc-listing",
+      "sourceUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3726-qd-ubnd-ngay-15-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-966823",
+      "decisionNo": "3726/QĐ-UBND",
+      "decisionDate": "2026-09-15",
+      "title": "Quyết định số 3726/QĐ-UBND của UBND thành phố: Về việc công bố danh mục thủ tục hành chính bị bãi bỏ lĩnh vực chăn nuôi và thú y thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường",
+      "classification": "mirror_known_decision",
+      "status": "known_decision_new_listing_url"
+    },
+    {
+      "sourceId": "haiphong-public-tthc-listing",
+      "sourceUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3727-qd-ubnd-ngay-15-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-966825",
+      "decisionNo": "3727/QĐ-UBND",
+      "decisionDate": "2026-09-15",
+      "title": "Quyết định số 3727/QĐ-UBND của UBND thành phố: Về việc công bố danh mục thủ tục hành chính bị bãi bỏ trong lĩnh vực vật liệu xây dựng thuộc phạm vi chức năng quản lý của Sở Xây dựng",
+      "classification": "mirror_known_decision",
+      "status": "known_decision_new_listing_url"
+    },
+    {
+      "sourceId": "haiphong-public-tthc-listing",
+      "sourceUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3766-qd-ubnd-ngay-16-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-phe-duy-966821",
+      "decisionNo": "3766/QĐ-UBND",
+      "decisionDate": "2026-09-16",
+      "title": "Công khai Quyết định số: 3766/QĐ-UBND ngày 16/9/2026 của UBND thành phố Hải Phòng về việc phê duyệt quy trình nội bộ giải quyết thủ tục hành chính lĩnh vực xuất cảnh, nhập cảnh thuộc phạm vi, chức năng quản lý của Sở Công Thương",
+      "classification": "mirror_known_decision",
+      "status": "known_decision_new_listing_url"
     }
   ]
 }
