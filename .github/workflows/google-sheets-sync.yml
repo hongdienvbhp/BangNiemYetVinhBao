@@ -1,0 +1,140 @@
+name: Sync Canonical TTHC to Google Sheets
+
+on:
+  pull_request:
+    paths:
+      - "scripts/google_sheets_projection.py"
+      - "scripts/sync_google_sheets.py"
+      - "tests/test_google_sheets_projection.py"
+      - ".github/workflows/google-sheets-sync.yml"
+      - "data/thu-tuc.json"
+      - "data/master-data-excluded.json"
+      - "data/source-audit/city-updates-current.json"
+      - "data/source-audit/latest-master-delta.json"
+      - "data/source-audit/official-decision-manifest.json"
+  push:
+    branches: [main]
+    paths:
+      - "data/thu-tuc.json"
+      - "data/master-data-excluded.json"
+      - "data/source-audit/city-updates-current.json"
+      - "data/source-audit/latest-master-delta.json"
+      - "data/source-audit/official-decision-manifest.json"
+      - "scripts/google_sheets_projection.py"
+      - "scripts/sync_google_sheets.py"
+      - ".github/workflows/google-sheets-sync.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: canonical-tthc-google-sheets
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: Setup Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.12"
+
+      - name: Projection unit tests
+        run: python -m unittest tests.test_google_sheets_projection -v
+
+      - name: Build dry-run sync plan
+        env:
+          PYTHONPATH: scripts
+        run: |
+          python scripts/google_sheets_projection.py > /tmp/google-sheets-plan.json
+          python - <<'PY'
+          import json
+          p=json.load(open("/tmp/google-sheets-plan.json", encoding="utf-8"))
+          print(json.dumps({
+              "communeRows":p["commune"]["count"],
+              "cityRowsObserved":p["city"]["count"],
+              "cityCoverage":p["city"]["coverage"],
+              "reviewCount":p["reviewCount"],
+          }, ensure_ascii=False, indent=2))
+          PY
+
+  sync:
+    if: github.event_name != 'pull_request'
+    needs: validate
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+      TTHC_SHEET_CAP_XA_ID: ${{ secrets.TTHC_SHEET_CAP_XA_ID }}
+      TTHC_SHEET_CAP_TP_ID: ${{ secrets.TTHC_SHEET_CAP_TP_ID }}
+      TTHC_CITY_BASELINE_COMPLETE: ${{ vars.TTHC_CITY_BASELINE_COMPLETE }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: Setup Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Google auth dependency
+        run: python -m pip install --disable-pip-version-check "google-auth>=2.30,<3" "requests>=2.31,<3"
+
+      - name: Preflight credentials
+        shell: bash
+        run: |
+          set -euo pipefail
+          missing=()
+          [ -n "${GOOGLE_SERVICE_ACCOUNT_JSON:-}" ] || missing+=("GOOGLE_SERVICE_ACCOUNT_JSON")
+          [ -n "${TTHC_SHEET_CAP_XA_ID:-}" ] || missing+=("TTHC_SHEET_CAP_XA_ID")
+          if [ "${#missing[@]}" -gt 0 ]; then
+            printf 'Missing: %s\n' "${missing[*]}" >> "$GITHUB_STEP_SUMMARY"
+            existing="$(gh issue list --state open --search 'Google Sheets sync blocked in:title' --json number --jq '.[0].number // empty')"
+            if [ -z "$existing" ]; then
+              gh issue create \
+                --title "Google Sheets sync blocked: thiếu credential" \
+                --body "Pipeline canonical đã sẵn sàng nhưng chưa thể ghi Google Sheets. Thiếu: ${missing[*]}. Cần cấu hình secret repository và chia sẻ 02 Sheet cho email service account. Không có dữ liệu nào bị ghi một phần."
+            fi
+            exit 1
+          fi
+
+      - name: Sync verified canonical projection
+        env:
+          PYTHONPATH: scripts
+        run: |
+          set -euo pipefail
+          python scripts/sync_google_sheets.py --plan-out /tmp/google-sheets-sync-plan.json | tee /tmp/google-sheets-sync-result.json
+          {
+            echo "## Google Sheets TTHC sync"
+            echo
+            echo '~~~json'
+            cat /tmp/google-sheets-sync-result.json
+            echo '~~~'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Alert unresolved verification queue
+        shell: bash
+        run: |
+          set -euo pipefail
+          count="$(python - <<'PY'
+          import json
+          p=json.load(open("/tmp/google-sheets-sync-plan.json", encoding="utf-8"))
+          q=[x for x in p.get("reviewQueue",[]) if not (x.get("scope")=="city" and x.get("reason")=="partial_city_baseline")]
+          print(len(q))
+          PY
+          )"
+          if [ "$count" -gt 0 ]; then
+            existing="$(gh issue list --state open --search 'TTHC cần xác minh sau đồng bộ in:title' --json number --jq '.[0].number // empty')"
+            if [ -z "$existing" ]; then
+              gh issue create \
+                --title "TTHC cần xác minh sau đồng bộ Google Sheets" \
+                --body "Pipeline phát hiện $count mục cần xác minh. Dữ liệu đã xác minh vẫn được đồng bộ; các mục chưa chắc chắn không được tự suy diễn/công khai. Xem workflow summary và reviewQueue trong sync plan."
+            fi
+          fi
