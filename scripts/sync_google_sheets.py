@@ -64,7 +64,7 @@ def batch_clear(session: Any, spreadsheet_id: str, ranges: list[str]) -> None:
 
 def batch_update_values(session: Any, spreadsheet_id: str, data: list[dict[str, Any]]) -> None:
     url = f"https://sheets.googleapis.com/v4/spreadsheets/{spreadsheet_id}/values:batchUpdate"
-    payload = {"valueInputOption": "USER_ENTERED", "data": data}
+    payload = {"valueInputOption": "RAW", "data": data}
     resp = session.post(url, json=payload, timeout=60)
     api_json(resp, "batchUpdate values")
 
