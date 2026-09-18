@@ -52,7 +52,7 @@ jobs:
         env:
           PYTHONPATH: scripts
         run: |
-          python scripts/google_sheets_projection.py > /tmp/google-sheets-plan.json
+          python scripts/sync_google_sheets.py --dry-run --plan-out /tmp/google-sheets-plan.json
           python - <<'PY'
           import json
           p=json.load(open("/tmp/google-sheets-plan.json", encoding="utf-8"))
@@ -137,4 +137,16 @@ jobs:
                 --title "TTHC cần xác minh sau đồng bộ Google Sheets" \
                 --body "Pipeline phát hiện $count mục cần xác minh. Dữ liệu đã xác minh vẫn được đồng bộ; các mục chưa chắc chắn không được tự suy diễn/công khai. Xem workflow summary và reviewQueue trong sync plan."
             fi
+          fi
+
+      - name: Alert Google Sheets sync failure
+        if: failure()
+        shell: bash
+        run: |
+          set -euo pipefail
+          existing="$(gh issue list --state open --search 'Google Sheets sync failed in:title' --json number --jq '.[0].number // empty')"
+          if [ -z "$existing" ]; then
+            gh issue create \
+              --title "Google Sheets sync failed: cần kiểm tra" \
+              --body "Workflow đồng bộ canonical TTHC sang Google Sheets đã thất bại. Không được coi dữ liệu Sheet là đã cập nhật cho đến khi workflow xanh. Kiểm tra run hiện tại, credential, quyền Editor của service account và header 29 cột."
           fi
