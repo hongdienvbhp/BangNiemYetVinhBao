@@ -9,6 +9,14 @@
   },
   "listingSources": [
     {
+      "id": "haiphong-city-official-tthc",
+      "url": "https://www.haiphong.gov.vn/thu-tuc-hanh-chinh-76761",
+      "authority": "Cổng Thông tin điện tử thành phố Hải Phòng",
+      "authorityType": "city_portal",
+      "sourceRole": "primary_decision_listing",
+      "legalUse": "primary_publication"
+    },
+    {
       "id": "vinhbao-official-tthc",
       "url": "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh",
       "authority": "UBND xã Vĩnh Bảo, Hải Phòng",
