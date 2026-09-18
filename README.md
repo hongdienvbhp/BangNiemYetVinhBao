@@ -118,3 +118,15 @@ URL dự kiến sau khi GitHub Pages được bật cho repository:
 **Trung tâm Phục vụ hành chính công xã Vĩnh Bảo** — Đường 20/8, xã Vĩnh Bảo, thành phố Hải Phòng
 
 Hotline: 0823.919.686 · 0967.311.138
+
+
+## Đồng bộ Google Sheets canonical
+
+Hai Google Sheets theo dõi TTHC cấp xã/cấp thành phố là **read model** của canonical pipeline, không phải nguồn sự thật độc lập.
+
+- Projection: `scripts/google_sheets_projection.py`
+- Live sync: `scripts/sync_google_sheets.py`
+- Workflow: `.github/workflows/google-sheets-sync.yml`
+- Hướng dẫn: `docs/GOOGLE_SHEETS_TTHC_PIPELINE.md`
+
+Live sync chỉ chạy sau merge vào `main`. Upsert theo **Mã TTHC**, giữ nguyên các cột nghiệp vụ quản trị thủ công, append nhật ký và không tự xóa dòng thiếu bằng chứng. File cấp thành phố đang có cổng `PARTIAL_BASELINE` và không tự công bố cho đến khi baseline city được xác minh đầy đủ.
