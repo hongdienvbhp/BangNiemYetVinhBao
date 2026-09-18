@@ -53,7 +53,7 @@ class GoogleSheetsProjectionTests(unittest.TestCase):
         self.assertEqual(merged["Đã công khai tại Trung tâm?"], "Có")
         self.assertEqual(merged["Ghi chú chi tiết"], "Ghi chú nghiệp vụ")
 
-    def test_dedupe_prefers_newer_evidence_and_keeps_audit_signal(self):
+    def test_dedupe_prefers_newer_evidence_without_false_review(self):
         review = []
         a = {h: "" for h in HEADERS}
         a.update({
@@ -69,7 +69,7 @@ class GoogleSheetsProjectionTests(unittest.TestCase):
         rows = dedupe_rows([a, b], review, "commune")
         self.assertEqual(len(rows), 1)
         self.assertEqual(rows[0]["Tình trạng hiệu lực"], "Bãi bỏ")
-        self.assertTrue(any(x.get("reason") == "duplicate_evidence_reconciled" for x in review))
+        self.assertEqual(review, [])
 
 
 if __name__ == "__main__":
