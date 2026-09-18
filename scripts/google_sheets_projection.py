@@ -18,6 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MASTER = ROOT / "data/thu-tuc.json"
 EXCLUDED = ROOT / "data/master-data-excluded.json"
 CITY_UPDATES = ROOT / "data/source-audit/city-updates-current.json"
+CITY_BASELINE = ROOT / "data/source-audit/city-reception-baseline.json"
 DELTA = ROOT / "data/source-audit/latest-master-delta.json"
 MANIFEST = ROOT / "data/source-audit/official-decision-manifest.json"
 
@@ -205,18 +206,57 @@ def city_update_candidates() -> list[dict[str, Any]]:
 def build_city_rows() -> tuple[list[dict[str, str]], list[dict[str, Any]]]:
     master = load(MASTER, {"thuTuc": []})
     excluded = load(EXCLUDED, {"rows": []})
+    baseline = load(CITY_BASELINE, {"rows": []})
     notes = delta_notes(load(DELTA, {}))
     rows: list[dict[str, str]] = []
-    review: list[dict[str, Any]] = [{
-        "scope":"city",
-        "reason":"partial_city_baseline",
-        "detail":"Current repository does not yet prove a complete city-level baseline; live publication must stay gated.",
-    }]
+    review: list[dict[str, Any]] = []
+
+    baseline_rows = baseline.get("rows", [])
+    baseline_count = int(baseline.get("rowCount") or 0)
+    if (
+        baseline.get("format") != "haiphong-city-reception-baseline"
+        or baseline_count != len(baseline_rows)
+        or baseline_count < 1900
+        or baseline.get("pdfSha256") != "22c2a8ab6abc6aa0df4694da6eebafe51f5a75bf76bae97f22c19af5fa082425"
+        or baseline.get("pageCount") != 114
+    ):
+        raise RuntimeError("Verified city reception baseline metadata is missing or inconsistent")
+
+    for raw in baseline_rows:
+        mapped = {
+            "code": first(raw.get("code")),
+            "name": first(raw.get("name")),
+            "field": first(raw.get("field")),
+            "coQuan": first(raw.get("agency")),
+        }
+        projected = base_projection(
+            mapped,
+            status="",
+            note="Baseline tiếp nhận chính thức ngày 03/07/2025; không suy diễn tình trạng hiệu lực",
+            level="Cấp thành phố",
+            snapshot_date=first(baseline.get("publishedDate")),
+            source_url=first(baseline.get("articleUrl")),
+            attachment_url=first(baseline.get("pdfUrl")),
+        )
+        if not projected["Thủ tục hành chính"] or not projected["Lĩnh vực"]:
+            projected["Cần đối soát?"] = "Có"
+            review.append({
+                "scope":"city",
+                "code":projected["Mã TTHC"],
+                "reason":"baseline_sparse_pdf_cell",
+                "page":raw.get("page"),
+            })
+        rows.append(projected)
 
     for raw in master.get("thuTuc", []):
         if scope_for_master(raw) == "city":
             code = canonical_code(raw)
-            rows.append(base_projection(raw, status="Còn hiệu lực", note=notes.get(code, "Không thay đổi")))
+            rows.append(base_projection(
+                raw,
+                status="Còn hiệu lực",
+                note=notes.get(code, "Đối soát từ canonical hiện hành"),
+                snapshot_date=first(raw.get("sourceSnapshotDate")),
+            ))
     for raw in excluded.get("rows", []):
         if scope_for_master(raw) == "city":
             code = canonical_code(raw)
@@ -229,28 +269,45 @@ def build_city_rows() -> tuple[list[dict[str, str]], list[dict[str, Any]]]:
             }.get(status, "Điều chỉnh")
             rows.append(base_projection(raw, status=status, note=status_note))
 
+    updates_payload = load(CITY_UPDATES, {})
+    updates_as_of = first(updates_payload.get("asOf"))
     for raw in city_update_candidates():
         code = canonical_code(raw)
         section = fold(raw.get("sectionStatus"))
         if section == "repealed":
-            status, note = "Bãi bỏ", "Bãi bỏ"
+            status, note = "Bãi bỏ", "Bãi bỏ theo quyết định chính thức"
         elif section == "new":
-            status, note = "Còn hiệu lực", "Thêm mới"
+            status, note = "Còn hiệu lực", "Thêm mới theo quyết định chính thức"
         elif section == "modified":
-            status, note = "Còn hiệu lực", "Điều chỉnh"
+            status, note = "Còn hiệu lực", "Điều chỉnh theo quyết định chính thức"
         else:
-            status, note = "Cần xác minh", "Điều chỉnh"
-            review.append({"scope":"city","code":code,"reason":"ambiguous_city_section_status","sectionStatus":raw.get("sectionStatus","")})
-        if raw.get("effectiveDate") and first(raw.get("effectiveDate")) > first(load(CITY_UPDATES, {}).get("asOf","")):
+            status, note = "Cần xác minh", "Quyết định chính thức cần xác minh trạng thái"
+            review.append({
+                "scope":"city",
+                "code":code,
+                "reason":"ambiguous_city_section_status",
+                "sectionStatus":raw.get("sectionStatus",""),
+            })
+        if raw.get("effectiveDate") and first(raw.get("effectiveDate")) > updates_as_of:
             status = "Chưa hiệu lực"
         level_hint = first(raw.get("levelHint"))
-        level = "Cấp thành phố" if fold(level_hint) == "province" else ("Dùng chung nhiều cấp" if "shared" in fold(level_hint) else first(level_hint, "Cấp thành phố"))
+        level = (
+            "Cấp thành phố"
+            if fold(level_hint) == "province"
+            else ("Dùng chung nhiều cấp" if "shared" in fold(level_hint) else first(level_hint, "Cấp thành phố"))
+        )
         rows.append(base_projection(
-            raw, status=status, note=note, level=level,
-            decision=first(raw.get("decisionNo")), effective_date=first(raw.get("effectiveDate")),
-            snapshot_date=first(raw.get("asOf")), source_url=first(raw.get("articleUrl")),
+            raw,
+            status=status,
+            note=note,
+            level=level,
+            decision=first(raw.get("decisionNo")),
+            effective_date=first(raw.get("effectiveDate")),
+            snapshot_date=first(raw.get("asOf")),
+            source_url=first(raw.get("articleUrl")),
             attachment_url=first(raw.get("pdfUrl")),
         ))
+
     return dedupe_rows(rows, review, "city"), review
 
 def dedupe_rows(rows: list[dict[str, str]], review: list[dict[str, Any]], scope: str) -> list[dict[str, str]]:
@@ -312,7 +369,7 @@ def plan() -> dict[str, Any]:
         "format":"google-sheets-tthc-sync-plan",
         "version":1,
         "commune":{"rows":commune,"count":len(commune)},
-        "city":{"rows":city,"count":len(city),"coverage":"PARTIAL_BASELINE"},
+        "city":{"rows":city,"count":len(city),"coverage":"VERIFIED_BASELINE"},
         "reviewQueue":queue,
         "reviewCount":len(queue),
     }
