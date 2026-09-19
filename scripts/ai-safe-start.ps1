@@ -4,10 +4,10 @@ param(
 
 $ErrorActionPreference = "Stop"
 
-function Run-Git([string[]]$Args) {
-  $output = & git @Args 2>&1
+function Run-Git([string[]]$GitArgs) {
+  $output = & git @GitArgs 2>&1
   if ($LASTEXITCODE -ne 0) {
-    throw "git $($Args -join ' ') failed: $($output -join [Environment]::NewLine)"
+    throw "git $($GitArgs -join ' ') failed: $($output -join [Environment]::NewLine)"
   }
   return @($output)
 }
@@ -17,7 +17,7 @@ if ($LASTEXITCODE -ne 0 -or -not $root) {
   throw "Not inside a Git repository."
 }
 
-Set-Location $root.Trim()
+Set-Location ($root.Trim())
 $machine = if ($env:COMPUTERNAME) { $env:COMPUTERNAME } else { [Environment]::MachineName }
 $branch = ((Run-Git @("branch","--show-current")) -join "").Trim()
 
@@ -65,7 +65,8 @@ if ($ahead -gt 0 -and $behind -gt 0) {
 
 if (-not $NoPull -and $upstream -and $behind -gt 0 -and $ahead -eq 0) {
   Write-Host "Safe fast-forward detected. Pulling..."
-  Run-Git @("pull","--ff-only","origin",($upstream -replace "^origin/","")) | ForEach-Object { Write-Host $_ }
+  $remoteBranch = $upstream -replace "^origin/",""
+  Run-Git @("pull","--ff-only","origin",$remoteBranch) | ForEach-Object { Write-Host $_ }
 }
 
 if ($ahead -gt 0) {
