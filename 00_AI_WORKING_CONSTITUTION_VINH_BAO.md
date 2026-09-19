@@ -1,6 +1,6 @@
 # 00_AI_WORKING_CONSTITUTION_VINH_BAO
 
-**Phiên bản:** 1.1.0  
+**Phiên bản:** 1.2.0  
 **Ngày ban hành nội bộ:** 18/09/2026  
 **Chủ sở hữu nghiệp vụ:** Hồng Diễn – Giám đốc Trung tâm Phục vụ hành chính công xã Vĩnh Bảo, TP Hải Phòng  
 **Phạm vi:** Tất cả công việc hành chính, TTHC/CCHC/CĐS, dữ liệu, AI, tự động hóa và dự án phần mềm thuộc hệ sinh thái công việc Vĩnh Bảo.  
@@ -649,6 +649,45 @@ Executor nhận việc ở môi trường mới phải fetch/pull branch từ or
 ### 22.5. Mục tiêu trải nghiệm
 
 Người dùng chỉ cần giao việc theo nghiệp vụ. Agent chịu trách nhiệm tự xử lý các thao tác Git an toàn, nhận diện trạng thái đa máy, đồng bộ trước khi làm, checkpoint trước handoff và báo rõ blocker nếu có.
+
+
+
+---
+
+## 23. Luồng điều phối chuẩn Chat Web → Linear/GitHub → Codex → PR/CI → Chat Web
+
+### 23.1. Luồng chuẩn
+
+Mô hình mặc định cho mọi work package kỹ thuật là:
+
+**Chat Web → Linear/GitHub Issue → Codex → PR/CI → Chat Web review**
+
+Trong đó:
+- **Chat Web**: phân tích yêu cầu, xác định phạm vi, chia work package, kiểm tra bằng chứng và xác định bước tiếp theo;
+- **Linear/GitHub Issue**: nguồn trạng thái công việc và tiêu chí hoàn thành;
+- **Codex**: executor mặc định để thao tác repository, code, test và công cụ local/remote theo phạm vi Issue;
+- **PR/CI**: bằng chứng thay đổi, kiểm thử và gate trước merge;
+- **Chat Web review**: rà soát kết quả, đối chiếu yêu cầu, phát hiện blocker/rủi ro và quyết định bước tiếp theo theo thẩm quyền hiện hành.
+
+### 23.2. Executor thay thế
+
+ChatCode, ChatGPT Work hoặc executor khác có thể thay Codex trong một work package nếu có quyền/công cụ phù hợp, nhưng phải tuân thủ cùng hợp đồng:
+**Issue/task → branch → implementation → test/CI → PR → review/handoff**.
+
+Không để trạng thái quan trọng chỉ tồn tại trong lịch sử chat hoặc workspace local.
+
+### 23.3. Handoff bắt buộc
+
+Khi chuyển giữa Chat Web, Codex, ChatCode, Work hoặc máy khác:
+1. trạng thái task phải được cập nhật tại Linear/GitHub Issue/PR;
+2. branch/commit phải được push lên GitHub trước khi coi là handoff hoàn tất;
+3. ghi rõ Changes, Tests/CI, Blockers và NEXT_SAFE_ACTION;
+4. executor nhận việc phải đọc Constitution, AGENTS.md, Issue/PR và chạy safe-start trước khi thay đổi code.
+
+### 23.4. Nguyên tắc tiết kiệm tài nguyên
+
+Không yêu cầu Codex/ChatCode/Work nạp toàn bộ lịch sử hội thoại nếu Issue/PR đã chứa đủ work package.
+Ưu tiên truyền trạng thái qua GitHub/Linear và chỉ nạp file/ngữ cảnh trực tiếp cần thiết.
 
 
 **END OF CANONICAL GOVERNANCE BASELINE**
