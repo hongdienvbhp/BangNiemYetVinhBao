@@ -41,3 +41,20 @@ Cập nhật Issue/PR tối thiểu:
 4. NEXT_SAFE_ACTION.
 
 Không tuyên bố “đã xong/đã test/đã deploy/đã merge” nếu chưa có bằng chứng kiểm chứng được.
+
+
+## Làm việc đa máy / Codex / ChatCode — tự động bắt buộc
+
+Mỗi phiên Codex, ChatGPT Web qua Codex Web GPT hoặc ChatCode khi bắt đầu làm việc trong repo này phải tự động chạy `scripts/ai-safe-start.ps1` (Windows) trước khi sửa code.
+
+Agent phải:
+- tự nhận diện máy hiện tại, repo, branch và upstream;
+- tự `git fetch origin --prune`;
+- nếu working tree sạch và chỉ behind upstream thì tự `git pull --ff-only`;
+- nếu dirty/diverged thì bảo toàn thay đổi, không reset/clean/force;
+- dùng branch theo Issue/task, không tạo branch theo tên máy;
+- trước khi chuyển sang máy/executor khác, tự kiểm tra secret, checkpoint commit, push branch và cập nhật Issue/PR với NEXT_SAFE_ACTION;
+- khi nhận lại việc ở máy khác, tự fetch/pull và xác minh HEAD trước khi tiếp tục;
+- coi GitHub + Issue/PR/Linear là nguồn trạng thái, không dùng lịch sử chat hoặc máy local làm canonical source.
+
+Người dùng không phải tự chạy các thao tác Git thông thường trên nếu agent có quyền thực hiện. Chỉ hỏi người dùng khi cần quyền/xác nhận bắt buộc hoặc có xung đột nghiệp vụ không thể tự quyết an toàn.
