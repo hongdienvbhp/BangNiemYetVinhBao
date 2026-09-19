@@ -1,6 +1,6 @@
 # 00_AI_WORKING_CONSTITUTION_VINH_BAO
 
-**Phiên bản:** 1.2.0  
+**Phiên bản:** 1.3.0  
 **Ngày ban hành nội bộ:** 18/09/2026  
 **Chủ sở hữu nghiệp vụ:** Hồng Diễn – Giám đốc Trung tâm Phục vụ hành chính công xã Vĩnh Bảo, TP Hải Phòng  
 **Phạm vi:** Tất cả công việc hành chính, TTHC/CCHC/CĐS, dữ liệu, AI, tự động hóa và dự án phần mềm thuộc hệ sinh thái công việc Vĩnh Bảo.  
@@ -688,6 +688,117 @@ Khi chuyển giữa Chat Web, Codex, ChatCode, Work hoặc máy khác:
 
 Không yêu cầu Codex/ChatCode/Work nạp toàn bộ lịch sử hội thoại nếu Issue/PR đã chứa đủ work package.
 Ưu tiên truyền trạng thái qua GitHub/Linear và chỉ nạp file/ngữ cảnh trực tiếp cần thiết.
+
+
+
+---
+
+## 24. Resource-aware execution — thực thi tiết kiệm tài nguyên
+
+### 24.1. Nguyên tắc chung
+
+Mọi AI/Agent/executor phải tối ưu đồng thời:
+- AI token/quota;
+- thời gian suy luận;
+- GitHub Actions/CI minutes;
+- CPU/RAM/storage/network của máy local;
+- API/database/SaaS calls;
+- thời gian thao tác của người dùng.
+
+Không đánh đổi độ chính xác, an toàn dữ liệu, khả năng hoàn nguyên hoặc bằng chứng kiểm chứng để tiết kiệm tài nguyên.
+
+### 24.2. Tải Constitution theo phiên bản, không đọc toàn bộ lặp lại
+
+Không bắt buộc đọc lại toàn bộ `00_AI_WORKING_CONSTITUTION_VINH_BAO.md` ở mọi work package.
+
+Executor phải:
+1. kiểm tra tên file, version và khi phù hợp là hash/commit hiện hành;
+2. đọc toàn bộ Constitution khi:
+   - lần đầu làm việc với repository/workspace;
+   - version/hash đã thay đổi;
+   - task liên quan governance, kiến trúc, bảo mật, dữ liệu, pháp lý, production hoặc cross-repo;
+   - có mâu thuẫn giữa AGENTS.md, Issue/PR và hành vi dự kiến;
+3. nếu Constitution không đổi và task thông thường, chỉ cần đọc:
+   - `AGENTS.md`;
+   - Issue/PR được giao;
+   - section Constitution liên quan trực tiếp nếu cần;
+   - file/symbol bị ảnh hưởng.
+
+Mục tiêu: tránh nạp lặp lại hàng trăm dòng governance khi không tạo thêm giá trị.
+
+### 24.3. Context budget theo mức cần thiết
+
+Mặc định mở rộng ngữ cảnh theo cấp:
+- **L0 — Metadata:** branch, HEAD, status, Issue/PR, changed files;
+- **L1 — Targeted:** symbol/file trực tiếp liên quan;
+- **L2 — Module:** module/dependency gần nhất;
+- **L3 — Repository/System:** toàn repo, kiến trúc, cross-repo — chỉ khi task thực sự yêu cầu.
+
+Không quét toàn repository trước khi đã thử tìm kiếm theo file/symbol/changed-files.
+
+### 24.4. Routing mức suy luận
+
+Dùng mức suy luận thấp nhất đáp ứng chất lượng:
+- tác vụ deterministic/status/read-only/safe-start/mechanical: mức nhẹ hoặc công cụ/script;
+- code thông thường, refactor cục bộ, test/debug rõ phạm vi: mức chuẩn;
+- kiến trúc, security, dữ liệu, pháp lý, incident khó, cross-repo hoặc review rủi ro cao: mức cao.
+
+Không dùng model/reasoning cao mặc định cho mọi tác vụ nếu mức thấp hơn đủ đáp ứng.
+
+### 24.5. CI theo rủi ro và phạm vi thay đổi
+
+CI/test phải theo risk-based gate:
+- docs/governance-only: lint/validation nhẹ; không chạy full regression nếu không chạm runtime/build/config dùng chung;
+- thay đổi cục bộ: targeted unit/integration test trước;
+- thay đổi dependency/schema/auth/shared-core/build/deploy: full relevant regression/build;
+- full regression toàn bộ chỉ ở merge gate hoặc khi phạm vi/rủi ro yêu cầu.
+
+Không chạy lại cùng test không thay đổi đầu vào chỉ để lặp bằng chứng.
+
+### 24.6. Chat Web review theo gate, không review kép mọi thay đổi
+
+Chat Web review bắt buộc khi có một trong các điều kiện:
+- kiến trúc hoặc ownership;
+- security/credential/PII;
+- database/schema/migration;
+- production/deployment;
+- cross-repo/canonical-source;
+- CI fail/không rõ;
+- thay đổi lớn/khó hoàn nguyên;
+- người dùng yêu cầu review.
+
+Với thay đổi nhỏ, mechanical, docs-only hoặc low-risk đã có test/CI rõ ràng, executor có thể self-review + CI + cập nhật Issue/PR mà không cần vòng review kép.
+
+### 24.7. Phân vai Linear và GitHub, tránh nhân đôi tracker
+
+- **Linear:** portfolio, project, cross-repo dependency, roadmap, blocker cấp quản trị.
+- **GitHub Issue/PR:** work package kỹ thuật gắn trực tiếp với repository/code.
+
+Không copy toàn bộ nội dung giữa Linear và GitHub. Chỉ liên kết ID/URL và đồng bộ trạng thái/tóm tắt cần thiết.
+
+### 24.8. Handoff tối giản nhưng đủ bằng chứng
+
+Mỗi handoff chỉ cần:
+- HEAD/branch;
+- Changes;
+- Tests/CI;
+- Blockers;
+- NEXT_SAFE_ACTION.
+
+Không chép lại toàn bộ lịch sử hội thoại, toàn bộ diff hoặc nội dung đã có sẵn trong Issue/PR.
+
+### 24.9. Reuse trước compute
+
+Ưu tiên:
+- đọc kết quả test/CI hiện có trước khi chạy lại;
+- dùng diff/changed-files thay vì scan toàn repo;
+- dùng cache/artifact hợp lệ thay vì build lại;
+- dùng script/API deterministic thay vì AI;
+- dùng một executor cho một Issue/branch tại một thời điểm.
+
+### 24.10. Ngoại lệ
+
+Nếu tối ưu tài nguyên làm tăng nguy cơ bỏ sót lỗi quan trọng, chọn phương án an toàn hơn và ghi rõ lý do mở rộng context/test/review.
 
 
 **END OF CANONICAL GOVERNANCE BASELINE**

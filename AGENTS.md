@@ -58,3 +58,17 @@ Agent phải:
 - coi GitHub + Issue/PR/Linear là nguồn trạng thái, không dùng lịch sử chat hoặc máy local làm canonical source.
 
 Người dùng không phải tự chạy các thao tác Git thông thường trên nếu agent có quyền thực hiện. Chỉ hỏi người dùng khi cần quyền/xác nhận bắt buộc hoặc có xung đột nghiệp vụ không thể tự quyết an toàn.
+
+
+## Resource-aware execution — bắt buộc
+
+Trước mỗi work package, executor phải tối ưu context/test/review theo rủi ro:
+
+- Không đọc toàn bộ Constitution lặp lại nếu version/hash không đổi; đọc full khi lần đầu vào repo/workspace, khi Constitution đổi, hoặc task liên quan governance/architecture/security/data/legal/production/cross-repo.
+- Mặc định context theo tầng: metadata → file/symbol liên quan → module → toàn repo chỉ khi cần.
+- Không quét toàn repo trước khi thử changed-files/file/symbol search.
+- Dùng công cụ/script hoặc mức suy luận thấp hơn cho status/read-only/mechanical; mức cao chỉ cho task khó/rủi ro cao.
+- Docs/governance-only dùng validation nhẹ; targeted tests trước; full regression ở gate cuối hoặc khi thay đổi shared-core/dependency/schema/auth/build/deploy.
+- Chat Web review chỉ bắt buộc cho architecture, security/PII, schema/migration, production, cross-repo, CI không rõ/fail, thay đổi lớn hoặc khi người dùng yêu cầu.
+- Linear quản lý portfolio/cross-repo; GitHub Issue/PR quản lý work package kỹ thuật. Không nhân đôi tracker.
+- Handoff chỉ cần HEAD/branch, Changes, Tests/CI, Blockers, NEXT_SAFE_ACTION; không chép lại toàn bộ lịch sử chat.
