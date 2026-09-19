@@ -1,6 +1,6 @@
 # 00_AI_WORKING_CONSTITUTION_VINH_BAO
 
-**Phiên bản:** 1.0.0  
+**Phiên bản:** 1.1.0  
 **Ngày ban hành nội bộ:** 18/09/2026  
 **Chủ sở hữu nghiệp vụ:** Hồng Diễn – Giám đốc Trung tâm Phục vụ hành chính công xã Vĩnh Bảo, TP Hải Phòng  
 **Phạm vi:** Tất cả công việc hành chính, TTHC/CCHC/CĐS, dữ liệu, AI, tự động hóa và dự án phần mềm thuộc hệ sinh thái công việc Vĩnh Bảo.  
@@ -596,5 +596,59 @@ Khi có mâu thuẫn:
 2. chỉ đạo mới hơn, cụ thể hơn của người dùng ưu tiên trong phạm vi hợp lệ;
 3. quy tắc repository/project cụ thể ưu tiên cho chi tiết triển khai nhưng không được phá các nguyên tắc pháp lý, dữ liệu, bảo mật và tính trung thực;
 4. nếu vẫn chưa rõ, chọn phương án an toàn, ít thay đổi, dễ hoàn nguyên và báo rõ giả định.
+
+
+---
+
+## 22. Làm việc đa máy và nhiều executor
+
+### 22.1. Mô hình vận hành
+
+Người dùng có thể làm việc trên nhiều máy và qua nhiều executor như Codex Desktop, ChatGPT Web qua Codex Web GPT hoặc ChatCode, nhưng tại một thời điểm một dự án chỉ có một executor chính.
+
+Nguồn chuẩn:
+- GitHub repository: nguồn code canonical;
+- GitHub Issue/PR và Linear: nguồn trạng thái công việc;
+- máy tính, lịch sử chat và workspace local chỉ là môi trường thực thi, không phải nguồn trạng thái chuẩn.
+
+Branch phải theo Issue/task, không theo tên máy. Không tạo branch riêng chỉ vì đổi máy nếu đang tiếp tục đúng cùng một task.
+
+### 22.2. Safe Start bắt buộc
+
+Mỗi Codex/ChatCode/AI agent khi bắt đầu hoặc tiếp tục làm việc trong repository phải tự động, trước khi sửa file:
+1. xác định repository root, hostname/máy hiện tại và branch;
+2. đọc `AGENTS.md` và Constitution;
+3. chạy `scripts/ai-safe-start.ps1` trên Windows nếu file tồn tại;
+4. fetch `origin`, kiểm tra working tree và trạng thái ahead/behind;
+5. nếu working tree sạch và local chỉ behind upstream thì tự `git pull --ff-only`;
+6. nếu local có thay đổi chưa commit, diverged, hoặc có nguy cơ ghi đè thì không pull/reset/checkout cưỡng bức; phải bảo toàn dữ liệu trước;
+7. đối chiếu Issue/PR hiện hành và NEXT_SAFE_ACTION trước khi tiếp tục.
+
+Người dùng không phải tự thực hiện các bước Git thông thường nêu trên nếu agent có quyền/công cụ thực hiện.
+
+### 22.3. Handoff giữa máy/Codex/ChatCode
+
+Khi người dùng yêu cầu chuyển sang máy khác, chuyển sang ChatCode/Codex khác hoặc tiếp tục công việc ở môi trường khác, executor hiện tại phải chủ động:
+1. kiểm tra `git status`;
+2. loại trừ secret/credential/dữ liệu nhạy cảm khỏi commit;
+3. nếu có thay đổi hợp lệ chưa lưu, tạo checkpoint commit trên branch của Issue/task;
+4. push branch lên origin;
+5. cập nhật Issue/PR với Changes, Tests/CI, Blockers và NEXT_SAFE_ACTION;
+6. chỉ sau khi push thành công mới coi là handoff an toàn.
+
+Executor nhận việc ở môi trường mới phải fetch/pull branch từ origin và xác minh HEAD/working tree trước khi sửa.
+
+### 22.4. Quy tắc an toàn
+
+- Không tự `reset --hard`, `clean -fd`, force-push hoặc ghi đè thay đổi local để đồng bộ máy.
+- Không commit `.env`, token, cookie, API key, private key, service-account credential hoặc dữ liệu cá nhân nhạy cảm.
+- Nếu phát hiện local và remote cùng thay đổi không thể fast-forward, agent phải dừng thao tác phá hủy, tự phân tích conflict và chỉ yêu cầu người dùng khi thực sự cần quyết định nghiệp vụ.
+- Nếu repo chưa clone ở máy hiện tại, agent được phép hướng dẫn/điều phối clone từ GitHub; GitHub vẫn là nguồn chuẩn.
+- Nếu máy cũ còn thay đổi chưa push thì không coi máy mới là bản đầy đủ cho đến khi checkpoint được đưa lên GitHub.
+
+### 22.5. Mục tiêu trải nghiệm
+
+Người dùng chỉ cần giao việc theo nghiệp vụ. Agent chịu trách nhiệm tự xử lý các thao tác Git an toàn, nhận diện trạng thái đa máy, đồng bộ trước khi làm, checkpoint trước handoff và báo rõ blocker nếu có.
+
 
 **END OF CANONICAL GOVERNANCE BASELINE**
