@@ -1,42 +1,21 @@
 # AGENTS.md
 
-## GitHub workflow bắt buộc
+## Canonical governance bắt buộc
 
-Mọi Codex/AI/agent làm việc trong repository này phải tuân thủ:
+Trước mọi thay đổi mã nguồn, dữ liệu, kiến trúc hoặc hạ tầng, AI/Agent phải đọc và tuân thủ `00_AI_WORKING_CONSTITUTION_VINH_BAO.md`.
 
-**Tạo Issue → tạo branch riêng → thực hiện thay đổi → chạy test/kiểm tra → tạo Pull Request → DỪNG trước merge.**
-
-Không được:
-- sửa trực tiếp `main`;
-- tự merge hoặc bật auto-merge;
-- bỏ qua test mà không báo;
-- mở rộng phạm vi ngoài Issue;
-- ghi secret, credential, cookie, token hoặc dữ liệu cá nhân nhạy cảm vào repo.
-
-Khi hoàn thành, báo cáo tối thiểu:
-1. Issue;
-2. branch;
-3. file đã tạo/sửa;
-4. test/kiểm tra đã chạy;
-5. pass/fail;
-6. PR;
-7. rủi ro hoặc nội dung cần người dùng kiểm tra.
-
-Chỉ merge khi có chấp thuận rõ ràng của Hồng Diễn.
-
-
-## Chỉ đạo riêng cho nhiệm vụ portfolio TTHC — 11/09/2026
-
-Người dùng đã ủy quyền tự động merge toàn bộ phần việc hoàn tất từ đầu nhiệm vụ và các phần hoàn tất tiếp theo, không cần hỏi lại. Trong nhiệm vụ portfolio này, chỉ đạo này thay thế yêu cầu dừng/chờ người dùng review trước merge ở trên. Quy trình: Issue → branch → test → PR → agent review diff và kiểm tra CI tại head hiện tại → merge có kiểm tra head → kiểm chứng sau merge. PR Draft, kiểm thử lỗi hoặc dữ liệu chưa đủ căn cứ chưa được coi là hoàn tất. Không bỏ qua branch protection, quyền nền tảng, bảo vệ secret/PII hoặc tự suy đoán dữ liệu pháp lý. Ngoài nhiệm vụ này, quy trình mặc định vẫn áp dụng.
-
+- Constitution là baseline nguyên tắc dùng chung cho hệ sinh thái Vĩnh Bảo.
+- `AGENTS.md` chỉ bổ sung hướng dẫn thực thi riêng của repository; không tạo bộ nguyên tắc cạnh tranh.
+- Khi có thay đổi Constitution, đồng bộ theo version qua Issue → branch → PR.
+- Nếu có mâu thuẫn, ưu tiên pháp luật/quy định có thẩm quyền, sau đó là chỉ đạo mới hơn và cụ thể hơn của người dùng trong phạm vi hợp lệ.
 
 ## Handoff Chat Web ↔ Codex
 
 Mô hình chuẩn: **Chat Web → Linear/GitHub Issue → Codex → PR/CI → Chat Web review**.
 
-- Chat Web phân tích, chia work package, rà soát bằng chứng và xác định bước tiếp theo.
-- Codex chỉ thực thi work package được mô tả trong Issue/PR; không nạp toàn bộ lịch sử chat.
-- Linear và GitHub Issue/PR là nguồn trạng thái sống; không tạo tracker/file trạng thái trùng lặp nếu chưa có nhu cầu riêng.
+- Chat Web chịu trách nhiệm phân tích, chia work package, rà soát bằng chứng và xác định bước tiếp theo.
+- Codex chỉ thực thi work package được mô tả trong Issue/PR; không cần và không nên nạp toàn bộ lịch sử chat.
+- Linear và GitHub Issue/PR là nguồn trạng thái sống; không tạo thêm tracker hoặc file trạng thái trùng lặp nếu chưa có nhu cầu riêng.
 - Khi bắt đầu, chỉ đọc Constitution, AGENTS.md, Issue/PR được giao và các file liên quan trực tiếp.
 
 ## Kiểm soát tài nguyên
@@ -47,10 +26,21 @@ Mô hình chuẩn: **Chat Web → Linear/GitHub Issue → Codex → PR/CI → Ch
 - Không dùng AI cho việc rule/script/SQL/API/workflow xử lý ổn định được.
 - Ưu tiên incremental processing, cache/reuse và giảm API/token không cần thiết.
 
+## GitHub workflow mặc định
+
+Thực hiện theo: **Issue → branch riêng → thay đổi → kiểm tra/test phù hợp → Pull Request → kiểm tra → merge theo thẩm quyền/chỉ đạo hiện hành**.
+
+Không sửa trực tiếp `main`; không ghi secret/credential/token/cookie hoặc dữ liệu cá nhân nhạy cảm vào repository.
+
 ## Handoff cuối work package
 
-Cập nhật Issue/PR tối thiểu: Changes; Tests/CI; Blockers; NEXT_SAFE_ACTION.
-Không tuyên bố hoàn thành nếu chưa có bằng chứng kiểm chứng được.
+Cập nhật Issue/PR tối thiểu:
+1. Changes;
+2. Tests/CI;
+3. Blockers;
+4. NEXT_SAFE_ACTION.
+
+Không tuyên bố “đã xong/đã test/đã deploy/đã merge” nếu chưa có bằng chứng kiểm chứng được.
 
 
 ## Làm việc đa máy / Codex / ChatCode — tự động bắt buộc
