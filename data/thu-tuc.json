@@ -524,7 +524,7 @@
     },
     {
       "ma": "1.013822",
-      "ten": "Hỗ trợ chi phí mai táng đối với nghệ nhân nhân dân, nghệ nhân ưu tú có thu nh ập th ấp, hoàn cảnh khó khăn",
+      "ten": "Hỗ trợ chi phí mai táng đối với nghệ nhân nhân dân, nghệ nhân ưu tú có thu nhập thấp, hoàn cảnh khó khăn",
       "linhVuc": "BẢO TRỢ XÃ HỘI",
       "cap": "Xã",
       "nhanh": false,
@@ -846,7 +846,7 @@
     },
     {
       "ma": "2.000815",
-      "ten": "Chứng thực bản sao từ bản chính giấy t ờ, văn bản do cơ quan, tổ chức có thẩm quyền của Việt Nam; cơ quan, tổ chức có th ẩm quy ền của nước ngoài; cơ quan, tổ chức",
+      "ten": "Chứng thực bản sao từ bản chính giấy tờ, văn bản do cơ quan, tổ chức có thẩm quyền của Việt Nam; cơ quan, tổ chức có thẩm quyền của nước ngoài; cơ quan, tổ chức có thẩm quyền của Việt Nam liên kết với cơ quan, tổ chức có thẩm quyền của nước ngoài cấp hoặc chứng nhận",
       "linhVuc": "CHỨNG THỰC",
       "cap": "Xã",
       "nhanh": true,
@@ -2746,7 +2746,7 @@
     },
     {
       "ma": "1.001138",
-      "ten": "Cấp Giấy phép hoạt động đối với tr ạm sơ cấp cứu chữ thập đỏ",
+      "ten": "Cấp Giấy phép hoạt động đối với trạm sơ cấp cứu chữ thập đỏ",
       "linhVuc": "KHÁM CHỮA BỆNH",
       "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
       "nhanh": false,
@@ -2788,7 +2788,7 @@
     },
     {
       "ma": "2.000559",
-      "ten": "Cấp Giấy phép hoạt động đối với đi ểm sơ cấp cứu chữ thập đỏ",
+      "ten": "Cấp Giấy phép hoạt động đối với điểm sơ cấp cứu chữ thập đỏ",
       "linhVuc": "KHÁM CHỮA BỆNH",
       "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
       "nhanh": false,
@@ -5649,7 +5649,7 @@
     },
     {
       "ma": "1.003915",
-      "ten": "Cấp Ch ứng chỉ hành nghề đấu giá",
+      "ten": "Thủ tục cấp Chứng chỉ hành nghề đấu giá",
       "linhVuc": "TƯ PHÁP",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,

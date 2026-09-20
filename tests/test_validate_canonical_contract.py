@@ -11,6 +11,7 @@ class CanonicalContractTest(unittest.TestCase):
     def test_accepts_clean_unicode_name(self): self.assertEqual(MODULE.validate(self.payload()),[])
     def test_rejects_control_character(self): self.assertTrue(any("ký tự điều khiển" in e for e in MODULE.validate(self.payload("\x07Tên lỗi\x07"))))
     def test_rejects_cp437_marker(self): self.assertTrue(any("CP437" in e for e in MODULE.validate(self.payload("Th├╗ tß╗Ñc"))))
+    def test_rejects_known_ocr_split_marker(self): self.assertTrue(any("tách chữ OCR" in e for e in MODULE.validate(self.payload("Cấp Ch ứng chỉ hành nghề đấu giá"))))
     def test_repository_dataset_passes(self):
         payload=json.loads((ROOT/"data"/"thu-tuc.json").read_text(encoding="utf-8")); self.assertEqual(MODULE.validate(payload),[])
 if __name__=="__main__": unittest.main()
