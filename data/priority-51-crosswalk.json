@@ -10,8 +10,12 @@
     "directFormalityIds": 48,
     "uniqueFormalityIds": 48,
     "keywordFallbacks": 3,
-    "inCurrentMaster": 14,
-    "missingFromCurrentMaster": 37
+    "inCurrentMaster": 50,
+    "missingFromCurrentMaster": 1,
+    "liveVerifiedIdentity": 36,
+    "liveVerifiedIdentityAndAgency": 0,
+    "liveUnresolved": 15,
+    "liveWafRejected": 0
   },
   "items": [
     {
@@ -25,13 +29,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Thực hiện, điều chỉnh, thôi hưởng trợ cấp hưu trí xã hội",
+      "exactNameMatch": true,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 2,
@@ -44,13 +52,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Hỗ trợ chi phí mai táng đối với đối tượng hưởng trợ cấp hưu trí xã hội",
+      "exactNameMatch": true,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 3,
@@ -63,13 +75,17 @@
       "previousVerificationStatus": "candidate_matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Thông báo tổ chức lễ hội cấp xã",
+      "exactNameMatch": false,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": "Mã và formalityId đã được đối chiếu kỹ thuật; crosswalk không dùng để khẳng định hiệu lực pháp lý hiện hành."
+      "note": "Mã và formalityId đã được đối chiếu kỹ thuật; crosswalk không dùng để khẳng định hiệu lực pháp lý hiện hành.",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 4,
@@ -82,13 +98,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Chuyển trường đối với học sinh trung học cơ sở",
+      "exactNameMatch": false,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "UNRESOLVED_VISIBLE_IDENTITY",
+      "liveNameVisible": false,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 5,
@@ -101,13 +121,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Tiếp nhận đối tượng bảo trợ xã hội có hoàn cảnh đặc biệt khó khăn vào cơ sở trợ giúp xã hội",
+      "exactNameMatch": true,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 6,
@@ -120,13 +144,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Thực hiện, điều chỉnh, thôi hưởng trợ cấp xã hội hàng tháng, hỗ trợ kinh phí chăm sóc, nuôi dưỡng hàng tháng",
+      "exactNameMatch": true,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 7,
@@ -139,13 +167,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Hỗ trợ chi phí mai táng cho đối tượng bảo trợ xã hội",
+      "exactNameMatch": true,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 8,
@@ -158,13 +190,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Hưởng trợ cấp khi người có công đang hưởng trợ cấp ưu đãi từ trần",
+      "exactNameMatch": true,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 9,
@@ -177,13 +213,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Giải quyết chế độ trợ cấp thờ cúng liệt sĩ",
+      "exactNameMatch": false,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 10,
@@ -196,13 +236,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Công nhận ban vận động thành lập hội",
+      "exactNameMatch": true,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 11,
@@ -215,13 +259,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Thành lập hội",
+      "exactNameMatch": true,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 12,
@@ -234,13 +282,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Công nhận hộ nghèo, hộ cận nghèo; hộ thoát nghèo, hộ thoát cận nghèo định kỳ hằng năm",
+      "exactNameMatch": true,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 13,
@@ -253,13 +305,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Công nhận hộ làm nông nghiệp, lâm nghiệp, ngư nghiệp và diêm nghiệp có mức sống trung bình",
+      "exactNameMatch": true,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 14,
@@ -272,13 +328,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Xác định, xác định lại mức độ khuyết tật và cấp Giấy xác nhận khuyết tật",
+      "exactNameMatch": true,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 15,
@@ -291,13 +351,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Cấp giấy xác nhận thân nhân của người có công",
+      "exactNameMatch": true,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 16,
@@ -316,7 +380,11 @@
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "UNRESOLVED_VISIBLE_IDENTITY",
+      "liveNameVisible": false,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 17,
@@ -335,7 +403,11 @@
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "UNRESOLVED_VISIBLE_IDENTITY",
+      "liveNameVisible": false,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 18,
@@ -348,13 +420,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Cấp Giấy chứng nhận đủ điều kiện cửa hàng bán lẻ LPG chai",
+      "exactNameMatch": true,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": "DVCQG hiện được lưu bằng liên kết tìm kiếm theo mã; không tự suy đoán UUID."
+      "note": "DVCQG hiện được lưu bằng liên kết tìm kiếm theo mã; không tự suy đoán UUID.",
+      "liveVerificationResult": "UNRESOLVED_VISIBLE_IDENTITY",
+      "liveNameVisible": false,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 19,
@@ -367,13 +443,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Đăng ký thành lập hộ kinh doanh",
+      "exactNameMatch": true,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "UNRESOLVED_VISIBLE_IDENTITY",
+      "liveNameVisible": false,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 20,
@@ -386,13 +466,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Đăng ký thay đổi nội dung đăng ký hộ kinh doanh",
+      "exactNameMatch": true,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": "DVCQG hiện được lưu bằng liên kết tìm kiếm theo mã; không tự suy đoán UUID."
+      "note": "DVCQG hiện được lưu bằng liên kết tìm kiếm theo mã; không tự suy đoán UUID.",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 21,
@@ -405,13 +489,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Tạm ngừng kinh doanh, tiếp tục kinh doanh trước thời hạn đã thông báo của hộ kinh doanh",
+      "exactNameMatch": true,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 22,
@@ -424,13 +512,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Cấp lại Giấy chứng nhận đăng ký hộ kinh doanh, Cấp đổi sang Giấy chứng nhận đăng ký hộ kinh doanh",
+      "exactNameMatch": true,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 23,
@@ -443,13 +535,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Chấm dứt hoạt động hộ kinh doanh",
+      "exactNameMatch": true,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 24,
@@ -468,7 +564,11 @@
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "UNRESOLVED_VISIBLE_IDENTITY",
+      "liveNameVisible": false,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 25,
@@ -482,12 +582,16 @@
       "linkState": "reachable",
       "httpStatus": 200,
       "inCurrentMaster": true,
-      "currentMasterName": "\u0007Hoà giải tranh chấp đất đai\u0007",
+      "currentMasterName": "Hoà giải tranh chấp đất đai",
       "exactNameMatch": false,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 26,
@@ -506,7 +610,11 @@
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "UNRESOLVED_VISIBLE_IDENTITY",
+      "liveNameVisible": false,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 27,
@@ -519,13 +627,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Thủ tục ghi vào Sổ hộ tịch việc kết hôn của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài",
+      "exactNameMatch": true,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 28,
@@ -538,13 +650,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Thủ tục đăng ký khai tử",
+      "exactNameMatch": true,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 29,
@@ -557,13 +673,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Thủ tục đăng ký khai sinh",
+      "exactNameMatch": true,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 30,
@@ -576,13 +696,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Thủ tục thay đổi, cải chính, bổ sung thông tin hộ tịch, xác định lại dân tộc",
+      "exactNameMatch": false,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 31,
@@ -595,13 +719,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Thủ tục cấp Giấy xác nhận tình trạng hôn nhân",
+      "exactNameMatch": true,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 32,
@@ -614,13 +742,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh",
+      "exactNameMatch": true,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 33,
@@ -639,7 +771,11 @@
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 34,
@@ -652,13 +788,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Thủ tục đăng ký khai sinh cho người đã có hồ sơ, giấy tờ cá nhân",
+      "exactNameMatch": true,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 35,
@@ -671,13 +811,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Thủ tục đăng ký khai sinh có yếu tố nước ngoài",
+      "exactNameMatch": true,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 36,
@@ -690,13 +834,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Đăng ký lại khai tử",
+      "exactNameMatch": true,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 37,
@@ -715,7 +863,11 @@
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 38,
@@ -728,13 +880,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Thủ tục đăng ký lại khai sinh",
+      "exactNameMatch": true,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 39,
@@ -753,7 +909,11 @@
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 40,
@@ -772,7 +932,11 @@
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 41,
@@ -785,13 +949,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Thủ tục đăng ký khai sinh kết hợp đăng ký nhận cha, mẹ, con",
+      "exactNameMatch": false,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "UNRESOLVED_VISIBLE_IDENTITY",
+      "liveNameVisible": false,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 42,
@@ -804,13 +972,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Thủ tục đăng ký giám hộ",
+      "exactNameMatch": true,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 43,
@@ -823,13 +995,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Chứng thực văn bản từ chối nhận di sản",
+      "exactNameMatch": false,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "UNRESOLVED_VISIBLE_IDENTITY",
+      "liveNameVisible": false,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 44,
@@ -842,13 +1018,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Chứng thực văn bản phân chia di sản mà di sản là động sản, quyền sử dụng đất, nhà ở",
+      "exactNameMatch": false,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "UNRESOLVED_VISIBLE_IDENTITY",
+      "liveNameVisible": false,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 45,
@@ -867,7 +1047,11 @@
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": "DVCQG hiện được lưu bằng liên kết tìm kiếm theo mã; không tự suy đoán UUID."
+      "note": "DVCQG hiện được lưu bằng liên kết tìm kiếm theo mã; không tự suy đoán UUID.",
+      "liveVerificationResult": "UNRESOLVED_VISIBLE_IDENTITY",
+      "liveNameVisible": false,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 46,
@@ -880,13 +1064,17 @@
       "previousVerificationStatus": "matched",
       "linkState": "reachable",
       "httpStatus": 200,
-      "inCurrentMaster": false,
-      "currentMasterName": null,
-      "exactNameMatch": null,
+      "inCurrentMaster": true,
+      "currentMasterName": "Chứng thực việc sửa đổi, bổ sung, hủy bỏ giao dịch",
+      "exactNameMatch": true,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 47,
@@ -905,7 +1093,11 @@
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "UNRESOLVED_VISIBLE_IDENTITY",
+      "liveNameVisible": false,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 48,
@@ -924,7 +1116,11 @@
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "UNRESOLVED_VISIBLE_IDENTITY",
+      "liveNameVisible": false,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 49,
@@ -943,7 +1139,11 @@
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
+      "liveNameVisible": true,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 50,
@@ -962,7 +1162,11 @@
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "UNRESOLVED_VISIBLE_IDENTITY",
+      "liveNameVisible": false,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     },
     {
       "ordinal": 51,
@@ -981,7 +1185,17 @@
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
       "legalStatusAssertion": "none_from_priority_crosswalk",
-      "note": ""
+      "note": "",
+      "liveVerificationResult": "UNRESOLVED_VISIBLE_IDENTITY",
+      "liveNameVisible": false,
+      "liveAgencyVisible": false,
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     }
-  ]
+  ],
+  "canonicalDatasetVersion": "2026.09.18",
+  "canonicalSourceCommit": "d720f07659f8571e03f16ecdb3cc914598550c57",
+  "canonicalContract": "data/thu-tuc.json",
+  "liveVerificationManifest": "data/source-audit/dvcqg-live-verification-current.json",
+  "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+  "namePolicy": "Crosswalk name is a technical snapshot only. currentMasterName from data/thu-tuc.json is the canonical display name; legal status is never inferred from this crosswalk."
 }
