@@ -50,7 +50,8 @@ def _source_snapshot_date() -> str:
 
 
 SOURCE_SNAPSHOT_DATE = _source_snapshot_date()
-BUILD_DATE = SOURCE_SNAPSHOT_DATE
+BUILD_DATE = "2026-09-21"
+CANONICAL_SOURCE_COMMIT = "263bbc960d3bd83069c1a0ce7c7baca827875bc3"
 OFFICIAL_SOURCE = "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh"
 CITY_OFFICIAL_SOURCE = "https://haiphong.gov.vn/thu-tuc-hanh-chinh-76761"
 
@@ -408,9 +409,19 @@ CITY_NAME_OVERRIDES = {
     "2.000592": "Thủ tục giải quyết khiếu nại về trợ giúp pháp lý",
     "2.002821": "Hỗ trợ đào tạo nghề cho người lao động ở khu vực nông thôn, người lao động là thanh niên",
     "3.000242": "Cấp văn bản cho phép sử dụng thẻ ABTC tại địa phương",
+    "1.001138": "Cấp Giấy phép hoạt động đối với trạm sơ cấp cứu chữ thập đỏ",
+    "1.003915": "Thủ tục cấp Chứng chỉ hành nghề đấu giá",
+    "1.013822": "Hỗ trợ chi phí mai táng đối với nghệ nhân nhân dân, nghệ nhân ưu tú có thu nhập thấp, hoàn cảnh khó khăn",
+    "2.000559": "Cấp Giấy phép hoạt động đối với điểm sơ cấp cứu chữ thập đỏ",
+    "2.000815": "Chứng thực bản sao từ bản chính giấy tờ, văn bản do cơ quan, tổ chức có thẩm quyền của Việt Nam; cơ quan, tổ chức có thẩm quyền của nước ngoài; cơ quan, tổ chức có thẩm quyền của Việt Nam liên kết với cơ quan, tổ chức có thẩm quyền của nước ngoài cấp hoặc chứng nhận",
 }
 
 NAME_OVERRIDE_SOURCES = {
+    "1.001138": "official_source_name_verified",
+    "1.003915": "official_source_name_verified",
+    "1.013822": "official_source_name_verified",
+    "2.000559": "official_source_name_verified",
+    "2.000815": "official_source_name_verified",
     "1.008725": "legacy_same_code",
     "2.000424": "legacy_same_code",
 }
@@ -998,7 +1009,7 @@ def main() -> int:
         "format": "bangniemyet-vinhbao-master-data",
         "version": 3,
         "dataset_version": BUILD_DATE.replace("-", "."),
-        "source_commit": "d720f07659f8571e03f16ecdb3cc914598550c57",
+        "source_commit": CANONICAL_SOURCE_COMMIT,
         "updatedAt": BUILD_DATE,
         "sourceSnapshotDate": SOURCE_SNAPSHOT_DATE,
         "source": OFFICIAL_SOURCE,

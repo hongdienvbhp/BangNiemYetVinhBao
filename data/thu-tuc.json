@@ -1,9 +1,9 @@
 {
   "format": "bangniemyet-vinhbao-master-data",
   "version": 3,
-  "dataset_version": "2026.09.18",
-  "source_commit": "d720f07659f8571e03f16ecdb3cc914598550c57",
-  "updatedAt": "2026-09-18",
+  "dataset_version": "2026.09.21",
+  "source_commit": "263bbc960d3bd83069c1a0ce7c7baca827875bc3",
+  "updatedAt": "2026-09-21",
   "sourceSnapshotDate": "2026-09-18",
   "source": "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh",
   "sourceSites": [

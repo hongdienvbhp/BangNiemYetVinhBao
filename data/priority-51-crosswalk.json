@@ -1157,7 +1157,7 @@
       "linkState": "reachable",
       "httpStatus": 200,
       "inCurrentMaster": true,
-      "currentMasterName": "Chứng thực bản sao từ bản chính giấy t ờ, văn bản do cơ quan, tổ chức có thẩm quyền của Việt Nam; cơ quan, tổ chức có th ẩm quy ền của nước ngoài; cơ quan, tổ chức",
+      "currentMasterName": "Chứng thực bản sao từ bản chính giấy tờ, văn bản do cơ quan, tổ chức có thẩm quyền của Việt Nam; cơ quan, tổ chức có thẩm quyền của nước ngoài; cơ quan, tổ chức có thẩm quyền của Việt Nam liên kết với cơ quan, tổ chức có thẩm quyền của nước ngoài cấp hoặc chứng nhận",
       "exactNameMatch": false,
       "sourceListUrl": "https://hongdienvbhp.github.io/thutuchanhchinh/",
       "sourceAuditSnapshot": "CongkhaiTTHC/data/source-hub/priority51-link-audit-20260906.json",
@@ -1192,8 +1192,8 @@
       "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     }
   ],
-  "canonicalDatasetVersion": "2026.09.18",
-  "canonicalSourceCommit": "d720f07659f8571e03f16ecdb3cc914598550c57",
+  "canonicalDatasetVersion": "2026.09.21",
+  "canonicalSourceCommit": "263bbc960d3bd83069c1a0ce7c7baca827875bc3",
   "canonicalContract": "data/thu-tuc.json",
   "liveVerificationManifest": "data/source-audit/dvcqg-live-verification-current.json",
   "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",

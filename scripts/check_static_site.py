@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import csv
 import json
@@ -198,7 +198,7 @@ for row in rows:
     status = str(row.get("verificationStatus") or "")
     if not name:
         bad_names.append(f"{code}: thiếu tên")
-    if len(name) > 200 or re.search(r"trình tự thực hiện|bước 1|Thủ tục Thủ tục", name, re.I):
+    if len(name) > 500 or re.search(r"trình tự thực hiện|bước 1|Thủ tục Thủ tục", name, re.I):
         bad_names.append(f"{code}: tên có dấu hiệu trích sai")
     if name.endswith(":") or name.count("(") != name.count(")") or "|" in name:
         bad_names.append(f"{code}: tên chưa sạch")
