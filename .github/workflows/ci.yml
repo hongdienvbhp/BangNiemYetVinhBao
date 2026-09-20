@@ -48,6 +48,9 @@ jobs:
           python scripts/build_master_data.py
           git diff --exit-code --             data/source-audit/city-updates-current.json             data/thu-tuc.json             data/master-data-audit.csv             data/master-data-excluded.json             data/BAO_CAO_MASTER_DATA_HIEN_HANH.md             js/master-data-fallback.js
 
+      - name: Validate canonical TTHC contract
+        run: python scripts/validate_canonical_contract.py
+
       - name: Static data and HTML audit
         run: python scripts/check_static_site.py
 

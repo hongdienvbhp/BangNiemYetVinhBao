@@ -991,7 +991,9 @@ def main() -> int:
     }
     master = {
         "format": "bangniemyet-vinhbao-master-data",
-        "version": 2,
+        "version": 3,
+        "dataset_version": BUILD_DATE.replace("-", "."),
+        "source_commit": "d720f07659f8571e03f16ecdb3cc914598550c57",
         "updatedAt": BUILD_DATE,
         "sourceSnapshotDate": SOURCE_SNAPSHOT_DATE,
         "source": OFFICIAL_SOURCE,
