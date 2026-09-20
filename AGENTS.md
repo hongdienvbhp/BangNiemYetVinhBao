@@ -72,3 +72,10 @@ Trước mỗi work package, executor phải tối ưu context/test/review theo 
 - Chat Web review chỉ bắt buộc cho architecture, security/PII, schema/migration, production, cross-repo, CI không rõ/fail, thay đổi lớn hoặc khi người dùng yêu cầu.
 - Linear quản lý portfolio/cross-repo; GitHub Issue/PR quản lý work package kỹ thuật. Không nhân đôi tracker.
 - Handoff chỉ cần HEAD/branch, Changes, Tests/CI, Blockers, NEXT_SAFE_ACTION; không chép lại toàn bộ lịch sử chat.
+
+## Phân vai ChatWeb / ChatWork và dữ liệu canonical
+
+- ChatWeb phân tích, chốt phạm vi và tạo work package; không nạp lại toàn repo hoặc tự duy trì bản sao dữ liệu.
+- ChatWork/ChatCode thực thi Issue → branch → test/CI → PR; chỉ đọc file/symbol liên quan và tái sử dụng context đã kiểm chứng.
+- `data/thu-tuc.json` là canonical contract duy nhất. Consumer chỉ tạo view/filter hoặc dữ liệu dẫn xuất; cấm duy trì Master TTHC độc lập.
+- Ưu tiên script/rule/API cho tác vụ xác định; không tạo vòng Agent-to-Agent khi một executor hoàn thành được.
