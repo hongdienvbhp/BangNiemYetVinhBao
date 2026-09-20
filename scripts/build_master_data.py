@@ -443,9 +443,14 @@ CITY_SPACING_FIXES = {
 def repair_city_name(value: str, code: str) -> str:
     if code in CITY_NAME_OVERRIDES:
         return CITY_NAME_OVERRIDES[code]
-    value = re.sub(r"\\s+", " ", value or "").strip()
+    value = value or ""
+    if "\x07" in value:
+        parts = [part.strip() for part in value.split("\x07") if part.strip()]
+        value = parts[0] if parts else ""
+    value = re.sub(r"\s+", " ", value).strip()
     for bad, good in CITY_SPACING_FIXES.items():
         value = value.replace(bad, good)
+    value = unicodedata.normalize("NFC", value)
     value = re.sub(r"^Thủ tục\\s+Thủ tục\\s+", "Thủ tục ", value, flags=re.IGNORECASE)
     return value.strip(" -–—;,.|")
 
