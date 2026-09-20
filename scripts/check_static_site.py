@@ -24,7 +24,7 @@ def read(rel: str) -> str:
     if not path.is_file():
         fail(f"Thiếu file: {rel}")
         return ""
-    return path.read_text(encoding="utf-8")
+    return path.read_text(encoding="utf-8-sig")
 
 
 def load_json(rel: str) -> dict:
@@ -53,6 +53,7 @@ decision_manifest = load_json("data/source-audit/official-decision-manifest.json
 source_index = load_json("data/source-audit/official-source-index.json")
 priority51_payload = load_json("data/priority-51-crosswalk.json")
 priority51_legal_payload = load_json("data/priority-51-legal-verification.json")
+dvcqg_live_payload = load_json("data/source-audit/dvcqg-live-verification-current.json")
 
 # Thẻ thủ tục phải thao tác được chỉ bằng bàn phím và trả focus sau khi đóng.
 keyboard_markers = {
@@ -326,6 +327,70 @@ p51_by_code = {str(row.get("code") or "").strip(): row for row in priority51_row
 master_by_code = {str(row.get("ma") or "").strip(): row for row in rows}
 excluded_by_code = {str(row.get("ma") or "").strip(): row for row in excluded}
 p51_in_master = sorted(set(p51_by_code) & code_set)
+
+# Crosswalk phải được reconcile từ canonical hiện hành, không giữ snapshot Master riêng.
+p51_summary = priority51_payload.get("summary") or {}
+if p51_summary.get("inCurrentMaster") != len(p51_in_master):
+    fail("Crosswalk summary.inCurrentMaster lệch canonical")
+if p51_summary.get("missingFromCurrentMaster") != len(set(p51_by_code) - code_set):
+    fail("Crosswalk summary.missingFromCurrentMaster lệch canonical")
+if priority51_payload.get("canonicalContract") != "data/thu-tuc.json":
+    fail("Crosswalk phải khai báo data/thu-tuc.json là canonical contract")
+if priority51_payload.get("canonicalDatasetVersion") != master.get("dataset_version"):
+    fail("Crosswalk canonicalDatasetVersion lệch canonical")
+if priority51_payload.get("canonicalSourceCommit") != master.get("source_commit"):
+    fail("Crosswalk canonicalSourceCommit lệch canonical")
+for code, cross in p51_by_code.items():
+    master_row = master_by_code.get(code)
+    if master_row:
+        if cross.get("inCurrentMaster") is not True:
+            fail(f"{code}: crosswalk chưa đánh dấu có trong canonical")
+        if cross.get("currentMasterName") != master_row.get("ten"):
+            fail(f"{code}: currentMasterName lệch canonical")
+        if cross.get("exactNameMatch") is not (cross.get("name") == master_row.get("ten")):
+            fail(f"{code}: exactNameMatch không phản ánh đúng chênh lệch tên")
+    else:
+        if cross.get("inCurrentMaster") is not False:
+            fail(f"{code}: crosswalk phải đánh dấu không có trong canonical")
+        if cross.get("currentMasterName") is not None or cross.get("exactNameMatch") is not None:
+            fail(f"{code}: mã ngoài canonical không được giữ currentMasterName/exactNameMatch")
+
+# Manifest DVCQG live chỉ xác minh identity/display kỹ thuật, không quyết định hiệu lực pháp lý.
+live_rows = dvcqg_live_payload.get("items") if isinstance(dvcqg_live_payload, dict) else None
+live_totals = dvcqg_live_payload.get("totals") if isinstance(dvcqg_live_payload, dict) else {}
+if dvcqg_live_payload.get("format") != "DVCQG_LIVE_READONLY_VERIFICATION":
+    fail("Manifest DVCQG live sai format")
+if not isinstance(live_rows, list) or len(live_rows) != 51:
+    fail("Manifest DVCQG live phải có 51 dòng")
+    live_rows = []
+live_by_code = {str(row.get("code") or "").strip(): row for row in live_rows}
+if set(live_by_code) != set(p51_by_code):
+    fail("Manifest DVCQG live lệch tập 51 mã crosswalk")
+live_verified = sum(
+    1
+    for row in live_rows
+    if row.get("result") in {"VERIFIED_VISIBLE_IDENTITY", "VERIFIED_VISIBLE_IDENTITY_AND_AGENCY"}
+)
+live_unresolved = sum(1 for row in live_rows if row.get("result") == "UNRESOLVED_VISIBLE_IDENTITY")
+live_waf = sum(1 for row in live_rows if row.get("result") == "WAF_REJECTED")
+if live_verified != 36 or live_unresolved != 15 or live_waf != 0:
+    fail(f"DVCQG live baseline phải là 36 verified / 15 unresolved / 0 WAF, hiện {live_verified}/{live_unresolved}/{live_waf}")
+if live_totals.get("items") != 51 or live_totals.get("unresolved") != live_unresolved or live_totals.get("waf_rejected") != live_waf:
+    fail("Manifest DVCQG live totals không tự đối chiếu")
+if p51_summary.get("liveVerifiedIdentity") != live_verified:
+    fail("Crosswalk summary.liveVerifiedIdentity lệch manifest")
+if p51_summary.get("liveUnresolved") != live_unresolved:
+    fail("Crosswalk summary.liveUnresolved lệch manifest")
+if p51_summary.get("liveWafRejected") != live_waf:
+    fail("Crosswalk summary.liveWafRejected lệch manifest")
+if priority51_payload.get("liveVerificationManifest") != "data/source-audit/dvcqg-live-verification-current.json":
+    fail("Crosswalk thiếu tham chiếu manifest DVCQG live")
+for code, cross in p51_by_code.items():
+    live_row = live_by_code.get(code) or {}
+    if cross.get("liveVerificationResult") != live_row.get("result"):
+        fail(f"{code}: liveVerificationResult lệch manifest")
+    if bool(cross.get("liveNameVisible")) != bool(live_row.get("name_visible")):
+        fail(f"{code}: liveNameVisible lệch manifest")
 
 # Ma trận kiểm chứng pháp lý của 37 mã từng thiếu ở bước trước.
 legal_rows = priority51_legal_payload.get("rows") if isinstance(priority51_legal_payload, dict) else None
