@@ -524,7 +524,7 @@
     },
     {
       "ma": "1.013822",
-      "ten": "Hỗ trợ chi phí mai táng đối với nghệ nhân nhân dân, nghệ nhân ưu tú có thu nh ập th ấp, hoàn cảnh khó khăn",
+      "ten": "Hỗ trợ chi phí mai táng đối với nghệ nhân nhân dân, nghệ nhân ưu tú có thu nhập thấp, hoàn cảnh khó khăn",
       "linhVuc": "BẢO TRỢ XÃ HỘI",
       "cap": "Xã",
       "nhanh": false,
@@ -846,7 +846,7 @@
     },
     {
       "ma": "2.000815",
-      "ten": "Chứng thực bản sao từ bản chính giấy t ờ, văn bản do cơ quan, tổ chức có thẩm quyền của Việt Nam; cơ quan, tổ chức có th ẩm quy ền của nước ngoài; cơ quan, tổ chức",
+      "ten": "Chứng thực bản sao từ bản chính giấy tờ, văn bản do cơ quan, tổ chức có thẩm quyền của Việt Nam; cơ quan, tổ chức có thẩm quyền của nước ngoài; cơ quan, tổ chức",
       "linhVuc": "CHỨNG THỰC",
       "cap": "Xã",
       "nhanh": true,
@@ -2746,7 +2746,7 @@
     },
     {
       "ma": "1.001138",
-      "ten": "Cấp Giấy phép hoạt động đối với tr ạm sơ cấp cứu chữ thập đỏ",
+      "ten": "Cấp Giấy phép hoạt động đối với trạm sơ cấp cứu chữ thập đỏ",
       "linhVuc": "KHÁM CHỮA BỆNH",
       "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
       "nhanh": false,
@@ -2788,7 +2788,7 @@
     },
     {
       "ma": "2.000559",
-      "ten": "Cấp Giấy phép hoạt động đối với đi ểm sơ cấp cứu chữ thập đỏ",
+      "ten": "Cấp Giấy phép hoạt động đối với điểm sơ cấp cứu chữ thập đỏ",
       "linhVuc": "KHÁM CHỮA BỆNH",
       "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
       "nhanh": false,
@@ -5649,7 +5649,7 @@
     },
     {
       "ma": "1.003915",
-      "ten": "Cấp Ch ứng chỉ hành nghề đấu giá",
+      "ten": "Cấp Chứng chỉ hành nghề đấu giá",
       "linhVuc": "TƯ PHÁP",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -7774,7 +7774,7 @@
     },
     {
       "ma": "1.012786",
-      "ten": "\u0007Cấp lại Giấy chứng nhận do bị mất \u0007",
+      "ten": "Cấp lại Giấy chứng nhận do bị mất",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -7836,7 +7836,7 @@
     },
     {
       "ma": "1.012783",
-      "ten": "\u0007Cấp đổi Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất\u0007",
+      "ten": "Cấp đổi Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -7898,7 +7898,7 @@
     },
     {
       "ma": "1.013825",
-      "ten": "\u0007Chuyển hình thức giao đất, cho thuê đất\u0007",
+      "ten": "Chuyển hình thức giao đất, cho thuê đất",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -7960,7 +7960,7 @@
     },
     {
       "ma": "1.011445",
-      "ten": "\u0007Chuyển tiếp đăng ký thế chấp quyền tài sản phát sinh từ hợp đồng mua bán nhà ở hoặc từ hợp đồng mua bán tài sản khác gắn liền với đất\u0007(1) Trong",
+      "ten": "Chuyển tiếp đăng ký thế chấp quyền tài sản phát sinh từ hợp đồng mua bán nhà ở hoặc từ hợp đồng mua bán tài sản khác gắn liền với đất",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -8022,7 +8022,7 @@
     },
     {
       "ma": "2.002750",
-      "ten": "\u0007Công bố Danh mục khu đất dự kiến thực hiện dự án thí điểm thực hiện dự án nhà ở thương mại thông qua thỏa thuận về nhận quyền sử dụng đất hoặc đang có quyền sử dụng đất\u0007",
+      "ten": "Công bố Danh mục khu đất dự kiến thực hiện dự án thí điểm thực hiện dự án nhà ở thương mại thông qua thỏa thuận về nhận quyền sử dụng đất hoặc đang có quyền sử dụng đất",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -8064,7 +8064,7 @@
     },
     {
       "ma": "1.012805",
-      "ten": "\u0007Giải quyết tranh chấp đất đai thuộc thẩm quyền của Chủ tịch Ủy ban nhân cấp tỉnh\u0007",
+      "ten": "Giải quyết tranh chấp đất đai thuộc thẩm quyền của Chủ tịch Ủy ban nhân cấp tỉnh",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -8126,7 +8126,7 @@
     },
     {
       "ma": "1.115649",
-      "ten": "\u0007Giao đất, cho thuê đất không thông qua hình thức đấu giá quyền sử dụng đất, không đấu thầu lựa chọn nhà đầu tư thực hiện dự án có sử dụng đất đối với trường hợp thuộc di",
+      "ten": "Giao đất, cho thuê đất không thông qua hình thức đấu giá quyền sử dụng đất, không đấu thầu lựa chọn nhà đầu tư thực hiện dự án có sử dụng đất đối với trường hợp thuộc di",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -8167,7 +8167,7 @@
     },
     {
       "ma": "1.013823",
-      "ten": "\u0007Giao đất, cho thuê đất, chuyển mục đích sử dụng đất đối với trường hợp giao đất, cho thuê đất không đấu giá quyền sử dụng đất, không đấu thầu lựa chọn nhà đầu tư thực hi",
+      "ten": "Giao đất, cho thuê đất, chuyển mục đích sử dụng đất đối với trường hợp giao đất, cho thuê đất không đấu giá quyền sử dụng đất, không đấu thầu lựa chọn nhà đầu tư thực hi",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -8229,7 +8229,7 @@
     },
     {
       "ma": "1.013828",
-      "ten": "\u0007Giao đất, cho thuê đất, giao khu vực biển để thực hiện hoạt động lấn biển\u0007",
+      "ten": "Giao đất, cho thuê đất, giao khu vực biển để thực hiện hoạt động lấn biển",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -8291,7 +8291,7 @@
     },
     {
       "ma": "1.012812",
-      "ten": "\u0007Hoà giải tranh chấp đất đai\u0007",
+      "ten": "Hoà giải tranh chấp đất đai",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã",
       "nhanh": false,
@@ -8350,7 +8350,7 @@
     },
     {
       "ma": "1.013946",
-      "ten": "\u0007Sử dụng đất kết hợp đa mục đích, gia hạn phương án sử dụng đất kết hợp đa mục đích\u0007",
+      "ten": "Sử dụng đất kết hợp đa mục đích, gia hạn phương án sử dụng đất kết hợp đa mục đích",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -8412,7 +8412,7 @@
     },
     {
       "ma": "1.012784",
-      "ten": "\u0007Tách thửa hoặc hợp thửa đất\u0007",
+      "ten": "Tách thửa hoặc hợp thửa đất",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -8474,7 +8474,7 @@
     },
     {
       "ma": "1.012821",
-      "ten": "\u0007Thẩm định, phê duyệt phương án sử dụng đất\u0007",
+      "ten": "Thẩm định, phê duyệt phương án sử dụng đất",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -8536,7 +8536,7 @@
     },
     {
       "ma": "1.012791",
-      "ten": "\u0007Thu hồi Giấy chứng nhận đã cấp không đúng quy định của pháp luật đất đai do người sử dụng đất, chủ sở hữu tài sản gắn liền với đất phát hiện và cấp lại Giấy chứng nhận s",
+      "ten": "Thu hồi Giấy chứng nhận đã cấp không đúng quy định của pháp luật đất đai do người sử dụng đất, chủ sở hữu tài sản gắn liền với đất phát hiện và cấp lại Giấy chứng nhận s",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -8598,7 +8598,7 @@
     },
     {
       "ma": "1.013128",
-      "ten": "\u0007Thủ tục thẩm định và phê duyệt kế hoạch ứng phó sự cố tràn dầu cơ sở kinh doanh xăng, dầu chỉ có nguy cơ xảy ra sự cố tràn dầu mức nhỏ trên đất liền, trên sông, trên bi",
+      "ten": "Thủ tục thẩm định và phê duyệt kế hoạch ứng phó sự cố tràn dầu cơ sở kinh doanh xăng, dầu chỉ có nguy cơ xảy ra sự cố tràn dầu mức nhỏ trên đất liền, trên sông, trên bi",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -8640,7 +8640,7 @@
     },
     {
       "ma": "1.013945",
-      "ten": "\u0007Tổ chức kinh tế nhận chuyển nhượng, thuê quyền sử dụng đất, nhận góp vốn bằng quyền sử dụng đất để thực hiện dự án đầu tư\u0007",
+      "ten": "Tổ chức kinh tế nhận chuyển nhượng, thuê quyền sử dụng đất, nhận góp vốn bằng quyền sử dụng đất để thực hiện dự án đầu tư",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -8702,7 +8702,7 @@
     },
     {
       "ma": "1.013947",
-      "ten": "\u0007Xác nhận tiếp tục sử dụng đất nông nghiệp\u0007",
+      "ten": "Xác nhận tiếp tục sử dụng đất nông nghiệp",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -8764,7 +8764,7 @@
     },
     {
       "ma": "1.013988",
-      "ten": "\u0007Xóa ghi nợ tiền sử dụng đất, lệ phí trước bạ trên Giấy chứng nhận đã cấp\u0007",
+      "ten": "Xóa ghi nợ tiền sử dụng đất, lệ phí trước bạ trên Giấy chứng nhận đã cấp",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -8826,7 +8826,7 @@
     },
     {
       "ma": "1.011443",
-      "ten": "\u0007Xoá Đăng ký biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất\u0007(1) Trong",
+      "ten": "Xoá Đăng ký biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -8888,7 +8888,7 @@
     },
     {
       "ma": "1.012766",
-      "ten": "\u0007Xóa đăng ký thuê, cho thuê lại quyền sử dụng đất trong dự án xây dựng kinh doanh kết cấu hạ tầng\u0007",
+      "ten": "Xóa đăng ký thuê, cho thuê lại quyền sử dụng đất trong dự án xây dựng kinh doanh kết cấu hạ tầng",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -8950,7 +8950,7 @@
     },
     {
       "ma": "1.011441",
-      "ten": "\u0007Đăng ký biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất\u0007(1) Trong",
+      "ten": "Đăng ký biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -9012,7 +9012,7 @@
     },
     {
       "ma": "1.013992",
-      "ten": "\u0007Đăng ký biến động chuyển mục đích sử dụng đất không phải xin phép cơ quan nhà nước có thẩm quyền\u0007",
+      "ten": "Đăng ký biến động chuyển mục đích sử dụng đất không phải xin phép cơ quan nhà nước có thẩm quyền",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -9074,7 +9074,7 @@
     },
     {
       "ma": "1.013831",
-      "ten": "\u0007Đăng ký biến động quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất trong các trường hợp chuyển đổi quyền sử dụng đất nông nghiệp mà không theo phương án dồn điền",
+      "ten": "Đăng ký biến động quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất trong các trường hợp chuyển đổi quyền sử dụng đất nông nghiệp mà không theo phương án dồn điền",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -9136,7 +9136,7 @@
     },
     {
       "ma": "1.013977",
-      "ten": "\u0007Đăng ký biến động thay đổi quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất do chia, tách, hợp nhất, sáp nhập tổ chức hoặc chuyển đổi mô hình tổ chức, chuyển đổi",
+      "ten": "Đăng ký biến động thay đổi quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất do chia, tách, hợp nhất, sáp nhập tổ chức hoặc chuyển đổi mô hình tổ chức, chuyển đổi",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -9198,7 +9198,7 @@
     },
     {
       "ma": "1.012793",
-      "ten": "\u0007Đăng ký biến động đối với trường hợp thành viên của hộ gia đình hoặc cá nhân đang sử dụng đất thành lập doanh nghiệp tư nhân và sử dụng đất vào hoạt động sản xuất kinh d",
+      "ten": "Đăng ký biến động đối với trường hợp thành viên của hộ gia đình hoặc cá nhân đang sử dụng đất thành lập doanh nghiệp tư nhân và sử dụng đất vào hoạt động sản xuất kinh d",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -9260,7 +9260,7 @@
     },
     {
       "ma": "1.013980",
-      "ten": "\u0007Đăng ký biến động đối với trường hợp thay đổi quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất theo thỏa thuận của các thành viên hộ gia đình hoặc của vợ và chồn",
+      "ten": "Đăng ký biến động đối với trường hợp thay đổi quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất theo thỏa thuận của các thành viên hộ gia đình hoặc của vợ và chồn",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -9322,7 +9322,7 @@
     },
     {
       "ma": "1.013833",
-      "ten": "\u0007Đăng ký biến động đối với trường hợp đổi tên hoặc thay đổi thông tin về người sử dụng đất, chủ sở hữu tài sản gắn liền với đất hoặc thay đổi số hiệu hoặc địa chỉ của thử",
+      "ten": "Đăng ký biến động đối với trường hợp đổi tên hoặc thay đổi thông tin về người sử dụng đất, chủ sở hữu tài sản gắn liền với đất hoặc thay đổi số hiệu hoặc địa chỉ của thử",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -9384,7 +9384,7 @@
     },
     {
       "ma": "1.013995",
-      "ten": "\u0007Đăng ký tài sản gắn liền với thửa đất đã được cấp Giấy chứng nhận hoặc đăng ký thay đổi về tài sản gắn liền với đất so với nội dung đã đăng ký, gia hạn thời hạn sở hữu n",
+      "ten": "Đăng ký tài sản gắn liền với thửa đất đã được cấp Giấy chứng nhận hoặc đăng ký thay đổi về tài sản gắn liền với đất so với nội dung đã đăng ký, gia hạn thời hạn sở hữu n",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -9446,7 +9446,7 @@
     },
     {
       "ma": "1.011442",
-      "ten": "\u0007Đăng ký thay đổi biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất\u0007(1) Trong",
+      "ten": "Đăng ký thay đổi biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -9508,7 +9508,7 @@
     },
     {
       "ma": "1.011444",
-      "ten": "\u0007Đăng ký thông báo xử lý tài sản bảo đảm, đăng ký thay đổi, xoá Đăng ký thông báo xử lý tài sản bảo đảm là quyền sử dụng đất, tài sản gắn liền với đất\u0007(1) Trong",
+      "ten": "Đăng ký thông báo xử lý tài sản bảo đảm, đăng ký thay đổi, xoá Đăng ký thông báo xử lý tài sản bảo đảm là quyền sử dụng đất, tài sản gắn liền với đất",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -9570,7 +9570,7 @@
     },
     {
       "ma": "1.012756",
-      "ten": "\u0007Đăng ký đất đai lần đầu đối với trường hợp được Nhà nước giao đất để quản lý\u0007",
+      "ten": "Đăng ký đất đai lần đầu đối với trường hợp được Nhà nước giao đất để quản lý",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -9632,7 +9632,7 @@
     },
     {
       "ma": "1.012787",
-      "ten": "\u0007Đăng ký, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất cho người nhận chuyển nhượng quyền sử dụng đất, quyền sở hữu nhà ở, công trình xây",
+      "ten": "Đăng ký, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất cho người nhận chuyển nhượng quyền sử dụng đất, quyền sở hữu nhà ở, công trình xây",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -9694,7 +9694,7 @@
     },
     {
       "ma": "1.012781",
-      "ten": "\u0007Đăng ký, cấp Giấy chứng nhận đối với thửa đất có diện tích tăng thêm do thay đổi ranh giới so với Giấy chứng nhận đã cấp\u0007Trường hợp phần diện tích tăng thêm do nhận chuy",
+      "ten": "Đăng ký, cấp Giấy chứng nhận đối với thửa đất có diện tích tăng thêm do thay đổi ranh giới so với Giấy chứng nhận đã cấp",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -9756,7 +9756,7 @@
     },
     {
       "ma": "1.012782",
-      "ten": "\u0007Đăng ký, cấp Giấy chứng nhận đối với trường hợp cá nhân, hộ gia đình đã được cấp Giấy chứng nhận một phần diện tích vào loại đất ở trước",
+      "ten": "Đăng ký, cấp Giấy chứng nhận đối với trường hợp cá nhân, hộ gia đình đã được cấp Giấy chứng nhận một phần diện tích vào loại đất ở trước",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -9818,7 +9818,7 @@
     },
     {
       "ma": "1.013994",
-      "ten": "\u0007Đăng ký, cấp Giấy chứng nhận đối với trường hợp chuyển nhượng dự án đầu tư có sử dụng đất\u0007- Đối với trường hợp đất để thực hiện dự án chưa được cấp Giấy chứng nhận: 20 n",
+      "ten": "Đăng ký, cấp Giấy chứng nhận đối với trường hợp chuyển nhượng dự án đầu tư có sử dụng đất",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -9880,7 +9880,7 @@
     },
     {
       "ma": "1.013993",
-      "ten": "\u0007Đăng ký, cấp Giấy chứng nhận đối với trường hợp hộ gia đình, cá nhân đang sử dụng đất không đúng mục đích đã được Nhà nước công nhận quyền sử dụng đất trước",
+      "ten": "Đăng ký, cấp Giấy chứng nhận đối với trường hợp hộ gia đình, cá nhân đang sử dụng đất không đúng mục đích đã được Nhà nước công nhận quyền sử dụng đất trước",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -9942,7 +9942,7 @@
     },
     {
       "ma": "1.012785",
-      "ten": "\u0007Đăng ký, cấp Giấy chứng nhận đối với trường hợp đã chuyển quyền sử dụng đất trước",
+      "ten": "Đăng ký, cấp Giấy chứng nhận đối với trường hợp đã chuyển quyền sử dụng đất trước",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -10004,7 +10004,7 @@
     },
     {
       "ma": "1.013827",
-      "ten": "\u0007Điều chỉnh quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất do sai sót về ranh giới, vị trí, diện tích, mục đích sử dụng giữa bản đồ quy hoạch, bả",
+      "ten": "Điều chỉnh quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất do sai sót về ranh giới, vị trí, diện tích, mục đích sử dụng giữa bản đồ quy hoạch, bả",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -10066,7 +10066,7 @@
     },
     {
       "ma": "1.013826",
-      "ten": "\u0007Điều chỉnh quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất do thay đổi căn cứ quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng",
+      "ten": "Điều chỉnh quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất do thay đổi căn cứ quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -10128,7 +10128,7 @@
     },
     {
       "ma": "1.012790",
-      "ten": "\u0007Đính chính Giấy chứng nhận đã cấp\u0007",
+      "ten": "Đính chính Giấy chứng nhận đã cấp",
       "linhVuc": "ĐẤT ĐAI",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
