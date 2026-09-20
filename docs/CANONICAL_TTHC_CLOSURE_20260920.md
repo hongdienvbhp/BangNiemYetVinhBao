@@ -60,6 +60,17 @@ Chuỗi canonical đã khép kín: `BangNiemYetVinhBao → tthc-monitor / Congkh
 - Blocker kỹ thuật: 0.
 - NEXT_SAFE_ACTION: maintenance only; chỉ mở lại khi canonical có thay đổi chính thức hoặc phát hiện regression.
 
+## Hậu kiểm sau closure
+
+- `BangNiemYetVinhBao/main@3754c86`: validator canonical PASS; 4/4 contract tests PASS; dataset giữ 254 TTHC, 50 TTHC trọng điểm hiện hành.
+- `tthc-monitor/main@ed95aab`: kiểm thử lại trên clean origin/main, gate chống Master PASS, compile PASS, 40/40 tests PASS.
+- `CongkhaiTTHC/main@614a83a`: không phát hiện Master TTHC riêng; `canonical:check` vẫn hiện diện.
+- `thutuchanhchinh/main@c21d1b9`: loại toàn bộ hard-code user-facing “51 thủ tục” ở trang phụ; mẫu số hiển thị chuyển sang `priorityProcedures.length`; hậu kiểm không còn chuỗi UI cũ.
+- Đã xóa các remote branch canonical/priority đã merge hoặc bị main thay thế:
+  - `BangNiemYetVinhBao`: `feat/issue-6-priority51-formality`, `feat/issue-8-priority51-legal-verification`, `fix/canonical-tthc-integrity-20260920`, `fix/dvcqg-priority51-reconcile-20260920`.
+  - `CongkhaiTTHC`: `data/verify-priority-51-batch-04`, `data/verify-priority-51-batch-20`, `feat/priority51-publication-readiness`, `feat/priority51-review-queue`, `feat/priority51-verified-enrichment`.
+- Các branch verification batch chưa merge còn lại của `CongkhaiTTHC` được giữ nguyên như hồ sơ lịch sử cho đến khi có archive/reconciliation rõ ràng; không được coi là nguồn runtime hoặc canonical.
+
 ## Kết luận
 
 **CANONICAL TTHC ARCHITECTURE CLOSED.**
