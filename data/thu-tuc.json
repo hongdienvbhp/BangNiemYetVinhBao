@@ -540,7 +540,7 @@
       "formalityId": "",
       "daXacMinh": true,
       "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
-      "nameSource": "official_source_name_verified",
+      "nameSource": "official_attachment_snippet",
       "sourceSnapshotDate": "2026-09-18",
       "sourceLatestDate": "2025-09-23",
       "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-bao-tro-xa-hoi/danh-muc-thu-tuc-hanh-chinh-bi-bai-bo-linh-vuc-bao-tro-xa-hoi-thuoc-pham-vi-chuc-nang-quan-ly-cu-785078",
@@ -862,7 +862,7 @@
       "formalityId": "019d2bfd-8e22-77ef-819f-e49460350904",
       "daXacMinh": true,
       "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
-      "nameSource": "official_source_name_verified",
+      "nameSource": "official_attachment_snippet",
       "sourceSnapshotDate": "2026-09-18",
       "sourceLatestDate": "2025-12-07",
       "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-827521",
@@ -926,59 +926,6 @@
       "stt": 21
     },
     {
-      "ma": "2.000992",
-      "ten": "Chứng thực chữ ký người dịch mà người dịch là cộng tác viên dịch thuật của Ủy ban nhân dân cấp xã, tổ chức hành nghề công chứng",
-      "linhVuc": "CHỨNG THỰC",
-      "cap": "Xã",
-      "nhanh": true,
-      "mienPhiTrucTuyen": false,
-      "phiDiaGioi": true,
-      "lienThong": false,
-      "phi": "",
-      "phiOnline": "",
-      "thoiHan": "",
-      "dvctt": "",
-      "coQuan": "",
-      "quyetDinh": "",
-      "formalityId": "019d2bfd-95d3-7258-b613-a71dbf432f07",
-      "daXacMinh": true,
-      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
-      "nameSource": "dvcqg_name_by_code_verified",
-      "sourceSnapshotDate": "2026-09-18",
-      "sourceLatestDate": "2025-12-07",
-      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-827521",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/12/phu-luc.signed-1-639007020695231661.pdf",
-      "sourceEvidence": [
-        {
-          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-827521",
-          "articleTitle": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Tư pháp",
-          "publishedDate": "2025-12-07",
-          "classification": "non_geo_tthc",
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/12/phu-luc.signed-1-639007020695231661.pdf",
-          "attachmentSha256": "3d41527786cd25addd91fc634d811d145e67fa6d71284ed4b240d4e65db8ce4f",
-          "decisionNumbers": [],
-          "repealContext": false
-        },
-        {
-          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vuc-chung-thuc-thuoc-pham-vi--810099",
-          "articleTitle": "Danh mục thủ tục hành chính được sửa đổi, bổ sung và bị bãi bỏ lĩnh vực chứng thực thuộc phạm vi, chức năng quản lý của Sở Tư pháp.",
-          "publishedDate": "2025-11-11",
-          "classification": "public_tthc",
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phuluc-i-qd-3152-bo-tu-phap638984589798308803.docx",
-          "attachmentSha256": "34ecf4683691477ce7bac69084d046b126f2382fe4552be2f6b7d430bfe3b249",
-          "decisionNumbers": [],
-          "repealContext": false
-        }
-      ],
-      "dvcMappingStatus": "verified_priority51_crosswalk",
-      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-95d3-7258-b613-a71dbf432f07&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
-      "dvcMappingScrapedAt": "2026-09-06",
-      "priority51": true,
-      "priority51Ordinal": 49,
-      "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 22
-    },
-    {
       "ma": "2.001035",
       "ten": "Chứng thực giao dịch liên quan đến tài sản là động sản, quyền sử dụng đất, nhà ở",
       "linhVuc": "CHỨNG THỰC",
@@ -1019,7 +966,7 @@
       "priority51": true,
       "priority51Ordinal": 47,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 23
+      "stt": 22
     },
     {
       "ma": "2.001406",
@@ -1085,7 +1032,7 @@
       "priority51": true,
       "priority51Ordinal": 44,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 24
+      "stt": 23
     },
     {
       "ma": "2.001016",
@@ -1151,7 +1098,7 @@
       "priority51": true,
       "priority51Ordinal": 43,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 25
+      "stt": 24
     },
     {
       "ma": "2.000913",
@@ -1217,7 +1164,7 @@
       "priority51": true,
       "priority51Ordinal": 46,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 26
+      "stt": 25
     },
     {
       "ma": "2.000942",
@@ -1269,6 +1216,59 @@
       "dvcMappingScrapedAt": "2026-09-06",
       "priority51": true,
       "priority51Ordinal": 51,
+      "priority51MappingStatus": "verified_technical_mapping",
+      "stt": 26
+    },
+    {
+      "ma": "2.000992",
+      "ten": "Chứng thực chữ ký người dịch mà người dịch là cộng tác viên dịch thuật của Ủy ban nhân dân cấp xã, tổ chức hành nghề công chứng",
+      "linhVuc": "CHỨNG THỰC",
+      "cap": "Xã",
+      "nhanh": true,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": true,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "019d2bfd-95d3-7258-b613-a71dbf432f07",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "dvcqg_name_by_code_verified",
+      "sourceSnapshotDate": "2026-09-18",
+      "sourceLatestDate": "2025-12-07",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-827521",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/12/phu-luc.signed-1-639007020695231661.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-827521",
+          "articleTitle": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Tư pháp",
+          "publishedDate": "2025-12-07",
+          "classification": "non_geo_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/12/phu-luc.signed-1-639007020695231661.pdf",
+          "attachmentSha256": "3d41527786cd25addd91fc634d811d145e67fa6d71284ed4b240d4e65db8ce4f",
+          "decisionNumbers": [],
+          "repealContext": false
+        },
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vuc-chung-thuc-thuoc-pham-vi--810099",
+          "articleTitle": "Danh mục thủ tục hành chính được sửa đổi, bổ sung và bị bãi bỏ lĩnh vực chứng thực thuộc phạm vi, chức năng quản lý của Sở Tư pháp.",
+          "publishedDate": "2025-11-11",
+          "classification": "public_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phuluc-i-qd-3152-bo-tu-phap638984589798308803.docx",
+          "attachmentSha256": "34ecf4683691477ce7bac69084d046b126f2382fe4552be2f6b7d430bfe3b249",
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "dvcMappingStatus": "verified_priority51_crosswalk",
+      "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-95d3-7258-b613-a71dbf432f07&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "dvcMappingScrapedAt": "2026-09-06",
+      "priority51": true,
+      "priority51Ordinal": 49,
       "priority51MappingStatus": "verified_technical_mapping",
       "stt": 27
     },
@@ -1498,7 +1498,7 @@
     },
     {
       "ma": "2.002481",
-      "ten": "Chuyển trường đối với học sinh trung học cơ sở",
+      "ten": "Chuyển trường đối với học sinh trung học cơ sở.",
       "linhVuc": "GIÁO DỤC",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -1512,7 +1512,7 @@
       "coQuan": "",
       "quyetDinh": "2851/QĐ-UBND",
       "formalityId": "019d2bf8-cffd-7189-bb9d-b8436bafc764",
-      "nameSource": "priority51_official_legal_verification",
+      "nameSource": "dvcqg_name_by_code_verified",
       "sourceSnapshotDate": "2026-09-18",
       "sourceLatestDate": "2025-07-14",
       "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6805/tintuc/2025/12/thong-bao-danh-muc-thu-tuc-hanh-chinh-phi-dia-gioi.signed639004671669010703.pdf",
@@ -2762,7 +2762,7 @@
       "formalityId": "",
       "daXacMinh": true,
       "verificationStatus": "official_city_decision_commune_reception",
-      "nameSource": "official_source_name_verified",
+      "nameSource": "official_city_decision_pdf",
       "sourceSnapshotDate": "2026-09-18",
       "sourceLatestDate": "2026-09-11",
       "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3643-qd-ubnd-ngay-11-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-965145",
@@ -2804,7 +2804,7 @@
       "formalityId": "",
       "daXacMinh": true,
       "verificationStatus": "official_city_decision_commune_reception",
-      "nameSource": "official_source_name_verified",
+      "nameSource": "official_city_decision_pdf",
       "sourceSnapshotDate": "2026-09-18",
       "sourceLatestDate": "2026-09-11",
       "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3643-qd-ubnd-ngay-11-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-965145",
@@ -3189,7 +3189,7 @@
     },
     {
       "ma": "1.010803",
-      "ten": "Giải quyết chế độ trợ cấp thờ cúng liệt sĩ",
+      "ten": "Giải quyết chế độ trợ cấp thờ cúng liệt sĩ.",
       "linhVuc": "NGƯỜI CÓ CÔNG",
       "cap": "Xã / điểm tiếp nhận cấp xã",
       "nhanh": false,
@@ -3203,7 +3203,7 @@
       "coQuan": "",
       "quyetDinh": "",
       "formalityId": "019d2bfa-fc0c-7046-b5dc-04303a18608d",
-      "nameSource": "priority51_official_legal_verification",
+      "nameSource": "dvcqg_name_by_code_verified",
       "sourceSnapshotDate": "2026-09-18",
       "sourceLatestDate": "2026-09-07",
       "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6856/tintuc/2025/11/13.11.dmtthc.signed638989743120385193.pdf",
@@ -3440,6 +3440,462 @@
       "stt": 73
     },
     {
+      "ma": "1.012942",
+      "ten": "Thủ tục báo cáo tổ chức đại hội thành lập, đại hội nhiệm kỳ, đại hội bất thường của hội",
+      "linhVuc": "NỘI VỤ",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": true,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "official_attachment_snippet",
+      "sourceSnapshotDate": "2026-09-18",
+      "sourceLatestDate": "2025-11-26",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
+          "articleTitle": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Nội vụ.",
+          "publishedDate": "2025-11-26",
+          "classification": "non_geo_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
+          "attachmentSha256": "abe382a3c76cf56635578d52d4e798c404ccc667f8b97b32952767d1f261cb4d",
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51": false,
+      "stt": 74
+    },
+    {
+      "ma": "1.013017",
+      "ten": "Thủ tục cấp giấy phép thành lập và công nhận điều lệ quỹ",
+      "linhVuc": "NỘI VỤ",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": true,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "official_attachment_snippet",
+      "sourceSnapshotDate": "2026-09-18",
+      "sourceLatestDate": "2025-11-26",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
+          "articleTitle": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Nội vụ.",
+          "publishedDate": "2025-11-26",
+          "classification": "non_geo_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
+          "attachmentSha256": "abe382a3c76cf56635578d52d4e798c404ccc667f8b97b32952767d1f261cb4d",
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51": false,
+      "stt": 75
+    },
+    {
+      "ma": "1.013020",
+      "ten": "Thủ tục cấp lại giấy phép thành lập và công nhận điều lệ quỹ",
+      "linhVuc": "NỘI VỤ",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": true,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "official_attachment_snippet",
+      "sourceSnapshotDate": "2026-09-18",
+      "sourceLatestDate": "2025-11-26",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
+          "articleTitle": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Nội vụ.",
+          "publishedDate": "2025-11-26",
+          "classification": "non_geo_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
+          "attachmentSha256": "abe382a3c76cf56635578d52d4e798c404ccc667f8b97b32952767d1f261cb4d",
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51": false,
+      "stt": 76
+    },
+    {
+      "ma": "1.012945",
+      "ten": "Thủ tục chia, tách; sáp nhập; hợp nhất hội",
+      "linhVuc": "NỘI VỤ",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": true,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "official_attachment_snippet",
+      "sourceSnapshotDate": "2026-09-18",
+      "sourceLatestDate": "2025-11-26",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
+          "articleTitle": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Nội vụ.",
+          "publishedDate": "2025-11-26",
+          "classification": "non_geo_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
+          "attachmentSha256": "abe382a3c76cf56635578d52d4e798c404ccc667f8b97b32952767d1f261cb4d",
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51": false,
+      "stt": 77
+    },
+    {
+      "ma": "1.012948",
+      "ten": "Thủ tục cho phép hội hoạt động trở lại sau khi bị đình chỉ có thời hạn",
+      "linhVuc": "NỘI VỤ",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": true,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "official_attachment_snippet",
+      "sourceSnapshotDate": "2026-09-18",
+      "sourceLatestDate": "2025-11-26",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
+          "articleTitle": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Nội vụ.",
+          "publishedDate": "2025-11-26",
+          "classification": "non_geo_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
+          "attachmentSha256": "abe382a3c76cf56635578d52d4e798c404ccc667f8b97b32952767d1f261cb4d",
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51": false,
+      "stt": 78
+    },
+    {
+      "ma": "1.012947",
+      "ten": "Thủ tục cho phép hội đặt chi nhánh hoặc văn phòng đại diện",
+      "linhVuc": "NỘI VỤ",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": true,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "official_attachment_snippet",
+      "sourceSnapshotDate": "2026-09-18",
+      "sourceLatestDate": "2025-11-26",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
+          "articleTitle": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Nội vụ.",
+          "publishedDate": "2025-11-26",
+          "classification": "non_geo_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
+          "attachmentSha256": "abe382a3c76cf56635578d52d4e798c404ccc667f8b97b32952767d1f261cb4d",
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51": false,
+      "stt": 79
+    },
+    {
+      "ma": "1.013021",
+      "ten": "Thủ tục cho phép quỹ hoạt động trở lại sau khi bị tạm đình chỉ hoạt động",
+      "linhVuc": "NỘI VỤ",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": true,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "official_attachment_snippet",
+      "sourceSnapshotDate": "2026-09-18",
+      "sourceLatestDate": "2025-11-26",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
+          "articleTitle": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Nội vụ.",
+          "publishedDate": "2025-11-26",
+          "classification": "non_geo_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
+          "attachmentSha256": "abe382a3c76cf56635578d52d4e798c404ccc667f8b97b32952767d1f261cb4d",
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51": false,
+      "stt": 80
+    },
+    {
+      "ma": "1.013018",
+      "ten": "Thủ tục công nhận quỹ đủ điều kiện hoạt động và công nhận thành viên Hội",
+      "linhVuc": "NỘI VỤ",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": true,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "official_attachment_snippet",
+      "sourceSnapshotDate": "2026-09-18",
+      "sourceLatestDate": "2025-11-26",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
+          "articleTitle": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Nội vụ.",
+          "publishedDate": "2025-11-26",
+          "classification": "non_geo_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
+          "attachmentSha256": "abe382a3c76cf56635578d52d4e798c404ccc667f8b97b32952767d1f261cb4d",
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51": false,
+      "stt": 81
+    },
+    {
+      "ma": "1.013019",
+      "ten": "Thủ tục công nhận điều lệ (sửa đổi, bổ sung) quỹ; đổi tên quỹ",
+      "linhVuc": "NỘI VỤ",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": true,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "official_attachment_snippet",
+      "sourceSnapshotDate": "2026-09-18",
+      "sourceLatestDate": "2025-11-26",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
+          "articleTitle": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Nội vụ.",
+          "publishedDate": "2025-11-26",
+          "classification": "non_geo_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
+          "attachmentSha256": "abe382a3c76cf56635578d52d4e798c404ccc667f8b97b32952767d1f261cb4d",
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51": false,
+      "stt": 82
+    },
+    {
+      "ma": "1.012946",
+      "ten": "Thủ tục hội tự giải thể",
+      "linhVuc": "NỘI VỤ",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": true,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "official_attachment_snippet",
+      "sourceSnapshotDate": "2026-09-18",
+      "sourceLatestDate": "2025-11-26",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
+          "articleTitle": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Nội vụ.",
+          "publishedDate": "2025-11-26",
+          "classification": "non_geo_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
+          "attachmentSha256": "abe382a3c76cf56635578d52d4e798c404ccc667f8b97b32952767d1f261cb4d",
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51": false,
+      "stt": 83
+    },
+    {
+      "ma": "1.013023",
+      "ten": "Thủ tục quỹ tự giải thể",
+      "linhVuc": "NỘI VỤ",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": true,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "official_attachment_snippet",
+      "sourceSnapshotDate": "2026-09-18",
+      "sourceLatestDate": "2025-11-26",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
+          "articleTitle": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Nội vụ.",
+          "publishedDate": "2025-11-26",
+          "classification": "non_geo_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
+          "attachmentSha256": "abe382a3c76cf56635578d52d4e798c404ccc667f8b97b32952767d1f261cb4d",
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51": false,
+      "stt": 84
+    },
+    {
+      "ma": "1.012929",
+      "ten": "Thủ tục thành lập hội",
+      "linhVuc": "NỘI VỤ",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": true,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "official_attachment_snippet",
+      "sourceSnapshotDate": "2026-09-18",
+      "sourceLatestDate": "2025-11-26",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
+          "articleTitle": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Nội vụ.",
+          "publishedDate": "2025-11-26",
+          "classification": "non_geo_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
+          "attachmentSha256": "abe382a3c76cf56635578d52d4e798c404ccc667f8b97b32952767d1f261cb4d",
+          "decisionNumbers": [],
+          "repealContext": false
+        }
+      ],
+      "priority51": false,
+      "stt": 85
+    },
+    {
       "ma": "1.014111",
       "ten": "Thi tuyển công chức",
       "linhVuc": "NỘI VỤ",
@@ -3491,462 +3947,6 @@
         }
       ],
       "tiepNhanCapXa": true,
-      "priority51": false,
-      "stt": 74
-    },
-    {
-      "ma": "1.012942",
-      "ten": "Thủ tục báo cáo tổ chức đại hội thành lập, đại hội nhiệm kỳ, đại hội bất thường của hội",
-      "linhVuc": "NỘI VỤ",
-      "cap": "Xã / điểm tiếp nhận cấp xã",
-      "nhanh": false,
-      "mienPhiTrucTuyen": false,
-      "phiDiaGioi": true,
-      "lienThong": false,
-      "phi": "",
-      "phiOnline": "",
-      "thoiHan": "",
-      "dvctt": "",
-      "coQuan": "",
-      "quyetDinh": "",
-      "formalityId": "",
-      "daXacMinh": true,
-      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
-      "nameSource": "official_attachment_snippet",
-      "sourceSnapshotDate": "2026-09-18",
-      "sourceLatestDate": "2025-11-26",
-      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
-      "sourceEvidence": [
-        {
-          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
-          "articleTitle": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Nội vụ.",
-          "publishedDate": "2025-11-26",
-          "classification": "non_geo_tthc",
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
-          "attachmentSha256": "abe382a3c76cf56635578d52d4e798c404ccc667f8b97b32952767d1f261cb4d",
-          "decisionNumbers": [],
-          "repealContext": false
-        }
-      ],
-      "priority51": false,
-      "stt": 75
-    },
-    {
-      "ma": "1.013017",
-      "ten": "Thủ tục cấp giấy phép thành lập và công nhận điều lệ quỹ",
-      "linhVuc": "NỘI VỤ",
-      "cap": "Xã / điểm tiếp nhận cấp xã",
-      "nhanh": false,
-      "mienPhiTrucTuyen": false,
-      "phiDiaGioi": true,
-      "lienThong": false,
-      "phi": "",
-      "phiOnline": "",
-      "thoiHan": "",
-      "dvctt": "",
-      "coQuan": "",
-      "quyetDinh": "",
-      "formalityId": "",
-      "daXacMinh": true,
-      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
-      "nameSource": "official_attachment_snippet",
-      "sourceSnapshotDate": "2026-09-18",
-      "sourceLatestDate": "2025-11-26",
-      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
-      "sourceEvidence": [
-        {
-          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
-          "articleTitle": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Nội vụ.",
-          "publishedDate": "2025-11-26",
-          "classification": "non_geo_tthc",
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
-          "attachmentSha256": "abe382a3c76cf56635578d52d4e798c404ccc667f8b97b32952767d1f261cb4d",
-          "decisionNumbers": [],
-          "repealContext": false
-        }
-      ],
-      "priority51": false,
-      "stt": 76
-    },
-    {
-      "ma": "1.013020",
-      "ten": "Thủ tục cấp lại giấy phép thành lập và công nhận điều lệ quỹ",
-      "linhVuc": "NỘI VỤ",
-      "cap": "Xã / điểm tiếp nhận cấp xã",
-      "nhanh": false,
-      "mienPhiTrucTuyen": false,
-      "phiDiaGioi": true,
-      "lienThong": false,
-      "phi": "",
-      "phiOnline": "",
-      "thoiHan": "",
-      "dvctt": "",
-      "coQuan": "",
-      "quyetDinh": "",
-      "formalityId": "",
-      "daXacMinh": true,
-      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
-      "nameSource": "official_attachment_snippet",
-      "sourceSnapshotDate": "2026-09-18",
-      "sourceLatestDate": "2025-11-26",
-      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
-      "sourceEvidence": [
-        {
-          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
-          "articleTitle": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Nội vụ.",
-          "publishedDate": "2025-11-26",
-          "classification": "non_geo_tthc",
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
-          "attachmentSha256": "abe382a3c76cf56635578d52d4e798c404ccc667f8b97b32952767d1f261cb4d",
-          "decisionNumbers": [],
-          "repealContext": false
-        }
-      ],
-      "priority51": false,
-      "stt": 77
-    },
-    {
-      "ma": "1.012945",
-      "ten": "Thủ tục chia, tách; sáp nhập; hợp nhất hội",
-      "linhVuc": "NỘI VỤ",
-      "cap": "Xã / điểm tiếp nhận cấp xã",
-      "nhanh": false,
-      "mienPhiTrucTuyen": false,
-      "phiDiaGioi": true,
-      "lienThong": false,
-      "phi": "",
-      "phiOnline": "",
-      "thoiHan": "",
-      "dvctt": "",
-      "coQuan": "",
-      "quyetDinh": "",
-      "formalityId": "",
-      "daXacMinh": true,
-      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
-      "nameSource": "official_attachment_snippet",
-      "sourceSnapshotDate": "2026-09-18",
-      "sourceLatestDate": "2025-11-26",
-      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
-      "sourceEvidence": [
-        {
-          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
-          "articleTitle": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Nội vụ.",
-          "publishedDate": "2025-11-26",
-          "classification": "non_geo_tthc",
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
-          "attachmentSha256": "abe382a3c76cf56635578d52d4e798c404ccc667f8b97b32952767d1f261cb4d",
-          "decisionNumbers": [],
-          "repealContext": false
-        }
-      ],
-      "priority51": false,
-      "stt": 78
-    },
-    {
-      "ma": "1.012948",
-      "ten": "Thủ tục cho phép hội hoạt động trở lại sau khi bị đình chỉ có thời hạn",
-      "linhVuc": "NỘI VỤ",
-      "cap": "Xã / điểm tiếp nhận cấp xã",
-      "nhanh": false,
-      "mienPhiTrucTuyen": false,
-      "phiDiaGioi": true,
-      "lienThong": false,
-      "phi": "",
-      "phiOnline": "",
-      "thoiHan": "",
-      "dvctt": "",
-      "coQuan": "",
-      "quyetDinh": "",
-      "formalityId": "",
-      "daXacMinh": true,
-      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
-      "nameSource": "official_attachment_snippet",
-      "sourceSnapshotDate": "2026-09-18",
-      "sourceLatestDate": "2025-11-26",
-      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
-      "sourceEvidence": [
-        {
-          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
-          "articleTitle": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Nội vụ.",
-          "publishedDate": "2025-11-26",
-          "classification": "non_geo_tthc",
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
-          "attachmentSha256": "abe382a3c76cf56635578d52d4e798c404ccc667f8b97b32952767d1f261cb4d",
-          "decisionNumbers": [],
-          "repealContext": false
-        }
-      ],
-      "priority51": false,
-      "stt": 79
-    },
-    {
-      "ma": "1.012947",
-      "ten": "Thủ tục cho phép hội đặt chi nhánh hoặc văn phòng đại diện",
-      "linhVuc": "NỘI VỤ",
-      "cap": "Xã / điểm tiếp nhận cấp xã",
-      "nhanh": false,
-      "mienPhiTrucTuyen": false,
-      "phiDiaGioi": true,
-      "lienThong": false,
-      "phi": "",
-      "phiOnline": "",
-      "thoiHan": "",
-      "dvctt": "",
-      "coQuan": "",
-      "quyetDinh": "",
-      "formalityId": "",
-      "daXacMinh": true,
-      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
-      "nameSource": "official_attachment_snippet",
-      "sourceSnapshotDate": "2026-09-18",
-      "sourceLatestDate": "2025-11-26",
-      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
-      "sourceEvidence": [
-        {
-          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
-          "articleTitle": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Nội vụ.",
-          "publishedDate": "2025-11-26",
-          "classification": "non_geo_tthc",
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
-          "attachmentSha256": "abe382a3c76cf56635578d52d4e798c404ccc667f8b97b32952767d1f261cb4d",
-          "decisionNumbers": [],
-          "repealContext": false
-        }
-      ],
-      "priority51": false,
-      "stt": 80
-    },
-    {
-      "ma": "1.013021",
-      "ten": "Thủ tục cho phép quỹ hoạt động trở lại sau khi bị tạm đình chỉ hoạt động",
-      "linhVuc": "NỘI VỤ",
-      "cap": "Xã / điểm tiếp nhận cấp xã",
-      "nhanh": false,
-      "mienPhiTrucTuyen": false,
-      "phiDiaGioi": true,
-      "lienThong": false,
-      "phi": "",
-      "phiOnline": "",
-      "thoiHan": "",
-      "dvctt": "",
-      "coQuan": "",
-      "quyetDinh": "",
-      "formalityId": "",
-      "daXacMinh": true,
-      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
-      "nameSource": "official_attachment_snippet",
-      "sourceSnapshotDate": "2026-09-18",
-      "sourceLatestDate": "2025-11-26",
-      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
-      "sourceEvidence": [
-        {
-          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
-          "articleTitle": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Nội vụ.",
-          "publishedDate": "2025-11-26",
-          "classification": "non_geo_tthc",
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
-          "attachmentSha256": "abe382a3c76cf56635578d52d4e798c404ccc667f8b97b32952767d1f261cb4d",
-          "decisionNumbers": [],
-          "repealContext": false
-        }
-      ],
-      "priority51": false,
-      "stt": 81
-    },
-    {
-      "ma": "1.013018",
-      "ten": "Thủ tục công nhận quỹ đủ điều kiện hoạt động và công nhận thành viên Hội",
-      "linhVuc": "NỘI VỤ",
-      "cap": "Xã / điểm tiếp nhận cấp xã",
-      "nhanh": false,
-      "mienPhiTrucTuyen": false,
-      "phiDiaGioi": true,
-      "lienThong": false,
-      "phi": "",
-      "phiOnline": "",
-      "thoiHan": "",
-      "dvctt": "",
-      "coQuan": "",
-      "quyetDinh": "",
-      "formalityId": "",
-      "daXacMinh": true,
-      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
-      "nameSource": "official_attachment_snippet",
-      "sourceSnapshotDate": "2026-09-18",
-      "sourceLatestDate": "2025-11-26",
-      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
-      "sourceEvidence": [
-        {
-          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
-          "articleTitle": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Nội vụ.",
-          "publishedDate": "2025-11-26",
-          "classification": "non_geo_tthc",
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
-          "attachmentSha256": "abe382a3c76cf56635578d52d4e798c404ccc667f8b97b32952767d1f261cb4d",
-          "decisionNumbers": [],
-          "repealContext": false
-        }
-      ],
-      "priority51": false,
-      "stt": 82
-    },
-    {
-      "ma": "1.013019",
-      "ten": "Thủ tục công nhận điều lệ (sửa đổi, bổ sung) quỹ; đổi tên quỹ",
-      "linhVuc": "NỘI VỤ",
-      "cap": "Xã / điểm tiếp nhận cấp xã",
-      "nhanh": false,
-      "mienPhiTrucTuyen": false,
-      "phiDiaGioi": true,
-      "lienThong": false,
-      "phi": "",
-      "phiOnline": "",
-      "thoiHan": "",
-      "dvctt": "",
-      "coQuan": "",
-      "quyetDinh": "",
-      "formalityId": "",
-      "daXacMinh": true,
-      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
-      "nameSource": "official_attachment_snippet",
-      "sourceSnapshotDate": "2026-09-18",
-      "sourceLatestDate": "2025-11-26",
-      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
-      "sourceEvidence": [
-        {
-          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
-          "articleTitle": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Nội vụ.",
-          "publishedDate": "2025-11-26",
-          "classification": "non_geo_tthc",
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
-          "attachmentSha256": "abe382a3c76cf56635578d52d4e798c404ccc667f8b97b32952767d1f261cb4d",
-          "decisionNumbers": [],
-          "repealContext": false
-        }
-      ],
-      "priority51": false,
-      "stt": 83
-    },
-    {
-      "ma": "1.012946",
-      "ten": "Thủ tục hội tự giải thể",
-      "linhVuc": "NỘI VỤ",
-      "cap": "Xã / điểm tiếp nhận cấp xã",
-      "nhanh": false,
-      "mienPhiTrucTuyen": false,
-      "phiDiaGioi": true,
-      "lienThong": false,
-      "phi": "",
-      "phiOnline": "",
-      "thoiHan": "",
-      "dvctt": "",
-      "coQuan": "",
-      "quyetDinh": "",
-      "formalityId": "",
-      "daXacMinh": true,
-      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
-      "nameSource": "official_attachment_snippet",
-      "sourceSnapshotDate": "2026-09-18",
-      "sourceLatestDate": "2025-11-26",
-      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
-      "sourceEvidence": [
-        {
-          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
-          "articleTitle": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Nội vụ.",
-          "publishedDate": "2025-11-26",
-          "classification": "non_geo_tthc",
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
-          "attachmentSha256": "abe382a3c76cf56635578d52d4e798c404ccc667f8b97b32952767d1f261cb4d",
-          "decisionNumbers": [],
-          "repealContext": false
-        }
-      ],
-      "priority51": false,
-      "stt": 84
-    },
-    {
-      "ma": "1.013023",
-      "ten": "Thủ tục quỹ tự giải thể",
-      "linhVuc": "NỘI VỤ",
-      "cap": "Xã / điểm tiếp nhận cấp xã",
-      "nhanh": false,
-      "mienPhiTrucTuyen": false,
-      "phiDiaGioi": true,
-      "lienThong": false,
-      "phi": "",
-      "phiOnline": "",
-      "thoiHan": "",
-      "dvctt": "",
-      "coQuan": "",
-      "quyetDinh": "",
-      "formalityId": "",
-      "daXacMinh": true,
-      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
-      "nameSource": "official_attachment_snippet",
-      "sourceSnapshotDate": "2026-09-18",
-      "sourceLatestDate": "2025-11-26",
-      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
-      "sourceEvidence": [
-        {
-          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
-          "articleTitle": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Nội vụ.",
-          "publishedDate": "2025-11-26",
-          "classification": "non_geo_tthc",
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
-          "attachmentSha256": "abe382a3c76cf56635578d52d4e798c404ccc667f8b97b32952767d1f261cb4d",
-          "decisionNumbers": [],
-          "repealContext": false
-        }
-      ],
-      "priority51": false,
-      "stt": 85
-    },
-    {
-      "ma": "1.012929",
-      "ten": "Thủ tục thành lập hội",
-      "linhVuc": "NỘI VỤ",
-      "cap": "Xã / điểm tiếp nhận cấp xã",
-      "nhanh": false,
-      "mienPhiTrucTuyen": false,
-      "phiDiaGioi": true,
-      "lienThong": false,
-      "phi": "",
-      "phiOnline": "",
-      "thoiHan": "",
-      "dvctt": "",
-      "coQuan": "",
-      "quyetDinh": "",
-      "formalityId": "",
-      "daXacMinh": true,
-      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
-      "nameSource": "official_attachment_snippet",
-      "sourceSnapshotDate": "2026-09-18",
-      "sourceLatestDate": "2025-11-26",
-      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
-      "sourceEvidence": [
-        {
-          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-824426",
-          "articleTitle": "Danh mục thủ tục hành chính thực hiện không phụ thuộc vào địa giới hành chính trong phạm vi thành phố thuộc phạm vi, chức năng quản lý của Sở Nội vụ.",
-          "publishedDate": "2025-11-26",
-          "classification": "non_geo_tthc",
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phu-luc_sonoivu.signed639000425212465648.pdf",
-          "attachmentSha256": "abe382a3c76cf56635578d52d4e798c404ccc667f8b97b32952767d1f261cb4d",
-          "decisionNumbers": [],
-          "repealContext": false
-        }
-      ],
       "priority51": false,
       "stt": 86
     },
@@ -5648,6 +5648,47 @@
       "stt": 127
     },
     {
+      "ma": "1.003915",
+      "ten": "Thủ tục cấp Chứng chỉ hành nghề đấu giá",
+      "linhVuc": "TƯ PHÁP",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "10 ngày làm việc",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "1444/QĐ-BTP; 1458/QĐ-BTP",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "dvcqg_name_by_code_verified",
+      "sourceSnapshotDate": "2026-09-18",
+      "sourceLatestDate": "2026-06-25",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/quyet-dinh-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vu-921702",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/quyet-dinh-so-2320-cong-bo-dm-tthc-sua-doi-bo-sung-va-bai-bo-thuoc-quan-ly-cua-so-tu-phap639178246917435630639180044385831717.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/quyet-dinh-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vu-921702",
+          "articleTitle": "Quyết định về việc công bố Danh mục thủ tục hành chính được sửa đổi, bổ sung và bị bãi bỏ lĩnh vực đấu giá tài sản, thừa hành viên, thừa phát lại thuộc phạm vi, chức năng quản lý của Sở Tư pháp",
+          "publishedDate": "2026-06-25",
+          "classification": "public_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/quyet-dinh-so-2320-cong-bo-dm-tthc-sua-doi-bo-sung-va-bai-bo-thuoc-quan-ly-cua-so-tu-phap639178246917435630639180044385831717.pdf",
+          "attachmentSha256": "4125ca678e1e8c8ab79720412fed7c48b649d76bc101d48b221e01c65636c4e6",
+          "decisionNumbers": [
+            "1444/QĐ-BTP",
+            "1458/QĐ-BTP"
+          ],
+          "repealContext": false
+        }
+      ],
+      "priority51": false,
+      "stt": 128
+    },
+    {
       "ma": "1.008928",
       "ten": "Cấp lại Thẻ Thừa hành viên",
       "linhVuc": "TƯ PHÁP",
@@ -5686,7 +5727,7 @@
         }
       ],
       "priority51": false,
-      "stt": 128
+      "stt": 129
     },
     {
       "ma": "1.004878",
@@ -5724,7 +5765,7 @@
         }
       ],
       "priority51": false,
-      "stt": 129
+      "stt": 130
     },
     {
       "ma": "3.000722",
@@ -5766,7 +5807,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 130
+      "stt": 131
     },
     {
       "ma": "2.002913",
@@ -5808,7 +5849,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 131
+      "stt": 132
     },
     {
       "ma": "2.000977",
@@ -5846,7 +5887,7 @@
         }
       ],
       "priority51": false,
-      "stt": 132
+      "stt": 133
     },
     {
       "ma": "2.000970",
@@ -5884,7 +5925,7 @@
         }
       ],
       "priority51": false,
-      "stt": 133
+      "stt": 134
     },
     {
       "ma": "2.002039",
@@ -5922,7 +5963,7 @@
         }
       ],
       "priority51": false,
-      "stt": 134
+      "stt": 135
     },
     {
       "ma": "2.001225",
@@ -5963,7 +6004,7 @@
         }
       ],
       "priority51": false,
-      "stt": 135
+      "stt": 136
     },
     {
       "ma": "2.001680",
@@ -6001,7 +6042,7 @@
         }
       ],
       "priority51": false,
-      "stt": 136
+      "stt": 137
     },
     {
       "ma": "2.001687",
@@ -6039,7 +6080,7 @@
         }
       ],
       "priority51": false,
-      "stt": 137
+      "stt": 138
     },
     {
       "ma": "1.008926",
@@ -6080,7 +6121,7 @@
         }
       ],
       "priority51": false,
-      "stt": 138
+      "stt": 139
     },
     {
       "ma": "2.002036",
@@ -6114,47 +6155,6 @@
           "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-tu-phap.signed639038308976015274.pdf",
           "attachmentSha256": "df70d5cccb9c8fc37bda4bc3c098e0c5b7206d9e6458e787eee653206698df80",
           "decisionNumbers": [],
-          "repealContext": false
-        }
-      ],
-      "priority51": false,
-      "stt": 139
-    },
-    {
-      "ma": "1.003915",
-      "ten": "Thủ tục cấp Chứng chỉ hành nghề đấu giá",
-      "linhVuc": "TƯ PHÁP",
-      "cap": "Xã / điểm tiếp nhận cấp xã",
-      "nhanh": false,
-      "mienPhiTrucTuyen": false,
-      "phiDiaGioi": false,
-      "lienThong": false,
-      "phi": "",
-      "phiOnline": "",
-      "thoiHan": "10 ngày làm việc",
-      "dvctt": "",
-      "coQuan": "",
-      "quyetDinh": "1444/QĐ-BTP; 1458/QĐ-BTP",
-      "formalityId": "",
-      "daXacMinh": true,
-      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
-      "nameSource": "dvcqg_name_by_code_verified",
-      "sourceSnapshotDate": "2026-09-18",
-      "sourceLatestDate": "2026-06-25",
-      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/quyet-dinh-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vu-921702",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/quyet-dinh-so-2320-cong-bo-dm-tthc-sua-doi-bo-sung-va-bai-bo-thuoc-quan-ly-cua-so-tu-phap639178246917435630639180044385831717.pdf",
-      "sourceEvidence": [
-        {
-          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/quyet-dinh-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vu-921702",
-          "articleTitle": "Quyết định về việc công bố Danh mục thủ tục hành chính được sửa đổi, bổ sung và bị bãi bỏ lĩnh vực đấu giá tài sản, thừa hành viên, thừa phát lại thuộc phạm vi, chức năng quản lý của Sở Tư pháp",
-          "publishedDate": "2026-06-25",
-          "classification": "public_tthc",
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/quyet-dinh-so-2320-cong-bo-dm-tthc-sua-doi-bo-sung-va-bai-bo-thuoc-quan-ly-cua-so-tu-phap639178246917435630639180044385831717.pdf",
-          "attachmentSha256": "4125ca678e1e8c8ab79720412fed7c48b649d76bc101d48b221e01c65636c4e6",
-          "decisionNumbers": [
-            "1444/QĐ-BTP",
-            "1458/QĐ-BTP"
-          ],
           "repealContext": false
         }
       ],
@@ -6534,7 +6534,7 @@
       "coQuan": "",
       "quyetDinh": "",
       "formalityId": "019d2bfd-c4cb-734d-bb80-29723a707c08",
-      "nameSource": "priority51_official_legal_verification",
+      "nameSource": "official_city_decision_pdf",
       "sourceSnapshotDate": "2026-09-18",
       "sourceLatestDate": "2026-09-07",
       "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6815/tintuc/2025/7/dm-tthc-chuan-hoa-so-van-hoa-tt-trang-2638883643696552431.pdf",
@@ -8165,6 +8165,46 @@
       "stt": 183
     },
     {
+      "ma": "1.013967",
+      "ten": "Giải quyết tranh chấp đất đai thuộc thẩm quyền của Chủ tịch Ủy ban nhân dân cấp xã",
+      "linhVuc": "ĐẤT ĐAI",
+      "cap": "Xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "15/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "dvcqg_name_by_code_verified",
+      "sourceSnapshotDate": "2026-09-18",
+      "sourceLatestDate": "2025-08-19",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/noi-dung-linh-vuc-dat-dai-cap-xa638912181802758696.docx",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283",
+          "articleTitle": "Công khai thủ tục hành chính mới ban hành, được sửa đổi, bổ sung lĩnh vực lâm nghiệp, kiểm lâm, ứng phó sự cố tràn dầu, đất đai thuộc thẩm quyền giải quyết của cấp xã",
+          "publishedDate": "2025-08-19",
+          "classification": "public_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/noi-dung-linh-vuc-dat-dai-cap-xa638912181802758696.docx",
+          "attachmentSha256": "66de716894a3a5b5e5855dc14ff2878b6e31bc6797f9295d1997265b94c2c83a",
+          "decisionNumbers": [
+            "15/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "priority51": false,
+      "stt": 184
+    },
+    {
       "ma": "1.012805",
       "ten": "Giải quyết tranh chấp đất đai thuộc thẩm quyền của Chủ tịch Ủy ban nhân cấp tỉnh",
       "linhVuc": "ĐẤT ĐAI",
@@ -8219,46 +8259,6 @@
             "2304/QĐ-BNNMT",
             "34/QĐ-BTP",
             "6225/QĐ-BQP"
-          ],
-          "repealContext": false
-        }
-      ],
-      "priority51": false,
-      "stt": 184
-    },
-    {
-      "ma": "1.013967",
-      "ten": "Giải quyết tranh chấp đất đai thuộc thẩm quyền của Chủ tịch Ủy ban nhân dân cấp xã",
-      "linhVuc": "ĐẤT ĐAI",
-      "cap": "Xã",
-      "nhanh": false,
-      "mienPhiTrucTuyen": false,
-      "phiDiaGioi": false,
-      "lienThong": false,
-      "phi": "",
-      "phiOnline": "",
-      "thoiHan": "",
-      "dvctt": "",
-      "coQuan": "",
-      "quyetDinh": "15/QĐ-UBND",
-      "formalityId": "",
-      "daXacMinh": true,
-      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
-      "nameSource": "dvcqg_name_by_code_verified",
-      "sourceSnapshotDate": "2026-09-18",
-      "sourceLatestDate": "2025-08-19",
-      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/noi-dung-linh-vuc-dat-dai-cap-xa638912181802758696.docx",
-      "sourceEvidence": [
-        {
-          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283",
-          "articleTitle": "Công khai thủ tục hành chính mới ban hành, được sửa đổi, bổ sung lĩnh vực lâm nghiệp, kiểm lâm, ứng phó sự cố tràn dầu, đất đai thuộc thẩm quyền giải quyết của cấp xã",
-          "publishedDate": "2025-08-19",
-          "classification": "public_tthc",
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/noi-dung-linh-vuc-dat-dai-cap-xa638912181802758696.docx",
-          "attachmentSha256": "66de716894a3a5b5e5855dc14ff2878b6e31bc6797f9295d1997265b94c2c83a",
-          "decisionNumbers": [
-            "15/QĐ-UBND"
           ],
           "repealContext": false
         }
@@ -10091,6 +10091,46 @@
       "stt": 217
     },
     {
+      "ma": "1.012753",
+      "ten": "Đăng ký đất đai, tài sản gắn liền với đất, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất lần đầu đối với tổ chức đang sử dụng đất",
+      "linhVuc": "ĐẤT ĐAI",
+      "cap": "Xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "15/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "dvcqg_name_by_code_verified",
+      "sourceSnapshotDate": "2026-09-18",
+      "sourceLatestDate": "2025-08-19",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/noi-dung-linh-vuc-dat-dai-cap-xa638912181802758696.docx",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283",
+          "articleTitle": "Công khai thủ tục hành chính mới ban hành, được sửa đổi, bổ sung lĩnh vực lâm nghiệp, kiểm lâm, ứng phó sự cố tràn dầu, đất đai thuộc thẩm quyền giải quyết của cấp xã",
+          "publishedDate": "2025-08-19",
+          "classification": "public_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/noi-dung-linh-vuc-dat-dai-cap-xa638912181802758696.docx",
+          "attachmentSha256": "66de716894a3a5b5e5855dc14ff2878b6e31bc6797f9295d1997265b94c2c83a",
+          "decisionNumbers": [
+            "15/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "priority51": false,
+      "stt": 218
+    },
+    {
       "ma": "1.013978",
       "ten": "Đăng ký đất đai, tài sản gắn liền với đất, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất lần đầu đối với hộ gia đình, cá nhân, cộng đồng dân cư, người gốc Việt Nam định cư ở nước ngoài",
       "linhVuc": "ĐẤT ĐAI",
@@ -10133,46 +10173,6 @@
       "priority51": true,
       "priority51Ordinal": 16,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 218
-    },
-    {
-      "ma": "1.012753",
-      "ten": "Đăng ký đất đai, tài sản gắn liền với đất, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất lần đầu đối với tổ chức đang sử dụng đất",
-      "linhVuc": "ĐẤT ĐAI",
-      "cap": "Xã",
-      "nhanh": false,
-      "mienPhiTrucTuyen": false,
-      "phiDiaGioi": false,
-      "lienThong": false,
-      "phi": "",
-      "phiOnline": "",
-      "thoiHan": "",
-      "dvctt": "",
-      "coQuan": "",
-      "quyetDinh": "15/QĐ-UBND",
-      "formalityId": "",
-      "daXacMinh": true,
-      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
-      "nameSource": "dvcqg_name_by_code_verified",
-      "sourceSnapshotDate": "2026-09-18",
-      "sourceLatestDate": "2025-08-19",
-      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/noi-dung-linh-vuc-dat-dai-cap-xa638912181802758696.docx",
-      "sourceEvidence": [
-        {
-          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283",
-          "articleTitle": "Công khai thủ tục hành chính mới ban hành, được sửa đổi, bổ sung lĩnh vực lâm nghiệp, kiểm lâm, ứng phó sự cố tràn dầu, đất đai thuộc thẩm quyền giải quyết của cấp xã",
-          "publishedDate": "2025-08-19",
-          "classification": "public_tthc",
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/noi-dung-linh-vuc-dat-dai-cap-xa638912181802758696.docx",
-          "attachmentSha256": "66de716894a3a5b5e5855dc14ff2878b6e31bc6797f9295d1997265b94c2c83a",
-          "decisionNumbers": [
-            "15/QĐ-UBND"
-          ],
-          "repealContext": false
-        }
-      ],
-      "priority51": false,
       "stt": 219
     },
     {
@@ -10548,6 +10548,46 @@
       "stt": 225
     },
     {
+      "ma": "1.013953",
+      "ten": "Điều chỉnh quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất do sai sót về ranh giới, vị trí, diện tích, mục đích sử dụng giữa bản đồ quy hoạch, bản đồ địa chính, quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất và số liệu bàn giao đất trên thực địa",
+      "linhVuc": "ĐẤT ĐAI",
+      "cap": "Xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "15/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "dvcqg_name_by_code_verified",
+      "sourceSnapshotDate": "2026-09-18",
+      "sourceLatestDate": "2025-08-19",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/noi-dung-linh-vuc-dat-dai-cap-xa638912181802758696.docx",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283",
+          "articleTitle": "Công khai thủ tục hành chính mới ban hành, được sửa đổi, bổ sung lĩnh vực lâm nghiệp, kiểm lâm, ứng phó sự cố tràn dầu, đất đai thuộc thẩm quyền giải quyết của cấp xã",
+          "publishedDate": "2025-08-19",
+          "classification": "public_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/noi-dung-linh-vuc-dat-dai-cap-xa638912181802758696.docx",
+          "attachmentSha256": "66de716894a3a5b5e5855dc14ff2878b6e31bc6797f9295d1997265b94c2c83a",
+          "decisionNumbers": [
+            "15/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "priority51": false,
+      "stt": 226
+    },
+    {
       "ma": "1.013827",
       "ten": "Điều chỉnh quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất do sai sót về ranh giới, vị trí, diện tích, mục đích sử dụng giữa bản đồ quy hoạch, bả",
       "linhVuc": "ĐẤT ĐAI",
@@ -10602,46 +10642,6 @@
             "2304/QĐ-BNNMT",
             "34/QĐ-BTP",
             "6225/QĐ-BQP"
-          ],
-          "repealContext": false
-        }
-      ],
-      "priority51": false,
-      "stt": 226
-    },
-    {
-      "ma": "1.013953",
-      "ten": "Điều chỉnh quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất do sai sót về ranh giới, vị trí, diện tích, mục đích sử dụng giữa bản đồ quy hoạch, bản đồ địa chính, quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất và số liệu bàn giao đất trên thực địa",
-      "linhVuc": "ĐẤT ĐAI",
-      "cap": "Xã",
-      "nhanh": false,
-      "mienPhiTrucTuyen": false,
-      "phiDiaGioi": false,
-      "lienThong": false,
-      "phi": "",
-      "phiOnline": "",
-      "thoiHan": "",
-      "dvctt": "",
-      "coQuan": "",
-      "quyetDinh": "15/QĐ-UBND",
-      "formalityId": "",
-      "daXacMinh": true,
-      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
-      "nameSource": "dvcqg_name_by_code_verified",
-      "sourceSnapshotDate": "2026-09-18",
-      "sourceLatestDate": "2025-08-19",
-      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/noi-dung-linh-vuc-dat-dai-cap-xa638912181802758696.docx",
-      "sourceEvidence": [
-        {
-          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283",
-          "articleTitle": "Công khai thủ tục hành chính mới ban hành, được sửa đổi, bổ sung lĩnh vực lâm nghiệp, kiểm lâm, ứng phó sự cố tràn dầu, đất đai thuộc thẩm quyền giải quyết của cấp xã",
-          "publishedDate": "2025-08-19",
-          "classification": "public_tthc",
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/noi-dung-linh-vuc-dat-dai-cap-xa638912181802758696.docx",
-          "attachmentSha256": "66de716894a3a5b5e5855dc14ff2878b6e31bc6797f9295d1997265b94c2c83a",
-          "decisionNumbers": [
-            "15/QĐ-UBND"
           ],
           "repealContext": false
         }
