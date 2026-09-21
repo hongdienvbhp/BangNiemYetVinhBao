@@ -96,6 +96,18 @@ jobs:
         if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
         run: python scripts/build_master_data.py
 
+      - name: Validate guidance enrichment
+        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
+        run: python scripts/validate_tthc_guidance.py
+
+      - name: Apply guidance enrichment
+        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
+        run: python scripts/apply_guidance_enrichment.py
+
+      - name: Build lifecycle tracking projection
+        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
+        run: python scripts/build_tthc_tracking.py
+
       - name: Candidate validation
         if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
         id: validation
@@ -167,7 +179,8 @@ jobs:
           - Quét nguồn chính thức Hải Phòng/Vĩnh Bảo.
           - Lưu provenance và PDF/hash quyết định mới (nếu có).
           - Tái tạo city-updates, Master Data JSON và fallback từ cùng pipeline.
-          - Sinh báo cáo chênh lệch trước/sau.
+          - Áp lớp hướng dẫn đã xác minh (hồ sơ/quy trình/biểu mẫu/phí/link nộp đúng Vĩnh Bảo).
+          - Sinh bảng theo dõi lifecycle và báo cáo chênh lệch trước/sau.
 
           ## Kiểm soát
           - Validation trước PR: **$validation**
