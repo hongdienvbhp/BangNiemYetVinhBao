@@ -6,15 +6,15 @@ import re
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
+try:
+    from scripts.canonical_v4 import SOURCE_ROLES
+except ModuleNotFoundError:
+    from canonical_v4 import SOURCE_ROLES
+
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data/tthc-guidance-enrichment.json"
 CODE_RE = re.compile(r"^\d{1,2}\.\d{3,6}$")
 ALLOWED_STATUS = {"verified_official"}
-ALLOWED_SOURCE_ROLES = {
-    "central_content_reference",
-    "local_legal_effect",
-    "local_execution",
-}
 SUBSTANTIVE_FIELDS = {
     "quyTrinh",
     "thanhPhanHoSo",
@@ -22,6 +22,7 @@ SUBSTANTIVE_FIELDS = {
     "lePhi",
     "thoiHan",
     "coQuanThucHien",
+    "ketQua",
     "submissionUrl",
 }
 
@@ -82,7 +83,7 @@ def validate(payload: object) -> list[str]:
         if not isinstance(source_roles, dict):
             errors.append("sourceRoles phải là object")
         else:
-            missing = ALLOWED_SOURCE_ROLES - set(source_roles)
+            missing = SOURCE_ROLES - set(source_roles)
             if missing:
                 errors.append("sourceRoles thiếu: " + ", ".join(sorted(missing)))
 
@@ -95,6 +96,7 @@ def validate(payload: object) -> list[str]:
         if not isinstance(row, dict):
             errors.append(f"rows[{index}] không phải object")
             continue
+
         code = str(row.get("ma") or "").strip()
         label = code or str(index)
         if not CODE_RE.fullmatch(code):
@@ -109,16 +111,19 @@ def validate(payload: object) -> list[str]:
 
         sources = row.get("sources")
         source_by_id: dict[str, dict] = {}
-        has_substantive = any(row.get(field) not in (None, "", [], {}) for field in SUBSTANTIVE_FIELDS)
+        has_substantive = any(
+            row.get(field) not in (None, "", [], {}) for field in SUBSTANTIVE_FIELDS
+        )
         if has_substantive and (not isinstance(sources, list) or not sources):
             errors.append(f"{label}: dữ liệu hướng dẫn phải có sources")
+
         if isinstance(sources, list):
             for source_index, source in enumerate(sources, start=1):
                 if not isinstance(source, dict):
                     errors.append(f"{label}: sources[{source_index}] không phải object")
                     continue
                 source_id = str(source.get("id") or "").strip()
-                role = str(source.get("role") or "").strip()
+                role = str(source.get("sourceRole") or "").strip()
                 url = str(source.get("url") or "").strip()
                 if not source_id:
                     errors.append(f"{label}: sources[{source_index}] thiếu id")
@@ -126,10 +131,14 @@ def validate(payload: object) -> list[str]:
                     errors.append(f"{label}: trùng source id {source_id}")
                 else:
                     source_by_id[source_id] = source
-                if role not in ALLOWED_SOURCE_ROLES:
-                    errors.append(f"{label}: sources[{source_index}] role không hợp lệ: {role or 'trống'}")
+                if role not in SOURCE_ROLES:
+                    errors.append(
+                        f"{label}: sources[{source_index}] sourceRole không hợp lệ: {role or 'trống'}"
+                    )
                 if not url or not is_official_url(url):
-                    errors.append(f"{label}: nguồn {source_index} không phải URL chính thức HTTPS")
+                    errors.append(
+                        f"{label}: nguồn {source_index} không phải URL chính thức HTTPS"
+                    )
 
         provenance = row.get("fieldProvenance")
         if has_substantive and not isinstance(provenance, dict):
@@ -145,19 +154,25 @@ def validate(payload: object) -> list[str]:
                     continue
                 refs = provenance.get(field)
                 if not isinstance(refs, list) or not refs:
-                    errors.append(f"{label}: fieldProvenance.{field} phải có ít nhất 1 source id")
+                    errors.append(
+                        f"{label}: fieldProvenance.{field} phải có ít nhất 1 source id"
+                    )
                     continue
                 for ref in refs:
                     if not isinstance(ref, str) or ref not in source_by_id:
-                        errors.append(f"{label}: fieldProvenance.{field} tham chiếu source id không tồn tại: {ref}")
+                        errors.append(
+                            f"{label}: fieldProvenance.{field} tham chiếu source id không tồn tại: {ref}"
+                        )
                 if field == "submissionUrl":
                     roles = {
-                        str(source_by_id[ref].get("role") or "")
+                        str(source_by_id[ref].get("sourceRole") or "")
                         for ref in refs
                         if isinstance(ref, str) and ref in source_by_id
                     }
                     if roles - {"local_execution"}:
-                        errors.append(f"{label}: submissionUrl chỉ được provenance từ local_execution")
+                        errors.append(
+                            f"{label}: submissionUrl chỉ được provenance từ local_execution"
+                        )
 
         submission_url = str(row.get("submissionUrl") or "").strip()
         if submission_url:

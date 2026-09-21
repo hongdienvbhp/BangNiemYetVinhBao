@@ -53,7 +53,7 @@ class CanonicalTwoLayerTests(unittest.TestCase):
             "thanhPhanHoSo": [{"ten": "Giấy tờ A"}],
             "sources": [{
                 "id": "central-a",
-                "role": "central_content_reference",
+                "sourceRole": "central_content_reference",
                 "url": "https://moj.gov.vn/a",
             }],
             "fieldProvenance": {
@@ -61,9 +61,19 @@ class CanonicalTwoLayerTests(unittest.TestCase):
             },
         }])
         result = apply_enrichment(master, priority, guidance)
-        guide = result["thuTuc"][0]["huongDan"]
+        row = result["thuTuc"][0]
+        guide = row["huongDan"]
         self.assertEqual(guide["thanhPhanHoSo"][0]["ten"], "Giấy tờ A")
         self.assertEqual(guide["fieldProvenance"]["thanhPhanHoSo"], ["central-a"])
+        evidence_id = next(
+            item["evidenceId"]
+            for item in row["sourceEvidence"]
+            if item.get("url") == "https://moj.gov.vn/a"
+        )
+        self.assertEqual(
+            row["fieldSources"]["huongDan.thanhPhanHoSo"],
+            [evidence_id],
+        )
         self.assertEqual(result["dataset_version"], "2026.09.21")
         self.assertEqual(result["updatedAt"], "2026-09-21")
 
@@ -81,7 +91,7 @@ class CanonicalTwoLayerTests(unittest.TestCase):
             "thoiHan": "02 ngày",
             "sources": [{
                 "id": "local-a",
-                "role": "local_legal_effect",
+                "sourceRole": "local_legal_effect",
                 "url": "https://haiphong.gov.vn/a",
             }],
             "fieldProvenance": {"thoiHan": ["local-a"]},

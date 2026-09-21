@@ -36,7 +36,7 @@ class GuidanceEnrichmentTests(unittest.TestCase):
             "thanhPhanHoSo": [{"ten": "Giấy tờ A"}],
             "sources": [{
                 "id": "central-a",
-                "role": "central_content_reference",
+                "sourceRole": "central_content_reference",
                 "url": "https://example.com/a",
             }],
             "fieldProvenance": {"thanhPhanHoSo": ["central-a"]},
@@ -50,7 +50,7 @@ class GuidanceEnrichmentTests(unittest.TestCase):
             "thanhPhanHoSo": [{"ten": "Giấy tờ A"}],
             "sources": [{
                 "id": "central-a",
-                "role": "central_content_reference",
+                "sourceRole": "central_content_reference",
                 "url": "https://moj.gov.vn/a",
             }],
             "fieldProvenance": {"thanhPhanHoSo": ["missing-source"]},
@@ -69,7 +69,7 @@ class GuidanceEnrichmentTests(unittest.TestCase):
             "submissionUrl": url,
             "sources": [{
                 "id": "central-a",
-                "role": "central_content_reference",
+                "sourceRole": "central_content_reference",
                 "url": "https://moj.gov.vn/a",
             }],
             "fieldProvenance": {"submissionUrl": ["central-a"]},
@@ -91,17 +91,17 @@ class GuidanceEnrichmentTests(unittest.TestCase):
             "sources": [
                 {
                     "id": "central-a",
-                    "role": "central_content_reference",
+                    "sourceRole": "central_content_reference",
                     "url": "https://moj.gov.vn/a",
                 },
                 {
                     "id": "local-a",
-                    "role": "local_legal_effect",
+                    "sourceRole": "local_legal_effect",
                     "url": "https://haiphong.gov.vn/a",
                 },
                 {
                     "id": "execution-a",
-                    "role": "local_execution",
+                    "sourceRole": "local_execution",
                     "url": url,
                 },
             ],
