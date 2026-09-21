@@ -100,6 +100,7 @@ def apply_enrichment(master: dict, priority: dict, guidance: dict) -> dict:
         guide["verificationStatus"] = item["verificationStatus"]
         guide["verifiedAt"] = item.get("verifiedAt") or ""
         guide["sources"] = deepcopy(item.get("sources") or [])
+        guide["fieldProvenance"] = deepcopy(item.get("fieldProvenance") or {})
         row["huongDan"] = guide
         if guide.get("submissionUrl"):
             row["nopHoSoUrl"] = guide["submissionUrl"]
