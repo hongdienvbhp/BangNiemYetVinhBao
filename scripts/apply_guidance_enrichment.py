@@ -5,7 +5,10 @@ import json
 from copy import deepcopy
 from pathlib import Path
 
-from scripts.validate_tthc_guidance import validate, validate_vinhbao_submission_url
+try:
+    from scripts.validate_tthc_guidance import validate, validate_vinhbao_submission_url
+except ModuleNotFoundError:
+    from validate_tthc_guidance import validate, validate_vinhbao_submission_url
 
 ROOT = Path(__file__).resolve().parents[1]
 MASTER = ROOT / "data/thu-tuc.json"
