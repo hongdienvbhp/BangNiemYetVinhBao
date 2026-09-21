@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: priority50-guidance-capture
+  cancel-in-progress: true
+
 jobs:
   capture:
     if: github.actor != 'github-actions[bot]'
