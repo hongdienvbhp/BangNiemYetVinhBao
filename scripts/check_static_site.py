@@ -473,7 +473,7 @@ if summary.get("priority51InCurrentMaster") != 50:
     fail("summary.priority51InCurrentMaster phải bằng 50")
 if summary.get("priority51Gap") != 1:
     fail("summary.priority51Gap phải bằng 1 (mã bãi bỏ 2.001009)")
-actual_formality_mapped = sum(1 for row in master_rows if row.get("formalityId"))
+actual_formality_mapped = sum(1 for row in rows if row.get("formalityId"))
 if summary.get("formalityIdMapped") != actual_formality_mapped:
     fail(
         "summary.formalityIdMapped phải khớp số formalityId thực tế trong Master: "
