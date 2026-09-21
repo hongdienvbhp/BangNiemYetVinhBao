@@ -122,49 +122,81 @@ def parse_process_tables(raw_tables: list[dict]) -> tuple[list[dict], list[dict]
             if key not in seen_fee:
                 fees.append({"hinhThuc": channel or "Không xác định", "mucThu": fee_value})
                 seen_fee.add(key)
+    if phi_idx is not None and not fees:
+        fees.append({
+            "trangThai": "not_listed_on_dvcqg",
+            "mucThu": None,
+            "ghiChu": "Cột Phí, lệ phí trên nguồn DVCQG chính thức không hiển thị mức thu.",
+        })
     return times, fees
 
 
 def parse_dossier_table(raw_tables: list[dict]) -> list[dict]:
-    found = (
-        _find_table(raw_tables, ("ten giay to",))
-        or _find_table(raw_tables, ("thanh phan ho so",))
-        or _find_table(raw_tables, ("loai giay to",))
-    )
-    if not found:
-        return []
-    headers, rows = found
-    name_idx = _header_index(headers, ("ten giay to", "thanh phan ho so", "loai giay to"))
-    form_idx = _header_index(headers, ("mau don", "to khai", "bieu mau"))
-    original_idx = _header_index(headers, ("ban chinh",))
-    copy_idx = _header_index(headers, ("ban sao",))
-    quantity_idx = _header_index(headers, ("so luong",))
-
     items: list[dict] = []
-    seen: set[str] = set()
-    for row in rows:
-        def cell(index: int | None) -> str:
-            return row[index] if index is not None and index < len(row) else ""
+    seen: set[tuple[str, str, str, str]] = set()
 
-        name = cell(name_idx)
-        if not name:
+    for table in raw_tables:
+        rows = table.get("rows") if isinstance(table, dict) else None
+        if not isinstance(rows, list):
             continue
-        if fold(name) in {"ten giay to", "thanh phan ho so", "loai giay to"}:
+        header_idx = None
+        headers: list[str] = []
+        for idx, raw_row in enumerate(rows[:6]):
+            candidate = [norm(cell) for cell in (raw_row or [])]
+            joined = fold(" ".join(candidate))
+            if any(term in joined for term in ("ten giay to", "thanh phan ho so", "loai giay to")):
+                header_idx = idx
+                headers = candidate
+                break
+        if header_idx is None:
             continue
-        key = fold(name)
-        if key in seen:
-            continue
-        item: dict[str, Any] = {"ten": name}
-        if cell(form_idx):
-            item["bieuMau"] = cell(form_idx)
-        if cell(original_idx):
-            item["banChinh"] = cell(original_idx)
-        if cell(copy_idx):
-            item["banSao"] = cell(copy_idx)
-        if cell(quantity_idx):
-            item["soLuong"] = cell(quantity_idx)
-        items.append(item)
-        seen.add(key)
+
+        name_idx = _header_index(headers, ("ten giay to", "thanh phan ho so", "loai giay to"))
+        form_idx = _header_index(headers, ("mau don", "to khai", "bieu mau"))
+        original_idx = _header_index(headers, ("ban chinh",))
+        copy_idx = _header_index(headers, ("ban sao",))
+        quantity_idx = _header_index(headers, ("so luong",))
+
+        for raw_row in rows[header_idx + 1 :]:
+            if not isinstance(raw_row, list):
+                continue
+            row = [norm(cell) for cell in raw_row]
+            if not any(row):
+                continue
+
+            def cell(index: int | None) -> str:
+                return row[index] if index is not None and index < len(row) else ""
+
+            name = cell(name_idx)
+            if not name:
+                continue
+            if fold(name) in {"ten giay to", "thanh phan ho so", "loai giay to"}:
+                continue
+            form = cell(form_idx)
+            original = cell(original_idx)
+            copy = cell(copy_idx)
+            quantity = cell(quantity_idx)
+            key = (fold(name), fold(form), fold(original or quantity), fold(copy))
+            if key in seen:
+                continue
+
+            item: dict[str, Any] = {"ten": name}
+            if form:
+                item["bieuMau"] = form
+            if original:
+                item["banChinh"] = original
+            if copy:
+                item["banSao"] = copy
+            if quantity:
+                item["soLuong"] = quantity
+                match_original = re.search(r"bản chính\s*:\s*(\d+)", quantity, re.IGNORECASE)
+                match_copy = re.search(r"bản sao\s*:\s*(\d+)", quantity, re.IGNORECASE)
+                if match_original and "banChinh" not in item:
+                    item["banChinh"] = match_original.group(1)
+                if match_copy and "banSao" not in item:
+                    item["banSao"] = match_copy.group(1)
+            items.append(item)
+            seen.add(key)
     return items
 
 
