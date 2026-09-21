@@ -215,7 +215,7 @@
       coQuan: agencyText,
       ketQua: resultText,
       dvcLink: tt.dvcLink || dvcDetailUrlById(formalityId) || dvcTraCuu,
-      dvcNop: canonicalSubmissionUrl || guidanceSubmissionUrl || tt.dvcNop || dvcSubmitUrl(formalityId),
+      dvcNop: canonicalSubmissionUrl || guidanceSubmissionUrl,
       dvcTraCuu,
       dvcTthcHome: DVC_TTHC_HOME,
       dvcHp: DVC_HP,
