@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import re
 from copy import deepcopy
 from pathlib import Path
 
@@ -25,6 +26,27 @@ GUIDANCE_FIELDS = (
     "coQuanThucHien",
     "submissionUrl",
 )
+
+
+def _as_date(value: object) -> str:
+    raw = str(value or "").strip()
+    match = re.match(r"^(\d{4}-\d{2}-\d{2})", raw)
+    return match.group(1) if match else ""
+
+
+def _advance_dataset_version(result: dict, priority: dict, guidance: dict) -> None:
+    dates = [
+        str(result.get("dataset_version") or "").replace(".", "-"),
+        str(result.get("sourceSnapshotDate") or ""),
+    ]
+    dates.extend(_as_date(item.get("liveVerifiedAt")) for item in priority.get("items") or [])
+    dates.extend(_as_date(item.get("verifiedAt")) for item in guidance.get("rows") or [])
+    valid = [value for value in dates if re.fullmatch(r"\d{4}-\d{2}-\d{2}", value or "")]
+    if not valid:
+        return
+    latest = max(valid)
+    result["dataset_version"] = latest.replace("-", ".")
+    result["updatedAt"] = latest
 
 
 def apply_enrichment(master: dict, priority: dict, guidance: dict) -> dict:
@@ -90,6 +112,7 @@ def apply_enrichment(master: dict, priority: dict, guidance: dict) -> dict:
     summary = result.setdefault("summary", {})
     summary["priority51VinhBaoSubmissionLinks"] = priority_links
     summary["officialGuidanceEnriched"] = guidance_count
+    _advance_dataset_version(result, priority, guidance)
     return result
 
 
