@@ -99,6 +99,7 @@ Mỗi evidence có `evidenceId` ổn định, `sourceRole`, URL chính thức v�
 
 - `dataset_version`: ngày mới nhất từ snapshot/enrichment đã kiểm chứng, nhưng không được giảm so với version canonical đã phát hành.
 - `source_commit`: fingerprint SHA-1 deterministic của bundle nguồn đã kiểm chứng, tính từ Git-blob SHA của các file nguồn đầu vào.
+- `priority-51-crosswalk.json` là projection/technical crosswalk có back-reference về canonical nên không tham gia fingerprint; fingerprint dùng các evidence/snapshot nguồn mà crosswalk dẫn xuất từ đó.
 - `source_commit_kind = verified_source_bundle_git_sha1`.
 - `source_commit` không phải SHA của commit chứa `data/thu-tuc.json`; vì vậy không có self-reference.
 
