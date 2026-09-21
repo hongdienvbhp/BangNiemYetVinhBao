@@ -6,8 +6,10 @@ from copy import deepcopy
 from pathlib import Path
 
 try:
+    from scripts.canonical_v4 import upgrade_record_to_v4
     from scripts.validate_tthc_guidance import validate, validate_vinhbao_submission_url
 except ModuleNotFoundError:
+    from canonical_v4 import upgrade_record_to_v4
     from validate_tthc_guidance import validate, validate_vinhbao_submission_url
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -23,6 +25,7 @@ GUIDANCE_FIELDS = (
     "lePhi",
     "thoiHan",
     "coQuanThucHien",
+    "ketQua",
     "submissionUrl",
 )
 
@@ -86,6 +89,13 @@ def apply_enrichment(master: dict, priority: dict, guidance: dict) -> dict:
             if guide.get("verifiedAt"):
                 row["submissionLinkCheckedAt"] = guide["verifiedAt"]
         guidance_count += 1
+
+    as_of = str(result.get("sourceSnapshotDate") or result.get("updatedAt") or "")
+    result["thuTuc"] = [
+        upgrade_record_to_v4(row, as_of)
+        for row in rows
+        if isinstance(row, dict)
+    ]
 
     summary = result.setdefault("summary", {})
     summary["priority51VinhBaoSubmissionLinks"] = priority_links
