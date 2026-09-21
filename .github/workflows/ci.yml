@@ -29,7 +29,7 @@ jobs:
 
       - name: Python syntax
         run: |
-          python -m py_compile             scripts/update_official_sources.py             scripts/extract_city_updates.py             scripts/build_master_data.py             scripts/build_master_delta.py             scripts/fetch_dvc_mapping.py             scripts/check_static_site.py             scripts/routine_guard.py             scripts/write_routine_run_record.py             scripts/check_routine_health.py
+          python -m py_compile             scripts/update_official_sources.py             scripts/extract_city_updates.py             scripts/build_master_data.py             scripts/build_master_delta.py             scripts/fetch_dvc_mapping.py             scripts/validate_tthc_guidance.py             scripts/apply_guidance_enrichment.py             scripts/build_tthc_tracking.py             scripts/check_static_site.py             scripts/routine_guard.py             scripts/write_routine_run_record.py             scripts/check_routine_health.py
 
       - name: Python unit tests
         run: python -m unittest discover -s tests -v
@@ -67,7 +67,13 @@ jobs:
           )"
           python scripts/extract_city_updates.py --as-of "$AS_OF"
           python scripts/build_master_data.py
-          git diff --exit-code --             data/source-audit/city-updates-current.json             data/thu-tuc.json             data/master-data-audit.csv             data/master-data-excluded.json             data/BAO_CAO_MASTER_DATA_HIEN_HANH.md             js/master-data-fallback.js
+          python scripts/validate_tthc_guidance.py
+          python scripts/apply_guidance_enrichment.py
+          python scripts/build_tthc_tracking.py
+          git diff --exit-code --             data/source-audit/city-updates-current.json             data/thu-tuc.json             data/master-data-audit.csv             data/master-data-excluded.json             data/BAO_CAO_MASTER_DATA_HIEN_HANH.md             data/THEO_DOI_THAY_DOI_TTHC.csv             js/master-data-fallback.js
+
+      - name: Validate guidance enrichment contract
+        run: python scripts/validate_tthc_guidance.py
 
       - name: Validate canonical TTHC contract
         run: python scripts/validate_canonical_contract.py
