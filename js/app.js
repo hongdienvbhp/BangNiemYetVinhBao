@@ -137,31 +137,96 @@
     return DVC_SUBMIT_SEARCH + "?" + params.toString();
   }
 
+  function structuredText(value, fallback = CHUA_XAC_MINH) {
+    if (value === null || value === undefined || value === "") return fallback;
+    if (typeof value === "string" || typeof value === "number") return String(value);
+    if (Array.isArray(value)) {
+      const parts = value.map((item) => {
+        if (item === null || item === undefined) return "";
+        if (typeof item === "string" || typeof item === "number") return String(item);
+        if (typeof item === "object") {
+          const channel = item.hinhThuc ? String(item.hinhThuc) + ": " : "";
+          const main = item.giaTri ?? item.mucThu ?? item.ten ?? item.ketQua ?? "";
+          const note = item.moTa ?? item.ghiChu ?? "";
+          const status = item.trangThai === "not_published" && !main
+            ? "Nguồn chính thức không công bố mức thu"
+            : "";
+          return [channel + String(main || status), note].filter(Boolean).join(" — ");
+        }
+        return String(item);
+      }).filter(Boolean);
+      return parts.length ? parts.join("; ") : fallback;
+    }
+    if (typeof value === "object") {
+      if (value.accessUrl) return "Có dịch vụ trực tuyến";
+      return Object.values(value).filter((v) => typeof v === "string" || typeof v === "number").join(" · ") || fallback;
+    }
+    return fallback;
+  }
+
+  function dossierItems(value) {
+    if (!Array.isArray(value)) return [];
+    return value.map((item) => {
+      if (typeof item === "string") return item;
+      if (!item || typeof item !== "object") return "";
+      const copies = [];
+      if (item.banChinh) copies.push("bản chính: " + item.banChinh);
+      if (item.banSao) copies.push("bản sao: " + item.banSao);
+      const template = item.bieuMau ? "Biểu mẫu: " + item.bieuMau : "";
+      return [item.ten || "", copies.length ? "(" + copies.join(", ") + ")" : "", template]
+        .filter(Boolean)
+        .join(" ");
+    }).filter(Boolean);
+  }
+
   function enrich(tt) {
     const ma = normalizeMa(tt.ma) || tt.ma || "";
     const nganh = guessNganh(tt);
     const formalityId = resolveFormalityId(tt);
     const dvcTraCuu = dvcSearchByName(tt.ten);
+    const guidance = tt.huongDan && typeof tt.huongDan === "object" ? tt.huongDan : {};
+    const guidanceDvctt = guidance.dvctt && typeof guidance.dvctt === "object" ? guidance.dvctt : null;
+    const guidanceSubmissionUrl = String(
+      guidance.submissionUrl || guidanceDvctt?.accessUrl || ""
+    ).trim();
+    const guidanceDocs = dossierItems(guidance.thanhPhanHoSo);
+    const legacyDocs = Array.isArray(tt.thanhPhan) ? tt.thanhPhan : [];
+    const guidanceSteps = Array.isArray(guidance.quyTrinh) ? guidance.quyTrinh : [];
+    const legacySteps = Array.isArray(tt.quyTrinh) ? tt.quyTrinh : [];
+    const feeText = structuredText(guidance.lePhi, tt.phi || CHUA_XAC_MINH);
+    const timeText = structuredText(guidance.thoiHan, tt.thoiHan || CHUA_XAC_MINH);
+    const agencyText = structuredText(guidance.coQuanThucHien, tt.coQuan || CHUA_XAC_MINH);
+    const resultText = structuredText(guidance.ketQua, tt.ketQua || CHUA_XAC_MINH);
+    const dvcttText = guidanceDvctt
+      ? (guidanceDvctt.verificationStatus ? "Đã xác minh · " + guidanceDvctt.verificationStatus : "Đã xác minh")
+      : structuredText(tt.dvctt, CHUA_XAC_MINH);
+
     return {
       ...tt,
       ma,
       nganh,
       formalityId,
       cap: tt.cap || CHUA_XAC_MINH,
-      dvctt: tt.dvctt || CHUA_XAC_MINH,
-      phi: tt.phi || CHUA_XAC_MINH,
+      dvctt: dvcttText,
+      phi: feeText,
       quyetDinh: tt.quyetDinh || CHUA_XAC_MINH,
-      thoiHan: tt.thoiHan || CHUA_XAC_MINH,
-      coQuan: tt.coQuan || CHUA_XAC_MINH,
+      thoiHan: timeText,
+      coQuan: agencyText,
+      ketQua: resultText,
       dvcLink: tt.dvcLink || dvcDetailUrlById(formalityId) || dvcTraCuu,
-      dvcNop: tt.dvcNop || dvcSubmitUrl(formalityId),
+      dvcNop: guidanceSubmissionUrl || tt.dvcNop || dvcSubmitUrl(formalityId),
       dvcTraCuu,
       dvcTthcHome: DVC_TTHC_HOME,
       dvcHp: DVC_HP,
       maNgan: shortMa(tt.ma),
-      quyTrinh: Array.isArray(tt.quyTrinh) ? tt.quyTrinh : [],
-      thanhPhan: Array.isArray(tt.thanhPhan) ? tt.thanhPhan : [],
-      daXacMinh: Boolean(tt.daXacMinh)
+      quyTrinh: guidanceSteps.length ? guidanceSteps : legacySteps,
+      thanhPhan: guidanceDocs.length ? guidanceDocs : legacyDocs,
+      daXacMinh: Boolean(
+        tt.daXacMinh ||
+        tt.verificationStatus === "verified_official" ||
+        Object.keys(guidance).length
+      ),
+      hasGuidance: Object.keys(guidance).length > 0
     };
   }
 
@@ -438,6 +503,8 @@
         <div><strong>Cơ quan thực hiện</strong><span>${esc(tt.coQuan)}</span></div>
         <div><strong>Cấp giải quyết</strong><span>${esc(tt.cap)}</span></div>
         <div><strong>Thời hạn</strong><span>${esc(tt.thoiHan)}</span></div>
+        <div><strong>Phí/lệ phí</strong><span>${esc(tt.phi)}</span></div>
+        <div><strong>Kết quả</strong><span>${esc(tt.ketQua)}</span></div>
         <div><strong>Địa chỉ tiếp nhận</strong><span>Trung tâm PVHCC xã Vĩnh Bảo — Đường 20/8, xã Vĩnh Bảo, TP Hải Phòng</span></div>
         <div><strong>Hotline</strong><span>0823.919.686</span></div>
       </div>
@@ -472,9 +539,9 @@
       </div>
 
       <div class="detail-box">
-        <div class="box-label">📁 THÀNH PHẦN HỒ SƠ (tham khảo)</div>
+        <div class="box-label">📁 THÀNH PHẦN HỒ SƠ</div>
         <ul class="doc-list">${docs}</ul>
-        <p class="muted-note">Thành phần hồ sơ chính thức theo từng mã TTHC được công bố trên Cổng Dịch vụ công Quốc gia.</p>
+        <p class="muted-note">${tt.hasGuidance ? "Nội dung đã được đồng bộ vào canonical và gắn nguồn chứng minh theo từng trường dữ liệu." : "Thành phần hồ sơ chính thức theo từng mã TTHC được công bố trên Cổng Dịch vụ công Quốc gia."}</p>
       </div>
 
       <a class="btn-dvc" href="${esc(tt.dvcNop)}" target="_blank" rel="noopener">
