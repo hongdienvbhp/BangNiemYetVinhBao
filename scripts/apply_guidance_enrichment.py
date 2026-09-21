@@ -107,11 +107,17 @@ def apply_enrichment(master: dict, priority: dict, guidance: dict) -> dict:
         guide["fieldProvenance"] = deepcopy(item.get("fieldProvenance") or {})
         row["huongDan"] = guide
         if guide.get("submissionUrl"):
-            row["nopHoSoUrl"] = guide["submissionUrl"]
-            row["submissionLinkStatus"] = "verified_official_guidance"
-            row["submissionLinkSource"] = "tthc-guidance-enrichment"
-            if guide.get("verifiedAt"):
-                row["submissionLinkCheckedAt"] = guide["verifiedAt"]
+            guide_url = str(guide["submissionUrl"]).strip()
+            root_formality_id = str(row.get("formalityId") or "").strip()
+            # A legacy keyword guidance URL must never replace a newer exact-formality
+            # canonical URL. Only promote guidance when it validates against the
+            # current canonical formality identity (or no formalityId exists).
+            if not validate_vinhbao_submission_url(guide_url, root_formality_id):
+                row["nopHoSoUrl"] = guide_url
+                row["submissionLinkStatus"] = "verified_official_guidance"
+                row["submissionLinkSource"] = "tthc-guidance-enrichment"
+                if guide.get("verifiedAt"):
+                    row["submissionLinkCheckedAt"] = guide["verifiedAt"]
         guidance_count += 1
 
     as_of = str(result.get("sourceSnapshotDate") or result.get("updatedAt") or "")
