@@ -7,7 +7,7 @@ import re
 from copy import deepcopy
 from pathlib import Path
 from typing import Any
-from urllib.parse import urlparse
+from urllib.parse import urlencode, urlparse
 
 SOURCE_ROLES = {
     "central_content_reference",
@@ -27,6 +27,7 @@ SOURCE_BUNDLE_PATHS = (
     "data/priority-51-legal-verification.json",
     "data/source-audit/city-updates-current.json",
     "data/source-audit/dvcqg-live-verification-current.json",
+    "data/source-audit/dvcqg-formality-candidates-current.json",
     "data/tthc-guidance-enrichment.json",
     "js/data.js",
 )
@@ -192,8 +193,44 @@ def _merge_ref(field_sources: dict[str, list[str]], field: str, ids: list[str]) 
         field_sources[field] = current
 
 
+VINHBAO_DVC_SCOPE = {
+    "province": "019bad30-cd83-76ea-9f9a-bc6cebad4138",
+    "ward": "019bad30-cd84-7750-aaa5-8100fc7ceef8",
+    "agency": "019bad30-cd84-7750-aaa5-8100fc7ceef8",
+    "departmentId": "019bad30-cd84-7750-aaa5-8100fc7ceef8",
+    "searchType": "PROVINCE",
+    "commune": "WARD",
+    "provinceCode": "31",
+    "wardCode": "11824",
+    "showAdvanced": "false",
+    "isProvince": "0",
+    "isMinistry": "0",
+}
+
+def build_vinhbao_submission_url(code: str, formality_id: str = "") -> str:
+    params = dict(VINHBAO_DVC_SCOPE)
+    if formality_id:
+        params["formalityId"] = formality_id
+    else:
+        params["keyword"] = code
+    return "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?" + urlencode(params)
+
 def upgrade_record_to_v4(row: dict[str, Any], as_of: str) -> dict[str, Any]:
     record = deepcopy(row)
+    code = str(record.get("ma") or "").strip()
+    formality_id = str(record.get("formalityId") or "").strip()
+    if code:
+        record["nopHoSoUrl"] = build_vinhbao_submission_url(code, formality_id)
+        record["nopHoSoScope"] = {
+            "provinceCode": "31",
+            "provinceName": "Hải Phòng",
+            "wardCode": "11824",
+            "wardName": "Vĩnh Bảo",
+            "commune": "WARD",
+        }
+        record["submissionLinkStatus"] = (
+            "scoped_formality_id" if formality_id else "scoped_keyword_fallback"
+        )
     evidence: list[dict[str, Any]] = []
     seen: set[str] = set()
 
