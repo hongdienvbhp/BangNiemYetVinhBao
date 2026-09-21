@@ -228,9 +228,8 @@ def upgrade_record_to_v4(row: dict[str, Any], as_of: str) -> dict[str, Any]:
             "wardName": "Vĩnh Bảo",
             "commune": "WARD",
         }
-        record["submissionLinkStatus"] = (
-            "scoped_formality_id" if formality_id else "scoped_keyword_fallback"
-        )
+        record["submissionLinkStatus"] = "vinhbao_scope_parameters_verified"
+        record["submissionLinkMode"] = "formality_id" if formality_id else "keyword_fallback"
     evidence: list[dict[str, Any]] = []
     seen: set[str] = set()
 
