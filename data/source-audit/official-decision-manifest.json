@@ -137,8 +137,10 @@
       "filePath": "data/source-audit/city-decisions/QD-3582.pdf",
       "pdfSha256": "b0a48827fadaeb41597251e626c378a29f0c458bc40c3476b7711aa310ef4b3c",
       "effectiveDate": "2026-09-08",
-      "ingestStatus": "auto_discovered",
-      "title": "Công khai Quyết định số: 3582/QĐ-UBND ngày 08/9/2026 của UBND thành phố Hải Phòng về việc công bố danh mục nhóm thủ tục hành chính liên thông điện tử bị thay thế: đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế, cấp thẻ căn cước cho trẻ em dưới 6 tuổi và đăng ký khai tử, xóa đăng ký thường trú, giải quyết mai táng phí, tử tuất"
+      "ingestStatus": "applied",
+      "title": "Công khai Quyết định số: 3582/QĐ-UBND ngày 08/9/2026 của UBND thành phố Hải Phòng về việc công bố danh mục nhóm thủ tục hành chính liên thông điện tử bị thay thế: đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế, cấp thẻ căn cước cho trẻ em dưới 6 tuổi và đăng ký khai tử, xóa đăng ký thường trú, giải quyết mai táng phí, tử tuất",
+      "reviewedAt": "2026-09-21",
+      "reviewConclusion": "official_effect_and_commune_reception_verified"
     },
     {
       "decisionNo": "3584/QĐ-UBND",
@@ -151,8 +153,10 @@
       "filePath": "data/source-audit/city-decisions/QD-3584.pdf",
       "pdfSha256": "bb5d42104e2dfc3ead050faeef1662f2e761a61ef814aa19a058ca14f3c50c47",
       "effectiveDate": "2026-09-08",
-      "ingestStatus": "auto_discovered",
-      "title": "Công khai Quyết định số: 3584/QĐ-UBND ngày 08/9/2026 của UBND thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính ban hành mới và được sửa đổi, bổ sung trong lĩnh vực xuất nhập khẩu thuộc phạm vi, chức năng quản lý của Sở Công Thương"
+      "ingestStatus": "applied",
+      "title": "Công khai Quyết định số: 3584/QĐ-UBND ngày 08/9/2026 của UBND thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính ban hành mới và được sửa đổi, bổ sung trong lĩnh vực xuất nhập khẩu thuộc phạm vi, chức năng quản lý của Sở Công Thương",
+      "reviewedAt": "2026-09-21",
+      "reviewConclusion": "official_effect_and_commune_reception_verified"
     },
     {
       "decisionNo": "3603/QĐ-UBND",
@@ -241,8 +245,10 @@
       "filePath": "data/source-audit/city-decisions/QD-3643.pdf",
       "pdfSha256": "76c330231a3bce18a76f750351e64bff50a192580f282be7e098d1a3db5d5772",
       "effectiveDate": "2026-09-11",
-      "ingestStatus": "auto_discovered",
-      "title": "Công khai Quyết định số: 3643/QĐ-UBND ngày 11/9/2026 của UBND thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung lĩnh vực khám chữa bệnh thuộc phạm vi, chức năng quản lý của Sở Y tế"
+      "ingestStatus": "applied",
+      "title": "Công khai Quyết định số: 3643/QĐ-UBND ngày 11/9/2026 của UBND thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung lĩnh vực khám chữa bệnh thuộc phạm vi, chức năng quản lý của Sở Y tế",
+      "reviewedAt": "2026-09-21",
+      "reviewConclusion": "official_effect_and_commune_reception_verified"
     },
     {
       "decisionNo": "3657/QĐ-UBND",
@@ -281,8 +287,10 @@
       "filePath": "data/source-audit/city-decisions/QD-3726.pdf",
       "pdfSha256": "df5769c6f97888350439446ac525a9278f234f4dfef6310648f89dfb43d32cfd",
       "effectiveDate": "2026-09-15",
-      "ingestStatus": "auto_discovered",
-      "title": "Quyết định số 3726/QĐ-UBND của UBND thành phố: Về việc công bố danh mục thủ tục hành chính bị bãi bỏ lĩnh vực chăn nuôi và thú y thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường"
+      "ingestStatus": "reviewed_no_commune_change",
+      "title": "Quyết định số 3726/QĐ-UBND của UBND thành phố: Về việc công bố danh mục thủ tục hành chính bị bãi bỏ lĩnh vực chăn nuôi và thú y thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường",
+      "reviewedAt": "2026-09-21",
+      "reviewConclusion": "no_commune_reception_evidence"
     },
     {
       "decisionNo": "3727/QĐ-UBND",
@@ -295,8 +303,10 @@
       "filePath": "data/source-audit/city-decisions/QD-3727.pdf",
       "pdfSha256": "8e41298fa3132bf3f30da5c1348de6e952f46afb01cae2817c31a71eaf596010",
       "effectiveDate": "2026-09-15",
-      "ingestStatus": "auto_discovered",
-      "title": "Quyết định số 3727/QĐ-UBND của UBND thành phố: Về việc công bố danh mục thủ tục hành chính bị bãi bỏ trong lĩnh vực vật liệu xây dựng thuộc phạm vi chức năng quản lý của Sở Xây dựng"
+      "ingestStatus": "reviewed_no_commune_change",
+      "title": "Quyết định số 3727/QĐ-UBND của UBND thành phố: Về việc công bố danh mục thủ tục hành chính bị bãi bỏ trong lĩnh vực vật liệu xây dựng thuộc phạm vi chức năng quản lý của Sở Xây dựng",
+      "reviewedAt": "2026-09-21",
+      "reviewConclusion": "no_commune_reception_evidence"
     }
   ]
 }
