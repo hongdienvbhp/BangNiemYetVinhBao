@@ -27,6 +27,7 @@ GUIDANCE_FIELDS = (
     "thoiHan",
     "coQuanThucHien",
     "ketQua",
+    "dvctt",
     "submissionUrl",
 )
 
