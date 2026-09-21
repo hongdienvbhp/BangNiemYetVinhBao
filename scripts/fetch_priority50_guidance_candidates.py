@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import argparse
 import json
 import time
 from datetime import datetime, timezone
@@ -75,7 +76,26 @@ def score(row: dict, canonical: dict) -> tuple:
     )
 
 
+def fetch_parquet(path: Path, codes: set[str]) -> list[dict]:
+    import pyarrow.parquet as pq
+    columns = [
+        "formality_id", "code", "procedure_name", "is_ward", "is_province",
+        "is_full_process", "execution_methods", "profile_components", "fees",
+        "results", "executing_agencies", "source_url", "source", "content_hash",
+        "scraped_at",
+    ]
+    table = pq.read_table(path, columns=columns)
+    data = table.to_pylist()
+    return [
+        row for row in data
+        if str(row.get("code") or "").strip() in codes
+    ]
+
+
 def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--parquet", type=Path)
+    args = parser.parse_args()
     master = load(MASTER)
     target_rows = [
         row for row in master.get("thuTuc") or []
@@ -86,11 +106,14 @@ def main() -> int:
 
     by_code = {str(row["ma"]).strip(): row for row in target_rows}
     codes = sorted(by_code)
-    fetched: list[dict] = []
-    for offset in range(0, len(codes), BATCH_SIZE):
-        fetched.extend(fetch_filter(codes[offset:offset + BATCH_SIZE]))
-        if offset + BATCH_SIZE < len(codes):
-            time.sleep(0.5)
+    if args.parquet:
+        fetched = fetch_parquet(args.parquet, set(codes))
+    else:
+        fetched: list[dict] = []
+        for offset in range(0, len(codes), BATCH_SIZE):
+            fetched.extend(fetch_filter(codes[offset:offset + BATCH_SIZE]))
+            if offset + BATCH_SIZE < len(codes):
+                time.sleep(0.5)
 
     candidates: list[dict] = []
     missing: list[str] = []
