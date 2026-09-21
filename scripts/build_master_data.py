@@ -38,6 +38,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CANDIDATES = ROOT / "data/source-audit/web010-vinhbao-commune-code-candidates-20260906.json"
 ATTACHMENTS = ROOT / "data/source-audit/vinhbao-tthc-attachment-evidence-20260906.json"
 DVC_MAPPING = ROOT / "data/source-audit/dvcqg-mapping-candidates-20260907.json"
+DVC_FORMALITY_CANDIDATES = ROOT / "data/source-audit/dvcqg-formality-candidates-current.json"
 VERIFIED_DVC_CSV = ROOT / "data/formalityId-mapping-mau.csv"
 PRIORITY51_CROSSWALK = ROOT / "data/priority-51-crosswalk.json"
 PRIORITY51_LEGAL_VERIFICATION = ROOT / "data/priority-51-legal-verification.json"
@@ -333,6 +334,22 @@ def load_dvc_mapping() -> dict[str, list[dict]]:
         payload = load_json(DVC_MAPPING)
         for row in payload.get("rows", []):
             grouped[normalize_code(row.get("code", ""))].append(row)
+    if DVC_FORMALITY_CANDIDATES.exists():
+        payload = load_json(DVC_FORMALITY_CANDIDATES)
+        for row in payload.get("rows", []):
+            code = normalize_code(row.get("ma", ""))
+            fid = str(row.get("formalityId") or "").strip()
+            if not code or not fid:
+                continue
+            grouped[code].append({
+                "code": code,
+                "formalityId": fid,
+                "sourceUrl": row.get("sourceUrl") or "",
+                "scrapedAt": row.get("scrapedAt") or "",
+                "verificationStatus": "technical_exact_code_candidate",
+                "is_ward": bool(row.get("isWard")),
+                "is_province": bool(row.get("isProvince")),
+            })
     if VERIFIED_DVC_CSV.exists():
         with VERIFIED_DVC_CSV.open("r", encoding="utf-8-sig", newline="") as f:
             for row in csv.DictReader(f):
