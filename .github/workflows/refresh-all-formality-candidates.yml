@@ -1,9 +1,7 @@
 name: Refresh All Formality Candidates
 
 on:
-  push:
-    branches:
-      - feat/issue-81-single-dvc-submit-link
+  workflow_dispatch:
 
 permissions:
   contents: write
