@@ -11,9 +11,12 @@ from zoneinfo import ZoneInfo
 
 LOCAL_TZ = ZoneInfo("Asia/Ho_Chi_Minh")
 EXPECTED_BY = time(12, 15)
+UNHEALTHY_STATES = {"STOPPED_LOUDLY", "STOPPED_SILENTLY"}
+
 
 def parse_ts(value: str) -> datetime:
     return datetime.fromisoformat(value.replace("Z", "+00:00")).astimezone(LOCAL_TZ)
+
 
 def evaluate(history: dict, now: datetime) -> dict:
     local = now.astimezone(LOCAL_TZ)
@@ -35,11 +38,13 @@ def evaluate(history: dict, now: datetime) -> dict:
 
     return {"state": "STOPPED_SILENTLY", "period_key": period_key, "reason": "expected run missing"}
 
+
 def main() -> int:
     p = argparse.ArgumentParser()
     p.add_argument("--history", required=True)
     p.add_argument("--now")
     p.add_argument("--github-output")
+    p.add_argument("--fail-unhealthy", action="store_true")
     args = p.parse_args()
 
     history = json.loads(Path(args.history).read_text(encoding="utf-8"))
@@ -49,13 +54,19 @@ def main() -> int:
             now = now.replace(tzinfo=LOCAL_TZ)
     else:
         now = datetime.now(timezone.utc)
+
     result = evaluate(history, now)
+
     if args.github_output:
         with open(args.github_output, "a", encoding="utf-8") as f:
             for key in ("state", "period_key", "reason"):
                 f.write(f"{key}={result[key]}\n")
+
     print(json.dumps(result, ensure_ascii=False))
+    if args.fail_unhealthy and result["state"] in UNHEALTHY_STATES:
+        return 1
     return 0
+
 
 if __name__ == "__main__":
     raise SystemExit(main())
