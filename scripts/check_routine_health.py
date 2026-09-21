@@ -39,7 +39,7 @@ def main() -> int:
     p = argparse.ArgumentParser()
     p.add_argument("--history", required=True)
     p.add_argument("--now")
-    p.add_argument("--github-output")
+    p.add_argument("--github-output")\n    p.add_argument("--fail-unhealthy", action="store_true")
     args = p.parse_args()
 
     history = json.loads(Path(args.history).read_text(encoding="utf-8"))
