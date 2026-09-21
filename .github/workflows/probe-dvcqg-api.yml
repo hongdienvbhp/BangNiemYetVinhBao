@@ -1,0 +1,25 @@
+name: Probe DVCQG API
+
+on:
+  push:
+    branches:
+      - feat/issue-74-priority50-enrichment
+
+permissions:
+  contents: read
+
+concurrency:
+  group: probe-dvcqg-api
+  cancel-in-progress: true
+
+jobs:
+  probe:
+    runs-on: windows-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: feat/issue-74-priority50-enrichment
+      - name: Probe browser resources
+        shell: pwsh
+        run: ./scripts/probe_dvcqg_api.ps1
