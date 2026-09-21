@@ -54,6 +54,7 @@ EXECUTION_FIELDS = {
     "nopHoSoScope",
     "submissionLinkStatus",
     "huongDan.submissionUrl",
+    "huongDan.dvctt",
 }
 GUIDANCE_FIELDS = {
     "huongDan.quyTrinh",
@@ -138,10 +139,16 @@ def _validate_guidance(code: str, guide: Any) -> list[str]:
         value = guide.get(field)
         if value is not None and not isinstance(value, list):
             errors.append(f"{code}: huongDan.{field} phải là mảng")
-    for field in ("thoiHan", "coQuanThucHien", "verifiedAt"):
+    for field in ("coQuanThucHien", "verifiedAt"):
         value = guide.get(field)
         if value is not None and not isinstance(value, str):
             errors.append(f"{code}: huongDan.{field} phải là chuỗi")
+    time_value = guide.get("thoiHan")
+    if time_value is not None and not isinstance(time_value, (str, list)):
+        errors.append(f"{code}: huongDan.thoiHan phải là chuỗi hoặc mảng có cấu trúc")
+    dvctt = guide.get("dvctt")
+    if dvctt is not None and not isinstance(dvctt, dict):
+        errors.append(f"{code}: huongDan.dvctt phải là object")
     result_value = guide.get("ketQua")
     if result_value is not None and not isinstance(result_value, (dict, list, str)):
         errors.append(f"{code}: huongDan.ketQua phải là object, mảng hoặc chuỗi")
@@ -227,7 +234,7 @@ def _validate_precedence(
         required.update({"nopHoSoUrl", "nopHoSoScope", "submissionLinkStatus"})
     guide = row.get("huongDan")
     if isinstance(guide, dict):
-        for field in ("quyTrinh", "thanhPhanHoSo", "bieuMau", "lePhi", "thoiHan", "coQuanThucHien", "ketQua", "submissionUrl"):
+        for field in ("quyTrinh", "thanhPhanHoSo", "bieuMau", "lePhi", "thoiHan", "coQuanThucHien", "ketQua", "dvctt", "submissionUrl"):
             if guide.get(field) not in (None, "", [], {}):
                 required.add(f"huongDan.{field}")
 

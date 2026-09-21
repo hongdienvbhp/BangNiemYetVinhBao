@@ -23,6 +23,7 @@ SUBSTANTIVE_FIELDS = {
     "thoiHan",
     "coQuanThucHien",
     "ketQua",
+    "dvctt",
     "submissionUrl",
 }
 
@@ -163,7 +164,7 @@ def validate(payload: object) -> list[str]:
                         errors.append(
                             f"{label}: fieldProvenance.{field} tham chiếu source id không tồn tại: {ref}"
                         )
-                if field == "submissionUrl":
+                if field in {"submissionUrl", "dvctt"}:
                     roles = {
                         str(source_by_id[ref].get("sourceRole") or "")
                         for ref in refs
@@ -171,7 +172,7 @@ def validate(payload: object) -> list[str]:
                     }
                     if roles - {"local_execution"}:
                         errors.append(
-                            f"{label}: submissionUrl chỉ được provenance từ local_execution"
+                            f"{label}: {field} chỉ được provenance từ local_execution"
                         )
 
         submission_url = str(row.get("submissionUrl") or "").strip()

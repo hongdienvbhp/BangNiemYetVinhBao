@@ -113,6 +113,24 @@ class GuidanceEnrichmentTests(unittest.TestCase):
         }])
         self.assertEqual(validate(payload), [])
 
+    def test_dvctt_requires_local_execution_provenance(self):
+        payload = {
+            "format": "bangniemyet-tthc-guidance-enrichment",
+            "version": 1,
+            "rows": [{
+                "ma": "1.000001",
+                "verificationStatus": "verified_official",
+                "dvctt": {"accessUrl": "https://dichvucong.gov.vn/a"},
+                "sources": [{
+                    "id": "content",
+                    "url": "https://haiphong.gov.vn/a",
+                    "sourceRole": "central_content_reference",
+                }],
+                "fieldProvenance": {"dvctt": ["content"]},
+            }],
+        }
+        self.assertTrue(any("dvctt" in error and "local_execution" in error for error in validate(payload)))
+
 
 if __name__ == "__main__":
     unittest.main()

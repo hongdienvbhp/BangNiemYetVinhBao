@@ -307,6 +307,18 @@ def upgrade_record_to_v4(row: dict[str, Any], as_of: str) -> dict[str, Any]:
                 if isinstance(ref, str) and ref in guide_source_refs
             ] if isinstance(refs, list) else []
             _merge_ref(field_sources, f"huongDan.{field}", ids or guide_evidence_ids)
+        if guide.get("dvctt"):
+            refs = provenance.get("dvctt")
+            ids = [
+                guide_source_refs[ref]
+                for ref in refs
+                if (
+                    isinstance(ref, str)
+                    and ref in guide_source_refs
+                    and guide_source_roles.get(ref) == "local_execution"
+                )
+            ] if isinstance(refs, list) else []
+            _merge_ref(field_sources, "huongDan.dvctt", ids or execution_ids)
         if guide.get("submissionUrl"):
             refs = provenance.get("submissionUrl")
             ids = [

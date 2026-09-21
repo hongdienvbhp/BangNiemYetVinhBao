@@ -1,0 +1,108 @@
+{
+  "format": "priority50-official-guidance-exceptions",
+  "version": 1,
+  "verifiedAt": "2026-09-21",
+  "policy": "Official-source exceptions for priority procedures absent from candidate snapshot. Values are taken from current official DVCQG pages; local agency scope is corroborated by official Hải Phòng evidence.",
+  "rows": [
+    {
+      "ma": "2.001283",
+      "ten": "Cấp Giấy chứng nhận đủ điều kiện cửa hàng bán lẻ LPG chai",
+      "coQuanThucHien": "Ủy ban nhân dân cấp xã",
+      "thanhPhanHoSo": [
+        {
+          "ten": "Giấy đề nghị cấp Giấy chứng nhận đủ điều kiện cửa hàng bán lẻ LPG chai theo Mẫu số 05 tại Phụ lục kèm theo Nghị định 87/2017/NĐ-CP.",
+          "banChinh": "1",
+          "banSao": "0",
+          "bieuMau": "Mẫu số 05.docx"
+        },
+        {
+          "ten": "Bản sao hợp đồng bán LPG chai với thương nhân có giấy chứng nhận đủ điều kiện còn hiệu lực.",
+          "banChinh": "0",
+          "banSao": "1"
+        },
+        {
+          "ten": "Tài liệu chứng minh đáp ứng các điều kiện về phòng cháy và chữa cháy.",
+          "banChinh": "1",
+          "banSao": "0"
+        }
+      ],
+      "thoiHan": [
+        {
+          "hinhThuc": "Trực tiếp",
+          "giaTri": "15 Ngày làm việc"
+        },
+        {
+          "hinhThuc": "Trực tuyến",
+          "giaTri": "15 Ngày làm việc"
+        },
+        {
+          "hinhThuc": "Dịch vụ bưu chính",
+          "giaTri": "15 Ngày làm việc"
+        }
+      ],
+      "lePhi": [
+        {
+          "hinhThuc": "Trực tiếp",
+          "mucThu": "Nộp phí theo quy định của pháp luật về phí, lệ phí hiện hành."
+        },
+        {
+          "hinhThuc": "Trực tuyến",
+          "mucThu": "Nộp phí theo quy định của pháp luật về phí, lệ phí hiện hành."
+        },
+        {
+          "hinhThuc": "Dịch vụ bưu chính",
+          "mucThu": "Nộp phí theo quy định của pháp luật về phí, lệ phí hiện hành."
+        }
+      ],
+      "ketQua": "GIẤY CHỨNG NHẬN ĐỦ ĐIỀU KIỆN CỬA HÀNG BÁN LẺ LPG CHAI",
+      "officialSourceUrl": "https://dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=4413",
+      "localLegalSourceUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6841/tintuc/2025/8/danh-m2.-danh-muc-tthc-khong-phu-thuoc-vao-dia-gioi-hc-thuoc-quan-ly-so-cong-thuong.signed638918179938857250.pdf"
+    },
+    {
+      "ma": "2.002481",
+      "ten": "Chuyển trường đối với học sinh trung học cơ sở.",
+      "coQuanThucHien": "Ủy ban nhân dân cấp xã",
+      "thanhPhanHoSo": [
+        {
+          "ten": "Đơn xin chuyển trường do cha hoặc mẹ hoặc người giám hộ kí",
+          "banChinh": "1",
+          "banSao": "0"
+        },
+        {
+          "ten": "Học bạ (bản chính).",
+          "banChinh": "1",
+          "banSao": "0"
+        },
+        {
+          "ten": "Giấy giới thiệu chuyển trường do Hiệu trưởng nhà trường nơi đi cấp",
+          "banChinh": "1",
+          "banSao": "0"
+        }
+      ],
+      "thoiHan": [
+        {
+          "hinhThuc": "Trực tiếp",
+          "giaTri": "Không quy định"
+        },
+        {
+          "hinhThuc": "Trực tuyến",
+          "giaTri": "Không quy định"
+        },
+        {
+          "hinhThuc": "Dịch vụ bưu chính",
+          "giaTri": "Không quy định"
+        }
+      ],
+      "lePhi": [
+        {
+          "trangThai": "not_published",
+          "mucThu": null,
+          "ghiChu": "Nguồn DVCQG chính thức không công bố mức thu."
+        }
+      ],
+      "ketQua": "Học sinh được tiếp nhận, xếp vào lớp",
+      "officialSourceUrl": "https://dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=297364",
+      "localLegalSourceUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6841/tintuc/2025/8/thong-bao-tthc-dia-gioi-hanh-chinh-gddt.signed638913890556792082.pdf"
+    }
+  ]
+}
