@@ -16,6 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
+          fetch-depth: 0
           lfs: true
 
       - name: Setup Python
@@ -33,7 +34,27 @@ jobs:
       - name: Python unit tests
         run: python -m unittest discover -s tests -v
 
+      - name: Detect canonical-build impact
+        if: github.event_name == 'pull_request'
+        id: canonical-impact
+        shell: bash
+        run: |
+          set -euo pipefail
+          base="${{ github.event.pull_request.base.sha }}"
+          if git diff --name-only "$base"...HEAD -- \
+            data/ \
+            js/master-data-fallback.js \
+            scripts/update_official_sources.py \
+            scripts/extract_city_updates.py \
+            scripts/build_master_data.py \
+            scripts/fetch_dvc_mapping.py | grep -q .; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Rebuild committed snapshot deterministically
+        if: github.event_name != 'pull_request' || steps.canonical-impact.outputs.changed == 'true'
         shell: bash
         run: |
           set -euo pipefail
