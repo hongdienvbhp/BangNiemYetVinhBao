@@ -11,17 +11,21 @@ from pathlib import Path
 from urllib.parse import urljoin, urlparse
 from urllib.request import Request, urlopen
 
-from scripts.central_source_registry import load_json, validate_registry
+try:
+    from scripts.central_source_registry import load_json, validate_registry
+except ModuleNotFoundError:
+    from central_source_registry import load_json, validate_registry
 
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "data/source-audit/central-source-registry.json"
 PLAN = ROOT / "data/source-audit/central-guidance-plan.json"
-OUTPUT = ROOT / "data/source-audit/central-guidance-candidates.json"
+OUTPUT_DIR = ROOT / "data/source-audit/central-guidance-candidates"
 USER_AGENT = "BangNiemYetVinhBao-Central-Guidance/1.0"
 
 HEADINGS = [
     "Trình tự thực hiện",
     "Cách thức thực hiện",
+    "Lệ phí",
     "Thành phần hồ sơ",
     "Đối tượng thực hiện",
     "Cơ quan thực hiện",
@@ -104,7 +108,33 @@ def section(lines: list[str], heading: str) -> list[str]:
 
 
 def parse_documents(lines: list[str]) -> list[dict]:
-    raw = [item for item in section(lines, "Thành phần hồ sơ") if item not in DOC_HEADERS]
+    raw = section(lines, "Thành phần hồ sơ")
+    if "Loại giấy tờ" in raw:
+        headers = {"STT", "Loại giấy tờ", "Mẫu đơn, tờ khai", "Số lượng giấy tờ"}
+        raw = [item for item in raw if item not in headers]
+        starts = [i for i, item in enumerate(raw) if re.fullmatch(r"\d+", item)]
+        documents: list[dict] = []
+        for pos, i in enumerate(starts):
+            j = starts[pos + 1] if pos + 1 < len(starts) else len(raw)
+            segment = raw[i + 1:j]
+            names = [
+                item for item in segment
+                if not item.startswith(("Bản chính:", "Bản sao:"))
+                and not re.search(r"\.(?:docx?|pdf|xlsx?)$", item, re.I)
+            ]
+            if not names:
+                continue
+            qty = "; ".join(
+                item for item in segment
+                if item.startswith(("Bản chính:", "Bản sao:"))
+            )
+            item = {"ten": names[0]}
+            if qty:
+                item["soLuong"] = qty
+            documents.append(item)
+        return documents
+
+    raw = [item for item in raw if item not in DOC_HEADERS]
     documents: list[dict] = []
     index = 0
     while index < len(raw):
@@ -120,6 +150,69 @@ def parse_documents(lines: list[str]) -> list[dict]:
             documents.append({"ten": name})
         index += 1
     return documents
+
+
+DELIVERY_METHODS = {
+    "Trực tiếp",
+    "Trực tuyến",
+    "Dịch vụ bưu chính",
+    "Dịch vụ bưu chính công ích",
+    "Qua dịch vụ bưu chính",
+    "Qua dịch vụ bưu chính công ích",
+}
+
+
+def parse_time_and_fees(lines: list[str]) -> tuple[str, list[dict]]:
+    if "Lệ phí" in lines:
+        raw = [item for item in section(lines, "Lệ phí") if item not in {"Mô tả", "Hình thức nộp", "Thời hạn giải quyết", "Phí, lệ phí"}]
+        rows: list[dict] = []
+        current: dict | None = None
+        for item in raw:
+            if item in DELIVERY_METHODS:
+                if current:
+                    rows.append(current)
+                current = {"method": item, "duration": "", "fees": []}
+                continue
+            if current is None:
+                continue
+            if not current["duration"]:
+                current["duration"] = item
+            else:
+                current["fees"].append(item)
+        if current:
+            rows.append(current)
+
+        durations = []
+        for row in rows:
+            value = str(row.get("duration") or "").strip()
+            if value and value not in durations:
+                durations.append(value)
+        thoi_han = durations[0] if len(durations) == 1 else "; ".join(
+            f"{row['method']}: {row['duration']}"
+            for row in rows if row.get("duration")
+        )
+        fees = []
+        for row in rows:
+            fee_text = " ".join(str(x).strip() for x in row.get("fees") or [] if str(x).strip()).strip()
+            if fee_text:
+                fees.append({"ten": row["method"], "mucThu": fee_text})
+        return thoi_han, fees
+
+    raw = section(lines, "Cách thức thực hiện")
+    duration_re = re.compile(r"^\d+(?:[.,]\d+)?\s+(?:ngày|giờ|tháng|năm)(?:\s+làm việc)?$", re.I)
+    durations: list[str] = []
+    for item in raw:
+        value = item.strip()
+        if duration_re.fullmatch(value) and value not in durations:
+            durations.append(value)
+    thoi_han = durations[0] if len(durations) == 1 else "; ".join(durations)
+    fee_texts = []
+    for item in raw:
+        folded = item.lower()
+        if any(marker in folded for marker in (" đồng", "vnđ", " usd", "không thu", "không có phí", "không có lệ phí")):
+            if item not in fee_texts:
+                fee_texts.append(item)
+    return thoi_han, [{"ten": "Phí, lệ phí", "mucThu": item} for item in fee_texts]
 
 
 def parse_forms(parser: VisibleTextParser, page_url: str) -> list[dict]:
@@ -165,6 +258,7 @@ def parse_direct_page(code: str, source: dict, url: str) -> dict:
     result = section(lines, "Kết quả thực hiện")
     docs = parse_documents(lines)
     forms = parse_forms(parser, url)
+    thoi_han, le_phi = parse_time_and_fees(lines)
     status = "candidate"
     issues: list[str] = []
     if detected_code != code:
@@ -180,10 +274,11 @@ def parse_direct_page(code: str, source: dict, url: str) -> dict:
     return {
         "ma": code,
         "sourceId": source["id"],
-        "sourceRole": "central_content_reference",
+        "sourceRole": str(source.get("sourceRole") or "central_content_reference"),
         "sourceUrl": url,
         "authority": source["authority"],
         "adapter": source["adapter"],
+        "checkedAt": source.get("checkedAt") or "",
         "httpEvidence": {
             "sha256": hashlib.sha256(body).hexdigest(),
             "bytes": len(body),
@@ -197,8 +292,10 @@ def parse_direct_page(code: str, source: dict, url: str) -> dict:
             "cachThucText": "\n".join(method),
             "thanhPhanHoSo": docs,
             "bieuMau": forms,
+            "thoiHan": thoi_han,
+            "lePhi": le_phi,
             "coQuanThucHien": "\n".join(authority),
-            "ketQuaText": "\n".join(result),
+            "ketQua": "\n".join(result),
         },
     }
 
@@ -218,8 +315,8 @@ def main() -> int:
         raise SystemExit(f"Unknown source id: {args.source_id}")
     if source["status"] not in {"ready", "ready_search"}:
         raise SystemExit(f"Source {args.source_id} is not ready")
-    if source["adapter"] != "direct_code_detail":
-        raise SystemExit(f"Automated fetch currently supports direct_code_detail only; {args.source_id} remains planned/search-reviewed")
+    if source["adapter"] not in {"direct_code_detail", "direct_detail_map"}:
+        raise SystemExit(f"Automated fetch currently supports direct detail adapters only; {args.source_id} remains planned/search-reviewed")
 
     results = []
     for procedure in plan.get("procedures") or []:
@@ -241,12 +338,17 @@ def main() -> int:
             "withProcess": sum(1 for item in results if item["extracted"]["quyTrinh"]),
             "withDocuments": sum(1 for item in results if item["extracted"]["thanhPhanHoSo"]),
             "withForms": sum(1 for item in results if item["extracted"]["bieuMau"]),
+            "withTime": sum(1 for item in results if item["extracted"]["thoiHan"]),
+            "withFees": sum(1 for item in results if item["extracted"]["lePhi"]),
             "withAuthority": sum(1 for item in results if item["extracted"]["coQuanThucHien"]),
+            "withResult": sum(1 for item in results if item["extracted"]["ketQua"]),
         },
         "procedures": results,
     }
-    OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps(payload["summary"], ensure_ascii=False))
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    output = OUTPUT_DIR / f"{args.source_id}.json"
+    output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({**payload["summary"], "output": str(output.relative_to(ROOT))}, ensure_ascii=False))
     return 0
 
 

@@ -713,11 +713,10 @@
         {
           "sourceId": "moit-dvc-gas",
           "authority": "Bộ Công Thương",
-          "adapter": "search_listing_by_code",
+          "adapter": "direct_detail_map",
           "status": "ready",
           "legalUse": "content_only_no_local_effect",
-          "candidateUrl": "https://dichvucong.moit.gov.vn/VdxpTTHCOnline.aspx?LevelType=-1&ServiceType=Kinh+doanh+kh%C3%AD",
-          "queryCode": "2.001283"
+          "candidateUrl": "https://dichvucong.moit.gov.vn/VdxpTTHCOnlineDetail.aspx?DocId=934"
         }
       ],
       "sourceCoverage": "ready"

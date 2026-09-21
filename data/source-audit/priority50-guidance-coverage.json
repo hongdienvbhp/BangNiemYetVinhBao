@@ -1,0 +1,746 @@
+{
+  "format": "priority50-guidance-coverage",
+  "version": 1,
+  "canonicalDatasetVersion": "2026.09.21",
+  "canonicalSourceCommit": "99f84187fd634f1ffe3c8d0f569accfc0c7abb4e",
+  "reviewed": 50,
+  "verifiedGuidanceRows": 25,
+  "unresolvedRows": 25,
+  "dvcExactRows": 48,
+  "fieldCoverage": {
+    "quyTrinh": 25,
+    "thanhPhanHoSo": 25,
+    "bieuMau": 1,
+    "lePhi": 24,
+    "thoiHan": 25,
+    "coQuanThucHien": 25,
+    "ketQua": 25
+  },
+  "rows": [
+    {
+      "ma": "1.014027",
+      "reviewed": true,
+      "publishedFields": [],
+      "centralCandidateCount": 0,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "unresolved_no_verified_central_content",
+      "priority51Ordinal": 1,
+      "linhVuc": "BẢO TRỢ XÃ HỘI"
+    },
+    {
+      "ma": "1.014028",
+      "reviewed": true,
+      "publishedFields": [],
+      "centralCandidateCount": 0,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "unresolved_no_verified_central_content",
+      "priority51Ordinal": 2,
+      "linhVuc": "BẢO TRỢ XÃ HỘI"
+    },
+    {
+      "ma": "1.003622",
+      "reviewed": true,
+      "publishedFields": [],
+      "centralCandidateCount": 0,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "unresolved_no_verified_central_content",
+      "priority51Ordinal": 3,
+      "linhVuc": "VĂN HÓA"
+    },
+    {
+      "ma": "2.002481",
+      "reviewed": true,
+      "publishedFields": [],
+      "centralCandidateCount": 0,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "unresolved_no_verified_central_content",
+      "priority51Ordinal": 4,
+      "linhVuc": "GIÁO DỤC"
+    },
+    {
+      "ma": "2.000286",
+      "reviewed": true,
+      "publishedFields": [],
+      "centralCandidateCount": 0,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "unresolved_no_verified_central_content",
+      "priority51Ordinal": 5,
+      "linhVuc": "BẢO TRỢ XÃ HỘI"
+    },
+    {
+      "ma": "1.001776",
+      "reviewed": true,
+      "publishedFields": [],
+      "centralCandidateCount": 0,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "unresolved_no_verified_central_content",
+      "priority51Ordinal": 6,
+      "linhVuc": "BẢO TRỢ XÃ HỘI"
+    },
+    {
+      "ma": "1.001731",
+      "reviewed": true,
+      "publishedFields": [],
+      "centralCandidateCount": 0,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "unresolved_no_verified_central_content",
+      "priority51Ordinal": 7,
+      "linhVuc": "BẢO TRỢ XÃ HỘI"
+    },
+    {
+      "ma": "1.010824",
+      "reviewed": true,
+      "publishedFields": [],
+      "centralCandidateCount": 0,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "unresolved_no_verified_central_content",
+      "priority51Ordinal": 8,
+      "linhVuc": "NGƯỜI CÓ CÔNG"
+    },
+    {
+      "ma": "1.010803",
+      "reviewed": true,
+      "publishedFields": [],
+      "centralCandidateCount": 0,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "unresolved_no_verified_central_content",
+      "priority51Ordinal": 9,
+      "linhVuc": "NGƯỜI CÓ CÔNG"
+    },
+    {
+      "ma": "1.013702",
+      "reviewed": true,
+      "publishedFields": [],
+      "centralCandidateCount": 0,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "unresolved_no_verified_central_content",
+      "priority51Ordinal": 10,
+      "linhVuc": "HỘI"
+    },
+    {
+      "ma": "1.013703",
+      "reviewed": true,
+      "publishedFields": [],
+      "centralCandidateCount": 0,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "unresolved_no_verified_central_content",
+      "priority51Ordinal": 11,
+      "linhVuc": "HỘI"
+    },
+    {
+      "ma": "1.011606",
+      "reviewed": true,
+      "publishedFields": [],
+      "centralCandidateCount": 0,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "unresolved_no_verified_central_content",
+      "priority51Ordinal": 12,
+      "linhVuc": "GIẢM NGHÈO"
+    },
+    {
+      "ma": "1.011609",
+      "reviewed": true,
+      "publishedFields": [],
+      "centralCandidateCount": 0,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "unresolved_no_verified_central_content",
+      "priority51Ordinal": 13,
+      "linhVuc": "GIẢM NGHÈO"
+    },
+    {
+      "ma": "1.001699",
+      "reviewed": true,
+      "publishedFields": [],
+      "centralCandidateCount": 0,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "unresolved_no_verified_central_content",
+      "priority51Ordinal": 14,
+      "linhVuc": "BẢO TRỢ XÃ HỘI"
+    },
+    {
+      "ma": "1.010833",
+      "reviewed": true,
+      "publishedFields": [],
+      "centralCandidateCount": 0,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "unresolved_no_verified_central_content",
+      "priority51Ordinal": 15,
+      "linhVuc": "NGƯỜI CÓ CÔNG"
+    },
+    {
+      "ma": "1.013978",
+      "reviewed": true,
+      "publishedFields": [],
+      "centralCandidateCount": 0,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "unresolved_no_verified_central_content",
+      "priority51Ordinal": 16,
+      "linhVuc": "ĐẤT ĐAI"
+    },
+    {
+      "ma": "1.012818",
+      "reviewed": true,
+      "publishedFields": [],
+      "centralCandidateCount": 0,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "unresolved_no_verified_central_content",
+      "priority51Ordinal": 17,
+      "linhVuc": "ĐẤT ĐAI"
+    },
+    {
+      "ma": "2.001283",
+      "reviewed": true,
+      "publishedFields": [
+        "bieuMau",
+        "coQuanThucHien",
+        "ketQua",
+        "quyTrinh",
+        "thanhPhanHoSo",
+        "thoiHan"
+      ],
+      "centralCandidateCount": 1,
+      "rejectedCandidates": 0,
+      "dvcExact": false,
+      "status": "verified_guidance",
+      "priority51Ordinal": 18,
+      "linhVuc": "KINH DOANH KHÍ"
+    },
+    {
+      "ma": "1.001612",
+      "reviewed": true,
+      "publishedFields": [],
+      "centralCandidateCount": 0,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "unresolved_no_verified_central_content",
+      "priority51Ordinal": 19,
+      "linhVuc": "ĐĂNG KÝ HỘ KINH DOANH"
+    },
+    {
+      "ma": "2.000720",
+      "reviewed": true,
+      "publishedFields": [],
+      "centralCandidateCount": 0,
+      "rejectedCandidates": 0,
+      "dvcExact": false,
+      "status": "unresolved_no_verified_central_content",
+      "priority51Ordinal": 20,
+      "linhVuc": "ĐĂNG KÝ HỘ KINH DOANH"
+    },
+    {
+      "ma": "1.001570",
+      "reviewed": true,
+      "publishedFields": [],
+      "centralCandidateCount": 0,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "unresolved_no_verified_central_content",
+      "priority51Ordinal": 21,
+      "linhVuc": "ĐĂNG KÝ HỘ KINH DOANH"
+    },
+    {
+      "ma": "2.000575",
+      "reviewed": true,
+      "publishedFields": [],
+      "centralCandidateCount": 0,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "unresolved_no_verified_central_content",
+      "priority51Ordinal": 22,
+      "linhVuc": "ĐĂNG KÝ HỘ KINH DOANH"
+    },
+    {
+      "ma": "1.001266",
+      "reviewed": true,
+      "publishedFields": [],
+      "centralCandidateCount": 0,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "unresolved_no_verified_central_content",
+      "priority51Ordinal": 23,
+      "linhVuc": "ĐĂNG KÝ HỘ KINH DOANH"
+    },
+    {
+      "ma": "1.013949",
+      "reviewed": true,
+      "publishedFields": [],
+      "centralCandidateCount": 0,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "unresolved_no_verified_central_content",
+      "priority51Ordinal": 24,
+      "linhVuc": "ĐẤT ĐAI"
+    },
+    {
+      "ma": "1.012812",
+      "reviewed": true,
+      "publishedFields": [],
+      "centralCandidateCount": 0,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "unresolved_no_verified_central_content",
+      "priority51Ordinal": 25,
+      "linhVuc": "ĐẤT ĐAI"
+    },
+    {
+      "ma": "1.012796",
+      "reviewed": true,
+      "publishedFields": [],
+      "centralCandidateCount": 0,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "unresolved_no_verified_central_content",
+      "priority51Ordinal": 26,
+      "linhVuc": "ĐẤT ĐAI"
+    },
+    {
+      "ma": "2.002189",
+      "reviewed": true,
+      "publishedFields": [
+        "coQuanThucHien",
+        "ketQua",
+        "lePhi",
+        "quyTrinh",
+        "thanhPhanHoSo",
+        "thoiHan"
+      ],
+      "centralCandidateCount": 1,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "verified_guidance",
+      "priority51Ordinal": 27,
+      "linhVuc": "HỘ TỊCH"
+    },
+    {
+      "ma": "1.000656",
+      "reviewed": true,
+      "publishedFields": [
+        "coQuanThucHien",
+        "ketQua",
+        "lePhi",
+        "quyTrinh",
+        "thanhPhanHoSo",
+        "thoiHan"
+      ],
+      "centralCandidateCount": 1,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "verified_guidance",
+      "priority51Ordinal": 28,
+      "linhVuc": "HỘ TỊCH"
+    },
+    {
+      "ma": "1.001193",
+      "reviewed": true,
+      "publishedFields": [
+        "coQuanThucHien",
+        "ketQua",
+        "lePhi",
+        "quyTrinh",
+        "thanhPhanHoSo",
+        "thoiHan"
+      ],
+      "centralCandidateCount": 1,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "verified_guidance",
+      "priority51Ordinal": 29,
+      "linhVuc": "HỘ TỊCH"
+    },
+    {
+      "ma": "1.004859",
+      "reviewed": true,
+      "publishedFields": [
+        "coQuanThucHien",
+        "ketQua",
+        "lePhi",
+        "quyTrinh",
+        "thanhPhanHoSo",
+        "thoiHan"
+      ],
+      "centralCandidateCount": 1,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "verified_guidance",
+      "priority51Ordinal": 30,
+      "linhVuc": "HỘ TỊCH"
+    },
+    {
+      "ma": "1.004873",
+      "reviewed": true,
+      "publishedFields": [
+        "coQuanThucHien",
+        "ketQua",
+        "lePhi",
+        "quyTrinh",
+        "thanhPhanHoSo",
+        "thoiHan"
+      ],
+      "centralCandidateCount": 1,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "verified_guidance",
+      "priority51Ordinal": 31,
+      "linhVuc": "HỘ TỊCH"
+    },
+    {
+      "ma": "2.000635",
+      "reviewed": true,
+      "publishedFields": [
+        "coQuanThucHien",
+        "ketQua",
+        "lePhi",
+        "quyTrinh",
+        "thanhPhanHoSo",
+        "thoiHan"
+      ],
+      "centralCandidateCount": 1,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "verified_guidance",
+      "priority51Ordinal": 32,
+      "linhVuc": "HỘ TỊCH"
+    },
+    {
+      "ma": "1.000593",
+      "reviewed": true,
+      "publishedFields": [
+        "coQuanThucHien",
+        "ketQua",
+        "lePhi",
+        "quyTrinh",
+        "thanhPhanHoSo",
+        "thoiHan"
+      ],
+      "centralCandidateCount": 1,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "verified_guidance",
+      "priority51Ordinal": 33,
+      "linhVuc": "HỘ TỊCH"
+    },
+    {
+      "ma": "1.004772",
+      "reviewed": true,
+      "publishedFields": [
+        "coQuanThucHien",
+        "ketQua",
+        "lePhi",
+        "quyTrinh",
+        "thanhPhanHoSo",
+        "thoiHan"
+      ],
+      "centralCandidateCount": 1,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "verified_guidance",
+      "priority51Ordinal": 34,
+      "linhVuc": "HỘ TỊCH"
+    },
+    {
+      "ma": "2.000528",
+      "reviewed": true,
+      "publishedFields": [
+        "coQuanThucHien",
+        "ketQua",
+        "lePhi",
+        "quyTrinh",
+        "thanhPhanHoSo",
+        "thoiHan"
+      ],
+      "centralCandidateCount": 1,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "verified_guidance",
+      "priority51Ordinal": 35,
+      "linhVuc": "HỘ TỊCH"
+    },
+    {
+      "ma": "1.005461",
+      "reviewed": true,
+      "publishedFields": [
+        "coQuanThucHien",
+        "ketQua",
+        "lePhi",
+        "quyTrinh",
+        "thanhPhanHoSo",
+        "thoiHan"
+      ],
+      "centralCandidateCount": 1,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "verified_guidance",
+      "priority51Ordinal": 36,
+      "linhVuc": "HỘ TỊCH"
+    },
+    {
+      "ma": "1.004746",
+      "reviewed": true,
+      "publishedFields": [
+        "coQuanThucHien",
+        "ketQua",
+        "lePhi",
+        "quyTrinh",
+        "thanhPhanHoSo",
+        "thoiHan"
+      ],
+      "centralCandidateCount": 1,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "verified_guidance",
+      "priority51Ordinal": 37,
+      "linhVuc": "HỘ TỊCH"
+    },
+    {
+      "ma": "1.004884",
+      "reviewed": true,
+      "publishedFields": [
+        "coQuanThucHien",
+        "ketQua",
+        "lePhi",
+        "quyTrinh",
+        "thanhPhanHoSo",
+        "thoiHan"
+      ],
+      "centralCandidateCount": 1,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "verified_guidance",
+      "priority51Ordinal": 38,
+      "linhVuc": "HỘ TỊCH"
+    },
+    {
+      "ma": "2.000806",
+      "reviewed": true,
+      "publishedFields": [
+        "coQuanThucHien",
+        "ketQua",
+        "lePhi",
+        "quyTrinh",
+        "thanhPhanHoSo",
+        "thoiHan"
+      ],
+      "centralCandidateCount": 1,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "verified_guidance",
+      "priority51Ordinal": 39,
+      "linhVuc": "HỘ TỊCH"
+    },
+    {
+      "ma": "1.000894",
+      "reviewed": true,
+      "publishedFields": [
+        "coQuanThucHien",
+        "ketQua",
+        "lePhi",
+        "quyTrinh",
+        "thanhPhanHoSo",
+        "thoiHan"
+      ],
+      "centralCandidateCount": 1,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "verified_guidance",
+      "priority51Ordinal": 40,
+      "linhVuc": "HỘ TỊCH"
+    },
+    {
+      "ma": "1.000689",
+      "reviewed": true,
+      "publishedFields": [
+        "coQuanThucHien",
+        "ketQua",
+        "lePhi",
+        "quyTrinh",
+        "thanhPhanHoSo",
+        "thoiHan"
+      ],
+      "centralCandidateCount": 1,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "verified_guidance",
+      "priority51Ordinal": 41,
+      "linhVuc": "HỘ TỊCH"
+    },
+    {
+      "ma": "1.004837",
+      "reviewed": true,
+      "publishedFields": [
+        "coQuanThucHien",
+        "ketQua",
+        "lePhi",
+        "quyTrinh",
+        "thanhPhanHoSo",
+        "thoiHan"
+      ],
+      "centralCandidateCount": 1,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "verified_guidance",
+      "priority51Ordinal": 42,
+      "linhVuc": "HỘ TỊCH"
+    },
+    {
+      "ma": "2.001016",
+      "reviewed": true,
+      "publishedFields": [
+        "coQuanThucHien",
+        "ketQua",
+        "lePhi",
+        "quyTrinh",
+        "thanhPhanHoSo",
+        "thoiHan"
+      ],
+      "centralCandidateCount": 1,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "verified_guidance",
+      "priority51Ordinal": 43,
+      "linhVuc": "CHỨNG THỰC"
+    },
+    {
+      "ma": "2.001406",
+      "reviewed": true,
+      "publishedFields": [
+        "coQuanThucHien",
+        "ketQua",
+        "lePhi",
+        "quyTrinh",
+        "thanhPhanHoSo",
+        "thoiHan"
+      ],
+      "centralCandidateCount": 1,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "verified_guidance",
+      "priority51Ordinal": 44,
+      "linhVuc": "CHỨNG THỰC"
+    },
+    {
+      "ma": "2.000913",
+      "reviewed": true,
+      "publishedFields": [
+        "coQuanThucHien",
+        "ketQua",
+        "lePhi",
+        "quyTrinh",
+        "thanhPhanHoSo",
+        "thoiHan"
+      ],
+      "centralCandidateCount": 1,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "verified_guidance",
+      "priority51Ordinal": 46,
+      "linhVuc": "CHỨNG THỰC"
+    },
+    {
+      "ma": "2.001035",
+      "reviewed": true,
+      "publishedFields": [
+        "coQuanThucHien",
+        "ketQua",
+        "lePhi",
+        "quyTrinh",
+        "thanhPhanHoSo",
+        "thoiHan"
+      ],
+      "centralCandidateCount": 1,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "verified_guidance",
+      "priority51Ordinal": 47,
+      "linhVuc": "CHỨNG THỰC"
+    },
+    {
+      "ma": "2.000884",
+      "reviewed": true,
+      "publishedFields": [
+        "coQuanThucHien",
+        "ketQua",
+        "lePhi",
+        "quyTrinh",
+        "thanhPhanHoSo",
+        "thoiHan"
+      ],
+      "centralCandidateCount": 1,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "verified_guidance",
+      "priority51Ordinal": 48,
+      "linhVuc": "CHỨNG THỰC"
+    },
+    {
+      "ma": "2.000992",
+      "reviewed": true,
+      "publishedFields": [
+        "coQuanThucHien",
+        "ketQua",
+        "lePhi",
+        "quyTrinh",
+        "thanhPhanHoSo",
+        "thoiHan"
+      ],
+      "centralCandidateCount": 1,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "verified_guidance",
+      "priority51Ordinal": 49,
+      "linhVuc": "CHỨNG THỰC"
+    },
+    {
+      "ma": "2.000815",
+      "reviewed": true,
+      "publishedFields": [
+        "coQuanThucHien",
+        "ketQua",
+        "lePhi",
+        "quyTrinh",
+        "thanhPhanHoSo",
+        "thoiHan"
+      ],
+      "centralCandidateCount": 1,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "verified_guidance",
+      "priority51Ordinal": 50,
+      "linhVuc": "CHỨNG THỰC"
+    },
+    {
+      "ma": "2.000942",
+      "reviewed": true,
+      "publishedFields": [
+        "coQuanThucHien",
+        "ketQua",
+        "lePhi",
+        "quyTrinh",
+        "thanhPhanHoSo",
+        "thoiHan"
+      ],
+      "centralCandidateCount": 1,
+      "rejectedCandidates": 0,
+      "dvcExact": true,
+      "status": "verified_guidance",
+      "priority51Ordinal": 51,
+      "linhVuc": "CHỨNG THỰC"
+    }
+  ]
+}

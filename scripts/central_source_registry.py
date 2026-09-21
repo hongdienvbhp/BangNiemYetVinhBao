@@ -14,6 +14,7 @@ PLAN = ROOT / "data/source-audit/central-guidance-plan.json"
 ALLOWED_STATUS = {"ready", "ready_search", "discovery_only"}
 ALLOWED_ADAPTERS = {
     "direct_code_detail",
+    "direct_detail_map",
     "search_listing_by_code",
     "search_listing_by_code_or_name",
     "official_decision_catalog",
@@ -70,6 +71,14 @@ def validate_registry(payload: dict) -> list[str]:
                 errors.append(f"{source_id or index}: direct adapter requires {{code}} template")
             elif not _url_matches_domains(template.replace("{code}", "1.000001"), domains):
                 errors.append(f"{source_id or index}: detail template host not in domains")
+        elif adapter == "direct_detail_map":
+            mapping = source.get("detailUrls")
+            if not isinstance(mapping, dict) or not mapping:
+                errors.append(f"{source_id or index}: direct_detail_map requires detailUrls")
+            else:
+                for code, value in mapping.items():
+                    if not isinstance(code, str) or not isinstance(value, str) or not _url_matches_domains(value, domains):
+                        errors.append(f"{source_id or index}: invalid detailUrls entry {code!r}")
         else:
             listing = str(source.get("listingUrl") or "")
             if not listing or not _url_matches_domains(listing, domains):
@@ -130,6 +139,10 @@ def build_plan(master: dict, registry: dict, priority_only: bool = True) -> dict
             }
             if source["adapter"] == "direct_code_detail":
                 entry["candidateUrl"] = source["detailUrlTemplate"].format(code=code)
+            elif source["adapter"] == "direct_detail_map":
+                entry["candidateUrl"] = (source.get("detailUrls") or {}).get(code, "")
+                if not entry["candidateUrl"]:
+                    entry["status"] = "discovery_only"
             else:
                 entry["candidateUrl"] = source["listingUrl"]
                 entry["queryCode"] = code

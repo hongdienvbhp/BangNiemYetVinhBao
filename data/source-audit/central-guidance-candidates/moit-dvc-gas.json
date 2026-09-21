@@ -1,0 +1,77 @@
+{
+  "format": "central-guidance-candidates",
+  "version": 1,
+  "sourceId": "moit-dvc-gas",
+  "candidateOnly": true,
+  "autoPublish": false,
+  "summary": {
+    "procedures": 1,
+    "candidate": 1,
+    "needsReview": 0,
+    "withProcess": 1,
+    "withDocuments": 1,
+    "withForms": 1,
+    "withTime": 1,
+    "withFees": 0,
+    "withAuthority": 1,
+    "withResult": 1
+  },
+  "procedures": [
+    {
+      "ma": "2.001283",
+      "sourceId": "moit-dvc-gas",
+      "sourceRole": "central_content_reference",
+      "sourceUrl": "https://dichvucong.moit.gov.vn/VdxpTTHCOnlineDetail.aspx?DocId=934",
+      "authority": "Bộ Công Thương",
+      "adapter": "direct_detail_map",
+      "checkedAt": "2026-09-21",
+      "httpEvidence": {
+        "sha256": "64bbf11b9217adc8776000d480112e5926b18d93c93bc76102e57c121ab0574e",
+        "bytes": 29495,
+        "contentType": "text/html; charset=utf-8",
+        "detectedCode": "2.001283"
+      },
+      "candidateStatus": "candidate",
+      "issues": [],
+      "extracted": {
+        "quyTrinh": [
+          {
+            "buoc": 1,
+            "tieuDe": "Trình tự thực hiện",
+            "noiDung": "- Thương nhân đáp ứng đầy đủ các điều kiện quy định tại Nghị định số 87/2017/NĐ-CP gửi 01 bộ hồ sơ đề nghị cấp Giấy chứng nhận đủ điều kiện trực tiếp hoặc qua đường bưu điện hoặc qua mạng điện tử đến cơ quan nhà nước có thẩm quyền;\n- Trường hợp thương nhân chưa đủ hồ sơ hợp lệ, cơ quan nhà nước có thẩm quyền có văn bản yêu cầu thương nhân bổ sung;\n- Trong thời hạn 15 ngày làm việc kể từ ngày nhận được hồ sơ đầy đủ và hợp lệ, cơ quan nhà nước có thẩm quyền có trách nhiệm xem xét, thẩm định và cấp Giấy chứng nhận đủ điều kiện cho thương nhân. Trường hợp từ chối cấp Giấy chứng nhận phải trả lời bằng văn bản và nêu rõ lý do;\n- Thời hạn của Giấy chứng nhận đủ điều kiện là 10 năm kể từ ngày cấp mới."
+          }
+        ],
+        "cachThucText": "STT\nHình thức nộp\nThời gian giải quyết\nPhí, lệ phí\nMô tả\n1\nTrực tiếp\n15 Ngày làm việc\n2\nNộp trực tuyến\n15 Ngày làm việc\n3\nNộp qua bưu chính công ích\n15 Ngày làm việc",
+        "thanhPhanHoSo": [
+          {
+            "ten": "1. Giấy đề nghị cấp Giấy chứng nhận đủ điều kiện cửa hàng bán lẻ LPG chai theo Mẫu số 05 tại Phụ lục kèm theo Nghị định 87/2017/NĐ-CP.",
+            "soLuong": "Bản chính: 1; Bản sao: 0"
+          },
+          {
+            "ten": "2. Bản sao hợp đồng bán LPG chai với thương nhân có giấy chứng nhận đủ điều kiện còn hiệu lực.",
+            "soLuong": "Bản chính: 0; Bản sao: 1"
+          },
+          {
+            "ten": "3. Tài liệu chứng minh đáp ứng các điều kiện về phòng cháy và chữa cháy.",
+            "soLuong": "Bản chính: 1; Bản sao: 0"
+          },
+          {
+            "ten": "Hồ sơ đề nghị cấp Giấy chứng nhận đủ điều kiện cửa hàng bán lẻ LPG chai bao gồm:",
+            "soLuong": "Bản chính: 0; Bản sao: 0"
+          }
+        ],
+        "bieuMau": [
+          {
+            "ten": "Mẫu số 05.docx",
+            "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe0f6be74b951a2",
+            "nguonUrl": "https://dichvucong.moit.gov.vn/VdxpTTHCOnlineDetail.aspx?DocId=934"
+          }
+        ],
+        "thoiHan": "15 Ngày làm việc",
+        "lePhi": [],
+        "coQuanThucHien": "Ủy ban nhân dân cấp xã",
+        "ketQua": "GIẤY CHỨNG NHẬN ĐỦ ĐIỀU KIỆN CỬA HÀNG BÁN LẺ LPG CHAI"
+      }
+    }
+  ]
+}

@@ -29,7 +29,8 @@
         "lePhi",
         "coQuanThucHien"
       ],
-      "legalUse": "content_only_no_local_effect"
+      "legalUse": "content_only_no_local_effect",
+      "checkedAt": "2026-09-21"
     },
     {
       "id": "mof-dvc-household-business",
@@ -63,8 +64,7 @@
         "KINH DOANH KHÍ"
       ],
       "status": "ready",
-      "adapter": "search_listing_by_code",
-      "listingUrl": "https://dichvucong.moit.gov.vn/VdxpTTHCOnline.aspx?LevelType=-1&ServiceType=Kinh+doanh+kh%C3%AD",
+      "adapter": "direct_detail_map",
       "provides": [
         "quyTrinh",
         "thanhPhanHoSo",
@@ -73,7 +73,11 @@
         "lePhi",
         "coQuanThucHien"
       ],
-      "legalUse": "content_only_no_local_effect"
+      "legalUse": "content_only_no_local_effect",
+      "detailUrls": {
+        "2.001283": "https://dichvucong.moit.gov.vn/VdxpTTHCOnlineDetail.aspx?DocId=934"
+      },
+      "checkedAt": "2026-09-21"
     },
     {
       "id": "bvhttdl-tthc",
