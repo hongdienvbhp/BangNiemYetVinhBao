@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: priority50-guidance-http
+  group: priority50-guidance-http-v2
   cancel-in-progress: true
 
 jobs:
