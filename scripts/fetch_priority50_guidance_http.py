@@ -5,6 +5,7 @@ import json
 import re
 import time
 import unicodedata
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
@@ -108,23 +109,14 @@ def fetch(url: str) -> tuple[str, str]:
             "Accept-Language": "vi-VN,vi;q=0.9,en;q=0.5",
         },
     )
-    delay = 1.0
-    last = ""
-    for attempt in range(3):
-        try:
-            with urlopen(req, timeout=18) as response:
-                data = response.read().decode("utf-8", errors="replace")
-                return response.geturl(), data
-        except HTTPError as exc:
-            last = f"HTTP_{exc.code}"
-            if exc.code not in {429, 500, 502, 503, 504}:
-                break
-        except (URLError, TimeoutError) as exc:
-            last = type(exc).__name__
-        if attempt < 2:
-            time.sleep(delay)
-            delay *= 2
-    return url, f"__FETCH_ERROR__:{last}"
+    try:
+        with urlopen(req, timeout=8) as response:
+            data = response.read().decode("utf-8", errors="replace")
+            return response.geturl(), data
+    except HTTPError as exc:
+        return url, f"__FETCH_ERROR__:HTTP_{exc.code}"
+    except (URLError, TimeoutError) as exc:
+        return url, f"__FETCH_ERROR__:{type(exc).__name__}"
 
 
 def candidate_urls(code: str) -> list[str]:
@@ -133,6 +125,55 @@ def candidate_urls(code: str) -> list[str]:
         f"https://dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-hanh-chinh.html?ma_thu_tuc={q}",
         f"https://dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc={q}",
     ]
+
+
+def fetch_record(index: int, row: dict) -> dict:
+    code = norm(row.get("ma"))
+    expected = norm(row.get("ten"))
+    chosen_url = ""
+    body = ""
+    tables: list[dict] = []
+    status = "DETAIL_IDENTITY_UNRESOLVED"
+    errors: list[str] = []
+
+    for url in candidate_urls(code):
+        rendered, html = fetch(url)
+        if html.startswith("__FETCH_ERROR__:"):
+            errors.append(html)
+            continue
+        parser = VisibleHTML()
+        parser.feed(html)
+        parsed_body, parsed_tables = parser.payload()
+        folded = fold(parsed_body)
+        if fold(code) in folded or (expected and fold(expected) in folded):
+            chosen_url = rendered
+            body = parsed_body
+            tables = parsed_tables
+            status = "DETAIL_CAPTURED"
+            break
+        if not body:
+            chosen_url = rendered
+            body = parsed_body
+            tables = parsed_tables
+
+    if status != "DETAIL_CAPTURED" and errors and not body:
+        status = "HTTP_FETCH_FAILED"
+
+    return {
+        "ordinal": index,
+        "code": code,
+        "expectedName": expected,
+        "field": row.get("linhVuc") or "",
+        "formalityId": row.get("formalityId") or "",
+        "localExecutionUrl": row.get("nopHoSoUrl") or "",
+        "detailUrl": chosen_url,
+        "renderedUrl": chosen_url,
+        "pageTitle": "",
+        "status": status,
+        "bodyText": body,
+        "tables": tables,
+        "fetchErrors": errors,
+    }
 
 
 def main() -> int:
@@ -145,60 +186,22 @@ def main() -> int:
         raise ValueError(f"Expected {TARGET} active priority procedures, found {len(targets)}")
 
     items: list[dict] = []
-    for index, row in enumerate(targets, start=1):
-        code = norm(row.get("ma"))
-        expected = norm(row.get("ten"))
-        chosen_url = ""
-        body = ""
-        tables: list[dict] = []
-        status = "DETAIL_IDENTITY_UNRESOLVED"
-        errors: list[str] = []
-
-        for url in candidate_urls(code):
-            rendered, html = fetch(url)
-            if html.startswith("__FETCH_ERROR__:"):
-                errors.append(html)
-                continue
-            parser = VisibleHTML()
-            parser.feed(html)
-            parsed_body, parsed_tables = parser.payload()
-            folded = fold(parsed_body)
-            if fold(code) in folded or (expected and fold(expected) in folded):
-                chosen_url = rendered
-                body = parsed_body
-                tables = parsed_tables
-                status = "DETAIL_CAPTURED"
-                break
-            if not body:
-                chosen_url = rendered
-                body = parsed_body
-                tables = parsed_tables
-
-        if status != "DETAIL_CAPTURED" and errors and not body:
-            status = "HTTP_FETCH_FAILED"
-
-        items.append({
-            "ordinal": index,
-            "code": code,
-            "expectedName": expected,
-            "field": row.get("linhVuc") or "",
-            "formalityId": row.get("formalityId") or "",
-            "localExecutionUrl": row.get("nopHoSoUrl") or "",
-            "detailUrl": chosen_url,
-            "renderedUrl": chosen_url,
-            "pageTitle": "",
-            "status": status,
-            "bodyText": body,
-            "tables": tables,
-            "fetchErrors": errors,
-        })
-        print(json.dumps({
-            "ordinal": index,
-            "code": code,
-            "status": status,
-            "body_chars": len(body),
-            "tables": len(tables),
-        }, ensure_ascii=False), flush=True)
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        futures = {
+            executor.submit(fetch_record, index, row): index
+            for index, row in enumerate(targets, start=1)
+        }
+        for future in as_completed(futures):
+            item = future.result()
+            items.append(item)
+            print(json.dumps({
+                "ordinal": item["ordinal"],
+                "code": item["code"],
+                "status": item["status"],
+                "body_chars": len(item["bodyText"]),
+                "tables": len(item["tables"]),
+            }, ensure_ascii=False), flush=True)
+    items.sort(key=lambda item: item["ordinal"])
 
     now = datetime.now(timezone.utc).isoformat()
     payload = {
