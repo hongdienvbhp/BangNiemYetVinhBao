@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: priority50-guidance-candidates
+  group: priority50-guidance-candidates-v2
   cancel-in-progress: true
 
 jobs:
