@@ -217,19 +217,6 @@ def build_vinhbao_submission_url(code: str, formality_id: str = "") -> str:
 
 def upgrade_record_to_v4(row: dict[str, Any], as_of: str) -> dict[str, Any]:
     record = deepcopy(row)
-    code = str(record.get("ma") or "").strip()
-    formality_id = str(record.get("formalityId") or "").strip()
-    if code:
-        record["nopHoSoUrl"] = build_vinhbao_submission_url(code, formality_id)
-        record["nopHoSoScope"] = {
-            "provinceCode": "31",
-            "provinceName": "Hải Phòng",
-            "wardCode": "11824",
-            "wardName": "Vĩnh Bảo",
-            "commune": "WARD",
-        }
-        record["submissionLinkStatus"] = "vinhbao_scope_parameters_verified"
-        record["submissionLinkMode"] = "formality_id" if formality_id else "keyword_fallback"
     evidence: list[dict[str, Any]] = []
     seen: set[str] = set()
 
