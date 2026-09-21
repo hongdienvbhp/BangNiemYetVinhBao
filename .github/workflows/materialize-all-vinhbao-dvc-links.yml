@@ -1,0 +1,61 @@
+name: Materialize All Vinh Bao DVC Links
+
+on:
+  push:
+    branches:
+      - feat/issue-81-single-dvc-submit-link
+
+permissions:
+  contents: write
+
+concurrency:
+  group: materialize-all-vinhbao-dvc-links
+  cancel-in-progress: true
+
+jobs:
+  materialize:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: feat/issue-81-single-dvc-submit-link
+          fetch-depth: 0
+          lfs: true
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: "3.12"
+      - run: python -m pip install --disable-pip-version-check pypdf==6.17.0
+      - name: Rebuild canonical with scoped Vinh Bao links
+        run: |
+          AS_OF="$(python -c 'import json; from pathlib import Path; print(json.loads(Path("data/source-audit/city-updates-current.json").read_text(encoding="utf-8"))["asOf"])')"
+          python scripts/extract_city_updates.py --as-of "$AS_OF"
+          python scripts/build_master_data.py
+          python scripts/validate_tthc_guidance.py
+          python scripts/apply_guidance_enrichment.py
+          python scripts/build_tthc_tracking.py
+          python scripts/reconcile_priority51_crosswalk.py
+          python scripts/validate_canonical_contract.py
+          python scripts/audit_vinhbao_submission_links.py
+          python scripts/check_static_site.py
+          node --check js/app.js
+          git diff --check
+      - name: Commit generated canonical outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            data/thu-tuc.json \
+            js/master-data-fallback.js \
+            data/master-data-audit.csv \
+            data/master-data-excluded.json \
+            data/BAO_CAO_MASTER_DATA_HIEN_HANH.md \
+            data/THEO_DOI_THAY_DOI_TTHC.csv \
+            data/priority-51-crosswalk.json
+          if git diff --cached --quiet; then
+            echo "No generated changes."
+          else
+            git commit -m "data(dvc): materialize scoped Vinh Bao links for all TTHC"
+            git push origin HEAD:feat/issue-81-single-dvc-submit-link
+          fi
