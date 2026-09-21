@@ -126,7 +126,7 @@ def evidence_id(evidence: dict[str, Any]) -> str:
         sort_keys=True,
         separators=(",", ":"),
     ).encode("utf-8")
-    return "ev_" + hashlib.sha256(raw).hexdigest()[:24]
+    return "ev_" + hashlib.sha1(raw).hexdigest()[:24]
 
 
 def _official_url(value: str) -> bool:
