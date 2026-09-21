@@ -19,6 +19,21 @@ from difflib import SequenceMatcher
 from pathlib import Path
 from urllib.parse import urlparse
 
+try:
+    from scripts.canonical_v4 import (
+        SOURCE_COMMIT_KIND,
+        compute_source_commit,
+        derive_dataset_date,
+        upgrade_record_to_v4,
+    )
+except ModuleNotFoundError:
+    from canonical_v4 import (
+        SOURCE_COMMIT_KIND,
+        compute_source_commit,
+        derive_dataset_date,
+        upgrade_record_to_v4,
+    )
+
 ROOT = Path(__file__).resolve().parents[1]
 CANDIDATES = ROOT / "data/source-audit/web010-vinhbao-commune-code-candidates-20260906.json"
 ATTACHMENTS = ROOT / "data/source-audit/vinhbao-tthc-attachment-evidence-20260906.json"
@@ -50,8 +65,6 @@ def _source_snapshot_date() -> str:
 
 
 SOURCE_SNAPSHOT_DATE = _source_snapshot_date()
-BUILD_DATE = "2026-09-21"
-CANONICAL_SOURCE_COMMIT = "58c6d8c555e3e9f134eaca0ee5c771d947989b0e"
 OFFICIAL_SOURCE = "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh"
 CITY_OFFICIAL_SOURCE = "https://haiphong.gov.vn/thu-tuc-hanh-chinh-76761"
 
@@ -1058,12 +1071,23 @@ def main() -> int:
         "priority51LegalSupersededByNewerEvidence": priority51_legal_stats["supersededByNewerEvidence"],
         "phiDiaGioi": sum(1 for x in public_rows if x.get("phiDiaGioi")),
     }
+    existing_version = ""
+    if MASTER_JSON.exists():
+        try:
+            existing_version = str(load_json(MASTER_JSON).get("dataset_version") or "")
+        except (OSError, json.JSONDecodeError):
+            existing_version = ""
+    dataset_date = derive_dataset_date(ROOT, existing_version)
+    source_commit = compute_source_commit(ROOT)
+    public_rows = [upgrade_record_to_v4(row, SOURCE_SNAPSHOT_DATE) for row in public_rows]
+
     master = {
         "format": "bangniemyet-vinhbao-master-data",
-        "version": 3,
-        "dataset_version": BUILD_DATE.replace("-", "."),
-        "source_commit": CANONICAL_SOURCE_COMMIT,
-        "updatedAt": BUILD_DATE,
+        "version": 4,
+        "dataset_version": dataset_date.replace("-", "."),
+        "source_commit": source_commit,
+        "source_commit_kind": SOURCE_COMMIT_KIND,
+        "updatedAt": dataset_date,
         "sourceSnapshotDate": SOURCE_SNAPSHOT_DATE,
         "source": OFFICIAL_SOURCE,
         "sourceSites": [OFFICIAL_SOURCE, CITY_OFFICIAL_SOURCE],
