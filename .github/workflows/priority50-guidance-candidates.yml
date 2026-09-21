@@ -1,0 +1,39 @@
+name: Priority 50 Guidance Candidates
+
+on:
+  push:
+    branches:
+      - feat/issue-74-priority50-enrichment
+
+permissions:
+  contents: write
+
+concurrency:
+  group: priority50-guidance-candidates
+  cancel-in-progress: true
+
+jobs:
+  candidates:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: feat/issue-74-priority50-enrichment
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: "3.12"
+      - name: Fetch candidate-only structured snapshot
+        run: python scripts/fetch_priority50_guidance_candidates.py
+      - name: Commit candidate audit data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/source-audit/priority50-guidance-candidates.json
+          if git diff --cached --quiet; then
+            echo "No candidate changes."
+          else
+            git commit -m "data(p1): refresh priority-50 guidance candidates"
+            git push origin HEAD:feat/issue-74-priority50-enrichment
+          fi
