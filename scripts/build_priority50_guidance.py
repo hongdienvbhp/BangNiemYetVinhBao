@@ -200,6 +200,30 @@ def parse_dossier_table(raw_tables: list[dict]) -> list[dict]:
     return items
 
 
+
+def local_legal_source(master_row: dict) -> dict[str, str] | None:
+    for source in master_row.get("sourceEvidence") or []:
+        if not isinstance(source, dict) or source.get("sourceRole") != "local_legal_effect":
+            continue
+        url = norm(source.get("articleUrl") or source.get("url") or source.get("attachmentUrl"))
+        if url:
+            return {
+                "id": "local_legal_agency",
+                "url": url,
+                "sourceRole": "local_legal_effect",
+                "classification": "local_legal_agency_override",
+            }
+    return None
+
+
+def agency_needs_local_override(agency: str, master_row: dict) -> bool:
+    if master_row.get("tiepNhanCapXa") is not True:
+        return False
+    value = fold(agency)
+    has_commune = "cap xa" in value or "uy ban nhan dan xa" in value
+    has_district = "cap huyen" in value or "uy ban nhan dan huyen" in value
+    return bool(has_district and not has_commune)
+
 def build_row(raw: dict, master_row: dict, captured_at: str) -> dict:
     code = norm(master_row.get("ma"))
     detail_url = norm(raw.get("detailUrl"))
@@ -231,6 +255,14 @@ def build_row(raw: dict, master_row: dict, captured_at: str) -> dict:
         times, fees = parse_process_tables(tables)
         dossiers = parse_dossier_table(tables)
 
+        if agency_needs_local_override(agency, master_row):
+            local_source = local_legal_source(master_row)
+            if local_source:
+                local_source["verifiedAt"] = captured_at
+                sources.append(local_source)
+                agency = "Ủy ban nhân dân cấp xã"
+                provenance["coQuanThucHien"] = [local_source["id"]]
+
         for field, value in (
             ("coQuanThucHien", agency),
             ("thanhPhanHoSo", dossiers),
@@ -240,7 +272,7 @@ def build_row(raw: dict, master_row: dict, captured_at: str) -> dict:
         ):
             if substantive(value):
                 row[field] = value
-                provenance[field] = [content_id]
+                provenance.setdefault(field, [content_id])
 
     if execution_url:
         execution_id = "dvcqg_vinhbao"
