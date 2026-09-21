@@ -82,7 +82,7 @@ def fetch_parquet(path: Path, codes: set[str]) -> list[dict]:
         "formality_id", "code", "procedure_name", "is_ward", "is_province",
         "is_full_process", "execution_methods", "profile_components", "fees",
         "results", "executing_agencies", "source_url", "source", "content_hash",
-        "scraped_at",
+        "scraped_at", "content_text",
     ]
     table = pq.read_table(path, columns=columns)
     data = table.to_pylist()
@@ -91,6 +91,26 @@ def fetch_parquet(path: Path, codes: set[str]) -> list[dict]:
         if str(row.get("code") or "").strip() in codes
     ]
 
+
+
+def section(text: object, heading: str) -> str:
+    raw = str(text or "")
+    marker = "## " + heading
+    start = raw.lower().find(marker.lower())
+    if start < 0:
+        return ""
+    body = raw[start + len(marker):]
+    next_heading = body.find("\n## ")
+    if next_heading >= 0:
+        body = body[:next_heading]
+    return " ".join(body.split()).strip()
+
+
+def candidate_field(row: dict, key: str, heading: str) -> str:
+    direct = str(row.get(key) or "").strip()
+    if direct:
+        return direct
+    return section(row.get("content_text"), heading)
 
 def main() -> int:
     parser = argparse.ArgumentParser()
@@ -141,11 +161,11 @@ def main() -> int:
             "isWard": bool(best.get("is_ward")),
             "isProvince": bool(best.get("is_province")),
             "isFullProcess": bool(best.get("is_full_process")),
-            "coQuanThucHien": best.get("executing_agencies") or "",
+            "coQuanThucHien": candidate_field(best, "executing_agencies", "Cơ quan thực hiện"),
             "thanhPhanHoSo": best.get("profile_components") or "",
             "thoiHan": best.get("execution_methods") or "",
-            "lePhi": best.get("fees") or "",
-            "ketQua": best.get("results") or "",
+            "lePhi": candidate_field(best, "fees", "Phí, lệ phí"),
+            "ketQua": candidate_field(best, "results", "Kết quả thực hiện"),
             "sourceUrl": best.get("source_url") or "",
             "sourceHost": best.get("source") or "",
             "contentHash": best.get("content_hash") or "",
