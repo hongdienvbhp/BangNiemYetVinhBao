@@ -25,6 +25,8 @@ try:
         compute_source_commit,
         derive_dataset_date,
         upgrade_record_to_v4,
+        build_vinhbao_submission_url,
+        build_vinhbao_submission_url,
     )
 except ModuleNotFoundError:
     from canonical_v4 import (
@@ -1096,6 +1098,22 @@ def main() -> int:
             existing_version = ""
     dataset_date = derive_dataset_date(ROOT, existing_version)
     source_commit = compute_source_commit(ROOT)
+    for row in public_rows:
+        code = str(row.get("ma") or "").strip()
+        formality_id = str(row.get("formalityId") or "").strip()
+        if not code:
+            continue
+        row["nopHoSoUrl"] = build_vinhbao_submission_url(code, formality_id)
+        row["nopHoSoScope"] = {
+            "provinceCode": "31",
+            "provinceName": "Hải Phòng",
+            "wardCode": "11824",
+            "wardName": "Vĩnh Bảo",
+            "commune": "WARD",
+        }
+        row["submissionLinkStatus"] = "vinhbao_scope_parameters_verified"
+        row["submissionLinkMode"] = "formality_id" if formality_id else "keyword_fallback"
+
     public_rows = [upgrade_record_to_v4(row, SOURCE_SNAPSHOT_DATE) for row in public_rows]
 
     master = {
