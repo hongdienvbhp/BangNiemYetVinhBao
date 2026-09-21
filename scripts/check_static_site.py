@@ -473,8 +473,14 @@ if summary.get("priority51InCurrentMaster") != 50:
     fail("summary.priority51InCurrentMaster phải bằng 50")
 if summary.get("priority51Gap") != 1:
     fail("summary.priority51Gap phải bằng 1 (mã bãi bỏ 2.001009)")
-if summary.get("formalityIdMapped") != 48:
-    fail(f"Snapshot này phải có 48 formalityId trong Master, hiện {summary.get('formalityIdMapped')}")
+actual_formality_mapped = sum(1 for row in rows if row.get("formalityId"))
+if summary.get("formalityIdMapped") != actual_formality_mapped:
+    fail(
+        "summary.formalityIdMapped phải khớp số formalityId thực tế trong Master: "
+        f"{summary.get('formalityIdMapped')} != {actual_formality_mapped}"
+    )
+if actual_formality_mapped < 48:
+    fail(f"Không được giảm coverage formalityId dưới baseline 48, hiện {actual_formality_mapped}")
 if summary.get("priority51LegalAudited") != 37:
     fail("summary.priority51LegalAudited phải bằng 37")
 if summary.get("priority51LegalVerifiedCurrent") != 36:

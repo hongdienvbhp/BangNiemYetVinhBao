@@ -1,0 +1,20 @@
+name: Audit Vinh Bao DVC Links
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: "3.12"
+      - name: Audit mapping candidates
+        run: python scripts/audit_dvc_mapping_candidates.py
+      - name: Audit submission links
+        run: python scripts/audit_vinhbao_submission_links.py

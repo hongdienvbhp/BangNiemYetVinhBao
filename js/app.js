@@ -186,6 +186,7 @@
     const dvcTraCuu = dvcSearchByName(tt.ten);
     const guidance = tt.huongDan && typeof tt.huongDan === "object" ? tt.huongDan : {};
     const guidanceDvctt = guidance.dvctt && typeof guidance.dvctt === "object" ? guidance.dvctt : null;
+    const canonicalSubmissionUrl = String(tt.nopHoSoUrl || "").trim();
     const guidanceSubmissionUrl = String(
       guidance.submissionUrl || guidanceDvctt?.accessUrl || ""
     ).trim();
@@ -214,7 +215,7 @@
       coQuan: agencyText,
       ketQua: resultText,
       dvcLink: tt.dvcLink || dvcDetailUrlById(formalityId) || dvcTraCuu,
-      dvcNop: guidanceSubmissionUrl || tt.dvcNop || dvcSubmitUrl(formalityId),
+      dvcNop: canonicalSubmissionUrl || guidanceSubmissionUrl,
       dvcTraCuu,
       dvcTthcHome: DVC_TTHC_HOME,
       dvcHp: DVC_HP,
@@ -510,32 +511,8 @@
       </div>
 
       <div class="detail-box">
-        <div class="box-label">🚩 QUY TRÌNH THỰC HIỆN & NỘP HỒ SƠ</div>
+        <div class="box-label">🚩 QUY TRÌNH THỰC HIỆN</div>
         <ol class="step-list">${steps}</ol>
-        <a class="link-row" href="${esc(tt.dvcLink)}" target="_blank" rel="noopener">
-          <span class="link-ico">📄</span>
-          <span>
-            <strong>${tt.formalityId ? "Xem chi tiết TTHC trên Cổng DVC Quốc gia" : "Tra cứu TTHC trên Cổng DVC Quốc gia"}</strong>
-            <small>${tt.formalityId ? "formalityId: " + esc(tt.formalityId) : "Chưa có formalityId; mở kết quả tra cứu theo tên thủ tục"}</small>
-          </span>
-          <span class="link-go">Mở xem ↗</span>
-        </a>
-        <a class="link-row" href="${esc(tt.dvcTraCuu)}" target="_blank" rel="noopener" style="margin-top:0.5rem">
-          <span class="link-ico">🔍</span>
-          <span>
-            <strong>Tìm “${esc(tt.ten)}” trên Cổng DVC</strong>
-            <small>Tìm kiếm theo tên thủ tục (kết quả từ dichvucong.gov.vn)</small>
-          </span>
-          <span class="link-go">Tra cứu ↗</span>
-        </a>
-        <a class="link-row" href="${esc(tt.dvcTthcHome)}" target="_blank" rel="noopener" style="margin-top:0.5rem">
-          <span class="link-ico">📋</span>
-          <span>
-            <strong>Danh mục TTHC Quốc gia</strong>
-            <small>Trang chủ tra cứu thủ tục trên Cổng DVCQG</small>
-          </span>
-          <span class="link-go">Mở ↗</span>
-        </a>
       </div>
 
       <div class="detail-box">
@@ -545,12 +522,10 @@
       </div>
 
       <a class="btn-dvc" href="${esc(tt.dvcNop)}" target="_blank" rel="noopener">
-        ${tt.formalityId ? "✨ NỘP HỒ SƠ / CHỌN ĐƠN VỊ TRÊN CỔNG DVC QUỐC GIA ↗" : "🔎 MỞ CỔNG DVC QUỐC GIA ĐỂ TRA CỨU, NỘP HỒ SƠ ↗"}
+        ✨ NỘP HỒ SƠ TRỰC TUYẾN ↗
       </a>
       <p class="dvc-hint">
-        ${tt.formalityId ? "Liên kết đã gắn formalityId và địa bàn Thành phố Hải Phòng → xã Vĩnh Bảo." : "Chưa có formalityId của thủ tục này; cần tra cứu, chọn đúng thủ tục và địa bàn Thành phố Hải Phòng → xã Vĩnh Bảo trước khi nộp."}<br/>
-        Cổng DVC Quốc gia: <a href="${esc(tt.dvcNop)}" target="_blank" rel="noopener">dichvucong.gov.vn</a>
-        · Cổng Hải Phòng: <a href="${esc(tt.dvcHp)}" target="_blank" rel="noopener">dichvucong.haiphong.gov.vn</a>
+        Mở Cổng Dịch vụ công Quốc gia tại đúng địa bàn xã Vĩnh Bảo, thành phố Hải Phòng.
       </p>
     `;
 
