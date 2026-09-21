@@ -28,10 +28,39 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          gh api -X GET "repos/${GITHUB_REPOSITORY}/actions/workflows/official-data-update.yml/runs" -f per_page=100 > /tmp/official-data-update-runs.json
+          gh api -X GET "repos/${GITHUB_REPOSITORY}/actions/workflows/official-data-update.yml/runs" \
+            -f per_page=100 > /tmp/official-data-update-runs.json
+
+      - name: Select current-period runs
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/check_routine_health.py \
+            --history /tmp/official-data-update-runs.json \
+            --print-period-run-ids > /tmp/routine-run-ids.txt
+
+      - name: Download terminal routine records
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/routine-records
+          while IFS= read -r run_id; do
+            [ -n "$run_id" ] || continue
+            target="/tmp/routine-records/$run_id"
+            mkdir -p "$target"
+            if ! gh run download "$run_id" \
+              --repo "$GITHUB_REPOSITORY" \
+              --name "routine-run-$run_id" \
+              --dir "$target"; then
+              echo "No terminal artifact available for run $run_id; health evaluator will fail closed if required."
+            fi
+          done < /tmp/routine-run-ids.txt
 
       - name: Evaluate routine health
         shell: bash
         run: |
           set -euo pipefail
-          python scripts/check_routine_health.py             --history /tmp/official-data-update-runs.json             --fail-unhealthy
+          python scripts/check_routine_health.py \
+            --history /tmp/official-data-update-runs.json \
+            --records-dir /tmp/routine-records \
+            --fail-unhealthy
