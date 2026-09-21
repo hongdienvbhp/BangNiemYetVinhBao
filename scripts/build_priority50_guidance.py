@@ -133,7 +133,7 @@ def parse_process_tables(raw_tables: list[dict]) -> tuple[list[dict], list[dict]
 
 def parse_dossier_table(raw_tables: list[dict]) -> list[dict]:
     items: list[dict] = []
-    seen: set[tuple[str, str, str, str]] = set()
+    seen: set[tuple[str, str]] = set()
 
     for table in raw_tables:
         rows = table.get("rows") if isinstance(table, dict) else None
@@ -176,7 +176,7 @@ def parse_dossier_table(raw_tables: list[dict]) -> list[dict]:
             original = cell(original_idx)
             copy = cell(copy_idx)
             quantity = cell(quantity_idx)
-            key = (fold(name), fold(form), fold(original or quantity), fold(copy))
+            key = (fold(name), fold(form))
             if key in seen:
                 continue
 
