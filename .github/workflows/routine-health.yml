@@ -1,0 +1,77 @@
+name: Routine Health Check
+
+on:
+  schedule:
+    # 12:20 Asia/Ho_Chi_Minh
+    - cron: "20 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  actions: read
+  contents: read
+  issues: write
+
+jobs:
+  official-tthc-update-health:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      FAULT_TITLE: "[routine-health] tthc-official-source-update"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: Setup Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.12"
+
+      - name: Read Official TTHC Update history
+        run: |
+          set -euo pipefail
+          gh api -X GET "repos/${GITHUB_REPOSITORY}/actions/workflows/official-data-update.yml/runs"             -f per_page=100 > /tmp/official-data-update-runs.json
+
+      - name: Evaluate health
+        id: health
+        run: |
+          set -euo pipefail
+          python scripts/check_routine_health.py             --history /tmp/official-data-update-runs.json             --github-output "$GITHUB_OUTPUT"
+
+      - name: Reconcile stable fault issue
+        shell: bash
+        env:
+          HEALTH_STATE: ${{ steps.health.outputs.state }}
+          PERIOD_KEY: ${{ steps.health.outputs.period_key }}
+          HEALTH_REASON: ${{ steps.health.outputs.reason }}
+        run: |
+          set -euo pipefail
+          issue_row="$(gh issue list --state all --limit 100 --json number,title,state             --jq ".[] | select(.title == \"$FAULT_TITLE\") | [.number,.state] | @tsv" | head -n 1 || true)"
+          issue_number="$(printf '%s' "$issue_row" | cut -f1)"
+          issue_state="$(printf '%s' "$issue_row" | cut -f2)"
+
+          if [ "$HEALTH_STATE" = "HEALTHY" ] || [ "$HEALTH_STATE" = "NOT_DUE" ]; then
+            if [ -n "$issue_number" ] && [ "$issue_state" = "OPEN" ] && [ "$HEALTH_STATE" = "HEALTHY" ]; then
+              gh issue comment "$issue_number" --body "RECOVERED for period $PERIOD_KEY: $HEALTH_REASON"
+              gh issue close "$issue_number" --reason completed
+            fi
+            exit 0
+          fi
+
+          body="Fault key: tthc-official-source-update--$HEALTH_STATE
+
+Period: $PERIOD_KEY
+State: $HEALTH_STATE
+Evidence: GitHub Actions history for official-data-update.yml
+Reason: $HEALTH_REASON
+
+This issue is operational evidence only. Government systems remain the System of Record."
+
+          if [ -z "$issue_number" ]; then
+            gh issue create --title "$FAULT_TITLE" --body "$body"
+          else
+            if [ "$issue_state" = "CLOSED" ]; then
+              gh issue reopen "$issue_number"
+            fi
+            gh issue comment "$issue_number" --body "$body"
+          fi
