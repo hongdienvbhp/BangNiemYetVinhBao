@@ -6,6 +6,11 @@ import re
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
+try:
+    from scripts.canonical_v4 import SOURCE_ROLES
+except ModuleNotFoundError:
+    from canonical_v4 import SOURCE_ROLES
+
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data/tthc-guidance-enrichment.json"
 CODE_RE = re.compile(r"^\d{1,2}\.\d{3,6}$")
@@ -17,6 +22,7 @@ SUBSTANTIVE_FIELDS = {
     "lePhi",
     "thoiHan",
     "coQuanThucHien",
+    "ketQua",
 }
 
 
@@ -98,6 +104,9 @@ def validate(payload: object) -> list[str]:
                 url = str(source.get("url") or "").strip()
                 if not url or not is_official_url(url):
                     errors.append(f"{code or index}: nguồn {source_index} không phải URL chính thức")
+                role = str(source.get("sourceRole") or "").strip()
+                if role not in SOURCE_ROLES:
+                    errors.append(f"{code or index}: nguồn {source_index} thiếu/không hợp lệ sourceRole")
 
         submission_url = str(row.get("submissionUrl") or "").strip()
         if submission_url:
