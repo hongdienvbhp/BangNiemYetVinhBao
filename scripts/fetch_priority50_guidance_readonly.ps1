@@ -185,38 +185,52 @@ try {
   foreach ($item in $items) {
     $code = [string]$item.ma
     $expectedName = [string]$item.ten
-    $searchUrl = [string]$item.nopHoSoUrl
-
-    $searchPayload = Navigate-And-Wait $ws ([ref]$id) $searchUrl $NavigationWaitMs $expectedName
-    $wafRejected = ([string]$searchPayload.text).Contains("Request Rejected")
-    $detailUrl = if ($wafRejected) { "" } else { Find-DetailLink $searchPayload $expectedName $code }
+    $localExecutionUrl = [string]$item.nopHoSoUrl
+    $detailCandidates = @(
+      "https://dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-hanh-chinh.html?ma_thu_tuc=$([Uri]::EscapeDataString($code))",
+      "https://dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=$([Uri]::EscapeDataString($code))"
+    )
 
     $detailPayload = $null
-    $status = ""
-    if ($wafRejected) {
-      $status = "WAF_REJECTED_SEARCH"
-    } elseif (-not $detailUrl) {
-      $status = "DETAIL_LINK_NOT_FOUND"
-    } else {
-      $detailPayload = Navigate-And-Wait $ws ([ref]$id) $detailUrl $NavigationWaitMs $code
-      $detailText = [string]$detailPayload.text
-      if ($detailText.Contains("Request Rejected")) {
+    $detailUrl = ""
+    $status = "DETAIL_IDENTITY_UNRESOLVED"
+
+    foreach ($candidate in $detailCandidates) {
+      $payload = Navigate-And-Wait $ws ([ref]$id) $candidate $NavigationWaitMs $expectedName
+      $bodyText = [string]$payload.text
+      if ($bodyText.Contains("Request Rejected")) {
         $status = "WAF_REJECTED_DETAIL"
-      } elseif ((Normalize-Text $detailText).Contains((Normalize-Text $code)) -or
-                (Normalize-Text $detailText).Contains((Normalize-Text $expectedName))) {
+        continue
+      }
+
+      $normalizedBody = Normalize-Text $bodyText
+      $nameVisible = $false
+      if ($expectedName) {
+        $nameVisible = $normalizedBody.Contains((Normalize-Text $expectedName))
+      }
+      $codeVisible = $normalizedBody.Contains((Normalize-Text $code))
+      if ($nameVisible -or $codeVisible) {
+        $detailPayload = $payload
+        $detailUrl = [string]$payload.url
+        if (-not $detailUrl) { $detailUrl = $candidate }
         $status = "DETAIL_CAPTURED"
-      } else {
-        $status = "DETAIL_IDENTITY_UNRESOLVED"
+        break
+      }
+
+      if (-not $detailPayload) {
+        $detailPayload = $payload
+        $detailUrl = [string]$payload.url
+        if (-not $detailUrl) { $detailUrl = $candidate }
       }
     }
 
-    $sourcePayload = if ($detailPayload) { $detailPayload } else { $searchPayload }
+    $sourcePayload = $detailPayload
     $results.Add([pscustomobject]@{
       code = $code
       expectedName = $expectedName
       field = [string]$item.linhVuc
       formalityId = [string]$item.formalityId
-      localExecutionUrl = $searchUrl
+      localExecutionUrl = $localExecutionUrl
       detailUrl = $detailUrl
       renderedUrl = [string]$sourcePayload.url
       pageTitle = [string]$sourcePayload.title
