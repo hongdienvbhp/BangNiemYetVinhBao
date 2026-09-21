@@ -26,7 +26,6 @@ try:
         derive_dataset_date,
         upgrade_record_to_v4,
         build_vinhbao_submission_url,
-        build_vinhbao_submission_url,
     )
 except ModuleNotFoundError:
     from canonical_v4 import (
@@ -34,6 +33,7 @@ except ModuleNotFoundError:
         compute_source_commit,
         derive_dataset_date,
         upgrade_record_to_v4,
+        build_vinhbao_submission_url,
     )
 
 ROOT = Path(__file__).resolve().parents[1]
