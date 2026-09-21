@@ -7,6 +7,7 @@ from urllib.parse import parse_qs, urlparse
 ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/"data/thu-tuc.json"
 EXPECTED={"provinceCode":"31","wardCode":"11824","commune":"WARD"}
+# CI contract: every published TTHC must resolve through this exact Vĩnh Bảo scope.
 
 def scoped(url:str)->bool:
     try:
