@@ -901,16 +901,8 @@
       ],
       "thoiHan": [
         {
-          "hinhThuc": "Không xác định",
-          "giaTri": "ONLINE"
-        },
-        {
-          "hinhThuc": "Không xác định",
-          "giaTri": "POSTAL"
-        },
-        {
-          "hinhThuc": "Không xác định",
-          "giaTri": "DIRECT"
+          "hinhThuc": "Trực tiếp",
+          "giaTri": "Trong thời hạn 03 (ba) ngày làm việc kể từ ngày nhận hồ sơ."
         }
       ],
       "lePhi": [
@@ -958,6 +950,13 @@
           "sourceRole": "local_execution",
           "classification": "dvcqg_vinhbao_execution_scope",
           "verifiedAt": "2026-09-20T14:04:02.5394062Z"
+        },
+        {
+          "id": "official_time_override",
+          "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=2350",
+          "sourceRole": "central_content_reference",
+          "classification": "current_official_time_override",
+          "verifiedAt": "2026-09-21"
         }
       ],
       "fieldProvenance": {
@@ -968,7 +967,7 @@
           "official_dvcqg_content"
         ],
         "thoiHan": [
-          "official_dvcqg_content"
+          "official_time_override"
         ],
         "lePhi": [
           "official_dvcqg_content"
@@ -1096,15 +1095,18 @@
       "thoiHan": [
         {
           "hinhThuc": "Trực tuyến",
-          "giaTri": "3 WORKING_DAY — 03 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ"
+          "giaTri": "3 Ngày làm việc",
+          "moTa": "03 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ"
         },
         {
           "hinhThuc": "Dịch vụ bưu chính",
-          "giaTri": "3 WORKING_DAY — 03 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ"
+          "giaTri": "3 Ngày làm việc",
+          "moTa": "03 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ"
         },
         {
           "hinhThuc": "Trực tiếp",
-          "giaTri": "3 WORKING_DAY — 03 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ"
+          "giaTri": "3 Ngày làm việc",
+          "moTa": "03 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ"
         }
       ],
       "lePhi": [
@@ -2329,15 +2331,18 @@
       "thoiHan": [
         {
           "hinhThuc": "Dịch vụ bưu chính",
-          "giaTri": "10 WORKING_DAY — Trực tuyến hoặc qua dịch vụ bưu chính hoặc trực tiếp đến Trung tâm Phục vụ hành chính công. 10 ngày làm việc kể từ ngày nhận đủ giấy tờ (Thời gian cụ thể được quy định tại từng bước của quy trình thực hiện)."
+          "giaTri": "10 Ngày làm việc",
+          "moTa": "Trực tuyến hoặc qua dịch vụ bưu chính hoặc trực tiếp đến Trung tâm Phục vụ hành chính công. 10 ngày làm việc kể từ ngày nhận đủ giấy tờ (Thời gian cụ thể được quy định tại từng bước của quy trình thực hiện)."
         },
         {
           "hinhThuc": "Trực tiếp",
-          "giaTri": "10 WORKING_DAY — Trực tuyến hoặc qua dịch vụ bưu chính hoặc trực tiếp đến Trung tâm Phục vụ hành chính công. 10 ngày làm việc kể từ ngày nhận đủ giấy tờ (Thời gian cụ thể được quy định tại từng bước của quy trình thực hiện)."
+          "giaTri": "10 Ngày làm việc",
+          "moTa": "Trực tuyến hoặc qua dịch vụ bưu chính hoặc trực tiếp đến Trung tâm Phục vụ hành chính công. 10 ngày làm việc kể từ ngày nhận đủ giấy tờ (Thời gian cụ thể được quy định tại từng bước của quy trình thực hiện)."
         },
         {
           "hinhThuc": "Trực tuyến",
-          "giaTri": "10 WORKING_DAY — Trực tuyến hoặc qua dịch vụ bưu chính hoặc trực tiếp đến Trung tâm Phục vụ hành chính công. 10 ngày làm việc kể từ ngày nhận đủ giấy tờ (Thời gian cụ thể được quy định tại từng bước của quy trình thực hiện)."
+          "giaTri": "10 Ngày làm việc",
+          "moTa": "Trực tuyến hoặc qua dịch vụ bưu chính hoặc trực tiếp đến Trung tâm Phục vụ hành chính công. 10 ngày làm việc kể từ ngày nhận đủ giấy tờ (Thời gian cụ thể được quy định tại từng bước của quy trình thực hiện)."
         }
       ],
       "lePhi": [
@@ -2421,7 +2426,8 @@
       "thoiHan": [
         {
           "hinhThuc": "Dịch vụ bưu chính",
-          "giaTri": "24 DAY — Kể từ ngày nhận đủ hồ sơ đối với trường hợp đủ điều kiện. Đối với trợ cấp tuất hằng tháng, trợ cấp tuất nuôi dưỡng hằng tháng"
+          "giaTri": "24 Ngày",
+          "moTa": "Kể từ ngày nhận đủ hồ sơ đối với trường hợp đủ điều kiện. Đối với trợ cấp tuất hằng tháng, trợ cấp tuất nuôi dưỡng hằng tháng"
         },
         {
           "hinhThuc": "Không xác định",
@@ -2429,7 +2435,8 @@
         },
         {
           "hinhThuc": "Trực tiếp",
-          "giaTri": "19 DAY — Kể từ ngày nhận đủ hồ sơ theo quy định. Đối với trợ cấp một lần và mai táng"
+          "giaTri": "19 Ngày",
+          "moTa": "Kể từ ngày nhận đủ hồ sơ theo quy định. Đối với trợ cấp một lần và mai táng"
         },
         {
           "hinhThuc": "Không xác định",
@@ -2437,7 +2444,8 @@
         },
         {
           "hinhThuc": "Trực tiếp",
-          "giaTri": "24 DAY — Kể từ ngày nhận đủ hồ sơ đối với trường hợp đủ điều kiện. Đối với trợ cấp tuất hằng tháng, trợ cấp tuất nuôi dưỡng hằng tháng"
+          "giaTri": "24 Ngày",
+          "moTa": "Kể từ ngày nhận đủ hồ sơ đối với trường hợp đủ điều kiện. Đối với trợ cấp tuất hằng tháng, trợ cấp tuất nuôi dưỡng hằng tháng"
         },
         {
           "hinhThuc": "Không xác định",
@@ -2445,7 +2453,8 @@
         },
         {
           "hinhThuc": "Dịch vụ bưu chính",
-          "giaTri": "19 DAY — Kể từ ngày nhận đủ hồ sơ theo quy định. Đối với trợ cấp một lần và mai táng"
+          "giaTri": "19 Ngày",
+          "moTa": "Kể từ ngày nhận đủ hồ sơ theo quy định. Đối với trợ cấp một lần và mai táng"
         },
         {
           "hinhThuc": "Không xác định",
@@ -2536,11 +2545,13 @@
       "thoiHan": [
         {
           "hinhThuc": "Dịch vụ bưu chính",
-          "giaTri": "5 WORKING_DAY — Kể từ ngày nhận đủ hồ sơ theo quy định."
+          "giaTri": "5 Ngày làm việc",
+          "moTa": "Kể từ ngày nhận đủ hồ sơ theo quy định."
         },
         {
           "hinhThuc": "Trực tiếp",
-          "giaTri": "5 WORKING_DAY — Kể từ ngày nhận đủ hồ sơ theo quy định."
+          "giaTri": "5 Ngày làm việc",
+          "moTa": "Kể từ ngày nhận đủ hồ sơ theo quy định."
         }
       ],
       "lePhi": [
@@ -2915,12 +2926,8 @@
       ],
       "thoiHan": [
         {
-          "hinhThuc": "Dịch vụ bưu chính",
-          "giaTri": "30 Ngày"
-        },
-        {
-          "hinhThuc": "Trực tiếp",
-          "giaTri": "40 Ngày"
+          "hinhThuc": "Theo quy định Hải Phòng",
+          "giaTri": "30 ngày làm việc"
         }
       ],
       "lePhi": [
@@ -2966,6 +2973,13 @@
           "sourceRole": "local_execution",
           "classification": "dvcqg_vinhbao_execution_scope",
           "verifiedAt": "2026-09-20T14:04:02.5394062Z"
+        },
+        {
+          "id": "official_time_override",
+          "url": "https://cdn.haiphong.gov.vn/gov-hpg/6825/steeringdocument/2025/7/tb-2-cong-khai-niem-yet-dmtthc-linh-vuc-nn-mt-tham-quyen-giai-quyet-cap-xa.signed638886076010096014.pdf",
+          "sourceRole": "local_legal_effect",
+          "classification": "current_official_time_override",
+          "verifiedAt": "2026-09-21"
         }
       ],
       "fieldProvenance": {
@@ -2976,7 +2990,7 @@
           "official_dvcqg_content"
         ],
         "thoiHan": [
-          "official_dvcqg_content"
+          "official_time_override"
         ],
         "lePhi": [
           "official_dvcqg_content"
@@ -3113,7 +3127,8 @@
       "thoiHan": [
         {
           "hinhThuc": "Trực tuyến",
-          "giaTri": "30 WORKING_DAY — Kể từ ngày Ủy ban nhân dân cấp xã nhận hồ sơ đầy đủ và hợp pháp."
+          "giaTri": "30 Ngày làm việc",
+          "moTa": "Kể từ ngày Ủy ban nhân dân cấp xã nhận hồ sơ đầy đủ và hợp pháp."
         },
         {
           "hinhThuc": "Không xác định",
@@ -3121,7 +3136,8 @@
         },
         {
           "hinhThuc": "Dịch vụ bưu chính",
-          "giaTri": "30 WORKING_DAY — Kể từ ngày Ủy ban nhân dân cấp xã nhận hồ sơ đầy đủ và hợp pháp."
+          "giaTri": "30 Ngày làm việc",
+          "moTa": "Kể từ ngày Ủy ban nhân dân cấp xã nhận hồ sơ đầy đủ và hợp pháp."
         },
         {
           "hinhThuc": "Không xác định",
@@ -3129,7 +3145,8 @@
         },
         {
           "hinhThuc": "Trực tiếp",
-          "giaTri": "30 WORKING_DAY — Kể từ ngày Ủy ban nhân dân cấp xã nhận hồ sơ đầy đủ và hợp pháp."
+          "giaTri": "30 Ngày làm việc",
+          "moTa": "Kể từ ngày Ủy ban nhân dân cấp xã nhận hồ sơ đầy đủ và hợp pháp."
         },
         {
           "hinhThuc": "Không xác định",
@@ -3248,7 +3265,8 @@
       "thoiHan": [
         {
           "hinhThuc": "Trực tuyến",
-          "giaTri": "60 WORKING_DAY — Kể từ ngày Ủy ban nhân dân cấp xã nhận hồ sơ đầy đủ và hợp pháp"
+          "giaTri": "60 Ngày làm việc",
+          "moTa": "Kể từ ngày Ủy ban nhân dân cấp xã nhận hồ sơ đầy đủ và hợp pháp"
         },
         {
           "hinhThuc": "Không xác định",
@@ -3256,7 +3274,8 @@
         },
         {
           "hinhThuc": "Dịch vụ bưu chính",
-          "giaTri": "60 WORKING_DAY — Kể từ ngày Ủy ban nhân dân cấp xã nhận hồ sơ đầy đủ và hợp pháp"
+          "giaTri": "60 Ngày làm việc",
+          "moTa": "Kể từ ngày Ủy ban nhân dân cấp xã nhận hồ sơ đầy đủ và hợp pháp"
         },
         {
           "hinhThuc": "Không xác định",
@@ -3264,7 +3283,8 @@
         },
         {
           "hinhThuc": "Trực tiếp",
-          "giaTri": "60 WORKING_DAY — Kể từ ngày Ủy ban nhân dân cấp xã nhận hồ sơ đầy đủ và hợp pháp"
+          "giaTri": "60 Ngày làm việc",
+          "moTa": "Kể từ ngày Ủy ban nhân dân cấp xã nhận hồ sơ đầy đủ và hợp pháp"
         },
         {
           "hinhThuc": "Không xác định",
@@ -3546,15 +3566,18 @@
       "thoiHan": [
         {
           "hinhThuc": "Trực tuyến",
-          "giaTri": "10 WORKING_DAY — 10 (mười) ngày làm việc kể từ ngày nhận được văn bản đề nghị hưởng trợ cấp hưu trí xã hội."
+          "giaTri": "10 Ngày làm việc",
+          "moTa": "10 (mười) ngày làm việc kể từ ngày nhận được văn bản đề nghị hưởng trợ cấp hưu trí xã hội."
         },
         {
           "hinhThuc": "Dịch vụ bưu chính",
-          "giaTri": "10 WORKING_DAY — 10 (mười) ngày làm việc kể từ ngày nhận được văn bản đề nghị hưởng trợ cấp hưu trí xã hội."
+          "giaTri": "10 Ngày làm việc",
+          "moTa": "10 (mười) ngày làm việc kể từ ngày nhận được văn bản đề nghị hưởng trợ cấp hưu trí xã hội."
         },
         {
           "hinhThuc": "Trực tiếp",
-          "giaTri": "10 WORKING_DAY — 10 (mười) ngày làm việc kể từ ngày nhận được văn bản đề nghị hưởng trợ cấp hưu trí xã hội."
+          "giaTri": "10 Ngày làm việc",
+          "moTa": "10 (mười) ngày làm việc kể từ ngày nhận được văn bản đề nghị hưởng trợ cấp hưu trí xã hội."
         }
       ],
       "lePhi": [
@@ -3647,15 +3670,18 @@
       "thoiHan": [
         {
           "hinhThuc": "Trực tuyến",
-          "giaTri": "3 WORKING_DAY — 03 (ba) ngày làm việc, kể từ ngày nhận đủ hồ sơ"
+          "giaTri": "3 Ngày làm việc",
+          "moTa": "03 (ba) ngày làm việc, kể từ ngày nhận đủ hồ sơ"
         },
         {
           "hinhThuc": "Dịch vụ bưu chính",
-          "giaTri": "3 WORKING_DAY — 03 (ba) ngày làm việc, kể từ ngày nhận đủ hồ sơ"
+          "giaTri": "3 Ngày làm việc",
+          "moTa": "03 (ba) ngày làm việc, kể từ ngày nhận đủ hồ sơ"
         },
         {
           "hinhThuc": "Trực tiếp",
-          "giaTri": "3 WORKING_DAY — 03 (ba) ngày làm việc, kể từ ngày nhận đủ hồ sơ"
+          "giaTri": "3 Ngày làm việc",
+          "moTa": "03 (ba) ngày làm việc, kể từ ngày nhận đủ hồ sơ"
         }
       ],
       "lePhi": [
@@ -3746,27 +3772,33 @@
       "thoiHan": [
         {
           "hinhThuc": "Trực tiếp",
-          "giaTri": "10 WORKING_DAY — 10 ngày làm việc đối với cơ sở trợ giúp xã hội thuộc phạm vi quản lý của Uỷ ban nhân dân xã"
+          "giaTri": "10 Ngày làm việc",
+          "moTa": "10 ngày làm việc đối với cơ sở trợ giúp xã hội thuộc phạm vi quản lý của Uỷ ban nhân dân xã"
         },
         {
           "hinhThuc": "Trực tiếp",
-          "giaTri": "15 WORKING_DAY — 15 ngày làm việc đối với cơ sở trợ giúp xã hội thuộc phạm vi Ủy ban nhân dân cấp tỉnh quản lý"
+          "giaTri": "15 Ngày làm việc",
+          "moTa": "15 ngày làm việc đối với cơ sở trợ giúp xã hội thuộc phạm vi Ủy ban nhân dân cấp tỉnh quản lý"
         },
         {
           "hinhThuc": "Trực tuyến",
-          "giaTri": "10 WORKING_DAY — 10 ngày làm việc đối với cơ sở trợ giúp xã hội thuộc phạm vi quản lý của Uỷ ban nhân dân xã"
+          "giaTri": "10 Ngày làm việc",
+          "moTa": "10 ngày làm việc đối với cơ sở trợ giúp xã hội thuộc phạm vi quản lý của Uỷ ban nhân dân xã"
         },
         {
           "hinhThuc": "Trực tuyến",
-          "giaTri": "15 WORKING_DAY — 15 ngày làm việc đối với cơ sở trợ giúp xã hội thuộc phạm vi Ủy ban nhân dân cấp tỉnh quản lý"
+          "giaTri": "15 Ngày làm việc",
+          "moTa": "15 ngày làm việc đối với cơ sở trợ giúp xã hội thuộc phạm vi Ủy ban nhân dân cấp tỉnh quản lý"
         },
         {
           "hinhThuc": "Dịch vụ bưu chính",
-          "giaTri": "10 WORKING_DAY — 10 ngày làm việc đối với cơ sở trợ giúp xã hội thuộc phạm vi quản lý của Uỷ ban nhân dân xã"
+          "giaTri": "10 Ngày làm việc",
+          "moTa": "10 ngày làm việc đối với cơ sở trợ giúp xã hội thuộc phạm vi quản lý của Uỷ ban nhân dân xã"
         },
         {
           "hinhThuc": "Dịch vụ bưu chính",
-          "giaTri": "15 WORKING_DAY — 15 ngày làm việc đối với cơ sở trợ giúp xã hội thuộc phạm vi Ủy ban nhân dân cấp tỉnh quản lý"
+          "giaTri": "15 Ngày làm việc",
+          "moTa": "15 ngày làm việc đối với cơ sở trợ giúp xã hội thuộc phạm vi Ủy ban nhân dân cấp tỉnh quản lý"
         }
       ],
       "lePhi": [
@@ -4145,16 +4177,8 @@
       ],
       "thoiHan": [
         {
-          "hinhThuc": "Không xác định",
-          "giaTri": "ONLINE"
-        },
-        {
-          "hinhThuc": "Không xác định",
-          "giaTri": "POSTAL"
-        },
-        {
-          "hinhThuc": "Không xác định",
-          "giaTri": "DIRECT"
+          "hinhThuc": "Trực tiếp/Trực tuyến/Bưu chính",
+          "giaTri": "Ngay trong ngày tiếp nhận hồ sơ; trường hợp nhận hồ sơ sau 15 giờ mà không giải quyết được ngay thì trả kết quả trong ngày làm việc tiếp theo."
         }
       ],
       "lePhi": [
@@ -4192,6 +4216,13 @@
           "sourceRole": "local_execution",
           "classification": "dvcqg_vinhbao_execution_scope",
           "verifiedAt": "2026-09-20T14:04:02.5394062Z"
+        },
+        {
+          "id": "official_time_override",
+          "url": "https://cdn.haiphong.gov.vn/gov-hpg/6376/tintuc/2025/9/230-cong-khai-quy-trinh-noi-bo-giam-thoi-gian-thuc-hien-tthc-linh-vuc-tu-phap_223-qd-stp_27-8-2025.signed638936462397153411.pdf",
+          "sourceRole": "local_legal_effect",
+          "classification": "current_official_time_override",
+          "verifiedAt": "2026-09-21"
         }
       ],
       "fieldProvenance": {
@@ -4202,7 +4233,7 @@
           "official_dvcqg_content"
         ],
         "thoiHan": [
-          "official_dvcqg_content"
+          "official_time_override"
         ],
         "lePhi": [
           "official_dvcqg_content"
@@ -4507,11 +4538,7 @@
       "thoiHan": [
         {
           "hinhThuc": "Trực tiếp",
-          "giaTri": "Tại Ủy ban nhân dân cấp xã, Tổ chức hành nghề công chứng: 2.000 đồng/trang; từ trang thứ 3 trở lên thu 1.000 đồng/trang, tối đa thu không quá 200.000 đồng/bản. Trang là căn cứ để thu phí được tính theo trang của bản chính;"
-        },
-        {
-          "hinhThuc": "Trực tiếp",
-          "giaTri": "Tại cơ quan đại diện: 10 USD/bản."
+          "giaTri": "Thực hiện ngay trong ngày tiếp nhận yêu cầu hoặc trong ngày làm việc tiếp theo nếu tiếp nhận sau 15 giờ; trường hợp khối lượng lớn/phức tạp có thể kéo dài theo quy định."
         }
       ],
       "lePhi": [
@@ -4552,6 +4579,13 @@
           "sourceRole": "local_execution",
           "classification": "dvcqg_vinhbao_execution_scope",
           "verifiedAt": "2026-09-20T14:04:02.5394062Z"
+        },
+        {
+          "id": "official_time_override",
+          "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=2630",
+          "sourceRole": "central_content_reference",
+          "classification": "current_official_time_override",
+          "verifiedAt": "2026-09-21"
         }
       ],
       "fieldProvenance": {
@@ -4562,7 +4596,7 @@
           "official_dvcqg_content"
         ],
         "thoiHan": [
-          "official_dvcqg_content"
+          "official_time_override"
         ],
         "lePhi": [
           "official_dvcqg_content"
@@ -4598,11 +4632,7 @@
       "thoiHan": [
         {
           "hinhThuc": "Trực tiếp",
-          "giaTri": "Tại Ủy ban nhân dân cấp xã, Tổ chức hành nghề công chứng: 10.000 đồng/trường hợp (trường hợp được tính là một hoặc nhiều chữ ký trong một giấy tờ, văn bản)."
-        },
-        {
-          "hinhThuc": "Trực tiếp",
-          "giaTri": "Tại cơ quan đại diện: 10 USD/bản."
+          "giaTri": "Ngay trong ngày cơ quan, tổ chức tiếp nhận yêu cầu hoặc trong ngày làm việc tiếp theo nếu tiếp nhận sau 15 giờ."
         }
       ],
       "lePhi": [
@@ -4643,6 +4673,13 @@
           "sourceRole": "local_execution",
           "classification": "dvcqg_vinhbao_execution_scope",
           "verifiedAt": "2026-09-20T14:04:02.5394062Z"
+        },
+        {
+          "id": "official_time_override",
+          "url": "https://dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=2886&open_popup=1",
+          "sourceRole": "central_content_reference",
+          "classification": "current_official_time_override",
+          "verifiedAt": "2026-09-21"
         }
       ],
       "fieldProvenance": {
@@ -4653,7 +4690,7 @@
           "official_dvcqg_content"
         ],
         "thoiHan": [
-          "official_dvcqg_content"
+          "official_time_override"
         ],
         "lePhi": [
           "official_dvcqg_content"
@@ -4688,16 +4725,8 @@
       ],
       "thoiHan": [
         {
-          "hinhThuc": "Không xác định",
-          "giaTri": "DIRECT"
-        },
-        {
-          "hinhThuc": "Không xác định",
-          "giaTri": "ONLINE"
-        },
-        {
-          "hinhThuc": "Không xác định",
-          "giaTri": "POSTAL"
+          "hinhThuc": "Trực tiếp",
+          "giaTri": "Ngay trong ngày cơ quan, tổ chức tiếp nhận yêu cầu hoặc trong ngày làm việc tiếp theo nếu tiếp nhận sau 15 giờ."
         }
       ],
       "lePhi": [
@@ -4742,6 +4771,13 @@
           "sourceRole": "local_execution",
           "classification": "dvcqg_vinhbao_execution_scope",
           "verifiedAt": "2026-09-20T14:04:02.5394062Z"
+        },
+        {
+          "id": "official_time_override",
+          "url": "https://dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=3014",
+          "sourceRole": "central_content_reference",
+          "classification": "current_official_time_override",
+          "verifiedAt": "2026-09-21"
         }
       ],
       "fieldProvenance": {
@@ -4752,7 +4788,7 @@
           "official_dvcqg_content"
         ],
         "thoiHan": [
-          "official_dvcqg_content"
+          "official_time_override"
         ],
         "lePhi": [
           "official_dvcqg_content"
@@ -4787,8 +4823,8 @@
       ],
       "thoiHan": [
         {
-          "hinhThuc": "Không xác định",
-          "giaTri": "DIRECT"
+          "hinhThuc": "Trực tiếp",
+          "giaTri": "Trong ngày cơ quan, tổ chức tiếp nhận yêu cầu hoặc trong ngày làm việc tiếp theo nếu tiếp nhận sau 15 giờ."
         }
       ],
       "lePhi": [
@@ -4834,6 +4870,13 @@
           "sourceRole": "local_execution",
           "classification": "dvcqg_vinhbao_execution_scope",
           "verifiedAt": "2026-09-20T14:04:02.5394062Z"
+        },
+        {
+          "id": "official_time_override",
+          "url": "https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=3113",
+          "sourceRole": "central_content_reference",
+          "classification": "current_official_time_override",
+          "verifiedAt": "2026-09-21"
         }
       ],
       "fieldProvenance": {
@@ -4844,7 +4887,7 @@
           "official_dvcqg_content"
         ],
         "thoiHan": [
-          "official_dvcqg_content"
+          "official_time_override"
         ],
         "lePhi": [
           "official_dvcqg_content"
@@ -4879,8 +4922,8 @@
       ],
       "thoiHan": [
         {
-          "hinhThuc": "Không xác định",
-          "giaTri": "DIRECT"
+          "hinhThuc": "Trực tiếp",
+          "giaTri": "Trong ngày cơ quan, tổ chức tiếp nhận yêu cầu hoặc trong ngày làm việc tiếp theo nếu tiếp nhận sau 15 giờ; có thể kéo dài hơn theo thỏa thuận bằng văn bản."
         }
       ],
       "lePhi": [
@@ -4918,6 +4961,13 @@
           "sourceRole": "local_execution",
           "classification": "dvcqg_vinhbao_execution_scope",
           "verifiedAt": "2026-09-20T14:04:02.5394062Z"
+        },
+        {
+          "id": "official_time_override",
+          "url": "https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=3304",
+          "sourceRole": "central_content_reference",
+          "classification": "current_official_time_override",
+          "verifiedAt": "2026-09-21"
         }
       ],
       "fieldProvenance": {
@@ -4928,7 +4978,7 @@
           "official_dvcqg_content"
         ],
         "thoiHan": [
-          "official_dvcqg_content"
+          "official_time_override"
         ],
         "lePhi": [
           "official_dvcqg_content"
@@ -4963,16 +5013,8 @@
       ],
       "thoiHan": [
         {
-          "hinhThuc": "Không xác định",
-          "giaTri": "DIRECT"
-        },
-        {
-          "hinhThuc": "Không xác định",
-          "giaTri": "ONLINE"
-        },
-        {
-          "hinhThuc": "Không xác định",
-          "giaTri": "POSTAL"
+          "hinhThuc": "Trực tiếp",
+          "giaTri": "Không quá 02 (hai) ngày làm việc kể từ ngày nhận đủ hồ sơ yêu cầu chứng thực; có thể kéo dài hơn theo thỏa thuận bằng văn bản."
         }
       ],
       "lePhi": [
@@ -5017,6 +5059,13 @@
           "sourceRole": "local_execution",
           "classification": "dvcqg_vinhbao_execution_scope",
           "verifiedAt": "2026-09-20T14:04:02.5394062Z"
+        },
+        {
+          "id": "official_time_override",
+          "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=3388",
+          "sourceRole": "central_content_reference",
+          "classification": "current_official_time_override",
+          "verifiedAt": "2026-09-21"
         }
       ],
       "fieldProvenance": {
@@ -5027,7 +5076,7 @@
           "official_dvcqg_content"
         ],
         "thoiHan": [
-          "official_dvcqg_content"
+          "official_time_override"
         ],
         "lePhi": [
           "official_dvcqg_content"
@@ -5062,16 +5111,8 @@
       ],
       "thoiHan": [
         {
-          "hinhThuc": "Trực tuyến",
-          "giaTri": "Cá nhân, hộ gia đình vay vốn tại tổ chức tín dụng để phục vụ phát triển nông nghiệp, nông thôn theo quy định tại Nghị định số 55/2015/NĐ-về chính sách tín dụng phục vụ phát triển nông nghiệp, nông thôn thì không phải nộp phí chứng thực hợp đồng thế chấp tài sản."
-        },
-        {
           "hinhThuc": "Trực tiếp",
-          "giaTri": "Cá nhân, hộ gia đình vay vốn tại tổ chức tín dụng để phục vụ phát triển nông nghiệp, nông thôn theo quy định tại Nghị định số 55/2015/NĐ-về chính sách tín dụng phục vụ phát triển nông nghiệp, nông thôn thì không phải nộp phí chứng thực hợp đồng thế chấp tài sản."
-        },
-        {
-          "hinhThuc": "Dịch vụ bưu chính",
-          "giaTri": "Cá nhân, hộ gia đình vay vốn tại tổ chức tín dụng để phục vụ phát triển nông nghiệp, nông thôn theo quy định tại Nghị định số 55/2015/NĐ-về chính sách tín dụng phục vụ phát triển nông nghiệp, nông thôn thì không phải nộp phí chứng thực hợp đồng thế chấp tài sản."
+          "giaTri": "Không quá 02 (hai) ngày làm việc kể từ ngày nhận đủ hồ sơ yêu cầu chứng thực; có thể kéo dài hơn theo thỏa thuận bằng văn bản."
         }
       ],
       "lePhi": [
@@ -5117,6 +5158,13 @@
           "sourceRole": "local_execution",
           "classification": "dvcqg_vinhbao_execution_scope",
           "verifiedAt": "2026-09-20T14:04:02.5394062Z"
+        },
+        {
+          "id": "official_time_override",
+          "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=3496",
+          "sourceRole": "central_content_reference",
+          "classification": "current_official_time_override",
+          "verifiedAt": "2026-09-21"
         }
       ],
       "fieldProvenance": {
@@ -5127,7 +5175,7 @@
           "official_dvcqg_content"
         ],
         "thoiHan": [
-          "official_dvcqg_content"
+          "official_time_override"
         ],
         "lePhi": [
           "official_dvcqg_content"
@@ -5277,16 +5325,8 @@
       ],
       "thoiHan": [
         {
-          "hinhThuc": "Không xác định",
-          "giaTri": "DIRECT"
-        },
-        {
-          "hinhThuc": "Không xác định",
-          "giaTri": "ONLINE"
-        },
-        {
-          "hinhThuc": "Không xác định",
-          "giaTri": "POSTAL"
+          "hinhThuc": "Trực tiếp",
+          "giaTri": "Không quá 02 (hai) ngày làm việc kể từ ngày nhận đủ hồ sơ yêu cầu chứng thực; có thể kéo dài hơn theo thỏa thuận bằng văn bản."
         }
       ],
       "lePhi": [
@@ -5331,6 +5371,13 @@
           "sourceRole": "local_execution",
           "classification": "dvcqg_vinhbao_execution_scope",
           "verifiedAt": "2026-09-20T14:04:02.5394062Z"
+        },
+        {
+          "id": "official_time_override",
+          "url": "https://dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=4780",
+          "sourceRole": "central_content_reference",
+          "classification": "current_official_time_override",
+          "verifiedAt": "2026-09-21"
         }
       ],
       "fieldProvenance": {
@@ -5341,7 +5388,7 @@
           "official_dvcqg_content"
         ],
         "thoiHan": [
-          "official_dvcqg_content"
+          "official_time_override"
         ],
         "lePhi": [
           "official_dvcqg_content"
@@ -5639,7 +5686,8 @@
     "data/source-audit/priority50-guidance-candidates.json",
     "data/source-audit/priority50-official-guidance-exceptions.json",
     "data/priority-51-legal-verification.json",
-    "data/source-audit/priority50-local-agency-overrides.json"
+    "data/source-audit/priority50-local-agency-overrides.json",
+    "data/source-audit/priority50-official-time-overrides.json"
   ],
-  "generatedAt": "2026-09-21T16:25:46.117707+00:00"
+  "generatedAt": "2026-09-21T16:26:10.370555+00:00"
 }

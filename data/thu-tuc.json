@@ -2,7 +2,7 @@
   "format": "bangniemyet-vinhbao-master-data",
   "version": 4,
   "dataset_version": "2026.09.21",
-  "source_commit": "d4c64708320dd902ac60f7d32f84b44c2ae4d679",
+  "source_commit": "f64e4d743bd0c548c68f2bc3645add47930064ad",
   "source_commit_kind": "verified_source_bundle_git_sha1",
   "updatedAt": "2026-09-21",
   "sourceSnapshotDate": "2026-09-18",
@@ -1024,15 +1024,18 @@
         "thoiHan": [
           {
             "hinhThuc": "Trực tuyến",
-            "giaTri": "3 WORKING_DAY — 03 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ"
+            "giaTri": "3 Ngày làm việc",
+            "moTa": "03 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ"
           },
           {
             "hinhThuc": "Dịch vụ bưu chính",
-            "giaTri": "3 WORKING_DAY — 03 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ"
+            "giaTri": "3 Ngày làm việc",
+            "moTa": "03 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ"
           },
           {
             "hinhThuc": "Trực tiếp",
-            "giaTri": "3 WORKING_DAY — 03 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ"
+            "giaTri": "3 Ngày làm việc",
+            "moTa": "03 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ"
           }
         ],
         "coQuanThucHien": "Ủy ban nhân dân cấp xã",
@@ -1371,15 +1374,18 @@
         "thoiHan": [
           {
             "hinhThuc": "Trực tuyến",
-            "giaTri": "3 WORKING_DAY — 03 (ba) ngày làm việc, kể từ ngày nhận đủ hồ sơ"
+            "giaTri": "3 Ngày làm việc",
+            "moTa": "03 (ba) ngày làm việc, kể từ ngày nhận đủ hồ sơ"
           },
           {
             "hinhThuc": "Dịch vụ bưu chính",
-            "giaTri": "3 WORKING_DAY — 03 (ba) ngày làm việc, kể từ ngày nhận đủ hồ sơ"
+            "giaTri": "3 Ngày làm việc",
+            "moTa": "03 (ba) ngày làm việc, kể từ ngày nhận đủ hồ sơ"
           },
           {
             "hinhThuc": "Trực tiếp",
-            "giaTri": "3 WORKING_DAY — 03 (ba) ngày làm việc, kể từ ngày nhận đủ hồ sơ"
+            "giaTri": "3 Ngày làm việc",
+            "moTa": "03 (ba) ngày làm việc, kể từ ngày nhận đủ hồ sơ"
           }
         ],
         "coQuanThucHien": "Ủy ban nhân dân cấp xã",
@@ -1646,15 +1652,18 @@
         "thoiHan": [
           {
             "hinhThuc": "Trực tuyến",
-            "giaTri": "10 WORKING_DAY — 10 (mười) ngày làm việc kể từ ngày nhận được văn bản đề nghị hưởng trợ cấp hưu trí xã hội."
+            "giaTri": "10 Ngày làm việc",
+            "moTa": "10 (mười) ngày làm việc kể từ ngày nhận được văn bản đề nghị hưởng trợ cấp hưu trí xã hội."
           },
           {
             "hinhThuc": "Dịch vụ bưu chính",
-            "giaTri": "10 WORKING_DAY — 10 (mười) ngày làm việc kể từ ngày nhận được văn bản đề nghị hưởng trợ cấp hưu trí xã hội."
+            "giaTri": "10 Ngày làm việc",
+            "moTa": "10 (mười) ngày làm việc kể từ ngày nhận được văn bản đề nghị hưởng trợ cấp hưu trí xã hội."
           },
           {
             "hinhThuc": "Trực tiếp",
-            "giaTri": "10 WORKING_DAY — 10 (mười) ngày làm việc kể từ ngày nhận được văn bản đề nghị hưởng trợ cấp hưu trí xã hội."
+            "giaTri": "10 Ngày làm việc",
+            "moTa": "10 (mười) ngày làm việc kể từ ngày nhận được văn bản đề nghị hưởng trợ cấp hưu trí xã hội."
           }
         ],
         "coQuanThucHien": "Ủy ban nhân dân cấp xã",
@@ -2180,27 +2189,33 @@
         "thoiHan": [
           {
             "hinhThuc": "Trực tiếp",
-            "giaTri": "10 WORKING_DAY — 10 ngày làm việc đối với cơ sở trợ giúp xã hội thuộc phạm vi quản lý của Uỷ ban nhân dân xã"
+            "giaTri": "10 Ngày làm việc",
+            "moTa": "10 ngày làm việc đối với cơ sở trợ giúp xã hội thuộc phạm vi quản lý của Uỷ ban nhân dân xã"
           },
           {
             "hinhThuc": "Trực tiếp",
-            "giaTri": "15 WORKING_DAY — 15 ngày làm việc đối với cơ sở trợ giúp xã hội thuộc phạm vi Ủy ban nhân dân cấp tỉnh quản lý"
+            "giaTri": "15 Ngày làm việc",
+            "moTa": "15 ngày làm việc đối với cơ sở trợ giúp xã hội thuộc phạm vi Ủy ban nhân dân cấp tỉnh quản lý"
           },
           {
             "hinhThuc": "Trực tuyến",
-            "giaTri": "10 WORKING_DAY — 10 ngày làm việc đối với cơ sở trợ giúp xã hội thuộc phạm vi quản lý của Uỷ ban nhân dân xã"
+            "giaTri": "10 Ngày làm việc",
+            "moTa": "10 ngày làm việc đối với cơ sở trợ giúp xã hội thuộc phạm vi quản lý của Uỷ ban nhân dân xã"
           },
           {
             "hinhThuc": "Trực tuyến",
-            "giaTri": "15 WORKING_DAY — 15 ngày làm việc đối với cơ sở trợ giúp xã hội thuộc phạm vi Ủy ban nhân dân cấp tỉnh quản lý"
+            "giaTri": "15 Ngày làm việc",
+            "moTa": "15 ngày làm việc đối với cơ sở trợ giúp xã hội thuộc phạm vi Ủy ban nhân dân cấp tỉnh quản lý"
           },
           {
             "hinhThuc": "Dịch vụ bưu chính",
-            "giaTri": "10 WORKING_DAY — 10 ngày làm việc đối với cơ sở trợ giúp xã hội thuộc phạm vi quản lý của Uỷ ban nhân dân xã"
+            "giaTri": "10 Ngày làm việc",
+            "moTa": "10 ngày làm việc đối với cơ sở trợ giúp xã hội thuộc phạm vi quản lý của Uỷ ban nhân dân xã"
           },
           {
             "hinhThuc": "Dịch vụ bưu chính",
-            "giaTri": "15 WORKING_DAY — 15 ngày làm việc đối với cơ sở trợ giúp xã hội thuộc phạm vi Ủy ban nhân dân cấp tỉnh quản lý"
+            "giaTri": "15 Ngày làm việc",
+            "moTa": "15 ngày làm việc đối với cơ sở trợ giúp xã hội thuộc phạm vi Ủy ban nhân dân cấp tỉnh quản lý"
           }
         ],
         "coQuanThucHien": "Cơ sở trợ giúp xã hội",
@@ -2655,6 +2670,15 @@
           "effectiveDate": null,
           "repealContext": false,
           "evidenceId": "ev_df796bd5d3e24b9ae2613fc3"
+        },
+        {
+          "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=2630",
+          "sourceRole": "central_content_reference",
+          "classification": "current_official_time_override",
+          "publishedDate": null,
+          "effectiveDate": null,
+          "repealContext": false,
+          "evidenceId": "ev_2179ca2e861bb84e23cb295e"
         }
       ],
       "dvcMappingStatus": "verified_priority51_crosswalk",
@@ -2716,7 +2740,7 @@
           "ev_bf12d5ab62371ae22131700d"
         ],
         "huongDan.thoiHan": [
-          "ev_bf12d5ab62371ae22131700d"
+          "ev_2179ca2e861bb84e23cb295e"
         ],
         "huongDan.coQuanThucHien": [
           "ev_bf12d5ab62371ae22131700d"
@@ -2759,11 +2783,7 @@
         "thoiHan": [
           {
             "hinhThuc": "Trực tiếp",
-            "giaTri": "Tại Ủy ban nhân dân cấp xã, Tổ chức hành nghề công chứng: 2.000 đồng/trang; từ trang thứ 3 trở lên thu 1.000 đồng/trang, tối đa thu không quá 200.000 đồng/bản. Trang là căn cứ để thu phí được tính theo trang của bản chính;"
-          },
-          {
-            "hinhThuc": "Trực tiếp",
-            "giaTri": "Tại cơ quan đại diện: 10 USD/bản."
+            "giaTri": "Thực hiện ngay trong ngày tiếp nhận yêu cầu hoặc trong ngày làm việc tiếp theo nếu tiếp nhận sau 15 giờ; trường hợp khối lượng lớn/phức tạp có thể kéo dài theo quy định."
           }
         ],
         "coQuanThucHien": "Cơ quan đại diện có thẩm quyền, Tổ chức hành nghề công chứng",
@@ -2799,6 +2819,13 @@
             "sourceRole": "local_execution",
             "classification": "dvcqg_vinhbao_execution_scope",
             "verifiedAt": "2026-09-20T14:04:02.5394062Z"
+          },
+          {
+            "id": "official_time_override",
+            "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=2630",
+            "sourceRole": "central_content_reference",
+            "classification": "current_official_time_override",
+            "verifiedAt": "2026-09-21"
           }
         ],
         "fieldProvenance": {
@@ -2809,7 +2836,7 @@
             "official_dvcqg_content"
           ],
           "thoiHan": [
-            "official_dvcqg_content"
+            "official_time_override"
           ],
           "lePhi": [
             "official_dvcqg_content"
@@ -2976,6 +3003,15 @@
           "effectiveDate": null,
           "repealContext": false,
           "evidenceId": "ev_e8a87839b4b097dbbba98b00"
+        },
+        {
+          "url": "https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=3304",
+          "sourceRole": "central_content_reference",
+          "classification": "current_official_time_override",
+          "publishedDate": null,
+          "effectiveDate": null,
+          "repealContext": false,
+          "evidenceId": "ev_df6fb53e9928234726193bad"
         }
       ],
       "dvcMappingStatus": "verified_priority51_crosswalk",
@@ -3043,7 +3079,7 @@
           "ev_82e87a1a77f47313361317dc"
         ],
         "huongDan.thoiHan": [
-          "ev_82e87a1a77f47313361317dc"
+          "ev_df6fb53e9928234726193bad"
         ],
         "huongDan.coQuanThucHien": [
           "ev_82e87a1a77f47313361317dc"
@@ -3082,8 +3118,8 @@
         ],
         "thoiHan": [
           {
-            "hinhThuc": "Không xác định",
-            "giaTri": "DIRECT"
+            "hinhThuc": "Trực tiếp",
+            "giaTri": "Trong ngày cơ quan, tổ chức tiếp nhận yêu cầu hoặc trong ngày làm việc tiếp theo nếu tiếp nhận sau 15 giờ; có thể kéo dài hơn theo thỏa thuận bằng văn bản."
           }
         ],
         "coQuanThucHien": "Tổ chức hành nghề công chứng",
@@ -3119,6 +3155,13 @@
             "sourceRole": "local_execution",
             "classification": "dvcqg_vinhbao_execution_scope",
             "verifiedAt": "2026-09-20T14:04:02.5394062Z"
+          },
+          {
+            "id": "official_time_override",
+            "url": "https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=3304",
+            "sourceRole": "central_content_reference",
+            "classification": "current_official_time_override",
+            "verifiedAt": "2026-09-21"
           }
         ],
         "fieldProvenance": {
@@ -3129,7 +3172,7 @@
             "official_dvcqg_content"
           ],
           "thoiHan": [
-            "official_dvcqg_content"
+            "official_time_override"
           ],
           "lePhi": [
             "official_dvcqg_content"
@@ -3225,6 +3268,15 @@
           "effectiveDate": null,
           "repealContext": false,
           "evidenceId": "ev_ae82a81059a80366e78a4715"
+        },
+        {
+          "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=3496",
+          "sourceRole": "central_content_reference",
+          "classification": "current_official_time_override",
+          "publishedDate": null,
+          "effectiveDate": null,
+          "repealContext": false,
+          "evidenceId": "ev_2d73f2c669e260e6975b11dd"
         }
       ],
       "dvcMappingStatus": "verified_priority51_crosswalk",
@@ -3292,7 +3344,7 @@
           "ev_641bc06575d7a47fe4efc032"
         ],
         "huongDan.thoiHan": [
-          "ev_641bc06575d7a47fe4efc032"
+          "ev_2d73f2c669e260e6975b11dd"
         ],
         "huongDan.coQuanThucHien": [
           "ev_926d7b780b6f04daeec3805e"
@@ -3331,16 +3383,8 @@
         ],
         "thoiHan": [
           {
-            "hinhThuc": "Trực tuyến",
-            "giaTri": "Cá nhân, hộ gia đình vay vốn tại tổ chức tín dụng để phục vụ phát triển nông nghiệp, nông thôn theo quy định tại Nghị định số 55/2015/NĐ-về chính sách tín dụng phục vụ phát triển nông nghiệp, nông thôn thì không phải nộp phí chứng thực hợp đồng thế chấp tài sản."
-          },
-          {
             "hinhThuc": "Trực tiếp",
-            "giaTri": "Cá nhân, hộ gia đình vay vốn tại tổ chức tín dụng để phục vụ phát triển nông nghiệp, nông thôn theo quy định tại Nghị định số 55/2015/NĐ-về chính sách tín dụng phục vụ phát triển nông nghiệp, nông thôn thì không phải nộp phí chứng thực hợp đồng thế chấp tài sản."
-          },
-          {
-            "hinhThuc": "Dịch vụ bưu chính",
-            "giaTri": "Cá nhân, hộ gia đình vay vốn tại tổ chức tín dụng để phục vụ phát triển nông nghiệp, nông thôn theo quy định tại Nghị định số 55/2015/NĐ-về chính sách tín dụng phục vụ phát triển nông nghiệp, nông thôn thì không phải nộp phí chứng thực hợp đồng thế chấp tài sản."
+            "giaTri": "Không quá 02 (hai) ngày làm việc kể từ ngày nhận đủ hồ sơ yêu cầu chứng thực; có thể kéo dài hơn theo thỏa thuận bằng văn bản."
           }
         ],
         "coQuanThucHien": "Ủy ban nhân dân cấp xã",
@@ -3384,6 +3428,13 @@
             "sourceRole": "local_execution",
             "classification": "dvcqg_vinhbao_execution_scope",
             "verifiedAt": "2026-09-20T14:04:02.5394062Z"
+          },
+          {
+            "id": "official_time_override",
+            "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=3496",
+            "sourceRole": "central_content_reference",
+            "classification": "current_official_time_override",
+            "verifiedAt": "2026-09-21"
           }
         ],
         "fieldProvenance": {
@@ -3394,7 +3445,7 @@
             "official_dvcqg_content"
           ],
           "thoiHan": [
-            "official_dvcqg_content"
+            "official_time_override"
           ],
           "lePhi": [
             "official_dvcqg_content"
@@ -3514,6 +3565,15 @@
           "effectiveDate": null,
           "repealContext": false,
           "evidenceId": "ev_a9f7d013ddadad01aab2f194"
+        },
+        {
+          "url": "https://dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=4780",
+          "sourceRole": "central_content_reference",
+          "classification": "current_official_time_override",
+          "publishedDate": null,
+          "effectiveDate": null,
+          "repealContext": false,
+          "evidenceId": "ev_20ec7b0b09c897e4279ec0f4"
         }
       ],
       "priority51LegalVerificationStatus": "current_official_commune_evidence",
@@ -3592,7 +3652,7 @@
           "ev_5395e1bb09cbae4bab4d3818"
         ],
         "huongDan.thoiHan": [
-          "ev_5395e1bb09cbae4bab4d3818"
+          "ev_20ec7b0b09c897e4279ec0f4"
         ],
         "huongDan.coQuanThucHien": [
           "ev_d6e0425f83eff9e2fa3e49e2"
@@ -3631,16 +3691,8 @@
         ],
         "thoiHan": [
           {
-            "hinhThuc": "Không xác định",
-            "giaTri": "DIRECT"
-          },
-          {
-            "hinhThuc": "Không xác định",
-            "giaTri": "ONLINE"
-          },
-          {
-            "hinhThuc": "Không xác định",
-            "giaTri": "POSTAL"
+            "hinhThuc": "Trực tiếp",
+            "giaTri": "Không quá 02 (hai) ngày làm việc kể từ ngày nhận đủ hồ sơ yêu cầu chứng thực; có thể kéo dài hơn theo thỏa thuận bằng văn bản."
           }
         ],
         "coQuanThucHien": "Ủy ban nhân dân cấp xã",
@@ -3683,6 +3735,13 @@
             "sourceRole": "local_execution",
             "classification": "dvcqg_vinhbao_execution_scope",
             "verifiedAt": "2026-09-20T14:04:02.5394062Z"
+          },
+          {
+            "id": "official_time_override",
+            "url": "https://dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=4780",
+            "sourceRole": "central_content_reference",
+            "classification": "current_official_time_override",
+            "verifiedAt": "2026-09-21"
           }
         ],
         "fieldProvenance": {
@@ -3693,7 +3752,7 @@
             "official_dvcqg_content"
           ],
           "thoiHan": [
-            "official_dvcqg_content"
+            "official_time_override"
           ],
           "lePhi": [
             "official_dvcqg_content"
@@ -3813,6 +3872,15 @@
           "effectiveDate": null,
           "repealContext": false,
           "evidenceId": "ev_b5201e97410994d4b333e9ab"
+        },
+        {
+          "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=3388",
+          "sourceRole": "central_content_reference",
+          "classification": "current_official_time_override",
+          "publishedDate": null,
+          "effectiveDate": null,
+          "repealContext": false,
+          "evidenceId": "ev_4054601d6fd5ecccead00c0a"
         }
       ],
       "priority51LegalVerificationStatus": "current_official_commune_evidence",
@@ -3891,7 +3959,7 @@
           "ev_b800f57aea9267b91693cfe0"
         ],
         "huongDan.thoiHan": [
-          "ev_b800f57aea9267b91693cfe0"
+          "ev_4054601d6fd5ecccead00c0a"
         ],
         "huongDan.coQuanThucHien": [
           "ev_d6e0425f83eff9e2fa3e49e2"
@@ -3930,16 +3998,8 @@
         ],
         "thoiHan": [
           {
-            "hinhThuc": "Không xác định",
-            "giaTri": "DIRECT"
-          },
-          {
-            "hinhThuc": "Không xác định",
-            "giaTri": "ONLINE"
-          },
-          {
-            "hinhThuc": "Không xác định",
-            "giaTri": "POSTAL"
+            "hinhThuc": "Trực tiếp",
+            "giaTri": "Không quá 02 (hai) ngày làm việc kể từ ngày nhận đủ hồ sơ yêu cầu chứng thực; có thể kéo dài hơn theo thỏa thuận bằng văn bản."
           }
         ],
         "coQuanThucHien": "Ủy ban nhân dân cấp xã",
@@ -3982,6 +4042,13 @@
             "sourceRole": "local_execution",
             "classification": "dvcqg_vinhbao_execution_scope",
             "verifiedAt": "2026-09-20T14:04:02.5394062Z"
+          },
+          {
+            "id": "official_time_override",
+            "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=3388",
+            "sourceRole": "central_content_reference",
+            "classification": "current_official_time_override",
+            "verifiedAt": "2026-09-21"
           }
         ],
         "fieldProvenance": {
@@ -3992,7 +4059,7 @@
             "official_dvcqg_content"
           ],
           "thoiHan": [
-            "official_dvcqg_content"
+            "official_time_override"
           ],
           "lePhi": [
             "official_dvcqg_content"
@@ -4112,6 +4179,15 @@
           "effectiveDate": null,
           "repealContext": false,
           "evidenceId": "ev_83e40b74dcc2a7ab66fc89bf"
+        },
+        {
+          "url": "https://dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=3014",
+          "sourceRole": "central_content_reference",
+          "classification": "current_official_time_override",
+          "publishedDate": null,
+          "effectiveDate": null,
+          "repealContext": false,
+          "evidenceId": "ev_641b2ee189db8decc51037e6"
         }
       ],
       "priority51LegalVerificationStatus": "current_official_commune_evidence",
@@ -4190,7 +4266,7 @@
           "ev_f785bc2f11fa608308a21863"
         ],
         "huongDan.thoiHan": [
-          "ev_f785bc2f11fa608308a21863"
+          "ev_641b2ee189db8decc51037e6"
         ],
         "huongDan.coQuanThucHien": [
           "ev_d6e0425f83eff9e2fa3e49e2"
@@ -4229,16 +4305,8 @@
         ],
         "thoiHan": [
           {
-            "hinhThuc": "Không xác định",
-            "giaTri": "DIRECT"
-          },
-          {
-            "hinhThuc": "Không xác định",
-            "giaTri": "ONLINE"
-          },
-          {
-            "hinhThuc": "Không xác định",
-            "giaTri": "POSTAL"
+            "hinhThuc": "Trực tiếp",
+            "giaTri": "Ngay trong ngày cơ quan, tổ chức tiếp nhận yêu cầu hoặc trong ngày làm việc tiếp theo nếu tiếp nhận sau 15 giờ."
           }
         ],
         "coQuanThucHien": "Ủy ban nhân dân cấp xã",
@@ -4281,6 +4349,13 @@
             "sourceRole": "local_execution",
             "classification": "dvcqg_vinhbao_execution_scope",
             "verifiedAt": "2026-09-20T14:04:02.5394062Z"
+          },
+          {
+            "id": "official_time_override",
+            "url": "https://dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=3014",
+            "sourceRole": "central_content_reference",
+            "classification": "current_official_time_override",
+            "verifiedAt": "2026-09-21"
           }
         ],
         "fieldProvenance": {
@@ -4291,7 +4366,7 @@
             "official_dvcqg_content"
           ],
           "thoiHan": [
-            "official_dvcqg_content"
+            "official_time_override"
           ],
           "lePhi": [
             "official_dvcqg_content"
@@ -4400,6 +4475,15 @@
           "effectiveDate": null,
           "repealContext": false,
           "evidenceId": "ev_4667c41803826c701d136d83"
+        },
+        {
+          "url": "https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=3113",
+          "sourceRole": "central_content_reference",
+          "classification": "current_official_time_override",
+          "publishedDate": null,
+          "effectiveDate": null,
+          "repealContext": false,
+          "evidenceId": "ev_f7a6505b67c371ee562f5e28"
         }
       ],
       "dvcMappingStatus": "verified_priority51_crosswalk",
@@ -4473,7 +4557,7 @@
           "ev_f126326f5570761b266ff4c1"
         ],
         "huongDan.thoiHan": [
-          "ev_f126326f5570761b266ff4c1"
+          "ev_f7a6505b67c371ee562f5e28"
         ],
         "huongDan.coQuanThucHien": [
           "ev_926d7b780b6f04daeec3805e"
@@ -4512,8 +4596,8 @@
         ],
         "thoiHan": [
           {
-            "hinhThuc": "Không xác định",
-            "giaTri": "DIRECT"
+            "hinhThuc": "Trực tiếp",
+            "giaTri": "Trong ngày cơ quan, tổ chức tiếp nhận yêu cầu hoặc trong ngày làm việc tiếp theo nếu tiếp nhận sau 15 giờ."
           }
         ],
         "coQuanThucHien": "Ủy ban nhân dân cấp xã",
@@ -4557,6 +4641,13 @@
             "sourceRole": "local_execution",
             "classification": "dvcqg_vinhbao_execution_scope",
             "verifiedAt": "2026-09-20T14:04:02.5394062Z"
+          },
+          {
+            "id": "official_time_override",
+            "url": "https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=3113",
+            "sourceRole": "central_content_reference",
+            "classification": "current_official_time_override",
+            "verifiedAt": "2026-09-21"
           }
         ],
         "fieldProvenance": {
@@ -4567,7 +4658,7 @@
             "official_dvcqg_content"
           ],
           "thoiHan": [
-            "official_dvcqg_content"
+            "official_time_override"
           ],
           "lePhi": [
             "official_dvcqg_content"
@@ -4654,6 +4745,15 @@
           "effectiveDate": null,
           "repealContext": false,
           "evidenceId": "ev_e82db6f420efa8e1dc80d166"
+        },
+        {
+          "url": "https://dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=2886&open_popup=1",
+          "sourceRole": "central_content_reference",
+          "classification": "current_official_time_override",
+          "publishedDate": null,
+          "effectiveDate": null,
+          "repealContext": false,
+          "evidenceId": "ev_6eeb3e5bb22467a189793a9f"
         }
       ],
       "dvcMappingStatus": "verified_priority51_crosswalk",
@@ -4715,7 +4815,7 @@
           "ev_3ca0da40f7afa669cf78807a"
         ],
         "huongDan.thoiHan": [
-          "ev_3ca0da40f7afa669cf78807a"
+          "ev_6eeb3e5bb22467a189793a9f"
         ],
         "huongDan.coQuanThucHien": [
           "ev_3ca0da40f7afa669cf78807a"
@@ -4758,11 +4858,7 @@
         "thoiHan": [
           {
             "hinhThuc": "Trực tiếp",
-            "giaTri": "Tại Ủy ban nhân dân cấp xã, Tổ chức hành nghề công chứng: 10.000 đồng/trường hợp (trường hợp được tính là một hoặc nhiều chữ ký trong một giấy tờ, văn bản)."
-          },
-          {
-            "hinhThuc": "Trực tiếp",
-            "giaTri": "Tại cơ quan đại diện: 10 USD/bản."
+            "giaTri": "Ngay trong ngày cơ quan, tổ chức tiếp nhận yêu cầu hoặc trong ngày làm việc tiếp theo nếu tiếp nhận sau 15 giờ."
           }
         ],
         "coQuanThucHien": "Cơ quan đại diện có thẩm quyền, Tổ chức hành nghề công chứng",
@@ -4798,6 +4894,13 @@
             "sourceRole": "local_execution",
             "classification": "dvcqg_vinhbao_execution_scope",
             "verifiedAt": "2026-09-20T14:04:02.5394062Z"
+          },
+          {
+            "id": "official_time_override",
+            "url": "https://dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=2886&open_popup=1",
+            "sourceRole": "central_content_reference",
+            "classification": "current_official_time_override",
+            "verifiedAt": "2026-09-21"
           }
         ],
         "fieldProvenance": {
@@ -4808,7 +4911,7 @@
             "official_dvcqg_content"
           ],
           "thoiHan": [
-            "official_dvcqg_content"
+            "official_time_override"
           ],
           "lePhi": [
             "official_dvcqg_content"
@@ -6135,6 +6238,15 @@
           "effectiveDate": null,
           "repealContext": false,
           "evidenceId": "ev_1460dab06a4191da1f3fb362"
+        },
+        {
+          "url": "https://cdn.haiphong.gov.vn/gov-hpg/6376/tintuc/2025/9/230-cong-khai-quy-trinh-noi-bo-giam-thoi-gian-thuc-hien-tthc-linh-vuc-tu-phap_223-qd-stp_27-8-2025.signed638936462397153411.pdf",
+          "sourceRole": "local_legal_effect",
+          "classification": "current_official_time_override",
+          "publishedDate": null,
+          "effectiveDate": null,
+          "repealContext": false,
+          "evidenceId": "ev_b52733ade60c45a5d58020ce"
         }
       ],
       "priority51LegalVerificationStatus": "current_official_commune_evidence",
@@ -6158,31 +6270,38 @@
       "fieldSources": {
         "ma": [
           "ev_61a9f3a5f7f19aced596cf56",
-          "ev_2ba956220cf90734f4b7035a"
+          "ev_2ba956220cf90734f4b7035a",
+          "ev_b52733ade60c45a5d58020ce"
         ],
         "ten": [
           "ev_61a9f3a5f7f19aced596cf56",
-          "ev_2ba956220cf90734f4b7035a"
+          "ev_2ba956220cf90734f4b7035a",
+          "ev_b52733ade60c45a5d58020ce"
         ],
         "linhVuc": [
           "ev_61a9f3a5f7f19aced596cf56",
-          "ev_2ba956220cf90734f4b7035a"
+          "ev_2ba956220cf90734f4b7035a",
+          "ev_b52733ade60c45a5d58020ce"
         ],
         "cap": [
           "ev_61a9f3a5f7f19aced596cf56",
-          "ev_2ba956220cf90734f4b7035a"
+          "ev_2ba956220cf90734f4b7035a",
+          "ev_b52733ade60c45a5d58020ce"
         ],
         "quyetDinh": [
           "ev_61a9f3a5f7f19aced596cf56",
-          "ev_2ba956220cf90734f4b7035a"
+          "ev_2ba956220cf90734f4b7035a",
+          "ev_b52733ade60c45a5d58020ce"
         ],
         "lifecycle.status": [
           "ev_61a9f3a5f7f19aced596cf56",
-          "ev_2ba956220cf90734f4b7035a"
+          "ev_2ba956220cf90734f4b7035a",
+          "ev_b52733ade60c45a5d58020ce"
         ],
         "lifecycle.effectiveFrom": [
           "ev_61a9f3a5f7f19aced596cf56",
-          "ev_2ba956220cf90734f4b7035a"
+          "ev_2ba956220cf90734f4b7035a",
+          "ev_b52733ade60c45a5d58020ce"
         ],
         "formalityId": [
           "ev_82e6af227ed14006d237f08e",
@@ -6211,7 +6330,7 @@
           "ev_586648d789dabe46cc6142f2"
         ],
         "huongDan.thoiHan": [
-          "ev_586648d789dabe46cc6142f2"
+          "ev_b52733ade60c45a5d58020ce"
         ],
         "huongDan.coQuanThucHien": [
           "ev_586648d789dabe46cc6142f2"
@@ -6289,16 +6408,8 @@
         ],
         "thoiHan": [
           {
-            "hinhThuc": "Không xác định",
-            "giaTri": "ONLINE"
-          },
-          {
-            "hinhThuc": "Không xác định",
-            "giaTri": "POSTAL"
-          },
-          {
-            "hinhThuc": "Không xác định",
-            "giaTri": "DIRECT"
+            "hinhThuc": "Trực tiếp/Trực tuyến/Bưu chính",
+            "giaTri": "Ngay trong ngày tiếp nhận hồ sơ; trường hợp nhận hồ sơ sau 15 giờ mà không giải quyết được ngay thì trả kết quả trong ngày làm việc tiếp theo."
           }
         ],
         "coQuanThucHien": "Cơ quan quản lý cơ sở dữ liệu hộ tịch điện tử",
@@ -6334,6 +6445,13 @@
             "sourceRole": "local_execution",
             "classification": "dvcqg_vinhbao_execution_scope",
             "verifiedAt": "2026-09-20T14:04:02.5394062Z"
+          },
+          {
+            "id": "official_time_override",
+            "url": "https://cdn.haiphong.gov.vn/gov-hpg/6376/tintuc/2025/9/230-cong-khai-quy-trinh-noi-bo-giam-thoi-gian-thuc-hien-tthc-linh-vuc-tu-phap_223-qd-stp_27-8-2025.signed638936462397153411.pdf",
+            "sourceRole": "local_legal_effect",
+            "classification": "current_official_time_override",
+            "verifiedAt": "2026-09-21"
           }
         ],
         "fieldProvenance": {
@@ -6344,7 +6462,7 @@
             "official_dvcqg_content"
           ],
           "thoiHan": [
-            "official_dvcqg_content"
+            "official_time_override"
           ],
           "lePhi": [
             "official_dvcqg_content"
@@ -11337,7 +11455,8 @@
         "thoiHan": [
           {
             "hinhThuc": "Trực tuyến",
-            "giaTri": "30 WORKING_DAY — Kể từ ngày Ủy ban nhân dân cấp xã nhận hồ sơ đầy đủ và hợp pháp."
+            "giaTri": "30 Ngày làm việc",
+            "moTa": "Kể từ ngày Ủy ban nhân dân cấp xã nhận hồ sơ đầy đủ và hợp pháp."
           },
           {
             "hinhThuc": "Không xác định",
@@ -11345,7 +11464,8 @@
           },
           {
             "hinhThuc": "Dịch vụ bưu chính",
-            "giaTri": "30 WORKING_DAY — Kể từ ngày Ủy ban nhân dân cấp xã nhận hồ sơ đầy đủ và hợp pháp."
+            "giaTri": "30 Ngày làm việc",
+            "moTa": "Kể từ ngày Ủy ban nhân dân cấp xã nhận hồ sơ đầy đủ và hợp pháp."
           },
           {
             "hinhThuc": "Không xác định",
@@ -11353,7 +11473,8 @@
           },
           {
             "hinhThuc": "Trực tiếp",
-            "giaTri": "30 WORKING_DAY — Kể từ ngày Ủy ban nhân dân cấp xã nhận hồ sơ đầy đủ và hợp pháp."
+            "giaTri": "30 Ngày làm việc",
+            "moTa": "Kể từ ngày Ủy ban nhân dân cấp xã nhận hồ sơ đầy đủ và hợp pháp."
           },
           {
             "hinhThuc": "Không xác định",
@@ -11636,7 +11757,8 @@
         "thoiHan": [
           {
             "hinhThuc": "Trực tuyến",
-            "giaTri": "60 WORKING_DAY — Kể từ ngày Ủy ban nhân dân cấp xã nhận hồ sơ đầy đủ và hợp pháp"
+            "giaTri": "60 Ngày làm việc",
+            "moTa": "Kể từ ngày Ủy ban nhân dân cấp xã nhận hồ sơ đầy đủ và hợp pháp"
           },
           {
             "hinhThuc": "Không xác định",
@@ -11644,7 +11766,8 @@
           },
           {
             "hinhThuc": "Dịch vụ bưu chính",
-            "giaTri": "60 WORKING_DAY — Kể từ ngày Ủy ban nhân dân cấp xã nhận hồ sơ đầy đủ và hợp pháp"
+            "giaTri": "60 Ngày làm việc",
+            "moTa": "Kể từ ngày Ủy ban nhân dân cấp xã nhận hồ sơ đầy đủ và hợp pháp"
           },
           {
             "hinhThuc": "Không xác định",
@@ -11652,7 +11775,8 @@
           },
           {
             "hinhThuc": "Trực tiếp",
-            "giaTri": "60 WORKING_DAY — Kể từ ngày Ủy ban nhân dân cấp xã nhận hồ sơ đầy đủ và hợp pháp"
+            "giaTri": "60 Ngày làm việc",
+            "moTa": "Kể từ ngày Ủy ban nhân dân cấp xã nhận hồ sơ đầy đủ và hợp pháp"
           },
           {
             "hinhThuc": "Không xác định",
@@ -12801,11 +12925,13 @@
         "thoiHan": [
           {
             "hinhThuc": "Dịch vụ bưu chính",
-            "giaTri": "5 WORKING_DAY — Kể từ ngày nhận đủ hồ sơ theo quy định."
+            "giaTri": "5 Ngày làm việc",
+            "moTa": "Kể từ ngày nhận đủ hồ sơ theo quy định."
           },
           {
             "hinhThuc": "Trực tiếp",
-            "giaTri": "5 WORKING_DAY — Kể từ ngày nhận đủ hồ sơ theo quy định."
+            "giaTri": "5 Ngày làm việc",
+            "moTa": "Kể từ ngày nhận đủ hồ sơ theo quy định."
           }
         ],
         "coQuanThucHien": "Ủy ban nhân dân cấp xã",
@@ -13052,15 +13178,18 @@
         "thoiHan": [
           {
             "hinhThuc": "Dịch vụ bưu chính",
-            "giaTri": "10 WORKING_DAY — Trực tuyến hoặc qua dịch vụ bưu chính hoặc trực tiếp đến Trung tâm Phục vụ hành chính công. 10 ngày làm việc kể từ ngày nhận đủ giấy tờ (Thời gian cụ thể được quy định tại từng bước của quy trình thực hiện)."
+            "giaTri": "10 Ngày làm việc",
+            "moTa": "Trực tuyến hoặc qua dịch vụ bưu chính hoặc trực tiếp đến Trung tâm Phục vụ hành chính công. 10 ngày làm việc kể từ ngày nhận đủ giấy tờ (Thời gian cụ thể được quy định tại từng bước của quy trình thực hiện)."
           },
           {
             "hinhThuc": "Trực tiếp",
-            "giaTri": "10 WORKING_DAY — Trực tuyến hoặc qua dịch vụ bưu chính hoặc trực tiếp đến Trung tâm Phục vụ hành chính công. 10 ngày làm việc kể từ ngày nhận đủ giấy tờ (Thời gian cụ thể được quy định tại từng bước của quy trình thực hiện)."
+            "giaTri": "10 Ngày làm việc",
+            "moTa": "Trực tuyến hoặc qua dịch vụ bưu chính hoặc trực tiếp đến Trung tâm Phục vụ hành chính công. 10 ngày làm việc kể từ ngày nhận đủ giấy tờ (Thời gian cụ thể được quy định tại từng bước của quy trình thực hiện)."
           },
           {
             "hinhThuc": "Trực tuyến",
-            "giaTri": "10 WORKING_DAY — Trực tuyến hoặc qua dịch vụ bưu chính hoặc trực tiếp đến Trung tâm Phục vụ hành chính công. 10 ngày làm việc kể từ ngày nhận đủ giấy tờ (Thời gian cụ thể được quy định tại từng bước của quy trình thực hiện)."
+            "giaTri": "10 Ngày làm việc",
+            "moTa": "Trực tuyến hoặc qua dịch vụ bưu chính hoặc trực tiếp đến Trung tâm Phục vụ hành chính công. 10 ngày làm việc kể từ ngày nhận đủ giấy tờ (Thời gian cụ thể được quy định tại từng bước của quy trình thực hiện)."
           }
         ],
         "coQuanThucHien": "Sở Nội vụ",
@@ -13294,7 +13423,8 @@
         "thoiHan": [
           {
             "hinhThuc": "Dịch vụ bưu chính",
-            "giaTri": "24 DAY — Kể từ ngày nhận đủ hồ sơ đối với trường hợp đủ điều kiện. Đối với trợ cấp tuất hằng tháng, trợ cấp tuất nuôi dưỡng hằng tháng"
+            "giaTri": "24 Ngày",
+            "moTa": "Kể từ ngày nhận đủ hồ sơ đối với trường hợp đủ điều kiện. Đối với trợ cấp tuất hằng tháng, trợ cấp tuất nuôi dưỡng hằng tháng"
           },
           {
             "hinhThuc": "Không xác định",
@@ -13302,7 +13432,8 @@
           },
           {
             "hinhThuc": "Trực tiếp",
-            "giaTri": "19 DAY — Kể từ ngày nhận đủ hồ sơ theo quy định. Đối với trợ cấp một lần và mai táng"
+            "giaTri": "19 Ngày",
+            "moTa": "Kể từ ngày nhận đủ hồ sơ theo quy định. Đối với trợ cấp một lần và mai táng"
           },
           {
             "hinhThuc": "Không xác định",
@@ -13310,7 +13441,8 @@
           },
           {
             "hinhThuc": "Trực tiếp",
-            "giaTri": "24 DAY — Kể từ ngày nhận đủ hồ sơ đối với trường hợp đủ điều kiện. Đối với trợ cấp tuất hằng tháng, trợ cấp tuất nuôi dưỡng hằng tháng"
+            "giaTri": "24 Ngày",
+            "moTa": "Kể từ ngày nhận đủ hồ sơ đối với trường hợp đủ điều kiện. Đối với trợ cấp tuất hằng tháng, trợ cấp tuất nuôi dưỡng hằng tháng"
           },
           {
             "hinhThuc": "Không xác định",
@@ -13318,7 +13450,8 @@
           },
           {
             "hinhThuc": "Dịch vụ bưu chính",
-            "giaTri": "19 DAY — Kể từ ngày nhận đủ hồ sơ theo quy định. Đối với trợ cấp một lần và mai táng"
+            "giaTri": "19 Ngày",
+            "moTa": "Kể từ ngày nhận đủ hồ sơ theo quy định. Đối với trợ cấp một lần và mai táng"
           },
           {
             "hinhThuc": "Không xác định",
@@ -21964,6 +22097,15 @@
           "effectiveDate": null,
           "repealContext": false,
           "evidenceId": "ev_c23318a2187c7bcc05136d72"
+        },
+        {
+          "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=2350",
+          "sourceRole": "central_content_reference",
+          "classification": "current_official_time_override",
+          "publishedDate": null,
+          "effectiveDate": null,
+          "repealContext": false,
+          "evidenceId": "ev_f98cf7c93eb9620bef646de8"
         }
       ],
       "priority51LegalVerificationStatus": "current_official_commune_evidence",
@@ -22032,7 +22174,7 @@
           "ev_82f8bd3fc04a01c9b9ea960d"
         ],
         "huongDan.thoiHan": [
-          "ev_82f8bd3fc04a01c9b9ea960d"
+          "ev_f98cf7c93eb9620bef646de8"
         ],
         "huongDan.coQuanThucHien": [
           "ev_e13c7bfd87f291afe097f0d5"
@@ -22080,16 +22222,8 @@
         ],
         "thoiHan": [
           {
-            "hinhThuc": "Không xác định",
-            "giaTri": "ONLINE"
-          },
-          {
-            "hinhThuc": "Không xác định",
-            "giaTri": "POSTAL"
-          },
-          {
-            "hinhThuc": "Không xác định",
-            "giaTri": "DIRECT"
+            "hinhThuc": "Trực tiếp",
+            "giaTri": "Trong thời hạn 03 (ba) ngày làm việc kể từ ngày nhận hồ sơ."
           }
         ],
         "coQuanThucHien": "Ủy ban nhân dân cấp xã",
@@ -22132,6 +22266,13 @@
             "sourceRole": "local_execution",
             "classification": "dvcqg_vinhbao_execution_scope",
             "verifiedAt": "2026-09-20T14:04:02.5394062Z"
+          },
+          {
+            "id": "official_time_override",
+            "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=2350",
+            "sourceRole": "central_content_reference",
+            "classification": "current_official_time_override",
+            "verifiedAt": "2026-09-21"
           }
         ],
         "fieldProvenance": {
@@ -22142,7 +22283,7 @@
             "official_dvcqg_content"
           ],
           "thoiHan": [
-            "official_dvcqg_content"
+            "official_time_override"
           ],
           "lePhi": [
             "official_dvcqg_content"
@@ -23961,6 +24102,15 @@
           "effectiveDate": null,
           "repealContext": false,
           "evidenceId": "ev_178e19ba318731edf951dcb7"
+        },
+        {
+          "url": "https://cdn.haiphong.gov.vn/gov-hpg/6825/steeringdocument/2025/7/tb-2-cong-khai-niem-yet-dmtthc-linh-vuc-nn-mt-tham-quyen-giai-quyet-cap-xa.signed638886076010096014.pdf",
+          "sourceRole": "local_legal_effect",
+          "classification": "current_official_time_override",
+          "publishedDate": null,
+          "effectiveDate": null,
+          "repealContext": false,
+          "evidenceId": "ev_4a64d2581d7ee50fab8efdff"
         }
       ],
       "dvcMappingStatus": "verified_priority51_crosswalk",
@@ -23980,37 +24130,44 @@
         "ma": [
           "ev_2cf5f27cb0dcaa849ed2b55c",
           "ev_dbb71f67b2f5f392b1fbe930",
-          "ev_b92fd7c0213c3e819ca8d118"
+          "ev_b92fd7c0213c3e819ca8d118",
+          "ev_4a64d2581d7ee50fab8efdff"
         ],
         "ten": [
           "ev_2cf5f27cb0dcaa849ed2b55c",
           "ev_dbb71f67b2f5f392b1fbe930",
-          "ev_b92fd7c0213c3e819ca8d118"
+          "ev_b92fd7c0213c3e819ca8d118",
+          "ev_4a64d2581d7ee50fab8efdff"
         ],
         "linhVuc": [
           "ev_2cf5f27cb0dcaa849ed2b55c",
           "ev_dbb71f67b2f5f392b1fbe930",
-          "ev_b92fd7c0213c3e819ca8d118"
+          "ev_b92fd7c0213c3e819ca8d118",
+          "ev_4a64d2581d7ee50fab8efdff"
         ],
         "cap": [
           "ev_2cf5f27cb0dcaa849ed2b55c",
           "ev_dbb71f67b2f5f392b1fbe930",
-          "ev_b92fd7c0213c3e819ca8d118"
+          "ev_b92fd7c0213c3e819ca8d118",
+          "ev_4a64d2581d7ee50fab8efdff"
         ],
         "quyetDinh": [
           "ev_2cf5f27cb0dcaa849ed2b55c",
           "ev_dbb71f67b2f5f392b1fbe930",
-          "ev_b92fd7c0213c3e819ca8d118"
+          "ev_b92fd7c0213c3e819ca8d118",
+          "ev_4a64d2581d7ee50fab8efdff"
         ],
         "lifecycle.status": [
           "ev_2cf5f27cb0dcaa849ed2b55c",
           "ev_dbb71f67b2f5f392b1fbe930",
-          "ev_b92fd7c0213c3e819ca8d118"
+          "ev_b92fd7c0213c3e819ca8d118",
+          "ev_4a64d2581d7ee50fab8efdff"
         ],
         "lifecycle.effectiveFrom": [
           "ev_2cf5f27cb0dcaa849ed2b55c",
           "ev_dbb71f67b2f5f392b1fbe930",
-          "ev_b92fd7c0213c3e819ca8d118"
+          "ev_b92fd7c0213c3e819ca8d118",
+          "ev_4a64d2581d7ee50fab8efdff"
         ],
         "formalityId": [
           "ev_09abd59a6e45f11f4aecce25",
@@ -24039,7 +24196,7 @@
           "ev_0f48168c5598ecc244bf7987"
         ],
         "huongDan.thoiHan": [
-          "ev_0f48168c5598ecc244bf7987"
+          "ev_4a64d2581d7ee50fab8efdff"
         ],
         "huongDan.coQuanThucHien": [
           "ev_b92fd7c0213c3e819ca8d118"
@@ -24081,12 +24238,8 @@
         ],
         "thoiHan": [
           {
-            "hinhThuc": "Dịch vụ bưu chính",
-            "giaTri": "30 Ngày"
-          },
-          {
-            "hinhThuc": "Trực tiếp",
-            "giaTri": "40 Ngày"
+            "hinhThuc": "Theo quy định Hải Phòng",
+            "giaTri": "30 ngày làm việc"
           }
         ],
         "coQuanThucHien": "Ủy ban nhân dân cấp xã",
@@ -24130,6 +24283,13 @@
             "sourceRole": "local_execution",
             "classification": "dvcqg_vinhbao_execution_scope",
             "verifiedAt": "2026-09-20T14:04:02.5394062Z"
+          },
+          {
+            "id": "official_time_override",
+            "url": "https://cdn.haiphong.gov.vn/gov-hpg/6825/steeringdocument/2025/7/tb-2-cong-khai-niem-yet-dmtthc-linh-vuc-nn-mt-tham-quyen-giai-quyet-cap-xa.signed638886076010096014.pdf",
+            "sourceRole": "local_legal_effect",
+            "classification": "current_official_time_override",
+            "verifiedAt": "2026-09-21"
           }
         ],
         "fieldProvenance": {
@@ -24140,7 +24300,7 @@
             "official_dvcqg_content"
           ],
           "thoiHan": [
-            "official_dvcqg_content"
+            "official_time_override"
           ],
           "lePhi": [
             "official_dvcqg_content"
