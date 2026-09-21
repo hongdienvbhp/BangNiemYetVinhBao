@@ -50,7 +50,22 @@ def _source_snapshot_date() -> str:
 
 
 SOURCE_SNAPSHOT_DATE = _source_snapshot_date()
-BUILD_DATE = "2026-09-21"
+
+
+def _dataset_build_date() -> str:
+    candidates = [SOURCE_SNAPSHOT_DATE]
+    if MASTER_JSON.exists():
+        try:
+            payload = json.loads(MASTER_JSON.read_text(encoding="utf-8-sig"))
+            previous = str(payload.get("dataset_version") or "").strip().replace(".", "-")
+            if re.fullmatch(r"\d{4}-\d{2}-\d{2}", previous):
+                candidates.append(previous)
+        except (OSError, json.JSONDecodeError):
+            pass
+    return max(candidates)
+
+
+BUILD_DATE = _dataset_build_date()
 CANONICAL_SOURCE_COMMIT = "58c6d8c555e3e9f134eaca0ee5c771d947989b0e"
 OFFICIAL_SOURCE = "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh"
 CITY_OFFICIAL_SOURCE = "https://haiphong.gov.vn/thu-tuc-hanh-chinh-76761"
