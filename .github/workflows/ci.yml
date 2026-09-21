@@ -28,7 +28,7 @@ jobs:
 
       - name: Python syntax
         run: |
-          python -m py_compile             scripts/update_official_sources.py             scripts/extract_city_updates.py             scripts/build_master_data.py             scripts/build_master_delta.py             scripts/fetch_dvc_mapping.py             scripts/check_static_site.py
+          python -m py_compile             scripts/update_official_sources.py             scripts/extract_city_updates.py             scripts/build_master_data.py             scripts/build_master_delta.py             scripts/fetch_dvc_mapping.py             scripts/check_static_site.py             scripts/routine_guard.py             scripts/write_routine_run_record.py             scripts/check_routine_health.py
 
       - name: Python unit tests
         run: python -m unittest discover -s tests -v
