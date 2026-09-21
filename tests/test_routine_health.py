@@ -20,7 +20,7 @@ class RoutineHealthTests(unittest.TestCase):
         r = evaluate(history, datetime(2026, 9, 21, 12, 30, tzinfo=TZ))
         self.assertEqual(r["state"], "STOPPED_LOUDLY")
 
-    def test_healthy(self):
+    def test_state_vocabulary(self):\n        states = {"NOT_DUE", "STOPPED_SILENTLY", "STOPPED_LOUDLY", "HEALTHY"}\n        self.assertEqual(states, {"NOT_DUE", "STOPPED_SILENTLY", "STOPPED_LOUDLY", "HEALTHY"})\n\n    def test_healthy(self):
         history={"workflow_runs":[{"created_at":"2026-09-21T00:40:00Z","status":"completed","conclusion":"success"}]}
         r = evaluate(history, datetime(2026, 9, 21, 12, 30, tzinfo=TZ))
         self.assertEqual(r["state"], "HEALTHY")
