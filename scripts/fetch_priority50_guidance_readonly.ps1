@@ -2,7 +2,7 @@ param(
   [string]$MasterPath = "data/thu-tuc.json",
   [string]$OutputPath = "data/source-audit/priority50-guidance-raw-current.json",
   [int]$Port = 9225,
-  [int]$NavigationWaitMs = 1000,
+  [int]$NavigationWaitMs = 500,
   [int]$Limit = 0
 )
 
@@ -100,7 +100,7 @@ function Navigate-And-Wait(
   Invoke-Cdp $Ws $Id.Value "Page.navigate" @{ url = $Url } | Out-Null
   Start-Sleep -Milliseconds $WaitMs
   $payload = $null
-  for ($poll = 0; $poll -lt 8; $poll++) {
+  for ($poll = 0; $poll -lt 4; $poll++) {
     $payload = Get-PageSnapshot $Ws ([ref]$Id.Value)
     $body = [string]$payload.text
     if ($body -and -not $body.Contains("Request Rejected")) {
@@ -109,7 +109,7 @@ function Navigate-And-Wait(
       }
       if ($body.Length -gt 1500) { break }
     }
-    Start-Sleep -Milliseconds 650
+    Start-Sleep -Milliseconds 350
   }
   return $payload
 }
