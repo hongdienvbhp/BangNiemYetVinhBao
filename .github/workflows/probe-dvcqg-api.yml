@@ -1,9 +1,7 @@
 name: Probe DVCQG API
 
 on:
-  push:
-    branches:
-      - feat/issue-74-priority50-enrichment
+  workflow_dispatch:
 
 permissions:
   contents: read
