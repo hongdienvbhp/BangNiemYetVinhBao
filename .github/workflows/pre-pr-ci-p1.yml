@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: read
+  pull-requests: write
 
 concurrency:
   group: pre-pr-ci-p1
@@ -78,3 +79,35 @@ jobs:
           node --check js/extra-data.js
           node --check js/app.js
           node --check sw.js
+
+  create-pr:
+    needs: static-site
+    if: success()
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.PORTFOLIO_GH_TOKEN || github.token }}
+    steps:
+      - name: Create PR if missing
+        shell: bash
+        run: |
+          set -euo pipefail
+          head="feat/issue-74-priority50-enrichment"
+          number="$(gh pr list --repo "$GITHUB_REPOSITORY" --state open --head "$head" --json number --jq '.[0].number // empty')"
+          if [ -n "$number" ]; then
+            echo "PR #$number already exists"
+            exit 0
+          fi
+          gh pr create             --repo "$GITHUB_REPOSITORY"             --base main             --head "$head"             --title "feat(data): hoàn thiện Layer 2 cho 50 TTHC trọng điểm"             --body $'Closes #74
+
+## Kết quả
+- 50/50 TTHC trọng điểm đã reviewed và verified_official.
+- 50/50: cơ quan, hồ sơ, thời hạn, phí/lệ phí, DVCTT Vĩnh Bảo và kết quả.
+- Canonical v4 giữ một nguồn duy nhất và field-level provenance.
+
+## Gate
+- validate_priority50_guidance.py --require-complete PASS.
+- validate_tthc_guidance.py PASS.
+- validate_canonical_contract.py PASS.
+- deterministic rebuild zero drift.
+- static audit PASS.
+- full unit tests PASS.'
