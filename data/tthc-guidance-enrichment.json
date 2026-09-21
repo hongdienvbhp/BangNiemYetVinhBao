@@ -1,0 +1,14 @@
+{
+  "format": "bangniemyet-tthc-guidance-enrichment",
+  "version": 1,
+  "scope": "Verified official guidance keyed by TTHC code. This is enrichment evidence, not a second master dataset.",
+  "sourcePolicy": "Only official government sources may populate legal/procedural guidance. Third-party data may be used only as a technical candidate and must not be published here without official verification.",
+  "localityContract": {
+    "provinceCode": "31",
+    "provinceName": "Hải Phòng",
+    "wardCode": "11824",
+    "wardName": "Vĩnh Bảo",
+    "commune": "WARD"
+  },
+  "rows": []
+}
