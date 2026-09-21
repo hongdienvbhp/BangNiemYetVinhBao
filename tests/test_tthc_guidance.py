@@ -29,10 +29,23 @@ class GuidanceEnrichmentTests(unittest.TestCase):
                 "ma": "1.000001",
                 "verificationStatus": "verified_official",
                 "thanhPhanHoSo": [{"ten": "Giấy tờ A"}],
-                "sources": [{"url": "https://example.com/a"}],
+                "sources": [{"url": "https://example.com/a", "sourceRole": "central_content_reference"}],
             }],
         }
         self.assertTrue(validate(payload))
+
+    def test_guidance_requires_source_role(self):
+        payload = {
+            "format": "bangniemyet-tthc-guidance-enrichment",
+            "version": 1,
+            "rows": [{
+                "ma": "1.000001",
+                "verificationStatus": "verified_official",
+                "thanhPhanHoSo": [{"ten": "Giấy tờ A"}],
+                "sources": [{"url": "https://haiphong.gov.vn/a"}],
+            }],
+        }
+        self.assertTrue(any("sourceRole" in error for error in validate(payload)))
 
 
 if __name__ == "__main__":
