@@ -225,6 +225,8 @@ def upgrade_record_to_v4(row: dict[str, Any], as_of: str) -> dict[str, Any]:
 
     guide = record.get("huongDan")
     guide_evidence_ids: list[str] = []
+    guide_source_refs: dict[str, str] = {}
+    guide_source_roles: dict[str, str] = {}
     if isinstance(guide, dict):
         for source in guide.get("sources") or []:
             if not isinstance(source, dict):
@@ -244,6 +246,10 @@ def upgrade_record_to_v4(row: dict[str, Any], as_of: str) -> dict[str, Any]:
                 evidence.append(item)
                 seen.add(item["evidenceId"])
             guide_evidence_ids.append(item["evidenceId"])
+            source_id = str(source.get("id") or "").strip()
+            if source_id:
+                guide_source_refs[source_id] = item["evidenceId"]
+                guide_source_roles[source_id] = item["sourceRole"]
 
     legal_ids = [
         item["evidenceId"]
@@ -289,11 +295,30 @@ def upgrade_record_to_v4(row: dict[str, Any], as_of: str) -> dict[str, Any]:
         _merge_ref(field_sources, "submissionLinkStatus", execution_ids)
 
     if isinstance(guide, dict) and guide_evidence_ids:
+        provenance = guide.get("fieldProvenance")
+        provenance = provenance if isinstance(provenance, dict) else {}
         for field in ("quyTrinh", "thanhPhanHoSo", "bieuMau", "lePhi", "thoiHan", "coQuanThucHien", "ketQua"):
-            if guide.get(field) not in (None, "", [], {}):
-                _merge_ref(field_sources, f"huongDan.{field}", guide_evidence_ids)
+            if guide.get(field) in (None, "", [], {}):
+                continue
+            refs = provenance.get(field)
+            ids = [
+                guide_source_refs[ref]
+                for ref in refs
+                if isinstance(ref, str) and ref in guide_source_refs
+            ] if isinstance(refs, list) else []
+            _merge_ref(field_sources, f"huongDan.{field}", ids or guide_evidence_ids)
         if guide.get("submissionUrl"):
-            _merge_ref(field_sources, "huongDan.submissionUrl", execution_ids or guide_evidence_ids)
+            refs = provenance.get("submissionUrl")
+            ids = [
+                guide_source_refs[ref]
+                for ref in refs
+                if (
+                    isinstance(ref, str)
+                    and ref in guide_source_refs
+                    and guide_source_roles.get(ref) == "local_execution"
+                )
+            ] if isinstance(refs, list) else []
+            _merge_ref(field_sources, "huongDan.submissionUrl", ids or execution_ids)
 
     record["fieldSources"] = field_sources
     return record

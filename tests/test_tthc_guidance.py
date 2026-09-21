@@ -3,14 +3,22 @@ import unittest
 from scripts.validate_tthc_guidance import validate, validate_vinhbao_submission_url
 
 
+def base_payload(rows=None):
+    return {
+        "format": "bangniemyet-tthc-guidance-enrichment",
+        "version": 1,
+        "sourceRoles": {
+            "central_content_reference": "central",
+            "local_legal_effect": "local legal",
+            "local_execution": "execution",
+        },
+        "rows": rows or [],
+    }
+
+
 class GuidanceEnrichmentTests(unittest.TestCase):
     def test_empty_contract_is_valid(self):
-        payload = {
-            "format": "bangniemyet-tthc-guidance-enrichment",
-            "version": 1,
-            "rows": [],
-        }
-        self.assertEqual(validate(payload), [])
+        self.assertEqual(validate(base_payload()), [])
 
     def test_vinhbao_submission_url_requires_exact_locality(self):
         url = (
@@ -22,30 +30,88 @@ class GuidanceEnrichmentTests(unittest.TestCase):
         self.assertTrue(validate_vinhbao_submission_url(bad, "abc"))
 
     def test_guidance_requires_official_source(self):
-        payload = {
-            "format": "bangniemyet-tthc-guidance-enrichment",
-            "version": 1,
-            "rows": [{
-                "ma": "1.000001",
-                "verificationStatus": "verified_official",
-                "thanhPhanHoSo": [{"ten": "Giấy tờ A"}],
-                "sources": [{"url": "https://example.com/a", "sourceRole": "central_content_reference"}],
+        payload = base_payload([{
+            "ma": "1.000001",
+            "verificationStatus": "verified_official",
+            "thanhPhanHoSo": [{"ten": "Giấy tờ A"}],
+            "sources": [{
+                "id": "central-a",
+                "sourceRole": "central_content_reference",
+                "url": "https://example.com/a",
             }],
-        }
-        self.assertTrue(validate(payload))
+            "fieldProvenance": {"thanhPhanHoSo": ["central-a"]},
+        }])
+        self.assertTrue(any("URL chính thức" in error for error in validate(payload)))
 
-    def test_guidance_requires_source_role(self):
-        payload = {
-            "format": "bangniemyet-tthc-guidance-enrichment",
-            "version": 1,
-            "rows": [{
-                "ma": "1.000001",
-                "verificationStatus": "verified_official",
-                "thanhPhanHoSo": [{"ten": "Giấy tờ A"}],
-                "sources": [{"url": "https://haiphong.gov.vn/a"}],
+    def test_each_substantive_field_requires_existing_source_id(self):
+        payload = base_payload([{
+            "ma": "1.000001",
+            "verificationStatus": "verified_official",
+            "thanhPhanHoSo": [{"ten": "Giấy tờ A"}],
+            "sources": [{
+                "id": "central-a",
+                "sourceRole": "central_content_reference",
+                "url": "https://moj.gov.vn/a",
             }],
-        }
-        self.assertTrue(any("sourceRole" in error for error in validate(payload)))
+            "fieldProvenance": {"thanhPhanHoSo": ["missing-source"]},
+        }])
+        self.assertTrue(any("không tồn tại" in error for error in validate(payload)))
+
+    def test_submission_url_requires_local_execution_provenance(self):
+        url = (
+            "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh"
+            "?formalityId=abc&provinceCode=31&wardCode=11824&commune=WARD"
+        )
+        payload = base_payload([{
+            "ma": "1.000001",
+            "formalityId": "abc",
+            "verificationStatus": "verified_official",
+            "submissionUrl": url,
+            "sources": [{
+                "id": "central-a",
+                "sourceRole": "central_content_reference",
+                "url": "https://moj.gov.vn/a",
+            }],
+            "fieldProvenance": {"submissionUrl": ["central-a"]},
+        }])
+        self.assertTrue(any("local_execution" in error for error in validate(payload)))
+
+    def test_verified_multi_source_provenance_passes(self):
+        url = (
+            "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh"
+            "?formalityId=abc&provinceCode=31&wardCode=11824&commune=WARD"
+        )
+        payload = base_payload([{
+            "ma": "1.000001",
+            "formalityId": "abc",
+            "verificationStatus": "verified_official",
+            "thanhPhanHoSo": [{"ten": "Giấy tờ A"}],
+            "thoiHan": "02 ngày làm việc",
+            "submissionUrl": url,
+            "sources": [
+                {
+                    "id": "central-a",
+                    "sourceRole": "central_content_reference",
+                    "url": "https://moj.gov.vn/a",
+                },
+                {
+                    "id": "local-a",
+                    "sourceRole": "local_legal_effect",
+                    "url": "https://haiphong.gov.vn/a",
+                },
+                {
+                    "id": "execution-a",
+                    "sourceRole": "local_execution",
+                    "url": url,
+                },
+            ],
+            "fieldProvenance": {
+                "thanhPhanHoSo": ["central-a"],
+                "thoiHan": ["local-a"],
+                "submissionUrl": ["execution-a"],
+            },
+        }])
+        self.assertEqual(validate(payload), [])
 
 
 if __name__ == "__main__":
