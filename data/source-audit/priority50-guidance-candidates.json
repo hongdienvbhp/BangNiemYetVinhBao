@@ -1,7 +1,7 @@
 {
   "format": "priority50-guidance-candidates",
   "version": 1,
-  "generatedAt": "2026-09-21T16:23:00.598660+00:00",
+  "generatedAt": "2026-09-21T16:23:48.844357+00:00",
   "dataset": "tmquan/dichvucong-gov-vn",
   "datasetConfig": "procedures",
   "sourcePolicy": "Candidate-only technical extraction from a third-party snapshot of DVCQG. Canonical publication requires current official-source verification.",
