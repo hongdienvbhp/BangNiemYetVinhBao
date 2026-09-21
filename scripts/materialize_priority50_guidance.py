@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CANDIDATES = ROOT / "data/source-audit/priority50-guidance-candidates.json"
 EXCEPTIONS = ROOT / "data/source-audit/priority50-official-guidance-exceptions.json"
 AGENCY_OVERRIDES = ROOT / "data/source-audit/priority50-local-agency-overrides.json"
+TIME_OVERRIDES = ROOT / "data/source-audit/priority50-official-time-overrides.json"
 LEGAL = ROOT / "data/priority-51-legal-verification.json"
 GUIDANCE = ROOT / "data/tthc-guidance-enrichment.json"
 
@@ -69,12 +70,21 @@ def parse_time(text: object) -> list[dict]:
         return []
     result: list[dict] = []
     for line in [x.strip() for x in raw.splitlines() if x.strip()]:
-        if "—" in line:
-            channel_raw, value_raw = [part.strip() for part in line.split("—", 1)]
-        elif "-" in line:
-            channel_raw, value_raw = [part.strip() for part in line.split("-", 1)]
-        else:
-            channel_raw, value_raw = "", line
+        parts = [part.strip() for part in line.split("—")]
+        if len(parts) == 1:
+            token = parts[0].upper()
+            if token in CHANNELS:
+                result.append({
+                    "hinhThuc": CHANNELS[token],
+                    "giaTri": "Không quy định trong candidate snapshot; xem nguồn chính thức nếu có override.",
+                })
+            else:
+                result.append({"hinhThuc": "Không xác định", "giaTri": parts[0]})
+            continue
+
+        channel_raw = parts[0]
+        value_raw = parts[1]
+        description = " — ".join(parts[2:]).strip() if len(parts) > 2 else ""
         channel = CHANNELS.get(channel_raw.upper(), channel_raw or "Không xác định")
         match = re.fullmatch(r"(\d+(?:[.,]\d+)?)\s+([A-Z_]+)", value_raw.upper())
         if match:
@@ -82,7 +92,10 @@ def parse_time(text: object) -> list[dict]:
             value = f"{qty} {UNITS.get(unit, unit)}"
         else:
             value = value_raw
-        result.append({"hinhThuc": channel, "giaTri": value})
+        item = {"hinhThuc": channel, "giaTri": value}
+        if description:
+            item["moTa"] = description
+        result.append(item)
     return result
 
 
@@ -142,6 +155,15 @@ def exception_map() -> dict[str, dict]:
     }
 
 
+def time_override_map() -> dict[str, dict]:
+    payload = load(TIME_OVERRIDES)
+    return {
+        str(row.get("ma") or "").strip(): row
+        for row in payload.get("rows") or []
+        if isinstance(row, dict) and str(row.get("ma") or "").strip()
+    }
+
+
 def current_execution_rows() -> dict[str, dict]:
     payload = load(GUIDANCE)
     return {
@@ -159,7 +181,7 @@ def add_source(sources: list[dict], source: dict) -> None:
         sources.append(source)
 
 
-def build_candidate_row(candidate: dict, execution: dict, legal_sources: dict[str, dict]) -> dict:
+def build_candidate_row(candidate: dict, execution: dict, legal_sources: dict[str, dict], time_overrides: dict[str, dict]) -> dict:
     code = str(candidate["ma"]).strip()
     content_source = {
         "id": "official_dvcqg_content",
@@ -187,13 +209,28 @@ def build_candidate_row(candidate: dict, execution: dict, legal_sources: dict[st
         if isinstance(source, dict) and source.get("sourceRole") == "local_execution":
             add_source(sources, deepcopy(source))
 
+    time_value = parse_time(candidate.get("thoiHan"))
+    time_ref = "official_dvcqg_content"
+    override = time_overrides.get(code)
+    if override:
+        override_source = {
+            "id": "official_time_override",
+            "url": str(override.get("sourceUrl") or "").strip(),
+            "sourceRole": str(override.get("sourceRole") or "central_content_reference"),
+            "classification": "current_official_time_override",
+            "verifiedAt": str(load(TIME_OVERRIDES).get("verifiedAt") or ""),
+        }
+        add_source(sources, override_source)
+        time_value = deepcopy(override.get("thoiHan") or [])
+        time_ref = "official_time_override"
+
     row = {
         "ma": code,
         "verificationStatus": "verified_official",
         "verifiedAt": datetime.now(timezone.utc).date().isoformat(),
         "coQuanThucHien": agency,
         "thanhPhanHoSo": parse_dossier(candidate.get("thanhPhanHoSo")),
-        "thoiHan": parse_time(candidate.get("thoiHan")),
+        "thoiHan": time_value,
         "lePhi": parse_fee(candidate.get("lePhi")),
         "ketQua": str(candidate.get("ketQua") or "").strip(),
         "dvctt": deepcopy(execution.get("dvctt")),
@@ -202,7 +239,7 @@ def build_candidate_row(candidate: dict, execution: dict, legal_sources: dict[st
         "fieldProvenance": {
             "coQuanThucHien": [agency_ref],
             "thanhPhanHoSo": ["official_dvcqg_content"],
-            "thoiHan": ["official_dvcqg_content"],
+            "thoiHan": [time_ref],
             "lePhi": ["official_dvcqg_content"],
             "ketQua": ["official_dvcqg_content"],
             "dvctt": ["dvcqg_vinhbao"],
@@ -279,6 +316,7 @@ def main() -> int:
     exceptions = exception_map()
     execution = current_execution_rows()
     legal_sources = legal_source_map()
+    time_overrides = time_override_map()
 
     target_codes = set(execution)
     if len(target_codes) != TARGET:
@@ -296,7 +334,7 @@ def main() -> int:
         if code in exceptions:
             row = build_exception_row(exceptions[code], exec_row)
         else:
-            row = build_candidate_row(candidates[code], exec_row, legal_sources)
+            row = build_candidate_row(candidates[code], exec_row, legal_sources, time_overrides)
         for field in FIELDS:
             if not filled(row.get(field)):
                 raise ValueError(f"{code}: materialize thiếu {field}")
@@ -323,6 +361,7 @@ def main() -> int:
         "data/source-audit/priority50-official-guidance-exceptions.json",
         "data/priority-51-legal-verification.json",
         "data/source-audit/priority50-local-agency-overrides.json",
+        "data/source-audit/priority50-official-time-overrides.json",
     ]
     result["generatedAt"] = datetime.now(timezone.utc).isoformat()
     GUIDANCE.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
