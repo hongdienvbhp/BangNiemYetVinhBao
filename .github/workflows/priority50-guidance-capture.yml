@@ -34,19 +34,24 @@ jobs:
         run: |
           ./scripts/fetch_priority50_guidance_readonly.ps1
 
-      - name: Build deterministic enrichment
+      - name: Build deterministic enrichment and canonical projection
         shell: pwsh
         run: |
           python scripts/build_priority50_guidance.py
           python scripts/validate_tthc_guidance.py
           python scripts/validate_priority50_guidance.py
+          python scripts/build_master_data.py
+          python scripts/apply_guidance_enrichment.py
+          python scripts/build_tthc_tracking.py
+          python scripts/reconcile_priority51_crosswalk.py
+          python scripts/validate_canonical_contract.py
 
       - name: Commit captured evidence and enrichment
         shell: pwsh
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/source-audit/priority50-guidance-raw-current.json data/tthc-guidance-enrichment.json
+          git add data/source-audit/priority50-guidance-raw-current.json data/tthc-guidance-enrichment.json data/thu-tuc.json js/master-data-fallback.js data/master-data-audit.csv data/master-data-excluded.json data/BAO_CAO_MASTER_DATA_HIEN_HANH.md data/THEO_DOI_THAY_DOI_TTHC.csv data/priority-51-crosswalk.json
           if (git diff --cached --quiet) {
             Write-Output "No changes to commit."
           } else {
