@@ -1,0 +1,1006 @@
+{
+  "format": "central-guidance-plan",
+  "version": 1,
+  "priorityOnly": true,
+  "policy": "Candidate plan only. It never mutates canonical or legal status.",
+  "summary": {
+    "procedures": 50,
+    "withReadySource": 43,
+    "discoveryOnly": 7,
+    "missingSource": 0,
+    "sourceAssignments": {
+      "moh-social-assistance": 6,
+      "moj-tthc": 24,
+      "mae-poverty": 2,
+      "moet-education": 1,
+      "moha-dvc": 5,
+      "moit-dvc-gas": 1,
+      "bvhttdl-tthc": 1,
+      "mof-dvc-household-business": 5,
+      "mae-land": 5
+    },
+    "assignmentStatuses": {
+      "discovery_only": 7,
+      "ready": 38,
+      "ready_search": 5
+    }
+  },
+  "procedures": [
+    {
+      "ma": "1.001731",
+      "ten": "Hỗ trợ chi phí mai táng cho đối tượng bảo trợ xã hội",
+      "linhVuc": "BẢO TRỢ XÃ HỘI",
+      "priority51Ordinal": 7,
+      "formalityId": "019d2bfe-b7dd-7239-b166-b6cd79d326b8",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfe-b7dd-7239-b166-b6cd79d326b8&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "sources": [
+        {
+          "sourceId": "moh-social-assistance",
+          "authority": "Bộ Y tế / Cục Bảo trợ xã hội",
+          "adapter": "official_portal_discovery",
+          "status": "discovery_only",
+          "legalUse": "discovery_only_until_code_detail_verified",
+          "candidateUrl": "https://btxh.moh.gov.vn/",
+          "queryCode": "1.001731"
+        }
+      ],
+      "sourceCoverage": "discovery_only"
+    },
+    {
+      "ma": "1.014028",
+      "ten": "Hỗ trợ chi phí mai táng đối với đối tượng hưởng trợ cấp hưu trí xã hội",
+      "linhVuc": "BẢO TRỢ XÃ HỘI",
+      "priority51Ordinal": 2,
+      "formalityId": "019d2bff-3508-7268-b54b-6ce79a8cbf0e",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bff-3508-7268-b54b-6ce79a8cbf0e&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "sources": [
+        {
+          "sourceId": "moh-social-assistance",
+          "authority": "Bộ Y tế / Cục Bảo trợ xã hội",
+          "adapter": "official_portal_discovery",
+          "status": "discovery_only",
+          "legalUse": "discovery_only_until_code_detail_verified",
+          "candidateUrl": "https://btxh.moh.gov.vn/",
+          "queryCode": "1.014028"
+        }
+      ],
+      "sourceCoverage": "discovery_only"
+    },
+    {
+      "ma": "1.014027",
+      "ten": "Thực hiện, điều chỉnh, thôi hưởng trợ cấp hưu trí xã hội",
+      "linhVuc": "BẢO TRỢ XÃ HỘI",
+      "priority51Ordinal": 1,
+      "formalityId": "019d2bff-2d80-74d8-8515-90f6f61822f0",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bff-2d80-74d8-8515-90f6f61822f0&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&provinceCode=31&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "sources": [
+        {
+          "sourceId": "moh-social-assistance",
+          "authority": "Bộ Y tế / Cục Bảo trợ xã hội",
+          "adapter": "official_portal_discovery",
+          "status": "discovery_only",
+          "legalUse": "discovery_only_until_code_detail_verified",
+          "candidateUrl": "https://btxh.moh.gov.vn/",
+          "queryCode": "1.014027"
+        }
+      ],
+      "sourceCoverage": "discovery_only"
+    },
+    {
+      "ma": "1.001776",
+      "ten": "Thực hiện, điều chỉnh, thôi hưởng trợ cấp xã hội hàng tháng, hỗ trợ kinh phí chăm sóc, nuôi dưỡng hàng tháng",
+      "linhVuc": "BẢO TRỢ XÃ HỘI",
+      "priority51Ordinal": 6,
+      "formalityId": "019d2bfe-b7e6-740b-9573-24f800e8664d",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfe-b7e6-740b-9573-24f800e8664d&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "sources": [
+        {
+          "sourceId": "moh-social-assistance",
+          "authority": "Bộ Y tế / Cục Bảo trợ xã hội",
+          "adapter": "official_portal_discovery",
+          "status": "discovery_only",
+          "legalUse": "discovery_only_until_code_detail_verified",
+          "candidateUrl": "https://btxh.moh.gov.vn/",
+          "queryCode": "1.001776"
+        }
+      ],
+      "sourceCoverage": "discovery_only"
+    },
+    {
+      "ma": "2.000286",
+      "ten": "Tiếp nhận đối tượng bảo trợ xã hội có hoàn cảnh đặc biệt khó khăn vào cơ sở trợ giúp xã hội",
+      "linhVuc": "BẢO TRỢ XÃ HỘI",
+      "priority51Ordinal": 5,
+      "formalityId": "019d2bff-44ae-736f-a3c1-fc73741af598",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bff-44ae-736f-a3c1-fc73741af598&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "sources": [
+        {
+          "sourceId": "moh-social-assistance",
+          "authority": "Bộ Y tế / Cục Bảo trợ xã hội",
+          "adapter": "official_portal_discovery",
+          "status": "discovery_only",
+          "legalUse": "discovery_only_until_code_detail_verified",
+          "candidateUrl": "https://btxh.moh.gov.vn/",
+          "queryCode": "2.000286"
+        }
+      ],
+      "sourceCoverage": "discovery_only"
+    },
+    {
+      "ma": "1.001699",
+      "ten": "Xác định, xác định lại mức độ khuyết tật và cấp Giấy xác nhận khuyết tật",
+      "linhVuc": "BẢO TRỢ XÃ HỘI",
+      "priority51Ordinal": 14,
+      "formalityId": "019d2bfe-b7cd-76e9-b909-bcf437629cb8",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfe-b7cd-76e9-b909-bcf437629cb8&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "sources": [
+        {
+          "sourceId": "moh-social-assistance",
+          "authority": "Bộ Y tế / Cục Bảo trợ xã hội",
+          "adapter": "official_portal_discovery",
+          "status": "discovery_only",
+          "legalUse": "discovery_only_until_code_detail_verified",
+          "candidateUrl": "https://btxh.moh.gov.vn/",
+          "queryCode": "1.001699"
+        }
+      ],
+      "sourceCoverage": "discovery_only"
+    },
+    {
+      "ma": "2.000815",
+      "ten": "Chứng thực bản sao từ bản chính giấy tờ, văn bản do cơ quan, tổ chức có thẩm quyền của Việt Nam; cơ quan, tổ chức có thẩm quyền của nước ngoài; cơ quan, tổ chức có thẩm quyền của Việt Nam liên kết với cơ quan, tổ chức có thẩm quyền của nước ngoài cấp hoặc chứng nhận",
+      "linhVuc": "CHỨNG THỰC",
+      "priority51Ordinal": 50,
+      "formalityId": "019d2bfd-8e22-77ef-819f-e49460350904",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-8e22-77ef-819f-e49460350904&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "sources": [
+        {
+          "sourceId": "moj-tthc",
+          "authority": "Bộ Tư pháp",
+          "adapter": "direct_code_detail",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://moj.gov.vn/portal/thu-tuc-hanh-chinh/chi-tiet-2.000815.html"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "2.000992",
+      "ten": "Chứng thực chữ ký người dịch mà người dịch là cộng tác viên dịch thuật của Ủy ban nhân dân cấp xã, tổ chức hành nghề công chứng",
+      "linhVuc": "CHỨNG THỰC",
+      "priority51Ordinal": 49,
+      "formalityId": "019d2bfd-95d3-7258-b613-a71dbf432f07",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-95d3-7258-b613-a71dbf432f07&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "sources": [
+        {
+          "sourceId": "moj-tthc",
+          "authority": "Bộ Tư pháp",
+          "adapter": "direct_code_detail",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://moj.gov.vn/portal/thu-tuc-hanh-chinh/chi-tiet-2.000992.html"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "2.001035",
+      "ten": "Chứng thực giao dịch liên quan đến tài sản là động sản, quyền sử dụng đất, nhà ở",
+      "linhVuc": "CHỨNG THỰC",
+      "priority51Ordinal": 47,
+      "formalityId": "019d2bfd-95fa-70ca-93fd-4cab11b87897",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-95fa-70ca-93fd-4cab11b87897&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "sources": [
+        {
+          "sourceId": "moj-tthc",
+          "authority": "Bộ Tư pháp",
+          "adapter": "direct_code_detail",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://moj.gov.vn/portal/thu-tuc-hanh-chinh/chi-tiet-2.001035.html"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "2.001406",
+      "ten": "Chứng thực văn bản phân chia di sản mà di sản là động sản, quyền sử dụng đất, nhà ở",
+      "linhVuc": "CHỨNG THỰC",
+      "priority51Ordinal": 44,
+      "formalityId": "019d2bfd-9daf-70da-8f48-223498332346",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-9daf-70da-8f48-223498332346&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "sources": [
+        {
+          "sourceId": "moj-tthc",
+          "authority": "Bộ Tư pháp",
+          "adapter": "direct_code_detail",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://moj.gov.vn/portal/thu-tuc-hanh-chinh/chi-tiet-2.001406.html"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "2.001016",
+      "ten": "Chứng thực văn bản từ chối nhận di sản",
+      "linhVuc": "CHỨNG THỰC",
+      "priority51Ordinal": 43,
+      "formalityId": "019d2bfd-95e6-7578-ba2d-d1b4373cd174",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-95e6-7578-ba2d-d1b4373cd174&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "sources": [
+        {
+          "sourceId": "moj-tthc",
+          "authority": "Bộ Tư pháp",
+          "adapter": "direct_code_detail",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://moj.gov.vn/portal/thu-tuc-hanh-chinh/chi-tiet-2.001016.html"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "2.000913",
+      "ten": "Chứng thực việc sửa đổi, bổ sung, hủy bỏ giao dịch",
+      "linhVuc": "CHỨNG THỰC",
+      "priority51Ordinal": 46,
+      "formalityId": "019d2bfd-8e59-72ab-ae1a-a2985865d253",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-8e59-72ab-ae1a-a2985865d253&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "sources": [
+        {
+          "sourceId": "moj-tthc",
+          "authority": "Bộ Tư pháp",
+          "adapter": "direct_code_detail",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://moj.gov.vn/portal/thu-tuc-hanh-chinh/chi-tiet-2.000913.html"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "2.000942",
+      "ten": "Thủ tục cấp bản sao có chứng thực từ bản chính hợp đồng, giao dịch đã được chứng thực",
+      "linhVuc": "CHỨNG THỰC",
+      "priority51Ordinal": 51,
+      "formalityId": "019d2bfd-95d6-778f-889b-e3045003fa5e",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-95d6-778f-889b-e3045003fa5e&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "sources": [
+        {
+          "sourceId": "moj-tthc",
+          "authority": "Bộ Tư pháp",
+          "adapter": "direct_code_detail",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://moj.gov.vn/portal/thu-tuc-hanh-chinh/chi-tiet-2.000942.html"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "2.000884",
+      "ten": "Thủ tục chứng thực chữ ký trong các văn bản (áp dụng cho cả trường hợp chứng thực điểm chỉ và trường hợp người yêu cầu chứng thực không điểm chỉ được)",
+      "linhVuc": "CHỨNG THỰC",
+      "priority51Ordinal": 48,
+      "formalityId": "019d2bfd-8e2e-7359-b42f-d5dc8d74741b",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-8e2e-7359-b42f-d5dc8d74741b&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "sources": [
+        {
+          "sourceId": "moj-tthc",
+          "authority": "Bộ Tư pháp",
+          "adapter": "direct_code_detail",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://moj.gov.vn/portal/thu-tuc-hanh-chinh/chi-tiet-2.000884.html"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "1.011609",
+      "ten": "Công nhận hộ làm nông nghiệp, lâm nghiệp, ngư nghiệp và diêm nghiệp có mức sống trung bình",
+      "linhVuc": "GIẢM NGHÈO",
+      "priority51Ordinal": 13,
+      "formalityId": "019d2bfa-5f79-70bf-bc74-661346debe8c",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-5f79-70bf-bc74-661346debe8c&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "sources": [
+        {
+          "sourceId": "mae-poverty",
+          "authority": "Bộ Nông nghiệp và Môi trường",
+          "adapter": "official_decision_catalog",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://mae.gov.vn/",
+          "queryCode": "1.011609"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "1.011606",
+      "ten": "Công nhận hộ nghèo, hộ cận nghèo; hộ thoát nghèo, hộ thoát cận nghèo định kỳ hằng năm",
+      "linhVuc": "GIẢM NGHÈO",
+      "priority51Ordinal": 12,
+      "formalityId": "019d2bfa-5f68-74c6-89e9-78c8819cef86",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-5f68-74c6-89e9-78c8819cef86&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "sources": [
+        {
+          "sourceId": "mae-poverty",
+          "authority": "Bộ Nông nghiệp và Môi trường",
+          "adapter": "official_decision_catalog",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://mae.gov.vn/",
+          "queryCode": "1.011606"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "2.002481",
+      "ten": "Chuyển trường đối với học sinh trung học cơ sở",
+      "linhVuc": "GIÁO DỤC",
+      "priority51Ordinal": 4,
+      "formalityId": "019d2bf8-cffd-7189-bb9d-b8436bafc764",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bf8-cffd-7189-bb9d-b8436bafc764&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "sources": [
+        {
+          "sourceId": "moet-education",
+          "authority": "Bộ Giáo dục và Đào tạo",
+          "adapter": "official_portal_discovery",
+          "status": "discovery_only",
+          "legalUse": "status_review_required_before_enrichment",
+          "candidateUrl": "https://moet.gov.vn/",
+          "queryCode": "2.002481"
+        }
+      ],
+      "sourceCoverage": "discovery_only"
+    },
+    {
+      "ma": "2.000635",
+      "ten": "Cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh",
+      "linhVuc": "HỘ TỊCH",
+      "priority51Ordinal": 32,
+      "formalityId": "019d2bfd-867c-72db-b6a7-dcbd8c763807",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-867c-72db-b6a7-dcbd8c763807&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "sources": [
+        {
+          "sourceId": "moj-tthc",
+          "authority": "Bộ Tư pháp",
+          "adapter": "direct_code_detail",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://moj.gov.vn/portal/thu-tuc-hanh-chinh/chi-tiet-2.000635.html"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "1.004873",
+      "ten": "Thủ tục cấp Giấy xác nhận tình trạng hôn nhân",
+      "linhVuc": "HỘ TỊCH",
+      "priority51Ordinal": 31,
+      "formalityId": "019d2bfd-6eb3-7019-bf3f-fc58c9ee44b9",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-6eb3-7019-bf3f-fc58c9ee44b9&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "sources": [
+        {
+          "sourceId": "moj-tthc",
+          "authority": "Bộ Tư pháp",
+          "adapter": "direct_code_detail",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://moj.gov.vn/portal/thu-tuc-hanh-chinh/chi-tiet-1.004873.html"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "2.002189",
+      "ten": "Thủ tục ghi vào Sổ hộ tịch việc kết hôn của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài",
+      "linhVuc": "HỘ TỊCH",
+      "priority51Ordinal": 27,
+      "formalityId": "019d2bfd-9dec-73f6-b213-be4bfb4f911b",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-9dec-73f6-b213-be4bfb4f911b&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "sources": [
+        {
+          "sourceId": "moj-tthc",
+          "authority": "Bộ Tư pháp",
+          "adapter": "direct_code_detail",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://moj.gov.vn/portal/thu-tuc-hanh-chinh/chi-tiet-2.002189.html"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "1.004859",
+      "ten": "Thủ tục thay đổi, cải chính, bổ sung thông tin hộ tịch, xác định lại dân tộc",
+      "linhVuc": "HỘ TỊCH",
+      "priority51Ordinal": 30,
+      "formalityId": "019d2bfd-671e-714b-8fd6-8230c82f7867",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-671e-714b-8fd6-8230c82f7867&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "sources": [
+        {
+          "sourceId": "moj-tthc",
+          "authority": "Bộ Tư pháp",
+          "adapter": "direct_code_detail",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://moj.gov.vn/portal/thu-tuc-hanh-chinh/chi-tiet-1.004859.html"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "1.004837",
+      "ten": "Thủ tục đăng ký giám hộ",
+      "linhVuc": "HỘ TỊCH",
+      "priority51Ordinal": 42,
+      "formalityId": "019d2bfd-671b-75fa-82fb-8ad05a37f638",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-671b-75fa-82fb-8ad05a37f638&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "sources": [
+        {
+          "sourceId": "moj-tthc",
+          "authority": "Bộ Tư pháp",
+          "adapter": "direct_code_detail",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://moj.gov.vn/portal/thu-tuc-hanh-chinh/chi-tiet-1.004837.html"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "1.000894",
+      "ten": "Thủ tục đăng ký kết hôn",
+      "linhVuc": "HỘ TỊCH",
+      "priority51Ordinal": 40,
+      "formalityId": "019d2bfd-3fac-7489-b53b-a15eb239a6fe",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-3fac-7489-b53b-a15eb239a6fe&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "sources": [
+        {
+          "sourceId": "moj-tthc",
+          "authority": "Bộ Tư pháp",
+          "adapter": "direct_code_detail",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://moj.gov.vn/portal/thu-tuc-hanh-chinh/chi-tiet-1.000894.html"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "2.000806",
+      "ten": "Thủ tục đăng ký kết hôn có yếu tố nước ngoài",
+      "linhVuc": "HỘ TỊCH",
+      "priority51Ordinal": 39,
+      "formalityId": "019d2bfd-8e13-728a-a0cd-635811d8432e",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-8e13-728a-a0cd-635811d8432e&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "sources": [
+        {
+          "sourceId": "moj-tthc",
+          "authority": "Bộ Tư pháp",
+          "adapter": "direct_code_detail",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://moj.gov.vn/portal/thu-tuc-hanh-chinh/chi-tiet-2.000806.html"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "1.000593",
+      "ten": "Thủ tục đăng ký kết hôn lưu động",
+      "linhVuc": "HỘ TỊCH",
+      "priority51Ordinal": 33,
+      "formalityId": "019d2bfd-382c-774c-bca0-e30c261d7be4",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-382c-774c-bca0-e30c261d7be4&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "sources": [
+        {
+          "sourceId": "moj-tthc",
+          "authority": "Bộ Tư pháp",
+          "adapter": "direct_code_detail",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://moj.gov.vn/portal/thu-tuc-hanh-chinh/chi-tiet-1.000593.html"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "1.001193",
+      "ten": "Thủ tục đăng ký khai sinh",
+      "linhVuc": "HỘ TỊCH",
+      "priority51Ordinal": 29,
+      "formalityId": "019d2bfd-3fe0-70ac-b9d6-5e9e20d6eef7",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-3fe0-70ac-b9d6-5e9e20d6eef7&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "sources": [
+        {
+          "sourceId": "moj-tthc",
+          "authority": "Bộ Tư pháp",
+          "adapter": "direct_code_detail",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://moj.gov.vn/portal/thu-tuc-hanh-chinh/chi-tiet-1.001193.html"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "1.004772",
+      "ten": "Thủ tục đăng ký khai sinh cho người đã có hồ sơ, giấy tờ cá nhân",
+      "linhVuc": "HỘ TỊCH",
+      "priority51Ordinal": 34,
+      "formalityId": "019d2bfd-6711-733d-b674-fc3d805e70c8",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-6711-733d-b674-fc3d805e70c8&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "sources": [
+        {
+          "sourceId": "moj-tthc",
+          "authority": "Bộ Tư pháp",
+          "adapter": "direct_code_detail",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://moj.gov.vn/portal/thu-tuc-hanh-chinh/chi-tiet-1.004772.html"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "2.000528",
+      "ten": "Thủ tục đăng ký khai sinh có yếu tố nước ngoài",
+      "linhVuc": "HỘ TỊCH",
+      "priority51Ordinal": 35,
+      "formalityId": "019d2bfd-8662-763f-927f-dc039ede198c",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-8662-763f-927f-dc039ede198c&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "sources": [
+        {
+          "sourceId": "moj-tthc",
+          "authority": "Bộ Tư pháp",
+          "adapter": "direct_code_detail",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://moj.gov.vn/portal/thu-tuc-hanh-chinh/chi-tiet-2.000528.html"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "1.000689",
+      "ten": "Thủ tục đăng ký khai sinh kết hợp đăng ký nhận cha, mẹ, con",
+      "linhVuc": "HỘ TỊCH",
+      "priority51Ordinal": 41,
+      "formalityId": "019d2bfd-3faf-768a-9224-9cb889436133",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-3faf-768a-9224-9cb889436133&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "sources": [
+        {
+          "sourceId": "moj-tthc",
+          "authority": "Bộ Tư pháp",
+          "adapter": "direct_code_detail",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://moj.gov.vn/portal/thu-tuc-hanh-chinh/chi-tiet-1.000689.html"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "1.000656",
+      "ten": "Thủ tục đăng ký khai tử",
+      "linhVuc": "HỘ TỊCH",
+      "priority51Ordinal": 28,
+      "formalityId": "019d2bfd-3fac-7489-b53b-9c6c958f2da4",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-3fac-7489-b53b-9c6c958f2da4&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "sources": [
+        {
+          "sourceId": "moj-tthc",
+          "authority": "Bộ Tư pháp",
+          "adapter": "direct_code_detail",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://moj.gov.vn/portal/thu-tuc-hanh-chinh/chi-tiet-1.000656.html"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "1.004746",
+      "ten": "Thủ tục đăng ký lại kết hôn",
+      "linhVuc": "HỘ TỊCH",
+      "priority51Ordinal": 37,
+      "formalityId": "019d2bfd-6711-733d-b674-f82cb6606242",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-6711-733d-b674-f82cb6606242&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "sources": [
+        {
+          "sourceId": "moj-tthc",
+          "authority": "Bộ Tư pháp",
+          "adapter": "direct_code_detail",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://moj.gov.vn/portal/thu-tuc-hanh-chinh/chi-tiet-1.004746.html"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "1.004884",
+      "ten": "Thủ tục đăng ký lại khai sinh",
+      "linhVuc": "HỘ TỊCH",
+      "priority51Ordinal": 38,
+      "formalityId": "019d2bfd-6eac-7598-b88b-15f8a61b366a",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-6eac-7598-b88b-15f8a61b366a&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "sources": [
+        {
+          "sourceId": "moj-tthc",
+          "authority": "Bộ Tư pháp",
+          "adapter": "direct_code_detail",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://moj.gov.vn/portal/thu-tuc-hanh-chinh/chi-tiet-1.004884.html"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "1.005461",
+      "ten": "Đăng ký lại khai tử",
+      "linhVuc": "HỘ TỊCH",
+      "priority51Ordinal": 36,
+      "formalityId": "019d2bfd-6ebc-709e-8678-a9f8b66738f2",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-6ebc-709e-8678-a9f8b66738f2&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "sources": [
+        {
+          "sourceId": "moj-tthc",
+          "authority": "Bộ Tư pháp",
+          "adapter": "direct_code_detail",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://moj.gov.vn/portal/thu-tuc-hanh-chinh/chi-tiet-1.005461.html"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "1.013702",
+      "ten": "Công nhận ban vận động thành lập hội",
+      "linhVuc": "HỘI",
+      "priority51Ordinal": 10,
+      "formalityId": "019d2bfb-1b5c-7417-b2be-9deaf8580018",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfb-1b5c-7417-b2be-9deaf8580018&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "sources": [
+        {
+          "sourceId": "moha-dvc",
+          "authority": "Bộ Nội vụ",
+          "adapter": "search_listing_by_code",
+          "status": "ready_search",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://dichvucong.moha.gov.vn/",
+          "queryCode": "1.013702"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "1.013703",
+      "ten": "Thành lập hội",
+      "linhVuc": "HỘI",
+      "priority51Ordinal": 11,
+      "formalityId": "019d2bfb-1b5e-74c5-be8d-c902d128672d",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfb-1b5e-74c5-be8d-c902d128672d&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "sources": [
+        {
+          "sourceId": "moha-dvc",
+          "authority": "Bộ Nội vụ",
+          "adapter": "search_listing_by_code",
+          "status": "ready_search",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://dichvucong.moha.gov.vn/",
+          "queryCode": "1.013703"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "2.001283",
+      "ten": "Cấp Giấy chứng nhận đủ điều kiện cửa hàng bán lẻ LPG chai",
+      "linhVuc": "KINH DOANH KHÍ",
+      "priority51Ordinal": 18,
+      "formalityId": "",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?keyword=2.001283&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0",
+      "sources": [
+        {
+          "sourceId": "moit-dvc-gas",
+          "authority": "Bộ Công Thương",
+          "adapter": "search_listing_by_code",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://dichvucong.moit.gov.vn/VdxpTTHCOnline.aspx?LevelType=-1&ServiceType=Kinh+doanh+kh%C3%AD",
+          "queryCode": "2.001283"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "1.010833",
+      "ten": "Cấp giấy xác nhận thân nhân của người có công",
+      "linhVuc": "NGƯỜI CÓ CÔNG",
+      "priority51Ordinal": 15,
+      "formalityId": "019d2bfb-03d5-700b-9bb5-d92070224137",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfb-03d5-700b-9bb5-d92070224137&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "sources": [
+        {
+          "sourceId": "moha-dvc",
+          "authority": "Bộ Nội vụ",
+          "adapter": "search_listing_by_code",
+          "status": "ready_search",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://dichvucong.moha.gov.vn/",
+          "queryCode": "1.010833"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "1.010803",
+      "ten": "Giải quyết chế độ trợ cấp thờ cúng liệt sĩ",
+      "linhVuc": "NGƯỜI CÓ CÔNG",
+      "priority51Ordinal": 9,
+      "formalityId": "019d2bfa-fc0c-7046-b5dc-04303a18608d",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-fc0c-7046-b5dc-04303a18608d&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "sources": [
+        {
+          "sourceId": "moha-dvc",
+          "authority": "Bộ Nội vụ",
+          "adapter": "search_listing_by_code",
+          "status": "ready_search",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://dichvucong.moha.gov.vn/",
+          "queryCode": "1.010803"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "1.010824",
+      "ten": "Hưởng trợ cấp khi người có công đang hưởng trợ cấp ưu đãi từ trần",
+      "linhVuc": "NGƯỜI CÓ CÔNG",
+      "priority51Ordinal": 8,
+      "formalityId": "019d2bfa-fc36-7611-9219-adb6dee5774f",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-fc36-7611-9219-adb6dee5774f&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "sources": [
+        {
+          "sourceId": "moha-dvc",
+          "authority": "Bộ Nội vụ",
+          "adapter": "search_listing_by_code",
+          "status": "ready_search",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://dichvucong.moha.gov.vn/",
+          "queryCode": "1.010824"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "1.003622",
+      "ten": "Thông báo tổ chức lễ hội cấp xã",
+      "linhVuc": "VĂN HÓA",
+      "priority51Ordinal": 3,
+      "formalityId": "019d2bfd-c4cb-734d-bb80-29723a707c08",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-c4cb-734d-bb80-29723a707c08&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8",
+      "sources": [
+        {
+          "sourceId": "bvhttdl-tthc",
+          "authority": "Bộ Văn hóa, Thể thao và Du lịch",
+          "adapter": "search_listing_by_code_or_name",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://bvhttdl.gov.vn/Pages/thu-tuc-hanh-chinh.aspx",
+          "queryCode": "1.003622"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "2.000575",
+      "ten": "Cấp lại Giấy chứng nhận đăng ký hộ kinh doanh, Cấp đổi sang Giấy chứng nhận đăng ký hộ kinh doanh",
+      "linhVuc": "ĐĂNG KÝ HỘ KINH DOANH",
+      "priority51Ordinal": 22,
+      "formalityId": "019d2bfc-d9d1-7475-8e58-1aa4479901eb",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfc-d9d1-7475-8e58-1aa4479901eb&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "sources": [
+        {
+          "sourceId": "mof-dvc-household-business",
+          "authority": "Bộ Tài chính",
+          "adapter": "search_listing_by_code",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://dichvucong.mof.gov.vn/web/guest/dichvucong",
+          "queryCode": "2.000575"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "1.001266",
+      "ten": "Chấm dứt hoạt động hộ kinh doanh",
+      "linhVuc": "ĐĂNG KÝ HỘ KINH DOANH",
+      "priority51Ordinal": 23,
+      "formalityId": "019d2bfb-d748-72d1-848f-3607bc86e647",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfb-d748-72d1-848f-3607bc86e647&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "sources": [
+        {
+          "sourceId": "mof-dvc-household-business",
+          "authority": "Bộ Tài chính",
+          "adapter": "search_listing_by_code",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://dichvucong.mof.gov.vn/web/guest/dichvucong",
+          "queryCode": "1.001266"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "1.001570",
+      "ten": "Tạm ngừng kinh doanh, tiếp tục kinh doanh trước thời hạn đã thông báo của hộ kinh doanh",
+      "linhVuc": "ĐĂNG KÝ HỘ KINH DOANH",
+      "priority51Ordinal": 21,
+      "formalityId": "019d2bfb-d768-7446-bd77-3bb11051041c",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfb-d768-7446-bd77-3bb11051041c&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "sources": [
+        {
+          "sourceId": "mof-dvc-household-business",
+          "authority": "Bộ Tài chính",
+          "adapter": "search_listing_by_code",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://dichvucong.mof.gov.vn/web/guest/dichvucong",
+          "queryCode": "1.001570"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "1.001612",
+      "ten": "Đăng ký thành lập hộ kinh doanh",
+      "linhVuc": "ĐĂNG KÝ HỘ KINH DOANH",
+      "priority51Ordinal": 19,
+      "formalityId": "019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "sources": [
+        {
+          "sourceId": "mof-dvc-household-business",
+          "authority": "Bộ Tài chính",
+          "adapter": "search_listing_by_code",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://dichvucong.mof.gov.vn/web/guest/dichvucong",
+          "queryCode": "1.001612"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "2.000720",
+      "ten": "Đăng ký thay đổi nội dung đăng ký hộ kinh doanh",
+      "linhVuc": "ĐĂNG KÝ HỘ KINH DOANH",
+      "priority51Ordinal": 20,
+      "formalityId": "",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?keyword=2.000720&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0",
+      "sources": [
+        {
+          "sourceId": "mof-dvc-household-business",
+          "authority": "Bộ Tài chính",
+          "adapter": "search_listing_by_code",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://dichvucong.mof.gov.vn/web/guest/dichvucong",
+          "queryCode": "2.000720"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "1.013949",
+      "ten": "Giao đất, cho thuê đất, chuyển mục đích sử dụng đất đối với trường hợp giao đất, cho thuê đất không đấu giá quyền sử dụng đất, không đấu thầu lựa chọn nhà đầu tư thực hiện dự án có sử dụng đất; trường hợp giao đất, cho thuê đất thông qua đấu thầu lựa chọn nhà đầu tư thực hiện dự án có sử dụng đất; giao đất và giao rừng; cho thuê đất và cho thuê rừng, gia hạn sử dụng đất khi hết thời hạn sử dụng đất",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51Ordinal": 24,
+      "formalityId": "019d2bfa-867b-703e-a311-18fc1df76fc8",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-867b-703e-a311-18fc1df76fc8&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "sources": [
+        {
+          "sourceId": "mae-land",
+          "authority": "Bộ Nông nghiệp và Môi trường",
+          "adapter": "official_decision_catalog",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://mae.gov.vn/",
+          "queryCode": "1.013949"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "1.012812",
+      "ten": "Hòa giải tranh chấp đất đai",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51Ordinal": 25,
+      "formalityId": "019d2bfa-76e6-7468-b6f2-3d412e902b88",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-76e6-7468-b6f2-3d412e902b88&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "sources": [
+        {
+          "sourceId": "mae-land",
+          "authority": "Bộ Nông nghiệp và Môi trường",
+          "adapter": "official_decision_catalog",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://mae.gov.vn/",
+          "queryCode": "1.012812"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "1.012818",
+      "ten": "Thu hồi Giấy chứng nhận đã cấp lần đầu không đúng quy định của pháp luật đất đai do người sử dụng đất, chủ sở hữu tài sản gắn liền với đất phát hiện và cấp lại Giấy chứng nhận sau khi thu hồi",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51Ordinal": 17,
+      "formalityId": "019d2bfa-76e6-7468-b6f2-417e588578f5",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-76e6-7468-b6f2-417e588578f5&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "sources": [
+        {
+          "sourceId": "mae-land",
+          "authority": "Bộ Nông nghiệp và Môi trường",
+          "adapter": "official_decision_catalog",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://mae.gov.vn/",
+          "queryCode": "1.012818"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "1.013978",
+      "ten": "Đăng ký đất đai, tài sản gắn liền với đất, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất lần đầu đối với hộ gia đình, cá nhân, cộng đồng dân cư, người gốc Việt Nam định cư ở nước ngoài",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51Ordinal": 16,
+      "formalityId": "019d2bfa-8678-770b-8917-1872078767cd",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-8678-770b-8917-1872078767cd&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "sources": [
+        {
+          "sourceId": "mae-land",
+          "authority": "Bộ Nông nghiệp và Môi trường",
+          "adapter": "official_decision_catalog",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://mae.gov.vn/",
+          "queryCode": "1.013978"
+        }
+      ],
+      "sourceCoverage": "ready"
+    },
+    {
+      "ma": "1.012796",
+      "ten": "Đính chính Giấy chứng nhận đã cấp lần đầu có sai sót",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51Ordinal": 26,
+      "formalityId": "019d2bfa-76cb-741b-996e-33d1ef50be50",
+      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-76cb-741b-996e-33d1ef50be50&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
+      "sources": [
+        {
+          "sourceId": "mae-land",
+          "authority": "Bộ Nông nghiệp và Môi trường",
+          "adapter": "official_decision_catalog",
+          "status": "ready",
+          "legalUse": "content_only_no_local_effect",
+          "candidateUrl": "https://mae.gov.vn/",
+          "queryCode": "1.012796"
+        }
+      ],
+      "sourceCoverage": "ready"
+    }
+  ]
+}

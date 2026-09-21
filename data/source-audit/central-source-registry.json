@@ -1,0 +1,201 @@
+{
+  "format": "central-tthc-source-registry",
+  "version": 1,
+  "sourceRole": "central_content_reference",
+  "policy": {
+    "legalEffect": "Nguồn trung ương chỉ làm giàu nội dung theo mã; không tự thêm, phục hồi hoặc bãi bỏ mã trong canonical Vĩnh Bảo.",
+    "publication": "Mọi dữ liệu trích tự động là candidate_only cho đến khi có official verification và fieldProvenance.",
+    "scope": "Chỉ đăng ký nguồn phục vụ lĩnh vực đang có trong canonical; priority-50 được xử lý trước."
+  },
+  "sources": [
+    {
+      "id": "moj-tthc",
+      "authority": "Bộ Tư pháp",
+      "domains": [
+        "moj.gov.vn"
+      ],
+      "fields": [
+        "HỘ TỊCH",
+        "CHỨNG THỰC"
+      ],
+      "status": "ready",
+      "adapter": "direct_code_detail",
+      "detailUrlTemplate": "https://moj.gov.vn/portal/thu-tuc-hanh-chinh/chi-tiet-{code}.html",
+      "provides": [
+        "quyTrinh",
+        "thanhPhanHoSo",
+        "bieuMau",
+        "thoiHan",
+        "lePhi",
+        "coQuanThucHien"
+      ],
+      "legalUse": "content_only_no_local_effect"
+    },
+    {
+      "id": "mof-dvc-household-business",
+      "authority": "Bộ Tài chính",
+      "domains": [
+        "dichvucong.mof.gov.vn"
+      ],
+      "fields": [
+        "ĐĂNG KÝ HỘ KINH DOANH"
+      ],
+      "status": "ready",
+      "adapter": "search_listing_by_code",
+      "listingUrl": "https://dichvucong.mof.gov.vn/web/guest/dichvucong",
+      "provides": [
+        "quyTrinh",
+        "thanhPhanHoSo",
+        "bieuMau",
+        "thoiHan",
+        "lePhi",
+        "coQuanThucHien"
+      ],
+      "legalUse": "content_only_no_local_effect"
+    },
+    {
+      "id": "moit-dvc-gas",
+      "authority": "Bộ Công Thương",
+      "domains": [
+        "dichvucong.moit.gov.vn"
+      ],
+      "fields": [
+        "KINH DOANH KHÍ"
+      ],
+      "status": "ready",
+      "adapter": "search_listing_by_code",
+      "listingUrl": "https://dichvucong.moit.gov.vn/VdxpTTHCOnline.aspx?LevelType=-1&ServiceType=Kinh+doanh+kh%C3%AD",
+      "provides": [
+        "quyTrinh",
+        "thanhPhanHoSo",
+        "bieuMau",
+        "thoiHan",
+        "lePhi",
+        "coQuanThucHien"
+      ],
+      "legalUse": "content_only_no_local_effect"
+    },
+    {
+      "id": "bvhttdl-tthc",
+      "authority": "Bộ Văn hóa, Thể thao và Du lịch",
+      "domains": [
+        "bvhttdl.gov.vn"
+      ],
+      "fields": [
+        "VĂN HÓA"
+      ],
+      "status": "ready",
+      "adapter": "search_listing_by_code_or_name",
+      "listingUrl": "https://bvhttdl.gov.vn/Pages/thu-tuc-hanh-chinh.aspx",
+      "provides": [
+        "quyTrinh",
+        "thanhPhanHoSo",
+        "bieuMau",
+        "thoiHan",
+        "lePhi",
+        "coQuanThucHien"
+      ],
+      "legalUse": "content_only_no_local_effect"
+    },
+    {
+      "id": "mae-land",
+      "authority": "Bộ Nông nghiệp và Môi trường",
+      "domains": [
+        "mae.gov.vn",
+        "media.mae.gov.vn"
+      ],
+      "fields": [
+        "ĐẤT ĐAI"
+      ],
+      "status": "ready",
+      "adapter": "official_decision_catalog",
+      "listingUrl": "https://mae.gov.vn/",
+      "provides": [
+        "quyTrinh",
+        "thanhPhanHoSo",
+        "bieuMau",
+        "thoiHan",
+        "lePhi",
+        "coQuanThucHien"
+      ],
+      "legalUse": "content_only_no_local_effect"
+    },
+    {
+      "id": "mae-poverty",
+      "authority": "Bộ Nông nghiệp và Môi trường",
+      "domains": [
+        "mae.gov.vn"
+      ],
+      "fields": [
+        "GIẢM NGHÈO"
+      ],
+      "status": "ready",
+      "adapter": "official_decision_catalog",
+      "listingUrl": "https://mae.gov.vn/",
+      "provides": [
+        "quyTrinh",
+        "thanhPhanHoSo",
+        "bieuMau",
+        "thoiHan",
+        "lePhi",
+        "coQuanThucHien"
+      ],
+      "legalUse": "content_only_no_local_effect"
+    },
+    {
+      "id": "moha-dvc",
+      "authority": "Bộ Nội vụ",
+      "domains": [
+        "dichvucong.moha.gov.vn",
+        "moha.gov.vn"
+      ],
+      "fields": [
+        "NGƯỜI CÓ CÔNG",
+        "HỘI"
+      ],
+      "status": "ready_search",
+      "adapter": "search_listing_by_code",
+      "listingUrl": "https://dichvucong.moha.gov.vn/",
+      "provides": [
+        "quyTrinh",
+        "thanhPhanHoSo",
+        "bieuMau",
+        "thoiHan",
+        "lePhi",
+        "coQuanThucHien"
+      ],
+      "legalUse": "content_only_no_local_effect"
+    },
+    {
+      "id": "moh-social-assistance",
+      "authority": "Bộ Y tế / Cục Bảo trợ xã hội",
+      "domains": [
+        "moh.gov.vn",
+        "btxh.moh.gov.vn"
+      ],
+      "fields": [
+        "BẢO TRỢ XÃ HỘI"
+      ],
+      "status": "discovery_only",
+      "adapter": "official_portal_discovery",
+      "listingUrl": "https://btxh.moh.gov.vn/",
+      "provides": [],
+      "legalUse": "discovery_only_until_code_detail_verified"
+    },
+    {
+      "id": "moet-education",
+      "authority": "Bộ Giáo dục và Đào tạo",
+      "domains": [
+        "moet.gov.vn"
+      ],
+      "fields": [
+        "GIÁO DỤC"
+      ],
+      "status": "discovery_only",
+      "adapter": "official_portal_discovery",
+      "listingUrl": "https://moet.gov.vn/",
+      "provides": [],
+      "legalUse": "status_review_required_before_enrichment"
+    }
+  ]
+}
