@@ -24,7 +24,6 @@ SOURCE_BUNDLE_PATHS = (
     "data/source-audit/vinhbao-tthc-attachment-evidence-20260906.json",
     "data/source-audit/dvcqg-mapping-candidates-20260907.json",
     "data/formalityId-mapping-mau.csv",
-    "data/priority-51-crosswalk.json",
     "data/priority-51-legal-verification.json",
     "data/source-audit/city-updates-current.json",
     "data/source-audit/dvcqg-live-verification-current.json",
