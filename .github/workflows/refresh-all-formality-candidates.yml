@@ -1,0 +1,42 @@
+name: Refresh All Formality Candidates
+
+on:
+  push:
+    branches:
+      - feat/issue-81-single-dvc-submit-link
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-all-formality-candidates
+  cancel-in-progress: true
+
+jobs:
+  build:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: feat/issue-81-single-dvc-submit-link
+          fetch-depth: 0
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: "3.12"
+      - run: python -m pip install --disable-pip-version-check pyarrow==21.0.0
+      - run: |
+          curl --fail --location --retry 3 --output /tmp/procedures.parquet \
+            https://huggingface.co/datasets/tmquan/dichvucong-gov-vn/resolve/main/procedures-00000-of-00001.parquet
+          python scripts/build_all_formality_candidates.py --parquet /tmp/procedures.parquet
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/source-audit/dvcqg-formality-candidates-current.json
+          if git diff --cached --quiet; then
+            echo "No candidate changes."
+          else
+            git commit -m "data(dvc): refresh all exact-code formality candidates"
+            git push origin HEAD:feat/issue-81-single-dvc-submit-link
+          fi
