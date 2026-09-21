@@ -1,9 +1,7 @@
 name: Priority 50 Guidance Capture
 
 on:
-  push:
-    branches:
-      - feat/issue-74-priority50-enrichment
+  workflow_dispatch:
 
 permissions:
   contents: write
