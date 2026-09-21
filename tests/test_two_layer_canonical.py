@@ -33,7 +33,7 @@ class CanonicalTwoLayerTests(unittest.TestCase):
                 "verificationStatus": "verified_official",
                 "verifiedAt": "2026-09-21",
                 "thanhPhanHoSo": [{"ten": "Giấy tờ A"}],
-                "sources": [{"url": "https://haiphong.gov.vn/a"}],
+                "sources": [{"url": "https://haiphong.gov.vn/a", "sourceRole": "central_content_reference"}],
             }],
         }
         result = apply_enrichment(master, priority, guidance)
