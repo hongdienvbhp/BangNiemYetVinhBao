@@ -113,6 +113,8 @@ jobs:
         id: validation
         continue-on-error: true
         run: |
+          python scripts/validate_canonical_contract.py
+          python scripts/migrate_canonical_v4.py --check
           python scripts/check_static_site.py
           git diff --check
 
