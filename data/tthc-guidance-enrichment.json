@@ -10,5 +10,16 @@
     "wardName": "Vĩnh Bảo",
     "commune": "WARD"
   },
-  "rows": []
+  "rows": [],
+  "sourceRoles": {
+    "central_content_reference": "Quyết định/danh mục TTHC chính thức của Bộ, cơ quan ngang Bộ; dùng làm chuẩn nội dung theo mã, không tự xác lập hiệu lực tại Vĩnh Bảo.",
+    "local_legal_effect": "Quyết định/công bố chính thức của UBND thành phố Hải Phòng hoặc cơ quan được giao; xác lập hiệu lực, thay đổi và nội dung áp dụng tại địa phương.",
+    "local_execution": "Cổng DVCQG/Hệ thống chính thức dùng xác minh formalityId, địa bàn, cơ quan tiếp nhận và URL nộp hồ sơ."
+  },
+  "mergePolicy": {
+    "activeSet": "Chỉ mã đang còn hiệu lực trong canonical mới được enrichment; nguồn trung ương không tự thêm hoặc khôi phục mã.",
+    "localOverride": "Nếu nguồn địa phương quy định khác nguồn trung ương về nội dung áp dụng tại Hải Phòng thì dùng nguồn địa phương.",
+    "submissionUrl": "Chỉ nhận từ local_execution và phải đúng provinceCode=31, wardCode=11824, commune=WARD.",
+    "provenance": "Mỗi trường hướng dẫn được công bố phải trỏ tới source id trong fieldProvenance."
+  }
 }
