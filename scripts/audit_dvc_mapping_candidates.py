@@ -4,7 +4,7 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 MASTER=json.loads((ROOT/"data/thu-tuc.json").read_text(encoding="utf-8-sig"))
-MAP=json.loads((ROOT/"data/source-audit/dvcqg-mapping-candidates-20260907.json").read_text(encoding="utf-8-sig"))
+MAP=json.loads((ROOT/"data/source-audit/dvcqg-formality-candidates-current.json").read_text(encoding="utf-8-sig"))
 codes={str(x.get("ma") or "").strip() for x in MASTER.get("thuTuc") or []}
 rows=[x for x in MAP.get("rows") or [] if str(x.get("code") or "").strip() in codes]
 by={}
