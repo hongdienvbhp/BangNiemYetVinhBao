@@ -1,7 +1,7 @@
 {
   "format": "official-guidance-candidates",
   "version": 1,
-  "source": "data\\source-audit\\vinhbao-tthc-attachment-evidence-20260906.json",
+  "source": "data/source-audit/vinhbao-tthc-attachment-evidence-20260906.json",
   "policy": "Candidate layer only. Không tự động ghi vào canonical. Mỗi trường phải qua field-level validator và provenance gate trước promotion.",
   "summary": {
     "codes": 555,

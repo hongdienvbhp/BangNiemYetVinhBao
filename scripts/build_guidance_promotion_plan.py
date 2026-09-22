@@ -107,8 +107,8 @@ def build(validated: dict, candidates: dict, active_codes: set[str] | None = Non
         "format": "official-guidance-promotion-plan",
         "version": 1,
         "sources": [
-            str(VALIDATED.relative_to(ROOT)),
-            str(CANDIDATES.relative_to(ROOT)),
+            VALIDATED.relative_to(ROOT).as_posix(),
+            CANDIDATES.relative_to(ROOT).as_posix(),
         ],
         "policy": (
             "Plan only; không mutate canonical. Một field chỉ xuất hiện trong plan khi "

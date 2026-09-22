@@ -2,8 +2,8 @@
   "format": "official-guidance-promotion-plan",
   "version": 1,
   "sources": [
-    "data\\source-audit\\official-guidance-validated.json",
-    "data\\source-audit\\official-guidance-candidates.json"
+    "data/source-audit/official-guidance-validated.json",
+    "data/source-audit/official-guidance-candidates.json"
   ],
   "policy": "Plan only; không mutate canonical. Một field chỉ xuất hiện trong plan khi validator=verified, mã còn active trong canonical, field thuộc allowlist và truy ngược được evidence cụ thể chứa cùng giá trị. DVCTT/cơ quan/thời hạn không dùng pipeline PDF flattened này.",
   "summary": {

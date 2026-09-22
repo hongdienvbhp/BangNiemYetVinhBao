@@ -153,7 +153,7 @@ def build(payload: dict) -> dict:
     return {
         "format": "official-guidance-candidates",
         "version": 1,
-        "source": str(SOURCE.relative_to(ROOT)),
+        "source": SOURCE.relative_to(ROOT).as_posix(),
         "policy": (
             "Candidate layer only. Không tự động ghi vào canonical. "
             "Mỗi trường phải qua field-level validator và provenance gate trước promotion."
