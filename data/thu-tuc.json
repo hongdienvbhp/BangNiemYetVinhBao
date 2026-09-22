@@ -2,7 +2,7 @@
   "format": "bangniemyet-vinhbao-master-data",
   "version": 4,
   "dataset_version": "2026.09.21",
-  "source_commit": "736b75a1e0f16dbac532405dd7b36f9c4244c9b7",
+  "source_commit": "772fd18c9947d353f70953d3a28538fe8ced4dd1",
   "source_commit_kind": "verified_source_bundle_git_sha1",
   "updatedAt": "2026-09-21",
   "sourceSnapshotDate": "2026-09-21",
