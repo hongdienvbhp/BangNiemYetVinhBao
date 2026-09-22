@@ -45,8 +45,24 @@ def online_level(segment: str) -> str:
         return "PARTIAL"
     return "UNKNOWN"
 
+def _duration_candidates(segment: str) -> list[str]:
+    out: list[str] = []
+    for match in DURATION_RE.finditer(segment):
+        value = normalize_space(match.group(0))
+        prefix = segment[max(0, match.start() - 12):match.start()].lower()
+        # "sau 15 giờ", "trước 15 giờ" là mốc giờ trong ngày, không phải thời hạn.
+        if value.lower().endswith("giờ") and (
+            re.search(r"(?:sau|trước)\s*$", prefix)
+            or re.search(r"\b\d{1,2}\s*giờ\s*\d{0,2}\s*phút?$", segment[match.start():match.end() + 12], re.I)
+        ):
+            continue
+        if value not in out:
+            out.append(value)
+    return out[:6]
+
+
 def guidance_candidates(segment: str) -> dict:
-    durations = list(dict.fromkeys(normalize_space(x) for x in DURATION_RE.findall(segment)))
+    durations = _duration_candidates(segment)
     fees = list(dict.fromkeys(normalize_space(x) for x in MONEY_RE.findall(segment)))
     legal = list(dict.fromkeys(normalize_space(x) for x in LEGAL_RE.findall(segment)))
     folded = segment.lower()
