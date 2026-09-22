@@ -565,7 +565,24 @@ def city_source_evidence(row: dict) -> dict:
     }
 
 
-def canonical_cap_from_city_row(\n    row: dict,\n    fallback: str = "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",\n) -> str:\n    """Map an explicit extractor levelHint to the legal resolution level.\n\n    communeReceptionEvidence only proves a reception location. When levelHint\n    is absent, preserve the existing classification through the fallback value\n    rather than inventing a new legal level.\n    """\n    hint = str(row.get("levelHint") or "").strip().lower()\n    if hint == "commune":\n        return "Xã"\n    if hint == "shared_including_commune":\n        return "Dùng chung (cấp bộ, cấp tỉnh, cấp xã)"\n    if hint == "province":\n        return "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã"\n    return fallback
+def canonical_cap_from_city_row(
+    row: dict,
+    fallback: str = "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+) -> str:
+    """Map an explicit extractor levelHint to the legal resolution level.
+
+    communeReceptionEvidence only proves a reception location. When levelHint
+    is absent, preserve the existing classification through the fallback value
+    rather than inventing a new legal level.
+    """
+    hint = str(row.get("levelHint") or "").strip().lower()
+    if hint == "commune":
+        return "Xã"
+    if hint == "shared_including_commune":
+        return "Dùng chung (cấp bộ, cấp tỉnh, cấp xã)"
+    if hint == "province":
+        return "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã"
+    return fallback
 
 def make_city_record(row: dict, legacy_row: dict | None, dvc: dict | None) -> dict:
     code = normalize_code(row.get("code", ""))
