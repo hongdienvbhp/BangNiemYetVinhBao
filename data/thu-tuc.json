@@ -13257,7 +13257,7 @@
       "ma": "2.000559",
       "ten": "Cấp Giấy phép hoạt động đối với điểm sơ cấp cứu chữ thập đỏ",
       "linhVuc": "KHÁM CHỮA BỆNH",
-      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "cap": "Xã",
       "nhanh": false,
       "mienPhiTrucTuyen": false,
       "phiDiaGioi": false,
@@ -13303,10 +13303,10 @@
         },
         {
           "sourceRole": "local_execution",
-          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&formalityId=019d2bff-44e5-70a9-b1de-6483d693d5e9",
+          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bff-44e5-70a9-b1de-6483d693d5e9",
           "classification": "dvcqg_submission_link",
           "repealContext": false,
-          "evidenceId": "ev_3c861da3928ec1c0a137c68c"
+          "evidenceId": "ev_43fb3c44cb212b686351c882"
         }
       ],
       "tiepNhanCapXa": true,
@@ -13315,11 +13315,14 @@
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
       "stt": 59,
-      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&formalityId=019d2bff-44e5-70a9-b1de-6483d693d5e9",
+      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bff-44e5-70a9-b1de-6483d693d5e9",
       "nopHoSoScope": {
-        "route": "province",
+        "route": "ward",
         "provinceCode": "31",
-        "provinceName": "Hải Phòng"
+        "provinceName": "Hải Phòng",
+        "wardCode": "11824",
+        "wardName": "Vĩnh Bảo",
+        "commune": "WARD"
       },
       "submissionLinkStatus": "resolution_level_scope_verified",
       "submissionLinkMode": "formality_id",
@@ -13353,19 +13356,19 @@
         ],
         "formalityId": [
           "ev_f72e89c8dc07517b64014d47",
-          "ev_3c861da3928ec1c0a137c68c"
+          "ev_43fb3c44cb212b686351c882"
         ],
         "nopHoSoUrl": [
           "ev_f72e89c8dc07517b64014d47",
-          "ev_3c861da3928ec1c0a137c68c"
+          "ev_43fb3c44cb212b686351c882"
         ],
         "nopHoSoScope": [
           "ev_f72e89c8dc07517b64014d47",
-          "ev_3c861da3928ec1c0a137c68c"
+          "ev_43fb3c44cb212b686351c882"
         ],
         "submissionLinkStatus": [
           "ev_f72e89c8dc07517b64014d47",
-          "ev_3c861da3928ec1c0a137c68c"
+          "ev_43fb3c44cb212b686351c882"
         ]
       }
     },
@@ -13373,7 +13376,7 @@
       "ma": "1.006780",
       "ten": "Cấp lại Giấy phép hoạt động đối với trạm, điểm sơ cấp cứu chữ thập đỏ do mất, rách, hỏng hoặc sai sót thông tin",
       "linhVuc": "KHÁM CHỮA BỆNH",
-      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "cap": "Xã",
       "nhanh": false,
       "mienPhiTrucTuyen": false,
       "phiDiaGioi": false,
@@ -13419,10 +13422,10 @@
         },
         {
           "sourceRole": "local_execution",
-          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&formalityId=019d2bff-0656-73e8-84dc-be214b7bea55",
+          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bff-0656-73e8-84dc-be214b7bea55",
           "classification": "dvcqg_submission_link",
           "repealContext": false,
-          "evidenceId": "ev_2d5e0115e64328a8eee570a0"
+          "evidenceId": "ev_04b57106c79c485c7b9b9c5c"
         }
       ],
       "tiepNhanCapXa": true,
@@ -13431,11 +13434,14 @@
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
       "stt": 60,
-      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&formalityId=019d2bff-0656-73e8-84dc-be214b7bea55",
+      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bff-0656-73e8-84dc-be214b7bea55",
       "nopHoSoScope": {
-        "route": "province",
+        "route": "ward",
         "provinceCode": "31",
-        "provinceName": "Hải Phòng"
+        "provinceName": "Hải Phòng",
+        "wardCode": "11824",
+        "wardName": "Vĩnh Bảo",
+        "commune": "WARD"
       },
       "submissionLinkStatus": "resolution_level_scope_verified",
       "submissionLinkMode": "formality_id",
@@ -13469,19 +13475,19 @@
         ],
         "formalityId": [
           "ev_841210730dbb2a459705d483",
-          "ev_2d5e0115e64328a8eee570a0"
+          "ev_04b57106c79c485c7b9b9c5c"
         ],
         "nopHoSoUrl": [
           "ev_841210730dbb2a459705d483",
-          "ev_2d5e0115e64328a8eee570a0"
+          "ev_04b57106c79c485c7b9b9c5c"
         ],
         "nopHoSoScope": [
           "ev_841210730dbb2a459705d483",
-          "ev_2d5e0115e64328a8eee570a0"
+          "ev_04b57106c79c485c7b9b9c5c"
         ],
         "submissionLinkStatus": [
           "ev_841210730dbb2a459705d483",
-          "ev_2d5e0115e64328a8eee570a0"
+          "ev_04b57106c79c485c7b9b9c5c"
         ]
       }
     },
@@ -13489,7 +13495,7 @@
       "ma": "2.000552",
       "ten": "Cấp lại Giấy phép hoạt động đối với trạm, điểm sơ cấp cứu chữ thập đỏ khi thay đổi địa điểm",
       "linhVuc": "KHÁM CHỮA BỆNH",
-      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "cap": "Xã",
       "nhanh": false,
       "mienPhiTrucTuyen": false,
       "phiDiaGioi": false,
@@ -13535,10 +13541,10 @@
         },
         {
           "sourceRole": "local_execution",
-          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&formalityId=019d2bff-44d3-72f9-b7ff-3e07491d6d03",
+          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bff-44d3-72f9-b7ff-3e07491d6d03",
           "classification": "dvcqg_submission_link",
           "repealContext": false,
-          "evidenceId": "ev_ce641475c04acdeb121d9535"
+          "evidenceId": "ev_5e442761332583c14d44e4e2"
         }
       ],
       "tiepNhanCapXa": true,
@@ -13547,11 +13553,14 @@
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
       "stt": 61,
-      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&formalityId=019d2bff-44d3-72f9-b7ff-3e07491d6d03",
+      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bff-44d3-72f9-b7ff-3e07491d6d03",
       "nopHoSoScope": {
-        "route": "province",
+        "route": "ward",
         "provinceCode": "31",
-        "provinceName": "Hải Phòng"
+        "provinceName": "Hải Phòng",
+        "wardCode": "11824",
+        "wardName": "Vĩnh Bảo",
+        "commune": "WARD"
       },
       "submissionLinkStatus": "resolution_level_scope_verified",
       "submissionLinkMode": "formality_id",
@@ -13585,19 +13594,19 @@
         ],
         "formalityId": [
           "ev_669eddc3b42f4648719e218e",
-          "ev_ce641475c04acdeb121d9535"
+          "ev_5e442761332583c14d44e4e2"
         ],
         "nopHoSoUrl": [
           "ev_669eddc3b42f4648719e218e",
-          "ev_ce641475c04acdeb121d9535"
+          "ev_5e442761332583c14d44e4e2"
         ],
         "nopHoSoScope": [
           "ev_669eddc3b42f4648719e218e",
-          "ev_ce641475c04acdeb121d9535"
+          "ev_5e442761332583c14d44e4e2"
         ],
         "submissionLinkStatus": [
           "ev_669eddc3b42f4648719e218e",
-          "ev_ce641475c04acdeb121d9535"
+          "ev_5e442761332583c14d44e4e2"
         ]
       }
     },
@@ -13605,7 +13614,7 @@
       "ma": "2.002409",
       "ten": "Thủ tục giải quyết khiếu nại lần đầu tại xã",
       "linhVuc": "KHIẾU NẠI",
-      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "cap": "Xã",
       "nhanh": false,
       "mienPhiTrucTuyen": false,
       "phiDiaGioi": false,
@@ -13643,20 +13652,23 @@
         },
         {
           "sourceRole": "local_execution",
-          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&keyword=2.002409",
+          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=2.002409",
           "classification": "dvcqg_submission_link",
           "repealContext": false,
-          "evidenceId": "ev_477ad14634990543b938eda4"
+          "evidenceId": "ev_a7bb6c44ecbd7e700ac088db"
         }
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
       "stt": 62,
-      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&keyword=2.002409",
+      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=2.002409",
       "nopHoSoScope": {
-        "route": "province",
+        "route": "ward",
         "provinceCode": "31",
-        "provinceName": "Hải Phòng"
+        "provinceName": "Hải Phòng",
+        "wardCode": "11824",
+        "wardName": "Vĩnh Bảo",
+        "commune": "WARD"
       },
       "submissionLinkStatus": "resolution_level_scope_verified",
       "submissionLinkMode": "keyword_fallback",
@@ -13689,13 +13701,13 @@
           "ev_8d0654d1c56bab1d42b09db0"
         ],
         "nopHoSoUrl": [
-          "ev_477ad14634990543b938eda4"
+          "ev_a7bb6c44ecbd7e700ac088db"
         ],
         "nopHoSoScope": [
-          "ev_477ad14634990543b938eda4"
+          "ev_a7bb6c44ecbd7e700ac088db"
         ],
         "submissionLinkStatus": [
-          "ev_477ad14634990543b938eda4"
+          "ev_a7bb6c44ecbd7e700ac088db"
         ]
       }
     },
@@ -15609,7 +15621,7 @@
       "ma": "1.014111",
       "ten": "Thi tuyển công chức",
       "linhVuc": "NỘI VỤ",
-      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "cap": "Dùng chung (cấp bộ, cấp tỉnh, cấp xã)",
       "nhanh": false,
       "mienPhiTrucTuyen": false,
       "phiDiaGioi": false,
@@ -17099,7 +17111,7 @@
       "ma": "1.014113",
       "ten": "Thủ tục xét tuyển công chức",
       "linhVuc": "NỘI VỤ",
-      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "cap": "Dùng chung (cấp bộ, cấp tỉnh, cấp xã)",
       "nhanh": false,
       "mienPhiTrucTuyen": false,
       "phiDiaGioi": false,
@@ -17145,10 +17157,10 @@
         },
         {
           "sourceRole": "local_execution",
-          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&formalityId=019d2bfb-2326-7367-83e6-f242eef7cbc5",
+          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfb-2326-7367-83e6-f242eef7cbc5",
           "classification": "dvcqg_submission_link",
           "repealContext": false,
-          "evidenceId": "ev_403bbfd22c7a5c0eed96eb95"
+          "evidenceId": "ev_a54943a4093f111e4dc010fd"
         }
       ],
       "tiepNhanCapXa": true,
@@ -17157,11 +17169,14 @@
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
       "stt": 88,
-      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&formalityId=019d2bfb-2326-7367-83e6-f242eef7cbc5",
+      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfb-2326-7367-83e6-f242eef7cbc5",
       "nopHoSoScope": {
-        "route": "province",
+        "route": "ward",
         "provinceCode": "31",
-        "provinceName": "Hải Phòng"
+        "provinceName": "Hải Phòng",
+        "wardCode": "11824",
+        "wardName": "Vĩnh Bảo",
+        "commune": "WARD"
       },
       "submissionLinkStatus": "resolution_level_scope_verified",
       "submissionLinkMode": "formality_id",
@@ -17195,19 +17210,19 @@
         ],
         "formalityId": [
           "ev_9154e70e170d337de772f02a",
-          "ev_403bbfd22c7a5c0eed96eb95"
+          "ev_a54943a4093f111e4dc010fd"
         ],
         "nopHoSoUrl": [
           "ev_9154e70e170d337de772f02a",
-          "ev_403bbfd22c7a5c0eed96eb95"
+          "ev_a54943a4093f111e4dc010fd"
         ],
         "nopHoSoScope": [
           "ev_9154e70e170d337de772f02a",
-          "ev_403bbfd22c7a5c0eed96eb95"
+          "ev_a54943a4093f111e4dc010fd"
         ],
         "submissionLinkStatus": [
           "ev_9154e70e170d337de772f02a",
-          "ev_403bbfd22c7a5c0eed96eb95"
+          "ev_a54943a4093f111e4dc010fd"
         ]
       }
     },
@@ -21370,7 +21385,7 @@
       "ma": "2.001909",
       "ten": "Thủ tục tiếp công dân tại cấp xã",
       "linhVuc": "TIẾP CÔNG DÂN",
-      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "cap": "Xã",
       "nhanh": false,
       "mienPhiTrucTuyen": false,
       "phiDiaGioi": false,
@@ -21408,20 +21423,23 @@
         },
         {
           "sourceRole": "local_execution",
-          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&keyword=2.001909",
+          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=2.001909",
           "classification": "dvcqg_submission_link",
           "repealContext": false,
-          "evidenceId": "ev_fd33fb212c2c69c27551405f"
+          "evidenceId": "ev_af73bbba79958c2b04bcd414"
         }
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
       "stt": 125,
-      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&keyword=2.001909",
+      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=2.001909",
       "nopHoSoScope": {
-        "route": "province",
+        "route": "ward",
         "provinceCode": "31",
-        "provinceName": "Hải Phòng"
+        "provinceName": "Hải Phòng",
+        "wardCode": "11824",
+        "wardName": "Vĩnh Bảo",
+        "commune": "WARD"
       },
       "submissionLinkStatus": "resolution_level_scope_verified",
       "submissionLinkMode": "keyword_fallback",
@@ -21454,13 +21472,13 @@
           "ev_8d0654d1c56bab1d42b09db0"
         ],
         "nopHoSoUrl": [
-          "ev_fd33fb212c2c69c27551405f"
+          "ev_af73bbba79958c2b04bcd414"
         ],
         "nopHoSoScope": [
-          "ev_fd33fb212c2c69c27551405f"
+          "ev_af73bbba79958c2b04bcd414"
         ],
         "submissionLinkStatus": [
-          "ev_fd33fb212c2c69c27551405f"
+          "ev_af73bbba79958c2b04bcd414"
         ]
       }
     },
@@ -21468,7 +21486,7 @@
       "ma": "2.002396",
       "ten": "Giải quyết tố cáo cấp xã",
       "linhVuc": "TỐ CÁO",
-      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "cap": "Xã",
       "nhanh": false,
       "mienPhiTrucTuyen": false,
       "phiDiaGioi": false,
@@ -21506,20 +21524,23 @@
         },
         {
           "sourceRole": "local_execution",
-          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&keyword=2.002396",
+          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=2.002396",
           "classification": "dvcqg_submission_link",
           "repealContext": false,
-          "evidenceId": "ev_c5f2ca4338e02a3c4bf0a115"
+          "evidenceId": "ev_f9d720d651bcab764211759a"
         }
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
       "stt": 126,
-      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&keyword=2.002396",
+      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=2.002396",
       "nopHoSoScope": {
-        "route": "province",
+        "route": "ward",
         "provinceCode": "31",
-        "provinceName": "Hải Phòng"
+        "provinceName": "Hải Phòng",
+        "wardCode": "11824",
+        "wardName": "Vĩnh Bảo",
+        "commune": "WARD"
       },
       "submissionLinkStatus": "resolution_level_scope_verified",
       "submissionLinkMode": "keyword_fallback",
@@ -21552,13 +21573,13 @@
           "ev_8d0654d1c56bab1d42b09db0"
         ],
         "nopHoSoUrl": [
-          "ev_c5f2ca4338e02a3c4bf0a115"
+          "ev_f9d720d651bcab764211759a"
         ],
         "nopHoSoScope": [
-          "ev_c5f2ca4338e02a3c4bf0a115"
+          "ev_f9d720d651bcab764211759a"
         ],
         "submissionLinkStatus": [
-          "ev_c5f2ca4338e02a3c4bf0a115"
+          "ev_f9d720d651bcab764211759a"
         ]
       }
     },
@@ -22064,7 +22085,7 @@
       "ma": "2.002913",
       "ten": "Liên thông điện tử: đăng ký khai tử, xóa đăng ký thường trú, giải quyết mai táng phí, tử tuất",
       "linhVuc": "TƯ PHÁP",
-      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "cap": "Xã",
       "nhanh": false,
       "mienPhiTrucTuyen": false,
       "phiDiaGioi": false,
@@ -22102,20 +22123,23 @@
         },
         {
           "sourceRole": "local_execution",
-          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&keyword=2.002913",
+          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=2.002913",
           "classification": "dvcqg_submission_link",
           "repealContext": false,
-          "evidenceId": "ev_61191be36d41962c97bdfd2d"
+          "evidenceId": "ev_1b39c457ed9195615aeafe63"
         }
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
       "stt": 131,
-      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&keyword=2.002913",
+      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=2.002913",
       "nopHoSoScope": {
-        "route": "province",
+        "route": "ward",
         "provinceCode": "31",
-        "provinceName": "Hải Phòng"
+        "provinceName": "Hải Phòng",
+        "wardCode": "11824",
+        "wardName": "Vĩnh Bảo",
+        "commune": "WARD"
       },
       "submissionLinkStatus": "resolution_level_scope_verified",
       "submissionLinkMode": "keyword_fallback",
@@ -22148,13 +22172,13 @@
           "ev_320e537fe80a86fe699ad65f"
         ],
         "nopHoSoUrl": [
-          "ev_61191be36d41962c97bdfd2d"
+          "ev_1b39c457ed9195615aeafe63"
         ],
         "nopHoSoScope": [
-          "ev_61191be36d41962c97bdfd2d"
+          "ev_1b39c457ed9195615aeafe63"
         ],
         "submissionLinkStatus": [
-          "ev_61191be36d41962c97bdfd2d"
+          "ev_1b39c457ed9195615aeafe63"
         ]
       }
     },
@@ -25115,7 +25139,7 @@
       "ma": "2.001801",
       "ten": "Thủ tục xử lý đơn tại cấp xã",
       "linhVuc": "XỬ LÝ ĐƠN",
-      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "cap": "Xã",
       "nhanh": false,
       "mienPhiTrucTuyen": false,
       "phiDiaGioi": false,
@@ -25153,20 +25177,23 @@
         },
         {
           "sourceRole": "local_execution",
-          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&keyword=2.001801",
+          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=2.001801",
           "classification": "dvcqg_submission_link",
           "repealContext": false,
-          "evidenceId": "ev_0451c85956cfa1aba4f8abdc"
+          "evidenceId": "ev_8748e4ef269b5d6afa65054a"
         }
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
       "stt": 155,
-      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&keyword=2.001801",
+      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=2.001801",
       "nopHoSoScope": {
-        "route": "province",
+        "route": "ward",
         "provinceCode": "31",
-        "provinceName": "Hải Phòng"
+        "provinceName": "Hải Phòng",
+        "wardCode": "11824",
+        "wardName": "Vĩnh Bảo",
+        "commune": "WARD"
       },
       "submissionLinkStatus": "resolution_level_scope_verified",
       "submissionLinkMode": "keyword_fallback",
@@ -25199,13 +25226,13 @@
           "ev_8d0654d1c56bab1d42b09db0"
         ],
         "nopHoSoUrl": [
-          "ev_0451c85956cfa1aba4f8abdc"
+          "ev_8748e4ef269b5d6afa65054a"
         ],
         "nopHoSoScope": [
-          "ev_0451c85956cfa1aba4f8abdc"
+          "ev_8748e4ef269b5d6afa65054a"
         ],
         "submissionLinkStatus": [
-          "ev_0451c85956cfa1aba4f8abdc"
+          "ev_8748e4ef269b5d6afa65054a"
         ]
       }
     },
