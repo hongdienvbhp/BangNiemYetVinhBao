@@ -140,13 +140,8 @@ def _validate_guidance(code: str, guide: Any) -> list[str]:
                 errors.append(f"{code}: huongDan.sources[{index}] sourceRole không hợp lệ")
 
     submission_url = str(guide.get("submissionUrl") or "").strip()
-    if submission_url:
-        errors.extend(
-            f"{code}: {message}"
-            for message in _validate_submission_url(
-                submission_url, str(guide.get("formalityId") or "").strip()
-            )
-        )
+    if submission_url and not _official_url(submission_url):
+        errors.append(f"{code}: huongDan.submissionUrl không phải nguồn DVCQG HTTPS hợp lệ")
 
     for field in ("quyTrinh", "thanhPhanHoSo", "bieuMau", "lePhi"):
         value = guide.get(field)
