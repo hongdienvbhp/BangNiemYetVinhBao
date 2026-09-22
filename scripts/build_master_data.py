@@ -565,21 +565,7 @@ def city_source_evidence(row: dict) -> dict:
     }
 
 
-def canonical_cap_from_city_row(row: dict) -> str:
-    """Map extractor levelHint to the legal resolution level.
-
-    communeReceptionEvidence only means the commune can receive the dossier; it
-    must never be used to infer province authority when levelHint is known.
-    """
-    hint = str(row.get("levelHint") or "").strip().lower()
-    if hint == "commune":
-        return "Xã"
-    if hint == "shared_including_commune":
-        return "Dùng chung (cấp bộ, cấp tỉnh, cấp xã)"
-    if hint == "province":
-        return "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã"
-    return "Xã / điểm tiếp nhận cấp xã"
-
+def canonical_cap_from_city_row(\n    row: dict,\n    fallback: str = "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",\n) -> str:\n    """Map an explicit extractor levelHint to the legal resolution level.\n\n    communeReceptionEvidence only proves a reception location. When levelHint\n    is absent, preserve the existing classification through the fallback value\n    rather than inventing a new legal level.\n    """\n    hint = str(row.get("levelHint") or "").strip().lower()\n    if hint == "commune":\n        return "Xã"\n    if hint == "shared_including_commune":\n        return "Dùng chung (cấp bộ, cấp tỉnh, cấp xã)"\n    if hint == "province":\n        return "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã"\n    return fallback
 
 def make_city_record(row: dict, legacy_row: dict | None, dvc: dict | None) -> dict:
     code = normalize_code(row.get("code", ""))
@@ -735,7 +721,7 @@ def apply_city_updates(public_rows: list[dict], excluded: list[dict], audit_rows
                 "sourceArticleUrl": item.get("articleUrl"),
                 "sourceAttachmentUrl": item.get("pdfUrl"),
                 "tiepNhanCapXa": True,
-                "cap": canonical_cap_from_city_row(item),
+                "cap": canonical_cap_from_city_row(item, str(record.get("cap") or "")),
             })
             record["sourceEvidence"] = ([city_source_evidence(item)] + list(record.get("sourceEvidence") or []))[:8]
         else:
