@@ -62,7 +62,7 @@ Cần một Google Cloud service account có quyền Google Sheets API. **Xác t
 
 Hai production Sheet ID đã được cấu hình làm default trong workflow. Có thể override bằng repository variables `TTHC_SHEET_CAP_XA_ID` và `TTHC_SHEET_CAP_TP_ID` khi đổi file đích.
 
-Trước live sync phải share **Editor** cả hai file cho `client_email` trong service-account JSON. Đây là thao tác quyền Google bắt buộc, không thể thay thế bằng việc chỉ biết Sheet ID.
+Trước live sync phải share **Editor** cả hai file cho **địa chỉ email của service account** được cấu hình tại `GOOGLE_SERVICE_ACCOUNT`. Đây là thao tác quyền Google bắt buộc, không thể thay thế bằng việc chỉ biết Sheet ID.
 
 Repository variable:
 
@@ -84,15 +84,19 @@ Dry-run không cần credential:
 PYTHONPATH=scripts python scripts/sync_google_sheets.py --dry-run --plan-out /tmp/google-sheets-plan.json
 ~~~
 
-Live sync sau khi credential đã cấu hình:
+Live sync Production chỉ chạy qua GitHub Actions trên `main` bằng **OIDC + Workload Identity Federation**. Không tạo service-account JSON/private key để chạy Production.
 
-~~~bash
-export GOOGLE_SERVICE_ACCOUNT_JSON='...'
-export TTHC_SHEET_CAP_XA_ID='...'
-export TTHC_SHEET_CAP_TP_ID='...'
-export TTHC_CITY_BASELINE_COMPLETE='false'
-PYTHONPATH=scripts python scripts/sync_google_sheets.py --plan-out /tmp/google-sheets-plan.json
+Các biến cấu hình không nhạy cảm được quản lý bằng repository variables:
+
+~~~text
+GOOGLE_WIF_PROVIDER
+GOOGLE_SERVICE_ACCOUNT
+TTHC_SHEET_CAP_XA_ID
+TTHC_SHEET_CAP_TP_ID
+TTHC_CITY_BASELINE_COMPLETE
 ~~~
+
+Máy phát triển chỉ chạy dry-run. Nếu cần kiểm thử Google API ngoài CI, dùng Application Default Credentials ngắn hạn của môi trường kiểm thử riêng; không dùng credential Production và không tạo key dài hạn.
 
 ## 6. Google Sheets ownership
 
