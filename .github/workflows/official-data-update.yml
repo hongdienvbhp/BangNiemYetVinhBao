@@ -26,7 +26,7 @@ jobs:
   monitor:
     runs-on: ubuntu-latest
     env:
-      GH_TOKEN: ${{ secrets.PORTFOLIO_GH_TOKEN || github.token }}
+      GH_TOKEN: ${{ github.token }}
       AUTO_BRANCH: auto/official-tthc-update
       ROUTINE_ID: tthc-official-source-update
       ROUTINE_PAUSED: ${{ vars.OFFICIAL_TTHC_UPDATE_PAUSED || 'false' }}
@@ -207,8 +207,8 @@ jobs:
               echo "Branch: $AUTO_BRANCH"
               echo "Issue: #$issue_number"
               echo
-              echo "GitHub Actions token hiện tại không được phép tạo/approve Pull Request."
-              echo "Bật Allow GitHub Actions to create and approve pull requests hoặc cấu hình secret PORTFOLIO_GH_TOKEN với quyền contents/issues/pull-requests phù hợp."
+              echo "Native GitHub Actions token hiện tại không được phép tạo Pull Request."
+              echo "Kiểm tra repository Settings → Actions → General → Workflow permissions và bật quyền cho GitHub Actions tạo Pull Request nếu quy trình tự động cần chức năng này. Không dùng PAT portfolio làm fallback."
             } >> "$GITHUB_STEP_SUMMARY"
             exit 1
           fi
