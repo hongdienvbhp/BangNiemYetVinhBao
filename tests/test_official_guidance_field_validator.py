@@ -27,19 +27,47 @@ class OfficialGuidanceFieldValidatorTests(unittest.TestCase):
     def test_empty_is_insufficient(self):
         self.assertEqual(MODULE.validate_single([])["status"], "insufficient")
 
-    def test_row_never_promotes_conflicting_duration(self):
+    def test_flattened_online_duration_and_agency_are_not_auto_promoted(self):
         row = {
             "ma": "1.000001",
             "onlineServiceLevelCandidate": "FULL",
-            "durationCandidates": ["05 ngày", "03 ngày"],
+            "durationCandidates": ["05 ngày"],
             "feeCandidates": [],
             "feeStatusCandidates": [],
             "legalBasisCandidates": ["Nghị định 01/2026/NĐ-CP"],
             "agencyCandidates": ["UBND cấp xã"],
         }
         result = MODULE.validate_row(row)
-        self.assertIn("onlineServiceLevel", result["promotableFields"])
+        self.assertNotIn("onlineServiceLevel", result["promotableFields"])
         self.assertNotIn("thoiHan", result["promotableFields"])
+        self.assertNotIn("coQuanThucHien", result["promotableFields"])
+        self.assertIn("canCuPhapLy", result["promotableFields"])
+
+    def test_truncated_legal_citations_are_rejected(self):
+        for value in ("Nghị quyết số", "Nghị quyết số 190/2", "Nghị định số 151/2026/NĐ"):
+            result = MODULE.validate_legal({"legalBasisCandidates": [value]})
+            self.assertEqual(result["status"], "insufficient", value)
+
+    def test_complete_legal_citation_is_verified(self):
+        result = MODULE.validate_legal({
+            "legalBasisCandidates": ["Nghị định 151/2026/NĐ-CP"]
+        })
+        self.assertEqual(result["status"], "verified")
+
+    def test_not_published_fee_status_is_not_promoted(self):
+        result = MODULE.validate_fee({
+            "feeCandidates": [],
+            "feeStatusCandidates": ["NOT_PUBLISHED"],
+        })
+        self.assertEqual(result["status"], "insufficient")
+
+    def test_explicit_money_or_exemption_can_pass_fee_gate(self):
+        self.assertEqual(MODULE.validate_fee({
+            "feeCandidates": ["50.000 đồng"], "feeStatusCandidates": []
+        })["status"], "verified")
+        self.assertEqual(MODULE.validate_fee({
+            "feeCandidates": [], "feeStatusCandidates": ["EXEMPT"]
+        })["status"], "verified")
 
 
 if __name__ == "__main__":

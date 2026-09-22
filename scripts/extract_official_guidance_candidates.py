@@ -69,8 +69,8 @@ def guidance_candidates(segment: str) -> dict:
     fee_status = ""
     if "miễn lệ phí" in folded or "miễn phí" in folded:
         fee_status = "EXEMPT"
-    elif "không quy định" in folded and not fees:
-        fee_status = "NOT_PUBLISHED"
+    # Không suy diễn NOT_PUBLISHED chỉ từ cụm "không quy định" trong PDF
+    # flattened: cụm này có thể thuộc cột thời hạn, phí, DVCTT hoặc cột khác.
     agency = []
     for label in (
         "Ủy ban nhân dân cấp xã",

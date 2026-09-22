@@ -1,13 +1,13 @@
 {
   "format": "official-guidance-candidates",
   "version": 1,
-  "source": "data/source-audit/vinhbao-tthc-attachment-evidence-20260906.json",
+  "source": "data\\source-audit\\vinhbao-tthc-attachment-evidence-20260906.json",
   "policy": "Candidate layer only. Không tự động ghi vào canonical. Mỗi trường phải qua field-level validator và provenance gate trước promotion.",
   "summary": {
-    "codes": 558,
+    "codes": 555,
     "onlineServiceLevelCandidates": 15,
     "durationCandidates": 398,
-    "feeCandidates": 36,
+    "feeCandidates": 5,
     "legalBasisCandidates": 168,
     "agencyCandidates": 97
   },
@@ -240,9 +240,7 @@
         "01 ngày làm việc"
       ],
       "feeCandidates": [],
-      "feeStatusCandidates": [
-        "NOT_PUBLISHED"
-      ],
+      "feeStatusCandidates": [],
       "legalBasisCandidates": [],
       "agencyCandidates": [],
       "evidence": [
@@ -252,7 +250,7 @@
             "01 ngày làm việc"
           ],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [],
           "agencyCandidates": [],
           "segment": "1.000302 Cấp, c ấp l ại Giấy phép v ận tải đư ờng b ộ 01 ngày làm việc kể từ ngày Không thực hi ện cắt giảm - Trung tâm Phục v ụ hành chính công Không quy định - Nghị định s ố 15",
@@ -275,9 +273,7 @@
         "01 ngày làm việc"
       ],
       "feeCandidates": [],
-      "feeStatusCandidates": [
-        "NOT_PUBLISHED"
-      ],
+      "feeStatusCandidates": [],
       "legalBasisCandidates": [],
       "agencyCandidates": [],
       "evidence": [
@@ -287,7 +283,7 @@
             "01 ngày làm việc"
           ],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [],
           "agencyCandidates": [],
           "segment": "1.000321 Đăng ký khai thác tuy ến, b ổ 01 ngày làm việc kể Không thực hi ện - Trung tâm Phục v ụ hành Không quy định - Nghị định s ố 158/2024/NĐ-CP ngày 18/12/2024 c ủa Chính ph",
@@ -398,9 +394,7 @@
         "7,5 ngày làm việc"
       ],
       "feeCandidates": [],
-      "feeStatusCandidates": [
-        "NOT_PUBLISHED"
-      ],
+      "feeStatusCandidates": [],
       "legalBasisCandidates": [
         "Nghị quyết số 190/2025/QH15"
       ],
@@ -415,7 +409,7 @@
             "7,5 ngày làm việc"
           ],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [
             "Nghị quyết số 190/2025/QH15"
           ],
@@ -520,9 +514,7 @@
         "7,5 ngày làm việc"
       ],
       "feeCandidates": [],
-      "feeStatusCandidates": [
-        "NOT_PUBLISHED"
-      ],
+      "feeStatusCandidates": [],
       "legalBasisCandidates": [
         "Nghị quyết số"
       ],
@@ -538,7 +530,7 @@
             "7,5 ngày làm việc"
           ],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [
             "Nghị quyết số"
           ],
@@ -606,9 +598,7 @@
         "11 ngày làm việc"
       ],
       "feeCandidates": [],
-      "feeStatusCandidates": [
-        "NOT_PUBLISHED"
-      ],
+      "feeStatusCandidates": [],
       "legalBasisCandidates": [
         "Nghị quyết số 190/2"
       ],
@@ -624,7 +614,7 @@
             "11 ngày làm việc"
           ],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [
             "Nghị quyết số 190/2"
           ],
@@ -4901,9 +4891,7 @@
         "03 ngày làm việc"
       ],
       "feeCandidates": [],
-      "feeStatusCandidates": [
-        "NOT_PUBLISHED"
-      ],
+      "feeStatusCandidates": [],
       "legalBasisCandidates": [
         "Luật Chăn"
       ],
@@ -4915,7 +4903,7 @@
             "03 ngày làm việc"
           ],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [
             "Luật Chăn"
           ],
@@ -5584,9 +5572,7 @@
         "03 ngày làm việc"
       ],
       "feeCandidates": [],
-      "feeStatusCandidates": [
-        "NOT_PUBLISHED"
-      ],
+      "feeStatusCandidates": [],
       "legalBasisCandidates": [
         "Nghị định số 151/2026/NĐ"
       ],
@@ -5622,7 +5608,7 @@
             "03 ngày làm việc"
           ],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [
             "Nghị định số 151/2026/NĐ"
           ],
@@ -5648,9 +5634,7 @@
         "02 ngày làm việc"
       ],
       "feeCandidates": [],
-      "feeStatusCandidates": [
-        "NOT_PUBLISHED"
-      ],
+      "feeStatusCandidates": [],
       "legalBasisCandidates": [
         "Nghị định số 151/2026/"
       ],
@@ -5686,7 +5670,7 @@
             "02 ngày làm việc"
           ],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [
             "Nghị định số 151/2026/"
           ],
@@ -5712,9 +5696,7 @@
         "05 ngày làm việc"
       ],
       "feeCandidates": [],
-      "feeStatusCandidates": [
-        "NOT_PUBLISHED"
-      ],
+      "feeStatusCandidates": [],
       "legalBasisCandidates": [
         "Nghị định số 151/2026/NĐ"
       ],
@@ -5750,7 +5732,7 @@
             "05 ngày làm việc"
           ],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [
             "Nghị định số 151/2026/NĐ"
           ],
@@ -5776,9 +5758,7 @@
         "03 ngày làm việc"
       ],
       "feeCandidates": [],
-      "feeStatusCandidates": [
-        "NOT_PUBLISHED"
-      ],
+      "feeStatusCandidates": [],
       "legalBasisCandidates": [
         "Nghị định số 151/2026/NĐ-"
       ],
@@ -5814,7 +5794,7 @@
             "03 ngày làm việc"
           ],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [
             "Nghị định số 151/2026/NĐ-"
           ],
@@ -5904,9 +5884,7 @@
         "04 ngày làm việc"
       ],
       "feeCandidates": [],
-      "feeStatusCandidates": [
-        "NOT_PUBLISHED"
-      ],
+      "feeStatusCandidates": [],
       "legalBasisCandidates": [
         "Nghị định số 08/2020/NĐ-CP ngày 08/01/2020",
         "Nghị định số 18/2026/NĐ-CP ngày 14/01/2026"
@@ -5921,7 +5899,7 @@
             "04 ngày làm việc"
           ],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [],
           "agencyCandidates": [
             "Trung tâm Phục vụ hành chính công thành phố"
@@ -6418,9 +6396,7 @@
         "05 ngày làm việc"
       ],
       "feeCandidates": [],
-      "feeStatusCandidates": [
-        "NOT_PUBLISHED"
-      ],
+      "feeStatusCandidates": [],
       "legalBasisCandidates": [],
       "agencyCandidates": [
         "Trung tâm PVHCC thành phố"
@@ -6433,7 +6409,7 @@
             "05 ngày làm việc"
           ],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [],
           "agencyCandidates": [
             "Trung tâm PVHCC thành phố"
@@ -6459,9 +6435,7 @@
         "7,5 ngày làm việc"
       ],
       "feeCandidates": [],
-      "feeStatusCandidates": [
-        "NOT_PUBLISHED"
-      ],
+      "feeStatusCandidates": [],
       "legalBasisCandidates": [],
       "agencyCandidates": [
         "Trung tâm PVHCC thành phố"
@@ -6474,7 +6448,7 @@
             "7,5 ngày làm việc"
           ],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [],
           "agencyCandidates": [
             "Trung tâm PVHCC thành phố"
@@ -9068,9 +9042,7 @@
         "17 ngày làm việc"
       ],
       "feeCandidates": [],
-      "feeStatusCandidates": [
-        "NOT_PUBLISHED"
-      ],
+      "feeStatusCandidates": [],
       "legalBasisCandidates": [],
       "agencyCandidates": [
         "Trung tâm Phục vụ hành chính công thành phố"
@@ -9103,7 +9075,7 @@
             "17 ngày làm việc"
           ],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [],
           "agencyCandidates": [
             "Trung tâm Phục vụ hành chính công thành phố"
@@ -11651,9 +11623,7 @@
         "01 ngày"
       ],
       "feeCandidates": [],
-      "feeStatusCandidates": [
-        "NOT_PUBLISHED"
-      ],
+      "feeStatusCandidates": [],
       "legalBasisCandidates": [
         "Luật Chất",
         "Nghị định số 37/2026/NĐ"
@@ -11666,7 +11636,7 @@
             "01 ngày"
           ],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [
             "Luật Chất"
           ],
@@ -11688,7 +11658,7 @@
             "01 ngày"
           ],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [
             "Luật Chất"
           ],
@@ -11854,9 +11824,7 @@
         "90 ngày"
       ],
       "feeCandidates": [],
-      "feeStatusCandidates": [
-        "NOT_PUBLISHED"
-      ],
+      "feeStatusCandidates": [],
       "legalBasisCandidates": [
         "Luật Ngư"
       ],
@@ -11870,7 +11838,7 @@
             "90 ngày"
           ],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [
             "Luật Ngư"
           ],
@@ -11894,7 +11862,7 @@
             "90 ngày"
           ],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [
             "Luật Ngư"
           ],
@@ -11939,9 +11907,7 @@
       "onlineServiceLevelCandidate": "FULL",
       "durationCandidates": [],
       "feeCandidates": [],
-      "feeStatusCandidates": [
-        "NOT_PUBLISHED"
-      ],
+      "feeStatusCandidates": [],
       "legalBasisCandidates": [
         "Luật Người"
       ],
@@ -11951,7 +11917,7 @@
           "onlineServiceLevelCandidate": "FULL",
           "durationCandidates": [],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [
             "Luật Người"
           ],
@@ -11971,7 +11937,7 @@
           "onlineServiceLevelCandidate": "FULL",
           "durationCandidates": [],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [
             "Luật Người"
           ],
@@ -12105,9 +12071,7 @@
       "onlineServiceLevelCandidate": "UNKNOWN",
       "durationCandidates": [],
       "feeCandidates": [],
-      "feeStatusCandidates": [
-        "NOT_PUBLISHED"
-      ],
+      "feeStatusCandidates": [],
       "legalBasisCandidates": [],
       "agencyCandidates": [
         "Trung tâm Phục vụ hành chính công thành phố"
@@ -12117,7 +12081,7 @@
           "onlineServiceLevelCandidate": "UNKNOWN",
           "durationCandidates": [],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [],
           "agencyCandidates": [
             "Trung tâm Phục vụ hành chính công thành phố"
@@ -12137,7 +12101,7 @@
           "onlineServiceLevelCandidate": "UNKNOWN",
           "durationCandidates": [],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [],
           "agencyCandidates": [
             "Trung tâm Phục vụ hành chính công thành phố"
@@ -12161,9 +12125,7 @@
       "onlineServiceLevelCandidate": "FULL",
       "durationCandidates": [],
       "feeCandidates": [],
-      "feeStatusCandidates": [
-        "NOT_PUBLISHED"
-      ],
+      "feeStatusCandidates": [],
       "legalBasisCandidates": [],
       "agencyCandidates": [
         "Trung tâm Phục vụ hành chính công thành phố"
@@ -12173,7 +12135,7 @@
           "onlineServiceLevelCandidate": "FULL",
           "durationCandidates": [],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [],
           "agencyCandidates": [
             "Trung tâm Phục vụ hành chính công thành phố"
@@ -12193,7 +12155,7 @@
           "onlineServiceLevelCandidate": "FULL",
           "durationCandidates": [],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [],
           "agencyCandidates": [
             "Trung tâm Phục vụ hành chính công thành phố"
@@ -12252,9 +12214,7 @@
       "onlineServiceLevelCandidate": "FULL",
       "durationCandidates": [],
       "feeCandidates": [],
-      "feeStatusCandidates": [
-        "NOT_PUBLISHED"
-      ],
+      "feeStatusCandidates": [],
       "legalBasisCandidates": [
         "Luật Người"
       ],
@@ -12266,7 +12226,7 @@
           "onlineServiceLevelCandidate": "FULL",
           "durationCandidates": [],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [
             "Luật Người"
           ],
@@ -12288,7 +12248,7 @@
           "onlineServiceLevelCandidate": "FULL",
           "durationCandidates": [],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [
             "Luật Người"
           ],
@@ -15638,37 +15598,6 @@
       ]
     },
     {
-      "ma": "1.014321",
-      "verificationStatus": "candidate_only_requires_field_validator",
-      "onlineServiceLevelCandidate": "UNKNOWN",
-      "durationCandidates": [],
-      "feeCandidates": [],
-      "feeStatusCandidates": [
-        "NOT_PUBLISHED"
-      ],
-      "legalBasisCandidates": [],
-      "agencyCandidates": [],
-      "evidence": [
-        {
-          "onlineServiceLevelCandidate": "UNKNOWN",
-          "durationCandidates": [],
-          "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
-          "legalBasisCandidates": [],
-          "agencyCandidates": [],
-          "segment": "1.014321 Thủ tục Thông báo về việc tìm kiếm việc làm hàng tháng Không quy định Nộp trực tiếp tại Trung tâm D ịch v ụ việc làm Hải Phòng, tại 2 địa chỉ sau: + Trụ sở chính: Số 735",
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/10/qd-990-bnv..signed638950016534082661.pdf",
-          "articleUrls": [
-            "https://vinhbao.haiphong.gov.vn/linh-vuc-viec-lam/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-linh-vuc-viec-lam-thuoc-pham-vi-chuc-nang-quan-ly-cua-s-788985"
-          ],
-          "decisionNumbers": [
-            "990/QĐ-BNV"
-          ],
-          "confidence": "candidate_only"
-        }
-      ]
-    },
-    {
       "ma": "1.014322",
       "verificationStatus": "candidate_only_requires_field_validator",
       "onlineServiceLevelCandidate": "UNKNOWN",
@@ -15707,9 +15636,7 @@
       "onlineServiceLevelCandidate": "UNKNOWN",
       "durationCandidates": [],
       "feeCandidates": [],
-      "feeStatusCandidates": [
-        "NOT_PUBLISHED"
-      ],
+      "feeStatusCandidates": [],
       "legalBasisCandidates": [
         "Luật việc"
       ],
@@ -15719,7 +15646,7 @@
           "onlineServiceLevelCandidate": "UNKNOWN",
           "durationCandidates": [],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [
             "Luật việc"
           ],
@@ -15760,37 +15687,6 @@
           "legalBasisCandidates": [],
           "agencyCandidates": [],
           "segment": "1.014326 Liên thông thủ tục chuyển nơi hưởng trợ cấp thất nghiệp 03 ngày làm việc cho mỗi thủ tục chuyển đi hoặc chuyển đến 1,5 ngày làm việc cho mỗi thủ tục chuyển đi hoặc chuyể",
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/10/qd-990-bnv..signed638950016534082661.pdf",
-          "articleUrls": [
-            "https://vinhbao.haiphong.gov.vn/linh-vuc-viec-lam/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-linh-vuc-viec-lam-thuoc-pham-vi-chuc-nang-quan-ly-cua-s-788985"
-          ],
-          "decisionNumbers": [
-            "990/QĐ-BNV"
-          ],
-          "confidence": "candidate_only"
-        }
-      ]
-    },
-    {
-      "ma": "1.014327",
-      "verificationStatus": "candidate_only_requires_field_validator",
-      "onlineServiceLevelCandidate": "UNKNOWN",
-      "durationCandidates": [],
-      "feeCandidates": [],
-      "feeStatusCandidates": [
-        "NOT_PUBLISHED"
-      ],
-      "legalBasisCandidates": [],
-      "agencyCandidates": [],
-      "evidence": [
-        {
-          "onlineServiceLevelCandidate": "UNKNOWN",
-          "durationCandidates": [],
-          "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
-          "legalBasisCandidates": [],
-          "agencyCandidates": [],
-          "segment": "1.014327 Chấm dứt hưởng trợ cấp thất nghiệp Không quy định Nộp trực tiếp tại Trung tâm Dịch vụ việc làm Hải Phòng, tại 2 địa chỉ sau: + Trụ sở chính: Số 735 Nguyễn Văn Linh, phườ",
           "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/10/qd-990-bnv..signed638950016534082661.pdf",
           "articleUrls": [
             "https://vinhbao.haiphong.gov.vn/linh-vuc-viec-lam/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-linh-vuc-viec-lam-thuoc-pham-vi-chuc-nang-quan-ly-cua-s-788985"
@@ -16022,9 +15918,7 @@
         "06 ngày làm việc"
       ],
       "feeCandidates": [],
-      "feeStatusCandidates": [
-        "NOT_PUBLISHED"
-      ],
+      "feeStatusCandidates": [],
       "legalBasisCandidates": [
         "Luật Khoa"
       ],
@@ -16036,7 +15930,7 @@
             "06 ngày làm việc"
           ],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [
             "Luật Khoa"
           ],
@@ -17361,9 +17255,7 @@
         "11 ngày làm việc"
       ],
       "feeCandidates": [],
-      "feeStatusCandidates": [
-        "NOT_PUBLISHED"
-      ],
+      "feeStatusCandidates": [],
       "legalBasisCandidates": [
         "Luật Khoa"
       ],
@@ -17375,7 +17267,7 @@
             "11 ngày làm việc"
           ],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [
             "Luật Khoa"
           ],
@@ -17441,9 +17333,7 @@
       "onlineServiceLevelCandidate": "UNKNOWN",
       "durationCandidates": [],
       "feeCandidates": [],
-      "feeStatusCandidates": [
-        "NOT_PUBLISHED"
-      ],
+      "feeStatusCandidates": [],
       "legalBasisCandidates": [
         "Thông tư số 66/2025/T"
       ],
@@ -17453,55 +17343,12 @@
           "onlineServiceLevelCandidate": "UNKNOWN",
           "durationCandidates": [],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [
             "Thông tư số 66/2025/T"
           ],
           "agencyCandidates": [],
           "segment": "1.014952 Cấp mã s ố định danh cơ sở chăn nuôi - Ngay khi hoàn thành kê khai ho ạt Không th ực hiện cắt giảm - Trung tâm Phục v ụ hành chính Không quy định - Thông tư số 66/2025/T",
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/qd-2037-ngay-30.5.2026-ubnd-hp-cong-bo-dm-tthc-moi-sua-doi-thay-the-bai-bo-lvuc-kttv-khcn-dcks-cnty-ttbvtv-qlcl-639165286498031603.pdf",
-          "articleUrls": [
-            "https://vinhbao.haiphong.gov.vn/linh-vuc-nong-nghiep-va-moi-truong/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-sua-doi-bo-sung-thay-the-bi-bai-bo-thuoc-pham-vi-chuc-n-911934"
-          ],
-          "decisionNumbers": [
-            "1646/QĐ-UBND",
-            "1858/QĐ-BNNMT",
-            "1869/QĐ-BNNMT",
-            "1877/QĐ-BNNMT",
-            "1878/QĐ-BNNMT",
-            "1883/QĐ-BNNMT",
-            "1897/QĐ-BNNMT",
-            "1908/QĐ-BNNMT",
-            "1931/QĐ-BNNMT",
-            "2198/QĐ-UBND",
-            "2881/QĐ-UBND",
-            "519/QĐ-UBND",
-            "684/QĐ-UBND"
-          ],
-          "confidence": "candidate_only"
-        }
-      ]
-    },
-    {
-      "ma": "1.014953",
-      "verificationStatus": "candidate_only_requires_field_validator",
-      "onlineServiceLevelCandidate": "UNKNOWN",
-      "durationCandidates": [],
-      "feeCandidates": [],
-      "feeStatusCandidates": [
-        "NOT_PUBLISHED"
-      ],
-      "legalBasisCandidates": [],
-      "agencyCandidates": [],
-      "evidence": [
-        {
-          "onlineServiceLevelCandidate": "UNKNOWN",
-          "durationCandidates": [],
-          "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
-          "legalBasisCandidates": [],
-          "agencyCandidates": [],
-          "segment": "1.014953 Thu h ồi mã s ố định danh cơ sở chăn nuôi Không quy định Không quy định - Trung tâm Phục v ụ hành chính công thành phố - Trung tâm Phục v ụ hành chính công cấp xã Không",
           "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/qd-2037-ngay-30.5.2026-ubnd-hp-cong-bo-dm-tthc-moi-sua-doi-thay-the-bai-bo-lvuc-kttv-khcn-dcks-cnty-ttbvtv-qlcl-639165286498031603.pdf",
           "articleUrls": [
             "https://vinhbao.haiphong.gov.vn/linh-vuc-nong-nghiep-va-moi-truong/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-sua-doi-bo-sung-thay-the-bi-bai-bo-thuoc-pham-vi-chuc-n-911934"
@@ -17533,9 +17380,7 @@
         "06 tháng"
       ],
       "feeCandidates": [],
-      "feeStatusCandidates": [
-        "NOT_PUBLISHED"
-      ],
+      "feeStatusCandidates": [],
       "legalBasisCandidates": [
         "Thông tư số"
       ],
@@ -17545,7 +17390,7 @@
           "onlineServiceLevelCandidate": "UNKNOWN",
           "durationCandidates": [],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [
             "Thông tư số"
           ],
@@ -20140,9 +19985,7 @@
         "1,5 ngày làm việc"
       ],
       "feeCandidates": [],
-      "feeStatusCandidates": [
-        "NOT_PUBLISHED"
-      ],
+      "feeStatusCandidates": [],
       "legalBasisCandidates": [
         "Luật Doanh",
         "Luật Doan"
@@ -20156,7 +19999,7 @@
             "1,5 ngày làm việc"
           ],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [
             "Luật Doanh",
             "Luật Doan"
@@ -21297,9 +21140,7 @@
         "45 ngày"
       ],
       "feeCandidates": [],
-      "feeStatusCandidates": [
-        "NOT_PUBLISHED"
-      ],
+      "feeStatusCandidates": [],
       "legalBasisCandidates": [
         "Luật đấu"
       ],
@@ -21312,7 +21153,7 @@
             "45 ngày"
           ],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [
             "Luật đấu"
           ],
@@ -21704,9 +21545,7 @@
         "11,5 ngày làm việc"
       ],
       "feeCandidates": [],
-      "feeStatusCandidates": [
-        "NOT_PUBLISHED"
-      ],
+      "feeStatusCandidates": [],
       "legalBasisCandidates": [],
       "agencyCandidates": [],
       "evidence": [
@@ -21717,7 +21556,7 @@
             "11,5 ngày làm việc"
           ],
           "feeCandidates": [],
-          "feeStatusCandidate": "NOT_PUBLISHED",
+          "feeStatusCandidate": "UNKNOWN",
           "legalBasisCandidates": [],
           "agencyCandidates": [],
           "segment": "2.001576 Công nhận tiến bộ kỹ thuật 23 ngày làm việc 11,5 ngày làm việc - Trung tâm Phục v ụ hành chính công thành phố - Trung tâm Phục v ụ hành chính công cấp xã Không quy định",

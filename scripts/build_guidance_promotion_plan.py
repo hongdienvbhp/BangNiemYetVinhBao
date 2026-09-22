@@ -8,6 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 VALIDATED = ROOT / "data" / "source-audit" / "official-guidance-validated.json"
 CANDIDATES = ROOT / "data" / "source-audit" / "official-guidance-candidates.json"
 OUT = ROOT / "data" / "source-audit" / "official-guidance-promotion-plan.json"
+MASTER = ROOT / "data" / "thu-tuc.json"
 
 TARGETS = {
     "onlineServiceLevel": "onlineServiceLevel",
@@ -16,6 +17,8 @@ TARGETS = {
     "canCuPhapLy": "canCuPhapLy",
     "coQuanThucHien": "coQuanThucHien",
 }
+
+AUTO_PROMOTION_FIELDS = {"phiLePhi", "canCuPhapLy"}
 
 CANDIDATE_KEYS = {
     "onlineServiceLevel": "onlineServiceLevelCandidate",
@@ -56,7 +59,7 @@ def evidence_for_field(candidate: dict, field: str, verified_value: object) -> l
     return out
 
 
-def build(validated: dict, candidates: dict) -> dict:
+def build(validated: dict, candidates: dict, active_codes: set[str] | None = None) -> dict:
     candidate_by_code = {
         str(row.get("ma") or "").strip(): row
         for row in candidates.get("rows") or []
@@ -69,10 +72,16 @@ def build(validated: dict, candidates: dict) -> dict:
         candidate = candidate_by_code.get(code)
         if not code or not candidate:
             continue
+        if active_codes is not None and code not in active_codes:
+            continue
         promotions = []
         for field in row.get("promotableFields") or []:
             result = (row.get("fields") or {}).get(field) or {}
-            if result.get("status") != "verified" or field not in TARGETS:
+            if (
+                result.get("status") != "verified"
+                or field not in TARGETS
+                or field not in AUTO_PROMOTION_FIELDS
+            ):
                 continue
             value = result.get("value")
             evidence = evidence_for_field(candidate, field, value)
@@ -103,7 +112,8 @@ def build(validated: dict, candidates: dict) -> dict:
         ],
         "policy": (
             "Plan only; không mutate canonical. Một field chỉ xuất hiện trong plan khi "
-            "validator=verified và truy ngược được evidence cụ thể chứa cùng giá trị."
+            "validator=verified, mã còn active trong canonical, field thuộc allowlist và truy ngược được "
+            "evidence cụ thể chứa cùng giá trị. DVCTT/cơ quan/thời hạn không dùng pipeline PDF flattened này."
         ),
         "summary": {
             "procedures": len(procedures),
@@ -117,7 +127,15 @@ def build(validated: dict, candidates: dict) -> dict:
 def main() -> int:
     validated = json.loads(VALIDATED.read_text(encoding="utf-8-sig"))
     candidates = json.loads(CANDIDATES.read_text(encoding="utf-8-sig"))
-    result = build(validated, candidates)
+    master = json.loads(MASTER.read_text(encoding="utf-8-sig"))
+    active_codes = {
+        str(row.get("ma") or "").strip()
+        for row in master.get("thuTuc") or []
+        if isinstance(row, dict)
+        and str((row.get("lifecycle") or {}).get("status") or "active") == "active"
+        and str(row.get("ma") or "").strip()
+    }
+    result = build(validated, candidates, active_codes)
     OUT.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(result["summary"], ensure_ascii=False))
     return 0
