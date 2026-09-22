@@ -565,6 +565,22 @@ def city_source_evidence(row: dict) -> dict:
     }
 
 
+def canonical_cap_from_city_row(row: dict) -> str:
+    """Map extractor levelHint to the legal resolution level.
+
+    communeReceptionEvidence only means the commune can receive the dossier; it
+    must never be used to infer province authority when levelHint is known.
+    """
+    hint = str(row.get("levelHint") or "").strip().lower()
+    if hint == "commune":
+        return "Xã"
+    if hint == "shared_including_commune":
+        return "Dùng chung (cấp bộ, cấp tỉnh, cấp xã)"
+    if hint == "province":
+        return "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã"
+    return "Xã / điểm tiếp nhận cấp xã"
+
+
 def make_city_record(row: dict, legacy_row: dict | None, dvc: dict | None) -> dict:
     code = normalize_code(row.get("code", ""))
     name = repair_city_name(row.get("name") or "", code)
@@ -573,7 +589,7 @@ def make_city_record(row: dict, legacy_row: dict | None, dvc: dict | None) -> di
         "ma": code,
         "ten": name,
         "linhVuc": row.get("field") or "CHƯA XÁC MINH LĨNH VỰC",
-        "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+        "cap": canonical_cap_from_city_row(row),
         "nhanh": bool((legacy_row or {}).get("nhanh")),
         "mienPhiTrucTuyen": bool((legacy_row or {}).get("mienPhiTrucTuyen")),
         "phiDiaGioi": bool((legacy_row or {}).get("phiDiaGioi")),
@@ -719,6 +735,7 @@ def apply_city_updates(public_rows: list[dict], excluded: list[dict], audit_rows
                 "sourceArticleUrl": item.get("articleUrl"),
                 "sourceAttachmentUrl": item.get("pdfUrl"),
                 "tiepNhanCapXa": True,
+                "cap": canonical_cap_from_city_row(item),
             })
             record["sourceEvidence"] = ([city_source_evidence(item)] + list(record.get("sourceEvidence") or []))[:8]
         else:
