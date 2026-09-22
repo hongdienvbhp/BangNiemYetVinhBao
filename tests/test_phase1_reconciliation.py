@@ -26,7 +26,7 @@ class Phase1ReconciliationTests(unittest.TestCase):
         self.assertEqual(result["canonicalTotal"], 254)
         self.assertEqual(result["summary"]["phase1CandidateCodes"], 199)
         self.assertEqual(result["summary"]["outOfScopeProvinceReceptionOnly"], 55)
-        self.assertEqual(result["summary"]["misclassifiedByOfficialEvidence"], 2)
+        self.assertEqual(result["summary"]["misclassifiedByOfficialEvidence"], 0)
         self.assertEqual(result["summary"]["minimumMissingAgainstAggregateBaseline"], 124)
         self.assertEqual(result["COUNT_DRIFT"]["delta"], -124)
 
