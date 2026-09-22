@@ -9,9 +9,9 @@
   "summary": {
     "phase1CandidateCodes": 201,
     "outOfScopeProvinceReceptionOnly": 53,
-    "misclassifiedByNewerOfficialEvidence": 10,
-    "ambiguousCommuneOrShared": 153,
-    "provisionalCommuneCapLabel": 39,
+    "misclassifiedByNewerOfficialEvidence": 0,
+    "ambiguousCommuneOrShared": 152,
+    "provisionalCommuneCapLabel": 47,
     "directlyEvidencedPhase1FromCurrentCityUpdates": 10,
     "minimumMissingAgainstAggregateBaseline": 122,
     "exactMissingByCodeStatus": "pending_authoritative_materialization"
@@ -148,119 +148,8 @@
     "note": "These records are retained in canonical because they are province-authority procedures receivable at commune; they are outside Phase 1, not deleted."
   },
   "MISCLASSIFIED": {
-    "count": 10,
-    "items": [
-      {
-        "ma": "2.000559",
-        "ten": "Cấp Giấy phép hoạt động đối với điểm sơ cấp cứu chữ thập đỏ",
-        "currentCap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
-        "latestEvidence": {
-          "hint": "commune",
-          "sectionStatus": "modified",
-          "decisionNo": "3643/QĐ-UBND",
-          "date": "2026-09-11"
-        }
-      },
-      {
-        "ma": "1.006780",
-        "ten": "Cấp lại Giấy phép hoạt động đối với trạm, điểm sơ cấp cứu chữ thập đỏ do mất, rách, hỏng hoặc sai sót thông tin",
-        "currentCap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
-        "latestEvidence": {
-          "hint": "commune",
-          "sectionStatus": "modified",
-          "decisionNo": "3643/QĐ-UBND",
-          "date": "2026-09-11"
-        }
-      },
-      {
-        "ma": "2.000552",
-        "ten": "Cấp lại Giấy phép hoạt động đối với trạm, điểm sơ cấp cứu chữ thập đỏ khi thay đổi địa điểm",
-        "currentCap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
-        "latestEvidence": {
-          "hint": "commune",
-          "sectionStatus": "modified",
-          "decisionNo": "3643/QĐ-UBND",
-          "date": "2026-09-11"
-        }
-      },
-      {
-        "ma": "2.002409",
-        "ten": "Thủ tục giải quyết khiếu nại lần đầu tại xã",
-        "currentCap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
-        "latestEvidence": {
-          "hint": "commune",
-          "sectionStatus": "published",
-          "decisionNo": "3626/QĐ-UBND",
-          "date": "2026-09-10"
-        }
-      },
-      {
-        "ma": "1.014111",
-        "ten": "Thi tuyển công chức",
-        "currentCap": "Xã / điểm tiếp nhận cấp xã",
-        "latestEvidence": {
-          "hint": "shared_including_commune",
-          "sectionStatus": "modified",
-          "decisionNo": "3500/QĐ-UBND",
-          "date": "2026-08-30"
-        }
-      },
-      {
-        "ma": "1.014113",
-        "ten": "Thủ tục xét tuyển công chức",
-        "currentCap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
-        "latestEvidence": {
-          "hint": "shared_including_commune",
-          "sectionStatus": "modified",
-          "decisionNo": "3500/QĐ-UBND",
-          "date": "2026-08-30"
-        }
-      },
-      {
-        "ma": "2.001909",
-        "ten": "Thủ tục tiếp công dân tại cấp xã",
-        "currentCap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
-        "latestEvidence": {
-          "hint": "commune",
-          "sectionStatus": "published",
-          "decisionNo": "3626/QĐ-UBND",
-          "date": "2026-09-10"
-        }
-      },
-      {
-        "ma": "2.002396",
-        "ten": "Giải quyết tố cáo cấp xã",
-        "currentCap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
-        "latestEvidence": {
-          "hint": "commune",
-          "sectionStatus": "published",
-          "decisionNo": "3626/QĐ-UBND",
-          "date": "2026-09-10"
-        }
-      },
-      {
-        "ma": "2.002913",
-        "ten": "Liên thông điện tử: đăng ký khai tử, xóa đăng ký thường trú, giải quyết mai táng phí, tử tuất",
-        "currentCap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
-        "latestEvidence": {
-          "hint": "commune",
-          "sectionStatus": "new",
-          "decisionNo": "3582/QĐ-UBND",
-          "date": "2026-09-08"
-        }
-      },
-      {
-        "ma": "2.001801",
-        "ten": "Thủ tục xử lý đơn tại cấp xã",
-        "currentCap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
-        "latestEvidence": {
-          "hint": "commune",
-          "sectionStatus": "published",
-          "decisionNo": "3626/QĐ-UBND",
-          "date": "2026-09-10"
-        }
-      }
-    ]
+    "count": 0,
+    "items": []
   },
   "COUNT_DRIFT": {
     "baseline": 323,
@@ -383,7 +272,6 @@
     "1.013995",
     "1.014027",
     "1.014028",
-    "1.014111",
     "1.014310",
     "1.014312",
     "1.014389",
@@ -430,6 +318,7 @@
     "1.000894",
     "1.003583",
     "1.004746",
+    "1.006780",
     "1.008725",
     "1.009453",
     "1.009454",
@@ -454,6 +343,8 @@
     "1.013978",
     "1.013979",
     "2.000424",
+    "2.000552",
+    "2.000559",
     "2.000806",
     "2.000815",
     "2.000884",
@@ -462,7 +353,12 @@
     "2.001008",
     "2.001035",
     "2.001263",
+    "2.001801",
+    "2.001909",
     "2.001942",
-    "2.002165"
+    "2.002165",
+    "2.002396",
+    "2.002409",
+    "2.002913"
   ]
 }
