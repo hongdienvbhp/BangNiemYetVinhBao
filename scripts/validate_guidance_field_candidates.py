@@ -38,15 +38,24 @@ DURATION_TOKEN_RE = re.compile(
 )
 
 
+CLEAN_DURATION_RE = re.compile(
+    r"^(?:"
+    r"Không quy định"
+    r"|Ngay trong ngày làm việc"
+    r"|\\d+(?:[.,]\\d+)?\\s*(?:ngày|giờ|tháng)(?:\\s+làm việc)?"
+    r"(?:\\s+kể từ (?:ngày|khi) nhận (?:đủ |được )?hồ sơ hợp lệ)?"
+    r")$",
+    re.IGNORECASE,
+)
+
+
 def duration_is_unambiguous(value: str) -> bool:
     text = trim_duration(value)
-    if not text:
+    if not text or len(text) > 140:
         return False
-    if re.fullmatch(r"Không quy định", text, flags=re.IGNORECASE):
-        return True
-    if text.lower().startswith("ngay trong ngày làm việc"):
-        return True
-    return len(DURATION_TOKEN_RE.findall(text)) == 1
+    if len(DURATION_TOKEN_RE.findall(text)) > 1:
+        return False
+    return CLEAN_DURATION_RE.fullmatch(text) is not None
 
 
 def build(canonical: dict, candidates: dict) -> dict:
