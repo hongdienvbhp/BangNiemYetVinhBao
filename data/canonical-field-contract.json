@@ -1,0 +1,66 @@
+{
+  "contract": "bangniemyet-vinhbao-canonical-tthc",
+  "version": 5,
+  "ownerRepository": "hongdienvbhp/BangNiemYetVinhBao",
+  "canonicalPath": "data/thu-tuc.json",
+  "principles": {
+    "singleWriteModel": true,
+    "fieldLevelProvenanceRequired": true,
+    "emptyStringForbiddenForRequiredSemanticFields": true,
+    "consumerCopiesForbidden": true,
+    "countTargetsAreReconciliationChecksNotSourceOfTruth": true
+  },
+  "enums": {
+    "authorityLevel": ["COMMUNE", "PROVINCE", "CENTRAL", "OTHER"],
+    "serviceScope": ["COMMUNE_AUTHORITY", "SHARED", "COMMUNE_RECEPTION_ONLY", "PROVINCE_AUTHORITY", "OTHER"],
+    "onlineServiceLevel": ["FULL", "PARTIAL", "INFORMATION_ONLY", "NONE", "UNKNOWN"],
+    "dataStatus": ["verified", "not_published", "not_applicable", "pending_verification", "unknown"],
+    "lifecycleStatus": ["active", "future_effective", "repealed"]
+  },
+  "requiredPerProcedure": {
+    "identity": ["ma", "ten", "linhVuc"],
+    "classification": ["authorityLevel", "serviceScope", "receivableAtCommune", "onlineServiceLevel"],
+    "execution": ["coQuanThucHien", "thoiHan", "submissionUrl"],
+    "guidance": ["thanhPhanHoSo", "bieuMau", "quyTrinh", "phiLePhi", "ketQua"],
+    "legal": ["canCuPhapLy", "quyetDinhCongBo", "lifecycle"],
+    "traceability": ["sourceEvidence", "fieldSources", "dataset_version", "source_commit"]
+  },
+  "valueOrStatus": {
+    "coQuanThucHien": true,
+    "thoiHan": true,
+    "submissionUrl": true,
+    "thanhPhanHoSo": true,
+    "bieuMau": true,
+    "quyTrinh": true,
+    "phiLePhi": true,
+    "ketQua": true,
+    "canCuPhapLy": true
+  },
+  "phase1Baseline": {
+    "asOf": "2026-09",
+    "communeAuthority": {
+      "total": 257,
+      "FULL": 166,
+      "PARTIAL": 89,
+      "INFORMATION_ONLY": 2
+    },
+    "shared": {
+      "total": 66,
+      "FULL": 46,
+      "PARTIAL": 20,
+      "INFORMATION_ONLY": 0
+    },
+    "combined": {
+      "total": 323,
+      "FULL": 212,
+      "PARTIAL": 109,
+      "INFORMATION_ONLY": 2
+    },
+    "rule": "Các số lượng chỉ là gate reconciliation cho snapshot tháng 9/2026; thay đổi nguồn chính thức phải sinh COUNT_DRIFT kèm mã TTHC và evidence, không ép dữ liệu về target."
+  },
+  "phases": {
+    "1": "Reconcile và hoàn thiện TTHC cấp xã + dùng chung",
+    "2": "Bổ sung TTHC cấp tỉnh vào cùng canonical",
+    "3": "Làm giàu dữ liệu hướng dẫn và căn cứ pháp lý cho từng TTHC"
+  }
+}
