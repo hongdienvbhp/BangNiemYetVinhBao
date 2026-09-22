@@ -1,0 +1,52 @@
+{
+  "format": "phase1-authoritative-baseline",
+  "version": 1,
+  "asOf": "2026-07-20",
+  "scope": "Hải Phòng TTHC cấp xã và TTHC dùng chung phục vụ reconciliation Giai đoạn 1",
+  "aggregate": {
+    "communeAuthority": {
+      "total": 257,
+      "FULL": 166,
+      "PARTIAL": 89,
+      "INFORMATION_ONLY": 2
+    },
+    "shared": {
+      "total": 66,
+      "FULL": 46,
+      "PARTIAL": 20,
+      "INFORMATION_ONLY": 0
+    },
+    "combined": {
+      "total": 323,
+      "FULL": 212,
+      "PARTIAL": 109,
+      "INFORMATION_ONLY": 2
+    }
+  },
+  "sources": [
+    {
+      "role": "official_city_summary",
+      "url": "https://kienan.haiphong.gov.vn/cai-cach-hanh-chinh/hai-phong-no-luc-cat-giam-thoi-gian-lam-thu-tuc-hanh-chinh-946606",
+      "publishedDate": "2026-08-06",
+      "statementDate": "2026-07-20",
+      "verifies": [
+        "combined.total",
+        "communeAuthority.total",
+        "shared.total"
+      ]
+    },
+    {
+      "role": "official_city_portal_dvcqg_route",
+      "url": "https://www.haiphong.gov.vn/",
+      "verifies": [
+        "official_link_to_dvcqg_commune_catalogue"
+      ]
+    }
+  ],
+  "codeLevelList": {
+    "status": "pending_authoritative_materialization",
+    "sourceOfTruthRequired": true,
+    "note": "Aggregate counts are verified, but exact 323-code list must be materialized from official DVCQG/competent-authority sources before MISSING can be finalized by code."
+  },
+  "policy": "Không suy diễn mã còn thiếu chỉ từ tổng số. Không ép canonical về 323 nếu nguồn chính thức mới hơn làm thay đổi danh mục."
+}
