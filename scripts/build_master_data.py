@@ -25,7 +25,7 @@ try:
         compute_source_commit,
         derive_dataset_date,
         upgrade_record_to_v4,
-        build_vinhbao_submission_url,
+        build_scoped_submission_url,
     )
 except ModuleNotFoundError:
     from canonical_v4 import (
@@ -33,7 +33,7 @@ except ModuleNotFoundError:
         compute_source_commit,
         derive_dataset_date,
         upgrade_record_to_v4,
-        build_vinhbao_submission_url,
+        build_scoped_submission_url,
     )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -1103,15 +1103,19 @@ def main() -> int:
         formality_id = str(row.get("formalityId") or "").strip()
         if not code:
             continue
-        row["nopHoSoUrl"] = build_vinhbao_submission_url(code, formality_id)
+        row["nopHoSoUrl"] = build_scoped_submission_url(code, formality_id, str(row.get("cap") or ""))
+        route = "province" if str(row.get("cap") or "").strip().lower().startswith("cấp tỉnh") else "ward"
         row["nopHoSoScope"] = {
+            "route": route,
             "provinceCode": "31",
             "provinceName": "Hải Phòng",
-            "wardCode": "11824",
-            "wardName": "Vĩnh Bảo",
-            "commune": "WARD",
+            **({
+                "wardCode": "11824",
+                "wardName": "Vĩnh Bảo",
+                "commune": "WARD",
+            } if route == "ward" else {}),
         }
-        row["submissionLinkStatus"] = "vinhbao_scope_parameters_verified"
+        row["submissionLinkStatus"] = "resolution_level_scope_verified"
         row["submissionLinkMode"] = "formality_id" if formality_id else "keyword_fallback"
 
     public_rows = [upgrade_record_to_v4(row, SOURCE_SNAPSHOT_DATE) for row in public_rows]
