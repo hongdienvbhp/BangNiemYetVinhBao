@@ -26,6 +26,7 @@ SOURCE_BUNDLE_PATHS = (
     "data/formalityId-mapping-mau.csv",
     "data/priority-51-legal-verification.json",
     "data/source-audit/city-updates-current.json",
+    "data/source-audit/official-table-level-classification.json",
     "data/source-audit/dvcqg-live-verification-current.json",
     "data/source-audit/dvcqg-formality-candidates-current.json",
     "data/tthc-guidance-enrichment.json",
