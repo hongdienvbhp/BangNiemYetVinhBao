@@ -56,6 +56,9 @@ EXECUTION_FIELDS = {
     "huongDan.submissionUrl",
     "huongDan.dvctt",
 }
+PROMOTED_FIELDS = {"onlineServiceLevel", "thoiHan", "phiLePhi", "canCuPhapLy", "coQuanThucHien"}
+ONLINE_SERVICE_LEVELS = {"FULL", "PARTIAL", "INFORMATION_ONLY", "NONE", "UNKNOWN"}
+
 GUIDANCE_FIELDS = {
     "huongDan.quyTrinh",
     "huongDan.thanhPhanHoSo",
@@ -241,6 +244,10 @@ def _validate_precedence(
         required.add("formalityId")
     if row.get("nopHoSoUrl"):
         required.update({"nopHoSoUrl", "nopHoSoScope", "submissionLinkStatus"})
+    for field in PROMOTED_FIELDS:
+        if row.get(field) not in (None, "", [], {}):
+            required.add(field)
+
     guide = row.get("huongDan")
     if isinstance(guide, dict):
         for field in ("quyTrinh", "thanhPhanHoSo", "bieuMau", "lePhi", "thoiHan", "coQuanThucHien", "ketQua", "dvctt", "submissionUrl"):
@@ -274,6 +281,8 @@ def _validate_precedence(
                 errors.append(f"{code}: {field} phải có nguồn local_execution")
             if "central_content_reference" in roles:
                 errors.append(f"{code}: central_content_reference không được xác lập {field}")
+        if field in PROMOTED_FIELDS and "local_legal_effect" not in roles:
+            errors.append(f"{code}: {field} phải có nguồn local_legal_effect")
         if field in GUIDANCE_FIELDS and roles and not roles.issubset(
             {"central_content_reference", "local_legal_effect"}
         ):
@@ -331,6 +340,23 @@ def validate(payload: Any, root: Path | None = None) -> list[str]:
             errors.append(f"{code or index}: tên có dấu hiệu tách chữ OCR bất thường: {bad_split}")
         if name and unicodedata.normalize("NFC", name) != name:
             errors.append(f"{code or index}: tên chưa chuẩn hóa Unicode NFC")
+
+        online_level = row.get("onlineServiceLevel")
+        if online_level not in (None, "") and online_level not in ONLINE_SERVICE_LEVELS:
+            errors.append(f"{code or index}: onlineServiceLevel không hợp lệ")
+
+        if row.get("thoiHan") not in (None, "") and not isinstance(row.get("thoiHan"), str):
+            errors.append(f"{code or index}: thoiHan top-level phải là chuỗi")
+
+        if row.get("coQuanThucHien") not in (None, "") and not isinstance(row.get("coQuanThucHien"), str):
+            errors.append(f"{code or index}: coQuanThucHien top-level phải là chuỗi")
+
+        if row.get("canCuPhapLy") not in (None, [], "") and not isinstance(row.get("canCuPhapLy"), list):
+            errors.append(f"{code or index}: canCuPhapLy top-level phải là mảng")
+
+        phi_le_phi = row.get("phiLePhi")
+        if phi_le_phi not in (None, "", {}, []) and not isinstance(phi_le_phi, dict):
+            errors.append(f"{code or index}: phiLePhi top-level phải là object value/status")
 
         errors.extend(_validate_lifecycle(code or str(index), row.get("lifecycle")))
 
