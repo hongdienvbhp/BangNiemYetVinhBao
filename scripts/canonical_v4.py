@@ -66,7 +66,12 @@ def compute_source_commit(root: Path) -> str:
         path = root / rel
         if not path.exists():
             continue
-        blob_sha = _git_blob_sha(path.read_bytes())
+        data = path.read_bytes()
+        # Git stores normalized LF content for these text inputs, while a Windows
+        # working tree may materialize CRLF. Normalize line endings before hashing
+        # so source_commit is identical across Windows and Linux checkouts.
+        data = data.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+        blob_sha = _git_blob_sha(data)
         entries.append(f"{rel}\0{blob_sha}\n")
     if not entries:
         raise ValueError("Không tìm thấy nguồn đầu vào để tính source_commit")

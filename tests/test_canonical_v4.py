@@ -38,6 +38,18 @@ class CanonicalV4DeterminismTests(unittest.TestCase):
             self.assertEqual(len(first), 40)
             self.assertEqual(len(second), 40)
 
+    def test_source_commit_is_line_ending_independent(self):
+        rel = SOURCE_BUNDLE_PATHS[0]
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            path = root / rel
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_bytes(b'{"asOf":"2026-09-21"}\n')
+            lf_hash = compute_source_commit(root)
+            path.write_bytes(b'{"asOf":"2026-09-21"}\r\n')
+            crlf_hash = compute_source_commit(root)
+            self.assertEqual(lf_hash, crlf_hash)
+
     def test_dataset_version_never_rolls_back(self):
         rel = SOURCE_BUNDLE_PATHS[0]
         with tempfile.TemporaryDirectory() as td:
