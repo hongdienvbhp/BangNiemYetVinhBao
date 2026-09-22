@@ -29,7 +29,7 @@ jobs:
 
       - name: Python syntax
         run: |
-          python -m py_compile             scripts/canonical_v4.py             scripts/validate_canonical_field_contract.py             scripts/reconcile_phase1.py             scripts/migrate_canonical_v4.py             scripts/build_priority50_guidance.py             scripts/validate_priority50_guidance.py             scripts/audit_vinhbao_submission_links.py             scripts/validate_single_submit_link_ui.py             scripts/update_official_sources.py             scripts/extract_city_updates.py             scripts/build_master_data.py             scripts/build_master_delta.py             scripts/fetch_dvc_mapping.py             scripts/validate_tthc_guidance.py             scripts/apply_guidance_enrichment.py             scripts/build_tthc_tracking.py             scripts/check_static_site.py             scripts/routine_guard.py             scripts/write_routine_run_record.py             scripts/check_routine_health.py
+          python -m py_compile             scripts/canonical_v4.py             scripts/validate_canonical_field_contract.py             scripts/classify_official_tables.py             scripts/reconcile_phase1.py             scripts/migrate_canonical_v4.py             scripts/build_priority50_guidance.py             scripts/validate_priority50_guidance.py             scripts/audit_vinhbao_submission_links.py             scripts/validate_single_submit_link_ui.py             scripts/update_official_sources.py             scripts/extract_city_updates.py             scripts/build_master_data.py             scripts/build_master_delta.py             scripts/fetch_dvc_mapping.py             scripts/validate_tthc_guidance.py             scripts/apply_guidance_enrichment.py             scripts/build_tthc_tracking.py             scripts/check_static_site.py             scripts/routine_guard.py             scripts/write_routine_run_record.py             scripts/check_routine_health.py
 
       - name: Python unit tests
         run: python -m unittest discover -s tests -v
@@ -74,6 +74,11 @@ jobs:
 
       - name: Validate canonical field contract v5
         run: python scripts/validate_canonical_field_contract.py
+
+      - name: Classify official table levels
+        run: |
+          python scripts/classify_official_tables.py
+          git diff --exit-code -- data/source-audit/official-table-level-classification.json
 
       - name: Reconcile Phase 1 baseline
         run: |
