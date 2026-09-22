@@ -1,0 +1,768 @@
+{
+  "format": "official-guidance-promotion-result",
+  "version": 1,
+  "policy": "Chỉ promote field verified có provenance vào TTHC active đang có trong canonical. Không ghi đè giá trị canonical khác; conflict được giữ để rà soát.",
+  "summary": {
+    "planProcedures": 387,
+    "canonicalProcedures": 254,
+    "promotedFields": 125,
+    "alreadySameFields": 24,
+    "conflicts": 0,
+    "skippedNotCanonical": 279,
+    "skippedInactive": 0,
+    "skippedInvalid": 0,
+    "byField": {
+      "canCuPhapLy": 30,
+      "coQuanThucHien": 47,
+      "onlineServiceLevel": 8,
+      "phiLePhi": 16,
+      "thoiHan": 24
+    }
+  },
+  "promoted": [
+    {
+      "ma": "1.000302",
+      "field": "phiLePhi",
+      "value": {
+        "status": "not_published",
+        "items": []
+      }
+    },
+    {
+      "ma": "1.000302",
+      "field": "thoiHan",
+      "value": "01 ngày làm việc"
+    },
+    {
+      "ma": "1.000321",
+      "field": "phiLePhi",
+      "value": {
+        "status": "not_published",
+        "items": []
+      }
+    },
+    {
+      "ma": "1.000321",
+      "field": "thoiHan",
+      "value": "01 ngày làm việc"
+    },
+    {
+      "ma": "1.000464",
+      "field": "canCuPhapLy",
+      "value": [
+        "Nghị quyết số"
+      ]
+    },
+    {
+      "ma": "1.000464",
+      "field": "phiLePhi",
+      "value": {
+        "status": "not_published",
+        "items": []
+      }
+    },
+    {
+      "ma": "1.000479",
+      "field": "canCuPhapLy",
+      "value": [
+        "Nghị quyết số 190/2"
+      ]
+    },
+    {
+      "ma": "1.000479",
+      "field": "phiLePhi",
+      "value": {
+        "status": "not_published",
+        "items": []
+      }
+    },
+    {
+      "ma": "1.000593",
+      "field": "onlineServiceLevel",
+      "value": "PARTIAL"
+    },
+    {
+      "ma": "1.000593",
+      "field": "phiLePhi",
+      "value": {
+        "status": "verified",
+        "items": [
+          {
+            "type": "exempt",
+            "value": "Miễn phí/lệ phí"
+          }
+        ]
+      }
+    },
+    {
+      "ma": "1.001023",
+      "field": "thoiHan",
+      "value": "01 ngày làm việc"
+    },
+    {
+      "ma": "1.001577",
+      "field": "thoiHan",
+      "value": "01 ngày làm việc"
+    },
+    {
+      "ma": "1.001737",
+      "field": "thoiHan",
+      "value": "01 ngày làm việc"
+    },
+    {
+      "ma": "1.002046",
+      "field": "thoiHan",
+      "value": "01 ngày làm việc"
+    },
+    {
+      "ma": "1.002063",
+      "field": "thoiHan",
+      "value": "01 ngày làm việc"
+    },
+    {
+      "ma": "1.002268",
+      "field": "thoiHan",
+      "value": "01 ngày làm việc"
+    },
+    {
+      "ma": "1.002286",
+      "field": "thoiHan",
+      "value": "01 ngày làm việc"
+    },
+    {
+      "ma": "1.002334",
+      "field": "thoiHan",
+      "value": "01 ngày làm việc"
+    },
+    {
+      "ma": "1.002817",
+      "field": "thoiHan",
+      "value": "01 ngày làm việc"
+    },
+    {
+      "ma": "1.002829",
+      "field": "thoiHan",
+      "value": "01 ngày làm việc"
+    },
+    {
+      "ma": "1.002847",
+      "field": "thoiHan",
+      "value": "01 ngày làm việc"
+    },
+    {
+      "ma": "1.002856",
+      "field": "thoiHan",
+      "value": "01 ngày làm việc"
+    },
+    {
+      "ma": "1.002861",
+      "field": "thoiHan",
+      "value": "01 ngày làm việc"
+    },
+    {
+      "ma": "1.002877",
+      "field": "thoiHan",
+      "value": "01 ngày làm việc"
+    },
+    {
+      "ma": "1.003705",
+      "field": "canCuPhapLy",
+      "value": [
+        "luật về"
+      ]
+    },
+    {
+      "ma": "1.003814",
+      "field": "canCuPhapLy",
+      "value": [
+        "Nghị định số 15/2018/NĐ-CP"
+      ]
+    },
+    {
+      "ma": "1.004837",
+      "field": "onlineServiceLevel",
+      "value": "FULL"
+    },
+    {
+      "ma": "1.004837",
+      "field": "phiLePhi",
+      "value": {
+        "status": "verified",
+        "items": [
+          {
+            "type": "exempt",
+            "value": "Miễn phí/lệ phí"
+          }
+        ]
+      }
+    },
+    {
+      "ma": "1.005461",
+      "field": "onlineServiceLevel",
+      "value": "FULL"
+    },
+    {
+      "ma": "1.008725",
+      "field": "canCuPhapLy",
+      "value": [
+        "thông tư th"
+      ]
+    },
+    {
+      "ma": "1.008925",
+      "field": "canCuPhapLy",
+      "value": [
+        "Nghị định số 151/2026/NĐ"
+      ]
+    },
+    {
+      "ma": "1.008925",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.008925",
+      "field": "phiLePhi",
+      "value": {
+        "status": "not_published",
+        "items": []
+      }
+    },
+    {
+      "ma": "1.008926",
+      "field": "canCuPhapLy",
+      "value": [
+        "Nghị định số 151/2026/"
+      ]
+    },
+    {
+      "ma": "1.008926",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.008926",
+      "field": "phiLePhi",
+      "value": {
+        "status": "not_published",
+        "items": []
+      }
+    },
+    {
+      "ma": "1.008927",
+      "field": "canCuPhapLy",
+      "value": [
+        "Nghị định số 151/2026/NĐ"
+      ]
+    },
+    {
+      "ma": "1.008927",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.008927",
+      "field": "phiLePhi",
+      "value": {
+        "status": "not_published",
+        "items": []
+      }
+    },
+    {
+      "ma": "1.008928",
+      "field": "canCuPhapLy",
+      "value": [
+        "Nghị định số 151/2026/NĐ-"
+      ]
+    },
+    {
+      "ma": "1.008928",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.008928",
+      "field": "phiLePhi",
+      "value": {
+        "status": "not_published",
+        "items": []
+      }
+    },
+    {
+      "ma": "1.009453",
+      "field": "coQuanThucHien",
+      "value": "Ủy ban nhân dân cấp xã"
+    },
+    {
+      "ma": "1.009454",
+      "field": "coQuanThucHien",
+      "value": "UBND cấp xã"
+    },
+    {
+      "ma": "1.010702",
+      "field": "thoiHan",
+      "value": "01 ngày làm việc"
+    },
+    {
+      "ma": "1.010704",
+      "field": "thoiHan",
+      "value": "01 ngày làm việc"
+    },
+    {
+      "ma": "1.010707",
+      "field": "thoiHan",
+      "value": "01 ngày làm việc"
+    },
+    {
+      "ma": "1.011444",
+      "field": "thoiHan",
+      "value": "01 ngày làm việc"
+    },
+    {
+      "ma": "1.011606",
+      "field": "canCuPhapLy",
+      "value": [
+        "Nghị định số 351/2025/NĐ"
+      ]
+    },
+    {
+      "ma": "1.012606",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.012629",
+      "field": "canCuPhapLy",
+      "value": [
+        "luật tín"
+      ]
+    },
+    {
+      "ma": "1.012632",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.012639",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.012641",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.012644",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.012645",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.012648",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.012658",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.012659",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.012660",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.012661",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.012664",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.012672",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.012756",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.012756",
+      "field": "onlineServiceLevel",
+      "value": "FULL"
+    },
+    {
+      "ma": "1.012756",
+      "field": "phiLePhi",
+      "value": {
+        "status": "not_published",
+        "items": []
+      }
+    },
+    {
+      "ma": "1.012781",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.012782",
+      "field": "onlineServiceLevel",
+      "value": "PARTIAL"
+    },
+    {
+      "ma": "1.012787",
+      "field": "thoiHan",
+      "value": "08 ngày"
+    },
+    {
+      "ma": "1.012789",
+      "field": "canCuPhapLy",
+      "value": [
+        "Nghị quyết số 45/2018/NQ-"
+      ]
+    },
+    {
+      "ma": "1.012789",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.012791",
+      "field": "canCuPhapLy",
+      "value": [
+        "luật đất"
+      ]
+    },
+    {
+      "ma": "1.012812",
+      "field": "coQuanThucHien",
+      "value": "Ủy ban nhân dân cấp xã"
+    },
+    {
+      "ma": "1.012929",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.012942",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.012943",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.012945",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.012946",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.012947",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.012948",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.013017",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.013018",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.013019",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.013020",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.013022",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.013023",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.013040",
+      "field": "coQuanThucHien",
+      "value": "Ủy ban nhân dân cấp xã"
+    },
+    {
+      "ma": "1.013724",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công cấp xã"
+    },
+    {
+      "ma": "1.013724",
+      "field": "thoiHan",
+      "value": "15 ngày"
+    },
+    {
+      "ma": "1.013725",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công cấp xã"
+    },
+    {
+      "ma": "1.013734",
+      "field": "canCuPhapLy",
+      "value": [
+        "Luật Người"
+      ]
+    },
+    {
+      "ma": "1.013734",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công cấp xã"
+    },
+    {
+      "ma": "1.013734",
+      "field": "onlineServiceLevel",
+      "value": "FULL"
+    },
+    {
+      "ma": "1.013734",
+      "field": "phiLePhi",
+      "value": {
+        "status": "not_published",
+        "items": []
+      }
+    },
+    {
+      "ma": "1.013822",
+      "field": "canCuPhapLy",
+      "value": [
+        "Nghị định số 215/2025/NĐ-"
+      ]
+    },
+    {
+      "ma": "1.013826",
+      "field": "canCuPhapLy",
+      "value": [
+        "quyết định giao"
+      ]
+    },
+    {
+      "ma": "1.013827",
+      "field": "canCuPhapLy",
+      "value": [
+        "quyết định giao"
+      ]
+    },
+    {
+      "ma": "1.013962",
+      "field": "coQuanThucHien",
+      "value": "Ủy ban nhân dân cấp xã"
+    },
+    {
+      "ma": "1.013967",
+      "field": "coQuanThucHien",
+      "value": "Ủy ban nhân dân cấp xã"
+    },
+    {
+      "ma": "1.013979",
+      "field": "coQuanThucHien",
+      "value": "Ủy ban nhân dân cấp xã"
+    },
+    {
+      "ma": "1.013980",
+      "field": "onlineServiceLevel",
+      "value": "PARTIAL"
+    },
+    {
+      "ma": "1.013988",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "1.013994",
+      "field": "canCuPhapLy",
+      "value": [
+        "Luật Đất"
+      ]
+    },
+    {
+      "ma": "1.013994",
+      "field": "onlineServiceLevel",
+      "value": "PARTIAL"
+    },
+    {
+      "ma": "1.014113",
+      "field": "canCuPhapLy",
+      "value": [
+        "quyết định tuyể"
+      ]
+    },
+    {
+      "ma": "1.014113",
+      "field": "thoiHan",
+      "value": "75 ngày"
+    },
+    {
+      "ma": "1.014310",
+      "field": "canCuPhapLy",
+      "value": [
+        "Nghị định số 215/2025/NĐ-CP"
+      ]
+    },
+    {
+      "ma": "1.014312",
+      "field": "canCuPhapLy",
+      "value": [
+        "Nghị định số 215/2025/NĐ-CP"
+      ]
+    },
+    {
+      "ma": "1.014389",
+      "field": "canCuPhapLy",
+      "value": [
+        "Nghị Quyết số 20/2026"
+      ]
+    },
+    {
+      "ma": "1.014390",
+      "field": "canCuPhapLy",
+      "value": [
+        "Luật Khoa"
+      ]
+    },
+    {
+      "ma": "1.014390",
+      "field": "phiLePhi",
+      "value": {
+        "status": "not_published",
+        "items": []
+      }
+    },
+    {
+      "ma": "1.014953",
+      "field": "phiLePhi",
+      "value": {
+        "status": "not_published",
+        "items": []
+      }
+    },
+    {
+      "ma": "1.116316",
+      "field": "canCuPhapLy",
+      "value": [
+        "Thông tư số 16/2026/TT-"
+      ]
+    },
+    {
+      "ma": "2.000324",
+      "field": "canCuPhapLy",
+      "value": [
+        "luật về"
+      ]
+    },
+    {
+      "ma": "2.000970",
+      "field": "canCuPhapLy",
+      "value": [
+        "luật sư"
+      ]
+    },
+    {
+      "ma": "2.000970",
+      "field": "coQuanThucHien",
+      "value": "Trung tâm Phục vụ hành chính công thành phố"
+    },
+    {
+      "ma": "2.000977",
+      "field": "canCuPhapLy",
+      "value": [
+        "luật sư"
+      ]
+    },
+    {
+      "ma": "2.001008",
+      "field": "canCuPhapLy",
+      "value": [
+        "Nghị định số 280"
+      ]
+    },
+    {
+      "ma": "2.001008",
+      "field": "coQuanThucHien",
+      "value": "Ủy ban nhân dân cấp xã"
+    },
+    {
+      "ma": "2.001225",
+      "field": "canCuPhapLy",
+      "value": [
+        "Luật đấu"
+      ]
+    },
+    {
+      "ma": "2.001225",
+      "field": "phiLePhi",
+      "value": {
+        "status": "not_published",
+        "items": []
+      }
+    },
+    {
+      "ma": "2.001282",
+      "field": "canCuPhapLy",
+      "value": [
+        "quyết định tạm"
+      ]
+    },
+    {
+      "ma": "2.001576",
+      "field": "phiLePhi",
+      "value": {
+        "status": "not_published",
+        "items": []
+      }
+    },
+    {
+      "ma": "2.001942",
+      "field": "coQuanThucHien",
+      "value": "Ủy ban nhân dân cấp xã"
+    },
+    {
+      "ma": "2.002189",
+      "field": "thoiHan",
+      "value": "05 ngày"
+    }
+  ],
+  "conflicts": []
+}
