@@ -963,7 +963,7 @@ def apply_official_table_levels(
         "SHARED": "Dùng chung (cấp bộ, cấp tỉnh, cấp xã)",
         "PROVINCE": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
     }
-    stats = {"classified": 0, "changedPublic": 0, "changedExcluded": 0}
+    stats = {"classified": len(level_map), "changedPublic": 0, "changedExcluded": 0}
 
     for collection_name, rows in (("public", public_rows), ("excluded", excluded)):
         for row in rows:
@@ -971,7 +971,6 @@ def apply_official_table_levels(
             level = level_map.get(code)
             if not level:
                 continue
-            stats["classified"] += 1
             new_cap = cap_by_level[level]
             if str(row.get("cap") or "") == new_cap:
                 continue
@@ -983,11 +982,6 @@ def apply_official_table_levels(
             else:
                 stats["changedExcluded"] += 1
 
-    audit_map = {normalize_code(row.get("ma", "")): row for row in audit_rows}
-    for code, level in level_map.items():
-        if code in audit_map:
-            audit_map[code]["cap_classification"] = cap_by_level[level]
-            audit_map[code]["cap_classification_source"] = "official-table-level-classification"
     return stats
 
 
