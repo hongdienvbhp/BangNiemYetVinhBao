@@ -17,6 +17,22 @@ SOURCE_ROLES = {
 SOURCE_COMMIT_KIND = "verified_source_bundle_git_sha1"
 LIFECYCLE_STATUSES = {"active", "future_effective", "repealed"}
 
+V5_AUTHORITY_LEVELS = {"COMMUNE", "PROVINCE", "CENTRAL", "OTHER"}
+V5_SERVICE_SCOPES = {
+    "COMMUNE_AUTHORITY",
+    "SHARED",
+    "COMMUNE_RECEPTION_ONLY",
+    "PROVINCE_AUTHORITY",
+    "OTHER",
+}
+V5_ONLINE_SERVICE_LEVELS = {
+    "FULL",
+    "PARTIAL",
+    "INFORMATION_ONLY",
+    "NONE",
+    "UNKNOWN",
+}
+
 # Inputs that are allowed to influence the canonical dataset. Generated outputs
 # are deliberately excluded so source_commit never self-references thu-tuc.json.
 SOURCE_BUNDLE_PATHS = (
@@ -227,6 +243,49 @@ HAIPHONG_PROVINCE_DVC_SCOPE = {
 def submission_route_for_level(cap: str) -> str:
     value = str(cap or "").strip().lower()
     return "province" if value.startswith("cấp tỉnh") else "ward"
+
+
+def classify_v5_record(row: dict[str, Any]) -> dict[str, Any]:
+    """Map legacy classification to canonical v5 without inventing authority.
+
+    The legacy label "Xã / điểm tiếp nhận cấp xã" is intentionally left
+    ambiguous (OTHER/OTHER). Reception at commune level is not equivalent to
+    commune resolution authority.
+    """
+    cap = str(row.get("cap") or "").strip()
+    cap_folded = cap.lower()
+
+    if cap == "Xã":
+        authority = "COMMUNE"
+        scope = "COMMUNE_AUTHORITY"
+        receivable = True
+    elif cap == "Dùng chung (cấp bộ, cấp tỉnh, cấp xã)":
+        authority = "OTHER"
+        scope = "SHARED"
+        receivable = True
+    elif cap_folded.startswith("cấp tỉnh - tiếp nhận tại trung tâm pvhcc cấp xã"):
+        authority = "PROVINCE"
+        scope = "COMMUNE_RECEPTION_ONLY"
+        receivable = True
+    elif cap == "Xã / điểm tiếp nhận cấp xã":
+        authority = "OTHER"
+        scope = "OTHER"
+        receivable = True
+    else:
+        authority = "OTHER"
+        scope = "OTHER"
+        receivable = row.get("tiepNhanCapXa") is True
+
+    online = str(row.get("onlineServiceLevel") or "").strip().upper()
+    if online not in V5_ONLINE_SERVICE_LEVELS:
+        online = "UNKNOWN"
+
+    return {
+        "authorityLevel": authority,
+        "serviceScope": scope,
+        "receivableAtCommune": receivable,
+        "onlineServiceLevel": online,
+    }
 
 
 def build_scoped_submission_url(code: str, formality_id: str = "", cap: str = "") -> str:
