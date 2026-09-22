@@ -3,7 +3,7 @@ name: Materialize All Vinh Bao DVC Links
 on:
   push:
     branches:
-      - feat/issue-81-single-dvc-submit-link
+      - fix/issue-85-dvc-route-by-level
 
 permissions:
   contents: write
@@ -20,7 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
-          ref: feat/issue-81-single-dvc-submit-link
+          ref: fix/issue-85-dvc-route-by-level
           fetch-depth: 0
           lfs: true
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
@@ -57,5 +57,5 @@ jobs:
             echo "No generated changes."
           else
             git commit -m "data(dvc): materialize scoped Vinh Bao links for all TTHC"
-            git push origin HEAD:feat/issue-81-single-dvc-submit-link
+            git push origin HEAD:fix/issue-85-dvc-route-by-level
           fi
