@@ -108,8 +108,9 @@ def _validate_submission_url(value: str, formality_id: str, cap: str) -> list[st
             actual = (query.get(key) or [""])[0]
             if actual != expected:
                 errors.append(f"URL nộp hồ sơ cấp xã sai {key}: cần {expected}, hiện {actual or 'trống'}")
-        if (query.get("isProvince") or [""])[0] != "0":
-            errors.append("TTHC cấp xã phải dùng isProvince=0")
+        is_province = (query.get("isProvince") or [""])[0]
+        if is_province and is_province != "0":
+            errors.append("TTHC cấp xã phải dùng isProvince=0 khi tham số này được khai báo")
 
     if formality_id:
         actual = (query.get("formalityId") or [""])[0]
