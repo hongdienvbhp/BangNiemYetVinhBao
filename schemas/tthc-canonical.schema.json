@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vinhbao.local/schema/tthc-canonical-v1.json",
+  "title": "Vinh Bao Canonical TTHC Contract",
+  "type": "object",
+  "required": ["format", "version", "sourceSnapshotDate", "thuTuc"],
+  "properties": {
+    "format": {"const": "bangniemyet-vinhbao-master-data"},
+    "version": {"type": "integer", "minimum": 2},
+    "updatedAt": {"type": "string"},
+    "sourceSnapshotDate": {"type": "string"},
+    "thuTuc": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["ma", "ten", "linhVuc", "cap", "sourceSnapshotDate", "sourceEvidence"],
+        "properties": {
+          "ma": {"type": "string", "minLength": 1},
+          "ten": {"type": "string", "minLength": 1},
+          "linhVuc": {"type": "string", "minLength": 1},
+          "cap": {"type": "string", "minLength": 1},
+          "sourceSnapshotDate": {"type": "string", "minLength": 1},
+          "sourceEvidence": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["articleUrl", "classification"],
+              "properties": {
+                "articleUrl": {"type": "string", "minLength": 1},
+                "classification": {"type": "string", "minLength": 1}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
