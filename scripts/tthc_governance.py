@@ -96,6 +96,10 @@ def audit(payload: dict[str, Any], policy: dict[str, Any]) -> list[Finding]:
                         findings.append(
                             Finding("error", "MISSING_PROVENANCE", f"sourceEvidence[{idx}].{field} is required", code)
                         )
+                if not (ev.get("url") or ev.get("articleUrl")):
+                    findings.append(
+                        Finding("error", "MISSING_PROVENANCE_URL", f"sourceEvidence[{idx}] requires url or articleUrl", code)
+                    )
         else:
             findings.append(Finding("error", "BAD_EVIDENCE", "sourceEvidence must be an array", code))
 

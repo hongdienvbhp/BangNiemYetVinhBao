@@ -1,19 +1,20 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://vinhbao.local/schema/tthc-canonical-v1.json",
-  "title": "Vinh Bao Canonical TTHC Contract",
+  "$id": "https://vinhbao.local/schema/tthc-canonical-v4-governance.json",
+  "title": "Vinh Bao Canonical TTHC Governance Contract",
   "type": "object",
-  "required": ["format", "version", "sourceSnapshotDate", "thuTuc"],
+  "required": ["format", "version", "dataset_version", "source_commit", "sourceSnapshotDate", "thuTuc"],
   "properties": {
     "format": {"const": "bangniemyet-vinhbao-master-data"},
-    "version": {"type": "integer", "minimum": 2},
-    "updatedAt": {"type": "string"},
-    "sourceSnapshotDate": {"type": "string"},
+    "version": {"type": "integer", "minimum": 4},
+    "dataset_version": {"type": "string", "minLength": 1},
+    "source_commit": {"type": "string", "minLength": 7},
+    "sourceSnapshotDate": {"type": "string", "minLength": 1},
     "thuTuc": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["ma", "ten", "linhVuc", "cap", "sourceSnapshotDate", "sourceEvidence"],
+        "required": ["ma", "ten", "linhVuc", "cap", "sourceSnapshotDate", "sourceEvidence", "lifecycle", "fieldSources"],
         "properties": {
           "ma": {"type": "string", "minLength": 1},
           "ten": {"type": "string", "minLength": 1},
@@ -25,13 +26,22 @@
             "minItems": 1,
             "items": {
               "type": "object",
-              "required": ["articleUrl", "classification"],
+              "required": ["classification", "sourceRole", "evidenceId"],
               "properties": {
-                "articleUrl": {"type": "string", "minLength": 1},
-                "classification": {"type": "string", "minLength": 1}
-              }
+                "articleUrl": {"type": "string"},
+                "url": {"type": "string"},
+                "classification": {"type": "string", "minLength": 1},
+                "sourceRole": {"type": "string", "minLength": 1},
+                "evidenceId": {"type": "string", "minLength": 1}
+              },
+              "anyOf": [
+                {"required": ["url"]},
+                {"required": ["articleUrl"]}
+              ]
             }
-          }
+          },
+          "lifecycle": {"type": "object"},
+          "fieldSources": {"type": "object"}
         }
       }
     }

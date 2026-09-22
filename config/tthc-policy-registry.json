@@ -11,7 +11,7 @@
     },
     "provenance": {
       "severity": "error",
-      "minimumEvidenceFields": ["articleUrl", "classification"]
+      "minimumEvidenceFields": ["classification", "sourceRole", "evidenceId"]
     },
     "activePublication": {
       "severity": "error",
