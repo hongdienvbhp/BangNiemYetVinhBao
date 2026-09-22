@@ -32,6 +32,23 @@ def trim_duration(value: str) -> str:
     return text.strip(" -;,.")
 
 
+DURATION_TOKEN_RE = re.compile(
+    r"(?<!\\d)(?:\\d+(?:[.,]\\d+)?)\\s*(?:ngày|giờ|tháng)(?:\\s+làm việc)?",
+    re.IGNORECASE,
+)
+
+
+def duration_is_unambiguous(value: str) -> bool:
+    text = trim_duration(value)
+    if not text:
+        return False
+    if re.fullmatch(r"Không quy định", text, flags=re.IGNORECASE):
+        return True
+    if text.lower().startswith("ngay trong ngày làm việc"):
+        return True
+    return len(DURATION_TOKEN_RE.findall(text)) == 1
+
+
 def build(canonical: dict, candidates: dict) -> dict:
     by_code = {
         str(row.get("ma") or "").strip(): row
@@ -78,6 +95,16 @@ def build(canonical: dict, candidates: dict) -> dict:
 
         value = items[0]["value"]
         current = str(canonical_row.get("thoiHan") or "").strip()
+        if not duration_is_unambiguous(value):
+            conflicts.append({
+                "ma": code,
+                "field": "thoiHan",
+                "reason": "multiple_or_ambiguous_duration_tokens",
+                "currentValue": current,
+                "candidateValue": value,
+                "sources": [item["source"] for item in items],
+            })
+            continue
         if current:
             n_current, n_value = norm(current), norm(value)
             if n_current in n_value or n_value in n_current:
