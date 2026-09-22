@@ -9,9 +9,9 @@
   "summary": {
     "phase1CandidateCodes": 199,
     "outOfScopeProvinceReceptionOnly": 55,
-    "misclassifiedByOfficialEvidence": 2,
+    "misclassifiedByOfficialEvidence": 0,
     "ambiguousCommuneOrShared": 149,
-    "provisionalCommuneCapLabel": 47,
+    "provisionalCommuneCapLabel": 48,
     "directlyEvidencedPhase1": 16,
     "officialTableClassifiedCodes": 36,
     "minimumMissingAgainstAggregateBaseline": 124,
@@ -191,27 +191,8 @@
     "note": "TTHC cấp tỉnh vẫn giữ trong canonical tổng thể nhưng không tính vào Phase 1."
   },
   "MISCLASSIFIED": {
-    "count": 2,
-    "items": [
-      {
-        "ma": "2.001576",
-        "ten": "Công nhận tiến bộ kỹ thuật",
-        "currentCap": "Xã / điểm tiếp nhận cấp xã",
-        "resolvedClassification": "PROVINCE",
-        "latestEvidence": {
-          "source": "official_table_heading"
-        }
-      },
-      {
-        "ma": "1.003915",
-        "ten": "Thủ tục cấp Chứng chỉ hành nghề đấu giá",
-        "currentCap": "Xã / điểm tiếp nhận cấp xã",
-        "resolvedClassification": "PROVINCE",
-        "latestEvidence": {
-          "source": "official_table_heading"
-        }
-      }
-    ]
+    "count": 0,
+    "items": []
   },
   "COUNT_DRIFT": {
     "baseline": 323,
@@ -418,6 +399,7 @@
     "2.002165",
     "2.002396",
     "2.002409",
+    "2.002821",
     "2.002913"
   ]
 }

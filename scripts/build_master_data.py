@@ -45,6 +45,7 @@ VERIFIED_DVC_CSV = ROOT / "data/formalityId-mapping-mau.csv"
 PRIORITY51_CROSSWALK = ROOT / "data/priority-51-crosswalk.json"
 PRIORITY51_LEGAL_VERIFICATION = ROOT / "data/priority-51-legal-verification.json"
 CITY_UPDATES = ROOT / "data/source-audit/city-updates-current.json"
+OFFICIAL_TABLE_LEVELS = ROOT / "data/source-audit/official-table-level-classification.json"
 LEGACY_JS = ROOT / "js/data.js"
 MASTER_JSON = ROOT / "data/thu-tuc.json"
 FALLBACK_JS = ROOT / "js/master-data-fallback.js"
@@ -938,6 +939,63 @@ def apply_priority51_legal_verification(
     return stats
 
 
+
+def canonical_cap_from_table_classification(value: str, fallback: str) -> str:
+    classification = str(value or "").strip().upper()
+    if classification == "COMMUNE":
+        return "Xã"
+    if classification == "SHARED":
+        return "Dùng chung (cấp bộ, cấp tỉnh, cấp xã)"
+    if classification == "PROVINCE":
+        return "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã"
+    return fallback
+
+
+def apply_official_table_levels(
+    public_rows: list[dict],
+) -> dict:
+    if not OFFICIAL_TABLE_LEVELS.exists():
+        return {"resolved": 0, "updatedPublic": 0}
+
+    payload = load_json(OFFICIAL_TABLE_LEVELS)
+    level_map = {
+        normalize_code(item.get("ma", "")): item
+        for item in payload.get("rows") or []
+        if normalize_code(item.get("ma", ""))
+    }
+    stats = {"resolved": len(level_map), "updatedPublic": 0}
+
+    for row in public_rows:
+        code = normalize_code(row.get("ma", ""))
+        item = level_map.get(code)
+        if not item:
+            continue
+        current = str(row.get("cap") or "")
+        target = canonical_cap_from_table_classification(
+            str(item.get("classification") or ""),
+            current,
+        )
+        if not target or target == current:
+            continue
+
+        row["cap"] = target
+        evidence_rows = item.get("evidence") or []
+        first = evidence_rows[0] if evidence_rows else {}
+        table_evidence = {
+            "sourceRole": "local_legal_effect",
+            "articleUrl": (first.get("articleUrls") or [None])[0],
+            "attachmentUrl": first.get("attachmentUrl"),
+            "decisionNumbers": first.get("decisionNumbers") or [],
+            "classification": "official_table_level_heading",
+            "repealContext": False,
+        }
+        row["sourceEvidence"] = (
+            [table_evidence] + list(row.get("sourceEvidence") or [])
+        )[:8]
+        stats["updatedPublic"] += 1
+
+    return stats
+
 def main() -> int:
     candidates_payload = load_json(CANDIDATES)
     attachment_payload = load_json(ATTACHMENTS)
@@ -1058,6 +1116,7 @@ def main() -> int:
     priority51_legal_stats = apply_priority51_legal_verification(
         public_rows, excluded, audit_rows, legacy, dvc_map, priority51_legal
     )
+    official_table_stats = apply_official_table_levels(public_rows)
 
     for row in public_rows:
         code = normalize_code(row.get("ma", ""))
@@ -1109,6 +1168,8 @@ def main() -> int:
         "priority51LegalAddedCurrent": priority51_legal_stats["addedCurrent"],
         "priority51LegalSupersededByNewerEvidence": priority51_legal_stats["supersededByNewerEvidence"],
         "phiDiaGioi": sum(1 for x in public_rows if x.get("phiDiaGioi")),
+        "officialTableLevelResolved": official_table_stats["resolved"],
+        "officialTableLevelUpdatedPublic": official_table_stats["updatedPublic"],
     }
     existing_version = ""
     if MASTER_JSON.exists():
