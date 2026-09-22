@@ -953,11 +953,9 @@ def canonical_cap_from_table_classification(value: str, fallback: str) -> str:
 
 def apply_official_table_levels(
     public_rows: list[dict],
-    excluded: list[dict],
-    audit_rows: list[dict],
 ) -> dict:
     if not OFFICIAL_TABLE_LEVELS.exists():
-        return {"resolved": 0, "updatedPublic": 0, "updatedExcluded": 0}
+        return {"resolved": 0, "updatedPublic": 0}
 
     payload = load_json(OFFICIAL_TABLE_LEVELS)
     level_map = {
@@ -965,21 +963,20 @@ def apply_official_table_levels(
         for item in payload.get("rows") or []
         if normalize_code(item.get("ma", ""))
     }
-    audit_map = {normalize_code(x.get("ma", "")): x for x in audit_rows}
-    stats = {"resolved": len(level_map), "updatedPublic": 0, "updatedExcluded": 0}
+    stats = {"resolved": len(level_map), "updatedPublic": 0}
 
-    def apply(row: dict, bucket: str) -> None:
+    for row in public_rows:
         code = normalize_code(row.get("ma", ""))
         item = level_map.get(code)
         if not item:
-            return
+            continue
         current = str(row.get("cap") or "")
         target = canonical_cap_from_table_classification(
             str(item.get("classification") or ""),
             current,
         )
         if not target or target == current:
-            return
+            continue
 
         row["cap"] = target
         evidence_rows = item.get("evidence") or []
@@ -995,19 +992,8 @@ def apply_official_table_levels(
         row["sourceEvidence"] = (
             [table_evidence] + list(row.get("sourceEvidence") or [])
         )[:8]
-        row["verificationStatus"] = str(row.get("verificationStatus") or "") + "+official_table_level"
-        audit = audit_map.get(code)
-        if audit is not None:
-            audit["reason"] = (
-                (str(audit.get("reason") or "") + "; ").strip("; ")
-                + f"Phân loại cấp theo heading phụ lục chính thức: {item.get('classification')}"
-            )
-        stats[bucket] += 1
+        stats["updatedPublic"] += 1
 
-    for row in public_rows:
-        apply(row, "updatedPublic")
-    for row in excluded:
-        apply(row, "updatedExcluded")
     return stats
 
 def main() -> int:
@@ -1130,7 +1116,7 @@ def main() -> int:
     priority51_legal_stats = apply_priority51_legal_verification(
         public_rows, excluded, audit_rows, legacy, dvc_map, priority51_legal
     )
-    official_table_stats = apply_official_table_levels(public_rows, excluded, audit_rows)
+    official_table_stats = apply_official_table_levels(public_rows)
 
     for row in public_rows:
         code = normalize_code(row.get("ma", ""))
@@ -1184,7 +1170,6 @@ def main() -> int:
         "phiDiaGioi": sum(1 for x in public_rows if x.get("phiDiaGioi")),
         "officialTableLevelResolved": official_table_stats["resolved"],
         "officialTableLevelUpdatedPublic": official_table_stats["updatedPublic"],
-        "officialTableLevelUpdatedExcluded": official_table_stats["updatedExcluded"],
     }
     existing_version = ""
     if MASTER_JSON.exists():
