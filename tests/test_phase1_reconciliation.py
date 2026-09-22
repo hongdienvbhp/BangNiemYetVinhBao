@@ -19,15 +19,16 @@ class Phase1ReconciliationTests(unittest.TestCase):
         canonical = json.loads((ROOT / "data" / "thu-tuc.json").read_text(encoding="utf-8-sig"))
         city = json.loads((ROOT / "data" / "source-audit" / "city-updates-current.json").read_text(encoding="utf-8-sig"))
         baseline = json.loads((ROOT / "data" / "source-audit" / "phase1-authoritative-baseline.json").read_text(encoding="utf-8-sig"))
-        result = MODULE.reconcile(canonical, city, baseline)
+        table_levels = json.loads((ROOT / "data" / "source-audit" / "official-table-level-classification.json").read_text(encoding="utf-8-sig"))
+        result = MODULE.reconcile(canonical, city, baseline, table_levels)
 
         self.assertEqual(result["baselineTarget"], 323)
         self.assertEqual(result["canonicalTotal"], 254)
-        self.assertEqual(result["summary"]["phase1CandidateCodes"], 201)
-        self.assertEqual(result["summary"]["outOfScopeProvinceReceptionOnly"], 53)
-        self.assertEqual(result["summary"]["misclassifiedByNewerOfficialEvidence"], 0)
-        self.assertEqual(result["summary"]["minimumMissingAgainstAggregateBaseline"], 122)
-        self.assertEqual(result["COUNT_DRIFT"]["delta"], -122)
+        self.assertEqual(result["summary"]["phase1CandidateCodes"], 199)
+        self.assertEqual(result["summary"]["outOfScopeProvinceReceptionOnly"], 55)
+        self.assertEqual(result["summary"]["misclassifiedByOfficialEvidence"], 2)
+        self.assertEqual(result["summary"]["minimumMissingAgainstAggregateBaseline"], 124)
+        self.assertEqual(result["COUNT_DRIFT"]["delta"], -124)
 
     def test_missing_codes_are_not_invented(self):
         canonical = {"thuTuc": []}
