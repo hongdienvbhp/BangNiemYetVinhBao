@@ -1,0 +1,2542 @@
+{
+  "format": "guidance-field-promotion-ready",
+  "version": 1,
+  "policy": "Chỉ promotion khi canonical đang thiếu, candidate high-confidence và mọi evidence hiện có cho cùng mã đồng thuận.",
+  "summary": {
+    "durationReady": 50,
+    "durationConfirmedExisting": 41,
+    "durationNeedsReview": 12
+  },
+  "ready": [
+    {
+      "ma": "1.000302",
+      "field": "thoiHan",
+      "candidateValue": "01 ngày làm việc kể từ ngày Không thực hi ện cắt giảm",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.000321",
+      "field": "thoiHan",
+      "candidateValue": "01 ngày làm việc kể Không thực hi ện",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.000419",
+      "field": "thoiHan",
+      "candidateValue": "05 ngày làm việc 2.5 ngày làm việc",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-tu-phap.signed639038308976015274.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-ho-tich-quoc-tich-nuoi-con-nuoi-boi-th-844229"
+          ],
+          "decisionNumbers": []
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.000593",
+      "field": "thoiHan",
+      "candidateValue": "05 ngày làm việc 2.5 ngày làm việc",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-tu-phap.signed639038308976015274.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-ho-tich-quoc-tich-nuoi-con-nuoi-boi-th-844229"
+          ],
+          "decisionNumbers": []
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.000689",
+      "field": "thoiHan",
+      "candidateValue": "03 ngày làm vi ệc, trường hợp phải xác minh thì không quá 08 ngày làm việc. 1.5 ngày làm việc, tr",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-tu-phap.signed639038308976015274.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-ho-tich-quoc-tich-nuoi-con-nuoi-boi-th-844229"
+          ],
+          "decisionNumbers": []
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.000703",
+      "field": "thoiHan",
+      "candidateValue": "04 ngày làm việc kể từ ngày nhận đủ hồ sơ đúng theo quy định 2,5 ngày làm việc kể từ n",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.000894",
+      "field": "thoiHan",
+      "candidateValue": "15 giờ mà không giải quyết được ngay thì trả kết quả trong ngày làm việc tiếp theo. Tr",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-tu-phap.signed639038308976015274.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-ho-tich-quoc-tich-nuoi-con-nuoi-boi-th-844229"
+          ],
+          "decisionNumbers": []
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.000905",
+      "field": "thoiHan",
+      "candidateValue": "05 ngày làm việc kể từ khi nhận được hồ sơ hợp lệ 2,5 ngày làm việc kể từ khi nhận được hồ sơ hợp lệ. - Tr",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/qd-cong-bo-dm-tthc-theo-qd-1177-cua-bo-ct..signed639165260606585979.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-xay-dung-va-cong-thuong/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-bi-bai-bo-thuoc-pham-vi-chuc-nang--911891"
+          ],
+          "decisionNumbers": [
+            "1177/QĐ-BCT"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.000957",
+      "field": "thoiHan",
+      "candidateValue": "05 ngày làm việc kể từ khi nhận được hồ sơ hợp lệ 2,5 ngày làm việc kể từ khi nhận được hồ sơ hợp lệ. - Tr",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/qd-cong-bo-dm-tthc-theo-qd-1177-cua-bo-ct..signed639165260606585979.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-xay-dung-va-cong-thuong/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-bi-bai-bo-thuoc-pham-vi-chuc-nang--911891"
+          ],
+          "decisionNumbers": [
+            "1177/QĐ-BCT"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.001023",
+      "field": "thoiHan",
+      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ Không thực hi ện cắt giảm",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.001577",
+      "field": "thoiHan",
+      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ Không thực hi ện cắt giảm",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.001737",
+      "field": "thoiHan",
+      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ Không thực hi ện cắt giảm",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.002046",
+      "field": "thoiHan",
+      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ Không thực hi ện cắ",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.002063",
+      "field": "thoiHan",
+      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ Không thực hi ện cắt giảm",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.002268",
+      "field": "thoiHan",
+      "candidateValue": "01 ngày làm việc kể từ ngày",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.002286",
+      "field": "thoiHan",
+      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ Không thực hi ện cắt giảm",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.002334",
+      "field": "thoiHan",
+      "candidateValue": "01 ngày làm việc kể từ ngày nh",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.002817",
+      "field": "thoiHan",
+      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ Không thực hi ện cắt giảm",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.002829",
+      "field": "thoiHan",
+      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ Không thực hi ện cắt giảm",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.002847",
+      "field": "thoiHan",
+      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợ",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.002856",
+      "field": "thoiHan",
+      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ Không thực hi ện cắt giảm",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.002861",
+      "field": "thoiHan",
+      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ Không thực hi ện cắt giảm",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.002877",
+      "field": "thoiHan",
+      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ Không thực hi ện cắt giảm",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.003583",
+      "field": "thoiHan",
+      "candidateValue": "05 ngày làm việc 2.5 ngày làm việc",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-tu-phap.signed639038308976015274.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-ho-tich-quoc-tich-nuoi-con-nuoi-boi-th-844229"
+          ],
+          "decisionNumbers": []
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.004746",
+      "field": "thoiHan",
+      "candidateValue": "05 ngày làm vi ệc; trường hợp phải xác minh thì thời h ạn giải quy ết không quá 25 ngày. 2.5 ngày",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-tu-phap.signed639038308976015274.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-ho-tich-quoc-tich-nuoi-con-nuoi-boi-th-844229"
+          ],
+          "decisionNumbers": []
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.004772",
+      "field": "thoiHan",
+      "candidateValue": "05 ngày làm vi ệc. Trường hợp ph ải có văn bản xác minh 2.5 ngày làm việc. Trường hợp phải có văn",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-tu-phap.signed639038308976015274.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-ho-tich-quoc-tich-nuoi-con-nuoi-boi-th-844229"
+          ],
+          "decisionNumbers": []
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.004837",
+      "field": "thoiHan",
+      "candidateValue": "03 ngày làm việc 1.5 ngày làm việc",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-tu-phap.signed639038308976015274.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-ho-tich-quoc-tich-nuoi-con-nuoi-boi-th-844229"
+          ],
+          "decisionNumbers": []
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.004873",
+      "field": "thoiHan",
+      "candidateValue": "03 ngày làm vi ệc, trường hợp phải xác minh thì thời h ạn giải quy ết không quá 23 ngày. 1.5 ngày",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-tu-phap.signed639038308976015274.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-ho-tich-quoc-tich-nuoi-con-nuoi-boi-th-844229"
+          ],
+          "decisionNumbers": []
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.004884",
+      "field": "thoiHan",
+      "candidateValue": "05 ngày làm vi ệc. Trường hợp ph ải có văn bản xác minh thì th ời hạn gi ải quyết không quá 25 ng",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-tu-phap.signed639038308976015274.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-ho-tich-quoc-tich-nuoi-con-nuoi-boi-th-844229"
+          ],
+          "decisionNumbers": []
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.005461",
+      "field": "thoiHan",
+      "candidateValue": "05 ngày làm việc; trường hợp 2.5 ngày làm việc; trường hợp cần",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-tu-phap.signed639038308976015274.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-ho-tich-quoc-tich-nuoi-con-nuoi-boi-th-844229"
+          ],
+          "decisionNumbers": []
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.010702",
+      "field": "thoiHan",
+      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ Không thực hi ện cắt giảm",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.010704",
+      "field": "thoiHan",
+      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ Không thực hi ện cắt giảm",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.010707",
+      "field": "thoiHan",
+      "candidateValue": "01 ngày làm việc kể từ",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.011444",
+      "field": "thoiHan",
+      "candidateValue": "01 ngày làm việc ho",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-phu-luc-i-qd-2304-1334-3717-bnn-tp-qp-bai-bo638912182070757189.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+          ],
+          "decisionNumbers": [
+            "1334/QĐ-BTP",
+            "1478/QĐ-UBND",
+            "1582/QĐ-UBND",
+            "2021/QĐ-TTG",
+            "2021/QĐ-UBND",
+            "2128/QĐ-BNNMT",
+            "2304/QĐ-BNNMT",
+            "34/QĐ-BTP",
+            "6225/QĐ-BQP"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.011445",
+      "field": "thoiHan",
+      "candidateValue": "01 ngày làm việc hoặc 03 ngày làm v",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-phu-luc-i-qd-2304-1334-3717-bnn-tp-qp-bai-bo638912182070757189.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+          ],
+          "decisionNumbers": [
+            "1334/QĐ-BTP",
+            "1478/QĐ-UBND",
+            "1582/QĐ-UBND",
+            "2021/QĐ-TTG",
+            "2021/QĐ-UBND",
+            "2128/QĐ-BNNMT",
+            "2304/QĐ-BNNMT",
+            "34/QĐ-BTP",
+            "6225/QĐ-BQP"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.012531",
+      "field": "thoiHan",
+      "candidateValue": "13 ngày làm việc k ể từ ngày nhận đủ hồ sơ hợp lệ 06 ngày làm việc kể",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/5/quyet-dinh-2026-cong-bo-dmtthc-so-nn-va-mt-ttr351-qdnnmt-1637-1649-1674-..signed639143765761167218.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-nong-nghiep-va-moi-truong/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-sua-doi-bo-sung-bi-bai-bo-thuoc-pham-vi-chuc-nang-cua-s-899192"
+          ],
+          "decisionNumbers": [
+            "1357/QĐ-UBND",
+            "1637/QĐ-BNNMT",
+            "1649/QĐ-BNNMT",
+            "1674/QĐ-BNNMT",
+            "519/QĐ-UBND"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.012787",
+      "field": "thoiHan",
+      "candidateValue": "08 ngày làm việ",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-phu-luc-i-qd-2304-1334-3717-bnn-tp-qp-bai-bo638912182070757189.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+          ],
+          "decisionNumbers": [
+            "1334/QĐ-BTP",
+            "1478/QĐ-UBND",
+            "1582/QĐ-UBND",
+            "2021/QĐ-TTG",
+            "2021/QĐ-UBND",
+            "2128/QĐ-BNNMT",
+            "2304/QĐ-BNNMT",
+            "34/QĐ-BTP",
+            "6225/QĐ-BQP"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.012796",
+      "field": "thoiHan",
+      "candidateValue": "08 ngày làm việc - 18 ngày làm việc Đối với các xã miền núi, hải đảo, vùng sâu, vùng xa, vùng có điều kiện",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-phu-luc-i-qd-2304-1334-3717-bnn-tp-qp-bai-bo638912182070757189.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+          ],
+          "decisionNumbers": [
+            "1334/QĐ-BTP",
+            "1478/QĐ-UBND",
+            "1582/QĐ-UBND",
+            "2021/QĐ-TTG",
+            "2021/QĐ-UBND",
+            "2128/QĐ-BNNMT",
+            "2304/QĐ-BNNMT",
+            "34/QĐ-BTP",
+            "6225/QĐ-BQP"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.012812",
+      "field": "thoiHan",
+      "candidateValue": "30 ngày - 40 ngày đối với các xã miền núi, biên giới; đảo; vùng có điều kiện kinh tế - xã hội khó",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-danh-muc-kem-theo638912181889816666.doc",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+          ],
+          "decisionNumbers": [
+            "2003/QĐ-TTG",
+            "2021/QĐ-TTG",
+            "2025/QĐ-TTG"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.013724",
+      "field": "thoiHan",
+      "candidateValue": "15 ngày",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/7/qd-cong-bo-tthc-linh-vuc-viec-lam-atld-qd-636..signed638880367760937972.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-viec-lam/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi-bai-bo-linh-vuc-viec-lam-an-toan-ve-sinh--762741"
+          ],
+          "decisionNumbers": [
+            "2/QĐ-UBND",
+            "636/QĐ-BNV"
+          ]
+        },
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/7/qd-cong-bo-tthc-linh-vuc-viec-lam-atld-qd-636..signed638880367857473885.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-viec-lam/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi-bai-bo-linh-vuc-viec-lam-an-toan-ve-sinh--762741"
+          ],
+          "decisionNumbers": [
+            "2/QĐ-UBND",
+            "636/QĐ-BNV"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.013734",
+      "field": "thoiHan",
+      "candidateValue": "Không quy định",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/7/qd-quyet-dinh-cong-bo-tthc-qd-640..signed638880366333934920.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-quan-ly-lao-dong-ngoai-nuoc/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi-bai-bo-linh-vuc-quan-ly-lao-dong-ngoai-nu-762740"
+          ],
+          "decisionNumbers": [
+            "1214/QĐ-UBND",
+            "640/QĐ-BNV"
+          ]
+        },
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/7/qd-quyet-dinh-cong-bo-tthc-qd-640..signed638880366444336453.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-quan-ly-lao-dong-ngoai-nuoc/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi-bai-bo-linh-vuc-quan-ly-lao-dong-ngoai-nu-762740"
+          ],
+          "decisionNumbers": [
+            "1214/QĐ-UBND",
+            "640/QĐ-BNV"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.013778",
+      "field": "thoiHan",
+      "candidateValue": "05 ngày làm việc kể từ khi nhận được hồ sơ hợp lệ 3,5 ngày làm việc kể từ khi nhận được hồ sơ hợp lệ. - Tr",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/qd-cong-bo-dm-tthc-theo-qd-1177-cua-bo-ct..signed639165260606585979.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-xay-dung-va-cong-thuong/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-bi-bai-bo-thuoc-pham-vi-chuc-nang--911891"
+          ],
+          "decisionNumbers": [
+            "1177/QĐ-BCT"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.013994",
+      "field": "thoiHan",
+      "candidateValue": "15 ngày trường h ợp chuy ển nhượng d ự án đầu tư có sử dụng đất Phục v",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-phu-luc-i-qd-2304-1334-3717-bnn-tp-qp-bai-bo638912182070757189.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+          ],
+          "decisionNumbers": [
+            "1334/QĐ-BTP",
+            "1478/QĐ-UBND",
+            "1582/QĐ-UBND",
+            "2021/QĐ-TTG",
+            "2021/QĐ-UBND",
+            "2128/QĐ-BNNMT",
+            "2304/QĐ-BNNMT",
+            "34/QĐ-BTP",
+            "6225/QĐ-BQP"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.014113",
+      "field": "thoiHan",
+      "candidateValue": "75 ngày kể từ ngày hết thời hạn nhận Phiếu đăng ký dự tuyển đến khi người đứng đầu cơ quan có thẩ",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/qd-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-noi-vu-ttr-632-654-snv-..signed639240220478223314.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/quyet-dinh-so-3500-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-danh-muc-thu-tuc-hanh-chinh-ban-hanh-moi-d-957960"
+          ],
+          "decisionNumbers": [
+            "946/QĐ-BNV",
+            "958/QĐ-BNV"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "1.014953",
+      "field": "thoiHan",
+      "candidateValue": "Không quy định",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/qd-2037-ngay-30.5.2026-ubnd-hp-cong-bo-dm-tthc-moi-sua-doi-thay-the-bai-bo-lvuc-kttv-khcn-dcks-cnty-ttbvtv-qlcl-639165286498031603.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-nong-nghiep-va-moi-truong/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-sua-doi-bo-sung-thay-the-bi-bai-bo-thuoc-pham-vi-chuc-n-911934"
+          ],
+          "decisionNumbers": [
+            "1646/QĐ-UBND",
+            "1858/QĐ-BNNMT",
+            "1869/QĐ-BNNMT",
+            "1877/QĐ-BNNMT",
+            "1878/QĐ-BNNMT",
+            "1883/QĐ-BNNMT",
+            "1897/QĐ-BNNMT",
+            "1908/QĐ-BNNMT",
+            "1931/QĐ-BNNMT",
+            "2198/QĐ-UBND",
+            "2881/QĐ-UBND",
+            "519/QĐ-UBND",
+            "684/QĐ-UBND"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "2.000806",
+      "field": "thoiHan",
+      "candidateValue": "05 ngày làm vi ệc (nếu c ần xác minh thì th ời hạn gi ải quyết không quá 10 ngày) 2.5 ngày làm vi",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-tu-phap.signed639038308976015274.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-ho-tich-quoc-tich-nuoi-con-nuoi-boi-th-844229"
+          ],
+          "decisionNumbers": []
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "2.000913",
+      "field": "thoiHan",
+      "candidateValue": "15 giờ",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phuluc-i-qd-3152-bo-tu-phap638984589798308803.docx",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vuc-chung-thuc-thuoc-pham-vi--810099"
+          ],
+          "decisionNumbers": []
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "2.002189",
+      "field": "thoiHan",
+      "candidateValue": "05 ngày làm vi ệc (nếu c ần xác minh thì",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-tu-phap.signed639038308976015274.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-ho-tich-quoc-tich-nuoi-con-nuoi-boi-th-844229"
+          ],
+          "decisionNumbers": []
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "2.002285",
+      "field": "thoiHan",
+      "candidateValue": "03 ngày làm vi ệc kể từ ngày nhận đủ hồ sơ đúng theo quy định 2,5 ngày làm việc kể từ ngày nhận đ",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    },
+    {
+      "ma": "2.002288",
+      "field": "thoiHan",
+      "candidateValue": "02 ngày làm vi ệc kể từ ngày nhận đủ hồ sơ đúng theo quy định 01 ngày làm việc kể từ",
+      "confidence": "high_consensus",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ],
+      "promotionStatus": "ready"
+    }
+  ],
+  "confirmedExisting": [
+    {
+      "ma": "1.000464",
+      "field": "thoiHan",
+      "currentValue": "15 ngày làm việc",
+      "candidateValue": "15 ngày làm việc 7,5 ngày làm việc",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/5/quyet-dinh-2026-cong-bo-dmtthc-so-noi-vu-ttr332-qdbnv-458-..signed639137660255387575.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-va-bi-bai-bo-thuoc-pham-vi-chuc-na-895721"
+          ],
+          "decisionNumbers": [
+            "458/QĐ-BNV"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.000479",
+      "field": "thoiHan",
+      "currentValue": "22 ngày làm việc",
+      "candidateValue": "22 ngày làm việc 11 ngày làm việc",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/5/quyet-dinh-2026-cong-bo-dmtthc-so-noi-vu-ttr332-qdbnv-458-..signed639137660255387575.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-va-bi-bai-bo-thuoc-pham-vi-chuc-na-895721"
+          ],
+          "decisionNumbers": [
+            "458/QĐ-BNV"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.003705",
+      "field": "thoiHan",
+      "currentValue": "15 ngày làm việc",
+      "candidateValue": "15 ngày làm việc kể từ kh",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/qd-cong-bo-dm-tthc-theo-qd-1289-cua-bo-ct..signed639165256172474387.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-bao-ve-quyen-loi-nguoi-tieu-dung/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-trong-linh-vuc-quan-ly-ban-hang-da-911878"
+          ],
+          "decisionNumbers": [
+            "1298/QĐ-BCT"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.003814",
+      "field": "thoiHan",
+      "currentValue": "03 ngày làm việc",
+      "candidateValue": "03 ngày làm việc Không",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/qd-2037-ngay-30.5.2026-ubnd-hp-cong-bo-dm-tthc-moi-sua-doi-thay-the-bai-bo-lvuc-kttv-khcn-dcks-cnty-ttbvtv-qlcl-639165286498031603.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-nong-nghiep-va-moi-truong/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-sua-doi-bo-sung-thay-the-bi-bai-bo-thuoc-pham-vi-chuc-n-911934"
+          ],
+          "decisionNumbers": [
+            "1646/QĐ-UBND",
+            "1858/QĐ-BNNMT",
+            "1869/QĐ-BNNMT",
+            "1877/QĐ-BNNMT",
+            "1878/QĐ-BNNMT",
+            "1883/QĐ-BNNMT",
+            "1897/QĐ-BNNMT",
+            "1908/QĐ-BNNMT",
+            "1931/QĐ-BNNMT",
+            "2198/QĐ-UBND",
+            "2881/QĐ-UBND",
+            "519/QĐ-UBND",
+            "684/QĐ-UBND"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.003915",
+      "field": "thoiHan",
+      "currentValue": "10 ngày làm việc",
+      "candidateValue": "10 ngày làm việc 5 ngày làm việc",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/quyet-dinh-so-2320-cong-bo-dm-tthc-sua-doi-bo-sung-va-bai-bo-thuoc-quan-ly-cua-so-tu-phap639178246917435630639180044385831717.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/quyet-dinh-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vu-921702"
+          ],
+          "decisionNumbers": [
+            "1444/QĐ-BTP",
+            "1458/QĐ-BTP"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.007916",
+      "field": "thoiHan",
+      "currentValue": "18 ngày làm việc",
+      "candidateValue": "18 ngày làm việc (2) Trư ờng hợp b ố trí (1) Trư ờng",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/08.01-quyet-dinh-2026-cong-bo-dmtthc-so-nn-va-mt-ttr13-..signed639036307820508049.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-nong-nghiep-va-moi-truong/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-sua-doi-bo-sung-bi-bai-bo-thuoc-pham-vi-chuc-nang-cua-s-843171"
+          ],
+          "decisionNumbers": [
+            "01/QĐ-BNNMT",
+            "04/QĐ-BNNMT",
+            "2168/QĐ-UBND",
+            "2787/QĐ-UBND",
+            "5891/QĐ-BNNMT"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.008675",
+      "field": "thoiHan",
+      "currentValue": "15 ngày làm việc",
+      "candidateValue": "15 ngày làm việc 7,5 ngày làm việc",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/08.01-quyet-dinh-2026-cong-bo-dmtthc-so-nn-va-mt-ttr13-..signed639036307820508049.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-nong-nghiep-va-moi-truong/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-sua-doi-bo-sung-bi-bai-bo-thuoc-pham-vi-chuc-nang-cua-s-843171"
+          ],
+          "decisionNumbers": [
+            "01/QĐ-BNNMT",
+            "04/QĐ-BNNMT",
+            "2168/QĐ-UBND",
+            "2787/QĐ-UBND",
+            "5891/QĐ-BNNMT"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.008925",
+      "field": "thoiHan",
+      "currentValue": "03 ngày làm việc",
+      "candidateValue": "03 ngày làm việc Không giảm",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/3/qd-cong-bo-danh-muc-tthc-linh-vuc-thua-phat-lai_so-tu-phap..signed639105892705034388.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-trong-linh-vuc-thua-phat-lai-thuoc-pham-vi-chuc-nang-quan-ly-cua-so--878949"
+          ],
+          "decisionNumbers": [
+            "2600/QĐ-UBND",
+            "731/QĐ-BTP"
+          ]
+        },
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/quyet-dinh-so-2320-cong-bo-dm-tthc-sua-doi-bo-sung-va-bai-bo-thuoc-quan-ly-cua-so-tu-phap639178246917435630639180044385831717.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/quyet-dinh-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vu-921702"
+          ],
+          "decisionNumbers": [
+            "1444/QĐ-BTP",
+            "1458/QĐ-BTP"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.008926",
+      "field": "thoiHan",
+      "currentValue": "02 ngày làm việc",
+      "candidateValue": "02 ngày làm việc Không giảm",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/3/qd-cong-bo-danh-muc-tthc-linh-vuc-thua-phat-lai_so-tu-phap..signed639105892705034388.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-trong-linh-vuc-thua-phat-lai-thuoc-pham-vi-chuc-nang-quan-ly-cua-so--878949"
+          ],
+          "decisionNumbers": [
+            "2600/QĐ-UBND",
+            "731/QĐ-BTP"
+          ]
+        },
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/quyet-dinh-so-2320-cong-bo-dm-tthc-sua-doi-bo-sung-va-bai-bo-thuoc-quan-ly-cua-so-tu-phap639178246917435630639180044385831717.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/quyet-dinh-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vu-921702"
+          ],
+          "decisionNumbers": [
+            "1444/QĐ-BTP",
+            "1458/QĐ-BTP"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.008927",
+      "field": "thoiHan",
+      "currentValue": "05 ngày làm việc",
+      "candidateValue": "05 ngày làm việc Không giảm",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/3/qd-cong-bo-danh-muc-tthc-linh-vuc-thua-phat-lai_so-tu-phap..signed639105892705034388.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-trong-linh-vuc-thua-phat-lai-thuoc-pham-vi-chuc-nang-quan-ly-cua-so--878949"
+          ],
+          "decisionNumbers": [
+            "2600/QĐ-UBND",
+            "731/QĐ-BTP"
+          ]
+        },
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/quyet-dinh-so-2320-cong-bo-dm-tthc-sua-doi-bo-sung-va-bai-bo-thuoc-quan-ly-cua-so-tu-phap639178246917435630639180044385831717.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/quyet-dinh-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vu-921702"
+          ],
+          "decisionNumbers": [
+            "1444/QĐ-BTP",
+            "1458/QĐ-BTP"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.008928",
+      "field": "thoiHan",
+      "currentValue": "03 ngày làm việc",
+      "candidateValue": "03 ngày làm việc Không giảm",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/3/qd-cong-bo-danh-muc-tthc-linh-vuc-thua-phat-lai_so-tu-phap..signed639105892705034388.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-trong-linh-vuc-thua-phat-lai-thuoc-pham-vi-chuc-nang-quan-ly-cua-so--878949"
+          ],
+          "decisionNumbers": [
+            "2600/QĐ-UBND",
+            "731/QĐ-BTP"
+          ]
+        },
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/quyet-dinh-so-2320-cong-bo-dm-tthc-sua-doi-bo-sung-va-bai-bo-thuoc-quan-ly-cua-so-tu-phap639178246917435630639180044385831717.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/quyet-dinh-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vu-921702"
+          ],
+          "decisionNumbers": [
+            "1444/QĐ-BTP",
+            "1458/QĐ-BTP"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.009453",
+      "field": "thoiHan",
+      "currentValue": "02 ngày làm việc",
+      "candidateValue": "02 ngày làm việc k ể từ ngày nhận đ ủ hồ sơ hợp l ệ theo quy định, Chi c ục Hàng h ải và Đường thuỷ, Sở Xâ",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/3095.quyet-dinh-2026-cong-bo-dmtthc-sua-doi-bo-sung-thay-the-bai-bo-so-xd-ttr252-..signed639217002722341280.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-xay-dung-va-cong-thuong/quyet-dinh-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-thay-the-bi-bai-bo-thuoc-pha-945437"
+          ],
+          "decisionNumbers": [
+            "1136/QĐ-BXD"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.012756",
+      "field": "thoiHan",
+      "currentValue": "17 ngày làm việc",
+      "candidateValue": "17 ngày làm việc",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-danh-muc-kem-theo638912181889816666.doc",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+          ],
+          "decisionNumbers": [
+            "2003/QĐ-TTG",
+            "2021/QĐ-TTG",
+            "2025/QĐ-TTG"
+          ]
+        },
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-phu-luc-i-qd-2304-1334-3717-bnn-tp-qp-bai-bo638912182070757189.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+          ],
+          "decisionNumbers": [
+            "1334/QĐ-BTP",
+            "1478/QĐ-UBND",
+            "1582/QĐ-UBND",
+            "2021/QĐ-TTG",
+            "2021/QĐ-UBND",
+            "2128/QĐ-BNNMT",
+            "2304/QĐ-BNNMT",
+            "34/QĐ-BTP",
+            "6225/QĐ-BQP"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.012766",
+      "field": "thoiHan",
+      "currentValue": "03 ngày làm việc",
+      "candidateValue": "03 ngày làm việc. (Đối với các xã miền núi, hải đảo, vùng sâu, vùng xa",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-danh-muc-kem-theo638912181889816666.doc",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+          ],
+          "decisionNumbers": [
+            "2003/QĐ-TTG",
+            "2021/QĐ-TTG",
+            "2025/QĐ-TTG"
+          ]
+        },
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-phu-luc-i-qd-2304-1334-3717-bnn-tp-qp-bai-bo638912182070757189.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+          ],
+          "decisionNumbers": [
+            "1334/QĐ-BTP",
+            "1478/QĐ-UBND",
+            "1582/QĐ-UBND",
+            "2021/QĐ-TTG",
+            "2021/QĐ-UBND",
+            "2128/QĐ-BNNMT",
+            "2304/QĐ-BNNMT",
+            "34/QĐ-BTP",
+            "6225/QĐ-BQP"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.012782",
+      "field": "thoiHan",
+      "currentValue": "01 tháng",
+      "candidateValue": "01 tháng 7 năm 2004, phần d",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-danh-muc-kem-theo638912181889816666.doc",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+          ],
+          "decisionNumbers": [
+            "2003/QĐ-TTG",
+            "2021/QĐ-TTG",
+            "2025/QĐ-TTG"
+          ]
+        },
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-phu-luc-i-qd-2304-1334-3717-bnn-tp-qp-bai-bo638912182070757189.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+          ],
+          "decisionNumbers": [
+            "1334/QĐ-BTP",
+            "1478/QĐ-UBND",
+            "1582/QĐ-UBND",
+            "2021/QĐ-TTG",
+            "2021/QĐ-UBND",
+            "2128/QĐ-BNNMT",
+            "2304/QĐ-BNNMT",
+            "34/QĐ-BTP",
+            "6225/QĐ-BQP"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.012784",
+      "field": "thoiHan",
+      "currentValue": "12 ngày làm việc",
+      "candidateValue": "12 ngày làm việc (Đối với các xã miền núi, hải đảo, vùng sâu, vùng xa, vùng có điều kiện kinh tế - xã hội",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-danh-muc-kem-theo638912181889816666.doc",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+          ],
+          "decisionNumbers": [
+            "2003/QĐ-TTG",
+            "2021/QĐ-TTG",
+            "2025/QĐ-TTG"
+          ]
+        },
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-phu-luc-i-qd-2304-1334-3717-bnn-tp-qp-bai-bo638912182070757189.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+          ],
+          "decisionNumbers": [
+            "1334/QĐ-BTP",
+            "1478/QĐ-UBND",
+            "1582/QĐ-UBND",
+            "2021/QĐ-TTG",
+            "2021/QĐ-UBND",
+            "2128/QĐ-BNNMT",
+            "2304/QĐ-BNNMT",
+            "34/QĐ-BTP",
+            "6225/QĐ-BQP"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.012785",
+      "field": "thoiHan",
+      "currentValue": "01 tháng",
+      "candidateValue": "01 tháng 8 năm 2024 mà bên chuyển quyền đã được cấp Giấy chứng nhưng chưa thực hiệ",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-danh-muc-kem-theo638912181889816666.doc",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+          ],
+          "decisionNumbers": [
+            "2003/QĐ-TTG",
+            "2021/QĐ-TTG",
+            "2025/QĐ-TTG"
+          ]
+        },
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-phu-luc-i-qd-2304-1334-3717-bnn-tp-qp-bai-bo638912182070757189.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+          ],
+          "decisionNumbers": [
+            "1334/QĐ-BTP",
+            "1478/QĐ-UBND",
+            "1582/QĐ-UBND",
+            "2021/QĐ-TTG",
+            "2021/QĐ-UBND",
+            "2128/QĐ-BNNMT",
+            "2304/QĐ-BNNMT",
+            "34/QĐ-BTP",
+            "6225/QĐ-BQP"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.012786",
+      "field": "thoiHan",
+      "currentValue": "10 ngày làm việc",
+      "candidateValue": "10 ngày làm việc (Đối với các xã miền núi, hải đảo, vùng sâu, vùng xa, vùng có điều kiện kinh tế - xã hội",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-danh-muc-kem-theo638912181889816666.doc",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+          ],
+          "decisionNumbers": [
+            "2003/QĐ-TTG",
+            "2021/QĐ-TTG",
+            "2025/QĐ-TTG"
+          ]
+        },
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-phu-luc-i-qd-2304-1334-3717-bnn-tp-qp-bai-bo638912182070757189.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+          ],
+          "decisionNumbers": [
+            "1334/QĐ-BTP",
+            "1478/QĐ-UBND",
+            "1582/QĐ-UBND",
+            "2021/QĐ-TTG",
+            "2021/QĐ-UBND",
+            "2128/QĐ-BNNMT",
+            "2304/QĐ-BNNMT",
+            "34/QĐ-BTP",
+            "6225/QĐ-BQP"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.012789",
+      "field": "thoiHan",
+      "currentValue": "01 ngày làm việc",
+      "candidateValue": "01 ngày làm việc - Đối với trường hợp thông t",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-danh-muc-kem-theo638912181889816666.doc",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+          ],
+          "decisionNumbers": [
+            "2003/QĐ-TTG",
+            "2021/QĐ-TTG",
+            "2025/QĐ-TTG"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.012790",
+      "field": "thoiHan",
+      "currentValue": "08 ngày làm việc",
+      "candidateValue": "08 ngày làm việc (Đối với các xã miền núi, hải đảo, vùng sâu, vùng xa, vùng có điều kiện kinh tế - xã hội",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-danh-muc-kem-theo638912181889816666.doc",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+          ],
+          "decisionNumbers": [
+            "2003/QĐ-TTG",
+            "2021/QĐ-TTG",
+            "2025/QĐ-TTG"
+          ]
+        },
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-phu-luc-i-qd-2304-1334-3717-bnn-tp-qp-bai-bo638912182070757189.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+          ],
+          "decisionNumbers": [
+            "1334/QĐ-BTP",
+            "1478/QĐ-UBND",
+            "1582/QĐ-UBND",
+            "2021/QĐ-TTG",
+            "2021/QĐ-UBND",
+            "2128/QĐ-BNNMT",
+            "2304/QĐ-BNNMT",
+            "34/QĐ-BTP",
+            "6225/QĐ-BQP"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.012817",
+      "field": "thoiHan",
+      "currentValue": "01 tháng",
+      "candidateValue": "01 tháng 7 năm 2004 - 20 ngày làm việc - 30 ngày làm việc Đối với các xã miề",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-phu-luc-i-qd-2304-1334-3717-bnn-tp-qp-bai-bo638912182070757189.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+          ],
+          "decisionNumbers": [
+            "1334/QĐ-BTP",
+            "1478/QĐ-UBND",
+            "1582/QĐ-UBND",
+            "2021/QĐ-TTG",
+            "2021/QĐ-UBND",
+            "2128/QĐ-BNNMT",
+            "2304/QĐ-BNNMT",
+            "34/QĐ-BTP",
+            "6225/QĐ-BQP"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.013725",
+      "field": "thoiHan",
+      "currentValue": "15 ngày",
+      "candidateValue": "15 ngày",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/7/qd-cong-bo-tthc-linh-vuc-viec-lam-atld-qd-636..signed638880367760937972.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-viec-lam/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi-bai-bo-linh-vuc-viec-lam-an-toan-ve-sinh--762741"
+          ],
+          "decisionNumbers": [
+            "2/QĐ-UBND",
+            "636/QĐ-BNV"
+          ]
+        },
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/7/qd-cong-bo-tthc-linh-vuc-viec-lam-atld-qd-636..signed638880367857473885.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-viec-lam/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi-bai-bo-linh-vuc-viec-lam-an-toan-ve-sinh--762741"
+          ],
+          "decisionNumbers": [
+            "2/QĐ-UBND",
+            "636/QĐ-BNV"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.013947",
+      "field": "thoiHan",
+      "currentValue": "07 ngày làm việc",
+      "candidateValue": "07 ngày làm việc (Đối với các xã miền núi, hải đảo, vùng sâu, vùng xa, vùng có điều kiện kinh tế - xã hội",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-danh-muc-kem-theo638912181889816666.doc",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+          ],
+          "decisionNumbers": [
+            "2003/QĐ-TTG",
+            "2021/QĐ-TTG",
+            "2025/QĐ-TTG"
+          ]
+        },
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-phu-luc-i-qd-2304-1334-3717-bnn-tp-qp-bai-bo638912182070757189.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+          ],
+          "decisionNumbers": [
+            "1334/QĐ-BTP",
+            "1478/QĐ-UBND",
+            "1582/QĐ-UBND",
+            "2021/QĐ-TTG",
+            "2021/QĐ-UBND",
+            "2128/QĐ-BNNMT",
+            "2304/QĐ-BNNMT",
+            "34/QĐ-BTP",
+            "6225/QĐ-BQP"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.013988",
+      "field": "thoiHan",
+      "currentValue": "01 ngày làm việc",
+      "candidateValue": "01 ngày làm việc",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-danh-muc-kem-theo638912181889816666.doc",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+          ],
+          "decisionNumbers": [
+            "2003/QĐ-TTG",
+            "2021/QĐ-TTG",
+            "2025/QĐ-TTG"
+          ]
+        },
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-phu-luc-i-qd-2304-1334-3717-bnn-tp-qp-bai-bo638912182070757189.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+          ],
+          "decisionNumbers": [
+            "1334/QĐ-BTP",
+            "1478/QĐ-UBND",
+            "1582/QĐ-UBND",
+            "2021/QĐ-TTG",
+            "2021/QĐ-UBND",
+            "2128/QĐ-BNNMT",
+            "2304/QĐ-BNNMT",
+            "34/QĐ-BTP",
+            "6225/QĐ-BQP"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.013992",
+      "field": "thoiHan",
+      "currentValue": "07 ngày làm việc",
+      "candidateValue": "07 ngày làm việc (Đối với các xã miền núi, hải đảo, vùng sâu, vùng xa, v",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-danh-muc-kem-theo638912181889816666.doc",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+          ],
+          "decisionNumbers": [
+            "2003/QĐ-TTG",
+            "2021/QĐ-TTG",
+            "2025/QĐ-TTG"
+          ]
+        },
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-phu-luc-i-qd-2304-1334-3717-bnn-tp-qp-bai-bo638912182070757189.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+          ],
+          "decisionNumbers": [
+            "1334/QĐ-BTP",
+            "1478/QĐ-UBND",
+            "1582/QĐ-UBND",
+            "2021/QĐ-TTG",
+            "2021/QĐ-UBND",
+            "2128/QĐ-BNNMT",
+            "2304/QĐ-BNNMT",
+            "34/QĐ-BTP",
+            "6225/QĐ-BQP"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.014111",
+      "field": "thoiHan",
+      "currentValue": "140 ngày",
+      "candidateValue": "140 ngày kể từ ngày hết thời hạn nhận Phiếu đăng ký dự tuyển cho đến khi người đứng đầu cơ quan có",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/qd-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-noi-vu-ttr-632-654-snv-..signed639240220478223314.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/quyet-dinh-so-3500-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-danh-muc-thu-tuc-hanh-chinh-ban-hanh-moi-d-957960"
+          ],
+          "decisionNumbers": [
+            "946/QĐ-BNV",
+            "958/QĐ-BNV"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.014389",
+      "field": "thoiHan",
+      "currentValue": "08 ngày làm việc",
+      "candidateValue": "08 ngày làm việc Không đề xuất cắt giảm do đã được cắt giảm thời gian giải quyết TTHC tại Nghị Quyết số 20",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/3-quyet-dinh-2026-cong-bo-dmtthc-so-khcn-ttr158-159-..signed639165273570813118.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-van-hoa-khoa-hoc-va-thong-tin/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-thuoc-pham-vi-chuc-nang-quan-ly-cu-911906"
+          ],
+          "decisionNumbers": [
+            "2498/QĐ-BKHCN",
+            "2527/QĐ-BKHCN"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.014390",
+      "field": "thoiHan",
+      "currentValue": "06 ngày làm việc",
+      "candidateValue": "06 ngày làm việc Không đ ề xuất c ắt",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/3-quyet-dinh-2026-cong-bo-dmtthc-so-khcn-ttr158-159-..signed639165273570813118.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-van-hoa-khoa-hoc-va-thong-tin/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-thuoc-pham-vi-chuc-nang-quan-ly-cu-911906"
+          ],
+          "decisionNumbers": [
+            "2498/QĐ-BKHCN",
+            "2527/QĐ-BKHCN"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "2.000324",
+      "field": "thoiHan",
+      "currentValue": "15 ngày làm việc",
+      "candidateValue": "15 ngày làm việc kể từ ngày thực hiện kiểm tra kiến thức pháp luật về bán hàng đa",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/qd-cong-bo-dm-tthc-theo-qd-1289-cua-bo-ct..signed639165256172474387.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-bao-ve-quyen-loi-nguoi-tieu-dung/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-trong-linh-vuc-quan-ly-ban-hang-da-911878"
+          ],
+          "decisionNumbers": [
+            "1298/QĐ-BCT"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "2.000609",
+      "field": "thoiHan",
+      "currentValue": "05 ngày làm việc",
+      "candidateValue": "05 ngày làm việc kể từ ngày doanh nghiệp nộp thông báo 3,5 ngày làm việc kể từ ngày doanh nghiệp nộp thô",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/qd-cong-bo-dm-tthc-theo-qd-1289-cua-bo-ct..signed639165256172474387.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-bao-ve-quyen-loi-nguoi-tieu-dung/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-trong-linh-vuc-quan-ly-ban-hang-da-911878"
+          ],
+          "decisionNumbers": [
+            "1298/QĐ-BCT"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "2.001225",
+      "field": "thoiHan",
+      "currentValue": "80 ngày",
+      "candidateValue": "80 ngày 45 ngày",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/quyet-dinh-so-2320-cong-bo-dm-tthc-sua-doi-bo-sung-va-bai-bo-thuoc-quan-ly-cua-so-tu-phap639178246917435630639180044385831717.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/quyet-dinh-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vu-921702"
+          ],
+          "decisionNumbers": [
+            "1444/QĐ-BTP",
+            "1458/QĐ-BTP"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "2.001576",
+      "field": "thoiHan",
+      "currentValue": "23 ngày làm việc",
+      "candidateValue": "23 ngày làm việc 11,5 ngày làm việc",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/qd-2037-ngay-30.5.2026-ubnd-hp-cong-bo-dm-tthc-moi-sua-doi-thay-the-bai-bo-lvuc-kttv-khcn-dcks-cnty-ttbvtv-qlcl-639165286498031603.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-nong-nghiep-va-moi-truong/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-sua-doi-bo-sung-thay-the-bi-bai-bo-thuoc-pham-vi-chuc-n-911934"
+          ],
+          "decisionNumbers": [
+            "1646/QĐ-UBND",
+            "1858/QĐ-BNNMT",
+            "1869/QĐ-BNNMT",
+            "1877/QĐ-BNNMT",
+            "1878/QĐ-BNNMT",
+            "1883/QĐ-BNNMT",
+            "1897/QĐ-BNNMT",
+            "1908/QĐ-BNNMT",
+            "1931/QĐ-BNNMT",
+            "2198/QĐ-UBND",
+            "2881/QĐ-UBND",
+            "519/QĐ-UBND",
+            "684/QĐ-UBND"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "2.001610",
+      "field": "thoiHan",
+      "currentValue": "03 ngày làm việc",
+      "candidateValue": "03 ngày làm việc 1,5 ngày làm việc",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/2/quyet-dinh-2026-cong-bo-dm-tthc-so-tai-chinh-ttr32-33-qd-92-94-..signed639072658014847416.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tai-chinh-ke-hoach/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-sua-doi-bo-sung-va-bi-bai-bo-thuoc-pham-vi-chuc-nang-qu-860475"
+          ],
+          "decisionNumbers": [
+            "2831/QĐ-UBND",
+            "4166/QĐ-BTC",
+            "92/QĐ-BTC",
+            "94/QĐ-BTC"
+          ]
+        },
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/quyet-dinh-2026-cong-bo-dmtthc-linh-vuc-dkdn-.....signed639221474071232220.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tai-chinh-ke-hoach/quyet-dinh-cong-bo-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-thuoc-pham-vi-chuc-nang-qua-947762"
+          ],
+          "decisionNumbers": [
+            "1996/QĐ-BTC",
+            "1998/QĐ-BTC",
+            "2884/QĐ-UBND"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "2.002020",
+      "field": "thoiHan",
+      "currentValue": "05 ngày",
+      "candidateValue": "05 ngày",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/quyet-dinh-2026-cong-bo-dmtthc-linh-vuc-dkdn-.....signed639221474071232220.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tai-chinh-ke-hoach/quyet-dinh-cong-bo-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-thuoc-pham-vi-chuc-nang-qua-947762"
+          ],
+          "decisionNumbers": [
+            "1996/QĐ-BTC",
+            "1998/QĐ-BTC",
+            "2884/QĐ-UBND"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "2.002036",
+      "field": "thoiHan",
+      "currentValue": "75 ngày làm việc",
+      "candidateValue": "75 ngày làm việc 70.5 ngày làm việc",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-tu-phap.signed639038308976015274.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-ho-tich-quoc-tich-nuoi-con-nuoi-boi-th-844229"
+          ],
+          "decisionNumbers": []
+        }
+      ]
+    },
+    {
+      "ma": "2.002038",
+      "field": "thoiHan",
+      "currentValue": "85 ngày làm việc",
+      "candidateValue": "85 ngày làm việc 67.5 ngày làm việc",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-tu-phap.signed639038308976015274.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-ho-tich-quoc-tich-nuoi-con-nuoi-boi-th-844229"
+          ],
+          "decisionNumbers": []
+        }
+      ]
+    },
+    {
+      "ma": "2.002039",
+      "field": "thoiHan",
+      "currentValue": "105 ngày làm việc",
+      "candidateValue": "105 ngày làm việc 82.5 ngày làm việc",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-tu-phap.signed639038308976015274.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-ho-tich-quoc-tich-nuoi-con-nuoi-boi-th-844229"
+          ],
+          "decisionNumbers": []
+        }
+      ]
+    },
+    {
+      "ma": "2.002042",
+      "field": "thoiHan",
+      "currentValue": "03 ngày làm việc",
+      "candidateValue": "03 ngày làm việc 1,5 ngày làm việc",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/2/quyet-dinh-2026-cong-bo-dm-tthc-so-tai-chinh-ttr32-33-qd-92-94-..signed639072658014847416.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tai-chinh-ke-hoach/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-sua-doi-bo-sung-va-bi-bai-bo-thuoc-pham-vi-chuc-nang-qu-860475"
+          ],
+          "decisionNumbers": [
+            "2831/QĐ-UBND",
+            "4166/QĐ-BTC",
+            "92/QĐ-BTC",
+            "94/QĐ-BTC"
+          ]
+        },
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/quyet-dinh-2026-cong-bo-dmtthc-linh-vuc-dkdn-.....signed639221474071232220.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tai-chinh-ke-hoach/quyet-dinh-cong-bo-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-thuoc-pham-vi-chuc-nang-qua-947762"
+          ],
+          "decisionNumbers": [
+            "1996/QĐ-BTC",
+            "1998/QĐ-BTC",
+            "2884/QĐ-UBND"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "2.002043",
+      "field": "thoiHan",
+      "currentValue": "03 ngày làm việc",
+      "candidateValue": "03 ngày làm việc 1,5 ngày làm việc",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/2/quyet-dinh-2026-cong-bo-dm-tthc-so-tai-chinh-ttr32-33-qd-92-94-..signed639072658014847416.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tai-chinh-ke-hoach/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-sua-doi-bo-sung-va-bi-bai-bo-thuoc-pham-vi-chuc-nang-qu-860475"
+          ],
+          "decisionNumbers": [
+            "2831/QĐ-UBND",
+            "4166/QĐ-BTC",
+            "92/QĐ-BTC",
+            "94/QĐ-BTC"
+          ]
+        },
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/quyet-dinh-2026-cong-bo-dmtthc-linh-vuc-dkdn-.....signed639221474071232220.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tai-chinh-ke-hoach/quyet-dinh-cong-bo-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-thuoc-pham-vi-chuc-nang-qua-947762"
+          ],
+          "decisionNumbers": [
+            "1996/QĐ-BTC",
+            "1998/QĐ-BTC",
+            "2884/QĐ-UBND"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "2.002139",
+      "field": "thoiHan",
+      "currentValue": "10 ngày",
+      "candidateValue": "10 ngày 5 ngày",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/quyet-dinh-so-2320-cong-bo-dm-tthc-sua-doi-bo-sung-va-bai-bo-thuoc-quan-ly-cua-so-tu-phap639178246917435630639180044385831717.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/quyet-dinh-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vu-921702"
+          ],
+          "decisionNumbers": [
+            "1444/QĐ-BTP",
+            "1458/QĐ-BTP"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "2.002821",
+      "field": "thoiHan",
+      "currentValue": "07 ngày làm việc",
+      "candidateValue": "07 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ 05 ngày làm vi ệc kể từ ngà",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/1.-qd-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-noi-vu..signed639040667148325665.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-quan-ly-lao-dong-ngoai-nuoc/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-bi-bai-bo-linh-vuc-nguoi-lao-dong-di-lam-viec-o-nuoc-ng-845673"
+          ],
+          "decisionNumbers": [
+            "1561/QĐ-BNV",
+            "4/QĐ-BNV"
+          ]
+        }
+      ]
+    }
+  ],
+  "needsReview": [
+    {
+      "ma": "1.011441",
+      "field": "thoiHan",
+      "reason": "candidate_disagreement",
+      "currentValue": "15 giờ",
+      "candidates": [
+        {
+          "value": "15 giờ cùng ngày",
+          "source": {
+            "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-danh-muc-kem-theo638912181889816666.doc",
+            "articleUrls": [
+              "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+            ],
+            "decisionNumbers": [
+              "2003/QĐ-TTG",
+              "2021/QĐ-TTG",
+              "2025/QĐ-TTG"
+            ]
+          },
+          "rawSnippet": "PHÁP BẢO ĐẢM (05 THỦ TỤC) - TTHC do Bộ Tư pháp công bố, Sở Nông nghiệp và Môi trường công bố và giải quyết\u0007\u0007\u0007\u00071.011441\u0007Đăng ký biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất\u0007(1) Trong ngày làm việc nhận được hồ sơ hợp lệ; nếu thời điểm nhận hồ sơ sau 15 giờ cùng ngày"
+        },
+        {
+          "value": "01 ngày làm việc hoặc 03 ngày làm việc trường hợp cơ quan đăng ký có lý do chính đáng Văn phòn",
+          "source": {
+            "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-phu-luc-i-qd-2304-1334-3717-bnn-tp-qp-bai-bo638912182070757189.pdf",
+            "articleUrls": [
+              "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+            ],
+            "decisionNumbers": [
+              "1334/QĐ-BTP",
+              "1478/QĐ-UBND",
+              "1582/QĐ-UBND",
+              "2021/QĐ-TTG",
+              "2021/QĐ-UBND",
+              "2128/QĐ-BNNMT",
+              "2304/QĐ-BNNMT",
+              "34/QĐ-BTP",
+              "6225/QĐ-BQP"
+            ]
+          },
+          "rawSnippet": "THẨM QUYỀN GIẢI QUYẾT CỦA SỞ NÔNG NGHIỆP VÀ MÔI TRƯỜNG III LĨNH VỰC ĐĂNG KÝ BIỆN PHÁP BẢO ĐẢM (05 THỦ TỤC) 1 1.011441 Đăng ký biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất 01 ngày làm việc hoặc 03 ngày làm việc trường hợp cơ quan đăng ký có lý do chính đáng Văn phòn"
+        }
+      ]
+    },
+    {
+      "ma": "1.011442",
+      "field": "thoiHan",
+      "reason": "candidate_disagreement",
+      "currentValue": "15 giờ",
+      "candidates": [
+        {
+          "value": "15 giờ c",
+          "source": {
+            "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-danh-muc-kem-theo638912181889816666.doc",
+            "articleUrls": [
+              "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+            ],
+            "decisionNumbers": [
+              "2003/QĐ-TTG",
+              "2021/QĐ-TTG",
+              "2025/QĐ-TTG"
+            ]
+          },
+          "rawSnippet": ". \u00071.Đối với tổ chức: VPĐKĐĐ trực tiếp thực hiện TTHC 2. Đối với cá nhân: CNVPĐKĐĐ trực tiếp thực hiện TTHC\u0007\u0007\u00071.011442\u0007Đăng ký thay đổi biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất\u0007(1) Trong ngày làm việc nhận được hồ sơ hợp lệ; nếu thời điểm nhận hồ sơ sau 15 giờ c"
+        },
+        {
+          "value": "01 ngày làm việc hoặc 03 ngày làm việc trường hợp cơ quan đăng ký có lý do chính đáng",
+          "source": {
+            "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-phu-luc-i-qd-2304-1334-3717-bnn-tp-qp-bai-bo638912182070757189.pdf",
+            "articleUrls": [
+              "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+            ],
+            "decisionNumbers": [
+              "1334/QĐ-BTP",
+              "1478/QĐ-UBND",
+              "1582/QĐ-UBND",
+              "2021/QĐ-TTG",
+              "2021/QĐ-UBND",
+              "2128/QĐ-BNNMT",
+              "2304/QĐ-BNNMT",
+              "34/QĐ-BTP",
+              "6225/QĐ-BQP"
+            ]
+          },
+          "rawSnippet": "9/TT- BTP ngày 25/11/2019, số 10/2024/TT-BTNMT ngày 31/7/2024; - Quyết định số 1334/QĐ -BTP ngày 25/4/2025. 2 1.011442 Đăng ký thay đổi biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất 01 ngày làm việc hoặc 03 ngày làm việc trường hợp cơ quan đăng ký có lý do chính đáng"
+        }
+      ]
+    },
+    {
+      "ma": "1.011443",
+      "field": "thoiHan",
+      "reason": "candidate_disagreement",
+      "currentValue": "15 giờ",
+      "candidates": [
+        {
+          "value": "15 giờ cùng n",
+          "source": {
+            "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-danh-muc-kem-theo638912181889816666.doc",
+            "articleUrls": [
+              "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+            ],
+            "decisionNumbers": [
+              "2003/QĐ-TTG",
+              "2021/QĐ-TTG",
+              "2025/QĐ-TTG"
+            ]
+          },
+          "rawSnippet": ". \u00071.Đối với tổ chức: VPĐKĐĐ trực tiếp thực hiện TTHC 2. Đối với cá nhân: CNVPĐKĐĐ trực tiếp thực hiện TTHC\u0007\u0007\u00071.011443\u0007Xoá Đăng ký biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất\u0007(1) Trong ngày làm việc nhận được hồ sơ hợp lệ; nếu thời điểm nhận hồ sơ sau 15 giờ cùng n"
+        },
+        {
+          "value": "01 ngày làm việc hoặc 03 ngày làm việc trường hợp cơ quan đăng ký có lý do chính đáng Văn",
+          "source": {
+            "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-phu-luc-i-qd-2304-1334-3717-bnn-tp-qp-bai-bo638912182070757189.pdf",
+            "articleUrls": [
+              "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+            ],
+            "decisionNumbers": [
+              "1334/QĐ-BTP",
+              "1478/QĐ-UBND",
+              "1582/QĐ-UBND",
+              "2021/QĐ-TTG",
+              "2021/QĐ-UBND",
+              "2128/QĐ-BNNMT",
+              "2304/QĐ-BNNMT",
+              "34/QĐ-BTP",
+              "6225/QĐ-BQP"
+            ]
+          },
+          "rawSnippet": "11/2019, số 10/2024/TT-BTNMT ngày 31/7/2024; - Quyết định số 1334/QĐ -BTP ngày 25/4/2025. 51.000 đồng/hồ sơ 3 1.011443 Xoá Đăng ký biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất 01 ngày làm việc hoặc 03 ngày làm việc trường hợp cơ quan đăng ký có lý do chính đáng Văn"
+        }
+      ]
+    },
+    {
+      "ma": "1.012783",
+      "field": "thoiHan",
+      "reason": "candidate_disagreement",
+      "currentValue": "05 ngày làm việc",
+      "candidates": [
+        {
+          "value": "05 ngày làm việc (Đối với các xã miền núi, hải đảo, vùng sâu, vùng xa, vùng có điều ki",
+          "source": {
+            "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-danh-muc-kem-theo638912181889816666.doc",
+            "articleUrls": [
+              "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+            ],
+            "decisionNumbers": [
+              "2003/QĐ-TTG",
+              "2021/QĐ-TTG",
+              "2025/QĐ-TTG"
+            ]
+          },
+          "rawSnippet": "025/NĐ-CP ngày 09/6/2025; - Nghị định số 151/2025/NĐ-CP ngày 12/6/2025.\u0007 CN VPĐKĐĐ trực tiếp thực hiện TTHC\u0007\u0007\u00071.012783\u0007Cấp đổi Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất\u0007- 05 ngày làm việc (Đối với các xã miền núi, hải đảo, vùng sâu, vùng xa, vùng có điều ki"
+        },
+        {
+          "value": "05 ngày làm việc (Đối với các xã miền núi, hải đảo, vùng sâu, vùng xa, vùng có điều kiện",
+          "source": {
+            "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-phu-luc-i-qd-2304-1334-3717-bnn-tp-qp-bai-bo638912182070757189.pdf",
+            "articleUrls": [
+              "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+            ],
+            "decisionNumbers": [
+              "1334/QĐ-BTP",
+              "1478/QĐ-UBND",
+              "1582/QĐ-UBND",
+              "2021/QĐ-TTG",
+              "2021/QĐ-UBND",
+              "2128/QĐ-BNNMT",
+              "2304/QĐ-BNNMT",
+              "34/QĐ-BTP",
+              "6225/QĐ-BQP"
+            ]
+          },
+          "rawSnippet": "ng có điều kiện kinh tế - xã hội đặc biệt khó khăn thì thời gian thực hiện được tăng thêm 10 ngày làm việc) 6 1.012783 Cấp đổi Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất 05 ngày làm việc (Đối với các xã miền núi, hải đảo, vùng sâu, vùng xa, vùng có điều kiện"
+        }
+      ]
+    },
+    {
+      "ma": "1.012805",
+      "field": "thoiHan",
+      "reason": "candidate_disagreement",
+      "currentValue": "50 ngày làm việc",
+      "candidates": [
+        {
+          "value": "50 ngày làm việc - 60 ngày làm việc Đối với các xã miền núi, biên giới; đảo; vùng có đ",
+          "source": {
+            "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-danh-muc-kem-theo638912181889816666.doc",
+            "articleUrls": [
+              "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+            ],
+            "decisionNumbers": [
+              "2003/QĐ-TTG",
+              "2021/QĐ-TTG",
+              "2025/QĐ-TTG"
+            ]
+          },
+          "rawSnippet": "29/7/2024\u0002; - Nghị định số 118/2025/NĐ-CP ngày 09/6/2025\u0002; - Nghị định số 151/2025/NĐ-CP ngày 12/6/2025\u0002.\u0007\u0007\u0007\u00071.012805\u0007Giải quyết tranh chấp đất đai thuộc thẩm quyền của Chủ tịch Ủy ban nhân cấp tỉnh\u0007- 50 ngày làm việc - 60 ngày làm việc Đối với các xã miền núi, biên giới; đảo; vùng có đ"
+        },
+        {
+          "value": "40 ngày làm việc - 50 ngày làm việc Đối với các xã miền núi, biên giới; đảo; vùng có đ",
+          "source": {
+            "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-phu-luc-i-qd-2304-1334-3717-bnn-tp-qp-bai-bo638912182070757189.pdf",
+            "articleUrls": [
+              "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+            ],
+            "decisionNumbers": [
+              "1334/QĐ-BTP",
+              "1478/QĐ-UBND",
+              "1582/QĐ-UBND",
+              "2021/QĐ-TTG",
+              "2021/QĐ-UBND",
+              "2128/QĐ-BNNMT",
+              "2304/QĐ-BNNMT",
+              "34/QĐ-BTP",
+              "6225/QĐ-BQP"
+            ]
+          },
+          "rawSnippet": "gày 09/6/2025; - Nghị đ ịnh số 151/2025/NĐ-CP ngày 12/6/2025; - Quyết định số 2304/QĐ- BNNMT ngày 23/6/2025 2 1.012805 Giải quyết tranh chấp đất đai thuộc thẩm quyền của Chủ tịch Ủy ban nhân cấp tỉnh - 40 ngày làm việc - 50 ngày làm việc Đối với các xã miền núi, biên giới; đảo; vùng có đ"
+        }
+      ]
+    },
+    {
+      "ma": "1.012821",
+      "field": "thoiHan",
+      "reason": "candidate_disagreement",
+      "currentValue": "33 ngày làm việc",
+      "candidates": [
+        {
+          "value": "33 ngày làm việc - 43 ngày làm việc Đối với các xã miền núi, biên giới; đảo; vùng có điều kiện kinh tế - x",
+          "source": {
+            "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-danh-muc-kem-theo638912181889816666.doc",
+            "articleUrls": [
+              "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+            ],
+            "decisionNumbers": [
+              "2003/QĐ-TTG",
+              "2021/QĐ-TTG",
+              "2025/QĐ-TTG"
+            ]
+          },
+          "rawSnippet": "công trực tuyến (X)\u0007Căn cứ pháp lý\u0007Ghi chú\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007Toàn trình\u0007Một phần\u0007\u0007\u0007\u0007I\u0007LĨNH VỰC ĐẤT ĐAI (33 THỦ TỤC)\u0007\u0007\u0007\u0007\u00071.012821\u0007Thẩm định, phê duyệt phương án sử dụng đất\u0007- 33 ngày làm việc - 43 ngày làm việc Đối với các xã miền núi, biên giới; đảo; vùng có điều kiện kinh tế - xã hội khó khăn; vù"
+        },
+        {
+          "value": "28 ngày làm việc - 38 ngày làm việc Đối với các xã miền núi, biên giới; đảo; vùng có điều kiện kinh tế - x",
+          "source": {
+            "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-phu-luc-i-qd-2304-1334-3717-bnn-tp-qp-bai-bo638912182070757189.pdf",
+            "articleUrls": [
+              "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+            ],
+            "decisionNumbers": [
+              "1334/QĐ-BTP",
+              "1478/QĐ-UBND",
+              "1582/QĐ-UBND",
+              "2021/QĐ-TTG",
+              "2021/QĐ-UBND",
+              "2128/QĐ-BNNMT",
+              "2304/QĐ-BNNMT",
+              "34/QĐ-BTP",
+              "6225/QĐ-BQP"
+            ]
+          },
+          "rawSnippet": "ý Ghi chú Sở NNMT UBND TP Trực tiếp Trực tuyến trên DVCQG Dịch vụ bưu chính VII. Lĩnh vực đất đai (09 TTHC) 1 1.012821 Thẩm định, phê duyệt phương án sử dụng đất - 28 ngày làm việc - 38 ngày làm việc Đối với các xã miền núi, biên giới; đảo; vùng có điều kiện kinh tế - xã hội khó khăn; vù"
+        }
+      ]
+    },
+    {
+      "ma": "1.013825",
+      "field": "thoiHan",
+      "reason": "candidate_disagreement",
+      "currentValue": "15 ngày",
+      "candidates": [
+        {
+          "value": "15 ngày - 25 ngày Đối với các xã miền núi, biên giới; đảo; vùng có điều kiện kinh tế - xã hội khó",
+          "source": {
+            "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-danh-muc-kem-theo638912181889816666.doc",
+            "articleUrls": [
+              "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+            ],
+            "decisionNumbers": [
+              "2003/QĐ-TTG",
+              "2021/QĐ-TTG",
+              "2025/QĐ-TTG"
+            ]
+          },
+          "rawSnippet": "y 09/6/2025. - Nghị định số 131/2025/NĐ-CP ngày 12/6/2025\u0002. - Nghị định số 151/2025/NĐ-CP ngày 12/6/2025. \u0007\u0007\u0007\u00071.013825\u0007Chuyển hình thức giao đất, cho thuê đất\u0007- 15 ngày - 25 ngày Đối với các xã miền núi, biên giới; đảo; vùng có điều kiện kinh tế - xã hội khó khăn; vùng có điều kiện kinh"
+        },
+        {
+          "value": "10 ngày - 20 ngày Đối với các xã miền núi, biên giới; đảo; vùng có điều kiện kinh tế - xã hội khó",
+          "source": {
+            "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-phu-luc-i-qd-2304-1334-3717-bnn-tp-qp-bai-bo638912182070757189.pdf",
+            "articleUrls": [
+              "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+            ],
+            "decisionNumbers": [
+              "1334/QĐ-BTP",
+              "1478/QĐ-UBND",
+              "1582/QĐ-UBND",
+              "2021/QĐ-TTG",
+              "2021/QĐ-UBND",
+              "2128/QĐ-BNNMT",
+              "2304/QĐ-BNNMT",
+              "34/QĐ-BTP",
+              "6225/QĐ-BQP"
+            ]
+          },
+          "rawSnippet": "sử dụng đất đặc biệt khó khăn 151/2025/NĐ-CP ngày 12/6/2025. - Quyết định số 2304/QĐ- BNNMT ngày 23/6/2025 4 1.013825 Chuyển hình thức giao đất, cho thuê đất - 10 ngày - 20 ngày Đối với các xã miền núi, biên giới; đảo; vùng có điều kiện kinh tế - xã hội khó khăn; vùng có điều kiện kinh"
+        }
+      ]
+    },
+    {
+      "ma": "1.013828",
+      "field": "thoiHan",
+      "reason": "candidate_disagreement",
+      "currentValue": "15 ngày",
+      "candidates": [
+        {
+          "value": "15 ngày - 25 ngày Đối với các xã miền núi, biên giới; đảo; vùng có điều kiện kinh tế - xã hội",
+          "source": {
+            "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-danh-muc-kem-theo638912181889816666.doc",
+            "articleUrls": [
+              "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+            ],
+            "decisionNumbers": [
+              "2003/QĐ-TTG",
+              "2021/QĐ-TTG",
+              "2025/QĐ-TTG"
+            ]
+          },
+          "rawSnippet": "gày 30/7/2024. - Nghị định số 118/2015/NĐ-CP ngày 09/6/2025. - Nghị định số 151/2025/NĐ-CP ngày 12/6/2025.\u0007\u0007\u0007\u00071.013828\u0007Giao đất, cho thuê đất, giao khu vực biển để thực hiện hoạt động lấn biển\u0007- 15 ngày - 25 ngày Đối với các xã miền núi, biên giới; đảo; vùng có điều kiện kinh tế - xã hội"
+        },
+        {
+          "value": "10 ngày - 20 ngày Đối với các xã miền núi, biên giới; đảo; vùng có điều kiện kinh tế - xã hội",
+          "source": {
+            "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-phu-luc-i-qd-2304-1334-3717-bnn-tp-qp-bai-bo638912182070757189.pdf",
+            "articleUrls": [
+              "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+            ],
+            "decisionNumbers": [
+              "1334/QĐ-BTP",
+              "1478/QĐ-UBND",
+              "1582/QĐ-UBND",
+              "2021/QĐ-TTG",
+              "2021/QĐ-UBND",
+              "2128/QĐ-BNNMT",
+              "2304/QĐ-BNNMT",
+              "34/QĐ-BTP",
+              "6225/QĐ-BQP"
+            ]
+          },
+          "rawSnippet": "/2015/NĐ-CP ngày 09/6/2025; số 151/2025/NĐ-CP ngày 12/6/2025. - Quyết định số 2304/QĐ- BNNMT ngày 23/6/2025 7 1.013828 Giao đất, cho thuê đất, giao khu vực biển để thực hiện hoạt động lấn biển - 10 ngày - 20 ngày Đối với các xã miền núi, biên giới; đảo; vùng có điều kiện kinh tế - xã hội"
+        }
+      ]
+    },
+    {
+      "ma": "1.013945",
+      "field": "thoiHan",
+      "reason": "candidate_disagreement",
+      "currentValue": "23 ngày làm việc",
+      "candidates": [
+        {
+          "value": "23 ngày làm việc - 33 ngày làm việc Đối với c",
+          "source": {
+            "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-danh-muc-kem-theo638912181889816666.doc",
+            "articleUrls": [
+              "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+            ],
+            "decisionNumbers": [
+              "2003/QĐ-TTG",
+              "2021/QĐ-TTG",
+              "2025/QĐ-TTG"
+            ]
+          },
+          "rawSnippet": "gày 30/7/2024. - Nghị định số 118/2015/NĐ-CP ngày 09/6/2025. - Nghị định số 151/2025/NĐ-CP ngày 12/6/2025.\u0007\u0007\u0007\u00071.013945\u0007Tổ chức kinh tế nhận chuyển nhượng, thuê quyền sử dụng đất, nhận góp vốn bằng quyền sử dụng đất để thực hiện dự án đầu tư\u0007- 23 ngày làm việc - 33 ngày làm việc Đối với c"
+        },
+        {
+          "value": "18 ngày làm việc - 28 ngày làm việc Đối với c",
+          "source": {
+            "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-phu-luc-i-qd-2304-1334-3717-bnn-tp-qp-bai-bo638912182070757189.pdf",
+            "articleUrls": [
+              "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+            ],
+            "decisionNumbers": [
+              "1334/QĐ-BTP",
+              "1478/QĐ-UBND",
+              "1582/QĐ-UBND",
+              "2021/QĐ-TTG",
+              "2021/QĐ-UBND",
+              "2128/QĐ-BNNMT",
+              "2304/QĐ-BNNMT",
+              "34/QĐ-BTP",
+              "6225/QĐ-BQP"
+            ]
+          },
+          "rawSnippet": "ngày 12/6/2025. - Quyết định số 2304/QĐ- BNNMT ngày 23/6/2025 điều kiện kinh tế - xã hội đặc biệt khó khăn 8 1.013945 Tổ chức kinh tế nhận chuyển nhượng, thuê quyền sử dụng đất, nhận góp vốn bằng quyền sử dụng đất để thực hiện dự án đầu tư - 18 ngày làm việc - 28 ngày làm việc Đối với c"
+        }
+      ]
+    },
+    {
+      "ma": "1.013946",
+      "field": "thoiHan",
+      "reason": "candidate_disagreement",
+      "currentValue": "15 ngày",
+      "candidates": [
+        {
+          "value": "15 ngày (25 ngày Đối với các xã miền núi, biên giới; đảo; vùng có điều kiện kinh tế",
+          "source": {
+            "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-danh-muc-kem-theo638912181889816666.doc",
+            "articleUrls": [
+              "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+            ],
+            "decisionNumbers": [
+              "2003/QĐ-TTG",
+              "2021/QĐ-TTG",
+              "2025/QĐ-TTG"
+            ]
+          },
+          "rawSnippet": "gày 30/7/2024. - Nghị định số 118/2015/NĐ-CP ngày 09/6/2025. - Nghị định số 151/2025/NĐ-CP ngày 12/6/2025.\u0007\u0007\u0007\u00071.013946\u0007Sử dụng đất kết hợp đa mục đích, gia hạn phương án sử dụng đất kết hợp đa mục đích\u0007- 15 ngày (25 ngày Đối với các xã miền núi, biên giới; đảo; vùng có điều kiện kinh tế"
+        },
+        {
+          "value": "10 ngày - 20 ngày Đối với các xã miền núi, biên giới; đảo; vùng có điều kiện kinh tế",
+          "source": {
+            "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-phu-luc-i-qd-2304-1334-3717-bnn-tp-qp-bai-bo638912182070757189.pdf",
+            "articleUrls": [
+              "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+            ],
+            "decisionNumbers": [
+              "1334/QĐ-BTP",
+              "1478/QĐ-UBND",
+              "1582/QĐ-UBND",
+              "2021/QĐ-TTG",
+              "2021/QĐ-UBND",
+              "2128/QĐ-BNNMT",
+              "2304/QĐ-BNNMT",
+              "34/QĐ-BTP",
+              "6225/QĐ-BQP"
+            ]
+          },
+          "rawSnippet": "/2015/NĐ-CP ngày 09/6/2025; số 151/2025/NĐ-CP ngày 12/6/2025. - Quyết định số 2304/QĐ- BNNMT ngày 23/6/2025 9 1.013946 Sử dụng đất kết hợp đa mục đích, gia hạn phương án sử dụng đất kết hợp đa mục đích - 10 ngày - 20 ngày Đối với các xã miền núi, biên giới; đảo; vùng có điều kiện kinh tế"
+        }
+      ]
+    },
+    {
+      "ma": "1.014310",
+      "field": "thoiHan",
+      "reason": "candidate_disagreement",
+      "currentValue": "04 tháng",
+      "candidates": [
+        {
+          "value": "04 tháng 8 năm 2025 của Chính phủ Di sản văn hóa",
+          "source": {
+            "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/9/1263-ngay-20.9-qd-bh-qtnb-tthc-moi-ban-hanh-linh-vuc-dsvh-cap-xa.signed638942443461051919.pdf",
+            "articleUrls": [
+              "https://vinhbao.haiphong.gov.vn/linh-vuc-van-hoa/noi-dung-02-thu-tuc-hanh-chinh-moi-ban-hanh-trong-linh-vuc-di-san-van-hoa-thuoc-tham-quyen-giai--785067"
+            ],
+            "decisionNumbers": [
+              "1263/QĐ-SVHTTDL",
+              "2025/QĐ-UBND",
+              "3817/QĐ-UBND",
+              "680/QĐ-CT"
+            ]
+          },
+          "rawSnippet": "Tên thủ tục hành chính Tên VBQPPL quy định Lĩnh vực Cơ quan thực hiện I. LĨNH VỰC DI SẢN VĂN HÓA (02 TTHC) 1 1.014310 Thủ tục hưởng trợ cấp sinh hoạt hàng tháng đối với Nghệ nhân nhân dân, Nghệ nhân ưu tú Nghị định số 215/2025/NĐ-CP ngày 04 tháng 8 năm 2025 của Chính phủ Di sản văn hóa"
+        },
+        {
+          "value": "05 ngày làm việc 2,5 ngày làm việc",
+          "source": {
+            "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/9/3817-ngay-20.9-qdcong-bo-dmtthc-theo-qd-3101-3257..signed638942443410426259.pdf",
+            "articleUrls": [
+              "https://vinhbao.haiphong.gov.vn/linh-vuc-van-hoa/noi-dung-02-thu-tuc-hanh-chinh-moi-ban-hanh-trong-linh-vuc-di-san-van-hoa-thuoc-tham-quyen-giai--785067"
+            ],
+            "decisionNumbers": [
+              "3101/QĐ-BVHTTDL",
+              "3257/QĐ-BVHTTDL"
+            ]
+          },
+          "rawSnippet": "tuyến (x) Căn cứ pháp lý Theo quy định Sau cắt giảm Toàn trình Một phần I LĨNH VỰC DI SẢN VĂN HÓA (02 TTHC) 1 1.014310 Thủ tục hưởng trợ cấp sinh hoạt hàng tháng đối với Nghệ nhân nhân dân, Nghệ nhân ưu tú 05 ngày làm việc 2,5 ngày làm việc Trung tâm Phục vụ hành chính công cấp xã Không"
+        },
+        {
+          "value": "05 ngày làm việc 2,5 ngày làm việc",
+          "source": {
+            "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/9/qd_-_2025-_cong-bo-dmtthc-theo-qd-3101-3257..signed638941259701889500.pdf",
+            "articleUrls": [
+              "https://vinhbao.haiphong.gov.vn/linh-vuc-van-hoa/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-thu-tuc-hanh-chinh-bi-bai-bo-linh-vuc-di-san-van-hoa-th-784116"
+            ],
+            "decisionNumbers": [
+              "3101/QĐ-BVHTTDL",
+              "3257/QĐ-BVHTTDL"
+            ]
+          },
+          "rawSnippet": "tuyến (x) Căn cứ pháp lý Theo quy định Sau cắt giảm Toàn trình Một phần I LĨNH VỰC DI SẢN VĂN HÓA (02 TTHC) 1 1.014310 Thủ tục hưởng trợ cấp sinh hoạt hàng tháng đối với Nghệ nhân nhân dân, Nghệ nhân ưu tú 05 ngày làm việc 2,5 ngày làm việc Trung tâm Phục vụ hành chính công cấp xã Không"
+        }
+      ]
+    },
+    {
+      "ma": "1.014312",
+      "field": "thoiHan",
+      "reason": "candidate_disagreement",
+      "currentValue": "04 tháng",
+      "candidates": [
+        {
+          "value": "04 tháng 8 năm 2025 của Chính",
+          "source": {
+            "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/9/1263-ngay-20.9-qd-bh-qtnb-tthc-moi-ban-hanh-linh-vuc-dsvh-cap-xa.signed638942443461051919.pdf",
+            "articleUrls": [
+              "https://vinhbao.haiphong.gov.vn/linh-vuc-van-hoa/noi-dung-02-thu-tuc-hanh-chinh-moi-ban-hanh-trong-linh-vuc-di-san-van-hoa-thuoc-tham-quyen-giai--785067"
+            ],
+            "decisionNumbers": [
+              "1263/QĐ-SVHTTDL",
+              "2025/QĐ-UBND",
+              "3817/QĐ-UBND",
+              "680/QĐ-CT"
+            ]
+          },
+          "rawSnippet": "tú Nghị định số 215/2025/NĐ-CP ngày 04 tháng 8 năm 2025 của Chính phủ Di sản văn hóa Ủy ban nhân dân cấp xã 2 1.014312 Thủ tục thôi hưởng trợ cấp sinh hoạt hàng tháng, bảo hiểm y tế đối với Nghệ nhân nhân dân, Nghệ nhân ưu tú Nghị định số 215/2025/NĐ-CP ngày 04 tháng 8 năm 2025 của Chính"
+        },
+        {
+          "value": "15 ngày làm việc 7,5 ngày làm việc",
+          "source": {
+            "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/9/3817-ngay-20.9-qdcong-bo-dmtthc-theo-qd-3101-3257..signed638942443410426259.pdf",
+            "articleUrls": [
+              "https://vinhbao.haiphong.gov.vn/linh-vuc-van-hoa/noi-dung-02-thu-tuc-hanh-chinh-moi-ban-hanh-trong-linh-vuc-di-san-van-hoa-thuoc-tham-quyen-giai--785067"
+            ],
+            "decisionNumbers": [
+              "3101/QĐ-BVHTTDL",
+              "3257/QĐ-BVHTTDL"
+            ]
+          },
+          "rawSnippet": "5/2024/QH15 ngày 23 tháng 11 năm 2024. - Nghị định số 215/2025/NĐ-CP ngày 04 tháng 8 năm 2025 của Chính phủ 2 1.014312 Thủ tục thôi hưởng trợ c ấp sinh hoạt hàng tháng, bảo hiểm y tế đối với Ngh ệ nhân nhân dân, Nghệ nhân ưu tú 15 ngày làm việc 7,5 ngày làm việc Trung tâm Phục vụ hành ch"
+        },
+        {
+          "value": "15 ngày làm việc 7,5 ngày làm việc",
+          "source": {
+            "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/9/qd_-_2025-_cong-bo-dmtthc-theo-qd-3101-3257..signed638941259701889500.pdf",
+            "articleUrls": [
+              "https://vinhbao.haiphong.gov.vn/linh-vuc-van-hoa/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-thu-tuc-hanh-chinh-bi-bai-bo-linh-vuc-di-san-van-hoa-th-784116"
+            ],
+            "decisionNumbers": [
+              "3101/QĐ-BVHTTDL",
+              "3257/QĐ-BVHTTDL"
+            ]
+          },
+          "rawSnippet": "5/2024/QH15 ngày 23 tháng 11 năm 2024. - Nghị định số 215/2025/NĐ-CP ngày 04 tháng 8 năm 2025 của Chính phủ 2 1.014312 Thủ tục thôi hưởng trợ c ấp sinh hoạt hàng tháng, bảo hiểm y tế đối với Ngh ệ nhân nhân dân, Nghệ nhân ưu tú 15 ngày làm việc 7,5 ngày làm việc Trung tâm Phục vụ hành ch"
+        }
+      ]
+    }
+  ]
+}
