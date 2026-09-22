@@ -227,7 +227,8 @@
         tt.verificationStatus === "verified_official" ||
         Object.keys(guidance).length
       ),
-      hasGuidance: Object.keys(guidance).length > 0
+      hasGuidance: Object.keys(guidance).length > 0,
+      submitRoute: String(tt.cap || "").trim().toLowerCase().startsWith("cấp tỉnh") ? "province" : "ward"
     };
   }
 
@@ -525,7 +526,9 @@
         ✨ NỘP HỒ SƠ TRỰC TUYẾN ↗
       </a>
       <p class="dvc-hint">
-        Mở Cổng Dịch vụ công Quốc gia tại đúng địa bàn xã Vĩnh Bảo, thành phố Hải Phòng.
+        ${tt.submitRoute === "province"
+          ? "Mở Cổng Dịch vụ công Quốc gia tại đúng cấp thành phố Hải Phòng. Nếu thủ tục được tiếp nhận tại Trung tâm PVHCC xã Vĩnh Bảo thì đây chỉ là điểm tiếp nhận, không thay đổi cấp có thẩm quyền giải quyết."
+          : "Mở Cổng Dịch vụ công Quốc gia tại đúng xã Vĩnh Bảo, thành phố Hải Phòng."}
       </p>
     `;
 
