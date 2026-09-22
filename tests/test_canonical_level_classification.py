@@ -21,9 +21,9 @@ class CanonicalLevelClassificationTests(unittest.TestCase):
             "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
         )
 
-    def test_unknown_hint_does_not_infer_province(self):
+    def test_unknown_hint_preserves_fallback(self):
         self.assertEqual(
-            canonical_cap_from_city_row({"communeReceptionEvidence": True}),
+            canonical_cap_from_city_row({"communeReceptionEvidence": True}, "Xã / điểm tiếp nhận cấp xã"),
             "Xã / điểm tiếp nhận cấp xã",
         )
 
