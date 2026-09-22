@@ -11,7 +11,7 @@
     "outOfScopeProvinceReceptionOnly": 55,
     "misclassifiedByOfficialEvidence": 0,
     "ambiguousCommuneOrShared": 149,
-    "provisionalCommuneCapLabel": 47,
+    "provisionalCommuneCapLabel": 48,
     "directlyEvidencedPhase1": 16,
     "officialTableClassifiedCodes": 36,
     "minimumMissingAgainstAggregateBaseline": 124,
@@ -399,6 +399,7 @@
     "2.002165",
     "2.002396",
     "2.002409",
+    "2.002821",
     "2.002913"
   ]
 }
