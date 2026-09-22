@@ -4,121 +4,132 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+try:
+    from scripts.validate_guidance_field_candidates import build as build_duration_gate
+    from scripts.validate_online_service_candidates import build as build_online_gate
+    from scripts.validate_fee_candidates import build as build_fee_gate
+    from scripts.validate_legal_basis_candidates import build as build_legal_gate
+    from scripts.validate_official_guidance_fields import build as build_official_validation
+except ModuleNotFoundError:
+    from validate_guidance_field_candidates import build as build_duration_gate
+    from validate_online_service_candidates import build as build_online_gate
+    from validate_fee_candidates import build as build_fee_gate
+    from validate_legal_basis_candidates import build as build_legal_gate
+    from validate_official_guidance_fields import build as build_official_validation
+
 ROOT = Path(__file__).resolve().parents[1]
-VALIDATED = ROOT / "data" / "source-audit" / "official-guidance-validated.json"
-CANDIDATES = ROOT / "data" / "source-audit" / "official-guidance-candidates.json"
+CANONICAL = ROOT / "data" / "thu-tuc.json"
+FIELD_CANDIDATES = ROOT / "data" / "source-audit" / "guidance-field-candidates.json"
+OFFICIAL_CANDIDATES = ROOT / "data" / "source-audit" / "official-guidance-candidates.json"
 OUT = ROOT / "data" / "source-audit" / "official-guidance-promotion-plan.json"
 
-TARGETS = {
-    "onlineServiceLevel": "onlineServiceLevel",
-    "thoiHan": "thoiHan",
-    "phiLePhi": "phiLePhi",
-    "canCuPhapLy": "canCuPhapLy",
-    "coQuanThucHien": "coQuanThucHien",
-}
-
-CANDIDATE_KEYS = {
-    "onlineServiceLevel": "onlineServiceLevelCandidate",
-    "thoiHan": "durationCandidates",
-    "phiLePhi": ("feeCandidates", "feeStatusCandidate"),
-    "canCuPhapLy": "legalBasisCandidates",
-    "coQuanThucHien": "agencyCandidates",
-}
+FIELDS = (
+    "onlineServiceLevel",
+    "thoiHan",
+    "phiLePhi",
+    "canCuPhapLy",
+    "coQuanThucHien",
+)
 
 
-def _normalize_values(value: object) -> list[str]:
-    if value in (None, "", [], {}):
-        return []
-    if isinstance(value, list):
-        return [str(x).strip() for x in value if str(x).strip()]
-    return [str(value).strip()]
+def _ready_codes(payload: dict) -> list[str]:
+    return sorted({
+        str(item.get("ma") or "").strip()
+        for item in payload.get("ready") or []
+        if str(item.get("ma") or "").strip()
+    })
 
 
-def evidence_for_field(candidate: dict, field: str, verified_value: object) -> list[dict]:
-    wanted = set(_normalize_values(verified_value))
-    out: list[dict] = []
-    for evidence in candidate.get("evidence") or []:
-        keys = CANDIDATE_KEYS[field]
-        keys = keys if isinstance(keys, tuple) else (keys,)
-        values: list[str] = []
-        for key in keys:
-            values.extend(_normalize_values(evidence.get(key)))
-        if wanted and not wanted.intersection(values):
-            continue
-        item = {
-            "articleUrls": evidence.get("articleUrls") or [],
-            "attachmentUrl": evidence.get("attachmentUrl"),
-            "decisionNumbers": evidence.get("decisionNumbers") or [],
-            "segment": evidence.get("segment") or "",
-        }
-        if item not in out:
-            out.append(item)
-    return out
+def build(canonical: dict, field_candidates: dict, official_candidates: dict) -> dict:
+    duration = build_duration_gate(canonical, field_candidates)
+    online = build_online_gate(canonical, field_candidates)
+    fee = build_fee_gate(canonical, field_candidates)
+    legal = build_legal_gate(canonical, field_candidates)
+    official = build_official_validation(official_candidates)
+    agency = (official.get("summary") or {}).get("coQuanThucHien") or {}
 
-
-def build(validated: dict, candidates: dict) -> dict:
-    candidate_by_code = {
-        str(row.get("ma") or "").strip(): row
-        for row in candidates.get("rows") or []
+    ready_codes = {
+        "onlineServiceLevel": _ready_codes(online),
+        "thoiHan": _ready_codes(duration),
+        "phiLePhi": _ready_codes(fee),
+        "canCuPhapLy": _ready_codes(legal),
+        # Raw agency candidates are intentionally never promoted from this plan.
+        # The official-guidance validator must first produce a verified agency
+        # from explicitly labelled evidence.
+        "coQuanThucHien": [],
     }
-    procedures = []
-    field_counts = {field: 0 for field in TARGETS}
-
-    for row in validated.get("rows") or []:
-        code = str(row.get("ma") or "").strip()
-        candidate = candidate_by_code.get(code)
-        if not code or not candidate:
-            continue
-        promotions = []
-        for field in row.get("promotableFields") or []:
-            result = (row.get("fields") or {}).get(field) or {}
-            if result.get("status") != "verified" or field not in TARGETS:
-                continue
-            value = result.get("value")
-            evidence = evidence_for_field(candidate, field, value)
-            # A verified value without recoverable field-level evidence is not promotable.
-            if not evidence:
-                continue
-            promotions.append({
-                "field": field,
-                "targetPath": TARGETS[field],
-                "value": value,
-                "status": "ready_for_schema_gate",
-                "provenance": evidence,
-            })
-            field_counts[field] += 1
-        if promotions:
-            procedures.append({
-                "ma": code,
-                "promotionStatus": "pending_canonical_schema_gate",
-                "promotions": promotions,
-            })
+    all_ready_codes = sorted({
+        code
+        for codes in ready_codes.values()
+        for code in codes
+    })
+    by_field = {field: len(ready_codes[field]) for field in FIELDS}
 
     return {
         "format": "official-guidance-promotion-plan",
-        "version": 1,
+        "version": 2,
         "sources": [
-            str(VALIDATED.relative_to(ROOT)),
-            str(CANDIDATES.relative_to(ROOT)),
+            "data/thu-tuc.json",
+            "data/source-audit/guidance-field-candidates.json",
+            "data/source-audit/official-guidance-candidates.json",
         ],
         "policy": (
-            "Plan only; không mutate canonical. Một field chỉ xuất hiện trong plan khi "
-            "validator=verified và truy ngược được evidence cụ thể chứa cùng giá trị."
+            "Plan an toàn chỉ tổng hợp candidate đã qua specialized field gate. "
+            "Không mutate canonical và không phát lệnh promotion cho đến khi có "
+            "PR migrate canonical v5 riêng, có provenance/validator/CI đầy đủ."
         ),
-        "summary": {
-            "procedures": len(procedures),
-            "fieldPromotions": sum(field_counts.values()),
-            "byField": field_counts,
+        "schemaGate": {
+            "requiredCanonicalContractVersion": 5,
+            "canonicalVersion": canonical.get("version"),
+            "status": "blocked",
+            "reason": (
+                "Canonical hiện chưa materialize đầy đủ contract v5; "
+                "promotion phải thực hiện trong PR schema-gated riêng."
+            ),
         },
-        "procedures": procedures,
+        "summary": {
+            "procedures": 0,
+            "fieldPromotions": 0,
+            "safeReadyProcedures": len(all_ready_codes),
+            "safeReadyFields": sum(by_field.values()),
+            "byField": by_field,
+            "confirmedExisting": {
+                "onlineServiceLevel": len(online.get("confirmedExisting") or []),
+                "thoiHan": len(duration.get("confirmedExisting") or []),
+                "phiLePhi": len(fee.get("confirmedExisting") or []),
+                "canCuPhapLy": len(legal.get("confirmedExisting") or []),
+                "coQuanThucHien": int(agency.get("verified") or 0),
+            },
+            "needsReview": {
+                "onlineServiceLevel": len(online.get("needsReview") or []),
+                "thoiHan": len(duration.get("needsReview") or []),
+                "phiLePhi": len(fee.get("needsReview") or []),
+                "canCuPhapLy": len(legal.get("needsReview") or []),
+                "coQuanThucHien": {
+                    "conflicting": int(agency.get("conflicting") or 0),
+                    "insufficient": int(agency.get("insufficient") or 0),
+                },
+            },
+            "pendingCanonicalPhase2": {
+                "onlineServiceLevel": len(online.get("pendingCanonicalPhase2") or []),
+                "phiLePhi": len(fee.get("pendingCanonicalPhase2") or []),
+                "canCuPhapLy": len(legal.get("pendingCanonicalPhase2") or []),
+            },
+        },
+        "readyCandidateCodes": ready_codes,
+        "procedures": [],
     }
 
 
 def main() -> int:
-    validated = json.loads(VALIDATED.read_text(encoding="utf-8-sig"))
-    candidates = json.loads(CANDIDATES.read_text(encoding="utf-8-sig"))
-    result = build(validated, candidates)
-    OUT.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    canonical = json.loads(CANONICAL.read_text(encoding="utf-8-sig"))
+    field_candidates = json.loads(FIELD_CANDIDATES.read_text(encoding="utf-8-sig"))
+    official_candidates = json.loads(OFFICIAL_CANDIDATES.read_text(encoding="utf-8-sig"))
+    result = build(canonical, field_candidates, official_candidates)
+    OUT.write_text(
+        json.dumps(result, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
     print(json.dumps(result["summary"], ensure_ascii=False))
     return 0
 
