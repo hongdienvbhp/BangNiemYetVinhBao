@@ -81,9 +81,17 @@ jobs:
           git diff --exit-code -- data/source-audit/official-table-level-classification.json
 
       - name: Extract official guidance candidates
-        run: |
-          python scripts/extract_official_guidance_candidates.py
-          git diff --exit-code -- data/source-audit/official-guidance-candidates.json
+        run: python scripts/extract_official_guidance_candidates.py
+
+      - name: Upload official guidance candidate snapshot
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: official-guidance-candidates
+          path: data/source-audit/official-guidance-candidates.json
+          if-no-files-found: error
+
+      - name: Verify official guidance candidate snapshot
+        run: git diff --exit-code -- data/source-audit/official-guidance-candidates.json
 
       - name: Reconcile Phase 1 baseline
         run: |
