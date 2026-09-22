@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import quote, urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 MASTER = ROOT / "data" / "thu-tuc.json"
@@ -35,6 +35,16 @@ def official_dvcqg_url(value: object) -> bool:
     return parsed.scheme == "https" and (parsed.hostname or "").lower() == "dichvucong.gov.vn"
 
 
+def canonical_formality_url(formality_id: str) -> str:
+    fid = norm(formality_id)
+    if not fid:
+        return ""
+    return (
+        "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh"
+        f"?formalityId={quote(fid, safe='')}"
+    )
+
+
 def build(master: dict, locators: dict) -> dict:
     locator_by_code = {
         norm(row.get("ma")): row
@@ -63,6 +73,22 @@ def build(master: dict, locators: dict) -> dict:
             and norm(locator.get("candidateName")) == canonical_name
             and official_dvcqg_url(candidate_url)
         )
+        if exact_identity:
+            verification_lane = "EXACT_FORMALITY_CASE"
+            verification_priority = 1
+            verification_url = candidate_url
+            verification_status = "awaiting_current_official_verification"
+        elif canonical_fid:
+            verification_lane = "FORMALITY_ID_LOOKUP"
+            verification_priority = 2
+            verification_url = canonical_formality_url(canonical_fid)
+            verification_status = "canonical_formality_locator_pending"
+        else:
+            verification_lane = "KEYWORD_SEARCH_ONLY"
+            verification_priority = 3
+            verification_url = norm(row.get("nopHoSoUrl"))
+            verification_status = "formality_identity_unresolved"
+
         rows.append({
             "ma": code,
             "canonicalName": canonical_name,
@@ -73,10 +99,10 @@ def build(master: dict, locators: dict) -> dict:
             "candidateContentHash": norm((locator or {}).get("contentHash")) if exact_identity else "",
             "candidateScrapedAt": norm((locator or {}).get("scrapedAt")) if exact_identity else "",
             "identityMatch": exact_identity,
-            "verificationStatus": (
-                "awaiting_current_official_verification"
-                if exact_identity else "official_locator_unresolved"
-            ),
+            "verificationLane": verification_lane,
+            "verificationPriority": verification_priority,
+            "verificationUrl": verification_url,
+            "verificationStatus": verification_status,
             "requiredFields": REQUIRED_FIELDS,
             "publishAllowed": False,
         })
@@ -94,8 +120,10 @@ def build(master: dict, locators: dict) -> dict:
             "active": len(active),
             "existingGuidance": sum(isinstance(row.get("huongDan"), dict) for row in active),
             "queued": len(rows),
-            "exactOfficialLocators": sum(row["identityMatch"] for row in rows),
-            "unresolvedLocators": sum(not row["identityMatch"] for row in rows),
+            "exactOfficialLocators": sum(row["verificationLane"] == "EXACT_FORMALITY_CASE" for row in rows),
+            "canonicalFormalityOnly": sum(row["verificationLane"] == "FORMALITY_ID_LOOKUP" for row in rows),
+            "keywordSearchOnly": sum(row["verificationLane"] == "KEYWORD_SEARCH_ONLY" for row in rows),
+            "unresolvedLocators": sum(row["verificationLane"] != "EXACT_FORMALITY_CASE" for row in rows),
         },
         "rows": rows,
     }

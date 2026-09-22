@@ -37,6 +37,8 @@ class GuidanceVerificationQueueTests(unittest.TestCase):
         self.assertEqual(result["summary"]["exactOfficialLocators"], 1)
         self.assertFalse(result["rows"][0]["publishAllowed"])
         self.assertEqual(result["rows"][0]["verificationStatus"], "awaiting_current_official_verification")
+        self.assertEqual(result["rows"][0]["verificationLane"], "EXACT_FORMALITY_CASE")
+        self.assertEqual(result["rows"][0]["verificationPriority"], 1)
 
     def test_mismatched_candidate_is_not_treated_as_official_locator(self):
         master = {"thuTuc": [{
@@ -49,6 +51,20 @@ class GuidanceVerificationQueueTests(unittest.TestCase):
         result = MODULE.build(master, locators)
         self.assertFalse(result["rows"][0]["identityMatch"])
         self.assertEqual(result["rows"][0]["candidateOfficialUrl"], "")
+        self.assertEqual(result["rows"][0]["verificationLane"], "FORMALITY_ID_LOOKUP")
+        self.assertEqual(result["rows"][0]["verificationPriority"], 2)
+        self.assertIn("formalityId=fid-a", result["rows"][0]["verificationUrl"])
+
+    def test_missing_formality_uses_keyword_search_lane(self):
+        master = {"thuTuc": [{
+            "ma": "1.000001", "ten": "A", "lifecycle": {"status": "active"},
+            "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?keyword=1.000001",
+        }]}
+        result = MODULE.build(master, {"rows": []})
+        row = result["rows"][0]
+        self.assertEqual(row["verificationLane"], "KEYWORD_SEARCH_ONLY")
+        self.assertEqual(row["verificationPriority"], 3)
+        self.assertEqual(row["verificationUrl"], master["thuTuc"][0]["nopHoSoUrl"])
 
 
 if __name__ == "__main__":
