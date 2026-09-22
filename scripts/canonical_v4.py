@@ -207,13 +207,36 @@ VINHBAO_DVC_SCOPE = {
     "isMinistry": "0",
 }
 
-def build_vinhbao_submission_url(code: str, formality_id: str = "") -> str:
-    params = dict(VINHBAO_DVC_SCOPE)
+HAIPHONG_PROVINCE_DVC_SCOPE = {
+    "province": "019bad30-cd83-76ea-9f9a-bc6cebad4138",
+    "searchType": "PROVINCE",
+    "provinceCode": "31",
+    "showAdvanced": "false",
+    "isProvince": "1",
+    "isMinistry": "0",
+}
+
+
+def submission_route_for_level(cap: str) -> str:
+    value = str(cap or "").strip().lower()
+    if value.startswith("cấp tỉnh"):
+        return "province"
+    return "ward"
+
+
+def build_scoped_submission_url(code: str, formality_id: str = "", cap: str = "") -> str:
+    route = submission_route_for_level(cap)
+    params = dict(HAIPHONG_PROVINCE_DVC_SCOPE if route == "province" else VINHBAO_DVC_SCOPE)
     if formality_id:
         params["formalityId"] = formality_id
     else:
         params["keyword"] = code
     return "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?" + urlencode(params)
+
+
+def build_vinhbao_submission_url(code: str, formality_id: str = "") -> str:
+    """Backward-compatible alias for commune-level callers."""
+    return build_scoped_submission_url(code, formality_id, "Xã")
 
 def upgrade_record_to_v4(row: dict[str, Any], as_of: str) -> dict[str, Any]:
     record = deepcopy(row)
