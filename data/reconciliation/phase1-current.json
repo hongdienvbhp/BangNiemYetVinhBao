@@ -1,95 +1,136 @@
 {
   "format": "phase1-reconciliation",
-  "version": 1,
+  "version": 2,
   "canonicalDatasetVersion": "2026.09.21",
   "canonicalSourceCommit": "bb963e2b6dfc2848d162743fce9387534de1f816",
   "baselineAsOf": "2026-07-20",
   "baselineTarget": 323,
   "canonicalTotal": 254,
   "summary": {
-    "phase1CandidateCodes": 201,
-    "outOfScopeProvinceReceptionOnly": 53,
-    "misclassifiedByNewerOfficialEvidence": 0,
-    "ambiguousCommuneOrShared": 152,
+    "phase1CandidateCodes": 199,
+    "outOfScopeProvinceReceptionOnly": 55,
+    "misclassifiedByOfficialEvidence": 2,
+    "ambiguousCommuneOrShared": 149,
     "provisionalCommuneCapLabel": 47,
-    "directlyEvidencedPhase1FromCurrentCityUpdates": 10,
-    "minimumMissingAgainstAggregateBaseline": 122,
+    "directlyEvidencedPhase1": 16,
+    "officialTableClassifiedCodes": 36,
+    "minimumMissingAgainstAggregateBaseline": 124,
     "exactMissingByCodeStatus": "pending_authoritative_materialization"
   },
   "MATCHED": {
     "status": "partial_only",
     "items": [
       {
+        "ma": "2.002165",
+        "scope": "COMMUNE",
+        "source": "official_table_heading"
+      },
+      {
+        "ma": "2.001035",
+        "scope": "COMMUNE",
+        "source": "official_table_heading"
+      },
+      {
+        "ma": "1.008725",
+        "scope": "COMMUNE",
+        "source": "official_table_heading"
+      },
+      {
         "ma": "2.000559",
-        "scope": "commune",
+        "scope": "COMMUNE",
+        "source": "city_update",
         "decisionNo": "3643/QĐ-UBND",
         "date": "2026-09-11"
       },
       {
         "ma": "1.006780",
-        "scope": "commune",
+        "scope": "COMMUNE",
+        "source": "city_update",
         "decisionNo": "3643/QĐ-UBND",
         "date": "2026-09-11"
       },
       {
         "ma": "2.000552",
-        "scope": "commune",
+        "scope": "COMMUNE",
+        "source": "city_update",
         "decisionNo": "3643/QĐ-UBND",
         "date": "2026-09-11"
       },
       {
         "ma": "2.002409",
-        "scope": "commune",
+        "scope": "COMMUNE",
+        "source": "city_update",
         "decisionNo": "3626/QĐ-UBND",
         "date": "2026-09-10"
       },
       {
+        "ma": "2.002821",
+        "scope": "COMMUNE",
+        "source": "official_table_heading"
+      },
+      {
         "ma": "1.014111",
-        "scope": "shared_including_commune",
+        "scope": "SHARED",
+        "source": "city_update",
         "decisionNo": "3500/QĐ-UBND",
         "date": "2026-08-30"
       },
       {
         "ma": "1.014113",
-        "scope": "shared_including_commune",
+        "scope": "SHARED",
+        "source": "city_update",
         "decisionNo": "3500/QĐ-UBND",
         "date": "2026-08-30"
       },
       {
         "ma": "2.001909",
-        "scope": "commune",
+        "scope": "COMMUNE",
+        "source": "city_update",
         "decisionNo": "3626/QĐ-UBND",
         "date": "2026-09-10"
       },
       {
         "ma": "2.002396",
-        "scope": "commune",
+        "scope": "COMMUNE",
+        "source": "city_update",
         "decisionNo": "3626/QĐ-UBND",
         "date": "2026-09-10"
       },
       {
         "ma": "2.002913",
-        "scope": "commune",
+        "scope": "COMMUNE",
+        "source": "city_update",
         "decisionNo": "3582/QĐ-UBND",
         "date": "2026-09-08"
       },
       {
+        "ma": "1.013724",
+        "scope": "COMMUNE",
+        "source": "official_table_heading"
+      },
+      {
         "ma": "2.001801",
-        "scope": "commune",
+        "scope": "COMMUNE",
+        "source": "city_update",
         "decisionNo": "3626/QĐ-UBND",
         "date": "2026-09-10"
+      },
+      {
+        "ma": "1.012812",
+        "scope": "COMMUNE",
+        "source": "official_table_heading"
       }
     ],
-    "note": "Direct newer city evidence exists, but final MATCHED also requires the authoritative 323-code baseline and v5 serviceScope/onlineServiceLevel."
+    "note": "Đã dùng quyết định thành phố và heading phụ lục chính thức; final MATCHED vẫn cần authoritative 323-code baseline và onlineServiceLevel."
   },
   "MISSING": {
     "status": "not_finalizable_without_authoritative_code_list",
-    "minimumCount": 122,
+    "minimumCount": 124,
     "items": []
   },
   "EXTRA": {
     "status": "phase1_out_of_scope",
-    "count": 53,
+    "count": 55,
     "items": [
       "1.000302",
       "1.000321",
@@ -117,6 +158,7 @@
       "1.002856",
       "1.002861",
       "1.002877",
+      "1.003915",
       "1.004191",
       "1.009374",
       "1.009386",
@@ -138,6 +180,7 @@
       "2.001192",
       "2.001282",
       "2.001315",
+      "2.001576",
       "2.002285",
       "2.002286",
       "2.002288",
@@ -145,17 +188,36 @@
       "3.000574",
       "3.000722"
     ],
-    "note": "These records are retained in canonical because they are province-authority procedures receivable at commune; they are outside Phase 1, not deleted."
+    "note": "TTHC cấp tỉnh vẫn giữ trong canonical tổng thể nhưng không tính vào Phase 1."
   },
   "MISCLASSIFIED": {
-    "count": 0,
-    "items": []
+    "count": 2,
+    "items": [
+      {
+        "ma": "2.001576",
+        "ten": "Công nhận tiến bộ kỹ thuật",
+        "currentCap": "Xã / điểm tiếp nhận cấp xã",
+        "resolvedClassification": "PROVINCE",
+        "latestEvidence": {
+          "source": "official_table_heading"
+        }
+      },
+      {
+        "ma": "1.003915",
+        "ten": "Thủ tục cấp Chứng chỉ hành nghề đấu giá",
+        "currentCap": "Xã / điểm tiếp nhận cấp xã",
+        "resolvedClassification": "PROVINCE",
+        "latestEvidence": {
+          "source": "official_table_heading"
+        }
+      }
+    ]
   },
   "COUNT_DRIFT": {
     "baseline": 323,
-    "phase1CandidatesCurrent": 201,
-    "delta": -122,
-    "minimumMissing": 122,
+    "phase1CandidatesCurrent": 199,
+    "delta": -124,
+    "minimumMissing": 124,
     "canonicalTotalVsBaselineDelta": -69
   },
   "AMBIGUOUS": [
@@ -173,7 +235,6 @@
     "1.003622",
     "1.003705",
     "1.003814",
-    "1.003915",
     "1.004772",
     "1.004837",
     "1.004859",
@@ -295,7 +356,6 @@
     "2.001225",
     "2.001283",
     "2.001406",
-    "2.001576",
     "2.001610",
     "2.001680",
     "2.001687",
@@ -309,8 +369,7 @@
     "2.002189",
     "2.002481",
     "2.002675",
-    "2.002750",
-    "2.002821"
+    "2.002750"
   ],
   "PROVISIONAL_COMMUNE": [
     "1.000419",
