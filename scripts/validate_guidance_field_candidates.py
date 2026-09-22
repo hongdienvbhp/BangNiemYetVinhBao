@@ -21,6 +21,11 @@ def norm(value: object) -> str:
 
 def trim_duration(value: str) -> str:
     text = re.sub(r"\s+", " ", str(value or "")).strip()
+    # PDF table extraction may flatten the adjacent "Không thực hiện cắt giảm"
+    # column into the duration cell, including an OCR split between "hi" and "ện".
+    cut_reduction = re.search(r"\s+Không\s+thực\s+hi\s*ện\s+cắt\s+giảm\b", text, re.IGNORECASE)
+    if cut_reduction:
+        text = text[:cut_reduction.start()]
     markers = (
         " Trung tâm ", " Phục vụ hành chính", " Miễn lệ phí", " Lệ phí:",
         " Phí:", " Toàn trình", " Một phần", " Căn cứ pháp lý",
@@ -30,6 +35,32 @@ def trim_duration(value: str) -> str:
     if cuts:
         text = text[:min(cuts)]
     return text.strip(" -;,.")
+
+
+DURATION_TOKEN_RE = re.compile(
+    r"(?<!\d)(?:\d+(?:[.,]\d+)?)\s*(?:ngày|giờ|tháng)(?:\s+làm việc)?",
+    re.IGNORECASE,
+)
+
+
+CLEAN_DURATION_RE = re.compile(
+    r"^(?:"
+    r"Không quy định"
+    r"|Ngay trong ngày làm việc"
+    r"|\d+(?:[.,]\d+)?\s*(?:ngày|giờ|tháng)(?:\s+làm việc)?"
+    r"(?:\s+kể từ (?:ngày|khi) nhận (?:đủ |được )?hồ sơ hợp lệ)?"
+    r")$",
+    re.IGNORECASE,
+)
+
+
+def duration_is_unambiguous(value: str) -> bool:
+    text = trim_duration(value)
+    if not text or len(text) > 140:
+        return False
+    if len(DURATION_TOKEN_RE.findall(text)) > 1:
+        return False
+    return CLEAN_DURATION_RE.fullmatch(text) is not None
 
 
 def build(canonical: dict, candidates: dict) -> dict:
@@ -78,6 +109,16 @@ def build(canonical: dict, candidates: dict) -> dict:
 
         value = items[0]["value"]
         current = str(canonical_row.get("thoiHan") or "").strip()
+        if not duration_is_unambiguous(value):
+            conflicts.append({
+                "ma": code,
+                "field": "thoiHan",
+                "reason": "multiple_or_ambiguous_duration_tokens",
+                "currentValue": current,
+                "candidateValue": value,
+                "sources": [item["source"] for item in items],
+            })
+            continue
         if current:
             n_current, n_value = norm(current), norm(value)
             if n_current in n_value or n_value in n_current:

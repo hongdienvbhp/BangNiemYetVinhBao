@@ -46,6 +46,7 @@ PRIORITY51_CROSSWALK = ROOT / "data/priority-51-crosswalk.json"
 PRIORITY51_LEGAL_VERIFICATION = ROOT / "data/priority-51-legal-verification.json"
 CITY_UPDATES = ROOT / "data/source-audit/city-updates-current.json"
 OFFICIAL_TABLE_LEVELS = ROOT / "data/source-audit/official-table-level-classification.json"
+GUIDANCE_FIELD_PROMOTION_READY = ROOT / "data/source-audit/guidance-field-promotion-ready.json"
 LEGACY_JS = ROOT / "js/data.js"
 MASTER_JSON = ROOT / "data/thu-tuc.json"
 FALLBACK_JS = ROOT / "js/master-data-fallback.js"
@@ -996,6 +997,81 @@ def apply_official_table_levels(
 
     return stats
 
+
+def apply_duration_promotions(public_rows: list[dict], payload: dict) -> dict:
+    by_code = {
+        normalize_code(row.get("ma", "")): row
+        for row in public_rows
+        if normalize_code(row.get("ma", ""))
+    }
+    stats = {
+        "ready": 0,
+        "confirmedExisting": 0,
+        "promoted": 0,
+        "skippedExisting": 0,
+        "missingCode": 0,
+    }
+
+    promotion_items = [
+        ("ready", item) for item in (payload.get("ready") or [])
+    ] + [
+        ("confirmedExisting", item) for item in (payload.get("confirmedExisting") or [])
+    ]
+
+    for source_bucket, item in promotion_items:
+        if item.get("field") != "thoiHan":
+            continue
+        if source_bucket == "ready" and item.get("promotionStatus") != "ready":
+            continue
+        stats[source_bucket] += 1
+        code = normalize_code(item.get("ma", ""))
+        row = by_code.get(code)
+        if row is None:
+            stats["missingCode"] += 1
+            continue
+        if str(row.get("thoiHan") or "").strip():
+            stats["skippedExisting"] += 1
+            continue
+
+        value = str(item.get("candidateValue") or "").strip()
+        if not value:
+            continue
+
+        evidence = []
+        for source in item.get("sources") or []:
+            article_urls = source.get("articleUrls") or []
+            ev = {
+                "sourceRole": "local_legal_effect",
+                "articleUrl": article_urls[0] if article_urls else None,
+                "attachmentUrl": source.get("attachmentUrl"),
+                "decisionNumbers": source.get("decisionNumbers") or [],
+                "classification": "official_table_guidance_duration",
+                "repealContext": False,
+            }
+            if ev["articleUrl"] or ev["attachmentUrl"]:
+                evidence.append(ev)
+
+        row["thoiHan"] = value
+        row["sourceEvidence"] = (
+            evidence + list(row.get("sourceEvidence") or [])
+        )[:8]
+        stats["promoted"] += 1
+
+    return stats
+
+
+def apply_guidance_field_promotions(public_rows: list[dict]) -> dict:
+    if not GUIDANCE_FIELD_PROMOTION_READY.exists():
+        return {
+            "ready": 0,
+            "confirmedExisting": 0,
+            "promoted": 0,
+            "skippedExisting": 0,
+            "missingCode": 0,
+        }
+    return apply_duration_promotions(public_rows, load_json(GUIDANCE_FIELD_PROMOTION_READY))
+
+
 def main() -> int:
     candidates_payload = load_json(CANDIDATES)
     attachment_payload = load_json(ATTACHMENTS)
@@ -1117,6 +1193,7 @@ def main() -> int:
         public_rows, excluded, audit_rows, legacy, dvc_map, priority51_legal
     )
     official_table_stats = apply_official_table_levels(public_rows)
+    guidance_promotion_stats = apply_guidance_field_promotions(public_rows)
 
     for row in public_rows:
         code = normalize_code(row.get("ma", ""))
@@ -1170,6 +1247,10 @@ def main() -> int:
         "phiDiaGioi": sum(1 for x in public_rows if x.get("phiDiaGioi")),
         "officialTableLevelResolved": official_table_stats["resolved"],
         "officialTableLevelUpdatedPublic": official_table_stats["updatedPublic"],
+        "guidanceDurationReady": guidance_promotion_stats["ready"],
+        "guidanceDurationConfirmedExisting": guidance_promotion_stats["confirmedExisting"],
+        "guidanceDurationPromoted": guidance_promotion_stats["promoted"],
+        "guidanceDurationSkippedExisting": guidance_promotion_stats["skippedExisting"],
     }
     existing_version = ""
     if MASTER_JSON.exists():

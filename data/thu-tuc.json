@@ -2,7 +2,7 @@
   "format": "bangniemyet-vinhbao-master-data",
   "version": 4,
   "dataset_version": "2026.09.21",
-  "source_commit": "736b75a1e0f16dbac532405dd7b36f9c4244c9b7",
+  "source_commit": "652e799b394648d0bba52c3fa22d7e1dc6e99f6c",
   "source_commit_kind": "verified_source_bundle_git_sha1",
   "updatedAt": "2026-09-21",
   "sourceSnapshotDate": "2026-09-21",
@@ -4762,7 +4762,7 @@
       "lienThong": false,
       "phi": "",
       "phiOnline": "",
-      "thoiHan": "",
+      "thoiHan": "15 giờ",
       "dvctt": "",
       "coQuan": "",
       "quyetDinh": "",
@@ -4773,6 +4773,16 @@
       "sourceArticleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6799/tintuc/2026/3/26.02-kh-ngay-thu-5-hanh-chinh.signed639080565000341409.pdf",
       "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6799/tintuc/2026/3/26.02-kh-ngay-thu-5-hanh-chinh.signed639080565000341409.pdf",
       "sourceEvidence": [
+        {
+          "sourceRole": "local_legal_effect",
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vuc-chung-thuc-thuoc-pham-vi--810099",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phuluc-i-qd-3152-bo-tu-phap638984589798308803.docx",
+          "decisionNumbers": [],
+          "classification": "official_table_guidance_duration",
+          "repealContext": false,
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vuc-chung-thuc-thuoc-pham-vi--810099",
+          "evidenceId": "ev_704f311981a365ff63ddbad5"
+        },
         {
           "articleUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6799/tintuc/2026/3/26.02-kh-ngay-thu-5-hanh-chinh.signed639080565000341409.pdf",
           "articleTitle": "Nguồn chính thức năm 2026 tiếp tục niêm yết/thực hiện thủ tục tại Trung tâm PVHCC cấp xã; đối chiếu thêm danh mục sửa đổi, bổ sung trên Cổng Vĩnh Bảo.",
@@ -4902,34 +4912,42 @@
       },
       "fieldSources": {
         "ma": [
+          "ev_704f311981a365ff63ddbad5",
           "ev_58c448f0519bfa255561cb56",
           "ev_91982cfa75071f0b53e10ea5",
           "ev_87193a11eec2ab4f2dd7334a",
           "ev_d6e0425f83eff9e2fa3e49e2"
         ],
         "ten": [
+          "ev_704f311981a365ff63ddbad5",
           "ev_58c448f0519bfa255561cb56",
           "ev_91982cfa75071f0b53e10ea5",
           "ev_87193a11eec2ab4f2dd7334a",
           "ev_d6e0425f83eff9e2fa3e49e2"
         ],
         "linhVuc": [
+          "ev_704f311981a365ff63ddbad5",
           "ev_58c448f0519bfa255561cb56",
           "ev_91982cfa75071f0b53e10ea5",
           "ev_87193a11eec2ab4f2dd7334a",
           "ev_d6e0425f83eff9e2fa3e49e2"
         ],
         "cap": [
+          "ev_704f311981a365ff63ddbad5",
           "ev_58c448f0519bfa255561cb56",
           "ev_91982cfa75071f0b53e10ea5",
           "ev_87193a11eec2ab4f2dd7334a",
           "ev_d6e0425f83eff9e2fa3e49e2"
         ],
         "lifecycle.status": [
+          "ev_704f311981a365ff63ddbad5",
           "ev_58c448f0519bfa255561cb56",
           "ev_91982cfa75071f0b53e10ea5",
           "ev_87193a11eec2ab4f2dd7334a",
           "ev_d6e0425f83eff9e2fa3e49e2"
+        ],
+        "thoiHan": [
+          "ev_704f311981a365ff63ddbad5"
         ],
         "formalityId": [
           "ev_4a7bb8d62d467707e3506e77",
@@ -20217,7 +20235,7 @@
       "lienThong": false,
       "phi": "",
       "phiOnline": "",
-      "thoiHan": "",
+      "thoiHan": "Không quy định",
       "dvctt": "",
       "coQuan": "",
       "quyetDinh": "1646/QĐ-UBND; 1858/QĐ-BNNMT; 1869/QĐ-BNNMT; 1877/QĐ-BNNMT; 1878/QĐ-BNNMT; 1883/QĐ-BNNMT; 1897/QĐ-BNNMT; 1908/QĐ-BNNMT; 1931/QĐ-BNNMT; 2198/QĐ-UBND; 2881/QĐ-UBND; 519/QĐ-UBND; 684/QĐ-UBND",
@@ -20230,6 +20248,30 @@
       "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-nong-nghiep-va-moi-truong/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-sua-doi-bo-sung-thay-the-bi-bai-bo-thuoc-pham-vi-chuc-n-911934",
       "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/qd-2037-ngay-30.5.2026-ubnd-hp-cong-bo-dm-tthc-moi-sua-doi-thay-the-bai-bo-lvuc-kttv-khcn-dcks-cnty-ttbvtv-qlcl-639165286498031603.pdf",
       "sourceEvidence": [
+        {
+          "sourceRole": "local_legal_effect",
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-nong-nghiep-va-moi-truong/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-sua-doi-bo-sung-thay-the-bi-bai-bo-thuoc-pham-vi-chuc-n-911934",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/qd-2037-ngay-30.5.2026-ubnd-hp-cong-bo-dm-tthc-moi-sua-doi-thay-the-bai-bo-lvuc-kttv-khcn-dcks-cnty-ttbvtv-qlcl-639165286498031603.pdf",
+          "decisionNumbers": [
+            "1646/QĐ-UBND",
+            "1858/QĐ-BNNMT",
+            "1869/QĐ-BNNMT",
+            "1877/QĐ-BNNMT",
+            "1878/QĐ-BNNMT",
+            "1883/QĐ-BNNMT",
+            "1897/QĐ-BNNMT",
+            "1908/QĐ-BNNMT",
+            "1931/QĐ-BNNMT",
+            "2198/QĐ-UBND",
+            "2881/QĐ-UBND",
+            "519/QĐ-UBND",
+            "684/QĐ-UBND"
+          ],
+          "classification": "official_table_guidance_duration",
+          "repealContext": false,
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-nong-nghiep-va-moi-truong/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-sua-doi-bo-sung-thay-the-bi-bai-bo-thuoc-pham-vi-chuc-n-911934",
+          "evidenceId": "ev_ebf8b8a862bc8e6d9b78b97d"
+        },
         {
           "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-nong-nghiep-va-moi-truong/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-sua-doi-bo-sung-thay-the-bi-bai-bo-thuoc-pham-vi-chuc-n-911934",
           "articleTitle": "Danh mục thủ tục hành chính mới ban hành, sửa đổi, bổ sung, thay thế, bị bãi bỏ thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường",
@@ -20297,25 +20339,35 @@
       },
       "fieldSources": {
         "ma": [
+          "ev_ebf8b8a862bc8e6d9b78b97d",
           "ev_6ccf2818d5467dec867e9311"
         ],
         "ten": [
+          "ev_ebf8b8a862bc8e6d9b78b97d",
           "ev_6ccf2818d5467dec867e9311"
         ],
         "linhVuc": [
+          "ev_ebf8b8a862bc8e6d9b78b97d",
           "ev_6ccf2818d5467dec867e9311"
         ],
         "cap": [
+          "ev_ebf8b8a862bc8e6d9b78b97d",
           "ev_6ccf2818d5467dec867e9311"
         ],
         "quyetDinh": [
+          "ev_ebf8b8a862bc8e6d9b78b97d",
           "ev_6ccf2818d5467dec867e9311"
         ],
         "lifecycle.status": [
+          "ev_ebf8b8a862bc8e6d9b78b97d",
           "ev_6ccf2818d5467dec867e9311"
         ],
         "lifecycle.effectiveFrom": [
+          "ev_ebf8b8a862bc8e6d9b78b97d",
           "ev_6ccf2818d5467dec867e9311"
+        ],
+        "thoiHan": [
+          "ev_ebf8b8a862bc8e6d9b78b97d"
         ],
         "formalityId": [
           "ev_2200bef6904378c9679e74e0",
@@ -20809,7 +20861,7 @@
       "lienThong": false,
       "phi": "",
       "phiOnline": "",
-      "thoiHan": "",
+      "thoiHan": "Không quy định",
       "dvctt": "",
       "coQuan": "",
       "quyetDinh": "1214/QĐ-UBND; 640/QĐ-BNV",
@@ -20822,6 +20874,32 @@
       "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-quan-ly-lao-dong-ngoai-nuoc/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi-bai-bo-linh-vuc-quan-ly-lao-dong-ngoai-nu-762740",
       "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/7/qd-quyet-dinh-cong-bo-tthc-qd-640..signed638880366333934920.pdf",
       "sourceEvidence": [
+        {
+          "sourceRole": "local_legal_effect",
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-quan-ly-lao-dong-ngoai-nuoc/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi-bai-bo-linh-vuc-quan-ly-lao-dong-ngoai-nu-762740",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/7/qd-quyet-dinh-cong-bo-tthc-qd-640..signed638880366333934920.pdf",
+          "decisionNumbers": [
+            "1214/QĐ-UBND",
+            "640/QĐ-BNV"
+          ],
+          "classification": "official_table_guidance_duration",
+          "repealContext": false,
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-quan-ly-lao-dong-ngoai-nuoc/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi-bai-bo-linh-vuc-quan-ly-lao-dong-ngoai-nu-762740",
+          "evidenceId": "ev_423dae4bdbad74358e110c32"
+        },
+        {
+          "sourceRole": "local_legal_effect",
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-quan-ly-lao-dong-ngoai-nuoc/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi-bai-bo-linh-vuc-quan-ly-lao-dong-ngoai-nu-762740",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/7/qd-quyet-dinh-cong-bo-tthc-qd-640..signed638880366444336453.pdf",
+          "decisionNumbers": [
+            "1214/QĐ-UBND",
+            "640/QĐ-BNV"
+          ],
+          "classification": "official_table_guidance_duration",
+          "repealContext": false,
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-quan-ly-lao-dong-ngoai-nuoc/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi-bai-bo-linh-vuc-quan-ly-lao-dong-ngoai-nu-762740",
+          "evidenceId": "ev_97c4968f0945a69ed3c7ffb3"
+        },
         {
           "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-quan-ly-lao-dong-ngoai-nuoc/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi-bai-bo-linh-vuc-quan-ly-lao-dong-ngoai-nu-762740",
           "articleTitle": "Công bố Danh mục thủ tục hành chính mới ban hành và bị bãi bỏ lĩnh vực quản lý lao động ngoài nước trên địa bàn thành phố Hải Phòng",
@@ -20894,32 +20972,50 @@
       },
       "fieldSources": {
         "ma": [
+          "ev_423dae4bdbad74358e110c32",
+          "ev_97c4968f0945a69ed3c7ffb3",
           "ev_614fc7947aaa1a1314786186",
           "ev_f4c6993660657d3a8d3d28a6"
         ],
         "ten": [
+          "ev_423dae4bdbad74358e110c32",
+          "ev_97c4968f0945a69ed3c7ffb3",
           "ev_614fc7947aaa1a1314786186",
           "ev_f4c6993660657d3a8d3d28a6"
         ],
         "linhVuc": [
+          "ev_423dae4bdbad74358e110c32",
+          "ev_97c4968f0945a69ed3c7ffb3",
           "ev_614fc7947aaa1a1314786186",
           "ev_f4c6993660657d3a8d3d28a6"
         ],
         "cap": [
+          "ev_423dae4bdbad74358e110c32",
+          "ev_97c4968f0945a69ed3c7ffb3",
           "ev_614fc7947aaa1a1314786186",
           "ev_f4c6993660657d3a8d3d28a6"
         ],
         "quyetDinh": [
+          "ev_423dae4bdbad74358e110c32",
+          "ev_97c4968f0945a69ed3c7ffb3",
           "ev_614fc7947aaa1a1314786186",
           "ev_f4c6993660657d3a8d3d28a6"
         ],
         "lifecycle.status": [
+          "ev_423dae4bdbad74358e110c32",
+          "ev_97c4968f0945a69ed3c7ffb3",
           "ev_614fc7947aaa1a1314786186",
           "ev_f4c6993660657d3a8d3d28a6"
         ],
         "lifecycle.effectiveFrom": [
+          "ev_423dae4bdbad74358e110c32",
+          "ev_97c4968f0945a69ed3c7ffb3",
           "ev_614fc7947aaa1a1314786186",
           "ev_f4c6993660657d3a8d3d28a6"
+        ],
+        "thoiHan": [
+          "ev_423dae4bdbad74358e110c32",
+          "ev_97c4968f0945a69ed3c7ffb3"
         ],
         "formalityId": [
           "ev_5cbf30c2a777e888d9300b0a",
@@ -25051,7 +25147,7 @@
       "lienThong": false,
       "phi": "",
       "phiOnline": "",
-      "thoiHan": "",
+      "thoiHan": "15 ngày",
       "dvctt": "",
       "coQuan": "",
       "quyetDinh": "2/QĐ-UBND; 636/QĐ-BNV; 1561/QĐ-BNV; 4/QĐ-BNV",
@@ -25064,6 +25160,32 @@
       "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-quan-ly-lao-dong-ngoai-nuoc/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-bi-bai-bo-linh-vuc-nguoi-lao-dong-di-lam-viec-o-nuoc-ng-845673",
       "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/1.-qd-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-noi-vu..signed639040667148325665.pdf",
       "sourceEvidence": [
+        {
+          "sourceRole": "local_legal_effect",
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-viec-lam/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi-bai-bo-linh-vuc-viec-lam-an-toan-ve-sinh--762741",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/7/qd-cong-bo-tthc-linh-vuc-viec-lam-atld-qd-636..signed638880367760937972.pdf",
+          "decisionNumbers": [
+            "2/QĐ-UBND",
+            "636/QĐ-BNV"
+          ],
+          "classification": "official_table_guidance_duration",
+          "repealContext": false,
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-viec-lam/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi-bai-bo-linh-vuc-viec-lam-an-toan-ve-sinh--762741",
+          "evidenceId": "ev_3fd1836b092f144146bfd6c5"
+        },
+        {
+          "sourceRole": "local_legal_effect",
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-viec-lam/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi-bai-bo-linh-vuc-viec-lam-an-toan-ve-sinh--762741",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/7/qd-cong-bo-tthc-linh-vuc-viec-lam-atld-qd-636..signed638880367857473885.pdf",
+          "decisionNumbers": [
+            "2/QĐ-UBND",
+            "636/QĐ-BNV"
+          ],
+          "classification": "official_table_guidance_duration",
+          "repealContext": false,
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-viec-lam/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi-bai-bo-linh-vuc-viec-lam-an-toan-ve-sinh--762741",
+          "evidenceId": "ev_a9ca3ab5dd77d0e3b14775ef"
+        },
         {
           "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-quan-ly-lao-dong-ngoai-nuoc/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-bi-bai-bo-linh-vuc-nguoi-lao-dong-di-lam-viec-o-nuoc-ng-845673",
           "articleTitle": "Danh mục thủ tục hành chính mới ban hành, bị bãi bỏ lĩnh vực người lao động đi làm việc ở nước ngoài theo hợp đồng, đào tạo nghề, việc làm thuộc phạm vi chức năng quản lý của Sở Nội vụ",
@@ -25141,39 +25263,57 @@
       },
       "fieldSources": {
         "ma": [
+          "ev_3fd1836b092f144146bfd6c5",
+          "ev_a9ca3ab5dd77d0e3b14775ef",
           "ev_2e81ad3b889f6a950f50d0a3",
           "ev_8584cf39384844969462ef68",
           "ev_d4265bd1467ac1b8ada6a4df"
         ],
         "ten": [
+          "ev_3fd1836b092f144146bfd6c5",
+          "ev_a9ca3ab5dd77d0e3b14775ef",
           "ev_2e81ad3b889f6a950f50d0a3",
           "ev_8584cf39384844969462ef68",
           "ev_d4265bd1467ac1b8ada6a4df"
         ],
         "linhVuc": [
+          "ev_3fd1836b092f144146bfd6c5",
+          "ev_a9ca3ab5dd77d0e3b14775ef",
           "ev_2e81ad3b889f6a950f50d0a3",
           "ev_8584cf39384844969462ef68",
           "ev_d4265bd1467ac1b8ada6a4df"
         ],
         "cap": [
+          "ev_3fd1836b092f144146bfd6c5",
+          "ev_a9ca3ab5dd77d0e3b14775ef",
           "ev_2e81ad3b889f6a950f50d0a3",
           "ev_8584cf39384844969462ef68",
           "ev_d4265bd1467ac1b8ada6a4df"
         ],
         "quyetDinh": [
+          "ev_3fd1836b092f144146bfd6c5",
+          "ev_a9ca3ab5dd77d0e3b14775ef",
           "ev_2e81ad3b889f6a950f50d0a3",
           "ev_8584cf39384844969462ef68",
           "ev_d4265bd1467ac1b8ada6a4df"
         ],
         "lifecycle.status": [
+          "ev_3fd1836b092f144146bfd6c5",
+          "ev_a9ca3ab5dd77d0e3b14775ef",
           "ev_2e81ad3b889f6a950f50d0a3",
           "ev_8584cf39384844969462ef68",
           "ev_d4265bd1467ac1b8ada6a4df"
         ],
         "lifecycle.effectiveFrom": [
+          "ev_3fd1836b092f144146bfd6c5",
+          "ev_a9ca3ab5dd77d0e3b14775ef",
           "ev_2e81ad3b889f6a950f50d0a3",
           "ev_8584cf39384844969462ef68",
           "ev_d4265bd1467ac1b8ada6a4df"
+        ],
+        "thoiHan": [
+          "ev_3fd1836b092f144146bfd6c5",
+          "ev_a9ca3ab5dd77d0e3b14775ef"
         ],
         "nopHoSoUrl": [
           "ev_eff628ab739eaa97912faf1b"
@@ -37152,7 +37292,7 @@
       "lienThong": false,
       "phi": "",
       "phiOnline": "",
-      "thoiHan": "",
+      "thoiHan": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ",
       "dvctt": "",
       "coQuan": "",
       "quyetDinh": "3508/QĐ-UBND",
@@ -37165,6 +37305,18 @@
       "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3508-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958460",
       "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3508-xd639240506704881699.pdf",
       "sourceEvidence": [
+        {
+          "sourceRole": "local_legal_effect",
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ],
+          "classification": "official_table_guidance_duration",
+          "repealContext": false,
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213",
+          "evidenceId": "ev_05dcaabfdad22fd9bf33952b"
+        },
         {
           "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3508-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958460",
           "articleTitle": "Quyết định 3508/QĐ-UBND",
@@ -37219,25 +37371,35 @@
       },
       "fieldSources": {
         "ma": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "ten": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "linhVuc": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "cap": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "quyetDinh": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "lifecycle.status": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "lifecycle.effectiveFrom": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
+        ],
+        "thoiHan": [
+          "ev_05dcaabfdad22fd9bf33952b"
         ],
         "formalityId": [
           "ev_a23fa0e63748bc5764b7e2c0",
@@ -37268,7 +37430,7 @@
       "lienThong": false,
       "phi": "",
       "phiOnline": "",
-      "thoiHan": "",
+      "thoiHan": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ",
       "dvctt": "",
       "coQuan": "",
       "quyetDinh": "3508/QĐ-UBND",
@@ -37281,6 +37443,18 @@
       "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3508-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958460",
       "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3508-xd639240506704881699.pdf",
       "sourceEvidence": [
+        {
+          "sourceRole": "local_legal_effect",
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ],
+          "classification": "official_table_guidance_duration",
+          "repealContext": false,
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213",
+          "evidenceId": "ev_05dcaabfdad22fd9bf33952b"
+        },
         {
           "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3508-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958460",
           "articleTitle": "Quyết định 3508/QĐ-UBND",
@@ -37335,25 +37509,35 @@
       },
       "fieldSources": {
         "ma": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "ten": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "linhVuc": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "cap": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "quyetDinh": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "lifecycle.status": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "lifecycle.effectiveFrom": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
+        ],
+        "thoiHan": [
+          "ev_05dcaabfdad22fd9bf33952b"
         ],
         "formalityId": [
           "ev_f4b732fd0f6d73010a9fff77",
@@ -37500,7 +37684,7 @@
       "lienThong": false,
       "phi": "",
       "phiOnline": "",
-      "thoiHan": "",
+      "thoiHan": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ",
       "dvctt": "",
       "coQuan": "",
       "quyetDinh": "3508/QĐ-UBND",
@@ -37513,6 +37697,18 @@
       "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3508-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958460",
       "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3508-xd639240506704881699.pdf",
       "sourceEvidence": [
+        {
+          "sourceRole": "local_legal_effect",
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ],
+          "classification": "official_table_guidance_duration",
+          "repealContext": false,
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213",
+          "evidenceId": "ev_05dcaabfdad22fd9bf33952b"
+        },
         {
           "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3508-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958460",
           "articleTitle": "Quyết định 3508/QĐ-UBND",
@@ -37567,25 +37763,35 @@
       },
       "fieldSources": {
         "ma": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "ten": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "linhVuc": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "cap": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "quyetDinh": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "lifecycle.status": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "lifecycle.effectiveFrom": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
+        ],
+        "thoiHan": [
+          "ev_05dcaabfdad22fd9bf33952b"
         ],
         "formalityId": [
           "ev_ed0a011837bf0011173eb2f6",
@@ -37616,7 +37822,7 @@
       "lienThong": false,
       "phi": "",
       "phiOnline": "",
-      "thoiHan": "",
+      "thoiHan": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ",
       "dvctt": "",
       "coQuan": "",
       "quyetDinh": "3508/QĐ-UBND",
@@ -37629,6 +37835,18 @@
       "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3508-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958460",
       "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3508-xd639240506704881699.pdf",
       "sourceEvidence": [
+        {
+          "sourceRole": "local_legal_effect",
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ],
+          "classification": "official_table_guidance_duration",
+          "repealContext": false,
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213",
+          "evidenceId": "ev_05dcaabfdad22fd9bf33952b"
+        },
         {
           "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3508-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958460",
           "articleTitle": "Quyết định 3508/QĐ-UBND",
@@ -37683,25 +37901,35 @@
       },
       "fieldSources": {
         "ma": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "ten": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "linhVuc": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "cap": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "quyetDinh": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "lifecycle.status": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "lifecycle.effectiveFrom": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
+        ],
+        "thoiHan": [
+          "ev_05dcaabfdad22fd9bf33952b"
         ],
         "formalityId": [
           "ev_492dffb3855d6afed868251b",
@@ -37848,7 +38076,7 @@
       "lienThong": false,
       "phi": "",
       "phiOnline": "",
-      "thoiHan": "",
+      "thoiHan": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ",
       "dvctt": "",
       "coQuan": "",
       "quyetDinh": "3508/QĐ-UBND",
@@ -37861,6 +38089,18 @@
       "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3508-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958460",
       "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3508-xd639240506704881699.pdf",
       "sourceEvidence": [
+        {
+          "sourceRole": "local_legal_effect",
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ],
+          "classification": "official_table_guidance_duration",
+          "repealContext": false,
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213",
+          "evidenceId": "ev_05dcaabfdad22fd9bf33952b"
+        },
         {
           "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3508-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958460",
           "articleTitle": "Quyết định 3508/QĐ-UBND",
@@ -37915,25 +38155,35 @@
       },
       "fieldSources": {
         "ma": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "ten": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "linhVuc": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "cap": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "quyetDinh": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "lifecycle.status": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "lifecycle.effectiveFrom": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
+        ],
+        "thoiHan": [
+          "ev_05dcaabfdad22fd9bf33952b"
         ],
         "formalityId": [
           "ev_eec84d9ba737b4358c260365",
@@ -37964,7 +38214,7 @@
       "lienThong": false,
       "phi": "",
       "phiOnline": "",
-      "thoiHan": "",
+      "thoiHan": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ",
       "dvctt": "",
       "coQuan": "",
       "quyetDinh": "3508/QĐ-UBND",
@@ -37977,6 +38227,18 @@
       "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3508-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958460",
       "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3508-xd639240506704881699.pdf",
       "sourceEvidence": [
+        {
+          "sourceRole": "local_legal_effect",
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ],
+          "classification": "official_table_guidance_duration",
+          "repealContext": false,
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213",
+          "evidenceId": "ev_05dcaabfdad22fd9bf33952b"
+        },
         {
           "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3508-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958460",
           "articleTitle": "Quyết định 3508/QĐ-UBND",
@@ -38031,25 +38293,35 @@
       },
       "fieldSources": {
         "ma": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "ten": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "linhVuc": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "cap": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "quyetDinh": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "lifecycle.status": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "lifecycle.effectiveFrom": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
+        ],
+        "thoiHan": [
+          "ev_05dcaabfdad22fd9bf33952b"
         ],
         "formalityId": [
           "ev_a12239621a0ac2ad1e991b61",
@@ -38080,7 +38352,7 @@
       "lienThong": false,
       "phi": "",
       "phiOnline": "",
-      "thoiHan": "",
+      "thoiHan": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ",
       "dvctt": "",
       "coQuan": "",
       "quyetDinh": "3508/QĐ-UBND",
@@ -38093,6 +38365,18 @@
       "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3508-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958460",
       "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3508-xd639240506704881699.pdf",
       "sourceEvidence": [
+        {
+          "sourceRole": "local_legal_effect",
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ],
+          "classification": "official_table_guidance_duration",
+          "repealContext": false,
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213",
+          "evidenceId": "ev_05dcaabfdad22fd9bf33952b"
+        },
         {
           "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3508-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958460",
           "articleTitle": "Quyết định 3508/QĐ-UBND",
@@ -38147,25 +38431,35 @@
       },
       "fieldSources": {
         "ma": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "ten": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "linhVuc": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "cap": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "quyetDinh": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "lifecycle.status": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "lifecycle.effectiveFrom": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
+        ],
+        "thoiHan": [
+          "ev_05dcaabfdad22fd9bf33952b"
         ],
         "formalityId": [
           "ev_ec181846efbfa4d01084182e",
@@ -38526,7 +38820,7 @@
       "lienThong": false,
       "phi": "",
       "phiOnline": "",
-      "thoiHan": "",
+      "thoiHan": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ",
       "dvctt": "",
       "coQuan": "",
       "quyetDinh": "3508/QĐ-UBND",
@@ -38539,6 +38833,18 @@
       "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3508-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958460",
       "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3508-xd639240506704881699.pdf",
       "sourceEvidence": [
+        {
+          "sourceRole": "local_legal_effect",
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ],
+          "classification": "official_table_guidance_duration",
+          "repealContext": false,
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213",
+          "evidenceId": "ev_05dcaabfdad22fd9bf33952b"
+        },
         {
           "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3508-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958460",
           "articleTitle": "Quyết định 3508/QĐ-UBND",
@@ -38593,25 +38899,35 @@
       },
       "fieldSources": {
         "ma": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "ten": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "linhVuc": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "cap": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "quyetDinh": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "lifecycle.status": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "lifecycle.effectiveFrom": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
+        ],
+        "thoiHan": [
+          "ev_05dcaabfdad22fd9bf33952b"
         ],
         "formalityId": [
           "ev_b98d09d99fc81065994b9913",
@@ -38642,7 +38958,7 @@
       "lienThong": false,
       "phi": "",
       "phiOnline": "",
-      "thoiHan": "",
+      "thoiHan": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ",
       "dvctt": "",
       "coQuan": "",
       "quyetDinh": "3508/QĐ-UBND",
@@ -38655,6 +38971,18 @@
       "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3508-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958460",
       "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3508-xd639240506704881699.pdf",
       "sourceEvidence": [
+        {
+          "sourceRole": "local_legal_effect",
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ],
+          "classification": "official_table_guidance_duration",
+          "repealContext": false,
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213",
+          "evidenceId": "ev_05dcaabfdad22fd9bf33952b"
+        },
         {
           "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3508-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958460",
           "articleTitle": "Quyết định 3508/QĐ-UBND",
@@ -38709,25 +39037,35 @@
       },
       "fieldSources": {
         "ma": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "ten": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "linhVuc": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "cap": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "quyetDinh": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "lifecycle.status": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "lifecycle.effectiveFrom": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
+        ],
+        "thoiHan": [
+          "ev_05dcaabfdad22fd9bf33952b"
         ],
         "formalityId": [
           "ev_d11a4aec5187ce1187d2d3da",
@@ -38758,7 +39096,7 @@
       "lienThong": false,
       "phi": "",
       "phiOnline": "",
-      "thoiHan": "",
+      "thoiHan": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ",
       "dvctt": "",
       "coQuan": "",
       "quyetDinh": "3508/QĐ-UBND",
@@ -38771,6 +39109,18 @@
       "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3508-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958460",
       "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3508-xd639240506704881699.pdf",
       "sourceEvidence": [
+        {
+          "sourceRole": "local_legal_effect",
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ],
+          "classification": "official_table_guidance_duration",
+          "repealContext": false,
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213",
+          "evidenceId": "ev_05dcaabfdad22fd9bf33952b"
+        },
         {
           "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3508-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958460",
           "articleTitle": "Quyết định 3508/QĐ-UBND",
@@ -38825,25 +39175,35 @@
       },
       "fieldSources": {
         "ma": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "ten": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "linhVuc": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "cap": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "quyetDinh": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "lifecycle.status": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "lifecycle.effectiveFrom": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
+        ],
+        "thoiHan": [
+          "ev_05dcaabfdad22fd9bf33952b"
         ],
         "formalityId": [
           "ev_7055f406f1fd3ef2430310ba",
@@ -38874,7 +39234,7 @@
       "lienThong": false,
       "phi": "",
       "phiOnline": "",
-      "thoiHan": "",
+      "thoiHan": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ",
       "dvctt": "",
       "coQuan": "",
       "quyetDinh": "3508/QĐ-UBND",
@@ -38887,6 +39247,18 @@
       "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3508-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958460",
       "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3508-xd639240506704881699.pdf",
       "sourceEvidence": [
+        {
+          "sourceRole": "local_legal_effect",
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ],
+          "classification": "official_table_guidance_duration",
+          "repealContext": false,
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213",
+          "evidenceId": "ev_05dcaabfdad22fd9bf33952b"
+        },
         {
           "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3508-qd-ubnd-ngay-03-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-958460",
           "articleTitle": "Quyết định 3508/QĐ-UBND",
@@ -38941,25 +39313,35 @@
       },
       "fieldSources": {
         "ma": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "ten": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "linhVuc": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "cap": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "quyetDinh": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "lifecycle.status": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
         ],
         "lifecycle.effectiveFrom": [
+          "ev_05dcaabfdad22fd9bf33952b",
           "ev_4cf8cad581f012f4751cf4bd"
+        ],
+        "thoiHan": [
+          "ev_05dcaabfdad22fd9bf33952b"
         ],
         "formalityId": [
           "ev_8e2a4205bfcb4eafe8a0398b",
@@ -39569,6 +39951,10 @@
     "phiDiaGioi": 59,
     "officialTableLevelResolved": 36,
     "officialTableLevelUpdatedPublic": 3,
+    "guidanceDurationReady": 0,
+    "guidanceDurationConfirmedExisting": 19,
+    "guidanceDurationPromoted": 15,
+    "guidanceDurationSkippedExisting": 4,
     "priority51VinhBaoSubmissionLinks": 49,
     "officialGuidanceEnriched": 50
   }
