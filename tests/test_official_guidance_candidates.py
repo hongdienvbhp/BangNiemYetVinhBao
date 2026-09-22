@@ -28,6 +28,12 @@ class OfficialGuidanceCandidateTests(unittest.TestCase):
         self.assertEqual(MODULE.online_level("1.000001 A Một phần"), "PARTIAL")
         self.assertEqual(MODULE.online_level("Toàn trình Một phần"), "UNKNOWN")
 
+    def test_clock_cutoff_is_not_duration(self):
+        fields = MODULE.guidance_candidates(
+            "1.000001 Tiếp nhận hồ sơ sau 15 giờ thì trả kết quả ngày làm việc tiếp theo"
+        )
+        self.assertNotIn("15 giờ", fields["durationCandidates"])
+
     def test_reception_text_does_not_become_authority(self):
         fields = MODULE.guidance_candidates(
             "1.000001 Tên thủ tục Trung tâm PVHCC cấp xã 05 ngày làm việc"
