@@ -104,6 +104,22 @@ jobs:
         if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
         run: python scripts/apply_guidance_enrichment.py
 
+      - name: Extract official guidance candidates
+        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
+        run: python scripts/extract_official_guidance_candidates.py
+
+      - name: Validate official guidance fields
+        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
+        run: python scripts/validate_official_guidance_fields.py
+
+      - name: Build guidance promotion plan
+        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
+        run: python scripts/build_guidance_promotion_plan.py
+
+      - name: Promote verified official guidance
+        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
+        run: python scripts/apply_guidance_promotion_plan.py
+
       - name: Build lifecycle tracking projection
         if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
         run: python scripts/build_tthc_tracking.py
