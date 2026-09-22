@@ -21,6 +21,11 @@ def norm(value: object) -> str:
 
 def trim_duration(value: str) -> str:
     text = re.sub(r"\s+", " ", str(value or "")).strip()
+    # PDF table extraction may flatten the adjacent "Không thực hiện cắt giảm"
+    # column into the duration cell, including an OCR split between "hi" and "ện".
+    cut_reduction = re.search(r"\s+Không\s+thực\s+hi\s*ện\s+cắt\s+giảm\b", text, re.IGNORECASE)
+    if cut_reduction:
+        text = text[:cut_reduction.start()]
     markers = (
         " Trung tâm ", " Phục vụ hành chính", " Miễn lệ phí", " Lệ phí:",
         " Phí:", " Toàn trình", " Một phần", " Căn cứ pháp lý",
@@ -33,7 +38,7 @@ def trim_duration(value: str) -> str:
 
 
 DURATION_TOKEN_RE = re.compile(
-    r"(?<!\\d)(?:\\d+(?:[.,]\\d+)?)\\s*(?:ngày|giờ|tháng)(?:\\s+làm việc)?",
+    r"(?<!\d)(?:\d+(?:[.,]\d+)?)\s*(?:ngày|giờ|tháng)(?:\s+làm việc)?",
     re.IGNORECASE,
 )
 
@@ -42,8 +47,8 @@ CLEAN_DURATION_RE = re.compile(
     r"^(?:"
     r"Không quy định"
     r"|Ngay trong ngày làm việc"
-    r"|\\d+(?:[.,]\\d+)?\\s*(?:ngày|giờ|tháng)(?:\\s+làm việc)?"
-    r"(?:\\s+kể từ (?:ngày|khi) nhận (?:đủ |được )?hồ sơ hợp lệ)?"
+    r"|\d+(?:[.,]\d+)?\s*(?:ngày|giờ|tháng)(?:\s+làm việc)?"
+    r"(?:\s+kể từ (?:ngày|khi) nhận (?:đủ |được )?hồ sơ hợp lệ)?"
     r")$",
     re.IGNORECASE,
 )

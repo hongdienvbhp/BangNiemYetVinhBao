@@ -24,6 +24,15 @@ class GuidancePromotionGateTests(unittest.TestCase):
         result = MODULE.build(canonical, candidates)
         self.assertEqual(result["summary"]["durationReady"], 1)
 
+    def test_flattened_cut_reduction_column_is_trimmed(self):
+        canonical = {"thuTuc": [{"ma": "1.000001", "thoiHan": ""}]}
+        candidates = {"rows": [
+            {"ma": "1.000001", "fields": {"thoiHan": {"candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ Không thực hi ện cắt giảm", "confidence": "high"}}, "source": {"attachmentUrl": "a"}},
+        ]}
+        result = MODULE.build(canonical, candidates)
+        self.assertEqual(result["summary"]["durationReady"], 1)
+        self.assertEqual(result["ready"][0]["candidateValue"], "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ")
+
     def test_existing_conflict_needs_review(self):
         canonical = {"thuTuc": [{"ma": "1.000001", "thoiHan": "10 ngày"}]}
         candidates = {"rows": [

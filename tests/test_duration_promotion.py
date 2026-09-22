@@ -40,6 +40,26 @@ class DurationPromotionTests(unittest.TestCase):
         self.assertEqual(stats["promoted"], 1)
         self.assertEqual(stats["skippedExisting"], 1)
 
+    def test_confirmed_existing_candidate_restores_missing_builder_value(self):
+        rows = [{"ma": "1.000001", "thoiHan": "", "sourceEvidence": []}]
+        payload = {
+            "confirmedExisting": [{
+                "ma": "1.000001",
+                "field": "thoiHan",
+                "currentValue": "05 ngày làm việc",
+                "candidateValue": "05 ngày làm việc",
+                "sources": [{
+                    "attachmentUrl": "https://example.gov.vn/a.pdf",
+                    "articleUrls": ["https://example.gov.vn/a"],
+                    "decisionNumbers": ["1/QĐ-TEST"],
+                }],
+            }]
+        }
+        stats = apply_duration_promotions(rows, payload)
+        self.assertEqual(rows[0]["thoiHan"], "05 ngày làm việc")
+        self.assertEqual(stats["confirmedExisting"], 1)
+        self.assertEqual(stats["promoted"], 1)
+
     def test_duration_evidence_gets_field_level_provenance(self):
         row = {
             "ma": "1.000001",

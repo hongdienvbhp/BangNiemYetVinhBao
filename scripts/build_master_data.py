@@ -1004,12 +1004,26 @@ def apply_duration_promotions(public_rows: list[dict], payload: dict) -> dict:
         for row in public_rows
         if normalize_code(row.get("ma", ""))
     }
-    stats = {"ready": 0, "promoted": 0, "skippedExisting": 0, "missingCode": 0}
+    stats = {
+        "ready": 0,
+        "confirmedExisting": 0,
+        "promoted": 0,
+        "skippedExisting": 0,
+        "missingCode": 0,
+    }
 
-    for item in payload.get("ready") or []:
-        if item.get("field") != "thoiHan" or item.get("promotionStatus") != "ready":
+    promotion_items = [
+        ("ready", item) for item in (payload.get("ready") or [])
+    ] + [
+        ("confirmedExisting", item) for item in (payload.get("confirmedExisting") or [])
+    ]
+
+    for source_bucket, item in promotion_items:
+        if item.get("field") != "thoiHan":
             continue
-        stats["ready"] += 1
+        if source_bucket == "ready" and item.get("promotionStatus") != "ready":
+            continue
+        stats[source_bucket] += 1
         code = normalize_code(item.get("ma", ""))
         row = by_code.get(code)
         if row is None:
@@ -1048,7 +1062,13 @@ def apply_duration_promotions(public_rows: list[dict], payload: dict) -> dict:
 
 def apply_guidance_field_promotions(public_rows: list[dict]) -> dict:
     if not GUIDANCE_FIELD_PROMOTION_READY.exists():
-        return {"ready": 0, "promoted": 0, "skippedExisting": 0, "missingCode": 0}
+        return {
+            "ready": 0,
+            "confirmedExisting": 0,
+            "promoted": 0,
+            "skippedExisting": 0,
+            "missingCode": 0,
+        }
     return apply_duration_promotions(public_rows, load_json(GUIDANCE_FIELD_PROMOTION_READY))
 
 
@@ -1228,6 +1248,7 @@ def main() -> int:
         "officialTableLevelResolved": official_table_stats["resolved"],
         "officialTableLevelUpdatedPublic": official_table_stats["updatedPublic"],
         "guidanceDurationReady": guidance_promotion_stats["ready"],
+        "guidanceDurationConfirmedExisting": guidance_promotion_stats["confirmedExisting"],
         "guidanceDurationPromoted": guidance_promotion_stats["promoted"],
         "guidanceDurationSkippedExisting": guidance_promotion_stats["skippedExisting"],
     }
