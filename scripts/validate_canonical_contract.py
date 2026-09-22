@@ -36,7 +36,7 @@ EVIDENCE_ID = re.compile(r"^ev_[0-9a-f]{24}$")
 CONTROL = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]")
 CP437_MARKERS = ("├", "┬", "┌", "└", "┼", "╬", "╟", "╚", "╠", "╩", "╦", "╔", "║", "╒", "╘", "╞", "╪", "╧", "╤")
 OCR_SPLIT_MARKERS = ("tr ạm", "Ch ứng", "nh ập", "th ấp", "đi ểm", "t ờ", "th ẩm", "quy ền")
-VERIFIED_LINK_STATUSES = {"vinhbao_scope_parameters_verified", "verified_official_guidance"}
+VERIFIED_LINK_STATUSES = {"resolution_level_scope_verified", "vinhbao_scope_parameters_verified", "verified_official_guidance"}
 
 LEGAL_FIELDS = {
     "ma",
@@ -80,7 +80,7 @@ def _official_url(value: str) -> bool:
     )
 
 
-def _validate_submission_url(value: str, formality_id: str) -> list[str]:
+def _validate_submission_url(value: str, formality_id: str, cap: str) -> list[str]:
     try:
         parsed = urlparse(value)
         query = parse_qs(parsed.query)
@@ -90,14 +90,28 @@ def _validate_submission_url(value: str, formality_id: str) -> list[str]:
     errors: list[str] = []
     if parsed.scheme != "https" or (parsed.hostname or "").lower() != "dichvucong.gov.vn":
         errors.append("URL nộp hồ sơ phải là HTTPS thuộc dichvucong.gov.vn")
-    for key, expected in {
-        "provinceCode": "31",
-        "wardCode": "11824",
-        "commune": "WARD",
-    }.items():
-        actual = (query.get(key) or [""])[0]
-        if actual != expected:
-            errors.append(f"URL nộp hồ sơ sai {key}: cần {expected}, hiện {actual or 'trống'}")
+
+    province_code = (query.get("provinceCode") or [""])[0]
+    if province_code != "31":
+        errors.append(f"URL nộp hồ sơ sai provinceCode: cần 31, hiện {province_code or 'trống'}")
+
+    is_province_route = str(cap or "").strip().lower().startswith("cấp tỉnh")
+    if is_province_route:
+        if (query.get("isProvince") or [""])[0] != "1":
+            errors.append("TTHC cấp tỉnh phải dùng isProvince=1")
+        forbidden = ("wardCode", "ward", "agency", "departmentId", "commune")
+        present = [key for key in forbidden if (query.get(key) or [""])[0]]
+        if present:
+            errors.append("TTHC cấp tỉnh không được ép scope cấp xã: " + ", ".join(present))
+    else:
+        for key, expected in {"wardCode": "11824", "commune": "WARD"}.items():
+            actual = (query.get(key) or [""])[0]
+            if actual != expected:
+                errors.append(f"URL nộp hồ sơ cấp xã sai {key}: cần {expected}, hiện {actual or 'trống'}")
+        is_province = (query.get("isProvince") or [""])[0]
+        if is_province and is_province != "0":
+            errors.append("TTHC cấp xã phải dùng isProvince=0 khi tham số này được khai báo")
+
     if formality_id:
         actual = (query.get("formalityId") or [""])[0]
         if actual != formality_id:
@@ -127,13 +141,8 @@ def _validate_guidance(code: str, guide: Any) -> list[str]:
                 errors.append(f"{code}: huongDan.sources[{index}] sourceRole không hợp lệ")
 
     submission_url = str(guide.get("submissionUrl") or "").strip()
-    if submission_url:
-        errors.extend(
-            f"{code}: {message}"
-            for message in _validate_submission_url(
-                submission_url, str(guide.get("formalityId") or "").strip()
-            )
-        )
+    if submission_url and not _official_url(submission_url):
+        errors.append(f"{code}: huongDan.submissionUrl không phải nguồn DVCQG HTTPS hợp lệ")
 
     for field in ("quyTrinh", "thanhPhanHoSo", "bieuMau", "lePhi"):
         value = guide.get(field)
@@ -374,7 +383,9 @@ def validate(payload: Any, root: Path | None = None) -> list[str]:
             errors.extend(
                 f"{code or index}: {message}"
                 for message in _validate_submission_url(
-                    submission_url, str(row.get("formalityId") or "").strip()
+                    submission_url,
+                    str(row.get("formalityId") or "").strip(),
+                    str(row.get("cap") or "").strip(),
                 )
             )
 
