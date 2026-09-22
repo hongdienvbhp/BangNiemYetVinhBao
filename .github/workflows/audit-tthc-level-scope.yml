@@ -1,0 +1,19 @@
+name: Audit TTHC Level Scope
+
+on:
+  push:
+    branches:
+      - feat/issue-81-single-dvc-submit-link
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: "3.12"
+      - run: python scripts/audit_tthc_level_scope.py
