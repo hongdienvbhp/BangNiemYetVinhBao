@@ -29,7 +29,7 @@ jobs:
 
       - name: Python syntax
         run: |
-          python -m py_compile             scripts/canonical_v4.py             scripts/validate_canonical_field_contract.py             scripts/classify_official_tables.py             scripts/extract_official_guidance_candidates.py             scripts/validate_official_guidance_fields.py             scripts/build_guidance_promotion_plan.py             scripts/reconcile_phase1.py             scripts/migrate_canonical_v4.py             scripts/build_priority50_guidance.py             scripts/validate_priority50_guidance.py             scripts/audit_vinhbao_submission_links.py             scripts/validate_single_submit_link_ui.py             scripts/update_official_sources.py             scripts/extract_city_updates.py             scripts/build_master_data.py             scripts/build_master_delta.py             scripts/fetch_dvc_mapping.py             scripts/validate_tthc_guidance.py             scripts/apply_guidance_enrichment.py             scripts/build_tthc_tracking.py             scripts/check_static_site.py             scripts/routine_guard.py             scripts/write_routine_run_record.py             scripts/check_routine_health.py             scripts/tthc_governance.py
+          python -m py_compile             scripts/canonical_v4.py             scripts/validate_canonical_field_contract.py             scripts/classify_official_tables.py             scripts/extract_official_guidance_candidates.py             scripts/validate_official_guidance_fields.py             scripts/build_guidance_promotion_plan.py             scripts/apply_guidance_promotion_plan.py             scripts/reconcile_phase1.py             scripts/migrate_canonical_v4.py             scripts/build_priority50_guidance.py             scripts/validate_priority50_guidance.py             scripts/audit_vinhbao_submission_links.py             scripts/validate_single_submit_link_ui.py             scripts/update_official_sources.py             scripts/extract_city_updates.py             scripts/build_master_data.py             scripts/build_master_delta.py             scripts/fetch_dvc_mapping.py             scripts/validate_tthc_guidance.py             scripts/apply_guidance_enrichment.py             scripts/build_tthc_tracking.py             scripts/check_static_site.py             scripts/routine_guard.py             scripts/write_routine_run_record.py             scripts/check_routine_health.py             scripts/tthc_governance.py
 
       - name: Python unit tests
         run: python -m unittest discover -s tests -v
@@ -63,6 +63,10 @@ jobs:
           python scripts/build_master_data.py
           python scripts/validate_tthc_guidance.py
           python scripts/apply_guidance_enrichment.py
+          python scripts/extract_official_guidance_candidates.py
+          python scripts/validate_official_guidance_fields.py
+          python scripts/build_guidance_promotion_plan.py
+          python scripts/apply_guidance_promotion_plan.py
           python scripts/build_tthc_tracking.py
           git diff --exit-code --             data/source-audit/city-updates-current.json             data/thu-tuc.json             data/master-data-audit.csv             data/master-data-excluded.json             data/BAO_CAO_MASTER_DATA_HIEN_HANH.md             data/THEO_DOI_THAY_DOI_TTHC.csv             js/master-data-fallback.js
 
@@ -96,6 +100,11 @@ jobs:
         run: |
           python scripts/build_guidance_promotion_plan.py
           git diff --exit-code -- data/source-audit/official-guidance-promotion-plan.json
+
+      - name: Apply verified guidance promotion plan
+        run: |
+          python scripts/apply_guidance_promotion_plan.py
+          git diff --exit-code -- data/thu-tuc.json data/source-audit/official-guidance-promotion-result.json js/master-data-fallback.js
 
       - name: Reconcile Phase 1 baseline
         run: |
