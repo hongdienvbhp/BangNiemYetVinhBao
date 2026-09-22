@@ -27,6 +27,7 @@ SOURCE_BUNDLE_PATHS = (
     "data/priority-51-legal-verification.json",
     "data/source-audit/city-updates-current.json",
     "data/source-audit/official-table-level-classification.json",
+    "data/source-audit/guidance-field-promotion-ready.json",
     "data/source-audit/dvcqg-live-verification-current.json",
     "data/source-audit/dvcqg-formality-candidates-current.json",
     "data/tthc-guidance-enrichment.json",
@@ -305,6 +306,11 @@ def upgrade_record_to_v4(row: dict[str, Any], as_of: str) -> dict[str, Any]:
         for item in evidence
         if item.get("sourceRole") == "local_execution"
     ]
+    duration_ids = [
+        item["evidenceId"]
+        for item in evidence
+        if item.get("classification") == "official_table_guidance_duration"
+    ]
 
     active_dates = sorted(
         str(item.get("effectiveDate") or item.get("publishedDate") or "")
@@ -330,6 +336,9 @@ def upgrade_record_to_v4(row: dict[str, Any], as_of: str) -> dict[str, Any]:
         if field == "lifecycle.effectiveFrom" and not effective_from:
             continue
         _merge_ref(field_sources, field, legal_ids)
+
+    if record.get("thoiHan") and duration_ids:
+        _merge_ref(field_sources, "thoiHan", duration_ids)
 
     if record.get("formalityId"):
         _merge_ref(field_sources, "formalityId", execution_ids)
