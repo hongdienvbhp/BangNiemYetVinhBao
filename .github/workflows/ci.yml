@@ -84,6 +84,9 @@ jobs:
       - name: Validate all Vinh Bao DVC submission links
         run: python scripts/audit_vinhbao_submission_links.py
 
+      - name: Validate all Vinh Bao DVC submission links
+        run: python scripts/audit_vinhbao_submission_links.py
+
       - name: Validate single DVC link in web detail
         run: python scripts/validate_single_submit_link_ui.py
 
