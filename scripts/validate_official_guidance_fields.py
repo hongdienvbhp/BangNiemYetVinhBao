@@ -18,6 +18,66 @@ def validate_single(values: list[str]) -> dict:
     return {"status": "conflicting", "value": None, "candidates": unique}
 
 
+RECEPTION_AGENCY_MARKERS = (
+    "trung tâm phục vụ hành chính công",
+    "trung tâm pvhcc",
+)
+
+
+def validate_agency(values: list[str], evidence: list[dict] | None = None) -> dict:
+    unique = list(dict.fromkeys(str(x).strip() for x in values if str(x).strip()))
+    if not unique:
+        return {"status": "insufficient", "value": None, "candidates": []}
+    if len(unique) > 1:
+        return {
+            "status": "conflicting",
+            "value": None,
+            "candidates": unique,
+            "reason": "multiple_agency_mentions",
+        }
+
+    value = unique[0]
+    folded = value.lower()
+    if any(marker in folded for marker in RECEPTION_AGENCY_MARKERS):
+        return {
+            "status": "insufficient",
+            "value": None,
+            "candidates": unique,
+            "reason": "reception_location_only",
+        }
+
+    # A free-text mention such as "Ủy ban nhân dân cấp xã" may be the
+    # requester, recipient, coordinating body or part of the procedure name.
+    # Only an explicitly labelled agency/thẩm quyền context is promotable.
+    labelled = False
+    for item in evidence or []:
+        if not isinstance(item, dict):
+            continue
+        segment = str(item.get("segment") or "")
+        if not segment:
+            continue
+        for label in ("Cơ quan thực hiện", "Cơ quan có thẩm quyền"):
+            pos = segment.lower().find(label.lower())
+            if pos < 0:
+                continue
+            window = segment[pos : pos + 240].lower()
+            if value.lower() in window:
+                labelled = True
+                break
+        if labelled:
+            break
+
+    if not labelled:
+        return {
+            "status": "insufficient",
+            "value": None,
+            "candidates": unique,
+            "reason": "unlabelled_agency_mention",
+        }
+
+    return {"status": "verified", "value": value, "candidates": unique}
+
+
 def validate_row(row: dict) -> dict:
     online = validate_single(
         [row.get("onlineServiceLevelCandidate")]
@@ -39,7 +99,10 @@ def validate_row(row: dict) -> dict:
         "candidates": legal_values,
     }
 
-    agency = validate_single(row.get("agencyCandidates") or [])
+    agency = validate_agency(
+        row.get("agencyCandidates") or [],
+        row.get("evidence") or [],
+    )
 
     fields = {
         "onlineServiceLevel": online,
