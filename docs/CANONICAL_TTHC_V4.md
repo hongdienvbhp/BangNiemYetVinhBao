@@ -32,6 +32,7 @@ Nội dung nghiệp vụ chi tiết mới phải đi vào `huongDan`:
 - `thoiHan`
 - `coQuanThucHien`
 - `ketQua`
+- `canCuPhapLy` (mảng citation pháp lý; không thay thế evidence về hiệu lực địa phương)
 - `submissionUrl`
 
 Mọi field được publish trong `huongDan` phải có provenance ở `fieldSources`.

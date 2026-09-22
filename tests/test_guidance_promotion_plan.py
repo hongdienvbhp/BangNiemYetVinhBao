@@ -41,8 +41,8 @@ class GuidancePromotionPlanTests(unittest.TestCase):
         self.assertEqual(result["summary"]["fieldPromotions"], 0)
 
     def test_target_mapping_is_canonical_contract(self):
-        self.assertEqual(MODULE.TARGETS["onlineServiceLevel"], "onlineServiceLevel")
-        self.assertEqual(MODULE.TARGETS["canCuPhapLy"], "canCuPhapLy")
+        self.assertEqual(MODULE.TARGETS["phiLePhi"], "huongDan.lePhi")
+        self.assertEqual(MODULE.TARGETS["canCuPhapLy"], "huongDan.canCuPhapLy")
         self.assertEqual(MODULE.AUTO_PROMOTION_FIELDS, {"phiLePhi", "canCuPhapLy"})
 
     def test_plan_filters_non_active_codes(self):

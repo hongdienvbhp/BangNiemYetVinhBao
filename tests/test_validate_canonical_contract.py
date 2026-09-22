@@ -73,6 +73,26 @@ class CanonicalContractTest(unittest.TestCase):
             for e in MODULE.validate(data)
         ))
 
+    def test_guidance_legal_basis_requires_nonempty_string_array(self):
+        bad = {
+            "verificationStatus": "verified_official",
+            "canCuPhapLy": "Nghị định 151/2026/NĐ-CP",
+            "sources": [],
+        }
+        self.assertTrue(any(
+            "canCuPhapLy phải là mảng chuỗi" in error
+            for error in MODULE._validate_guidance("1.000001", bad)
+        ))
+        good = {
+            "verificationStatus": "verified_official",
+            "canCuPhapLy": ["Nghị định 151/2026/NĐ-CP"],
+            "sources": [],
+        }
+        self.assertFalse(any(
+            "canCuPhapLy phải là mảng chuỗi" in error
+            for error in MODULE._validate_guidance("1.000001", good)
+        ))
+
     def test_repository_dataset_passes(self):
         payload = json.loads((ROOT / "data" / "thu-tuc.json").read_text(encoding="utf-8"))
         self.assertEqual(MODULE.validate(payload, ROOT), [])

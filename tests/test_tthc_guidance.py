@@ -113,6 +113,34 @@ class GuidanceEnrichmentTests(unittest.TestCase):
         }])
         self.assertEqual(validate(payload), [])
 
+    def test_legal_basis_requires_field_provenance(self):
+        payload = base_payload([{
+            "ma": "1.000001",
+            "verificationStatus": "verified_official",
+            "canCuPhapLy": ["Nghị định 151/2026/NĐ-CP"],
+            "sources": [{
+                "id": "central-a",
+                "sourceRole": "central_content_reference",
+                "url": "https://moj.gov.vn/a",
+            }],
+            "fieldProvenance": {},
+        }])
+        self.assertTrue(any("fieldProvenance.canCuPhapLy" in error for error in validate(payload)))
+
+    def test_legal_basis_with_official_content_provenance_passes(self):
+        payload = base_payload([{
+            "ma": "1.000001",
+            "verificationStatus": "verified_official",
+            "canCuPhapLy": ["Nghị định 151/2026/NĐ-CP"],
+            "sources": [{
+                "id": "central-a",
+                "sourceRole": "central_content_reference",
+                "url": "https://moj.gov.vn/a",
+            }],
+            "fieldProvenance": {"canCuPhapLy": ["central-a"]},
+        }])
+        self.assertEqual(validate(payload), [])
+
     def test_dvctt_requires_local_execution_provenance(self):
         payload = {
             "format": "bangniemyet-tthc-guidance-enrichment",

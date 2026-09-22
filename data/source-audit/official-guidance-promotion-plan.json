@@ -10,11 +10,8 @@
     "procedures": 5,
     "fieldPromotions": 5,
     "byField": {
-      "onlineServiceLevel": 0,
-      "thoiHan": 0,
       "phiLePhi": 2,
-      "canCuPhapLy": 3,
-      "coQuanThucHien": 0
+      "canCuPhapLy": 3
     }
   },
   "procedures": [
@@ -24,7 +21,7 @@
       "promotions": [
         {
           "field": "phiLePhi",
-          "targetPath": "phiLePhi",
+          "targetPath": "huongDan.lePhi",
           "value": "EXEMPT",
           "status": "ready_for_schema_gate",
           "provenance": [
@@ -46,7 +43,7 @@
       "promotions": [
         {
           "field": "canCuPhapLy",
-          "targetPath": "canCuPhapLy",
+          "targetPath": "huongDan.canCuPhapLy",
           "value": [
             "Nghị định số 15/2018/NĐ-CP"
           ],
@@ -70,7 +67,7 @@
       "promotions": [
         {
           "field": "phiLePhi",
-          "targetPath": "phiLePhi",
+          "targetPath": "huongDan.lePhi",
           "value": "EXEMPT",
           "status": "ready_for_schema_gate",
           "provenance": [
@@ -92,7 +89,7 @@
       "promotions": [
         {
           "field": "canCuPhapLy",
-          "targetPath": "canCuPhapLy",
+          "targetPath": "huongDan.canCuPhapLy",
           "value": [
             "Nghị định số 215/2025/NĐ-CP"
           ],
@@ -121,7 +118,7 @@
       "promotions": [
         {
           "field": "canCuPhapLy",
-          "targetPath": "canCuPhapLy",
+          "targetPath": "huongDan.canCuPhapLy",
           "value": [
             "Nghị định số 215/2025/NĐ-CP"
           ],

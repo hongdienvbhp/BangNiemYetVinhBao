@@ -11,11 +11,8 @@ OUT = ROOT / "data" / "source-audit" / "official-guidance-promotion-plan.json"
 MASTER = ROOT / "data" / "thu-tuc.json"
 
 TARGETS = {
-    "onlineServiceLevel": "onlineServiceLevel",
-    "thoiHan": "thoiHan",
-    "phiLePhi": "phiLePhi",
-    "canCuPhapLy": "canCuPhapLy",
-    "coQuanThucHien": "coQuanThucHien",
+    "phiLePhi": "huongDan.lePhi",
+    "canCuPhapLy": "huongDan.canCuPhapLy",
 }
 
 AUTO_PROMOTION_FIELDS = {"phiLePhi", "canCuPhapLy"}

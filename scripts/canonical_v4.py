@@ -355,7 +355,7 @@ def upgrade_record_to_v4(row: dict[str, Any], as_of: str) -> dict[str, Any]:
     if isinstance(guide, dict) and guide_evidence_ids:
         provenance = guide.get("fieldProvenance")
         provenance = provenance if isinstance(provenance, dict) else {}
-        for field in ("quyTrinh", "thanhPhanHoSo", "bieuMau", "lePhi", "thoiHan", "coQuanThucHien", "ketQua"):
+        for field in ("quyTrinh", "thanhPhanHoSo", "bieuMau", "lePhi", "thoiHan", "coQuanThucHien", "ketQua", "canCuPhapLy"):
             if guide.get(field) in (None, "", [], {}):
                 continue
             refs = provenance.get(field)

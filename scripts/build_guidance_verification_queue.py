@@ -18,6 +18,7 @@ REQUIRED_FIELDS = [
     "thoiHan",
     "coQuanThucHien",
     "ketQua",
+    "canCuPhapLy",
     "dvctt",
 ]
 

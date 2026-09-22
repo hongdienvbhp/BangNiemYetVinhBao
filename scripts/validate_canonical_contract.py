@@ -64,6 +64,7 @@ GUIDANCE_FIELDS = {
     "huongDan.thoiHan",
     "huongDan.coQuanThucHien",
     "huongDan.ketQua",
+    "huongDan.canCuPhapLy",
 }
 
 
@@ -161,6 +162,12 @@ def _validate_guidance(code: str, guide: Any) -> list[str]:
     result_value = guide.get("ketQua")
     if result_value is not None and not isinstance(result_value, (dict, list, str)):
         errors.append(f"{code}: huongDan.ketQua phải là object, mảng hoặc chuỗi")
+    legal_basis = guide.get("canCuPhapLy")
+    if legal_basis is not None:
+        if not isinstance(legal_basis, list) or not legal_basis or any(
+            not isinstance(item, str) or not item.strip() for item in legal_basis
+        ):
+            errors.append(f"{code}: huongDan.canCuPhapLy phải là mảng chuỗi không rỗng")
     return errors
 
 
@@ -243,7 +250,7 @@ def _validate_precedence(
         required.update({"nopHoSoUrl", "nopHoSoScope", "submissionLinkStatus"})
     guide = row.get("huongDan")
     if isinstance(guide, dict):
-        for field in ("quyTrinh", "thanhPhanHoSo", "bieuMau", "lePhi", "thoiHan", "coQuanThucHien", "ketQua", "dvctt", "submissionUrl"):
+        for field in ("quyTrinh", "thanhPhanHoSo", "bieuMau", "lePhi", "thoiHan", "coQuanThucHien", "ketQua", "canCuPhapLy", "dvctt", "submissionUrl"):
             if guide.get(field) not in (None, "", [], {}):
                 required.add(f"huongDan.{field}")
 
