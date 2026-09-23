@@ -391,8 +391,12 @@ CITY_NAME_OVERRIDES = {
     "1.003705": "Công nhận chương trình đào tạo kiến thức pháp luật về bán hàng đa cấp",
     "1.012789": "Cung cấp thông tin, dữ liệu đất đai",
     "1.012818": "Thu hồi Giấy chứng nhận đã cấp lần đầu không đúng quy định của pháp luật đất đai do người sử dụng đất, chủ sở hữu tài sản gắn liền với đất phát hiện và cấp lại Giấy chứng nhận sau khi thu hồi",
+    "1.013949": "Giao đất, cho thuê đất, chuyển mục đích sử dụng đất đối với trường hợp giao đất, cho thuê đất không đấu giá quyền sử dụng đất, không đấu thầu lựa chọn nhà đầu tư thực hiện dự án có sử dụng đất; trường hợp giao đất, cho thuê đất thông qua đấu thầu lựa chọn nhà đầu tư thực hiện dự án có sử dụng đất; giao đất và giao rừng; cho thuê đất và cho thuê rừng, gia hạn sử dụng đất khi hết thời hạn sử dụng đất",
+    "1.013978": "Đăng ký đất đai, tài sản gắn liền với đất, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất lần đầu đối với hộ gia đình, cá nhân, cộng đồng dân cư, người gốc Việt Nam định cư ở nước ngoài",
     "2.000324": "Xác nhận kiến thức pháp luật về bán hàng đa cấp, kiến thức cho đầu mối tại địa phương",
-    "2.000884": "Thủ tục chứng thực chữ ký trong các văn bản (áp dụng cho cả trường hợp chứng thực điểm chỉ và trường hợp người yêu cầu chứng thực không điểm chỉ được)",
+    "2.000815": "Chứng thực bản sao từ bản chính giấy tờ, văn bản do cơ quan, tổ chức có thẩm quyền của Việt Nam; cơ quan, tổ chức có thẩm quyền của nước ngoài; cơ quan, tổ chức có thẩm quyền của Việt Nam liên kết với cơ quan, tổ chức có thẩm quyền của nước ngoài cấp hoặc chứng nhận",
+    "2.000884": "Thủ tục chứng thực chữ ký trong các giấy tờ, văn bản (áp dụng cho cả trường hợp chứng thực điểm chỉ và trường hợp người yêu cầu chứng thực không ký, không điểm chỉ được)",
+    "2.001035": "Chứng thực giao dịch liên quan đến tài sản là động sản, quyền sử dụng đất, nhà ở",
     "2.001942": "Chuyển trẻ em đang được chăm sóc thay thế tại cơ sở trợ giúp xã hội đến cá nhân, gia đình nhận chăm sóc thay thế",
     "2.002020": "Chấm dứt hoạt động chi nhánh, văn phòng đại diện, địa điểm kinh doanh",
     "2.002165": "Giải quyết yêu cầu bồi thường tại cơ quan trực tiếp quản lý người thi hành công vụ gây thiệt hại (cấp xã)",
@@ -412,7 +416,12 @@ CITY_NAME_OVERRIDES = {
 
 NAME_OVERRIDE_SOURCES = {
     "1.008725": "legacy_same_code",
+    "1.013949": "official_attachment_name_correction",
+    "1.013978": "official_attachment_name_correction",
     "2.000424": "legacy_same_code",
+    "2.000815": "official_attachment_dvcqg_crosscheck",
+    "2.000884": "official_attachment_name_correction",
+    "2.001035": "official_attachment_name_correction",
 }
 
 CITY_SPACING_FIXES = {
