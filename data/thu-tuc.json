@@ -14123,7 +14123,7 @@
       "ma": "2.002821",
       "ten": "Hỗ trợ đào tạo nghề cho người lao động ở khu vực nông thôn, người lao động là thanh niên",
       "linhVuc": "LAO ĐỘNG",
-      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "cap": "Xã",
       "nhanh": false,
       "mienPhiTrucTuyen": false,
       "phiDiaGioi": false,
@@ -14143,6 +14143,19 @@
       "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-quan-ly-lao-dong-ngoai-nuoc/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-bi-bai-bo-linh-vuc-nguoi-lao-dong-di-lam-viec-o-nuoc-ng-845673",
       "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/1.-qd-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-noi-vu..signed639040667148325665.pdf",
       "sourceEvidence": [
+        {
+          "sourceRole": "local_legal_effect",
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-quan-ly-lao-dong-ngoai-nuoc/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-bi-bai-bo-linh-vuc-nguoi-lao-dong-di-lam-viec-o-nuoc-ng-845673",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/1.-qd-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-noi-vu..signed639040667148325665.pdf",
+          "decisionNumbers": [
+            "1561/QĐ-BNV",
+            "4/QĐ-BNV"
+          ],
+          "classification": "official_table_level_heading",
+          "repealContext": false,
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-quan-ly-lao-dong-ngoai-nuoc/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-bi-bai-bo-linh-vuc-nguoi-lao-dong-di-lam-viec-o-nuoc-ng-845673",
+          "evidenceId": "ev_726f9cbaf67442c293894ab5"
+        },
         {
           "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-quan-ly-lao-dong-ngoai-nuoc/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-bi-bai-bo-linh-vuc-nguoi-lao-dong-di-lam-viec-o-nuoc-ng-845673",
           "articleTitle": "Danh mục thủ tục hành chính mới ban hành, bị bãi bỏ lĩnh vực người lao động đi làm việc ở nước ngoài theo hợp đồng, đào tạo nghề, việc làm thuộc phạm vi chức năng quản lý của Sở Nội vụ",
@@ -14199,24 +14212,31 @@
       },
       "fieldSources": {
         "ma": [
+          "ev_726f9cbaf67442c293894ab5",
           "ev_2e81ad3b889f6a950f50d0a3"
         ],
         "ten": [
+          "ev_726f9cbaf67442c293894ab5",
           "ev_2e81ad3b889f6a950f50d0a3"
         ],
         "linhVuc": [
+          "ev_726f9cbaf67442c293894ab5",
           "ev_2e81ad3b889f6a950f50d0a3"
         ],
         "cap": [
+          "ev_726f9cbaf67442c293894ab5",
           "ev_2e81ad3b889f6a950f50d0a3"
         ],
         "quyetDinh": [
+          "ev_726f9cbaf67442c293894ab5",
           "ev_2e81ad3b889f6a950f50d0a3"
         ],
         "lifecycle.status": [
+          "ev_726f9cbaf67442c293894ab5",
           "ev_2e81ad3b889f6a950f50d0a3"
         ],
         "lifecycle.effectiveFrom": [
+          "ev_726f9cbaf67442c293894ab5",
           "ev_2e81ad3b889f6a950f50d0a3"
         ],
         "formalityId": [
@@ -19797,7 +19817,7 @@
       "ma": "2.001576",
       "ten": "Công nhận tiến bộ kỹ thuật",
       "linhVuc": "NÔNG NGHIỆP VÀ MÔI TRƯỜNG",
-      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
       "nhanh": false,
       "mienPhiTrucTuyen": false,
       "phiDiaGioi": false,
@@ -19817,6 +19837,16 @@
       "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-nong-nghiep-va-moi-truong/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-sua-doi-bo-sung-thay-the-bi-bai-bo-thuoc-pham-vi-chuc-n-911934",
       "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/qd-2037-ngay-30.5.2026-ubnd-hp-cong-bo-dm-tthc-moi-sua-doi-thay-the-bai-bo-lvuc-kttv-khcn-dcks-cnty-ttbvtv-qlcl-639165286498031603.pdf",
       "sourceEvidence": [
+        {
+          "sourceRole": "local_legal_effect",
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-nong-nghiep-va-moi-truong/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-sua-doi-bo-sung-thay-the-bi-bai-bo-thuoc-pham-vi-chuc-n-911934",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/qd-2037-noi-dung-lvuc-khoa-hoc-va-cong-nghe639165286925427733.docx",
+          "decisionNumbers": [],
+          "classification": "official_table_level_heading",
+          "repealContext": false,
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-nong-nghiep-va-moi-truong/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-sua-doi-bo-sung-thay-the-bi-bai-bo-thuoc-pham-vi-chuc-n-911934",
+          "evidenceId": "ev_40de6db1469f1745228a5231"
+        },
         {
           "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-nong-nghiep-va-moi-truong/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-sua-doi-bo-sung-thay-the-bi-bai-bo-thuoc-pham-vi-chuc-n-911934",
           "articleTitle": "Danh mục thủ tục hành chính mới ban hành, sửa đổi, bổ sung, thay thế, bị bãi bỏ thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường",
@@ -19854,10 +19884,10 @@
         },
         {
           "sourceRole": "local_execution",
-          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-ada4-75cb-aeeb-700cdfe0bb26",
+          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&formalityId=019d2bfa-ada4-75cb-aeeb-700cdfe0bb26",
           "classification": "dvcqg_submission_link",
           "repealContext": false,
-          "evidenceId": "ev_267b6e566c36269556782d22"
+          "evidenceId": "ev_abf93df9943f7f76527f1ac8"
         }
       ],
       "dvcMappingStatus": "technical_exact_code_candidate",
@@ -19865,14 +19895,11 @@
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
       "stt": 112,
-      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-ada4-75cb-aeeb-700cdfe0bb26",
+      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&formalityId=019d2bfa-ada4-75cb-aeeb-700cdfe0bb26",
       "nopHoSoScope": {
-        "route": "ward",
+        "route": "province",
         "provinceCode": "31",
-        "provinceName": "Hải Phòng",
-        "wardCode": "11824",
-        "wardName": "Vĩnh Bảo",
-        "commune": "WARD"
+        "provinceName": "Hải Phòng"
       },
       "submissionLinkStatus": "resolution_level_scope_verified",
       "submissionLinkMode": "formality_id",
@@ -19884,41 +19911,48 @@
       },
       "fieldSources": {
         "ma": [
+          "ev_40de6db1469f1745228a5231",
           "ev_6ccf2818d5467dec867e9311"
         ],
         "ten": [
+          "ev_40de6db1469f1745228a5231",
           "ev_6ccf2818d5467dec867e9311"
         ],
         "linhVuc": [
+          "ev_40de6db1469f1745228a5231",
           "ev_6ccf2818d5467dec867e9311"
         ],
         "cap": [
+          "ev_40de6db1469f1745228a5231",
           "ev_6ccf2818d5467dec867e9311"
         ],
         "quyetDinh": [
+          "ev_40de6db1469f1745228a5231",
           "ev_6ccf2818d5467dec867e9311"
         ],
         "lifecycle.status": [
+          "ev_40de6db1469f1745228a5231",
           "ev_6ccf2818d5467dec867e9311"
         ],
         "lifecycle.effectiveFrom": [
+          "ev_40de6db1469f1745228a5231",
           "ev_6ccf2818d5467dec867e9311"
         ],
         "formalityId": [
           "ev_7306723bebe82830c91a63e6",
-          "ev_267b6e566c36269556782d22"
+          "ev_abf93df9943f7f76527f1ac8"
         ],
         "nopHoSoUrl": [
           "ev_7306723bebe82830c91a63e6",
-          "ev_267b6e566c36269556782d22"
+          "ev_abf93df9943f7f76527f1ac8"
         ],
         "nopHoSoScope": [
           "ev_7306723bebe82830c91a63e6",
-          "ev_267b6e566c36269556782d22"
+          "ev_abf93df9943f7f76527f1ac8"
         ],
         "submissionLinkStatus": [
           "ev_7306723bebe82830c91a63e6",
-          "ev_267b6e566c36269556782d22"
+          "ev_abf93df9943f7f76527f1ac8"
         ]
       }
     },
@@ -23094,7 +23128,7 @@
       "ma": "1.003915",
       "ten": "Thủ tục cấp Chứng chỉ hành nghề đấu giá",
       "linhVuc": "TƯ PHÁP",
-      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
       "nhanh": false,
       "mienPhiTrucTuyen": false,
       "phiDiaGioi": false,
@@ -23114,6 +23148,19 @@
       "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/quyet-dinh-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vu-921702",
       "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/quyet-dinh-so-2320-cong-bo-dm-tthc-sua-doi-bo-sung-va-bai-bo-thuoc-quan-ly-cua-so-tu-phap639178246917435630639180044385831717.pdf",
       "sourceEvidence": [
+        {
+          "sourceRole": "local_legal_effect",
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/quyet-dinh-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vu-921702",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/quyet-dinh-so-2320-cong-bo-dm-tthc-sua-doi-bo-sung-va-bai-bo-thuoc-quan-ly-cua-so-tu-phap639178246917435630639180044385831717.pdf",
+          "decisionNumbers": [
+            "1444/QĐ-BTP",
+            "1458/QĐ-BTP"
+          ],
+          "classification": "official_table_level_heading",
+          "repealContext": false,
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/quyet-dinh-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vu-921702",
+          "evidenceId": "ev_6e6490f123dbec3df5b2f944"
+        },
         {
           "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/quyet-dinh-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vu-921702",
           "articleTitle": "Quyết định về việc công bố Danh mục thủ tục hành chính được sửa đổi, bổ sung và bị bãi bỏ lĩnh vực đấu giá tài sản, thừa hành viên, thừa phát lại thuộc phạm vi, chức năng quản lý của Sở Tư pháp",
@@ -23140,10 +23187,10 @@
         },
         {
           "sourceRole": "local_execution",
-          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfd-66ed-7278-a70a-2d6bcb6ba95c",
+          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&formalityId=019d2bfd-66ed-7278-a70a-2d6bcb6ba95c",
           "classification": "dvcqg_submission_link",
           "repealContext": false,
-          "evidenceId": "ev_bce5d880bf9501c71f6a2159"
+          "evidenceId": "ev_fa216f733a896caac1b3f89a"
         }
       ],
       "dvcMappingStatus": "technical_exact_code_candidate",
@@ -23151,14 +23198,11 @@
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
       "stt": 140,
-      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfd-66ed-7278-a70a-2d6bcb6ba95c",
+      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&formalityId=019d2bfd-66ed-7278-a70a-2d6bcb6ba95c",
       "nopHoSoScope": {
-        "route": "ward",
+        "route": "province",
         "provinceCode": "31",
-        "provinceName": "Hải Phòng",
-        "wardCode": "11824",
-        "wardName": "Vĩnh Bảo",
-        "commune": "WARD"
+        "provinceName": "Hải Phòng"
       },
       "submissionLinkStatus": "resolution_level_scope_verified",
       "submissionLinkMode": "formality_id",
@@ -23170,41 +23214,48 @@
       },
       "fieldSources": {
         "ma": [
+          "ev_6e6490f123dbec3df5b2f944",
           "ev_25e74b063442ea5bfc4b6495"
         ],
         "ten": [
+          "ev_6e6490f123dbec3df5b2f944",
           "ev_25e74b063442ea5bfc4b6495"
         ],
         "linhVuc": [
+          "ev_6e6490f123dbec3df5b2f944",
           "ev_25e74b063442ea5bfc4b6495"
         ],
         "cap": [
+          "ev_6e6490f123dbec3df5b2f944",
           "ev_25e74b063442ea5bfc4b6495"
         ],
         "quyetDinh": [
+          "ev_6e6490f123dbec3df5b2f944",
           "ev_25e74b063442ea5bfc4b6495"
         ],
         "lifecycle.status": [
+          "ev_6e6490f123dbec3df5b2f944",
           "ev_25e74b063442ea5bfc4b6495"
         ],
         "lifecycle.effectiveFrom": [
+          "ev_6e6490f123dbec3df5b2f944",
           "ev_25e74b063442ea5bfc4b6495"
         ],
         "formalityId": [
           "ev_dfb271859a12d7a0ee96a69e",
-          "ev_bce5d880bf9501c71f6a2159"
+          "ev_fa216f733a896caac1b3f89a"
         ],
         "nopHoSoUrl": [
           "ev_dfb271859a12d7a0ee96a69e",
-          "ev_bce5d880bf9501c71f6a2159"
+          "ev_fa216f733a896caac1b3f89a"
         ],
         "nopHoSoScope": [
           "ev_dfb271859a12d7a0ee96a69e",
-          "ev_bce5d880bf9501c71f6a2159"
+          "ev_fa216f733a896caac1b3f89a"
         ],
         "submissionLinkStatus": [
           "ev_dfb271859a12d7a0ee96a69e",
-          "ev_bce5d880bf9501c71f6a2159"
+          "ev_fa216f733a896caac1b3f89a"
         ]
       }
     },
@@ -39516,6 +39567,8 @@
     "priority51LegalAddedCurrent": 36,
     "priority51LegalSupersededByNewerEvidence": 0,
     "phiDiaGioi": 59,
+    "officialTableLevelResolved": 36,
+    "officialTableLevelUpdatedPublic": 3,
     "priority51VinhBaoSubmissionLinks": 49,
     "officialGuidanceEnriched": 50
   }
