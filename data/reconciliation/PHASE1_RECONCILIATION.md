@@ -16,7 +16,8 @@ Chưa được phép sinh danh sách MISSING theo mã chỉ từ phép trừ s�
 
 ## MISCLASSIFIED theo evidence hiện có
 
-Không còn mã MISCLASSIFIED sau khi canonical builder áp dụng lớp heading phụ lục chính thức.
+| Mã | Nhãn hiện tại | Evidence | Phân loại đúng |
+|---|---|---|---|
 
 ## Gate tiếp theo
 
