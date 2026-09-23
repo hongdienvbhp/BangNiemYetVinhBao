@@ -2,7 +2,7 @@
   "format": "bangniemyet-vinhbao-master-data",
   "version": 4,
   "dataset_version": "2026.09.21",
-  "source_commit": "772fd18c9947d353f70953d3a28538fe8ced4dd1",
+  "source_commit": "584fa11fbbe7ba6c8d55eb70f9b1d025f63fe3c0",
   "source_commit_kind": "verified_source_bundle_git_sha1",
   "updatedAt": "2026-09-21",
   "sourceSnapshotDate": "2026-09-21",
@@ -39569,6 +39569,9 @@
     "phiDiaGioi": 59,
     "officialTableLevelResolved": 36,
     "officialTableLevelUpdatedPublic": 3,
+    "guidanceDurationReady": 0,
+    "guidanceDurationPromoted": 0,
+    "guidanceDurationSkippedExisting": 0,
     "priority51VinhBaoSubmissionLinks": 49,
     "officialGuidanceEnriched": 50
   }

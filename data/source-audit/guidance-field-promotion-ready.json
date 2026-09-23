@@ -1,316 +1,13 @@
 {
   "format": "guidance-field-promotion-ready",
   "version": 1,
-  "policy": "Chỉ promotion khi canonical đang thiếu, candidate high-confidence, evidence đồng thuận và chuỗi thời hạn hoàn chỉnh/sạch.",
+  "policy": "Chỉ promotion khi canonical đang thiếu, candidate high-confidence và mọi evidence hiện có cho cùng mã đồng thuận.",
   "summary": {
-    "durationReady": 15,
-    "durationConfirmedExisting": 4,
-    "durationNeedsReview": 84
+    "durationReady": 0,
+    "durationConfirmedExisting": 8,
+    "durationNeedsReview": 95
   },
-  "ready": [
-    {
-      "ma": "1.001023",
-      "field": "thoiHan",
-      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ",
-      "confidence": "high_consensus",
-      "sources": [
-        {
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
-          "articleUrls": [
-            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
-          ],
-          "decisionNumbers": [
-            "1390/QĐ-BXD"
-          ]
-        }
-      ],
-      "promotionStatus": "ready"
-    },
-    {
-      "ma": "1.001577",
-      "field": "thoiHan",
-      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ",
-      "confidence": "high_consensus",
-      "sources": [
-        {
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
-          "articleUrls": [
-            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
-          ],
-          "decisionNumbers": [
-            "1390/QĐ-BXD"
-          ]
-        }
-      ],
-      "promotionStatus": "ready"
-    },
-    {
-      "ma": "1.001737",
-      "field": "thoiHan",
-      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ",
-      "confidence": "high_consensus",
-      "sources": [
-        {
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
-          "articleUrls": [
-            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
-          ],
-          "decisionNumbers": [
-            "1390/QĐ-BXD"
-          ]
-        }
-      ],
-      "promotionStatus": "ready"
-    },
-    {
-      "ma": "1.002063",
-      "field": "thoiHan",
-      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ",
-      "confidence": "high_consensus",
-      "sources": [
-        {
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
-          "articleUrls": [
-            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
-          ],
-          "decisionNumbers": [
-            "1390/QĐ-BXD"
-          ]
-        }
-      ],
-      "promotionStatus": "ready"
-    },
-    {
-      "ma": "1.002286",
-      "field": "thoiHan",
-      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ",
-      "confidence": "high_consensus",
-      "sources": [
-        {
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
-          "articleUrls": [
-            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
-          ],
-          "decisionNumbers": [
-            "1390/QĐ-BXD"
-          ]
-        }
-      ],
-      "promotionStatus": "ready"
-    },
-    {
-      "ma": "1.002817",
-      "field": "thoiHan",
-      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ",
-      "confidence": "high_consensus",
-      "sources": [
-        {
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
-          "articleUrls": [
-            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
-          ],
-          "decisionNumbers": [
-            "1390/QĐ-BXD"
-          ]
-        }
-      ],
-      "promotionStatus": "ready"
-    },
-    {
-      "ma": "1.002829",
-      "field": "thoiHan",
-      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ",
-      "confidence": "high_consensus",
-      "sources": [
-        {
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
-          "articleUrls": [
-            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
-          ],
-          "decisionNumbers": [
-            "1390/QĐ-BXD"
-          ]
-        }
-      ],
-      "promotionStatus": "ready"
-    },
-    {
-      "ma": "1.002861",
-      "field": "thoiHan",
-      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ",
-      "confidence": "high_consensus",
-      "sources": [
-        {
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
-          "articleUrls": [
-            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
-          ],
-          "decisionNumbers": [
-            "1390/QĐ-BXD"
-          ]
-        }
-      ],
-      "promotionStatus": "ready"
-    },
-    {
-      "ma": "1.002877",
-      "field": "thoiHan",
-      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ",
-      "confidence": "high_consensus",
-      "sources": [
-        {
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
-          "articleUrls": [
-            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
-          ],
-          "decisionNumbers": [
-            "1390/QĐ-BXD"
-          ]
-        }
-      ],
-      "promotionStatus": "ready"
-    },
-    {
-      "ma": "1.010702",
-      "field": "thoiHan",
-      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ",
-      "confidence": "high_consensus",
-      "sources": [
-        {
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
-          "articleUrls": [
-            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
-          ],
-          "decisionNumbers": [
-            "1390/QĐ-BXD"
-          ]
-        }
-      ],
-      "promotionStatus": "ready"
-    },
-    {
-      "ma": "1.010704",
-      "field": "thoiHan",
-      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ",
-      "confidence": "high_consensus",
-      "sources": [
-        {
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
-          "articleUrls": [
-            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
-          ],
-          "decisionNumbers": [
-            "1390/QĐ-BXD"
-          ]
-        }
-      ],
-      "promotionStatus": "ready"
-    },
-    {
-      "ma": "1.013724",
-      "field": "thoiHan",
-      "candidateValue": "15 ngày",
-      "confidence": "high_consensus",
-      "sources": [
-        {
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/7/qd-cong-bo-tthc-linh-vuc-viec-lam-atld-qd-636..signed638880367760937972.pdf",
-          "articleUrls": [
-            "https://vinhbao.haiphong.gov.vn/linh-vuc-viec-lam/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi-bai-bo-linh-vuc-viec-lam-an-toan-ve-sinh--762741"
-          ],
-          "decisionNumbers": [
-            "2/QĐ-UBND",
-            "636/QĐ-BNV"
-          ]
-        },
-        {
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/7/qd-cong-bo-tthc-linh-vuc-viec-lam-atld-qd-636..signed638880367857473885.pdf",
-          "articleUrls": [
-            "https://vinhbao.haiphong.gov.vn/linh-vuc-viec-lam/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi-bai-bo-linh-vuc-viec-lam-an-toan-ve-sinh--762741"
-          ],
-          "decisionNumbers": [
-            "2/QĐ-UBND",
-            "636/QĐ-BNV"
-          ]
-        }
-      ],
-      "promotionStatus": "ready"
-    },
-    {
-      "ma": "1.013734",
-      "field": "thoiHan",
-      "candidateValue": "Không quy định",
-      "confidence": "high_consensus",
-      "sources": [
-        {
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/7/qd-quyet-dinh-cong-bo-tthc-qd-640..signed638880366333934920.pdf",
-          "articleUrls": [
-            "https://vinhbao.haiphong.gov.vn/linh-vuc-quan-ly-lao-dong-ngoai-nuoc/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi-bai-bo-linh-vuc-quan-ly-lao-dong-ngoai-nu-762740"
-          ],
-          "decisionNumbers": [
-            "1214/QĐ-UBND",
-            "640/QĐ-BNV"
-          ]
-        },
-        {
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/7/qd-quyet-dinh-cong-bo-tthc-qd-640..signed638880366444336453.pdf",
-          "articleUrls": [
-            "https://vinhbao.haiphong.gov.vn/linh-vuc-quan-ly-lao-dong-ngoai-nuoc/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi-bai-bo-linh-vuc-quan-ly-lao-dong-ngoai-nu-762740"
-          ],
-          "decisionNumbers": [
-            "1214/QĐ-UBND",
-            "640/QĐ-BNV"
-          ]
-        }
-      ],
-      "promotionStatus": "ready"
-    },
-    {
-      "ma": "1.014953",
-      "field": "thoiHan",
-      "candidateValue": "Không quy định",
-      "confidence": "high_consensus",
-      "sources": [
-        {
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/qd-2037-ngay-30.5.2026-ubnd-hp-cong-bo-dm-tthc-moi-sua-doi-thay-the-bai-bo-lvuc-kttv-khcn-dcks-cnty-ttbvtv-qlcl-639165286498031603.pdf",
-          "articleUrls": [
-            "https://vinhbao.haiphong.gov.vn/linh-vuc-nong-nghiep-va-moi-truong/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-sua-doi-bo-sung-thay-the-bi-bai-bo-thuoc-pham-vi-chuc-n-911934"
-          ],
-          "decisionNumbers": [
-            "1646/QĐ-UBND",
-            "1858/QĐ-BNNMT",
-            "1869/QĐ-BNNMT",
-            "1877/QĐ-BNNMT",
-            "1878/QĐ-BNNMT",
-            "1883/QĐ-BNNMT",
-            "1897/QĐ-BNNMT",
-            "1908/QĐ-BNNMT",
-            "1931/QĐ-BNNMT",
-            "2198/QĐ-UBND",
-            "2881/QĐ-UBND",
-            "519/QĐ-UBND",
-            "684/QĐ-UBND"
-          ]
-        }
-      ],
-      "promotionStatus": "ready"
-    },
-    {
-      "ma": "2.000913",
-      "field": "thoiHan",
-      "candidateValue": "15 giờ",
-      "confidence": "high_consensus",
-      "sources": [
-        {
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phuluc-i-qd-3152-bo-tu-phap638984589798308803.docx",
-          "articleUrls": [
-            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vuc-chung-thuc-thuoc-pham-vi--810099"
-          ],
-          "decisionNumbers": []
-        }
-      ],
-      "promotionStatus": "ready"
-    }
-  ],
+  "ready": [],
   "confirmedExisting": [
     {
       "ma": "1.012756",
@@ -349,6 +46,34 @@
       ]
     },
     {
+      "ma": "1.013724",
+      "field": "thoiHan",
+      "currentValue": "15 ngày",
+      "candidateValue": "15 ngày",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/7/qd-cong-bo-tthc-linh-vuc-viec-lam-atld-qd-636..signed638880367760937972.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-viec-lam/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi-bai-bo-linh-vuc-viec-lam-an-toan-ve-sinh--762741"
+          ],
+          "decisionNumbers": [
+            "2/QĐ-UBND",
+            "636/QĐ-BNV"
+          ]
+        },
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/7/qd-cong-bo-tthc-linh-vuc-viec-lam-atld-qd-636..signed638880367857473885.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-viec-lam/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi-bai-bo-linh-vuc-viec-lam-an-toan-ve-sinh--762741"
+          ],
+          "decisionNumbers": [
+            "2/QĐ-UBND",
+            "636/QĐ-BNV"
+          ]
+        }
+      ]
+    },
+    {
       "ma": "1.013725",
       "field": "thoiHan",
       "currentValue": "15 ngày",
@@ -372,6 +97,34 @@
           "decisionNumbers": [
             "2/QĐ-UBND",
             "636/QĐ-BNV"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.013734",
+      "field": "thoiHan",
+      "currentValue": "Không quy định",
+      "candidateValue": "Không quy định",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/7/qd-quyet-dinh-cong-bo-tthc-qd-640..signed638880366333934920.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-quan-ly-lao-dong-ngoai-nuoc/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi-bai-bo-linh-vuc-quan-ly-lao-dong-ngoai-nu-762740"
+          ],
+          "decisionNumbers": [
+            "1214/QĐ-UBND",
+            "640/QĐ-BNV"
+          ]
+        },
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/7/qd-quyet-dinh-cong-bo-tthc-qd-640..signed638880366444336453.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-quan-ly-lao-dong-ngoai-nuoc/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi-bai-bo-linh-vuc-quan-ly-lao-dong-ngoai-nu-762740"
+          ],
+          "decisionNumbers": [
+            "1214/QĐ-UBND",
+            "640/QĐ-BNV"
           ]
         }
       ]
@@ -413,6 +166,50 @@
       ]
     },
     {
+      "ma": "1.014953",
+      "field": "thoiHan",
+      "currentValue": "Không quy định",
+      "candidateValue": "Không quy định",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/qd-2037-ngay-30.5.2026-ubnd-hp-cong-bo-dm-tthc-moi-sua-doi-thay-the-bai-bo-lvuc-kttv-khcn-dcks-cnty-ttbvtv-qlcl-639165286498031603.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-nong-nghiep-va-moi-truong/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-sua-doi-bo-sung-thay-the-bi-bai-bo-thuoc-pham-vi-chuc-n-911934"
+          ],
+          "decisionNumbers": [
+            "1646/QĐ-UBND",
+            "1858/QĐ-BNNMT",
+            "1869/QĐ-BNNMT",
+            "1877/QĐ-BNNMT",
+            "1878/QĐ-BNNMT",
+            "1883/QĐ-BNNMT",
+            "1897/QĐ-BNNMT",
+            "1908/QĐ-BNNMT",
+            "1931/QĐ-BNNMT",
+            "2198/QĐ-UBND",
+            "2881/QĐ-UBND",
+            "519/QĐ-UBND",
+            "684/QĐ-UBND"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "2.000913",
+      "field": "thoiHan",
+      "currentValue": "15 giờ",
+      "candidateValue": "15 giờ",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phuluc-i-qd-3152-bo-tu-phap638984589798308803.docx",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vuc-chung-thuc-thuoc-pham-vi--810099"
+          ],
+          "decisionNumbers": []
+        }
+      ]
+    },
+    {
       "ma": "2.002020",
       "field": "thoiHan",
       "currentValue": "05 ngày",
@@ -436,9 +233,9 @@
     {
       "ma": "1.000302",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
-      "candidateValue": "01 ngày làm việc kể từ ngày",
+      "candidateValue": "01 ngày làm việc kể từ ngày Không thực hi ện cắt giảm",
       "sources": [
         {
           "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
@@ -454,7 +251,7 @@
     {
       "ma": "1.000321",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "01 ngày làm việc kể Không thực hi ện",
       "sources": [
@@ -472,7 +269,7 @@
     {
       "ma": "1.000419",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "05 ngày làm việc 2.5 ngày làm việc",
       "sources": [
@@ -488,7 +285,7 @@
     {
       "ma": "1.000464",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "15 ngày làm việc",
       "candidateValue": "15 ngày làm việc 7,5 ngày làm việc",
       "sources": [
@@ -506,7 +303,7 @@
     {
       "ma": "1.000479",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "22 ngày làm việc",
       "candidateValue": "22 ngày làm việc 11 ngày làm việc",
       "sources": [
@@ -524,7 +321,7 @@
     {
       "ma": "1.000593",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "05 ngày làm việc 2.5 ngày làm việc",
       "sources": [
@@ -540,7 +337,7 @@
     {
       "ma": "1.000689",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "03 ngày làm vi ệc, trường hợp phải xác minh thì không quá 08 ngày làm việc. 1.5 ngày làm việc, tr",
       "sources": [
@@ -556,7 +353,7 @@
     {
       "ma": "1.000703",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "04 ngày làm việc kể từ ngày nhận đủ hồ sơ đúng theo quy định 2,5 ngày làm việc kể từ n",
       "sources": [
@@ -574,7 +371,7 @@
     {
       "ma": "1.000894",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "15 giờ mà không giải quyết được ngay thì trả kết quả trong ngày làm việc tiếp theo. Tr",
       "sources": [
@@ -590,7 +387,7 @@
     {
       "ma": "1.000905",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "05 ngày làm việc kể từ khi nhận được hồ sơ hợp lệ 2,5 ngày làm việc kể từ khi nhận được hồ sơ hợp lệ. - Tr",
       "sources": [
@@ -608,7 +405,7 @@
     {
       "ma": "1.000957",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "05 ngày làm việc kể từ khi nhận được hồ sơ hợp lệ 2,5 ngày làm việc kể từ khi nhận được hồ sơ hợp lệ. - Tr",
       "sources": [
@@ -624,9 +421,63 @@
       ]
     },
     {
+      "ma": "1.001023",
+      "field": "thoiHan",
+      "reason": "multiple_or_ambiguous_duration_tokens",
+      "currentValue": "",
+      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ Không thực hi ện cắt giảm",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.001577",
+      "field": "thoiHan",
+      "reason": "multiple_or_ambiguous_duration_tokens",
+      "currentValue": "",
+      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ Không thực hi ện cắt giảm",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.001737",
+      "field": "thoiHan",
+      "reason": "multiple_or_ambiguous_duration_tokens",
+      "currentValue": "",
+      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ Không thực hi ện cắt giảm",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ]
+    },
+    {
       "ma": "1.002046",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ Không thực hi ện cắ",
       "sources": [
@@ -642,9 +493,27 @@
       ]
     },
     {
+      "ma": "1.002063",
+      "field": "thoiHan",
+      "reason": "multiple_or_ambiguous_duration_tokens",
+      "currentValue": "",
+      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ Không thực hi ện cắt giảm",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ]
+    },
+    {
       "ma": "1.002268",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "01 ngày làm việc kể từ ngày",
       "sources": [
@@ -660,9 +529,27 @@
       ]
     },
     {
+      "ma": "1.002286",
+      "field": "thoiHan",
+      "reason": "multiple_or_ambiguous_duration_tokens",
+      "currentValue": "",
+      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ Không thực hi ện cắt giảm",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ]
+    },
+    {
       "ma": "1.002334",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "01 ngày làm việc kể từ ngày nh",
       "sources": [
@@ -678,9 +565,45 @@
       ]
     },
     {
+      "ma": "1.002817",
+      "field": "thoiHan",
+      "reason": "multiple_or_ambiguous_duration_tokens",
+      "currentValue": "",
+      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ Không thực hi ện cắt giảm",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.002829",
+      "field": "thoiHan",
+      "reason": "multiple_or_ambiguous_duration_tokens",
+      "currentValue": "",
+      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ Không thực hi ện cắt giảm",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ]
+    },
+    {
       "ma": "1.002847",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợ",
       "sources": [
@@ -698,9 +621,45 @@
     {
       "ma": "1.002856",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
-      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ",
+      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ Không thực hi ện cắt giảm",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.002861",
+      "field": "thoiHan",
+      "reason": "multiple_or_ambiguous_duration_tokens",
+      "currentValue": "",
+      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ Không thực hi ện cắt giảm",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.002877",
+      "field": "thoiHan",
+      "reason": "multiple_or_ambiguous_duration_tokens",
+      "currentValue": "",
+      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ Không thực hi ện cắt giảm",
       "sources": [
         {
           "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
@@ -716,7 +675,7 @@
     {
       "ma": "1.003583",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "05 ngày làm việc 2.5 ngày làm việc",
       "sources": [
@@ -732,7 +691,7 @@
     {
       "ma": "1.003705",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "15 ngày làm việc",
       "candidateValue": "15 ngày làm việc kể từ kh",
       "sources": [
@@ -750,7 +709,7 @@
     {
       "ma": "1.003814",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "03 ngày làm việc",
       "candidateValue": "03 ngày làm việc Không",
       "sources": [
@@ -780,7 +739,7 @@
     {
       "ma": "1.003915",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "10 ngày làm việc",
       "candidateValue": "10 ngày làm việc 5 ngày làm việc",
       "sources": [
@@ -799,7 +758,7 @@
     {
       "ma": "1.004746",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "05 ngày làm vi ệc; trường hợp phải xác minh thì thời h ạn giải quy ết không quá 25 ngày. 2.5 ngày",
       "sources": [
@@ -815,7 +774,7 @@
     {
       "ma": "1.004772",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "05 ngày làm vi ệc. Trường hợp ph ải có văn bản xác minh 2.5 ngày làm việc. Trường hợp phải có văn",
       "sources": [
@@ -831,7 +790,7 @@
     {
       "ma": "1.004837",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "03 ngày làm việc 1.5 ngày làm việc",
       "sources": [
@@ -847,7 +806,7 @@
     {
       "ma": "1.004873",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "03 ngày làm vi ệc, trường hợp phải xác minh thì thời h ạn giải quy ết không quá 23 ngày. 1.5 ngày",
       "sources": [
@@ -863,7 +822,7 @@
     {
       "ma": "1.004884",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "05 ngày làm vi ệc. Trường hợp ph ải có văn bản xác minh thì th ời hạn gi ải quyết không quá 25 ng",
       "sources": [
@@ -879,7 +838,7 @@
     {
       "ma": "1.005461",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "05 ngày làm việc; trường hợp 2.5 ngày làm việc; trường hợp cần",
       "sources": [
@@ -895,7 +854,7 @@
     {
       "ma": "1.007916",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "18 ngày làm việc",
       "candidateValue": "18 ngày làm việc (2) Trư ờng hợp b ố trí (1) Trư ờng",
       "sources": [
@@ -917,7 +876,7 @@
     {
       "ma": "1.008675",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "15 ngày làm việc",
       "candidateValue": "15 ngày làm việc 7,5 ngày làm việc",
       "sources": [
@@ -939,7 +898,7 @@
     {
       "ma": "1.008925",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "03 ngày làm việc",
       "candidateValue": "03 ngày làm việc Không giảm",
       "sources": [
@@ -968,7 +927,7 @@
     {
       "ma": "1.008926",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "02 ngày làm việc",
       "candidateValue": "02 ngày làm việc Không giảm",
       "sources": [
@@ -997,7 +956,7 @@
     {
       "ma": "1.008927",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "05 ngày làm việc",
       "candidateValue": "05 ngày làm việc Không giảm",
       "sources": [
@@ -1026,7 +985,7 @@
     {
       "ma": "1.008928",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "03 ngày làm việc",
       "candidateValue": "03 ngày làm việc Không giảm",
       "sources": [
@@ -1055,7 +1014,7 @@
     {
       "ma": "1.009453",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "02 ngày làm việc",
       "candidateValue": "02 ngày làm việc k ể từ ngày nhận đ ủ hồ sơ hợp l ệ theo quy định, Chi c ục Hàng h ải và Đường thuỷ, Sở Xâ",
       "sources": [
@@ -1071,9 +1030,45 @@
       ]
     },
     {
+      "ma": "1.010702",
+      "field": "thoiHan",
+      "reason": "multiple_or_ambiguous_duration_tokens",
+      "currentValue": "",
+      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ Không thực hi ện cắt giảm",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.010704",
+      "field": "thoiHan",
+      "reason": "multiple_or_ambiguous_duration_tokens",
+      "currentValue": "",
+      "candidateValue": "01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ Không thực hi ện cắt giảm",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-sua-doi-bo-sung-baiobo-so-xay-dung-ttr298-qdbxd1390-..signed639240407980374764.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-3508-qd-ubnd-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-bi-bai-bo-tr-958213"
+          ],
+          "decisionNumbers": [
+            "1390/QĐ-BXD"
+          ]
+        }
+      ]
+    },
+    {
       "ma": "1.010707",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "01 ngày làm việc kể từ",
       "sources": [
@@ -1223,7 +1218,7 @@
     {
       "ma": "1.011444",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "01 ngày làm việc ho",
       "sources": [
@@ -1249,7 +1244,7 @@
     {
       "ma": "1.011445",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "01 ngày làm việc hoặc 03 ngày làm v",
       "sources": [
@@ -1275,7 +1270,7 @@
     {
       "ma": "1.012531",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "13 ngày làm việc k ể từ ngày nhận đủ hồ sơ hợp lệ 06 ngày làm việc kể",
       "sources": [
@@ -1297,7 +1292,7 @@
     {
       "ma": "1.012766",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "03 ngày làm việc",
       "candidateValue": "03 ngày làm việc. (Đối với các xã miền núi, hải đảo, vùng sâu, vùng xa",
       "sources": [
@@ -1334,7 +1329,7 @@
     {
       "ma": "1.012782",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "01 tháng",
       "candidateValue": "01 tháng 7 năm 2004, phần d",
       "sources": [
@@ -1415,7 +1410,7 @@
     {
       "ma": "1.012784",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "12 ngày làm việc",
       "candidateValue": "12 ngày làm việc (Đối với các xã miền núi, hải đảo, vùng sâu, vùng xa, vùng có điều kiện kinh tế - xã hội",
       "sources": [
@@ -1452,7 +1447,7 @@
     {
       "ma": "1.012785",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "01 tháng",
       "candidateValue": "01 tháng 8 năm 2024 mà bên chuyển quyền đã được cấp Giấy chứng nhưng chưa thực hiệ",
       "sources": [
@@ -1489,7 +1484,7 @@
     {
       "ma": "1.012786",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "10 ngày làm việc",
       "candidateValue": "10 ngày làm việc (Đối với các xã miền núi, hải đảo, vùng sâu, vùng xa, vùng có điều kiện kinh tế - xã hội",
       "sources": [
@@ -1526,7 +1521,7 @@
     {
       "ma": "1.012787",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "08 ngày làm việ",
       "sources": [
@@ -1552,7 +1547,7 @@
     {
       "ma": "1.012789",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "01 ngày làm việc",
       "candidateValue": "01 ngày làm việc - Đối với trường hợp thông t",
       "sources": [
@@ -1572,7 +1567,7 @@
     {
       "ma": "1.012790",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "08 ngày làm việc",
       "candidateValue": "08 ngày làm việc (Đối với các xã miền núi, hải đảo, vùng sâu, vùng xa, vùng có điều kiện kinh tế - xã hội",
       "sources": [
@@ -1609,7 +1604,7 @@
     {
       "ma": "1.012796",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "08 ngày làm việc - 18 ngày làm việc Đối với các xã miền núi, hải đảo, vùng sâu, vùng xa, vùng có điều kiện",
       "sources": [
@@ -1679,7 +1674,7 @@
     {
       "ma": "1.012812",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "30 ngày - 40 ngày đối với các xã miền núi, biên giới; đảo; vùng có điều kiện kinh tế - xã hội khó",
       "sources": [
@@ -1699,7 +1694,7 @@
     {
       "ma": "1.012817",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "01 tháng",
       "candidateValue": "01 tháng 7 năm 2004 - 20 ngày làm việc - 30 ngày làm việc Đối với các xã miề",
       "sources": [
@@ -1769,7 +1764,7 @@
     {
       "ma": "1.013778",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "05 ngày làm việc kể từ khi nhận được hồ sơ hợp lệ 3,5 ngày làm việc kể từ khi nhận được hồ sơ hợp lệ. - Tr",
       "sources": [
@@ -1963,7 +1958,7 @@
     {
       "ma": "1.013947",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "07 ngày làm việc",
       "candidateValue": "07 ngày làm việc (Đối với các xã miền núi, hải đảo, vùng sâu, vùng xa, vùng có điều kiện kinh tế - xã hội",
       "sources": [
@@ -2000,7 +1995,7 @@
     {
       "ma": "1.013992",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "07 ngày làm việc",
       "candidateValue": "07 ngày làm việc (Đối với các xã miền núi, hải đảo, vùng sâu, vùng xa, v",
       "sources": [
@@ -2037,7 +2032,7 @@
     {
       "ma": "1.013994",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "15 ngày trường h ợp chuy ển nhượng d ự án đầu tư có sử dụng đất Phục v",
       "sources": [
@@ -2063,7 +2058,7 @@
     {
       "ma": "1.014111",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "140 ngày",
       "candidateValue": "140 ngày kể từ ngày hết thời hạn nhận Phiếu đăng ký dự tuyển cho đến khi người đứng đầu cơ quan có",
       "sources": [
@@ -2082,7 +2077,7 @@
     {
       "ma": "1.014113",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "75 ngày kể từ ngày hết thời hạn nhận Phiếu đăng ký dự tuyển đến khi người đứng đầu cơ quan có thẩ",
       "sources": [
@@ -2205,7 +2200,7 @@
     {
       "ma": "1.014389",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "08 ngày làm việc",
       "candidateValue": "08 ngày làm việc Không đề xuất cắt giảm do đã được cắt giảm thời gian giải quyết TTHC tại Nghị Quyết số 20",
       "sources": [
@@ -2224,7 +2219,7 @@
     {
       "ma": "1.014390",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "06 ngày làm việc",
       "candidateValue": "06 ngày làm việc Không đ ề xuất c ắt",
       "sources": [
@@ -2243,7 +2238,7 @@
     {
       "ma": "2.000324",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "15 ngày làm việc",
       "candidateValue": "15 ngày làm việc kể từ ngày thực hiện kiểm tra kiến thức pháp luật về bán hàng đa",
       "sources": [
@@ -2261,7 +2256,7 @@
     {
       "ma": "2.000609",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "05 ngày làm việc",
       "candidateValue": "05 ngày làm việc kể từ ngày doanh nghiệp nộp thông báo 3,5 ngày làm việc kể từ ngày doanh nghiệp nộp thô",
       "sources": [
@@ -2279,7 +2274,7 @@
     {
       "ma": "2.000806",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "05 ngày làm vi ệc (nếu c ần xác minh thì th ời hạn gi ải quyết không quá 10 ngày) 2.5 ngày làm vi",
       "sources": [
@@ -2295,7 +2290,7 @@
     {
       "ma": "2.001225",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "80 ngày",
       "candidateValue": "80 ngày 45 ngày",
       "sources": [
@@ -2314,7 +2309,7 @@
     {
       "ma": "2.001576",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "23 ngày làm việc",
       "candidateValue": "23 ngày làm việc 11,5 ngày làm việc",
       "sources": [
@@ -2344,7 +2339,7 @@
     {
       "ma": "2.001610",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "03 ngày làm việc",
       "candidateValue": "03 ngày làm việc 1,5 ngày làm việc",
       "sources": [
@@ -2376,7 +2371,7 @@
     {
       "ma": "2.002036",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "75 ngày làm việc",
       "candidateValue": "75 ngày làm việc 70.5 ngày làm việc",
       "sources": [
@@ -2392,7 +2387,7 @@
     {
       "ma": "2.002038",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "85 ngày làm việc",
       "candidateValue": "85 ngày làm việc 67.5 ngày làm việc",
       "sources": [
@@ -2408,7 +2403,7 @@
     {
       "ma": "2.002039",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "105 ngày làm việc",
       "candidateValue": "105 ngày làm việc 82.5 ngày làm việc",
       "sources": [
@@ -2424,7 +2419,7 @@
     {
       "ma": "2.002042",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "03 ngày làm việc",
       "candidateValue": "03 ngày làm việc 1,5 ngày làm việc",
       "sources": [
@@ -2456,7 +2451,7 @@
     {
       "ma": "2.002043",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "03 ngày làm việc",
       "candidateValue": "03 ngày làm việc 1,5 ngày làm việc",
       "sources": [
@@ -2488,7 +2483,7 @@
     {
       "ma": "2.002139",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "10 ngày",
       "candidateValue": "10 ngày 5 ngày",
       "sources": [
@@ -2507,7 +2502,7 @@
     {
       "ma": "2.002189",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "05 ngày làm vi ệc (nếu c ần xác minh thì",
       "sources": [
@@ -2523,7 +2518,7 @@
     {
       "ma": "2.002285",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "03 ngày làm vi ệc kể từ ngày nhận đủ hồ sơ đúng theo quy định 2,5 ngày làm việc kể từ ngày nhận đ",
       "sources": [
@@ -2541,7 +2536,7 @@
     {
       "ma": "2.002288",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "",
       "candidateValue": "02 ngày làm vi ệc kể từ ngày nhận đủ hồ sơ đúng theo quy định 01 ngày làm việc kể từ",
       "sources": [
@@ -2559,7 +2554,7 @@
     {
       "ma": "2.002821",
       "field": "thoiHan",
-      "reason": "unclean_or_ambiguous_duration_text",
+      "reason": "multiple_or_ambiguous_duration_tokens",
       "currentValue": "07 ngày làm việc",
       "candidateValue": "07 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ 05 ngày làm vi ệc kể từ ngà",
       "sources": [
