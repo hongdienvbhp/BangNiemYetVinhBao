@@ -32,6 +32,7 @@ HEADERS = [
     "Đã công khai tại Trung tâm?","Cần đối soát?","Người cập nhật","Ghi chú chi tiết",
 ]
 IDX = {name: i for i, name in enumerate(HEADERS)}
+EVIDENCE_PRIORITY = "__evidence_priority"
 AUTO_FIELDS = {
     "Mã TTHC","Thủ tục hành chính","Lĩnh vực","Cơ quan công bố",
     "Cơ quan/đơn vị giải quyết","Cấp thực hiện","Quyết định ban hành/công bố",
@@ -151,7 +152,9 @@ def build_commune_rows() -> tuple[list[dict[str, str]], list[dict[str, Any]]]:
         scope = scope_for_master(raw)
         if scope == "commune":
             code = canonical_code(raw)
-            rows.append(base_projection(raw, status="Còn hiệu lực", note=notes.get(code, "Không thay đổi")))
+            projected = base_projection(raw, status="Còn hiệu lực", note=notes.get(code, "Không thay đổi"))
+            projected[EVIDENCE_PRIORITY] = "10"
+            rows.append(projected)
         elif scope == "unknown":
             review.append({"scope":"commune","code":canonical_code(raw),"reason":"unclassified_authority","cap":raw.get("cap","")})
 
@@ -227,7 +230,9 @@ def build_city_rows() -> tuple[list[dict[str, str]], list[dict[str, Any]]]:
                 "Chưa hiệu lực": "Chưa hiệu lực",
                 "Cần xác minh": "Cần xác minh",
             }.get(status, "Điều chỉnh")
-            rows.append(base_projection(raw, status=status, note=status_note))
+            projected = base_projection(raw, status=status, note=status_note)
+            projected[EVIDENCE_PRIORITY] = "20"
+            rows.append(projected)
 
     for raw in city_update_candidates():
         code = canonical_code(raw)
@@ -238,6 +243,10 @@ def build_city_rows() -> tuple[list[dict[str, str]], list[dict[str, Any]]]:
             status, note = "Còn hiệu lực", "Thêm mới"
         elif section == "modified":
             status, note = "Còn hiệu lực", "Điều chỉnh"
+        elif section == "published":
+            status, note = "Còn hiệu lực", "Công bố/chuẩn hóa"
+        elif section == "replaced_or_replacement":
+            status, note = "Còn hiệu lực", "Thay thế/điều chỉnh"
         else:
             status, note = "Cần xác minh", "Điều chỉnh"
             review.append({"scope":"city","code":code,"reason":"ambiguous_city_section_status","sectionStatus":raw.get("sectionStatus","")})
@@ -245,12 +254,14 @@ def build_city_rows() -> tuple[list[dict[str, str]], list[dict[str, Any]]]:
             status = "Chưa hiệu lực"
         level_hint = first(raw.get("levelHint"))
         level = "Cấp thành phố" if fold(level_hint) == "province" else ("Dùng chung nhiều cấp" if "shared" in fold(level_hint) else first(level_hint, "Cấp thành phố"))
-        rows.append(base_projection(
+        projected = base_projection(
             raw, status=status, note=note, level=level,
             decision=first(raw.get("decisionNo")), effective_date=first(raw.get("effectiveDate")),
             snapshot_date=first(raw.get("asOf")), source_url=first(raw.get("articleUrl")),
             attachment_url=first(raw.get("pdfUrl")),
-        ))
+        )
+        projected[EVIDENCE_PRIORITY] = "30"
+        rows.append(projected)
     return dedupe_rows(rows, review, "city"), review
 
 def dedupe_rows(rows: list[dict[str, str]], review: list[dict[str, Any]], scope: str) -> list[dict[str, str]]:
@@ -268,12 +279,18 @@ def dedupe_rows(rows: list[dict[str, str]], review: list[dict[str, Any]], scope:
             if new_date > prev_date or (new_date == prev_date and rank.get(row.get("Tình trạng hiệu lực",""),0) > rank.get(previous.get("Tình trạng hiệu lực",""),0)):
                 by_code[code] = row
             elif new_date == prev_date and rank.get(row.get("Tình trạng hiệu lực",""),0) == rank.get(previous.get("Tình trạng hiệu lực",""),0):
-                material = ("Thủ tục hành chính","Lĩnh vực","Quyết định ban hành/công bố","Tình trạng hiệu lực")
-                if any(row.get(k,"") != previous.get(k,"") for k in material):
-                    review.append({"scope":scope,"code":code,"reason":"same_date_material_conflict"})
+                prev_priority = int(previous.get(EVIDENCE_PRIORITY, "0") or 0)
+                new_priority = int(row.get(EVIDENCE_PRIORITY, "0") or 0)
+                if new_priority > prev_priority:
+                    by_code[code] = row
+                elif new_priority == prev_priority:
+                    material = ("Thủ tục hành chính","Lĩnh vực","Quyết định ban hành/công bố","Tình trạng hiệu lực")
+                    if any(row.get(k,"") != previous.get(k,"") for k in material):
+                        review.append({"scope":scope,"code":code,"reason":"same_date_material_conflict"})
         else:
             by_code[code] = row
-    return sorted(by_code.values(), key=lambda r:(fold(r.get("Lĩnh vực")), fold(r.get("Thủ tục hành chính")), r.get("Mã TTHC","")))
+    ordered = sorted(by_code.values(), key=lambda r:(fold(r.get("Lĩnh vực")), fold(r.get("Thủ tục hành chính")), r.get("Mã TTHC","")))
+    return [{name: row.get(name, "") for name in HEADERS} for row in ordered]
 
 def manifest_review_queue() -> list[dict[str, Any]]:
     payload = load(MANIFEST, {"decisions":[]})
