@@ -306,13 +306,13 @@ if sorted(x for x in p51_ordinals if isinstance(x, int)) != list(range(1, 52)):
     fail("Crosswalk trọng điểm thiếu/trùng STT 1..51")
 if len(p51_codes) != len(set(p51_codes)) or "" in p51_codes:
     fail("Crosswalk trọng điểm có mã trống hoặc trùng")
-if len(p51_ids) != 48 or len(p51_ids) != len(set(p51_ids)):
-    fail(f"Crosswalk phải có 48 formalityId trực tiếp duy nhất, hiện có {len(p51_ids)}/{len(set(p51_ids))}")
+if len(p51_ids) != 49 or len(p51_ids) != len(set(p51_ids)):
+    fail(f"Crosswalk phải có 49 formalityId trực tiếp duy nhất, hiện có {len(p51_ids)}/{len(set(p51_ids))}")
 uuid_re = re.compile(r"^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$", re.I)
 for fid in p51_ids:
     if not uuid_re.fullmatch(fid):
         fail(f"formalityId trọng điểm không hợp lệ: {fid}")
-expected_fallback = {"2.001283", "2.000720", "2.001009"}
+expected_fallback = {"2.001283", "2.001009"}
 if p51_fallback_codes != expected_fallback:
     fail(f"Tập keyword fallback trọng điểm không đúng: {sorted(p51_fallback_codes)}")
 for row in priority51_rows:

@@ -47,8 +47,8 @@ Số **473** từng ghi trong tài liệu cũ không có bộ file nguồn tươ
 Đã chuẩn hóa `data/priority-51-crosswalk.json` từ danh mục 51 TTHC và dữ liệu xác minh trước đây:
 
 - 51/51 dòng có mã TTHC canonical;
-- 48/51 có `formalityId` trực tiếp, không trùng UUID;
-- 03 mã (`2.001283`, `2.000720`, `2.001009`) chưa xác minh được UUID trực tiếp nên giữ liên kết tìm kiếm DVCQG theo mã;
+- 49/51 có `formalityId` trực tiếp, không trùng UUID;
+- 02 mã (`2.001283`, `2.001009`) chưa xác minh được UUID trực tiếp nên giữ liên kết tìm kiếm DVCQG theo mã; `2.000720` đã được xác minh live bằng API DVCQG.
 - 37 mã từng thiếu đã được kiểm chứng riêng trong `data/priority-51-legal-verification.json`;
 - 36/37 có bằng chứng chính thức current/cấp xã và được bổ sung vào Master Data;
 - `2.001009` có bằng chứng bãi bỏ nên chỉ nằm trong `master-data-excluded.json`;

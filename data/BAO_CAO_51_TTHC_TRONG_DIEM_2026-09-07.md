@@ -3,7 +3,7 @@
 ## 1. Kết quả cuối
 
 - Danh mục crosswalk: **51/51 mã canonical**.
-- `formalityId` trực tiếp: **48/51**; 03 mã giữ liên kết tìm kiếm theo mã, không tự tạo UUID.
+- `formalityId` trực tiếp: **49/51**; 02 mã giữ liên kết tìm kiếm theo mã, không tự tạo UUID.
 - Sau kiểm chứng pháp lý: **50/51 mã đang nằm trong Master Data public**.
 - **36 mã** từng thiếu đã có bằng chứng chính thức current/cấp xã và được bổ sung.
 - **01 mã `2.001009`** có bằng chứng bãi bỏ và được giữ trong `master-data-excluded.json`, không phục hồi public.
@@ -16,7 +16,7 @@
 | STT | Mã | Tên thủ tục | Trạng thái pháp lý |
 |---:|---|---|---|
 | 18 | 2.001283 | Cấp Giấy chứng nhận đủ điều kiện cửa hàng bán lẻ LPG chai | Current; dùng keyword fallback |
-| 20 | 2.000720 | Đăng ký thay đổi nội dung đăng ký hộ kinh doanh | Current; dùng keyword fallback |
+| 20 | 2.000720 | Đăng ký thay đổi nội dung đăng ký hộ kinh doanh | Current; formalityId xác minh live API DVCQG |
 | 45 | 2.001009 | Thủ tục chứng thực văn bản khai nhận di sản mà di sản là động sản, quyền sửa dụng đất, nhà ở | Bãi bỏ; chỉ giữ excluded |
 
 ## 3. Kết quả kiểm chứng 37 mã từng thiếu

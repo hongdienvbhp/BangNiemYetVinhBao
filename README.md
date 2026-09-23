@@ -86,7 +86,7 @@ https://dichvucong.gov.vn/thu-tuc-hanh-chinh/{formalityId}
 - UUID xã Vĩnh Bảo: `019bad30-cd84-7750-aaa5-8100fc7ceef8`
 - `provinceCode=31`, `wardCode=11824`
 
-Danh sách 51 TTHC trọng điểm được chuẩn hóa tại `data/priority-51-crosswalk.json`: 51/51 có mã canonical, 48/51 có `formalityId` trực tiếp và 03 mã dùng liên kết tìm kiếm DVCQG theo `keyword`. Ma trận `data/priority-51-legal-verification.json` đã kiểm chứng 37 mã từng thiếu: 36 mã có bằng chứng chính thức current/cấp xã và đã được bổ sung vào Master Data; mã `2.001009` có bằng chứng bãi bỏ nên chỉ nằm trong `master-data-excluded.json`. Kết quả hiện tại: **50/51 mã trọng điểm public**, **48 formalityId trong Master Data**. DVCQG chỉ dùng định danh kỹ thuật, không quyết định hiệu lực pháp lý.
+Danh sách 51 TTHC trọng điểm được chuẩn hóa tại `data/priority-51-crosswalk.json`: 51/51 có mã canonical, 49/51 có `formalityId` trực tiếp và 02 mã dùng liên kết tìm kiếm DVCQG theo `keyword`. Ma trận `data/priority-51-legal-verification.json` đã kiểm chứng 37 mã từng thiếu: 36 mã có bằng chứng chính thức current/cấp xã và đã được bổ sung vào Master Data; mã `2.001009` có bằng chứng bãi bỏ nên chỉ nằm trong `master-data-excluded.json`. Kết quả hiện tại: **50/51 mã trọng điểm public**, **48 formalityId trong Master Data**. DVCQG chỉ dùng định danh kỹ thuật, không quyết định hiệu lực pháp lý.
 
 ## Nguyên tắc dữ liệu
 

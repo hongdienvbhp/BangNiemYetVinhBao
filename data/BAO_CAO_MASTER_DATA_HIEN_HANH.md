@@ -16,7 +16,7 @@
 - TTHC mới được bổ sung từ quyết định thành phố: **62**
 - TTHC hiện có được cập nhật bởi quyết định thành phố: **1**
 - Chưa trích được tên đủ tin cậy: **0**
-- Có formalityId trong Master Data: **48**
+- Có formalityId trong Master Data: **49**
 - TTHC trọng điểm đang nằm trong tập public: **50/51**
 - Khoảng trống Priority 51 còn lại: **1** (mã bãi bỏ không được phục hồi public)
 - Được đánh dấu phi địa giới theo nguồn công bố: **59**
