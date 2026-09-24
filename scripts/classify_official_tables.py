@@ -68,7 +68,7 @@ def build(payload: dict) -> dict:
     return {
         "format": "official-table-level-classification",
         "version": 1,
-        "source": str(SOURCE.relative_to(ROOT)),
+        "source": SOURCE.relative_to(ROOT).as_posix(),
         "rule": "Chỉ phân loại khi heading chính thức cấp xã/dùng chung/cấp tỉnh xuất hiện trước Mã TTHC trong cửa sổ 1200 ký tự của snippet. Không suy diễn từ địa điểm tiếp nhận.",
         "summary": {
             "resolved": len(rows),
