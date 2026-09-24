@@ -159,7 +159,7 @@ def build(payload: dict) -> dict:
     return {
         "format": "guidance-field-candidates",
         "version": 1,
-        "source": str(SOURCE.relative_to(ROOT)),
+        "source": SOURCE.relative_to(ROOT).as_posix(),
         "policy": (
             "Candidate layer only. No value is promoted to canonical until field-specific "
             "validation confirms table-column alignment and provenance."

@@ -66,7 +66,9 @@ def compute_source_commit(root: Path) -> str:
         path = root / rel
         if not path.exists():
             continue
-        blob_sha = _git_blob_sha(path.read_bytes())
+        # Normalize Git-managed text inputs so fingerprints are stable across
+        # Windows (CRLF worktree) and Linux (LF worktree).
+        blob_sha = _git_blob_sha(path.read_bytes().replace(b"\r\n", b"\n"))
         entries.append(f"{rel}\0{blob_sha}\n")
     if not entries:
         raise ValueError("Không tìm thấy nguồn đầu vào để tính source_commit")

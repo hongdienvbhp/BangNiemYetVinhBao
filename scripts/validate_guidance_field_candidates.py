@@ -33,7 +33,7 @@ def trim_duration(value: str) -> str:
 
 
 DURATION_TOKEN_RE = re.compile(
-    r"(?<!\\d)(?:\\d+(?:[.,]\\d+)?)\\s*(?:ngày|giờ|tháng)(?:\\s+làm việc)?",
+    r"(?<!\d)(?:\d+(?:[.,]\d+)?)\s*(?:ngày|giờ|tháng)(?:\s+làm việc)?",
     re.IGNORECASE,
 )
 
@@ -42,8 +42,8 @@ CLEAN_DURATION_RE = re.compile(
     r"^(?:"
     r"Không quy định"
     r"|Ngay trong ngày làm việc"
-    r"|\\d+(?:[.,]\\d+)?\\s*(?:ngày|giờ|tháng)(?:\\s+làm việc)?"
-    r"(?:\\s+kể từ (?:ngày|khi) nhận (?:đủ |được )?hồ sơ hợp lệ)?"
+    r"|\d+(?:[.,]\d+)?\s*(?:ngày|giờ|tháng)(?:\s+làm việc)?"
+    r"(?:\s+kể từ (?:ngày|khi) nhận (?:đủ |được )?hồ sơ hợp lệ)?"
     r")$",
     re.IGNORECASE,
 )
