@@ -6,7 +6,7 @@
 - Mã có khả năng thuộc Phase 1: **199**
 - TTHC cấp tỉnh ngoài Phase 1: **55**
 - Mã được parser heading chính thức phân loại: **36**
-- Xung đột phân loại với evidence chính thức: **2**
+- Xung đột phân loại với evidence chính thức: **0**
 - Nhãn còn mơ hồ xã/dùng chung: **149**
 - Số thiếu tối thiểu so với baseline aggregate: **124**
 
@@ -18,8 +18,6 @@ Chưa được phép sinh danh sách MISSING theo mã chỉ từ phép trừ s�
 
 | Mã | Nhãn hiện tại | Evidence | Phân loại đúng |
 |---|---|---|---|
-| 2.001576 | Xã / điểm tiếp nhận cấp xã | official_table_heading | PROVINCE |
-| 1.003915 | Xã / điểm tiếp nhận cấp xã | official_table_heading | PROVINCE |
 
 ## Gate tiếp theo
 
