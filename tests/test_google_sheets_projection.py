@@ -2,6 +2,7 @@ import unittest
 
 from scripts.google_sheets_projection import (
     HEADERS,
+    EVIDENCE_PRIORITY,
     dedupe_rows,
     delta_notes,
     merge_manual_fields,
@@ -76,6 +77,45 @@ class GoogleSheetsProjectionTests(unittest.TestCase):
         self.assertEqual(len(rows), 1)
         self.assertEqual(rows[0]["Tình trạng hiệu lực"], "Bãi bỏ")
         self.assertEqual(review, [])
+
+    def test_same_date_higher_priority_official_evidence_wins_without_review(self):
+        review = []
+        master = {h: "" for h in HEADERS}
+        master.update({
+            "Mã TTHC": "1.000001",
+            "Thủ tục hành chính": "Tên cũ",
+            "Lĩnh vực": "Lĩnh vực",
+            "Tình trạng hiệu lực": "Còn hiệu lực",
+            "Ngày kiểm tra/cập nhật": "2026-09-18",
+            EVIDENCE_PRIORITY: "10",
+        })
+        official = dict(master)
+        official.update({
+            "Thủ tục hành chính": "Tên theo quyết định chính thức",
+            "Quyết định ban hành/công bố": "123/QĐ-UBND",
+            EVIDENCE_PRIORITY: "30",
+        })
+        rows = dedupe_rows([master, official], review, "city")
+        self.assertEqual(rows[0]["Thủ tục hành chính"], "Tên theo quyết định chính thức")
+        self.assertEqual(review, [])
+        self.assertNotIn(EVIDENCE_PRIORITY, rows[0])
+
+    def test_same_date_equal_priority_material_conflict_still_requires_review(self):
+        review = []
+        a = {h: "" for h in HEADERS}
+        a.update({
+            "Mã TTHC": "1.000001",
+            "Thủ tục hành chính": "Tên A",
+            "Tình trạng hiệu lực": "Còn hiệu lực",
+            "Ngày kiểm tra/cập nhật": "2026-09-18",
+            EVIDENCE_PRIORITY: "30",
+        })
+        b = dict(a)
+        b["Thủ tục hành chính"] = "Tên B"
+        rows = dedupe_rows([a, b], review, "city")
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(review[0]["reason"], "same_date_material_conflict")
+
 
 
 if __name__ == "__main__":
