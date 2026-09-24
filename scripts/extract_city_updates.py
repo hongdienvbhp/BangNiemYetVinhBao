@@ -27,7 +27,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "data/source-audit/official-decision-manifest.json"
 OUTPUT = ROOT / "data/source-audit/city-updates-current.json"
 
-CODE_RE = re.compile(r"\b\d{1,2}\.\d{3,6}\b")
+CODE_RE = re.compile(r"\b\d\.\d{6}\b")
 TIME_OR_COLUMN_RE = re.compile(
     r"^(?:\d+(?:[.,]\d+)?\s*(?:ngày|giờ|tháng|năm)|"
     r"Không\b|Tại\b|-\s*Trung tâm|Trung tâm\b|Phí\b|Theo quy định|"
@@ -157,8 +157,13 @@ def section_status(line: str, current: str) -> str:
 
 
 def level_hint(line: str, current: str) -> str:
-    value = fold(line)
-    if "thu tuc hanh chinh" not in value and "cap xa" not in value:
+    value = fold(line).strip(" .:;-|")
+    # Chỉ tiêu đề/phân mục pháp lý mới được đổi cấp giải quyết. Cụm "cấp xã"
+    # trong cột nơi tiếp nhận không phải bằng chứng TTHC thuộc thẩm quyền cấp xã.
+    standalone_level = bool(
+        re.fullmatch(r"(?:[a-d][.)]\s*)?(?:cap xa|cap tinh|dung chung(?:.*cap xa)?)", value)
+    )
+    if "thu tuc hanh chinh" not in value and not standalone_level:
         return current
     if "dung chung" in value:
         return "shared_including_commune" if "cap xa" in value else "shared"
@@ -198,7 +203,9 @@ def context_is_commune(lines: list[str], idx: int, level: str) -> bool:
     return (
         ("trung tam" in value and ("cap xa" in value or "cac xa" in value or "pvhcc cac xa" in value))
         or "trung tam phuc vu hcc cac xa" in value
+        or "trung tam phuc vu hanh chinh cong xa" in value
         or "trungtamphucvuhanhchinhcongcapxa" in compact
+        or "trungtamphucvuhanhchinhcongxa" in compact
         or "trungtamphucvuhcccacxa" in compact
     )
 
@@ -213,6 +220,8 @@ def detect_effective_date(reader: PdfReader, decision_date: str) -> tuple[str | 
     numeric_patterns = [
         r"co hieu luc(?: thi hanh)? ke tu ngay\s*(\d{1,2})[./-](\d{1,2})[./-](\d{4})",
         r"co hieu luc(?: thi hanh)? tu ngay\s*(\d{1,2})[./-](\d{1,2})[./-](\d{4})",
+        r"co hieu luc(?: thi hanh)? tu\s*(\d{1,2})[./-](\d{1,2})[./-](\d{4})",
+        r"co hieu luc(?: thi hanh)? ke tu\s*(\d{1,2})[./-](\d{1,2})[./-](\d{4})",
         r"co hieu luc(?: thi hanh)? ke tu ngay\s*(\d{1,2})\s+thang\s+(\d{1,2})\s+nam\s+(\d{4})",
         r"co hieu luc(?: thi hanh)? tu ngay\s*(\d{1,2})\s+thang\s+(\d{1,2})\s+nam\s+(\d{4})",
     ]
@@ -225,6 +234,17 @@ def detect_effective_date(reader: PdfReader, decision_date: str) -> tuple[str | 
         return decision_date or None, "effective_from_signing_clause"
 
     return None, "effective_clause_not_found"
+
+
+def repair_split_tthc_codes(lines: list[str]) -> list[str]:
+    """Join canonical 1.xxxxxx codes split by PDF text extraction after 5 decimals."""
+    out = list(lines)
+    for i in range(len(out) - 1):
+        partial = re.search(r"\b(\d\.\d{5})$", out[i])
+        if partial and re.fullmatch(r"\d", out[i + 1].strip()):
+            out[i] = out[i] + out[i + 1].strip()
+            out[i + 1] = ""
+    return out
 
 
 def merge_rows(rows: list[dict]) -> dict[str, dict]:
@@ -274,6 +294,9 @@ def extract_decision(meta: dict, as_of: str) -> dict:
     if ingest_status == "reviewed_no_commune_change":
         current_state = "reviewed_no_commune_change"
         effective_source = "manual_scope_review"
+    elif ingest_status == "reviewed_pending_effective_date":
+        current_state = "reviewed_pending_effective_date"
+        effective_source = "manual_effective_date_review"
     elif effective_date:
         current_state = "future_effective" if effective_date > as_of else "current_or_immediate_unless_repealed"
     elif ingest_status == "applied":
@@ -294,7 +317,7 @@ def extract_decision(meta: dict, as_of: str) -> dict:
         if page_index < start_page:
             continue
         text = page.extract_text() or ""
-        lines = [re.sub(r"\s+", " ", item).strip() for item in text.splitlines()]
+        lines = repair_split_tthc_codes([re.sub(r"\s+", " ", item).strip() for item in text.splitlines()])
         for i, line in enumerate(lines):
             if not line:
                 continue
