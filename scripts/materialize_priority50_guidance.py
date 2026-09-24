@@ -10,6 +10,7 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 CANDIDATES = ROOT / "data/source-audit/priority50-guidance-candidates.json"
+PROCESS_FORMS = ROOT / "data/source-audit/priority50-process-forms-current.json"
 EXCEPTIONS = ROOT / "data/source-audit/priority50-official-guidance-exceptions.json"
 AGENCY_OVERRIDES = ROOT / "data/source-audit/priority50-local-agency-overrides.json"
 TIME_OVERRIDES = ROOT / "data/source-audit/priority50-official-time-overrides.json"
@@ -17,7 +18,7 @@ LEGAL = ROOT / "data/priority-51-legal-verification.json"
 GUIDANCE = ROOT / "data/tthc-guidance-enrichment.json"
 
 TARGET = 50
-FIELDS = ("coQuanThucHien", "thanhPhanHoSo", "thoiHan", "lePhi", "dvctt", "ketQua")
+FIELDS = ("coQuanThucHien", "thanhPhanHoSo", "thoiHan", "lePhi", "dvctt", "ketQua", "quyTrinh", "bieuMau")
 
 CHANNELS = {
     "DIRECT": "Trực tiếp",
@@ -173,6 +174,38 @@ def current_execution_rows() -> dict[str, dict]:
     }
 
 
+def process_forms_map() -> dict[str, dict]:
+    payload = load(PROCESS_FORMS)
+    rows = payload.get("rows") or []
+    mapping = {
+        str(row.get("ma") or "").strip(): row
+        for row in rows
+        if isinstance(row, dict) and str(row.get("ma") or "").strip()
+    }
+    if len(mapping) != TARGET:
+        raise ValueError(f"process/forms snapshot phải có {TARGET} mã, hiện {len(mapping)}")
+    return mapping
+
+
+def apply_process_forms(row: dict, snapshot: dict) -> None:
+    source_id = str(snapshot.get("sourceId") or "").strip()
+    source_url = str(snapshot.get("sourceUrl") or "").strip()
+    if not source_id or not source_url:
+        raise ValueError(f"{row.get('ma')}: process/forms snapshot thiếu source")
+    add_source(row["sources"], {
+        "id": source_id,
+        "url": source_url,
+        "sourceRole": str(snapshot.get("sourceRole") or "central_content_reference"),
+        "classification": str(snapshot.get("classification") or "official_process_forms"),
+        "verifiedAt": str(snapshot.get("verifiedAt") or ""),
+        "contentHash": str(snapshot.get("contentHash") or ""),
+    })
+    row["quyTrinh"] = deepcopy(snapshot.get("quyTrinh") or [])
+    row["bieuMau"] = deepcopy(snapshot.get("bieuMau") or [])
+    row["fieldProvenance"]["quyTrinh"] = [source_id]
+    row["fieldProvenance"]["bieuMau"] = [source_id]
+
+
 def add_source(sources: list[dict], source: dict) -> None:
     sid = str(source.get("id") or "").strip()
     if not sid:
@@ -317,6 +350,7 @@ def main() -> int:
     execution = current_execution_rows()
     legal_sources = legal_source_map()
     time_overrides = time_override_map()
+    process_forms = process_forms_map()
 
     target_codes = set(execution)
     if len(target_codes) != TARGET:
@@ -335,6 +369,10 @@ def main() -> int:
             row = build_exception_row(exceptions[code], exec_row)
         else:
             row = build_candidate_row(candidates[code], exec_row, legal_sources, time_overrides)
+        snapshot = process_forms.get(code)
+        if not snapshot:
+            raise ValueError(f"{code}: thiếu process/forms snapshot")
+        apply_process_forms(row, snapshot)
         for field in FIELDS:
             if not filled(row.get(field)):
                 raise ValueError(f"{code}: materialize thiếu {field}")
@@ -358,6 +396,7 @@ def main() -> int:
     }
     result["generatedFrom"] = [
         "data/source-audit/priority50-guidance-candidates.json",
+        "data/source-audit/priority50-process-forms-current.json",
         "data/source-audit/priority50-official-guidance-exceptions.json",
         "data/priority-51-legal-verification.json",
         "data/source-audit/priority50-local-agency-overrides.json",

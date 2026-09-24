@@ -29,7 +29,7 @@ jobs:
 
       - name: Python syntax
         run: |
-          python -m py_compile             scripts/canonical_v4.py             scripts/migrate_canonical_v4.py             scripts/build_priority50_guidance.py             scripts/validate_priority50_guidance.py             scripts/update_official_sources.py             scripts/extract_city_updates.py             scripts/build_master_data.py             scripts/build_master_delta.py             scripts/fetch_dvc_mapping.py             scripts/validate_tthc_guidance.py             scripts/apply_guidance_enrichment.py             scripts/build_tthc_tracking.py             scripts/check_static_site.py             scripts/routine_guard.py             scripts/write_routine_run_record.py             scripts/check_routine_health.py
+          python -m py_compile             scripts/canonical_v4.py             scripts/migrate_canonical_v4.py             scripts/build_priority50_guidance.py             scripts/fetch_priority50_process_forms.py             scripts/reconcile_priority50_formality_ids.py             scripts/materialize_priority50_guidance.py             scripts/validate_priority50_guidance.py             scripts/update_official_sources.py             scripts/extract_city_updates.py             scripts/build_master_data.py             scripts/build_master_delta.py             scripts/fetch_dvc_mapping.py             scripts/validate_tthc_guidance.py             scripts/apply_guidance_enrichment.py             scripts/build_tthc_tracking.py             scripts/check_static_site.py             scripts/routine_guard.py             scripts/write_routine_run_record.py             scripts/check_routine_health.py
 
       - name: Python unit tests
         run: python -m unittest discover -s tests -v

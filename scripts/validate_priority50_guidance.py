@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 MASTER = ROOT / "data/thu-tuc.json"
 GUIDANCE = ROOT / "data/tthc-guidance-enrichment.json"
-FIELDS = ("coQuanThucHien", "thanhPhanHoSo", "thoiHan", "lePhi", "dvctt", "ketQua")
+FIELDS = ("coQuanThucHien", "thanhPhanHoSo", "thoiHan", "lePhi", "dvctt", "ketQua", "quyTrinh", "bieuMau")
 TARGET = 50
 
 
