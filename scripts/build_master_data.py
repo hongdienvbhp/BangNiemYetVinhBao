@@ -996,51 +996,6 @@ def apply_official_table_levels(
 
     return stats
 
-
-def load_official_table_levels() -> dict[str, str]:
-    if not OFFICIAL_TABLE_LEVELS.exists():
-        return {}
-    payload = load_json(OFFICIAL_TABLE_LEVELS)
-    return {
-        normalize_code(item.get("ma", "")): str(item.get("classification") or "").strip()
-        for item in payload.get("rows") or []
-        if normalize_code(item.get("ma", ""))
-        and str(item.get("classification") or "").strip() in {"COMMUNE", "SHARED", "PROVINCE"}
-    }
-
-
-def apply_official_table_levels(
-    public_rows: list[dict],
-    excluded: list[dict],
-    audit_rows: list[dict],
-    level_map: dict[str, str],
-) -> dict:
-    cap_by_level = {
-        "COMMUNE": "Xã",
-        "SHARED": "Dùng chung (cấp bộ, cấp tỉnh, cấp xã)",
-        "PROVINCE": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
-    }
-    stats = {"classified": len(level_map), "changedPublic": 0, "changedExcluded": 0}
-
-    for collection_name, rows in (("public", public_rows), ("excluded", excluded)):
-        for row in rows:
-            code = normalize_code(row.get("ma", ""))
-            level = level_map.get(code)
-            if not level:
-                continue
-            new_cap = cap_by_level[level]
-            if str(row.get("cap") or "") == new_cap:
-                continue
-            row["cap"] = new_cap
-            row["levelClassificationStatus"] = "strong_official_section_heading"
-            row["levelClassificationSource"] = "official-table-level-classification"
-            if collection_name == "public":
-                stats["changedPublic"] += 1
-            else:
-                stats["changedExcluded"] += 1
-    return stats
-
-
 def main() -> int:
     candidates_payload = load_json(CANDIDATES)
     attachment_payload = load_json(ATTACHMENTS)
@@ -1048,7 +1003,6 @@ def main() -> int:
     legacy = parse_legacy_rows(LEGACY_JS)
     priority51 = load_priority51()
     priority51_legal = load_priority51_legal()
-    official_table_levels = load_official_table_levels()
     dvc_map = load_dvc_mapping()
     public_rows: list[dict] = []
     excluded: list[dict] = []
@@ -1185,10 +1139,6 @@ def main() -> int:
         if audit is not None:
             audit["formalityId"] = row.get("formalityId") or ""
 
-    official_table_level_stats = apply_official_table_levels(
-        public_rows, excluded, audit_rows, official_table_levels
-    )
-
     public_rows.sort(key=lambda x: (fold(x.get("linhVuc", "")), fold(x.get("ten", "")), x.get("ma", "")))
     for i, row in enumerate(public_rows, 1):
         row["stt"] = i
@@ -1218,9 +1168,6 @@ def main() -> int:
         "priority51LegalAddedCurrent": priority51_legal_stats["addedCurrent"],
         "priority51LegalSupersededByNewerEvidence": priority51_legal_stats["supersededByNewerEvidence"],
         "phiDiaGioi": sum(1 for x in public_rows if x.get("phiDiaGioi")),
-        "officialTableLevelClassified": official_table_level_stats["classified"],
-        "officialTableLevelChangedPublic": official_table_level_stats["changedPublic"],
-        "officialTableLevelChangedExcluded": official_table_level_stats["changedExcluded"],
         "officialTableLevelResolved": official_table_stats["resolved"],
         "officialTableLevelUpdatedPublic": official_table_stats["updatedPublic"],
     }
