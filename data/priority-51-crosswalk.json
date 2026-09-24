@@ -1192,8 +1192,8 @@
       "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
     }
   ],
-  "canonicalDatasetVersion": "2026.09.21",
-  "canonicalSourceCommit": "652e799b394648d0bba52c3fa22d7e1dc6e99f6c",
+  "canonicalDatasetVersion": "2026.09.23",
+  "canonicalSourceCommit": "a4d696a406f90f69869f212c8394c10411637984",
   "canonicalContract": "data/thu-tuc.json",
   "liveVerificationManifest": "data/source-audit/dvcqg-live-verification-current.json",
   "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",

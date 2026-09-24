@@ -798,9 +798,9 @@
     },
     {
       "ma": "1.009444",
-      "ten": "Gia hạn hoạt động cảng, bến thủy nội địa Thông tư số 21/2026/TTBXD ngày 15/5/2026 của Bộ trưởng Bộ Xây dựng quy định về quản lý kết cấu hạ tầng đường thủy nội địa Sở Xây dựng, UBND cấp xã",
-      "linhVuc": "XÂY DỰNG",
-      "cap": "Xã",
+      "ten": "Gia hạn hoạt động cảng, bến thủy nội địa Thông tư số 21/2026/TTBXD ngày 15/5/2026 của Bộ trưởng Bộ Xây dựng quy định về quản lý kết c ấu h ạ tầng đường thủy nội địa",
+      "linhVuc": "HÀNG HẢI VÀ ĐƯỜNG THỦY NỘI ĐỊA",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
       "nhanh": false,
       "mienPhiTrucTuyen": false,
       "phiDiaGioi": false,
@@ -810,32 +810,32 @@
       "thoiHan": "",
       "dvctt": "",
       "coQuan": "",
-      "quyetDinh": "3604/QĐ-UBND",
+      "quyetDinh": "3878/QĐ-UBND",
       "formalityId": "",
       "daXacMinh": false,
       "verificationStatus": "repealed_by_official_city_decision",
       "nameSource": "official_city_decision_pdf",
       "sourceSnapshotDate": "2026-09-23",
-      "sourceLatestDate": "2026-09-09",
-      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3604-qd-ubnd-ngay-09-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-963090",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-theo-1549-1536-so-xay-dung-ttr316-9.9..signed639246459065860248.pdf",
+      "sourceLatestDate": "2026-09-20",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3878-qd-ubnd-ngay-20-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-968417",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3838-xd-hang-hai-duong-thuy639256032077834970.pdf",
       "sourceEvidence": [
         {
-          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3604-qd-ubnd-ngay-09-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-963090",
-          "articleTitle": "Quyết định 3604/QĐ-UBND",
-          "publishedDate": "2026-09-11",
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3878-qd-ubnd-ngay-20-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-968417",
+          "articleTitle": "Quyết định 3878/QĐ-UBND",
+          "publishedDate": "",
           "effectiveDate": null,
           "classification": "public_tthc_city_update",
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/quyet-dinh-2026-cong-bo-dm-tthc-theo-1549-1536-so-xay-dung-ttr316-9.9..signed639246459065860248.pdf",
-          "attachmentSha256": "32414e8a22aaa5708e20216e01c2898438b5643afafc9e9791f7145dced2e340",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3838-xd-hang-hai-duong-thuy639256032077834970.pdf",
+          "attachmentSha256": "5c18d851bc173fa004997580cb857e434c1e1bf868eb23e31eae2306b24433dc",
           "decisionNumbers": [
-            "3604/QĐ-UBND"
+            "3878/QĐ-UBND"
           ],
           "repealContext": true
         }
       ],
       "tiepNhanCapXa": true,
-      "exclusionReason": "Bị bãi bỏ theo 3604/QĐ-UBND"
+      "exclusionReason": "Bị bãi bỏ theo 3878/QĐ-UBND"
     },
     {
       "ma": "2.002253",
@@ -1123,6 +1123,458 @@
       ],
       "tiepNhanCapXa": true,
       "exclusionReason": "Bị bãi bỏ theo 3727/QĐ-UBND"
+    },
+    {
+      "ma": "1.004889",
+      "ten": "Công nhận bằng tốt nghiệp trung học cơ sở, bằng t ốt nghiệp trung học phổ thông, giấy ch ứng nhận hoàn thành chương trình giáo d ục phổ thông do cơ sở giáo dục nước ngoài cấp để sử dụng tại",
+      "linhVuc": "VĂN BẰNG, CHỨNG CHỈ",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3879/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "future_effective_official_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-23",
+      "sourceLatestDate": "2026-09-20",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-3879-qd-ubnd-ngay-20-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-da-968412",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3879-gd-van-bang-chung-chi639256030085386845.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-3879-qd-ubnd-ngay-20-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-da-968412",
+          "articleTitle": "Quyết định 3879/QĐ-UBND",
+          "publishedDate": "",
+          "effectiveDate": "2026-09-26",
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3879-gd-van-bang-chung-chi639256030085386845.pdf",
+          "attachmentSha256": "dbc5e80a3f512d93afffa0d9d3226db79bb1dc4f0fd7a0373c7bfeb11cf1aa3c",
+          "decisionNumbers": [
+            "3879/QĐ-UBND"
+          ],
+          "repealContext": false
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "futureEffectiveDate": "2026-09-26",
+      "exclusionReason": "Đã công bố nhưng chưa có hiệu lực đến 2026-09-26"
+    },
+    {
+      "ma": "1.116546",
+      "ten": "Bổ nhiệm lại và cấp thẻ giám định viên tư pháp",
+      "linhVuc": "GIÁM ĐỊNH TƯ PHÁP",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3904/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-23",
+      "sourceLatestDate": "2026-09-21",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3904-qd-ubnd-ngay-21-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-969347",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3904-tp-bai-bo-giam-dinh639256935655766164.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3904-qd-ubnd-ngay-21-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-969347",
+          "articleTitle": "Quyết định 3904/QĐ-UBND",
+          "publishedDate": "",
+          "effectiveDate": null,
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3904-tp-bai-bo-giam-dinh639256935655766164.pdf",
+          "attachmentSha256": "4b23c8ee05c5f63f5d5b337f3b6311225fc83ab7ed8912830389aca497c1a81b",
+          "decisionNumbers": [
+            "3904/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 3904/QĐ-UBND"
+    },
+    {
+      "ma": "1.116547",
+      "ten": "Công nhận người giám định tư pháp theo vụ việc",
+      "linhVuc": "GIÁM ĐỊNH TƯ PHÁP",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3904/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-23",
+      "sourceLatestDate": "2026-09-21",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3904-qd-ubnd-ngay-21-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-969347",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3904-tp-bai-bo-giam-dinh639256935655766164.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3904-qd-ubnd-ngay-21-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-969347",
+          "articleTitle": "Quyết định 3904/QĐ-UBND",
+          "publishedDate": "",
+          "effectiveDate": null,
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3904-tp-bai-bo-giam-dinh639256935655766164.pdf",
+          "attachmentSha256": "4b23c8ee05c5f63f5d5b337f3b6311225fc83ab7ed8912830389aca497c1a81b",
+          "decisionNumbers": [
+            "3904/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 3904/QĐ-UBND"
+    },
+    {
+      "ma": "1.116548",
+      "ten": "Hủy bỏ công nhận người",
+      "linhVuc": "GIÁM ĐỊNH TƯ PHÁP",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3904/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-23",
+      "sourceLatestDate": "2026-09-21",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3904-qd-ubnd-ngay-21-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-969347",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3904-tp-bai-bo-giam-dinh639256935655766164.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3904-qd-ubnd-ngay-21-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-969347",
+          "articleTitle": "Quyết định 3904/QĐ-UBND",
+          "publishedDate": "",
+          "effectiveDate": null,
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3904-tp-bai-bo-giam-dinh639256935655766164.pdf",
+          "attachmentSha256": "4b23c8ee05c5f63f5d5b337f3b6311225fc83ab7ed8912830389aca497c1a81b",
+          "decisionNumbers": [
+            "3904/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 3904/QĐ-UBND"
+    },
+    {
+      "ma": "1.116549",
+      "ten": "Công nhận tổ chức giám định tư pháp theo vụ việc",
+      "linhVuc": "GIÁM ĐỊNH TƯ PHÁP",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3904/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-23",
+      "sourceLatestDate": "2026-09-21",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3904-qd-ubnd-ngay-21-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-969347",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3904-tp-bai-bo-giam-dinh639256935655766164.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3904-qd-ubnd-ngay-21-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-969347",
+          "articleTitle": "Quyết định 3904/QĐ-UBND",
+          "publishedDate": "",
+          "effectiveDate": null,
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3904-tp-bai-bo-giam-dinh639256935655766164.pdf",
+          "attachmentSha256": "4b23c8ee05c5f63f5d5b337f3b6311225fc83ab7ed8912830389aca497c1a81b",
+          "decisionNumbers": [
+            "3904/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 3904/QĐ-UBND"
+    },
+    {
+      "ma": "1.116550",
+      "ten": "Hủy bỏ công nhận tổ chức giám định tư pháp theo vụ việc",
+      "linhVuc": "GIÁM ĐỊNH TƯ PHÁP",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3904/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-23",
+      "sourceLatestDate": "2026-09-21",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3904-qd-ubnd-ngay-21-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-969347",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3904-tp-bai-bo-giam-dinh639256935655766164.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3904-qd-ubnd-ngay-21-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-969347",
+          "articleTitle": "Quyết định 3904/QĐ-UBND",
+          "publishedDate": "",
+          "effectiveDate": null,
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3904-tp-bai-bo-giam-dinh639256935655766164.pdf",
+          "attachmentSha256": "4b23c8ee05c5f63f5d5b337f3b6311225fc83ab7ed8912830389aca497c1a81b",
+          "decisionNumbers": [
+            "3904/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 3904/QĐ-UBND"
+    },
+    {
+      "ma": "1.116551",
+      "ten": "Thành lập và đăng ký hoạt động của văn phòng giám định tư pháp",
+      "linhVuc": "GIÁM ĐỊNH TƯ PHÁP",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3904/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-23",
+      "sourceLatestDate": "2026-09-21",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3904-qd-ubnd-ngay-21-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-969347",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3904-tp-bai-bo-giam-dinh639256935655766164.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3904-qd-ubnd-ngay-21-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-969347",
+          "articleTitle": "Quyết định 3904/QĐ-UBND",
+          "publishedDate": "",
+          "effectiveDate": null,
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3904-tp-bai-bo-giam-dinh639256935655766164.pdf",
+          "attachmentSha256": "4b23c8ee05c5f63f5d5b337f3b6311225fc83ab7ed8912830389aca497c1a81b",
+          "decisionNumbers": [
+            "3904/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 3904/QĐ-UBND"
+    },
+    {
+      "ma": "1.116552",
+      "ten": "Hợp nhất văn phòng giám định tư pháp được tổ chức và hoạt động dưới hình thức công ty hợp",
+      "linhVuc": "GIÁM ĐỊNH TƯ PHÁP",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3904/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-23",
+      "sourceLatestDate": "2026-09-21",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3904-qd-ubnd-ngay-21-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-969347",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3904-tp-bai-bo-giam-dinh639256935655766164.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3904-qd-ubnd-ngay-21-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-969347",
+          "articleTitle": "Quyết định 3904/QĐ-UBND",
+          "publishedDate": "",
+          "effectiveDate": null,
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3904-tp-bai-bo-giam-dinh639256935655766164.pdf",
+          "attachmentSha256": "4b23c8ee05c5f63f5d5b337f3b6311225fc83ab7ed8912830389aca497c1a81b",
+          "decisionNumbers": [
+            "3904/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 3904/QĐ-UBND"
+    },
+    {
+      "ma": "1.116553",
+      "ten": "Sáp nhập văn phòng giám định tư pháp được tổ chức và hoạt động dưới hình thức công ty hợp danh",
+      "linhVuc": "GIÁM ĐỊNH TƯ PHÁP",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3904/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-23",
+      "sourceLatestDate": "2026-09-21",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3904-qd-ubnd-ngay-21-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-969347",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3904-tp-bai-bo-giam-dinh639256935655766164.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3904-qd-ubnd-ngay-21-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-969347",
+          "articleTitle": "Quyết định 3904/QĐ-UBND",
+          "publishedDate": "",
+          "effectiveDate": null,
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3904-tp-bai-bo-giam-dinh639256935655766164.pdf",
+          "attachmentSha256": "4b23c8ee05c5f63f5d5b337f3b6311225fc83ab7ed8912830389aca497c1a81b",
+          "decisionNumbers": [
+            "3904/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 3904/QĐ-UBND"
+    },
+    {
+      "ma": "1.116554",
+      "ten": "Tạm ngừng hoạt động của văn phòng giám định tư pháp",
+      "linhVuc": "GIÁM ĐỊNH TƯ PHÁP",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3904/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-23",
+      "sourceLatestDate": "2026-09-21",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3904-qd-ubnd-ngay-21-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-969347",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3904-tp-bai-bo-giam-dinh639256935655766164.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3904-qd-ubnd-ngay-21-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-969347",
+          "articleTitle": "Quyết định 3904/QĐ-UBND",
+          "publishedDate": "",
+          "effectiveDate": null,
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3904-tp-bai-bo-giam-dinh639256935655766164.pdf",
+          "attachmentSha256": "4b23c8ee05c5f63f5d5b337f3b6311225fc83ab7ed8912830389aca497c1a81b",
+          "decisionNumbers": [
+            "3904/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 3904/QĐ-UBND"
+    },
+    {
+      "ma": "1.116555",
+      "ten": "Chấm dứt hoạt động văn phòng giám định tư pháp",
+      "linhVuc": "GIÁM ĐỊNH TƯ PHÁP",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3904/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-23",
+      "sourceLatestDate": "2026-09-21",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3904-qd-ubnd-ngay-21-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-969347",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3904-tp-bai-bo-giam-dinh639256935655766164.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3904-qd-ubnd-ngay-21-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-969347",
+          "articleTitle": "Quyết định 3904/QĐ-UBND",
+          "publishedDate": "",
+          "effectiveDate": null,
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3904-tp-bai-bo-giam-dinh639256935655766164.pdf",
+          "attachmentSha256": "4b23c8ee05c5f63f5d5b337f3b6311225fc83ab7ed8912830389aca497c1a81b",
+          "decisionNumbers": [
+            "3904/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 3904/QĐ-UBND"
     },
     {
       "ma": "2.001009",

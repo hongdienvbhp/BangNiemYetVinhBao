@@ -490,8 +490,8 @@
       "decisionNo": "",
       "decisionDate": "",
       "title": "QUYẾT ĐỊNH Về việc ủy quyền cho Giám đốc Sở Văn hóa, Thể thao và Du lịch thực hiện nhiệm vụ thuộc thẩm quyền của Ủy ban nhân dân thành phố trong việc giải quyết các thủ tục hành chính lĩnh vực Báo chí; Phát thanh, Truyền hình và Thông tin điện tử trên địa bàn thành phố Hải Phòng",
-      "classification": "needs_review",
-      "status": "missing_decision_number"
+      "classification": "internal_process",
+      "status": "excluded_internal_unidentified"
     },
     {
       "sourceId": "haiphong-local-gia-vien",
@@ -812,8 +812,8 @@
       "decisionNo": "",
       "decisionDate": "",
       "title": "Quyết định Về việc công bố thủ tục hành chính bị bãi bỏ lĩnh vực chăn nuôi và thú y thuộc phạm vi chức năng quản lý của Bộ Nông nghiệp và Môi trường",
-      "classification": "needs_review",
-      "status": "missing_decision_number"
+      "classification": "external_reference",
+      "status": "excluded_external_authority"
     },
     {
       "sourceId": "haiphong-dept-justice",
@@ -856,6 +856,20 @@
       "title": "Quyết định công bố Thủ tục hành chính",
       "classification": "baseline_only",
       "status": "baseline_only"
+    },
+    {
+      "sourceId": "haiphong-dept-health",
+      "sourceUrl": "https://soyte.haiphong.gov.vn/thu-tuc-hanh-chinh",
+      "sourceAuthority": "Sở Y tế thành phố Hải Phòng",
+      "authorityType": "department",
+      "sourceRole": "primary_decision_listing",
+      "legalUse": "primary_publication",
+      "articleUrl": "https://soyte.haiphong.gov.vn/thu-tuc-hanh-chinh/quyet-dinh-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-bi-bai-bo-linh-vuc-phong-benh-thuoc-pham-969885",
+      "decisionNo": "",
+      "decisionDate": "",
+      "title": "QUYẾT ĐỊNH Về việc công bố danh mục thủ tục hành chính bị bãi bỏ lĩnh vực phòng bệnh thuộc phạm vi, chức năng quản lý của Sở Y tế | Sở Y tế Hải Phòng",
+      "classification": "reviewed_no_canonical_change",
+      "status": "reviewed_repeal_codes_absent_from_canonical"
     },
     {
       "sourceId": "haiphong-dept-health",
@@ -4682,8 +4696,8 @@
       "decisionNo": "3389/QĐ-UBND",
       "decisionDate": "2026-08-24",
       "title": "Quyết định số 3389/QĐ-UBND ngày 24/8/2026 của Ủy ban nhân dân thành phố ban hành Kế hoạch tổ chức Hội thi trực tuyến tìm hiểu công tác cải cách hành chính thành phố Hải Phòng năm 2026",
-      "classification": "needs_review",
-      "status": "unclassified_article"
+      "classification": "non_tthc",
+      "status": "excluded_non_tthc"
     },
     {
       "sourceId": "haiphong-dept-science-tech",
@@ -5208,20 +5222,6 @@
       "status": "excluded_internal"
     },
     {
-      "sourceId": "haiphong-public-tthc-listing",
-      "sourceUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh",
-      "sourceAuthority": "Cổng thông tin điện tử thuộc hệ thống Hải Phòng",
-      "authorityType": "ubnd_local",
-      "sourceRole": "official_local_mirror",
-      "legalUse": "cross_check_only",
-      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-3879-qd-ubnd-ngay-20-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-da-968412",
-      "decisionNo": "",
-      "decisionDate": "2026-09-20",
-      "title": "Công khai Quyết định: 3879/QĐ-UBND ngày 20/9/2026 của UBND thành phố Hải Phòng về việc công bố Danh mục thủ tục hành chính sửa đổi bổ sung lĩnh vực văn bằng, chứng chỉ thuộc phạm vi chức năng quản lý của Sở Giáo dục và Đào tạo",
-      "classification": "needs_review",
-      "status": "missing_decision_number"
-    },
-    {
       "sourceId": "haiphong-dept-culture-tourism",
       "sourceUrl": "https://sovhttdl.haiphong.gov.vn/thu-tuc-hanh-chinh",
       "sourceAuthority": "Sở Văn hóa, Thể thao và Du lịch thành phố Hải Phòng",
@@ -5232,8 +5232,8 @@
       "decisionNo": "3871/QĐ-UBND",
       "decisionDate": "2026-09-20",
       "title": "Ngày 20/9/2026, UBNDTP ban hành Quyết định 3871/QĐ-UBND ủy quyền cho Giám đốc Sở Văn hóa, Thể thao và Du lịch thực hiện nhiệm vụ thuộc thẩm quyền của Ủy ban nhân dân thành phố trong việc giải quyết các thủ tục hành chính lĩnh vực Báo chí; Phát thanh, Truyền hình và Thông tin điện tử trên địa bàn thành phố Hải Phòng",
-      "classification": "needs_review",
-      "status": "unclassified_article"
+      "classification": "internal_process",
+      "status": "excluded_internal"
     },
     {
       "sourceId": "haiphong-public-tthc-listing",
@@ -5246,6 +5246,20 @@
       "decisionNo": "3878/QĐ-UBND",
       "decisionDate": "2026-09-20",
       "title": "Công khai Quyết định số: 3878/QĐ-UBND ngày 20/9/2026 của UBND thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung, bị bãi bỏ trong lĩnh vực hàng hải và đường thủy nội địa thuộc phạm vi chức năng quản lý của Sở Xây dựng",
+      "classification": "public_tthc",
+      "status": "auto_discovered"
+    },
+    {
+      "sourceId": "haiphong-public-tthc-listing",
+      "sourceUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh",
+      "sourceAuthority": "Cổng thông tin điện tử thuộc hệ thống Hải Phòng",
+      "authorityType": "ubnd_local",
+      "sourceRole": "official_local_mirror",
+      "legalUse": "cross_check_only",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-3879-qd-ubnd-ngay-20-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-da-968412",
+      "decisionNo": "3879/QĐ-UBND",
+      "decisionDate": "2026-09-20",
+      "title": "Công khai Quyết định: 3879/QĐ-UBND ngày 20/9/2026 của UBND thành phố Hải Phòng về việc công bố Danh mục thủ tục hành chính sửa đổi bổ sung lĩnh vực văn bằng, chứng chỉ thuộc phạm vi chức năng quản lý của Sở Giáo dục và Đào tạo",
       "classification": "public_tthc",
       "status": "auto_discovered"
     },
