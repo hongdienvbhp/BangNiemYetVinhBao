@@ -1,4 +1,4 @@
-# Production deployment for the public TTHC listing site
+# Production deployment for the public TTHC listing site — enabled
 name: Deploy GitHub Pages
 
 on:
