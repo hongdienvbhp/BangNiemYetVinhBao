@@ -80,6 +80,8 @@ jobs:
       GH_TOKEN: ${{ github.token }}
       GOOGLE_WIF_PROVIDER: ${{ vars.GOOGLE_WIF_PROVIDER || 'projects/445454141333/locations/global/workloadIdentityPools/github-actions/providers/github' }}
       GOOGLE_SERVICE_ACCOUNT: ${{ vars.GOOGLE_SERVICE_ACCOUNT || 'tthc-sheets-sync@gen-lang-client-0080020304.iam.gserviceaccount.com' }}
+      # File IDs are not credentials. Keep optional repository variables for
+      # portability, with the two approved production read-model IDs as defaults.
       TTHC_SHEET_CAP_XA_ID: ${{ vars.TTHC_SHEET_CAP_XA_ID || '1tUBoVAWEZcqTD6onoeN-PJVmy_Ffz_CAav9u1-aKIYA' }}
       TTHC_SHEET_CAP_TP_ID: ${{ vars.TTHC_SHEET_CAP_TP_ID || '1PhUDRljGGErXnolqxRj9jPdJSacLFkBTGFJjUBTqVXk' }}
       TTHC_CITY_BASELINE_COMPLETE: ${{ vars.TTHC_CITY_BASELINE_COMPLETE }}
@@ -96,7 +98,13 @@ jobs:
           create_credentials_file: true
           export_environment_variables: true
 
+
       - name: Setup Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Google auth dependency
         run: python -m pip install --disable-pip-version-check "google-auth>=2.30,<3" "requests>=2.31,<3"
 
       - name: Preflight credentials
@@ -112,14 +120,60 @@ jobs:
             missing+=("TTHC_SHEET_CAP_TP_ID")
           fi
           if [ "${#missing[@]}" -gt 0 ]; then
-            printf 'Missing: %s\n' "${missing[*]}"
+            printf 'Missing: %s\n' "${missing[*]}" >> "$GITHUB_STEP_SUMMARY"
+            existing="$(gh issue list --state open --search 'Google Sheets sync blocked in:title' --json number --jq '.[0].number // empty')"
+            if [ -z "$existing" ]; then
+              gh issue create \
+                --title "Google Sheets sync blocked: thiếu xác thực Google" \
+                --body "Pipeline canonical đã sẵn sàng nhưng chưa thể ghi Google Sheets. Thiếu: ${missing[*]}. Cần cấu hình Workload Identity Federation và chia sẻ 02 Sheet cho service account. Không có dữ liệu nào bị ghi một phần."
+            fi
             exit 1
           fi
 
-      - name: Sync canonical TTHC read models
+      - name: Sync verified canonical projection
         env:
           PYTHONPATH: scripts
-        run: python scripts/sync_google_sheets.py --live
+        run: |
+          set -euo pipefail
+          python scripts/sync_google_sheets.py --plan-out /tmp/google-sheets-sync-plan.json | tee /tmp/google-sheets-sync-result.json
+          {
+            echo "## Google Sheets TTHC sync"
+            echo
+            echo '~~~json'
+            cat /tmp/google-sheets-sync-result.json
+            echo '~~~'
+          } >> "$GITHUB_STEP_SUMMARY"
 
-# Verification note: keep this workflow manually dispatchable so a validated
-# canonical snapshot can be synchronized without requiring a data mutation.
+      - name: Alert unresolved verification queue
+        shell: bash
+        run: |
+          set -euo pipefail
+          count="$(python - <<'PY'
+          import json
+          import os
+          p=json.load(open("/tmp/google-sheets-sync-plan.json", encoding="utf-8"))
+          city_complete=os.getenv("TTHC_CITY_BASELINE_COMPLETE","").lower() in {"1","true","yes"}
+          q=[x for x in p.get("reviewQueue",[]) if city_complete or x.get("scope")!="city"]
+          print(len(q))
+          PY
+          )"
+          if [ "$count" -gt 0 ]; then
+            existing="$(gh issue list --state open --search 'TTHC cần xác minh sau đồng bộ in:title' --json number --jq '.[0].number // empty')"
+            if [ -z "$existing" ]; then
+              gh issue create \
+                --title "TTHC cần xác minh sau đồng bộ Google Sheets" \
+                --body "Pipeline phát hiện $count mục cần xác minh. Dữ liệu đã xác minh vẫn được đồng bộ; các mục chưa chắc chắn không được tự suy diễn/công khai. Xem workflow summary và reviewQueue trong sync plan."
+            fi
+          fi
+
+      - name: Alert Google Sheets sync failure
+        if: failure()
+        shell: bash
+        run: |
+          set -euo pipefail
+          existing="$(gh issue list --state open --search 'Google Sheets sync failed in:title' --json number --jq '.[0].number // empty')"
+          if [ -z "$existing" ]; then
+            gh issue create \
+              --title "Google Sheets sync failed: cần kiểm tra" \
+              --body "Workflow đồng bộ canonical TTHC sang Google Sheets đã thất bại. Không được coi dữ liệu Sheet là đã cập nhật cho đến khi workflow xanh. Kiểm tra run hiện tại, credential, quyền Editor của service account và header 29 cột."
+          fi
