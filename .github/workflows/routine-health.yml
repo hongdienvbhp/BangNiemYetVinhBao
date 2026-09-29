@@ -2,12 +2,14 @@ name: Routine Health Check
 
 on:
   schedule:
-    - cron: "20 5 * * *"
+    # 17:00 Asia/Ho_Chi_Minh — sau lượt Official TTHC Update (thường khởi chạy trễ tới ~12:45)
+    - cron: "0 10 * * *"
   workflow_dispatch:
 
 permissions:
   actions: read
   contents: read
+  issues: write
 
 jobs:
   health:
@@ -57,10 +59,38 @@ jobs:
           done < /tmp/routine-run-ids.txt
 
       - name: Evaluate routine health
+        id: evaluate
         shell: bash
         run: |
           set -euo pipefail
           python scripts/check_routine_health.py \
             --history /tmp/official-data-update-runs.json \
             --records-dir /tmp/routine-records \
-            --fail-unhealthy
+            --fail-unhealthy | tee /tmp/routine-health.json
+
+      - name: Open or update alert Issue
+        if: failure() && steps.evaluate.outcome == 'failure'
+        shell: bash
+        run: |
+          set -euo pipefail
+          title="Cảnh báo: Official TTHC Update không khỏe"
+          result="$(cat /tmp/routine-health.json 2>/dev/null || echo '{}')"
+          run_url="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          body="$(printf 'Routine Health Check thất bại.\n\n- Kết quả: `%s`\n- Lượt kiểm tra: %s\n\nKiểm tra lượt Official TTHC Update gần nhất; dữ liệu TTHC có thể chưa được cập nhật.' "$result" "$run_url")"
+          number="$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --search "\"$title\" in:title" --json number --jq '.[0].number // empty')"
+          if [ -n "$number" ]; then
+            gh issue comment "$number" --repo "$GITHUB_REPOSITORY" --body "$body"
+          else
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --body "$body"
+          fi
+
+      - name: Close alert Issue when healthy
+        if: success()
+        shell: bash
+        run: |
+          set -euo pipefail
+          title="Cảnh báo: Official TTHC Update không khỏe"
+          for number in $(gh issue list --repo "$GITHUB_REPOSITORY" --state open --search "\"$title\" in:title" --json number --jq '.[].number'); do
+            gh issue close "$number" --repo "$GITHUB_REPOSITORY" --reason completed \
+              --comment "Routine Health Check đã khỏe lại: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          done
