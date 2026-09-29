@@ -415,6 +415,66 @@
       "effectiveDate": null,
       "ingestStatus": "reviewed_pending_effective_date",
       "title": "Công khai Quyết định số: 3904/QĐ-UBND ngày 21/9/2026 của UBND thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính ban hành mới, được sửa đổi, bổ sung và bị bãi bỏ trong lĩnh vực giám định tư pháp thuộc phạm vi, chức năng quản lý nhà nước của Sở Tư pháp"
+    },
+    {
+      "decisionNo": "3957/QĐ-UBND",
+      "decisionDate": "2026-09-23",
+      "publishedDate": "",
+      "classification": "public_tthc",
+      "field": "TIẾP CẬN THÔNG TIN",
+      "articleUrl": "https://sotp.haiphong.gov.vn/cong-khai-thu-tuc-hanh-chinh/quyet-dinh-so-3957-qd-ubnd-ngay-23-9-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-ban-hanh-m-972925",
+      "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6298/tintuc/2026/9/qd-3957-ve-tiep-can-thong-tin639262157131271814.pdf",
+      "filePath": "data/source-audit/city-decisions/QD-3957.pdf",
+      "pdfSha256": "85a339d785b9ffc734b96b5108f67b3146afd34467a6bcb8b2195a008ae9467a",
+      "effectiveDate": null,
+      "ingestStatus": "reviewed_pending_effective_date",
+      "title": "Quyết định số 3957/QĐ-UBND ngày 23/9/2026 về việc công bố danh mục thủ tục hành chính ban hành mới lĩnh vực tiếp cận thông tin thuộc phạm vi, chức năng quản lý của Sở Tư pháp",
+      "reviewNote": "Rà soát 29/9/2026: QĐ không có điều khoản hiệu lực; ban hành mới 1.116556, 1.116557 (tiếp nhận tại TTPVHCC thành phố và cấp xã) theo Luật Tiếp cận thông tin số 01/2026/QH16 – chờ xác định ngày hiệu lực trước khi đưa vào canonical."
+    },
+    {
+      "decisionNo": "3958/QĐ-UBND",
+      "decisionDate": "2026-09-23",
+      "publishedDate": "",
+      "classification": "public_tthc",
+      "field": "PHÒNG BỆNH",
+      "articleUrl": "https://nhichieu.haiphong.gov.vn/tra-cuu-thu-tuc-hanh-chinh-90290/so-111-tb-vhxh-ngay-24-thang-9-nam-2026-thong-bao-quyet-dinh-so-3958-qd-ubnd-ve-viec-cong-bo-dan-971224",
+      "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6843/tintuc/2026/9/tb-so-111-tthc-qd-so-3958-ngay-23.9-tthc.ldsigned639259321271092336.pdf",
+      "filePath": "data/source-audit/city-decisions/QD-3958.pdf",
+      "pdfSha256": "f06cce9014a5163c9cd21e4b6d6af2764ce587cf8bcce680e6cd6277f49956e2",
+      "effectiveDate": null,
+      "ingestStatus": "reviewed_pending_effective_date",
+      "title": "Số: 111/TB-VHXH, ngày 24 tháng 9 năm 2026 THÔNG BÁO Quyết định số 3958/QĐ-UBND về việc công bố danh mục thủ tục hành chính bị bãi bỏ lĩnh vực phòng bệnh thuộc phạm vi, chức năng quản lý của Sở Y tế",
+      "reviewNote": "Rà soát 29/9/2026: PDF thu được là Thông báo 111/TB-VHXH của phường Nhị Chiểu, không phải QĐ gốc; chưa trích được danh mục TTHC bãi bỏ – cần bản QĐ gốc."
+    },
+    {
+      "decisionNo": "3965/QĐ-UBND",
+      "decisionDate": "2026-09-24",
+      "publishedDate": "",
+      "classification": "public_tthc",
+      "field": "GIÁM ĐỊNH TƯ PHÁP XÂY DỰNG",
+      "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3965-qd-ubnd-ngay-24-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-970697",
+      "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3965-tp-giam-dinh639258642478050859.pdf",
+      "filePath": "data/source-audit/city-decisions/QD-3965.pdf",
+      "pdfSha256": "a5378b8dfaac14c2aea70783f452d28d2349992db25e087806307cea79ad1ec4",
+      "effectiveDate": null,
+      "ingestStatus": "reviewed_no_commune_change",
+      "title": "Công khai Quyết định số: 3965/QĐ-UBND ngày 24/9/2026 của UBND thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính bị bãi bỏ trong lĩnh vực giám định tư pháp xây dựng thuộc phạm vi chức năng quản lý của Sở Xây dựng",
+      "reviewNote": "Rà soát 29/9/2026: bãi bỏ 1.011675, 2.001116 (giám định tư pháp xây dựng, cấp thành phố); không có trong canonical, không tiếp nhận tại xã."
+    },
+    {
+      "decisionNo": "4016/QĐ-UBND",
+      "decisionDate": "2026-09-28",
+      "publishedDate": "",
+      "classification": "public_tthc",
+      "field": "THỦY SẢN VÀ KIỂM NGƯ",
+      "articleUrl": "https://sonnmt.haiphong.gov.vn/thu-tuc-hanh-chinh/quyet-dinh-so-4016-qd-ubnd-ngay-28-9-2026-cua-uy-ban-nhan-dan-thanh-pho-hai-phong-ve-viec-cong-b-972671",
+      "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/5892/tintuc/2026/9/qd-4016-ngay-28.9.2026-ubnd-hp-cong-bo-dm-tthc-sua-doi-bo-sung-lvuc-tskn639262055665128821.pdf",
+      "filePath": "data/source-audit/city-decisions/QD-4016.pdf",
+      "pdfSha256": "a6f7538234a56d954f5246453bf6d102662edc3a325ce081e8d2d57c9531dce9",
+      "effectiveDate": null,
+      "ingestStatus": "reviewed_pending_effective_date",
+      "title": "Quyết định số 4016/QĐ-UBND ngày 28/9/2026 của Uỷ ban nhân dân thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung, lĩnh vực thủy sản và kiểm ngư thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường",
+      "reviewNote": "Rà soát 29/9/2026: QĐ không có điều khoản hiệu lực; sửa đổi 1.003593, 1.003666 (thủy sản, có tiếp nhận tại TTPVHCC cấp xã) chưa có trong canonical – chờ xác định hiệu lực và phạm vi áp dụng tại Vĩnh Bảo."
     }
   ]
 }

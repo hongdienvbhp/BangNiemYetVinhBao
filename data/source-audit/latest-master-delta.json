@@ -1,16 +1,25 @@
 {
   "format": "bangniemyet-master-data-delta",
   "version": 1,
-  "beforeSnapshotDate": "2026-09-21",
-  "afterSnapshotDate": "2026-09-23",
+  "beforeSnapshotDate": "2026-09-23",
+  "afterSnapshotDate": "2026-09-29",
   "summary": {
     "beforePublic": 254,
-    "afterPublic": 254,
-    "added": 0,
+    "afterPublic": 255,
+    "added": 1,
     "removed": 0,
     "changed": 0
   },
-  "added": [],
+  "added": [
+    {
+      "ma": "1.004889",
+      "ten": "Công nhận bằng tốt nghiệp trung học cơ sở, bằng tốt nghiệp trung học phổ thông, giấy chứng nhận hoàn thành chương trình giáo dục phổ thông do cơ sở giáo dục nước ngoài cấp để sử dụng tại Việt Nam",
+      "linhVuc": "VĂN BẰNG, CHỨNG CHỈ",
+      "quyetDinh": "3879/QĐ-UBND",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-3879-qd-ubnd-ngay-20-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-da-968412",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3879-gd-van-bang-chung-chi639256030085386845.pdf"
+    }
+  ],
   "removed": [],
   "changed": []
 }

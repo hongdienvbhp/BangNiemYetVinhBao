@@ -39,6 +39,12 @@ TIME_OR_COLUMN_RE = re.compile(
 # Trích xuất văn bản thuần không giữ được ranh giới cột, nên khóa lại đúng quan
 # hệ thay thế đã thể hiện trực tiếp trong phụ lục chính thức.
 DECISION_ROW_OVERRIDES = {
+    "3879/QĐ-UBND": {
+        # Tên chép từ Phụ lục QĐ 3879/QĐ-UBND (lớp chữ PDF bị tách ký tự).
+        "1.004889": {
+            "name": "Công nhận bằng tốt nghiệp trung học cơ sở, bằng tốt nghiệp trung học phổ thông, giấy chứng nhận hoàn thành chương trình giáo dục phổ thông do cơ sở giáo dục nước ngoài cấp để sử dụng tại Việt Nam",
+        },
+    },
     "3582/QĐ-UBND": {
         "2.001023": {
             "name": "Liên thông các thủ tục hành chính về đăng ký khai sinh, cấp Thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi",
