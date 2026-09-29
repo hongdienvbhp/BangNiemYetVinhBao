@@ -7105,6 +7105,88 @@
       "exclusionReason": "Bị bãi bỏ theo 3904/QĐ-UBND"
     },
     {
+      "ma": "1.013896",
+      "ten": "Thông báo tiếp nhận hồ sơ công bố hợp quy dựa trên kết quả chứng nhận hợp quy của tổ chức chứng nhận hợp quy đư ợc chỉ định (bên thứ ba) đối với thuốc lá Thông tư số 51/2025/TTBYT ngày 31/12/2025 của Bộ trưởng Bộ Y tế",
+      "linhVuc": "PHÒNG BỆNH",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3958/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-29",
+      "sourceLatestDate": "2026-09-23",
+      "sourceArticleUrl": "https://nhichieu.haiphong.gov.vn/tra-cuu-thu-tuc-hanh-chinh-90290/so-111-tb-vhxh-ngay-24-thang-9-nam-2026-thong-bao-quyet-dinh-so-3958-qd-ubnd-ve-viec-cong-bo-dan-971224",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6843/tintuc/2026/9/tb-so-111-tthc-qd-so-3958-ngay-23.9-tthc.ldsigned639259321271092336.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://nhichieu.haiphong.gov.vn/tra-cuu-thu-tuc-hanh-chinh-90290/so-111-tb-vhxh-ngay-24-thang-9-nam-2026-thong-bao-quyet-dinh-so-3958-qd-ubnd-ve-viec-cong-bo-dan-971224",
+          "articleTitle": "Quyết định 3958/QĐ-UBND",
+          "publishedDate": "",
+          "effectiveDate": "2026-09-23",
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6843/tintuc/2026/9/tb-so-111-tthc-qd-so-3958-ngay-23.9-tthc.ldsigned639259321271092336.pdf",
+          "attachmentSha256": "6bd5dc7093abaf1e278947b357b4fef379f79bca75001a553a2935919b84afdb",
+          "decisionNumbers": [
+            "3958/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 3958/QĐ-UBND"
+    },
+    {
+      "ma": "1.013898",
+      "ten": "Thông báo tiếp nhận hồ sơ công bố hợp quy dựa trên kết quả tự đánh giá của tổ chức, cá nhân sản xuất, kinh doanh thuốc lá (bên thứ nhất) Thông tư số 51/2025/TTBYT ngày 31/12/2025 của Bộ trưởng Bộ Y tế; Thông tư số 14/2026/TTBKHCN ngày 09/4/2026 của Bộ trưởng",
+      "linhVuc": "PHÒNG BỆNH",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3958/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-29",
+      "sourceLatestDate": "2026-09-23",
+      "sourceArticleUrl": "https://nhichieu.haiphong.gov.vn/tra-cuu-thu-tuc-hanh-chinh-90290/so-111-tb-vhxh-ngay-24-thang-9-nam-2026-thong-bao-quyet-dinh-so-3958-qd-ubnd-ve-viec-cong-bo-dan-971224",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6843/tintuc/2026/9/tb-so-111-tthc-qd-so-3958-ngay-23.9-tthc.ldsigned639259321271092336.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://nhichieu.haiphong.gov.vn/tra-cuu-thu-tuc-hanh-chinh-90290/so-111-tb-vhxh-ngay-24-thang-9-nam-2026-thong-bao-quyet-dinh-so-3958-qd-ubnd-ve-viec-cong-bo-dan-971224",
+          "articleTitle": "Quyết định 3958/QĐ-UBND",
+          "publishedDate": "",
+          "effectiveDate": "2026-09-23",
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6843/tintuc/2026/9/tb-so-111-tthc-qd-so-3958-ngay-23.9-tthc.ldsigned639259321271092336.pdf",
+          "attachmentSha256": "6bd5dc7093abaf1e278947b357b4fef379f79bca75001a553a2935919b84afdb",
+          "decisionNumbers": [
+            "3958/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 3958/QĐ-UBND"
+    },
+    {
       "ma": "2.001009",
       "ten": "Chứng thực văn bản khai nhận di sản mà di sản là động sản, quyền sử dụng đất, nhà ở",
       "linhVuc": "CHỨNG THỰC",

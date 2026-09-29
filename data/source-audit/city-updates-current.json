@@ -1590,18 +1590,37 @@
       "decisionDate": "2026-09-23",
       "publishedDate": "",
       "effectiveDate": "2026-09-23",
-      "effectiveDateSource": "manual_effective_date_review",
-      "currentStateAtAsOf": "reviewed_pending_effective_date",
+      "effectiveDateSource": "default_effective_from_signing_date",
+      "currentStateAtAsOf": "current_or_immediate_unless_repealed",
       "classification": "public_tthc",
-      "ingestStatus": "reviewed_pending_effective_date",
+      "ingestStatus": "applied",
       "field": "PHÒNG BỆNH",
-      "title": "Số: 111/TB-VHXH, ngày 24 tháng 9 năm 2026 THÔNG BÁO Quyết định số 3958/QĐ-UBND về việc công bố danh mục thủ tục hành chính bị bãi bỏ lĩnh vực phòng bệnh thuộc phạm vi, chức năng quản lý của Sở Y tế",
+      "title": "Quyết định số 3958/QĐ-UBND ngày 23/9/2026 của Chủ tịch UBND thành phố về việc công bố danh mục thủ tục hành chính bị bãi bỏ lĩnh vực phòng bệnh thuộc phạm vi, chức năng quản lý của Sở Y tế",
       "articleUrl": "https://nhichieu.haiphong.gov.vn/tra-cuu-thu-tuc-hanh-chinh-90290/so-111-tb-vhxh-ngay-24-thang-9-nam-2026-thong-bao-quyet-dinh-so-3958-qd-ubnd-ve-viec-cong-bo-dan-971224",
       "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6843/tintuc/2026/9/tb-so-111-tthc-qd-so-3958-ngay-23.9-tthc.ldsigned639259321271092336.pdf",
       "filePath": "data/source-audit/city-decisions/QD-3958.pdf",
-      "pdfSha256": "f06cce9014a5163c9cd21e4b6d6af2764ce587cf8bcce680e6cd6277f49956e2",
-      "pageCount": 2,
-      "rows": []
+      "pdfSha256": "6bd5dc7093abaf1e278947b357b4fef379f79bca75001a553a2935919b84afdb",
+      "pageCount": 3,
+      "rows": [
+        {
+          "code": "1.013896",
+          "name": "Thông báo tiếp nhận hồ sơ công bố hợp quy dựa trên kết quả chứng nhận hợp quy của tổ chức ch ứng nh ận h ợp quy đư ợc ch ỉ định (bên thứ ba) đối với thuốc lá Thông tư số 51/2025/TTBYT ngày 31/12/2025 của Bộ trưởng Bộ Y tế",
+          "sectionStatus": "repealed",
+          "levelHint": "province",
+          "communeReceptionEvidence": false,
+          "page": 3,
+          "context": "STT Mã TTHC Tên TTHC Tên văn bản quy phạm pháp luật quy định việc bãi bỏ TTHC THỦ TỤC HÀNH CHÍNH CẤP TỈNH LĨNH VỰC PHÒNG BỆNH 1 1.013896 Thông báo tiếp nhận hồ sơ công bố hợp quy dựa trên kết quả chứng nhận hợp quy của tổ chức ch ứng nh ận h ợp quy đư ợc ch ỉ định (bên thứ ba) đối với thuốc lá Thông tư số 51/2025/TTBYT ngày 31/12/2025 của Bộ trưởng Bộ Y tế; Thông tư số 14/2026/TTBKHCN ngày 09/4/2026 của Bộ trưởng Bộ Khoa học và Công nghệ 2 1.013898 Thông báo tiếp nhận hồ sơ công bố hợp quy dựa trên kết quả tự đánh giá của tổ chức, cá nhân sản xuất, kinh doanh thuốc lá (bên thứ nhất) Thông tư số 51/2025/TTBYT ngày 31/12/2025 của Bộ trưởng Bộ Y tế; Thông tư số 14/2026/TTBKHCN ngày 09/4/2026 của Bộ trưởng Bộ Khoa học và Công nghệ "
+        },
+        {
+          "code": "1.013898",
+          "name": "Thông báo tiếp nhận hồ sơ công bố hợp quy dựa trên kết quả tự đánh giá của tổ chức, cá nhân sản xuất, kinh doanh thuốc lá (bên thứ nhất) Thông tư số 51/2025/TTBYT ngày 31/12/2025 của Bộ trưởng Bộ Y tế; Thông tư số 14/2026/TTBKHCN ngày 09/4/2026 của Bộ trưởng",
+          "sectionStatus": "repealed",
+          "levelHint": "province",
+          "communeReceptionEvidence": false,
+          "page": 3,
+          "context": "Y tế; Thông tư số 14/2026/TTBKHCN ngày 09/4/2026 của Bộ trưởng Bộ Khoa học và Công nghệ 2 1.013898 Thông báo tiếp nhận hồ sơ công bố hợp quy dựa trên kết quả tự đánh giá của tổ chức, cá nhân sản xuất, kinh doanh thuốc lá (bên thứ nhất) Thông tư số 51/2025/TTBYT ngày 31/12/2025 của Bộ trưởng Bộ Y tế; Thông tư số 14/2026/TTBKHCN ngày 09/4/2026 của Bộ trưởng Bộ Khoa học và Công nghệ "
+        }
+      ]
     },
     {
       "decisionNo": "3965/QĐ-UBND",
@@ -7307,6 +7326,48 @@
       "communeReceptionEvidence": true,
       "page": 3,
       "context": "tin theo quy định tại khoản 2 Điều 25 Luật Tiếp cận thông tin số 01/2026/QH16. 2. 1.116557 Thủ tục cung cấp thông tin theo yêu cầu (dành cho công dân thông qua tổ chức, đoàn thể, doanh nghiệp) - - 03 ngày làm vi ệc kể từ ngày nhận được hồ sơ hợp lệ đối với thông tin đơn giản, có sẵn - 12 ngày kể từ ngày nhận được hồ sơ hợp lệ đối với thông tin phức tạp, không có sẵn (có thể thêm tối đa không quá 12 ngày) Không đề xuất cắt giảm"
+    },
+    {
+      "decisionNo": "3958/QĐ-UBND",
+      "decisionDate": "2026-09-23",
+      "publishedDate": "",
+      "effectiveDate": "2026-09-23",
+      "effectiveDateSource": "default_effective_from_signing_date",
+      "currentStateAtAsOf": "current_or_immediate_unless_repealed",
+      "classification": "public_tthc",
+      "ingestStatus": "applied",
+      "field": "PHÒNG BỆNH",
+      "articleUrl": "https://nhichieu.haiphong.gov.vn/tra-cuu-thu-tuc-hanh-chinh-90290/so-111-tb-vhxh-ngay-24-thang-9-nam-2026-thong-bao-quyet-dinh-so-3958-qd-ubnd-ve-viec-cong-bo-dan-971224",
+      "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6843/tintuc/2026/9/tb-so-111-tthc-qd-so-3958-ngay-23.9-tthc.ldsigned639259321271092336.pdf",
+      "pdfSha256": "6bd5dc7093abaf1e278947b357b4fef379f79bca75001a553a2935919b84afdb",
+      "code": "1.013896",
+      "name": "Thông báo tiếp nhận hồ sơ công bố hợp quy dựa trên kết quả chứng nhận hợp quy của tổ chức ch ứng nh ận h ợp quy đư ợc ch ỉ định (bên thứ ba) đối với thuốc lá Thông tư số 51/2025/TTBYT ngày 31/12/2025 của Bộ trưởng Bộ Y tế",
+      "sectionStatus": "repealed",
+      "levelHint": "province",
+      "communeReceptionEvidence": false,
+      "page": 3,
+      "context": "STT Mã TTHC Tên TTHC Tên văn bản quy phạm pháp luật quy định việc bãi bỏ TTHC THỦ TỤC HÀNH CHÍNH CẤP TỈNH LĨNH VỰC PHÒNG BỆNH 1 1.013896 Thông báo tiếp nhận hồ sơ công bố hợp quy dựa trên kết quả chứng nhận hợp quy của tổ chức ch ứng nh ận h ợp quy đư ợc ch ỉ định (bên thứ ba) đối với thuốc lá Thông tư số 51/2025/TTBYT ngày 31/12/2025 của Bộ trưởng Bộ Y tế; Thông tư số 14/2026/TTBKHCN ngày 09/4/2026 của Bộ trưởng Bộ Khoa học và Công nghệ 2 1.013898 Thông báo tiếp nhận hồ sơ công bố hợp quy dựa trên kết quả tự đánh giá của tổ chức, cá nhân sản xuất, kinh doanh thuốc lá (bên thứ nhất) Thông tư số 51/2025/TTBYT ngày 31/12/2025 của Bộ trưởng Bộ Y tế; Thông tư số 14/2026/TTBKHCN ngày 09/4/2026 của Bộ trưởng Bộ Khoa học và Công nghệ "
+    },
+    {
+      "decisionNo": "3958/QĐ-UBND",
+      "decisionDate": "2026-09-23",
+      "publishedDate": "",
+      "effectiveDate": "2026-09-23",
+      "effectiveDateSource": "default_effective_from_signing_date",
+      "currentStateAtAsOf": "current_or_immediate_unless_repealed",
+      "classification": "public_tthc",
+      "ingestStatus": "applied",
+      "field": "PHÒNG BỆNH",
+      "articleUrl": "https://nhichieu.haiphong.gov.vn/tra-cuu-thu-tuc-hanh-chinh-90290/so-111-tb-vhxh-ngay-24-thang-9-nam-2026-thong-bao-quyet-dinh-so-3958-qd-ubnd-ve-viec-cong-bo-dan-971224",
+      "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6843/tintuc/2026/9/tb-so-111-tthc-qd-so-3958-ngay-23.9-tthc.ldsigned639259321271092336.pdf",
+      "pdfSha256": "6bd5dc7093abaf1e278947b357b4fef379f79bca75001a553a2935919b84afdb",
+      "code": "1.013898",
+      "name": "Thông báo tiếp nhận hồ sơ công bố hợp quy dựa trên kết quả tự đánh giá của tổ chức, cá nhân sản xuất, kinh doanh thuốc lá (bên thứ nhất) Thông tư số 51/2025/TTBYT ngày 31/12/2025 của Bộ trưởng Bộ Y tế; Thông tư số 14/2026/TTBKHCN ngày 09/4/2026 của Bộ trưởng",
+      "sectionStatus": "repealed",
+      "levelHint": "province",
+      "communeReceptionEvidence": false,
+      "page": 3,
+      "context": "Y tế; Thông tư số 14/2026/TTBKHCN ngày 09/4/2026 của Bộ trưởng Bộ Khoa học và Công nghệ 2 1.013898 Thông báo tiếp nhận hồ sơ công bố hợp quy dựa trên kết quả tự đánh giá của tổ chức, cá nhân sản xuất, kinh doanh thuốc lá (bên thứ nhất) Thông tư số 51/2025/TTBYT ngày 31/12/2025 của Bộ trưởng Bộ Y tế; Thông tư số 14/2026/TTBKHCN ngày 09/4/2026 của Bộ trưởng Bộ Khoa học và Công nghệ "
     },
     {
       "decisionNo": "3965/QĐ-UBND",
@@ -13443,9 +13504,9 @@
   ],
   "summary": {
     "decisions": 35,
-    "uniqueCodes": 410,
+    "uniqueCodes": 412,
     "communeReceptionCodes": 258,
-    "repealedCodes": 177,
+    "repealedCodes": 179,
     "futureEffectiveCodes": 2,
     "needsReviewDecisions": 0
   }
