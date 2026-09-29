@@ -56,7 +56,7 @@ Quy tắc tự động:
 1. Lần đầu chỉ ghi nhận baseline URL, không nhập lại quyết định lịch sử.
 2. Quyết định nội bộ được lưu dấu vết nhưng không đưa vào Master Data public.
 3. Quyết định công khai mới chỉ được tải/đưa vào extractor khi có PDF chính thức.
-4. Quyết định tự phát hiện nhưng chưa xác định được điều khoản hiệu lực hoặc lĩnh vực bị đánh dấu `needs_*`; builder không được phép áp dụng vào tập public và CI sẽ chặn merge.
+4. Quyết định không ghi điều khoản hiệu lực được coi là có hiệu lực kể từ ngày ký (quy tắc nghiệp vụ từ 29/9/2026, `effectiveDateSource = default_effective_from_signing_date`). Quyết định chưa xác định được ngày ký hoặc lĩnh vực bị đánh dấu `needs_*`; builder không được phép áp dụng vào tập public và CI sẽ chặn merge. Quyết định `reviewed_*` (chờ rà soát) không làm thêm/bớt TTHC.
 5. Khi phát hiện thay đổi, GitHub Actions tự tạo **Issue → branch `auto/official-tthc-update` → Pull Request**; workflow **không tự merge**.
 6. Nếu PR tự động cũ còn mở, lần chạy sau không tạo PR trùng.
 

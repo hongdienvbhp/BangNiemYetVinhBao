@@ -6,8 +6,8 @@
   "statusRule": "Only official Hải Phòng/Vĩnh Bảo evidence may establish current/repealed status. DVCQG/formalityId is technical identity only and never establishes legal effectiveness.",
   "summary": {
     "total": 37,
-    "currentOfficialCommune": 35,
-    "repealedOfficial": 2,
+    "currentOfficialCommune": 34,
+    "repealedOfficial": 3,
     "needsVerification": 0
   },
   "rows": [
@@ -86,11 +86,17 @@
       "priorityName": "Chuyển trường đối với học sinh trung học cơ sở.",
       "canonicalName": "Chuyển trường đối với học sinh trung học cơ sở",
       "field": "GIÁO DỤC",
-      "legalStatus": "current_official_commune_evidence",
+      "legalStatus": "repealed_official_evidence",
       "communeScopeEvidence": true,
-      "decisionNo": "2851/QĐ-UBND",
-      "decisionDate": "2025-07-14",
+      "decisionNo": "1847/QĐ-UBND",
+      "decisionDate": "2026-05-19",
       "sources": [
+        {
+          "url": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1847639156687053039888.pdf",
+          "type": "official_haiphong_source",
+          "authority": "UBND thành phố Hải Phòng",
+          "note": "QĐ 1847/QĐ-UBND ngày 19/5/2026 (không ghi điều khoản hiệu lực → hiệu lực từ ngày ký theo quy tắc nghiệp vụ 29/9/2026), Phụ lục II 'Danh mục TTHC bị bãi bỏ', mục II cấp xã: 2.002481; thay thế bằng TTHC dùng chung 2.002854 'Chuyển trường và tiếp nhận học sinh'."
+        },
         {
           "url": "https://cdn.haiphong.gov.vn/gov-hpg/6805/tintuc/2025/12/thong-bao-danh-muc-thu-tuc-hanh-chinh-phi-dia-gioi.signed639004671669010703.pdf",
           "type": "official_haiphong_source",
@@ -99,7 +105,7 @@
         }
       ],
       "localCorpusEvidence": [],
-      "verificationCheckedAt": "2026-09-07",
+      "verificationCheckedAt": "2026-09-29",
       "legalStatusBasis": "official_haiphong_source",
       "dvcqgRole": "technical_identity_only"
     },

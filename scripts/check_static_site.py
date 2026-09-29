@@ -393,8 +393,9 @@ for code, cross in p51_by_code.items():
         fail(f"{code}: liveNameVisible lệch manifest")
 
 # Ma trận kiểm chứng pháp lý của 37 mã từng thiếu ở bước trước.
-# 2.001009: bãi bỏ theo QĐ 4517/QĐ-UBND; 2.001283: bãi bỏ theo QĐ 2127/QĐ-UBND (hiệu lực 01/7/2026).
-P51_REPEALED = {"2.001009", "2.001283"}
+# 2.001009: bãi bỏ theo QĐ 4517/QĐ-UBND; 2.001283: bãi bỏ theo QĐ 2127/QĐ-UBND (hiệu lực 01/7/2026);
+# 2.002481: bãi bỏ theo QĐ 1847/QĐ-UBND (19/5/2026).
+P51_REPEALED = {"2.001009", "2.001283", "2.002481"}
 legal_rows = priority51_legal_payload.get("rows") if isinstance(priority51_legal_payload, dict) else None
 if not isinstance(legal_rows, list):
     fail("data/priority-51-legal-verification.json thiếu rows")
@@ -405,8 +406,8 @@ if len(legal_rows) != 37 or len(legal_codes) != len(set(legal_codes)) or "" in l
 legal_current = [row for row in legal_rows if row.get("legalStatus") == "current_official_commune_evidence"]
 legal_repealed = [row for row in legal_rows if row.get("legalStatus") == "repealed_official_evidence"]
 legal_other = [row for row in legal_rows if row.get("legalStatus") not in {"current_official_commune_evidence", "repealed_official_evidence"}]
-if len(legal_current) != 35 or len(legal_repealed) != 2 or legal_other:
-    fail(f"Ma trận pháp lý phải là 35 current + 2 repealed + 0 pending, hiện {len(legal_current)}/{len(legal_repealed)}/{len(legal_other)}")
+if len(legal_current) != 34 or len(legal_repealed) != 3 or legal_other:
+    fail(f"Ma trận pháp lý phải là 34 current + 3 repealed + 0 pending, hiện {len(legal_current)}/{len(legal_repealed)}/{len(legal_other)}")
 if {str(row.get("code") or "") for row in legal_repealed} != P51_REPEALED:
     fail(f"Mã bãi bỏ trong ma trận 51 phải là {sorted(P51_REPEALED)}")
 

@@ -573,6 +573,8 @@ CITY_SPACING_FIXES = {
     "s ự": "sự", "t ập": "tập", "d ự": "dự", "ngh ề": "nghề", "duy ệt": "duyệt",
     "nhi ệm": "nhiệm", "ngư ời": "người", "trư ờng": "trường", "ti ểu": "tiểu",
     "th ục": "thục", "t ừ": "từ", "phê duy ệt": "phê duyệt",
+    # Bổ sung 29/9/2026 (khóa có khoảng trắng đầu để chỉ khớp đầu từ; PDF QĐ 1635, 1747, 1847, 1897, 2032, 3856, 3878, 3904, 3957, 4016).
+    "Th ời": "Thời", " b ệnh": " bệnh", " b ố": " bố", " bi ểu": " biểu", " c ảng": " cảng", " c ấm": " cấm", " ch ế": " chế", " ch ỉ": " chỉ", " ch ỉnh": " chỉnh", " ch ống": " chống", " ch ứng": " chứng", " ch ữa": " chữa", " chuy ển": " chuyển", " d ục": " dục", " di ện": " diện", " g ọi": " gọi", " g ốc": " gốc", " gi ảm": " giảm", " h ệ": " hệ", " h ồ": " hồ", " h ợp": " hợp", " kh ẩu": " khẩu", " ki ện": " kiện", " l ấy": " lấy", " l ực": " lực", " li ệu": " liệu", " lu ật": " luật", " lư ợng": " lượng", " m ầm": " mầm", " ng ạch": " ngạch", " ngh ệ": " nghệ", " ngu ồn": " nguồn", " nh ất": " nhất", " nh ập": " nhập", " nhi ều": " nhiều", " ph ố": " phố", " ph ổ": " phổ", " ph ủ": " phủ", " s ản": " sản", " s ửa": " sửa", " t ại": " tại", " t ật": " tật", " t ỉnh": " tỉnh", " th ải": " thải", " th ể": " thể", " th ủy": " thủy", " thu ộc": " thuộc", " thư ờng": " thường", " ti ền": " tiền", " tr ả": " trả", " tr ẻ": " trẻ", " tr ợ": " trợ", " tu ất": " tuất", " v ật": " vật", "Đi ều": "Điều", " đ ảm": " đảm", " đ ầu": " đầu", " đ ể": " để", " đ ủ": " đủ", " đi ều": " điều", " tr ồng": " trồng",
 }
 
 

@@ -9,8 +9,9 @@ ROOT = Path(__file__).resolve().parents[1]
 MASTER = ROOT / "data/thu-tuc.json"
 GUIDANCE = ROOT / "data/tthc-guidance-enrichment.json"
 FIELDS = ("coQuanThucHien", "thanhPhanHoSo", "thoiHan", "lePhi", "dvctt", "ketQua")
-# 51 TTHC trọng điểm trừ mã đã bãi bỏ: 2.001009 (QĐ 4517/QĐ-UBND), 2.001283 (QĐ 2127/QĐ-UBND).
-TARGET = 49
+# 51 TTHC trọng điểm trừ mã đã bãi bỏ: 2.001009 (QĐ 4517/QĐ-UBND), 2.001283 (QĐ 2127/QĐ-UBND),
+# 2.002481 (QĐ 1847/QĐ-UBND).
+TARGET = 48
 
 
 def filled(value: object) -> bool:
