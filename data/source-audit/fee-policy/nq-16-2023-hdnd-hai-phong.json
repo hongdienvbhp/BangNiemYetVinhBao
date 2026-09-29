@@ -1,0 +1,50 @@
+{
+  "format": "official-fee-policy-evidence",
+  "version": 1,
+  "policy": "Evidence layer only. Bản PDF là bản scan (sao y ký số của Văn phòng Đoàn ĐBQH và HĐND thành phố, 15/12/2023), không có lớp chữ; nội dung dưới đây chép từ OCR và phải đối chiếu bằng mắt với PDF trước khi dùng mức thu.",
+  "document": {
+    "decisionNo": "16/2023/NQ-HĐND",
+    "title": "Nghị quyết sửa đổi, bổ sung một số Nghị quyết quy định một số loại phí, lệ phí thuộc thẩm quyền Hội đồng nhân dân thành phố trên địa bàn thành phố Hải Phòng",
+    "issuer": "Hội đồng nhân dân thành phố Hải Phòng",
+    "adoptedDate": "2023-12-08",
+    "effectiveDate": "2023-12-18",
+    "numberSource": "Tiêu đề trang chi tiết trên cổng HĐND thành phố; OCR số hiệu trên bản scan không rõ.",
+    "amends": "Phụ lục số 03, 04, 05 của NQ 12/2018/NQ-HĐND ngày 12/7/2018 của HĐND thành phố Hải Phòng"
+  },
+  "evidence": {
+    "sourceRole": "local_fee_policy",
+    "classification": "fee_policy_direct_rate",
+    "url": "https://dbndhaiphong.gov.vn/SiteFolders/dbndhp/2472/Documents/16-NQ.signed1.pdf",
+    "articleUrl": "https://dbndhaiphong.gov.vn/ky-hop-thu-13/Nghi-quyet-so-16-2023-NQ-HDND-ve-sua-doi--bo-sung-mot-so-Nghi-quyet-quy-dinh-mot-so-loai-phi--le-phi-thuoc-tham-quyen-HDND-thanh-pho-tren-dia-ban-thanh-pho-Hai-Phong-2944",
+    "attachmentUrl": "https://dbndhaiphong.gov.vn/SiteFolders/dbndhp/2472/Documents/16-NQ.signed1.pdf",
+    "attachmentSha256": "45a640efc8351a551a7677c4bb5157e6e96d1aa0acf856f3cd48178f2b3c3784",
+    "filePath": "data/source-audit/fee-policy/NQ-16-2023-NQ-HDND-HP.pdf",
+    "decisionNumbers": ["16/2023/NQ-HĐND", "12/2018/NQ-HĐND"],
+    "publishedDate": "2023-12-27",
+    "effectiveDate": "2023-12-18",
+    "repealContext": false,
+    "retrievedAt": "2026-09-29"
+  },
+  "civilStatusFee": {
+    "clause": "Điều 1 khoản 2: sửa đổi, bổ sung điểm b, điểm c Mục 1 Phụ lục số 04 NQ 12/2018/NQ-HĐND",
+    "districtLevelRatesOcrUnverified": {
+      "note": "Điểm b: mức thu tại UBND cấp huyện (trước sáp nhập). Chép từ OCR, CHƯA đối chiếu bằng mắt; dòng 1 không đọc được.",
+      "rows": [
+        {"stt": 1, "noiDung": "Đăng ký khai sinh (đúng hạn, không đúng hạn, đăng ký lại, cho người đã có hồ sơ, giấy tờ cá nhân)", "mucThu": "[OCR không đọc được]"},
+        {"stt": 2, "noiDung": "Đăng ký khai tử, đăng ký lại khai tử", "mucThu": "75.000 đồng/lần"},
+        {"stt": 3, "noiDung": "Đăng ký kết hôn mới; đăng ký lại kết hôn", "mucThu": "1.500.000 đồng/lần"},
+        {"stt": 4, "noiDung": "Đăng ký nhận cha, mẹ, con", "mucThu": "1.500.000 đồng/lần"},
+        {"stt": 5, "noiDung": "Đăng ký giám hộ; chấm dứt giám hộ", "mucThu": "75.000 đồng/lần"},
+        {"stt": 6, "noiDung": "Thay đổi, cải chính hộ tịch cho người từ đủ 14 tuổi trở lên cư trú trong nước; thay đổi, cải chính, bổ sung hộ tịch có yếu tố nước ngoài; xác định lại dân tộc", "mucThu": "28.000 đồng/lần"},
+        {"stt": 7, "noiDung": "Ghi vào Sổ hộ tịch việc hộ tịch của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài", "mucThu": "75.000 đồng/lần"},
+        {"stt": 8, "noiDung": "Đăng ký hộ tịch khác", "mucThu": "75.000 đồng/lần"}
+      ]
+    },
+    "exemptions": [
+      "Đăng ký hộ tịch cho trẻ em, hộ nghèo, người cao tuổi, người khuyết tật, người thuộc gia đình có công với cách mạng, đồng bào dân tộc thiểu số ở xã có điều kiện kinh tế - xã hội đặc biệt khó khăn và một số đối tượng đặc biệt theo quy định",
+      "Đăng ký khai sinh đúng hạn, khai tử đúng hạn, đăng ký giám hộ, chấm dứt giám hộ, đăng ký kết hôn của công dân Việt Nam cư trú ở trong nước thực hiện tại UBND cấp xã"
+    ],
+    "communeLevelRates": "[cần bổ sung] Điểm a Mục 1 Phụ lục số 04 NQ 12/2018/NQ-HĐND (mức thu tại UBND cấp xã) không bị NQ 16/2023 sửa đổi; chưa tìm được bản gốc NQ 12/2018.",
+    "twoTierIssue": "Phân tích (chưa kiểm chứng): sau khi bỏ cấp huyện, các việc hộ tịch trước thuộc UBND cấp huyện (có yếu tố nước ngoài, cải chính từ đủ 14 tuổi...) do UBND xã thực hiện; áp dụng mức thu điểm a hay điểm b cần Sở Tư pháp/Sở Tài chính hướng dẫn."
+  }
+}

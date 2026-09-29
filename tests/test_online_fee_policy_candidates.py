@@ -5,6 +5,7 @@ from pathlib import Path
 
 from scripts.build_online_fee_policy_candidates import (
     CANONICAL,
+    CIVIL_POLICY,
     DIRECT_POLICY,
     ENRICHMENT,
     OUTPUT,
@@ -27,7 +28,8 @@ class OnlineFeePolicyCandidateTests(unittest.TestCase):
         cls.policy = load(POLICY)
         cls.canonical = load(CANONICAL)
         cls.direct = load(DIRECT_POLICY)
-        cls.result = build(cls.canonical, load(ENRICHMENT), cls.policy, cls.direct)
+        cls.civil = load(CIVIL_POLICY)
+        cls.result = build(cls.canonical, load(ENRICHMENT), cls.policy, cls.direct, cls.civil)
         cls.by_code = {r["ma"]: r for r in cls.result["rows"]}
 
     def test_output_file_is_deterministic_build(self):
@@ -43,7 +45,7 @@ class OnlineFeePolicyCandidateTests(unittest.TestCase):
         self.assertEqual(self.policy["document"]["effectiveDate"], "2026-08-08")
 
     def test_evidence_hash_matches_stored_pdf(self):
-        for doc in (self.policy, self.direct):
+        for doc in (self.policy, self.direct, self.civil):
             path = ROOT / doc["evidence"]["filePath"]
             data = path.read_bytes()
             if data.startswith(b"version https://git-lfs"):
@@ -69,6 +71,9 @@ class OnlineFeePolicyCandidateTests(unittest.TestCase):
         row = self.by_code["1.001193"]
         self.assertEqual(row["directRates"], [])
         self.assertIn("cần bổ sung", row["directRateNote"])
+        self.assertIn("khai sinh đúng hạn", row["directRateNote"])
+        self.assertEqual(row["civilStatusEvidenceId"], evidence_id(self.civil["evidence"]))
+        self.assertTrue(self.result["civilStatusSource"]["ocrUnverified"])
 
     def test_rows_are_candidate_only_and_reference_evidence(self):
         ev = evidence_id(self.policy["evidence"])

@@ -20,6 +20,14 @@
       "civilStatusFee": "[cần bổ sung] Văn bản quy định mức lệ phí hộ tịch khi nộp trực tiếp trên địa bàn (khu vực Hải Phòng cũ) chưa xác định được: không có trên danh mục Công báo mới; vbpl.vn bị chặn trong phiên rà soát."
     }
   },
+  "civilStatusSource": {
+    "decisionNo": "16/2023/NQ-HĐND",
+    "evidenceId": "ev_ec7bd0f3dfaf83ba9a54bdfb",
+    "attachmentSha256": "45a640efc8351a551a7677c4bb5157e6e96d1aa0acf856f3cd48178f2b3c3784",
+    "ocrUnverified": true,
+    "communeLevelRates": "[cần bổ sung] Điểm a Mục 1 Phụ lục số 04 NQ 12/2018/NQ-HĐND (mức thu tại UBND cấp xã) không bị NQ 16/2023 sửa đổi; chưa tìm được bản gốc NQ 12/2018.",
+    "twoTierIssue": "Phân tích (chưa kiểm chứng): sau khi bỏ cấp huyện, các việc hộ tịch trước thuộc UBND cấp huyện (có yếu tố nước ngoài, cải chính từ đủ 14 tuổi...) do UBND xã thực hiện; áp dụng mức thu điểm a hay điểm b cần Sở Tư pháp/Sở Tài chính hướng dẫn."
+  },
   "summary": {
     "canonicalProcedures": 254,
     "matchedRows": 47,
@@ -63,7 +71,8 @@
       ],
       "directRateSource": null,
       "directRates": [],
-      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
+      "directRateNote": "Mức lệ phí hộ tịch cấp xã: [cần bổ sung] Điểm a Mục 1 Phụ lục số 04 NQ 12/2018/NQ-HĐND (mức thu tại UBND cấp xã) không bị NQ 16/2023 sửa đổi; chưa tìm được bản gốc NQ 12/2018. Miễn tại UBND xã (NQ 16/2023/NQ-HĐND): Đăng ký khai sinh đúng hạn, khai tử đúng hạn, đăng ký giám hộ, chấm dứt giám hộ, đăng ký kết hôn của công dân Việt Nam cư trú ở trong nước thực hiện tại UBND cấp xã.",
+      "civilStatusEvidenceId": "ev_ec7bd0f3dfaf83ba9a54bdfb",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -97,7 +106,8 @@
       ],
       "directRateSource": null,
       "directRates": [],
-      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
+      "directRateNote": "Mức lệ phí hộ tịch cấp xã: [cần bổ sung] Điểm a Mục 1 Phụ lục số 04 NQ 12/2018/NQ-HĐND (mức thu tại UBND cấp xã) không bị NQ 16/2023 sửa đổi; chưa tìm được bản gốc NQ 12/2018. Miễn tại UBND xã (NQ 16/2023/NQ-HĐND): Đăng ký khai sinh đúng hạn, khai tử đúng hạn, đăng ký giám hộ, chấm dứt giám hộ, đăng ký kết hôn của công dân Việt Nam cư trú ở trong nước thực hiện tại UBND cấp xã.",
+      "civilStatusEvidenceId": "ev_ec7bd0f3dfaf83ba9a54bdfb",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -134,7 +144,8 @@
       ],
       "directRateSource": null,
       "directRates": [],
-      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
+      "directRateNote": "Mức lệ phí hộ tịch cấp xã: [cần bổ sung] Điểm a Mục 1 Phụ lục số 04 NQ 12/2018/NQ-HĐND (mức thu tại UBND cấp xã) không bị NQ 16/2023 sửa đổi; chưa tìm được bản gốc NQ 12/2018. Miễn tại UBND xã (NQ 16/2023/NQ-HĐND): Đăng ký khai sinh đúng hạn, khai tử đúng hạn, đăng ký giám hộ, chấm dứt giám hộ, đăng ký kết hôn của công dân Việt Nam cư trú ở trong nước thực hiện tại UBND cấp xã.",
+      "civilStatusEvidenceId": "ev_ec7bd0f3dfaf83ba9a54bdfb",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -171,7 +182,8 @@
       ],
       "directRateSource": null,
       "directRates": [],
-      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
+      "directRateNote": "Mức lệ phí hộ tịch cấp xã: [cần bổ sung] Điểm a Mục 1 Phụ lục số 04 NQ 12/2018/NQ-HĐND (mức thu tại UBND cấp xã) không bị NQ 16/2023 sửa đổi; chưa tìm được bản gốc NQ 12/2018. Miễn tại UBND xã (NQ 16/2023/NQ-HĐND): Đăng ký khai sinh đúng hạn, khai tử đúng hạn, đăng ký giám hộ, chấm dứt giám hộ, đăng ký kết hôn của công dân Việt Nam cư trú ở trong nước thực hiện tại UBND cấp xã.",
+      "civilStatusEvidenceId": "ev_ec7bd0f3dfaf83ba9a54bdfb",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -205,7 +217,8 @@
       ],
       "directRateSource": null,
       "directRates": [],
-      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
+      "directRateNote": "Mức lệ phí hộ tịch cấp xã: [cần bổ sung] Điểm a Mục 1 Phụ lục số 04 NQ 12/2018/NQ-HĐND (mức thu tại UBND cấp xã) không bị NQ 16/2023 sửa đổi; chưa tìm được bản gốc NQ 12/2018. Miễn tại UBND xã (NQ 16/2023/NQ-HĐND): Đăng ký khai sinh đúng hạn, khai tử đúng hạn, đăng ký giám hộ, chấm dứt giám hộ, đăng ký kết hôn của công dân Việt Nam cư trú ở trong nước thực hiện tại UBND cấp xã.",
+      "civilStatusEvidenceId": "ev_ec7bd0f3dfaf83ba9a54bdfb",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -242,7 +255,8 @@
       ],
       "directRateSource": null,
       "directRates": [],
-      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
+      "directRateNote": "Mức lệ phí hộ tịch cấp xã: [cần bổ sung] Điểm a Mục 1 Phụ lục số 04 NQ 12/2018/NQ-HĐND (mức thu tại UBND cấp xã) không bị NQ 16/2023 sửa đổi; chưa tìm được bản gốc NQ 12/2018. Miễn tại UBND xã (NQ 16/2023/NQ-HĐND): Đăng ký khai sinh đúng hạn, khai tử đúng hạn, đăng ký giám hộ, chấm dứt giám hộ, đăng ký kết hôn của công dân Việt Nam cư trú ở trong nước thực hiện tại UBND cấp xã.",
+      "civilStatusEvidenceId": "ev_ec7bd0f3dfaf83ba9a54bdfb",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -276,7 +290,8 @@
       ],
       "directRateSource": null,
       "directRates": [],
-      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
+      "directRateNote": "Mức lệ phí hộ tịch cấp xã: [cần bổ sung] Điểm a Mục 1 Phụ lục số 04 NQ 12/2018/NQ-HĐND (mức thu tại UBND cấp xã) không bị NQ 16/2023 sửa đổi; chưa tìm được bản gốc NQ 12/2018. Miễn tại UBND xã (NQ 16/2023/NQ-HĐND): Đăng ký khai sinh đúng hạn, khai tử đúng hạn, đăng ký giám hộ, chấm dứt giám hộ, đăng ký kết hôn của công dân Việt Nam cư trú ở trong nước thực hiện tại UBND cấp xã.",
+      "civilStatusEvidenceId": "ev_ec7bd0f3dfaf83ba9a54bdfb",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -313,7 +328,8 @@
       ],
       "directRateSource": null,
       "directRates": [],
-      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
+      "directRateNote": "Mức lệ phí hộ tịch cấp xã: [cần bổ sung] Điểm a Mục 1 Phụ lục số 04 NQ 12/2018/NQ-HĐND (mức thu tại UBND cấp xã) không bị NQ 16/2023 sửa đổi; chưa tìm được bản gốc NQ 12/2018. Miễn tại UBND xã (NQ 16/2023/NQ-HĐND): Đăng ký khai sinh đúng hạn, khai tử đúng hạn, đăng ký giám hộ, chấm dứt giám hộ, đăng ký kết hôn của công dân Việt Nam cư trú ở trong nước thực hiện tại UBND cấp xã.",
+      "civilStatusEvidenceId": "ev_ec7bd0f3dfaf83ba9a54bdfb",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -347,7 +363,8 @@
       ],
       "directRateSource": null,
       "directRates": [],
-      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
+      "directRateNote": "Mức lệ phí hộ tịch cấp xã: [cần bổ sung] Điểm a Mục 1 Phụ lục số 04 NQ 12/2018/NQ-HĐND (mức thu tại UBND cấp xã) không bị NQ 16/2023 sửa đổi; chưa tìm được bản gốc NQ 12/2018. Miễn tại UBND xã (NQ 16/2023/NQ-HĐND): Đăng ký khai sinh đúng hạn, khai tử đúng hạn, đăng ký giám hộ, chấm dứt giám hộ, đăng ký kết hôn của công dân Việt Nam cư trú ở trong nước thực hiện tại UBND cấp xã.",
+      "civilStatusEvidenceId": "ev_ec7bd0f3dfaf83ba9a54bdfb",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -381,7 +398,8 @@
       ],
       "directRateSource": null,
       "directRates": [],
-      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
+      "directRateNote": "Mức lệ phí hộ tịch cấp xã: [cần bổ sung] Điểm a Mục 1 Phụ lục số 04 NQ 12/2018/NQ-HĐND (mức thu tại UBND cấp xã) không bị NQ 16/2023 sửa đổi; chưa tìm được bản gốc NQ 12/2018. Miễn tại UBND xã (NQ 16/2023/NQ-HĐND): Đăng ký khai sinh đúng hạn, khai tử đúng hạn, đăng ký giám hộ, chấm dứt giám hộ, đăng ký kết hôn của công dân Việt Nam cư trú ở trong nước thực hiện tại UBND cấp xã.",
+      "civilStatusEvidenceId": "ev_ec7bd0f3dfaf83ba9a54bdfb",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -415,7 +433,8 @@
       ],
       "directRateSource": null,
       "directRates": [],
-      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
+      "directRateNote": "Mức lệ phí hộ tịch cấp xã: [cần bổ sung] Điểm a Mục 1 Phụ lục số 04 NQ 12/2018/NQ-HĐND (mức thu tại UBND cấp xã) không bị NQ 16/2023 sửa đổi; chưa tìm được bản gốc NQ 12/2018. Miễn tại UBND xã (NQ 16/2023/NQ-HĐND): Đăng ký khai sinh đúng hạn, khai tử đúng hạn, đăng ký giám hộ, chấm dứt giám hộ, đăng ký kết hôn của công dân Việt Nam cư trú ở trong nước thực hiện tại UBND cấp xã.",
+      "civilStatusEvidenceId": "ev_ec7bd0f3dfaf83ba9a54bdfb",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -449,7 +468,8 @@
       ],
       "directRateSource": null,
       "directRates": [],
-      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
+      "directRateNote": "Mức lệ phí hộ tịch cấp xã: [cần bổ sung] Điểm a Mục 1 Phụ lục số 04 NQ 12/2018/NQ-HĐND (mức thu tại UBND cấp xã) không bị NQ 16/2023 sửa đổi; chưa tìm được bản gốc NQ 12/2018. Miễn tại UBND xã (NQ 16/2023/NQ-HĐND): Đăng ký khai sinh đúng hạn, khai tử đúng hạn, đăng ký giám hộ, chấm dứt giám hộ, đăng ký kết hôn của công dân Việt Nam cư trú ở trong nước thực hiện tại UBND cấp xã.",
+      "civilStatusEvidenceId": "ev_ec7bd0f3dfaf83ba9a54bdfb",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -483,7 +503,8 @@
       ],
       "directRateSource": null,
       "directRates": [],
-      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
+      "directRateNote": "Mức lệ phí hộ tịch cấp xã: [cần bổ sung] Điểm a Mục 1 Phụ lục số 04 NQ 12/2018/NQ-HĐND (mức thu tại UBND cấp xã) không bị NQ 16/2023 sửa đổi; chưa tìm được bản gốc NQ 12/2018. Miễn tại UBND xã (NQ 16/2023/NQ-HĐND): Đăng ký khai sinh đúng hạn, khai tử đúng hạn, đăng ký giám hộ, chấm dứt giám hộ, đăng ký kết hôn của công dân Việt Nam cư trú ở trong nước thực hiện tại UBND cấp xã.",
+      "civilStatusEvidenceId": "ev_ec7bd0f3dfaf83ba9a54bdfb",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -518,6 +539,7 @@
       "directRateSource": null,
       "directRates": [],
       "directRateNote": null,
+      "civilStatusEvidenceId": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -554,7 +576,8 @@
       ],
       "directRateSource": null,
       "directRates": [],
-      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
+      "directRateNote": "Mức lệ phí hộ tịch cấp xã: [cần bổ sung] Điểm a Mục 1 Phụ lục số 04 NQ 12/2018/NQ-HĐND (mức thu tại UBND cấp xã) không bị NQ 16/2023 sửa đổi; chưa tìm được bản gốc NQ 12/2018. Miễn tại UBND xã (NQ 16/2023/NQ-HĐND): Đăng ký khai sinh đúng hạn, khai tử đúng hạn, đăng ký giám hộ, chấm dứt giám hộ, đăng ký kết hôn của công dân Việt Nam cư trú ở trong nước thực hiện tại UBND cấp xã.",
+      "civilStatusEvidenceId": "ev_ec7bd0f3dfaf83ba9a54bdfb",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -588,7 +611,8 @@
       ],
       "directRateSource": null,
       "directRates": [],
-      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
+      "directRateNote": "Mức lệ phí hộ tịch cấp xã: [cần bổ sung] Điểm a Mục 1 Phụ lục số 04 NQ 12/2018/NQ-HĐND (mức thu tại UBND cấp xã) không bị NQ 16/2023 sửa đổi; chưa tìm được bản gốc NQ 12/2018. Miễn tại UBND xã (NQ 16/2023/NQ-HĐND): Đăng ký khai sinh đúng hạn, khai tử đúng hạn, đăng ký giám hộ, chấm dứt giám hộ, đăng ký kết hôn của công dân Việt Nam cư trú ở trong nước thực hiện tại UBND cấp xã.",
+      "civilStatusEvidenceId": "ev_ec7bd0f3dfaf83ba9a54bdfb",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -623,6 +647,7 @@
       "directRateSource": null,
       "directRates": [],
       "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
+      "civilStatusEvidenceId": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -658,6 +683,7 @@
       "directRateSource": null,
       "directRates": [],
       "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
+      "civilStatusEvidenceId": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -734,6 +760,7 @@
         }
       ],
       "directRateNote": null,
+      "civilStatusEvidenceId": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -762,7 +789,8 @@
       "currentGuidanceProvenance": null,
       "directRateSource": null,
       "directRates": [],
-      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
+      "directRateNote": "Mức lệ phí hộ tịch cấp xã: [cần bổ sung] Điểm a Mục 1 Phụ lục số 04 NQ 12/2018/NQ-HĐND (mức thu tại UBND cấp xã) không bị NQ 16/2023 sửa đổi; chưa tìm được bản gốc NQ 12/2018. Miễn tại UBND xã (NQ 16/2023/NQ-HĐND): Đăng ký khai sinh đúng hạn, khai tử đúng hạn, đăng ký giám hộ, chấm dứt giám hộ, đăng ký kết hôn của công dân Việt Nam cư trú ở trong nước thực hiện tại UBND cấp xã.",
+      "civilStatusEvidenceId": "ev_ec7bd0f3dfaf83ba9a54bdfb",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -790,7 +818,8 @@
       "currentGuidanceProvenance": null,
       "directRateSource": null,
       "directRates": [],
-      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
+      "directRateNote": "Mức lệ phí hộ tịch cấp xã: [cần bổ sung] Điểm a Mục 1 Phụ lục số 04 NQ 12/2018/NQ-HĐND (mức thu tại UBND cấp xã) không bị NQ 16/2023 sửa đổi; chưa tìm được bản gốc NQ 12/2018. Miễn tại UBND xã (NQ 16/2023/NQ-HĐND): Đăng ký khai sinh đúng hạn, khai tử đúng hạn, đăng ký giám hộ, chấm dứt giám hộ, đăng ký kết hôn của công dân Việt Nam cư trú ở trong nước thực hiện tại UBND cấp xã.",
+      "civilStatusEvidenceId": "ev_ec7bd0f3dfaf83ba9a54bdfb",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -860,6 +889,7 @@
         }
       ],
       "directRateNote": null,
+      "civilStatusEvidenceId": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -889,6 +919,7 @@
       "directRateSource": null,
       "directRates": [],
       "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
+      "civilStatusEvidenceId": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -959,6 +990,7 @@
         }
       ],
       "directRateNote": null,
+      "civilStatusEvidenceId": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -1029,6 +1061,7 @@
         }
       ],
       "directRateNote": null,
+      "civilStatusEvidenceId": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -1099,6 +1132,7 @@
         }
       ],
       "directRateNote": null,
+      "civilStatusEvidenceId": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -1169,6 +1203,7 @@
         }
       ],
       "directRateNote": null,
+      "civilStatusEvidenceId": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -1239,6 +1274,7 @@
         }
       ],
       "directRateNote": null,
+      "civilStatusEvidenceId": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -1309,6 +1345,7 @@
         }
       ],
       "directRateNote": null,
+      "civilStatusEvidenceId": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -1338,6 +1375,7 @@
       "directRateSource": null,
       "directRates": [],
       "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
+      "civilStatusEvidenceId": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -1367,6 +1405,7 @@
       "directRateSource": null,
       "directRates": [],
       "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
+      "civilStatusEvidenceId": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -1437,6 +1476,7 @@
         }
       ],
       "directRateNote": null,
+      "civilStatusEvidenceId": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -1466,6 +1506,7 @@
       "directRateSource": null,
       "directRates": [],
       "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
+      "civilStatusEvidenceId": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -1536,6 +1577,7 @@
         }
       ],
       "directRateNote": null,
+      "civilStatusEvidenceId": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -1606,6 +1648,7 @@
         }
       ],
       "directRateNote": null,
+      "civilStatusEvidenceId": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -1676,6 +1719,7 @@
         }
       ],
       "directRateNote": null,
+      "civilStatusEvidenceId": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -1705,6 +1749,7 @@
       "directRateSource": null,
       "directRates": [],
       "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
+      "civilStatusEvidenceId": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -1775,6 +1820,7 @@
         }
       ],
       "directRateNote": null,
+      "civilStatusEvidenceId": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -1804,6 +1850,7 @@
       "directRateSource": null,
       "directRates": [],
       "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
+      "civilStatusEvidenceId": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -1874,6 +1921,7 @@
         }
       ],
       "directRateNote": null,
+      "civilStatusEvidenceId": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -1944,6 +1992,7 @@
         }
       ],
       "directRateNote": null,
+      "civilStatusEvidenceId": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -2014,6 +2063,7 @@
         }
       ],
       "directRateNote": null,
+      "civilStatusEvidenceId": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -2084,6 +2134,7 @@
         }
       ],
       "directRateNote": null,
+      "civilStatusEvidenceId": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -2134,6 +2185,7 @@
         }
       ],
       "directRateNote": null,
+      "civilStatusEvidenceId": null,
       "nq23Points": [
         "Điều 2 khoản 2 điểm a"
       ],
@@ -2183,6 +2235,7 @@
         }
       ],
       "directRateNote": null,
+      "civilStatusEvidenceId": null,
       "nq23Points": [
         "Điều 2 khoản 2 điểm a"
       ],
@@ -2232,6 +2285,7 @@
         }
       ],
       "directRateNote": null,
+      "civilStatusEvidenceId": null,
       "nq23Points": [
         "Điều 2 khoản 2 điểm a"
       ],
@@ -2281,6 +2335,7 @@
         }
       ],
       "directRateNote": null,
+      "civilStatusEvidenceId": null,
       "nq23Points": [
         "Điều 2 khoản 2 điểm a"
       ],

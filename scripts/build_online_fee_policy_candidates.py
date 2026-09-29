@@ -21,6 +21,7 @@ CANONICAL = ROOT / "data" / "thu-tuc.json"
 ENRICHMENT = ROOT / "data" / "tthc-guidance-enrichment.json"
 POLICY = ROOT / "data" / "source-audit" / "fee-policy" / "nq-23-2026-hdnd-hai-phong.json"
 DIRECT_POLICY = ROOT / "data" / "source-audit" / "fee-policy" / "nq-34-2025-hdnd-hai-phong.json"
+CIVIL_POLICY = ROOT / "data" / "source-audit" / "fee-policy" / "nq-16-2023-hdnd-hai-phong.json"
 OUTPUT = ROOT / "data" / "source-audit" / "fee-policy" / "nq-23-2026-online-fee-candidates.json"
 
 ONLINE_RATE = "0 đồng"
@@ -154,8 +155,13 @@ def direct_rates(ref: dict[str, str], direct: dict) -> list[dict]:
     return out
 
 
-def build(canonical: dict, enrichment: dict, policy: dict, direct: dict) -> dict:
+def build(canonical: dict, enrichment: dict, policy: dict, direct: dict, civil: dict) -> dict:
     ev_id = evidence_id(policy["evidence"])
+    civil_ev = evidence_id(civil["evidence"])
+    civil_note = (
+        "Mức lệ phí hộ tịch cấp xã: " + civil["civilStatusFee"]["communeLevelRates"]
+        + " Miễn tại UBND xã (NQ 16/2023/NQ-HĐND): " + civil["civilStatusFee"]["exemptions"][1] + "."
+    )
     direct_ev = evidence_id(direct["evidence"])
     guidance = {str(r.get("ma")): r for r in enrichment.get("rows") or []}
     valid_points = {item["point"] for item in policy["feeItems"]}
@@ -177,7 +183,10 @@ def build(canonical: dict, enrichment: dict, policy: dict, direct: dict) -> dict
                 "currentGuidanceProvenance": ((g or {}).get("fieldProvenance") or {}).get("lePhi"),
                 "directRateSource": direct["document"]["decisionNo"] if ref else None,
                 "directRates": direct_rates(ref, direct) if ref else [],
-                "directRateNote": None if ref or not applies else "[cần bổ sung] mức thu trực tiếp chưa có evidence",
+                "directRateNote": (None if ref or not applies
+                                   else civil_note if str(row.get("linhVuc") or "").strip().upper() == "HỘ TỊCH"
+                                   else "[cần bổ sung] mức thu trực tiếp chưa có evidence"),
+                "civilStatusEvidenceId": civil_ev if applies and str(row.get("linhVuc") or "").strip().upper() == "HỘ TỊCH" else None,
                 "nq23Points": match["points"],
                 "applicability": match["applicability"],
                 "proposedOnlineFee": ONLINE_RATE if applies else None,
@@ -201,6 +210,11 @@ def build(canonical: dict, enrichment: dict, policy: dict, direct: dict) -> dict
                              "attachmentSha256": direct["evidence"]["attachmentSha256"],
                              "conflictWithNq23": direct["conflictWithNq23"],
                              "unresolved": direct["unresolved"]},
+        "civilStatusSource": {"decisionNo": civil["document"]["decisionNo"], "evidenceId": civil_ev,
+                              "attachmentSha256": civil["evidence"]["attachmentSha256"],
+                              "ocrUnverified": True,
+                              "communeLevelRates": civil["civilStatusFee"]["communeLevelRates"],
+                              "twoTierIssue": civil["civilStatusFee"]["twoTierIssue"]},
         "summary": {
             "canonicalProcedures": len(canonical.get("thuTuc") or []),
             "matchedRows": len(rows),
@@ -223,7 +237,7 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="Chỉ kiểm tra file output khớp kết quả build")
     args = parser.parse_args(argv)
-    result = build(_load(CANONICAL), _load(ENRICHMENT), _load(POLICY), _load(DIRECT_POLICY))
+    result = build(_load(CANONICAL), _load(ENRICHMENT), _load(POLICY), _load(DIRECT_POLICY), _load(CIVIL_POLICY))
     text = json.dumps(result, ensure_ascii=False, indent=2) + "\n"
     if args.check:
         if not OUTPUT.exists() or OUTPUT.read_text(encoding="utf-8") != text:

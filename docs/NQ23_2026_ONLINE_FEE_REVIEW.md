@@ -39,7 +39,12 @@
 - 21 dòng có mức thu trực tiếp đã kiểm chứng theo **NQ 34/2025/NQ-HĐND** (lệ phí cấp GCN, phí thẩm định hồ sơ cấp GCN, phí đăng ký giao dịch bảo đảm).
 - 7/11 khoản **không có TTHC nào trong canonical**: GPLĐ người nước ngoài (1.b), GPXD (1.d), giấy phép môi trường (2.c), ĐTM (2.d), tài nguyên nước (2.đ), giống cây lâm nghiệp (2.e), cơ sở thể thao (2.g).
 - Trường `phi`/`phiOnline` trong canonical **đang trống toàn bộ 254 TTHC**.
-- **Lệ phí hộ tịch (mức nộp trực tiếp): [cần bổ sung]** — không có văn bản trên danh mục Công báo mới; vbpl.vn bị chặn. Giá trị "0 — mức lệ phí cụ thể do HĐND quyết định" trên DVCQG là mặc định, không phải mức thu của Hải Phòng.
+- **Lệ phí hộ tịch:** văn bản gốc là NQ 12/2018/NQ-HĐND (Phụ lục 04), sửa đổi bởi **NQ 16/2023/NQ-HĐND** (hiệu lực 18/12/2023; bản scan tải từ cổng HĐND thành phố, SHA-256 `45a640ef…3784`).
+  - NQ 16/2023 chỉ sửa mức thu **tại UBND cấp huyện** (điểm b) và các trường hợp miễn (điểm c). Mức thu tại **UBND cấp xã** (điểm a, NQ 12/2018): **[cần bổ sung]**.
+  - **Miễn tại UBND xã:** khai sinh đúng hạn, khai tử đúng hạn, giám hộ/chấm dứt giám hộ, kết hôn của công dân Việt Nam cư trú trong nước; và các đối tượng trẻ em, hộ nghèo, người cao tuổi, người khuyết tật, người có công… → với các trường hợp này NQ 23/2026 không làm thay đổi số tiền.
+  - Mức thu cấp huyện (OCR, **chưa đối chiếu bằng mắt**): khai tử 75.000 đ; kết hôn, nhận cha mẹ con 1.500.000 đ; giám hộ 75.000 đ; thay đổi, cải chính 28.000 đ; ghi chú hộ tịch 75.000 đ; dòng khai sinh không đọc được.
+  - *Phân tích (chưa kiểm chứng):* sau khi bỏ cấp huyện, việc hộ tịch trước thuộc cấp huyện (có yếu tố nước ngoài, cải chính từ đủ 14 tuổi…) do xã thực hiện; áp mức điểm a hay b cần Sở Tư pháp/Sở Tài chính hướng dẫn.
+  - Giá trị "0 — mức lệ phí cụ thể do HĐND quyết định" trên DVCQG là mặc định, không phải mức thu của Hải Phòng.
 
 **Quy tắc độ tin cậy:** Cao = Nghị quyết nêu đích danh khoản thu và TTHC tạo ra khoản thu đó (có dòng tương ứng tại NQ 34/2025 đối với đất đai); Trung bình = cần xác minh tên khoản thu; Thấp = chưa có nguồn xác nhận phát sinh khoản thu, hoặc thủ tục lưu động.
 
@@ -95,7 +100,7 @@
 
 ## 3. Việc cần làm trước khi đề xuất promotion
 
-1. Bổ sung evidence mức lệ phí hộ tịch khi nộp trực tiếp (nhóm đất đai đã có NQ 34/2025) và xin xác nhận điểm vênh NQ 34/2025 – NQ 23/2026.
+1. Bổ sung bản gốc NQ 12/2018/NQ-HĐND (Phụ lục 04 điểm a – mức thu cấp xã); đối chiếu bằng mắt bảng OCR NQ 16/2023; xin xác nhận điểm vênh NQ 34/2025 – NQ 23/2026 và cách áp mức hộ tịch sau khi bỏ cấp huyện.
 2. Chốt schema cho `phiOnline` (giá trị + điều kiện kênh DVCQG/VNeID + ngày hiệu lực + evidenceId) qua review canonical contract.
 3. Review nghiệp vụ các dòng Thấp; dòng 2.000635 cần xác minh phí cấp bản sao trích lục có thuộc thẩm quyền HĐND hay không.
 4. Chỉ promote sau khi merge; Google Sheets nhận thay đổi qua pipeline sync hiện có, không sửa tay.
