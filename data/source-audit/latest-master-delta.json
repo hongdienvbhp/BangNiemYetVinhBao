@@ -4,1360 +4,582 @@
   "beforeSnapshotDate": "2026-09-29",
   "afterSnapshotDate": "2026-09-29",
   "summary": {
-    "beforePublic": 274,
-    "afterPublic": 306,
-    "added": 42,
-    "removed": 10,
-    "changed": 39
+    "beforePublic": 306,
+    "afterPublic": 369,
+    "added": 65,
+    "removed": 2,
+    "changed": 2
   },
   "added": [
     {
-      "ma": "1.000414",
-      "ten": "Rút tiền ký quỹ của doanh nghiệp cho thuê lại lao động",
-      "linhVuc": "LAO ĐỘNG - TIỀN LƯƠNG",
-      "quyetDinh": "2380/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-noi-vu-92287/quyet-dinh-so-2380-qd-ubnd-ngay-26-6-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-933048",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/7/2380-quyet-dinh-cong-bo-dm-tthc-sua-doi-bo-sung-va-bi-bai-bo-theo-qd-641-cua-bnv..signed639197960523919968.pdf"
+      "ma": "1.000389",
+      "ten": "Cấp giấy chứng nhận đăng ký bổ sung hoạt động giáo dục nghề nghiệp đối với trường trung cấp",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "quyetDinh": "1747/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-1747-qd-ubnd-ngay-09-5-2026-cua-ubnd-thanh-pho-ve-viec-cong-khai-danh-muc-thu-tuc--900189",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1747639146922033877627.pdf"
     },
     {
-      "ma": "1.000893",
-      "ten": "Đăng ký khai sinh có yếu tố nước ngoài cho người đã có hồ sơ, giấy tờ cá nhân",
-      "linhVuc": "HỘ TỊCH",
-      "quyetDinh": "467/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
+      "ma": "1.000482",
+      "ten": "Chuyển đổi trường trung học nghề tư thục, trường trung cấp tư thục",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "quyetDinh": "1635/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-1635-qd-ubnd-ngay-24-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-895607",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/1635.qd-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-gd-dt..signed639137600009151186.pdf"
     },
     {
-      "ma": "1.001022",
-      "ten": "Đăng ký nhận cha, mẹ, con",
-      "linhVuc": "HỘ TỊCH",
-      "quyetDinh": "467/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
+      "ma": "1.000658",
+      "ten": "Thủ tục cấp Giấy chứng nhận KP đối với kim cương thô xuất khẩu theo Quy chế Chứng nhận KP",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "quyetDinh": "3856/QĐ-UBND",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3856-qd-ubnd-ngay-19-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-968427",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3856-ct-xuat-nhap-khau639256036951182130.pdf"
     },
     {
-      "ma": "1.001323",
-      "ten": "Cấp sửa đổi, bổ sung Giấy phép phân phối sản phẩm thuốc lá",
-      "linhVuc": "LƯU THÔNG HÀNG HÓA TRONG NƯỚC",
-      "quyetDinh": "1349/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-cong-thuong-92280/quyet-dinh-so-1349-qd-ubnd-ngay-08-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-883539",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-cong-bo-danh-muc-tthc_so-cong-thuong..signed639114098220839371.pdf"
+      "ma": "1.001117",
+      "ten": "Cấp lại Giấy đăng ký hoạt động của văn phòng giám định tư pháp trong trường hợp Giấy đăng ký hoạt động bị hư hỏng hoặc bị mất",
+      "linhVuc": "GIÁM ĐỊNH TƯ PHÁP",
+      "quyetDinh": "3904/QĐ-UBND",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3904-qd-ubnd-ngay-21-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-969347",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3904-tp-bai-bo-giam-dinh639256935655766164.pdf"
     },
     {
-      "ma": "1.001669",
-      "ten": "Đăng ký giám hộ có yếu tố nước ngoài",
-      "linhVuc": "HỘ TỊCH",
-      "quyetDinh": "467/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
+      "ma": "1.001122",
+      "ten": "Bổ nhiệm và cấp thẻ giám định viên tư pháp",
+      "linhVuc": "GIÁM ĐỊNH TƯ PHÁP",
+      "quyetDinh": "3904/QĐ-UBND",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3904-qd-ubnd-ngay-21-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-969347",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3904-tp-bai-bo-giam-dinh639256935655766164.pdf"
     },
     {
-      "ma": "1.001695",
-      "ten": "Đăng ký khai sinh kết hợp đăng ký nhận cha, mẹ, con có yếu tố nước ngoài",
-      "linhVuc": "HỘ TỊCH",
-      "quyetDinh": "467/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
+      "ma": "1.001216",
+      "ten": "Chuyển đổi loại hình văn phòng giám định tư pháp",
+      "linhVuc": "GIÁM ĐỊNH TƯ PHÁP",
+      "quyetDinh": "3904/QĐ-UBND",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3904-qd-ubnd-ngay-21-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-969347",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3904-tp-bai-bo-giam-dinh639256935655766164.pdf"
     },
     {
-      "ma": "1.001766",
-      "ten": "Đăng ký khai tử có yếu tố nước ngoài",
-      "linhVuc": "HỘ TỊCH",
-      "quyetDinh": "467/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
+      "ma": "1.001622",
+      "ten": "Hỗ trợ ăn trưa đối với trẻ em mẫu giáo",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "quyetDinh": "1747/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-1747-qd-ubnd-ngay-09-5-2026-cua-ubnd-thanh-pho-ve-viec-cong-khai-danh-muc-thu-tuc--900189",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1747639146922033877627.pdf"
     },
     {
-      "ma": "1.002626",
-      "ten": "Đăng ký hành nghề quản lý, thanh lý tài sản với tư cách cá nhân",
-      "linhVuc": "QUẢN TÀI VIÊN",
-      "quyetDinh": "467/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
+      "ma": "1.002407",
+      "ten": "Xét, cấp học bổng chính sách",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "quyetDinh": "1635/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-1635-qd-ubnd-ngay-24-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-895607",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/1635.qd-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-gd-dt..signed639137600009151186.pdf"
     },
     {
-      "ma": "1.003005",
-      "ten": "Giải quyết việc người nước ngoài cư trú ở khu vực biên giới nước láng giềng nhận trẻ em Việt Nam làm con nuôi",
-      "linhVuc": "NUÔI CON NUÔI",
-      "quyetDinh": "556/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-556-qd-ubnd-ngay-09-2-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-do-884409",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-556-nuoi-con-nuoi639065875510491063639116698920797829.pdf"
+      "ma": "1.002571",
+      "ten": "Đăng ký, cấp giấy chứng nhận kiểm dịch động vật trên cạn tham gia hội chợ, triển lãm, thi đấu thể thao, biểu diễn nghệ thuật; sản phẩm động vật trên cạn tham gia hội chợ, triển lãm",
+      "linhVuc": "NÔNG NGHIỆP VÀ MÔI TRƯỜNG",
+      "quyetDinh": "1897/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/quyet-dinh-so-1897-qd-ubnd-ngay-25-5-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-904676",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1897-ngay-25.5.2026-ubnd-hp-cong-bo-dm-tthc-moi-sua-doi-bo-sung-bai-bo-lvuc-bdkh-cnty-qldd-va-pctt-tl-tnn-mt-dat-dai639153846685150604.pdf"
     },
     {
-      "ma": "1.003160",
-      "ten": "Giải quyết việc người nước ngoài thường trú ở Việt Nam nhận trẻ em Việt Nam làm con nuôi",
-      "linhVuc": "NUÔI CON NUÔI",
-      "quyetDinh": "556/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-556-qd-ubnd-ngay-09-2-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-do-884409",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-556-nuoi-con-nuoi639065875510491063639116698920797829.pdf"
+      "ma": "1.003593",
+      "ten": "Cấp giấy xác nhận nguyên liệu thủy sản khai thác (theo yêu cầu)",
+      "linhVuc": "THỦY SẢN VÀ KIỂM NGƯ",
+      "quyetDinh": "4016/QĐ-UBND",
+      "sourceArticleUrl": "https://sonnmt.haiphong.gov.vn/thu-tuc-hanh-chinh/quyet-dinh-so-4016-qd-ubnd-ngay-28-9-2026-cua-uy-ban-nhan-dan-thanh-pho-hai-phong-ve-viec-cong-b-972671",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/5892/tintuc/2026/9/qd-4016-ngay-28.9.2026-ubnd-hp-cong-bo-dm-tthc-sua-doi-bo-sung-lvuc-tskn639262055665128821.pdf"
     },
     {
-      "ma": "1.003198",
-      "ten": "Cấp giấy xác nhận công dân Việt Namở trong nước đủ điều kiện nhận trẻ em nước ngoài làm con nuôi",
-      "linhVuc": "NUÔI CON NUÔI",
-      "quyetDinh": "556/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-556-qd-ubnd-ngay-09-2-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-do-884409",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-556-nuoi-con-nuoi639065875510491063639116698920797829.pdf"
+      "ma": "1.003666",
+      "ten": "Cấp, cấp lại Giấy chứng nhận nguồn gốc thủy sản khai thác (theo yêu cầu)",
+      "linhVuc": "THỦY SẢN VÀ KIỂM NGƯ",
+      "quyetDinh": "4016/QĐ-UBND",
+      "sourceArticleUrl": "https://sonnmt.haiphong.gov.vn/thu-tuc-hanh-chinh/quyet-dinh-so-4016-qd-ubnd-ngay-28-9-2026-cua-uy-ban-nhan-dan-thanh-pho-hai-phong-ve-viec-cong-b-972671",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/5892/tintuc/2026/9/qd-4016-ngay-28.9.2026-ubnd-hp-cong-bo-dm-tthc-sua-doi-bo-sung-lvuc-tskn639262055665128821.pdf"
     },
     {
-      "ma": "1.003976",
-      "ten": "Giải quyết việc nuôi con nuôi có yếu tố nước ngoài đối với trẻ em sống ở cơ sở nuôi dưỡng",
-      "linhVuc": "NUÔI CON NUÔI",
-      "quyetDinh": "556/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-556-qd-ubnd-ngay-09-2-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-do-884409",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-556-nuoi-con-nuoi639065875510491063639116698920797829.pdf"
+      "ma": "1.005008",
+      "ten": "Cho phép trường trung học phổ thông chuyên hoạt động giáo dục",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "quyetDinh": "1747/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-1747-qd-ubnd-ngay-09-5-2026-cua-ubnd-thanh-pho-ve-viec-cong-khai-danh-muc-thu-tuc--900189",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1747639146922033877627.pdf"
     },
     {
-      "ma": "1.004845",
-      "ten": "Đăng ký chấm dứt giám hộ",
-      "linhVuc": "HỘ TỊCH",
-      "quyetDinh": "467/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
+      "ma": "1.006390",
+      "ten": "Cho phép trường mẫu giáo, trường mầm non, nhà trẻ hoạt động giáo dục",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "quyetDinh": "1747/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-1747-qd-ubnd-ngay-09-5-2026-cua-ubnd-thanh-pho-ve-viec-cong-khai-danh-muc-thu-tuc--900189",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1747639146922033877627.pdf"
     },
     {
-      "ma": "1.013803",
-      "ten": "Bổ nhiệm công chứng viên",
-      "linhVuc": "CÔNG CHỨNG",
-      "quyetDinh": "1353/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-1353-qd-ubnd-ngay-08-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-883466",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-cong-bo-danh-muc-tthc-linh-vuc-cong-chung-va-chung-thuc_so-tu-phap..signed639114064354058456.pdf"
+      "ma": "1.008720",
+      "ten": "Chuyển đổi cơ sở giáo dục mầm non tư thục do cơ quan đại diện ngoại giao nước ngoài, tổ chức quốc tế liên chính phủ đề nghị sang cơ sở giáo dục mầm non tư thục hoạt động không vì lợi nhuận",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "quyetDinh": "1635/QĐ-UBND; 1747/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-1747-qd-ubnd-ngay-09-5-2026-cua-ubnd-thanh-pho-ve-viec-cong-khai-danh-muc-thu-tuc--900189",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1747639146922033877627.pdf"
     },
     {
-      "ma": "1.013818",
-      "ten": "Đăng ký tham dự kiểm tra kết quả tập sự hành nghề công chứng",
-      "linhVuc": "CÔNG CHỨNG",
-      "quyetDinh": "467/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
+      "ma": "1.008721",
+      "ten": "Chuyển đổi cơ sở giáo dục phổ thông tư thục do cơ quan đại diện ngoại giao nước ngoài, tổ chức quốc tế liên chính phủ đề nghị sang cơ sở giáo dục phổ thông tư thục hoạt động không vì lợi nhuận",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "quyetDinh": "1635/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-1635-qd-ubnd-ngay-24-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-895607",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/1635.qd-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-gd-dt..signed639137600009151186.pdf"
     },
     {
-      "ma": "1.013836",
-      "ten": "Thay đổi nội dung đăng ký hoạt động của Văn phòng công chứng",
-      "linhVuc": "CÔNG CHỨNG",
-      "quyetDinh": "467/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
+      "ma": "1.008722",
+      "ten": "Chuyển đổi nhà trẻ, trường mẫu giáo, trường mầm non tư thục do nhà đầu tư nước ngoài đầu tư sang nhà trẻ, trường mẫu giáo, trường mầm non tư thục hoạt động không vì lợi nhuận",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "quyetDinh": "1635/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-1635-qd-ubnd-ngay-24-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-895607",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/1635.qd-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-gd-dt..signed639137600009151186.pdf"
     },
     {
-      "ma": "1.013987",
-      "ten": "Chấp thuận các tài liệu quản lý an toàn đối với công trình dầu khí thuộc thẩm quyền giải quyết của Ủy ban nhân dân cấp tỉnh",
-      "linhVuc": "DẦU KHÍ",
-      "quyetDinh": "1349/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-cong-thuong-92280/quyet-dinh-so-1349-qd-ubnd-ngay-08-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-883539",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-cong-bo-danh-muc-tthc_so-cong-thuong..signed639114098220839371.pdf"
+      "ma": "1.008723",
+      "ten": "Chuyển đổi trường trung học phổ thông tư thục, trường phổ thông tư thục có nhiều cấp học có cấp học cao nhất là trung học phổ thông do nhà đầu tư trong nước đầu tư và bảo đảm điều kiện hoạt động; cơ sở giáo dục phổ thông tư thục do nhà đầu tư nước ngoài đầu tư sang trường trung học phổ thông tư thục, trường phổ thông tư thục có nhiều cấp học có cấp học cao nhất là trung học phổ thông hoạt động không vì lợi nhuận",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "quyetDinh": "1635/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-1635-qd-ubnd-ngay-24-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-895607",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/1635.qd-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-gd-dt..signed639137600009151186.pdf"
     },
     {
-      "ma": "1.014967",
-      "ten": "Cấp Giấy phép vận chuyển hàng hóa nguy hiểm loại 1 (trừ vật liệu nổ công nghiệp, tiền chất thuốc nổ), 2, 3, 4, 9",
-      "linhVuc": "VẬN CHUYỂN HÀNG HÓA NGUY HIỂM",
-      "quyetDinh": "1349/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-cong-thuong-92280/quyet-dinh-so-1349-qd-ubnd-ngay-08-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-883539",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-cong-bo-danh-muc-tthc_so-cong-thuong..signed639114098220839371.pdf"
+      "ma": "1.008724",
+      "ten": "Chuyển đổi nhà trẻ, trường mẫu giáo, trường mầm non tư thục do nhà đầu tư trong nước đầu tư sang nhà trẻ, trường mẫu giáo, trường mầm non tư thục hoạt động không vì lợi nhuận",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "quyetDinh": "1635/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-1635-qd-ubnd-ngay-24-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-895607",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/1635.qd-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-gd-dt..signed639137600009151186.pdf"
     },
     {
-      "ma": "1.014968",
-      "ten": "Cấp điều chỉnh Giấy phép vận chuyển hàng hóa nguy hiểm loại 1 (trừ vật liệu nổ công nghiệp, tiền chất thuốc nổ), 2, 3, 4, 9",
-      "linhVuc": "VẬN CHUYỂN HÀNG HÓA NGUY HIỂM",
-      "quyetDinh": "1349/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-cong-thuong-92280/quyet-dinh-so-1349-qd-ubnd-ngay-08-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-883539",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-cong-bo-danh-muc-tthc_so-cong-thuong..signed639114098220839371.pdf"
+      "ma": "1.008950",
+      "ten": "Trợ cấp đối với trẻ em mầm non là con công nhân, người lao động làm việc tại khu công nghiệp",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "quyetDinh": "1747/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-1747-qd-ubnd-ngay-09-5-2026-cua-ubnd-thanh-pho-ve-viec-cong-khai-danh-muc-thu-tuc--900189",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1747639146922033877627.pdf"
     },
     {
-      "ma": "1.014969",
-      "ten": "Cấp lại Giấy phép vận chuyển hàng hóa nguy hiểm loại 1 (trừ vật liệu nổ công nghiệp, tiền chất thuốc nổ), 2, 3, 4, 9",
-      "linhVuc": "VẬN CHUYỂN HÀNG HÓA NGUY HIỂM",
-      "quyetDinh": "1349/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-cong-thuong-92280/quyet-dinh-so-1349-qd-ubnd-ngay-08-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-883539",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-cong-bo-danh-muc-tthc_so-cong-thuong..signed639114098220839371.pdf"
+      "ma": "1.009394",
+      "ten": "Đăng ký xét tuyển học theo chế độ cử tuyển",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "quyetDinh": "1747/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-1747-qd-ubnd-ngay-09-5-2026-cua-ubnd-thanh-pho-ve-viec-cong-khai-danh-muc-thu-tuc--900189",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1747639146922033877627.pdf"
     },
     {
-      "ma": "1.015021",
-      "ten": "Đăng ký hợp đồng nhận lao động thực tập",
-      "linhVuc": "QUẢN LÝ LAO ĐỘNG NGOÀI NƯỚC",
-      "quyetDinh": "2380/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-noi-vu-92287/quyet-dinh-so-2380-qd-ubnd-ngay-26-6-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-933048",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/7/2380-quyet-dinh-cong-bo-dm-tthc-sua-doi-bo-sung-va-bi-bai-bo-theo-qd-641-cua-bnv..signed639197960523919968.pdf"
+      "ma": "1.009832",
+      "ten": "Cấp lại thẻ giám định viên tư pháp",
+      "linhVuc": "GIÁM ĐỊNH TƯ PHÁP",
+      "quyetDinh": "3904/QĐ-UBND",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3904-qd-ubnd-ngay-21-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-969347",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3904-tp-bai-bo-giam-dinh639256935655766164.pdf"
     },
     {
-      "ma": "2.000150",
-      "ten": "Cấp lại Giấy phép bán lẻ sản phẩm thuốc lá",
-      "linhVuc": "LƯU THÔNG HÀNG HÓA TRONG NƯỚC",
-      "quyetDinh": "1349/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-cong-thuong-92280/quyet-dinh-so-1349-qd-ubnd-ngay-08-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-883539",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-cong-bo-danh-muc-tthc_so-cong-thuong..signed639114098220839371.pdf"
+      "ma": "1.010091",
+      "ten": "Hỗ trợ khám chữa bệnh, trợ cấp tai nạn cho lực lượng xung kích phòng chống thiên tai cấp xã trong trường hợp chưa tham gia bảo hiểm y tế, bảo hiểm xã hội",
+      "linhVuc": "NÔNG NGHIỆP VÀ MÔI TRƯỜNG",
+      "quyetDinh": "1897/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/quyet-dinh-so-1897-qd-ubnd-ngay-25-5-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-904676",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1897-ngay-25.5.2026-ubnd-hp-cong-bo-dm-tthc-moi-sua-doi-bo-sung-bai-bo-lvuc-bdkh-cnty-qldd-va-pctt-tl-tnn-mt-dat-dai639153846685150604.pdf"
     },
     {
-      "ma": "2.000162",
-      "ten": "Cấp sửa đổi, bổ sung Giấy phép bán lẻ sản phẩm thuốc lá",
-      "linhVuc": "LƯU THÔNG HÀNG HÓA TRONG NƯỚC",
-      "quyetDinh": "1349/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-cong-thuong-92280/quyet-dinh-so-1349-qd-ubnd-ngay-08-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-883539",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-cong-bo-danh-muc-tthc_so-cong-thuong..signed639114098220839371.pdf"
+      "ma": "1.010092",
+      "ten": "Trợ cấp tiền tuất, tai nạn (đối với trường hợp tai nạn suy giảm khả năng lao động từ 5% trở lên) cho lực lượng xung kích phòng chống thiên tai cấp xã chưa tham gia bảo hiểm xã hội",
+      "linhVuc": "NÔNG NGHIỆP VÀ MÔI TRƯỜNG",
+      "quyetDinh": "1897/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/quyet-dinh-so-1897-qd-ubnd-ngay-25-5-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-904676",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1897-ngay-25.5.2026-ubnd-hp-cong-bo-dm-tthc-moi-sua-doi-bo-sung-bai-bo-lvuc-bdkh-cnty-qldd-va-pctt-tl-tnn-mt-dat-dai639153846685150604.pdf"
     },
     {
-      "ma": "2.000181",
-      "ten": "Cấp Giấy phép bán lẻ sản phẩm thuốc lá",
-      "linhVuc": "LƯU THÔNG HÀNG HÓA TRONG NƯỚC",
-      "quyetDinh": "1349/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-cong-thuong-92280/quyet-dinh-so-1349-qd-ubnd-ngay-08-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-883539",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-cong-bo-danh-muc-tthc_so-cong-thuong..signed639114098220839371.pdf"
+      "ma": "1.010733",
+      "ten": "Thẩm định báo cáo đánh giá tác động môi trường",
+      "linhVuc": "NÔNG NGHIỆP VÀ MÔI TRƯỜNG",
+      "quyetDinh": "1897/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/quyet-dinh-so-1897-qd-ubnd-ngay-25-5-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-904676",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1897-ngay-25.5.2026-ubnd-hp-cong-bo-dm-tthc-moi-sua-doi-bo-sung-bai-bo-lvuc-bdkh-cnty-qldd-va-pctt-tl-tnn-mt-dat-dai639153846685150604.pdf"
     },
     {
-      "ma": "2.000497",
-      "ten": "Đăng ký lại khai tử có yếu tố nước ngoài",
-      "linhVuc": "HỘ TỊCH",
-      "quyetDinh": "467/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
+      "ma": "1.012953",
+      "ten": "Cho phép trường trung học phổ thông, trường phổ thông có nhiều cấp học có cấp học cao nhất là trung học phổ thông hoạt động giáo dục",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "quyetDinh": "1747/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-1747-qd-ubnd-ngay-09-5-2026-cua-ubnd-thanh-pho-ve-viec-cong-khai-danh-muc-thu-tuc--900189",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1747639146922033877627.pdf"
     },
     {
-      "ma": "2.000522",
-      "ten": "Đăng ký lại khai sinh có yếu tố nước ngoài",
-      "linhVuc": "HỘ TỊCH",
-      "quyetDinh": "467/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
+      "ma": "1.012960",
+      "ten": "Điều chỉnh, bổ sung, gia hạn giấy chứng nhận đăng ký kinh doanh dịch vụ tư vấn du học",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "quyetDinh": "1747/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-1747-qd-ubnd-ngay-09-5-2026-cua-ubnd-thanh-pho-ve-viec-cong-khai-danh-muc-thu-tuc--900189",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1747639146922033877627.pdf"
     },
     {
-      "ma": "2.000547",
-      "ten": "Ghi vào sổ hộ tịch việc hộ tịch khác của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài (khai sinh; giám hộ; nhận cha, mẹ, con; xác định cha, mẹ, con; nuôi con nuôi; khai tử; thay đổi hộ tịch)",
-      "linhVuc": "HỘ TỊCH",
-      "quyetDinh": "467/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
+      "ma": "1.012965",
+      "ten": "Cho phép trường trung học cơ sở, trường phổ thông có nhiều cấp học có cấp học cao nhất là trung học cơ sở hoạt động giáo dục",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "quyetDinh": "1747/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-1747-qd-ubnd-ngay-09-5-2026-cua-ubnd-thanh-pho-ve-viec-cong-khai-danh-muc-thu-tuc--900189",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1747639146922033877627.pdf"
     },
     {
-      "ma": "2.000554",
-      "ten": "Ghi vào sổ hộ tịch việc ly hôn, hủy việc kết hôn của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài",
-      "linhVuc": "HỘ TỊCH",
-      "quyetDinh": "467/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
+      "ma": "1.012969",
+      "ten": "Thành lập hoặc cho phép thành lập trung tâm học tập cộng đồng",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "quyetDinh": "1747/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-1747-qd-ubnd-ngay-09-5-2026-cua-ubnd-thanh-pho-ve-viec-cong-khai-danh-muc-thu-tuc--900189",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1747639146922033877627.pdf"
     },
     {
-      "ma": "2.000578",
-      "ten": "Cấp giấy phép xuất khẩu, nhập khẩu vật liệu nổ công nghiệp",
-      "linhVuc": "VẬT LIỆU NỔ CÔNG NGHIỆP, TIỀN CHẤT THUỐC NỔ",
-      "quyetDinh": "2127/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-cong-thuong-92280/quyet-dinh-so-2127-qd-ubnd-ngay-06-6-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-921129",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/6/qd-2127.2026-so-cong-thuong639179180236944152.pdf"
+      "ma": "1.012971",
+      "ten": "Thành lập hoặc cho phép thành lập cơ sở giáo dục mầm non độc lập",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "quyetDinh": "1747/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-1747-qd-ubnd-ngay-09-5-2026-cua-ubnd-thanh-pho-ve-viec-cong-khai-danh-muc-thu-tuc--900189",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1747639146922033877627.pdf"
     },
     {
-      "ma": "2.000748",
-      "ten": "Thay đổi, cải chính, bổ sung thông tin hộ tịch, xác định lại dân tộc có yếu tố nước ngoài",
-      "linhVuc": "HỘ TỊCH",
-      "quyetDinh": "467/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
+      "ma": "1.013644",
+      "ten": "Cấp phép đối với các hoạt động liên quan đến đê điều thuộc trách nhiệm của Uỷ ban nhân dân tỉnh",
+      "linhVuc": "NÔNG NGHIỆP VÀ MÔI TRƯỜNG",
+      "quyetDinh": "1897/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/quyet-dinh-so-1897-qd-ubnd-ngay-25-5-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-904676",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1897-ngay-25.5.2026-ubnd-hp-cong-bo-dm-tthc-moi-sua-doi-bo-sung-bai-bo-lvuc-bdkh-cnty-qldd-va-pctt-tl-tnn-mt-dat-dai639153846685150604.pdf"
     },
     {
-      "ma": "2.000756",
-      "ten": "Đăng ký chấm dứt giám hộ có yếu tố nước ngoài",
-      "linhVuc": "HỘ TỊCH",
-      "quyetDinh": "467/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
+      "ma": "1.013751",
+      "ten": "Cho phép thành lập trung tâm giáo dục thường xuyên, trung tâm giáo dục nghề nghiệp - giáo dục thường xuyên tư thục",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "quyetDinh": "1747/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-1747-qd-ubnd-ngay-09-5-2026-cua-ubnd-thanh-pho-ve-viec-cong-khai-danh-muc-thu-tuc--900189",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1747639146922033877627.pdf"
     },
     {
-      "ma": "2.000779",
-      "ten": "Đăng ký nhận cha, mẹ, con có yếu tố nước ngoài",
-      "linhVuc": "HỘ TỊCH",
-      "quyetDinh": "467/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
+      "ma": "1.013755",
+      "ten": "Cho phép thành lập trung tâm hỗ trợ phát triển giáo dục hòa nhập tư thục",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "quyetDinh": "1747/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-1747-qd-ubnd-ngay-09-5-2026-cua-ubnd-thanh-pho-ve-viec-cong-khai-danh-muc-thu-tuc--900189",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1747639146922033877627.pdf"
     },
     {
-      "ma": "2.000908",
-      "ten": "Cấp bản sao từ sổ gốc",
-      "linhVuc": "CHỨNG THỰC",
-      "quyetDinh": "467/QĐ-UBND; 1353/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-1353-qd-ubnd-ngay-08-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-883466",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-cong-bo-danh-muc-tthc-linh-vuc-cong-chung-va-chung-thuc_so-tu-phap..signed639114064354058456.pdf"
+      "ma": "1.013759",
+      "ten": "Cho phép thành lập cơ sở giáo dục nghề nghiệp, cơ sở giáo dục nghề nghiệp cho người khuyết tật, phân hiệu của trường trung cấp tư thục",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "quyetDinh": "1747/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-1747-qd-ubnd-ngay-09-5-2026-cua-ubnd-thanh-pho-ve-viec-cong-khai-danh-muc-thu-tuc--900189",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1747639146922033877627.pdf"
     },
     {
-      "ma": "2.000927",
-      "ten": "Sửa lỗi sai sót trong giao dịch",
-      "linhVuc": "CHỨNG THỰC",
-      "quyetDinh": "1353/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-1353-qd-ubnd-ngay-08-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-883466",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-cong-bo-danh-muc-tthc-linh-vuc-cong-chung-va-chung-thuc_so-tu-phap..signed639114064354058456.pdf"
+      "ma": "1.013764",
+      "ten": "Cho phép thành lập trường trung cấp, trung tâm giáo dục nghề nghiệp có vốn đầu tư nước ngoài",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "quyetDinh": "1747/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-1747-qd-ubnd-ngay-09-5-2026-cua-ubnd-thanh-pho-ve-viec-cong-khai-danh-muc-thu-tuc--900189",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1747639146922033877627.pdf"
     },
     {
-      "ma": "2.001019",
-      "ten": "Chứng thực di chúc",
-      "linhVuc": "CHỨNG THỰC",
-      "quyetDinh": "1353/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-1353-qd-ubnd-ngay-08-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-883466",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-cong-bo-danh-muc-tthc-linh-vuc-cong-chung-va-chung-thuc_so-tu-phap..signed639114064354058456.pdf"
+      "ma": "1.014129",
+      "ten": "Đăng ký tài khoản trên Hệ thống đăng ký quốc gia về hạn ngạch phát thải khí nhà kính và tín chỉ các-bon",
+      "linhVuc": "NÔNG NGHIỆP VÀ MÔI TRƯỜNG",
+      "quyetDinh": "1897/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/quyet-dinh-so-1897-qd-ubnd-ngay-25-5-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-904676",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1897-ngay-25.5.2026-ubnd-hp-cong-bo-dm-tthc-moi-sua-doi-bo-sung-bai-bo-lvuc-bdkh-cnty-qldd-va-pctt-tl-tnn-mt-dat-dai639153846685150604.pdf"
     },
     {
-      "ma": "2.001117",
-      "ten": "Cấp lại chứng chỉ hành nghề Quản tài viên",
-      "linhVuc": "QUẢN TÀI VIÊN",
-      "quyetDinh": "467/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
+      "ma": "1.014132",
+      "ten": "Hủy đăng ký dự án",
+      "linhVuc": "NÔNG NGHIỆP VÀ MÔI TRƯỜNG",
+      "quyetDinh": "1897/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/quyet-dinh-so-1897-qd-ubnd-ngay-25-5-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-904676",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1897-ngay-25.5.2026-ubnd-hp-cong-bo-dm-tthc-moi-sua-doi-bo-sung-bai-bo-lvuc-bdkh-cnty-qldd-va-pctt-tl-tnn-mt-dat-dai639153846685150604.pdf"
     },
     {
-      "ma": "2.001130",
-      "ten": "Cấp chứng chỉ hành nghề Quản tài viên đối với luật sư, kiểm toán viên, người có trình độ cử nhân luật, kinh tế, kế toán, tài chính, ngân hàng và có thời gian công tác trong lĩnh vực được đào tạo từ 05 năm trở lên",
-      "linhVuc": "QUẢN TÀI VIÊN",
-      "quyetDinh": "467/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
+      "ma": "1.014133",
+      "ten": "Cấp tín chỉ các-bon theo cơ chế trao đổi, bù trừ tín chỉ các-bon trong nước",
+      "linhVuc": "NÔNG NGHIỆP VÀ MÔI TRƯỜNG",
+      "quyetDinh": "1897/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/quyet-dinh-so-1897-qd-ubnd-ngay-25-5-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-904676",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1897-ngay-25.5.2026-ubnd-hp-cong-bo-dm-tthc-moi-sua-doi-bo-sung-bai-bo-lvuc-bdkh-cnty-qldd-va-pctt-tl-tnn-mt-dat-dai639153846685150604.pdf"
     },
     {
-      "ma": "2.002349",
-      "ten": "Cấp giấy xác nhận công dân Việt Nam thường trú ở khu vực biên giới đủ điều kiện nhận trẻ em của nước láng giềng cư trú ở khu vực biên giới làm con nuôi",
-      "linhVuc": "NUÔI CON NUÔI",
-      "quyetDinh": "556/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-556-qd-ubnd-ngay-09-2-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-do-884409",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-556-nuoi-con-nuoi639065875510491063639116698920797829.pdf"
+      "ma": "1.014136",
+      "ten": "Đăng ký/Điều chỉnh dự án theo cơ chế trao đổi, bù trừ tín chỉ các-bon trong nước",
+      "linhVuc": "NÔNG NGHIỆP VÀ MÔI TRƯỜNG",
+      "quyetDinh": "1897/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/quyet-dinh-so-1897-qd-ubnd-ngay-25-5-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-904676",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1897-ngay-25.5.2026-ubnd-hp-cong-bo-dm-tthc-moi-sua-doi-bo-sung-bai-bo-lvuc-bdkh-cnty-qldd-va-pctt-tl-tnn-mt-dat-dai639153846685150604.pdf"
     },
     {
-      "ma": "2.002363",
-      "ten": "Ghi vào Sổ đăng ký nuôi con nuôi việc nuôi con nuôi đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài",
-      "linhVuc": "NUÔI CON NUÔI",
-      "quyetDinh": "556/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-556-qd-ubnd-ngay-09-2-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-do-884409",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-556-nuoi-con-nuoi639065875510491063639116698920797829.pdf"
+      "ma": "1.115949",
+      "ten": "Công bố đóng cảng, bến thủy nội địa, khu neo đậu",
+      "linhVuc": "HÀNG HẢI VÀ ĐƯỜNG THỦY NỘI ĐỊA",
+      "quyetDinh": "3878/QĐ-UBND",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3878-qd-ubnd-ngay-20-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-968417",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3838-xd-hang-hai-duong-thuy639256032077834970.pdf"
     },
     {
-      "ma": "2.002516",
-      "ten": "Thủ tục xác nhận thông tin hộ tịch",
-      "linhVuc": "HỘ TỊCH",
-      "quyetDinh": "467/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
+      "ma": "1.116556",
+      "ten": "Thủ tục cung cấp thông tin theo yêu cầu (dành cho cá nhân)",
+      "linhVuc": "TIẾP CẬN THÔNG TIN",
+      "quyetDinh": "3957/QĐ-UBND",
+      "sourceArticleUrl": "https://sotp.haiphong.gov.vn/cong-khai-thu-tuc-hanh-chinh/quyet-dinh-so-3957-qd-ubnd-ngay-23-9-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-ban-hanh-m-972925",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6298/tintuc/2026/9/qd-3957-ve-tiep-can-thong-tin639262157131271814.pdf"
     },
     {
-      "ma": "3.000322",
-      "ten": "Đăng ký chấm dứt giám sát việc giám hộ",
-      "linhVuc": "HỘ TỊCH",
-      "quyetDinh": "467/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
+      "ma": "1.116557",
+      "ten": "Thủ tục cung cấp thông tin theo yêu cầu (dành cho công dân thông qua tổ chức, đoàn thể, doanh nghiệp)",
+      "linhVuc": "TIẾP CẬN THÔNG TIN",
+      "quyetDinh": "3957/QĐ-UBND",
+      "sourceArticleUrl": "https://sotp.haiphong.gov.vn/cong-khai-thu-tuc-hanh-chinh/quyet-dinh-so-3957-qd-ubnd-ngay-23-9-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-ban-hanh-m-972925",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6298/tintuc/2026/9/qd-3957-ve-tiep-can-thong-tin639262157131271814.pdf"
     },
     {
-      "ma": "3.000323",
-      "ten": "Đăng ký giám sát việc giám hộ",
-      "linhVuc": "HỘ TỊCH",
-      "quyetDinh": "467/QĐ-UBND",
-      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412",
-      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
+      "ma": "1.116562",
+      "ten": "Thủ tục xác nhận nhập khẩu kim cương thô theo Quy chế chứng nhận KP",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "quyetDinh": "3856/QĐ-UBND",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3856-qd-ubnd-ngay-19-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-968427",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3856-ct-xuat-nhap-khau639256036951182130.pdf"
+    },
+    {
+      "ma": "1.116563",
+      "ten": "Thủ tục cấp sửa đổi, bổ sung, cấp lại do mất, thất lạc, hư hỏng Giấy chứng nhận KP đối với kim cương thô xuất khẩu theo Quy chế chứng nhận KP",
+      "linhVuc": "XUẤT NHẬP KHẨU",
+      "quyetDinh": "3856/QĐ-UBND",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3856-qd-ubnd-ngay-19-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-968427",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3856-ct-xuat-nhap-khau639256036951182130.pdf"
+    },
+    {
+      "ma": "2.000555",
+      "ten": "Cấp Giấy đăng ký hoạt động của văn phòng giám định tư pháp trong trường hợp thay đổi tên gọi, địa chỉ trụ sở, người đại diện theo pháp luật, danh sách thành viên hợp danh của văn phòng giám định tư pháp",
+      "linhVuc": "GIÁM ĐỊNH TƯ PHÁP",
+      "quyetDinh": "3904/QĐ-UBND",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3904-qd-ubnd-ngay-21-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-969347",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3904-tp-bai-bo-giam-dinh639256935655766164.pdf"
+    },
+    {
+      "ma": "2.000568",
+      "ten": "Thay đổi, bổ sung lĩnh vực giám định của văn phòng giám định tư pháp",
+      "linhVuc": "GIÁM ĐỊNH TƯ PHÁP",
+      "quyetDinh": "3904/QĐ-UBND",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3904-qd-ubnd-ngay-21-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-969347",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3904-tp-bai-bo-giam-dinh639256935655766164.pdf"
+    },
+    {
+      "ma": "2.000823",
+      "ten": "Đăng ký hoạt động văn phòng giám định tư pháp",
+      "linhVuc": "GIÁM ĐỊNH TƯ PHÁP",
+      "quyetDinh": "3904/QĐ-UBND",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3904-qd-ubnd-ngay-21-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-969347",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3904-tp-bai-bo-giam-dinh639256935655766164.pdf"
+    },
+    {
+      "ma": "2.000890",
+      "ten": "Cấp phép thành lập văn phòng giám định tư pháp",
+      "linhVuc": "GIÁM ĐỊNH TƯ PHÁP",
+      "quyetDinh": "3904/QĐ-UBND",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3904-qd-ubnd-ngay-21-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-969347",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3904-tp-bai-bo-giam-dinh639256935655766164.pdf"
+    },
+    {
+      "ma": "2.000894",
+      "ten": "Miễn nhiệm và thu hồi thẻ giám định viên tư pháp",
+      "linhVuc": "GIÁM ĐỊNH TƯ PHÁP",
+      "quyetDinh": "3904/QĐ-UBND",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3904-qd-ubnd-ngay-21-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-969347",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3904-tp-bai-bo-giam-dinh639256935655766164.pdf"
+    },
+    {
+      "ma": "2.001515",
+      "ten": "Cấp giấy vận chuyển mẫu bệnh phẩm thủy sản",
+      "linhVuc": "NÔNG NGHIỆP VÀ MÔI TRƯỜNG",
+      "quyetDinh": "1897/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/quyet-dinh-so-1897-qd-ubnd-ngay-25-5-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-904676",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1897-ngay-25.5.2026-ubnd-hp-cong-bo-dm-tthc-moi-sua-doi-bo-sung-bai-bo-lvuc-bdkh-cnty-qldd-va-pctt-tl-tnn-mt-dat-dai639153846685150604.pdf"
+    },
+    {
+      "ma": "2.001524",
+      "ten": "Đăng ký vận chuyển mẫu bệnh phẩm thủy sản",
+      "linhVuc": "NÔNG NGHIỆP VÀ MÔI TRƯỜNG",
+      "quyetDinh": "1897/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/quyet-dinh-so-1897-qd-ubnd-ngay-25-5-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-904676",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1897-ngay-25.5.2026-ubnd-hp-cong-bo-dm-tthc-moi-sua-doi-bo-sung-bai-bo-lvuc-bdkh-cnty-qldd-va-pctt-tl-tnn-mt-dat-dai639153846685150604.pdf"
+    },
+    {
+      "ma": "2.001558",
+      "ten": "Cấp giấy chứng nhận kiểm dịch động vật, sản phẩm động vật thủy sản xuất khẩu mang theo người, gửi qua đường bưu điện",
+      "linhVuc": "NÔNG NGHIỆP VÀ MÔI TRƯỜNG",
+      "quyetDinh": "1897/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/quyet-dinh-so-1897-qd-ubnd-ngay-25-5-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-904676",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1897-ngay-25.5.2026-ubnd-hp-cong-bo-dm-tthc-moi-sua-doi-bo-sung-bai-bo-lvuc-bdkh-cnty-qldd-va-pctt-tl-tnn-mt-dat-dai639153846685150604.pdf"
+    },
+    {
+      "ma": "2.001737",
+      "ten": "Thủ tục Xác nhận thay đổi thông tin",
+      "linhVuc": "VĂN HÓA",
+      "quyetDinh": "2032/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-van-hoa-the-thao-va-du-lich-92284/qd-2032-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-va-bi-bai--910186",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/6/qd-2032639161842299651591.pdf"
+    },
+    {
+      "ma": "2.001740",
+      "ten": "Thủ tục Xác nhận đăng ký hoạt động in (cấp tỉnh)",
+      "linhVuc": "VĂN HÓA",
+      "quyetDinh": "2032/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-van-hoa-the-thao-va-du-lich-92284/qd-2032-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-va-bi-bai--910186",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/6/qd-2032639161842299651591.pdf"
+    },
+    {
+      "ma": "2.001842",
+      "ten": "Cho phép trường tiểu học hoạt động giáo dục",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "quyetDinh": "1747/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-1747-qd-ubnd-ngay-09-5-2026-cua-ubnd-thanh-pho-ve-viec-cong-khai-danh-muc-thu-tuc--900189",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1747639146922033877627.pdf"
+    },
+    {
+      "ma": "2.002848",
+      "ten": "Hủy đăng ký tín chỉ các-bon tự nguyện",
+      "linhVuc": "NÔNG NGHIỆP VÀ MÔI TRƯỜNG",
+      "quyetDinh": "1897/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/quyet-dinh-so-1897-qd-ubnd-ngay-25-5-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-904676",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1897-ngay-25.5.2026-ubnd-hp-cong-bo-dm-tthc-moi-sua-doi-bo-sung-bai-bo-lvuc-bdkh-cnty-qldd-va-pctt-tl-tnn-mt-dat-dai639153846685150604.pdf"
+    },
+    {
+      "ma": "2.002849",
+      "ten": "Chuyển quyền sở hữu hạn ngạch phát thải khí nhà kính, tín chỉ các-bon ngoài hệ thống giao dịch các-bon",
+      "linhVuc": "NÔNG NGHIỆP VÀ MÔI TRƯỜNG",
+      "quyetDinh": "1897/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/quyet-dinh-so-1897-qd-ubnd-ngay-25-5-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-904676",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1897-ngay-25.5.2026-ubnd-hp-cong-bo-dm-tthc-moi-sua-doi-bo-sung-bai-bo-lvuc-bdkh-cnty-qldd-va-pctt-tl-tnn-mt-dat-dai639153846685150604.pdf"
+    },
+    {
+      "ma": "2.002854",
+      "ten": "Chuyển trường và tiếp nhận học sinh",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "quyetDinh": "1847/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/qd-1877-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-bi-bai-bo-thuoc-pham-vi-chuc-na-906998",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1847639156687053039888.pdf"
+    },
+    {
+      "ma": "2.002855",
+      "ten": "Tiếp nhận học sinh Việt Nam từ nước ngoài về nước",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "quyetDinh": "1847/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/qd-1877-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-bi-bai-bo-thuoc-pham-vi-chuc-na-906998",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1847639156687053039888.pdf"
+    },
+    {
+      "ma": "2.002856",
+      "ten": "Tiếp nhận học sinh người nước ngoài",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "quyetDinh": "1847/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/qd-1877-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-bi-bai-bo-thuoc-pham-vi-chuc-na-906998",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1847639156687053039888.pdf"
+    },
+    {
+      "ma": "2.002857",
+      "ten": "Tiếp nhận học sinh xin học lại",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "quyetDinh": "1847/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/qd-1877-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-bi-bai-bo-thuoc-pham-vi-chuc-na-906998",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1847639156687053039888.pdf"
+    },
+    {
+      "ma": "3.000125",
+      "ten": "Chấp thuận trao đổi quốc tế nguồn gen giống vật nuôi có trong danh mục giống vật nuôi cấm xuất khẩu để phục vụ nghiên cứu khoa học, triển lãm, quảng cáo",
+      "linhVuc": "NÔNG NGHIỆP VÀ MÔI TRƯỜNG",
+      "quyetDinh": "1897/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/quyet-dinh-so-1897-qd-ubnd-ngay-25-5-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-904676",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1897-ngay-25.5.2026-ubnd-hp-cong-bo-dm-tthc-moi-sua-doi-bo-sung-bai-bo-lvuc-bdkh-cnty-qldd-va-pctt-tl-tnn-mt-dat-dai639153846685150604.pdf"
+    },
+    {
+      "ma": "3.000302",
+      "ten": "Cho phép trường dành cho người khuyết tật hoạt động giáo dục",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "quyetDinh": "1747/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-1747-qd-ubnd-ngay-09-5-2026-cua-ubnd-thanh-pho-ve-viec-cong-khai-danh-muc-thu-tuc--900189",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1747639146922033877627.pdf"
+    },
+    {
+      "ma": "3.000466",
+      "ten": "Chỉnh sửa nội dung văn bằng, chứng chỉ (tại cấp tỉnh)",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "quyetDinh": "1747/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-1747-qd-ubnd-ngay-09-5-2026-cua-ubnd-thanh-pho-ve-viec-cong-khai-danh-muc-thu-tuc--900189",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1747639146922033877627.pdf"
+    },
+    {
+      "ma": "3.000569",
+      "ten": "Thủ tục Xác nhận đăng ký hoạt động in (cấp xã)",
+      "linhVuc": "VĂN HÓA",
+      "quyetDinh": "2032/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-van-hoa-the-thao-va-du-lich-92284/qd-2032-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-va-bi-bai--910186",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/6/qd-2032639161842299651591.pdf"
+    },
+    {
+      "ma": "3.000570",
+      "ten": "Thủ tục Xác nhận thay đổi thông tin đăng ký hoạt động in (cấp xã)",
+      "linhVuc": "VĂN HÓA",
+      "quyetDinh": "2032/QĐ-UBND",
+      "sourceArticleUrl": "https://giavien.haiphong.gov.vn/so-van-hoa-the-thao-va-du-lich-92284/qd-2032-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-va-bi-bai--910186",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/6/qd-2032639161842299651591.pdf"
     }
   ],
   "removed": [
     {
-      "ma": "1.000464",
-      "ten": "Gia hạn Giấy phép hoạt động cho thuê lại lao động",
-      "linhVuc": "NỘI VỤ",
-      "previousDecision": "458/QĐ-BNV"
+      "ma": "1.012789",
+      "ten": "Cung cấp thông tin, dữ liệu đất đai",
+      "linhVuc": "ĐẤT ĐAI",
+      "previousDecision": "2003/QĐ-TTG; 2021/QĐ-TTG; 2025/QĐ-TTG; 1334/QĐ-BTP; 1478/QĐ-UBND; 1582/QĐ-UBND; 2021/QĐ-UBND; 2128/QĐ-BNNMT; 2304/QĐ-BNNMT; 34/QĐ-BTP; 6225/QĐ-BQP"
     },
     {
-      "ma": "1.000479",
-      "ten": "Cấp Giấy phép hoạt động cho thuê lại lao động",
-      "linhVuc": "NỘI VỤ",
-      "previousDecision": "458/QĐ-BNV"
-    },
-    {
-      "ma": "1.013017",
-      "ten": "Thủ tục cấp giấy phép thành lập và công nhận điều lệ quỹ",
-      "linhVuc": "NỘI VỤ",
-      "previousDecision": ""
-    },
-    {
-      "ma": "1.013018",
-      "ten": "Thủ tục công nhận quỹ đủ điều kiện hoạt động và công nhận thành viên Hội",
-      "linhVuc": "NỘI VỤ",
-      "previousDecision": ""
-    },
-    {
-      "ma": "1.013019",
-      "ten": "Thủ tục công nhận điều lệ (sửa đổi, bổ sung) quỹ; đổi tên quỹ",
-      "linhVuc": "NỘI VỤ",
-      "previousDecision": ""
-    },
-    {
-      "ma": "1.013020",
-      "ten": "Thủ tục cấp lại giấy phép thành lập và công nhận điều lệ quỹ",
-      "linhVuc": "NỘI VỤ",
-      "previousDecision": ""
-    },
-    {
-      "ma": "1.013021",
-      "ten": "Thủ tục cho phép quỹ hoạt động trở lại sau khi bị tạm đình chỉ hoạt động",
-      "linhVuc": "NỘI VỤ",
-      "previousDecision": ""
-    },
-    {
-      "ma": "1.013022",
-      "ten": "Hợp nhất, sáp nhập, chia, tách, mở rộng phạm vi hoạt động quỹ",
-      "linhVuc": "NỘI VỤ",
-      "previousDecision": ""
-    },
-    {
-      "ma": "1.013023",
-      "ten": "Thủ tục quỹ tự giải thể",
-      "linhVuc": "NỘI VỤ",
-      "previousDecision": ""
-    },
-    {
-      "ma": "2.001283",
-      "ten": "Cấp Giấy chứng nhận đủ điều kiện cửa hàng bán lẻ LPG chai",
-      "linhVuc": "KINH DOANH KHÍ",
-      "previousDecision": ""
+      "ma": "2.002481",
+      "ten": "Chuyển trường đối với học sinh trung học cơ sở",
+      "linhVuc": "GIÁO DỤC",
+      "previousDecision": "2851/QĐ-UBND"
     }
   ],
   "changed": [
     {
-      "ma": "1.000419",
-      "ten": "Thủ tục đăng ký khai tử lưu động",
+      "ma": "1.007916",
+      "ten": "Nộp tiền trồng rừng thay thế",
+      "fields": {
+        "ten": {
+          "before": "Nộp ti ền tr ồng rừng thay thế",
+          "after": "Nộp tiền trồng rừng thay thế"
+        }
+      }
+    },
+    {
+      "ma": "1.008725",
+      "ten": "Chuyển đổi trường tiểu học tư thục, trường trung học cơ sở tư thục, trường phổ thông tư thục có nhiều cấp học có cấp học cao nhất là trung học cơ sở do nhà đầu tư trong nước đầu tư sang trường tiểu học tư thục, trường trung học cơ sở tư thục, trường phổ thông tư thục có nhiều cấp học có cấp học cao nhất là trung học cơ sở hoạt động không vì lợi nhuận",
       "fields": {
         "quyetDinh": {
           "before": "",
-          "after": "467/QĐ-UBND"
+          "after": "1635/QĐ-UBND"
         },
         "verificationStatus": {
           "before": "official_commune_evidence_no_later_repeal_in_snapshot",
           "after": "official_city_decision_commune_reception"
         },
         "sourceLatestDate": {
-          "before": "2025-12-07",
-          "after": "2026-01-31"
+          "before": "2026-04-25",
+          "after": "2026-04-24"
         },
         "sourceArticleUrl": {
-          "before": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-827521",
-          "after": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412"
+          "before": "https://vinhbao.haiphong.gov.vn/linh-vuc-giao-duc-va-dao-tao-thuoc-he-thong-giao-duc-quoc-dan/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-thay-the-bi-bai-bo-linh-vuc-giao-duc-mam-non-gi-891324",
+          "after": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-1635-qd-ubnd-ngay-24-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-895607"
         },
         "sourceAttachmentUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/12/phu-luc.signed-1-639007020695231661.pdf",
-          "after": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
-        }
-      }
-    },
-    {
-      "ma": "1.000593",
-      "ten": "Thủ tục đăng ký kết hôn lưu động",
-      "fields": {
-        "quyetDinh": {
-          "before": "",
-          "after": "467/QĐ-UBND"
-        },
-        "verificationStatus": {
-          "before": "official_commune_evidence_no_later_repeal_in_snapshot",
-          "after": "official_city_decision_commune_reception"
-        },
-        "sourceLatestDate": {
-          "before": "2025-12-07",
-          "after": "2026-01-31"
-        },
-        "sourceArticleUrl": {
-          "before": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-827521",
-          "after": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412"
-        },
-        "sourceAttachmentUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/12/phu-luc.signed-1-639007020695231661.pdf",
-          "after": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
-        }
-      }
-    },
-    {
-      "ma": "1.000656",
-      "ten": "Thủ tục đăng ký khai tử",
-      "fields": {
-        "cap": {
-          "before": "Xã / điểm tiếp nhận cấp xã",
-          "after": "Xã"
-        },
-        "quyetDinh": {
-          "before": "",
-          "after": "467/QĐ-UBND"
-        },
-        "verificationStatus": {
-          "before": "priority51_current_official_commune_evidence",
-          "after": "official_city_decision_commune_reception"
-        },
-        "sourceLatestDate": {
-          "before": "2026-09-07",
-          "after": "2026-01-31"
-        },
-        "sourceArticleUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
-          "after": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412"
-        },
-        "sourceAttachmentUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
-          "after": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
-        }
-      }
-    },
-    {
-      "ma": "1.000689",
-      "ten": "Thủ tục đăng ký khai sinh kết hợp đăng ký nhận cha, mẹ, con",
-      "fields": {
-        "cap": {
-          "before": "Xã / điểm tiếp nhận cấp xã",
-          "after": "Xã"
-        },
-        "quyetDinh": {
-          "before": "",
-          "after": "467/QĐ-UBND"
-        },
-        "verificationStatus": {
-          "before": "priority51_current_official_commune_evidence",
-          "after": "official_city_decision_commune_reception"
-        },
-        "sourceLatestDate": {
-          "before": "2026-09-07",
-          "after": "2026-01-31"
-        },
-        "sourceArticleUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
-          "after": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412"
-        },
-        "sourceAttachmentUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
-          "after": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
-        }
-      }
-    },
-    {
-      "ma": "1.000894",
-      "ten": "Thủ tục đăng ký kết hôn",
-      "fields": {
-        "quyetDinh": {
-          "before": "",
-          "after": "467/QĐ-UBND"
-        },
-        "verificationStatus": {
-          "before": "official_commune_evidence_no_later_repeal_in_snapshot",
-          "after": "official_city_decision_commune_reception"
-        },
-        "sourceLatestDate": {
-          "before": "2025-12-07",
-          "after": "2026-01-31"
-        },
-        "sourceArticleUrl": {
-          "before": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-827521",
-          "after": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412"
-        },
-        "sourceAttachmentUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/12/phu-luc.signed-1-639007020695231661.pdf",
-          "after": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
-        }
-      }
-    },
-    {
-      "ma": "1.000905",
-      "ten": "Thủ tục cấp Giấy phép tạm xuất, tái nhập",
-      "fields": {
-        "linhVuc": {
-          "before": "XUẤT NHẬP KHẨU",
-          "after": "CÔNG THƯƠNG"
-        },
-        "quyetDinh": {
-          "before": "3584/QĐ-UBND",
-          "after": "2127/QĐ-UBND; 3584/QĐ-UBND"
-        }
-      }
-    },
-    {
-      "ma": "1.000957",
-      "ten": "Thủ tục cấp Giấy phép tạm nhập, tái xuất theo hình thức khác",
-      "fields": {
-        "linhVuc": {
-          "before": "XUẤT NHẬP KHẨU",
-          "after": "CÔNG THƯƠNG"
-        },
-        "quyetDinh": {
-          "before": "3584/QĐ-UBND",
-          "after": "2127/QĐ-UBND; 3584/QĐ-UBND"
-        }
-      }
-    },
-    {
-      "ma": "1.001193",
-      "ten": "Thủ tục đăng ký khai sinh",
-      "fields": {
-        "cap": {
-          "before": "Xã / điểm tiếp nhận cấp xã",
-          "after": "Xã"
-        },
-        "quyetDinh": {
-          "before": "",
-          "after": "467/QĐ-UBND"
-        },
-        "verificationStatus": {
-          "before": "priority51_current_official_commune_evidence",
-          "after": "official_city_decision_commune_reception"
-        },
-        "sourceLatestDate": {
-          "before": "2026-09-07",
-          "after": "2026-01-31"
-        },
-        "sourceArticleUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
-          "after": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412"
-        },
-        "sourceAttachmentUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
-          "after": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
-        }
-      }
-    },
-    {
-      "ma": "1.003583",
-      "ten": "Thủ tục đăng ký khai sinh lưu động",
-      "fields": {
-        "quyetDinh": {
-          "before": "",
-          "after": "467/QĐ-UBND"
-        },
-        "verificationStatus": {
-          "before": "official_commune_evidence_no_later_repeal_in_snapshot",
-          "after": "official_city_decision_commune_reception"
-        },
-        "sourceLatestDate": {
-          "before": "2025-12-07",
-          "after": "2026-01-31"
-        },
-        "sourceArticleUrl": {
-          "before": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-827521",
-          "after": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412"
-        },
-        "sourceAttachmentUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/12/phu-luc.signed-1-639007020695231661.pdf",
-          "after": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
-        }
-      }
-    },
-    {
-      "ma": "1.004746",
-      "ten": "Thủ tục đăng ký lại kết hôn",
-      "fields": {
-        "quyetDinh": {
-          "before": "",
-          "after": "467/QĐ-UBND"
-        },
-        "verificationStatus": {
-          "before": "official_commune_evidence_no_later_repeal_in_snapshot",
-          "after": "official_city_decision_commune_reception"
-        },
-        "sourceLatestDate": {
-          "before": "2025-12-07",
-          "after": "2026-01-31"
-        },
-        "sourceArticleUrl": {
-          "before": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-827521",
-          "after": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412"
-        },
-        "sourceAttachmentUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/12/phu-luc.signed-1-639007020695231661.pdf",
-          "after": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
-        }
-      }
-    },
-    {
-      "ma": "1.004772",
-      "ten": "Thủ tục đăng ký khai sinh cho người đã có hồ sơ, giấy tờ cá nhân",
-      "fields": {
-        "cap": {
-          "before": "Xã / điểm tiếp nhận cấp xã",
-          "after": "Xã"
-        },
-        "quyetDinh": {
-          "before": "",
-          "after": "467/QĐ-UBND"
-        },
-        "verificationStatus": {
-          "before": "priority51_current_official_commune_evidence",
-          "after": "official_city_decision_commune_reception"
-        },
-        "sourceLatestDate": {
-          "before": "2026-09-07",
-          "after": "2026-01-31"
-        },
-        "sourceArticleUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
-          "after": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412"
-        },
-        "sourceAttachmentUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
-          "after": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
-        }
-      }
-    },
-    {
-      "ma": "1.004837",
-      "ten": "Thủ tục đăng ký giám hộ",
-      "fields": {
-        "cap": {
-          "before": "Xã / điểm tiếp nhận cấp xã",
-          "after": "Xã"
-        },
-        "quyetDinh": {
-          "before": "",
-          "after": "467/QĐ-UBND"
-        },
-        "verificationStatus": {
-          "before": "priority51_current_official_commune_evidence",
-          "after": "official_city_decision_commune_reception"
-        },
-        "sourceLatestDate": {
-          "before": "2026-09-07",
-          "after": "2026-01-31"
-        },
-        "sourceArticleUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
-          "after": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412"
-        },
-        "sourceAttachmentUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
-          "after": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
-        }
-      }
-    },
-    {
-      "ma": "1.004859",
-      "ten": "Thủ tục thay đổi, cải chính, bổ sung thông tin hộ tịch, xác định lại dân tộc",
-      "fields": {
-        "cap": {
-          "before": "Xã / điểm tiếp nhận cấp xã",
-          "after": "Xã"
-        },
-        "quyetDinh": {
-          "before": "",
-          "after": "467/QĐ-UBND"
-        },
-        "verificationStatus": {
-          "before": "priority51_current_official_commune_evidence",
-          "after": "official_city_decision_commune_reception"
-        },
-        "sourceLatestDate": {
-          "before": "2026-09-07",
-          "after": "2026-01-31"
-        },
-        "sourceArticleUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
-          "after": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412"
-        },
-        "sourceAttachmentUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
-          "after": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
-        }
-      }
-    },
-    {
-      "ma": "1.004873",
-      "ten": "Thủ tục cấp Giấy xác nhận tình trạng hôn nhân",
-      "fields": {
-        "cap": {
-          "before": "Xã / điểm tiếp nhận cấp xã",
-          "after": "Xã"
-        },
-        "quyetDinh": {
-          "before": "",
-          "after": "467/QĐ-UBND"
-        },
-        "verificationStatus": {
-          "before": "priority51_current_official_commune_evidence",
-          "after": "official_city_decision_commune_reception"
-        },
-        "sourceLatestDate": {
-          "before": "2026-09-07",
-          "after": "2026-01-31"
-        },
-        "sourceArticleUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
-          "after": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412"
-        },
-        "sourceAttachmentUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
-          "after": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
-        }
-      }
-    },
-    {
-      "ma": "1.004878",
-      "ten": "Giải quyết việc nuôi con nuôi có yếu tố nước ngoài đối với trường hợp cha dượng, mẹ kế nhận con riêng của vợ hoặc chồng; cô, cậu, dì, chú, bác ruột nhận cháu làm con nuôi",
-      "fields": {
-        "cap": {
-          "before": "Xã / điểm tiếp nhận cấp xã",
-          "after": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã"
-        },
-        "quyetDinh": {
-          "before": "",
-          "after": "556/QĐ-UBND"
-        },
-        "verificationStatus": {
-          "before": "official_commune_evidence_no_later_repeal_in_snapshot",
-          "after": "official_city_decision_commune_reception"
-        },
-        "sourceLatestDate": {
-          "before": "2025-12-07",
-          "after": "2026-02-09"
-        },
-        "sourceArticleUrl": {
-          "before": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-827521",
-          "after": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-556-qd-ubnd-ngay-09-2-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-do-884409"
-        },
-        "sourceAttachmentUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/12/phu-luc.signed-1-639007020695231661.pdf",
-          "after": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-556-nuoi-con-nuoi639065875510491063639116698920797829.pdf"
-        }
-      }
-    },
-    {
-      "ma": "1.004884",
-      "ten": "Thủ tục đăng ký lại khai sinh",
-      "fields": {
-        "cap": {
-          "before": "Xã / điểm tiếp nhận cấp xã",
-          "after": "Xã"
-        },
-        "quyetDinh": {
-          "before": "",
-          "after": "467/QĐ-UBND"
-        },
-        "verificationStatus": {
-          "before": "priority51_current_official_commune_evidence",
-          "after": "official_city_decision_commune_reception"
-        },
-        "sourceLatestDate": {
-          "before": "2026-09-07",
-          "after": "2026-01-31"
-        },
-        "sourceArticleUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
-          "after": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412"
-        },
-        "sourceAttachmentUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
-          "after": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
-        }
-      }
-    },
-    {
-      "ma": "1.005461",
-      "ten": "Đăng ký lại khai tử",
-      "fields": {
-        "cap": {
-          "before": "Xã / điểm tiếp nhận cấp xã",
-          "after": "Xã"
-        },
-        "quyetDinh": {
-          "before": "",
-          "after": "467/QĐ-UBND"
-        },
-        "verificationStatus": {
-          "before": "priority51_current_official_commune_evidence",
-          "after": "official_city_decision_commune_reception"
-        },
-        "sourceLatestDate": {
-          "before": "2026-09-07",
-          "after": "2026-01-31"
-        },
-        "sourceArticleUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
-          "after": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412"
-        },
-        "sourceAttachmentUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
-          "after": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
-        }
-      }
-    },
-    {
-      "ma": "1.006780",
-      "ten": "Cấp lại Giấy phép hoạt động đối với trạm, điểm sơ cấp cứu chữ thập đỏ do mất, rách, hỏng hoặc sai sót thông tin",
-      "fields": {
-        "cap": {
-          "before": "Xã",
-          "after": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã"
-        }
-      }
-    },
-    {
-      "ma": "1.013734",
-      "ten": "Đăng ký hợp đồng lao động trực tiếp giao kết.",
-      "fields": {
-        "quyetDinh": {
-          "before": "1214/QĐ-UBND; 640/QĐ-BNV",
-          "after": "1214/QĐ-UBND; 640/QĐ-BNV; 2380/QĐ-UBND"
-        },
-        "verificationStatus": {
-          "before": "official_commune_evidence_no_later_repeal_in_snapshot",
-          "after": "official_city_decision_commune_reception"
-        },
-        "sourceLatestDate": {
-          "before": "2025-07-13",
-          "after": "2026-06-26"
-        },
-        "sourceArticleUrl": {
-          "before": "https://vinhbao.haiphong.gov.vn/linh-vuc-quan-ly-lao-dong-ngoai-nuoc/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi-bai-bo-linh-vuc-quan-ly-lao-dong-ngoai-nu-762740",
-          "after": "https://giavien.haiphong.gov.vn/so-noi-vu-92287/quyet-dinh-so-2380-qd-ubnd-ngay-26-6-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-933048"
-        },
-        "sourceAttachmentUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/7/qd-quyet-dinh-cong-bo-tthc-qd-640..signed638880366333934920.pdf",
-          "after": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/7/2380-quyet-dinh-cong-bo-dm-tthc-sua-doi-bo-sung-va-bi-bai-bo-theo-qd-641-cua-bnv..signed639197960523919968.pdf"
-        }
-      }
-    },
-    {
-      "ma": "1.013771",
-      "ten": "Thủ tục cấp Giấy phép gia công hàng hóa thuộc diện hàng hóa cấm xuất khẩu, cấm nhập khẩu; hàng hóa tạm ngừng xuất khẩu, tạm ngừng nhập khẩu",
-      "fields": {
-        "linhVuc": {
-          "before": "XUẤT NHẬP KHẨU",
-          "after": "CÔNG THƯƠNG"
-        },
-        "quyetDinh": {
-          "before": "3584/QĐ-UBND",
-          "after": "2127/QĐ-UBND; 3584/QĐ-UBND"
-        }
-      }
-    },
-    {
-      "ma": "1.013778",
-      "ten": "Thủ tục gia hạn thời gian quá cảnh đối với hàng hóa quá cảnh",
-      "fields": {
-        "linhVuc": {
-          "before": "XUẤT NHẬP KHẨU",
-          "after": "CÔNG THƯƠNG"
-        },
-        "quyetDinh": {
-          "before": "3584/QĐ-UBND",
-          "after": "2127/QĐ-UBND; 3584/QĐ-UBND"
-        }
-      }
-    },
-    {
-      "ma": "2.000513",
-      "ten": "Thủ tục đăng ký lại kết hôn có yếu tố nước ngoài",
-      "fields": {
-        "cap": {
-          "before": "Xã / điểm tiếp nhận cấp xã",
-          "after": "Xã"
-        },
-        "quyetDinh": {
-          "before": "",
-          "after": "467/QĐ-UBND"
-        },
-        "verificationStatus": {
-          "before": "official_commune_evidence_no_later_repeal_in_snapshot",
-          "after": "official_city_decision_commune_reception"
-        },
-        "sourceLatestDate": {
-          "before": "2025-12-07",
-          "after": "2026-01-31"
-        },
-        "sourceArticleUrl": {
-          "before": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-827521",
-          "after": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412"
-        },
-        "sourceAttachmentUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/12/phu-luc.signed-1-639007020695231661.pdf",
-          "after": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
-        }
-      }
-    },
-    {
-      "ma": "2.000528",
-      "ten": "Thủ tục đăng ký khai sinh có yếu tố nước ngoài",
-      "fields": {
-        "cap": {
-          "before": "Xã / điểm tiếp nhận cấp xã",
-          "after": "Xã"
-        },
-        "quyetDinh": {
-          "before": "",
-          "after": "467/QĐ-UBND"
-        },
-        "verificationStatus": {
-          "before": "priority51_current_official_commune_evidence",
-          "after": "official_city_decision_commune_reception"
-        },
-        "sourceLatestDate": {
-          "before": "2026-09-07",
-          "after": "2026-01-31"
-        },
-        "sourceArticleUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
-          "after": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412"
-        },
-        "sourceAttachmentUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
-          "after": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
-        }
-      }
-    },
-    {
-      "ma": "2.000552",
-      "ten": "Cấp lại Giấy phép hoạt động đối với trạm, điểm sơ cấp cứu chữ thập đỏ khi thay đổi địa điểm",
-      "fields": {
-        "cap": {
-          "before": "Xã",
-          "after": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã"
-        }
-      }
-    },
-    {
-      "ma": "2.000559",
-      "ten": "Cấp Giấy phép hoạt động đối với điểm sơ cấp cứu chữ thập đỏ",
-      "fields": {
-        "cap": {
-          "before": "Xã",
-          "after": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã"
-        }
-      }
-    },
-    {
-      "ma": "2.000635",
-      "ten": "Cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh",
-      "fields": {
-        "cap": {
-          "before": "Xã / điểm tiếp nhận cấp xã",
-          "after": "Dùng chung (cấp bộ, cấp tỉnh, cấp xã)"
-        },
-        "quyetDinh": {
-          "before": "93/QĐ-UBND",
-          "after": "467/QĐ-UBND"
-        },
-        "verificationStatus": {
-          "before": "priority51_current_official_commune_evidence",
-          "after": "official_city_decision_commune_reception"
-        },
-        "sourceLatestDate": {
-          "before": "2026-01-10",
-          "after": "2026-01-31"
-        },
-        "sourceArticleUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6811/tintuc/2026/2/qd-cong-bo-dm-tthc-sua-doi-bo-sung-cac-linh-vuc-thuoc-tham-quyen-cua-so-tu-phap..signed639056177100499762.pdf",
-          "after": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412"
-        },
-        "sourceAttachmentUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6811/tintuc/2026/2/qd-cong-bo-dm-tthc-sua-doi-bo-sung-cac-linh-vuc-thuoc-tham-quyen-cua-so-tu-phap..signed639056177100499762.pdf",
-          "after": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
-        }
-      }
-    },
-    {
-      "ma": "2.000806",
-      "ten": "Thủ tục đăng ký kết hôn có yếu tố nước ngoài",
-      "fields": {
-        "quyetDinh": {
-          "before": "",
-          "after": "467/QĐ-UBND"
-        },
-        "verificationStatus": {
-          "before": "official_commune_evidence_no_later_repeal_in_snapshot",
-          "after": "official_city_decision_commune_reception"
-        },
-        "sourceLatestDate": {
-          "before": "2025-12-07",
-          "after": "2026-01-31"
-        },
-        "sourceArticleUrl": {
-          "before": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-827521",
-          "after": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412"
-        },
-        "sourceAttachmentUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/12/phu-luc.signed-1-639007020695231661.pdf",
-          "after": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
-        }
-      }
-    },
-    {
-      "ma": "2.000884",
-      "ten": "Thủ tục chứng thực chữ ký trong các văn bản (áp dụng cho cả trường hợp chứng thực điểm chỉ và trường hợp người yêu cầu chứng thực không điểm chỉ được)",
-      "fields": {
-        "cap": {
-          "before": "Xã",
-          "after": "Dùng chung (cấp bộ, cấp tỉnh, cấp xã)"
-        },
-        "quyetDinh": {
-          "before": "",
-          "after": "1353/QĐ-UBND"
-        },
-        "verificationStatus": {
-          "before": "official_commune_evidence_no_later_repeal_in_snapshot",
-          "after": "official_city_decision_commune_reception"
-        },
-        "sourceLatestDate": {
-          "before": "2025-12-07",
-          "after": "2026-04-08"
-        },
-        "sourceArticleUrl": {
-          "before": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-827521",
-          "after": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-1353-qd-ubnd-ngay-08-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-883466"
-        },
-        "sourceAttachmentUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/12/phu-luc.signed-1-639007020695231661.pdf",
-          "after": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-cong-bo-danh-muc-tthc-linh-vuc-cong-chung-va-chung-thuc_so-tu-phap..signed639114064354058456.pdf"
-        }
-      }
-    },
-    {
-      "ma": "2.000913",
-      "ten": "Chứng thực việc sửa đổi, bổ sung, hủy bỏ giao dịch",
-      "fields": {
-        "cap": {
-          "before": "Xã / điểm tiếp nhận cấp xã",
-          "after": "Xã"
-        },
-        "quyetDinh": {
-          "before": "",
-          "after": "1353/QĐ-UBND"
-        },
-        "verificationStatus": {
-          "before": "priority51_current_official_commune_evidence",
-          "after": "official_city_decision_commune_reception"
-        },
-        "sourceLatestDate": {
-          "before": "2026-09-07",
-          "after": "2026-04-08"
-        },
-        "sourceArticleUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6799/tintuc/2026/3/26.02-kh-ngay-thu-5-hanh-chinh.signed639080565000341409.pdf",
-          "after": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-1353-qd-ubnd-ngay-08-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-883466"
-        },
-        "sourceAttachmentUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6799/tintuc/2026/3/26.02-kh-ngay-thu-5-hanh-chinh.signed639080565000341409.pdf",
-          "after": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-cong-bo-danh-muc-tthc-linh-vuc-cong-chung-va-chung-thuc_so-tu-phap..signed639114064354058456.pdf"
-        }
-      }
-    },
-    {
-      "ma": "2.000942",
-      "ten": "Thủ tục cấp bản sao có chứng thực từ bản chính hợp đồng, giao dịch đã được chứng thực",
-      "fields": {
-        "quyetDinh": {
-          "before": "",
-          "after": "1353/QĐ-UBND"
-        },
-        "verificationStatus": {
-          "before": "official_commune_evidence_no_later_repeal_in_snapshot",
-          "after": "official_city_decision_commune_reception"
-        },
-        "sourceLatestDate": {
-          "before": "2025-12-07",
-          "after": "2026-04-08"
-        },
-        "sourceArticleUrl": {
-          "before": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-827521",
-          "after": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-1353-qd-ubnd-ngay-08-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-883466"
-        },
-        "sourceAttachmentUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/12/phu-luc.signed-1-639007020695231661.pdf",
-          "after": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-cong-bo-danh-muc-tthc-linh-vuc-cong-chung-va-chung-thuc_so-tu-phap..signed639114064354058456.pdf"
-        }
-      }
-    },
-    {
-      "ma": "2.001008",
-      "ten": "Chứng thực chữ ký người dịch mà người dịch không phải là cộng tác viên dịch thuật của Ủy ban nhân dân cấp xã, tổ chức hành nghề công chứng",
-      "fields": {
-        "cap": {
-          "before": "Xã",
-          "after": "Dùng chung (cấp bộ, cấp tỉnh, cấp xã)"
-        },
-        "quyetDinh": {
-          "before": "",
-          "after": "1353/QĐ-UBND"
-        },
-        "verificationStatus": {
-          "before": "official_commune_evidence_no_later_repeal_in_snapshot",
-          "after": "official_city_decision_commune_reception"
-        },
-        "sourceLatestDate": {
-          "before": "2025-11-11",
-          "after": "2026-04-08"
-        },
-        "sourceArticleUrl": {
-          "before": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vuc-chung-thuc-thuoc-pham-vi--810099",
-          "after": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-1353-qd-ubnd-ngay-08-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-883466"
-        },
-        "sourceAttachmentUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phuluc-i-qd-3152-bo-tu-phap638984589798308803.docx",
-          "after": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-cong-bo-danh-muc-tthc-linh-vuc-cong-chung-va-chung-thuc_so-tu-phap..signed639114064354058456.pdf"
-        }
-      }
-    },
-    {
-      "ma": "2.001016",
-      "ten": "Chứng thực văn bản từ chối nhận di sản",
-      "fields": {
-        "cap": {
-          "before": "Xã / điểm tiếp nhận cấp xã",
-          "after": "Xã"
-        },
-        "quyetDinh": {
-          "before": "",
-          "after": "1353/QĐ-UBND"
-        },
-        "verificationStatus": {
-          "before": "priority51_current_official_commune_evidence",
-          "after": "official_city_decision_commune_reception"
-        },
-        "sourceLatestDate": {
-          "before": "2026-09-07",
-          "after": "2026-04-08"
-        },
-        "sourceArticleUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6799/tintuc/2026/3/26.02-kh-ngay-thu-5-hanh-chinh.signed639080565000341409.pdf",
-          "after": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-1353-qd-ubnd-ngay-08-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-883466"
-        },
-        "sourceAttachmentUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6799/tintuc/2026/3/26.02-kh-ngay-thu-5-hanh-chinh.signed639080565000341409.pdf",
-          "after": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-cong-bo-danh-muc-tthc-linh-vuc-cong-chung-va-chung-thuc_so-tu-phap..signed639114064354058456.pdf"
-        }
-      }
-    },
-    {
-      "ma": "2.001035",
-      "ten": "Chứng thực giao dịch liên quan đến tài sản là động sản, quyền sử dụng đất, nhà ở",
-      "fields": {
-        "quyetDinh": {
-          "before": "",
-          "after": "1353/QĐ-UBND"
-        },
-        "verificationStatus": {
-          "before": "official_commune_evidence_no_later_repeal_in_snapshot",
-          "after": "official_city_decision_commune_reception"
-        },
-        "sourceLatestDate": {
-          "before": "2025-11-11",
-          "after": "2026-04-08"
-        },
-        "sourceArticleUrl": {
-          "before": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vuc-chung-thuc-thuoc-pham-vi--810099",
-          "after": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-1353-qd-ubnd-ngay-08-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-883466"
-        },
-        "sourceAttachmentUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phuluc-i-qd-3152-bo-tu-phap638984589798308803.docx",
-          "after": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-cong-bo-danh-muc-tthc-linh-vuc-cong-chung-va-chung-thuc_so-tu-phap..signed639114064354058456.pdf"
-        }
-      }
-    },
-    {
-      "ma": "2.001263",
-      "ten": "Đăng ký việc nuôi con nuôi trong nước",
-      "fields": {
-        "quyetDinh": {
-          "before": "",
-          "after": "556/QĐ-UBND"
-        },
-        "verificationStatus": {
-          "before": "official_commune_evidence_no_later_repeal_in_snapshot",
-          "after": "official_city_decision_commune_reception"
-        },
-        "sourceLatestDate": {
-          "before": "2025-12-07",
-          "after": "2026-02-09"
-        },
-        "sourceArticleUrl": {
-          "before": "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-thuc-hien-khong-phu-thuoc-vao-dia-gioi-hanh-chinh-trong-pham-vi-than-827521",
-          "after": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-556-qd-ubnd-ngay-09-2-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-do-884409"
-        },
-        "sourceAttachmentUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/12/phu-luc.signed-1-639007020695231661.pdf",
-          "after": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-556-nuoi-con-nuoi639065875510491063639116698920797829.pdf"
-        }
-      }
-    },
-    {
-      "ma": "2.001282",
-      "ten": "Thủ tục Cấp Giấy phép xuất khẩu, nhập khẩu hàng hóa thuộc diện áp dụng biện pháp tạm ngừng xuất khẩu, tạm ngừng nhập khẩu",
-      "fields": {
-        "linhVuc": {
-          "before": "XUẤT NHẬP KHẨU",
-          "after": "CÔNG THƯƠNG"
-        },
-        "quyetDinh": {
-          "before": "3584/QĐ-UBND",
-          "after": "2127/QĐ-UBND; 3584/QĐ-UBND"
-        }
-      }
-    },
-    {
-      "ma": "2.001406",
-      "ten": "Chứng thực văn bản phân chia di sản mà di sản là động sản, quyền sử dụng đất, nhà ở",
-      "fields": {
-        "cap": {
-          "before": "Xã / điểm tiếp nhận cấp xã",
-          "after": "Xã"
-        },
-        "quyetDinh": {
-          "before": "",
-          "after": "1353/QĐ-UBND"
-        },
-        "verificationStatus": {
-          "before": "priority51_current_official_commune_evidence",
-          "after": "official_city_decision_commune_reception"
-        },
-        "sourceLatestDate": {
-          "before": "2026-09-07",
-          "after": "2026-04-08"
-        },
-        "sourceArticleUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6799/tintuc/2026/3/26.02-kh-ngay-thu-5-hanh-chinh.signed639080565000341409.pdf",
-          "after": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-1353-qd-ubnd-ngay-08-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-883466"
-        },
-        "sourceAttachmentUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6799/tintuc/2026/3/26.02-kh-ngay-thu-5-hanh-chinh.signed639080565000341409.pdf",
-          "after": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-cong-bo-danh-muc-tthc-linh-vuc-cong-chung-va-chung-thuc_so-tu-phap..signed639114064354058456.pdf"
-        }
-      }
-    },
-    {
-      "ma": "2.002189",
-      "ten": "Thủ tục ghi vào Sổ hộ tịch việc kết hôn của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài",
-      "fields": {
-        "cap": {
-          "before": "Xã / điểm tiếp nhận cấp xã",
-          "after": "Xã"
-        },
-        "quyetDinh": {
-          "before": "",
-          "after": "467/QĐ-UBND"
-        },
-        "verificationStatus": {
-          "before": "priority51_current_official_commune_evidence",
-          "after": "official_city_decision_commune_reception"
-        },
-        "sourceLatestDate": {
-          "before": "2026-09-07",
-          "after": "2026-01-31"
-        },
-        "sourceArticleUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
-          "after": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412"
-        },
-        "sourceAttachmentUrl": {
-          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf",
-          "after": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
-        }
-      }
-    },
-    {
-      "ma": "2.002913",
-      "ten": "Liên thông điện tử: đăng ký khai tử, xóa đăng ký thường trú, giải quyết mai táng phí, tử tuất",
-      "fields": {
-        "cap": {
-          "before": "Xã",
-          "after": "Dùng chung (cấp bộ, cấp tỉnh, cấp xã)"
-        }
-      }
-    },
-    {
-      "ma": "3.000722",
-      "ten": "Liên thông điện tử: đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế, cấp thẻ căn cước cho trẻ em dưới 6 tuổi",
-      "fields": {
-        "cap": {
-          "before": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
-          "after": "Dùng chung (cấp bộ, cấp tỉnh, cấp xã)"
+          "before": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/4/qd-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-gd-dt..signed639129677063242252.pdf",
+          "after": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/1635.qd-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-gd-dt..signed639137600009151186.pdf"
         }
       }
     }

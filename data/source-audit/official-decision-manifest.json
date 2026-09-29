@@ -332,8 +332,9 @@
       "filePath": "data/source-audit/city-decisions/QD-3856.pdf",
       "pdfSha256": "323c61417ef13b5e9478d27e209148d79cd67f31a613bf952f12c2e157d0bdae",
       "effectiveDate": null,
-      "ingestStatus": "reviewed_pending_effective_date",
-      "title": "Công khai Quyết định số: 3856/QĐ-UBND ngày 19/9/2026 của UBND thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính ban hành mới và được sửa đổi, bổ sung trong lĩnh vực xuất nhập khẩu thuộc phạm vi, chức năng quản lý của Sở Công Thương"
+      "ingestStatus": "applied",
+      "title": "Công khai Quyết định số: 3856/QĐ-UBND ngày 19/9/2026 của UBND thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính ban hành mới và được sửa đổi, bổ sung trong lĩnh vực xuất nhập khẩu thuộc phạm vi, chức năng quản lý của Sở Công Thương",
+      "reviewNote": "29/9/2026: áp dụng quy tắc \"không ghi điều khoản hiệu lực thì có hiệu lực kể từ ngày ký\" (chỉ đạo của Giám đốc TTPVHCC)."
     },
     {
       "decisionNo": "3857/QĐ-UBND",
@@ -385,8 +386,9 @@
       "filePath": "data/source-audit/city-decisions/QD-3878.pdf",
       "pdfSha256": "5c18d851bc173fa004997580cb857e434c1e1bf868eb23e31eae2306b24433dc",
       "effectiveDate": null,
-      "ingestStatus": "reviewed_pending_effective_date",
-      "title": "Công khai Quyết định số: 3878/QĐ-UBND ngày 20/9/2026 của UBND thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung, bị bãi bỏ trong lĩnh vực hàng hải và đường thủy nội địa thuộc phạm vi chức năng quản lý của Sở Xây dựng"
+      "ingestStatus": "applied",
+      "title": "Công khai Quyết định số: 3878/QĐ-UBND ngày 20/9/2026 của UBND thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung, bị bãi bỏ trong lĩnh vực hàng hải và đường thủy nội địa thuộc phạm vi chức năng quản lý của Sở Xây dựng",
+      "reviewNote": "29/9/2026: áp dụng quy tắc \"không ghi điều khoản hiệu lực thì có hiệu lực kể từ ngày ký\" (chỉ đạo của Giám đốc TTPVHCC)."
     },
     {
       "decisionNo": "3879/QĐ-UBND",
@@ -413,8 +415,9 @@
       "filePath": "data/source-audit/city-decisions/QD-3904.pdf",
       "pdfSha256": "4b23c8ee05c5f63f5d5b337f3b6311225fc83ab7ed8912830389aca497c1a81b",
       "effectiveDate": null,
-      "ingestStatus": "reviewed_pending_effective_date",
-      "title": "Công khai Quyết định số: 3904/QĐ-UBND ngày 21/9/2026 của UBND thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính ban hành mới, được sửa đổi, bổ sung và bị bãi bỏ trong lĩnh vực giám định tư pháp thuộc phạm vi, chức năng quản lý nhà nước của Sở Tư pháp"
+      "ingestStatus": "applied",
+      "title": "Công khai Quyết định số: 3904/QĐ-UBND ngày 21/9/2026 của UBND thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính ban hành mới, được sửa đổi, bổ sung và bị bãi bỏ trong lĩnh vực giám định tư pháp thuộc phạm vi, chức năng quản lý nhà nước của Sở Tư pháp",
+      "reviewNote": "29/9/2026: áp dụng quy tắc \"không ghi điều khoản hiệu lực thì có hiệu lực kể từ ngày ký\" (chỉ đạo của Giám đốc TTPVHCC)."
     },
     {
       "decisionNo": "3957/QĐ-UBND",
@@ -427,9 +430,9 @@
       "filePath": "data/source-audit/city-decisions/QD-3957.pdf",
       "pdfSha256": "85a339d785b9ffc734b96b5108f67b3146afd34467a6bcb8b2195a008ae9467a",
       "effectiveDate": null,
-      "ingestStatus": "reviewed_pending_effective_date",
+      "ingestStatus": "applied",
       "title": "Quyết định số 3957/QĐ-UBND ngày 23/9/2026 về việc công bố danh mục thủ tục hành chính ban hành mới lĩnh vực tiếp cận thông tin thuộc phạm vi, chức năng quản lý của Sở Tư pháp",
-      "reviewNote": "Rà soát 29/9/2026: QĐ không có điều khoản hiệu lực; ban hành mới 1.116556, 1.116557 (tiếp nhận tại TTPVHCC thành phố và cấp xã) theo Luật Tiếp cận thông tin số 01/2026/QH16 – chờ xác định ngày hiệu lực trước khi đưa vào canonical."
+      "reviewNote": "Rà soát 29/9/2026: QĐ không có điều khoản hiệu lực; ban hành mới 1.116556, 1.116557 (tiếp nhận tại TTPVHCC thành phố và cấp xã) theo Luật Tiếp cận thông tin số 01/2026/QH16 – chờ xác định ngày hiệu lực trước khi đưa vào canonical. | 29/9/2026: áp dụng quy tắc \"không ghi điều khoản hiệu lực thì có hiệu lực kể từ ngày ký\" (chỉ đạo của Giám đốc TTPVHCC)."
     },
     {
       "decisionNo": "3958/QĐ-UBND",
@@ -472,9 +475,9 @@
       "filePath": "data/source-audit/city-decisions/QD-4016.pdf",
       "pdfSha256": "a6f7538234a56d954f5246453bf6d102662edc3a325ce081e8d2d57c9531dce9",
       "effectiveDate": null,
-      "ingestStatus": "reviewed_pending_effective_date",
+      "ingestStatus": "applied",
       "title": "Quyết định số 4016/QĐ-UBND ngày 28/9/2026 của Uỷ ban nhân dân thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung, lĩnh vực thủy sản và kiểm ngư thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường",
-      "reviewNote": "Rà soát 29/9/2026: QĐ không có điều khoản hiệu lực; sửa đổi 1.003593, 1.003666 (thủy sản, có tiếp nhận tại TTPVHCC cấp xã) chưa có trong canonical – chờ xác định hiệu lực và phạm vi áp dụng tại Vĩnh Bảo."
+      "reviewNote": "Rà soát 29/9/2026: QĐ không có điều khoản hiệu lực; sửa đổi 1.003593, 1.003666 (thủy sản, có tiếp nhận tại TTPVHCC cấp xã) chưa có trong canonical – chờ xác định hiệu lực và phạm vi áp dụng tại Vĩnh Bảo. | 29/9/2026: áp dụng quy tắc \"không ghi điều khoản hiệu lực thì có hiệu lực kể từ ngày ký\" (chỉ đạo của Giám đốc TTPVHCC)."
     },
     {
       "decisionNo": "467/QĐ-UBND",
@@ -562,9 +565,9 @@
       "filePath": "data/source-audit/city-decisions/QD-1635.pdf",
       "pdfSha256": "65dc8f94f71bec1e11961c08e462dbfbb1ff031884ba7625876f4ba04dde32b3",
       "effectiveDate": null,
-      "ingestStatus": "reviewed_pending_effective_date",
+      "ingestStatus": "applied",
       "title": "Quyết định số 1635/QĐ-UBND ngày 24/4/2026 về việc công bố danh mục thủ tục hành chính được sửa đổi bổ sung, thay thế, bị bãi bỏ lĩnh vực giáo dục mầm non, giáo dục trung học, giáo dục nghề nghiệp, giáo dục và đào tạo thuộc hệ thống giáo dục quốc dân thuộc phạm vi, chức năng quản lý của Sở Giáo dục và Đào tạo",
-      "reviewNote": "Rà soát 29/9/2026 (nguồn cổng xã Giá Viên): QĐ không có điều khoản hiệu lực. Có thay thế cấp xã 1.008722, 1.008724 (chưa có trong canonical); bãi bỏ 1.010595, 1.010596. Chờ xác định hiệu lực."
+      "reviewNote": "Rà soát 29/9/2026 (nguồn cổng xã Giá Viên): QĐ không có điều khoản hiệu lực. Có thay thế cấp xã 1.008722, 1.008724 (chưa có trong canonical); bãi bỏ 1.010595, 1.010596. Chờ xác định hiệu lực. | 29/9/2026: áp dụng quy tắc \"không ghi điều khoản hiệu lực thì có hiệu lực kể từ ngày ký\" (chỉ đạo của Giám đốc TTPVHCC)."
     },
     {
       "decisionNo": "1747/QĐ-UBND",
@@ -577,9 +580,9 @@
       "filePath": "data/source-audit/city-decisions/QD-1747.pdf",
       "pdfSha256": "bdb23d657efb60304016c1cba2ed2b44703e1d10fd10be3a2927127255dcdcc5",
       "effectiveDate": null,
-      "ingestStatus": "reviewed_pending_effective_date",
+      "ingestStatus": "applied",
       "title": "Quyết định số 1747/QĐ-UBND ngày 09/5/2026 của UBND thành phố về việc công khai Danh mục thủ tục hành chính sửa đổi bổ sung thuộc phạm vi, chức năng quản lí của Sở Giáo dục và Đào tạo",
-      "reviewNote": "Rà soát 29/9/2026 (nguồn cổng xã Giá Viên): QĐ không có điều khoản hiệu lực. Mục B cấp xã sửa đổi 1.001622, 1.006390, 1.008950, 1.012965, 1.012969, 1.012971, 2.001842 (chưa có trong canonical). Chờ xác định hiệu lực."
+      "reviewNote": "Rà soát 29/9/2026 (nguồn cổng xã Giá Viên): QĐ không có điều khoản hiệu lực. Mục B cấp xã sửa đổi 1.001622, 1.006390, 1.008950, 1.012965, 1.012969, 1.012971, 2.001842 (chưa có trong canonical). Chờ xác định hiệu lực. | 29/9/2026: áp dụng quy tắc \"không ghi điều khoản hiệu lực thì có hiệu lực kể từ ngày ký\" (chỉ đạo của Giám đốc TTPVHCC)."
     },
     {
       "decisionNo": "1847/QĐ-UBND",
@@ -592,9 +595,9 @@
       "filePath": "data/source-audit/city-decisions/QD-1847.pdf",
       "pdfSha256": "4e6a599d3ceb62843f6a5b5b5d3a14ebe6210084536db1667c2030b463897333",
       "effectiveDate": null,
-      "ingestStatus": "reviewed_pending_effective_date",
+      "ingestStatus": "applied",
       "title": "Quyết định số 1847/QĐ-UBND ngày 19/5/2026 của UBND thành phố về việc công bố Danh mục thủ tục hành chính mới ban hành, bị bãi bỏ thuộc phạm vi chức năng quản lý của Sở Giáo dục và Đào tạo",
-      "reviewNote": "Rà soát 29/9/2026 (nguồn cổng xã Giá Viên; bài đăng ghi nhầm là QĐ 1877, số hiệu trên văn bản là 1847/QĐ-UBND ngày 19/5/2026): QĐ không có điều khoản hiệu lực. Mới ban hành dùng chung tỉnh-xã 2.002854–2.002857; Phụ lục II bãi bỏ cấp xã gồm 2.002481 (đang công khai), 2.002482, 2.002483, 1.005099. Chờ xác định hiệu lực trước khi rút 2.002481."
+      "reviewNote": "Rà soát 29/9/2026 (nguồn cổng xã Giá Viên; bài đăng ghi nhầm là QĐ 1877, số hiệu trên văn bản là 1847/QĐ-UBND ngày 19/5/2026): QĐ không có điều khoản hiệu lực. Mới ban hành dùng chung tỉnh-xã 2.002854–2.002857; Phụ lục II bãi bỏ cấp xã gồm 2.002481 (đang công khai), 2.002482, 2.002483, 1.005099. Chờ xác định hiệu lực trước khi rút 2.002481. | 29/9/2026: áp dụng quy tắc \"không ghi điều khoản hiệu lực thì có hiệu lực kể từ ngày ký\" (chỉ đạo của Giám đốc TTPVHCC)."
     },
     {
       "decisionNo": "1897/QĐ-UBND",
@@ -607,9 +610,9 @@
       "filePath": "data/source-audit/city-decisions/QD-1897.pdf",
       "pdfSha256": "aeee91de4d22553182e05bf872a300640cb2ddb21413d56a9aa1bbbb191bc9d8",
       "effectiveDate": null,
-      "ingestStatus": "reviewed_pending_effective_date",
+      "ingestStatus": "applied",
       "title": "Quyết định số 1897/QĐ-UBND ngày 25/5/2026 về việc công bố Danh mục thủ tục hành chính mới ban hành, được sửa đổi, bổ sung, bị bãi bỏ thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường",
-      "reviewNote": "Rà soát 29/9/2026 (nguồn cổng xã Giá Viên): QĐ không có điều khoản hiệu lực. Sửa đổi cấp xã 1.010091, 1.010092 (chưa có trong canonical); Phụ lục II bãi bỏ gồm 1.012789 (đang công khai) và 1.014854. Chờ xác định hiệu lực."
+      "reviewNote": "Rà soát 29/9/2026 (nguồn cổng xã Giá Viên): QĐ không có điều khoản hiệu lực. Sửa đổi cấp xã 1.010091, 1.010092 (chưa có trong canonical); Phụ lục II bãi bỏ gồm 1.012789 (đang công khai) và 1.014854. Chờ xác định hiệu lực. | 29/9/2026: áp dụng quy tắc \"không ghi điều khoản hiệu lực thì có hiệu lực kể từ ngày ký\" (chỉ đạo của Giám đốc TTPVHCC)."
     },
     {
       "decisionNo": "2032/QĐ-UBND",
@@ -622,9 +625,9 @@
       "filePath": "data/source-audit/city-decisions/QD-2032.pdf",
       "pdfSha256": "0b10427989639b51f62860122ca29c9ad185b0ce4078625dcacc279771f223d7",
       "effectiveDate": null,
-      "ingestStatus": "reviewed_pending_effective_date",
+      "ingestStatus": "applied",
       "title": "QĐ 2032 về việc công bố Danh mục thủ tục hành chính mới ban hành, được sửa đổi, bổ sung và bị bãi bỏ thuộc phạm vi quản lý của Sở Văn hoá, Thể thao và Du lịch",
-      "reviewNote": "Rà soát 29/9/2026 (nguồn cổng xã Giá Viên): QĐ không có điều khoản hiệu lực chung (chỉ ghi hiệu lực từng lĩnh vực trong bảng, ví dụ Báo chí từ 20/5/2026). Mục B cấp xã có 3.000569, 3.000570 chưa có trong canonical. Chờ xác định hiệu lực."
+      "reviewNote": "Rà soát 29/9/2026 (nguồn cổng xã Giá Viên): QĐ không có điều khoản hiệu lực chung (chỉ ghi hiệu lực từng lĩnh vực trong bảng, ví dụ Báo chí từ 20/5/2026). Mục B cấp xã có 3.000569, 3.000570 chưa có trong canonical. Chờ xác định hiệu lực. | 29/9/2026: áp dụng quy tắc \"không ghi điều khoản hiệu lực thì có hiệu lực kể từ ngày ký\" (chỉ đạo của Giám đốc TTPVHCC)."
     },
     {
       "decisionNo": "2127/QĐ-UBND",

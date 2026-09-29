@@ -39,6 +39,112 @@ TIME_OR_COLUMN_RE = re.compile(
 # Trích xuất văn bản thuần không giữ được ranh giới cột, nên khóa lại đúng quan
 # hệ thay thế đã thể hiện trực tiếp trong phụ lục chính thức.
 DECISION_ROW_OVERRIDES = {
+    # Tên chép từ Phụ lục QĐ 1635/QĐ-UBND (cột tên dính cột thời hạn/bị xuống trang).
+    "1635/QĐ-UBND": {
+        "1.002407": {
+            "name": "Xét, cấp học bổng chính sách",
+            "levelHint": "shared_including_commune",
+        },
+        "1.008722": {
+            "name": "Chuyển đổi nhà trẻ, trường mẫu giáo, trường mầm non tư thục do nhà đầu tư nước ngoài đầu tư sang nhà trẻ, trường mẫu giáo, trường mầm non tư thục hoạt động không vì lợi nhuận",
+        },
+        "1.008723": {
+            "name": "Chuyển đổi trường trung học phổ thông tư thục, trường phổ thông tư thục có nhiều cấp học có cấp học cao nhất là trung học phổ thông do nhà đầu tư trong nước đầu tư và bảo đảm điều kiện hoạt động; cơ sở giáo dục phổ thông tư thục do nhà đầu tư nước ngoài đầu tư sang trường trung học phổ thông tư thục, trường phổ thông tư thục có nhiều cấp học có cấp học cao nhất là trung học phổ thông hoạt động không vì lợi nhuận",
+        },
+        "1.008724": {
+            "name": "Chuyển đổi nhà trẻ, trường mẫu giáo, trường mầm non tư thục do nhà đầu tư trong nước đầu tư sang nhà trẻ, trường mẫu giáo, trường mầm non tư thục hoạt động không vì lợi nhuận",
+        },
+    },
+    # Tên chép từ Phụ lục QĐ 1747/QĐ-UBND.
+    "1747/QĐ-UBND": {
+        "1.008720": {
+            "name": "Chuyển đổi cơ sở giáo dục mầm non tư thục do cơ quan đại diện ngoại giao nước ngoài, tổ chức quốc tế liên chính phủ đề nghị sang cơ sở giáo dục mầm non tư thục hoạt động không vì lợi nhuận",
+        },
+        "1.012969": {
+            "name": "Thành lập hoặc cho phép thành lập trung tâm học tập cộng đồng",
+        },
+        "1.013751": {
+            "name": "Cho phép thành lập trung tâm giáo dục thường xuyên, trung tâm giáo dục nghề nghiệp - giáo dục thường xuyên tư thục",
+        },
+        "1.013759": {
+            "name": "Cho phép thành lập cơ sở giáo dục nghề nghiệp, cơ sở giáo dục nghề nghiệp cho người khuyết tật, phân hiệu của trường trung cấp tư thục",
+        },
+    },
+    # Tên chép từ Phụ lục I QĐ 1847/QĐ-UBND.
+    "1847/QĐ-UBND": {
+        "2.002854": {
+            "name": "Chuyển trường và tiếp nhận học sinh",
+        },
+        "2.002855": {
+            "name": "Tiếp nhận học sinh Việt Nam từ nước ngoài về nước",
+        },
+        "2.002856": {
+            "name": "Tiếp nhận học sinh người nước ngoài",
+        },
+        "2.002857": {
+            "name": "Tiếp nhận học sinh xin học lại",
+        },
+    },
+    # Tên chép từ Phụ lục I QĐ 1897/QĐ-UBND.
+    "1897/QĐ-UBND": {
+        "1.002571": {
+            "name": "Đăng ký, cấp giấy chứng nhận kiểm dịch động vật trên cạn tham gia hội chợ, triển lãm, thi đấu thể thao, biểu diễn nghệ thuật; sản phẩm động vật trên cạn tham gia hội chợ, triển lãm",
+        },
+        "1.010091": {
+            "name": "Hỗ trợ khám chữa bệnh, trợ cấp tai nạn cho lực lượng xung kích phòng chống thiên tai cấp xã trong trường hợp chưa tham gia bảo hiểm y tế, bảo hiểm xã hội",
+        },
+        "1.010092": {
+            "name": "Trợ cấp tiền tuất, tai nạn (đối với trường hợp tai nạn suy giảm khả năng lao động từ 5% trở lên) cho lực lượng xung kích phòng chống thiên tai cấp xã chưa tham gia bảo hiểm xã hội",
+        },
+        "1.010733": {
+            "name": "Thẩm định báo cáo đánh giá tác động môi trường",
+        },
+        "1.013644": {
+            "name": "Cấp phép đối với các hoạt động liên quan đến đê điều thuộc trách nhiệm của Uỷ ban nhân dân tỉnh",
+        },
+        "1.014132": {
+            "name": "Hủy đăng ký dự án",
+        },
+        "1.014133": {
+            "name": "Cấp tín chỉ các-bon theo cơ chế trao đổi, bù trừ tín chỉ các-bon trong nước",
+        },
+        "1.014136": {
+            "name": "Đăng ký/Điều chỉnh dự án theo cơ chế trao đổi, bù trừ tín chỉ các-bon trong nước",
+        },
+        "2.001558": {
+            "name": "Cấp giấy chứng nhận kiểm dịch động vật, sản phẩm động vật thủy sản xuất khẩu mang theo người, gửi qua đường bưu điện",
+        },
+        "2.002849": {
+            "name": "Chuyển quyền sở hữu hạn ngạch phát thải khí nhà kính, tín chỉ các-bon ngoài hệ thống giao dịch các-bon",
+        },
+    },
+    # Tên chép từ Phụ lục QĐ 3856/QĐ-UBND.
+    "3856/QĐ-UBND": {
+        "1.000658": {
+            "name": "Thủ tục cấp Giấy chứng nhận KP đối với kim cương thô xuất khẩu theo Quy chế Chứng nhận KP",
+        },
+    },
+    # Tên chép từ Phụ lục QĐ 3904/QĐ-UBND.
+    "3904/QĐ-UBND": {
+        "2.000890": {
+            "name": "Cấp phép thành lập văn phòng giám định tư pháp",
+        },
+    },
+    # Tên chép từ Phụ lục QĐ 3957/QĐ-UBND.
+    "3957/QĐ-UBND": {
+        "1.116556": {
+            "name": "Thủ tục cung cấp thông tin theo yêu cầu (dành cho cá nhân)",
+        },
+        "1.116557": {
+            "name": "Thủ tục cung cấp thông tin theo yêu cầu (dành cho công dân thông qua tổ chức, đoàn thể, doanh nghiệp)",
+        },
+    },
+    # Tên chép từ Phụ lục QĐ 4016/QĐ-UBND.
+    "4016/QĐ-UBND": {
+        "1.003593": {
+            "name": "Cấp giấy xác nhận nguyên liệu thủy sản khai thác (theo yêu cầu)",
+        },
+    },
     # Tên/lĩnh vực chép từ Phụ lục QĐ 467/QĐ-UBND (lớp chữ PDF bị tách ký tự, dính cột thời hạn).
     "467/QĐ-UBND": {
         # Mục C "Thủ tục hành chính dùng chung" (sau mục A cấp tỉnh, B cấp xã).
@@ -440,6 +546,11 @@ def extract_decision(meta: dict, as_of: str) -> dict:
         detected, source = detect_effective_date(reader, decision_date)
         effective_date = detected
         effective_source = source
+    if not effective_date and decision_date:
+        # Quy tắc nghiệp vụ (chỉ đạo 29/9/2026): quyết định không ghi điều khoản
+        # hiệu lực thì có hiệu lực kể từ ngày ký.
+        effective_date = decision_date
+        effective_source = "default_effective_from_signing_date"
 
     ingest_status = str(meta.get("ingestStatus") or "")
     if ingest_status == "reviewed_no_commune_change":

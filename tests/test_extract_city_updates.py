@@ -39,6 +39,21 @@ class ExtractCityUpdatesTests(unittest.TestCase):
         self.assertEqual(extractor.level_hint("cấp xã", "province"), "province")
         self.assertEqual(extractor.level_hint("B. cấp xã", "province"), "commune")
 
+    def test_missing_effective_clause_defaults_to_signing_date(self):
+        # QĐ 1847/QĐ-UBND không ghi điều khoản hiệu lực → hiệu lực từ ngày ký.
+        meta = {
+            "decisionNo": "1847/QĐ-UBND",
+            "decisionDate": "2026-05-19",
+            "filePath": "data/source-audit/city-decisions/QD-1847.pdf",
+            "field": "GIÁO DỤC VÀ ĐÀO TẠO",
+            "ingestStatus": "applied",
+            "classification": "public_tthc",
+        }
+        result = extractor.extract_decision(meta, "2026-09-29")
+        self.assertEqual(result["effectiveDate"], "2026-05-19")
+        self.assertEqual(result["effectiveDateSource"], "default_effective_from_signing_date")
+        self.assertEqual(result["currentStateAtAsOf"], "current_or_immediate_unless_repealed")
+
 
 if __name__ == "__main__":
     unittest.main()

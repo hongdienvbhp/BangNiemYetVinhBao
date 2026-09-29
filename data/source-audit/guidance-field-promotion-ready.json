@@ -5,7 +5,7 @@
   "summary": {
     "durationReady": 0,
     "durationConfirmedExisting": 20,
-    "durationNeedsReview": 95
+    "durationNeedsReview": 102
   },
   "ready": [],
   "confirmedExisting": [
@@ -619,6 +619,60 @@
       ]
     },
     {
+      "ma": "1.001117",
+      "field": "thoiHan",
+      "reason": "multiple_or_ambiguous_duration_tokens",
+      "currentValue": "",
+      "candidateValue": "03 ngày làm việc 02 ngày làm việc - T",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/4/qd-cong-bo-danh-muc-tthc-linh-vuc-giam-dinh-tu-phap_so-tu-phap..signed639110905953652281.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-giam-dinh-tu-phap-thuoc-pham-vi-chuc-n-881298"
+          ],
+          "decisionNumbers": [
+            "862/QĐ-BTP"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.001122",
+      "field": "thoiHan",
+      "reason": "multiple_or_ambiguous_duration_tokens",
+      "currentValue": "",
+      "candidateValue": "30 ngày làm việc 15 ngày làm việc",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/4/qd-cong-bo-danh-muc-tthc-linh-vuc-giam-dinh-tu-phap_so-tu-phap..signed639110905953652281.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-giam-dinh-tu-phap-thuoc-pham-vi-chuc-n-881298"
+          ],
+          "decisionNumbers": [
+            "862/QĐ-BTP"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.001216",
+      "field": "thoiHan",
+      "reason": "multiple_or_ambiguous_duration_tokens",
+      "currentValue": "",
+      "candidateValue": "12 ngày làm việc 06 ngày làm việc",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/4/qd-cong-bo-danh-muc-tthc-linh-vuc-giam-dinh-tu-phap_so-tu-phap..signed639110905953652281.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-giam-dinh-tu-phap-thuoc-pham-vi-chuc-n-881298"
+          ],
+          "decisionNumbers": [
+            "862/QĐ-BTP"
+          ]
+        }
+      ]
+    },
+    {
       "ma": "1.001669",
       "field": "thoiHan",
       "reason": "multiple_or_ambiguous_duration_tokens",
@@ -705,6 +759,25 @@
       ]
     },
     {
+      "ma": "1.002407",
+      "field": "thoiHan",
+      "reason": "multiple_or_ambiguous_duration_tokens",
+      "currentValue": "",
+      "candidateValue": "10 ngày làm việc kể từ ngày k ết thúc nh ận hồ sơ 05 ngày làm vi ệc",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/4/qd-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-gd-dt..signed639129677063242252.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-giao-duc-mam-non/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-thay-the-bi-bai-bo-linh-vuc-giao-duc-mam-non-gi-891324",
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-giao-duc-nghe-nghiep/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-thay-the-bi-bai-bo-linh-vuc-giao-duc-mam-non-gi-891324",
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-giao-duc-trung-hoc/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-thay-the-bi-bai-bo-linh-vuc-giao-duc-mam-non-gi-891324",
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-giao-duc-va-dao-tao-thuoc-he-thong-giao-duc-quoc-dan/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-thay-the-bi-bai-bo-linh-vuc-giao-duc-mam-non-gi-891324"
+          ],
+          "decisionNumbers": []
+        }
+      ]
+    },
+    {
       "ma": "1.002847",
       "field": "thoiHan",
       "reason": "multiple_or_ambiguous_duration_tokens",
@@ -769,6 +842,42 @@
             "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-ho-tich-quoc-tich-nuoi-con-nuoi-boi-th-844229"
           ],
           "decisionNumbers": []
+        }
+      ]
+    },
+    {
+      "ma": "1.003593",
+      "field": "thoiHan",
+      "reason": "multiple_or_ambiguous_duration_tokens",
+      "currentValue": "",
+      "candidateValue": "01 ngày làm việc Không c ắt giảm th ời gian",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/10.1-quyet-dinh-2026-cong-bo-danh-muc-tthc-so-nn-va-mt-ttr32-..signed639038304277949791.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-thuy-san/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-thuy-san-thuoc-pham-vi-chuc-nang-cua-s-844221"
+          ],
+          "decisionNumbers": [
+            "31/QĐ-BNNMT"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.003666",
+      "field": "thoiHan",
+      "reason": "multiple_or_ambiguous_duration_tokens",
+      "currentValue": "",
+      "candidateValue": "02 ngày làm việc Không c ắt giảm th ời gian",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/10.1-quyet-dinh-2026-cong-bo-danh-muc-tthc-so-nn-va-mt-ttr32-..signed639038304277949791.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-thuy-san/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-thuy-san-thuoc-pham-vi-chuc-nang-cua-s-844221"
+          ],
+          "decisionNumbers": [
+            "31/QĐ-BNNMT"
+          ]
         }
       ]
     },
@@ -1125,6 +1234,24 @@
           ],
           "decisionNumbers": [
             "1136/QĐ-BXD"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.009832",
+      "field": "thoiHan",
+      "reason": "multiple_or_ambiguous_duration_tokens",
+      "currentValue": "",
+      "candidateValue": "15 ngày làm việc 08 ngày làm việc",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/4/qd-cong-bo-danh-muc-tthc-linh-vuc-giam-dinh-tu-phap_so-tu-phap..signed639110905953652281.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-giam-dinh-tu-phap-thuoc-pham-vi-chuc-n-881298"
+          ],
+          "decisionNumbers": [
+            "862/QĐ-BTP"
           ]
         }
       ]
@@ -1604,26 +1731,6 @@
             "2304/QĐ-BNNMT",
             "34/QĐ-BTP",
             "6225/QĐ-BQP"
-          ]
-        }
-      ]
-    },
-    {
-      "ma": "1.012789",
-      "field": "thoiHan",
-      "reason": "multiple_or_ambiguous_duration_tokens",
-      "currentValue": "01 ngày làm việc",
-      "candidateValue": "01 ngày làm việc - Đối với trường hợp thông t",
-      "sources": [
-        {
-          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-3266-danh-muc-kem-theo638912181889816666.doc",
-          "articleUrls": [
-            "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
-          ],
-          "decisionNumbers": [
-            "2003/QĐ-TTG",
-            "2021/QĐ-TTG",
-            "2025/QĐ-TTG"
           ]
         }
       ]
@@ -2364,6 +2471,24 @@
             "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-ho-tich-quoc-tich-nuoi-con-nuoi-boi-th-844229"
           ],
           "decisionNumbers": []
+        }
+      ]
+    },
+    {
+      "ma": "2.000568",
+      "field": "thoiHan",
+      "reason": "multiple_or_ambiguous_duration_tokens",
+      "currentValue": "",
+      "candidateValue": "30 ngày làm việc 15 ngày làm việc",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/4/qd-cong-bo-danh-muc-tthc-linh-vuc-giam-dinh-tu-phap_so-tu-phap..signed639110905953652281.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-giam-dinh-tu-phap-thuoc-pham-vi-chuc-n-881298"
+          ],
+          "decisionNumbers": [
+            "862/QĐ-BTP"
+          ]
         }
       ]
     },

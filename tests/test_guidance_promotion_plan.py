@@ -74,7 +74,7 @@ class GuidancePromotionPlanTests(unittest.TestCase):
             result["summary"]["needsReview"],
             {
                 "onlineServiceLevel": 0,
-                "thoiHan": 95,
+                "thoiHan": 102,
                 "phiLePhi": 18,
                 "canCuPhapLy": 72,
                 "coQuanThucHien": {
