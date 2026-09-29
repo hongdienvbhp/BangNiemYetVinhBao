@@ -120,6 +120,10 @@ def reconcile(
     target = int(baseline["aggregate"]["combined"]["total"])
     candidate_count = len(set(phase1_candidates))
     minimum_missing = max(0, target - candidate_count)
+    updates = baseline.get("officialAggregateUpdates") or []
+    latest = updates[-1] if updates else None
+    latest_target = int(latest["combined"]["total"]) if latest else target
+    latest_missing = max(0, latest_target - candidate_count)
 
     return {
         "format": "phase1-reconciliation",
@@ -139,6 +143,9 @@ def reconcile(
             "officialTableClassifiedCodes": len(table_map),
             "minimumMissingAgainstAggregateBaseline": minimum_missing,
             "exactMissingByCodeStatus": baseline["codeLevelList"]["status"],
+            "latestOfficialAggregatePeriod": latest["reportPeriod"] if latest else None,
+            "latestOfficialAggregateTarget": latest_target,
+            "minimumMissingAgainstLatestOfficialAggregate": latest_missing,
         },
         "MATCHED": {
             "status": "partial_only",
@@ -166,6 +173,14 @@ def reconcile(
             "delta": candidate_count - target,
             "minimumMissing": minimum_missing,
             "canonicalTotalVsBaselineDelta": len(canonical.get("thuTuc") or []) - target,
+            "latestOfficialAggregate": {
+                "period": latest["reportPeriod"] if latest else None,
+                "target": latest_target,
+                "communeAuthority": latest["communeAuthority"]["total"] if latest else None,
+                "shared": latest["shared"]["total"] if latest else None,
+                "baselineDrift": latest_target - target,
+                "minimumMissing": latest_missing,
+            },
         },
         "AMBIGUOUS": sorted(set(ambiguous)),
         "PROVISIONAL_COMMUNE": sorted(set(provisional_commune)),
@@ -186,6 +201,7 @@ def render_md(result: dict) -> str:
         f"- Xung đột phân loại với evidence chính thức: **{s['misclassifiedByOfficialEvidence']}**",
         f"- Nhãn còn mơ hồ xã/dùng chung: **{s['ambiguousCommuneOrShared']}**",
         f"- Số thiếu tối thiểu so với baseline aggregate: **{s['minimumMissingAgainstAggregateBaseline']}**",
+        f"- Tổng hợp chính thức mới nhất ({s.get('latestOfficialAggregatePeriod') or 'không có'}): **{s.get('latestOfficialAggregateTarget')}** TTHC cấp xã + dùng chung; thiếu tối thiểu: **{s.get('minimumMissingAgainstLatestOfficialAggregate')}**",
         "",
         "## Kết luận",
         "",

@@ -9,6 +9,7 @@
 - Xung đột phân loại với evidence chính thức: **0**
 - Nhãn còn mơ hồ xã/dùng chung: **149**
 - Số thiếu tối thiểu so với baseline aggregate: **124**
+- Tổng hợp chính thức mới nhất (Q3/2026): **348** TTHC cấp xã + dùng chung; thiếu tối thiểu: **149**
 
 ## Kết luận
 

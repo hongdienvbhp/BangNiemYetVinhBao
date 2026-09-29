@@ -15,7 +15,10 @@
     "directlyEvidencedPhase1": 16,
     "officialTableClassifiedCodes": 36,
     "minimumMissingAgainstAggregateBaseline": 124,
-    "exactMissingByCodeStatus": "pending_authoritative_materialization"
+    "exactMissingByCodeStatus": "pending_authoritative_materialization",
+    "latestOfficialAggregatePeriod": "Q3/2026",
+    "latestOfficialAggregateTarget": 348,
+    "minimumMissingAgainstLatestOfficialAggregate": 149
   },
   "MATCHED": {
     "status": "partial_only",
@@ -200,7 +203,15 @@
     "phase1CandidatesCurrent": 199,
     "delta": -124,
     "minimumMissing": 124,
-    "canonicalTotalVsBaselineDelta": -68
+    "canonicalTotalVsBaselineDelta": -68,
+    "latestOfficialAggregate": {
+      "period": "Q3/2026",
+      "target": 348,
+      "communeAuthority": 263,
+      "shared": 85,
+      "baselineDrift": 25,
+      "minimumMissing": 149
+    }
   },
   "AMBIGUOUS": [
     "1.000464",

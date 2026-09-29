@@ -48,5 +48,53 @@
     "sourceOfTruthRequired": true,
     "note": "Aggregate counts are verified, but exact 323-code list must be materialized from official DVCQG/competent-authority sources before MISSING can be finalized by code."
   },
-  "policy": "Không suy diễn mã còn thiếu chỉ từ tổng số. Không ép canonical về 323 nếu nguồn chính thức mới hơn làm thay đổi danh mục."
+  "policy": "Không suy diễn mã còn thiếu chỉ từ tổng số. Không ép canonical về 323 nếu nguồn chính thức mới hơn làm thay đổi danh mục.",
+  "officialAggregateUpdates": [
+    {
+      "reportPeriod": "Q3/2026",
+      "source": {
+        "role": "official_city_kstthc_report",
+        "title": "Báo cáo của UBND thành phố Hải Phòng gửi Bộ Tư pháp: Tình hình thực hiện công tác kiểm soát thủ tục hành chính quý III năm 2026 trên địa bàn thành phố Hải Phòng (bản ký số, số/ngày để trống trên lớp chữ PDF)",
+        "legalBasisOfReport": "Thông tư số 09/2026/TT-BTP ngày 15/6/2026 của Bộ Tư pháp",
+        "sections": [
+          "Mục I.2 (trang 2)",
+          "Biểu 03b/BTP/KSTT (phụ lục trang 3-6)",
+          "Biểu 08c/BTP/KSTT (phụ lục trang 29)"
+        ],
+        "fileSha256": "e6b8487a4a235729eb9d908252bd3c50f1ba97e37217710c8980710c66e98406",
+        "fileStoredInRepo": false,
+        "providedBy": "Giám đốc Trung tâm PVHCC xã Vĩnh Bảo, 29/9/2026"
+      },
+      "communeAuthority": {
+        "total": 263,
+        "FULL": 157,
+        "PARTIAL": 102,
+        "NOT_ONLINE": 4
+      },
+      "shared": {
+        "total": 85,
+        "FULL": 59,
+        "PARTIAL": 26,
+        "NOT_ONLINE": 0
+      },
+      "combined": {
+        "total": 348,
+        "FULL": 216,
+        "PARTIAL": 128,
+        "NOT_ONLINE": 4
+      },
+      "provinceOnly": {
+        "total": 1642,
+        "FULL": 951,
+        "PARTIAL": 680,
+        "NOT_ONLINE": 11
+      },
+      "cityTotal": 1990,
+      "notes": [
+        "Số liệu tổng hợp, không kèm danh mục theo mã TTHC; không được suy diễn mã còn thiếu chỉ từ tổng số.",
+        "Báo cáo dùng 'chưa được cung cấp DVCTT' (NOT_ONLINE), khác nhóm INFORMATION_ONLY của baseline 20/7/2026.",
+        "Biểu 03b cột (10) ghi tổng 2.090 TTHC, Biểu 08c cột (1) ghi 2.075, mục I.2 ghi 1.990 (đã loại trùng dùng chung); chênh 2.090-2.075 = 15 chưa được giải thích trong báo cáo."
+      ]
+    }
+  ]
 }
