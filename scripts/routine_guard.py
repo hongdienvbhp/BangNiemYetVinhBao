@@ -15,7 +15,9 @@ from zoneinfo import ZoneInfo
 LOCAL_TZ = ZoneInfo("Asia/Ho_Chi_Minh")
 ROUTINE_ID = "tthc-official-source-update"
 WINDOW_START = time(6, 0)
-WINDOW_END = time(12, 0)
+# GitHub thường trễ lịch cron nhiều giờ (thực tế 07:30 → 12:10–12:42); chống chạy trùng
+# trong ngày do successful_run_in_period đảm nhiệm, nên chỉ chặn khung đêm.
+WINDOW_END = time(23, 59, 59)
 
 def parse_bool(value: str | None) -> bool:
     return str(value or "").strip().lower() in {"1", "true", "yes", "on"}
