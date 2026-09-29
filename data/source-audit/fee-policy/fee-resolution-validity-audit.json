@@ -1,0 +1,18 @@
+{
+  "format": "fee-resolution-validity-audit",
+  "version": 1,
+  "auditedAt": "2026-09-29",
+  "method": "Liệt kê toàn bộ 387 văn bản chuyên mục HĐND thành phố trên Công báo Hải Phòng (API Content.Article.selectAll, categoryId 14629321); lọc 98 nghị quyết QPPL ban hành từ 01/7/2025; tải và quét toàn văn 27 nghị quyết có tiêu đề chứa 'phí', 'lệ phí' hoặc 'bãi bỏ' để tìm điều khoản bãi bỏ/hết hiệu lực liên quan NQ 12/2018, 45/2018, 13/2023, 16/2023 và lệ phí hộ tịch. 3 file không có lớp chữ (01/2026 cấp xã, 10/2025, 12/2025) có chủ đề không liên quan phí, lệ phí.",
+  "postMergerRepealsFound": [
+    {"by": "34/2025/NQ-HĐND", "effective": "2026-01-01", "repeals": "Khoản 1 Điều 1 và Phụ lục 01 NQ 12/2018/NQ-HĐND (phí, lệ phí đất đai); khoản 5, 6 Điều 1 và Phụ lục 05, 06 NQ 45/2018/NQ-HĐND; toàn bộ NQ 17/2024/NQ-HĐND; một số mục Phụ lục NQ 08/2025/NQ-HĐND (Hải Dương)"},
+    {"by": "12/2026/NQ-HĐND", "effective": "2026-08-08", "repeals": "Khoản 12 Điều 1 và Phụ lục 12 NQ 45/2018/NQ-HĐND; số thứ tự 4 Mục II Phụ lục NQ 08/2025/NQ-HĐND (Hải Dương) – lệ phí đăng ký kinh doanh"},
+    {"by": "14/2026/NQ-HĐND", "effective": "2026-08-08", "repeals": "Khoản 5 Điều 1 và Phụ lục 05 NQ 12/2018/NQ-HĐND – lệ phí trước bạ"},
+    {"by": "23/2026/NQ-HĐND", "effective": "2026-08-08", "repeals": "Toàn bộ NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND ngày 17/6/2025 (Hải Phòng) – phí, lệ phí trực tuyến"},
+    {"by": "13/2026/NQ-HĐND", "effective": "2026-08-08", "repeals": "Toàn bộ NQ 11/2025 và 12/2025 (không liên quan phí, lệ phí)"}
+  ],
+  "civilStatusFeeFinding": {
+    "newPostMergerResolution": "Không tìm thấy nghị quyết HĐND thành phố sau sáp nhập quy định lệ phí hộ tịch.",
+    "repealOfNq12_2018Annex04": "Không tìm thấy điều khoản bãi bỏ Phụ lục 04 (lệ phí hộ tịch) NQ 12/2018/NQ-HĐND hoặc NQ 16/2023/NQ-HĐND trong các nghị quyết đã quét.",
+    "analysis": "Phân tích (chưa kiểm chứng với cơ quan có thẩm quyền): HĐND thành phố sau sáp nhập bãi bỏ từng khoản của NQ 12/2018 (khoản 1, khoản 5) và NQ 45/2018, cho thấy các phần còn lại, trong đó có lệ phí hộ tịch (Phụ lục 04, sửa đổi bởi NQ 16/2023), vẫn đang được coi là còn hiệu lực trên địa bàn Hải Phòng cũ; địa bàn Hải Dương cũ áp dụng NQ 08/2025/NQ-HĐND ngày 26/6/2025 của HĐND tỉnh Hải Dương (phần chưa bị bãi bỏ). Cần Sở Tư pháp xác nhận tình trạng hiệu lực."
+  }
+}

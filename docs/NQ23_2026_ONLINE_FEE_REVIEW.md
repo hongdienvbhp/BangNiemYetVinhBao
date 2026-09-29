@@ -33,6 +33,20 @@
 
 **Điểm vênh cần cơ quan có thẩm quyền xác nhận:** NQ 34/2025 Điều 6 khoản 2 cho áp dụng mức thu trực tuyến của chính NQ 34 (ví dụ phí đăng ký biện pháp bảo đảm cá nhân 115.000 đ) *khi* NQ 07/2025 và 08/2025 hết hiệu lực; NQ 23/2026 làm hai nghị quyết đó hết hiệu lực từ 08/8/2026 **và** quy định 0 đồng cho cùng khoản thu. *Phân tích (chưa kiểm chứng):* cùng cơ quan ban hành, NQ 23/2026 ban hành sau và quy định riêng về trực tuyến → nhiều khả năng áp dụng 0 đồng. Đề nghị Sở Tài chính/Sở Tư pháp xác nhận.
 
+## 1c. Rà soát hiệu lực các nghị quyết phí, lệ phí sau sáp nhập (29/9/2026)
+
+Quét toàn văn 27/98 nghị quyết QPPL của HĐND thành phố ban hành từ 01/7/2025 trên Công báo (chi tiết: `data/source-audit/fee-policy/fee-resolution-validity-audit.json`):
+
+| Nghị quyết mới | Hiệu lực | Bãi bỏ |
+|---|---|---|
+| 34/2025/NQ-HĐND | 01/01/2026 | Khoản 1 Điều 1 + PL01 NQ 12/2018 (đất đai); khoản 5, 6 Điều 1 + PL05, 06 NQ 45/2018; toàn bộ NQ 17/2024; một số mục NQ 08/2025 (Hải Dương) |
+| 12/2026/NQ-HĐND | 08/8/2026 | Khoản 12 Điều 1 + PL12 NQ 45/2018; mục II.4 NQ 08/2025 (Hải Dương) – lệ phí đăng ký kinh doanh |
+| 14/2026/NQ-HĐND | 08/8/2026 | Khoản 5 Điều 1 + PL05 NQ 12/2018 – lệ phí trước bạ |
+| 23/2026/NQ-HĐND | 08/8/2026 | Toàn bộ NQ 07/2025 (Hải Dương), NQ 08/2025 ngày 17/6/2025 (Hải Phòng) |
+
+**Kết luận đã kiểm chứng:** chưa có nghị quyết sau sáp nhập về lệ phí hộ tịch; chưa có điều khoản nào bãi bỏ Phụ lục 04 NQ 12/2018 hoặc NQ 16/2023.
+*Phân tích (chưa kiểm chứng):* việc HĐND thành phố bãi bỏ từng khoản của NQ 12/2018 cho thấy phần lệ phí hộ tịch vẫn được coi là còn hiệu lực trên địa bàn Hải Phòng cũ (gồm Vĩnh Bảo). Cần Sở Tư pháp xác nhận.
+
 ## 2. Kết quả đối chiếu với 254 TTHC canonical
 
 - Khớp 47 dòng: 19 thuộc 51 TTHC trọng điểm; độ tin cậy Cao 36, Trung bình 1, Thấp 10; 1 dòng không thuộc phạm vi; 1 dòng đã được miễn.
