@@ -393,6 +393,8 @@ for code, cross in p51_by_code.items():
         fail(f"{code}: liveNameVisible lệch manifest")
 
 # Ma trận kiểm chứng pháp lý của 37 mã từng thiếu ở bước trước.
+# 2.001009: bãi bỏ theo QĐ 4517/QĐ-UBND; 2.001283: bãi bỏ theo QĐ 2127/QĐ-UBND (hiệu lực 01/7/2026).
+P51_REPEALED = {"2.001009", "2.001283"}
 legal_rows = priority51_legal_payload.get("rows") if isinstance(priority51_legal_payload, dict) else None
 if not isinstance(legal_rows, list):
     fail("data/priority-51-legal-verification.json thiếu rows")
@@ -403,10 +405,10 @@ if len(legal_rows) != 37 or len(legal_codes) != len(set(legal_codes)) or "" in l
 legal_current = [row for row in legal_rows if row.get("legalStatus") == "current_official_commune_evidence"]
 legal_repealed = [row for row in legal_rows if row.get("legalStatus") == "repealed_official_evidence"]
 legal_other = [row for row in legal_rows if row.get("legalStatus") not in {"current_official_commune_evidence", "repealed_official_evidence"}]
-if len(legal_current) != 36 or len(legal_repealed) != 1 or legal_other:
-    fail(f"Ma trận pháp lý phải là 36 current + 1 repealed + 0 pending, hiện {len(legal_current)}/{len(legal_repealed)}/{len(legal_other)}")
-if {str(row.get("code") or "") for row in legal_repealed} != {"2.001009"}:
-    fail("Mã bãi bỏ trong ma trận 51 phải là 2.001009")
+if len(legal_current) != 35 or len(legal_repealed) != 2 or legal_other:
+    fail(f"Ma trận pháp lý phải là 35 current + 2 repealed + 0 pending, hiện {len(legal_current)}/{len(legal_repealed)}/{len(legal_other)}")
+if {str(row.get("code") or "") for row in legal_repealed} != P51_REPEALED:
+    fail(f"Mã bãi bỏ trong ma trận 51 phải là {sorted(P51_REPEALED)}")
 
 source_validation = priority51_legal_payload.get("sourceValidation") or {}
 if source_validation.get("uniquePrimaryOfficialSources") != 11:
@@ -453,10 +455,10 @@ for item in legal_repealed:
     if not row or row.get("verificationStatus") != "repealed_official_evidence":
         fail(f"{code}: thủ tục bãi bỏ chưa được lưu đúng trong excluded")
 
-if len(p51_in_master) != 50:
-    fail(f"Sau kiểm chứng pháp lý phải có 50/51 mã trọng điểm trong Master public, hiện {len(p51_in_master)}")
-if set(p51_by_code) - code_set != {"2.001009"}:
-    fail(f"Sau kiểm chứng, khoảng trống Priority 51 chỉ được là mã bãi bỏ 2.001009: {sorted(set(p51_by_code) - code_set)}")
+if len(p51_in_master) != 51 - len(P51_REPEALED):
+    fail(f"Sau kiểm chứng pháp lý phải có {51 - len(P51_REPEALED)}/51 mã trọng điểm trong Master public, hiện {len(p51_in_master)}")
+if set(p51_by_code) - code_set != P51_REPEALED:
+    fail(f"Sau kiểm chứng, khoảng trống Priority 51 chỉ được là mã bãi bỏ {sorted(P51_REPEALED)}: {sorted(set(p51_by_code) - code_set)}")
 for code in p51_in_master:
     cross = p51_by_code[code]
     master_row = master_by_code[code]
@@ -469,10 +471,10 @@ for code in p51_in_master:
         fail(f"{code}: formalityId Master lệch crosswalk")
 if summary.get("priority51CrosswalkTotal") != 51:
     fail("summary.priority51CrosswalkTotal phải bằng 51")
-if summary.get("priority51InCurrentMaster") != 50:
-    fail("summary.priority51InCurrentMaster phải bằng 50")
-if summary.get("priority51Gap") != 1:
-    fail("summary.priority51Gap phải bằng 1 (mã bãi bỏ 2.001009)")
+if summary.get("priority51InCurrentMaster") != 51 - len(P51_REPEALED):
+    fail(f"summary.priority51InCurrentMaster phải bằng {51 - len(P51_REPEALED)}")
+if summary.get("priority51Gap") != len(P51_REPEALED):
+    fail(f"summary.priority51Gap phải bằng {len(P51_REPEALED)} (mã bãi bỏ {sorted(P51_REPEALED)})")
 actual_formality_mapped = sum(1 for row in rows if row.get("formalityId"))
 if summary.get("formalityIdMapped") != actual_formality_mapped:
     fail(
@@ -483,14 +485,16 @@ if actual_formality_mapped < 48:
     fail(f"Không được giảm coverage formalityId dưới baseline 48, hiện {actual_formality_mapped}")
 if summary.get("priority51LegalAudited") != 37:
     fail("summary.priority51LegalAudited phải bằng 37")
-if summary.get("priority51LegalVerifiedCurrent") != 36:
-    fail("summary.priority51LegalVerifiedCurrent phải bằng 36")
-if summary.get("priority51LegalVerifiedRepealed") != 1:
-    fail("summary.priority51LegalVerifiedRepealed phải bằng 1")
+if summary.get("priority51LegalVerifiedCurrent") != len(legal_current):
+    fail(f"summary.priority51LegalVerifiedCurrent phải bằng {len(legal_current)}")
+if summary.get("priority51LegalVerifiedRepealed") != len(legal_repealed):
+    fail(f"summary.priority51LegalVerifiedRepealed phải bằng {len(legal_repealed)}")
 if summary.get("priority51LegalNeedsVerification") != 0:
     fail("summary.priority51LegalNeedsVerification phải bằng 0")
-if summary.get("priority51LegalAddedCurrent") != 36:
-    fail("summary.priority51LegalAddedCurrent phải bằng 36 ở snapshot này")
+# Mã current trong ma trận có thể đã được quyết định thành phố đưa vào trước;
+# ma trận chỉ bổ sung phần còn thiếu, còn mọi mã current phải có trong public (kiểm tra ở trên).
+if not 0 <= int(summary.get("priority51LegalAddedCurrent") or 0) <= len(legal_current):
+    fail("summary.priority51LegalAddedCurrent vượt số mã current trong ma trận pháp lý")
 if summary.get("priority51LegalSupersededByNewerEvidence") != 0:
     fail("Có bằng chứng chính thức mới hơn ma trận Priority 51; phải rà soát lại snapshot pháp lý trước khi merge")
 

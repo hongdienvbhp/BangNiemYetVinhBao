@@ -1,0 +1,1188 @@
+{
+  "format": "official-local-mirror-scan",
+  "version": 1,
+  "scannedAt": "2026-09-29",
+  "source": {
+    "url": "https://giavien.haiphong.gov.vn/cac-quyet-dinh-cua-ubnd-thanh-pho-ve-thu-tuc-hanh-chinh",
+    "authority": "Cổng TTĐT xã Giá Viên (hệ thống cổng Hải Phòng)",
+    "sourceRole": "official_local_mirror",
+    "legalUse": "cross_check_only; PDF quyết định lấy từ cdn.haiphong.gov.vn"
+  },
+  "method": "Quét 12 chuyên mục (API ArticleInMenuPagination, site_id 2941) → tải tệp đính kèm → trích mã TTHC theo tiêu đề mục (cấp tỉnh/cấp xã/dùng chung/bãi bỏ) → đối chiếu canonical. Quyết định có ảnh hưởng được nạp qua official-decision-manifest.json; không ghi trực tiếp canonical.",
+  "summary": {
+    "articles": 124,
+    "attachments": 144,
+    "distinctCodesInAttachments": 1191,
+    "ingestedDecisions": [
+      "467/QĐ-UBND",
+      "556/QĐ-UBND",
+      "1039/QĐ-UBND",
+      "1349/QĐ-UBND",
+      "1353/QĐ-UBND",
+      "2127/QĐ-UBND",
+      "2380/QĐ-UBND"
+    ],
+    "pendingEffectiveDateDecisions": [
+      "1635/QĐ-UBND",
+      "1747/QĐ-UBND",
+      "1847/QĐ-UBND",
+      "1897/QĐ-UBND",
+      "2032/QĐ-UBND"
+    ]
+  },
+  "notes": [
+    "Bài đăng 'QĐ 1877' trên cổng Giá Viên đính kèm văn bản số 1847/QĐ-UBND ngày 19/5/2026; manifest dùng số hiệu trên văn bản.",
+    "QĐ 2380/QĐ-UBND hiệu lực từ 01/7/2026 đến 28/02/2027; phải rà soát lại trước 28/02/2027."
+  ],
+  "needsReview": {
+    "reason": "Mã có ngữ cảnh cấp xã chỉ trong danh mục 'TTHC liên quan doanh nghiệp thực hiện trực tuyến' năm 2025 (3397, 3704, 3381) hoặc QĐ 2025 chưa đối chiếu văn bản thay thế; không đủ căn cứ nạp.",
+    "codes": {
+      "1.001639": {
+        "decisionNo": "3397",
+        "decisionDate": "2025-08-21",
+        "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/8/qd-dm-tthc-lien-quan-den-dn-thuc-hien-truc-tuyen-sogd-chuan-..signed638917935284458182.pdf"
+      },
+      "1.002407": {
+        "decisionNo": "1635",
+        "decisionDate": "2026-04-24",
+        "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/1635.qd-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-gd-dt..signed639137600009151186.pdf"
+      },
+      "1.004563": {
+        "decisionNo": "3397",
+        "decisionDate": "2025-08-21",
+        "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/8/qd-dm-tthc-lien-quan-den-dn-thuc-hien-truc-tuyen-sogd-chuan-..signed638917935284458182.pdf"
+      },
+      "1.005143": {
+        "decisionNo": "3397",
+        "decisionDate": "2025-08-21",
+        "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/8/qd-dm-tthc-lien-quan-den-dn-thuc-hien-truc-tuyen-sogd-chuan-..signed638917935284458182.pdf"
+      },
+      "1.006444": {
+        "decisionNo": "3397",
+        "decisionDate": "2025-08-21",
+        "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/8/qd-dm-tthc-lien-quan-den-dn-thuc-hien-truc-tuyen-sogd-chuan-..signed638917935284458182.pdf"
+      },
+      "1.006445": {
+        "decisionNo": "3397",
+        "decisionDate": "2025-08-21",
+        "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/8/qd-dm-tthc-lien-quan-den-dn-thuc-hien-truc-tuyen-sogd-chuan-..signed638917935284458182.pdf"
+      },
+      "1.012961": {
+        "decisionNo": "3397",
+        "decisionDate": "2025-08-21",
+        "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/8/qd-dm-tthc-lien-quan-den-dn-thuc-hien-truc-tuyen-sogd-chuan-..signed638917935284458182.pdf"
+      },
+      "1.012962": {
+        "decisionNo": "3397",
+        "decisionDate": "2025-08-21",
+        "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/8/qd-dm-tthc-lien-quan-den-dn-thuc-hien-truc-tuyen-sogd-chuan-..signed638917935284458182.pdf"
+      },
+      "1.012963": {
+        "decisionNo": "3397",
+        "decisionDate": "2025-08-21",
+        "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/8/qd-dm-tthc-lien-quan-den-dn-thuc-hien-truc-tuyen-sogd-chuan-..signed638917935284458182.pdf"
+      },
+      "1.012964": {
+        "decisionNo": "3397",
+        "decisionDate": "2025-08-21",
+        "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/8/qd-dm-tthc-lien-quan-den-dn-thuc-hien-truc-tuyen-sogd-chuan-..signed638917935284458182.pdf"
+      },
+      "1.012967": {
+        "decisionNo": "3397",
+        "decisionDate": "2025-08-21",
+        "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/8/qd-dm-tthc-lien-quan-den-dn-thuc-hien-truc-tuyen-sogd-chuan-..signed638917935284458182.pdf"
+      },
+      "1.012968": {
+        "decisionNo": "3397",
+        "decisionDate": "2025-08-21",
+        "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/8/qd-dm-tthc-lien-quan-den-dn-thuc-hien-truc-tuyen-sogd-chuan-..signed638917935284458182.pdf"
+      },
+      "1.012970": {
+        "decisionNo": "3397",
+        "decisionDate": "2025-08-21",
+        "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/8/qd-dm-tthc-lien-quan-den-dn-thuc-hien-truc-tuyen-sogd-chuan-..signed638917935284458182.pdf"
+      },
+      "1.012973": {
+        "decisionNo": "3397",
+        "decisionDate": "2025-08-21",
+        "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/8/qd-dm-tthc-lien-quan-den-dn-thuc-hien-truc-tuyen-sogd-chuan-..signed638917935284458182.pdf"
+      },
+      "1.012974": {
+        "decisionNo": "3397",
+        "decisionDate": "2025-08-21",
+        "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/8/qd-dm-tthc-lien-quan-den-dn-thuc-hien-truc-tuyen-sogd-chuan-..signed638917935284458182.pdf"
+      },
+      "1.012975": {
+        "decisionNo": "3397",
+        "decisionDate": "2025-08-21",
+        "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/8/qd-dm-tthc-lien-quan-den-dn-thuc-hien-truc-tuyen-sogd-chuan-..signed638917935284458182.pdf"
+      },
+      "1.013792": {
+        "decisionNo": "3704",
+        "decisionDate": "2025-09-11",
+        "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/9/ban-chuan-danh-muc-tthc-lien-quan-den-doanh-nghiep.signed638936321622788144.pdf"
+      },
+      "1.013793": {
+        "decisionNo": "3704",
+        "decisionDate": "2025-09-11",
+        "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/9/ban-chuan-danh-muc-tthc-lien-quan-den-doanh-nghiep.signed638936321622788144.pdf"
+      },
+      "1.013794": {
+        "decisionNo": "3704",
+        "decisionDate": "2025-09-11",
+        "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/9/ban-chuan-danh-muc-tthc-lien-quan-den-doanh-nghiep.signed638936321622788144.pdf"
+      },
+      "1.014371": {
+        "decisionNo": "4272",
+        "decisionDate": "2025-10-27",
+        "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/11/25.10quyetdinh4272-2025congbodmtthcsotaichinhqd3453.btc1638977526392147276.docx"
+      },
+      "2.000355": {
+        "decisionNo": "3381",
+        "decisionDate": "2025-08-21",
+        "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/8/phu-luc-dm-tthc-lien-quan-den-doanh-nghiep_soyte-chuan-.signed638917932766802789.pdf"
+      },
+      "2.000794": {
+        "decisionNo": "3704",
+        "decisionDate": "2025-09-11",
+        "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/9/ban-chuan-danh-muc-tthc-lien-quan-den-doanh-nghiep.signed638936321622788144.pdf"
+      },
+      "2.000908": {
+        "decisionNo": "1353",
+        "decisionDate": "2026-04-08",
+        "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-cong-bo-danh-muc-tthc-linh-vuc-cong-chung-va-chung-thuc_so-tu-phap..signed639114064354058456.pdf"
+      },
+      "2.001960": {
+        "decisionNo": "2249",
+        "decisionDate": "2025-06-27",
+        "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/7/qd2249638878175964319073.pdf"
+      },
+      "2.002284": {
+        "decisionNo": "2249",
+        "decisionDate": "2025-06-27",
+        "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/7/qd2249638878175964319073.pdf"
+      },
+      "3.000307": {
+        "decisionNo": "3397",
+        "decisionDate": "2025-08-21",
+        "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/8/qd-dm-tthc-lien-quan-den-dn-thuc-hien-truc-tuyen-sogd-chuan-..signed638917935284458182.pdf"
+      },
+      "3.000308": {
+        "decisionNo": "3397",
+        "decisionDate": "2025-08-21",
+        "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/8/qd-dm-tthc-lien-quan-den-dn-thuc-hien-truc-tuyen-sogd-chuan-..signed638917935284458182.pdf"
+      }
+    }
+  },
+  "articles": [
+    {
+      "url": "https://giavien.haiphong.gov.vn/cong-bo-thu-tuc-hanh-chinh/qd-2225-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vuc-q-916025",
+      "date": "16/06/2026",
+      "title": "QĐ 2225 về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung và bị bãi bỏ lĩnh vực quảng cáo, du lịch thuộc phạm vi, chức năng quản lý của Sở Văn hoá, Thể thao và Du lịch",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/6/qd-2225639172025310344163.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/cong-bo-thu-tuc-hanh-chinh/qd-2099-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-thuoc-pham-915951",
+      "date": "16/06/2026",
+      "title": "QĐ 2099 Về việc công bố Danh mục thủ tục hành chính mới ban hành, được sửa đổi, bổ sung thuộc phạm vi chức năng quản lý của Sở Khoa học và Công nghệ",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/6/qd-2099639171996803315785.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/qd-1877-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-bi-bai-bo-thuoc-pham-vi-chuc-na-906998",
+      "date": "29/05/2026",
+      "title": "QĐ 1877 về việc công bố Danh mục thủ tục hành chính mới ban hành, bị bãi bỏ thuộc phạm vi chức năng quản lý của Sở Giáo dục và Đào tạo",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1847639156687053039888.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-1747-qd-ubnd-ngay-09-5-2026-cua-ubnd-thanh-pho-ve-viec-cong-khai-danh-muc-thu-tuc--900189",
+      "date": "18/05/2026",
+      "title": "Quyết định số 1747/QĐ-UBND ngày 09/5/2026 của UBND thành phố về việc công khai Danh mục thủ tục hành chính sửa đổi bổ sung thuộc phạm vi, chức năng quản lí của Sở Giáo dục và Đào tạo",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1747639146922033877627.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/noi-dung-thu-tuc-hanh-chinh-theo-quyet-dinh-so-1635-qd-ubnd-ngay-24-4-2026-895608",
+      "date": "07/05/2026",
+      "title": "Nội dung thủ tục hành chính theo Quyết định số 1635/QĐ-UBND ngày 24/4/2026",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/24.4.noi-dung-thuc-hien-tthc-theo-qd-1635639137600573664199.docx"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-1635-qd-ubnd-ngay-24-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-895607",
+      "date": "07/05/2026",
+      "title": "Quyết định số 1635/QĐ-UBND ngày 24/4/2026 về việc công bố danh mục thủ tục hành chính được sửa đổi bổ sung, thay thế, bị bãi bỏ lĩnh vực giáo dục mầm non, giáo dục trung học, giáo dục nghề nghiệp, giáo dục và đào tạo thuộc hệ thống giáo dục quốc dân thuộc phạm vi, chức năng quản lý của Sở Giáo dục và Đào tạo",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/1635.qd-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-gd-dt..signed639137600009151186.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-624-qd-bgddt-ve-viec-cong-bo-thu-tuc-hanh-chinh-moi-ban-hanh-linh-vuc-thi-tuyen-si-882264",
+      "date": "08/04/2026",
+      "title": "Quyết định số 624/QĐ-BGDĐT về việc công bố thủ tục hành chính mới ban hành lĩnh vực thi, tuyển sinh thuộc phạm vi, chức năng quản lý của Bộ Giáo dục và Đào tạo",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/624_qd_bgddt.signed639112420478519158.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/danh-muc-thu-tuc-hanh-chinh-theo-quyet-dinh-so-1296-qd-ubnd-ngay-02-4-2026-ve-viec-cong-bo-danh--880758",
+      "date": "06/04/2026",
+      "title": "Danh mục thủ tục hành chính theo Quyết định số 1296/QĐ-UBND ngày 02/4/2026 về việc công bố danh mục thủ tục hành chính mới ban hành lĩnh vực thi, tuyển sinh thuộc phạm vi, chức năng quản lý của Sở Giáo dục và Đào tạo",
+      "attachments": []
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-1296-qd-ubnd-ngay-02-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-880754",
+      "date": "06/04/2026",
+      "title": "Quyết định số 1296/QĐ-UBND ngày 02/4/2026 về việc công bố danh mục thủ tục hành chính mới ban hành lĩnh vực thi, tuyển sinh thuộc phạm vi, chức năng quản lý của Sở Giáo dục và Đào tạo",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/02.4.qd-1296cong-bo-dm-tthc-moi-ban-hanh-linh-vuc-thi-tuyen-sinh_so-gddt..signed639110602913478351.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-3397-qd-ubnd-ngay-21-8-2025-cua-ubnd-thanh-pho-ve-viec-cong-bo-danh-muc-thu-tuc-ha-775364",
+      "date": "26/08/2025",
+      "title": "Quyết định số 3397/QĐ-UBND ngày 21/8/2025 của UBND thành phố Về việc công bố Danh mục thủ tục hành chính liên quan đến doanh nghiệp được thực hiện trực tuyến thuộc phạm vi, chức năng quản lý của Sở Giáo dục và Đào tạo",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/8/qd-dm-tthc-lien-quan-den-dn-thuc-hien-truc-tuyen-sogd-chuan-..signed638917935284458182.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-2249-qd-ubnd-ngay-27-6-2025-cua-ubnd-thanh-pho-ve-viec-cong-bo-danh-muc-thu-tuc-ha-762290",
+      "date": "11/07/2025",
+      "title": "Quyết định số 2249/QĐ-UBND ngày 27/6/2025 của UBND thành phố về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung lĩnh vực giáo dục nghề nghiệp trên địa bàn thành phố Hải Phòng",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/7/qd2249638878175964319073.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-cong-thuong-92280/quyet-dinh-so-2660-qd-ubnd-ngay-13-6-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-ban-hanh-m-933036",
+      "date": "16/07/2026",
+      "title": "Quyết định số 2660/QĐ-UBND ngày 13/6/2026 về việc công bố danh mục thủ tục hành chính ban hành mới và bị bãi bỏ lĩnh vực thương mại điện tử, xuất nhập khẩu, tiêu chuẩn đo lường chất lượng thuộc phạm vi, chức năng quản lý của Sở Công Thương",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/7/qd2660639197956024299214.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-cong-thuong-92280/quyet-dinh-so-2226-qd-ubnd-ngay-13-6-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-933034",
+      "date": "16/07/2026",
+      "title": "Quyết định số 2226/QĐ-UBND ngày 13/6/2026 về việc công bố danh mục thủ tục hành chính mới ban hành, sửa đổi, bổ sung, bãi bỏ lĩnh vực xuất nhập khẩu, hóa chất, vật liệu nổ công nghiệp, tiền chất thuốc nổ, vận chuyển hàng hóa nguy hiểm, khoáng sản, công nghiệp tiêu dùng thuộc phạm vi, chức năng quản lý của Sở Công Thương",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/7/chi-tiet-tthc-linh-vuc-van-chuyen-hang-hoa-nguy-hiem639197954680035884.docx",
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/7/noi-dung-chi-tiet-tthc-linh-vuc-hoa-chat-cap-tinh-tt26-q639197954682067137.docx",
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/7/noi-dung-chi-tiet-tthc.-phan-cap-xnk639197954684410909.docx",
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/7/phu-luc-chi-tiet-linh-vuc-xnk-theo-qd1213-22tthc-c.o-639197954686129605.docx",
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/7/qd2226-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-cong-thuong..signed639197954439468002.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-cong-thuong-92280/noi-dung-thu-tuc-hanh-chinh-theo-quyet-dinh-so-2127-qd-ubnd-ngay-06-6-2026-921132",
+      "date": "17/06/2026",
+      "title": "Nội dung thủ tục hành chính theo Quyết định số 2127/QĐ-UBND ngày 06/6/2026",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/6/2.2.-noi-dung-chi-tiet-tthc-cap-tinh-2127639179180731253905.docx"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-cong-thuong-92280/quyet-dinh-so-2127-qd-ubnd-ngay-06-6-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-921129",
+      "date": "17/06/2026",
+      "title": "Quyết định số 2127/QĐ-UBND ngày 06/6/2026 về việc công bố danh mục thủ tục hành chính mới ban hành, được sửa đổi, bổ sung, bị bãi bỏ thuộc phạm vi chức năng quản lý của Sở Công Thương",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/6/qd-2127.2026-so-cong-thuong639179180236944152.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-cong-thuong-92280/noi-dung-thu-tuc-hanh-chinh-theo-quyet-dinh-so-2135-qd-ubnd-ngay-07-6-2026-921127",
+      "date": "16/06/2026",
+      "title": "Nội dung thủ tục hành chính theo Quyết định số 2135/QĐ-UBND ngày 07/6/2026",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/6/noi-dung-da-cap639179179089109600.docx"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-cong-thuong-92280/quyet-dinh-so-2135-qd-ubnd-ngay-07-6-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-921125",
+      "date": "16/06/2026",
+      "title": "Quyết định số 2135/QĐ-UBND ngày 07/6/2026 về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung và bị bãi bỏ trong lĩnh vực quản lý bán hàng đa cấp thuộc phạm vi, chức năng, quản lý của Sở Công Thương",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/6/qd-2135.2026639179178392551497.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-cong-thuong-92280/noi-dung-thu-tuc-hanh-chinh-theo-quyet-dinh-so-1581-qd-ubnd-ngay-18-5-2026-895636",
+      "date": "07/05/2026",
+      "title": "Nội dung thủ tục hành chính theo Quyết định số 1581/QĐ-UBND ngày 18/5/2026",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/noi-dung-tau-bay-khong-nguoi-lai639137629586986054.doc"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-cong-thuong-92280/quyet-dinh-so-1581-qd-ubnd-ngay-18-5-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-895633",
+      "date": "07/05/2026",
+      "title": "Quyết định số 1581/QĐ-UBND ngày 18/5/2026 về việc công bố danh mục thủ tục hành chính mới ban hành trong lĩnh vực quản lý vùng trời thuộc thẩm quyền giải quyết của Ủy ban nhân dân thành phố",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd1581-cong-bo-danh-muc-tthc-linh-vuc-quan-ly-vung-troi..signed639137629036275910.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-cong-thuong-92280/noi-dung-thu-tuc-hanh-chinh-theo-quyet-dinh-so-1349-qd-ubnd-ngay-08-4-2026-895632",
+      "date": "07/05/2026",
+      "title": "Nội dung thủ tục hành chính theo Quyết định số 1349/QĐ-UBND ngày 08/4/2026",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/linh-vuc-thuoc-la-cap-tinh-639137625552214761.doc",
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/linh-vuc-thuoc-la-cap-xa-639137625552683839.doc",
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/van-chuyen-hang-nguy-hiem-theo-555.qd.bct_-ban-sua-lai-ngay_20.4.2026639137625553152136.docx"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-cong-thuong-92280/quyet-dinh-so-1349-qd-ubnd-ngay-08-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-883539",
+      "date": "10/04/2026",
+      "title": "Quyết định số 1349/QĐ-UBND ngày 08/4/2026 về việc công bố danh mục thủ tục hành chính mới ban hành và được sửa đổi, bổ sung thuộc phạm vi, chức năng quản lý của Sở Công Thương",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-cong-bo-danh-muc-tthc_so-cong-thuong..signed639114098220839371.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-y-te-92281/quyet-dinh-so-2658-qd-ubnd-ngay-11-7-2026-cua-ubnd-thanh-pho-ve-viec-uy-quyen-cho-giam-doc-so-y--932924",
+      "date": "16/07/2026",
+      "title": "Quyết định số 2658/QĐ-UBND ngày 11/7/2026 của UBND thành phố Về việc ủy quyền cho Giám đốc Sở Y tế thực hiện một số nhiệm vụ lĩnh vực y, dược cổ truyền thuộc thẩm quyền của Ủy ban nhân dân thành phố",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/7/2658_2026639197914693452533.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-y-te-92281/quyet-dinh-so-3825-qd-ubnd-ngay-21-9-2025-cua-ubnd-thanh-pho-ve-viec-cong-bo-danh-muc-thu-tuc-ha-785177",
+      "date": "24/09/2025",
+      "title": "Quyết định số 3825/QĐ-UBND ngày 21/9/2025 của UBND thành phố về việc công bố danh mục thủ tục hành chính mới ban hành và bị bãi bỏ lĩnh vực Dân số, Bà mẹ - Trẻ em thuộc phạm vi, chức năng quản lý của Sở Y tế",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/9/qd-cong-bo-tthc-theo-qd-2922-byt..signed638942979872185340.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-y-te-92281/quyet-dinh-so-3381-qd-ubnd-ngay-21-8-2025-cua-ubnd-thanh-pho-ve-viec-cong-bo-danh-muc-thu-tuc-ha-775356",
+      "date": "26/08/2025",
+      "title": "Quyết định số 3381/QĐ-UBND ngày 21/8/2025 của UBND thành phố về việc công bố Danh mục thủ tục hành chính liên quan đến doanh nghiệp được thực hiện trực tuyến thuộc phạm vi, chức năng quản lý của Sở Y tế",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/8/phu-luc-dm-tthc-lien-quan-den-doanh-nghiep_soyte-chuan-.signed638917932766802789.pdf",
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/8/qd-dm-tthc-lien-quan-den-dn-soyt..signed638917932560978350.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-y-te-92281/quyet-dinh-so-2778-qd-ubnd-ngay-04-7-2025-cua-ubnd-thanh-pho-ve-viec-cong-bo-danh-muc-thu-tuc-ha-762372",
+      "date": "11/07/2025",
+      "title": "Quyết định số 2778/QĐ-UBND ngày 04/7/2025 của UBND thành phố về việc công bố Danh mục thủ tục hành chính mới ban hành lĩnh vực Bảo trợ xã hội thuộc phạm vị chức năng trên địa bàn thành phố Hải Phòng",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/7/qd2778638878259523759791.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-khoa-hoc-va-cong-nghe-92282/quyet-dinh-so-3627-qd-ubnd-ngay-10-9-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-bi-bai-bo--966167",
+      "date": "16/09/2026",
+      "title": "Quyết định số 3627/QĐ-UBND ngày 10/9/2026 về việc công bố Danh mục thủ tục hành chính bị bãi bỏ thuộc phạm vi chức năng quản lý của Sở Khoa học và Công nghệ",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/9/quyet-dinh-2026-cong-bo-dmttc-bi-bai-bo-tthc-so-khcn-ttr267-qd-bkhcn-3710-..signed639251743024618814.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-khoa-hoc-va-cong-nghe-92282/quyet-dinh-so-2622-qd-ubnd-ngay-09-7-2026-ve-viec-uy-quyen-thuc-hien-nhiem-vu-thuoc-tham-quyen-c-930502",
+      "date": "13/07/2026",
+      "title": "Quyết định số 2622/QĐ-UBND ngày 09/7/2026 về việc ủy quyền thực hiện nhiệm vụ thuộc thẩm quyền của Chủ tịch Ủy ban nhân dân thành phố trong việc giải quyết các thủ tục hành chính thuộc phạm vi, chức năng quản lý của Sở Khoa học và Công nghệ.",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/7/2026-07-09-23-.signed639195276375121671.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-khoa-hoc-va-cong-nghe-92282/quyet-dinh-so-2370-qd-ubnd-ngay-25-6-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-942752",
+      "date": "09/07/2026",
+      "title": "Quyết định số 2370/QĐ-UBND ngày 25/6/2026 về việc công bố Danh mục thủ tục hành chính mới ban hành, được sửa đổi, bổ sung và bị bãi bỏ thuộc phạm vi chức năng quản lý của Sở Khoa học và Công nghệ",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/8/3-quyet-dinh-2026-cong-bo-danh-muc-tthc-moi-ban.....signed639213662721370298.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-khoa-hoc-va-cong-nghe-92282/quyet-dinh-so-2558-qd-ubnd-ngay-02-7-2026-ve-viec-uy-quyen-thuc-hien-nhiem-vu-thuoc-tham-quyen-c-927598",
+      "date": "07/07/2026",
+      "title": "Quyết định số 2558/QĐ-UBND ngày 02/7/2026 về việc ủy quyền thực hiện nhiệm vụ thuộc thẩm quyền của Ủy ban nhân dân thành phố trong việc giải quyết các thủ tục hành chính thuộc phạm vi, chức năng quản lý của Sở Khoa học và Công nghệ trong lĩnh vực tần số vô tuyến điện",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/7/qd-uy-quyen-giai-quyet-tthc-linh-vuc-tan-so-vtd..signed639190193677356757.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-khoa-hoc-va-cong-nghe-92282/qd-2411-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-bi-bai-bo-thuoc-pham-vi-chuc-na-936649",
+      "date": "29/06/2026",
+      "title": "QĐ 2411 về việc công bố Danh mục thủ tục hành chính mới ban hành, bị bãi bỏ thuộc phạm vi, chức năng quản lý của Sở Khoa học và Công nghệ",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/7/qd-2411639203346480531603.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-khoa-hoc-va-cong-nghe-92282/quyet-dinh-2205-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-bi-bai-bo-thuoc-pham-vi-936646",
+      "date": "26/06/2026",
+      "title": "Quyết định 2205 về việc công bố Danh mục thủ tục hành chính mới ban hành, bị bãi bỏ thuộc phạm vi chức năng quản lý của Sở Khoa học và Công nghệ",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/7/qd-2205639203344525211178.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-khoa-hoc-va-cong-nghe-92282/quyet-dinh-2362-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-bi-bai-bo-thuoc-pham-vi-936639",
+      "date": "26/06/2026",
+      "title": "Quyết định 2362 về việc công bố Danh mục thủ tục hành chính mới ban hành, bị bãi bỏ thuộc phạm vi chức năng quản lý của Sở Khoa học và Công nghệ",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/7/qd-2362639203343527494730.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-khoa-hoc-va-cong-nghe-92282/noi-dung-thu-tuc-hanh-chinh-theo-quyet-dinh-so-2121-qd-ubnd-ngay-05-6-2026-921138",
+      "date": "16/06/2026",
+      "title": "Nội dung thủ tục hành chính theo Quyết định số 2121/QĐ-UBND ngày 05/6/2026",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/6/5.1-noi-dung-tthc-vien-thong-va-internet639179186057035878.docx",
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/6/5.2-noi-dung-tthc-atbxhn-639179186057660756.docx",
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/6/5.3-noi-dung-tthc-hoat-dong-khcn639179186058754616.doc"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-khoa-hoc-va-cong-nghe-92282/qd-2205-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-bi-bai-bo-thuoc-pham-vi-chuc-na-916022",
+      "date": "16/06/2026",
+      "title": "QĐ 2205 về việc công bố Danh mục thủ tục hành chính mới ban hành, bị bãi bỏ thuộc phạm vi chức năng quản lý của Sở Khoa học và Công nghệ",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/6/qd-2205639172024083128039.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-khoa-hoc-va-cong-nghe-92282/qd-2121-ve-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-thuoc-pham-vi-c-915966",
+      "date": "16/06/2026",
+      "title": "QĐ 2121 về công bố Danh mục thủ tục hành chính mới ban hành, được sửa đổi, bổ sung thuộc phạm vi chức năng quản lý của Sở Khoa học và Công nghệ",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/6/qd-2121639172002083891267.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-khoa-hoc-va-cong-nghe-92282/qd-2052-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-thuoc-pham-vi-chuc-nang-quan-ly-915962",
+      "date": "16/06/2026",
+      "title": "QĐ 2052 về việc công bố Danh mục thủ tục hành chính mới ban hành thuộc phạm vi chức năng quản lý của Sở Khoa học và Công nghệ",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/6/qd-2052639171998508689824.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-khoa-hoc-va-cong-nghe-92282/quyet-dinh-so-2121-qd-ubnd-ngay-05-6-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-921134",
+      "date": "15/06/2026",
+      "title": "Quyết định số 2121/QĐ-UBND ngày 05/6/2026 về việc công bố Danh mục thủ tục hành chính mới ban hành, được sửa đổi, bổ sung thuộc phạm vi chức năng quản lý của Sở Khoa học và Công nghệ",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/6/qd-2121.2026-so-khoa-hoc-cn639179183008546100.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-khoa-hoc-va-cong-nghe-92282/qd-1940-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-thuoc-pham-907022",
+      "date": "29/05/2026",
+      "title": "QĐ 1940 về việc công bố Danh mục thủ tục hành chính mới ban hành, được sửa đổi, bổ sung thuộc phạm vi, chức năng quản lý của Sở Khoa học và Công nghệ",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1940639156705756835081.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-khoa-hoc-va-cong-nghe-92282/qd-1914-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-thuoc-pham-907019",
+      "date": "29/05/2026",
+      "title": "QĐ 1914 về việc công bố Danh mục thủ tục hành chính mới ban hành, được sửa đổi, bổ sung thuộc phạm vi chức năng quản lý của Sở Khoa học và Công nghệ",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1914639156704902206216.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-khoa-hoc-va-cong-nghe-92282/qd-1845-ngay-19-5-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-bi-bai-bo-thuoc-pham-vi-chuc--901843",
+      "date": "20/05/2026",
+      "title": "QĐ 1845 ngày 19/5/2026 về việc công bố Danh mục thủ tục hành chính bị bãi bỏ thuộc phạm vi chức năng quản lý của Sở Khoa học và Công nghệ",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1845639148866542760053.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-khoa-hoc-va-cong-nghe-92282/noi-dung-thu-tuc-hanh-chinh-theo-quyet-dinh-so-1653-qd-ubnd-895604",
+      "date": "07/05/2026",
+      "title": "Nội dung thủ tục hành chính theo Quyết định số 1653/QĐ-UBND",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/5.-noi-dung-tthc639137598714244614.docx"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-khoa-hoc-va-cong-nghe-92282/qd-1586-ngay-20-4-2026-cua-ubnd-thanh-pho-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-900917",
+      "date": "06/05/2026",
+      "title": "QĐ 1586 ngày 20/4/2026 của UBND thành phố về việc công bố Danh mục thủ tục hành chính mới ban hành,lĩnh vực sở hữu trí tuệ thuộc phạm vi chức năng quản lýcủa Sở Khoa học và Công nghệ",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1586639147813344229311.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-khoa-hoc-va-cong-nghe-92282/quyet-dinh-so-1653-qd-ubnd-ngay-28-4-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-danh-muc--900170",
+      "date": "05/05/2026",
+      "title": "Quyết định số 1653/QĐ-UBND ngày 28/4/2026 của UBND thành phố Hải Phòng về việc công bố Danh mục thủ tục hành chính sửa đổi, bổ sung thuộc phạm vi, chức năng quản lý của Sở Khoa học và Công nghệ",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1653639146913604979102.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-khoa-hoc-va-cong-nghe-92282/qd-1477-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-bi-bai-bo-thuoc-pham-vi-chuc-nang-quan-ly-cu-887005",
+      "date": "17/04/2026",
+      "title": "QĐ 1477 về việc công bố Danh mục thủ tục hành chính bị bãi bỏ thuộc phạm vi chức năng quản lý của Sở Khoa học và Công nghệ",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-1477639120208033302239.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-khoa-hoc-va-cong-nghe-92282/quyet-dinh-1111-ve-viec-cong-bo-thu-tuc-hanh-chinh-moi-ban-hanh-linh-vuc-vi-mach-ban-dan-tri-tue-878283",
+      "date": "31/03/2026",
+      "title": "Quyết định 1111 về việc công bố thủ tục hành chính mới ban hành lĩnh vực vi mạch bán dẫn, trí tuệ nhân tạo thuộc phạm vi chức năng quản lý của Sở Khoa học và Công nghệ",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/3/qd-1111639105456815705593.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-khoa-hoc-va-cong-nghe-92282/quyet-dinh-830-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-thuoc-pham-vi-chuc-nang--875816",
+      "date": "24/03/2026",
+      "title": "Quyết định 830 về việc công bố Danh mục thủ tục hành chính mới ban hành thuộc phạm vi, chức năng quản lý của Sở Khoa học và Công nghệ",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/3/qd-830639099616710671730.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-khoa-hoc-va-cong-nghe-92282/quyet-dinh-696-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-sua-doi-bo-sung-va-bi-ba-875791",
+      "date": "24/03/2026",
+      "title": "Quyết định 696 về việc công bố Danh mục thủ tục hành chính mới ban hành, sửa đổi, bổ sung và bị bãi bỏ thuộc phạm vi, chức năng quản lý của Sở Khoa học và Công nghệ",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/3/qd-696639099603237074213.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-khoa-hoc-va-cong-nghe-92282/quyet-dinh-so-4222-qd-ubnd-ngay-02-10-2025-cua-uy-ban-nhan-dan-thanh-pho-ve-viec-cong-bo-danh-mu-803431",
+      "date": "30/10/2025",
+      "title": "Quyết định số 4222/QĐ-UBND ngày 02/10/2025 của Ủy ban nhân dân thành phố về việc công bố Danh mục thủ tục hành chính mới ban hành, bị bãi bỏ lĩnh vực hoạt động khoa học và công nghệ thuộc phạm vi, chức năng quản lý của Sở Khoa học và Công nghệ",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/10/22.10.-quyet-dinh-2025-cong-bo-dmtthc-linh-vuc-hoat-dong-khcn-so-khcn-ttr324-..signed638974148088681258.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-khoa-hoc-va-cong-nghe-92282/quyet-dinh-so-4276-qd-ubnd-ngay-27-10-2025-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-danh-muc-803004",
+      "date": "29/10/2025",
+      "title": "Quyết định số 4276/QĐ-UBND ngày 27/10/2025 của UBND thành phố Hải Phòng về việc công bố Danh mục thủ tục hành chính mới ban hành, bị bãi bỏ lĩnh vực hoạt động khoa học và công nghệ thuộc phạm vi, chức năng quản lý của Sở Khoa học và Công nghệ",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/10/27.10-quyet-dinh-2025-cong-bo-dmtthc-so-khoa-hoc-va-cong-nghe-ttr326-330-..signed638973477828415159.pdf",
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/10/27.10-quyet-dinh-2025-cong-bo-dmtthc-so-khoa-hoc-va-cong-nghe-ttr326-330-..signed638973477925916425.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-khoa-hoc-va-cong-nghe-92282/quyet-dinh-so-4126-qd-ubnd-ngay-20-10-2025-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-danh-muc-800449",
+      "date": "24/10/2025",
+      "title": "Quyết định số 4126/QĐ-UBND ngày 20/10/2025 của UBND thành phố Hải Phòng về việc công bố Danh mục thủ tục hành chính được sửa đổi, bổ sung lĩnh vực hoạt động khoa học và công nghệ thuộc phạm vi, chức năng quản lý của Sở Khoa học và Công nghệ",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/10/quyet-dinh-2025-cong-bo-dmttc-linh-vuc-khoa-hoc-va-cong-nghe-so-khcn-ttr318-..signed638968947537173816.pdf",
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/10/quyet-dinh-2025-cong-bo-dmttc-linh-vuc-khoa-hoc-va-cong-nghe-so-khcn-ttr318-..signed638968947599361845.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-khoa-hoc-va-cong-nghe-92282/quyet-dinh-so-3821-qd-ubnd-ngay-20-9-2025-cua-ubnd-thanh-pho-ve-viec-cong-bo-danh-muc-thu-tuc-ha-785172",
+      "date": "24/09/2025",
+      "title": "Quyết định số 3821/QĐ-UBND ngày 20/9/2025 của UBND thành phố Về việc công bố Danh mục thủ tục hành chính sửa đổi, bổ sung lĩnh vực Viễn thông và Internet thuộc phạm vi, chức năng quản lý của Sở Khoa học và Công nghệ",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/9/quyet-dinh-2025-cong-bo-dm-tthc-so-khcn-ttr302-..signed638942978573096201.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-xay-dung-92283/quyet-dinh-so-3187-qd-ubnd-ngay-10-8-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-949715",
+      "date": "14/08/2026",
+      "title": "Quyết định số 3187/QĐ-UBND ngày 10/8/2026 về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung trong lĩnh vực nhà ở thuộc phạm vi chức năng quản lý của Sở Xây dựng",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/8/quyet-dinh-2026-cong-bo-dmtthc-sua-doi-bo-sung-so-xd-ttr275-qdbxd1346-..signed639225593958900015.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-xay-dung-92283/noi-dung-thu-tuc-hanh-chinh-theo-quyet-dinh-so-2153-qd-ubnd-ngay-09-6-917015",
+      "date": "17/06/2026",
+      "title": "Nội dung Thủ tục hành chính theo Quyết định số 2153/QĐ-UBND ngày 09/6",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/6/noi-dung-tthc-kinh-doanh-bds-843-639173068269041625.docx"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-xay-dung-92283/quyet-dinh-so-2153-qd-ubnd-ngay-09-6-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-916998",
+      "date": "10/06/2026",
+      "title": "Quyết định số 2153/QĐ-UBND ngày 09/6/2026 về việc công bố Danh mục thủ tục hành chính được sửa đổi, bổ sung, bị bãi bỏ thuộc phạm vi chức năng quản lý của Sở Xây dựng",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/6/qd-2153.2026-so-xay-dung639173062188386404.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-xay-dung-92283/noi-dung-thu-tuc-hanh-chinh-theo-quyet-dinh-so-2023-qd-ubnd-ngay-25-6-2025-cua-ubnd-thanh-pho-ve-882196",
+      "date": "08/04/2026",
+      "title": "Nội dung thủ tục hành chính theo Quyết định số 2023/QĐ-UBND ngày 25/6/2025 của UBND thành phố về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung trong lĩnh vực đường sắt trên địa bàn thành phố Hải Phòng",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/danh-muc-noi-dung-tthc639112398668100054.docx"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-xay-dung-92283/quyet-dinh-so-2023-qd-ubnd-ngay-25-6-2025-cua-ubnd-thanh-pho-ve-viec-cong-bo-danh-muc-thu-tuc-ha-762301",
+      "date": "11/07/2025",
+      "title": "Quyết định số 2023/QĐ-UBND ngày 25/6/2025 của UBND thành phố về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung trong lĩnh vực đường sắt trên địa bàn thành phố Hải Phòng",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/7/qd2023638878188777860952.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-van-hoa-the-thao-va-du-lich-92284/quyet-dinh-3303-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-li-952234",
+      "date": "21/08/2026",
+      "title": "Quyết định 3303 về việc công bố danh mục thủ tục hành chính mới ban hành, được sửa đổi, bổ sung lĩnh vực phát thanh truyền hình và thông tin điện tử thuộc phạm vi quản lý của Sở Văn hoá, Thể thao và Du lịch",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/8/qd-3203639229016455821669.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-van-hoa-the-thao-va-du-lich-92284/qd-3203-ve-viec-cong-bo-danh-muc-tthc-duoc-sua-doi-bo-sung-linh-vuc-nghe-thuat-bieu-dien-thuoc-p-952230",
+      "date": "11/08/2026",
+      "title": "QĐ 3203 về việc công bố danh mục TTHC được sửa đổi, bổ sung lĩnh vực nghệ thuật biểu diễn thuộc phạm vi, chức năng quản lý của Sở Văn hoá, Thể thao và Du lịch",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/8/qd-3203639229014749076324.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-van-hoa-the-thao-va-du-lich-92284/quyet-dinh-2995-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-ban-hanh-moi-duoc-sua-doi-bo-sung-li-946434",
+      "date": "10/08/2026",
+      "title": "Quyết định 2995 về việc công bố danh mục thủ tục hành chính ban hành mới, được sửa đổi, bổ sung lĩnh vực phát thanh truyền hình và thông tin điện tử thuộc phạm vi, chức năng quản lý của Sở Văn hoá, Thể thao và Du lịch",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/8/qd-2995639219705941881440.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-van-hoa-the-thao-va-du-lich-92284/qd-2663-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-ban-hanh-moi-linh-vuc-dien-anh-thuoc-pham-vi-936634",
+      "date": "22/07/2026",
+      "title": "QĐ 2663 về việc công bố danh mục thủ tục hành chính ban hành mới lĩnh vực điện ảnh thuộc phạm vi, chức năng quản lý của Sở Văn hoá, Thể thao và Du lịch",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/7/qd-2663639203341927551897.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-van-hoa-the-thao-va-du-lich-92284/quyet-dinh-so-2663-qd-ubnd-ngay-12-7-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-ban-hanh-m-932933",
+      "date": "16/07/2026",
+      "title": "Quyết định số 2663/QĐ-UBND ngày 12/7/2026 về việc công bố danh mục thủ tục hành chính ban hành mới lĩnh vực điện ảnh thuộc phạm vi, chức năng quản lý của Sở Văn hoá, Thể thao và Du lịch",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/7/noi-dung-cu-the-tthc639197917465350395.docx",
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/7/qd-2663-.ubnd-ngay-12.7.2026-tthc-ban-hanh-moi-linh-vuc-dien-anh639197917271375801.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-van-hoa-the-thao-va-du-lich-92284/qd-2102-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-trong-linh-vuc-du-lich--915975",
+      "date": "16/06/2026",
+      "title": "QĐ 2102 về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung trong lĩnh vực du lịch thuộc phạm vi, chức năng quản lý của Sở Văn hoá, Thể thao và Du lịch",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/6/qd-2102639172003568225426.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-van-hoa-the-thao-va-du-lich-92284/qd-1900-ve-viec-phe-duyet-quy-trinh-noi-bo-giai-quyet-thu-tuc-hanh-chinh-thuoc-pham-vi-chuc-nang-907035",
+      "date": "29/05/2026",
+      "title": "QĐ 1900 về việc phê duyệt quy trình nội bộ giải quyết thủ tục hành chính thuộc phạm vi chức năng quản lý của Sở Văn hóa, Thể thao và Du lịch",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1900639156711132551256.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-van-hoa-the-thao-va-du-lich-92284/qd-1876-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-thuoc-pham-907032",
+      "date": "29/05/2026",
+      "title": "QĐ 1876 về việc công bố Danh mục thủ tục hành chính mới ban hành, được sửa đổi, bổ sung thuộc phạm vi quản lý của Sở Văn hóa, Thể thao và Du lịch",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1876639156706724998854.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-van-hoa-the-thao-va-du-lich-92284/qd-2032-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-va-bi-bai--910186",
+      "date": "29/05/2026",
+      "title": "QĐ 2032 về việc công bố Danh mục thủ tục hành chính mới ban hành, được sửa đổi, bổ sung và bị bãi bỏ thuộc phạm vi quản lý của Sở Văn hoá, Thể thao và Du lịch",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/6/qd-2032639161842299651591.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-van-hoa-the-thao-va-du-lich-92284/qd-1709-qd-ubnd-ngay-03-5-2026-cua-ubnd-thanh-pho-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-du-900933",
+      "date": "19/05/2026",
+      "title": "QĐ 1709/QĐ-UBND ngày 03/5/2026 của UBND thành phố về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung và bị bãi bỏ trong lĩnh vực xuất bản, in và phát hành; lĩnh vực điện ảnh thuộc phạm vi, chức năng quản lý của Sở Văn hoá, Thể thao và Du lịch",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1709639147819129400681.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-van-hoa-the-thao-va-du-lich-92284/qd-1814-ve-viec-phe-duyet-quy-trinh-noi-bo-giai-quyet-thu-tuc-hanh-chinh-thuoc-pham-vi-chuc-nang-900899",
+      "date": "19/05/2026",
+      "title": "QĐ 1814 về việc phê duyệt quy trình nội bộ giải quyết thủ tục hành chính thuộc phạm vi chức năng quản lý của Sở Văn hóa, Thể thao và Du lịch",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1814639147807115197488.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-van-hoa-the-thao-va-du-lich-92284/qd-1815-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-va-bi-bai--900896",
+      "date": "19/05/2026",
+      "title": "QĐ 1815 về việc công bố Danh mục thủ tục hành chính mới ban hành, được sửa đổi, bổ sung và bị bãi bỏ thuộc phạm vi quản lý của Sở Văn hóa, Thể thao và Du lịch",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1815639147806426347301.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-van-hoa-the-thao-va-du-lich-92284/quyet-dinh-so-1765-qd-ubnd-ngay-11-5-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-khai-niem-ye-900183",
+      "date": "14/05/2026",
+      "title": "Quyết định số 1765/QĐ-UBND ngày 11/5/2026 của UBND thành phố Hải Phòng về việc công khai niêm yết nội dung TTHC mới ban hành trong lĩnh vực bản quyền tác giả thuộc thẩm quyền chức năng của Sở Văn hóa, Thể thao và Du lịch",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1765.ubnd-ngay-11.5.2026-cong-bo-dmtthc-moi-ttr96-qd-966bvhttdl-..signed639146919762945390.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-van-hoa-the-thao-va-du-lich-92284/quyet-dinh-so-1709-qd-ubnd-ngay-03-5-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-danh-muc--900174",
+      "date": "08/05/2026",
+      "title": "Quyết định số 1709/QĐ-UBND ngày 03/5/2026 của UBND thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung và bị bãi bỏ trong lĩnh vực xuất bản, in và phát hành; lĩnh vực điện ảnh thuộc phạm vi quản lý của Sở Văn hoá, Thể thao và Du lịch",
+      "attachments": []
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-van-hoa-the-thao-va-du-lich-92284/danh-muc-va-noi-dung-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-theo-quyet-dinh-so-1617-qd-ubnd-nga-895685",
+      "date": "07/05/2026",
+      "title": "Danh mục và Nội dung thủ tục hành chính được sửa đổi bổ sung theo Quyết định số 1617/QĐ-UBND ngày 22/4/2026 của Uỷ ban nhân dân thành phố",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/3.-noi-dung-tthcsua-doi-bo-sung_1617.ub_22.4.2026639125025420616431639137650907690359.docx"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-van-hoa-the-thao-va-du-lich-92284/danh-muc-va-noi-dung-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-theo-quyet-dinh-so-1617-qd-ubnd-nga-895682",
+      "date": "07/05/2026",
+      "title": "Danh mục và Nội dung thủ tục hành chính được sửa đổi bổ sung theo Quyết định số 1617/QĐ-UBND ngày 22/4/2026 của Uỷ ban nhân dân thành phố",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd1617639137649376055266.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-van-hoa-the-thao-va-du-lich-92284/qd-1617-cong-bo-danh-muc-tthc-duoc-sua-doi-bo-sung-bi-bai-bo-thuoc-pham-vi-chuc-nang-quan-ly-cua-892511",
+      "date": "29/04/2026",
+      "title": "QĐ 1617 công bố danh mục TTHC được sửa đổi, bổ sung, bị bãi bỏ thuộc phạm vi, chức năng quản lý của Sở Văn hóa, Thể thao và Du lịch",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-1617639130749500687633.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-van-hoa-the-thao-va-du-lich-92284/quyet-dinh-so-1420-qd-ubnd-ngay-11-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-bi-bai-bo--885220",
+      "date": "14/04/2026",
+      "title": "Quyết định số 1420/QĐ-UBND ngày 11/4/2026 về việc công bố danh mục thủ tục hành chính bị bãi bỏ lĩnh vực mua bán hàng hóa quốc tế chuyên ngành văn hóa thuộc phạm vi, chức năng quản lý của Sở Văn hóa, Thể thao và Du lịch",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-cong-bo-dm-tthc-bi-bai-bo-linh-vuc-mua-ban-hang-hoa-quoc-te_so-vhttdl..signed639117602573257074.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-van-hoa-the-thao-va-du-lich-92284/quyet-dinh-713-cong-bo-danh-muc-tthc-moi-ban-hanh-trong-linh-vuc-phat-thanh-truyen-hinh-va-thong-875807",
+      "date": "24/03/2026",
+      "title": "Quyết định 713 công bố danh mục TTHC mới ban hành trong lĩnh vực Phát thanh, truyền hình và thông tin điện tử thuộc phạm vi, chức năng quản lý của Sở Văn hóa, Thể thao và Du lịch",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/3/qd-713639099612955610449.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-van-hoa-the-thao-va-du-lich-92284/quyet-dinh-264-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-noi-bo-moi-ban-hanh-linh-vuc-di-san-v-879596",
+      "date": "22/01/2026",
+      "title": "Quyết định 264 về việc công bố danh mục thủ tục hành chính nội bộ mới ban hành lĩnh vực Di sản văn hóa thuộc phạm vi, chức năng quản lý của Sở Văn hóa, Thể thao và Du lịch",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-264639107161287501162.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-van-hoa-the-thao-va-du-lich-92284/quyet-dinh-so-3817-qd-ubnd-ngay-20-9-2025-cua-ubnd-thanh-pho-ve-viec-cong-bo-danh-muc-thu-tuc-ha-785171",
+      "date": "24/09/2025",
+      "title": "Quyết định số 3817/QĐ-UBND ngày 20/9/2025 của UBND thành phố Về việc công bố danh mục thủ tục hành chính mới ban hành, thủ tục hành chính bị bãi bỏ lĩnh vực di sản văn hóa thuộc phạm vi chức năng quản lý của Sở Văn hoá, Thể thao và Du lịch",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/9/qd_-_2025-_cong-bo-dmtthc-theo-qd-3101-3257..signed638942976320098868.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-van-hoa-the-thao-va-du-lich-92284/ubnd-thanh-pho-ban-hanh-quyet-dinh-so-3704-qd-ubnd-ngay-11-9-2025-ve-viec-cong-bo-danh-muc-thu-t-782094",
+      "date": "16/09/2025",
+      "title": "UBND thành phố ban hành Quyết định số 3704/QĐ-UBND ngày 11/9/2025 về việc công bố Danh mục thủ tục hành chính liên quan đến doanh nghiệp được thực hiện trực tuyến thuộc phạm vi, chức năng quản lý của Sở Văn hóa, Thể thao và Du lịch",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/9/ban-chuan-danh-muc-tthc-lien-quan-den-doanh-nghiep.signed638936321622788144.pdf",
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/9/qd-tthc-lien-quan-den-dn-duoc-thuc-hien-truc-tuyen_sovh_v1..signed638936321503099226.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-van-hoa-the-thao-va-du-lich-92284/quyet-dinh-so-3429-qd-ubnd-ngay-24-8-2025-cua-ubnd-thanh-pho-ve-viec-cong-bo-danh-muc-thu-tuc-ha-775374",
+      "date": "26/08/2025",
+      "title": "Quyết định số 3429/QĐ-UBND ngày 24/8/2025 của UBND thành phố về việc công bố Danh mục thủ tục hành chính nội bộ mới ban hành, bị bãi bỏ trong hệ thống hành chính nhà nước thuộc phạm vi, chức năng quản lý của Sở Văn hoá, Thể thao và Du lịch",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/8/pl-dm-tthc-moi-dc-ban-hanh-bai-bo_vhttdl.signed638917938892636783.pdf",
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/8/qd-dm-tthc-noi-bo-moi-ban-hanh-bai-bo-_vhttdl..signed638917938809595835.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-van-hoa-the-thao-va-du-lich-92284/quyet-dinh-so-3395-qd-ubnd-ngay-21-8-2025-cua-ubnd-thanh-pho-ve-viec-cong-bo-danh-muc-thu-tuc-ha-775361",
+      "date": "26/08/2025",
+      "title": "Quyết định số 3395/QĐ-UBND ngày 21/8/2025 của UBND thành phố về việc công bố Danh mục thủ tục hành chính mới ban hành trong lĩnh vực di sản văn hóa thuộc phạm vi, chức năng quản lý của Sở Văn hoá, Thể thao và Du lịch",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/8/qd-2906-bvhttdl-tthc-moi-ban-hanh-lv-dsvh..signed638917933876683115.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-van-hoa-the-thao-va-du-lich-92284/quyet-dinh-so-2506-qd-ubnd-ngay-30-6-2025-cua-ubnd-thanh-pho-ve-viec-cong-bo-danh-muc-thu-tuc-ha-762299",
+      "date": "11/07/2025",
+      "title": "Quyết định số 2506/QĐ-UBND ngày 30/6/2025 của UBND thành phố về việc công bố danh mục thủ tục hành chính mới ban hành, được sửa đổi, bổ sung, bị bãi bỏ trong một số lĩnh vực thuộc phạm vi chức năng quản lý của Sở Văn hóa, Thể thao và Du lịch theo quy định về phân quyền, phân cấp, phân định thẩm quyền",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/7/qd2506638878185058132617.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-van-hoa-the-thao-va-du-lich-92284/quyet-dinh-so-2035-qd-ubnd-ngay-25-5-2025-cua-ubnd-thanh-pho-ve-viec-cong-bo-danh-muc-thu-tuc-ha-762298",
+      "date": "11/07/2025",
+      "title": "Quyết định số 2035/QĐ-UBND ngày 25/5/2025 của UBND thành phố về việc công bố danh mục thủ tục hành chính mới ban hành, được thay thế trong lĩnh vực Di sản văn hóa thuộc phạm vi chức năng quản lý của Sở Văn hóa, Thể thao và Du lịch",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/7/qd2035638878183925400442.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-2661-qd-ubnd-ngay-12-7-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-936234",
+      "date": "22/07/2026",
+      "title": "Quyết định số 2661/QĐ-UBND ngày 12/7/2026 về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung và bị bãi bỏ trong lĩnh vực bồi thường nhà nước thuộc phạm vi, chức năng quản lý nhà nước của Sở Tư pháp",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/7/nd-linh-vuc-boi-thuong639201328058680028639203107745714667.doc",
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/7/qd-2661-boi-thuong-nha-nuoc639201327961179409639203107643157516.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-556-qd-ubnd-ngay-09-2-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-do-884409",
+      "date": "13/04/2026",
+      "title": "Quyết định số 556/QĐ-UBND ngày 09/2/2026 về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung lĩnh vực nuôi con nuôi thuộc phạm vi, chức năng quản lý của Sở Tư pháp",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-556-nuoi-con-nuoi639065875510491063639116698920797829.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-1297-qd-ubnd-ngay-02-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-883467",
+      "date": "10/04/2026",
+      "title": "Quyết định số 1297/QĐ-UBND ngày 02/4/2026 về việc công bố danh mục thủ tục hành chính mới ban hành, được sửa đổi, bổ sung lĩnh vực quản tài viên và hành nghề quản lý, thanh lý tài sản thuộc phạm vi, chức năng quản lý của Sở Tư pháp",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-1297-quan-tai-vien639112411456051647639114065207194384.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-1353-qd-ubnd-ngay-08-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-883466",
+      "date": "10/04/2026",
+      "title": "Quyết định số 1353/QĐ-UBND ngày 08/4/2026 về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung lĩnh vực công chứng và chứng thực thuộc phạm vi, chức năng quản lý của Sơ Tư pháp",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-cong-bo-danh-muc-tthc-linh-vuc-cong-chung-va-chung-thuc_so-tu-phap..signed639114064354058456.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/noi-dung-cu-the-cua-tung-thu-tuc-hanh-chinh-trong-linh-vuc-thua-phat-lai-thuoc-pham-vi-chuc-nang-879608",
+      "date": "31/03/2026",
+      "title": "Nội dung cụ thể của từng thủ tục hành chính trong lĩnh vực thừa phát lại thuộc phạm vi chức năng quản lý của Bộ Tư pháp",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/nd-cua-tthc-linh-vuc-tpl639105742033773557639107172436144388.docx"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-trong-linh-vuc-thua-phat-lai-thuoc-pham-v-879606",
+      "date": "31/03/2026",
+      "title": "Quyết định về việc công bố danh mục thủ tục hành chính trong lĩnh vực thừa phát lại thuộc phạm vi, chức năng quản lý của Sở Tư pháp",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-1132-thua-phat-lai639105741763770157639107171059357080.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-715-qd-ubnd-ngay-27-2-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-do-884406",
+      "date": "27/02/2026",
+      "title": "Quyết định số 715/QĐ-UBND ngày 27/2/2026 về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung trong lĩnh vực Đăng ký biện pháp bảo đảm thuộc phạm vi, chức năng quản lý của Sở Tư pháp",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-715-cong-bo-tthc-linh-vuc-dang-ky-bpbd639081529812613930639116697443744405.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-616-qd-ubnd-ngay-12-2-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-do-884408",
+      "date": "12/02/2026",
+      "title": "Quyết định số 616/QĐ-UBND ngày 12/2/2026 về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung và bị bãi bỏ lĩnh vực tư vấn pháp luật, luật sư, hỗ trợ pháp lý cho doanh nghiệp nhỏ và vừa thuộc phạm vi, chức năng quản lý của Sở Tư pháp",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-616-tvpl-luat-su-ho-tro-phap-ly-cho-dn-nho-va-vua639065879258544577639116698170782963.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412",
+      "date": "31/01/2026",
+      "title": "Quyết định số 467/QĐ-UBND ngày 31/01/2026 về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung lĩnh vực công chứng, chứng thực, quản tài viên và hộ tịch thuộc phạm vi, chức năng quản lý của Sở Tư pháp",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-467-cong-chung-chung-thuc-quan-tai-vien-ho-tich639057302800587100639116699603616818.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-4517-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vu-809329",
+      "date": "10/11/2025",
+      "title": "Quyết định số 4517 công bố danh mục thủ tục hành chính được sửa đổi, bổ sung và bị bãi bỏ lĩnh vực chứng thực thuộc phạm vi, chức năng quản lý của Sở Tư pháp",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/11/phuluc-i-qd-3152-bo-tu-phap638983912789422255.docx",
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/11/phuluc-ii-qd-3152-bo-tu-phap638983913018956598.docx",
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/11/qd-4517-bo-tu-phap..signed638983912583325922.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-2690-qd-ubnd-ngay-01-7-2025-cua-ubnd-thanh-pho-ve-viec-cong-bo-danh-muc-thu-tuc-ha-762375",
+      "date": "11/07/2025",
+      "title": "Quyết định số 2690/QĐ-UBND ngày 01/7/2025 của UBND thành phố về việc công bố danh mục thủ tục hành chính được ban hành mới, sửa đổi, bổ sung và bãi bỏ trong lĩnh vực phổ biến, giáo dục pháp luật và hòa giải thương mại trên địa bàn thành phố Hải Phòng",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/7/noi-dung-tthc638877680613275013638878262921843468.docx",
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/7/qd-2690-hoa-giai-thuong-mai-va-pho-bien638877680320027849638878262489938035.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-2600-qd-ubnd-ngay-01-7-2025-cua-ubnd-thanh-pho-ve-viec-cong-bo-danh-muc-thu-tuc-ha-762364",
+      "date": "11/07/2025",
+      "title": "Quyết định số 2600/QĐ-UBND ngày 01/7/2025 của UBND thành phố về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung lĩnh vực tư pháp trên địa bàn thành phố Hải Phòng",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/7/noi-dung-tthc-lv-dau-gia-tai-san-luat-su-thua-phat-lai-trong-tai-thuong-mai-tu-van-phap-luat-quan-tai-vien638877687328146691638878264246772607.docx",
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/7/noi-dung-tthc-lv-ho-tich-nuoi-con-nuoi638877687243033780-1-638878264409315073.docx",
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/7/qd-2600-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-tu-phap...638877687155489447638878252228384521.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-tai-chinh-92286/quyet-dinh-so-1309-qd-ubnd-ngay-03-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-882184",
+      "date": "08/04/2026",
+      "title": "Quyết định số 1309/QĐ-UBND ngày 03/4/2026 về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung và bị bãi bỏ thuộc phạm vi chức năng quản lý của Sở Xây dựng",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/quyet-dinh-2026-cong-bo-dmttc-so-xay-dung-ttr100-qd-2478-bxd-..signed639112396553385685.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-tai-chinh-92286/quyet-dinh-so-4272-qd-ubnd-ngay-27-10-2025-cua-ubnd-thanh-pho-ve-viec-cong-bo-danh-muc-thu-tuc-h-804757",
+      "date": "03/11/2025",
+      "title": "Quyết định số 4272/QĐ-UBND ngày 27/10/2025 của UBND thành phố về việc công bố danh mục thủ tục hành chính sửa đổi, bổ sung, bị bãi bỏ thuộc phạm vi chức năng quản lý của Sở Tài chính",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/11/25.10quyetdinh4272-2025congbodmtthcsotaichinhqd3453.btc1638977526392147276.docx"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-tai-chinh-92286/quyet-dinh-so-2032-qd-ubnd-ngay-25-5-2025-cua-ubnd-thanh-pho-ve-viec-cong-bo-danh-muc-thu-tuc-ha-762294",
+      "date": "11/07/2025",
+      "title": "Quyết định số 2032/QĐ-UBND ngày 25/5/2025 của UBND thành phố về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung trong lĩnh vực phí, lệ phí trên địa bàn thành phố Hải Phòng",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/7/qd2032638878180169076131.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-noi-vu-92287/quyet-dinh-so-2380-qd-ubnd-ngay-26-6-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-933048",
+      "date": "16/07/2026",
+      "title": "Quyết định số 2380/QĐ-UBND ngày 26/6/2026 về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung và bị bãi bỏ lĩnh vực quản lý lao động ngoài nước, lao động - tiền lương, lưu trữ, việc làm, an toàn, vệ sinh lao động thuộc phạm vi, chức năng quản lý của Sở Nội vụ",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/7/2380-quyet-dinh-cong-bo-dm-tthc-sua-doi-bo-sung-va-bi-bai-bo-theo-qd-641-cua-bnv..signed639197960523919968.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-noi-vu-92287/quyet-dinh-2380-qd-ubnd-ngay-26-6-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi--925698",
+      "date": "26/06/2026",
+      "title": "Quyết định 2380/QĐ-UBND ngày 26/6/2026 về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung và bị bãi bỏ lĩnh vực quản lý lao động ngoài nước, lao động - tiền lương, lưu trữ, việc làm, an toàn, vệ sinh lao động thuộc phạm vi, chức năng quản lý của Sở Nội vụ",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/7/quyet-dinh-cong-bo-dm-tthc-sua-doi-bo-sung-va-bi-bai-bo-theo-qd-641-cua-bnv..signed639186716184195040.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-noi-vu-92287/quyet-dinh-so-1674-qd-ubnd-ngay-29-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-895612",
+      "date": "07/05/2026",
+      "title": "Quyết định số 1674/QĐ-UBND ngày 29/4/2026 về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung để thay thế, cắt giảm thành phần hồ sơ bằng dữ liệu thuộc phạm vi, chức năng quản lý của Sở Nội vụ",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/29-4-qd1674-cong-bo-danh-muc-tthc-duoc-sua-doi-bo-sung-de-thay-the-cat-giam_so-noi-vu..signed639137605524497672.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-noi-vu-92287/quyet-dinh-so-1039-qd-ubnd-ngay-20-3-2026-ve-viec-cong-bo-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi--878050",
+      "date": "30/03/2026",
+      "title": "Quyết định số 1039/QĐ-UBND ngày 20/3/2026 về việc công bố thủ tục hành chính mới ban hành và bị bãi bỏ lĩnh vực quản lý nhà nước về quỹ thuộc phạm vi, chức năng quản lý của Sở Nội vụ",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/3/qd-1039.-cong-bo-danh-muc-tthc-linh-vuc-quan-ly-nn-ve-quy..signed-1-639104826023207471.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-noi-vu-92287/quyet-dinh-so-3378-qd-ubnd-ngay-21-8-2025-cua-ubnd-thanh-pho-ve-viec-cong-bo-danh-muc-thu-tuc-ha-775351",
+      "date": "26/08/2025",
+      "title": "Quyết định số 3378/QĐ-UBND ngày 21/8/2025 của UBND thành phố về việc công bố Danh mục thủ tục hành chính liên quan đến doanh nghiệp được thực hiện trực tuyến thuộc phạm vi, chức năng quản lý của Sở Nội vụ",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/8/qd-dm-tthc-lien-quan-den-dn_sonoivu..signed638917930866847699.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-noi-vu-92287/quyet-dinh-so-3198-qd-ubnd-ngay-ngay-08-8-2025-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-danh-773858",
+      "date": "21/08/2025",
+      "title": "Quyết định số 3198/QĐ-UBND ngày ngày 08/8/2025 của UBND thành phố Hải Phòng Về việc công bố Danh mục thủ tục hành chính mới ban hành, bị bãi bỏ lĩnh vực Thi đua, khen thưởng thuộc phạm vi, chức năng quản lý nhà nước của Sở Nội vụ",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/8/dm-qd-821-cua-bo-noi-vu638913638901172882.docx",
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/8/qd-821-cua-bo-noi-vu..signed638913638799139981.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-ngoai-vu-92288/quyet-dinh-so-237-qd-ubnd-ngay-19-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-bi-bai-bo--884417",
+      "date": "19/01/2026",
+      "title": "Quyết định số 237/QĐ-UBND ngày 19/01/2026 về việc công bố danh mục thủ tục hành chính bị bãi bỏ thuộc phạm vi, chức năng quản lý của Sở Ngoại vụ",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-bai-bo-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-ngoai-vu..signed639116701319601514.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-ngoai-vu-92288/quyet-dinh-so-3377-qd-ubnd-ngay-21-9-2025-cua-ubnd-thanh-pho-ve-viec-cong-bo-danh-muc-thu-tuc-ha-785186",
+      "date": "24/09/2025",
+      "title": "Quyết định số 3377/QĐ-UBND ngày 21/9/2025 của UBND thành phố về việc công bố Danh mục thủ tục hành chính liên quan đến doanh nghiệp được thực hiện trực tuyến thuộc phạm vi, chức năng quản lý của Sở Ngoại vụ",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/9/13.-qd-3377-dm-tthc-lien-quan-den-dn_songoaivu..signed638942985753418640.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-ngoai-vu-92288/quyet-dinh-so-2852-qd-ubnd-ngay-14-7-2025-cua-ubnd-thanh-pho-ve-viec-cong-bo-danh-muc-thu-tuc-ha-785183",
+      "date": "14/07/2025",
+      "title": "Quyết định số 2852/QĐ-UBND ngày 14/7/2025 của UBND thành phố về việc công bố Danh mục thủ tục hành chính chuẩn hoá thuộc phạm vi, chức năng quản lý của Sở Ngoại vụ",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/9/32.-qd-2852-cong-bo-chuan-hoa-tthc-so-ngoai-vu-2025638942983578233796.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/quyet-dinh-so-2670-qd-ubnd-ngay-13-7-2026-cua-ubnd-thanh-pho-ve-ve-viec-cong-bo-thu-tuc-hanh-chi-932917",
+      "date": "16/07/2026",
+      "title": "Quyết định số 2670/QĐ-UBND ngày 13/7/2026 của UBND thành phố về về việc công bố thủ tục hành chính đặc thù mới ban hành lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/7/quyet-dinh-2026-cong-bo-tthc-linh-vuc-dat-dai-snnmt-ttr599-11.7_-1-..signed639197912215417705.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/quyet-dinh-so-1897-qd-ubnd-ngay-25-5-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-904676",
+      "date": "26/05/2026",
+      "title": "Quyết định số 1897/QĐ-UBND ngày 25/5/2026 về việc công bố Danh mục thủ tục hành chính mới ban hành, được sửa đổi, bổ sung, bị bãi bỏ thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1897-ngay-25.5.2026-ubnd-hp-cong-bo-dm-tthc-moi-sua-doi-bo-sung-bai-bo-lvuc-bdkh-cnty-qldd-va-pctt-tl-tnn-mt-dat-dai639153846685150604.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/quyet-dinh-so-1611-qd-ubnd-ngay-21-4-2026-ve-viec-cong-bo-thu-tuc-hanh-chinh-noi-bo-trong-he-tho-895673",
+      "date": "07/05/2026",
+      "title": "Quyết định số 1611/QĐ-UBND ngày 21/4/2026 về việc công bố thủ tục hành chính nội bộ trong hệ thống hành chính nhà nước thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1611-ngay-21.4.2026-ubnd-hp-cong-bo-tthc-noi-bo-lvuc-dcks639137644035102721.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/noi-dung-thu-tuc-hanh-chinh-theo-quyet-dinh-so-1618-qd-ubnd-ngay-22-4-2026-895669",
+      "date": "07/05/2026",
+      "title": "Nội dung thủ tục hành chính theo Quyết định số 1618/QĐ-UBND ngày 22/4/2026",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1618-noi-dung-lvuc-khi-tuong-thuy-van639137640542089686.docx"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/quyet-dinh-so-1618-qd-ubnd-ngay-22-4-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-895667",
+      "date": "07/05/2026",
+      "title": "Quyết định số 1618/QĐ-UBND ngày 22/4/2026 về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1618-ngay-22.4.2026-ubnd-hp-cong-bo-dm-tthc-sua-doi-bo-sung-lvuc-kttv639137640032568014.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/noi-dung-thu-tuc-hanh-chinh-theo-quyet-dinh-so-1605-qd-ubnd-ngay-21-4-2026-895660",
+      "date": "07/05/2026",
+      "title": "Nội dung thủ tục hành chính theo Quyết định số 1605/QĐ-UBND ngày 21/4/2026",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1605-noi-dung-lvuc-dia-chat-va-khoang-san-cap-xa639137636228758763.docx",
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1605-noi-dung-lvuc-dia-chat-va-khoang-san639137636229227513.docx",
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1605-noi-dung-lvuc-thu-y639137636230321015.docx"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/quyet-dinh-so-1605-qd-ubnd-ngay-21-4-2026-e-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-do-895655",
+      "date": "07/05/2026",
+      "title": "Quyết định số 1605/QĐ-UBND ngày 21/4/2026 ề việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung lĩnh vực địa chất và khoáng sản, lĩnh vực thú y thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd1605-1639137634955544435.PDF"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/noi-dung-thu-tuc-hanh-chinh-cap-xa-linh-vuc-ung-pho-su-co-tran-dau-theo-quyet-dinh-so-792-qd-ubn-884433",
+      "date": "13/04/2026",
+      "title": "Nội dung thủ tục hành chính cấp xã lĩnh vực ứng phó sự cố tràn dầu theo Quyết định số 792/QĐ-UBND ngày 04/3/2026",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/noi-dung-lvuc-ung-pho-su-co-tran-dau-cap-xa639116708228133520.docx"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/noi-dung-thu-tuc-hanh-chinh-linh-vuc-thuy-san-theo-quyet-dinh-so-942-qd-ubnd-ngay-16-3-2026-884425",
+      "date": "13/04/2026",
+      "title": "Nội dung thủ tục hành chính lĩnh vực thủy sản theo Quyết định số 942/QĐ-UBND ngày 16/3/2026",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/noi-dung-lvuc-thuy-san639116705195185406.docx"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/noi-dung-thu-tuc-hanh-chinh-linh-vuc-chan-nuoi-theo-quyet-dinh-so-1311-qd-ubnd-ngay-28-3-2026-877988",
+      "date": "30/03/2026",
+      "title": "Nội dung thủ tục hành chính lĩnh vực chăn nuôi theo Quyết định số 1311/QĐ-UBND ngày 28/3/2026",
+      "attachments": []
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/quyet-dinh-so-1311-qd-ubnd-ngay-28-3-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-877978",
+      "date": "30/03/2026",
+      "title": "Quyết định số 1311/QĐ-UBND ngày 28/3/2026 về việc công bố danh mục thủ tục hành chính mới ban hành lĩnh vực chăn nuôi thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/3/qd-1131-ngay-28.3.2026-ubnd-hp-cong-bo-dm-tthc-moi-lvuc-cn639104779717947439.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/quyet-dinh-so-942-qd-ubnd-ngay-16-3-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-do-884424",
+      "date": "16/03/2026",
+      "title": "Quyết định số 942/QĐ-UBND ngày 16/3/2026 về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-942-ngay-16.3.2026-ubnd-hp-cong-bo-dm-tthc-sua-doi-bo-sung-lvuc-ts639116703467825217.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/noi-dung-thu-tuc-hanh-chinh-linh-vuc-ung-pho-su-co-tran-dau-theo-quyet-dinh-so-792-qd-ubnd-ngay--884436",
+      "date": "04/03/2026",
+      "title": "Nội dung thủ tục hành chính lĩnh vực ứng phó sự cố tràn dầu theo Quyết định số 792/QĐ-UBND ngày 04/3/2026",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/noi-dung-lvuc-ung-pho-su-co-tran-dau639116709943407626.docx"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/quyet-dinh-so-792-qd-ubnd-ngay-04-3-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-thay-t-884430",
+      "date": "04/03/2026",
+      "title": "Quyết định số 792/QĐ-UBND ngày 04/3/2026 về việc công bố danh mục thủ tục hành chính được thay thế lĩnh vực ứng phó sự cố tràn dầu thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/4/qd-792-ngay-04.3.2026-ubnd-hp-cong-bo-dm-tthc-duoc-thay-the-lvuc-ung-pho-su-co-tran-dau639116706208800569.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/quyet-dinh-so-2787-qd-ubnd-ngay-04-7-2025-cua-ubnd-thanh-pho-ve-viec-cong-bo-danh-muc-thu-tuc-ha-764833",
+      "date": "20/07/2025",
+      "title": "Quyết định số 2787/QĐ-UBND ngày 04/7/2025 của UBND thành phố về việc công bố Danh mục thủ tục hành chính mới ban hành, được sửa đổi, bổ sung, bị bãi bỏ lĩnh vực lâm nghiệp và kiểm lâm, bảo tồn thiên nhiên và đa dạng sinh học, thủy sản và kiểm ngư thuộc phạm vi chức năng quản lý nhà nước của Sở Nông nghiệp và Môi trường trên địa bàn thành phố Hải Phòng",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/7/2025-07-10-23-.signed638886425224549578.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/quyet-dinh-so-1490-qd-ubnd-ngay-02-6-2025-cua-ubnd-thanh-pho-ve-viec-cong-bo-danh-muc-thu-tuc-ha-762420",
+      "date": "11/07/2025",
+      "title": "Quyết định số 1490/QĐ-UBND ngày 02/6/2025 của UBND thành phố về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung trong lĩnh vực đất đai trên địa bàn thành phố Hải Phòng",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/7/qd1490638878414703678916.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/quyet-dinh-so-2022-qd-ubnd-ngay-25-6-2025-cua-ubnd-thanh-pho-ve-viec-cong-bo-danh-muc-thu-tuc-ha-762296",
+      "date": "11/07/2025",
+      "title": "Quyết định số 2022/QĐ-UBND ngày 25/6/2025 của UBND thành phố về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung, bị bãi bỏ lĩnh vực môi trường thuộc phạm vi chức năng quản lý nhà nước của Sở Nông nghiệp và Môi trường trên địa bàn thành phố Hải Phòng",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/7/qd2022638878181457080959.pdf"
+      ]
+    },
+    {
+      "url": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/quyet-dinh-so-2168-qd-ubnd-ngay-26-6-2025-cua-ubnd-thanh-pho-ve-viec-cong-bo-danh-muc-thu-tuc-ha-762292",
+      "date": "11/07/2025",
+      "title": "Quyết định số 2168/QĐ-UBND ngày 26/6/2025 của UBND thành phố về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung, thay thế, bị bãi bỏ lĩnh vực lâm nghiệp và kiểm lâm thuộc phạm vi chức năng quản lý nhà nước của Sở Nông nghiệp và Môi trường trên địa bàn thành phố Hải Phòng",
+      "attachments": [
+        "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2025/7/qd2168638878178858586738.pdf"
+      ]
+    }
+  ]
+}

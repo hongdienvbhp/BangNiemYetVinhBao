@@ -5199,121 +5199,6 @@
       "formalityId": "019d2bfd-95fa-70ca-93fd-4cab11b87897"
     },
     {
-      "ma": "2.001283",
-      "verificationStatus": "verified_official",
-      "verifiedAt": "2026-09-21",
-      "coQuanThucHien": "Ủy ban nhân dân cấp xã",
-      "thanhPhanHoSo": [
-        {
-          "ten": "Giấy đề nghị cấp Giấy chứng nhận đủ điều kiện cửa hàng bán lẻ LPG chai theo Mẫu số 05 tại Phụ lục kèm theo Nghị định 87/2017/NĐ-CP.",
-          "banChinh": "1",
-          "banSao": "0",
-          "bieuMau": "Mẫu số 05.docx"
-        },
-        {
-          "ten": "Bản sao hợp đồng bán LPG chai với thương nhân có giấy chứng nhận đủ điều kiện còn hiệu lực.",
-          "banChinh": "0",
-          "banSao": "1"
-        },
-        {
-          "ten": "Tài liệu chứng minh đáp ứng các điều kiện về phòng cháy và chữa cháy.",
-          "banChinh": "1",
-          "banSao": "0"
-        }
-      ],
-      "thoiHan": [
-        {
-          "hinhThuc": "Trực tiếp",
-          "giaTri": "15 Ngày làm việc"
-        },
-        {
-          "hinhThuc": "Trực tuyến",
-          "giaTri": "15 Ngày làm việc"
-        },
-        {
-          "hinhThuc": "Dịch vụ bưu chính",
-          "giaTri": "15 Ngày làm việc"
-        }
-      ],
-      "lePhi": [
-        {
-          "hinhThuc": "Trực tiếp",
-          "mucThu": "Nộp phí theo quy định của pháp luật về phí, lệ phí hiện hành."
-        },
-        {
-          "hinhThuc": "Trực tuyến",
-          "mucThu": "Nộp phí theo quy định của pháp luật về phí, lệ phí hiện hành."
-        },
-        {
-          "hinhThuc": "Dịch vụ bưu chính",
-          "mucThu": "Nộp phí theo quy định của pháp luật về phí, lệ phí hiện hành."
-        }
-      ],
-      "ketQua": "GIẤY CHỨNG NHẬN ĐỦ ĐIỀU KIỆN CỬA HÀNG BÁN LẺ LPG CHAI",
-      "dvctt": {
-        "accessUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?keyword=2.001283&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0",
-        "scope": {
-          "provinceCode": "31",
-          "provinceName": "Hải Phòng",
-          "wardCode": "11824",
-          "wardName": "Vĩnh Bảo",
-          "commune": "WARD"
-        },
-        "verificationStatus": "vinhbao_scope_parameters_verified",
-        "mappingMode": "keyword_fallback"
-      },
-      "submissionUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?keyword=2.001283&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0",
-      "sources": [
-        {
-          "id": "official_dvcqg_content",
-          "url": "https://dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=4413",
-          "sourceRole": "central_content_reference",
-          "classification": "current_official_dvcqg_exception",
-          "verifiedAt": "2026-09-21"
-        },
-        {
-          "id": "local_legal_agency",
-          "url": "https://cdn.haiphong.gov.vn/gov-hpg/6841/tintuc/2025/8/danh-m2.-danh-muc-tthc-khong-phu-thuoc-vao-dia-gioi-hc-thuoc-quan-ly-so-cong-thuong.signed638918179938857250.pdf",
-          "sourceRole": "local_legal_effect",
-          "classification": "official_local_agency_scope",
-          "verifiedAt": "2026-09-21"
-        },
-        {
-          "id": "dvcqg_vinhbao",
-          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?keyword=2.001283&searchType=PROVINCE&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&provinceCode=31&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&commune=WARD&showAdvanced=false&isProvince=0&isMinistry=0",
-          "sourceRole": "local_execution",
-          "classification": "dvcqg_vinhbao_execution_scope",
-          "verifiedAt": "2026-09-20T14:04:02.5394062Z"
-        }
-      ],
-      "fieldProvenance": {
-        "coQuanThucHien": [
-          "local_legal_agency"
-        ],
-        "thanhPhanHoSo": [
-          "official_dvcqg_content"
-        ],
-        "thoiHan": [
-          "official_dvcqg_content"
-        ],
-        "lePhi": [
-          "official_dvcqg_content"
-        ],
-        "ketQua": [
-          "official_dvcqg_content"
-        ],
-        "dvctt": [
-          "dvcqg_vinhbao"
-        ],
-        "submissionUrl": [
-          "dvcqg_vinhbao"
-        ]
-      },
-      "verificationNotes": {
-        "officialException": true
-      }
-    },
-    {
       "ma": "2.001406",
       "verificationStatus": "verified_official",
       "verifiedAt": "2026-09-21",
@@ -5663,15 +5548,15 @@
     }
   ],
   "coverage": {
-    "target": 50,
-    "reviewed": 50,
+    "target": 49,
+    "reviewed": 49,
     "fields": {
-      "coQuanThucHien": 50,
-      "thanhPhanHoSo": 50,
-      "thoiHan": 50,
-      "lePhi": 50,
-      "dvctt": 50,
-      "ketQua": 50
+      "coQuanThucHien": 49,
+      "thanhPhanHoSo": 49,
+      "thoiHan": 49,
+      "lePhi": 49,
+      "dvctt": 49,
+      "ketQua": 49
     },
     "unresolved": {
       "coQuanThucHien": [],

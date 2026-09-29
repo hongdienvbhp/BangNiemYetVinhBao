@@ -6,8 +6,8 @@
   "statusRule": "Only official Hải Phòng/Vĩnh Bảo evidence may establish current/repealed status. DVCQG/formalityId is technical identity only and never establishes legal effectiveness.",
   "summary": {
     "total": 37,
-    "currentOfficialCommune": 36,
-    "repealedOfficial": 1,
+    "currentOfficialCommune": 35,
+    "repealedOfficial": 2,
     "needsVerification": 0
   },
   "rows": [
@@ -385,11 +385,17 @@
       "priorityName": "Cấp Giấy chứng nhận đủ điều kiện cửa hàng bán lẻ LPG chai",
       "canonicalName": "Cấp Giấy chứng nhận đủ điều kiện cửa hàng bán lẻ LPG chai",
       "field": "KINH DOANH KHÍ",
-      "legalStatus": "current_official_commune_evidence",
+      "legalStatus": "repealed_official_evidence",
       "communeScopeEvidence": true,
-      "decisionNo": null,
-      "decisionDate": null,
+      "decisionNo": "2127/QĐ-UBND",
+      "decisionDate": "2026-06-06",
       "sources": [
+        {
+          "url": "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/6/qd-2127.2026-so-cong-thuong639179180236944152.pdf",
+          "type": "official_haiphong_source",
+          "authority": "UBND thành phố Hải Phòng",
+          "note": "QĐ 2127/QĐ-UBND ngày 06/6/2026 (hiệu lực từ 01/7/2026), Phụ lục mục III 'Danh mục TTHC bị bãi bỏ', B. TTHC cấp xã, STT 1: 2.001283 – căn cứ Nghị quyết 66.18/2026/NQ-CP. SHA-256 PDF: 264ab4dfd93c… (xem official-decision-manifest)."
+        },
         {
           "url": "https://cdn.haiphong.gov.vn/gov-hpg/6822/tintuc/2026/5/27.5-tb-niem-yet-tthc.signed639154720526079683.pdf",
           "type": "official_haiphong_source",
@@ -410,7 +416,7 @@
           "snippet": ""
         }
       ],
-      "verificationCheckedAt": "2026-09-07",
+      "verificationCheckedAt": "2026-09-29",
       "legalStatusBasis": "official_haiphong_source",
       "dvcqgRole": "technical_identity_only"
     },

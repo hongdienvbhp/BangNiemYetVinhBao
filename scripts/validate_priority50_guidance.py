@@ -9,7 +9,8 @@ ROOT = Path(__file__).resolve().parents[1]
 MASTER = ROOT / "data/thu-tuc.json"
 GUIDANCE = ROOT / "data/tthc-guidance-enrichment.json"
 FIELDS = ("coQuanThucHien", "thanhPhanHoSo", "thoiHan", "lePhi", "dvctt", "ketQua")
-TARGET = 50
+# 51 TTHC trọng điểm trừ mã đã bãi bỏ: 2.001009 (QĐ 4517/QĐ-UBND), 2.001283 (QĐ 2127/QĐ-UBND).
+TARGET = 49
 
 
 def filled(value: object) -> bool:
@@ -36,7 +37,7 @@ def validate(require_complete: bool = False) -> tuple[list[str], dict]:
     }
     if set(by_code) != target_codes:
         errors.append(
-            "guidance rows phải đúng tập 50 priority active; "
+            f"guidance rows phải đúng tập {TARGET} priority active; "
             f"missing={sorted(target_codes-set(by_code))}, extra={sorted(set(by_code)-target_codes)}"
         )
 
@@ -55,7 +56,7 @@ def validate(require_complete: bool = False) -> tuple[list[str], dict]:
     if require_complete:
         incomplete = {field: codes for field, codes in unresolved.items() if codes}
         if incomplete:
-            errors.append("P1 chưa complete 50/50 cho mọi field: " + json.dumps(incomplete, ensure_ascii=False))
+            errors.append(f"P1 chưa complete {TARGET}/{TARGET} cho mọi field: " + json.dumps(incomplete, ensure_ascii=False))
 
     report = {"target": TARGET, "reviewed": len(by_code), "counts": counts, "unresolved": unresolved}
     return errors, report

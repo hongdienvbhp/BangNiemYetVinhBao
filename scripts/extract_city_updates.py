@@ -39,6 +39,145 @@ TIME_OR_COLUMN_RE = re.compile(
 # Trích xuất văn bản thuần không giữ được ranh giới cột, nên khóa lại đúng quan
 # hệ thay thế đã thể hiện trực tiếp trong phụ lục chính thức.
 DECISION_ROW_OVERRIDES = {
+    # Tên/lĩnh vực chép từ Phụ lục QĐ 467/QĐ-UBND (lớp chữ PDF bị tách ký tự, dính cột thời hạn).
+    "467/QĐ-UBND": {
+        # Mục C "Thủ tục hành chính dùng chung" (sau mục A cấp tỉnh, B cấp xã).
+        "2.000635": {
+            "levelHint": "shared_including_commune",
+        },
+        "2.002516": {
+            "levelHint": "shared_including_commune",
+        },
+        "1.000893": {
+            "name": "Đăng ký khai sinh có yếu tố nước ngoài cho người đã có hồ sơ, giấy tờ cá nhân",
+        },
+        "1.001695": {
+            "name": "Đăng ký khai sinh kết hợp đăng ký nhận cha, mẹ, con có yếu tố nước ngoài",
+        },
+        "2.000547": {
+            "name": "Ghi vào sổ hộ tịch việc hộ tịch khác của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài (khai sinh; giám hộ; nhận cha, mẹ, con; xác định cha, mẹ, con; nuôi con nuôi; khai tử; thay đổi hộ tịch)",
+        },
+        "2.000554": {
+            "name": "Ghi vào sổ hộ tịch việc ly hôn, hủy việc kết hôn của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài",
+        },
+        "2.000748": {
+            "name": "Thay đổi, cải chính, bổ sung thông tin hộ tịch, xác định lại dân tộc có yếu tố nước ngoài",
+        },
+        "2.000756": {
+            "name": "Đăng ký chấm dứt giám hộ có yếu tố nước ngoài",
+        },
+        "2.000779": {
+            "name": "Đăng ký nhận cha, mẹ, con có yếu tố nước ngoài",
+        },
+        "2.000908": {
+            "name": "Cấp bản sao từ sổ gốc",
+            "field": "CHỨNG THỰC",
+            "levelHint": "shared_including_commune",
+        },
+        "1.013818": {
+            "field": "CÔNG CHỨNG",
+        },
+        "1.013836": {
+            "field": "CÔNG CHỨNG",
+        },
+        "1.001842": {
+            "field": "QUẢN TÀI VIÊN",
+        },
+        "1.002626": {
+            "field": "QUẢN TÀI VIÊN",
+        },
+        "1.002681": {
+            "field": "QUẢN TÀI VIÊN",
+        },
+        "2.001117": {
+            "field": "QUẢN TÀI VIÊN",
+        },
+        "2.001130": {
+            "name": "Cấp chứng chỉ hành nghề Quản tài viên đối với luật sư, kiểm toán viên, người có trình độ cử nhân luật, kinh tế, kế toán, tài chính, ngân hàng và có thời gian công tác trong lĩnh vực được đào tạo từ 05 năm trở lên",
+            "field": "QUẢN TÀI VIÊN",
+        },
+    },
+    # Tên chép từ Phụ lục QĐ 556/QĐ-UBND (cột tên bị dính cột trình tự/thời hạn).
+    "556/QĐ-UBND": {
+        "1.003005": {
+            "name": "Giải quyết việc người nước ngoài cư trú ở khu vực biên giới nước láng giềng nhận trẻ em Việt Nam làm con nuôi",
+        },
+        "1.003198": {
+            "name": "Cấp giấy xác nhận công dân Việt Nam ở trong nước đủ điều kiện nhận trẻ em nước ngoài làm con nuôi",
+        },
+        "1.003976": {
+            "name": "Giải quyết việc nuôi con nuôi có yếu tố nước ngoài đối với trẻ em sống ở cơ sở nuôi dưỡng",
+        },
+        "2.002363": {
+            "name": "Ghi vào Sổ đăng ký nuôi con nuôi việc nuôi con nuôi đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài",
+        },
+    },
+    # Tên/lĩnh vực chép từ Phụ lục QĐ 1349/QĐ-UBND (tiêu đề lĩnh vực trong bảng).
+    "1349/QĐ-UBND": {
+        "1.001323": {
+            "name": "Cấp sửa đổi, bổ sung Giấy phép phân phối sản phẩm thuốc lá",
+        },
+        "1.013987": {
+            "name": "Chấp thuận các tài liệu quản lý an toàn đối với công trình dầu khí thuộc thẩm quyền giải quyết của Ủy ban nhân dân cấp tỉnh",
+            "field": "DẦU KHÍ",
+        },
+        "1.014967": {
+            "name": "Cấp Giấy phép vận chuyển hàng hóa nguy hiểm loại 1 (trừ vật liệu nổ công nghiệp, tiền chất thuốc nổ), 2, 3, 4, 9",
+            "field": "VẬN CHUYỂN HÀNG HÓA NGUY HIỂM",
+        },
+        "1.014968": {
+            "name": "Cấp điều chỉnh Giấy phép vận chuyển hàng hóa nguy hiểm loại 1 (trừ vật liệu nổ công nghiệp, tiền chất thuốc nổ), 2, 3, 4, 9",
+            "field": "VẬN CHUYỂN HÀNG HÓA NGUY HIỂM",
+        },
+        "1.014969": {
+            "name": "Cấp lại Giấy phép vận chuyển hàng hóa nguy hiểm loại 1 (trừ vật liệu nổ công nghiệp, tiền chất thuốc nổ), 2, 3, 4, 9",
+            "field": "VẬN CHUYỂN HÀNG HÓA NGUY HIỂM",
+        },
+        "2.000162": {
+            "name": "Cấp sửa đổi, bổ sung Giấy phép bán lẻ sản phẩm thuốc lá",
+        },
+        "2.000181": {
+            "name": "Cấp Giấy phép bán lẻ sản phẩm thuốc lá",
+        },
+    },
+    # Tên/lĩnh vực chép từ Phụ lục QĐ 1353/QĐ-UBND (cột tên bị dính cột thời hạn).
+    "1353/QĐ-UBND": {
+        # Mã có mặt ở cả mục A (cấp tỉnh) và mục B (cấp xã) của Phụ lục.
+        "2.000884": {
+            "levelHint": "shared_including_commune",
+        },
+        "2.001008": {
+            "levelHint": "shared_including_commune",
+        },
+        "2.000908": {
+            "name": "Cấp bản sao từ sổ gốc",
+        },
+        "2.000927": {
+            "name": "Sửa lỗi sai sót trong giao dịch",
+        },
+        "2.001019": {
+            "name": "Chứng thực di chúc",
+        },
+        "1.013803": {
+            "field": "CÔNG CHỨNG",
+        },
+    },
+    # Lĩnh vực theo tiêu đề mục A1 Phụ lục QĐ 2127/QĐ-UBND.
+    "2127/QĐ-UBND": {
+        "2.000578": {
+            "field": "VẬT LIỆU NỔ CÔNG NGHIỆP, TIỀN CHẤT THUỐC NỔ",
+        },
+    },
+    # Tên/lĩnh vực chép từ Phụ lục QĐ 2380/QĐ-UBND.
+    "2380/QĐ-UBND": {
+        "1.000414": {
+            "name": "Rút tiền ký quỹ của doanh nghiệp cho thuê lại lao động",
+            "field": "LAO ĐỘNG - TIỀN LƯƠNG",
+        },
+        "1.015021": {
+            "field": "QUẢN LÝ LAO ĐỘNG NGOÀI NƯỚC",
+        },
+    },
     "3879/QĐ-UBND": {
         # Tên chép từ Phụ lục QĐ 3879/QĐ-UBND (lớp chữ PDF bị tách ký tự).
         "1.004889": {
@@ -65,10 +204,16 @@ DECISION_ROW_OVERRIDES = {
         "3.000722": {
             "name": "Liên thông điện tử: đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế, cấp thẻ căn cước cho trẻ em dưới 6 tuổi",
             "sectionStatus": "new",
+            # Cột "Địa điểm thực hiện" của Phụ lục: Trung tâm PVHCC thành phố và cấp xã.
+            "levelHint": "shared_including_commune",
+            "communeReceptionEvidence": True,
         },
         "2.002913": {
             "name": "Liên thông điện tử: đăng ký khai tử, xóa đăng ký thường trú, giải quyết mai táng phí, tử tuất",
             "sectionStatus": "new",
+            # Cột "Địa điểm thực hiện" của Phụ lục: Trung tâm PVHCC thành phố và cấp xã.
+            "levelHint": "shared_including_commune",
+            "communeReceptionEvidence": True,
         },
     },
     # Ba tên trong QĐ 3584 tiếp tục ở đầu trang kế tiếp của phụ lục.
@@ -167,7 +312,7 @@ def level_hint(line: str, current: str) -> str:
     # Chỉ tiêu đề/phân mục pháp lý mới được đổi cấp giải quyết. Cụm "cấp xã"
     # trong cột nơi tiếp nhận không phải bằng chứng TTHC thuộc thẩm quyền cấp xã.
     standalone_level = bool(
-        re.fullmatch(r"(?:[a-d][.)]\s*)?(?:cap xa|cap tinh|dung chung(?:.*cap xa)?)", value)
+        re.fullmatch(r"[a-d][.)]\s*(?:cap xa|cap tinh|dung chung(?:.*cap xa)?)", value)
     )
     if "thu tuc hanh chinh" not in value and not standalone_level:
         return current

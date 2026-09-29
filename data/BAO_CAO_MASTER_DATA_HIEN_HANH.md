@@ -3,25 +3,25 @@
 ## Kết quả
 
 - Mã ứng viên cấp xã/điểm tiếp nhận cấp xã từ snapshot Vĩnh Bảo: **178**
-- Tổng mã được audit sau khi hợp nhất nguồn Vĩnh Bảo, quyết định thành phố và ma trận kiểm chứng 51 TTHC: **314**
-- Mã xuất hiện trong 06 quyết định cập nhật thành phố: **133**
+- Tổng mã được audit sau khi hợp nhất nguồn Vĩnh Bảo, quyết định thành phố và ma trận kiểm chứng 51 TTHC: **428**
+- Mã xuất hiện trong 06 quyết định cập nhật thành phố: **410**
 - Mã Priority 51 được kiểm chứng pháp lý bổ sung: **37**
-  - Xác minh current/cấp xã: **36**
-  - Xác minh bãi bỏ: **1**
+  - Xác minh current/cấp xã: **35**
+  - Xác minh bãi bỏ: **2**
   - Còn cần xác minh: **0**
-- TTHC hiện hành đưa vào tập công khai: **274**
-- TTHC loại khỏi tập công khai: **40**
-  - Bị bãi bỏ: **38**
+- TTHC hiện hành đưa vào tập công khai: **306**
+- TTHC loại khỏi tập công khai: **122**
+  - Bị bãi bỏ: **120**
   - Đã công bố nhưng chưa đến ngày hiệu lực: **2**
-- TTHC mới được bổ sung từ quyết định thành phố: **63**
-- TTHC hiện có được cập nhật bởi quyết định thành phố: **1**
+- TTHC mới được bổ sung từ quyết định thành phố: **120**
+- TTHC hiện có được cập nhật bởi quyết định thành phố: **21**
 - Chưa trích được tên đủ tin cậy: **0**
-- Có formalityId trong Master Data: **222**
-- TTHC trọng điểm đang nằm trong tập public: **50/51**
-- Khoảng trống Priority 51 còn lại: **1** (mã bãi bỏ không được phục hồi public)
-- Được đánh dấu phi địa giới theo nguồn công bố: **59**
+- Có formalityId trong Master Data: **220**
+- TTHC trọng điểm đang nằm trong tập public: **49/51**
+- Khoảng trống Priority 51 còn lại: **2** (mã bãi bỏ không được phục hồi public)
+- Được đánh dấu phi địa giới theo nguồn công bố: **52**
 
-> **Lưu ý phạm vi:** 274 là số TTHC trong tập niêm yết/tra cứu của Trung tâm PVHCC xã Vĩnh Bảo theo bằng chứng nguồn đã audit. Tập này có thể gồm TTHC cấp tỉnh được tiếp nhận tại Trung tâm PVHCC cấp xã; không được hiểu là toàn bộ đều thuộc thẩm quyền giải quyết của UBND xã.
+> **Lưu ý phạm vi:** 306 là số TTHC trong tập niêm yết/tra cứu của Trung tâm PVHCC xã Vĩnh Bảo theo bằng chứng nguồn đã audit. Tập này có thể gồm TTHC cấp tỉnh được tiếp nhận tại Trung tâm PVHCC cấp xã; không được hiểu là toàn bộ đều thuộc thẩm quyền giải quyết của UBND xã.
 
 ## Nguồn cập nhật đến 07/09/2026
 

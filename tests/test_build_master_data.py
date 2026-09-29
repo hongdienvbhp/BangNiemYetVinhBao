@@ -26,5 +26,40 @@ class BuildMasterDataTitleRepairTest(unittest.TestCase):
         )
 
 
+class BuildMasterDataCityRepealTest(unittest.TestCase):
+    def _run(self, current_state: str) -> tuple[list[dict], list[dict]]:
+        import json
+        import tempfile
+
+        payload = {"rows": [{
+            "code": "9.999999", "name": "Tên thủ tục", "decisionNo": "1/QĐ-UBND",
+            "decisionDate": "2026-05-19", "sectionStatus": "repealed",
+            "currentStateAtAsOf": current_state, "levelHint": "commune",
+            "communeReceptionEvidence": True, "field": "THỬ",
+        }]}
+        public = [{"ma": "9.999999", "ten": "Tên thủ tục", "linhVuc": "THỬ"}]
+        excluded: list[dict] = []
+        with tempfile.TemporaryDirectory() as td:
+            path = Path(td) / "city.json"
+            path.write_text(json.dumps(payload), encoding="utf-8")
+            original = MODULE.CITY_UPDATES
+            MODULE.CITY_UPDATES = path
+            try:
+                MODULE.apply_city_updates(public, excluded, [], {}, {})
+            finally:
+                MODULE.CITY_UPDATES = original
+        return public, excluded
+
+    def test_pending_effective_date_decision_does_not_repeal(self) -> None:
+        public, excluded = self._run("reviewed_pending_effective_date")
+        self.assertEqual([row["ma"] for row in public], ["9.999999"])
+        self.assertEqual(excluded, [])
+
+    def test_effective_decision_repeals(self) -> None:
+        public, excluded = self._run("current_or_immediate_unless_repealed")
+        self.assertEqual(public, [])
+        self.assertEqual(excluded[0]["verificationStatus"], "repealed_by_official_city_decision")
+
+
 if __name__ == "__main__":
     unittest.main()
