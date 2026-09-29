@@ -43,5 +43,26 @@ class Phase1ReconciliationTests(unittest.TestCase):
         self.assertEqual(result["MISSING"]["minimumCount"], 323)
 
 
+class LatestOfficialAggregateTests(unittest.TestCase):
+    def test_q3_2026_aggregate_is_recorded_without_overwriting_baseline(self):
+        import json
+        from pathlib import Path
+        root = Path(__file__).resolve().parents[1]
+        b = json.loads((root / "data/source-audit/phase1-authoritative-baseline.json").read_text(encoding="utf-8"))
+        self.assertEqual(b["aggregate"]["combined"]["total"], 323)
+        q3 = b["officialAggregateUpdates"][-1]
+        self.assertEqual(q3["reportPeriod"], "Q3/2026")
+        for block in ("communeAuthority", "shared", "combined", "provinceOnly"):
+            v = q3[block]
+            self.assertEqual(v["total"], v["FULL"] + v["PARTIAL"] + v["NOT_ONLINE"], block)
+        self.assertEqual(q3["combined"]["total"], q3["communeAuthority"]["total"] + q3["shared"]["total"])
+        self.assertEqual(q3["cityTotal"], q3["provinceOnly"]["total"] + q3["combined"]["total"])
+        r = json.loads((root / "data/reconciliation/phase1-current.json").read_text(encoding="utf-8"))
+        self.assertEqual(r["summary"]["latestOfficialAggregateTarget"], 348)
+        self.assertEqual(
+            r["summary"]["minimumMissingAgainstLatestOfficialAggregate"],
+            348 - r["summary"]["phase1CandidateCodes"],
+        )
+
 if __name__ == "__main__":
     unittest.main()
