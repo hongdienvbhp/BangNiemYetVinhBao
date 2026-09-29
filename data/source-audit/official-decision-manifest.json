@@ -443,11 +443,11 @@
       "articleUrl": "https://nhichieu.haiphong.gov.vn/tra-cuu-thu-tuc-hanh-chinh-90290/so-111-tb-vhxh-ngay-24-thang-9-nam-2026-thong-bao-quyet-dinh-so-3958-qd-ubnd-ve-viec-cong-bo-dan-971224",
       "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6843/tintuc/2026/9/tb-so-111-tthc-qd-so-3958-ngay-23.9-tthc.ldsigned639259321271092336.pdf",
       "filePath": "data/source-audit/city-decisions/QD-3958.pdf",
-      "pdfSha256": "f06cce9014a5163c9cd21e4b6d6af2764ce587cf8bcce680e6cd6277f49956e2",
+      "pdfSha256": "6bd5dc7093abaf1e278947b357b4fef379f79bca75001a553a2935919b84afdb",
       "effectiveDate": null,
-      "ingestStatus": "reviewed_pending_effective_date",
-      "title": "Số: 111/TB-VHXH, ngày 24 tháng 9 năm 2026 THÔNG BÁO Quyết định số 3958/QĐ-UBND về việc công bố danh mục thủ tục hành chính bị bãi bỏ lĩnh vực phòng bệnh thuộc phạm vi, chức năng quản lý của Sở Y tế",
-      "reviewNote": "Rà soát 29/9/2026: PDF thu được là Thông báo 111/TB-VHXH của phường Nhị Chiểu, không phải QĐ gốc; chưa trích được danh mục TTHC bãi bỏ – cần bản QĐ gốc."
+      "ingestStatus": "applied",
+      "title": "Quyết định số 3958/QĐ-UBND ngày 23/9/2026 của Chủ tịch UBND thành phố về việc công bố danh mục thủ tục hành chính bị bãi bỏ lĩnh vực phòng bệnh thuộc phạm vi, chức năng quản lý của Sở Y tế",
+      "reviewNote": "29/9/2026: thay bằng bản gốc QĐ 3958/QĐ-UBND (bản ký số, do Giám đốc TTPVHCC cung cấp từ hệ thống QLVB; articleUrl/pdfUrl giữ Thông báo 111/TB-VHXH phường Nhị Chiểu làm nguồn công khai đối chiếu). Bãi bỏ 2 TTHC cấp tỉnh 1.013896, 1.013898 (chưa có trong canonical). Không ghi điều khoản hiệu lực → hiệu lực từ ngày ký."
     },
     {
       "decisionNo": "3965/QĐ-UBND",
