@@ -6,7 +6,7 @@
   "rule": "Candidate-only: mã có ngữ cảnh trực tiếp 'cấp xã/UBND xã' trong tiêu đề hoặc đoạn văn quanh mã ở tệp đính kèm chính thức. Không suy ra trạng thái hiện hành; possible_repeal chỉ là cờ rà soát, không tự retire.",
   "summary": {
     "all_attachment_codes": 911,
-    "direct_commune_candidate_codes": 159,
+    "direct_commune_candidate_codes": 178,
     "possible_repeal_candidates": 2
   },
   "candidates": [
@@ -3344,6 +3344,538 @@
       ]
     },
     {
+      "procedure_code": "1.115593",
+      "verification_status": "candidate_commune_from_official_attachment",
+      "auto_publish": false,
+      "latest_source_date": "2026-08-27",
+      "direct_commune_evidence_count": 1,
+      "repeal_context_evidence_count": 0,
+      "possible_repeal": false,
+      "evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "article_title": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "published_date": "2026-08-27",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachment_sha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "snippet": "B. DANH MỤC THỦ TỤC HÀNH CHÍNH CẤP XÃ STT 18 1.115593 Xác nhận tiếp tục sử dụng đất nông nghiệp của cá nhân khi hết thời hạn sử dụng đất Nghị quyết số 23/2026/NQ-HĐND ngày 28/7/2026",
+          "direct_commune": true,
+          "repeal_context": false,
+          "snippet_source": "qd3433_annex_section_b_table_row_normalized"
+        }
+      ],
+      "supplement": {
+        "addedAt": "2026-09-29",
+        "reason": "Heuristic web010 chỉ bắt mã đầu tiên sau tiêu đề mục B; bổ sung toàn bộ mục B (cấp xã) của Phụ lục QĐ 3433/QĐ-UBND theo đúng tệp đính kèm chính thức (cùng SHA-256).",
+        "corroboration": "DVC Hải Phòng (apidvc.haiphong.gov.vn /bd/procedure) cấu hình mã này ở Cấp Xã, gồm xã Vĩnh Bảo, quan sát 2026-09-29"
+      }
+    },
+    {
+      "procedure_code": "1.115620",
+      "verification_status": "candidate_commune_from_official_attachment",
+      "auto_publish": false,
+      "latest_source_date": "2026-08-27",
+      "direct_commune_evidence_count": 1,
+      "repeal_context_evidence_count": 0,
+      "possible_repeal": false,
+      "evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "article_title": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "published_date": "2026-08-27",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachment_sha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "snippet": "B. DANH MỤC THỦ TỤC HÀNH CHÍNH CẤP XÃ STT 20 1.115620 Đăng ký đất đai, tài sản gắn liền với đất, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất lần đầu đối với cá nhân, cộng đồng dân cư, hộ gia đình đang sử dụng đất Nghị quyết số 23/2026/NQ-HĐND ngày 28/7/2026",
+          "direct_commune": true,
+          "repeal_context": false,
+          "snippet_source": "qd3433_annex_section_b_table_row_normalized"
+        }
+      ],
+      "supplement": {
+        "addedAt": "2026-09-29",
+        "reason": "Heuristic web010 chỉ bắt mã đầu tiên sau tiêu đề mục B; bổ sung toàn bộ mục B (cấp xã) của Phụ lục QĐ 3433/QĐ-UBND theo đúng tệp đính kèm chính thức (cùng SHA-256).",
+        "corroboration": "DVC Hải Phòng (apidvc.haiphong.gov.vn /bd/procedure) cấu hình mã này ở Cấp Xã, gồm xã Vĩnh Bảo, quan sát 2026-09-29"
+      }
+    },
+    {
+      "procedure_code": "1.115621",
+      "verification_status": "candidate_commune_from_official_attachment",
+      "auto_publish": false,
+      "latest_source_date": "2026-08-27",
+      "direct_commune_evidence_count": 1,
+      "repeal_context_evidence_count": 0,
+      "possible_repeal": false,
+      "evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "article_title": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "published_date": "2026-08-27",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachment_sha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "snippet": "B. DANH MỤC THỦ TỤC HÀNH CHÍNH CẤP XÃ STT 19 1.115621 Cấp lại Giấy chứng nhận do bị mất Nghị quyết số 23/2026/NQ-HĐND ngày 28/7/2026",
+          "direct_commune": true,
+          "repeal_context": false,
+          "snippet_source": "qd3433_annex_section_b_table_row_normalized"
+        }
+      ],
+      "supplement": {
+        "addedAt": "2026-09-29",
+        "reason": "Heuristic web010 chỉ bắt mã đầu tiên sau tiêu đề mục B; bổ sung toàn bộ mục B (cấp xã) của Phụ lục QĐ 3433/QĐ-UBND theo đúng tệp đính kèm chính thức (cùng SHA-256).",
+        "corroboration": "DVC Hải Phòng (apidvc.haiphong.gov.vn /bd/procedure) cấu hình mã này ở Cấp Xã, gồm xã Vĩnh Bảo, quan sát 2026-09-29"
+      }
+    },
+    {
+      "procedure_code": "1.115622",
+      "verification_status": "candidate_commune_from_official_attachment",
+      "auto_publish": false,
+      "latest_source_date": "2026-08-27",
+      "direct_commune_evidence_count": 1,
+      "repeal_context_evidence_count": 0,
+      "possible_repeal": false,
+      "evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "article_title": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "published_date": "2026-08-27",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachment_sha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "snippet": "B. DANH MỤC THỦ TỤC HÀNH CHÍNH CẤP XÃ STT 17 1.115622 Cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất đối với trường hợp người sử dụng đất đã thực hiện chuyển đổi quyền sử dụng đất nông nghiệp theo phương án “dồn điền đổi thửa” được cơ quan có thẩm quyền phê duyệt trước ngày 01 tháng 8 năm 2024 Nghị quyết số 23/2026/NQ-HĐND ngày 28/7/2026",
+          "direct_commune": true,
+          "repeal_context": false,
+          "snippet_source": "qd3433_annex_section_b_table_row_normalized"
+        }
+      ],
+      "supplement": {
+        "addedAt": "2026-09-29",
+        "reason": "Heuristic web010 chỉ bắt mã đầu tiên sau tiêu đề mục B; bổ sung toàn bộ mục B (cấp xã) của Phụ lục QĐ 3433/QĐ-UBND theo đúng tệp đính kèm chính thức (cùng SHA-256).",
+        "corroboration": "DVC Hải Phòng (apidvc.haiphong.gov.vn /bd/procedure) cấu hình mã này ở Cấp Xã, gồm xã Vĩnh Bảo, quan sát 2026-09-29"
+      }
+    },
+    {
+      "procedure_code": "1.115623",
+      "verification_status": "candidate_commune_from_official_attachment",
+      "auto_publish": false,
+      "latest_source_date": "2026-08-27",
+      "direct_commune_evidence_count": 1,
+      "repeal_context_evidence_count": 0,
+      "possible_repeal": false,
+      "evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "article_title": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "published_date": "2026-08-27",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachment_sha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "snippet": "B. DANH MỤC THỦ TỤC HÀNH CHÍNH CẤP XÃ STT 16 1.115623 Cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất đối với trường hợp hộ gia đình, cá nhân đã được cấp giấy chứng nhận đối với một phần diện tích của thửa đất, phần diện tích còn lại chưa đủ điều kiện cấp giấy chứng nhận theo quy định của pháp luật tại thời điểm cấp giấy chứng nhận trước đây mà nay đủ điều kiện cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất Nghị quyết số 23/2026/NQ-HĐND ngày 28/7/2026",
+          "direct_commune": true,
+          "repeal_context": false,
+          "snippet_source": "qd3433_annex_section_b_table_row_normalized"
+        }
+      ],
+      "supplement": {
+        "addedAt": "2026-09-29",
+        "reason": "Heuristic web010 chỉ bắt mã đầu tiên sau tiêu đề mục B; bổ sung toàn bộ mục B (cấp xã) của Phụ lục QĐ 3433/QĐ-UBND theo đúng tệp đính kèm chính thức (cùng SHA-256).",
+        "corroboration": "DVC Hải Phòng (apidvc.haiphong.gov.vn /bd/procedure) cấu hình mã này ở Cấp Xã, gồm xã Vĩnh Bảo, quan sát 2026-09-29"
+      }
+    },
+    {
+      "procedure_code": "1.115624",
+      "verification_status": "candidate_commune_from_official_attachment",
+      "auto_publish": false,
+      "latest_source_date": "2026-08-27",
+      "direct_commune_evidence_count": 1,
+      "repeal_context_evidence_count": 0,
+      "possible_repeal": false,
+      "evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "article_title": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "published_date": "2026-08-27",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachment_sha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "snippet": "B. DANH MỤC THỦ TỤC HÀNH CHÍNH CẤP XÃ STT 15 1.115624 Đăng ký, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất đối với toàn bộ diện tích đất đang sử dụng quy định tại điểm b và điểm c khoản 2 Điều 24 Nghị định số 101/2024/NĐ-CP Nghị quyết số 23/2026/NQ-HĐND ngày 28/7/2026",
+          "direct_commune": true,
+          "repeal_context": false,
+          "snippet_source": "qd3433_annex_section_b_table_row_normalized"
+        }
+      ],
+      "supplement": {
+        "addedAt": "2026-09-29",
+        "reason": "Heuristic web010 chỉ bắt mã đầu tiên sau tiêu đề mục B; bổ sung toàn bộ mục B (cấp xã) của Phụ lục QĐ 3433/QĐ-UBND theo đúng tệp đính kèm chính thức (cùng SHA-256).",
+        "corroboration": "DVC Hải Phòng (apidvc.haiphong.gov.vn /bd/procedure) cấu hình mã này ở Cấp Xã, gồm xã Vĩnh Bảo, quan sát 2026-09-29"
+      }
+    },
+    {
+      "procedure_code": "1.115625",
+      "verification_status": "candidate_commune_from_official_attachment",
+      "auto_publish": false,
+      "latest_source_date": "2026-08-27",
+      "direct_commune_evidence_count": 1,
+      "repeal_context_evidence_count": 0,
+      "possible_repeal": false,
+      "evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "article_title": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "published_date": "2026-08-27",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachment_sha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "snippet": "B. DANH MỤC THỦ TỤC HÀNH CHÍNH CẤP XÃ STT 14 1.115625 Giải quyết đối với trường hợp cá nhân, hộ gia đình đã được cấp Giấy chứng nhận một phần diện tích vào loại đất ở trước ngày 01 tháng 7 năm 2004, phần diện tích còn lại của thửa đất chưa được cấp Giấy chứng nhận Nghị quyết số 23/2026/NQ-HĐND ngày 28/7/2026",
+          "direct_commune": true,
+          "repeal_context": false,
+          "snippet_source": "qd3433_annex_section_b_table_row_normalized"
+        }
+      ],
+      "supplement": {
+        "addedAt": "2026-09-29",
+        "reason": "Heuristic web010 chỉ bắt mã đầu tiên sau tiêu đề mục B; bổ sung toàn bộ mục B (cấp xã) của Phụ lục QĐ 3433/QĐ-UBND theo đúng tệp đính kèm chính thức (cùng SHA-256).",
+        "corroboration": "DVC Hải Phòng (apidvc.haiphong.gov.vn /bd/procedure) cấu hình mã này ở Cấp Xã, gồm xã Vĩnh Bảo, quan sát 2026-09-29"
+      }
+    },
+    {
+      "procedure_code": "1.115626",
+      "verification_status": "candidate_commune_from_official_attachment",
+      "auto_publish": false,
+      "latest_source_date": "2026-08-27",
+      "direct_commune_evidence_count": 1,
+      "repeal_context_evidence_count": 0,
+      "possible_repeal": false,
+      "evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "article_title": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "published_date": "2026-08-27",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachment_sha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "snippet": "B. DANH MỤC THỦ TỤC HÀNH CHÍNH CẤP XÃ STT 13 1.115626 Xác định lại diện tích đất ở của hộ gia đình, cá nhân trong trường hợp thửa đất ở có vườn, ao, đất thổ cư đã được cấp giấy chứng nhận trước ngày 01 tháng 7 năm 2004 khi người sử dụng đất có nhu cầu Nghị quyết số 23/2026/NQ-HĐND ngày 28/7/2026",
+          "direct_commune": true,
+          "repeal_context": false,
+          "snippet_source": "qd3433_annex_section_b_table_row_normalized"
+        }
+      ],
+      "supplement": {
+        "addedAt": "2026-09-29",
+        "reason": "Heuristic web010 chỉ bắt mã đầu tiên sau tiêu đề mục B; bổ sung toàn bộ mục B (cấp xã) của Phụ lục QĐ 3433/QĐ-UBND theo đúng tệp đính kèm chính thức (cùng SHA-256).",
+        "corroboration": "DVC Hải Phòng (apidvc.haiphong.gov.vn /bd/procedure) cấu hình mã này ở Cấp Xã, gồm xã Vĩnh Bảo, quan sát 2026-09-29"
+      }
+    },
+    {
+      "procedure_code": "1.115627",
+      "verification_status": "candidate_commune_from_official_attachment",
+      "auto_publish": false,
+      "latest_source_date": "2026-08-27",
+      "direct_commune_evidence_count": 1,
+      "repeal_context_evidence_count": 0,
+      "possible_repeal": false,
+      "evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "article_title": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "published_date": "2026-08-27",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachment_sha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "snippet": "B. DANH MỤC THỦ TỤC HÀNH CHÍNH CẤP XÃ STT 12 1.115627 Thu hồi Giấy chứng nhận đã cấp không đúng quy định của pháp luật đất đai do người sử dụng đất, chủ sở hữu tài sản gắn liền với đất phát hiện và cấp lại Giấy chứng nhận sau khi thu hồi Nghị quyết số 23/2026/NQ-HĐND ngày 28/7/2026",
+          "direct_commune": true,
+          "repeal_context": false,
+          "snippet_source": "qd3433_annex_section_b_table_row_normalized"
+        }
+      ],
+      "supplement": {
+        "addedAt": "2026-09-29",
+        "reason": "Heuristic web010 chỉ bắt mã đầu tiên sau tiêu đề mục B; bổ sung toàn bộ mục B (cấp xã) của Phụ lục QĐ 3433/QĐ-UBND theo đúng tệp đính kèm chính thức (cùng SHA-256).",
+        "corroboration": "DVC Hải Phòng (apidvc.haiphong.gov.vn /bd/procedure) cấu hình mã này ở Cấp Xã, gồm xã Vĩnh Bảo, quan sát 2026-09-29"
+      }
+    },
+    {
+      "procedure_code": "1.115628",
+      "verification_status": "candidate_commune_from_official_attachment",
+      "auto_publish": false,
+      "latest_source_date": "2026-08-27",
+      "direct_commune_evidence_count": 1,
+      "repeal_context_evidence_count": 0,
+      "possible_repeal": false,
+      "evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "article_title": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "published_date": "2026-08-27",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachment_sha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "snippet": "B. DANH MỤC THỦ TỤC HÀNH CHÍNH CẤP XÃ STT 11 1.115628 Đính chính Giấy chứng nhận đã cấp Nghị quyết số 23/2026/NQ-HĐND ngày 28/7/2026",
+          "direct_commune": true,
+          "repeal_context": false,
+          "snippet_source": "qd3433_annex_section_b_table_row_normalized"
+        }
+      ],
+      "supplement": {
+        "addedAt": "2026-09-29",
+        "reason": "Heuristic web010 chỉ bắt mã đầu tiên sau tiêu đề mục B; bổ sung toàn bộ mục B (cấp xã) của Phụ lục QĐ 3433/QĐ-UBND theo đúng tệp đính kèm chính thức (cùng SHA-256).",
+        "corroboration": "DVC Hải Phòng (apidvc.haiphong.gov.vn /bd/procedure) cấu hình mã này ở Cấp Xã, gồm xã Vĩnh Bảo, quan sát 2026-09-29"
+      }
+    },
+    {
+      "procedure_code": "1.115630",
+      "verification_status": "candidate_commune_from_official_attachment",
+      "auto_publish": false,
+      "latest_source_date": "2026-08-27",
+      "direct_commune_evidence_count": 1,
+      "repeal_context_evidence_count": 0,
+      "possible_repeal": false,
+      "evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "article_title": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "published_date": "2026-08-27",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachment_sha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "snippet": "B. DANH MỤC THỦ TỤC HÀNH CHÍNH CẤP XÃ STT 10 1.115630 Đăng ký, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất đối với trường hợp tặng cho quyền sử dụng đất cho Nhà nước hoặc cộng đồng dân cư hoặc mở rộng đường giao thông Nghị quyết số 23/2026/NQ-HĐND ngày 28/7/2026",
+          "direct_commune": true,
+          "repeal_context": false,
+          "snippet_source": "qd3433_annex_section_b_table_row_normalized"
+        }
+      ],
+      "supplement": {
+        "addedAt": "2026-09-29",
+        "reason": "Heuristic web010 chỉ bắt mã đầu tiên sau tiêu đề mục B; bổ sung toàn bộ mục B (cấp xã) của Phụ lục QĐ 3433/QĐ-UBND theo đúng tệp đính kèm chính thức (cùng SHA-256).",
+        "corroboration": "DVC Hải Phòng (apidvc.haiphong.gov.vn /bd/procedure) cấu hình mã này ở Cấp Xã, gồm xã Vĩnh Bảo, quan sát 2026-09-29"
+      }
+    },
+    {
+      "procedure_code": "1.115634",
+      "verification_status": "candidate_commune_from_official_attachment",
+      "auto_publish": false,
+      "latest_source_date": "2026-08-27",
+      "direct_commune_evidence_count": 1,
+      "repeal_context_evidence_count": 0,
+      "possible_repeal": false,
+      "evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "article_title": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "published_date": "2026-08-27",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachment_sha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "snippet": "B. DANH MỤC THỦ TỤC HÀNH CHÍNH CẤP XÃ STT 9 1.115634 Điều chỉnh quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất do sai sót về ranh giới, vị trí, diện tích, mục đích sử dụng giữa bản đồ quy hoạch, bản đồ địa chính, quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất và số liệu bàn giao đất trên thực địa Nghị quyết số 23/2026/NQ-HĐND ngày 28/7/2026",
+          "direct_commune": true,
+          "repeal_context": false,
+          "snippet_source": "qd3433_annex_section_b_table_row_normalized"
+        }
+      ],
+      "supplement": {
+        "addedAt": "2026-09-29",
+        "reason": "Heuristic web010 chỉ bắt mã đầu tiên sau tiêu đề mục B; bổ sung toàn bộ mục B (cấp xã) của Phụ lục QĐ 3433/QĐ-UBND theo đúng tệp đính kèm chính thức (cùng SHA-256).",
+        "corroboration": "DVC Hải Phòng (apidvc.haiphong.gov.vn /bd/procedure) cấu hình mã này ở Cấp Xã, gồm xã Vĩnh Bảo, quan sát 2026-09-29"
+      }
+    },
+    {
+      "procedure_code": "1.115638",
+      "verification_status": "candidate_commune_from_official_attachment",
+      "auto_publish": false,
+      "latest_source_date": "2026-08-27",
+      "direct_commune_evidence_count": 1,
+      "repeal_context_evidence_count": 0,
+      "possible_repeal": false,
+      "evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "article_title": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "published_date": "2026-08-27",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachment_sha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "snippet": "B. DANH MỤC THỦ TỤC HÀNH CHÍNH CẤP XÃ STT 8 1.115638 Điều chỉnh thời hạn sử dụng đất của dự án đầu tư Nghị quyết số 23/2026/NQ-HĐND ngày 28/7/2026",
+          "direct_commune": true,
+          "repeal_context": false,
+          "snippet_source": "qd3433_annex_section_b_table_row_normalized"
+        }
+      ],
+      "supplement": {
+        "addedAt": "2026-09-29",
+        "reason": "Heuristic web010 chỉ bắt mã đầu tiên sau tiêu đề mục B; bổ sung toàn bộ mục B (cấp xã) của Phụ lục QĐ 3433/QĐ-UBND theo đúng tệp đính kèm chính thức (cùng SHA-256).",
+        "corroboration": "DVC Hải Phòng (apidvc.haiphong.gov.vn /bd/procedure) cấu hình mã này ở Cấp Xã, gồm xã Vĩnh Bảo, quan sát 2026-09-29"
+      }
+    },
+    {
+      "procedure_code": "1.115640",
+      "verification_status": "candidate_commune_from_official_attachment",
+      "auto_publish": false,
+      "latest_source_date": "2026-08-27",
+      "direct_commune_evidence_count": 1,
+      "repeal_context_evidence_count": 0,
+      "possible_repeal": false,
+      "evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "article_title": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "published_date": "2026-08-27",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachment_sha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "snippet": "B. DANH MỤC THỦ TỤC HÀNH CHÍNH CẤP XÃ STT 7 1.115640 Điều chỉnh quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất do thay đổi căn cứ quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất Nghị quyết số 23/2026/NQ-HĐND ngày 28/7/2026",
+          "direct_commune": true,
+          "repeal_context": false,
+          "snippet_source": "qd3433_annex_section_b_table_row_normalized"
+        }
+      ],
+      "supplement": {
+        "addedAt": "2026-09-29",
+        "reason": "Heuristic web010 chỉ bắt mã đầu tiên sau tiêu đề mục B; bổ sung toàn bộ mục B (cấp xã) của Phụ lục QĐ 3433/QĐ-UBND theo đúng tệp đính kèm chính thức (cùng SHA-256).",
+        "corroboration": "DVC Hải Phòng (apidvc.haiphong.gov.vn /bd/procedure) cấu hình mã này ở Cấp Xã, gồm xã Vĩnh Bảo, quan sát 2026-09-29"
+      }
+    },
+    {
+      "procedure_code": "1.115641",
+      "verification_status": "candidate_commune_from_official_attachment",
+      "auto_publish": false,
+      "latest_source_date": "2026-08-27",
+      "direct_commune_evidence_count": 1,
+      "repeal_context_evidence_count": 0,
+      "possible_repeal": false,
+      "evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "article_title": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "published_date": "2026-08-27",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachment_sha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "snippet": "B. DANH MỤC THỦ TỤC HÀNH CHÍNH CẤP XÃ STT 6 1.115641 Chuyển hình thức giao đất, cho thuê đất Nghị quyết số 23/2026/NQ-HĐND ngày 28/7/2026",
+          "direct_commune": true,
+          "repeal_context": false,
+          "snippet_source": "qd3433_annex_section_b_table_row_normalized"
+        }
+      ],
+      "supplement": {
+        "addedAt": "2026-09-29",
+        "reason": "Heuristic web010 chỉ bắt mã đầu tiên sau tiêu đề mục B; bổ sung toàn bộ mục B (cấp xã) của Phụ lục QĐ 3433/QĐ-UBND theo đúng tệp đính kèm chính thức (cùng SHA-256).",
+        "corroboration": "DVC Hải Phòng (apidvc.haiphong.gov.vn /bd/procedure) cấu hình mã này ở Cấp Xã, gồm xã Vĩnh Bảo, quan sát 2026-09-29"
+      }
+    },
+    {
+      "procedure_code": "1.115643",
+      "verification_status": "candidate_commune_from_official_attachment",
+      "auto_publish": false,
+      "latest_source_date": "2026-08-27",
+      "direct_commune_evidence_count": 1,
+      "repeal_context_evidence_count": 0,
+      "possible_repeal": false,
+      "evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "article_title": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "published_date": "2026-08-27",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachment_sha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "snippet": "B. DANH MỤC THỦ TỤC HÀNH CHÍNH CẤP XÃ STT 5 1.115643 Gia hạn sử dụng đất khi hết thời hạn sử dụng đất Nghị quyết số 23/2026/NQ-HĐND ngày 28/7/2026",
+          "direct_commune": true,
+          "repeal_context": false,
+          "snippet_source": "qd3433_annex_section_b_table_row_normalized"
+        }
+      ],
+      "supplement": {
+        "addedAt": "2026-09-29",
+        "reason": "Heuristic web010 chỉ bắt mã đầu tiên sau tiêu đề mục B; bổ sung toàn bộ mục B (cấp xã) của Phụ lục QĐ 3433/QĐ-UBND theo đúng tệp đính kèm chính thức (cùng SHA-256).",
+        "corroboration": "DVC Hải Phòng (apidvc.haiphong.gov.vn /bd/procedure) cấu hình mã này ở Cấp Xã, gồm xã Vĩnh Bảo, quan sát 2026-09-29"
+      }
+    },
+    {
+      "procedure_code": "1.115645",
+      "verification_status": "candidate_commune_from_official_attachment",
+      "auto_publish": false,
+      "latest_source_date": "2026-08-27",
+      "direct_commune_evidence_count": 1,
+      "repeal_context_evidence_count": 0,
+      "possible_repeal": false,
+      "evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "article_title": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "published_date": "2026-08-27",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachment_sha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "snippet": "B. DANH MỤC THỦ TỤC HÀNH CHÍNH CẤP XÃ STT 4 1.115645 Cho phép chuyển mục đích sử dụng đất đối với trường hợp không thuộc diện chấp thuận chủ trương đầu tư, chấp thuận nhà đầu tư theo quy định của pháp luật về đầu tư Nghị quyết số 23/2026/NQ-HĐND ngày 28/7/2026",
+          "direct_commune": true,
+          "repeal_context": false,
+          "snippet_source": "qd3433_annex_section_b_table_row_normalized"
+        }
+      ],
+      "supplement": {
+        "addedAt": "2026-09-29",
+        "reason": "Heuristic web010 chỉ bắt mã đầu tiên sau tiêu đề mục B; bổ sung toàn bộ mục B (cấp xã) của Phụ lục QĐ 3433/QĐ-UBND theo đúng tệp đính kèm chính thức (cùng SHA-256).",
+        "corroboration": "DVC Hải Phòng (apidvc.haiphong.gov.vn /bd/procedure) cấu hình mã này ở Cấp Xã, gồm xã Vĩnh Bảo, quan sát 2026-09-29"
+      }
+    },
+    {
+      "procedure_code": "1.115646",
+      "verification_status": "candidate_commune_from_official_attachment",
+      "auto_publish": false,
+      "latest_source_date": "2026-08-27",
+      "direct_commune_evidence_count": 1,
+      "repeal_context_evidence_count": 0,
+      "possible_repeal": false,
+      "evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "article_title": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "published_date": "2026-08-27",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachment_sha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "snippet": "B. DANH MỤC THỦ TỤC HÀNH CHÍNH CẤP XÃ STT 3 1.115646 Cho phép chuyển mục đích sử dụng đất đối với trường hợp thuộc diện chấp thuận chủ trương đầu tư, chấp thuận nhà đầu tư theo quy định của pháp luật về đầu tư Nghị quyết số 23/2026/NQ-HĐND ngày 28/7/2026",
+          "direct_commune": true,
+          "repeal_context": false,
+          "snippet_source": "qd3433_annex_section_b_table_row_normalized"
+        }
+      ],
+      "supplement": {
+        "addedAt": "2026-09-29",
+        "reason": "Heuristic web010 chỉ bắt mã đầu tiên sau tiêu đề mục B; bổ sung toàn bộ mục B (cấp xã) của Phụ lục QĐ 3433/QĐ-UBND theo đúng tệp đính kèm chính thức (cùng SHA-256).",
+        "corroboration": "DVC Hải Phòng (apidvc.haiphong.gov.vn /bd/procedure) cấu hình mã này ở Cấp Xã, gồm xã Vĩnh Bảo, quan sát 2026-09-29"
+      }
+    },
+    {
+      "procedure_code": "1.115648",
+      "verification_status": "candidate_commune_from_official_attachment",
+      "auto_publish": false,
+      "latest_source_date": "2026-08-27",
+      "direct_commune_evidence_count": 1,
+      "repeal_context_evidence_count": 0,
+      "possible_repeal": false,
+      "evidence": [
+        {
+          "article_url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "article_title": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "published_date": "2026-08-27",
+          "classification": "public_tthc",
+          "attachment_url": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachment_sha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "snippet": "B. DANH MỤC THỦ TỤC HÀNH CHÍNH CẤP XÃ STT 2 1.115648 Giao đất, cho thuê đất không thông qua hình thức đấu giá quyền sử dụng đất, không đấu thầu lựa chọn nhà đầu tư thực hiện dự án có sử dụng đất đối với trường hợp không thuộc diện chấp thuận chủ trương đầu tư, chấp thuận nhà đầu tư theo pháp luật về đầu tư; giao rừng, cho thuê rừng Nghị quyết số 23/2026/NQ-HĐND ngày 28/7/2026",
+          "direct_commune": true,
+          "repeal_context": false,
+          "snippet_source": "qd3433_annex_section_b_table_row_normalized"
+        }
+      ],
+      "supplement": {
+        "addedAt": "2026-09-29",
+        "reason": "Heuristic web010 chỉ bắt mã đầu tiên sau tiêu đề mục B; bổ sung toàn bộ mục B (cấp xã) của Phụ lục QĐ 3433/QĐ-UBND theo đúng tệp đính kèm chính thức (cùng SHA-256).",
+        "corroboration": "DVC Hải Phòng (apidvc.haiphong.gov.vn /bd/procedure) cấu hình mã này ở Cấp Xã, gồm xã Vĩnh Bảo, quan sát 2026-09-29"
+      }
+    },
+    {
       "procedure_code": "1.115649",
       "verification_status": "candidate_commune_from_official_attachment",
       "auto_publish": false,
@@ -4133,6 +4665,34 @@
           "direct_commune": true,
           "repeal_context": false
         }
+      ]
+    }
+  ],
+  "supplements": [
+    {
+      "date": "2026-09-29",
+      "source": "QĐ 3433/QĐ-UBND – Phụ lục mục B (cấp xã)",
+      "attachmentSha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+      "addedCodes": [
+        "1.115648",
+        "1.115646",
+        "1.115645",
+        "1.115643",
+        "1.115641",
+        "1.115640",
+        "1.115638",
+        "1.115634",
+        "1.115630",
+        "1.115628",
+        "1.115627",
+        "1.115626",
+        "1.115625",
+        "1.115624",
+        "1.115623",
+        "1.115622",
+        "1.115593",
+        "1.115621",
+        "1.115620"
       ]
     }
   ]

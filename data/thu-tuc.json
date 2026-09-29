@@ -2,7 +2,7 @@
   "format": "bangniemyet-vinhbao-master-data",
   "version": 4,
   "dataset_version": "2026.09.29",
-  "source_commit": "b67ec5b65d4d495ca6ddb5feb7486688168e7774",
+  "source_commit": "b12cb36078d68268a47dcd3fcc2c9eae30ff2a5e",
   "source_commit_kind": "verified_source_bundle_git_sha1",
   "updatedAt": "2026-09-29",
   "sourceSnapshotDate": "2026-09-29",
@@ -28767,6 +28767,206 @@
       }
     },
     {
+      "ma": "1.115623",
+      "ten": "Cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất đối với trường hợp hộ gia đình, cá nhân đã được cấp giấy chứng nhận đối với một phần diện tích của thửa đất, phần diện tích còn lại chưa đủ điều kiện cấp giấy chứng nhận theo quy định của pháp luật tại thời điểm cấp giấy chứng nhận trước đây mà nay đủ điều kiện cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất",
+      "linhVuc": "ĐẤT ĐAI",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "2026/QĐ-UBND; 2628/QĐ-UBND; 3433/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-29",
+      "sourceLatestDate": "2026-08-27",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "articleTitle": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "publishedDate": "2026-08-27",
+          "classification": "public_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachmentSha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "decisionNumbers": [
+            "2026/QĐ-UBND",
+            "2628/QĐ-UBND"
+          ],
+          "repealContext": false,
+          "sourceRole": "local_legal_effect",
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "evidenceId": "ev_e81935249df40520f8b96671"
+        },
+        {
+          "sourceRole": "local_execution",
+          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115623",
+          "classification": "dvcqg_submission_link",
+          "repealContext": false,
+          "evidenceId": "ev_067a6b8d7fa5a73706ad99b2"
+        }
+      ],
+      "priority51": false,
+      "stt": 178,
+      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115623",
+      "nopHoSoScope": {
+        "route": "ward",
+        "provinceCode": "31",
+        "provinceName": "Hải Phòng",
+        "wardCode": "11824",
+        "wardName": "Vĩnh Bảo",
+        "commune": "WARD"
+      },
+      "submissionLinkStatus": "resolution_level_scope_verified",
+      "submissionLinkMode": "keyword_fallback",
+      "lifecycle": {
+        "status": "active",
+        "asOf": "2026-09-29",
+        "effectiveFrom": "2026-08-27",
+        "effectiveTo": null
+      },
+      "fieldSources": {
+        "ma": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "ten": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "linhVuc": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "cap": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "quyetDinh": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.status": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.effectiveFrom": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "nopHoSoUrl": [
+          "ev_067a6b8d7fa5a73706ad99b2"
+        ],
+        "nopHoSoScope": [
+          "ev_067a6b8d7fa5a73706ad99b2"
+        ],
+        "submissionLinkStatus": [
+          "ev_067a6b8d7fa5a73706ad99b2"
+        ]
+      }
+    },
+    {
+      "ma": "1.115622",
+      "ten": "Cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất đối với trường hợp người sử dụng đất đã thực hiện chuyển đổi quyền sử dụng đất nông nghiệp theo phương án “dồn điền đổi thửa” được cơ quan có thẩm quyền phê duyệt trước ngày 01 tháng 8 năm 2024",
+      "linhVuc": "ĐẤT ĐAI",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "2026/QĐ-UBND; 2628/QĐ-UBND; 3433/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-29",
+      "sourceLatestDate": "2026-08-27",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "articleTitle": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "publishedDate": "2026-08-27",
+          "classification": "public_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachmentSha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "decisionNumbers": [
+            "2026/QĐ-UBND",
+            "2628/QĐ-UBND"
+          ],
+          "repealContext": false,
+          "sourceRole": "local_legal_effect",
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "evidenceId": "ev_e81935249df40520f8b96671"
+        },
+        {
+          "sourceRole": "local_execution",
+          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115622",
+          "classification": "dvcqg_submission_link",
+          "repealContext": false,
+          "evidenceId": "ev_88c2643069e81db0ee1e2240"
+        }
+      ],
+      "priority51": false,
+      "stt": 179,
+      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115622",
+      "nopHoSoScope": {
+        "route": "ward",
+        "provinceCode": "31",
+        "provinceName": "Hải Phòng",
+        "wardCode": "11824",
+        "wardName": "Vĩnh Bảo",
+        "commune": "WARD"
+      },
+      "submissionLinkStatus": "resolution_level_scope_verified",
+      "submissionLinkMode": "keyword_fallback",
+      "lifecycle": {
+        "status": "active",
+        "asOf": "2026-09-29",
+        "effectiveFrom": "2026-08-27",
+        "effectiveTo": null
+      },
+      "fieldSources": {
+        "ma": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "ten": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "linhVuc": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "cap": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "quyetDinh": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.status": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.effectiveFrom": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "nopHoSoUrl": [
+          "ev_88c2643069e81db0ee1e2240"
+        ],
+        "nopHoSoScope": [
+          "ev_88c2643069e81db0ee1e2240"
+        ],
+        "submissionLinkStatus": [
+          "ev_88c2643069e81db0ee1e2240"
+        ]
+      }
+    },
+    {
       "ma": "1.012786",
       "ten": "Cấp lại Giấy chứng nhận do bị mất",
       "linhVuc": "ĐẤT ĐAI",
@@ -28850,7 +29050,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-76c7-75db-b936-ff88fe49d880&formalityCaseId=019db9ab-ffd5-7269-87aa-873d1660409d",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 178,
+      "stt": 180,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-76c7-75db-b936-ff88fe49d880",
       "nopHoSoScope": {
         "route": "ward",
@@ -28912,6 +29112,106 @@
         "submissionLinkStatus": [
           "ev_3f8aebf87d620cf472190277",
           "ev_30f0bf196a7dca68ed33ff11"
+        ]
+      }
+    },
+    {
+      "ma": "1.115621",
+      "ten": "Cấp lại Giấy chứng nhận do bị mất",
+      "linhVuc": "ĐẤT ĐAI",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "2026/QĐ-UBND; 2628/QĐ-UBND; 3433/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-29",
+      "sourceLatestDate": "2026-08-27",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "articleTitle": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "publishedDate": "2026-08-27",
+          "classification": "public_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachmentSha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "decisionNumbers": [
+            "2026/QĐ-UBND",
+            "2628/QĐ-UBND"
+          ],
+          "repealContext": false,
+          "sourceRole": "local_legal_effect",
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "evidenceId": "ev_e81935249df40520f8b96671"
+        },
+        {
+          "sourceRole": "local_execution",
+          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115621",
+          "classification": "dvcqg_submission_link",
+          "repealContext": false,
+          "evidenceId": "ev_8ffadde142bbd70ba0a0742d"
+        }
+      ],
+      "priority51": false,
+      "stt": 181,
+      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115621",
+      "nopHoSoScope": {
+        "route": "ward",
+        "provinceCode": "31",
+        "provinceName": "Hải Phòng",
+        "wardCode": "11824",
+        "wardName": "Vĩnh Bảo",
+        "commune": "WARD"
+      },
+      "submissionLinkStatus": "resolution_level_scope_verified",
+      "submissionLinkMode": "keyword_fallback",
+      "lifecycle": {
+        "status": "active",
+        "asOf": "2026-09-29",
+        "effectiveFrom": "2026-08-27",
+        "effectiveTo": null
+      },
+      "fieldSources": {
+        "ma": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "ten": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "linhVuc": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "cap": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "quyetDinh": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.status": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.effectiveFrom": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "nopHoSoUrl": [
+          "ev_8ffadde142bbd70ba0a0742d"
+        ],
+        "nopHoSoScope": [
+          "ev_8ffadde142bbd70ba0a0742d"
+        ],
+        "submissionLinkStatus": [
+          "ev_8ffadde142bbd70ba0a0742d"
         ]
       }
     },
@@ -28999,7 +29299,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-6f3b-7238-9e41-307101b01795&formalityCaseId=019db9b1-40ff-7580-8da0-abe4ed35d01b",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 179,
+      "stt": 182,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-6f3b-7238-9e41-307101b01795",
       "nopHoSoScope": {
         "route": "ward",
@@ -29061,6 +29361,206 @@
         "submissionLinkStatus": [
           "ev_04f23584d7a5f6527822b6cf",
           "ev_b088e1eb9a7cc5972ea551a5"
+        ]
+      }
+    },
+    {
+      "ma": "1.115645",
+      "ten": "Cho phép chuyển mục đích sử dụng đất đối với trường hợp không thuộc diện chấp thuận chủ trương đầu tư, chấp thuận nhà đầu tư theo quy định của pháp luật về đầu tư",
+      "linhVuc": "ĐẤT ĐAI",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "2026/QĐ-UBND; 2628/QĐ-UBND; 3433/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-29",
+      "sourceLatestDate": "2026-08-27",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "articleTitle": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "publishedDate": "2026-08-27",
+          "classification": "public_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachmentSha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "decisionNumbers": [
+            "2026/QĐ-UBND",
+            "2628/QĐ-UBND"
+          ],
+          "repealContext": false,
+          "sourceRole": "local_legal_effect",
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "evidenceId": "ev_e81935249df40520f8b96671"
+        },
+        {
+          "sourceRole": "local_execution",
+          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115645",
+          "classification": "dvcqg_submission_link",
+          "repealContext": false,
+          "evidenceId": "ev_982bb0116b56beafadd8c924"
+        }
+      ],
+      "priority51": false,
+      "stt": 183,
+      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115645",
+      "nopHoSoScope": {
+        "route": "ward",
+        "provinceCode": "31",
+        "provinceName": "Hải Phòng",
+        "wardCode": "11824",
+        "wardName": "Vĩnh Bảo",
+        "commune": "WARD"
+      },
+      "submissionLinkStatus": "resolution_level_scope_verified",
+      "submissionLinkMode": "keyword_fallback",
+      "lifecycle": {
+        "status": "active",
+        "asOf": "2026-09-29",
+        "effectiveFrom": "2026-08-27",
+        "effectiveTo": null
+      },
+      "fieldSources": {
+        "ma": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "ten": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "linhVuc": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "cap": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "quyetDinh": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.status": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.effectiveFrom": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "nopHoSoUrl": [
+          "ev_982bb0116b56beafadd8c924"
+        ],
+        "nopHoSoScope": [
+          "ev_982bb0116b56beafadd8c924"
+        ],
+        "submissionLinkStatus": [
+          "ev_982bb0116b56beafadd8c924"
+        ]
+      }
+    },
+    {
+      "ma": "1.115646",
+      "ten": "Cho phép chuyển mục đích sử dụng đất đối với trường hợp thuộc diện chấp thuận chủ trương đầu tư, chấp thuận nhà đầu tư theo quy định của pháp luật về đầu tư",
+      "linhVuc": "ĐẤT ĐAI",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "2026/QĐ-UBND; 2628/QĐ-UBND; 3433/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-29",
+      "sourceLatestDate": "2026-08-27",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "articleTitle": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "publishedDate": "2026-08-27",
+          "classification": "public_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachmentSha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "decisionNumbers": [
+            "2026/QĐ-UBND",
+            "2628/QĐ-UBND"
+          ],
+          "repealContext": false,
+          "sourceRole": "local_legal_effect",
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "evidenceId": "ev_e81935249df40520f8b96671"
+        },
+        {
+          "sourceRole": "local_execution",
+          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115646",
+          "classification": "dvcqg_submission_link",
+          "repealContext": false,
+          "evidenceId": "ev_cc01eac2b4631440b97f3b4b"
+        }
+      ],
+      "priority51": false,
+      "stt": 184,
+      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115646",
+      "nopHoSoScope": {
+        "route": "ward",
+        "provinceCode": "31",
+        "provinceName": "Hải Phòng",
+        "wardCode": "11824",
+        "wardName": "Vĩnh Bảo",
+        "commune": "WARD"
+      },
+      "submissionLinkStatus": "resolution_level_scope_verified",
+      "submissionLinkMode": "keyword_fallback",
+      "lifecycle": {
+        "status": "active",
+        "asOf": "2026-09-29",
+        "effectiveFrom": "2026-08-27",
+        "effectiveTo": null
+      },
+      "fieldSources": {
+        "ma": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "ten": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "linhVuc": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "cap": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "quyetDinh": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.status": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.effectiveFrom": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "nopHoSoUrl": [
+          "ev_cc01eac2b4631440b97f3b4b"
+        ],
+        "nopHoSoScope": [
+          "ev_cc01eac2b4631440b97f3b4b"
+        ],
+        "submissionLinkStatus": [
+          "ev_cc01eac2b4631440b97f3b4b"
         ]
       }
     },
@@ -29148,7 +29648,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-7ed2-729a-80b9-359a98b3a341&formalityCaseId=019db9a0-b861-758e-b852-a3da6087c072",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 180,
+      "stt": 185,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-7ed2-729a-80b9-359a98b3a341",
       "nopHoSoScope": {
         "route": "ward",
@@ -29214,6 +29714,106 @@
       }
     },
     {
+      "ma": "1.115641",
+      "ten": "Chuyển hình thức giao đất, cho thuê đất",
+      "linhVuc": "ĐẤT ĐAI",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "2026/QĐ-UBND; 2628/QĐ-UBND; 3433/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-29",
+      "sourceLatestDate": "2026-08-27",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "articleTitle": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "publishedDate": "2026-08-27",
+          "classification": "public_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachmentSha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "decisionNumbers": [
+            "2026/QĐ-UBND",
+            "2628/QĐ-UBND"
+          ],
+          "repealContext": false,
+          "sourceRole": "local_legal_effect",
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "evidenceId": "ev_e81935249df40520f8b96671"
+        },
+        {
+          "sourceRole": "local_execution",
+          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115641",
+          "classification": "dvcqg_submission_link",
+          "repealContext": false,
+          "evidenceId": "ev_5d4a6017bbdcd624acd21e76"
+        }
+      ],
+      "priority51": false,
+      "stt": 186,
+      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115641",
+      "nopHoSoScope": {
+        "route": "ward",
+        "provinceCode": "31",
+        "provinceName": "Hải Phòng",
+        "wardCode": "11824",
+        "wardName": "Vĩnh Bảo",
+        "commune": "WARD"
+      },
+      "submissionLinkStatus": "resolution_level_scope_verified",
+      "submissionLinkMode": "keyword_fallback",
+      "lifecycle": {
+        "status": "active",
+        "asOf": "2026-09-29",
+        "effectiveFrom": "2026-08-27",
+        "effectiveTo": null
+      },
+      "fieldSources": {
+        "ma": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "ten": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "linhVuc": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "cap": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "quyetDinh": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.status": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.effectiveFrom": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "nopHoSoUrl": [
+          "ev_5d4a6017bbdcd624acd21e76"
+        ],
+        "nopHoSoScope": [
+          "ev_5d4a6017bbdcd624acd21e76"
+        ],
+        "submissionLinkStatus": [
+          "ev_5d4a6017bbdcd624acd21e76"
+        ]
+      }
+    },
+    {
       "ma": "1.013950",
       "ten": "Chuyển hình thức giao đất, cho thuê đất.",
       "linhVuc": "ĐẤT ĐAI",
@@ -29272,7 +29872,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-8678-7030-8757-70c3e9763bc1&formalityCaseId=019db5cd-1fea-7338-b3f7-2ad2ed03c0c6",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 181,
+      "stt": 187,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-8678-7030-8757-70c3e9763bc1",
       "nopHoSoScope": {
         "route": "ward",
@@ -29414,7 +30014,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-7e52-718c-9fef-4531b08962b3&formalityCaseId=019e773e-8efc-757c-8105-ace376c1d667",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 182,
+      "stt": 188,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfd-7e52-718c-9fef-4531b08962b3",
       "nopHoSoScope": {
         "route": "ward",
@@ -29540,7 +30140,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-b5b3-7669-84fb-b8e32e8dbfea&formalityCaseId=019d2ce0-d66a-726e-b148-7c61a94b0848",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 183,
+      "stt": 189,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-b5b3-7669-84fb-b8e32e8dbfea",
       "nopHoSoScope": {
         "route": "ward",
@@ -29671,7 +30271,7 @@
         }
       ],
       "priority51": false,
-      "stt": 184,
+      "stt": 190,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.012789",
       "nopHoSoScope": {
         "route": "ward",
@@ -29726,6 +30326,106 @@
         ],
         "submissionLinkStatus": [
           "ev_7745ec3a88bf1ec36c2128ea"
+        ]
+      }
+    },
+    {
+      "ma": "1.115643",
+      "ten": "Gia hạn sử dụng đất khi hết thời hạn sử dụng đất",
+      "linhVuc": "ĐẤT ĐAI",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "2026/QĐ-UBND; 2628/QĐ-UBND; 3433/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-29",
+      "sourceLatestDate": "2026-08-27",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "articleTitle": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "publishedDate": "2026-08-27",
+          "classification": "public_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachmentSha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "decisionNumbers": [
+            "2026/QĐ-UBND",
+            "2628/QĐ-UBND"
+          ],
+          "repealContext": false,
+          "sourceRole": "local_legal_effect",
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "evidenceId": "ev_e81935249df40520f8b96671"
+        },
+        {
+          "sourceRole": "local_execution",
+          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115643",
+          "classification": "dvcqg_submission_link",
+          "repealContext": false,
+          "evidenceId": "ev_d977b1c333c381afa3784fb9"
+        }
+      ],
+      "priority51": false,
+      "stt": 191,
+      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115643",
+      "nopHoSoScope": {
+        "route": "ward",
+        "provinceCode": "31",
+        "provinceName": "Hải Phòng",
+        "wardCode": "11824",
+        "wardName": "Vĩnh Bảo",
+        "commune": "WARD"
+      },
+      "submissionLinkStatus": "resolution_level_scope_verified",
+      "submissionLinkMode": "keyword_fallback",
+      "lifecycle": {
+        "status": "active",
+        "asOf": "2026-09-29",
+        "effectiveFrom": "2026-08-27",
+        "effectiveTo": null
+      },
+      "fieldSources": {
+        "ma": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "ten": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "linhVuc": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "cap": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "quyetDinh": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.status": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.effectiveFrom": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "nopHoSoUrl": [
+          "ev_d977b1c333c381afa3784fb9"
+        ],
+        "nopHoSoScope": [
+          "ev_d977b1c333c381afa3784fb9"
+        ],
+        "submissionLinkStatus": [
+          "ev_d977b1c333c381afa3784fb9"
         ]
       }
     },
@@ -29813,7 +30513,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-76e1-75b6-8e78-65c96f208837&formalityCaseId=019db9a9-e186-7444-82b4-b96e48eef19c",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 185,
+      "stt": 192,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-76e1-75b6-8e78-65c96f208837",
       "nopHoSoScope": {
         "route": "ward",
@@ -29937,7 +30637,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-8671-7318-8ef7-15304f36d400&formalityCaseId=019db5cf-1c4c-7641-b2d7-b19eb7597611",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 186,
+      "stt": 193,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-8671-7318-8ef7-15304f36d400",
       "nopHoSoScope": {
         "route": "ward",
@@ -29992,6 +30692,106 @@
         "submissionLinkStatus": [
           "ev_a91f8a91b40ebf2e4d85fd20",
           "ev_62734ffab47885f1b44446ce"
+        ]
+      }
+    },
+    {
+      "ma": "1.115625",
+      "ten": "Giải quyết đối với trường hợp cá nhân, hộ gia đình đã được cấp Giấy chứng nhận một phần diện tích vào loại đất ở trước ngày 01 tháng 7 năm 2004, phần diện tích còn lại của thửa đất chưa được cấp Giấy chứng nhận",
+      "linhVuc": "ĐẤT ĐAI",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "2026/QĐ-UBND; 2628/QĐ-UBND; 3433/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-29",
+      "sourceLatestDate": "2026-08-27",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "articleTitle": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "publishedDate": "2026-08-27",
+          "classification": "public_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachmentSha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "decisionNumbers": [
+            "2026/QĐ-UBND",
+            "2628/QĐ-UBND"
+          ],
+          "repealContext": false,
+          "sourceRole": "local_legal_effect",
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "evidenceId": "ev_e81935249df40520f8b96671"
+        },
+        {
+          "sourceRole": "local_execution",
+          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115625",
+          "classification": "dvcqg_submission_link",
+          "repealContext": false,
+          "evidenceId": "ev_6a875290dca70abbb4e93d94"
+        }
+      ],
+      "priority51": false,
+      "stt": 194,
+      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115625",
+      "nopHoSoScope": {
+        "route": "ward",
+        "provinceCode": "31",
+        "provinceName": "Hải Phòng",
+        "wardCode": "11824",
+        "wardName": "Vĩnh Bảo",
+        "commune": "WARD"
+      },
+      "submissionLinkStatus": "resolution_level_scope_verified",
+      "submissionLinkMode": "keyword_fallback",
+      "lifecycle": {
+        "status": "active",
+        "asOf": "2026-09-29",
+        "effectiveFrom": "2026-08-27",
+        "effectiveTo": null
+      },
+      "fieldSources": {
+        "ma": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "ten": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "linhVuc": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "cap": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "quyetDinh": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.status": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.effectiveFrom": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "nopHoSoUrl": [
+          "ev_6a875290dca70abbb4e93d94"
+        ],
+        "nopHoSoScope": [
+          "ev_6a875290dca70abbb4e93d94"
+        ],
+        "submissionLinkStatus": [
+          "ev_6a875290dca70abbb4e93d94"
         ]
       }
     },
@@ -30054,7 +30854,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-8675-7789-bf5f-782e3f81d418&formalityCaseId=019db5cd-ee4f-7428-9720-0340b56045c6",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 187,
+      "stt": 195,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-8675-7789-bf5f-782e3f81d418",
       "nopHoSoScope": {
         "route": "ward",
@@ -30113,6 +30913,106 @@
       }
     },
     {
+      "ma": "1.115648",
+      "ten": "Giao đất, cho thuê đất không thông qua hình thức đấu giá quyền sử dụng đất, không đấu thầu lựa chọn nhà đầu tư thực hiện dự án có sử dụng đất đối với trường hợp không thuộc diện chấp thuận chủ trương đầu tư, chấp thuận nhà đầu tư theo pháp luật về đầu tư; giao rừng, cho thuê rừng",
+      "linhVuc": "ĐẤT ĐAI",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "2026/QĐ-UBND; 2628/QĐ-UBND; 3433/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-29",
+      "sourceLatestDate": "2026-08-27",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "articleTitle": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "publishedDate": "2026-08-27",
+          "classification": "public_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachmentSha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "decisionNumbers": [
+            "2026/QĐ-UBND",
+            "2628/QĐ-UBND"
+          ],
+          "repealContext": false,
+          "sourceRole": "local_legal_effect",
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "evidenceId": "ev_e81935249df40520f8b96671"
+        },
+        {
+          "sourceRole": "local_execution",
+          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115648",
+          "classification": "dvcqg_submission_link",
+          "repealContext": false,
+          "evidenceId": "ev_6e691384fad2782253636e61"
+        }
+      ],
+      "priority51": false,
+      "stt": 196,
+      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115648",
+      "nopHoSoScope": {
+        "route": "ward",
+        "provinceCode": "31",
+        "provinceName": "Hải Phòng",
+        "wardCode": "11824",
+        "wardName": "Vĩnh Bảo",
+        "commune": "WARD"
+      },
+      "submissionLinkStatus": "resolution_level_scope_verified",
+      "submissionLinkMode": "keyword_fallback",
+      "lifecycle": {
+        "status": "active",
+        "asOf": "2026-09-29",
+        "effectiveFrom": "2026-08-27",
+        "effectiveTo": null
+      },
+      "fieldSources": {
+        "ma": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "ten": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "linhVuc": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "cap": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "quyetDinh": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.status": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.effectiveFrom": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "nopHoSoUrl": [
+          "ev_6e691384fad2782253636e61"
+        ],
+        "nopHoSoScope": [
+          "ev_6e691384fad2782253636e61"
+        ],
+        "submissionLinkStatus": [
+          "ev_6e691384fad2782253636e61"
+        ]
+      }
+    },
+    {
       "ma": "1.115649",
       "ten": "Giao đất, cho thuê đất không thông qua hình thức đấu giá quyền sử dụng đất, không đấu thầu lựa chọn nhà đầu tư thực hiện dự án có sử dụng đất đối với trường hợp thuộc diện chấp thuận chủ trương đầu tư, chấp thuận nhà đầu tư",
       "linhVuc": "ĐẤT ĐAI",
@@ -30161,7 +31061,7 @@
         }
       ],
       "priority51": false,
-      "stt": 188,
+      "stt": 197,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115649",
       "nopHoSoScope": {
         "route": "ward",
@@ -30296,7 +31196,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-7ec9-76f0-b9d3-985182762c76&formalityCaseId=019db99f-fd45-725d-853a-e3622381621b",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 189,
+      "stt": 198,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-7ec9-76f0-b9d3-985182762c76",
       "nopHoSoScope": {
         "route": "ward",
@@ -30448,7 +31348,7 @@
       "priority51": true,
       "priority51Ordinal": 24,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 190,
+      "stt": 199,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-867b-703e-a311-18fc1df76fc8&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
       "nopHoSoScope": {
         "provinceCode": "31",
@@ -30707,7 +31607,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-7ee2-7194-a34e-a5ffc7c6f5c1&formalityCaseId=019db99a-dc44-71f6-8b07-8eaab41384e1",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 191,
+      "stt": 200,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-7ee2-7194-a34e-a5ffc7c6f5c1",
       "nopHoSoScope": {
         "route": "ward",
@@ -30894,7 +31794,7 @@
       "priority51": true,
       "priority51Ordinal": 25,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 192,
+      "stt": 201,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-76e6-7468-b6f2-3d412e902b88&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
       "nopHoSoScope": {
         "provinceCode": "31",
@@ -31181,7 +32081,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-7ee5-732e-97a0-e1b19ddda3b0&formalityCaseId=019db992-86e6-75ab-94cf-4f237d5cc82d",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 193,
+      "stt": 202,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-7ee5-732e-97a0-e1b19ddda3b0",
       "nopHoSoScope": {
         "route": "ward",
@@ -31305,7 +32205,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-866f-73bf-bcda-6e34ff8bda48&formalityCaseId=019db5d3-c1fc-77ee-9638-369dcf8977c2",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 194,
+      "stt": 203,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-866f-73bf-bcda-6e34ff8bda48",
       "nopHoSoScope": {
         "route": "ward",
@@ -31447,7 +32347,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-6f5d-72e6-9a68-ab8e3ba11c8b&formalityCaseId=019db9ad-3daf-732a-8017-e005cbec2080",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 195,
+      "stt": 204,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-6f5d-72e6-9a68-ab8e3ba11c8b",
       "nopHoSoScope": {
         "route": "ward",
@@ -31571,7 +32471,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-8673-706e-96e4-fd2b840004ba&formalityCaseId=019d2d30-ed0d-7249-b514-f66f82bdeab4",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 196,
+      "stt": 205,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-8673-706e-96e4-fd2b840004ba",
       "nopHoSoScope": {
         "route": "ward",
@@ -31685,7 +32585,7 @@
         }
       ],
       "priority51": false,
-      "stt": 197,
+      "stt": 206,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=2.002675",
       "nopHoSoScope": {
         "route": "ward",
@@ -31820,7 +32720,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-76f0-7068-baca-7e6fa3fe5598&formalityCaseId=019db9a6-e3f7-72e5-aac4-3a60f138443c",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 198,
+      "stt": 207,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-76f0-7068-baca-7e6fa3fe5598",
       "nopHoSoScope": {
         "route": "ward",
@@ -31969,7 +32869,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-76ca-737a-845d-335f0de1a543&formalityCaseId=019db9aa-ad39-721a-9876-e10f730be825",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 199,
+      "stt": 208,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-76ca-737a-845d-335f0de1a543",
       "nopHoSoScope": {
         "route": "ward",
@@ -32031,6 +32931,106 @@
         "submissionLinkStatus": [
           "ev_dee401dfb330b3545a599c33",
           "ev_1a70566cab3582fd785c9e8e"
+        ]
+      }
+    },
+    {
+      "ma": "1.115627",
+      "ten": "Thu hồi Giấy chứng nhận đã cấp không đúng quy định của pháp luật đất đai do người sử dụng đất, chủ sở hữu tài sản gắn liền với đất phát hiện và cấp lại Giấy chứng nhận sau khi thu hồi",
+      "linhVuc": "ĐẤT ĐAI",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "2026/QĐ-UBND; 2628/QĐ-UBND; 3433/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-29",
+      "sourceLatestDate": "2026-08-27",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "articleTitle": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "publishedDate": "2026-08-27",
+          "classification": "public_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachmentSha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "decisionNumbers": [
+            "2026/QĐ-UBND",
+            "2628/QĐ-UBND"
+          ],
+          "repealContext": false,
+          "sourceRole": "local_legal_effect",
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "evidenceId": "ev_e81935249df40520f8b96671"
+        },
+        {
+          "sourceRole": "local_execution",
+          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115627",
+          "classification": "dvcqg_submission_link",
+          "repealContext": false,
+          "evidenceId": "ev_fb5e74af347a5ff64685b0fe"
+        }
+      ],
+      "priority51": false,
+      "stt": 209,
+      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115627",
+      "nopHoSoScope": {
+        "route": "ward",
+        "provinceCode": "31",
+        "provinceName": "Hải Phòng",
+        "wardCode": "11824",
+        "wardName": "Vĩnh Bảo",
+        "commune": "WARD"
+      },
+      "submissionLinkStatus": "resolution_level_scope_verified",
+      "submissionLinkMode": "keyword_fallback",
+      "lifecycle": {
+        "status": "active",
+        "asOf": "2026-09-29",
+        "effectiveFrom": "2026-08-27",
+        "effectiveTo": null
+      },
+      "fieldSources": {
+        "ma": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "ten": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "linhVuc": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "cap": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "quyetDinh": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.status": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.effectiveFrom": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "nopHoSoUrl": [
+          "ev_fb5e74af347a5ff64685b0fe"
+        ],
+        "nopHoSoScope": [
+          "ev_fb5e74af347a5ff64685b0fe"
+        ],
+        "submissionLinkStatus": [
+          "ev_fb5e74af347a5ff64685b0fe"
         ]
       }
     },
@@ -32121,7 +33121,7 @@
       "priority51": true,
       "priority51Ordinal": 17,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 200,
+      "stt": 210,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-76e6-7468-b6f2-417e588578f5&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
       "nopHoSoScope": {
         "provinceCode": "31",
@@ -32354,7 +33354,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfb-8916-7028-b981-22667f88b45e&formalityCaseId=019d2dc0-f44f-734a-9b5c-567142b23e59",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 201,
+      "stt": 211,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfb-8916-7028-b981-22667f88b45e",
       "nopHoSoScope": {
         "route": "ward",
@@ -32496,7 +33496,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-7ed8-7375-ac5c-f2db5a45a382&formalityCaseId=019db997-c60b-7731-8e06-f041da702be5",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 202,
+      "stt": 212,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-7ed8-7375-ac5c-f2db5a45a382",
       "nopHoSoScope": {
         "route": "ward",
@@ -32645,7 +33645,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-8677-74ff-8111-ee0c889b713f&formalityCaseId=019db991-210a-7508-b9ae-3afbd42affd2",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 203,
+      "stt": 213,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-8677-74ff-8111-ee0c889b713f",
       "nopHoSoScope": {
         "route": "ward",
@@ -32707,6 +33707,206 @@
         "submissionLinkStatus": [
           "ev_ebdca58cf22c99ada3593ab9",
           "ev_2e2bae830d36319a00add110"
+        ]
+      }
+    },
+    {
+      "ma": "1.115593",
+      "ten": "Xác nhận tiếp tục sử dụng đất nông nghiệp của cá nhân khi hết thời hạn sử dụng đất",
+      "linhVuc": "ĐẤT ĐAI",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "2026/QĐ-UBND; 2628/QĐ-UBND; 3433/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-29",
+      "sourceLatestDate": "2026-08-27",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "articleTitle": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "publishedDate": "2026-08-27",
+          "classification": "public_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachmentSha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "decisionNumbers": [
+            "2026/QĐ-UBND",
+            "2628/QĐ-UBND"
+          ],
+          "repealContext": false,
+          "sourceRole": "local_legal_effect",
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "evidenceId": "ev_e81935249df40520f8b96671"
+        },
+        {
+          "sourceRole": "local_execution",
+          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115593",
+          "classification": "dvcqg_submission_link",
+          "repealContext": false,
+          "evidenceId": "ev_2bf0eb3b3365aa70deed27d4"
+        }
+      ],
+      "priority51": false,
+      "stt": 214,
+      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115593",
+      "nopHoSoScope": {
+        "route": "ward",
+        "provinceCode": "31",
+        "provinceName": "Hải Phòng",
+        "wardCode": "11824",
+        "wardName": "Vĩnh Bảo",
+        "commune": "WARD"
+      },
+      "submissionLinkStatus": "resolution_level_scope_verified",
+      "submissionLinkMode": "keyword_fallback",
+      "lifecycle": {
+        "status": "active",
+        "asOf": "2026-09-29",
+        "effectiveFrom": "2026-08-27",
+        "effectiveTo": null
+      },
+      "fieldSources": {
+        "ma": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "ten": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "linhVuc": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "cap": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "quyetDinh": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.status": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.effectiveFrom": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "nopHoSoUrl": [
+          "ev_2bf0eb3b3365aa70deed27d4"
+        ],
+        "nopHoSoScope": [
+          "ev_2bf0eb3b3365aa70deed27d4"
+        ],
+        "submissionLinkStatus": [
+          "ev_2bf0eb3b3365aa70deed27d4"
+        ]
+      }
+    },
+    {
+      "ma": "1.115626",
+      "ten": "Xác định lại diện tích đất ở của hộ gia đình, cá nhân trong trường hợp thửa đất ở có vườn, ao, đất thổ cư đã được cấp giấy chứng nhận trước ngày 01 tháng 7 năm 2004 khi người sử dụng đất có nhu cầu",
+      "linhVuc": "ĐẤT ĐAI",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "2026/QĐ-UBND; 2628/QĐ-UBND; 3433/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-29",
+      "sourceLatestDate": "2026-08-27",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "articleTitle": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "publishedDate": "2026-08-27",
+          "classification": "public_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachmentSha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "decisionNumbers": [
+            "2026/QĐ-UBND",
+            "2628/QĐ-UBND"
+          ],
+          "repealContext": false,
+          "sourceRole": "local_legal_effect",
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "evidenceId": "ev_e81935249df40520f8b96671"
+        },
+        {
+          "sourceRole": "local_execution",
+          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115626",
+          "classification": "dvcqg_submission_link",
+          "repealContext": false,
+          "evidenceId": "ev_fd404dd50f004879d7244b48"
+        }
+      ],
+      "priority51": false,
+      "stt": 215,
+      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115626",
+      "nopHoSoScope": {
+        "route": "ward",
+        "provinceCode": "31",
+        "provinceName": "Hải Phòng",
+        "wardCode": "11824",
+        "wardName": "Vĩnh Bảo",
+        "commune": "WARD"
+      },
+      "submissionLinkStatus": "resolution_level_scope_verified",
+      "submissionLinkMode": "keyword_fallback",
+      "lifecycle": {
+        "status": "active",
+        "asOf": "2026-09-29",
+        "effectiveFrom": "2026-08-27",
+        "effectiveTo": null
+      },
+      "fieldSources": {
+        "ma": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "ten": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "linhVuc": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "cap": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "quyetDinh": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.status": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.effectiveFrom": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "nopHoSoUrl": [
+          "ev_fd404dd50f004879d7244b48"
+        ],
+        "nopHoSoScope": [
+          "ev_fd404dd50f004879d7244b48"
+        ],
+        "submissionLinkStatus": [
+          "ev_fd404dd50f004879d7244b48"
         ]
       }
     },
@@ -32792,7 +33992,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-76ef-752f-a5e5-ff4ce5737bb1&formalityCaseId=019db446-a8ea-7301-a595-a0eef55929ef",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 204,
+      "stt": 216,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-76ef-752f-a5e5-ff4ce5737bb1",
       "nopHoSoScope": {
         "route": "ward",
@@ -32941,7 +34141,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-8678-770b-8917-1e30978ab3ca&formalityCaseId=019db98f-93cb-726a-afac-a5d0daa85b85",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 205,
+      "stt": 217,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-8678-770b-8917-1e30978ab3ca",
       "nopHoSoScope": {
         "route": "ward",
@@ -33090,7 +34290,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-7e53-77ba-aa3f-086a9b9717ba&formalityCaseId=019e772e-0e35-7198-9dd3-8eb7b21425a4",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 206,
+      "stt": 218,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfd-7e53-77ba-aa3f-086a9b9717ba",
       "nopHoSoScope": {
         "route": "ward",
@@ -33239,7 +34439,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-6f11-772a-8dda-5bf1a8d83029&formalityCaseId=019dba68-d53d-7261-848a-8ab25e9a9d4f",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 207,
+      "stt": 219,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-6f11-772a-8dda-5bf1a8d83029",
       "nopHoSoScope": {
         "route": "ward",
@@ -33388,7 +34588,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-7e5d-7318-a451-84198f210213&formalityCaseId=019e7743-3b4f-76ee-95b5-5e8850c98148",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 208,
+      "stt": 220,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfd-7e5d-7318-a451-84198f210213",
       "nopHoSoScope": {
         "route": "ward",
@@ -33537,7 +34737,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-8676-77f3-ba25-0b6137011577&formalityCaseId=019db98e-ffed-760a-bf87-cac696531816",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 209,
+      "stt": 221,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-8676-77f3-ba25-0b6137011577",
       "nopHoSoScope": {
         "route": "ward",
@@ -33686,7 +34886,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-7ece-728d-9b60-6563e0a7a94e&formalityCaseId=019d2fcb-dc0d-70f9-9bf1-bc69c15ebf97",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 210,
+      "stt": 222,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-7ece-728d-9b60-6563e0a7a94e",
       "nopHoSoScope": {
         "route": "ward",
@@ -33835,7 +35035,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-8671-748e-8363-fcba5996a7f6&formalityCaseId=019db990-5708-76d4-b19b-20e6311503d2",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 211,
+      "stt": 223,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-8671-748e-8363-fcba5996a7f6",
       "nopHoSoScope": {
         "route": "ward",
@@ -33984,7 +35184,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-76c2-7591-be46-1d313830b2e4&formalityCaseId=019db9ae-dfee-703a-be55-c2f9836c7c12",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 212,
+      "stt": 224,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-76c2-7591-be46-1d313830b2e4",
       "nopHoSoScope": {
         "route": "ward",
@@ -34133,7 +35333,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-8678-7030-8757-6ff69db130e3&formalityCaseId=019d2fca-ff39-778f-bfed-2fa9a6fb6aca",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 213,
+      "stt": 225,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-8678-7030-8757-6ff69db130e3",
       "nopHoSoScope": {
         "route": "ward",
@@ -34282,7 +35482,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-7ed2-77ba-9ecd-737733a74667&formalityCaseId=019db999-56d6-744d-996a-59e852e05c64",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 214,
+      "stt": 226,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-7ed2-77ba-9ecd-737733a74667",
       "nopHoSoScope": {
         "route": "ward",
@@ -34431,7 +35631,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-868b-77ba-8cfe-b3af7e63b81a&formalityCaseId=019db98e-83bd-7672-99d6-8649af46e781",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 215,
+      "stt": 227,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-868b-77ba-8cfe-b3af7e63b81a",
       "nopHoSoScope": {
         "route": "ward",
@@ -34580,7 +35780,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-7e5b-760d-9c8b-955bb35491f2&formalityCaseId=019e7741-564e-7098-9123-13760f668a13",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 216,
+      "stt": 228,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfd-7e5b-760d-9c8b-955bb35491f2",
       "nopHoSoScope": {
         "route": "ward",
@@ -34729,7 +35929,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-7e59-756f-b4da-ad3f815615c3&formalityCaseId=019e773f-8e96-749e-a987-e6aba3c3fa47",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 217,
+      "stt": 229,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfd-7e59-756f-b4da-ad3f815615c3",
       "nopHoSoScope": {
         "route": "ward",
@@ -34878,7 +36078,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-6ef6-721c-8d2f-7fca1fdbfa3c&formalityCaseId=019dba67-f48f-76d5-abed-0f8c38f552d0",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 218,
+      "stt": 230,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-6ef6-721c-8d2f-7fca1fdbfa3c",
       "nopHoSoScope": {
         "route": "ward",
@@ -34940,6 +36140,106 @@
         "submissionLinkStatus": [
           "ev_cf1f0add10594bc49797d065",
           "ev_11ed7fe5843251d0a50d4b76"
+        ]
+      }
+    },
+    {
+      "ma": "1.115620",
+      "ten": "Đăng ký đất đai, tài sản gắn liền với đất, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất lần đầu đối với cá nhân, cộng đồng dân cư, hộ gia đình đang sử dụng đất",
+      "linhVuc": "ĐẤT ĐAI",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "2026/QĐ-UBND; 2628/QĐ-UBND; 3433/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-29",
+      "sourceLatestDate": "2026-08-27",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "articleTitle": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "publishedDate": "2026-08-27",
+          "classification": "public_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachmentSha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "decisionNumbers": [
+            "2026/QĐ-UBND",
+            "2628/QĐ-UBND"
+          ],
+          "repealContext": false,
+          "sourceRole": "local_legal_effect",
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "evidenceId": "ev_e81935249df40520f8b96671"
+        },
+        {
+          "sourceRole": "local_execution",
+          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115620",
+          "classification": "dvcqg_submission_link",
+          "repealContext": false,
+          "evidenceId": "ev_922b57a57e873821d69a0fa8"
+        }
+      ],
+      "priority51": false,
+      "stt": 231,
+      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115620",
+      "nopHoSoScope": {
+        "route": "ward",
+        "provinceCode": "31",
+        "provinceName": "Hải Phòng",
+        "wardCode": "11824",
+        "wardName": "Vĩnh Bảo",
+        "commune": "WARD"
+      },
+      "submissionLinkStatus": "resolution_level_scope_verified",
+      "submissionLinkMode": "keyword_fallback",
+      "lifecycle": {
+        "status": "active",
+        "asOf": "2026-09-29",
+        "effectiveFrom": "2026-08-27",
+        "effectiveTo": null
+      },
+      "fieldSources": {
+        "ma": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "ten": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "linhVuc": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "cap": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "quyetDinh": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.status": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.effectiveFrom": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "nopHoSoUrl": [
+          "ev_922b57a57e873821d69a0fa8"
+        ],
+        "nopHoSoScope": [
+          "ev_922b57a57e873821d69a0fa8"
+        ],
+        "submissionLinkStatus": [
+          "ev_922b57a57e873821d69a0fa8"
         ]
       }
     },
@@ -35030,7 +36330,7 @@
       "priority51": true,
       "priority51Ordinal": 16,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 219,
+      "stt": 232,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-8678-770b-8917-1872078767cd&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
       "nopHoSoScope": {
         "provinceCode": "31",
@@ -35261,7 +36561,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-6eeb-7460-9097-1804edf38aec&formalityCaseId=019db43e-c892-71fe-884a-fef954724508",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 220,
+      "stt": 233,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-6eeb-7460-9097-1804edf38aec",
       "nopHoSoScope": {
         "route": "ward",
@@ -35403,7 +36703,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-76cb-741b-996e-2b45f564b292&formalityCaseId=019db9ab-743f-745d-8d9e-23c65d1df69d",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 221,
+      "stt": 234,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-76cb-741b-996e-2b45f564b292",
       "nopHoSoScope": {
         "route": "ward",
@@ -35465,6 +36765,206 @@
         "submissionLinkStatus": [
           "ev_640cd504f20e4648e11bf2e6",
           "ev_a2f01f76a84202088a9f3d15"
+        ]
+      }
+    },
+    {
+      "ma": "1.115624",
+      "ten": "Đăng ký, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất đối với toàn bộ diện tích đất đang sử dụng quy định tại điểm b và điểm c khoản 2 Điều 24 Nghị định số 101/2024/NĐ-CP",
+      "linhVuc": "ĐẤT ĐAI",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "2026/QĐ-UBND; 2628/QĐ-UBND; 3433/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-29",
+      "sourceLatestDate": "2026-08-27",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "articleTitle": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "publishedDate": "2026-08-27",
+          "classification": "public_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachmentSha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "decisionNumbers": [
+            "2026/QĐ-UBND",
+            "2628/QĐ-UBND"
+          ],
+          "repealContext": false,
+          "sourceRole": "local_legal_effect",
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "evidenceId": "ev_e81935249df40520f8b96671"
+        },
+        {
+          "sourceRole": "local_execution",
+          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115624",
+          "classification": "dvcqg_submission_link",
+          "repealContext": false,
+          "evidenceId": "ev_0aa886d645734cf60866ff07"
+        }
+      ],
+      "priority51": false,
+      "stt": 235,
+      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115624",
+      "nopHoSoScope": {
+        "route": "ward",
+        "provinceCode": "31",
+        "provinceName": "Hải Phòng",
+        "wardCode": "11824",
+        "wardName": "Vĩnh Bảo",
+        "commune": "WARD"
+      },
+      "submissionLinkStatus": "resolution_level_scope_verified",
+      "submissionLinkMode": "keyword_fallback",
+      "lifecycle": {
+        "status": "active",
+        "asOf": "2026-09-29",
+        "effectiveFrom": "2026-08-27",
+        "effectiveTo": null
+      },
+      "fieldSources": {
+        "ma": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "ten": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "linhVuc": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "cap": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "quyetDinh": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.status": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.effectiveFrom": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "nopHoSoUrl": [
+          "ev_0aa886d645734cf60866ff07"
+        ],
+        "nopHoSoScope": [
+          "ev_0aa886d645734cf60866ff07"
+        ],
+        "submissionLinkStatus": [
+          "ev_0aa886d645734cf60866ff07"
+        ]
+      }
+    },
+    {
+      "ma": "1.115630",
+      "ten": "Đăng ký, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất đối với trường hợp tặng cho quyền sử dụng đất cho Nhà nước hoặc cộng đồng dân cư hoặc mở rộng đường giao thông",
+      "linhVuc": "ĐẤT ĐAI",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "2026/QĐ-UBND; 2628/QĐ-UBND; 3433/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-29",
+      "sourceLatestDate": "2026-08-27",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "articleTitle": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "publishedDate": "2026-08-27",
+          "classification": "public_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachmentSha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "decisionNumbers": [
+            "2026/QĐ-UBND",
+            "2628/QĐ-UBND"
+          ],
+          "repealContext": false,
+          "sourceRole": "local_legal_effect",
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "evidenceId": "ev_e81935249df40520f8b96671"
+        },
+        {
+          "sourceRole": "local_execution",
+          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115630",
+          "classification": "dvcqg_submission_link",
+          "repealContext": false,
+          "evidenceId": "ev_ac5d0f0b1508cf4490b14a60"
+        }
+      ],
+      "priority51": false,
+      "stt": 236,
+      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115630",
+      "nopHoSoScope": {
+        "route": "ward",
+        "provinceCode": "31",
+        "provinceName": "Hải Phòng",
+        "wardCode": "11824",
+        "wardName": "Vĩnh Bảo",
+        "commune": "WARD"
+      },
+      "submissionLinkStatus": "resolution_level_scope_verified",
+      "submissionLinkMode": "keyword_fallback",
+      "lifecycle": {
+        "status": "active",
+        "asOf": "2026-09-29",
+        "effectiveFrom": "2026-08-27",
+        "effectiveTo": null
+      },
+      "fieldSources": {
+        "ma": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "ten": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "linhVuc": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "cap": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "quyetDinh": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.status": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.effectiveFrom": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "nopHoSoUrl": [
+          "ev_ac5d0f0b1508cf4490b14a60"
+        ],
+        "nopHoSoScope": [
+          "ev_ac5d0f0b1508cf4490b14a60"
+        ],
+        "submissionLinkStatus": [
+          "ev_ac5d0f0b1508cf4490b14a60"
         ]
       }
     },
@@ -35552,7 +37052,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-6f56-7319-be2d-b8dad4668ce3&formalityCaseId=019d2fcc-e288-76df-916b-01ddbd69f4c2",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 222,
+      "stt": 237,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-6f56-7319-be2d-b8dad4668ce3",
       "nopHoSoScope": {
         "route": "ward",
@@ -35701,7 +37201,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-6f6c-7009-bce8-877375012f82&formalityCaseId=019db9b1-d0a5-756a-a162-3f8914a7cbf8",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 223,
+      "stt": 238,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-6f6c-7009-bce8-877375012f82",
       "nopHoSoScope": {
         "route": "ward",
@@ -35850,7 +37350,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-86a0-76b4-842a-bd23b5621a6a&formalityCaseId=019db13e-de5c-75fe-8b5c-aa417e456c67",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 224,
+      "stt": 239,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-86a0-76b4-842a-bd23b5621a6a",
       "nopHoSoScope": {
         "route": "ward",
@@ -35999,7 +37499,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-8671-748e-8363-fa15acac598c&formalityCaseId=019db98d-804a-71fd-a843-2de2402b77e2",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 225,
+      "stt": 240,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-8671-748e-8363-fa15acac598c",
       "nopHoSoScope": {
         "route": "ward",
@@ -36148,7 +37648,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-76ca-737a-845d-2e8fff8a93ed&formalityCaseId=019db9ac-aa73-74e6-88c6-3f2339ce5cdc",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 226,
+      "stt": 241,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-76ca-737a-845d-2e8fff8a93ed",
       "nopHoSoScope": {
         "route": "ward",
@@ -36297,7 +37797,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-7eca-777f-8908-4b6445d53659&formalityCaseId=019db99f-61a2-77e2-9bcc-c9312f6452cd",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 227,
+      "stt": 242,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-7eca-777f-8908-4b6445d53659",
       "nopHoSoScope": {
         "route": "ward",
@@ -36421,7 +37921,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-8676-77f3-ba25-0d0f1b588227&formalityCaseId=019db5cb-1f61-713a-b858-d9012e6c7dad",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 228,
+      "stt": 243,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-8676-77f3-ba25-0d0f1b588227",
       "nopHoSoScope": {
         "route": "ward",
@@ -36476,6 +37976,106 @@
         "submissionLinkStatus": [
           "ev_0487c512727d93a3c236865c",
           "ev_971635f6129725add00dfcc7"
+        ]
+      }
+    },
+    {
+      "ma": "1.115634",
+      "ten": "Điều chỉnh quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất do sai sót về ranh giới, vị trí, diện tích, mục đích sử dụng giữa bản đồ quy hoạch, bản đồ địa chính, quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất và số liệu bàn giao đất trên thực địa",
+      "linhVuc": "ĐẤT ĐAI",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "2026/QĐ-UBND; 2628/QĐ-UBND; 3433/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-29",
+      "sourceLatestDate": "2026-08-27",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "articleTitle": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "publishedDate": "2026-08-27",
+          "classification": "public_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachmentSha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "decisionNumbers": [
+            "2026/QĐ-UBND",
+            "2628/QĐ-UBND"
+          ],
+          "repealContext": false,
+          "sourceRole": "local_legal_effect",
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "evidenceId": "ev_e81935249df40520f8b96671"
+        },
+        {
+          "sourceRole": "local_execution",
+          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115634",
+          "classification": "dvcqg_submission_link",
+          "repealContext": false,
+          "evidenceId": "ev_9f7416aaf0bfeb6af21793cb"
+        }
+      ],
+      "priority51": false,
+      "stt": 244,
+      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115634",
+      "nopHoSoScope": {
+        "route": "ward",
+        "provinceCode": "31",
+        "provinceName": "Hải Phòng",
+        "wardCode": "11824",
+        "wardName": "Vĩnh Bảo",
+        "commune": "WARD"
+      },
+      "submissionLinkStatus": "resolution_level_scope_verified",
+      "submissionLinkMode": "keyword_fallback",
+      "lifecycle": {
+        "status": "active",
+        "asOf": "2026-09-29",
+        "effectiveFrom": "2026-08-27",
+        "effectiveTo": null
+      },
+      "fieldSources": {
+        "ma": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "ten": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "linhVuc": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "cap": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "quyetDinh": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.status": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.effectiveFrom": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "nopHoSoUrl": [
+          "ev_9f7416aaf0bfeb6af21793cb"
+        ],
+        "nopHoSoScope": [
+          "ev_9f7416aaf0bfeb6af21793cb"
+        ],
+        "submissionLinkStatus": [
+          "ev_9f7416aaf0bfeb6af21793cb"
         ]
       }
     },
@@ -36563,7 +38163,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-7ecc-735b-9e4f-6121df9b059d&formalityCaseId=019db999-f3e2-770b-b261-25991b20e4d4",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 229,
+      "stt": 245,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-7ecc-735b-9e4f-6121df9b059d",
       "nopHoSoScope": {
         "route": "ward",
@@ -36629,6 +38229,106 @@
       }
     },
     {
+      "ma": "1.115640",
+      "ten": "Điều chỉnh quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất do thay đổi căn cứ quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất",
+      "linhVuc": "ĐẤT ĐAI",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "2026/QĐ-UBND; 2628/QĐ-UBND; 3433/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-29",
+      "sourceLatestDate": "2026-08-27",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "articleTitle": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "publishedDate": "2026-08-27",
+          "classification": "public_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachmentSha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "decisionNumbers": [
+            "2026/QĐ-UBND",
+            "2628/QĐ-UBND"
+          ],
+          "repealContext": false,
+          "sourceRole": "local_legal_effect",
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "evidenceId": "ev_e81935249df40520f8b96671"
+        },
+        {
+          "sourceRole": "local_execution",
+          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115640",
+          "classification": "dvcqg_submission_link",
+          "repealContext": false,
+          "evidenceId": "ev_2bab8b1d29953ec541db489d"
+        }
+      ],
+      "priority51": false,
+      "stt": 246,
+      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115640",
+      "nopHoSoScope": {
+        "route": "ward",
+        "provinceCode": "31",
+        "provinceName": "Hải Phòng",
+        "wardCode": "11824",
+        "wardName": "Vĩnh Bảo",
+        "commune": "WARD"
+      },
+      "submissionLinkStatus": "resolution_level_scope_verified",
+      "submissionLinkMode": "keyword_fallback",
+      "lifecycle": {
+        "status": "active",
+        "asOf": "2026-09-29",
+        "effectiveFrom": "2026-08-27",
+        "effectiveTo": null
+      },
+      "fieldSources": {
+        "ma": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "ten": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "linhVuc": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "cap": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "quyetDinh": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.status": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.effectiveFrom": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "nopHoSoUrl": [
+          "ev_2bab8b1d29953ec541db489d"
+        ],
+        "nopHoSoScope": [
+          "ev_2bab8b1d29953ec541db489d"
+        ],
+        "submissionLinkStatus": [
+          "ev_2bab8b1d29953ec541db489d"
+        ]
+      }
+    },
+    {
       "ma": "1.013952",
       "ten": "Điều chỉnh quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất do thay đổi căn cứ quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất; điều chỉnh thời hạn sử dụng đất của dự án đầu tư.",
       "linhVuc": "ĐẤT ĐAI",
@@ -36687,7 +38387,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-8672-74d6-a162-9d0368d68fb5&formalityCaseId=019db5c9-925a-731b-823f-4a2ccbecb0b4",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 230,
+      "stt": 247,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-8672-74d6-a162-9d0368d68fb5",
       "nopHoSoScope": {
         "route": "ward",
@@ -36742,6 +38442,106 @@
         "submissionLinkStatus": [
           "ev_530a1e7d069d14b015a00d96",
           "ev_c8b96d3a1ca89091c6fe48ba"
+        ]
+      }
+    },
+    {
+      "ma": "1.115638",
+      "ten": "Điều chỉnh thời hạn sử dụng đất của dự án đầu tư",
+      "linhVuc": "ĐẤT ĐAI",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "2026/QĐ-UBND; 2628/QĐ-UBND; 3433/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-29",
+      "sourceLatestDate": "2026-08-27",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "articleTitle": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "publishedDate": "2026-08-27",
+          "classification": "public_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachmentSha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "decisionNumbers": [
+            "2026/QĐ-UBND",
+            "2628/QĐ-UBND"
+          ],
+          "repealContext": false,
+          "sourceRole": "local_legal_effect",
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "evidenceId": "ev_e81935249df40520f8b96671"
+        },
+        {
+          "sourceRole": "local_execution",
+          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115638",
+          "classification": "dvcqg_submission_link",
+          "repealContext": false,
+          "evidenceId": "ev_eb94bdb8e3fdffc6abb54ee4"
+        }
+      ],
+      "priority51": false,
+      "stt": 248,
+      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115638",
+      "nopHoSoScope": {
+        "route": "ward",
+        "provinceCode": "31",
+        "provinceName": "Hải Phòng",
+        "wardCode": "11824",
+        "wardName": "Vĩnh Bảo",
+        "commune": "WARD"
+      },
+      "submissionLinkStatus": "resolution_level_scope_verified",
+      "submissionLinkMode": "keyword_fallback",
+      "lifecycle": {
+        "status": "active",
+        "asOf": "2026-09-29",
+        "effectiveFrom": "2026-08-27",
+        "effectiveTo": null
+      },
+      "fieldSources": {
+        "ma": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "ten": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "linhVuc": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "cap": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "quyetDinh": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.status": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.effectiveFrom": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "nopHoSoUrl": [
+          "ev_eb94bdb8e3fdffc6abb54ee4"
+        ],
+        "nopHoSoScope": [
+          "ev_eb94bdb8e3fdffc6abb54ee4"
+        ],
+        "submissionLinkStatus": [
+          "ev_eb94bdb8e3fdffc6abb54ee4"
         ]
       }
     },
@@ -36829,7 +38629,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-76cb-741b-996e-2fec707cd623&formalityCaseId=019db9af-bd0b-720d-b86c-bc592eaa1db0",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 231,
+      "stt": 249,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&formalityId=019d2bfa-76cb-741b-996e-2fec707cd623",
       "nopHoSoScope": {
         "route": "ward",
@@ -36891,6 +38691,106 @@
         "submissionLinkStatus": [
           "ev_f3045de1cedba7068ed144f0",
           "ev_ebfcbb5c9d0e4a12930dbb17"
+        ]
+      }
+    },
+    {
+      "ma": "1.115628",
+      "ten": "Đính chính Giấy chứng nhận đã cấp",
+      "linhVuc": "ĐẤT ĐAI",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "2026/QĐ-UBND; 2628/QĐ-UBND; 3433/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": true,
+      "verificationStatus": "official_commune_evidence_no_later_repeal_in_snapshot",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-29",
+      "sourceLatestDate": "2026-08-27",
+      "sourceArticleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "articleTitle": "Quyết định số 3433/QĐ-UBND của UBND thành phố: công bố thủ tục hành chính đặc thù được sửa đổi, bổ sung lĩnh vực đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+          "publishedDate": "2026-08-27",
+          "classification": "public_tthc",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/ttr-danh-muc-noi-dung-dat-dai-kem-theo639234198604510289.doc",
+          "attachmentSha256": "1d39d097cab3a2a5faed4eba7995cd519c3a38c798cbfe8dce7c204947536e41",
+          "decisionNumbers": [
+            "2026/QĐ-UBND",
+            "2628/QĐ-UBND"
+          ],
+          "repealContext": false,
+          "sourceRole": "local_legal_effect",
+          "url": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002",
+          "evidenceId": "ev_e81935249df40520f8b96671"
+        },
+        {
+          "sourceRole": "local_execution",
+          "url": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115628",
+          "classification": "dvcqg_submission_link",
+          "repealContext": false,
+          "evidenceId": "ev_2cd78ea12e315ab761ed1b84"
+        }
+      ],
+      "priority51": false,
+      "stt": 250,
+      "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&showAdvanced=false&isProvince=0&isMinistry=0&keyword=1.115628",
+      "nopHoSoScope": {
+        "route": "ward",
+        "provinceCode": "31",
+        "provinceName": "Hải Phòng",
+        "wardCode": "11824",
+        "wardName": "Vĩnh Bảo",
+        "commune": "WARD"
+      },
+      "submissionLinkStatus": "resolution_level_scope_verified",
+      "submissionLinkMode": "keyword_fallback",
+      "lifecycle": {
+        "status": "active",
+        "asOf": "2026-09-29",
+        "effectiveFrom": "2026-08-27",
+        "effectiveTo": null
+      },
+      "fieldSources": {
+        "ma": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "ten": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "linhVuc": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "cap": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "quyetDinh": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.status": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "lifecycle.effectiveFrom": [
+          "ev_e81935249df40520f8b96671"
+        ],
+        "nopHoSoUrl": [
+          "ev_2cd78ea12e315ab761ed1b84"
+        ],
+        "nopHoSoScope": [
+          "ev_2cd78ea12e315ab761ed1b84"
+        ],
+        "submissionLinkStatus": [
+          "ev_2cd78ea12e315ab761ed1b84"
         ]
       }
     },
@@ -37004,7 +38904,7 @@
       "priority51": true,
       "priority51Ordinal": 26,
       "priority51MappingStatus": "verified_technical_mapping",
-      "stt": 232,
+      "stt": 251,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfa-76cb-741b-996e-33d1ef50be50&province=019bad30-cd83-76ea-9f9a-bc6cebad4138&ministry=&ward=019bad30-cd84-7750-aaa5-8100fc7ceef8&searchType=PROVINCE&commune=WARD&provinceCode=31&wardCode=11824&agency=019bad30-cd84-7750-aaa5-8100fc7ceef8&departmentId=019bad30-cd84-7750-aaa5-8100fc7ceef8&showAdvanced=false&isProvince=0&isMinistry=0",
       "nopHoSoScope": {
         "provinceCode": "31",
@@ -37233,7 +39133,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 233,
+      "stt": 252,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&keyword=1.000703",
       "nopHoSoScope": {
         "route": "province",
@@ -37331,7 +39231,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 234,
+      "stt": 253,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&keyword=2.002286",
       "nopHoSoScope": {
         "route": "province",
@@ -37452,7 +39352,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfe-7935-74de-b13c-0195ecae8a46&formalityCaseId=019db0f6-f3cb-714e-b638-1dd6d710bf71",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 235,
+      "stt": 254,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&formalityId=019d2bfe-7935-74de-b13c-0195ecae8a46",
       "nopHoSoScope": {
         "route": "province",
@@ -37590,7 +39490,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfe-0b80-7196-9c72-3f681c1b011b&formalityCaseId=019d2d14-8f3e-712c-80ff-ccc41a7f68a1",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 236,
+      "stt": 255,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&formalityId=019d2bfe-0b80-7196-9c72-3f681c1b011b",
       "nopHoSoScope": {
         "route": "province",
@@ -37716,7 +39616,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfe-2aa0-754f-9f94-b2b89ed0f198&formalityCaseId=019d2cf5-af0f-76da-862a-50f9e017d886",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 237,
+      "stt": 256,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&formalityId=019d2bfe-2aa0-754f-9f94-b2b89ed0f198",
       "nopHoSoScope": {
         "route": "province",
@@ -37844,7 +39744,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfe-2abc-701d-ba41-05871a46a2dc&formalityCaseId=019db052-b593-705d-b132-612fe88a18f2",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 238,
+      "stt": 257,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&formalityId=019d2bfe-2abc-701d-ba41-05871a46a2dc",
       "nopHoSoScope": {
         "route": "province",
@@ -37982,7 +39882,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfe-2aa9-77fa-9090-baf67d4d4d33&formalityCaseId=019d2d14-a708-74a2-bb31-a07b836a46d8",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 239,
+      "stt": 258,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&formalityId=019d2bfe-2aa9-77fa-9090-baf67d4d4d33",
       "nopHoSoScope": {
         "route": "province",
@@ -38108,7 +40008,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfe-0b57-7260-91cf-fe65ccde6493&formalityCaseId=019db0e2-98ce-7689-ac7e-63947ec9aed8",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 240,
+      "stt": 259,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&formalityId=019d2bfe-0b57-7260-91cf-fe65ccde6493",
       "nopHoSoScope": {
         "route": "province",
@@ -38236,7 +40136,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfe-7931-709f-811a-339f46af92a8&formalityCaseId=019db102-aac9-731b-8ec6-a36afc4151f4",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 241,
+      "stt": 260,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&formalityId=019d2bfe-7931-709f-811a-339f46af92a8",
       "nopHoSoScope": {
         "route": "province",
@@ -38374,7 +40274,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfe-2aa3-76c6-a679-3eabcf288d24&formalityCaseId=019d2cf5-7ee3-7078-8004-352a63403ac7",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 242,
+      "stt": 261,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&formalityId=019d2bfe-2aa3-76c6-a679-3eabcf288d24",
       "nopHoSoScope": {
         "route": "province",
@@ -38512,7 +40412,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfe-2a9d-724e-8d96-b122b6fc0dc1&formalityCaseId=019d2d14-778a-70f5-b224-bcff6f1f5450",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 243,
+      "stt": 262,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&formalityId=019d2bfe-2a9d-724e-8d96-b122b6fc0dc1",
       "nopHoSoScope": {
         "route": "province",
@@ -38627,7 +40527,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 244,
+      "stt": 263,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&keyword=2.002288",
       "nopHoSoScope": {
         "route": "province",
@@ -38736,7 +40636,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfe-7933-74eb-b7fe-b6bd1c4d27ce&formalityCaseId=019db861-3b22-7687-8252-75a5012026c9",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 245,
+      "stt": 264,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&formalityId=019d2bfe-7933-74eb-b7fe-b6bd1c4d27ce",
       "nopHoSoScope": {
         "route": "province",
@@ -38852,7 +40752,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfe-1340-73e0-a1b4-a5fa7268d14f&formalityCaseId=019d2cf6-851e-72f0-b586-05d4a2e6fcea",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 246,
+      "stt": 265,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&formalityId=019d2bfe-1340-73e0-a1b4-a5fa7268d14f",
       "nopHoSoScope": {
         "route": "province",
@@ -38980,7 +40880,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfe-1328-7415-ac90-3266159156d9&formalityCaseId=019d2cf7-4952-727e-9b86-6c6a3f8baa9e",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 247,
+      "stt": 266,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&formalityId=019d2bfe-1328-7415-ac90-3266159156d9",
       "nopHoSoScope": {
         "route": "province",
@@ -39118,7 +41018,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfe-134f-7491-9d27-d7049d4567a6&formalityCaseId=019db13f-ed69-709f-8e56-b27ec551d055",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 248,
+      "stt": 267,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&formalityId=019d2bfe-134f-7491-9d27-d7049d4567a6",
       "nopHoSoScope": {
         "route": "province",
@@ -39256,7 +41156,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfe-1355-74ad-bf6f-121ef25a68a0&formalityCaseId=019d2cf6-9cc0-755e-b2d8-9c0fe96530da",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 249,
+      "stt": 268,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&formalityId=019d2bfe-1355-74ad-bf6f-121ef25a68a0",
       "nopHoSoScope": {
         "route": "province",
@@ -39394,7 +41294,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfe-133b-730e-a86f-3d8a645340fb&formalityCaseId=019d2cf5-96b8-746e-8739-f94b8fa4eb97",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 250,
+      "stt": 269,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&formalityId=019d2bfe-133b-730e-a86f-3d8a645340fb",
       "nopHoSoScope": {
         "route": "province",
@@ -39509,7 +41409,7 @@
       ],
       "tiepNhanCapXa": true,
       "priority51": false,
-      "stt": 251,
+      "stt": 270,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&keyword=2.002285",
       "nopHoSoScope": {
         "route": "province",
@@ -39618,7 +41518,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfe-0b69-7252-a9b1-c9126beb79f6&formalityCaseId=019db103-6260-77f9-8e26-eff7f01f703f",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 252,
+      "stt": 271,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&formalityId=019d2bfe-0b69-7252-a9b1-c9126beb79f6",
       "nopHoSoScope": {
         "route": "province",
@@ -39734,7 +41634,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfe-1353-7548-9f2a-a6688c5ed391&formalityCaseId=019d2cf6-3e2a-70a5-af9a-c75e775ee5fa",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 253,
+      "stt": 272,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&formalityId=019d2bfe-1353-7548-9f2a-a6688c5ed391",
       "nopHoSoScope": {
         "route": "province",
@@ -39850,7 +41750,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfe-136c-704a-9334-e6e3bed1defc&formalityCaseId=019db989-fa05-70ec-88d1-726373877127",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 254,
+      "stt": 273,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&formalityId=019d2bfe-136c-704a-9334-e6e3bed1defc",
       "nopHoSoScope": {
         "route": "province",
@@ -39966,7 +41866,7 @@
       "dvcMappingSource": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfe-2aa4-729b-a914-63a3df6aa3b6&formalityCaseId=019db0f0-4840-778c-b43e-304741bd3ab8",
       "dvcMappingScrapedAt": "2026-06-23T15:28:26+00:00",
       "priority51": false,
-      "stt": 255,
+      "stt": 274,
       "nopHoSoUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?province=019bad30-cd83-76ea-9f9a-bc6cebad4138&searchType=PROVINCE&provinceCode=31&showAdvanced=false&isProvince=1&isMinistry=0&formalityId=019d2bfe-2aa4-729b-a914-63a3df6aa3b6",
       "nopHoSoScope": {
         "route": "province",
@@ -40023,14 +41923,14 @@
     }
   ],
   "summary": {
-    "officialCandidateCodes": 159,
-    "auditedCodes": 295,
+    "officialCandidateCodes": 178,
+    "auditedCodes": 314,
     "cityUpdateCodes": 133,
     "cityCurrentProcedures": 64,
     "cityNewProcedures": 63,
     "cityUpdatedProcedures": 1,
     "cityNeedsReviewRows": 0,
-    "publishedProcedures": 255,
+    "publishedProcedures": 274,
     "excludedProcedures": 40,
     "repealedProcedures": 38,
     "futureEffectiveProcedures": 2,

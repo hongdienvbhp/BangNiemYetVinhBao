@@ -2,23 +2,23 @@
   "format": "phase1-reconciliation",
   "version": 2,
   "canonicalDatasetVersion": "2026.09.29",
-  "canonicalSourceCommit": "b67ec5b65d4d495ca6ddb5feb7486688168e7774",
+  "canonicalSourceCommit": "b12cb36078d68268a47dcd3fcc2c9eae30ff2a5e",
   "baselineAsOf": "2026-07-20",
   "baselineTarget": 323,
-  "canonicalTotal": 255,
+  "canonicalTotal": 274,
   "summary": {
-    "phase1CandidateCodes": 199,
+    "phase1CandidateCodes": 218,
     "outOfScopeProvinceReceptionOnly": 56,
     "misclassifiedByOfficialEvidence": 0,
-    "ambiguousCommuneOrShared": 149,
+    "ambiguousCommuneOrShared": 168,
     "provisionalCommuneCapLabel": 48,
     "directlyEvidencedPhase1": 16,
     "officialTableClassifiedCodes": 36,
-    "minimumMissingAgainstAggregateBaseline": 124,
+    "minimumMissingAgainstAggregateBaseline": 105,
     "exactMissingByCodeStatus": "pending_authoritative_materialization",
     "latestOfficialAggregatePeriod": "Q3/2026",
     "latestOfficialAggregateTarget": 348,
-    "minimumMissingAgainstLatestOfficialAggregate": 149
+    "minimumMissingAgainstLatestOfficialAggregate": 130
   },
   "MATCHED": {
     "status": "partial_only",
@@ -128,7 +128,7 @@
   },
   "MISSING": {
     "status": "not_finalizable_without_authoritative_code_list",
-    "minimumCount": 124,
+    "minimumCount": 105,
     "items": []
   },
   "EXTRA": {
@@ -200,17 +200,17 @@
   },
   "COUNT_DRIFT": {
     "baseline": 323,
-    "phase1CandidatesCurrent": 199,
-    "delta": -124,
-    "minimumMissing": 124,
-    "canonicalTotalVsBaselineDelta": -68,
+    "phase1CandidatesCurrent": 218,
+    "delta": -105,
+    "minimumMissing": 105,
+    "canonicalTotalVsBaselineDelta": -49,
     "latestOfficialAggregate": {
       "period": "Q3/2026",
       "target": 348,
       "communeAuthority": 263,
       "shared": 85,
       "baselineDrift": 25,
-      "minimumMissing": 149
+      "minimumMissing": 130
     }
   },
   "AMBIGUOUS": [
@@ -331,6 +331,25 @@
     "1.014389",
     "1.014390",
     "1.014953",
+    "1.115593",
+    "1.115620",
+    "1.115621",
+    "1.115622",
+    "1.115623",
+    "1.115624",
+    "1.115625",
+    "1.115626",
+    "1.115627",
+    "1.115628",
+    "1.115630",
+    "1.115634",
+    "1.115638",
+    "1.115640",
+    "1.115641",
+    "1.115643",
+    "1.115645",
+    "1.115646",
+    "1.115648",
     "1.115649",
     "2.000286",
     "2.000324",
