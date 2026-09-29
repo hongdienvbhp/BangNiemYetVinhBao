@@ -1535,6 +1535,88 @@
       "exclusionReason": "Bị bãi bỏ theo 3904/QĐ-UBND"
     },
     {
+      "ma": "1.011675",
+      "ten": "Miễn nhiệm và thu hồi thẻ giám định viên tư pháp xây dựng ở địa phương",
+      "linhVuc": "GIÁM ĐỊNH TƯ PHÁP XÂY DỰNG",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3965/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-29",
+      "sourceLatestDate": "2026-09-24",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3965-qd-ubnd-ngay-24-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-970697",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3965-tp-giam-dinh639258642478050859.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3965-qd-ubnd-ngay-24-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-970697",
+          "articleTitle": "Quyết định 3965/QĐ-UBND",
+          "publishedDate": "",
+          "effectiveDate": null,
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3965-tp-giam-dinh639258642478050859.pdf",
+          "attachmentSha256": "a5378b8dfaac14c2aea70783f452d28d2349992db25e087806307cea79ad1ec4",
+          "decisionNumbers": [
+            "3965/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 3965/QĐ-UBND"
+    },
+    {
+      "ma": "2.001116",
+      "ten": "Bổ nhiệm và cấp thẻ giám định viên tư pháp xây dựng ở địa phương - Nghị định số 177/2026/NĐ-CP ngày 19/5/2026 của Chính phủ quy định chi ti ết một số điều và bi ện pháp thi hành Lu ật Giám định tư pháp. - Thông tư số 15/2026/TT-BXD ngày 29/4/2026 quy định về",
+      "linhVuc": "GIÁM ĐỊNH TƯ PHÁP XÂY DỰNG",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "3965/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-29",
+      "sourceLatestDate": "2026-09-24",
+      "sourceArticleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3965-qd-ubnd-ngay-24-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-970697",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3965-tp-giam-dinh639258642478050859.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://namsach.haiphong.gov.vn/cong-khai-danh-muc-thu-tuc-hanh-chinh/cong-khai-quyet-dinh-so-3965-qd-ubnd-ngay-24-9-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-970697",
+          "articleTitle": "Quyết định 3965/QĐ-UBND",
+          "publishedDate": "",
+          "effectiveDate": null,
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6833/tintuc/2026/9/qd-3965-tp-giam-dinh639258642478050859.pdf",
+          "attachmentSha256": "a5378b8dfaac14c2aea70783f452d28d2349992db25e087806307cea79ad1ec4",
+          "decisionNumbers": [
+            "3965/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 3965/QĐ-UBND"
+    },
+    {
       "ma": "2.001009",
       "ten": "Chứng thực văn bản khai nhận di sản mà di sản là động sản, quyền sử dụng đất, nhà ở",
       "linhVuc": "CHỨNG THỰC",

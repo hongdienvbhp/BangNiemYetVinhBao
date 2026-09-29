@@ -135,19 +135,19 @@ class CanonicalV4DeterminismTests(unittest.TestCase):
 
         self.assertEqual(
             authority,
-            {"PROVINCE": 55, "OTHER": 151, "COMMUNE": 48},
+            {"PROVINCE": 56, "OTHER": 151, "COMMUNE": 48},
         )
         self.assertEqual(
             scope,
             {
-                "COMMUNE_RECEPTION_ONLY": 55,
+                "COMMUNE_RECEPTION_ONLY": 56,
                 "OTHER": 149,
                 "COMMUNE_AUTHORITY": 48,
                 "SHARED": 2,
             },
         )
-        self.assertEqual(receivable, {True: 254, False: 0})
-        self.assertEqual(online, {"UNKNOWN": 254})
+        self.assertEqual(receivable, {True: 255, False: 0})
+        self.assertEqual(online, {"UNKNOWN": 255})
 
     def test_dataset_version_never_rolls_back(self):
         rel = SOURCE_BUNDLE_PATHS[0]

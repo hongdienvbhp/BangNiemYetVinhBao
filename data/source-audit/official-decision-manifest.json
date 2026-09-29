@@ -427,8 +427,9 @@
       "filePath": "data/source-audit/city-decisions/QD-3957.pdf",
       "pdfSha256": "85a339d785b9ffc734b96b5108f67b3146afd34467a6bcb8b2195a008ae9467a",
       "effectiveDate": null,
-      "ingestStatus": "auto_discovered",
-      "title": "Quyết định số 3957/QĐ-UBND ngày 23/9/2026 về việc công bố danh mục thủ tục hành chính ban hành mới lĩnh vực tiếp cận thông tin thuộc phạm vi, chức năng quản lý của Sở Tư pháp"
+      "ingestStatus": "reviewed_pending_effective_date",
+      "title": "Quyết định số 3957/QĐ-UBND ngày 23/9/2026 về việc công bố danh mục thủ tục hành chính ban hành mới lĩnh vực tiếp cận thông tin thuộc phạm vi, chức năng quản lý của Sở Tư pháp",
+      "reviewNote": "Rà soát 29/9/2026: QĐ không có điều khoản hiệu lực; ban hành mới 1.116556, 1.116557 (tiếp nhận tại TTPVHCC thành phố và cấp xã) theo Luật Tiếp cận thông tin số 01/2026/QH16 – chờ xác định ngày hiệu lực trước khi đưa vào canonical."
     },
     {
       "decisionNo": "3958/QĐ-UBND",
@@ -441,8 +442,9 @@
       "filePath": "data/source-audit/city-decisions/QD-3958.pdf",
       "pdfSha256": "f06cce9014a5163c9cd21e4b6d6af2764ce587cf8bcce680e6cd6277f49956e2",
       "effectiveDate": null,
-      "ingestStatus": "auto_discovered",
-      "title": "Số: 111/TB-VHXH, ngày 24 tháng 9 năm 2026 THÔNG BÁO Quyết định số 3958/QĐ-UBND về việc công bố danh mục thủ tục hành chính bị bãi bỏ lĩnh vực phòng bệnh thuộc phạm vi, chức năng quản lý của Sở Y tế"
+      "ingestStatus": "reviewed_pending_effective_date",
+      "title": "Số: 111/TB-VHXH, ngày 24 tháng 9 năm 2026 THÔNG BÁO Quyết định số 3958/QĐ-UBND về việc công bố danh mục thủ tục hành chính bị bãi bỏ lĩnh vực phòng bệnh thuộc phạm vi, chức năng quản lý của Sở Y tế",
+      "reviewNote": "Rà soát 29/9/2026: PDF thu được là Thông báo 111/TB-VHXH của phường Nhị Chiểu, không phải QĐ gốc; chưa trích được danh mục TTHC bãi bỏ – cần bản QĐ gốc."
     },
     {
       "decisionNo": "3965/QĐ-UBND",
@@ -455,8 +457,9 @@
       "filePath": "data/source-audit/city-decisions/QD-3965.pdf",
       "pdfSha256": "a5378b8dfaac14c2aea70783f452d28d2349992db25e087806307cea79ad1ec4",
       "effectiveDate": null,
-      "ingestStatus": "auto_discovered",
-      "title": "Công khai Quyết định số: 3965/QĐ-UBND ngày 24/9/2026 của UBND thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính bị bãi bỏ trong lĩnh vực giám định tư pháp xây dựng thuộc phạm vi chức năng quản lý của Sở Xây dựng"
+      "ingestStatus": "reviewed_no_commune_change",
+      "title": "Công khai Quyết định số: 3965/QĐ-UBND ngày 24/9/2026 của UBND thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính bị bãi bỏ trong lĩnh vực giám định tư pháp xây dựng thuộc phạm vi chức năng quản lý của Sở Xây dựng",
+      "reviewNote": "Rà soát 29/9/2026: bãi bỏ 1.011675, 2.001116 (giám định tư pháp xây dựng, cấp thành phố); không có trong canonical, không tiếp nhận tại xã."
     },
     {
       "decisionNo": "4016/QĐ-UBND",
@@ -469,8 +472,9 @@
       "filePath": "data/source-audit/city-decisions/QD-4016.pdf",
       "pdfSha256": "a6f7538234a56d954f5246453bf6d102662edc3a325ce081e8d2d57c9531dce9",
       "effectiveDate": null,
-      "ingestStatus": "auto_discovered",
-      "title": "Quyết định số 4016/QĐ-UBND ngày 28/9/2026 của Uỷ ban nhân dân thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung, lĩnh vực thủy sản và kiểm ngư thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường"
+      "ingestStatus": "reviewed_pending_effective_date",
+      "title": "Quyết định số 4016/QĐ-UBND ngày 28/9/2026 của Uỷ ban nhân dân thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung, lĩnh vực thủy sản và kiểm ngư thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường",
+      "reviewNote": "Rà soát 29/9/2026: QĐ không có điều khoản hiệu lực; sửa đổi 1.003593, 1.003666 (thủy sản, có tiếp nhận tại TTPVHCC cấp xã) chưa có trong canonical – chờ xác định hiệu lực và phạm vi áp dụng tại Vĩnh Bảo."
     }
   ]
 }

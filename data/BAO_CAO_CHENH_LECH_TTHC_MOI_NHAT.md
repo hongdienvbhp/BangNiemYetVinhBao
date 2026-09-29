@@ -14,4 +14,4 @@
 
 | Mã | Tên thủ tục | Lĩnh vực | Quyết định |
 |---|---|---|---|
-| 1.004889 | Công nhận bằng tốt nghiệp trung học cơ sở, bằng t ốt nghiệp trung học phổ thông, giấy ch ứng nhận hoàn thành chương trình giáo d ục phổ thông do cơ sở giáo dục nước ngoài cấp để sử dụng tại | VĂN BẰNG, CHỨNG CHỈ | 3879/QĐ-UBND |
+| 1.004889 | Công nhận bằng tốt nghiệp trung học cơ sở, bằng tốt nghiệp trung học phổ thông, giấy chứng nhận hoàn thành chương trình giáo dục phổ thông do cơ sở giáo dục nước ngoài cấp để sử dụng tại Việt Nam | VĂN BẰNG, CHỨNG CHỈ | 3879/QĐ-UBND |

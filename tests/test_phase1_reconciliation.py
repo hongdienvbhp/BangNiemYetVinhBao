@@ -23,9 +23,9 @@ class Phase1ReconciliationTests(unittest.TestCase):
         result = MODULE.reconcile(canonical, city, baseline, table_levels)
 
         self.assertEqual(result["baselineTarget"], 323)
-        self.assertEqual(result["canonicalTotal"], 254)
+        self.assertEqual(result["canonicalTotal"], 255)
         self.assertEqual(result["summary"]["phase1CandidateCodes"], 199)
-        self.assertEqual(result["summary"]["outOfScopeProvinceReceptionOnly"], 55)
+        self.assertEqual(result["summary"]["outOfScopeProvinceReceptionOnly"], 56)
         self.assertEqual(result["summary"]["misclassifiedByOfficialEvidence"], 0)
         self.assertEqual(result["summary"]["minimumMissingAgainstAggregateBaseline"], 124)
         self.assertEqual(result["COUNT_DRIFT"]["delta"], -124)

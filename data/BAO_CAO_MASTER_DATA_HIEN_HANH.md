@@ -3,15 +3,15 @@
 ## Kết quả
 
 - Mã ứng viên cấp xã/điểm tiếp nhận cấp xã từ snapshot Vĩnh Bảo: **159**
-- Tổng mã được audit sau khi hợp nhất nguồn Vĩnh Bảo, quyết định thành phố và ma trận kiểm chứng 51 TTHC: **293**
+- Tổng mã được audit sau khi hợp nhất nguồn Vĩnh Bảo, quyết định thành phố và ma trận kiểm chứng 51 TTHC: **295**
 - Mã xuất hiện trong 06 quyết định cập nhật thành phố: **133**
 - Mã Priority 51 được kiểm chứng pháp lý bổ sung: **37**
   - Xác minh current/cấp xã: **36**
   - Xác minh bãi bỏ: **1**
   - Còn cần xác minh: **0**
 - TTHC hiện hành đưa vào tập công khai: **255**
-- TTHC loại khỏi tập công khai: **38**
-  - Bị bãi bỏ: **36**
+- TTHC loại khỏi tập công khai: **40**
+  - Bị bãi bỏ: **38**
   - Đã công bố nhưng chưa đến ngày hiệu lực: **2**
 - TTHC mới được bổ sung từ quyết định thành phố: **63**
 - TTHC hiện có được cập nhật bởi quyết định thành phố: **1**
