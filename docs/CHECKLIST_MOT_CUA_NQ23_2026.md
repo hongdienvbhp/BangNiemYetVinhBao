@@ -1,0 +1,26 @@
+# CHECKLIST CÁN BỘ MỘT CỬA – ÁP DỤNG NGHỊ QUYẾT 23/2026/NQ-HĐND
+
+**Căn cứ:** Nghị quyết 23/2026/NQ-HĐND của HĐND TP Hải Phòng, **hiệu lực từ 08/8/2026**, không quy định thời hạn áp dụng. Hồ sơ **nộp trực tuyến qua Cổng DVCQG hoặc VNeID** → mức thu **0 đồng** với 11 khoản (Điều 2). Hồ sơ nộp trực tuyến **trước 08/8/2026** áp dụng theo quy định cũ (Điều 3 khoản 3). Hồ sơ nộp trực tiếp: không thay đổi.
+
+## A. Kiểm tra cấu hình phí trên Một cửa VNPT (làm ngay)
+
+| ☐ | Nhóm TTHC (mã) | Khoản thu phải = 0 đồng khi nộp trực tuyến | Đơn vị thu cần kiểm tra |
+|---|---|---|---|
+| ☐ | **Hộ tịch** (17 TTHC, 15 thuộc 51 trọng điểm): 1.000656, 1.000689, 1.000894, 1.001193, 1.004746, 1.004772, 1.004837, 1.004859, 1.004873, 1.004884, 1.005461, 2.000528, 2.000806, 2.002189; lưu động: 1.000419, 1.000593, 1.003583 | Lệ phí hộ tịch (Điều 2.1.a) | UBND xã |
+| ☐ | **Cấp/cấp đổi/cấp lại GCN** (Cao): 1.012753, 1.012781, 1.012782, 1.012783, 1.012785, 1.012786, 1.012787, 1.013978, 1.013993, 1.013994 | Lệ phí cấp GCN (2.1.c) + phí thẩm định hồ sơ cấp GCN (2.2.b) | Chi nhánh VPĐK đất đai (xã tiếp nhận) |
+| ☐ | **Đăng ký biến động có cấp GCN mới** (Trung bình): 1.012793, 1.013831, 1.013833, 1.013977, 1.013980, 1.013992, 1.013995 | Như trên, chỉ khi có cấp GCN | Chi nhánh VPĐK đất đai |
+| ☐ | **Biện pháp bảo đảm**: 1.011441, 1.011442, 1.011443, 1.011445 | Phí đăng ký giao dịch bảo đảm (2.2.a) – đối chiếu đúng tên khoản phí | Chi nhánh VPĐK đất đai |
+| ☐ | **Không đổi**: 2.000635 (cấp bản sao trích lục – 8.000 đ) | Là phí cấp bản sao, không phải lệ phí hộ tịch → **giữ nguyên, chờ xác minh** | UBND xã |
+
+Với mỗi TTHC: ☐ mở cấu hình phí/lệ phí của TTHC trên Một cửa VNPT [tên menu theo tài liệu VNPT: cần bổ sung] → ☐ kênh "trực tuyến" = 0 đồng, kênh "trực tiếp" giữ nguyên → ☐ ngày áp dụng 08/8/2026 → ☐ nộp thử 1 hồ sơ trên DVCQG, kiểm tra màn hình thanh toán hiển thị 0 đồng → ☐ ghi người kiểm tra, ngày.
+
+## B. Rà hồ sơ trực tuyến đã thu phí từ 08/8/2026
+
+1. ☐ Trích xuất danh sách hồ sơ: **kênh nộp = trực tuyến (DVCQG/VNeID)**, **ngày nộp ≥ 08/8/2026**, thuộc các mã TTHC ở mục A.
+2. ☐ Lọc hồ sơ có **số tiền phí/lệ phí đã thu > 0** (biên lai điện tử/thanh toán trực tuyến).
+3. ☐ Chỉ lập bảng tổng hợp gồm: **mã hồ sơ, mã TTHC, ngày nộp, khoản thu, số tiền, số biên lai**. **Không** đưa họ tên, số định danh, địa chỉ của công dân vào bảng báo cáo.
+4. ☐ Loại trừ: hồ sơ nộp trước 08/8/2026; hồ sơ nộp trực tiếp; khoản phí cấp bản sao.
+5. ☐ Báo cáo Giám đốc Trung tâm tổng số hồ sơ, tổng số tiền, theo từng đơn vị thu; đề xuất phương án hoàn trả theo quy định [căn cứ và thủ tục hoàn trả: cần bổ sung].
+6. ☐ Hộ tịch: cấu hình ngay; GCN/biện pháp bảo đảm: gửi danh sách cho Chi nhánh VPĐK đất đai phối hợp.
+
+**Người kiểm tra:** ……………… **Ngày:** ……/……/2026 **Kết quả:** ☐ Đạt ☐ Có sai lệch (ghi rõ): ………………

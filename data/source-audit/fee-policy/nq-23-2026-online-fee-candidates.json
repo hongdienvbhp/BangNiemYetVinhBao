@@ -1,0 +1,1314 @@
+{
+  "format": "online-fee-policy-candidates",
+  "version": 1,
+  "policy": "Candidate layer only. Không promote vào data/thu-tuc.json, không write-back Google Sheets. Cần review nghiệp vụ trước khi đề xuất promotion.",
+  "source": {
+    "decisionNo": "23/2026/NQ-HĐND",
+    "evidenceId": "ev_41578ef2889bc260743e5dfa",
+    "attachmentSha256": "6437d5562e94e5a4eab835459cddd17038046370e40d447eae81d0fdcf8a4eb7"
+  },
+  "summary": {
+    "canonicalProcedures": 254,
+    "matchedRows": 47,
+    "priority51Rows": 19,
+    "byConfidence": {
+      "high": 24,
+      "medium": 12,
+      "low": 11
+    },
+    "outOfScope": 1,
+    "pointsWithoutCanonicalMatch": [
+      "Điều 2 khoản 1 điểm b",
+      "Điều 2 khoản 1 điểm d",
+      "Điều 2 khoản 2 điểm c",
+      "Điều 2 khoản 2 điểm d",
+      "Điều 2 khoản 2 điểm e",
+      "Điều 2 khoản 2 điểm g",
+      "Điều 2 khoản 2 điểm đ"
+    ]
+  },
+  "rows": [
+    {
+      "ma": "1.000593",
+      "ten": "Thủ tục đăng ký kết hôn lưu động",
+      "cap": "Xã",
+      "linhVuc": "HỘ TỊCH",
+      "priority51": true,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": [
+        {
+          "mucThu": "0"
+        }
+      ],
+      "currentGuidanceProvenance": [
+        "official_dvcqg_content"
+      ],
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm a"
+      ],
+      "applicability": "applies_if_online",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "low",
+      "reason": "Thuộc lệ phí hộ tịch nhưng là đăng ký lưu động (cán bộ thực hiện tại nơi cư trú); khả năng nộp qua Cổng DVCQG/VNeID cần xác minh.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.000656",
+      "ten": "Thủ tục đăng ký khai tử",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "HỘ TỊCH",
+      "priority51": true,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": [
+        {
+          "mucThu": "0 — Mức lệ phí cụ thể do Hội đồng nhân dân tỉnh, thành phố trực thuộc Trung ương quyết định. Miễn lệ phí đối với trường hợp đăng ký khai tử đúng hạn, người thuộc gia đình có công với cách mạng; người thuộc hộ nghèo; người khuyết tật. Phí cấp bản sao Trích lục khai tử (nếu có yêu cầu) thực hiện theo quy định tại Thông tư số 281/2016/TT-BTC ngày 14/11/2016 của Bộ Tài chính."
+        }
+      ],
+      "currentGuidanceProvenance": [
+        "official_dvcqg_content"
+      ],
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm a"
+      ],
+      "applicability": "applies",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "high",
+      "reason": "TTHC đăng ký hộ tịch; Nghị quyết nêu đích danh lệ phí hộ tịch.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.000689",
+      "ten": "Thủ tục đăng ký khai sinh kết hợp đăng ký nhận cha, mẹ, con",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "HỘ TỊCH",
+      "priority51": true,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": [
+        {
+          "mucThu": "0 — (Mức lệ phí cụ thể do Hội đồng nhân dân tỉnh, thành phố trực thuộc Trung ương quyết định. Miễn lệ phí cho người thuộc gia đình có công với cách mạng; người thuộc hộ nghèo; người khuyết tật. Phí cấp bản sao Giấy khai sinh, bản sao Trích lục đăng ký nhận cha, mẹ, con (nếu có yêu cầu) thực hiện theo quy định tại Thông tư số 281/2016/TT-BTC ngày 14/11/2016 của Bộ Tài chính.)"
+        },
+        {
+          "mucThu": "0 — Mức lệ phí cụ thể do Hội đồng nhân dân tỉnh, thành phố trực thuộc Trung ương quyết định. Miễn lệ phí cho người thuộc gia đình có công với cách mạng; người thuộc hộ nghèo; người khuyết tật. Phí cấp bản sao Giấy khai sinh, bản sao Trích lục đăng ký nhận cha, mẹ, con (nếu có yêu cầu) thực hiện theo quy định tại Thông tư số 281/2016/TT-BTC ngày 14/11/2016 của Bộ Tài chính."
+        }
+      ],
+      "currentGuidanceProvenance": [
+        "official_dvcqg_content"
+      ],
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm a"
+      ],
+      "applicability": "applies",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "high",
+      "reason": "TTHC đăng ký hộ tịch; Nghị quyết nêu đích danh lệ phí hộ tịch.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.000894",
+      "ten": "Thủ tục đăng ký kết hôn",
+      "cap": "Xã",
+      "linhVuc": "HỘ TỊCH",
+      "priority51": true,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": [
+        {
+          "mucThu": "0 — Miễn lệ phí. Phí cấp bản sao Trích lục kết hôn (nếu có yêu cầu) thực hiện theo quy định tại Thông tư số 281/2016/TT-BTC ngày 14/11/2016 của Bộ Tài chính."
+        },
+        {
+          "mucThu": "0 — (Miễn lệ phí. Phí cấp bản sao Trích lục kết hôn (nếu có yêu cầu) thực hiện theo quy định tại Thông tư số 281/2016/TT-BTC ngày 14/11/2016 của Bộ Tài chính.)"
+        }
+      ],
+      "currentGuidanceProvenance": [
+        "official_dvcqg_content"
+      ],
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm a"
+      ],
+      "applicability": "applies",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "high",
+      "reason": "TTHC đăng ký hộ tịch; Nghị quyết nêu đích danh lệ phí hộ tịch.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.001193",
+      "ten": "Thủ tục đăng ký khai sinh",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "HỘ TỊCH",
+      "priority51": true,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": [
+        {
+          "mucThu": "0"
+        }
+      ],
+      "currentGuidanceProvenance": [
+        "official_dvcqg_content"
+      ],
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm a"
+      ],
+      "applicability": "applies",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "high",
+      "reason": "TTHC đăng ký hộ tịch; Nghị quyết nêu đích danh lệ phí hộ tịch.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.004746",
+      "ten": "Thủ tục đăng ký lại kết hôn",
+      "cap": "Xã",
+      "linhVuc": "HỘ TỊCH",
+      "priority51": true,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": [
+        {
+          "mucThu": "0 — Mức lệ phí cụ thể do Hội đồng nhân dân tỉnh, thành phố trực thuộc Trung ương quyết định. Miễn lệ phí cho người thuộc gia đình có công với cách mạng; người thuộc hộ nghèo; người khuyết tật."
+        },
+        {
+          "mucThu": "0 — (Mức lệ phí cụ thể do Hội đồng nhân dân tỉnh, thành phố trực thuộc Trung ương quyết định. Miễn lệ phí cho người thuộc gia đình có công với cách mạng; người thuộc hộ nghèo; người khuyết tật.)"
+        }
+      ],
+      "currentGuidanceProvenance": [
+        "official_dvcqg_content"
+      ],
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm a"
+      ],
+      "applicability": "applies",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "high",
+      "reason": "TTHC đăng ký hộ tịch; Nghị quyết nêu đích danh lệ phí hộ tịch.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.004772",
+      "ten": "Thủ tục đăng ký khai sinh cho người đã có hồ sơ, giấy tờ cá nhân",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "HỘ TỊCH",
+      "priority51": true,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": [
+        {
+          "mucThu": "0 — Mức lệ phí cụ thể do Hội đồng nhân dân tỉnh, thành phố trực thuộc Trung ương quyết định. Miễn lệ phí cho người thuộc gia đình có công với cách mạng; người thuộc hộ nghèo; người khuyết tật. Phí cấp bản sao Giấy khai sinh (nếu có yêu cầu) thực hiện theo quy định tại Thông tư số 281/2016/TT-BTC ngày 14/11/2016 của Bộ Tài chính."
+        }
+      ],
+      "currentGuidanceProvenance": [
+        "official_dvcqg_content"
+      ],
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm a"
+      ],
+      "applicability": "applies",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "high",
+      "reason": "TTHC đăng ký hộ tịch; Nghị quyết nêu đích danh lệ phí hộ tịch.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.004837",
+      "ten": "Thủ tục đăng ký giám hộ",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "HỘ TỊCH",
+      "priority51": true,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": [
+        {
+          "mucThu": "0 — Phí cấp bản sao Trích lục đăng ký giám hộ (nếu có yêu cầu) thực hiện theo quy định tại Thông tư số 281/2016/TT-BTC ngày 14/11/2016 của Bộ Tài chính."
+        },
+        {
+          "mucThu": "0"
+        }
+      ],
+      "currentGuidanceProvenance": [
+        "official_dvcqg_content"
+      ],
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm a"
+      ],
+      "applicability": "applies",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "high",
+      "reason": "TTHC đăng ký hộ tịch; Nghị quyết nêu đích danh lệ phí hộ tịch.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.004859",
+      "ten": "Thủ tục thay đổi, cải chính, bổ sung thông tin hộ tịch, xác định lại dân tộc",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "HỘ TỊCH",
+      "priority51": true,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": [
+        {
+          "mucThu": "0 — Mức lệ phí cụ thể do Hội đồng nhân dân tỉnh, thành phố trực thuộc Trung ương quyết định. Miễn lệ phí cho người thuộc gia đình có công với cách mạng; người thuộc hộ nghèo; người khuyết tật. Phí cấp bản sao Trích lục đăng ký thay đổi/cải chính/bổ sung thông tin hộ tịch (nếu có yêu cầu) thực hiện theo quy định tại Thông tư số 281/2016/TT-BTC ngày 14/11/2016 của Bộ Tài chính."
+        }
+      ],
+      "currentGuidanceProvenance": [
+        "official_dvcqg_content"
+      ],
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm a"
+      ],
+      "applicability": "applies",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "high",
+      "reason": "TTHC đăng ký hộ tịch; Nghị quyết nêu đích danh lệ phí hộ tịch.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.004873",
+      "ten": "Thủ tục cấp Giấy xác nhận tình trạng hôn nhân",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "HỘ TỊCH",
+      "priority51": true,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": [
+        {
+          "mucThu": "0 — Mức lệ phí cụ thể do Hội đồng nhân dân tỉnh, thành phố trực thuộc Trung ương quyết định. Miễn lệ phí cho người thuộc gia đình có công với cách mạng; người thuộc hộ nghèo; người khuyết tật."
+        }
+      ],
+      "currentGuidanceProvenance": [
+        "official_dvcqg_content"
+      ],
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm a"
+      ],
+      "applicability": "applies",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "high",
+      "reason": "TTHC đăng ký hộ tịch; Nghị quyết nêu đích danh lệ phí hộ tịch.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.004884",
+      "ten": "Thủ tục đăng ký lại khai sinh",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "HỘ TỊCH",
+      "priority51": true,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": [
+        {
+          "mucThu": "0 — Mức lệ phí cụ thể do Hội đồng nhân dân tỉnh, thành phố trực thuộc Trung ương quyết định. Miễn lệ phí cho người thuộc gia đình có công với cách mạng; người thuộc hộ nghèo; người khuyết tật. Phí cấp bản sao Giấy khai sinh (nếu có yêu cầu) thực hiện theo quy định tại Thông tư số 281/2016/TT-BTC ngày 14/11/2016 của Bộ Tài chính."
+        }
+      ],
+      "currentGuidanceProvenance": [
+        "official_dvcqg_content"
+      ],
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm a"
+      ],
+      "applicability": "applies",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "high",
+      "reason": "TTHC đăng ký hộ tịch; Nghị quyết nêu đích danh lệ phí hộ tịch.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.005461",
+      "ten": "Đăng ký lại khai tử",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "HỘ TỊCH",
+      "priority51": true,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": [
+        {
+          "mucThu": "0 — Mức lệ phí cụ thể do Hội đồng nhân dân tỉnh, thành phố trực thuộc Trung ương quyết định. Miễn lệ phí cho người thuộc gia đình có công với cách mạng; người thuộc hộ nghèo; người khuyết tật. Phí cấp bản sao Trích lục khai tử (nếu có yêu cầu) thực hiện theo quy định tại Thông tư số 281/2016/TT-BTC ngày 14/11/2016 của Bộ Tài chính."
+        }
+      ],
+      "currentGuidanceProvenance": [
+        "official_dvcqg_content"
+      ],
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm a"
+      ],
+      "applicability": "applies",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "high",
+      "reason": "TTHC đăng ký hộ tịch; Nghị quyết nêu đích danh lệ phí hộ tịch.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "2.000528",
+      "ten": "Thủ tục đăng ký khai sinh có yếu tố nước ngoài",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "HỘ TỊCH",
+      "priority51": true,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": [
+        {
+          "mucThu": "0 — Mức lệ phí cụ thể do Hội đồng nhân dân tỉnh, thành phố trực thuộc Trung ương quyết định. Miễn lệ phí cho người thuộc gia đình có công với cách mạng; người thuộc hộ nghèo; người khuyết tật. Phí cấp bản sao Giấy khai sinh (nếu có yêu cầu) thực hiện theo quy định tại Thông tư số 281/2016/TT-BTC ngày 14/11/2016 của Bộ Tài chính."
+        }
+      ],
+      "currentGuidanceProvenance": [
+        "official_dvcqg_content"
+      ],
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm a"
+      ],
+      "applicability": "applies",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "high",
+      "reason": "TTHC đăng ký hộ tịch; Nghị quyết nêu đích danh lệ phí hộ tịch.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "2.000635",
+      "ten": "Cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "HỘ TỊCH",
+      "priority51": true,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": [
+        {
+          "mucThu": "8,000"
+        }
+      ],
+      "currentGuidanceProvenance": [
+        "official_dvcqg_content"
+      ],
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm a"
+      ],
+      "applicability": "out_of_scope",
+      "proposedOnlineFee": null,
+      "proposedOnlineFeeCondition": null,
+      "effectiveFrom": null,
+      "confidence": "medium",
+      "reason": "Khoản thu của TTHC này là phí cấp bản sao trích lục; hướng dẫn DVCQG của các TTHC hộ tịch ghi phí cấp bản sao thực hiện theo Thông tư 281/2016/TT-BTC, không phải lệ phí hộ tịch thuộc thẩm quyền HĐND thành phố. Cần xác minh trước khi kết luận.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "2.000806",
+      "ten": "Thủ tục đăng ký kết hôn có yếu tố nước ngoài",
+      "cap": "Xã",
+      "linhVuc": "HỘ TỊCH",
+      "priority51": true,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": [
+        {
+          "mucThu": "0 — Mức lệ phí cụ thể do Hội đồng nhân dân tỉnh, thành phố trực thuộc Trung ương quyết định. Miễn lệ phí cho người thuộc gia đình có công với cách mạng; người thuộc hộ nghèo; người khuyết tật."
+        },
+        {
+          "mucThu": "0 — (Mức lệ phí cụ thể do Hội đồng nhân dân tỉnh, thành phố trực thuộc Trung ương quyết định. Miễn lệ phí cho người thuộc gia đình có công với cách mạng; người thuộc hộ nghèo; người khuyết tật.)"
+        }
+      ],
+      "currentGuidanceProvenance": [
+        "official_dvcqg_content"
+      ],
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm a"
+      ],
+      "applicability": "applies",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "high",
+      "reason": "TTHC đăng ký hộ tịch; Nghị quyết nêu đích danh lệ phí hộ tịch.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "2.002189",
+      "ten": "Thủ tục ghi vào Sổ hộ tịch việc kết hôn của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "HỘ TỊCH",
+      "priority51": true,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": [
+        {
+          "mucThu": "0 — Mức lệ phí cụ thể do Hội đồng nhân dân tỉnh, thành phố trực thuộc Trung ương quyết định. Miễn lệ phí cho người thuộc gia đình có công với cách mạng; người thuộc hộ nghèo; người khuyết tật. Phí cấp bản sao Trích lục ghi chú kết hôn (nếu có yêu cầu) thực hiện theo quy định tại Thông tư số 281/2016/TT-BTC ngày 14/11/2016 của Bộ Tài chính."
+        }
+      ],
+      "currentGuidanceProvenance": [
+        "official_dvcqg_content"
+      ],
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm a"
+      ],
+      "applicability": "applies",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "high",
+      "reason": "TTHC đăng ký hộ tịch; Nghị quyết nêu đích danh lệ phí hộ tịch.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.012796",
+      "ten": "Đính chính Giấy chứng nhận đã cấp lần đầu có sai sót",
+      "cap": "Xã",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51": true,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": [
+        {
+          "mucThu": "0 — Theo quy định của Luật phí và lệ phí và các văn bản quy phạm pháp luật hướng dẫn Luật phí và lệ phí"
+        }
+      ],
+      "currentGuidanceProvenance": [
+        "official_dvcqg_content"
+      ],
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm c",
+        "Điều 2 khoản 2 điểm b"
+      ],
+      "applicability": "applies_if_fee_arises",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "low",
+      "reason": "TTHC không có kết quả cấp Giấy chứng nhận mới; chưa có nguồn xác nhận phát sinh lệ phí cấp GCN hoặc phí thẩm định.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.012818",
+      "ten": "Thu hồi Giấy chứng nhận đã cấp lần đầu không đúng quy định của pháp luật đất đai do người sử dụng đất, chủ sở hữu tài sản gắn liền với đất phát hiện và cấp lại Giấy chứng nhận sau khi thu hồi",
+      "cap": "Xã",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51": true,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": [
+        {
+          "mucThu": "0 — Theo quy định của Luật phí và lệ phí và các văn bản quy phạm pháp luật hướng dẫn Luật phí và lệ phí"
+        }
+      ],
+      "currentGuidanceProvenance": [
+        "official_dvcqg_content"
+      ],
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm c",
+        "Điều 2 khoản 2 điểm b"
+      ],
+      "applicability": "applies_if_fee_arises",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "low",
+      "reason": "TTHC không có kết quả cấp Giấy chứng nhận mới; chưa có nguồn xác nhận phát sinh lệ phí cấp GCN hoặc phí thẩm định.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.013978",
+      "ten": "Đăng ký đất đai, tài sản gắn liền với đất, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất lần đầu đối với hộ gia đình, cá nhân, cộng đồng dân cư, người gốc Việt Nam định cư ở nước ngoài",
+      "cap": "Xã",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51": true,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": [
+        {
+          "mucThu": "0 — Theo quy định của Luật phí và lệ phí và các văn bản quy phạm pháp luật hướng dẫn Luật phí và lệ phí."
+        }
+      ],
+      "currentGuidanceProvenance": [
+        "official_dvcqg_content"
+      ],
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm c",
+        "Điều 2 khoản 2 điểm b"
+      ],
+      "applicability": "applies",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "high",
+      "reason": "Kết quả TTHC là cấp/cấp đổi/cấp lại Giấy chứng nhận.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.000419",
+      "ten": "Thủ tục đăng ký khai tử lưu động",
+      "cap": "Xã",
+      "linhVuc": "HỘ TỊCH",
+      "priority51": false,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": null,
+      "currentGuidanceProvenance": null,
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm a"
+      ],
+      "applicability": "applies_if_online",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "low",
+      "reason": "Thuộc lệ phí hộ tịch nhưng là đăng ký lưu động (cán bộ thực hiện tại nơi cư trú); khả năng nộp qua Cổng DVCQG/VNeID cần xác minh.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.003583",
+      "ten": "Thủ tục đăng ký khai sinh lưu động",
+      "cap": "Xã",
+      "linhVuc": "HỘ TỊCH",
+      "priority51": false,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": null,
+      "currentGuidanceProvenance": null,
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm a"
+      ],
+      "applicability": "applies_if_online",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "low",
+      "reason": "Thuộc lệ phí hộ tịch nhưng là đăng ký lưu động (cán bộ thực hiện tại nơi cư trú); khả năng nộp qua Cổng DVCQG/VNeID cần xác minh.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.012753",
+      "ten": "Đăng ký đất đai, tài sản gắn liền với đất, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất lần đầu đối với tổ chức đang sử dụng đất",
+      "cap": "Xã",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51": false,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": null,
+      "currentGuidanceProvenance": null,
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm c",
+        "Điều 2 khoản 2 điểm b"
+      ],
+      "applicability": "applies",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "high",
+      "reason": "Kết quả TTHC là cấp/cấp đổi/cấp lại Giấy chứng nhận.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.012756",
+      "ten": "Đăng ký đất đai lần đầu đối với trường hợp được Nhà nước giao đất để quản lý",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51": false,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": null,
+      "currentGuidanceProvenance": null,
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm c",
+        "Điều 2 khoản 2 điểm b"
+      ],
+      "applicability": "applies_if_fee_arises",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "low",
+      "reason": "TTHC liên quan Giấy chứng nhận nhưng chưa có nguồn xác nhận phát sinh lệ phí cấp GCN hoặc phí thẩm định.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.012781",
+      "ten": "Đăng ký, cấp Giấy chứng nhận đối với thửa đất có diện tích tăng thêm do thay đổi ranh giới so với Giấy chứng nhận đã cấp",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51": false,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": null,
+      "currentGuidanceProvenance": null,
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm c",
+        "Điều 2 khoản 2 điểm b"
+      ],
+      "applicability": "applies",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "high",
+      "reason": "Kết quả TTHC là cấp/cấp đổi/cấp lại Giấy chứng nhận.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.012782",
+      "ten": "Đăng ký, cấp Giấy chứng nhận đối với trường hợp cá nhân, hộ gia đình đã được cấp Giấy chứng nhận một phần diện tích vào loại đất ở trước",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51": false,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": null,
+      "currentGuidanceProvenance": null,
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm c",
+        "Điều 2 khoản 2 điểm b"
+      ],
+      "applicability": "applies",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "high",
+      "reason": "Kết quả TTHC là cấp/cấp đổi/cấp lại Giấy chứng nhận.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.012783",
+      "ten": "Cấp đổi Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51": false,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": null,
+      "currentGuidanceProvenance": null,
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm c",
+        "Điều 2 khoản 2 điểm b"
+      ],
+      "applicability": "applies",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "high",
+      "reason": "Kết quả TTHC là cấp/cấp đổi/cấp lại Giấy chứng nhận.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.012785",
+      "ten": "Đăng ký, cấp Giấy chứng nhận đối với trường hợp đã chuyển quyền sử dụng đất trước",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51": false,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": null,
+      "currentGuidanceProvenance": null,
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm c",
+        "Điều 2 khoản 2 điểm b"
+      ],
+      "applicability": "applies",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "high",
+      "reason": "Kết quả TTHC là cấp/cấp đổi/cấp lại Giấy chứng nhận.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.012786",
+      "ten": "Cấp lại Giấy chứng nhận do bị mất",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51": false,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": null,
+      "currentGuidanceProvenance": null,
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm c",
+        "Điều 2 khoản 2 điểm b"
+      ],
+      "applicability": "applies",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "high",
+      "reason": "Kết quả TTHC là cấp/cấp đổi/cấp lại Giấy chứng nhận.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.012787",
+      "ten": "Đăng ký, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất cho người nhận chuyển nhượng quyền sử dụng đất, quyền sở hữu nhà ở, công trình xây",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51": false,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": null,
+      "currentGuidanceProvenance": null,
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm c",
+        "Điều 2 khoản 2 điểm b"
+      ],
+      "applicability": "applies",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "high",
+      "reason": "Kết quả TTHC là cấp/cấp đổi/cấp lại Giấy chứng nhận.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.012790",
+      "ten": "Đính chính Giấy chứng nhận đã cấp",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51": false,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": null,
+      "currentGuidanceProvenance": null,
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm c",
+        "Điều 2 khoản 2 điểm b"
+      ],
+      "applicability": "applies_if_fee_arises",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "low",
+      "reason": "TTHC không có kết quả cấp Giấy chứng nhận mới; chưa có nguồn xác nhận phát sinh lệ phí cấp GCN hoặc phí thẩm định.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.012791",
+      "ten": "Thu hồi Giấy chứng nhận đã cấp không đúng quy định của pháp luật đất đai do người sử dụng đất, chủ sở hữu tài sản gắn liền với đất phát hiện và cấp lại Giấy chứng nhận s",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51": false,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": null,
+      "currentGuidanceProvenance": null,
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm c",
+        "Điều 2 khoản 2 điểm b"
+      ],
+      "applicability": "applies_if_fee_arises",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "low",
+      "reason": "TTHC không có kết quả cấp Giấy chứng nhận mới; chưa có nguồn xác nhận phát sinh lệ phí cấp GCN hoặc phí thẩm định.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.012793",
+      "ten": "Đăng ký biến động đối với trường hợp thành viên của hộ gia đình hoặc cá nhân đang sử dụng đất thành lập doanh nghiệp tư nhân và sử dụng đất vào hoạt động sản xuất kinh d",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51": false,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": null,
+      "currentGuidanceProvenance": null,
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm c",
+        "Điều 2 khoản 2 điểm b"
+      ],
+      "applicability": "applies_if_fee_arises",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "medium",
+      "reason": "Đăng ký biến động/đăng ký tài sản: chỉ áp dụng khi hồ sơ có cấp Giấy chứng nhận mới và phát sinh lệ phí cấp GCN/phí thẩm định.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.012817",
+      "ten": "Xác định lại diện tích đất ở của hộ gia đình, cá nhân đã được cấp Giấy chứng nhận trước ngày 01 tháng 7 năm 2004",
+      "cap": "Xã",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51": false,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": null,
+      "currentGuidanceProvenance": null,
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm c",
+        "Điều 2 khoản 2 điểm b"
+      ],
+      "applicability": "applies_if_fee_arises",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "low",
+      "reason": "TTHC không có kết quả cấp Giấy chứng nhận mới; chưa có nguồn xác nhận phát sinh lệ phí cấp GCN hoặc phí thẩm định.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.013831",
+      "ten": "Đăng ký biến động quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất trong các trường hợp chuyển đổi quyền sử dụng đất nông nghiệp mà không theo phương án dồn điền",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51": false,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": null,
+      "currentGuidanceProvenance": null,
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm c",
+        "Điều 2 khoản 2 điểm b"
+      ],
+      "applicability": "applies_if_fee_arises",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "medium",
+      "reason": "Đăng ký biến động/đăng ký tài sản: chỉ áp dụng khi hồ sơ có cấp Giấy chứng nhận mới và phát sinh lệ phí cấp GCN/phí thẩm định.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.013833",
+      "ten": "Đăng ký biến động đối với trường hợp đổi tên hoặc thay đổi thông tin về người sử dụng đất, chủ sở hữu tài sản gắn liền với đất hoặc thay đổi số hiệu hoặc địa chỉ của thử",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51": false,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": null,
+      "currentGuidanceProvenance": null,
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm c",
+        "Điều 2 khoản 2 điểm b"
+      ],
+      "applicability": "applies_if_fee_arises",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "medium",
+      "reason": "Đăng ký biến động/đăng ký tài sản: chỉ áp dụng khi hồ sơ có cấp Giấy chứng nhận mới và phát sinh lệ phí cấp GCN/phí thẩm định.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.013977",
+      "ten": "Đăng ký biến động thay đổi quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất do chia, tách, hợp nhất, sáp nhập tổ chức hoặc chuyển đổi mô hình tổ chức, chuyển đổi",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51": false,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": null,
+      "currentGuidanceProvenance": null,
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm c",
+        "Điều 2 khoản 2 điểm b"
+      ],
+      "applicability": "applies_if_fee_arises",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "medium",
+      "reason": "Đăng ký biến động/đăng ký tài sản: chỉ áp dụng khi hồ sơ có cấp Giấy chứng nhận mới và phát sinh lệ phí cấp GCN/phí thẩm định.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.013979",
+      "ten": "Tặng cho quyền sử dụng đất cho Nhà nước hoặc cộng đồng dân cư hoặc mở rộng đường giao thông đối với trường hợp thửa đất chưa được cấp Giấy chứng nhận",
+      "cap": "Xã",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51": false,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": null,
+      "currentGuidanceProvenance": null,
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm c",
+        "Điều 2 khoản 2 điểm b"
+      ],
+      "applicability": "applies_if_fee_arises",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "low",
+      "reason": "TTHC không có kết quả cấp Giấy chứng nhận mới; chưa có nguồn xác nhận phát sinh lệ phí cấp GCN hoặc phí thẩm định.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.013980",
+      "ten": "Đăng ký biến động đối với trường hợp thay đổi quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất theo thỏa thuận của các thành viên hộ gia đình hoặc của vợ và chồn",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51": false,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": null,
+      "currentGuidanceProvenance": null,
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm c",
+        "Điều 2 khoản 2 điểm b"
+      ],
+      "applicability": "applies_if_fee_arises",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "medium",
+      "reason": "Đăng ký biến động/đăng ký tài sản: chỉ áp dụng khi hồ sơ có cấp Giấy chứng nhận mới và phát sinh lệ phí cấp GCN/phí thẩm định.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.013988",
+      "ten": "Xóa ghi nợ tiền sử dụng đất, lệ phí trước bạ trên Giấy chứng nhận đã cấp",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51": false,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": null,
+      "currentGuidanceProvenance": null,
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm c",
+        "Điều 2 khoản 2 điểm b"
+      ],
+      "applicability": "applies_if_fee_arises",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "low",
+      "reason": "TTHC không có kết quả cấp Giấy chứng nhận mới; chưa có nguồn xác nhận phát sinh lệ phí cấp GCN hoặc phí thẩm định.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.013992",
+      "ten": "Đăng ký biến động chuyển mục đích sử dụng đất không phải xin phép cơ quan nhà nước có thẩm quyền",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51": false,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": null,
+      "currentGuidanceProvenance": null,
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm c",
+        "Điều 2 khoản 2 điểm b"
+      ],
+      "applicability": "applies_if_fee_arises",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "medium",
+      "reason": "Đăng ký biến động/đăng ký tài sản: chỉ áp dụng khi hồ sơ có cấp Giấy chứng nhận mới và phát sinh lệ phí cấp GCN/phí thẩm định.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.013993",
+      "ten": "Đăng ký, cấp Giấy chứng nhận đối với trường hợp hộ gia đình, cá nhân đang sử dụng đất không đúng mục đích đã được Nhà nước công nhận quyền sử dụng đất trước",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51": false,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": null,
+      "currentGuidanceProvenance": null,
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm c",
+        "Điều 2 khoản 2 điểm b"
+      ],
+      "applicability": "applies",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "high",
+      "reason": "Kết quả TTHC là cấp/cấp đổi/cấp lại Giấy chứng nhận.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.013994",
+      "ten": "Đăng ký, cấp Giấy chứng nhận đối với trường hợp chuyển nhượng dự án đầu tư có sử dụng đất",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51": false,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": null,
+      "currentGuidanceProvenance": null,
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm c",
+        "Điều 2 khoản 2 điểm b"
+      ],
+      "applicability": "applies",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "high",
+      "reason": "Kết quả TTHC là cấp/cấp đổi/cấp lại Giấy chứng nhận.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.013995",
+      "ten": "Đăng ký tài sản gắn liền với thửa đất đã được cấp Giấy chứng nhận hoặc đăng ký thay đổi về tài sản gắn liền với đất so với nội dung đã đăng ký, gia hạn thời hạn sở hữu n",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51": false,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": null,
+      "currentGuidanceProvenance": null,
+      "nq23Points": [
+        "Điều 2 khoản 1 điểm c",
+        "Điều 2 khoản 2 điểm b"
+      ],
+      "applicability": "applies_if_fee_arises",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "medium",
+      "reason": "Đăng ký biến động/đăng ký tài sản: chỉ áp dụng khi hồ sơ có cấp Giấy chứng nhận mới và phát sinh lệ phí cấp GCN/phí thẩm định.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.011441",
+      "ten": "Đăng ký biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51": false,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": null,
+      "currentGuidanceProvenance": null,
+      "nq23Points": [
+        "Điều 2 khoản 2 điểm a"
+      ],
+      "applicability": "applies",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "medium",
+      "reason": "TTHC đăng ký biện pháp bảo đảm; Nghị quyết dùng tên gọi 'phí đăng ký giao dịch bảo đảm' — cần đối chiếu tên khoản phí trên hệ thống Một cửa.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.011442",
+      "ten": "Đăng ký thay đổi biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51": false,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": null,
+      "currentGuidanceProvenance": null,
+      "nq23Points": [
+        "Điều 2 khoản 2 điểm a"
+      ],
+      "applicability": "applies",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "medium",
+      "reason": "TTHC đăng ký biện pháp bảo đảm; Nghị quyết dùng tên gọi 'phí đăng ký giao dịch bảo đảm' — cần đối chiếu tên khoản phí trên hệ thống Một cửa.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.011443",
+      "ten": "Xoá Đăng ký biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51": false,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": null,
+      "currentGuidanceProvenance": null,
+      "nq23Points": [
+        "Điều 2 khoản 2 điểm a"
+      ],
+      "applicability": "applies",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "medium",
+      "reason": "TTHC đăng ký biện pháp bảo đảm; Nghị quyết dùng tên gọi 'phí đăng ký giao dịch bảo đảm' — cần đối chiếu tên khoản phí trên hệ thống Một cửa.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    },
+    {
+      "ma": "1.011445",
+      "ten": "Chuyển tiếp đăng ký thế chấp quyền tài sản phát sinh từ hợp đồng mua bán nhà ở hoặc từ hợp đồng mua bán tài sản khác gắn liền với đất",
+      "cap": "Xã / điểm tiếp nhận cấp xã",
+      "linhVuc": "ĐẤT ĐAI",
+      "priority51": false,
+      "currentCanonical": {
+        "phi": "",
+        "phiOnline": ""
+      },
+      "currentGuidanceLePhi": null,
+      "currentGuidanceProvenance": null,
+      "nq23Points": [
+        "Điều 2 khoản 2 điểm a"
+      ],
+      "applicability": "applies",
+      "proposedOnlineFee": "0 đồng",
+      "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+      "effectiveFrom": "2026-08-08",
+      "confidence": "medium",
+      "reason": "TTHC đăng ký biện pháp bảo đảm; Nghị quyết dùng tên gọi 'phí đăng ký giao dịch bảo đảm' — cần đối chiếu tên khoản phí trên hệ thống Một cửa.",
+      "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "promotionStatus": "candidate_only"
+    }
+  ]
+}
