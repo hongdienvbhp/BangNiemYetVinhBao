@@ -20,6 +20,7 @@ from scripts.canonical_v4 import evidence_id  # noqa: E402
 CANONICAL = ROOT / "data" / "thu-tuc.json"
 ENRICHMENT = ROOT / "data" / "tthc-guidance-enrichment.json"
 POLICY = ROOT / "data" / "source-audit" / "fee-policy" / "nq-23-2026-hdnd-hai-phong.json"
+DIRECT_POLICY = ROOT / "data" / "source-audit" / "fee-policy" / "nq-34-2025-hdnd-hai-phong.json"
 OUTPUT = ROOT / "data" / "source-audit" / "fee-policy" / "nq-23-2026-online-fee-candidates.json"
 
 ONLINE_RATE = "0 đồng"
@@ -76,12 +77,15 @@ def classify(row: dict) -> list[dict]:
 
     if field == "ĐẤT ĐAI":
         land_points = ["Điều 2 khoản 1 điểm c", "Điều 2 khoản 2 điểm b"]
-        if LAND_NO_ISSUE.search(name):
+        if name.startswith("tặng cho quyền sử dụng đất"):
+            out.append({"points": land_points, "applicability": "already_exempt", "confidence": "high",
+                        "reason": "NQ 34/2025/NQ-HĐND Phụ lục I, II mục 2 điểm b miễn lệ phí cấp GCN và phí thẩm định khi đăng ký biến động do tặng cho QSDĐ cho Nhà nước/cộng đồng; mức trực tuyến 0 đồng không làm thay đổi."})
+        elif LAND_NO_ISSUE.search(name):
             out.append({"points": land_points, "applicability": "applies_if_fee_arises", "confidence": "low",
                         "reason": "TTHC không có kết quả cấp Giấy chứng nhận mới; chưa có nguồn xác nhận phát sinh lệ phí cấp GCN hoặc phí thẩm định."})
         elif LAND_CHANGE.search(name) and not LAND_ISSUE.search(name):
-            out.append({"points": land_points, "applicability": "applies_if_fee_arises", "confidence": "medium",
-                        "reason": "Đăng ký biến động/đăng ký tài sản: chỉ áp dụng khi hồ sơ có cấp Giấy chứng nhận mới và phát sinh lệ phí cấp GCN/phí thẩm định."})
+            out.append({"points": land_points, "applicability": "applies", "confidence": "high",
+                        "reason": "NQ 34/2025/NQ-HĐND Điều 1 khoản 1 điểm b và Phụ lục I, II (mục 3) thu lệ phí cấp GCN và phí thẩm định cả với đăng ký biến động trên GCN đã cấp."})
         elif LAND_ISSUE.search(name):
             out.append({"points": land_points, "applicability": "applies", "confidence": "high",
                         "reason": "Kết quả TTHC là cấp/cấp đổi/cấp lại Giấy chứng nhận."})
@@ -90,8 +94,8 @@ def classify(row: dict) -> list[dict]:
                         "reason": "TTHC liên quan Giấy chứng nhận nhưng chưa có nguồn xác nhận phát sinh lệ phí cấp GCN hoặc phí thẩm định."})
 
     if SECURED.search(name):
-        out.append({"points": ["Điều 2 khoản 2 điểm a"], "applicability": "applies", "confidence": "medium",
-                    "reason": "TTHC đăng ký biện pháp bảo đảm; Nghị quyết dùng tên gọi 'phí đăng ký giao dịch bảo đảm' — cần đối chiếu tên khoản phí trên hệ thống Một cửa."})
+        out.append({"points": ["Điều 2 khoản 2 điểm a"], "applicability": "applies", "confidence": "high",
+                    "reason": "NQ 34/2025/NQ-HĐND Phụ lục III xác định các thủ tục đăng ký/thay đổi/xóa/chuyển tiếp biện pháp bảo đảm bằng QSDĐ thuộc 'phí đăng ký giao dịch bảo đảm'."})
 
     env_rules = (
         ("giấy phép môi trường", "Điều 2 khoản 2 điểm c"),
@@ -111,8 +115,48 @@ def classify(row: dict) -> list[dict]:
     return out
 
 
-def build(canonical: dict, enrichment: dict, policy: dict) -> dict:
+def direct_rate_ref(row: dict) -> dict[str, str]:
+    """Dòng mức thu trực tiếp trong NQ 34/2025 (Phụ lục I–III) tương ứng với TTHC, nếu xác định được."""
+    name = _low(row.get("ten"))
+    if SECURED.search(name):
+        if re.match(r"^(xóa|xoá) đăng ký", name):
+            kind = "xoa"
+        elif "thay đổi" in name:
+            kind = "thayDoi"
+        elif name.startswith("chuyển tiếp"):
+            kind = "chuyenTiep"
+        else:
+            kind = "dangKy"
+        return {"PL3": kind}
+    if str(row.get("linhVuc") or "").strip().upper() != "ĐẤT ĐAI" or LAND_NO_ISSUE.search(name):
+        return {}
+    if re.match(r"^(cấp đổi|cấp lại) giấy chứng nhận", name):
+        kind = "capDoiCapLai"
+    elif LAND_CHANGE.search(name) and not LAND_ISSUE.search(name):
+        kind = "bienDong"
+    elif LAND_ISSUE.search(name):
+        kind = "lanDau"
+    else:
+        return {}
+    return {"PL1": kind, "PL2": kind}
+
+
+def direct_rates(ref: dict[str, str], direct: dict) -> list[dict]:
+    out = []
+    for table, kind in ref.items():
+        spec = direct["rateTables"][table]
+        suffix = ".trucTiep" if table == "PL3" else ""
+        for subject in ("canhan", "tochuc"):
+            values = spec["rows"].get(f"{subject}.{kind}{suffix}")
+            if values is not None:
+                out.append({"table": table, "name": spec["name"], "row": f"{subject}.{kind}{suffix}",
+                            "rates": dict(zip(direct["rateColumns"], values))})
+    return out
+
+
+def build(canonical: dict, enrichment: dict, policy: dict, direct: dict) -> dict:
     ev_id = evidence_id(policy["evidence"])
+    direct_ev = evidence_id(direct["evidence"])
     guidance = {str(r.get("ma")): r for r in enrichment.get("rows") or []}
     valid_points = {item["point"] for item in policy["feeItems"]}
     rows = []
@@ -121,6 +165,7 @@ def build(canonical: dict, enrichment: dict, policy: dict) -> dict:
             assert set(match["points"]) <= valid_points, match["points"]
             g = guidance.get(str(row.get("ma")))
             applies = match["applicability"] != "out_of_scope"
+            ref = direct_rate_ref(row) if applies else {}
             rows.append({
                 "ma": row.get("ma"),
                 "ten": row.get("ten"),
@@ -130,6 +175,9 @@ def build(canonical: dict, enrichment: dict, policy: dict) -> dict:
                 "currentCanonical": {"phi": row.get("phi", ""), "phiOnline": row.get("phiOnline", "")},
                 "currentGuidanceLePhi": (g or {}).get("lePhi"),
                 "currentGuidanceProvenance": ((g or {}).get("fieldProvenance") or {}).get("lePhi"),
+                "directRateSource": direct["document"]["decisionNo"] if ref else None,
+                "directRates": direct_rates(ref, direct) if ref else [],
+                "directRateNote": None if ref or not applies else "[cần bổ sung] mức thu trực tiếp chưa có evidence",
                 "nq23Points": match["points"],
                 "applicability": match["applicability"],
                 "proposedOnlineFee": ONLINE_RATE if applies else None,
@@ -138,6 +186,7 @@ def build(canonical: dict, enrichment: dict, policy: dict) -> dict:
                 "confidence": match["confidence"],
                 "reason": match["reason"],
                 "evidenceId": ev_id,
+                "directRateEvidenceId": direct_ev if ref else None,
                 "promotionStatus": "candidate_only",
             })
     rows.sort(key=lambda r: (not r["priority51"], r["nq23Points"][0], r["ma"]))
@@ -148,12 +197,18 @@ def build(canonical: dict, enrichment: dict, policy: dict) -> dict:
         "policy": "Candidate layer only. Không promote vào data/thu-tuc.json, không write-back Google Sheets. Cần review nghiệp vụ trước khi đề xuất promotion.",
         "source": {"decisionNo": policy["document"]["decisionNo"], "evidenceId": ev_id,
                    "attachmentSha256": policy["evidence"]["attachmentSha256"]},
+        "directRateSource": {"decisionNo": direct["document"]["decisionNo"], "evidenceId": direct_ev,
+                             "attachmentSha256": direct["evidence"]["attachmentSha256"],
+                             "conflictWithNq23": direct["conflictWithNq23"],
+                             "unresolved": direct["unresolved"]},
         "summary": {
             "canonicalProcedures": len(canonical.get("thuTuc") or []),
             "matchedRows": len(rows),
             "priority51Rows": sum(r["priority51"] for r in rows),
             "byConfidence": {c: sum(r["confidence"] == c for r in rows) for c in ("high", "medium", "low")},
             "outOfScope": sum(r["applicability"] == "out_of_scope" for r in rows),
+            "alreadyExempt": sum(r["applicability"] == "already_exempt" for r in rows),
+            "withDirectRate": sum(bool(r["directRates"]) for r in rows),
             "pointsWithoutCanonicalMatch": sorted(valid_points - matched_points),
         },
         "rows": rows,
@@ -168,7 +223,7 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="Chỉ kiểm tra file output khớp kết quả build")
     args = parser.parse_args(argv)
-    result = build(_load(CANONICAL), _load(ENRICHMENT), _load(POLICY))
+    result = build(_load(CANONICAL), _load(ENRICHMENT), _load(POLICY), _load(DIRECT_POLICY))
     text = json.dumps(result, ensure_ascii=False, indent=2) + "\n"
     if args.check:
         if not OUTPUT.exists() or OUTPUT.read_text(encoding="utf-8") != text:

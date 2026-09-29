@@ -7,16 +7,31 @@
     "evidenceId": "ev_41578ef2889bc260743e5dfa",
     "attachmentSha256": "6437d5562e94e5a4eab835459cddd17038046370e40d447eae81d0fdcf8a4eb7"
   },
+  "directRateSource": {
+    "decisionNo": "34/2025/NQ-HĐND",
+    "evidenceId": "ev_39e15a4f512b149ccc5aee30",
+    "attachmentSha256": "9a78589b05b9c648f161750faba361cbbb64cedc4b04284a2996f8bf299f9faf",
+    "conflictWithNq23": {
+      "status": "needs_authority_confirmation",
+      "facts": "NQ 34/2025 Điều 6 khoản 2 cho áp dụng mức thu trực tuyến của chính Nghị quyết này khi NQ 07/2025 và 08/2025 hết hiệu lực; NQ 23/2026 Điều 3 khoản 2 làm hai nghị quyết đó hết hiệu lực từ 08/8/2026, đồng thời Điều 2 quy định mức thu 0 đồng khi thực hiện trực tuyến cho cùng các khoản thu (lệ phí cấp GCN, phí thẩm định hồ sơ cấp GCN, phí đăng ký giao dịch bảo đảm).",
+      "analysis": "Phân tích (chưa kiểm chứng với cơ quan có thẩm quyền): hai nghị quyết cùng do HĐND thành phố ban hành, NQ 23/2026 ban hành sau và quy định riêng về hình thức trực tuyến, nên nhiều khả năng mức 0 đồng được áp dụng. Cần Sở Tài chính/Sở Tư pháp xác nhận."
+    },
+    "unresolved": {
+      "civilStatusFee": "[cần bổ sung] Văn bản quy định mức lệ phí hộ tịch khi nộp trực tiếp trên địa bàn (khu vực Hải Phòng cũ) chưa xác định được: không có trên danh mục Công báo mới; vbpl.vn bị chặn trong phiên rà soát."
+    }
+  },
   "summary": {
     "canonicalProcedures": 254,
     "matchedRows": 47,
     "priority51Rows": 19,
     "byConfidence": {
-      "high": 24,
-      "medium": 12,
-      "low": 11
+      "high": 36,
+      "medium": 1,
+      "low": 10
     },
     "outOfScope": 1,
+    "alreadyExempt": 1,
+    "withDirectRate": 21,
     "pointsWithoutCanonicalMatch": [
       "Điều 2 khoản 1 điểm b",
       "Điều 2 khoản 1 điểm d",
@@ -46,6 +61,9 @@
       "currentGuidanceProvenance": [
         "official_dvcqg_content"
       ],
+      "directRateSource": null,
+      "directRates": [],
+      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -56,6 +74,7 @@
       "confidence": "low",
       "reason": "Thuộc lệ phí hộ tịch nhưng là đăng ký lưu động (cán bộ thực hiện tại nơi cư trú); khả năng nộp qua Cổng DVCQG/VNeID cần xác minh.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": null,
       "promotionStatus": "candidate_only"
     },
     {
@@ -76,6 +95,9 @@
       "currentGuidanceProvenance": [
         "official_dvcqg_content"
       ],
+      "directRateSource": null,
+      "directRates": [],
+      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -86,6 +108,7 @@
       "confidence": "high",
       "reason": "TTHC đăng ký hộ tịch; Nghị quyết nêu đích danh lệ phí hộ tịch.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": null,
       "promotionStatus": "candidate_only"
     },
     {
@@ -109,6 +132,9 @@
       "currentGuidanceProvenance": [
         "official_dvcqg_content"
       ],
+      "directRateSource": null,
+      "directRates": [],
+      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -119,6 +145,7 @@
       "confidence": "high",
       "reason": "TTHC đăng ký hộ tịch; Nghị quyết nêu đích danh lệ phí hộ tịch.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": null,
       "promotionStatus": "candidate_only"
     },
     {
@@ -142,6 +169,9 @@
       "currentGuidanceProvenance": [
         "official_dvcqg_content"
       ],
+      "directRateSource": null,
+      "directRates": [],
+      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -152,6 +182,7 @@
       "confidence": "high",
       "reason": "TTHC đăng ký hộ tịch; Nghị quyết nêu đích danh lệ phí hộ tịch.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": null,
       "promotionStatus": "candidate_only"
     },
     {
@@ -172,6 +203,9 @@
       "currentGuidanceProvenance": [
         "official_dvcqg_content"
       ],
+      "directRateSource": null,
+      "directRates": [],
+      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -182,6 +216,7 @@
       "confidence": "high",
       "reason": "TTHC đăng ký hộ tịch; Nghị quyết nêu đích danh lệ phí hộ tịch.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": null,
       "promotionStatus": "candidate_only"
     },
     {
@@ -205,6 +240,9 @@
       "currentGuidanceProvenance": [
         "official_dvcqg_content"
       ],
+      "directRateSource": null,
+      "directRates": [],
+      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -215,6 +253,7 @@
       "confidence": "high",
       "reason": "TTHC đăng ký hộ tịch; Nghị quyết nêu đích danh lệ phí hộ tịch.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": null,
       "promotionStatus": "candidate_only"
     },
     {
@@ -235,6 +274,9 @@
       "currentGuidanceProvenance": [
         "official_dvcqg_content"
       ],
+      "directRateSource": null,
+      "directRates": [],
+      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -245,6 +287,7 @@
       "confidence": "high",
       "reason": "TTHC đăng ký hộ tịch; Nghị quyết nêu đích danh lệ phí hộ tịch.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": null,
       "promotionStatus": "candidate_only"
     },
     {
@@ -268,6 +311,9 @@
       "currentGuidanceProvenance": [
         "official_dvcqg_content"
       ],
+      "directRateSource": null,
+      "directRates": [],
+      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -278,6 +324,7 @@
       "confidence": "high",
       "reason": "TTHC đăng ký hộ tịch; Nghị quyết nêu đích danh lệ phí hộ tịch.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": null,
       "promotionStatus": "candidate_only"
     },
     {
@@ -298,6 +345,9 @@
       "currentGuidanceProvenance": [
         "official_dvcqg_content"
       ],
+      "directRateSource": null,
+      "directRates": [],
+      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -308,6 +358,7 @@
       "confidence": "high",
       "reason": "TTHC đăng ký hộ tịch; Nghị quyết nêu đích danh lệ phí hộ tịch.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": null,
       "promotionStatus": "candidate_only"
     },
     {
@@ -328,6 +379,9 @@
       "currentGuidanceProvenance": [
         "official_dvcqg_content"
       ],
+      "directRateSource": null,
+      "directRates": [],
+      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -338,6 +392,7 @@
       "confidence": "high",
       "reason": "TTHC đăng ký hộ tịch; Nghị quyết nêu đích danh lệ phí hộ tịch.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": null,
       "promotionStatus": "candidate_only"
     },
     {
@@ -358,6 +413,9 @@
       "currentGuidanceProvenance": [
         "official_dvcqg_content"
       ],
+      "directRateSource": null,
+      "directRates": [],
+      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -368,6 +426,7 @@
       "confidence": "high",
       "reason": "TTHC đăng ký hộ tịch; Nghị quyết nêu đích danh lệ phí hộ tịch.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": null,
       "promotionStatus": "candidate_only"
     },
     {
@@ -388,6 +447,9 @@
       "currentGuidanceProvenance": [
         "official_dvcqg_content"
       ],
+      "directRateSource": null,
+      "directRates": [],
+      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -398,6 +460,7 @@
       "confidence": "high",
       "reason": "TTHC đăng ký hộ tịch; Nghị quyết nêu đích danh lệ phí hộ tịch.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": null,
       "promotionStatus": "candidate_only"
     },
     {
@@ -418,6 +481,9 @@
       "currentGuidanceProvenance": [
         "official_dvcqg_content"
       ],
+      "directRateSource": null,
+      "directRates": [],
+      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -428,6 +494,7 @@
       "confidence": "high",
       "reason": "TTHC đăng ký hộ tịch; Nghị quyết nêu đích danh lệ phí hộ tịch.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": null,
       "promotionStatus": "candidate_only"
     },
     {
@@ -448,6 +515,9 @@
       "currentGuidanceProvenance": [
         "official_dvcqg_content"
       ],
+      "directRateSource": null,
+      "directRates": [],
+      "directRateNote": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -458,6 +528,7 @@
       "confidence": "medium",
       "reason": "Khoản thu của TTHC này là phí cấp bản sao trích lục; hướng dẫn DVCQG của các TTHC hộ tịch ghi phí cấp bản sao thực hiện theo Thông tư 281/2016/TT-BTC, không phải lệ phí hộ tịch thuộc thẩm quyền HĐND thành phố. Cần xác minh trước khi kết luận.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": null,
       "promotionStatus": "candidate_only"
     },
     {
@@ -481,6 +552,9 @@
       "currentGuidanceProvenance": [
         "official_dvcqg_content"
       ],
+      "directRateSource": null,
+      "directRates": [],
+      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -491,6 +565,7 @@
       "confidence": "high",
       "reason": "TTHC đăng ký hộ tịch; Nghị quyết nêu đích danh lệ phí hộ tịch.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": null,
       "promotionStatus": "candidate_only"
     },
     {
@@ -511,6 +586,9 @@
       "currentGuidanceProvenance": [
         "official_dvcqg_content"
       ],
+      "directRateSource": null,
+      "directRates": [],
+      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -521,6 +599,7 @@
       "confidence": "high",
       "reason": "TTHC đăng ký hộ tịch; Nghị quyết nêu đích danh lệ phí hộ tịch.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": null,
       "promotionStatus": "candidate_only"
     },
     {
@@ -541,6 +620,9 @@
       "currentGuidanceProvenance": [
         "official_dvcqg_content"
       ],
+      "directRateSource": null,
+      "directRates": [],
+      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -552,6 +634,7 @@
       "confidence": "low",
       "reason": "TTHC không có kết quả cấp Giấy chứng nhận mới; chưa có nguồn xác nhận phát sinh lệ phí cấp GCN hoặc phí thẩm định.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": null,
       "promotionStatus": "candidate_only"
     },
     {
@@ -572,6 +655,9 @@
       "currentGuidanceProvenance": [
         "official_dvcqg_content"
       ],
+      "directRateSource": null,
+      "directRates": [],
+      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -583,6 +669,7 @@
       "confidence": "low",
       "reason": "TTHC không có kết quả cấp Giấy chứng nhận mới; chưa có nguồn xác nhận phát sinh lệ phí cấp GCN hoặc phí thẩm định.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": null,
       "promotionStatus": "candidate_only"
     },
     {
@@ -603,6 +690,50 @@
       "currentGuidanceProvenance": [
         "official_dvcqg_content"
       ],
+      "directRateSource": "34/2025/NQ-HĐND",
+      "directRates": [
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "canhan.lanDau",
+          "rates": {
+            "dat": 35000,
+            "taiSan": 35000,
+            "datVaTaiSan": 35000
+          }
+        },
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "tochuc.lanDau",
+          "rates": {
+            "dat": 40000,
+            "taiSan": 40000,
+            "datVaTaiSan": 45000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "canhan.lanDau",
+          "rates": {
+            "dat": 100000,
+            "taiSan": 100000,
+            "datVaTaiSan": 155000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "tochuc.lanDau",
+          "rates": {
+            "dat": 215000,
+            "taiSan": 215000,
+            "datVaTaiSan": 215000
+          }
+        }
+      ],
+      "directRateNote": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -614,6 +745,7 @@
       "confidence": "high",
       "reason": "Kết quả TTHC là cấp/cấp đổi/cấp lại Giấy chứng nhận.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": "ev_39e15a4f512b149ccc5aee30",
       "promotionStatus": "candidate_only"
     },
     {
@@ -628,6 +760,9 @@
       },
       "currentGuidanceLePhi": null,
       "currentGuidanceProvenance": null,
+      "directRateSource": null,
+      "directRates": [],
+      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -638,6 +773,7 @@
       "confidence": "low",
       "reason": "Thuộc lệ phí hộ tịch nhưng là đăng ký lưu động (cán bộ thực hiện tại nơi cư trú); khả năng nộp qua Cổng DVCQG/VNeID cần xác minh.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": null,
       "promotionStatus": "candidate_only"
     },
     {
@@ -652,6 +788,9 @@
       },
       "currentGuidanceLePhi": null,
       "currentGuidanceProvenance": null,
+      "directRateSource": null,
+      "directRates": [],
+      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
       "nq23Points": [
         "Điều 2 khoản 1 điểm a"
       ],
@@ -662,6 +801,7 @@
       "confidence": "low",
       "reason": "Thuộc lệ phí hộ tịch nhưng là đăng ký lưu động (cán bộ thực hiện tại nơi cư trú); khả năng nộp qua Cổng DVCQG/VNeID cần xác minh.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": null,
       "promotionStatus": "candidate_only"
     },
     {
@@ -676,6 +816,50 @@
       },
       "currentGuidanceLePhi": null,
       "currentGuidanceProvenance": null,
+      "directRateSource": "34/2025/NQ-HĐND",
+      "directRates": [
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "canhan.lanDau",
+          "rates": {
+            "dat": 35000,
+            "taiSan": 35000,
+            "datVaTaiSan": 35000
+          }
+        },
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "tochuc.lanDau",
+          "rates": {
+            "dat": 40000,
+            "taiSan": 40000,
+            "datVaTaiSan": 45000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "canhan.lanDau",
+          "rates": {
+            "dat": 100000,
+            "taiSan": 100000,
+            "datVaTaiSan": 155000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "tochuc.lanDau",
+          "rates": {
+            "dat": 215000,
+            "taiSan": 215000,
+            "datVaTaiSan": 215000
+          }
+        }
+      ],
+      "directRateNote": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -687,6 +871,7 @@
       "confidence": "high",
       "reason": "Kết quả TTHC là cấp/cấp đổi/cấp lại Giấy chứng nhận.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": "ev_39e15a4f512b149ccc5aee30",
       "promotionStatus": "candidate_only"
     },
     {
@@ -701,6 +886,9 @@
       },
       "currentGuidanceLePhi": null,
       "currentGuidanceProvenance": null,
+      "directRateSource": null,
+      "directRates": [],
+      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -712,6 +900,7 @@
       "confidence": "low",
       "reason": "TTHC liên quan Giấy chứng nhận nhưng chưa có nguồn xác nhận phát sinh lệ phí cấp GCN hoặc phí thẩm định.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": null,
       "promotionStatus": "candidate_only"
     },
     {
@@ -726,6 +915,50 @@
       },
       "currentGuidanceLePhi": null,
       "currentGuidanceProvenance": null,
+      "directRateSource": "34/2025/NQ-HĐND",
+      "directRates": [
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "canhan.lanDau",
+          "rates": {
+            "dat": 35000,
+            "taiSan": 35000,
+            "datVaTaiSan": 35000
+          }
+        },
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "tochuc.lanDau",
+          "rates": {
+            "dat": 40000,
+            "taiSan": 40000,
+            "datVaTaiSan": 45000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "canhan.lanDau",
+          "rates": {
+            "dat": 100000,
+            "taiSan": 100000,
+            "datVaTaiSan": 155000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "tochuc.lanDau",
+          "rates": {
+            "dat": 215000,
+            "taiSan": 215000,
+            "datVaTaiSan": 215000
+          }
+        }
+      ],
+      "directRateNote": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -737,6 +970,7 @@
       "confidence": "high",
       "reason": "Kết quả TTHC là cấp/cấp đổi/cấp lại Giấy chứng nhận.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": "ev_39e15a4f512b149ccc5aee30",
       "promotionStatus": "candidate_only"
     },
     {
@@ -751,6 +985,50 @@
       },
       "currentGuidanceLePhi": null,
       "currentGuidanceProvenance": null,
+      "directRateSource": "34/2025/NQ-HĐND",
+      "directRates": [
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "canhan.lanDau",
+          "rates": {
+            "dat": 35000,
+            "taiSan": 35000,
+            "datVaTaiSan": 35000
+          }
+        },
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "tochuc.lanDau",
+          "rates": {
+            "dat": 40000,
+            "taiSan": 40000,
+            "datVaTaiSan": 45000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "canhan.lanDau",
+          "rates": {
+            "dat": 100000,
+            "taiSan": 100000,
+            "datVaTaiSan": 155000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "tochuc.lanDau",
+          "rates": {
+            "dat": 215000,
+            "taiSan": 215000,
+            "datVaTaiSan": 215000
+          }
+        }
+      ],
+      "directRateNote": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -762,6 +1040,7 @@
       "confidence": "high",
       "reason": "Kết quả TTHC là cấp/cấp đổi/cấp lại Giấy chứng nhận.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": "ev_39e15a4f512b149ccc5aee30",
       "promotionStatus": "candidate_only"
     },
     {
@@ -776,6 +1055,50 @@
       },
       "currentGuidanceLePhi": null,
       "currentGuidanceProvenance": null,
+      "directRateSource": "34/2025/NQ-HĐND",
+      "directRates": [
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "canhan.capDoiCapLai",
+          "rates": {
+            "dat": 25000,
+            "taiSan": 25000,
+            "datVaTaiSan": 30000
+          }
+        },
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "tochuc.capDoiCapLai",
+          "rates": {
+            "dat": 30000,
+            "taiSan": 30000,
+            "datVaTaiSan": 35000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "canhan.capDoiCapLai",
+          "rates": {
+            "dat": 100000,
+            "taiSan": 100000,
+            "datVaTaiSan": 115000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "tochuc.capDoiCapLai",
+          "rates": {
+            "dat": 155000,
+            "taiSan": 155000,
+            "datVaTaiSan": 175000
+          }
+        }
+      ],
+      "directRateNote": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -787,6 +1110,7 @@
       "confidence": "high",
       "reason": "Kết quả TTHC là cấp/cấp đổi/cấp lại Giấy chứng nhận.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": "ev_39e15a4f512b149ccc5aee30",
       "promotionStatus": "candidate_only"
     },
     {
@@ -801,6 +1125,50 @@
       },
       "currentGuidanceLePhi": null,
       "currentGuidanceProvenance": null,
+      "directRateSource": "34/2025/NQ-HĐND",
+      "directRates": [
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "canhan.lanDau",
+          "rates": {
+            "dat": 35000,
+            "taiSan": 35000,
+            "datVaTaiSan": 35000
+          }
+        },
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "tochuc.lanDau",
+          "rates": {
+            "dat": 40000,
+            "taiSan": 40000,
+            "datVaTaiSan": 45000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "canhan.lanDau",
+          "rates": {
+            "dat": 100000,
+            "taiSan": 100000,
+            "datVaTaiSan": 155000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "tochuc.lanDau",
+          "rates": {
+            "dat": 215000,
+            "taiSan": 215000,
+            "datVaTaiSan": 215000
+          }
+        }
+      ],
+      "directRateNote": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -812,6 +1180,7 @@
       "confidence": "high",
       "reason": "Kết quả TTHC là cấp/cấp đổi/cấp lại Giấy chứng nhận.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": "ev_39e15a4f512b149ccc5aee30",
       "promotionStatus": "candidate_only"
     },
     {
@@ -826,6 +1195,50 @@
       },
       "currentGuidanceLePhi": null,
       "currentGuidanceProvenance": null,
+      "directRateSource": "34/2025/NQ-HĐND",
+      "directRates": [
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "canhan.capDoiCapLai",
+          "rates": {
+            "dat": 25000,
+            "taiSan": 25000,
+            "datVaTaiSan": 30000
+          }
+        },
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "tochuc.capDoiCapLai",
+          "rates": {
+            "dat": 30000,
+            "taiSan": 30000,
+            "datVaTaiSan": 35000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "canhan.capDoiCapLai",
+          "rates": {
+            "dat": 100000,
+            "taiSan": 100000,
+            "datVaTaiSan": 115000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "tochuc.capDoiCapLai",
+          "rates": {
+            "dat": 155000,
+            "taiSan": 155000,
+            "datVaTaiSan": 175000
+          }
+        }
+      ],
+      "directRateNote": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -837,6 +1250,7 @@
       "confidence": "high",
       "reason": "Kết quả TTHC là cấp/cấp đổi/cấp lại Giấy chứng nhận.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": "ev_39e15a4f512b149ccc5aee30",
       "promotionStatus": "candidate_only"
     },
     {
@@ -851,6 +1265,50 @@
       },
       "currentGuidanceLePhi": null,
       "currentGuidanceProvenance": null,
+      "directRateSource": "34/2025/NQ-HĐND",
+      "directRates": [
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "canhan.lanDau",
+          "rates": {
+            "dat": 35000,
+            "taiSan": 35000,
+            "datVaTaiSan": 35000
+          }
+        },
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "tochuc.lanDau",
+          "rates": {
+            "dat": 40000,
+            "taiSan": 40000,
+            "datVaTaiSan": 45000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "canhan.lanDau",
+          "rates": {
+            "dat": 100000,
+            "taiSan": 100000,
+            "datVaTaiSan": 155000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "tochuc.lanDau",
+          "rates": {
+            "dat": 215000,
+            "taiSan": 215000,
+            "datVaTaiSan": 215000
+          }
+        }
+      ],
+      "directRateNote": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -862,6 +1320,7 @@
       "confidence": "high",
       "reason": "Kết quả TTHC là cấp/cấp đổi/cấp lại Giấy chứng nhận.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": "ev_39e15a4f512b149ccc5aee30",
       "promotionStatus": "candidate_only"
     },
     {
@@ -876,6 +1335,9 @@
       },
       "currentGuidanceLePhi": null,
       "currentGuidanceProvenance": null,
+      "directRateSource": null,
+      "directRates": [],
+      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -887,6 +1349,7 @@
       "confidence": "low",
       "reason": "TTHC không có kết quả cấp Giấy chứng nhận mới; chưa có nguồn xác nhận phát sinh lệ phí cấp GCN hoặc phí thẩm định.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": null,
       "promotionStatus": "candidate_only"
     },
     {
@@ -901,6 +1364,9 @@
       },
       "currentGuidanceLePhi": null,
       "currentGuidanceProvenance": null,
+      "directRateSource": null,
+      "directRates": [],
+      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -912,6 +1378,7 @@
       "confidence": "low",
       "reason": "TTHC không có kết quả cấp Giấy chứng nhận mới; chưa có nguồn xác nhận phát sinh lệ phí cấp GCN hoặc phí thẩm định.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": null,
       "promotionStatus": "candidate_only"
     },
     {
@@ -926,17 +1393,62 @@
       },
       "currentGuidanceLePhi": null,
       "currentGuidanceProvenance": null,
+      "directRateSource": "34/2025/NQ-HĐND",
+      "directRates": [
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "canhan.bienDong",
+          "rates": {
+            "dat": 25000,
+            "taiSan": 25000,
+            "datVaTaiSan": 30000
+          }
+        },
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "tochuc.bienDong",
+          "rates": {
+            "dat": 30000,
+            "taiSan": 30000,
+            "datVaTaiSan": 35000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "canhan.bienDong",
+          "rates": {
+            "dat": 125000,
+            "taiSan": 155000,
+            "datVaTaiSan": 170000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "tochuc.bienDong",
+          "rates": {
+            "dat": 290000,
+            "taiSan": 290000,
+            "datVaTaiSan": 355000
+          }
+        }
+      ],
+      "directRateNote": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
       ],
-      "applicability": "applies_if_fee_arises",
+      "applicability": "applies",
       "proposedOnlineFee": "0 đồng",
       "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
       "effectiveFrom": "2026-08-08",
-      "confidence": "medium",
-      "reason": "Đăng ký biến động/đăng ký tài sản: chỉ áp dụng khi hồ sơ có cấp Giấy chứng nhận mới và phát sinh lệ phí cấp GCN/phí thẩm định.",
+      "confidence": "high",
+      "reason": "NQ 34/2025/NQ-HĐND Điều 1 khoản 1 điểm b và Phụ lục I, II (mục 3) thu lệ phí cấp GCN và phí thẩm định cả với đăng ký biến động trên GCN đã cấp.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": "ev_39e15a4f512b149ccc5aee30",
       "promotionStatus": "candidate_only"
     },
     {
@@ -951,6 +1463,9 @@
       },
       "currentGuidanceLePhi": null,
       "currentGuidanceProvenance": null,
+      "directRateSource": null,
+      "directRates": [],
+      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -962,6 +1477,7 @@
       "confidence": "low",
       "reason": "TTHC không có kết quả cấp Giấy chứng nhận mới; chưa có nguồn xác nhận phát sinh lệ phí cấp GCN hoặc phí thẩm định.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": null,
       "promotionStatus": "candidate_only"
     },
     {
@@ -976,17 +1492,62 @@
       },
       "currentGuidanceLePhi": null,
       "currentGuidanceProvenance": null,
+      "directRateSource": "34/2025/NQ-HĐND",
+      "directRates": [
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "canhan.bienDong",
+          "rates": {
+            "dat": 25000,
+            "taiSan": 25000,
+            "datVaTaiSan": 30000
+          }
+        },
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "tochuc.bienDong",
+          "rates": {
+            "dat": 30000,
+            "taiSan": 30000,
+            "datVaTaiSan": 35000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "canhan.bienDong",
+          "rates": {
+            "dat": 125000,
+            "taiSan": 155000,
+            "datVaTaiSan": 170000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "tochuc.bienDong",
+          "rates": {
+            "dat": 290000,
+            "taiSan": 290000,
+            "datVaTaiSan": 355000
+          }
+        }
+      ],
+      "directRateNote": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
       ],
-      "applicability": "applies_if_fee_arises",
+      "applicability": "applies",
       "proposedOnlineFee": "0 đồng",
       "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
       "effectiveFrom": "2026-08-08",
-      "confidence": "medium",
-      "reason": "Đăng ký biến động/đăng ký tài sản: chỉ áp dụng khi hồ sơ có cấp Giấy chứng nhận mới và phát sinh lệ phí cấp GCN/phí thẩm định.",
+      "confidence": "high",
+      "reason": "NQ 34/2025/NQ-HĐND Điều 1 khoản 1 điểm b và Phụ lục I, II (mục 3) thu lệ phí cấp GCN và phí thẩm định cả với đăng ký biến động trên GCN đã cấp.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": "ev_39e15a4f512b149ccc5aee30",
       "promotionStatus": "candidate_only"
     },
     {
@@ -1001,17 +1562,62 @@
       },
       "currentGuidanceLePhi": null,
       "currentGuidanceProvenance": null,
+      "directRateSource": "34/2025/NQ-HĐND",
+      "directRates": [
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "canhan.bienDong",
+          "rates": {
+            "dat": 25000,
+            "taiSan": 25000,
+            "datVaTaiSan": 30000
+          }
+        },
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "tochuc.bienDong",
+          "rates": {
+            "dat": 30000,
+            "taiSan": 30000,
+            "datVaTaiSan": 35000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "canhan.bienDong",
+          "rates": {
+            "dat": 125000,
+            "taiSan": 155000,
+            "datVaTaiSan": 170000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "tochuc.bienDong",
+          "rates": {
+            "dat": 290000,
+            "taiSan": 290000,
+            "datVaTaiSan": 355000
+          }
+        }
+      ],
+      "directRateNote": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
       ],
-      "applicability": "applies_if_fee_arises",
+      "applicability": "applies",
       "proposedOnlineFee": "0 đồng",
       "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
       "effectiveFrom": "2026-08-08",
-      "confidence": "medium",
-      "reason": "Đăng ký biến động/đăng ký tài sản: chỉ áp dụng khi hồ sơ có cấp Giấy chứng nhận mới và phát sinh lệ phí cấp GCN/phí thẩm định.",
+      "confidence": "high",
+      "reason": "NQ 34/2025/NQ-HĐND Điều 1 khoản 1 điểm b và Phụ lục I, II (mục 3) thu lệ phí cấp GCN và phí thẩm định cả với đăng ký biến động trên GCN đã cấp.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": "ev_39e15a4f512b149ccc5aee30",
       "promotionStatus": "candidate_only"
     },
     {
@@ -1026,17 +1632,62 @@
       },
       "currentGuidanceLePhi": null,
       "currentGuidanceProvenance": null,
+      "directRateSource": "34/2025/NQ-HĐND",
+      "directRates": [
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "canhan.bienDong",
+          "rates": {
+            "dat": 25000,
+            "taiSan": 25000,
+            "datVaTaiSan": 30000
+          }
+        },
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "tochuc.bienDong",
+          "rates": {
+            "dat": 30000,
+            "taiSan": 30000,
+            "datVaTaiSan": 35000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "canhan.bienDong",
+          "rates": {
+            "dat": 125000,
+            "taiSan": 155000,
+            "datVaTaiSan": 170000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "tochuc.bienDong",
+          "rates": {
+            "dat": 290000,
+            "taiSan": 290000,
+            "datVaTaiSan": 355000
+          }
+        }
+      ],
+      "directRateNote": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
       ],
-      "applicability": "applies_if_fee_arises",
+      "applicability": "applies",
       "proposedOnlineFee": "0 đồng",
       "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
       "effectiveFrom": "2026-08-08",
-      "confidence": "medium",
-      "reason": "Đăng ký biến động/đăng ký tài sản: chỉ áp dụng khi hồ sơ có cấp Giấy chứng nhận mới và phát sinh lệ phí cấp GCN/phí thẩm định.",
+      "confidence": "high",
+      "reason": "NQ 34/2025/NQ-HĐND Điều 1 khoản 1 điểm b và Phụ lục I, II (mục 3) thu lệ phí cấp GCN và phí thẩm định cả với đăng ký biến động trên GCN đã cấp.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": "ev_39e15a4f512b149ccc5aee30",
       "promotionStatus": "candidate_only"
     },
     {
@@ -1051,17 +1702,21 @@
       },
       "currentGuidanceLePhi": null,
       "currentGuidanceProvenance": null,
+      "directRateSource": null,
+      "directRates": [],
+      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
       ],
-      "applicability": "applies_if_fee_arises",
+      "applicability": "already_exempt",
       "proposedOnlineFee": "0 đồng",
       "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
       "effectiveFrom": "2026-08-08",
-      "confidence": "low",
-      "reason": "TTHC không có kết quả cấp Giấy chứng nhận mới; chưa có nguồn xác nhận phát sinh lệ phí cấp GCN hoặc phí thẩm định.",
+      "confidence": "high",
+      "reason": "NQ 34/2025/NQ-HĐND Phụ lục I, II mục 2 điểm b miễn lệ phí cấp GCN và phí thẩm định khi đăng ký biến động do tặng cho QSDĐ cho Nhà nước/cộng đồng; mức trực tuyến 0 đồng không làm thay đổi.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": null,
       "promotionStatus": "candidate_only"
     },
     {
@@ -1076,17 +1731,62 @@
       },
       "currentGuidanceLePhi": null,
       "currentGuidanceProvenance": null,
+      "directRateSource": "34/2025/NQ-HĐND",
+      "directRates": [
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "canhan.bienDong",
+          "rates": {
+            "dat": 25000,
+            "taiSan": 25000,
+            "datVaTaiSan": 30000
+          }
+        },
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "tochuc.bienDong",
+          "rates": {
+            "dat": 30000,
+            "taiSan": 30000,
+            "datVaTaiSan": 35000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "canhan.bienDong",
+          "rates": {
+            "dat": 125000,
+            "taiSan": 155000,
+            "datVaTaiSan": 170000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "tochuc.bienDong",
+          "rates": {
+            "dat": 290000,
+            "taiSan": 290000,
+            "datVaTaiSan": 355000
+          }
+        }
+      ],
+      "directRateNote": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
       ],
-      "applicability": "applies_if_fee_arises",
+      "applicability": "applies",
       "proposedOnlineFee": "0 đồng",
       "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
       "effectiveFrom": "2026-08-08",
-      "confidence": "medium",
-      "reason": "Đăng ký biến động/đăng ký tài sản: chỉ áp dụng khi hồ sơ có cấp Giấy chứng nhận mới và phát sinh lệ phí cấp GCN/phí thẩm định.",
+      "confidence": "high",
+      "reason": "NQ 34/2025/NQ-HĐND Điều 1 khoản 1 điểm b và Phụ lục I, II (mục 3) thu lệ phí cấp GCN và phí thẩm định cả với đăng ký biến động trên GCN đã cấp.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": "ev_39e15a4f512b149ccc5aee30",
       "promotionStatus": "candidate_only"
     },
     {
@@ -1101,6 +1801,9 @@
       },
       "currentGuidanceLePhi": null,
       "currentGuidanceProvenance": null,
+      "directRateSource": null,
+      "directRates": [],
+      "directRateNote": "[cần bổ sung] mức thu trực tiếp chưa có evidence",
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -1112,6 +1815,7 @@
       "confidence": "low",
       "reason": "TTHC không có kết quả cấp Giấy chứng nhận mới; chưa có nguồn xác nhận phát sinh lệ phí cấp GCN hoặc phí thẩm định.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": null,
       "promotionStatus": "candidate_only"
     },
     {
@@ -1126,17 +1830,62 @@
       },
       "currentGuidanceLePhi": null,
       "currentGuidanceProvenance": null,
+      "directRateSource": "34/2025/NQ-HĐND",
+      "directRates": [
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "canhan.bienDong",
+          "rates": {
+            "dat": 25000,
+            "taiSan": 25000,
+            "datVaTaiSan": 30000
+          }
+        },
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "tochuc.bienDong",
+          "rates": {
+            "dat": 30000,
+            "taiSan": 30000,
+            "datVaTaiSan": 35000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "canhan.bienDong",
+          "rates": {
+            "dat": 125000,
+            "taiSan": 155000,
+            "datVaTaiSan": 170000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "tochuc.bienDong",
+          "rates": {
+            "dat": 290000,
+            "taiSan": 290000,
+            "datVaTaiSan": 355000
+          }
+        }
+      ],
+      "directRateNote": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
       ],
-      "applicability": "applies_if_fee_arises",
+      "applicability": "applies",
       "proposedOnlineFee": "0 đồng",
       "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
       "effectiveFrom": "2026-08-08",
-      "confidence": "medium",
-      "reason": "Đăng ký biến động/đăng ký tài sản: chỉ áp dụng khi hồ sơ có cấp Giấy chứng nhận mới và phát sinh lệ phí cấp GCN/phí thẩm định.",
+      "confidence": "high",
+      "reason": "NQ 34/2025/NQ-HĐND Điều 1 khoản 1 điểm b và Phụ lục I, II (mục 3) thu lệ phí cấp GCN và phí thẩm định cả với đăng ký biến động trên GCN đã cấp.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": "ev_39e15a4f512b149ccc5aee30",
       "promotionStatus": "candidate_only"
     },
     {
@@ -1151,6 +1900,50 @@
       },
       "currentGuidanceLePhi": null,
       "currentGuidanceProvenance": null,
+      "directRateSource": "34/2025/NQ-HĐND",
+      "directRates": [
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "canhan.lanDau",
+          "rates": {
+            "dat": 35000,
+            "taiSan": 35000,
+            "datVaTaiSan": 35000
+          }
+        },
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "tochuc.lanDau",
+          "rates": {
+            "dat": 40000,
+            "taiSan": 40000,
+            "datVaTaiSan": 45000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "canhan.lanDau",
+          "rates": {
+            "dat": 100000,
+            "taiSan": 100000,
+            "datVaTaiSan": 155000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "tochuc.lanDau",
+          "rates": {
+            "dat": 215000,
+            "taiSan": 215000,
+            "datVaTaiSan": 215000
+          }
+        }
+      ],
+      "directRateNote": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -1162,6 +1955,7 @@
       "confidence": "high",
       "reason": "Kết quả TTHC là cấp/cấp đổi/cấp lại Giấy chứng nhận.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": "ev_39e15a4f512b149ccc5aee30",
       "promotionStatus": "candidate_only"
     },
     {
@@ -1176,6 +1970,50 @@
       },
       "currentGuidanceLePhi": null,
       "currentGuidanceProvenance": null,
+      "directRateSource": "34/2025/NQ-HĐND",
+      "directRates": [
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "canhan.lanDau",
+          "rates": {
+            "dat": 35000,
+            "taiSan": 35000,
+            "datVaTaiSan": 35000
+          }
+        },
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "tochuc.lanDau",
+          "rates": {
+            "dat": 40000,
+            "taiSan": 40000,
+            "datVaTaiSan": 45000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "canhan.lanDau",
+          "rates": {
+            "dat": 100000,
+            "taiSan": 100000,
+            "datVaTaiSan": 155000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "tochuc.lanDau",
+          "rates": {
+            "dat": 215000,
+            "taiSan": 215000,
+            "datVaTaiSan": 215000
+          }
+        }
+      ],
+      "directRateNote": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
@@ -1187,6 +2025,7 @@
       "confidence": "high",
       "reason": "Kết quả TTHC là cấp/cấp đổi/cấp lại Giấy chứng nhận.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": "ev_39e15a4f512b149ccc5aee30",
       "promotionStatus": "candidate_only"
     },
     {
@@ -1201,17 +2040,62 @@
       },
       "currentGuidanceLePhi": null,
       "currentGuidanceProvenance": null,
+      "directRateSource": "34/2025/NQ-HĐND",
+      "directRates": [
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "canhan.bienDong",
+          "rates": {
+            "dat": 25000,
+            "taiSan": 25000,
+            "datVaTaiSan": 30000
+          }
+        },
+        {
+          "table": "PL1",
+          "name": "Lệ phí cấp giấy chứng nhận",
+          "row": "tochuc.bienDong",
+          "rates": {
+            "dat": 30000,
+            "taiSan": 30000,
+            "datVaTaiSan": 35000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "canhan.bienDong",
+          "rates": {
+            "dat": 125000,
+            "taiSan": 155000,
+            "datVaTaiSan": 170000
+          }
+        },
+        {
+          "table": "PL2",
+          "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+          "row": "tochuc.bienDong",
+          "rates": {
+            "dat": 290000,
+            "taiSan": 290000,
+            "datVaTaiSan": 355000
+          }
+        }
+      ],
+      "directRateNote": null,
       "nq23Points": [
         "Điều 2 khoản 1 điểm c",
         "Điều 2 khoản 2 điểm b"
       ],
-      "applicability": "applies_if_fee_arises",
+      "applicability": "applies",
       "proposedOnlineFee": "0 đồng",
       "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
       "effectiveFrom": "2026-08-08",
-      "confidence": "medium",
-      "reason": "Đăng ký biến động/đăng ký tài sản: chỉ áp dụng khi hồ sơ có cấp Giấy chứng nhận mới và phát sinh lệ phí cấp GCN/phí thẩm định.",
+      "confidence": "high",
+      "reason": "NQ 34/2025/NQ-HĐND Điều 1 khoản 1 điểm b và Phụ lục I, II (mục 3) thu lệ phí cấp GCN và phí thẩm định cả với đăng ký biến động trên GCN đã cấp.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": "ev_39e15a4f512b149ccc5aee30",
       "promotionStatus": "candidate_only"
     },
     {
@@ -1226,6 +2110,30 @@
       },
       "currentGuidanceLePhi": null,
       "currentGuidanceProvenance": null,
+      "directRateSource": "34/2025/NQ-HĐND",
+      "directRates": [
+        {
+          "table": "PL3",
+          "name": "Phí đăng ký giao dịch bảo đảm",
+          "row": "canhan.dangKy.trucTiep",
+          "rates": {
+            "dat": 120000,
+            "taiSan": 150000,
+            "datVaTaiSan": 180000
+          }
+        },
+        {
+          "table": "PL3",
+          "name": "Phí đăng ký giao dịch bảo đảm",
+          "row": "tochuc.dangKy.trucTiep",
+          "rates": {
+            "dat": 280000,
+            "taiSan": 280000,
+            "datVaTaiSan": 350000
+          }
+        }
+      ],
+      "directRateNote": null,
       "nq23Points": [
         "Điều 2 khoản 2 điểm a"
       ],
@@ -1233,9 +2141,10 @@
       "proposedOnlineFee": "0 đồng",
       "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
       "effectiveFrom": "2026-08-08",
-      "confidence": "medium",
-      "reason": "TTHC đăng ký biện pháp bảo đảm; Nghị quyết dùng tên gọi 'phí đăng ký giao dịch bảo đảm' — cần đối chiếu tên khoản phí trên hệ thống Một cửa.",
+      "confidence": "high",
+      "reason": "NQ 34/2025/NQ-HĐND Phụ lục III xác định các thủ tục đăng ký/thay đổi/xóa/chuyển tiếp biện pháp bảo đảm bằng QSDĐ thuộc 'phí đăng ký giao dịch bảo đảm'.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": "ev_39e15a4f512b149ccc5aee30",
       "promotionStatus": "candidate_only"
     },
     {
@@ -1250,6 +2159,30 @@
       },
       "currentGuidanceLePhi": null,
       "currentGuidanceProvenance": null,
+      "directRateSource": "34/2025/NQ-HĐND",
+      "directRates": [
+        {
+          "table": "PL3",
+          "name": "Phí đăng ký giao dịch bảo đảm",
+          "row": "canhan.thayDoi.trucTiep",
+          "rates": {
+            "dat": 120000,
+            "taiSan": 150000,
+            "datVaTaiSan": 180000
+          }
+        },
+        {
+          "table": "PL3",
+          "name": "Phí đăng ký giao dịch bảo đảm",
+          "row": "tochuc.thayDoi.trucTiep",
+          "rates": {
+            "dat": 280000,
+            "taiSan": 280000,
+            "datVaTaiSan": 350000
+          }
+        }
+      ],
+      "directRateNote": null,
       "nq23Points": [
         "Điều 2 khoản 2 điểm a"
       ],
@@ -1257,9 +2190,10 @@
       "proposedOnlineFee": "0 đồng",
       "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
       "effectiveFrom": "2026-08-08",
-      "confidence": "medium",
-      "reason": "TTHC đăng ký biện pháp bảo đảm; Nghị quyết dùng tên gọi 'phí đăng ký giao dịch bảo đảm' — cần đối chiếu tên khoản phí trên hệ thống Một cửa.",
+      "confidence": "high",
+      "reason": "NQ 34/2025/NQ-HĐND Phụ lục III xác định các thủ tục đăng ký/thay đổi/xóa/chuyển tiếp biện pháp bảo đảm bằng QSDĐ thuộc 'phí đăng ký giao dịch bảo đảm'.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": "ev_39e15a4f512b149ccc5aee30",
       "promotionStatus": "candidate_only"
     },
     {
@@ -1274,6 +2208,30 @@
       },
       "currentGuidanceLePhi": null,
       "currentGuidanceProvenance": null,
+      "directRateSource": "34/2025/NQ-HĐND",
+      "directRates": [
+        {
+          "table": "PL3",
+          "name": "Phí đăng ký giao dịch bảo đảm",
+          "row": "canhan.xoa.trucTiep",
+          "rates": {
+            "dat": 120000,
+            "taiSan": 145000,
+            "datVaTaiSan": 175000
+          }
+        },
+        {
+          "table": "PL3",
+          "name": "Phí đăng ký giao dịch bảo đảm",
+          "row": "tochuc.xoa.trucTiep",
+          "rates": {
+            "dat": 280000,
+            "taiSan": 280000,
+            "datVaTaiSan": 350000
+          }
+        }
+      ],
+      "directRateNote": null,
       "nq23Points": [
         "Điều 2 khoản 2 điểm a"
       ],
@@ -1281,9 +2239,10 @@
       "proposedOnlineFee": "0 đồng",
       "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
       "effectiveFrom": "2026-08-08",
-      "confidence": "medium",
-      "reason": "TTHC đăng ký biện pháp bảo đảm; Nghị quyết dùng tên gọi 'phí đăng ký giao dịch bảo đảm' — cần đối chiếu tên khoản phí trên hệ thống Một cửa.",
+      "confidence": "high",
+      "reason": "NQ 34/2025/NQ-HĐND Phụ lục III xác định các thủ tục đăng ký/thay đổi/xóa/chuyển tiếp biện pháp bảo đảm bằng QSDĐ thuộc 'phí đăng ký giao dịch bảo đảm'.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": "ev_39e15a4f512b149ccc5aee30",
       "promotionStatus": "candidate_only"
     },
     {
@@ -1298,6 +2257,30 @@
       },
       "currentGuidanceLePhi": null,
       "currentGuidanceProvenance": null,
+      "directRateSource": "34/2025/NQ-HĐND",
+      "directRates": [
+        {
+          "table": "PL3",
+          "name": "Phí đăng ký giao dịch bảo đảm",
+          "row": "canhan.chuyenTiep.trucTiep",
+          "rates": {
+            "dat": null,
+            "taiSan": 150000,
+            "datVaTaiSan": null
+          }
+        },
+        {
+          "table": "PL3",
+          "name": "Phí đăng ký giao dịch bảo đảm",
+          "row": "tochuc.chuyenTiep.trucTiep",
+          "rates": {
+            "dat": null,
+            "taiSan": 280000,
+            "datVaTaiSan": null
+          }
+        }
+      ],
+      "directRateNote": null,
       "nq23Points": [
         "Điều 2 khoản 2 điểm a"
       ],
@@ -1305,9 +2288,10 @@
       "proposedOnlineFee": "0 đồng",
       "proposedOnlineFeeCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
       "effectiveFrom": "2026-08-08",
-      "confidence": "medium",
-      "reason": "TTHC đăng ký biện pháp bảo đảm; Nghị quyết dùng tên gọi 'phí đăng ký giao dịch bảo đảm' — cần đối chiếu tên khoản phí trên hệ thống Một cửa.",
+      "confidence": "high",
+      "reason": "NQ 34/2025/NQ-HĐND Phụ lục III xác định các thủ tục đăng ký/thay đổi/xóa/chuyển tiếp biện pháp bảo đảm bằng QSDĐ thuộc 'phí đăng ký giao dịch bảo đảm'.",
       "evidenceId": "ev_41578ef2889bc260743e5dfa",
+      "directRateEvidenceId": "ev_39e15a4f512b149ccc5aee30",
       "promotionStatus": "candidate_only"
     }
   ]

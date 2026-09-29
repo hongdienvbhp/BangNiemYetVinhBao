@@ -7,10 +7,10 @@
 | ☐ | Nhóm TTHC (mã) | Khoản thu phải = 0 đồng khi nộp trực tuyến | Đơn vị thu cần kiểm tra |
 |---|---|---|---|
 | ☐ | **Hộ tịch** (17 TTHC, 15 thuộc 51 trọng điểm): 1.000656, 1.000689, 1.000894, 1.001193, 1.004746, 1.004772, 1.004837, 1.004859, 1.004873, 1.004884, 1.005461, 2.000528, 2.000806, 2.002189; lưu động: 1.000419, 1.000593, 1.003583 | Lệ phí hộ tịch (Điều 2.1.a) | UBND xã |
-| ☐ | **Cấp/cấp đổi/cấp lại GCN** (Cao): 1.012753, 1.012781, 1.012782, 1.012783, 1.012785, 1.012786, 1.012787, 1.013978, 1.013993, 1.013994 | Lệ phí cấp GCN (2.1.c) + phí thẩm định hồ sơ cấp GCN (2.2.b) | Chi nhánh VPĐK đất đai (xã tiếp nhận) |
-| ☐ | **Đăng ký biến động có cấp GCN mới** (Trung bình): 1.012793, 1.013831, 1.013833, 1.013977, 1.013980, 1.013992, 1.013995 | Như trên, chỉ khi có cấp GCN | Chi nhánh VPĐK đất đai |
-| ☐ | **Biện pháp bảo đảm**: 1.011441, 1.011442, 1.011443, 1.011445 | Phí đăng ký giao dịch bảo đảm (2.2.a) – đối chiếu đúng tên khoản phí | Chi nhánh VPĐK đất đai |
-| ☐ | **Không đổi**: 2.000635 (cấp bản sao trích lục – 8.000 đ) | Là phí cấp bản sao, không phải lệ phí hộ tịch → **giữ nguyên, chờ xác minh** | UBND xã |
+| ☐ | **Cấp/cấp đổi/cấp lại GCN** (Cao): 1.012753, 1.012781, 1.012782, 1.012783, 1.012785, 1.012786, 1.012787, 1.013978, 1.013993, 1.013994 | Lệ phí cấp GCN (2.1.c) + phí thẩm định hồ sơ cấp GCN (2.2.b). Mức trực tiếp cá nhân theo NQ 34/2025: lần đầu 35.000 + 100.000–155.000 đ; cấp đổi/lại 25.000–30.000 + 100.000–115.000 đ | Cơ quan tiếp nhận hồ sơ (NQ 34/2025 Điều 4) |
+| ☐ | **Đăng ký biến động** (Cao): 1.012793, 1.013831, 1.013833, 1.013977, 1.013980, 1.013992, 1.013995 | Như trên (NQ 34/2025 thu cả khi đăng ký biến động). Mức trực tiếp cá nhân: 25.000–30.000 + 125.000–170.000 đ | Cơ quan tiếp nhận hồ sơ |
+| ☐ | **Biện pháp bảo đảm** (Cao): 1.011441, 1.011442, 1.011443, 1.011445 | Phí đăng ký giao dịch bảo đảm (2.2.a). **Lưu ý:** hệ thống có thể đang cài mức "trực tuyến" của NQ 34/2025 (cá nhân 115.000–175.000 đ) → phải là 0 đồng từ 08/8/2026, chờ Sở Tài chính xác nhận | Cơ quan tiếp nhận hồ sơ |
+| ☐ | **Không đổi**: 1.013979 (tặng cho QSDĐ – đã miễn theo NQ 34/2025); 2.000635 (cấp bản sao trích lục – 8.000 đ) | Là phí cấp bản sao, không phải lệ phí hộ tịch → **giữ nguyên, chờ xác minh** | UBND xã |
 
 Với mỗi TTHC: ☐ mở cấu hình phí/lệ phí của TTHC trên Một cửa VNPT [tên menu theo tài liệu VNPT: cần bổ sung] → ☐ kênh "trực tuyến" = 0 đồng, kênh "trực tiếp" giữ nguyên → ☐ ngày áp dụng 08/8/2026 → ☐ nộp thử 1 hồ sơ trên DVCQG, kiểm tra màn hình thanh toán hiển thị 0 đồng → ☐ ghi người kiểm tra, ngày.
 
