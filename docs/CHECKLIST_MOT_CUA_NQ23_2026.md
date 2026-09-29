@@ -2,12 +2,14 @@
 
 **Căn cứ:** Nghị quyết 23/2026/NQ-HĐND của HĐND TP Hải Phòng, **hiệu lực từ 08/8/2026**, không quy định thời hạn áp dụng. Hồ sơ **nộp trực tuyến qua Cổng DVCQG hoặc VNeID** → mức thu **0 đồng** với 11 khoản (Điều 2). Hồ sơ nộp trực tuyến **trước 08/8/2026** áp dụng theo quy định cũ (Điều 3 khoản 3). Hồ sơ nộp trực tiếp: không thay đổi.
 
-> **Bối cảnh vận hành:** Trung tâm thực hiện tiếp nhận 100% hồ sơ trực tuyến [văn bản chỉ đạo: cần bổ sung số hiệu]. Hệ quả: với 11 khoản thu tại Điều 2, **mọi hồ sơ nộp đúng kênh DVCQG/VNeID đều phải thu 0 đồng**; mức thu trực tiếp chỉ còn ý nghĩa với hồ sơ ngoại lệ.
+> **Bối cảnh vận hành:** Chủ trương của Trung tâm: hướng dẫn, hỗ trợ để 100% hồ sơ được nộp trực tuyến qua Cổng DVCQG/VNeID; vẫn tiếp nhận trực tiếp đối với trường hợp người dân không thể nộp trực tuyến [văn bản của Trung tâm/UBND xã: cần bổ sung số hiệu]. Hệ quả: với 11 khoản thu tại Điều 2, **mọi hồ sơ nộp đúng kênh DVCQG/VNeID đều phải thu 0 đồng**; mức thu trực tiếp chỉ còn ý nghĩa với hồ sơ ngoại lệ.
 > **Rủi ro chính:** NQ 23/2026 chỉ áp dụng khi hồ sơ nộp **tại Cổng DVCQG hoặc VNeID** (Điều 1.2.a). Hồ sơ cán bộ nhận giấy rồi số hóa, nhập vào Một cửa theo kênh "trực tiếp" có thể **không** được tính là trực tuyến → hệ thống vẫn thu phí.
 
 ## A0. Kiểm tra kênh nộp (làm trước mục A)
 
 - ☐ Hồ sơ người dân được cán bộ hỗ trợ tại quầy: nộp **trên tài khoản DVCQG/VNeID của chính người dân**, không nhập theo kênh "trực tiếp".
+- ☐ Người dân **tự đăng nhập, tự xác thực** VNeID trên thiết bị tại quầy/kiosk; cán bộ chỉ hướng dẫn. Không ghi, không lưu mật khẩu, mã OTP của người dân; đăng xuất sau mỗi lượt.
+- ☐ Trường hợp không thể nộp trực tuyến (không có VNeID mức 2, không có điện thoại…): vẫn tiếp nhận trực tiếp, ghi rõ lý do để thống kê.
 - ☐ Trên Một cửa VNPT, trường kênh nộp của hồ sơ ghi nhận là DVCQG/VNeID [tên trường theo tài liệu VNPT: cần bổ sung].
 - ☐ Thống kê số hồ sơ kênh "trực tiếp" từ 08/8/2026 thuộc các mã TTHC ở mục A; nếu > 0, làm rõ lý do và việc thu phí.
 
