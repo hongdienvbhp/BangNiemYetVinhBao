@@ -687,7 +687,12 @@ def apply_city_updates(public_rows: list[dict], excluded: list[dict], audit_rows
         current_state = str(item.get("currentStateAtAsOf") or "")
         needs_review = current_state.startswith("needs_")
         is_future = current_state == "future_effective"
-        is_repealed = item.get("sectionStatus") == "repealed" and not is_future and not needs_review
+        # Bãi bỏ chỉ áp dụng khi quyết định đã có hiệu lực; quyết định đang chờ
+        # xác định hiệu lực/phạm vi (reviewed_*) không được rút TTHC khỏi public.
+        is_repealed = (
+            item.get("sectionStatus") == "repealed"
+            and current_state == "current_or_immediate_unless_repealed"
+        )
         is_current = (
             bool(item.get("communeReceptionEvidence"))
             and current_state == "current_or_immediate_unless_repealed"
@@ -762,7 +767,9 @@ def apply_city_updates(public_rows: list[dict], excluded: list[dict], audit_rows
         if code in by_code:
             stats["updated"] += 1
             record = by_code[code]
-            if not record.get("ten"):
+            # Hàng được duyệt theo ngày quyết định tăng dần: với bản ghi lấy tên
+            # từ PDF quyết định thành phố, tên theo quyết định mới nhất được ưu tiên.
+            if not record.get("ten") or (name and record.get("nameSource") == "official_city_decision_pdf"):
                 record["ten"] = name
             if not record.get("linhVuc") or record.get("linhVuc") == "CHƯA XÁC MINH LĨNH VỰC":
                 record["linhVuc"] = item.get("field") or record.get("linhVuc")
@@ -946,6 +953,11 @@ def apply_priority51_legal_verification(
             stats["alreadyCurrent"] += 1
             current = by_code[code]
             current["priority51LegalVerificationStatus"] = status
+            # Tên trích từ PDF quyết định thành phố dễ lỗi tách ký tự/dính cột;
+            # tên trong ma trận kiểm chứng pháp lý Priority 51 đã được rà soát.
+            if current.get("nameSource") == "official_city_decision_pdf" and record.get("ten"):
+                current["ten"] = record["ten"]
+                current["nameSource"] = "priority51_official_legal_verification"
             current["legalVerificationCheckedAt"] = item.get("verificationCheckedAt") or SOURCE_SNAPSHOT_DATE
             existing_urls = {str(x.get("articleUrl") or "") for x in current.get("sourceEvidence") or []}
             additions = [x for x in record.get("sourceEvidence") or [] if str(x.get("articleUrl") or "") not in existing_urls]

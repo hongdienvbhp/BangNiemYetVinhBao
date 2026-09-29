@@ -23,12 +23,12 @@ class Phase1ReconciliationTests(unittest.TestCase):
         result = MODULE.reconcile(canonical, city, baseline, table_levels)
 
         self.assertEqual(result["baselineTarget"], 323)
-        self.assertEqual(result["canonicalTotal"], 274)
-        self.assertEqual(result["summary"]["phase1CandidateCodes"], 218)
-        self.assertEqual(result["summary"]["outOfScopeProvinceReceptionOnly"], 56)
-        self.assertEqual(result["summary"]["misclassifiedByOfficialEvidence"], 0)
-        self.assertEqual(result["summary"]["minimumMissingAgainstAggregateBaseline"], 105)
-        self.assertEqual(result["COUNT_DRIFT"]["delta"], -105)
+        self.assertEqual(result["canonicalTotal"], 306)
+        self.assertEqual(result["summary"]["phase1CandidateCodes"], 228)
+        self.assertEqual(result["summary"]["outOfScopeProvinceReceptionOnly"], 78)
+        self.assertEqual(result["summary"]["misclassifiedByOfficialEvidence"], 1)  # 1.012789: bãi bỏ cấp tỉnh trong QĐ 1897 (chờ hiệu lực)
+        self.assertEqual(result["summary"]["minimumMissingAgainstAggregateBaseline"], 95)
+        self.assertEqual(result["COUNT_DRIFT"]["delta"], -95)
 
     def test_missing_codes_are_not_invented(self):
         canonical = {"thuTuc": []}

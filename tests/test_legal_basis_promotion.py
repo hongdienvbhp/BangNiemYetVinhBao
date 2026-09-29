@@ -137,10 +137,10 @@ class LegalBasisPromotionGateTests(unittest.TestCase):
             result["summary"],
             {
                 "candidateCodes": 171,
-                "legalReady": 13,
+                "legalReady": 14,
                 "legalConfirmedExisting": 0,
                 "legalNeedsReview": 72,
-                "pendingCanonicalPhase2": 86,
+                "pendingCanonicalPhase2": 85,
             },
         )
 

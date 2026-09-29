@@ -34,6 +34,11 @@ class ExtractCityUpdatesTests(unittest.TestCase):
         )
         self.assertEqual(extractor.level_hint("B. CẤP TỈNH", "commune"), "province")
 
+    def test_bare_cap_xa_table_cell_does_not_change_legal_level(self):
+        # Ô "Địa điểm thực hiện" bị xuống dòng chỉ còn "cấp xã" không phải tiêu đề mục.
+        self.assertEqual(extractor.level_hint("cấp xã", "province"), "province")
+        self.assertEqual(extractor.level_hint("B. cấp xã", "province"), "commune")
+
 
 if __name__ == "__main__":
     unittest.main()

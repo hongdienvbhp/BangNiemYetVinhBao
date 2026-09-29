@@ -48,15 +48,15 @@ class GuidancePromotionPlanTests(unittest.TestCase):
         self.assertEqual(result["version"], 2)
         self.assertEqual(result["schemaGate"]["status"], "blocked")
         self.assertEqual(result["schemaGate"]["canonicalVersion"], 4)
-        self.assertEqual(result["summary"]["safeReadyFields"], 28)
-        self.assertEqual(result["summary"]["safeReadyProcedures"], 24)
+        self.assertEqual(result["summary"]["safeReadyFields"], 27)
+        self.assertEqual(result["summary"]["safeReadyProcedures"], 23)
         self.assertEqual(
             result["summary"]["byField"],
             {
                 "onlineServiceLevel": 1,
                 "thoiHan": 0,
-                "phiLePhi": 14,
-                "canCuPhapLy": 13,
+                "phiLePhi": 12,
+                "canCuPhapLy": 14,
                 "coQuanThucHien": 0,
             },
         )
@@ -64,7 +64,7 @@ class GuidancePromotionPlanTests(unittest.TestCase):
             result["summary"]["confirmedExisting"],
             {
                 "onlineServiceLevel": 0,
-                "thoiHan": 19,
+                "thoiHan": 20,
                 "phiLePhi": 0,
                 "canCuPhapLy": 0,
                 "coQuanThucHien": 0,
@@ -74,7 +74,7 @@ class GuidancePromotionPlanTests(unittest.TestCase):
             result["summary"]["needsReview"],
             {
                 "onlineServiceLevel": 0,
-                "thoiHan": 84,
+                "thoiHan": 95,
                 "phiLePhi": 18,
                 "canCuPhapLy": 72,
                 "coQuanThucHien": {
@@ -87,8 +87,8 @@ class GuidancePromotionPlanTests(unittest.TestCase):
             result["summary"]["pendingCanonicalPhase2"],
             {
                 "onlineServiceLevel": 4,
-                "phiLePhi": 18,
-                "canCuPhapLy": 86,
+                "phiLePhi": 20,
+                "canCuPhapLy": 85,
             },
         )
         self.assertEqual(
@@ -100,8 +100,6 @@ class GuidancePromotionPlanTests(unittest.TestCase):
             [
                 "1.000302",
                 "1.000321",
-                "1.000464",
-                "1.000479",
                 "1.008925",
                 "1.008926",
                 "1.008927",
@@ -129,6 +127,7 @@ class GuidancePromotionPlanTests(unittest.TestCase):
                 "1.116316",
                 "2.001008",
                 "2.001016",
+                "2.001019",
                 "2.001406",
             ],
         )

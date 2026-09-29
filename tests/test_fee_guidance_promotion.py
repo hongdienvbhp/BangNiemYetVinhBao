@@ -158,10 +158,10 @@ class FeeGuidancePromotionGateTests(unittest.TestCase):
             result["summary"],
             {
                 "candidateCodes": 50,
-                "feeReady": 14,
+                "feeReady": 12,
                 "feeConfirmedExisting": 0,
                 "feeNeedsReview": 18,
-                "pendingCanonicalPhase2": 18,
+                "pendingCanonicalPhase2": 20,
             },
         )
         self.assertEqual(
@@ -169,8 +169,6 @@ class FeeGuidancePromotionGateTests(unittest.TestCase):
             {
                 "1.013734",
                 "1.012756",
-                "1.000464",
-                "1.000479",
                 "1.014390",
                 "2.001576",
                 "1.014953",
