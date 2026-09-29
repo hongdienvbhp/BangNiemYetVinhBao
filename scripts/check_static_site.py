@@ -202,7 +202,7 @@ for row in rows:
         bad_names.append(f"{code}: tên có dấu hiệu trích sai")
     if name.endswith(":") or name.count("(") != name.count(")") or "|" in name:
         bad_names.append(f"{code}: tên chưa sạch")
-    if re.search(r" [bcdfghjklmnpqrstvxđ] [a-zà-ỹ]{2,}", name, re.I):
+    if re.search(r"(?<!điểm) [bcdfghjklmnpqrstvxđ] [a-zà-ỹ]{2,}", name, re.I):
         bad_names.append(f"{code}: tên còn lỗi tách ký tự")
     if not field or field.startswith("CHƯA XÁC MINH"):
         fail(f"{code}: lĩnh vực chưa xác định")
