@@ -39,6 +39,60 @@ TIME_OR_COLUMN_RE = re.compile(
 # Trích xuất văn bản thuần không giữ được ranh giới cột, nên khóa lại đúng quan
 # hệ thay thế đã thể hiện trực tiếp trong phụ lục chính thức.
 DECISION_ROW_OVERRIDES = {
+    # Phụ lục QĐ 2657/QĐ-UBND mục B: hai cột tên (được thay thế/thay thế) xen kẽ khi trích; dùng tên cùng mã trong bộ dữ liệu đã đối chiếu (js/data.js).
+    "2657/QĐ-UBND": {
+        "1.013225": {"name": "Cấp giấy phép xây dựng mới đối với công trình cấp III, cấp IV và nhà ở riêng lẻ"},
+        "1.013227": {"name": "Gia hạn giấy phép xây dựng đối với công trình cấp III, cấp IV và nhà ở riêng lẻ"},
+        "1.013228": {"name": "Cấp lại giấy phép xây dựng đối với công trình cấp III, cấp IV và nhà ở riêng lẻ"},
+        "1.013229": {"name": "Cấp giấy phép xây dựng sửa chữa, cải tạo đối với công trình cấp III, cấp IV và nhà ở riêng lẻ"},
+        "1.013232": {"name": "Cấp giấy phép di dời đối với công trình cấp III, cấp IV và nhà ở riêng lẻ"},
+    },
+    # Tên chép từ Phụ lục QĐ 3091/QĐ-UBND.
+    "3091/QĐ-UBND": {
+        "1.014034": {"name": "Đăng ký cập nhật, bổ sung thông tin trong hồ sơ đăng ký hộ kinh doanh, hiệu đính thông tin đăng ký hộ kinh doanh"},
+    },
+    # Tên chép từ Phụ lục QĐ 541/QĐ-UBND.
+    "541/QĐ-UBND": {
+        "1.014801": {"name": "Cấp, cấp lại Giấy xác nhận nuôi trồng thủy sản lồng bè, đối tượng thủy sản nuôi chủ lực (hoạt động trên nội địa thuộc phạm vi quản lý và cơ sở nuôi trồng thủy sản lồng bè thuộc thẩm quyền giao khu vực biển của Chủ tịch Ủy ban nhân dân cấp xã)"},
+    },
+    # Phụ lục QĐ 2295/QĐ-UBND, mục I 'TTHC được thay thế': mã ở cột STT là TTHC được thay thế (bãi bỏ), mã trong '(Mã số TTHC: …)' là TTHC thay thế.
+    "2295/QĐ-UBND": {
+        "1.012958": {"sectionStatus": "repealed"},
+        "1.012959": {"sectionStatus": "repealed"},
+        "3.000301": {"sectionStatus": "repealed"},
+        "1.005008": {"sectionStatus": "repealed"},
+        "3.000297": {"sectionStatus": "repealed"},
+        "3.000302": {"sectionStatus": "repealed"},
+        "3.000306": {"sectionStatus": "repealed"},
+        "1.004999": {"sectionStatus": "repealed"},
+        "3.000299": {"sectionStatus": "repealed"},
+        "3.000304": {"sectionStatus": "repealed"},
+        "1.004991": {"sectionStatus": "repealed"},
+        "3.000300": {"sectionStatus": "repealed"},
+        "3.000305": {"sectionStatus": "repealed"},
+        "3.000309": {"sectionStatus": "repealed"},
+        "1.012944": {"name": "Thành lập hoặc cho phép thành lập trường trung học phổ thông, trường phổ thông có nhiều cấp học có cấp học cao nhất là trung học phổ thông"},
+        "1.012954": {"name": "Cho phép trường trung học phổ thông, trường phổ thông có nhiều cấp học có cấp học cao nhất là trung học phổ thông hoạt động giáo dục"},
+        "1.012955": {"name": "Sáp nhập, chia, tách trường trung học phổ thông, trường phổ thông có nhiều cấp học có cấp học cao nhất là trung học phổ thông"},
+        "1.012956": {"name": "Giải thể trường trung học phổ thông, trường phổ thông có nhiều cấp học có cấp học cao nhất là trung học phổ thông (theo đề nghị của tổ chức, cá nhân thành lập trường)"},
+    },
+    # Tên chép từ Phụ lục QĐ 777/QĐ-UBND và QĐ 394/QĐ-UBND (cột tên bị xuống trang/dính cột).
+    "777/QĐ-UBND": {
+        "1.005021": {"name": "Phê duyệt quy trình vận hành, khai thác bến phà, bến khách ngang sông sử dụng phà một lưỡi chở hành khách và xe ô tô"},
+    },
+    "394/QĐ-UBND": {
+        # Phụ lục QĐ 394/QĐ-UBND, mục A2 'TTHC thay thế': 1.011516 được thay bằng 2.002835; 1.009669 được thay bằng 1.014716.
+        "1.011516": {"sectionStatus": "repealed"},
+        "1.009669": {"sectionStatus": "repealed"},
+        "2.002835": {"name": "Đăng ký khai thác nước mặt, nước biển, đăng ký sử dụng mặt nước, đào hồ, ao, sông, suối, kênh, mương, rạch"},
+    },
+    # Phụ lục QĐ 3249/QĐ-UBND: 04 TTHC cấp xã lĩnh vực giảm nghèo "bị bãi bỏ từ ngày 01/01/2027".
+    "3249/QĐ-UBND": {
+        "1.011606": {"rowEffectiveDate": "2027-01-01"},
+        "1.011607": {"rowEffectiveDate": "2027-01-01"},
+        "1.011608": {"rowEffectiveDate": "2027-01-01"},
+        "3.000412": {"rowEffectiveDate": "2027-01-01"},
+    },
     # Tên chép từ Phụ lục QĐ 1635/QĐ-UBND (cột tên dính cột thời hạn/bị xuống trang).
     "1635/QĐ-UBND": {
         "1.002407": {
@@ -467,6 +521,24 @@ def context_is_commune(lines: list[str], idx: int, level: str) -> bool:
     )
 
 
+def row_is_commune(lines: list[str], idx: int, level: str) -> bool:
+    if level in {"commune", "shared_including_commune"}:
+        return True
+    row: list[str] = [lines[idx]]
+    for j in range(idx + 1, min(len(lines), idx + 25)):
+        if CODE_RE.search(lines[j]):
+            break
+        row.append(lines[j])
+    value = re.sub(r"\s+", " ", fold(" ".join(row)))
+    compact = re.sub(r"[^a-z0-9]", "", value)
+    return bool(
+        re.search(r"trung tam.{0,80}(cap xa|cac xa|xa, phuong|pvhcc xa)", value)
+        or "trungtamphucvuhanhchinhcongcapxa" in compact
+        or "trungtamphucvuhanhchinhcongxa" in compact
+        or "trungtamphucvuhanhchinhcongcacxa" in compact
+    )
+
+
 def parse_iso_date(day: str, month: str, year: str) -> str:
     return f"{int(year):04d}-{int(month):02d}-{int(day):02d}"
 
@@ -571,6 +643,9 @@ def extract_decision(meta: dict, as_of: str) -> dict:
     if not meta.get("field") and ingest_status != "applied":
         current_state = "needs_field_review"
 
+    # receptionEvidenceScope = "row": chỉ chấp nhận bằng chứng tiếp nhận cấp xã nằm
+    # trong chính dòng của mã (không dùng cửa sổ rộng -20/+80 dòng).
+    row_scope = meta.get("receptionEvidenceScope") == "row"
     rows: list[dict] = []
     status = "published"
     level = ""
@@ -593,7 +668,11 @@ def extract_decision(meta: dict, as_of: str) -> dict:
                         "name": extract_name(lines, i, code),
                         "sectionStatus": status,
                         "levelHint": level,
-                        "communeReceptionEvidence": context_is_commune(lines, i, level),
+                        "communeReceptionEvidence": (
+                            row_is_commune(lines, i, level)
+                            if row_scope
+                            else context_is_commune(lines, i, level)
+                        ),
                         "page": page_index + 1,
                         "context": " ".join(lines[max(0, i - 3) : min(len(lines), i + 18)])[:1800],
                     }
@@ -672,6 +751,18 @@ def main() -> int:
                     **row,
                 }
             )
+            # Mục có ngày hiệu lực riêng (ghi trong DECISION_ROW_OVERRIDES): tính lại
+            # trạng thái theo ngày đánh giá, chỉ khi quyết định đã có hiệu lực chung.
+            item = all_rows[-1]
+            if row.get("rowEffectiveDate") and decision["currentStateAtAsOf"] in {
+                "current_or_immediate_unless_repealed",
+                "future_effective",
+            }:
+                item["effectiveDate"] = row["rowEffectiveDate"]
+                item["effectiveDateSource"] = "row_effective_date_override"
+                item["currentStateAtAsOf"] = (
+                    "future_effective" if row["rowEffectiveDate"] > args.as_of else "current_or_immediate_unless_repealed"
+                )
 
     payload = {
         "format": "haiphong-city-tthc-updates",

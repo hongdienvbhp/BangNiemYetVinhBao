@@ -54,6 +54,19 @@ class ExtractCityUpdatesTests(unittest.TestCase):
         self.assertEqual(result["effectiveDateSource"], "default_effective_from_signing_date")
         self.assertEqual(result["currentStateAtAsOf"], "current_or_immediate_unless_repealed")
 
+    def test_row_scope_requires_reception_in_own_row(self):
+        lines = [
+            "1 1.005169 Đề nghị doanh nghiệp thay đổi tên 03 ngày làm việc - Trung tâm Phục vụ hành chính công thành phố",
+            "2 1.010010 Đề nghị dừng thực hiện thủ tục - Trung tâm Phục vụ hành chính công cấp xã",
+        ]
+        self.assertFalse(extractor.row_is_commune(lines, 0, "province"))
+        self.assertTrue(extractor.row_is_commune(lines, 1, "province"))
+        self.assertTrue(extractor.row_is_commune(lines, 0, "commune"))
+
+    def test_row_effective_date_override_keeps_future_repeal_pending(self):
+        override = extractor.DECISION_ROW_OVERRIDES["3249/QĐ-UBND"]
+        self.assertEqual(override["1.011607"]["rowEffectiveDate"], "2027-01-01")
+
 
 if __name__ == "__main__":
     unittest.main()
