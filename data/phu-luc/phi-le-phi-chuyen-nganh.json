@@ -10,7 +10,17 @@
       "loai": "Phí chứng thực",
       "vanBan": "Thông tư 226/2016/TT-BTC (phí chứng thực); NQ 43/2025/NQ-HĐND (hỗ trợ phí chứng thực bản sao điện tử)",
       "ghiChu": "Mức thu theo dữ liệu hướng dẫn DVCQG của từng thủ tục; không thuộc NQ 23/2026.",
-      "phiOnlineText": "Chứng thực bản sao điện tử từ bản chính tại Trung tâm PVHCC xã, phường, đặc khu: ngân sách hỗ trợ 100% phí (NQ 43/2025/NQ-HĐND, 01/01/2026–31/12/2026). Không thuộc NQ 23/2026."
+      "phiOnlineText": "Chứng thực bản sao điện tử từ bản chính tại Trung tâm PVHCC xã, phường, đặc khu: ngân sách hỗ trợ 100% phí (NQ 43/2025/NQ-HĐND, 01/01/2026–31/12/2030). Không thuộc NQ 23/2026.",
+      "phiCanCu": [
+        {
+          "khoanPhi": "Phí chứng thực bản sao từ bản chính",
+          "canCu": "TT 226/2016/TT-BTC; NQ 43/2025/NQ-HĐND",
+          "mucTrucTiep": "2.000 đồng/trang, từ trang thứ 3: 1.000 đồng/trang, tối đa 200.000 đồng/bản (nộp bản giấy)",
+          "mucTrucTuyen": "Bản sao điện tử từ bản chính: ngân sách hỗ trợ 100% (0 đồng cho người yêu cầu)",
+          "apDungTu": "01/01/2026 (đến hết 31/12/2030)",
+          "chuyenTiep": "Không có"
+        }
+      ]
     },
     {
       "ma": "2.000884",
@@ -103,10 +113,154 @@
     {
       "ma": "1.001612",
       "ten": "Đăng ký thành lập hộ kinh doanh",
-      "loai": "Lệ phí đăng ký hộ kinh doanh",
-      "vanBan": "Mức do HĐND thành phố quyết định (căn cứ TT 85/2019/TT-BTC)",
-      "ghiChu": "Không thuộc NQ 23/2026. Mức 150.000 đồng theo dữ liệu DVCQG; nghị quyết HĐND TP Hải Phòng về lệ phí đăng ký kinh doanh: [cần bổ sung] (Sở Tài chính đã đề nghị ban hành 05/2026, chưa xác định đã ban hành).",
-      "phiOnlineText": ""
+      "loai": "Lệ phí đăng ký kinh doanh (hộ kinh doanh, hợp tác xã, liên hiệp hợp tác xã)",
+      "vanBan": "NQ 12/2026/NQ-HĐND",
+      "ghiChu": "0 đồng/lần cấp cho mọi hình thức nộp hồ sơ; không phải miễn riêng cho trực tuyến nên không gắn cờ NQ 23/2026. Mức 150.000 đồng/các mức cũ trong dữ liệu DVCQG không còn áp dụng từ 08/8/2026.",
+      "phiOnlineText": "0 đồng/lần cấp (NQ 12/2026/NQ-HĐND, áp dụng mọi hình thức nộp, từ 08/8/2026 đến hết 31/12/2031)",
+      "phiCanCu": [
+        {
+          "khoanPhi": "Đăng ký thành lập hộ kinh doanh",
+          "canCu": "NQ 12/2026/NQ-HĐND Điều 2",
+          "mucTrucTiep": "0 đồng/01 lần cấp",
+          "mucTrucTuyen": "0 đồng/01 lần cấp",
+          "apDungTu": "08/8/2026 (đến hết 31/12/2031)",
+          "chuyenTiep": "[cần bổ sung] — NQ không có điều khoản chuyển tiếp",
+          "thayMucHuongDan": true
+        }
+      ]
+    },
+    {
+      "ma": "2.000720",
+      "ten": "Đăng ký thay đổi nội dung đăng ký hộ kinh doanh",
+      "loai": "Lệ phí đăng ký kinh doanh (hộ kinh doanh, hợp tác xã, liên hiệp hợp tác xã)",
+      "vanBan": "NQ 12/2026/NQ-HĐND",
+      "ghiChu": "0 đồng/lần cấp cho mọi hình thức nộp hồ sơ; không phải miễn riêng cho trực tuyến nên không gắn cờ NQ 23/2026. Mức 150.000 đồng/các mức cũ trong dữ liệu DVCQG không còn áp dụng từ 08/8/2026.",
+      "phiOnlineText": "0 đồng/lần cấp (NQ 12/2026/NQ-HĐND, áp dụng mọi hình thức nộp, từ 08/8/2026 đến hết 31/12/2031)",
+      "phiCanCu": [
+        {
+          "khoanPhi": "Đăng ký thay đổi nội dung hộ kinh doanh",
+          "canCu": "NQ 12/2026/NQ-HĐND Điều 2",
+          "mucTrucTiep": "0 đồng/01 lần cấp",
+          "mucTrucTuyen": "0 đồng/01 lần cấp",
+          "apDungTu": "08/8/2026 (đến hết 31/12/2031)",
+          "chuyenTiep": "[cần bổ sung] — NQ không có điều khoản chuyển tiếp",
+          "thayMucHuongDan": true
+        }
+      ]
+    },
+    {
+      "ma": "2.000575",
+      "ten": "Cấp lại Giấy chứng nhận đăng ký hộ kinh doanh, Cấp đổi sang Giấy chứng nhận đăng ký hộ kinh doanh",
+      "loai": "Lệ phí đăng ký kinh doanh (hộ kinh doanh, hợp tác xã, liên hiệp hợp tác xã)",
+      "vanBan": "NQ 12/2026/NQ-HĐND",
+      "ghiChu": "0 đồng/lần cấp cho mọi hình thức nộp hồ sơ; không phải miễn riêng cho trực tuyến nên không gắn cờ NQ 23/2026. Mức 150.000 đồng/các mức cũ trong dữ liệu DVCQG không còn áp dụng từ 08/8/2026.",
+      "phiOnlineText": "0 đồng/lần cấp (NQ 12/2026/NQ-HĐND, áp dụng mọi hình thức nộp, từ 08/8/2026 đến hết 31/12/2031)",
+      "phiCanCu": [
+        {
+          "khoanPhi": "Cấp lại/cấp đổi giấy chứng nhận đăng ký hộ kinh doanh",
+          "canCu": "NQ 12/2026/NQ-HĐND Điều 2",
+          "mucTrucTiep": "0 đồng/01 lần cấp",
+          "mucTrucTuyen": "0 đồng/01 lần cấp",
+          "apDungTu": "08/8/2026 (đến hết 31/12/2031)",
+          "chuyenTiep": "[cần bổ sung] — NQ không có điều khoản chuyển tiếp",
+          "thayMucHuongDan": true
+        }
+      ]
+    },
+    {
+      "ma": "1.005280",
+      "ten": "Đăng ký thành lập hợp tác xã, liên hiệp hợp tác xã; đăng ký chuyển đổi tổ hợp tác thành hợp tác xã; đăng ký khi hợp tác xã, liên hiệp hợp tác xã chia, tách, hợp nhất",
+      "loai": "Lệ phí đăng ký kinh doanh (hộ kinh doanh, hợp tác xã, liên hiệp hợp tác xã)",
+      "vanBan": "NQ 12/2026/NQ-HĐND",
+      "ghiChu": "0 đồng/lần cấp cho mọi hình thức nộp hồ sơ; không phải miễn riêng cho trực tuyến nên không gắn cờ NQ 23/2026. Mức 150.000 đồng/các mức cũ trong dữ liệu DVCQG không còn áp dụng từ 08/8/2026.",
+      "phiOnlineText": "0 đồng/lần cấp (NQ 12/2026/NQ-HĐND, áp dụng mọi hình thức nộp, từ 08/8/2026 đến hết 31/12/2031)",
+      "phiCanCu": [
+        {
+          "khoanPhi": "Đăng ký thành lập hợp tác xã, liên hiệp hợp tác xã",
+          "canCu": "NQ 12/2026/NQ-HĐND Điều 2",
+          "mucTrucTiep": "0 đồng/01 lần cấp",
+          "mucTrucTuyen": "0 đồng/01 lần cấp",
+          "apDungTu": "08/8/2026 (đến hết 31/12/2031)",
+          "chuyenTiep": "[cần bổ sung] — NQ không có điều khoản chuyển tiếp",
+          "thayMucHuongDan": true
+        }
+      ]
+    },
+    {
+      "ma": "1.005277",
+      "ten": "Đăng ký thay đổi nội dung đăng ký hợp tác xã, liên hiệp hợp tác xã; Đăng ký thay đổi nội dung đối với trường hợp hợp tác xã, liên hiệp hợp tác xã bị tách, nhận sáp nhập; Đăng ký thay đổi nội dung Giấy chứng nhận đăng ký hợp tác xã",
+      "loai": "Lệ phí đăng ký kinh doanh (hộ kinh doanh, hợp tác xã, liên hiệp hợp tác xã)",
+      "vanBan": "NQ 12/2026/NQ-HĐND",
+      "ghiChu": "0 đồng/lần cấp cho mọi hình thức nộp hồ sơ; không phải miễn riêng cho trực tuyến nên không gắn cờ NQ 23/2026. Mức 150.000 đồng/các mức cũ trong dữ liệu DVCQG không còn áp dụng từ 08/8/2026.",
+      "phiOnlineText": "0 đồng/lần cấp (NQ 12/2026/NQ-HĐND, áp dụng mọi hình thức nộp, từ 08/8/2026 đến hết 31/12/2031)",
+      "phiCanCu": [
+        {
+          "khoanPhi": "Đăng ký thay đổi nội dung hợp tác xã, liên hiệp hợp tác xã",
+          "canCu": "NQ 12/2026/NQ-HĐND Điều 2",
+          "mucTrucTiep": "0 đồng/01 lần cấp",
+          "mucTrucTuyen": "0 đồng/01 lần cấp",
+          "apDungTu": "08/8/2026 (đến hết 31/12/2031)",
+          "chuyenTiep": "[cần bổ sung] — NQ không có điều khoản chuyển tiếp",
+          "thayMucHuongDan": true
+        }
+      ]
+    },
+    {
+      "ma": "1.004901",
+      "ten": "Cấp đổi Giấy chứng nhận đăng ký hợp tác xã, liên hiệp hợp tác xã",
+      "loai": "Lệ phí đăng ký kinh doanh (hộ kinh doanh, hợp tác xã, liên hiệp hợp tác xã)",
+      "vanBan": "NQ 12/2026/NQ-HĐND",
+      "ghiChu": "0 đồng/lần cấp cho mọi hình thức nộp hồ sơ; không phải miễn riêng cho trực tuyến nên không gắn cờ NQ 23/2026. Mức 150.000 đồng/các mức cũ trong dữ liệu DVCQG không còn áp dụng từ 08/8/2026.",
+      "phiOnlineText": "0 đồng/lần cấp (NQ 12/2026/NQ-HĐND, áp dụng mọi hình thức nộp, từ 08/8/2026 đến hết 31/12/2031)",
+      "phiCanCu": [
+        {
+          "khoanPhi": "Cấp đổi giấy chứng nhận đăng ký hợp tác xã, liên hiệp hợp tác xã",
+          "canCu": "NQ 12/2026/NQ-HĐND Điều 2",
+          "mucTrucTiep": "0 đồng/01 lần cấp",
+          "mucTrucTuyen": "0 đồng/01 lần cấp",
+          "apDungTu": "08/8/2026 (đến hết 31/12/2031)",
+          "chuyenTiep": "[cần bổ sung] — NQ không có điều khoản chuyển tiếp",
+          "thayMucHuongDan": true
+        }
+      ]
+    },
+    {
+      "ma": "2.002123",
+      "ten": "Đăng ký hoạt động chi nhánh, văn phòng đại diện, thông báo địa điểm kinh doanh; Thông báo lập chi nhánh, văn phòng đại diện ở nước ngoài của hợp tác xã, liên hiệp hợp tác xã",
+      "loai": "Lệ phí đăng ký kinh doanh (hộ kinh doanh, hợp tác xã, liên hiệp hợp tác xã)",
+      "vanBan": "NQ 12/2026/NQ-HĐND",
+      "ghiChu": "0 đồng/lần cấp cho mọi hình thức nộp hồ sơ; không phải miễn riêng cho trực tuyến nên không gắn cờ NQ 23/2026. Mức 150.000 đồng/các mức cũ trong dữ liệu DVCQG không còn áp dụng từ 08/8/2026.",
+      "phiOnlineText": "0 đồng/lần cấp (NQ 12/2026/NQ-HĐND, áp dụng mọi hình thức nộp, từ 08/8/2026 đến hết 31/12/2031)",
+      "phiCanCu": [
+        {
+          "khoanPhi": "Đăng ký hoạt động chi nhánh, văn phòng đại diện, địa điểm kinh doanh",
+          "canCu": "NQ 12/2026/NQ-HĐND Điều 2",
+          "mucTrucTiep": "0 đồng/01 lần cấp",
+          "mucTrucTuyen": "0 đồng/01 lần cấp",
+          "apDungTu": "08/8/2026 (đến hết 31/12/2031)",
+          "chuyenTiep": "[cần bổ sung] — NQ không có điều khoản chuyển tiếp",
+          "thayMucHuongDan": true
+        }
+      ]
+    },
+    {
+      "ma": "1.005378",
+      "ten": "Đăng ký thay đổi nội dung đăng ký hoạt động của chi nhánh, văn phòng đại diện, địa điểm kinh doanh của hợp tác xã, liên hiệp hợp tác xã",
+      "loai": "Lệ phí đăng ký kinh doanh (hộ kinh doanh, hợp tác xã, liên hiệp hợp tác xã)",
+      "vanBan": "NQ 12/2026/NQ-HĐND",
+      "ghiChu": "0 đồng/lần cấp cho mọi hình thức nộp hồ sơ; không phải miễn riêng cho trực tuyến nên không gắn cờ NQ 23/2026. Mức 150.000 đồng/các mức cũ trong dữ liệu DVCQG không còn áp dụng từ 08/8/2026.",
+      "phiOnlineText": "0 đồng/lần cấp (NQ 12/2026/NQ-HĐND, áp dụng mọi hình thức nộp, từ 08/8/2026 đến hết 31/12/2031)",
+      "phiCanCu": [
+        {
+          "khoanPhi": "Đăng ký thay đổi nội dung đăng ký chi nhánh, văn phòng đại diện, địa điểm kinh doanh",
+          "canCu": "NQ 12/2026/NQ-HĐND Điều 2",
+          "mucTrucTiep": "0 đồng/01 lần cấp",
+          "mucTrucTuyen": "0 đồng/01 lần cấp",
+          "apDungTu": "08/8/2026 (đến hết 31/12/2031)",
+          "chuyenTiep": "[cần bổ sung] — NQ không có điều khoản chuyển tiếp",
+          "thayMucHuongDan": true
+        }
+      ]
     }
   ]
 }

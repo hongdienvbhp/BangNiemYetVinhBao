@@ -61,30 +61,46 @@ def apply_nq23_flags(rows: list, mapping: dict) -> int:
     Chỉ áp dụng cho mã nằm trong mapping["confirmed"] (kèm căn cứ); "candidates" không bao giờ
     được áp dụng tự động.
     """
-    confirmed = {str(c["ma"]).strip() for c in mapping.get("confirmed") or []}
+    confirmed = {str(c["ma"]).strip(): c for c in mapping.get("confirmed") or []}
     text = mapping.get("phiOnlineText") or ""
+    rules = mapping.get("loaiRules") or {}
     count = 0
     for row in rows:
-        if isinstance(row, dict) and str(row.get("ma") or "").strip() in confirmed:
-            row["mienPhiTrucTuyen"] = True
-            row["phiOnline"] = text
-            count += 1
+        item = confirmed.get(str(row.get("ma") or "").strip()) if isinstance(row, dict) else None
+        if item is None:
+            continue
+        row["mienPhiTrucTuyen"] = True
+        row["phiOnline"] = text
+        rule = rules.get(item.get("loai") or "")
+        if rule:
+            row["phiCanCu"] = [
+                {
+                    "khoanPhi": rule["khoanPhi"],
+                    "canCu": rule["canCu"],
+                    "mucTrucTiep": rule["mucTrucTiep"],
+                    "mucTrucTuyen": "0 đồng",
+                    "apDungTu": "08/8/2026",
+                    "chuyenTiep": mapping.get("chuyenTiep") or "",
+                }
+            ]
+        count += 1
     return count
 
 
 def apply_specialized_fee_notes(rows: list, mapping: dict) -> int:
     """Ghi phiOnline cho TTHC theo văn bản chuyên ngành (không gắn cờ miễn phí NQ 23)."""
-    texts = {
-        str(i["ma"]).strip(): i["phiOnlineText"]
-        for i in mapping.get("items") or []
-        if i.get("phiOnlineText")
-    }
+    items = {str(i["ma"]).strip(): i for i in mapping.get("items") or []}
     count = 0
     for row in rows:
         code = str(row.get("ma") or "").strip() if isinstance(row, dict) else ""
-        if code in texts and not row.get("mienPhiTrucTuyen"):
-            row["phiOnline"] = texts[code]
-            count += 1
+        item = items.get(code)
+        if item is None or row.get("mienPhiTrucTuyen"):
+            continue
+        if item.get("phiOnlineText"):
+            row["phiOnline"] = item["phiOnlineText"]
+        if item.get("phiCanCu"):
+            row["phiCanCu"] = item["phiCanCu"]
+        count += 1
     return count
 
 

@@ -160,12 +160,13 @@ def build_fees(fees: dict, specialized: dict | None = None) -> dict:
         "secondary_only": "mới có nguồn thứ cấp",
         "unverified": "chưa đối chiếu",
     }
-    order = {"dang_ap_dung": 0, "can_xac_minh": 1, "het_hieu_luc": 2}
+    tier_label = fees.get("tiers", {})
 
     def card(doc: dict) -> dict:
         hieu_luc = doc.get("hieuLuc") or ""
         het = doc.get("hetHieuLuc") or ""
-        parts = [status_label.get(doc["trangThai"], doc["trangThai"])]
+        parts = [tier_label.get(str(doc.get("tang", "")), "")] if doc.get("tang") else []
+        parts.append(status_label.get(doc["trangThai"], doc["trangThai"]))
         if hieu_luc:
             parts.append(f"hiệu lực từ {hieu_luc}")
         if het:
@@ -183,11 +184,13 @@ def build_fees(fees: dict, specialized: dict | None = None) -> dict:
             "trichYeu": doc["trichYeu"],
             "trangThai": " · ".join(parts),
             "nhom": doc["nhomHienThi"],
+            "tang": doc.get("tang", 5),
+            "thuTu": doc.get("thuTu", 50),
             "ghiChu": ghi_chu,
             "link": src,
         }
 
-    cards = sorted((card(d) for d in docs), key=lambda c: order[c["nhom"]])
+    cards = sorted((card(d) for d in docs), key=lambda c: (c["tang"], c["thuTu"], c["so"]))
 
     nq23 = next(d for d in docs if d["id"] == "NQ-23-2026")
     online = nq23["mienPhiTrucTuyen"]

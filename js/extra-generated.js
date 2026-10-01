@@ -923,59 +923,60 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
     }
   ],
   "phiLePhi": {
-    "ghiChuChung": "Cập nhật 01/10/2026. Từ 08/8/2026, NQ 23/2026/NQ-HĐND quy định mức thu 0 đồng đối với 04 loại lệ phí và 07 loại phí khi thực hiện TTHC trực tuyến tại Cổng DVCQG hoặc VNeID; NQ 07/2025 (Hải Dương) và NQ 08/2025 (Hải Phòng) hết hiệu lực (hồ sơ nộp trước 08/8/2026 vẫn theo nghị quyết cũ). Nộp trực tiếp hoặc qua bưu chính: áp dụng mức thu theo từng loại phí, lệ phí. Mức thu cụ thể của từng TTHC xem trong chi tiết thủ tục (nguồn Cổng DVCQG). Phí đăng ký giao dịch bảo đảm (NQ 34/2025, Phụ lục III) có mức thu riêng cho hình thức trực tiếp và trực tuyến; khi nộp trực tuyến mức thu là 0 đồng theo NQ 23/2026 (Điều 2 khoản 2 điểm a). Bảng mức thu trực tiếp xem toàn văn NQ 34/2025. Mức lệ phí hộ tịch khi nộp trực tiếp/bưu chính: [cần bổ sung] — chưa đối chiếu được văn bản gốc của HĐND TP đang còn hiệu lực; xem mục Phí/lệ phí trong từng TTHC (nguồn Cổng DVCQG). NQ 23/2026/NQ-HĐND đã được Giám đốc Trung tâm PVHCC xác nhận (01/10/2026); mapping TTHC tại data/phu-luc/NQ-23-anh-xa-tthc.json. NQ 12/2018, 45/2018, 19/2022 (phần còn lại): [cần bổ sung] toàn văn/hiệu lực. Chỉ các TTHC thuộc loại phí/lệ phí nêu tại NQ 23/2026 được gắn cờ 0 đồng khi nộp trực tuyến. TTHC khác theo văn bản chuyên ngành: xem data/phu-luc/phi-le-phi-chuyen-nganh.json (chứng thực: TT 226/2016 và NQ 43/2025; bản sao trích lục hộ tịch: TT 281/2016; hộ kinh doanh: nghị quyết HĐND TP [cần bổ sung]).",
+    "ghiChuChung": "Cập nhật 01/10/2026. Từ 08/8/2026, NQ 23/2026/NQ-HĐND quy định mức thu 0 đồng đối với 04 loại lệ phí và 07 loại phí khi thực hiện TTHC trực tuyến tại Cổng DVCQG hoặc VNeID; NQ 07/2025 (Hải Dương) và NQ 08/2025 (Hải Phòng) hết hiệu lực (hồ sơ nộp trước 08/8/2026 vẫn theo nghị quyết cũ). Nộp trực tiếp hoặc qua bưu chính: áp dụng mức thu theo từng loại phí, lệ phí. Mức thu cụ thể của từng TTHC xem trong chi tiết thủ tục (nguồn Cổng DVCQG). Phí đăng ký giao dịch bảo đảm (NQ 34/2025, Phụ lục III) có mức thu riêng cho hình thức trực tiếp và trực tuyến; khi nộp trực tuyến mức thu là 0 đồng theo NQ 23/2026 (Điều 2 khoản 2 điểm a). Bảng mức thu trực tiếp xem toàn văn NQ 34/2025. Mức lệ phí hộ tịch khi nộp trực tiếp/bưu chính: [cần bổ sung] — chưa đối chiếu được văn bản gốc của HĐND TP đang còn hiệu lực; xem mục Phí/lệ phí trong từng TTHC (nguồn Cổng DVCQG). NQ 23/2026/NQ-HĐND đã được Giám đốc Trung tâm PVHCC xác nhận (01/10/2026); mapping TTHC tại data/phu-luc/NQ-23-anh-xa-tthc.json. NQ 12/2018, 45/2018, 19/2022 (phần còn lại): [cần bổ sung] toàn văn/hiệu lực. NQ 12/2026 (lệ phí đăng ký kinh doanh: 0 đồng/lần cấp, mọi hình thức, 08/8/2026–31/12/2031) và NQ 43/2025 (hiệu lực đến 31/12/2030) đã đọc toàn văn từ tệp do Giám đốc Trung tâm cung cấp 01/10/2026.",
     "nghiQuyetHP": [
       {
         "so": "23/2026/NQ-HĐND",
         "ngay": "28/7/2026",
         "trichYeu": "Quy định mức thu phí, lệ phí thuộc thẩm quyền của HĐND thành phố đối với việc thực hiện thủ tục hành chính qua hình thức trực tuyến trên địa bàn thành phố Hải Phòng",
-        "trangThai": "Đang áp dụng · hiệu lực từ 08/8/2026 · đã đọc toàn văn bản gốc",
+        "trangThai": "Tầng 1 – quyết định mức thu hiện hành · Đang áp dụng · hiệu lực từ 08/8/2026 · đã đọc toàn văn bản gốc",
         "nhom": "dang_ap_dung",
+        "tang": 1,
+        "thuTu": 1,
         "ghiChu": "Mức thu 0 đồng đối với 04 loại lệ phí và 07 loại phí khi tổ chức, cá nhân thực hiện TTHC trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1, Điều 2). Hồ sơ TTHC nộp qua hình thức trực tuyến trước 08/8/2026 tiếp tục thực hiện theo NQ 07/2025 (Hải Dương) và NQ 08/2025 (Hải Phòng) (Điều 3 khoản 3).",
         "link": "https://cdn.haiphong.gov.vn/gov-hpg/6298/tintuc/2026/8/nq-23.2026.nq-hdnd639222298143062830.pdf"
+      },
+      {
+        "so": "12/2026/NQ-HĐND",
+        "ngay": "28/7/2026",
+        "trichYeu": "Quy định về lệ phí đăng ký kinh doanh trên địa bàn thành phố Hải Phòng",
+        "trangThai": "Tầng 1 – quyết định mức thu hiện hành · Đang áp dụng · hiệu lực từ 08/8/2026 · hết hiệu lực từ 31/12/2031 · đã đọc toàn văn bản gốc",
+        "nhom": "dang_ap_dung",
+        "tang": 1,
+        "thuTu": 2,
+        "ghiChu": "Mức thu lệ phí đăng ký kinh doanh đối với hộ kinh doanh, hợp tác xã, liên hiệp hợp tác xã (đăng ký thành lập, thay đổi nội dung, cấp lại giấy chứng nhận, gồm chi nhánh, văn phòng đại diện, địa điểm kinh doanh của HTX, LHHTX): 0 đồng/01 lần cấp, áp dụng cho mọi hình thức nộp hồ sơ (Điều 2). NQ không có điều khoản chuyển tiếp riêng [cần bổ sung nếu có hướng dẫn của UBND TP]. Tệp PDF do Giám đốc Trung tâm PVHCC cung cấp (01/10/2026) là bản ký trình, trống số/ngày ban hành; số hiệu theo xác nhận của Giám đốc.",
+        "link": "upload:12.NQ_-_Quy_dinh_ve_le_phi_dang_ky_kinh_doanh_tren_dia_ban_thanh_pho_Hai_Phong.signed.pdf"
       },
       {
         "so": "34/2025/NQ-HĐND",
         "ngay": "10/12/2025",
         "trichYeu": "Quy định mức thu, chế độ thu, nộp, quản lý và sử dụng các loại phí, lệ phí trong lĩnh vực đất đai trên địa bàn thành phố",
-        "trangThai": "Đang áp dụng · hiệu lực từ 01/01/2026 · đã đọc toàn văn bản gốc",
+        "trangThai": "Tầng 1 – quyết định mức thu hiện hành · Đang áp dụng · hiệu lực từ 01/01/2026 · đã đọc toàn văn bản gốc",
         "nhom": "dang_ap_dung",
+        "tang": 1,
+        "thuTu": 3,
         "ghiChu": "Lệ phí cấp GCN; phí thẩm định hồ sơ cấp GCN; phí đăng ký giao dịch bảo đảm; phí cung cấp thông tin giao dịch bảo đảm; phí khai thác, sử dụng tài liệu đất đai. Mức thu trực tuyến của nghị quyết này áp dụng khi NQ 07/2025 (Hải Dương) và NQ 08/2025 (Hải Phòng) hết hiệu lực (Điều 6 khoản 2); các khoản NQ 23/2026 quy định 0 đồng khi nộp trực tuyến được ưu tiên áp dụng từ 08/8/2026.",
         "link": "https://dbndhaiphong.gov.vn/SiteFolders/dbndhp/2472/Documents/NQ-34-2025.pdf"
-      },
-      {
-        "so": "362/2025/NĐ-CP",
-        "ngay": "31/12/2025",
-        "trichYeu": "Quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Phí và lệ phí",
-        "trangThai": "Đang áp dụng · hiệu lực từ 01/01/2026 · mới có nguồn thứ cấp",
-        "nhom": "dang_ap_dung",
-        "ghiChu": "Được NQ 23/2026 viện dẫn làm căn cứ; theo nguồn thứ cấp thay thế NĐ 120/2016/NĐ-CP. [cần đối chiếu CSDL quốc gia về VBPL].",
-        "link": "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Nghi-dinh-362-2025-ND-CP-huong-dan-Luat-Phi-va-le-phi-687493.aspx"
       },
       {
         "so": "43/2025/NQ-HĐND",
         "ngay": "10/12/2025",
         "trichYeu": "Quy định việc hỗ trợ phí chứng thực bản sao điện tử từ bản chính trên địa bàn thành phố Hải Phòng",
-        "trangThai": "Đang áp dụng · hiệu lực từ 01/01/2026 · hết hiệu lực từ 31/12/2026 · mới có nguồn thứ cấp",
+        "trangThai": "Tầng 1 – quyết định mức thu hiện hành · Đang áp dụng · hiệu lực từ 01/01/2026 · hết hiệu lực từ 31/12/2030 · đã đọc toàn văn bản gốc",
         "nhom": "dang_ap_dung",
-        "ghiChu": "Ngân sách hỗ trợ 100% phí chứng thực bản sao điện tử từ bản chính tại Trung tâm PVHCC xã, phường, đặc khu (mức phí theo TT 226/2016/TT-BTC). Số hiệu và hiệu lực theo Báo và Phát thanh, Truyền hình Hải Phòng, cổng Kiến An; [cần bổ sung toàn văn].",
-        "link": "https://kienan.haiphong.gov.vn/cai-cach-hanh-chinh/mien-phi-chung-thuc-ban-sao-dien-tu-tu-nam-2026-833828"
-      },
-      {
-        "so": "226/2016/TT-BTC",
-        "ngay": "11/11/2016",
-        "trichYeu": "Quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí chứng thực",
-        "trangThai": "Đang áp dụng · mới có nguồn thứ cấp",
-        "nhom": "dang_ap_dung",
-        "ghiChu": "Còn được áp dụng năm 2026 (được NQ 43/2025 của HĐND TP viện dẫn). Mức: bản sao từ bản chính 2.000 đ/trang (từ trang thứ 3: 1.000 đ/trang, tối đa 200.000 đ/bản); chữ ký 10.000 đ/trường hợp. [cần đối chiếu CSDL quốc gia về VBPL].",
-        "link": "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Thong-tu-226-2016-TT-BTC-phi-chung-thuc-322363.aspx"
+        "tang": 1,
+        "thuTu": 4,
+        "ghiChu": "Hỗ trợ 100% phí chứng thực bản sao điện tử từ bản chính (mức phí theo TT 226/2016/TT-BTC) tại Trung tâm PVHCC xã, phường, đặc khu. Hiệu lực 01/01/2026 đến hết 31/12/2030 (một số báo ghi đến 31/12/2026 là chưa đúng). Kỳ họp thứ 32, HĐND khóa XVI thông qua 10/12/2025. Tệp PDF do Giám đốc Trung tâm PVHCC cung cấp (01/10/2026) là bản ký trình, trống số/ngày ban hành; số hiệu theo xác nhận của Giám đốc.",
+        "link": "upload:43.NQ_Chung_thuc_ban_sao_dien_tu.signed.pdf"
       },
       {
         "so": "12/2018/NQ-HĐND",
         "ngay": "12/7/2018",
         "trichYeu": "Quy định một số loại phí, lệ phí thuộc thẩm quyền HĐND thành phố trên địa bàn thành phố Hải Phòng",
-        "trangThai": "Bãi bỏ một phần – cần xác minh phần còn lại · chưa đối chiếu",
+        "trangThai": "Tầng 2 – văn bản nền còn hiệu lực một phần · Bãi bỏ một phần – cần xác minh phần còn lại · chưa đối chiếu",
         "nhom": "can_xac_minh",
+        "tang": 2,
+        "thuTu": 5,
         "ghiChu": "Đã bãi bỏ khoản 1 Điều 1 và Phụ lục 01 (NQ 34/2025). Phần còn lại, gồm mức lệ phí hộ tịch khi nộp trực tiếp/bưu chính: [cần xác minh toàn văn và tình trạng hiệu lực mới nhất] — chưa đối chiếu được văn bản gốc trong phiên rà soát.",
         "link": "https://dbndhaiphong.gov.vn/SiteFolders/dbndhp/2472/Documents/NQ-34-2025.pdf"
       },
@@ -983,53 +984,120 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
         "so": "45/2018/NQ-HĐND",
         "ngay": "10/12/2018",
         "trichYeu": "Quy định một số loại phí, lệ phí trên địa bàn thành phố Hải Phòng",
-        "trangThai": "Bãi bỏ một phần – cần xác minh phần còn lại · chưa đối chiếu",
+        "trangThai": "Tầng 2 – văn bản nền còn hiệu lực một phần · Bãi bỏ một phần – cần xác minh phần còn lại · chưa đối chiếu",
         "nhom": "can_xac_minh",
-        "ghiChu": "Đã bãi bỏ khoản 5, khoản 6 Điều 1 và Phụ lục 05, 06 (NQ 34/2025). Phần còn lại: [cần xác minh toàn văn và tình trạng hiệu lực mới nhất]. NQ 19/2022/NQ-HĐND (09/12/2022) sửa đổi NQ này từng được ghi trong dữ liệu cũ nhưng chưa đối chiếu được văn bản gốc: [cần xác minh].",
+        "tang": 2,
+        "thuTu": 6,
+        "ghiChu": "Đã bãi bỏ khoản 5, khoản 6 Điều 1 và Phụ lục 05, 06 (NQ 34/2025) và khoản 12 Điều 1 + Phụ lục 12 (NQ 12/2026). Phần còn lại: [cần xác minh toàn văn và tình trạng hiệu lực mới nhất].",
         "link": "https://dbndhaiphong.gov.vn/SiteFolders/dbndhp/2472/Documents/NQ-34-2025.pdf"
+      },
+      {
+        "so": "19/2022/NQ-HĐND",
+        "ngay": "09/12/2022",
+        "trichYeu": "Sửa đổi, bổ sung một số điều NQ 45/2018/NQ-HĐND về phí, lệ phí (theo dữ liệu cũ của dự án)",
+        "trangThai": "Tầng 2 – văn bản nền còn hiệu lực một phần · Chưa xác minh hiệu lực · chưa đối chiếu",
+        "nhom": "can_xac_minh",
+        "tang": 2,
+        "thuTu": 7,
+        "ghiChu": "Chưa tìm được văn bản gốc; [cần xác minh số hiệu, nội dung và hiệu lực].",
+        "link": "https://dbndhaiphong.gov.vn/cac-nghi-quyet-khoa-xvi"
+      },
+      {
+        "so": "16/2023/NQ-HĐND",
+        "ngay": "",
+        "trichYeu": "Sửa đổi, bổ sung một số Nghị quyết quy định một số loại phí, lệ phí thuộc thẩm quyền HĐND thành phố",
+        "trangThai": "Tầng 2 – văn bản nền còn hiệu lực một phần · Chưa xác minh hiệu lực · chưa đối chiếu",
+        "nhom": "can_xac_minh",
+        "tang": 2,
+        "thuTu": 8,
+        "ghiChu": "Tiêu đề theo danh mục NQ khóa XVI trên cổng HĐND TP (kỳ họp thứ 13); chưa đọc toàn văn, [cần xác minh phần còn hiệu lực].",
+        "link": "https://dbndhaiphong.gov.vn/cac-nghi-quyet-khoa-xvi"
+      },
+      {
+        "so": "01/2022/NQ-HĐND",
+        "ngay": "",
+        "trichYeu": "Quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí thẩm định cấp, cấp lại, điều chỉnh giấy phép môi trường",
+        "trangThai": "Tầng 2 – văn bản nền còn hiệu lực một phần · Chưa xác minh hiệu lực · chưa đối chiếu",
+        "nhom": "can_xac_minh",
+        "tang": 2,
+        "thuTu": 9,
+        "ghiChu": "Tiêu đề theo danh mục NQ khóa XVI trên cổng HĐND TP (kỳ họp thứ 6); chưa đọc toàn văn. NQ 23/2026 đưa mức thu về 0 đồng khi nộp trực tuyến; mức trực tiếp/bưu chính [cần xác minh].",
+        "link": "https://dbndhaiphong.gov.vn/cac-nghi-quyet-khoa-xvi"
+      },
+      {
+        "so": "226/2016/TT-BTC",
+        "ngay": "11/11/2016",
+        "trichYeu": "Quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí chứng thực",
+        "trangThai": "Văn bản căn cứ (Chính phủ, Bộ) · Đang áp dụng · mới có nguồn thứ cấp",
+        "nhom": "dang_ap_dung",
+        "tang": 3,
+        "thuTu": 50,
+        "ghiChu": "Còn được áp dụng năm 2026 (được NQ 43/2025 của HĐND TP viện dẫn). Mức: bản sao từ bản chính 2.000 đ/trang (từ trang thứ 3: 1.000 đ/trang, tối đa 200.000 đ/bản); chữ ký 10.000 đ/trường hợp. [cần đối chiếu CSDL quốc gia về VBPL].",
+        "link": "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Thong-tu-226-2016-TT-BTC-phi-chung-thuc-322363.aspx"
       },
       {
         "so": "281/2016/TT-BTC",
         "ngay": "14/11/2016",
         "trichYeu": "Phí khai thác, sử dụng thông tin trong cơ sở dữ liệu hộ tịch; phí xác nhận có quốc tịch Việt Nam, xác nhận là người gốc Việt Nam",
-        "trangThai": "Đang áp dụng · mới có nguồn thứ cấp",
+        "trangThai": "Văn bản căn cứ (Chính phủ, Bộ) · Đang áp dụng · mới có nguồn thứ cấp",
         "nhom": "can_xac_minh",
+        "tang": 3,
+        "thuTu": 50,
         "ghiChu": "Nguồn thứ cấp cho thấy còn hiệu lực năm 2026 (phí cấp bản sao trích lục hộ tịch). [cần đối chiếu CSDL quốc gia về VBPL].",
         "link": "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Thong-tu-281-2016-TT-BTC-phi-khai-thac-su-dung-thong-tin-ho-tich-phi-xac-nhan-co-quoc-tich-Viet-Nam-322135.aspx"
+      },
+      {
+        "so": "362/2025/NĐ-CP",
+        "ngay": "31/12/2025",
+        "trichYeu": "Quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Phí và lệ phí",
+        "trangThai": "Văn bản căn cứ (Chính phủ, Bộ) · Đang áp dụng · hiệu lực từ 01/01/2026 · mới có nguồn thứ cấp",
+        "nhom": "dang_ap_dung",
+        "tang": 3,
+        "thuTu": 50,
+        "ghiChu": "Được NQ 23/2026 viện dẫn làm căn cứ; theo nguồn thứ cấp thay thế NĐ 120/2016/NĐ-CP. [cần đối chiếu CSDL quốc gia về VBPL].",
+        "link": "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Nghi-dinh-362-2025-ND-CP-huong-dan-Luat-Phi-va-le-phi-687493.aspx"
       },
       {
         "so": "85/2019/TT-BTC (sửa đổi bởi 106/2021/TT-BTC)",
         "ngay": "29/11/2019",
         "trichYeu": "Hướng dẫn về phí và lệ phí thuộc thẩm quyền quyết định của HĐND tỉnh, thành phố trực thuộc Trung ương",
-        "trangThai": "Chưa xác minh hiệu lực · chưa đối chiếu",
+        "trangThai": "Văn bản căn cứ (Chính phủ, Bộ) · Chưa xác minh hiệu lực · chưa đối chiếu",
         "nhom": "can_xac_minh",
+        "tang": 3,
+        "thuTu": 50,
         "ghiChu": "Được NQ 34/2025 (12/2025) viện dẫn; NQ 23/2026 không viện dẫn mà dẫn NĐ 362/2025/NĐ-CP. [cần xác minh tình trạng hiệu lực sau 01/01/2026].",
         "link": "https://dbndhaiphong.gov.vn/SiteFolders/dbndhp/2472/Documents/NQ-34-2025.pdf"
-      },
-      {
-        "so": "08/2025/NQ-HĐND",
-        "ngay": "17/6/2025",
-        "trichYeu": "Quy định mức thu phí, lệ phí thuộc thẩm quyền của HĐND thành phố đối với việc thực hiện thủ tục hành chính trực tuyến",
-        "trangThai": "Đã hết hiệu lực · hết hiệu lực từ 08/8/2026 · đã đọc toàn văn bản gốc",
-        "nhom": "het_hieu_luc",
-        "ghiChu": "Hết hiệu lực từ 08/8/2026 theo NQ 23/2026 (Điều 3 khoản 2 điểm b). Chỉ còn áp dụng cho hồ sơ nộp trực tuyến trước 08/8/2026. Không nhầm với NQ 08/2025/NQ-HĐND ngày 26/6/2025 của HĐND tỉnh Hải Dương.",
-        "link": "https://cdn.haiphong.gov.vn/gov-hpg/6298/tintuc/2026/8/nq-23.2026.nq-hdnd639222298143062830.pdf"
       },
       {
         "so": "07/2025/NQ-HĐND",
         "ngay": "10/6/2025",
         "trichYeu": "Quy định mức thu phí, lệ phí đối với hoạt động cung cấp dịch vụ công trực tuyến trên địa bàn tỉnh Hải Dương",
-        "trangThai": "Đã hết hiệu lực · hết hiệu lực từ 08/8/2026 · đã đọc toàn văn bản gốc",
+        "trangThai": "Đã hết hiệu lực/bãi bỏ · Đã hết hiệu lực · hết hiệu lực từ 08/8/2026 · đã đọc toàn văn bản gốc",
         "nhom": "het_hieu_luc",
+        "tang": 9,
+        "thuTu": 50,
         "ghiChu": "Hết hiệu lực từ 08/8/2026 theo NQ 23/2026 (Điều 3 khoản 2 điểm a); còn áp dụng chuyển tiếp cho hồ sơ nộp trực tuyến trước 08/8/2026. Văn bản của tỉnh Hải Dương cũ, ghi để tra cứu và đối chiếu quy định chuyển tiếp.",
+        "link": "https://cdn.haiphong.gov.vn/gov-hpg/6298/tintuc/2026/8/nq-23.2026.nq-hdnd639222298143062830.pdf"
+      },
+      {
+        "so": "08/2025/NQ-HĐND",
+        "ngay": "17/6/2025",
+        "trichYeu": "Quy định mức thu phí, lệ phí thuộc thẩm quyền của HĐND thành phố đối với việc thực hiện thủ tục hành chính trực tuyến",
+        "trangThai": "Đã hết hiệu lực/bãi bỏ · Đã hết hiệu lực · hết hiệu lực từ 08/8/2026 · đã đọc toàn văn bản gốc",
+        "nhom": "het_hieu_luc",
+        "tang": 9,
+        "thuTu": 50,
+        "ghiChu": "Hết hiệu lực từ 08/8/2026 theo NQ 23/2026 (Điều 3 khoản 2 điểm b). Chỉ còn áp dụng cho hồ sơ nộp trực tuyến trước 08/8/2026. Không nhầm với NQ 08/2025/NQ-HĐND ngày 26/6/2025 của HĐND tỉnh Hải Dương.",
         "link": "https://cdn.haiphong.gov.vn/gov-hpg/6298/tintuc/2026/8/nq-23.2026.nq-hdnd639222298143062830.pdf"
       },
       {
         "so": "17/2024/NQ-HĐND",
         "ngay": "06/12/2024",
         "trichYeu": "Quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí thẩm định hồ sơ và lệ phí cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất",
-        "trangThai": "Đã bãi bỏ · hết hiệu lực từ 01/01/2026 · đã đọc toàn văn bản gốc",
+        "trangThai": "Đã hết hiệu lực/bãi bỏ · Đã bãi bỏ · hết hiệu lực từ 01/01/2026 · đã đọc toàn văn bản gốc",
         "nhom": "het_hieu_luc",
+        "tang": 9,
+        "thuTu": 50,
         "ghiChu": "Bãi bỏ toàn bộ bởi NQ 34/2025/NQ-HĐND (Điều 6 khoản 3 điểm d), hiệu lực từ 01/01/2026.",
         "link": "https://dbndhaiphong.gov.vn/SiteFolders/dbndhp/2472/Documents/NQ-34-2025.pdf"
       }
@@ -1166,8 +1234,8 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
             "muc": "Thông tư 281/2016/TT-BTC"
           },
           {
-            "ten": "Lệ phí đăng ký hộ kinh doanh (1 TTHC)",
-            "muc": "Mức do HĐND thành phố quyết định (căn cứ TT 85/2019/TT-BTC)"
+            "ten": "Lệ phí đăng ký kinh doanh (hộ kinh doanh, hợp tác xã, liên hiệp hợp tác xã) (8 TTHC)",
+            "muc": "NQ 12/2026/NQ-HĐND"
           }
         ],
         "ghiChu": "TTHC không thuộc NQ 23/2026/NQ-HĐND thì áp dụng văn bản phí, lệ phí chuyên ngành tương ứng; không gắn cờ miễn lệ phí trực tuyến. Chi tiết mức thu và căn cứ xem tại từng thủ tục."

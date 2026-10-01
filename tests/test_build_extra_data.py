@@ -24,13 +24,13 @@ class ExtraDataTests(unittest.TestCase):
     def test_nq23_is_current_and_first(self):
         first = self.data["phiLePhi"]["nghiQuyetHP"][0]
         self.assertEqual(first["so"], "23/2026/NQ-HĐND")
-        self.assertTrue(first["trangThai"].startswith("Đang áp dụng"))
+        self.assertIn("Đang áp dụng", first["trangThai"])
         self.assertIn("08/8/2026", first["trangThai"])
 
     def test_expired_resolutions_not_listed_as_current(self):
         for card in self.data["phiLePhi"]["nghiQuyetHP"]:
             if card["so"] in {"07/2025/NQ-HĐND", "08/2025/NQ-HĐND", "17/2024/NQ-HĐND"}:
-                self.assertFalse(card["trangThai"].startswith("Đang áp dụng"), card["so"])
+                self.assertNotIn("Đang áp dụng", card["trangThai"], card["so"])
                 self.assertEqual(card["nhom"], "het_hieu_luc")
 
     def test_nq23_covers_eleven_zero_dong_items(self):
@@ -100,3 +100,36 @@ class SpecializedFeeTests(unittest.TestCase):
         master = {t["ma"]: t for t in json.loads((root / "data/thu-tuc.json").read_text(encoding="utf-8"))["thuTuc"]}
         for item in spec["items"]:
             self.assertFalse(master[item["ma"]]["mienPhiTrucTuyen"], item["ma"])
+
+
+class FeeStructureTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        root = Path(__file__).resolve().parents[1]
+        cls.master = {t["ma"]: t for t in json.loads((root / "data/thu-tuc.json").read_text(encoding="utf-8"))["thuTuc"]}
+        text = bed.OUTPUT.read_text(encoding="utf-8")
+        marker = "Object.assign(window.TTHC_EXTRA || {}, "
+        cls.cards = json.loads(text[text.index(marker) + len(marker): text.rindex(");")])["phiLePhi"]["nghiQuyetHP"]
+
+    def test_tier1_has_the_four_current_resolutions(self):
+        tier1 = [c["so"] for c in self.cards if c["tang"] == 1]
+        self.assertEqual(tier1, ["23/2026/NQ-HĐND", "12/2026/NQ-HĐND", "34/2025/NQ-HĐND", "43/2025/NQ-HĐND"])
+
+    def test_nq43_valid_until_2030(self):
+        card = next(c for c in self.cards if c["so"] == "43/2025/NQ-HĐND")
+        self.assertIn("31/12/2030", card["trangThai"])
+
+    def test_business_registration_fee_zero_all_forms_not_nq23_flag(self):
+        row = self.master["1.001612"]
+        self.assertFalse(row["mienPhiTrucTuyen"])
+        entry = row["phiCanCu"][0]
+        self.assertIn("NQ 12/2026/NQ-HĐND", entry["canCu"])
+        self.assertEqual(entry["mucTrucTiep"], entry["mucTrucTuyen"])
+
+    def test_nq23_rows_have_full_fee_basis_structure(self):
+        keys = {"khoanPhi", "canCu", "mucTrucTiep", "mucTrucTuyen", "apDungTu", "chuyenTiep"}
+        flagged = [t for t in self.master.values() if t["mienPhiTrucTuyen"]]
+        self.assertTrue(flagged)
+        for t in flagged:
+            self.assertTrue(keys <= set(t["phiCanCu"][0]), t["ma"])
+            self.assertEqual(t["phiCanCu"][0]["mucTrucTuyen"], "0 đồng")

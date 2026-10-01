@@ -3321,7 +3321,7 @@
       "phiDiaGioi": true,
       "lienThong": false,
       "phi": "",
-      "phiOnline": "Chứng thực bản sao điện tử từ bản chính tại Trung tâm PVHCC xã, phường, đặc khu: ngân sách hỗ trợ 100% phí (NQ 43/2025/NQ-HĐND, 01/01/2026–31/12/2026). Không thuộc NQ 23/2026.",
+      "phiOnline": "Chứng thực bản sao điện tử từ bản chính tại Trung tâm PVHCC xã, phường, đặc khu: ngân sách hỗ trợ 100% phí (NQ 43/2025/NQ-HĐND, 01/01/2026–31/12/2030). Không thuộc NQ 23/2026.",
       "thoiHan": "",
       "dvctt": "",
       "coQuan": "",
@@ -3574,7 +3574,17 @@
             "dvcqg_vinhbao"
           ]
         }
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Phí chứng thực bản sao từ bản chính",
+          "canCu": "TT 226/2016/TT-BTC; NQ 43/2025/NQ-HĐND",
+          "mucTrucTiep": "2.000 đồng/trang, từ trang thứ 3: 1.000 đồng/trang, tối đa 200.000 đồng/bản (nộp bản giấy)",
+          "mucTrucTuyen": "Bản sao điện tử từ bản chính: ngân sách hỗ trợ 100% (0 đồng cho người yêu cầu)",
+          "apDungTu": "01/01/2026 (đến hết 31/12/2030)",
+          "chuyenTiep": "Không có"
+        }
+      ]
     },
     {
       "ma": "2.001008",
@@ -14192,7 +14202,17 @@
         "submissionLinkStatus": [
           "ev_abea9d8643d2790acae7e81a"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí hộ tịch",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "2.000554",
@@ -14293,7 +14313,17 @@
         "submissionLinkStatus": [
           "ev_1ec24058e7f0383920a75953"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí hộ tịch",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "2.000748",
@@ -14394,7 +14424,17 @@
         "submissionLinkStatus": [
           "ev_a89eb81f049f41252ac0f911"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí hộ tịch",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.004873",
@@ -14777,7 +14817,17 @@
             "dvcqg_vinhbao"
           ]
         }
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí hộ tịch",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "2.002189",
@@ -15145,7 +15195,17 @@
             "dvcqg_vinhbao"
           ]
         }
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí hộ tịch",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.004859",
@@ -15510,7 +15570,17 @@
             "dvcqg_vinhbao"
           ]
         }
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí hộ tịch",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "2.002516",
@@ -15982,7 +16052,17 @@
             "dvcqg_vinhbao"
           ]
         }
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí hộ tịch",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.000894",
@@ -16302,7 +16382,17 @@
             "dvcqg_vinhbao"
           ]
         }
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí hộ tịch",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "2.000806",
@@ -16664,7 +16754,17 @@
             "dvcqg_vinhbao"
           ]
         }
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí hộ tịch",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.000593",
@@ -16943,7 +17043,17 @@
             "dvcqg_vinhbao"
           ]
         }
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí hộ tịch",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.001193",
@@ -17323,7 +17433,17 @@
             "dvcqg_vinhbao"
           ]
         }
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí hộ tịch",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.004772",
@@ -17677,7 +17797,17 @@
             "dvcqg_vinhbao"
           ]
         }
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí hộ tịch",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "2.000528",
@@ -18045,7 +18175,17 @@
             "dvcqg_vinhbao"
           ]
         }
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí hộ tịch",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.000689",
@@ -18393,7 +18533,17 @@
             "dvcqg_vinhbao"
           ]
         }
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí hộ tịch",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.003583",
@@ -18532,7 +18682,17 @@
           "ev_39f7cc9a53b07ad0a900105b",
           "ev_0cace5f7542098d54fd2cc34"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí hộ tịch",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.000656",
@@ -18883,7 +19043,17 @@
             "dvcqg_vinhbao"
           ]
         }
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí hộ tịch",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.000419",
@@ -19022,7 +19192,17 @@
           "ev_f1ff5f9bfe9130daae0f2df3",
           "ev_895bf1b6a56fc4dce2f4ce37"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí hộ tịch",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.004746",
@@ -19324,7 +19504,17 @@
             "dvcqg_vinhbao"
           ]
         }
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí hộ tịch",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.004884",
@@ -19677,7 +19867,17 @@
             "dvcqg_vinhbao"
           ]
         }
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí hộ tịch",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.004845",
@@ -19778,7 +19978,17 @@
         "submissionLinkStatus": [
           "ev_60367017acd70a8bfeb83fa3"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí hộ tịch",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "2.000756",
@@ -19879,7 +20089,17 @@
         "submissionLinkStatus": [
           "ev_10bc10a45fe406335d73ab3a"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí hộ tịch",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "3.000322",
@@ -19980,7 +20200,17 @@
         "submissionLinkStatus": [
           "ev_77cc79fc6f10db2f962a8d7f"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí hộ tịch",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.001669",
@@ -20081,7 +20311,17 @@
         "submissionLinkStatus": [
           "ev_00812e9713c2a532572b58c6"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí hộ tịch",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "3.000323",
@@ -20182,7 +20422,17 @@
         "submissionLinkStatus": [
           "ev_35dc61d0c4b6fd47666a8985"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí hộ tịch",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.000893",
@@ -20283,7 +20533,17 @@
         "submissionLinkStatus": [
           "ev_48475602083ad1e5682fea5d"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí hộ tịch",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.001695",
@@ -20384,7 +20644,17 @@
         "submissionLinkStatus": [
           "ev_b04c1d1ea680973c99bbecb2"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí hộ tịch",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.001766",
@@ -20485,7 +20755,17 @@
         "submissionLinkStatus": [
           "ev_de4ee5d5db62c70a2c7c05c1"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí hộ tịch",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "2.000522",
@@ -20586,7 +20866,17 @@
         "submissionLinkStatus": [
           "ev_3b33c7058276515a9dfbb27f"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí hộ tịch",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.005461",
@@ -20907,7 +21197,17 @@
             "dvcqg_vinhbao"
           ]
         }
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí hộ tịch",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "2.000497",
@@ -21008,7 +21308,17 @@
         "submissionLinkStatus": [
           "ev_641246687be40808f01db217"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí hộ tịch",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.001022",
@@ -21109,7 +21419,17 @@
         "submissionLinkStatus": [
           "ev_bdaed26913cdc8e15860d92b"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí hộ tịch",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "2.000779",
@@ -21210,7 +21530,17 @@
         "submissionLinkStatus": [
           "ev_ad18ea4e4c654458158170fa"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí hộ tịch",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "2.000424",
@@ -35152,7 +35482,7 @@
       "phiDiaGioi": false,
       "lienThong": false,
       "phi": "",
-      "phiOnline": "",
+      "phiOnline": "0 đồng/lần cấp (NQ 12/2026/NQ-HĐND, áp dụng mọi hình thức nộp, từ 08/8/2026 đến hết 31/12/2031)",
       "thoiHan": "",
       "dvctt": "",
       "coQuan": "",
@@ -35461,7 +35791,18 @@
             "dvcqg_vinhbao"
           ]
         }
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Cấp lại/cấp đổi giấy chứng nhận đăng ký hộ kinh doanh",
+          "canCu": "NQ 12/2026/NQ-HĐND Điều 2",
+          "mucTrucTiep": "0 đồng/01 lần cấp",
+          "mucTrucTuyen": "0 đồng/01 lần cấp",
+          "apDungTu": "08/8/2026 (đến hết 31/12/2031)",
+          "chuyenTiep": "[cần bổ sung] — NQ không có điều khoản chuyển tiếp",
+          "thayMucHuongDan": true
+        }
+      ]
     },
     {
       "ma": "2.002638",
@@ -35574,7 +35915,7 @@
       "phiDiaGioi": false,
       "lienThong": false,
       "phi": "",
-      "phiOnline": "",
+      "phiOnline": "0 đồng/lần cấp (NQ 12/2026/NQ-HĐND, áp dụng mọi hình thức nộp, từ 08/8/2026 đến hết 31/12/2031)",
       "thoiHan": "",
       "dvctt": "",
       "coQuan": "",
@@ -35663,7 +36004,18 @@
         "submissionLinkStatus": [
           "ev_6652513182b19cfc7fa97ae1"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Cấp đổi giấy chứng nhận đăng ký hợp tác xã, liên hiệp hợp tác xã",
+          "canCu": "NQ 12/2026/NQ-HĐND Điều 2",
+          "mucTrucTiep": "0 đồng/01 lần cấp",
+          "mucTrucTuyen": "0 đồng/01 lần cấp",
+          "apDungTu": "08/8/2026 (đến hết 31/12/2031)",
+          "chuyenTiep": "[cần bổ sung] — NQ không có điều khoản chuyển tiếp",
+          "thayMucHuongDan": true
+        }
+      ]
     },
     {
       "ma": "2.002017",
@@ -38884,7 +39236,7 @@
       "phiDiaGioi": false,
       "lienThong": false,
       "phi": "",
-      "phiOnline": "",
+      "phiOnline": "0 đồng/lần cấp (NQ 12/2026/NQ-HĐND, áp dụng mọi hình thức nộp, từ 08/8/2026 đến hết 31/12/2031)",
       "thoiHan": "",
       "dvctt": "",
       "coQuan": "",
@@ -38973,7 +39325,18 @@
         "submissionLinkStatus": [
           "ev_f9eb5fb4a490264bcb5b6484"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Đăng ký hoạt động chi nhánh, văn phòng đại diện, địa điểm kinh doanh",
+          "canCu": "NQ 12/2026/NQ-HĐND Điều 2",
+          "mucTrucTiep": "0 đồng/01 lần cấp",
+          "mucTrucTuyen": "0 đồng/01 lần cấp",
+          "apDungTu": "08/8/2026 (đến hết 31/12/2031)",
+          "chuyenTiep": "[cần bổ sung] — NQ không có điều khoản chuyển tiếp",
+          "thayMucHuongDan": true
+        }
+      ]
     },
     {
       "ma": "2.002043",
@@ -39670,7 +40033,7 @@
       "phiDiaGioi": false,
       "lienThong": false,
       "phi": "",
-      "phiOnline": "",
+      "phiOnline": "0 đồng/lần cấp (NQ 12/2026/NQ-HĐND, áp dụng mọi hình thức nộp, từ 08/8/2026 đến hết 31/12/2031)",
       "thoiHan": "",
       "dvctt": "",
       "coQuan": "",
@@ -39981,7 +40344,18 @@
             "dvcqg_vinhbao"
           ]
         }
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Đăng ký thành lập hộ kinh doanh",
+          "canCu": "NQ 12/2026/NQ-HĐND Điều 2",
+          "mucTrucTiep": "0 đồng/01 lần cấp",
+          "mucTrucTuyen": "0 đồng/01 lần cấp",
+          "apDungTu": "08/8/2026 (đến hết 31/12/2031)",
+          "chuyenTiep": "[cần bổ sung] — NQ không có điều khoản chuyển tiếp",
+          "thayMucHuongDan": true
+        }
+      ]
     },
     {
       "ma": "1.005280",
@@ -39993,7 +40367,7 @@
       "phiDiaGioi": false,
       "lienThong": false,
       "phi": "",
-      "phiOnline": "",
+      "phiOnline": "0 đồng/lần cấp (NQ 12/2026/NQ-HĐND, áp dụng mọi hình thức nộp, từ 08/8/2026 đến hết 31/12/2031)",
       "thoiHan": "",
       "dvctt": "",
       "coQuan": "",
@@ -40082,7 +40456,18 @@
         "submissionLinkStatus": [
           "ev_118588468dc2de8a8b6288b7"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Đăng ký thành lập hợp tác xã, liên hiệp hợp tác xã",
+          "canCu": "NQ 12/2026/NQ-HĐND Điều 2",
+          "mucTrucTiep": "0 đồng/01 lần cấp",
+          "mucTrucTuyen": "0 đồng/01 lần cấp",
+          "apDungTu": "08/8/2026 (đến hết 31/12/2031)",
+          "chuyenTiep": "[cần bổ sung] — NQ không có điều khoản chuyển tiếp",
+          "thayMucHuongDan": true
+        }
+      ]
     },
     {
       "ma": "2.002637",
@@ -40414,7 +40799,7 @@
       "phiDiaGioi": false,
       "lienThong": false,
       "phi": "",
-      "phiOnline": "",
+      "phiOnline": "0 đồng/lần cấp (NQ 12/2026/NQ-HĐND, áp dụng mọi hình thức nộp, từ 08/8/2026 đến hết 31/12/2031)",
       "thoiHan": "",
       "dvctt": "",
       "coQuan": "",
@@ -40710,7 +41095,18 @@
             "dvcqg_vinhbao"
           ]
         }
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Đăng ký thay đổi nội dung hộ kinh doanh",
+          "canCu": "NQ 12/2026/NQ-HĐND Điều 2",
+          "mucTrucTiep": "0 đồng/01 lần cấp",
+          "mucTrucTuyen": "0 đồng/01 lần cấp",
+          "apDungTu": "08/8/2026 (đến hết 31/12/2031)",
+          "chuyenTiep": "[cần bổ sung] — NQ không có điều khoản chuyển tiếp",
+          "thayMucHuongDan": true
+        }
+      ]
     },
     {
       "ma": "1.005378",
@@ -40722,7 +41118,7 @@
       "phiDiaGioi": false,
       "lienThong": false,
       "phi": "",
-      "phiOnline": "",
+      "phiOnline": "0 đồng/lần cấp (NQ 12/2026/NQ-HĐND, áp dụng mọi hình thức nộp, từ 08/8/2026 đến hết 31/12/2031)",
       "thoiHan": "",
       "dvctt": "",
       "coQuan": "",
@@ -40811,7 +41207,18 @@
         "submissionLinkStatus": [
           "ev_148d48e40ef269b2b39c0335"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Đăng ký thay đổi nội dung đăng ký chi nhánh, văn phòng đại diện, địa điểm kinh doanh",
+          "canCu": "NQ 12/2026/NQ-HĐND Điều 2",
+          "mucTrucTiep": "0 đồng/01 lần cấp",
+          "mucTrucTuyen": "0 đồng/01 lần cấp",
+          "apDungTu": "08/8/2026 (đến hết 31/12/2031)",
+          "chuyenTiep": "[cần bổ sung] — NQ không có điều khoản chuyển tiếp",
+          "thayMucHuongDan": true
+        }
+      ]
     },
     {
       "ma": "1.005277",
@@ -40823,7 +41230,7 @@
       "phiDiaGioi": false,
       "lienThong": false,
       "phi": "",
-      "phiOnline": "",
+      "phiOnline": "0 đồng/lần cấp (NQ 12/2026/NQ-HĐND, áp dụng mọi hình thức nộp, từ 08/8/2026 đến hết 31/12/2031)",
       "thoiHan": "",
       "dvctt": "",
       "coQuan": "",
@@ -40912,7 +41319,18 @@
         "submissionLinkStatus": [
           "ev_4ebfffdb54808cfb3d40a25d"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Đăng ký thay đổi nội dung hợp tác xã, liên hiệp hợp tác xã",
+          "canCu": "NQ 12/2026/NQ-HĐND Điều 2",
+          "mucTrucTiep": "0 đồng/01 lần cấp",
+          "mucTrucTuyen": "0 đồng/01 lần cấp",
+          "apDungTu": "08/8/2026 (đến hết 31/12/2031)",
+          "chuyenTiep": "[cần bổ sung] — NQ không có điều khoản chuyển tiếp",
+          "thayMucHuongDan": true
+        }
+      ]
     },
     {
       "ma": "2.002639",
@@ -47979,7 +48397,17 @@
         "submissionLinkStatus": [
           "ev_987fbd1bb2cbd15edbf5245a"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí cấp giấy phép xây dựng",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm d",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí cấp giấy phép xây dựng còn hiệu lực",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.013229",
@@ -48126,7 +48554,17 @@
         "submissionLinkStatus": [
           "ev_9809670741a36b9599789084"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí cấp giấy phép xây dựng",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm d",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí cấp giấy phép xây dựng còn hiệu lực",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.013217",
@@ -48645,7 +49083,17 @@
         "submissionLinkStatus": [
           "ev_ba8d57439f94249c56f7d00b"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí cấp giấy phép xây dựng",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm d",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí cấp giấy phép xây dựng còn hiệu lực",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.005210",
@@ -50563,7 +51011,17 @@
         "submissionLinkStatus": [
           "ev_aa0e61b029780d11ba92f77b"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí cấp giấy phép xây dựng",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm d",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí cấp giấy phép xây dựng còn hiệu lực",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.005021",
@@ -51108,7 +51566,17 @@
         "submissionLinkStatus": [
           "ev_18d1a1b5d995d0a65ac410a3"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí cấp giấy phép xây dựng",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm d",
+          "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí cấp giấy phép xây dựng còn hiệu lực",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.012885",
@@ -53457,7 +53925,17 @@
         "submissionLinkStatus": [
           "ev_067a6b8d7fa5a73706ad99b2"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí cấp GCN; phí thẩm định hồ sơ cấp GCN",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm c, khoản 2 điểm b; mức nền theo NQ 34/2025/NQ-HĐND",
+          "mucTrucTiep": "Lệ phí: Phụ lục I; phí thẩm định: Phụ lục II NQ 34/2025/NQ-HĐND (theo đối tượng cá nhân/tổ chức và loại hồ sơ; có trường hợp miễn)",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.115622",
@@ -53557,7 +54035,17 @@
         "submissionLinkStatus": [
           "ev_88c2643069e81db0ee1e2240"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí cấp GCN; phí thẩm định hồ sơ cấp GCN",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm c, khoản 2 điểm b; mức nền theo NQ 34/2025/NQ-HĐND",
+          "mucTrucTiep": "Lệ phí: Phụ lục I; phí thẩm định: Phụ lục II NQ 34/2025/NQ-HĐND (theo đối tượng cá nhân/tổ chức và loại hồ sơ; có trường hợp miễn)",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.012786",
@@ -53706,7 +54194,17 @@
           "ev_3f8aebf87d620cf472190277",
           "ev_30f0bf196a7dca68ed33ff11"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí cấp GCN; phí thẩm định hồ sơ cấp GCN",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm c, khoản 2 điểm b; mức nền theo NQ 34/2025/NQ-HĐND",
+          "mucTrucTiep": "Lệ phí: Phụ lục I; phí thẩm định: Phụ lục II NQ 34/2025/NQ-HĐND (theo đối tượng cá nhân/tổ chức và loại hồ sơ; có trường hợp miễn)",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.115621",
@@ -53806,7 +54304,17 @@
         "submissionLinkStatus": [
           "ev_8ffadde142bbd70ba0a0742d"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí cấp GCN; phí thẩm định hồ sơ cấp GCN",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm c, khoản 2 điểm b; mức nền theo NQ 34/2025/NQ-HĐND",
+          "mucTrucTiep": "Lệ phí: Phụ lục I; phí thẩm định: Phụ lục II NQ 34/2025/NQ-HĐND (theo đối tượng cá nhân/tổ chức và loại hồ sơ; có trường hợp miễn)",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.012783",
@@ -53955,7 +54463,17 @@
           "ev_04f23584d7a5f6527822b6cf",
           "ev_b088e1eb9a7cc5972ea551a5"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí cấp GCN; phí thẩm định hồ sơ cấp GCN",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm c, khoản 2 điểm b; mức nền theo NQ 34/2025/NQ-HĐND",
+          "mucTrucTiep": "Lệ phí: Phụ lục I; phí thẩm định: Phụ lục II NQ 34/2025/NQ-HĐND (theo đối tượng cá nhân/tổ chức và loại hồ sơ; có trường hợp miễn)",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.115645",
@@ -54670,7 +55188,17 @@
           "ev_6e29f48454bb3c3d270dc70a",
           "ev_006b7417f18c31bdc9e44ce1"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Phí đăng ký giao dịch bảo đảm",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 2 điểm a; mức nền theo NQ 34/2025/NQ-HĐND",
+          "mucTrucTiep": "Phụ lục III NQ 34/2025/NQ-HĐND (hình thức trực tiếp)",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "2.002750",
@@ -55255,7 +55783,17 @@
         "submissionLinkStatus": [
           "ev_6a875290dca70abbb4e93d94"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí cấp GCN; phí thẩm định hồ sơ cấp GCN",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm c, khoản 2 điểm b; mức nền theo NQ 34/2025/NQ-HĐND",
+          "mucTrucTiep": "Lệ phí: Phụ lục I; phí thẩm định: Phụ lục II NQ 34/2025/NQ-HĐND (theo đối tượng cá nhân/tổ chức và loại hồ sơ; có trường hợp miễn)",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.013962",
@@ -56989,7 +57527,17 @@
           "ev_00b64fbb556d0a1290eb7b93",
           "ev_e3b871e5487b4cc17f5ca6d3"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí cấp GCN; phí thẩm định hồ sơ cấp GCN",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm c, khoản 2 điểm b; mức nền theo NQ 34/2025/NQ-HĐND",
+          "mucTrucTiep": "Lệ phí: Phụ lục I; phí thẩm định: Phụ lục II NQ 34/2025/NQ-HĐND (theo đối tượng cá nhân/tổ chức và loại hồ sơ; có trường hợp miễn)",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "2.002675",
@@ -58370,7 +58918,17 @@
         "submissionLinkStatus": [
           "ev_fd404dd50f004879d7244b48"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí cấp GCN; phí thẩm định hồ sơ cấp GCN",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm c, khoản 2 điểm b; mức nền theo NQ 34/2025/NQ-HĐND",
+          "mucTrucTiep": "Lệ phí: Phụ lục I; phí thẩm định: Phụ lục II NQ 34/2025/NQ-HĐND (theo đối tượng cá nhân/tổ chức và loại hồ sơ; có trường hợp miễn)",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.012817",
@@ -58517,7 +59075,17 @@
           "ev_ce62e863ff724154999d4e36",
           "ev_212962b19429cf3c12b5c27b"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí cấp GCN; phí thẩm định hồ sơ cấp GCN",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm c, khoản 2 điểm b; mức nền theo NQ 34/2025/NQ-HĐND",
+          "mucTrucTiep": "Lệ phí: Phụ lục I; phí thẩm định: Phụ lục II NQ 34/2025/NQ-HĐND (theo đối tượng cá nhân/tổ chức và loại hồ sơ; có trường hợp miễn)",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.013988",
@@ -58815,7 +59383,17 @@
           "ev_8245dca4abb0d3705f905eaa",
           "ev_97244d22008650edc8ee3605"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Phí đăng ký giao dịch bảo đảm",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 2 điểm a; mức nền theo NQ 34/2025/NQ-HĐND",
+          "mucTrucTiep": "Phụ lục III NQ 34/2025/NQ-HĐND (hình thức trực tiếp)",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.012766",
@@ -59113,7 +59691,17 @@
           "ev_530eb01b99c1c14ab7e19bfd",
           "ev_42a13ba2a02a8a291f22af56"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Phí đăng ký giao dịch bảo đảm",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 2 điểm a; mức nền theo NQ 34/2025/NQ-HĐND",
+          "mucTrucTiep": "Phụ lục III NQ 34/2025/NQ-HĐND (hình thức trực tiếp)",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.013992",
@@ -59262,7 +59850,17 @@
           "ev_2167ac37eb76a0480889c253",
           "ev_027e6d1554ae3ce258772efe"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí cấp GCN; phí thẩm định hồ sơ cấp GCN",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm c, khoản 2 điểm b; mức nền theo NQ 34/2025/NQ-HĐND",
+          "mucTrucTiep": "Lệ phí: Phụ lục I; phí thẩm định: Phụ lục II NQ 34/2025/NQ-HĐND (theo đối tượng cá nhân/tổ chức và loại hồ sơ; có trường hợp miễn)",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.013831",
@@ -59411,7 +60009,17 @@
           "ev_ea803e88b1710d9a115d16fd",
           "ev_791bc31d7fcbe9fee81fbbbd"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí cấp GCN; phí thẩm định hồ sơ cấp GCN",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm c, khoản 2 điểm b; mức nền theo NQ 34/2025/NQ-HĐND",
+          "mucTrucTiep": "Lệ phí: Phụ lục I; phí thẩm định: Phụ lục II NQ 34/2025/NQ-HĐND (theo đối tượng cá nhân/tổ chức và loại hồ sơ; có trường hợp miễn)",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.013977",
@@ -59560,7 +60168,17 @@
           "ev_74fb2e180ae1497d0556abf6",
           "ev_9f4ef46f82326815526dcefd"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí cấp GCN; phí thẩm định hồ sơ cấp GCN",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm c, khoản 2 điểm b; mức nền theo NQ 34/2025/NQ-HĐND",
+          "mucTrucTiep": "Lệ phí: Phụ lục I; phí thẩm định: Phụ lục II NQ 34/2025/NQ-HĐND (theo đối tượng cá nhân/tổ chức và loại hồ sơ; có trường hợp miễn)",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.012793",
@@ -59709,7 +60327,17 @@
           "ev_b0b680b78f1978b00a9ea06c",
           "ev_ada8ba13f90b3d5aa37b12b0"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí cấp GCN; phí thẩm định hồ sơ cấp GCN",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm c, khoản 2 điểm b; mức nền theo NQ 34/2025/NQ-HĐND",
+          "mucTrucTiep": "Lệ phí: Phụ lục I; phí thẩm định: Phụ lục II NQ 34/2025/NQ-HĐND (theo đối tượng cá nhân/tổ chức và loại hồ sơ; có trường hợp miễn)",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.013980",
@@ -59858,7 +60486,17 @@
           "ev_b1424ee5013d850a5822ffbc",
           "ev_f9c3d66e16d64eba5ae88a31"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí cấp GCN; phí thẩm định hồ sơ cấp GCN",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm c, khoản 2 điểm b; mức nền theo NQ 34/2025/NQ-HĐND",
+          "mucTrucTiep": "Lệ phí: Phụ lục I; phí thẩm định: Phụ lục II NQ 34/2025/NQ-HĐND (theo đối tượng cá nhân/tổ chức và loại hồ sơ; có trường hợp miễn)",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.013833",
@@ -60007,7 +60645,17 @@
           "ev_dab40c08da2aab602118ce15",
           "ev_4619f4df94bf30d491486974"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí cấp GCN; phí thẩm định hồ sơ cấp GCN",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm c, khoản 2 điểm b; mức nền theo NQ 34/2025/NQ-HĐND",
+          "mucTrucTiep": "Lệ phí: Phụ lục I; phí thẩm định: Phụ lục II NQ 34/2025/NQ-HĐND (theo đối tượng cá nhân/tổ chức và loại hồ sơ; có trường hợp miễn)",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.013995",
@@ -60156,7 +60804,17 @@
           "ev_69bf151af6a158ab482016b1",
           "ev_056963e569ca05a861dc27bb"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí cấp GCN; phí thẩm định hồ sơ cấp GCN",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm c, khoản 2 điểm b; mức nền theo NQ 34/2025/NQ-HĐND",
+          "mucTrucTiep": "Lệ phí: Phụ lục I; phí thẩm định: Phụ lục II NQ 34/2025/NQ-HĐND (theo đối tượng cá nhân/tổ chức và loại hồ sơ; có trường hợp miễn)",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.011442",
@@ -60305,7 +60963,17 @@
           "ev_9de26303929e02671b42953e",
           "ev_0635c0a84753be6d8b9d0457"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Phí đăng ký giao dịch bảo đảm",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 2 điểm a; mức nền theo NQ 34/2025/NQ-HĐND",
+          "mucTrucTiep": "Phụ lục III NQ 34/2025/NQ-HĐND (hình thức trực tiếp)",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.011444",
@@ -60454,7 +61122,17 @@
           "ev_987164f874ea0286e338e26a",
           "ev_cd09d1a941ca48c8139897e8"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Phí đăng ký giao dịch bảo đảm",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 2 điểm a; mức nền theo NQ 34/2025/NQ-HĐND",
+          "mucTrucTiep": "Phụ lục III NQ 34/2025/NQ-HĐND (hình thức trực tiếp)",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.012756",
@@ -60703,7 +61381,17 @@
         "submissionLinkStatus": [
           "ev_922b57a57e873821d69a0fa8"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí cấp GCN; phí thẩm định hồ sơ cấp GCN",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm c, khoản 2 điểm b; mức nền theo NQ 34/2025/NQ-HĐND",
+          "mucTrucTiep": "Lệ phí: Phụ lục I; phí thẩm định: Phụ lục II NQ 34/2025/NQ-HĐND (theo đối tượng cá nhân/tổ chức và loại hồ sơ; có trường hợp miễn)",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.013978",
@@ -60962,7 +61650,17 @@
             "dvcqg_vinhbao"
           ]
         }
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí cấp GCN; phí thẩm định hồ sơ cấp GCN",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm c, khoản 2 điểm b; mức nền theo NQ 34/2025/NQ-HĐND",
+          "mucTrucTiep": "Lệ phí: Phụ lục I; phí thẩm định: Phụ lục II NQ 34/2025/NQ-HĐND (theo đối tượng cá nhân/tổ chức và loại hồ sơ; có trường hợp miễn)",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.012753",
@@ -61079,7 +61777,17 @@
           "ev_dc8ce510467a358b16e16783",
           "ev_6e2e7a5d50a16ad58f0cedd1"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí cấp GCN; phí thẩm định hồ sơ cấp GCN",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm c, khoản 2 điểm b; mức nền theo NQ 34/2025/NQ-HĐND",
+          "mucTrucTiep": "Lệ phí: Phụ lục I; phí thẩm định: Phụ lục II NQ 34/2025/NQ-HĐND (theo đối tượng cá nhân/tổ chức và loại hồ sơ; có trường hợp miễn)",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.012787",
@@ -61228,7 +61936,17 @@
           "ev_640cd504f20e4648e11bf2e6",
           "ev_a2f01f76a84202088a9f3d15"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí cấp GCN; phí thẩm định hồ sơ cấp GCN",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm c, khoản 2 điểm b; mức nền theo NQ 34/2025/NQ-HĐND",
+          "mucTrucTiep": "Lệ phí: Phụ lục I; phí thẩm định: Phụ lục II NQ 34/2025/NQ-HĐND (theo đối tượng cá nhân/tổ chức và loại hồ sơ; có trường hợp miễn)",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.115624",
@@ -61328,7 +62046,17 @@
         "submissionLinkStatus": [
           "ev_0aa886d645734cf60866ff07"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí cấp GCN; phí thẩm định hồ sơ cấp GCN",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm c, khoản 2 điểm b; mức nền theo NQ 34/2025/NQ-HĐND",
+          "mucTrucTiep": "Lệ phí: Phụ lục I; phí thẩm định: Phụ lục II NQ 34/2025/NQ-HĐND (theo đối tượng cá nhân/tổ chức và loại hồ sơ; có trường hợp miễn)",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.115630",
@@ -61428,7 +62156,17 @@
         "submissionLinkStatus": [
           "ev_ac5d0f0b1508cf4490b14a60"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí cấp GCN; phí thẩm định hồ sơ cấp GCN",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm c, khoản 2 điểm b; mức nền theo NQ 34/2025/NQ-HĐND",
+          "mucTrucTiep": "Lệ phí: Phụ lục I; phí thẩm định: Phụ lục II NQ 34/2025/NQ-HĐND (theo đối tượng cá nhân/tổ chức và loại hồ sơ; có trường hợp miễn)",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.012781",
@@ -61577,7 +62315,17 @@
           "ev_247925e1b15c61f66c32e1af",
           "ev_74d5a37f29ec560d1de8d102"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí cấp GCN; phí thẩm định hồ sơ cấp GCN",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm c, khoản 2 điểm b; mức nền theo NQ 34/2025/NQ-HĐND",
+          "mucTrucTiep": "Lệ phí: Phụ lục I; phí thẩm định: Phụ lục II NQ 34/2025/NQ-HĐND (theo đối tượng cá nhân/tổ chức và loại hồ sơ; có trường hợp miễn)",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.012782",
@@ -61726,7 +62474,17 @@
           "ev_478891c99e0caeb30735251c",
           "ev_bdb495a67e2a3ecc3d3549aa"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí cấp GCN; phí thẩm định hồ sơ cấp GCN",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm c, khoản 2 điểm b; mức nền theo NQ 34/2025/NQ-HĐND",
+          "mucTrucTiep": "Lệ phí: Phụ lục I; phí thẩm định: Phụ lục II NQ 34/2025/NQ-HĐND (theo đối tượng cá nhân/tổ chức và loại hồ sơ; có trường hợp miễn)",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.013994",
@@ -61875,7 +62633,17 @@
           "ev_aea779f7bc27bc37987e88ce",
           "ev_1fb3d63dfd6fde4c7a5066bd"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí cấp GCN; phí thẩm định hồ sơ cấp GCN",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm c, khoản 2 điểm b; mức nền theo NQ 34/2025/NQ-HĐND",
+          "mucTrucTiep": "Lệ phí: Phụ lục I; phí thẩm định: Phụ lục II NQ 34/2025/NQ-HĐND (theo đối tượng cá nhân/tổ chức và loại hồ sơ; có trường hợp miễn)",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.013993",
@@ -62024,7 +62792,17 @@
           "ev_e8fe8efca569bebff1c1d2c9",
           "ev_e4ed581e3c7b87b248832397"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí cấp GCN; phí thẩm định hồ sơ cấp GCN",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm c, khoản 2 điểm b; mức nền theo NQ 34/2025/NQ-HĐND",
+          "mucTrucTiep": "Lệ phí: Phụ lục I; phí thẩm định: Phụ lục II NQ 34/2025/NQ-HĐND (theo đối tượng cá nhân/tổ chức và loại hồ sơ; có trường hợp miễn)",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.012785",
@@ -62173,7 +62951,17 @@
           "ev_3fed25f18604d2ba45ddcb6d",
           "ev_ebec51cbae703c1ecdcecb48"
         ]
-      }
+      },
+      "phiCanCu": [
+        {
+          "khoanPhi": "Lệ phí cấp GCN; phí thẩm định hồ sơ cấp GCN",
+          "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm c, khoản 2 điểm b; mức nền theo NQ 34/2025/NQ-HĐND",
+          "mucTrucTiep": "Lệ phí: Phụ lục I; phí thẩm định: Phụ lục II NQ 34/2025/NQ-HĐND (theo đối tượng cá nhân/tổ chức và loại hồ sơ; có trường hợp miễn)",
+          "mucTrucTuyen": "0 đồng",
+          "apDungTu": "08/8/2026",
+          "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+        }
+      ]
     },
     {
       "ma": "1.013827",

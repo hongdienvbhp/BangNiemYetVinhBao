@@ -6,7 +6,7 @@
 - TTHC công khai sau: **510**
 - Thêm mới: **1**
 - Loại khỏi danh mục công khai: **0**
-- Thay đổi thông tin: **70**
+- Thay đổi thông tin: **78**
 
 > Báo cáo này chỉ mô tả chênh lệch dữ liệu. Căn cứ pháp lý nằm trong sourceEvidence/sourceArticleUrl/sourceAttachmentUrl của từng bản ghi.
 
@@ -42,6 +42,9 @@
 ### 1.001193 — Thủ tục đăng ký khai sinh
 - **phiOnline**:  → 0 đồng khi nộp hồ sơ trực tuyến (NQ 23/2026/NQ-HĐND, hiệu lực từ 08/8/2026)
 
+### 1.001612 — Đăng ký thành lập hộ kinh doanh
+- **phiOnline**:  → 0 đồng/lần cấp (NQ 12/2026/NQ-HĐND, áp dụng mọi hình thức nộp, từ 08/8/2026 đến hết 31/12/2031)
+
 ### 1.001669 — Đăng ký giám hộ có yếu tố nước ngoài
 - **phiOnline**:  → 0 đồng khi nộp hồ sơ trực tuyến (NQ 23/2026/NQ-HĐND, hiệu lực từ 08/8/2026)
 
@@ -74,6 +77,18 @@
 
 ### 1.004884 — Thủ tục đăng ký lại khai sinh
 - **phiOnline**:  → 0 đồng khi nộp hồ sơ trực tuyến (NQ 23/2026/NQ-HĐND, hiệu lực từ 08/8/2026)
+
+### 1.004901 — Cấp đổi Giấy chứng nhận đăng ký hợp tác xã, liên hiệp hợp tác xã
+- **phiOnline**:  → 0 đồng/lần cấp (NQ 12/2026/NQ-HĐND, áp dụng mọi hình thức nộp, từ 08/8/2026 đến hết 31/12/2031)
+
+### 1.005277 — Đăng ký thay đổi nội dung đăng ký hợp tác xã, liên hiệp hợp tác xã; Đăng ký thay đổi nội dung đối với trường hợp hợp tác xã, liên hiệp hợp tác xã bị tách, nhận sáp nhập; Đăng ký thay đổi nội dung Giấy chứng nhận đăng ký hợp tác xã
+- **phiOnline**:  → 0 đồng/lần cấp (NQ 12/2026/NQ-HĐND, áp dụng mọi hình thức nộp, từ 08/8/2026 đến hết 31/12/2031)
+
+### 1.005280 — Đăng ký thành lập hợp tác xã, liên hiệp hợp tác xã; đăng ký chuyển đổi tổ hợp tác thành hợp tác xã; đăng ký khi hợp tác xã, liên hiệp hợp tác xã chia, tách, hợp nhất
+- **phiOnline**:  → 0 đồng/lần cấp (NQ 12/2026/NQ-HĐND, áp dụng mọi hình thức nộp, từ 08/8/2026 đến hết 31/12/2031)
+
+### 1.005378 — Đăng ký thay đổi nội dung đăng ký hoạt động của chi nhánh, văn phòng đại diện, địa điểm kinh doanh của hợp tác xã, liên hiệp hợp tác xã
+- **phiOnline**:  → 0 đồng/lần cấp (NQ 12/2026/NQ-HĐND, áp dụng mọi hình thức nộp, từ 08/8/2026 đến hết 31/12/2031)
 
 ### 1.005461 — Đăng ký lại khai tử
 - **phiOnline**:  → 0 đồng khi nộp hồ sơ trực tuyến (NQ 23/2026/NQ-HĐND, hiệu lực từ 08/8/2026)
@@ -204,6 +219,12 @@
 ### 2.000554 — Ghi vào sổ hộ tịch việc ly hôn, hủy việc kết hôn của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài
 - **phiOnline**:  → 0 đồng khi nộp hồ sơ trực tuyến (NQ 23/2026/NQ-HĐND, hiệu lực từ 08/8/2026)
 
+### 2.000575 — Cấp lại Giấy chứng nhận đăng ký hộ kinh doanh, Cấp đổi sang Giấy chứng nhận đăng ký hộ kinh doanh
+- **phiOnline**:  → 0 đồng/lần cấp (NQ 12/2026/NQ-HĐND, áp dụng mọi hình thức nộp, từ 08/8/2026 đến hết 31/12/2031)
+
+### 2.000720 — Đăng ký thay đổi nội dung đăng ký hộ kinh doanh
+- **phiOnline**:  → 0 đồng/lần cấp (NQ 12/2026/NQ-HĐND, áp dụng mọi hình thức nộp, từ 08/8/2026 đến hết 31/12/2031)
+
 ### 2.000748 — Thay đổi, cải chính, bổ sung thông tin hộ tịch, xác định lại dân tộc có yếu tố nước ngoài
 - **phiOnline**:  → 0 đồng khi nộp hồ sơ trực tuyến (NQ 23/2026/NQ-HĐND, hiệu lực từ 08/8/2026)
 
@@ -217,7 +238,10 @@
 - **phiOnline**:  → 0 đồng khi nộp hồ sơ trực tuyến (NQ 23/2026/NQ-HĐND, hiệu lực từ 08/8/2026)
 
 ### 2.000815 — Chứng thực bản sao từ bản chính giấy tờ, văn bản do cơ quan, tổ chức có thẩm quyền của Việt Nam; cơ quan, tổ chức có thẩm quyền của nước ngoài; cơ quan, tổ chức có thẩm quyền của Việt Nam liên kết với cơ quan, tổ chức có thẩm quyền của nước ngoài cấp hoặc chứng nhận
-- **phiOnline**:  → Chứng thực bản sao điện tử từ bản chính tại Trung tâm PVHCC xã, phường, đặc khu: ngân sách hỗ trợ 100% phí (NQ 43/2025/NQ-HĐND, 01/01/2026–31/12/2026). Không thuộc NQ 23/2026.
+- **phiOnline**:  → Chứng thực bản sao điện tử từ bản chính tại Trung tâm PVHCC xã, phường, đặc khu: ngân sách hỗ trợ 100% phí (NQ 43/2025/NQ-HĐND, 01/01/2026–31/12/2030). Không thuộc NQ 23/2026.
+
+### 2.002123 — Đăng ký hoạt động chi nhánh, văn phòng đại diện, thông báo địa điểm kinh doanh; Thông báo lập chi nhánh, văn phòng đại diện ở nước ngoài của hợp tác xã, liên hiệp hợp tác xã
+- **phiOnline**:  → 0 đồng/lần cấp (NQ 12/2026/NQ-HĐND, áp dụng mọi hình thức nộp, từ 08/8/2026 đến hết 31/12/2031)
 
 ### 2.002189 — Thủ tục ghi vào Sổ hộ tịch việc kết hôn của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài
 - **phiOnline**:  → 0 đồng khi nộp hồ sơ trực tuyến (NQ 23/2026/NQ-HĐND, hiệu lực từ 08/8/2026)

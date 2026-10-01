@@ -194,7 +194,10 @@
     const legacyDocs = Array.isArray(tt.thanhPhan) ? tt.thanhPhan : [];
     const guidanceSteps = Array.isArray(guidance.quyTrinh) ? guidance.quyTrinh : [];
     const legacySteps = Array.isArray(tt.quyTrinh) ? tt.quyTrinh : [];
-    const feeText = structuredText(guidance.lePhi, tt.phi || CHUA_XAC_MINH);
+    const feeOverride = (Array.isArray(tt.phiCanCu) ? tt.phiCanCu : []).find((c) => c.thayMucHuongDan);
+    const feeText = feeOverride
+      ? `${feeOverride.mucTrucTiep} (${feeOverride.canCu})`
+      : structuredText(guidance.lePhi, tt.phi || CHUA_XAC_MINH);
     const timeText = structuredText(guidance.thoiHan, tt.thoiHan || CHUA_XAC_MINH);
     const agencyText = structuredText(guidance.coQuanThucHien, tt.coQuan || CHUA_XAC_MINH);
     const resultText = structuredText(guidance.ketQua, tt.ketQua || CHUA_XAC_MINH);
@@ -508,6 +511,12 @@
         <div><strong>Thời hạn</strong><span>${esc(tt.thoiHan)}</span></div>
         <div><strong>Phí/lệ phí</strong><span>${esc(tt.phi)}</span></div>
         ${tt.phiOnline ? `<div><strong>Khi nộp trực tuyến</strong><span>${esc(tt.phiOnline)}</span></div>` : ""}
+        ${Array.isArray(tt.phiCanCu) && tt.phiCanCu.length ? `<div class="fee-basis"><strong>Căn cứ phí/lệ phí hiện hành</strong>${tt.phiCanCu
+          .map(
+            (c) =>
+              `<table class="data-table fee-table"><tbody><tr><th>Khoản phí/lệ phí</th><td>${esc(c.khoanPhi)}</td></tr><tr><th>Nghị quyết/văn bản căn cứ</th><td>${esc(c.canCu)}</td></tr><tr><th>Mức thu trực tiếp/bưu chính</th><td>${esc(c.mucTrucTiep)}</td></tr><tr><th>Mức thu trực tuyến</th><td>${esc(c.mucTrucTuyen)}</td></tr><tr><th>Áp dụng từ</th><td>${esc(c.apDungTu)}</td></tr><tr><th>Quy định chuyển tiếp</th><td>${esc(c.chuyenTiep || "Không có")}</td></tr></tbody></table>`
+          )
+          .join("")}</div>` : ""}
         <div><strong>Kết quả</strong><span>${esc(tt.ketQua)}</span></div>
         <div><strong>Địa chỉ tiếp nhận</strong><span>Trung tâm PVHCC xã Vĩnh Bảo — Đường 20/8, xã Vĩnh Bảo, TP Hải Phòng</span></div>
         <div><strong>Hotline</strong><span>0823.919.686</span></div>

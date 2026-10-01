@@ -8,7 +8,7 @@
     "afterPublic": 510,
     "added": 1,
     "removed": 0,
-    "changed": 70
+    "changed": 78
   },
   "added": [
     {
@@ -99,6 +99,16 @@
         "phiOnline": {
           "before": "",
           "after": "0 đồng khi nộp hồ sơ trực tuyến (NQ 23/2026/NQ-HĐND, hiệu lực từ 08/8/2026)"
+        }
+      }
+    },
+    {
+      "ma": "1.001612",
+      "ten": "Đăng ký thành lập hộ kinh doanh",
+      "fields": {
+        "phiOnline": {
+          "before": "",
+          "after": "0 đồng/lần cấp (NQ 12/2026/NQ-HĐND, áp dụng mọi hình thức nộp, từ 08/8/2026 đến hết 31/12/2031)"
         }
       }
     },
@@ -209,6 +219,46 @@
         "phiOnline": {
           "before": "",
           "after": "0 đồng khi nộp hồ sơ trực tuyến (NQ 23/2026/NQ-HĐND, hiệu lực từ 08/8/2026)"
+        }
+      }
+    },
+    {
+      "ma": "1.004901",
+      "ten": "Cấp đổi Giấy chứng nhận đăng ký hợp tác xã, liên hiệp hợp tác xã",
+      "fields": {
+        "phiOnline": {
+          "before": "",
+          "after": "0 đồng/lần cấp (NQ 12/2026/NQ-HĐND, áp dụng mọi hình thức nộp, từ 08/8/2026 đến hết 31/12/2031)"
+        }
+      }
+    },
+    {
+      "ma": "1.005277",
+      "ten": "Đăng ký thay đổi nội dung đăng ký hợp tác xã, liên hiệp hợp tác xã; Đăng ký thay đổi nội dung đối với trường hợp hợp tác xã, liên hiệp hợp tác xã bị tách, nhận sáp nhập; Đăng ký thay đổi nội dung Giấy chứng nhận đăng ký hợp tác xã",
+      "fields": {
+        "phiOnline": {
+          "before": "",
+          "after": "0 đồng/lần cấp (NQ 12/2026/NQ-HĐND, áp dụng mọi hình thức nộp, từ 08/8/2026 đến hết 31/12/2031)"
+        }
+      }
+    },
+    {
+      "ma": "1.005280",
+      "ten": "Đăng ký thành lập hợp tác xã, liên hiệp hợp tác xã; đăng ký chuyển đổi tổ hợp tác thành hợp tác xã; đăng ký khi hợp tác xã, liên hiệp hợp tác xã chia, tách, hợp nhất",
+      "fields": {
+        "phiOnline": {
+          "before": "",
+          "after": "0 đồng/lần cấp (NQ 12/2026/NQ-HĐND, áp dụng mọi hình thức nộp, từ 08/8/2026 đến hết 31/12/2031)"
+        }
+      }
+    },
+    {
+      "ma": "1.005378",
+      "ten": "Đăng ký thay đổi nội dung đăng ký hoạt động của chi nhánh, văn phòng đại diện, địa điểm kinh doanh của hợp tác xã, liên hiệp hợp tác xã",
+      "fields": {
+        "phiOnline": {
+          "before": "",
+          "after": "0 đồng/lần cấp (NQ 12/2026/NQ-HĐND, áp dụng mọi hình thức nộp, từ 08/8/2026 đến hết 31/12/2031)"
         }
       }
     },
@@ -643,6 +693,26 @@
       }
     },
     {
+      "ma": "2.000575",
+      "ten": "Cấp lại Giấy chứng nhận đăng ký hộ kinh doanh, Cấp đổi sang Giấy chứng nhận đăng ký hộ kinh doanh",
+      "fields": {
+        "phiOnline": {
+          "before": "",
+          "after": "0 đồng/lần cấp (NQ 12/2026/NQ-HĐND, áp dụng mọi hình thức nộp, từ 08/8/2026 đến hết 31/12/2031)"
+        }
+      }
+    },
+    {
+      "ma": "2.000720",
+      "ten": "Đăng ký thay đổi nội dung đăng ký hộ kinh doanh",
+      "fields": {
+        "phiOnline": {
+          "before": "",
+          "after": "0 đồng/lần cấp (NQ 12/2026/NQ-HĐND, áp dụng mọi hình thức nộp, từ 08/8/2026 đến hết 31/12/2031)"
+        }
+      }
+    },
+    {
       "ma": "2.000748",
       "ten": "Thay đổi, cải chính, bổ sung thông tin hộ tịch, xác định lại dân tộc có yếu tố nước ngoài",
       "fields": {
@@ -688,7 +758,17 @@
       "fields": {
         "phiOnline": {
           "before": "",
-          "after": "Chứng thực bản sao điện tử từ bản chính tại Trung tâm PVHCC xã, phường, đặc khu: ngân sách hỗ trợ 100% phí (NQ 43/2025/NQ-HĐND, 01/01/2026–31/12/2026). Không thuộc NQ 23/2026."
+          "after": "Chứng thực bản sao điện tử từ bản chính tại Trung tâm PVHCC xã, phường, đặc khu: ngân sách hỗ trợ 100% phí (NQ 43/2025/NQ-HĐND, 01/01/2026–31/12/2030). Không thuộc NQ 23/2026."
+        }
+      }
+    },
+    {
+      "ma": "2.002123",
+      "ten": "Đăng ký hoạt động chi nhánh, văn phòng đại diện, thông báo địa điểm kinh doanh; Thông báo lập chi nhánh, văn phòng đại diện ở nước ngoài của hợp tác xã, liên hiệp hợp tác xã",
+      "fields": {
+        "phiOnline": {
+          "before": "",
+          "after": "0 đồng/lần cấp (NQ 12/2026/NQ-HĐND, áp dụng mọi hình thức nộp, từ 08/8/2026 đến hết 31/12/2031)"
         }
       }
     },

@@ -559,5 +559,28 @@
       "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
     }
   ],
-  "candidates": []
+  "candidates": [],
+  "loaiRules": {
+    "Lệ phí hộ tịch": {
+      "khoanPhi": "Lệ phí hộ tịch",
+      "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+      "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục"
+    },
+    "Lệ phí cấp giấy phép xây dựng": {
+      "khoanPhi": "Lệ phí cấp giấy phép xây dựng",
+      "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm d",
+      "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí cấp giấy phép xây dựng còn hiệu lực"
+    },
+    "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN": {
+      "khoanPhi": "Lệ phí cấp GCN; phí thẩm định hồ sơ cấp GCN",
+      "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm c, khoản 2 điểm b; mức nền theo NQ 34/2025/NQ-HĐND",
+      "mucTrucTiep": "Lệ phí: Phụ lục I; phí thẩm định: Phụ lục II NQ 34/2025/NQ-HĐND (theo đối tượng cá nhân/tổ chức và loại hồ sơ; có trường hợp miễn)"
+    },
+    "Phí đăng ký giao dịch bảo đảm": {
+      "khoanPhi": "Phí đăng ký giao dịch bảo đảm",
+      "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 2 điểm a; mức nền theo NQ 34/2025/NQ-HĐND",
+      "mucTrucTiep": "Phụ lục III NQ 34/2025/NQ-HĐND (hình thức trực tiếp)"
+    }
+  },
+  "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
 }
