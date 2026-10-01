@@ -5,7 +5,7 @@
   "summary": {
     "durationReady": 0,
     "durationConfirmedExisting": 20,
-    "durationNeedsReview": 130
+    "durationNeedsReview": 131
   },
   "ready": [],
   "confirmedExisting": [
@@ -980,6 +980,24 @@
           "decisionNumbers": [
             "1444/QĐ-BTP",
             "1458/QĐ-BTP"
+          ]
+        }
+      ]
+    },
+    {
+      "ma": "1.003956",
+      "field": "thoiHan",
+      "reason": "multiple_or_ambiguous_duration_tokens",
+      "currentValue": "",
+      "candidateValue": "02 ngày làm việc kể t",
+      "sources": [
+        {
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/quyet-dinh-2026-cong-bo-dmtthc-sua-doi-bo-sung-so-nnmt-ttr818-..signed639234179841213748.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-thuy-san/quyet-dinh-so-3453-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-b-955989"
+          ],
+          "decisionNumbers": [
+            "3331/QĐ-BNNMT"
           ]
         }
       ]

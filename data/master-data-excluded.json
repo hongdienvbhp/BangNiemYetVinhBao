@@ -99,6 +99,129 @@
       "exclusionReason": "Bị bãi bỏ theo bằng chứng chính thức mới nhất trong snapshot"
     },
     {
+      "ma": "1.003742",
+      "ten": "Thủ tục thu hồi giấy phép kinh doanh dịch vụ lữ hành nội địa trong trường hợp doanh nghiệp phá sản",
+      "linhVuc": "VĂN HÓA, THỂ THAO VÀ DU LỊCH",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "115/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-29",
+      "sourceLatestDate": "2026-01-12",
+      "sourceArticleUrl": "https://cathai.haiphong.gov.vn/van-hoa-the-thao-va-du-lich/quyet-dinh-so-115-qd-ubnd-ngay-12-01-2026-cua-ubnd-thanh-pho-hai-phong-v-v-cong-bo-danh-muc-thu--848988",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/5889/tintuc/2026/1/qd-115-cong-bo-tthc-moi-ban-hanh-sua-doi-bo-sung-thuoc-so-vhttdl.signed639046238656915745.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cathai.haiphong.gov.vn/van-hoa-the-thao-va-du-lich/quyet-dinh-so-115-qd-ubnd-ngay-12-01-2026-cua-ubnd-thanh-pho-hai-phong-v-v-cong-bo-danh-muc-thu--848988",
+          "articleTitle": "Quyết định 115/QĐ-UBND",
+          "publishedDate": "",
+          "effectiveDate": "2026-01-12",
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/5889/tintuc/2026/1/qd-115-cong-bo-tthc-moi-ban-hanh-sua-doi-bo-sung-thuoc-so-vhttdl.signed639046238656915745.pdf",
+          "attachmentSha256": "08c5b9301acfac6465ac89a6b3c5cba310e9120b81224d4be0a39ac7a643fa91",
+          "decisionNumbers": [
+            "115/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 115/QĐ-UBND"
+    },
+    {
+      "ma": "2.001589",
+      "ten": "Thủ tục thu hồi giấy phép kinh doanh dịch vụ lữ hành nội địa trong trường hợp doanh nghiệp giải thể",
+      "linhVuc": "VĂN HÓA, THỂ THAO VÀ DU LỊCH",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "115/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-29",
+      "sourceLatestDate": "2026-01-12",
+      "sourceArticleUrl": "https://cathai.haiphong.gov.vn/van-hoa-the-thao-va-du-lich/quyet-dinh-so-115-qd-ubnd-ngay-12-01-2026-cua-ubnd-thanh-pho-hai-phong-v-v-cong-bo-danh-muc-thu--848988",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/5889/tintuc/2026/1/qd-115-cong-bo-tthc-moi-ban-hanh-sua-doi-bo-sung-thuoc-so-vhttdl.signed639046238656915745.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cathai.haiphong.gov.vn/van-hoa-the-thao-va-du-lich/quyet-dinh-so-115-qd-ubnd-ngay-12-01-2026-cua-ubnd-thanh-pho-hai-phong-v-v-cong-bo-danh-muc-thu--848988",
+          "articleTitle": "Quyết định 115/QĐ-UBND",
+          "publishedDate": "",
+          "effectiveDate": "2026-01-12",
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/5889/tintuc/2026/1/qd-115-cong-bo-tthc-moi-ban-hanh-sua-doi-bo-sung-thuoc-so-vhttdl.signed639046238656915745.pdf",
+          "attachmentSha256": "08c5b9301acfac6465ac89a6b3c5cba310e9120b81224d4be0a39ac7a643fa91",
+          "decisionNumbers": [
+            "115/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 115/QĐ-UBND"
+    },
+    {
+      "ma": "2.001611",
+      "ten": "Thủ tục thu hồi giấy phép kinh doanh dịch vụ lữ hành nội địa trong trường hợp doanh nghiệp chấm dứt hoạt động kinh doanh dịch vụ lữ hành",
+      "linhVuc": "VĂN HÓA, THỂ THAO VÀ DU LỊCH",
+      "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+      "nhanh": false,
+      "mienPhiTrucTuyen": false,
+      "phiDiaGioi": false,
+      "lienThong": false,
+      "phi": "",
+      "phiOnline": "",
+      "thoiHan": "",
+      "dvctt": "",
+      "coQuan": "",
+      "quyetDinh": "115/QĐ-UBND",
+      "formalityId": "",
+      "daXacMinh": false,
+      "verificationStatus": "repealed_by_official_city_decision",
+      "nameSource": "official_city_decision_pdf",
+      "sourceSnapshotDate": "2026-09-29",
+      "sourceLatestDate": "2026-01-12",
+      "sourceArticleUrl": "https://cathai.haiphong.gov.vn/van-hoa-the-thao-va-du-lich/quyet-dinh-so-115-qd-ubnd-ngay-12-01-2026-cua-ubnd-thanh-pho-hai-phong-v-v-cong-bo-danh-muc-thu--848988",
+      "sourceAttachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/5889/tintuc/2026/1/qd-115-cong-bo-tthc-moi-ban-hanh-sua-doi-bo-sung-thuoc-so-vhttdl.signed639046238656915745.pdf",
+      "sourceEvidence": [
+        {
+          "articleUrl": "https://cathai.haiphong.gov.vn/van-hoa-the-thao-va-du-lich/quyet-dinh-so-115-qd-ubnd-ngay-12-01-2026-cua-ubnd-thanh-pho-hai-phong-v-v-cong-bo-danh-muc-thu--848988",
+          "articleTitle": "Quyết định 115/QĐ-UBND",
+          "publishedDate": "",
+          "effectiveDate": "2026-01-12",
+          "classification": "public_tthc_city_update",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/5889/tintuc/2026/1/qd-115-cong-bo-tthc-moi-ban-hanh-sua-doi-bo-sung-thuoc-so-vhttdl.signed639046238656915745.pdf",
+          "attachmentSha256": "08c5b9301acfac6465ac89a6b3c5cba310e9120b81224d4be0a39ac7a643fa91",
+          "decisionNumbers": [
+            "115/QĐ-UBND"
+          ],
+          "repealContext": true
+        }
+      ],
+      "tiepNhanCapXa": true,
+      "exclusionReason": "Bị bãi bỏ theo 115/QĐ-UBND"
+    },
+    {
       "ma": "1.009669",
       "ten": "Tính tiền cấp quyền khai thác tài nguyên nước đối với công trình chưa vận hành được cấp giấy phép khai thác tài nguyên nước nhưng chưa được phê duyệt tiền cấp quyền",
       "linhVuc": "TÀI NGUYÊN NƯỚC",
@@ -6544,7 +6667,7 @@
     },
     {
       "ma": "2.000633",
-      "ten": "Cấp Giấy phép sản xuất rượu thủ công nhằm mục đích kinh doanh Nghị quyết số 19/2026/NQ-CP ngày 29/4/2026 của Chính phủ về cắt giảm, phân cấp, đơn giản hóa thủ tục hành chính, điều kiện kinh doanh",
+      "ten": "Cấp Giấy phép sản xuất rượu thủ công nhằm mục đích kinh doanh",
       "linhVuc": "CÔNG THƯƠNG",
       "cap": "Xã",
       "nhanh": false,
