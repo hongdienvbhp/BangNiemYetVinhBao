@@ -1,6 +1,9 @@
 name: 766 live monitor test
 
 on:
+  pull_request:
+    branches:
+      - main
   push:
     branches:
       - feat/766-live-monitor
