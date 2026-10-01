@@ -1,0 +1,35 @@
+name: 766 live monitor test
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - feat/766-live-monitor
+    paths:
+      - 'tools/766-live-monitor/**'
+      - '.github/workflows/766-live-monitor-test.yml'
+  workflow_dispatch:
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install
+        run: python -m pip install --disable-pip-version-check requests
+      - name: Collect September 2026
+        env:
+          YEAR: '2026'
+          MONTH: '9'
+          OUTPUT_DIR: out
+        run: python tools/766-live-monitor/collect_dossier_digitized.py
+      - name: Upload evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: 766-live-monitor-test
+          path: out/
