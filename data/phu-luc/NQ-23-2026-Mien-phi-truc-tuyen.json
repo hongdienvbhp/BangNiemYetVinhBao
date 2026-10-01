@@ -32,7 +32,7 @@
     "sha256": "6437d5562e94e5a4eab835459cddd17038046370e40d447eae81d0fdcf8a4eb7",
     "trangSoTuPhap": "https://sotp.haiphong.gov.vn/van-ban-quy-pham-phap-luat/nghi-quyet-so-23-2026-nq-hdnd-ngay-28-7-2026-cua-hoi-dong-nhan-dan-thanh-pho-quy-dinh-muc-thu-ph-948475",
     "daDocToanVan": "2026-10-01",
-    "luuY": "Tệp PDF công khai là bản trống số/ngày ban hành; số và ngày lấy từ tiêu đề trang Sở Tư pháp. [cần đối chiếu bản đã ký trên Công báo TP]"
+    "luuY": "Tệp PDF công khai trống số/ngày; số và ngày theo trang Sở Tư pháp. Đã được Giám đốc Trung tâm PVHCC xác nhận (01/10/2026)."
   },
   "registry": "data/phu-luc/phi-le-phi-van-ban.json"
 }

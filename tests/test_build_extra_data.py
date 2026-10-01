@@ -79,7 +79,7 @@ class Nq23MappingTests(unittest.TestCase):
         self.assertEqual(flagged, confirmed)
         self.assertTrue(all(c["canCu"] and c["dieuKhoan"] for c in self.mapping["confirmed"]))
 
-    def test_candidates_never_applied(self):
+    def test_candidates_never_applied_if_any(self):
         candidates = {c["ma"] for c in self.mapping["candidates"]}
         self.assertFalse(candidates & {t["ma"] for t in self.master if t["mienPhiTrucTuyen"]})
         self.assertFalse(candidates & {c["ma"] for c in self.mapping["confirmed"]})
