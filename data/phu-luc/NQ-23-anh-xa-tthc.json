@@ -1,0 +1,625 @@
+{
+  "format": "bangniemyet-nq23-tthc-mapping",
+  "version": 1,
+  "verifiedAt": "2026-10-01",
+  "legalBasis": "NQ 23/2026/NQ-HĐND (hiệu lực 08/8/2026) — xem data/phu-luc/phi-le-phi-van-ban.json",
+  "rule": "NQ 23/2026/NQ-HĐND đã được Giám đốc Trung tâm PVHCC xác nhận (01/10/2026). 'confirmed' là các TTHC có loại phí/lệ phí thuộc NQ 23 (căn cứ dữ liệu hướng dẫn DVCQG hoặc theo tên thủ tục theo xác nhận). Chỉ áp dụng khi nộp qua Cổng DVCQG/VNeID.",
+  "phiOnlineText": "0 đồng khi nộp hồ sơ trực tuyến (NQ 23/2026/NQ-HĐND, hiệu lực từ 08/8/2026)",
+  "confirmed": [
+    {
+      "ma": "1.004873",
+      "ten": "Thủ tục cấp Giấy xác nhận tình trạng hôn nhân",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+      "canCu": "Dữ liệu hướng dẫn chính thức (Cổng DVCQG) ghi mức lệ phí do HĐND quyết định",
+      "nguonCanCu": "data/tthc-guidance-enrichment.json"
+    },
+    {
+      "ma": "2.002189",
+      "ten": "Thủ tục ghi vào Sổ hộ tịch việc kết hôn của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+      "canCu": "Dữ liệu hướng dẫn chính thức (Cổng DVCQG) ghi mức lệ phí do HĐND quyết định",
+      "nguonCanCu": "data/tthc-guidance-enrichment.json"
+    },
+    {
+      "ma": "1.004859",
+      "ten": "Thủ tục thay đổi, cải chính, bổ sung thông tin hộ tịch, xác định lại dân tộc",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+      "canCu": "Dữ liệu hướng dẫn chính thức (Cổng DVCQG) ghi mức lệ phí do HĐND quyết định",
+      "nguonCanCu": "data/tthc-guidance-enrichment.json"
+    },
+    {
+      "ma": "2.000806",
+      "ten": "Thủ tục đăng ký kết hôn có yếu tố nước ngoài",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+      "canCu": "Dữ liệu hướng dẫn chính thức (Cổng DVCQG) ghi mức lệ phí do HĐND quyết định",
+      "nguonCanCu": "data/tthc-guidance-enrichment.json"
+    },
+    {
+      "ma": "1.004772",
+      "ten": "Thủ tục đăng ký khai sinh cho người đã có hồ sơ, giấy tờ cá nhân",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+      "canCu": "Dữ liệu hướng dẫn chính thức (Cổng DVCQG) ghi mức lệ phí do HĐND quyết định",
+      "nguonCanCu": "data/tthc-guidance-enrichment.json"
+    },
+    {
+      "ma": "2.000528",
+      "ten": "Thủ tục đăng ký khai sinh có yếu tố nước ngoài",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+      "canCu": "Dữ liệu hướng dẫn chính thức (Cổng DVCQG) ghi mức lệ phí do HĐND quyết định",
+      "nguonCanCu": "data/tthc-guidance-enrichment.json"
+    },
+    {
+      "ma": "1.000689",
+      "ten": "Thủ tục đăng ký khai sinh kết hợp đăng ký nhận cha, mẹ, con",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+      "canCu": "Dữ liệu hướng dẫn chính thức (Cổng DVCQG) ghi mức lệ phí do HĐND quyết định",
+      "nguonCanCu": "data/tthc-guidance-enrichment.json"
+    },
+    {
+      "ma": "1.000656",
+      "ten": "Thủ tục đăng ký khai tử",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+      "canCu": "Dữ liệu hướng dẫn chính thức (Cổng DVCQG) ghi mức lệ phí do HĐND quyết định",
+      "nguonCanCu": "data/tthc-guidance-enrichment.json"
+    },
+    {
+      "ma": "1.004746",
+      "ten": "Thủ tục đăng ký lại kết hôn",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+      "canCu": "Dữ liệu hướng dẫn chính thức (Cổng DVCQG) ghi mức lệ phí do HĐND quyết định",
+      "nguonCanCu": "data/tthc-guidance-enrichment.json"
+    },
+    {
+      "ma": "1.004884",
+      "ten": "Thủ tục đăng ký lại khai sinh",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+      "canCu": "Dữ liệu hướng dẫn chính thức (Cổng DVCQG) ghi mức lệ phí do HĐND quyết định",
+      "nguonCanCu": "data/tthc-guidance-enrichment.json"
+    },
+    {
+      "ma": "1.005461",
+      "ten": "Đăng ký lại khai tử",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+      "canCu": "Dữ liệu hướng dẫn chính thức (Cổng DVCQG) ghi mức lệ phí do HĐND quyết định",
+      "nguonCanCu": "data/tthc-guidance-enrichment.json"
+    },
+    {
+      "ma": "2.000547",
+      "ten": "Ghi vào sổ hộ tịch việc hộ tịch khác của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài (khai sinh; giám hộ; nhận cha, mẹ, con; xác định cha, mẹ, con; nuôi con nuôi; khai tử; thay đổi hộ tịch)",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "2.000554",
+      "ten": "Ghi vào sổ hộ tịch việc ly hôn, hủy việc kết hôn của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "2.000748",
+      "ten": "Thay đổi, cải chính, bổ sung thông tin hộ tịch, xác định lại dân tộc có yếu tố nước ngoài",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.004837",
+      "ten": "Thủ tục đăng ký giám hộ",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.000894",
+      "ten": "Thủ tục đăng ký kết hôn",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.000593",
+      "ten": "Thủ tục đăng ký kết hôn lưu động",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.001193",
+      "ten": "Thủ tục đăng ký khai sinh",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.003583",
+      "ten": "Thủ tục đăng ký khai sinh lưu động",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.000419",
+      "ten": "Thủ tục đăng ký khai tử lưu động",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.004845",
+      "ten": "Đăng ký chấm dứt giám hộ",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "2.000756",
+      "ten": "Đăng ký chấm dứt giám hộ có yếu tố nước ngoài",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "3.000322",
+      "ten": "Đăng ký chấm dứt giám sát việc giám hộ",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.001669",
+      "ten": "Đăng ký giám hộ có yếu tố nước ngoài",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "3.000323",
+      "ten": "Đăng ký giám sát việc giám hộ",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.000893",
+      "ten": "Đăng ký khai sinh có yếu tố nước ngoài cho người đã có hồ sơ, giấy tờ cá nhân",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.001695",
+      "ten": "Đăng ký khai sinh kết hợp đăng ký nhận cha, mẹ, con có yếu tố nước ngoài",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.001766",
+      "ten": "Đăng ký khai tử có yếu tố nước ngoài",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "2.000522",
+      "ten": "Đăng ký lại khai sinh có yếu tố nước ngoài",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "2.000497",
+      "ten": "Đăng ký lại khai tử có yếu tố nước ngoài",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.001022",
+      "ten": "Đăng ký nhận cha, mẹ, con",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "2.000779",
+      "ten": "Đăng ký nhận cha, mẹ, con có yếu tố nước ngoài",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.013225",
+      "ten": "Cấp giấy phép xây dựng mới đối với công trình cấp III, cấp IV và nhà ở riêng lẻ",
+      "loai": "Lệ phí cấp giấy phép xây dựng",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.013229",
+      "ten": "Cấp giấy phép xây dựng sửa chữa, cải tạo đối với công trình cấp III, cấp IV và nhà ở riêng lẻ",
+      "loai": "Lệ phí cấp giấy phép xây dựng",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.013228",
+      "ten": "Cấp lại giấy phép xây dựng đối với công trình cấp III, cấp IV và nhà ở riêng lẻ",
+      "loai": "Lệ phí cấp giấy phép xây dựng",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.013227",
+      "ten": "Gia hạn giấy phép xây dựng đối với công trình cấp III, cấp IV và nhà ở riêng lẻ",
+      "loai": "Lệ phí cấp giấy phép xây dựng",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.013226",
+      "ten": "Thủ tục cấp điều chỉnh giấy phép xây dựng Thủ tục cấp điều chỉnh giấy phép",
+      "loai": "Lệ phí cấp giấy phép xây dựng",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.115623",
+      "ten": "Cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất đối với trường hợp hộ gia đình, cá nhân đã được cấp giấy chứng nhận đối với một phần diện tích của thửa đất, phần diện tích còn lại chưa đủ điều kiện cấp giấy chứng nhận theo quy định của pháp luật tại thời điểm cấp giấy chứng nhận trước đây mà nay đủ điều kiện cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất",
+      "loai": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.115622",
+      "ten": "Cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất đối với trường hợp người sử dụng đất đã thực hiện chuyển đổi quyền sử dụng đất nông nghiệp theo phương án “dồn điền đổi thửa” được cơ quan có thẩm quyền phê duyệt trước ngày 01 tháng 8 năm 2024",
+      "loai": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.012786",
+      "ten": "Cấp lại Giấy chứng nhận do bị mất",
+      "loai": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.115621",
+      "ten": "Cấp lại Giấy chứng nhận do bị mất",
+      "loai": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.012783",
+      "ten": "Cấp đổi Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất",
+      "loai": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.011445",
+      "ten": "Chuyển tiếp đăng ký thế chấp quyền tài sản phát sinh từ hợp đồng mua bán nhà ở hoặc từ hợp đồng mua bán tài sản khác gắn liền với đất",
+      "loai": "Phí đăng ký giao dịch bảo đảm",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.115625",
+      "ten": "Giải quyết đối với trường hợp cá nhân, hộ gia đình đã được cấp Giấy chứng nhận một phần diện tích vào loại đất ở trước ngày 01 tháng 7 năm 2004, phần diện tích còn lại của thửa đất chưa được cấp Giấy chứng nhận",
+      "loai": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.013979",
+      "ten": "Tặng cho quyền sử dụng đất cho Nhà nước hoặc cộng đồng dân cư hoặc mở rộng đường giao thông đối với trường hợp thửa đất chưa được cấp Giấy chứng nhận",
+      "loai": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.115626",
+      "ten": "Xác định lại diện tích đất ở của hộ gia đình, cá nhân trong trường hợp thửa đất ở có vườn, ao, đất thổ cư đã được cấp giấy chứng nhận trước ngày 01 tháng 7 năm 2004 khi người sử dụng đất có nhu cầu",
+      "loai": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.012817",
+      "ten": "Xác định lại diện tích đất ở của hộ gia đình, cá nhân đã được cấp Giấy chứng nhận trước ngày 01 tháng 7 năm 2004",
+      "loai": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.011443",
+      "ten": "Xoá Đăng ký biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất",
+      "loai": "Phí đăng ký giao dịch bảo đảm",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.011441",
+      "ten": "Đăng ký biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất",
+      "loai": "Phí đăng ký giao dịch bảo đảm",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.013992",
+      "ten": "Đăng ký biến động chuyển mục đích sử dụng đất không phải xin phép cơ quan nhà nước có thẩm quyền",
+      "loai": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.013831",
+      "ten": "Đăng ký biến động quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất trong các trường hợp chuyển đổi quyền sử dụng đất nông nghiệp mà không theo phương án dồn điền",
+      "loai": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.013977",
+      "ten": "Đăng ký biến động thay đổi quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất do chia, tách, hợp nhất, sáp nhập tổ chức hoặc chuyển đổi mô hình tổ chức, chuyển đổi",
+      "loai": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.012793",
+      "ten": "Đăng ký biến động đối với trường hợp thành viên của hộ gia đình hoặc cá nhân đang sử dụng đất thành lập doanh nghiệp tư nhân và sử dụng đất vào hoạt động sản xuất kinh d",
+      "loai": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.013980",
+      "ten": "Đăng ký biến động đối với trường hợp thay đổi quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất theo thỏa thuận của các thành viên hộ gia đình hoặc của vợ và chồn",
+      "loai": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.013833",
+      "ten": "Đăng ký biến động đối với trường hợp đổi tên hoặc thay đổi thông tin về người sử dụng đất, chủ sở hữu tài sản gắn liền với đất hoặc thay đổi số hiệu hoặc địa chỉ của thử",
+      "loai": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.013995",
+      "ten": "Đăng ký tài sản gắn liền với thửa đất đã được cấp Giấy chứng nhận hoặc đăng ký thay đổi về tài sản gắn liền với đất so với nội dung đã đăng ký, gia hạn thời hạn sở hữu n",
+      "loai": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.011442",
+      "ten": "Đăng ký thay đổi biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất",
+      "loai": "Phí đăng ký giao dịch bảo đảm",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.011444",
+      "ten": "Đăng ký thông báo xử lý tài sản bảo đảm, đăng ký thay đổi, xoá Đăng ký thông báo xử lý tài sản bảo đảm là quyền sử dụng đất, tài sản gắn liền với đất",
+      "loai": "Phí đăng ký giao dịch bảo đảm",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.115620",
+      "ten": "Đăng ký đất đai, tài sản gắn liền với đất, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất lần đầu đối với cá nhân, cộng đồng dân cư, hộ gia đình đang sử dụng đất",
+      "loai": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.013978",
+      "ten": "Đăng ký đất đai, tài sản gắn liền với đất, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất lần đầu đối với hộ gia đình, cá nhân, cộng đồng dân cư, người gốc Việt Nam định cư ở nước ngoài",
+      "loai": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.012753",
+      "ten": "Đăng ký đất đai, tài sản gắn liền với đất, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất lần đầu đối với tổ chức đang sử dụng đất",
+      "loai": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.012787",
+      "ten": "Đăng ký, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất cho người nhận chuyển nhượng quyền sử dụng đất, quyền sở hữu nhà ở, công trình xây",
+      "loai": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.115624",
+      "ten": "Đăng ký, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất đối với toàn bộ diện tích đất đang sử dụng quy định tại điểm b và điểm c khoản 2 Điều 24 Nghị định số 101/2024/NĐ-CP",
+      "loai": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.115630",
+      "ten": "Đăng ký, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất đối với trường hợp tặng cho quyền sử dụng đất cho Nhà nước hoặc cộng đồng dân cư hoặc mở rộng đường giao thông",
+      "loai": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.012781",
+      "ten": "Đăng ký, cấp Giấy chứng nhận đối với thửa đất có diện tích tăng thêm do thay đổi ranh giới so với Giấy chứng nhận đã cấp",
+      "loai": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.012782",
+      "ten": "Đăng ký, cấp Giấy chứng nhận đối với trường hợp cá nhân, hộ gia đình đã được cấp Giấy chứng nhận một phần diện tích vào loại đất ở trước",
+      "loai": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.013994",
+      "ten": "Đăng ký, cấp Giấy chứng nhận đối với trường hợp chuyển nhượng dự án đầu tư có sử dụng đất",
+      "loai": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.013993",
+      "ten": "Đăng ký, cấp Giấy chứng nhận đối với trường hợp hộ gia đình, cá nhân đang sử dụng đất không đúng mục đích đã được Nhà nước công nhận quyền sử dụng đất trước",
+      "loai": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    },
+    {
+      "ma": "1.012785",
+      "ten": "Đăng ký, cấp Giấy chứng nhận đối với trường hợp đã chuyển quyền sử dụng đất trước",
+      "loai": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1, khoản 2",
+      "canCu": "Loại phí/lệ phí theo tên thủ tục, áp dụng theo xác nhận của Giám đốc Trung tâm PVHCC ngày 01/10/2026",
+      "nguonCanCu": "chỉ đạo của Giám đốc Trung tâm PVHCC"
+    }
+  ],
+  "candidates": [],
+  "loaiRules": {
+    "Lệ phí hộ tịch": {
+      "khoanPhi": "Lệ phí hộ tịch",
+      "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a; mức nền NQ 12/2018 PL04, NQ 16/2023",
+      "mucTrucTiep": "[cần bổ sung]"
+    },
+    "Lệ phí cấp giấy phép xây dựng": {
+      "khoanPhi": "Lệ phí cấp giấy phép xây dựng",
+      "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm d; mức nền NQ 45/2018 PL10",
+      "mucTrucTiep": "[cần bổ sung]"
+    },
+    "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN": {
+      "khoanPhi": "Lệ phí cấp GCN; phí thẩm định hồ sơ cấp GCN",
+      "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm c, khoản 2 điểm b; mức nền theo NQ 34/2025/NQ-HĐND",
+      "mucTrucTiep": "Lệ phí: Phụ lục I; phí thẩm định: Phụ lục II NQ 34/2025/NQ-HĐND (theo đối tượng cá nhân/tổ chức và loại hồ sơ; có trường hợp miễn)"
+    },
+    "Phí đăng ký giao dịch bảo đảm": {
+      "khoanPhi": "Phí đăng ký giao dịch bảo đảm",
+      "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 2 điểm a; mức nền theo NQ 34/2025/NQ-HĐND",
+      "mucTrucTiep": "Phụ lục III NQ 34/2025/NQ-HĐND (hình thức trực tiếp)"
+    }
+  },
+  "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng).",
+  "mucTrucTiepByCode": {
+    "1.004873": "5.000 đồng/lần (NQ 12/2018 PL04 điểm a; miễn theo NQ 16/2023)",
+    "2.002189": "Chưa xác định: NQ 12/2018 PL04 điểm b (sửa bởi NQ 16/2023) quy định mức cho UBND cấp huyện (khai sinh, khai tử, giám hộ 75.000 đ; kết hôn, nhận cha mẹ con 1.500.000 đ; thay đổi, cải chính có yếu tố nước ngoài 28.000 đ; ghi vào sổ việc đã giải quyết ở nước ngoài 75.000 đ); văn bản áp dụng cho UBND cấp xã sau khi bỏ cấp huyện [cần xác minh]",
+    "1.004859": "10.000 đồng/lần đối với người chưa đủ 14 tuổi cư trú trong nước và bổ sung hộ tịch; người từ đủ 14 tuổi trở lên, xác định lại dân tộc: 28.000 đồng/lần theo mức cấp huyện [cần xác minh mức áp dụng cho UBND xã] (NQ 12/2018 PL04 điểm a; miễn theo NQ 16/2023)",
+    "2.000806": "Chưa xác định: NQ 12/2018 PL04 điểm b (sửa bởi NQ 16/2023) quy định mức cho UBND cấp huyện (khai sinh, khai tử, giám hộ 75.000 đ; kết hôn, nhận cha mẹ con 1.500.000 đ; thay đổi, cải chính có yếu tố nước ngoài 28.000 đ; ghi vào sổ việc đã giải quyết ở nước ngoài 75.000 đ); văn bản áp dụng cho UBND cấp xã sau khi bỏ cấp huyện [cần xác minh]",
+    "1.004772": "8.000 đồng/lần (NQ 12/2018 PL04 điểm a; miễn theo NQ 16/2023)",
+    "2.000528": "Chưa xác định: NQ 12/2018 PL04 điểm b (sửa bởi NQ 16/2023) quy định mức cho UBND cấp huyện (khai sinh, khai tử, giám hộ 75.000 đ; kết hôn, nhận cha mẹ con 1.500.000 đ; thay đổi, cải chính có yếu tố nước ngoài 28.000 đ; ghi vào sổ việc đã giải quyết ở nước ngoài 75.000 đ); văn bản áp dụng cho UBND cấp xã sau khi bỏ cấp huyện [cần xác minh]",
+    "1.000689": "Khai sinh: miễn nếu đúng hạn, 8.000 đồng/lần nếu không đúng hạn; nhận cha, mẹ, con: 10.000 đồng/lần (NQ 12/2018 PL04 điểm a; miễn theo NQ 16/2023)",
+    "1.000656": "Miễn lệ phí nếu đăng ký đúng hạn; 8.000 đồng/lần nếu không đúng hạn (NQ 12/2018 PL04 điểm a; miễn theo NQ 16/2023)",
+    "1.004746": "30.000 đồng/lần (NQ 12/2018 PL04 điểm a; miễn theo NQ 16/2023)",
+    "1.004884": "8.000 đồng/lần (NQ 12/2018 PL04 điểm a; miễn theo NQ 16/2023)",
+    "1.005461": "8.000 đồng/lần (NQ 12/2018 PL04 điểm a; miễn theo NQ 16/2023)",
+    "2.000547": "Chưa xác định: NQ 12/2018 PL04 điểm b (sửa bởi NQ 16/2023) quy định mức cho UBND cấp huyện (khai sinh, khai tử, giám hộ 75.000 đ; kết hôn, nhận cha mẹ con 1.500.000 đ; thay đổi, cải chính có yếu tố nước ngoài 28.000 đ; ghi vào sổ việc đã giải quyết ở nước ngoài 75.000 đ); văn bản áp dụng cho UBND cấp xã sau khi bỏ cấp huyện [cần xác minh]",
+    "2.000554": "Chưa xác định: NQ 12/2018 PL04 điểm b (sửa bởi NQ 16/2023) quy định mức cho UBND cấp huyện (khai sinh, khai tử, giám hộ 75.000 đ; kết hôn, nhận cha mẹ con 1.500.000 đ; thay đổi, cải chính có yếu tố nước ngoài 28.000 đ; ghi vào sổ việc đã giải quyết ở nước ngoài 75.000 đ); văn bản áp dụng cho UBND cấp xã sau khi bỏ cấp huyện [cần xác minh]",
+    "2.000748": "Chưa xác định: NQ 12/2018 PL04 điểm b (sửa bởi NQ 16/2023) quy định mức cho UBND cấp huyện (khai sinh, khai tử, giám hộ 75.000 đ; kết hôn, nhận cha mẹ con 1.500.000 đ; thay đổi, cải chính có yếu tố nước ngoài 28.000 đ; ghi vào sổ việc đã giải quyết ở nước ngoài 75.000 đ); văn bản áp dụng cho UBND cấp xã sau khi bỏ cấp huyện [cần xác minh]",
+    "1.004837": "Miễn lệ phí đối với công dân Việt Nam cư trú trong nước đăng ký tại UBND cấp xã (NQ 12/2018 PL04 điểm a; miễn theo NQ 16/2023)",
+    "1.000894": "Miễn lệ phí đối với công dân Việt Nam cư trú trong nước đăng ký tại UBND cấp xã (NQ 12/2018 PL04 điểm a; miễn theo NQ 16/2023)",
+    "1.000593": "Miễn lệ phí đối với công dân Việt Nam cư trú trong nước đăng ký tại UBND cấp xã (NQ 12/2018 PL04 điểm a; miễn theo NQ 16/2023)",
+    "1.001193": "Miễn lệ phí nếu đăng ký đúng hạn (công dân Việt Nam cư trú trong nước); 8.000 đồng/lần nếu không đúng hạn (NQ 12/2018 PL04 điểm a; miễn theo NQ 16/2023)",
+    "1.003583": "Miễn lệ phí nếu đăng ký đúng hạn (công dân Việt Nam cư trú trong nước); 8.000 đồng/lần nếu không đúng hạn (NQ 12/2018 PL04 điểm a; miễn theo NQ 16/2023)",
+    "1.000419": "Miễn lệ phí nếu đăng ký đúng hạn; 8.000 đồng/lần nếu không đúng hạn (NQ 12/2018 PL04 điểm a; miễn theo NQ 16/2023)",
+    "1.004845": "Miễn lệ phí đối với công dân Việt Nam cư trú trong nước đăng ký tại UBND cấp xã (NQ 12/2018 PL04 điểm a; miễn theo NQ 16/2023)",
+    "2.000756": "Chưa xác định: NQ 12/2018 PL04 điểm b (sửa bởi NQ 16/2023) quy định mức cho UBND cấp huyện (khai sinh, khai tử, giám hộ 75.000 đ; kết hôn, nhận cha mẹ con 1.500.000 đ; thay đổi, cải chính có yếu tố nước ngoài 28.000 đ; ghi vào sổ việc đã giải quyết ở nước ngoài 75.000 đ); văn bản áp dụng cho UBND cấp xã sau khi bỏ cấp huyện [cần xác minh]",
+    "3.000322": "[cần bổ sung] — NQ 12/2018, 16/2023 không quy định mức riêng",
+    "1.001669": "Chưa xác định: NQ 12/2018 PL04 điểm b (sửa bởi NQ 16/2023) quy định mức cho UBND cấp huyện (khai sinh, khai tử, giám hộ 75.000 đ; kết hôn, nhận cha mẹ con 1.500.000 đ; thay đổi, cải chính có yếu tố nước ngoài 28.000 đ; ghi vào sổ việc đã giải quyết ở nước ngoài 75.000 đ); văn bản áp dụng cho UBND cấp xã sau khi bỏ cấp huyện [cần xác minh]",
+    "3.000323": "[cần bổ sung] — NQ 12/2018, 16/2023 không quy định mức riêng",
+    "1.000893": "Chưa xác định: NQ 12/2018 PL04 điểm b (sửa bởi NQ 16/2023) quy định mức cho UBND cấp huyện (khai sinh, khai tử, giám hộ 75.000 đ; kết hôn, nhận cha mẹ con 1.500.000 đ; thay đổi, cải chính có yếu tố nước ngoài 28.000 đ; ghi vào sổ việc đã giải quyết ở nước ngoài 75.000 đ); văn bản áp dụng cho UBND cấp xã sau khi bỏ cấp huyện [cần xác minh]",
+    "1.001695": "Chưa xác định: NQ 12/2018 PL04 điểm b (sửa bởi NQ 16/2023) quy định mức cho UBND cấp huyện (khai sinh, khai tử, giám hộ 75.000 đ; kết hôn, nhận cha mẹ con 1.500.000 đ; thay đổi, cải chính có yếu tố nước ngoài 28.000 đ; ghi vào sổ việc đã giải quyết ở nước ngoài 75.000 đ); văn bản áp dụng cho UBND cấp xã sau khi bỏ cấp huyện [cần xác minh]",
+    "1.001766": "Chưa xác định: NQ 12/2018 PL04 điểm b (sửa bởi NQ 16/2023) quy định mức cho UBND cấp huyện (khai sinh, khai tử, giám hộ 75.000 đ; kết hôn, nhận cha mẹ con 1.500.000 đ; thay đổi, cải chính có yếu tố nước ngoài 28.000 đ; ghi vào sổ việc đã giải quyết ở nước ngoài 75.000 đ); văn bản áp dụng cho UBND cấp xã sau khi bỏ cấp huyện [cần xác minh]",
+    "2.000522": "Chưa xác định: NQ 12/2018 PL04 điểm b (sửa bởi NQ 16/2023) quy định mức cho UBND cấp huyện (khai sinh, khai tử, giám hộ 75.000 đ; kết hôn, nhận cha mẹ con 1.500.000 đ; thay đổi, cải chính có yếu tố nước ngoài 28.000 đ; ghi vào sổ việc đã giải quyết ở nước ngoài 75.000 đ); văn bản áp dụng cho UBND cấp xã sau khi bỏ cấp huyện [cần xác minh]",
+    "2.000497": "Chưa xác định: NQ 12/2018 PL04 điểm b (sửa bởi NQ 16/2023) quy định mức cho UBND cấp huyện (khai sinh, khai tử, giám hộ 75.000 đ; kết hôn, nhận cha mẹ con 1.500.000 đ; thay đổi, cải chính có yếu tố nước ngoài 28.000 đ; ghi vào sổ việc đã giải quyết ở nước ngoài 75.000 đ); văn bản áp dụng cho UBND cấp xã sau khi bỏ cấp huyện [cần xác minh]",
+    "1.001022": "10.000 đồng/lần (NQ 12/2018 PL04 điểm a; miễn theo NQ 16/2023)",
+    "2.000779": "Chưa xác định: NQ 12/2018 PL04 điểm b (sửa bởi NQ 16/2023) quy định mức cho UBND cấp huyện (khai sinh, khai tử, giám hộ 75.000 đ; kết hôn, nhận cha mẹ con 1.500.000 đ; thay đổi, cải chính có yếu tố nước ngoài 28.000 đ; ghi vào sổ việc đã giải quyết ở nước ngoài 75.000 đ); văn bản áp dụng cho UBND cấp xã sau khi bỏ cấp huyện [cần xác minh]",
+    "1.013225": "75.000 đồng/giấy phép (nhà ở riêng lẻ); 150.000 đồng/giấy phép (công trình xây dựng khác) (NQ 45/2018 PL10)",
+    "1.013229": "75.000 đồng/giấy phép (nhà ở riêng lẻ); 150.000 đồng/giấy phép (công trình xây dựng khác) (NQ 45/2018 PL10)",
+    "1.013228": "15.000 đồng/lần (NQ 45/2018 PL10)",
+    "1.013227": "15.000 đồng/lần (NQ 45/2018 PL10)",
+    "1.013226": "75.000 đồng/giấy phép (nhà ở riêng lẻ); 150.000 đồng/giấy phép (công trình xây dựng khác) (NQ 45/2018 PL10)"
+  }
+}

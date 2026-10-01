@@ -1,5 +1,5 @@
 /* Service Worker nhẹ — cache static; dữ liệu JSON là tài nguyên tùy chọn. */
-const CACHE = "tthc-vinhbao-v6";
+const CACHE = "tthc-vinhbao-v7";
 const REQUIRED_ASSETS = [
   "./",
   "./index.html",
@@ -8,6 +8,7 @@ const REQUIRED_ASSETS = [
   "./js/data.js",
   "./js/master-data-fallback.js",
   "./js/extra-data.js",
+  "./js/extra-generated.js",
   "./js/app.js",
   "./assets/logo-hcc.png",
   "./manifest.json"

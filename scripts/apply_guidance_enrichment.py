@@ -18,6 +18,8 @@ MASTER = ROOT / "data/thu-tuc.json"
 PRIORITY51 = ROOT / "data/priority-51-crosswalk.json"
 GUIDANCE = ROOT / "data/tthc-guidance-enrichment.json"
 FALLBACK = ROOT / "js/master-data-fallback.js"
+NQ23_MAPPING = ROOT / "data/phu-luc/NQ-23-anh-xa-tthc.json"
+SPECIALIZED_MAPPING = ROOT / "data/phu-luc/phi-le-phi-chuyen-nganh.json"
 
 GUIDANCE_FIELDS = (
     "quyTrinh",
@@ -53,7 +55,57 @@ def _advance_dataset_version(result: dict, priority: dict, guidance: dict) -> No
     result["updatedAt"] = latest
 
 
-def apply_enrichment(master: dict, priority: dict, guidance: dict) -> dict:
+def apply_nq23_flags(rows: list, mapping: dict) -> int:
+    """Gắn mienPhiTrucTuyen/phiOnline cho TTHC đã được xác nhận thuộc NQ 23/2026/NQ-HĐND.
+
+    Chỉ áp dụng cho mã nằm trong mapping["confirmed"] (kèm căn cứ); "candidates" không bao giờ
+    được áp dụng tự động.
+    """
+    confirmed = {str(c["ma"]).strip(): c for c in mapping.get("confirmed") or []}
+    text = mapping.get("phiOnlineText") or ""
+    rules = mapping.get("loaiRules") or {}
+    count = 0
+    for row in rows:
+        item = confirmed.get(str(row.get("ma") or "").strip()) if isinstance(row, dict) else None
+        if item is None:
+            continue
+        row["mienPhiTrucTuyen"] = True
+        row["phiOnline"] = text
+        rule = rules.get(item.get("loai") or "")
+        if rule:
+            row["phiCanCu"] = [
+                {
+                    "khoanPhi": rule["khoanPhi"],
+                    "canCu": rule["canCu"],
+                    "mucTrucTiep": (mapping.get("mucTrucTiepByCode") or {}).get(str(row.get("ma") or "").strip())
+                    or rule["mucTrucTiep"],
+                    "mucTrucTuyen": "0 đồng",
+                    "apDungTu": "08/8/2026",
+                    "chuyenTiep": mapping.get("chuyenTiep") or "",
+                }
+            ]
+        count += 1
+    return count
+
+
+def apply_specialized_fee_notes(rows: list, mapping: dict) -> int:
+    """Ghi phiOnline cho TTHC theo văn bản chuyên ngành (không gắn cờ miễn phí NQ 23)."""
+    items = {str(i["ma"]).strip(): i for i in mapping.get("items") or []}
+    count = 0
+    for row in rows:
+        code = str(row.get("ma") or "").strip() if isinstance(row, dict) else ""
+        item = items.get(code)
+        if item is None or row.get("mienPhiTrucTuyen"):
+            continue
+        if item.get("phiOnlineText"):
+            row["phiOnline"] = item["phiOnlineText"]
+        if item.get("phiCanCu"):
+            row["phiCanCu"] = item["phiCanCu"]
+        count += 1
+    return count
+
+
+def apply_enrichment(master: dict, priority: dict, guidance: dict, nq23: dict | None = None, specialized: dict | None = None) -> dict:
     errors = validate(guidance)
     if errors:
         raise ValueError("\n".join(errors))
@@ -120,6 +172,10 @@ def apply_enrichment(master: dict, priority: dict, guidance: dict) -> dict:
                     row["submissionLinkCheckedAt"] = guide["verifiedAt"]
         guidance_count += 1
 
+    nq23_count = apply_nq23_flags(rows, nq23) if nq23 else 0
+    if specialized:
+        apply_specialized_fee_notes(rows, specialized)
+
     as_of = str(result.get("sourceSnapshotDate") or result.get("updatedAt") or "")
     result["thuTuc"] = [
         upgrade_record_to_v4(row, as_of)
@@ -130,6 +186,7 @@ def apply_enrichment(master: dict, priority: dict, guidance: dict) -> dict:
     summary = result.setdefault("summary", {})
     summary["priority51VinhBaoSubmissionLinks"] = priority_links
     summary["officialGuidanceEnriched"] = guidance_count
+    summary["mienPhiTrucTuyenNQ23"] = nq23_count
     _advance_dataset_version(result, priority, guidance)
     return result
 
@@ -152,13 +209,16 @@ def main() -> int:
     master = json.loads(MASTER.read_text(encoding="utf-8"))
     priority = json.loads(PRIORITY51.read_text(encoding="utf-8"))
     guidance = json.loads(GUIDANCE.read_text(encoding="utf-8"))
-    enriched = apply_enrichment(master, priority, guidance)
+    nq23 = json.loads(NQ23_MAPPING.read_text(encoding="utf-8"))
+    specialized = json.loads(SPECIALIZED_MAPPING.read_text(encoding="utf-8"))
+    enriched = apply_enrichment(master, priority, guidance, nq23, specialized)
     MASTER.write_text(json.dumps(enriched, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     write_fallback(enriched)
     print(json.dumps({
         "procedures": len(enriched.get("thuTuc") or []),
         "priority51VinhBaoSubmissionLinks": enriched.get("summary", {}).get("priority51VinhBaoSubmissionLinks", 0),
         "officialGuidanceEnriched": enriched.get("summary", {}).get("officialGuidanceEnriched", 0),
+        "mienPhiTrucTuyenNQ23": enriched.get("summary", {}).get("mienPhiTrucTuyenNQ23", 0),
     }, ensure_ascii=False))
     return 0
 
