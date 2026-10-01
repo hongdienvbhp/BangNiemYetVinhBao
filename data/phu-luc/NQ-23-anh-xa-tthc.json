@@ -1,0 +1,448 @@
+{
+  "format": "bangniemyet-nq23-tthc-mapping",
+  "version": 1,
+  "verifiedAt": "2026-10-01",
+  "legalBasis": "NQ 23/2026/NQ-HĐND (hiệu lực 08/8/2026) — xem data/phu-luc/phi-le-phi-van-ban.json",
+  "rule": "Chỉ đưa vào 'confirmed' khi dữ liệu hướng dẫn chính thức của chính TTHC nêu rõ loại lệ phí/phí thuộc NQ 23. Gợi ý theo tên thủ tục chỉ là 'candidates', chưa áp dụng vào Master Data cho đến khi chuyên viên xác nhận (chuyển sang 'confirmed' kèm căn cứ).",
+  "phiOnlineText": "0 đồng khi nộp hồ sơ trực tuyến (NQ 23/2026/NQ-HĐND, hiệu lực từ 08/8/2026)",
+  "confirmed": [
+    {
+      "ma": "1.004873",
+      "ten": "Thủ tục cấp Giấy xác nhận tình trạng hôn nhân",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+      "canCu": "Dữ liệu hướng dẫn chính thức (Cổng DVCQG) ghi mức lệ phí do HĐND quyết định",
+      "nguonCanCu": "data/tthc-guidance-enrichment.json"
+    },
+    {
+      "ma": "2.002189",
+      "ten": "Thủ tục ghi vào Sổ hộ tịch việc kết hôn của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+      "canCu": "Dữ liệu hướng dẫn chính thức (Cổng DVCQG) ghi mức lệ phí do HĐND quyết định",
+      "nguonCanCu": "data/tthc-guidance-enrichment.json"
+    },
+    {
+      "ma": "1.004859",
+      "ten": "Thủ tục thay đổi, cải chính, bổ sung thông tin hộ tịch, xác định lại dân tộc",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+      "canCu": "Dữ liệu hướng dẫn chính thức (Cổng DVCQG) ghi mức lệ phí do HĐND quyết định",
+      "nguonCanCu": "data/tthc-guidance-enrichment.json"
+    },
+    {
+      "ma": "2.000806",
+      "ten": "Thủ tục đăng ký kết hôn có yếu tố nước ngoài",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+      "canCu": "Dữ liệu hướng dẫn chính thức (Cổng DVCQG) ghi mức lệ phí do HĐND quyết định",
+      "nguonCanCu": "data/tthc-guidance-enrichment.json"
+    },
+    {
+      "ma": "1.004772",
+      "ten": "Thủ tục đăng ký khai sinh cho người đã có hồ sơ, giấy tờ cá nhân",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+      "canCu": "Dữ liệu hướng dẫn chính thức (Cổng DVCQG) ghi mức lệ phí do HĐND quyết định",
+      "nguonCanCu": "data/tthc-guidance-enrichment.json"
+    },
+    {
+      "ma": "2.000528",
+      "ten": "Thủ tục đăng ký khai sinh có yếu tố nước ngoài",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+      "canCu": "Dữ liệu hướng dẫn chính thức (Cổng DVCQG) ghi mức lệ phí do HĐND quyết định",
+      "nguonCanCu": "data/tthc-guidance-enrichment.json"
+    },
+    {
+      "ma": "1.000689",
+      "ten": "Thủ tục đăng ký khai sinh kết hợp đăng ký nhận cha, mẹ, con",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+      "canCu": "Dữ liệu hướng dẫn chính thức (Cổng DVCQG) ghi mức lệ phí do HĐND quyết định",
+      "nguonCanCu": "data/tthc-guidance-enrichment.json"
+    },
+    {
+      "ma": "1.000656",
+      "ten": "Thủ tục đăng ký khai tử",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+      "canCu": "Dữ liệu hướng dẫn chính thức (Cổng DVCQG) ghi mức lệ phí do HĐND quyết định",
+      "nguonCanCu": "data/tthc-guidance-enrichment.json"
+    },
+    {
+      "ma": "1.004746",
+      "ten": "Thủ tục đăng ký lại kết hôn",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+      "canCu": "Dữ liệu hướng dẫn chính thức (Cổng DVCQG) ghi mức lệ phí do HĐND quyết định",
+      "nguonCanCu": "data/tthc-guidance-enrichment.json"
+    },
+    {
+      "ma": "1.004884",
+      "ten": "Thủ tục đăng ký lại khai sinh",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+      "canCu": "Dữ liệu hướng dẫn chính thức (Cổng DVCQG) ghi mức lệ phí do HĐND quyết định",
+      "nguonCanCu": "data/tthc-guidance-enrichment.json"
+    },
+    {
+      "ma": "1.005461",
+      "ten": "Đăng ký lại khai tử",
+      "loai": "Lệ phí hộ tịch",
+      "dieuKhoan": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
+      "canCu": "Dữ liệu hướng dẫn chính thức (Cổng DVCQG) ghi mức lệ phí do HĐND quyết định",
+      "nguonCanCu": "data/tthc-guidance-enrichment.json"
+    }
+  ],
+  "candidates": [
+    {
+      "ma": "2.000547",
+      "ten": "Ghi vào sổ hộ tịch việc hộ tịch khác của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài (khai sinh; giám hộ; nhận cha, mẹ, con; xác định cha, mẹ, con; nuôi con nuôi; khai tử; thay đổi hộ tịch)",
+      "loaiGoiY": "Lệ phí hộ tịch",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không ghi lệ phí do HĐND quyết định, hoặc chưa có dữ liệu hướng dẫn"
+    },
+    {
+      "ma": "2.000554",
+      "ten": "Ghi vào sổ hộ tịch việc ly hôn, hủy việc kết hôn của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài",
+      "loaiGoiY": "Lệ phí hộ tịch",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không ghi lệ phí do HĐND quyết định, hoặc chưa có dữ liệu hướng dẫn"
+    },
+    {
+      "ma": "2.000748",
+      "ten": "Thay đổi, cải chính, bổ sung thông tin hộ tịch, xác định lại dân tộc có yếu tố nước ngoài",
+      "loaiGoiY": "Lệ phí hộ tịch",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không ghi lệ phí do HĐND quyết định, hoặc chưa có dữ liệu hướng dẫn"
+    },
+    {
+      "ma": "1.004837",
+      "ten": "Thủ tục đăng ký giám hộ",
+      "loaiGoiY": "Lệ phí hộ tịch",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không ghi lệ phí do HĐND quyết định, hoặc chưa có dữ liệu hướng dẫn"
+    },
+    {
+      "ma": "1.000894",
+      "ten": "Thủ tục đăng ký kết hôn",
+      "loaiGoiY": "Lệ phí hộ tịch",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không ghi lệ phí do HĐND quyết định, hoặc chưa có dữ liệu hướng dẫn"
+    },
+    {
+      "ma": "1.000593",
+      "ten": "Thủ tục đăng ký kết hôn lưu động",
+      "loaiGoiY": "Lệ phí hộ tịch",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không ghi lệ phí do HĐND quyết định, hoặc chưa có dữ liệu hướng dẫn"
+    },
+    {
+      "ma": "1.001193",
+      "ten": "Thủ tục đăng ký khai sinh",
+      "loaiGoiY": "Lệ phí hộ tịch",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không ghi lệ phí do HĐND quyết định, hoặc chưa có dữ liệu hướng dẫn"
+    },
+    {
+      "ma": "1.003583",
+      "ten": "Thủ tục đăng ký khai sinh lưu động",
+      "loaiGoiY": "Lệ phí hộ tịch",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không ghi lệ phí do HĐND quyết định, hoặc chưa có dữ liệu hướng dẫn"
+    },
+    {
+      "ma": "1.000419",
+      "ten": "Thủ tục đăng ký khai tử lưu động",
+      "loaiGoiY": "Lệ phí hộ tịch",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không ghi lệ phí do HĐND quyết định, hoặc chưa có dữ liệu hướng dẫn"
+    },
+    {
+      "ma": "1.004845",
+      "ten": "Đăng ký chấm dứt giám hộ",
+      "loaiGoiY": "Lệ phí hộ tịch",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không ghi lệ phí do HĐND quyết định, hoặc chưa có dữ liệu hướng dẫn"
+    },
+    {
+      "ma": "2.000756",
+      "ten": "Đăng ký chấm dứt giám hộ có yếu tố nước ngoài",
+      "loaiGoiY": "Lệ phí hộ tịch",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không ghi lệ phí do HĐND quyết định, hoặc chưa có dữ liệu hướng dẫn"
+    },
+    {
+      "ma": "3.000322",
+      "ten": "Đăng ký chấm dứt giám sát việc giám hộ",
+      "loaiGoiY": "Lệ phí hộ tịch",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không ghi lệ phí do HĐND quyết định, hoặc chưa có dữ liệu hướng dẫn"
+    },
+    {
+      "ma": "1.001669",
+      "ten": "Đăng ký giám hộ có yếu tố nước ngoài",
+      "loaiGoiY": "Lệ phí hộ tịch",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không ghi lệ phí do HĐND quyết định, hoặc chưa có dữ liệu hướng dẫn"
+    },
+    {
+      "ma": "3.000323",
+      "ten": "Đăng ký giám sát việc giám hộ",
+      "loaiGoiY": "Lệ phí hộ tịch",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không ghi lệ phí do HĐND quyết định, hoặc chưa có dữ liệu hướng dẫn"
+    },
+    {
+      "ma": "1.000893",
+      "ten": "Đăng ký khai sinh có yếu tố nước ngoài cho người đã có hồ sơ, giấy tờ cá nhân",
+      "loaiGoiY": "Lệ phí hộ tịch",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không ghi lệ phí do HĐND quyết định, hoặc chưa có dữ liệu hướng dẫn"
+    },
+    {
+      "ma": "1.001695",
+      "ten": "Đăng ký khai sinh kết hợp đăng ký nhận cha, mẹ, con có yếu tố nước ngoài",
+      "loaiGoiY": "Lệ phí hộ tịch",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không ghi lệ phí do HĐND quyết định, hoặc chưa có dữ liệu hướng dẫn"
+    },
+    {
+      "ma": "1.001766",
+      "ten": "Đăng ký khai tử có yếu tố nước ngoài",
+      "loaiGoiY": "Lệ phí hộ tịch",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không ghi lệ phí do HĐND quyết định, hoặc chưa có dữ liệu hướng dẫn"
+    },
+    {
+      "ma": "2.000522",
+      "ten": "Đăng ký lại khai sinh có yếu tố nước ngoài",
+      "loaiGoiY": "Lệ phí hộ tịch",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không ghi lệ phí do HĐND quyết định, hoặc chưa có dữ liệu hướng dẫn"
+    },
+    {
+      "ma": "2.000497",
+      "ten": "Đăng ký lại khai tử có yếu tố nước ngoài",
+      "loaiGoiY": "Lệ phí hộ tịch",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không ghi lệ phí do HĐND quyết định, hoặc chưa có dữ liệu hướng dẫn"
+    },
+    {
+      "ma": "1.001022",
+      "ten": "Đăng ký nhận cha, mẹ, con",
+      "loaiGoiY": "Lệ phí hộ tịch",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không ghi lệ phí do HĐND quyết định, hoặc chưa có dữ liệu hướng dẫn"
+    },
+    {
+      "ma": "2.000779",
+      "ten": "Đăng ký nhận cha, mẹ, con có yếu tố nước ngoài",
+      "loaiGoiY": "Lệ phí hộ tịch",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không ghi lệ phí do HĐND quyết định, hoặc chưa có dữ liệu hướng dẫn"
+    },
+    {
+      "ma": "1.013225",
+      "ten": "Cấp giấy phép xây dựng mới đối với công trình cấp III, cấp IV và nhà ở riêng lẻ",
+      "loaiGoiY": "Lệ phí cấp giấy phép xây dựng",
+      "lyDoChuaXacNhan": "Chưa có dữ liệu hướng dẫn về lệ phí; cần xác nhận loại thủ tục có thu lệ phí cấp phép"
+    },
+    {
+      "ma": "1.013229",
+      "ten": "Cấp giấy phép xây dựng sửa chữa, cải tạo đối với công trình cấp III, cấp IV và nhà ở riêng lẻ",
+      "loaiGoiY": "Lệ phí cấp giấy phép xây dựng",
+      "lyDoChuaXacNhan": "Chưa có dữ liệu hướng dẫn về lệ phí; cần xác nhận loại thủ tục có thu lệ phí cấp phép"
+    },
+    {
+      "ma": "1.013228",
+      "ten": "Cấp lại giấy phép xây dựng đối với công trình cấp III, cấp IV và nhà ở riêng lẻ",
+      "loaiGoiY": "Lệ phí cấp giấy phép xây dựng",
+      "lyDoChuaXacNhan": "Chưa có dữ liệu hướng dẫn về lệ phí; cần xác nhận loại thủ tục có thu lệ phí cấp phép"
+    },
+    {
+      "ma": "1.013227",
+      "ten": "Gia hạn giấy phép xây dựng đối với công trình cấp III, cấp IV và nhà ở riêng lẻ",
+      "loaiGoiY": "Lệ phí cấp giấy phép xây dựng",
+      "lyDoChuaXacNhan": "Chưa có dữ liệu hướng dẫn về lệ phí; cần xác nhận loại thủ tục có thu lệ phí cấp phép"
+    },
+    {
+      "ma": "1.013226",
+      "ten": "Thủ tục cấp điều chỉnh giấy phép xây dựng Thủ tục cấp điều chỉnh giấy phép",
+      "loaiGoiY": "Lệ phí cấp giấy phép xây dựng",
+      "lyDoChuaXacNhan": "Chưa có dữ liệu hướng dẫn về lệ phí; cần xác nhận loại thủ tục có thu lệ phí cấp phép"
+    },
+    {
+      "ma": "1.115623",
+      "ten": "Cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất đối với trường hợp hộ gia đình, cá nhân đã được cấp giấy chứng nhận đối với một phần diện tích của thửa đất, phần diện tích còn lại chưa đủ điều kiện cấp giấy chứng nhận theo quy định của pháp luật tại thời điểm cấp giấy chứng nhận trước đây mà nay đủ điều kiện cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất",
+      "loaiGoiY": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không nêu phí/lệ phí của thủ tục; tên thủ tục chỉ gợi ý loại phí, cần chuyên viên Địa chính xác nhận"
+    },
+    {
+      "ma": "1.115622",
+      "ten": "Cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất đối với trường hợp người sử dụng đất đã thực hiện chuyển đổi quyền sử dụng đất nông nghiệp theo phương án “dồn điền đổi thửa” được cơ quan có thẩm quyền phê duyệt trước ngày 01 tháng 8 năm 2024",
+      "loaiGoiY": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không nêu phí/lệ phí của thủ tục; tên thủ tục chỉ gợi ý loại phí, cần chuyên viên Địa chính xác nhận"
+    },
+    {
+      "ma": "1.012786",
+      "ten": "Cấp lại Giấy chứng nhận do bị mất",
+      "loaiGoiY": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không nêu phí/lệ phí của thủ tục; tên thủ tục chỉ gợi ý loại phí, cần chuyên viên Địa chính xác nhận"
+    },
+    {
+      "ma": "1.115621",
+      "ten": "Cấp lại Giấy chứng nhận do bị mất",
+      "loaiGoiY": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không nêu phí/lệ phí của thủ tục; tên thủ tục chỉ gợi ý loại phí, cần chuyên viên Địa chính xác nhận"
+    },
+    {
+      "ma": "1.012783",
+      "ten": "Cấp đổi Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất",
+      "loaiGoiY": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không nêu phí/lệ phí của thủ tục; tên thủ tục chỉ gợi ý loại phí, cần chuyên viên Địa chính xác nhận"
+    },
+    {
+      "ma": "1.011445",
+      "ten": "Chuyển tiếp đăng ký thế chấp quyền tài sản phát sinh từ hợp đồng mua bán nhà ở hoặc từ hợp đồng mua bán tài sản khác gắn liền với đất",
+      "loaiGoiY": "Phí đăng ký giao dịch bảo đảm",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không nêu phí/lệ phí của thủ tục; tên thủ tục chỉ gợi ý loại phí, cần chuyên viên Địa chính xác nhận"
+    },
+    {
+      "ma": "1.115625",
+      "ten": "Giải quyết đối với trường hợp cá nhân, hộ gia đình đã được cấp Giấy chứng nhận một phần diện tích vào loại đất ở trước ngày 01 tháng 7 năm 2004, phần diện tích còn lại của thửa đất chưa được cấp Giấy chứng nhận",
+      "loaiGoiY": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không nêu phí/lệ phí của thủ tục; tên thủ tục chỉ gợi ý loại phí, cần chuyên viên Địa chính xác nhận"
+    },
+    {
+      "ma": "1.013979",
+      "ten": "Tặng cho quyền sử dụng đất cho Nhà nước hoặc cộng đồng dân cư hoặc mở rộng đường giao thông đối với trường hợp thửa đất chưa được cấp Giấy chứng nhận",
+      "loaiGoiY": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không nêu phí/lệ phí của thủ tục; tên thủ tục chỉ gợi ý loại phí, cần chuyên viên Địa chính xác nhận"
+    },
+    {
+      "ma": "1.115626",
+      "ten": "Xác định lại diện tích đất ở của hộ gia đình, cá nhân trong trường hợp thửa đất ở có vườn, ao, đất thổ cư đã được cấp giấy chứng nhận trước ngày 01 tháng 7 năm 2004 khi người sử dụng đất có nhu cầu",
+      "loaiGoiY": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không nêu phí/lệ phí của thủ tục; tên thủ tục chỉ gợi ý loại phí, cần chuyên viên Địa chính xác nhận"
+    },
+    {
+      "ma": "1.012817",
+      "ten": "Xác định lại diện tích đất ở của hộ gia đình, cá nhân đã được cấp Giấy chứng nhận trước ngày 01 tháng 7 năm 2004",
+      "loaiGoiY": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không nêu phí/lệ phí của thủ tục; tên thủ tục chỉ gợi ý loại phí, cần chuyên viên Địa chính xác nhận"
+    },
+    {
+      "ma": "1.011443",
+      "ten": "Xoá Đăng ký biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất",
+      "loaiGoiY": "Phí đăng ký giao dịch bảo đảm",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không nêu phí/lệ phí của thủ tục; tên thủ tục chỉ gợi ý loại phí, cần chuyên viên Địa chính xác nhận"
+    },
+    {
+      "ma": "1.011441",
+      "ten": "Đăng ký biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất",
+      "loaiGoiY": "Phí đăng ký giao dịch bảo đảm",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không nêu phí/lệ phí của thủ tục; tên thủ tục chỉ gợi ý loại phí, cần chuyên viên Địa chính xác nhận"
+    },
+    {
+      "ma": "1.013992",
+      "ten": "Đăng ký biến động chuyển mục đích sử dụng đất không phải xin phép cơ quan nhà nước có thẩm quyền",
+      "loaiGoiY": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không nêu phí/lệ phí của thủ tục; tên thủ tục chỉ gợi ý loại phí, cần chuyên viên Địa chính xác nhận"
+    },
+    {
+      "ma": "1.013831",
+      "ten": "Đăng ký biến động quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất trong các trường hợp chuyển đổi quyền sử dụng đất nông nghiệp mà không theo phương án dồn điền",
+      "loaiGoiY": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không nêu phí/lệ phí của thủ tục; tên thủ tục chỉ gợi ý loại phí, cần chuyên viên Địa chính xác nhận"
+    },
+    {
+      "ma": "1.013977",
+      "ten": "Đăng ký biến động thay đổi quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất do chia, tách, hợp nhất, sáp nhập tổ chức hoặc chuyển đổi mô hình tổ chức, chuyển đổi",
+      "loaiGoiY": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không nêu phí/lệ phí của thủ tục; tên thủ tục chỉ gợi ý loại phí, cần chuyên viên Địa chính xác nhận"
+    },
+    {
+      "ma": "1.012793",
+      "ten": "Đăng ký biến động đối với trường hợp thành viên của hộ gia đình hoặc cá nhân đang sử dụng đất thành lập doanh nghiệp tư nhân và sử dụng đất vào hoạt động sản xuất kinh d",
+      "loaiGoiY": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không nêu phí/lệ phí của thủ tục; tên thủ tục chỉ gợi ý loại phí, cần chuyên viên Địa chính xác nhận"
+    },
+    {
+      "ma": "1.013980",
+      "ten": "Đăng ký biến động đối với trường hợp thay đổi quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất theo thỏa thuận của các thành viên hộ gia đình hoặc của vợ và chồn",
+      "loaiGoiY": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không nêu phí/lệ phí của thủ tục; tên thủ tục chỉ gợi ý loại phí, cần chuyên viên Địa chính xác nhận"
+    },
+    {
+      "ma": "1.013833",
+      "ten": "Đăng ký biến động đối với trường hợp đổi tên hoặc thay đổi thông tin về người sử dụng đất, chủ sở hữu tài sản gắn liền với đất hoặc thay đổi số hiệu hoặc địa chỉ của thử",
+      "loaiGoiY": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không nêu phí/lệ phí của thủ tục; tên thủ tục chỉ gợi ý loại phí, cần chuyên viên Địa chính xác nhận"
+    },
+    {
+      "ma": "1.013995",
+      "ten": "Đăng ký tài sản gắn liền với thửa đất đã được cấp Giấy chứng nhận hoặc đăng ký thay đổi về tài sản gắn liền với đất so với nội dung đã đăng ký, gia hạn thời hạn sở hữu n",
+      "loaiGoiY": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không nêu phí/lệ phí của thủ tục; tên thủ tục chỉ gợi ý loại phí, cần chuyên viên Địa chính xác nhận"
+    },
+    {
+      "ma": "1.011442",
+      "ten": "Đăng ký thay đổi biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất",
+      "loaiGoiY": "Phí đăng ký giao dịch bảo đảm",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không nêu phí/lệ phí của thủ tục; tên thủ tục chỉ gợi ý loại phí, cần chuyên viên Địa chính xác nhận"
+    },
+    {
+      "ma": "1.011444",
+      "ten": "Đăng ký thông báo xử lý tài sản bảo đảm, đăng ký thay đổi, xoá Đăng ký thông báo xử lý tài sản bảo đảm là quyền sử dụng đất, tài sản gắn liền với đất",
+      "loaiGoiY": "Phí đăng ký giao dịch bảo đảm",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không nêu phí/lệ phí của thủ tục; tên thủ tục chỉ gợi ý loại phí, cần chuyên viên Địa chính xác nhận"
+    },
+    {
+      "ma": "1.115620",
+      "ten": "Đăng ký đất đai, tài sản gắn liền với đất, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất lần đầu đối với cá nhân, cộng đồng dân cư, hộ gia đình đang sử dụng đất",
+      "loaiGoiY": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không nêu phí/lệ phí của thủ tục; tên thủ tục chỉ gợi ý loại phí, cần chuyên viên Địa chính xác nhận"
+    },
+    {
+      "ma": "1.013978",
+      "ten": "Đăng ký đất đai, tài sản gắn liền với đất, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất lần đầu đối với hộ gia đình, cá nhân, cộng đồng dân cư, người gốc Việt Nam định cư ở nước ngoài",
+      "loaiGoiY": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không nêu phí/lệ phí của thủ tục; tên thủ tục chỉ gợi ý loại phí, cần chuyên viên Địa chính xác nhận"
+    },
+    {
+      "ma": "1.012753",
+      "ten": "Đăng ký đất đai, tài sản gắn liền với đất, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất lần đầu đối với tổ chức đang sử dụng đất",
+      "loaiGoiY": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không nêu phí/lệ phí của thủ tục; tên thủ tục chỉ gợi ý loại phí, cần chuyên viên Địa chính xác nhận"
+    },
+    {
+      "ma": "1.012787",
+      "ten": "Đăng ký, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất cho người nhận chuyển nhượng quyền sử dụng đất, quyền sở hữu nhà ở, công trình xây",
+      "loaiGoiY": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không nêu phí/lệ phí của thủ tục; tên thủ tục chỉ gợi ý loại phí, cần chuyên viên Địa chính xác nhận"
+    },
+    {
+      "ma": "1.115624",
+      "ten": "Đăng ký, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất đối với toàn bộ diện tích đất đang sử dụng quy định tại điểm b và điểm c khoản 2 Điều 24 Nghị định số 101/2024/NĐ-CP",
+      "loaiGoiY": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không nêu phí/lệ phí của thủ tục; tên thủ tục chỉ gợi ý loại phí, cần chuyên viên Địa chính xác nhận"
+    },
+    {
+      "ma": "1.115630",
+      "ten": "Đăng ký, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất đối với trường hợp tặng cho quyền sử dụng đất cho Nhà nước hoặc cộng đồng dân cư hoặc mở rộng đường giao thông",
+      "loaiGoiY": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không nêu phí/lệ phí của thủ tục; tên thủ tục chỉ gợi ý loại phí, cần chuyên viên Địa chính xác nhận"
+    },
+    {
+      "ma": "1.012781",
+      "ten": "Đăng ký, cấp Giấy chứng nhận đối với thửa đất có diện tích tăng thêm do thay đổi ranh giới so với Giấy chứng nhận đã cấp",
+      "loaiGoiY": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không nêu phí/lệ phí của thủ tục; tên thủ tục chỉ gợi ý loại phí, cần chuyên viên Địa chính xác nhận"
+    },
+    {
+      "ma": "1.012782",
+      "ten": "Đăng ký, cấp Giấy chứng nhận đối với trường hợp cá nhân, hộ gia đình đã được cấp Giấy chứng nhận một phần diện tích vào loại đất ở trước",
+      "loaiGoiY": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không nêu phí/lệ phí của thủ tục; tên thủ tục chỉ gợi ý loại phí, cần chuyên viên Địa chính xác nhận"
+    },
+    {
+      "ma": "1.013994",
+      "ten": "Đăng ký, cấp Giấy chứng nhận đối với trường hợp chuyển nhượng dự án đầu tư có sử dụng đất",
+      "loaiGoiY": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không nêu phí/lệ phí của thủ tục; tên thủ tục chỉ gợi ý loại phí, cần chuyên viên Địa chính xác nhận"
+    },
+    {
+      "ma": "1.013993",
+      "ten": "Đăng ký, cấp Giấy chứng nhận đối với trường hợp hộ gia đình, cá nhân đang sử dụng đất không đúng mục đích đã được Nhà nước công nhận quyền sử dụng đất trước",
+      "loaiGoiY": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không nêu phí/lệ phí của thủ tục; tên thủ tục chỉ gợi ý loại phí, cần chuyên viên Địa chính xác nhận"
+    },
+    {
+      "ma": "1.012785",
+      "ten": "Đăng ký, cấp Giấy chứng nhận đối với trường hợp đã chuyển quyền sử dụng đất trước",
+      "loaiGoiY": "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN",
+      "lyDoChuaXacNhan": "Dữ liệu hướng dẫn không nêu phí/lệ phí của thủ tục; tên thủ tục chỉ gợi ý loại phí, cần chuyên viên Địa chính xác nhận"
+    }
+  ]
+}

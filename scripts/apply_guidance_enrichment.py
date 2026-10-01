@@ -18,6 +18,7 @@ MASTER = ROOT / "data/thu-tuc.json"
 PRIORITY51 = ROOT / "data/priority-51-crosswalk.json"
 GUIDANCE = ROOT / "data/tthc-guidance-enrichment.json"
 FALLBACK = ROOT / "js/master-data-fallback.js"
+NQ23_MAPPING = ROOT / "data/phu-luc/NQ-23-anh-xa-tthc.json"
 
 GUIDANCE_FIELDS = (
     "quyTrinh",
@@ -53,7 +54,24 @@ def _advance_dataset_version(result: dict, priority: dict, guidance: dict) -> No
     result["updatedAt"] = latest
 
 
-def apply_enrichment(master: dict, priority: dict, guidance: dict) -> dict:
+def apply_nq23_flags(rows: list, mapping: dict) -> int:
+    """Gắn mienPhiTrucTuyen/phiOnline cho TTHC đã được xác nhận thuộc NQ 23/2026/NQ-HĐND.
+
+    Chỉ áp dụng cho mã nằm trong mapping["confirmed"] (kèm căn cứ); "candidates" không bao giờ
+    được áp dụng tự động.
+    """
+    confirmed = {str(c["ma"]).strip() for c in mapping.get("confirmed") or []}
+    text = mapping.get("phiOnlineText") or ""
+    count = 0
+    for row in rows:
+        if isinstance(row, dict) and str(row.get("ma") or "").strip() in confirmed:
+            row["mienPhiTrucTuyen"] = True
+            row["phiOnline"] = text
+            count += 1
+    return count
+
+
+def apply_enrichment(master: dict, priority: dict, guidance: dict, nq23: dict | None = None) -> dict:
     errors = validate(guidance)
     if errors:
         raise ValueError("\n".join(errors))
@@ -120,6 +138,8 @@ def apply_enrichment(master: dict, priority: dict, guidance: dict) -> dict:
                     row["submissionLinkCheckedAt"] = guide["verifiedAt"]
         guidance_count += 1
 
+    nq23_count = apply_nq23_flags(rows, nq23) if nq23 else 0
+
     as_of = str(result.get("sourceSnapshotDate") or result.get("updatedAt") or "")
     result["thuTuc"] = [
         upgrade_record_to_v4(row, as_of)
@@ -130,6 +150,7 @@ def apply_enrichment(master: dict, priority: dict, guidance: dict) -> dict:
     summary = result.setdefault("summary", {})
     summary["priority51VinhBaoSubmissionLinks"] = priority_links
     summary["officialGuidanceEnriched"] = guidance_count
+    summary["mienPhiTrucTuyenNQ23"] = nq23_count
     _advance_dataset_version(result, priority, guidance)
     return result
 
@@ -152,13 +173,15 @@ def main() -> int:
     master = json.loads(MASTER.read_text(encoding="utf-8"))
     priority = json.loads(PRIORITY51.read_text(encoding="utf-8"))
     guidance = json.loads(GUIDANCE.read_text(encoding="utf-8"))
-    enriched = apply_enrichment(master, priority, guidance)
+    nq23 = json.loads(NQ23_MAPPING.read_text(encoding="utf-8"))
+    enriched = apply_enrichment(master, priority, guidance, nq23)
     MASTER.write_text(json.dumps(enriched, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     write_fallback(enriched)
     print(json.dumps({
         "procedures": len(enriched.get("thuTuc") or []),
         "priority51VinhBaoSubmissionLinks": enriched.get("summary", {}).get("priority51VinhBaoSubmissionLinks", 0),
         "officialGuidanceEnriched": enriched.get("summary", {}).get("officialGuidanceEnriched", 0),
+        "mienPhiTrucTuyenNQ23": enriched.get("summary", {}).get("mienPhiTrucTuyenNQ23", 0),
     }, ensure_ascii=False))
     return 0
 

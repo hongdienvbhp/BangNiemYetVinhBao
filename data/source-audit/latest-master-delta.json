@@ -8,7 +8,7 @@
     "afterPublic": 510,
     "added": 1,
     "removed": 0,
-    "changed": 0
+    "changed": 11
   },
   "added": [
     {
@@ -21,5 +21,116 @@
     }
   ],
   "removed": [],
-  "changed": []
+  "changed": [
+    {
+      "ma": "1.000656",
+      "ten": "Thủ tục đăng ký khai tử",
+      "fields": {
+        "phiOnline": {
+          "before": "",
+          "after": "0 đồng khi nộp hồ sơ trực tuyến (NQ 23/2026/NQ-HĐND, hiệu lực từ 08/8/2026)"
+        }
+      }
+    },
+    {
+      "ma": "1.000689",
+      "ten": "Thủ tục đăng ký khai sinh kết hợp đăng ký nhận cha, mẹ, con",
+      "fields": {
+        "phiOnline": {
+          "before": "",
+          "after": "0 đồng khi nộp hồ sơ trực tuyến (NQ 23/2026/NQ-HĐND, hiệu lực từ 08/8/2026)"
+        }
+      }
+    },
+    {
+      "ma": "1.004746",
+      "ten": "Thủ tục đăng ký lại kết hôn",
+      "fields": {
+        "phiOnline": {
+          "before": "",
+          "after": "0 đồng khi nộp hồ sơ trực tuyến (NQ 23/2026/NQ-HĐND, hiệu lực từ 08/8/2026)"
+        }
+      }
+    },
+    {
+      "ma": "1.004772",
+      "ten": "Thủ tục đăng ký khai sinh cho người đã có hồ sơ, giấy tờ cá nhân",
+      "fields": {
+        "phiOnline": {
+          "before": "",
+          "after": "0 đồng khi nộp hồ sơ trực tuyến (NQ 23/2026/NQ-HĐND, hiệu lực từ 08/8/2026)"
+        }
+      }
+    },
+    {
+      "ma": "1.004859",
+      "ten": "Thủ tục thay đổi, cải chính, bổ sung thông tin hộ tịch, xác định lại dân tộc",
+      "fields": {
+        "phiOnline": {
+          "before": "",
+          "after": "0 đồng khi nộp hồ sơ trực tuyến (NQ 23/2026/NQ-HĐND, hiệu lực từ 08/8/2026)"
+        }
+      }
+    },
+    {
+      "ma": "1.004873",
+      "ten": "Thủ tục cấp Giấy xác nhận tình trạng hôn nhân",
+      "fields": {
+        "phiOnline": {
+          "before": "",
+          "after": "0 đồng khi nộp hồ sơ trực tuyến (NQ 23/2026/NQ-HĐND, hiệu lực từ 08/8/2026)"
+        }
+      }
+    },
+    {
+      "ma": "1.004884",
+      "ten": "Thủ tục đăng ký lại khai sinh",
+      "fields": {
+        "phiOnline": {
+          "before": "",
+          "after": "0 đồng khi nộp hồ sơ trực tuyến (NQ 23/2026/NQ-HĐND, hiệu lực từ 08/8/2026)"
+        }
+      }
+    },
+    {
+      "ma": "1.005461",
+      "ten": "Đăng ký lại khai tử",
+      "fields": {
+        "phiOnline": {
+          "before": "",
+          "after": "0 đồng khi nộp hồ sơ trực tuyến (NQ 23/2026/NQ-HĐND, hiệu lực từ 08/8/2026)"
+        }
+      }
+    },
+    {
+      "ma": "2.000528",
+      "ten": "Thủ tục đăng ký khai sinh có yếu tố nước ngoài",
+      "fields": {
+        "phiOnline": {
+          "before": "",
+          "after": "0 đồng khi nộp hồ sơ trực tuyến (NQ 23/2026/NQ-HĐND, hiệu lực từ 08/8/2026)"
+        }
+      }
+    },
+    {
+      "ma": "2.000806",
+      "ten": "Thủ tục đăng ký kết hôn có yếu tố nước ngoài",
+      "fields": {
+        "phiOnline": {
+          "before": "",
+          "after": "0 đồng khi nộp hồ sơ trực tuyến (NQ 23/2026/NQ-HĐND, hiệu lực từ 08/8/2026)"
+        }
+      }
+    },
+    {
+      "ma": "2.002189",
+      "ten": "Thủ tục ghi vào Sổ hộ tịch việc kết hôn của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài",
+      "fields": {
+        "phiOnline": {
+          "before": "",
+          "after": "0 đồng khi nộp hồ sơ trực tuyến (NQ 23/2026/NQ-HĐND, hiệu lực từ 08/8/2026)"
+        }
+      }
+    }
+  ]
 }

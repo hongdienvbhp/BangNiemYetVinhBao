@@ -243,12 +243,30 @@
       "donVi": "đồng/hồ sơ hoặc Giấy chứng nhận (Đất | Tài sản | Đất + Tài sản)",
       "ghiChu": "Miễn: trẻ em, hộ nghèo, người cao tuổi, người khuyết tật, người có công; đăng ký biến động do tặng cho quyền sử dụng đất cho Nhà nước/cộng đồng theo mục đích công cộng. Khi nộp trực tuyến: 0 đồng theo NQ 23/2026 từ 08/8/2026.",
       "rows": [
-        ["Cá nhân – cấp GCN lần đầu", "35.000 | 35.000 | 35.000"],
-        ["Cá nhân – cấp đổi, cấp lại GCN", "25.000 | 25.000 | 30.000"],
-        ["Cá nhân – đăng ký biến động trên GCN đã cấp", "25.000 | 25.000 | 30.000"],
-        ["Tổ chức – cấp GCN lần đầu", "40.000 | 40.000 | 45.000"],
-        ["Tổ chức – cấp đổi, cấp lại GCN", "30.000 | 30.000 | 35.000"],
-        ["Tổ chức – đăng ký biến động trên GCN đã cấp", "30.000 | 30.000 | 35.000"]
+        [
+          "Cá nhân – cấp GCN lần đầu",
+          "35.000 | 35.000 | 35.000"
+        ],
+        [
+          "Cá nhân – cấp đổi, cấp lại GCN",
+          "25.000 | 25.000 | 30.000"
+        ],
+        [
+          "Cá nhân – đăng ký biến động trên GCN đã cấp",
+          "25.000 | 25.000 | 30.000"
+        ],
+        [
+          "Tổ chức – cấp GCN lần đầu",
+          "40.000 | 40.000 | 45.000"
+        ],
+        [
+          "Tổ chức – cấp đổi, cấp lại GCN",
+          "30.000 | 30.000 | 35.000"
+        ],
+        [
+          "Tổ chức – đăng ký biến động trên GCN đã cấp",
+          "30.000 | 30.000 | 35.000"
+        ]
       ],
       "source": "NQ-34-2025"
     },
@@ -258,12 +276,30 @@
       "donVi": "đồng/hồ sơ hoặc Giấy chứng nhận (Đất | Tài sản | Đất + Tài sản)",
       "ghiChu": "Cùng nhóm đối tượng miễn như Phụ lục I. Khi nộp trực tuyến: 0 đồng theo NQ 23/2026 từ 08/8/2026.",
       "rows": [
-        ["Cá nhân – cấp GCN lần đầu", "100.000 | 100.000 | 155.000"],
-        ["Cá nhân – cấp đổi, cấp lại GCN", "100.000 | 100.000 | 115.000"],
-        ["Cá nhân – đăng ký biến động trên GCN đã cấp", "125.000 | 155.000 | 170.000"],
-        ["Tổ chức – cấp GCN lần đầu", "215.000 | 215.000 | 215.000"],
-        ["Tổ chức – cấp đổi, cấp lại GCN", "155.000 | 155.000 | 175.000"],
-        ["Tổ chức – đăng ký biến động trên GCN đã cấp", "290.000 | 290.000 | 355.000"]
+        [
+          "Cá nhân – cấp GCN lần đầu",
+          "100.000 | 100.000 | 155.000"
+        ],
+        [
+          "Cá nhân – cấp đổi, cấp lại GCN",
+          "100.000 | 100.000 | 115.000"
+        ],
+        [
+          "Cá nhân – đăng ký biến động trên GCN đã cấp",
+          "125.000 | 155.000 | 170.000"
+        ],
+        [
+          "Tổ chức – cấp GCN lần đầu",
+          "215.000 | 215.000 | 215.000"
+        ],
+        [
+          "Tổ chức – cấp đổi, cấp lại GCN",
+          "155.000 | 155.000 | 175.000"
+        ],
+        [
+          "Tổ chức – đăng ký biến động trên GCN đã cấp",
+          "290.000 | 290.000 | 355.000"
+        ]
       ],
       "source": "NQ-34-2025"
     },
@@ -273,13 +309,18 @@
       "donVi": "đồng/hồ sơ",
       "ghiChu": "Miễn: chấp hành viên, điều tra viên, kiểm sát viên, thẩm phán theo yêu cầu nghiệp vụ; tự tra cứu trên Hệ thống đăng ký trực tuyến của Bộ Tư pháp.",
       "rows": [
-        ["Phí cung cấp thông tin về giao dịch bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất", "30.000"]
+        [
+          "Phí cung cấp thông tin về giao dịch bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất",
+          "30.000"
+        ]
       ],
       "source": "NQ-34-2025"
     }
   ],
   "notes": [
     "Phí đăng ký giao dịch bảo đảm (NQ 34/2025, Phụ lục III) có mức thu riêng cho hình thức trực tiếp và trực tuyến; khi nộp trực tuyến mức thu là 0 đồng theo NQ 23/2026 (Điều 2 khoản 2 điểm a). Bảng mức thu trực tiếp xem toàn văn NQ 34/2025.",
-    "Mức lệ phí hộ tịch khi nộp trực tiếp/bưu chính: [cần bổ sung] — chưa đối chiếu được văn bản gốc của HĐND TP đang còn hiệu lực; xem mục Phí/lệ phí trong từng TTHC (nguồn Cổng DVCQG)."
+    "Mức lệ phí hộ tịch khi nộp trực tiếp/bưu chính: [cần bổ sung] — chưa đối chiếu được văn bản gốc của HĐND TP đang còn hiệu lực; xem mục Phí/lệ phí trong từng TTHC (nguồn Cổng DVCQG).",
+    "Rà soát 01/10/2026: đã tra Công báo TP, cổng HĐND TP và cổng Sở Tư pháp nhưng chưa thu được bản NQ 23/2026 đã ký và chưa đối chiếu được toàn văn/hiệu lực NQ 12/2018, 45/2018, 19/2022: [cần bổ sung] — đề nghị đối chiếu trực tiếp trên Công báo TP hoặc hỏi Sở Tư pháp.",
+    "11 TTHC hộ tịch cấp xã đã gắn cờ miễn lệ phí khi nộp trực tuyến theo data/phu-luc/NQ-23-anh-xa-tthc.json; các TTHC gợi ý khác (candidates) chờ chuyên viên xác nhận."
   ]
 }

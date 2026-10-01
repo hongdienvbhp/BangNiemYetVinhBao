@@ -64,3 +64,27 @@ class ExtraDataTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class Nq23MappingTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        root = Path(__file__).resolve().parents[1]
+        cls.mapping = json.loads((root / "data/phu-luc/NQ-23-anh-xa-tthc.json").read_text(encoding="utf-8"))
+        cls.master = json.loads((root / "data/thu-tuc.json").read_text(encoding="utf-8"))["thuTuc"]
+
+    def test_only_confirmed_codes_are_flagged(self):
+        confirmed = {c["ma"] for c in self.mapping["confirmed"]}
+        flagged = {t["ma"] for t in self.master if t["mienPhiTrucTuyen"]}
+        self.assertEqual(flagged, confirmed)
+        self.assertTrue(all(c["canCu"] and c["dieuKhoan"] for c in self.mapping["confirmed"]))
+
+    def test_candidates_never_applied(self):
+        candidates = {c["ma"] for c in self.mapping["candidates"]}
+        self.assertFalse(candidates & {t["ma"] for t in self.master if t["mienPhiTrucTuyen"]})
+        self.assertFalse(candidates & {c["ma"] for c in self.mapping["confirmed"]})
+
+    def test_flagged_rows_state_nq23_text(self):
+        for t in self.master:
+            if t["mienPhiTrucTuyen"]:
+                self.assertIn("NQ 23/2026/NQ-HĐND", t["phiOnline"])
