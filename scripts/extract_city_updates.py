@@ -39,6 +39,19 @@ TIME_OR_COLUMN_RE = re.compile(
 # Trích xuất văn bản thuần không giữ được ranh giới cột, nên khóa lại đúng quan
 # hệ thay thế đã thể hiện trực tiếp trong phụ lục chính thức.
 DECISION_ROW_OVERRIDES = {
+    # Tên chép từ Phụ lục QĐ 186/QĐ-UBND (cột tên bị tách ký tự/dính cột).
+    "186/QĐ-UBND": {
+        "1.003851": {"name": "Cấp văn bản chấp thuận khai thác loài thủy sản nguy cấp, quý, hiếm (vì mục đích bảo tồn, nghiên cứu khoa học, nghiên cứu tạo nguồn giống ban đầu, hợp tác quốc tế)"},
+        "1.003956": {"name": "Công nhận và giao quyền quản lý cho tổ chức cộng đồng"},
+        "1.004498": {"name": "Sửa đổi, bổ sung nội dung quyết định công nhận và giao quyền quản lý cho tổ chức cộng đồng"},
+        "1.004656": {"name": "Xác nhận nguồn gốc loài thủy sản thuộc Phụ lục Công ước quốc tế về buôn bán các loài động vật, thực vật hoang dã, nguy cấp; loài thủy sản nguy cấp, quý, hiếm có nguồn gốc khai thác từ tự nhiên"},
+        "1.004680": {"name": "Xác nhận nguồn gốc loài thủy sản thuộc Phụ lục Công ước quốc tế về buôn bán các loài động vật, thực vật hoang dã nguy cấp; loài thủy sản nguy cấp, quý, hiếm có nguồn gốc từ nuôi trồng"},
+    },
+    # Tên chép từ Phụ lục QĐ 190/QĐ-UBND (cột thời hạn dính vào tên).
+    "190/QĐ-UBND": {
+        "1.003860": {"name": "Đăng ký chỉ định cơ sở kiểm nghiệm kiểm chứng về ATTP"},
+        "2.001682": {"name": "Đăng ký chỉ định cơ sở kiểm nghiệm thực phẩm phục vụ quản lý nhà nước"},
+    },
     # Phụ lục QĐ 2657/QĐ-UBND mục B: hai cột tên (được thay thế/thay thế) xen kẽ khi trích; dùng tên cùng mã trong bộ dữ liệu đã đối chiếu (js/data.js).
     "2657/QĐ-UBND": {
         "1.013225": {"name": "Cấp giấy phép xây dựng mới đối với công trình cấp III, cấp IV và nhà ở riêng lẻ"},

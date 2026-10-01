@@ -2,23 +2,23 @@
   "format": "phase1-reconciliation",
   "version": 2,
   "canonicalDatasetVersion": "2026.09.29",
-  "canonicalSourceCommit": "d40bee941c77817909add8e6e3e68763cdaa60f1",
+  "canonicalSourceCommit": "c40a230d7ac8f1d26bec080999a94f2bcf274cd1",
   "baselineAsOf": "2026-07-20",
   "baselineTarget": 323,
-  "canonicalTotal": 509,
+  "canonicalTotal": 535,
   "summary": {
-    "phase1CandidateCodes": 315,
-    "outOfScopeProvinceReceptionOnly": 194,
+    "phase1CandidateCodes": 321,
+    "outOfScopeProvinceReceptionOnly": 214,
     "misclassifiedByOfficialEvidence": 3,
     "ambiguousCommuneOrShared": 129,
-    "provisionalCommuneCapLabel": 152,
-    "directlyEvidencedPhase1": 165,
+    "provisionalCommuneCapLabel": 158,
+    "directlyEvidencedPhase1": 171,
     "officialTableClassifiedCodes": 36,
-    "minimumMissingAgainstAggregateBaseline": 8,
+    "minimumMissingAgainstAggregateBaseline": 2,
     "exactMissingByCodeStatus": "pending_authoritative_materialization",
     "latestOfficialAggregatePeriod": "Q3/2026",
     "latestOfficialAggregateTarget": 348,
-    "minimumMissingAgainstLatestOfficialAggregate": 33
+    "minimumMissingAgainstLatestOfficialAggregate": 27
   },
   "MATCHED": {
     "status": "partial_only",
@@ -89,6 +89,27 @@
         "scope": "SHARED",
         "source": "city_update",
         "decisionNo": "1353/QĐ-UBND",
+        "date": "2026-04-08"
+      },
+      {
+        "ma": "2.002096",
+        "scope": "COMMUNE",
+        "source": "city_update",
+        "decisionNo": "190/QĐ-UBND",
+        "date": "2026-01-16"
+      },
+      {
+        "ma": "2.000181",
+        "scope": "COMMUNE",
+        "source": "city_update",
+        "decisionNo": "1349/QĐ-UBND",
+        "date": "2026-04-08"
+      },
+      {
+        "ma": "2.000150",
+        "scope": "COMMUNE",
+        "source": "city_update",
+        "decisionNo": "1349/QĐ-UBND",
         "date": "2026-04-08"
       },
       {
@@ -461,20 +482,6 @@
         "source": "official_table_heading"
       },
       {
-        "ma": "2.000181",
-        "scope": "COMMUNE",
-        "source": "city_update",
-        "decisionNo": "1349/QĐ-UBND",
-        "date": "2026-04-08"
-      },
-      {
-        "ma": "2.000150",
-        "scope": "COMMUNE",
-        "source": "city_update",
-        "decisionNo": "1349/QĐ-UBND",
-        "date": "2026-04-08"
-      },
-      {
         "ma": "2.000162",
         "scope": "COMMUNE",
         "source": "city_update",
@@ -683,6 +690,20 @@
         "source": "city_update",
         "decisionNo": "2380/QĐ-UBND",
         "date": "2026-06-26"
+      },
+      {
+        "ma": "1.014159",
+        "scope": "SHARED",
+        "source": "city_update",
+        "decisionNo": "2281/QĐ-UBND",
+        "date": "2026-06-18"
+      },
+      {
+        "ma": "1.014155",
+        "scope": "SHARED",
+        "source": "city_update",
+        "decisionNo": "2281/QĐ-UBND",
+        "date": "2026-06-18"
       },
       {
         "ma": "2.000575",
@@ -902,6 +923,41 @@
         "date": "2026-01-29"
       },
       {
+        "ma": "1.004478",
+        "scope": "COMMUNE",
+        "source": "city_update",
+        "decisionNo": "186/QĐ-UBND",
+        "date": "2026-01-15"
+      },
+      {
+        "ma": "1.003956",
+        "scope": "COMMUNE",
+        "source": "city_update",
+        "decisionNo": "186/QĐ-UBND",
+        "date": "2026-01-15"
+      },
+      {
+        "ma": "1.004498",
+        "scope": "COMMUNE",
+        "source": "city_update",
+        "decisionNo": "186/QĐ-UBND",
+        "date": "2026-01-15"
+      },
+      {
+        "ma": "1.004680",
+        "scope": "COMMUNE",
+        "source": "city_update",
+        "decisionNo": "186/QĐ-UBND",
+        "date": "2026-01-15"
+      },
+      {
+        "ma": "1.004656",
+        "scope": "COMMUNE",
+        "source": "city_update",
+        "decisionNo": "186/QĐ-UBND",
+        "date": "2026-01-15"
+      },
+      {
         "ma": "2.001909",
         "scope": "COMMUNE",
         "source": "city_update",
@@ -1103,13 +1159,6 @@
         "date": "2026-03-03"
       },
       {
-        "ma": "1.014159",
-        "scope": "SHARED",
-        "source": "city_update",
-        "decisionNo": "2281/QĐ-UBND",
-        "date": "2026-06-18"
-      },
-      {
         "ma": "1.013227",
         "scope": "COMMUNE",
         "source": "city_update",
@@ -1122,13 +1171,6 @@
         "source": "city_update",
         "decisionNo": "777/QĐ-UBND",
         "date": "2026-03-03"
-      },
-      {
-        "ma": "1.014155",
-        "scope": "SHARED",
-        "source": "city_update",
-        "decisionNo": "2281/QĐ-UBND",
-        "date": "2026-06-18"
       },
       {
         "ma": "1.013226",
@@ -1175,12 +1217,12 @@
   },
   "MISSING": {
     "status": "not_finalizable_without_authoritative_code_list",
-    "minimumCount": 8,
+    "minimumCount": 2,
     "items": []
   },
   "EXTRA": {
     "status": "phase1_out_of_scope",
-    "count": 194,
+    "count": 214,
     "items": [
       "1.000302",
       "1.000321",
@@ -1202,6 +1244,7 @@
       "1.001216",
       "1.001238",
       "1.001323",
+      "1.001419",
       "1.001577",
       "1.001737",
       "1.002046",
@@ -1221,7 +1264,11 @@
       "1.003160",
       "1.003198",
       "1.003593",
+      "1.003634",
+      "1.003650",
       "1.003666",
+      "1.003851",
+      "1.003860",
       "1.003915",
       "1.003976",
       "1.004117",
@@ -1231,6 +1278,7 @@
       "1.004878",
       "1.004889",
       "1.004913",
+      "1.004929",
       "1.005169",
       "1.005210",
       "1.006780",
@@ -1275,6 +1323,13 @@
       "1.012960",
       "1.013004",
       "1.013217",
+      "1.013401",
+      "1.013411",
+      "1.013412",
+      "1.013416",
+      "1.013417",
+      "1.013418",
+      "1.013420",
       "1.013644",
       "1.013751",
       "1.013755",
@@ -1297,6 +1352,8 @@
       "1.014132",
       "1.014133",
       "1.014136",
+      "1.014157",
+      "1.014158",
       "1.014291",
       "1.014632",
       "1.014786",
@@ -1324,12 +1381,16 @@
       "2.000033",
       "2.000131",
       "2.000133",
+      "2.000167",
       "2.000368",
       "2.000552",
       "2.000555",
       "2.000559",
       "2.000568",
       "2.000578",
+      "2.000598",
+      "2.000637",
+      "2.000673",
       "2.000823",
       "2.000890",
       "2.000894",
@@ -1347,6 +1408,7 @@
       "2.001576",
       "2.001583",
       "2.001610",
+      "2.001682",
       "2.001737",
       "2.001740",
       "2.001795",
@@ -1419,17 +1481,17 @@
   },
   "COUNT_DRIFT": {
     "baseline": 323,
-    "phase1CandidatesCurrent": 315,
-    "delta": -8,
-    "minimumMissing": 8,
-    "canonicalTotalVsBaselineDelta": 186,
+    "phase1CandidatesCurrent": 321,
+    "delta": -2,
+    "minimumMissing": 2,
+    "canonicalTotalVsBaselineDelta": 212,
     "latestOfficialAggregate": {
       "period": "Q3/2026",
       "target": 348,
       "communeAuthority": 263,
       "shared": 85,
       "baselineDrift": 25,
-      "minimumMissing": 33
+      "minimumMissing": 27
     }
   },
   "AMBIGUOUS": [
@@ -1582,6 +1644,11 @@
     "1.001766",
     "1.003005",
     "1.003583",
+    "1.003956",
+    "1.004478",
+    "1.004498",
+    "1.004656",
+    "1.004680",
     "1.004746",
     "1.004772",
     "1.004837",
@@ -1687,6 +1754,7 @@
     "2.001909",
     "2.001942",
     "2.001958",
+    "2.002096",
     "2.002123",
     "2.002165",
     "2.002189",
