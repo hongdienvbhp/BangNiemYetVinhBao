@@ -563,13 +563,13 @@
   "loaiRules": {
     "Lệ phí hộ tịch": {
       "khoanPhi": "Lệ phí hộ tịch",
-      "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a",
-      "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí hộ tịch còn hiệu lực (NQ 12/2018, 45/2018 phần còn lại chưa đối chiếu); xem thêm mức tại dữ liệu hướng dẫn của thủ tục"
+      "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm a; mức nền NQ 12/2018 PL04, NQ 16/2023",
+      "mucTrucTiep": "[cần bổ sung]"
     },
     "Lệ phí cấp giấy phép xây dựng": {
       "khoanPhi": "Lệ phí cấp giấy phép xây dựng",
-      "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm d",
-      "mucTrucTiep": "[cần bổ sung] — theo nghị quyết HĐND TP về lệ phí cấp giấy phép xây dựng còn hiệu lực"
+      "canCu": "NQ 23/2026/NQ-HĐND Điều 2 khoản 1 điểm d; mức nền NQ 45/2018 PL10",
+      "mucTrucTiep": "[cần bổ sung]"
     },
     "Lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN": {
       "khoanPhi": "Lệ phí cấp GCN; phí thẩm định hồ sơ cấp GCN",
@@ -582,5 +582,44 @@
       "mucTrucTiep": "Phụ lục III NQ 34/2025/NQ-HĐND (hình thức trực tiếp)"
     }
   },
-  "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng)."
+  "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/8/2026 theo NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng).",
+  "mucTrucTiepByCode": {
+    "1.004873": "5.000 đồng/lần (NQ 12/2018 PL04 điểm a; miễn theo NQ 16/2023)",
+    "2.002189": "Chưa xác định: NQ 12/2018 PL04 điểm b (sửa bởi NQ 16/2023) quy định mức cho UBND cấp huyện (khai sinh, khai tử, giám hộ 75.000 đ; kết hôn, nhận cha mẹ con 1.500.000 đ; thay đổi, cải chính có yếu tố nước ngoài 28.000 đ; ghi vào sổ việc đã giải quyết ở nước ngoài 75.000 đ); văn bản áp dụng cho UBND cấp xã sau khi bỏ cấp huyện [cần xác minh]",
+    "1.004859": "10.000 đồng/lần đối với người chưa đủ 14 tuổi cư trú trong nước và bổ sung hộ tịch; người từ đủ 14 tuổi trở lên, xác định lại dân tộc: 28.000 đồng/lần theo mức cấp huyện [cần xác minh mức áp dụng cho UBND xã] (NQ 12/2018 PL04 điểm a; miễn theo NQ 16/2023)",
+    "2.000806": "Chưa xác định: NQ 12/2018 PL04 điểm b (sửa bởi NQ 16/2023) quy định mức cho UBND cấp huyện (khai sinh, khai tử, giám hộ 75.000 đ; kết hôn, nhận cha mẹ con 1.500.000 đ; thay đổi, cải chính có yếu tố nước ngoài 28.000 đ; ghi vào sổ việc đã giải quyết ở nước ngoài 75.000 đ); văn bản áp dụng cho UBND cấp xã sau khi bỏ cấp huyện [cần xác minh]",
+    "1.004772": "8.000 đồng/lần (NQ 12/2018 PL04 điểm a; miễn theo NQ 16/2023)",
+    "2.000528": "Chưa xác định: NQ 12/2018 PL04 điểm b (sửa bởi NQ 16/2023) quy định mức cho UBND cấp huyện (khai sinh, khai tử, giám hộ 75.000 đ; kết hôn, nhận cha mẹ con 1.500.000 đ; thay đổi, cải chính có yếu tố nước ngoài 28.000 đ; ghi vào sổ việc đã giải quyết ở nước ngoài 75.000 đ); văn bản áp dụng cho UBND cấp xã sau khi bỏ cấp huyện [cần xác minh]",
+    "1.000689": "Khai sinh: miễn nếu đúng hạn, 8.000 đồng/lần nếu không đúng hạn; nhận cha, mẹ, con: 10.000 đồng/lần (NQ 12/2018 PL04 điểm a; miễn theo NQ 16/2023)",
+    "1.000656": "Miễn lệ phí nếu đăng ký đúng hạn; 8.000 đồng/lần nếu không đúng hạn (NQ 12/2018 PL04 điểm a; miễn theo NQ 16/2023)",
+    "1.004746": "30.000 đồng/lần (NQ 12/2018 PL04 điểm a; miễn theo NQ 16/2023)",
+    "1.004884": "8.000 đồng/lần (NQ 12/2018 PL04 điểm a; miễn theo NQ 16/2023)",
+    "1.005461": "8.000 đồng/lần (NQ 12/2018 PL04 điểm a; miễn theo NQ 16/2023)",
+    "2.000547": "Chưa xác định: NQ 12/2018 PL04 điểm b (sửa bởi NQ 16/2023) quy định mức cho UBND cấp huyện (khai sinh, khai tử, giám hộ 75.000 đ; kết hôn, nhận cha mẹ con 1.500.000 đ; thay đổi, cải chính có yếu tố nước ngoài 28.000 đ; ghi vào sổ việc đã giải quyết ở nước ngoài 75.000 đ); văn bản áp dụng cho UBND cấp xã sau khi bỏ cấp huyện [cần xác minh]",
+    "2.000554": "Chưa xác định: NQ 12/2018 PL04 điểm b (sửa bởi NQ 16/2023) quy định mức cho UBND cấp huyện (khai sinh, khai tử, giám hộ 75.000 đ; kết hôn, nhận cha mẹ con 1.500.000 đ; thay đổi, cải chính có yếu tố nước ngoài 28.000 đ; ghi vào sổ việc đã giải quyết ở nước ngoài 75.000 đ); văn bản áp dụng cho UBND cấp xã sau khi bỏ cấp huyện [cần xác minh]",
+    "2.000748": "Chưa xác định: NQ 12/2018 PL04 điểm b (sửa bởi NQ 16/2023) quy định mức cho UBND cấp huyện (khai sinh, khai tử, giám hộ 75.000 đ; kết hôn, nhận cha mẹ con 1.500.000 đ; thay đổi, cải chính có yếu tố nước ngoài 28.000 đ; ghi vào sổ việc đã giải quyết ở nước ngoài 75.000 đ); văn bản áp dụng cho UBND cấp xã sau khi bỏ cấp huyện [cần xác minh]",
+    "1.004837": "Miễn lệ phí đối với công dân Việt Nam cư trú trong nước đăng ký tại UBND cấp xã (NQ 12/2018 PL04 điểm a; miễn theo NQ 16/2023)",
+    "1.000894": "Miễn lệ phí đối với công dân Việt Nam cư trú trong nước đăng ký tại UBND cấp xã (NQ 12/2018 PL04 điểm a; miễn theo NQ 16/2023)",
+    "1.000593": "Miễn lệ phí đối với công dân Việt Nam cư trú trong nước đăng ký tại UBND cấp xã (NQ 12/2018 PL04 điểm a; miễn theo NQ 16/2023)",
+    "1.001193": "Miễn lệ phí nếu đăng ký đúng hạn (công dân Việt Nam cư trú trong nước); 8.000 đồng/lần nếu không đúng hạn (NQ 12/2018 PL04 điểm a; miễn theo NQ 16/2023)",
+    "1.003583": "Miễn lệ phí nếu đăng ký đúng hạn (công dân Việt Nam cư trú trong nước); 8.000 đồng/lần nếu không đúng hạn (NQ 12/2018 PL04 điểm a; miễn theo NQ 16/2023)",
+    "1.000419": "Miễn lệ phí nếu đăng ký đúng hạn; 8.000 đồng/lần nếu không đúng hạn (NQ 12/2018 PL04 điểm a; miễn theo NQ 16/2023)",
+    "1.004845": "Miễn lệ phí đối với công dân Việt Nam cư trú trong nước đăng ký tại UBND cấp xã (NQ 12/2018 PL04 điểm a; miễn theo NQ 16/2023)",
+    "2.000756": "Chưa xác định: NQ 12/2018 PL04 điểm b (sửa bởi NQ 16/2023) quy định mức cho UBND cấp huyện (khai sinh, khai tử, giám hộ 75.000 đ; kết hôn, nhận cha mẹ con 1.500.000 đ; thay đổi, cải chính có yếu tố nước ngoài 28.000 đ; ghi vào sổ việc đã giải quyết ở nước ngoài 75.000 đ); văn bản áp dụng cho UBND cấp xã sau khi bỏ cấp huyện [cần xác minh]",
+    "3.000322": "[cần bổ sung] — NQ 12/2018, 16/2023 không quy định mức riêng",
+    "1.001669": "Chưa xác định: NQ 12/2018 PL04 điểm b (sửa bởi NQ 16/2023) quy định mức cho UBND cấp huyện (khai sinh, khai tử, giám hộ 75.000 đ; kết hôn, nhận cha mẹ con 1.500.000 đ; thay đổi, cải chính có yếu tố nước ngoài 28.000 đ; ghi vào sổ việc đã giải quyết ở nước ngoài 75.000 đ); văn bản áp dụng cho UBND cấp xã sau khi bỏ cấp huyện [cần xác minh]",
+    "3.000323": "[cần bổ sung] — NQ 12/2018, 16/2023 không quy định mức riêng",
+    "1.000893": "Chưa xác định: NQ 12/2018 PL04 điểm b (sửa bởi NQ 16/2023) quy định mức cho UBND cấp huyện (khai sinh, khai tử, giám hộ 75.000 đ; kết hôn, nhận cha mẹ con 1.500.000 đ; thay đổi, cải chính có yếu tố nước ngoài 28.000 đ; ghi vào sổ việc đã giải quyết ở nước ngoài 75.000 đ); văn bản áp dụng cho UBND cấp xã sau khi bỏ cấp huyện [cần xác minh]",
+    "1.001695": "Chưa xác định: NQ 12/2018 PL04 điểm b (sửa bởi NQ 16/2023) quy định mức cho UBND cấp huyện (khai sinh, khai tử, giám hộ 75.000 đ; kết hôn, nhận cha mẹ con 1.500.000 đ; thay đổi, cải chính có yếu tố nước ngoài 28.000 đ; ghi vào sổ việc đã giải quyết ở nước ngoài 75.000 đ); văn bản áp dụng cho UBND cấp xã sau khi bỏ cấp huyện [cần xác minh]",
+    "1.001766": "Chưa xác định: NQ 12/2018 PL04 điểm b (sửa bởi NQ 16/2023) quy định mức cho UBND cấp huyện (khai sinh, khai tử, giám hộ 75.000 đ; kết hôn, nhận cha mẹ con 1.500.000 đ; thay đổi, cải chính có yếu tố nước ngoài 28.000 đ; ghi vào sổ việc đã giải quyết ở nước ngoài 75.000 đ); văn bản áp dụng cho UBND cấp xã sau khi bỏ cấp huyện [cần xác minh]",
+    "2.000522": "Chưa xác định: NQ 12/2018 PL04 điểm b (sửa bởi NQ 16/2023) quy định mức cho UBND cấp huyện (khai sinh, khai tử, giám hộ 75.000 đ; kết hôn, nhận cha mẹ con 1.500.000 đ; thay đổi, cải chính có yếu tố nước ngoài 28.000 đ; ghi vào sổ việc đã giải quyết ở nước ngoài 75.000 đ); văn bản áp dụng cho UBND cấp xã sau khi bỏ cấp huyện [cần xác minh]",
+    "2.000497": "Chưa xác định: NQ 12/2018 PL04 điểm b (sửa bởi NQ 16/2023) quy định mức cho UBND cấp huyện (khai sinh, khai tử, giám hộ 75.000 đ; kết hôn, nhận cha mẹ con 1.500.000 đ; thay đổi, cải chính có yếu tố nước ngoài 28.000 đ; ghi vào sổ việc đã giải quyết ở nước ngoài 75.000 đ); văn bản áp dụng cho UBND cấp xã sau khi bỏ cấp huyện [cần xác minh]",
+    "1.001022": "10.000 đồng/lần (NQ 12/2018 PL04 điểm a; miễn theo NQ 16/2023)",
+    "2.000779": "Chưa xác định: NQ 12/2018 PL04 điểm b (sửa bởi NQ 16/2023) quy định mức cho UBND cấp huyện (khai sinh, khai tử, giám hộ 75.000 đ; kết hôn, nhận cha mẹ con 1.500.000 đ; thay đổi, cải chính có yếu tố nước ngoài 28.000 đ; ghi vào sổ việc đã giải quyết ở nước ngoài 75.000 đ); văn bản áp dụng cho UBND cấp xã sau khi bỏ cấp huyện [cần xác minh]",
+    "1.013225": "75.000 đồng/giấy phép (nhà ở riêng lẻ); 150.000 đồng/giấy phép (công trình xây dựng khác) (NQ 45/2018 PL10)",
+    "1.013229": "75.000 đồng/giấy phép (nhà ở riêng lẻ); 150.000 đồng/giấy phép (công trình xây dựng khác) (NQ 45/2018 PL10)",
+    "1.013228": "15.000 đồng/lần (NQ 45/2018 PL10)",
+    "1.013227": "15.000 đồng/lần (NQ 45/2018 PL10)",
+    "1.013226": "75.000 đồng/giấy phép (nhà ở riêng lẻ); 150.000 đồng/giấy phép (công trình xây dựng khác) (NQ 45/2018 PL10)"
+  }
 }

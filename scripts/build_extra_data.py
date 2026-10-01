@@ -154,6 +154,7 @@ def build_fees(fees: dict, specialized: dict | None = None) -> dict:
         "repealed": "Đã bãi bỏ",
         "partially_repealed": "Bãi bỏ một phần – cần xác minh phần còn lại",
         "unverified": "Chưa xác minh hiệu lực",
+        "partially_current": "Còn hiệu lực một phần",
     }
     verify_label = {
         "primary_text_read": "đã đọc toàn văn bản gốc",

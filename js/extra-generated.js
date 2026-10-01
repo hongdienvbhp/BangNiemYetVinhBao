@@ -923,7 +923,7 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
     }
   ],
   "phiLePhi": {
-    "ghiChuChung": "Cập nhật 01/10/2026. Từ 08/8/2026, NQ 23/2026/NQ-HĐND quy định mức thu 0 đồng đối với 04 loại lệ phí và 07 loại phí khi thực hiện TTHC trực tuyến tại Cổng DVCQG hoặc VNeID; NQ 07/2025 (Hải Dương) và NQ 08/2025 (Hải Phòng) hết hiệu lực (hồ sơ nộp trước 08/8/2026 vẫn theo nghị quyết cũ). Nộp trực tiếp hoặc qua bưu chính: áp dụng mức thu theo từng loại phí, lệ phí. Mức thu cụ thể của từng TTHC xem trong chi tiết thủ tục (nguồn Cổng DVCQG). Phí đăng ký giao dịch bảo đảm (NQ 34/2025, Phụ lục III) có mức thu riêng cho hình thức trực tiếp và trực tuyến; khi nộp trực tuyến mức thu là 0 đồng theo NQ 23/2026 (Điều 2 khoản 2 điểm a). Bảng mức thu trực tiếp xem toàn văn NQ 34/2025. Mức lệ phí hộ tịch khi nộp trực tiếp/bưu chính: [cần bổ sung] — chưa đối chiếu được văn bản gốc của HĐND TP đang còn hiệu lực; xem mục Phí/lệ phí trong từng TTHC (nguồn Cổng DVCQG). NQ 23/2026/NQ-HĐND đã được Giám đốc Trung tâm PVHCC xác nhận (01/10/2026); mapping TTHC tại data/phu-luc/NQ-23-anh-xa-tthc.json. NQ 12/2018, 45/2018, 19/2022 (phần còn lại): [cần bổ sung] toàn văn/hiệu lực. NQ 12/2026 (lệ phí đăng ký kinh doanh: 0 đồng/lần cấp, mọi hình thức, 08/8/2026–31/12/2031) và NQ 43/2025 (hiệu lực đến 31/12/2030) đã đọc toàn văn từ tệp do Giám đốc Trung tâm cung cấp 01/10/2026.",
+    "ghiChuChung": "Cập nhật 01/10/2026. Từ 08/8/2026, NQ 23/2026/NQ-HĐND quy định mức thu 0 đồng đối với 04 loại lệ phí và 07 loại phí khi thực hiện TTHC trực tuyến tại Cổng DVCQG hoặc VNeID; NQ 07/2025 (Hải Dương) và NQ 08/2025 (Hải Phòng) hết hiệu lực (hồ sơ nộp trước 08/8/2026 vẫn theo nghị quyết cũ). Nộp trực tiếp hoặc qua bưu chính: áp dụng mức thu theo từng loại phí, lệ phí. Mức thu cụ thể của từng TTHC xem trong chi tiết thủ tục (nguồn Cổng DVCQG). Phí đăng ký giao dịch bảo đảm (NQ 34/2025, Phụ lục III) có mức thu riêng cho hình thức trực tiếp và trực tuyến; khi nộp trực tuyến mức thu là 0 đồng theo NQ 23/2026 (Điều 2 khoản 2 điểm a). Bảng mức thu trực tiếp xem toàn văn NQ 34/2025. NQ 23/2026/NQ-HĐND đã được Giám đốc Trung tâm PVHCC xác nhận (01/10/2026); mapping TTHC tại data/phu-luc/NQ-23-anh-xa-tthc.json. NQ 12/2018, 45/2018, 19/2022 (phần còn lại): [cần bổ sung] toàn văn/hiệu lực. NQ 12/2026 (lệ phí đăng ký kinh doanh: 0 đồng/lần cấp, mọi hình thức, 08/8/2026–31/12/2031) và NQ 43/2025 (hiệu lực đến 31/12/2030) đã đọc toàn văn từ tệp do Giám đốc Trung tâm cung cấp 01/10/2026. 01/10/2026: đã đọc toàn văn NQ 12/2018, 45/2018, 19/2022, 16/2023, 01/2022 (tệp do Giám đốc Trung tâm cung cấp). Mức lệ phí hộ tịch cấp xã theo NQ 12/2018 PL04 điểm a và miễn theo NQ 16/2023; lệ phí GPXD theo NQ 45/2018 PL10.",
     "nghiQuyetHP": [
       {
         "so": "23/2026/NQ-HĐND",
@@ -973,56 +973,56 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
         "so": "12/2018/NQ-HĐND",
         "ngay": "12/7/2018",
         "trichYeu": "Quy định một số loại phí, lệ phí thuộc thẩm quyền HĐND thành phố trên địa bàn thành phố Hải Phòng",
-        "trangThai": "Tầng 2 – văn bản nền còn hiệu lực một phần · Bãi bỏ một phần – cần xác minh phần còn lại · chưa đối chiếu",
+        "trangThai": "Tầng 2 – văn bản nền còn hiệu lực một phần · Còn hiệu lực một phần · hiệu lực từ 01/8/2018 · đã đọc toàn văn bản gốc",
         "nhom": "can_xac_minh",
         "tang": 2,
         "thuTu": 5,
-        "ghiChu": "Đã bãi bỏ khoản 1 Điều 1 và Phụ lục 01 (NQ 34/2025). Phần còn lại, gồm mức lệ phí hộ tịch khi nộp trực tiếp/bưu chính: [cần xác minh toàn văn và tình trạng hiệu lực mới nhất] — chưa đối chiếu được văn bản gốc trong phiên rà soát.",
-        "link": "https://dbndhaiphong.gov.vn/SiteFolders/dbndhp/2472/Documents/NQ-34-2025.pdf"
+        "ghiChu": "Điều 1 gồm 5 loại: PL01 phí đăng ký giao dịch bảo đảm (đã bãi bỏ bởi NQ 34/2025); PL02 phí BVMT khai thác khoáng sản; PL03 lệ phí cấp giấy phép lao động cho người nước ngoài (sửa đổi bởi NQ 16/2023, thêm lệ phí gia hạn 450.000 đ); PL04 lệ phí hộ tịch (điểm b, c sửa đổi bởi NQ 16/2023); PL05 lệ phí trước bạ ô tô (sửa đổi bởi NQ 16/2023). Phần còn dùng cho Trung tâm: PL04 điểm a (mức lệ phí hộ tịch tại UBND cấp xã) và các trường hợp miễn tại điểm c đã sửa đổi. Chưa thấy văn bản bãi bỏ PL04 trong các văn bản đã đối chiếu. Bản quét do Giám đốc Trung tâm PVHCC cung cấp 01/10/2026; đã đọc trực tiếp từ ảnh trang.",
+        "link": "upload:dd3f36fc-NQ_12.2018.nq-hdnd639262708473552507.pdf"
       },
       {
         "so": "45/2018/NQ-HĐND",
         "ngay": "10/12/2018",
         "trichYeu": "Quy định một số loại phí, lệ phí trên địa bàn thành phố Hải Phòng",
-        "trangThai": "Tầng 2 – văn bản nền còn hiệu lực một phần · Bãi bỏ một phần – cần xác minh phần còn lại · chưa đối chiếu",
+        "trangThai": "Tầng 2 – văn bản nền còn hiệu lực một phần · Còn hiệu lực một phần · hiệu lực từ 01/01/2019 · đã đọc toàn văn bản gốc",
         "nhom": "can_xac_minh",
         "tang": 2,
         "thuTu": 6,
-        "ghiChu": "Đã bãi bỏ khoản 5, khoản 6 Điều 1 và Phụ lục 05, 06 (NQ 34/2025) và khoản 12 Điều 1 + Phụ lục 12 (NQ 12/2026). Phần còn lại: [cần xác minh toàn văn và tình trạng hiệu lực mới nhất].",
-        "link": "https://dbndhaiphong.gov.vn/SiteFolders/dbndhp/2472/Documents/NQ-34-2025.pdf"
+        "ghiChu": "Thông qua 07/12/2018 (kỳ họp 8, HĐND khóa XV). Điều 1 gồm 12 khoản: (1) phí thẩm định ĐTM; (2) phí thẩm định phương án cải tạo phục hồi môi trường; (3) phí thẩm định hồ sơ cấp giấy phép tài nguyên nước; (4) phí thẩm định hồ sơ cấp GCN; (5) phí khai thác tài liệu đất đai; (6) phí cung cấp thông tin giao dịch bảo đảm; (7) phí tham quan danh lam thắng cảnh; (8) phí thẩm định cấp GCN đủ điều kiện kinh doanh cơ sở thể thao; (9) lệ phí cấp GCN; (10) lệ phí cấp giấy phép xây dựng; (11) lệ phí đăng ký cư trú; (12) lệ phí đăng ký kinh doanh. Đã bãi bỏ/thay thế: khoản 5, 6 + PL 05, 06 (NQ 34/2025); khoản 12 + PL 12 (NQ 12/2026); khoản 11 (lệ phí cư trú, NQ 16/2023, thực hiện theo TT 75/2022/TT-BTC); phần phí xả nước thải Mục III PL03 (NQ 01/2022); PL 02, 04, 09, 11 thay bằng PL của NQ 19/2022; mức phí/lệ phí GCN nay theo NQ 34/2025. Phần còn dùng cho Trung tâm: PL10 lệ phí cấp giấy phép xây dựng (nhà ở riêng lẻ 75.000 đ/giấy phép; công trình khác 150.000 đ/giấy phép; gia hạn, cấp lại 15.000 đ/lần). Chưa thấy văn bản bãi bỏ PL10 trong các văn bản đã đối chiếu; tổ chức thu ghi 'UBND cấp huyện' [cần xác minh chủ thể thu ở cấp xã]. Nguồn: tệp .doc do Giám đốc cung cấp.",
+        "link": "upload:ef529e9d-45_2018_NQ-HDND_407297.doc"
       },
       {
         "so": "19/2022/NQ-HĐND",
         "ngay": "09/12/2022",
-        "trichYeu": "Sửa đổi, bổ sung một số điều NQ 45/2018/NQ-HĐND về phí, lệ phí (theo dữ liệu cũ của dự án)",
-        "trangThai": "Tầng 2 – văn bản nền còn hiệu lực một phần · Chưa xác minh hiệu lực · chưa đối chiếu",
+        "trichYeu": "Sửa đổi, bổ sung một số điều của Nghị quyết số 45/2018/NQ-HĐND về việc quy định một số loại phí, lệ phí trên địa bàn thành phố Hải Phòng",
+        "trangThai": "Tầng 2 – văn bản nền còn hiệu lực một phần · Còn hiệu lực một phần · hiệu lực từ 01/01/2023 · đã đọc toàn văn bản gốc",
         "nhom": "can_xac_minh",
         "tang": 2,
         "thuTu": 7,
-        "ghiChu": "Chưa tìm được văn bản gốc; [cần xác minh số hiệu, nội dung và hiệu lực].",
-        "link": "https://dbndhaiphong.gov.vn/cac-nghi-quyet-khoa-xvi"
+        "ghiChu": "Kỳ họp 9, HĐND khóa XVI. Sửa khoản 2, 4, 11 Điều 1 NQ 45/2018; thay PL 02, 04, 09, 11 bằng PL 01–04 của NQ này; bãi bỏ NQ 11/2021/NQ-HĐND (miễn, giảm một số loại phí, lệ phí). Phần lệ phí đăng ký cư trú đã bãi bỏ bởi NQ 16/2023; phần phí thẩm định hồ sơ cấp GCN và lệ phí cấp GCN nay theo NQ 34/2025. Bản quét do Giám đốc Trung tâm PVHCC cung cấp 01/10/2026; đã đọc trực tiếp từ ảnh trang.",
+        "link": "upload:bb99da62-NQ.19-NQsigned-16610.pdf"
       },
       {
         "so": "16/2023/NQ-HĐND",
-        "ngay": "",
+        "ngay": "08/12/2023",
         "trichYeu": "Sửa đổi, bổ sung một số Nghị quyết quy định một số loại phí, lệ phí thuộc thẩm quyền HĐND thành phố",
-        "trangThai": "Tầng 2 – văn bản nền còn hiệu lực một phần · Chưa xác minh hiệu lực · chưa đối chiếu",
+        "trangThai": "Tầng 2 – văn bản nền còn hiệu lực một phần · Còn hiệu lực một phần · hiệu lực từ 18/12/2023 · đã đọc toàn văn bản gốc",
         "nhom": "can_xac_minh",
         "tang": 2,
         "thuTu": 8,
-        "ghiChu": "Tiêu đề theo danh mục NQ khóa XVI trên cổng HĐND TP (kỳ họp thứ 13); chưa đọc toàn văn, [cần xác minh phần còn hiệu lực].",
-        "link": "https://dbndhaiphong.gov.vn/cac-nghi-quyet-khoa-xvi"
+        "ghiChu": "Kỳ họp 13, HĐND khóa XVI. Sửa PL03 NQ 12/2018 (lệ phí giấy phép lao động người nước ngoài: thêm lệ phí gia hạn 450.000 đ/giấy phép), sửa điểm b, c Mục 1 PL04 NQ 12/2018 (mức lệ phí hộ tịch cấp huyện; trường hợp miễn lệ phí hộ tịch), sửa PL05; bãi bỏ quy định lệ phí đăng ký cư trú (điểm c khoản 1 Điều 1 và PL04 NQ 19/2022), lệ phí cư trú thực hiện theo TT 75/2022/TT-BTC. Miễn lệ phí hộ tịch: trẻ em, hộ nghèo, người cao tuổi, người khuyết tật, người có công, đồng bào dân tộc thiểu số ở xã đặc biệt khó khăn; đăng ký khai sinh đúng hạn, khai tử đúng hạn, giám hộ, chấm dứt giám hộ, kết hôn của công dân Việt Nam cư trú trong nước tại UBND cấp xã. Bản quét do Giám đốc Trung tâm PVHCC cung cấp 01/10/2026; đã đọc trực tiếp từ ảnh trang.",
+        "link": "upload:9d00de6f-NQ.16-NQ.signed1.pdf"
       },
       {
         "so": "01/2022/NQ-HĐND",
-        "ngay": "",
+        "ngay": "20/7/2022",
         "trichYeu": "Quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí thẩm định cấp, cấp lại, điều chỉnh giấy phép môi trường",
-        "trangThai": "Tầng 2 – văn bản nền còn hiệu lực một phần · Chưa xác minh hiệu lực · chưa đối chiếu",
+        "trangThai": "Tầng 2 – văn bản nền còn hiệu lực một phần · Đang áp dụng · hiệu lực từ 20/8/2022 · đã đọc toàn văn bản gốc",
         "nhom": "can_xac_minh",
         "tang": 2,
         "thuTu": 9,
-        "ghiChu": "Tiêu đề theo danh mục NQ khóa XVI trên cổng HĐND TP (kỳ họp thứ 6); chưa đọc toàn văn. NQ 23/2026 đưa mức thu về 0 đồng khi nộp trực tuyến; mức trực tiếp/bưu chính [cần xác minh].",
-        "link": "https://dbndhaiphong.gov.vn/cac-nghi-quyet-khoa-xvi"
+        "ghiChu": "Kỳ họp 6, HĐND khóa XVI. Mức thu phí thẩm định cấp, cấp lại, điều chỉnh giấy phép môi trường đối với dự án, cơ sở thuộc thẩm quyền UBND thành phố và UBND cấp huyện (mức tại Phụ lục kèm theo). Bãi bỏ phí thẩm định cấp, gia hạn, điều chỉnh giấy phép xả nước thải tại Mục III PL03 NQ 45/2018. Khi nộp trực tuyến: 0 đồng theo NQ 23/2026. Bản quét do Giám đốc Trung tâm PVHCC cung cấp 01/10/2026; đã đọc trực tiếp từ ảnh trang.",
+        "link": "upload:f2e52a47-NQ._01-_2022_NQ.pdf"
       },
       {
         "so": "226/2016/TT-BTC",
@@ -1221,6 +1221,62 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
           }
         ],
         "ghiChu": "Miễn: chấp hành viên, điều tra viên, kiểm sát viên, thẩm phán theo yêu cầu nghiệp vụ; tự tra cứu trên Hệ thống đăng ký trực tuyến của Bộ Tư pháp. Đơn vị: đồng/hồ sơ."
+      },
+      {
+        "nhom": "Hộ tịch – Lệ phí đăng ký hộ tịch tại UBND cấp xã (NQ 12/2018, Phụ lục 04 điểm a) – nộp trực tiếp/bưu chính",
+        "muc": [
+          {
+            "ten": "Đăng ký khai sinh không đúng hạn, đăng ký lại khai sinh, đăng ký khai sinh cho người đã có hồ sơ, giấy tờ cá nhân",
+            "muc": "8.000"
+          },
+          {
+            "ten": "Đăng ký khai tử không đúng hạn, đăng ký lại khai tử",
+            "muc": "8.000"
+          },
+          {
+            "ten": "Đăng ký lại kết hôn",
+            "muc": "30.000"
+          },
+          {
+            "ten": "Đăng ký nhận cha, mẹ, con",
+            "muc": "10.000"
+          },
+          {
+            "ten": "Thay đổi, cải chính hộ tịch cho người chưa đủ 14 tuổi cư trú trong nước; bổ sung hộ tịch cho công dân Việt Nam cư trú ở trong nước",
+            "muc": "10.000"
+          },
+          {
+            "ten": "Cấp Giấy xác nhận tình trạng hôn nhân",
+            "muc": "5.000"
+          },
+          {
+            "ten": "Ghi vào sổ hộ tịch việc thay đổi hộ tịch theo bản án, quyết định của cơ quan có thẩm quyền",
+            "muc": "5.000"
+          },
+          {
+            "ten": "Xác nhận hoặc ghi vào Sổ hộ tịch các việc hộ tịch khác hoặc đăng ký hộ tịch khác",
+            "muc": "5.000"
+          }
+        ],
+        "ghiChu": "Miễn lệ phí theo NQ 16/2023: khai sinh đúng hạn, khai tử đúng hạn, giám hộ, chấm dứt giám hộ, kết hôn của công dân Việt Nam cư trú trong nước tại UBND xã; trẻ em, hộ nghèo, người cao tuổi, người khuyết tật, người có công, đồng bào dân tộc thiểu số ở xã đặc biệt khó khăn. Khi nộp trực tuyến: 0 đồng theo NQ 23/2026 từ 08/8/2026. Các việc trước đây thuộc UBND cấp huyện (có yếu tố nước ngoài...): mức tại điểm b chưa xác định áp dụng cho UBND xã sau khi bỏ cấp huyện [cần xác minh]. Đơn vị: đồng/lần."
+      },
+      {
+        "nhom": "Xây dựng – Lệ phí cấp giấy phép xây dựng (NQ 45/2018, Phụ lục 10) – nộp trực tiếp/bưu chính",
+        "muc": [
+          {
+            "ten": "Cấp, điều chỉnh giấy phép xây dựng nhà ở riêng lẻ",
+            "muc": "75.000"
+          },
+          {
+            "ten": "Cấp, điều chỉnh giấy phép xây dựng công trình xây dựng khác",
+            "muc": "150.000"
+          },
+          {
+            "ten": "Gia hạn, cấp lại giấy phép xây dựng",
+            "muc": "15.000"
+          }
+        ],
+        "ghiChu": "Miễn: người có công với cách mạng được hỗ trợ xây dựng nhà ở; hộ nghèo (có xác nhận của chính quyền địa phương); người khuyết tật nặng được hỗ trợ kinh phí xây dựng nhà ở. Tổ chức thu trong văn bản ghi UBND cấp huyện: [cần xác minh chủ thể thu ở cấp xã]. Khi nộp trực tuyến: 0 đồng theo NQ 23/2026 từ 08/8/2026. Đơn vị: đồng/giấy phép hoặc đồng/lần."
       },
       {
         "nhom": "Phí, lệ phí theo văn bản chuyên ngành (không thuộc NQ 23/2026, không miễn khi nộp trực tuyến)",

@@ -133,3 +133,22 @@ class FeeStructureTests(unittest.TestCase):
         for t in flagged:
             self.assertTrue(keys <= set(t["phiCanCu"][0]), t["ma"])
             self.assertEqual(t["phiCanCu"][0]["mucTrucTuyen"], "0 đồng")
+
+
+class DirectFeeTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        root = Path(__file__).resolve().parents[1]
+        cls.master = {t["ma"]: t for t in json.loads((root / "data/thu-tuc.json").read_text(encoding="utf-8"))["thuTuc"]}
+
+    def test_civil_status_commune_fees(self):
+        self.assertIn("30.000", self.master["1.004746"]["phiCanCu"][0]["mucTrucTiep"])
+        self.assertIn("Miễn", self.master["1.000894"]["phiCanCu"][0]["mucTrucTiep"])
+        self.assertIn("5.000", self.master["1.004873"]["phiCanCu"][0]["mucTrucTiep"])
+
+    def test_construction_permit_fees_from_nq45(self):
+        self.assertIn("75.000", self.master["1.013225"]["phiCanCu"][0]["mucTrucTiep"])
+        self.assertIn("15.000", self.master["1.013228"]["phiCanCu"][0]["mucTrucTiep"])
+
+    def test_foreign_element_fees_not_invented(self):
+        self.assertIn("[cần xác minh]", self.master["2.000806"]["phiCanCu"][0]["mucTrucTiep"])

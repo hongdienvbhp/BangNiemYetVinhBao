@@ -77,7 +77,8 @@ def apply_nq23_flags(rows: list, mapping: dict) -> int:
                 {
                     "khoanPhi": rule["khoanPhi"],
                     "canCu": rule["canCu"],
-                    "mucTrucTiep": rule["mucTrucTiep"],
+                    "mucTrucTiep": (mapping.get("mucTrucTiepByCode") or {}).get(str(row.get("ma") or "").strip())
+                    or rule["mucTrucTiep"],
                     "mucTrucTuyen": "0 đồng",
                     "apDungTu": "08/8/2026",
                     "chuyenTiep": mapping.get("chuyenTiep") or "",
