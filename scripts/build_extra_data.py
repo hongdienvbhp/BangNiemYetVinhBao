@@ -24,6 +24,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MASTER = ROOT / "data/thu-tuc.json"
 CITY = ROOT / "data/source-audit/city-updates-current.json"
 FEES = ROOT / "data/phu-luc/phi-le-phi-van-ban.json"
+SPECIALIZED = ROOT / "data/phu-luc/phi-le-phi-chuyen-nganh.json"
 OUTPUT = ROOT / "js/extra-generated.js"
 
 # Trích xuất văn bản từ bài đăng QĐ 3433/QĐ-UBND (27/8/2026, đất đai cấp xã) đã ghi nhầm
@@ -145,7 +146,7 @@ def build_by_tthc(master_rows: list[dict], city_numbers: set[str]) -> list[dict]
     return result
 
 
-def build_fees(fees: dict) -> dict:
+def build_fees(fees: dict, specialized: dict | None = None) -> dict:
     docs = fees["documents"]
     status_label = {
         "current": "Đang áp dụng",
@@ -206,6 +207,19 @@ def build_fees(fees: dict) -> dict:
             }
         )
 
+    if specialized:
+        groups: dict[str, dict] = {}
+        for item in specialized["items"]:
+            g = groups.setdefault(item["loai"], {"vanBan": item["vanBan"], "ghiChu": item.get("ghiChu", ""), "n": 0})
+            g["n"] += 1
+        muc.append(
+            {
+                "nhom": "Phí, lệ phí theo văn bản chuyên ngành (không thuộc NQ 23/2026, không miễn khi nộp trực tuyến)",
+                "muc": [{"ten": f"{loai} ({g['n']} TTHC)", "muc": g["vanBan"]} for loai, g in groups.items()],
+                "ghiChu": specialized["rule"] + " Chi tiết mức thu và căn cứ xem tại từng thủ tục.",
+            }
+        )
+
     return {
         "ghiChuChung": (
             "Cập nhật 01/10/2026. Từ 08/8/2026, NQ 23/2026/NQ-HĐND quy định mức thu 0 đồng đối với 04 loại lệ phí và 07 loại phí "
@@ -224,6 +238,7 @@ def render(today: str) -> str:
     master = load(MASTER)
     city = load(CITY)
     fees = load(FEES)
+    specialized = load(SPECIALIZED)
     rows = master["thuTuc"]
     decisions = build_decisions(rows, city, today)
     city_numbers = {d["so"] for d in decisions}
@@ -236,7 +251,7 @@ def render(today: str) -> str:
         },
         "quyetDinhCongBo": decisions,
         "quyetDinhTheoTTHC": build_by_tthc(rows, city_numbers),
-        "phiLePhi": build_fees(fees),
+        "phiLePhi": build_fees(fees, specialized),
     }
     body = json.dumps(payload, ensure_ascii=False, indent=2)
     return (

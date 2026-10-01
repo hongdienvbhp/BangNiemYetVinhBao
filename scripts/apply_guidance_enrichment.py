@@ -19,6 +19,7 @@ PRIORITY51 = ROOT / "data/priority-51-crosswalk.json"
 GUIDANCE = ROOT / "data/tthc-guidance-enrichment.json"
 FALLBACK = ROOT / "js/master-data-fallback.js"
 NQ23_MAPPING = ROOT / "data/phu-luc/NQ-23-anh-xa-tthc.json"
+SPECIALIZED_MAPPING = ROOT / "data/phu-luc/phi-le-phi-chuyen-nganh.json"
 
 GUIDANCE_FIELDS = (
     "quyTrinh",
@@ -71,7 +72,23 @@ def apply_nq23_flags(rows: list, mapping: dict) -> int:
     return count
 
 
-def apply_enrichment(master: dict, priority: dict, guidance: dict, nq23: dict | None = None) -> dict:
+def apply_specialized_fee_notes(rows: list, mapping: dict) -> int:
+    """Ghi phiOnline cho TTHC theo văn bản chuyên ngành (không gắn cờ miễn phí NQ 23)."""
+    texts = {
+        str(i["ma"]).strip(): i["phiOnlineText"]
+        for i in mapping.get("items") or []
+        if i.get("phiOnlineText")
+    }
+    count = 0
+    for row in rows:
+        code = str(row.get("ma") or "").strip() if isinstance(row, dict) else ""
+        if code in texts and not row.get("mienPhiTrucTuyen"):
+            row["phiOnline"] = texts[code]
+            count += 1
+    return count
+
+
+def apply_enrichment(master: dict, priority: dict, guidance: dict, nq23: dict | None = None, specialized: dict | None = None) -> dict:
     errors = validate(guidance)
     if errors:
         raise ValueError("\n".join(errors))
@@ -139,6 +156,8 @@ def apply_enrichment(master: dict, priority: dict, guidance: dict, nq23: dict | 
         guidance_count += 1
 
     nq23_count = apply_nq23_flags(rows, nq23) if nq23 else 0
+    if specialized:
+        apply_specialized_fee_notes(rows, specialized)
 
     as_of = str(result.get("sourceSnapshotDate") or result.get("updatedAt") or "")
     result["thuTuc"] = [
@@ -174,7 +193,8 @@ def main() -> int:
     priority = json.loads(PRIORITY51.read_text(encoding="utf-8"))
     guidance = json.loads(GUIDANCE.read_text(encoding="utf-8"))
     nq23 = json.loads(NQ23_MAPPING.read_text(encoding="utf-8"))
-    enriched = apply_enrichment(master, priority, guidance, nq23)
+    specialized = json.loads(SPECIALIZED_MAPPING.read_text(encoding="utf-8"))
+    enriched = apply_enrichment(master, priority, guidance, nq23, specialized)
     MASTER.write_text(json.dumps(enriched, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     write_fallback(enriched)
     print(json.dumps({

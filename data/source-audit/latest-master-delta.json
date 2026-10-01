@@ -8,7 +8,7 @@
     "afterPublic": 510,
     "added": 1,
     "removed": 0,
-    "changed": 69
+    "changed": 70
   },
   "added": [
     {
@@ -679,6 +679,16 @@
         "phiOnline": {
           "before": "",
           "after": "0 đồng khi nộp hồ sơ trực tuyến (NQ 23/2026/NQ-HĐND, hiệu lực từ 08/8/2026)"
+        }
+      }
+    },
+    {
+      "ma": "2.000815",
+      "ten": "Chứng thực bản sao từ bản chính giấy tờ, văn bản do cơ quan, tổ chức có thẩm quyền của Việt Nam; cơ quan, tổ chức có thẩm quyền của nước ngoài; cơ quan, tổ chức có thẩm quyền của Việt Nam liên kết với cơ quan, tổ chức có thẩm quyền của nước ngoài cấp hoặc chứng nhận",
+      "fields": {
+        "phiOnline": {
+          "before": "",
+          "after": "Chứng thực bản sao điện tử từ bản chính tại Trung tâm PVHCC xã, phường, đặc khu: ngân sách hỗ trợ 100% phí (NQ 43/2025/NQ-HĐND, 01/01/2026–31/12/2026). Không thuộc NQ 23/2026."
         }
       }
     },

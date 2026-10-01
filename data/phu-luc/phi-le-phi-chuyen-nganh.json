@@ -1,0 +1,112 @@
+{
+  "format": "bangniemyet-fee-specialized-mapping",
+  "version": 1,
+  "verifiedAt": "2026-10-01",
+  "rule": "TTHC không thuộc NQ 23/2026/NQ-HĐND thì áp dụng văn bản phí, lệ phí chuyên ngành tương ứng; không gắn cờ miễn lệ phí trực tuyến.",
+  "items": [
+    {
+      "ma": "2.000815",
+      "ten": "Chứng thực bản sao từ bản chính giấy tờ, văn bản do cơ quan, tổ chức có thẩm quyền của Việt Nam; cơ quan, tổ chức có thẩm quyền của nước ngoài; cơ quan, tổ chức có thẩm quyền của Việt Nam liên kết với cơ quan, tổ chức có thẩm quyền của nước ngoài cấp hoặc chứng nhận",
+      "loai": "Phí chứng thực",
+      "vanBan": "Thông tư 226/2016/TT-BTC (phí chứng thực); NQ 43/2025/NQ-HĐND (hỗ trợ phí chứng thực bản sao điện tử)",
+      "ghiChu": "Mức thu theo dữ liệu hướng dẫn DVCQG của từng thủ tục; không thuộc NQ 23/2026.",
+      "phiOnlineText": "Chứng thực bản sao điện tử từ bản chính tại Trung tâm PVHCC xã, phường, đặc khu: ngân sách hỗ trợ 100% phí (NQ 43/2025/NQ-HĐND, 01/01/2026–31/12/2026). Không thuộc NQ 23/2026."
+    },
+    {
+      "ma": "2.000884",
+      "ten": "Thủ tục chứng thực chữ ký trong các văn bản (áp dụng cho cả trường hợp chứng thực điểm chỉ và trường hợp người yêu cầu chứng thực không điểm chỉ được)",
+      "loai": "Phí chứng thực",
+      "vanBan": "Thông tư 226/2016/TT-BTC (phí chứng thực)",
+      "ghiChu": "Mức thu theo dữ liệu hướng dẫn DVCQG của từng thủ tục; không thuộc NQ 23/2026.",
+      "phiOnlineText": ""
+    },
+    {
+      "ma": "2.000992",
+      "ten": "Chứng thực chữ ký người dịch mà người dịch là cộng tác viên dịch thuật của Ủy ban nhân dân cấp xã, tổ chức hành nghề công chứng",
+      "loai": "Phí chứng thực",
+      "vanBan": "Thông tư 226/2016/TT-BTC (phí chứng thực)",
+      "ghiChu": "Mức thu theo dữ liệu hướng dẫn DVCQG của từng thủ tục; không thuộc NQ 23/2026.",
+      "phiOnlineText": ""
+    },
+    {
+      "ma": "2.001008",
+      "ten": "Chứng thực chữ ký người dịch mà người dịch không phải là cộng tác viên dịch thuật của Ủy ban nhân dân cấp xã, tổ chức hành nghề công chứng",
+      "loai": "Phí chứng thực",
+      "vanBan": "Thông tư 226/2016/TT-BTC (phí chứng thực)",
+      "ghiChu": "Mức thu theo dữ liệu hướng dẫn DVCQG của từng thủ tục; không thuộc NQ 23/2026.",
+      "phiOnlineText": ""
+    },
+    {
+      "ma": "2.001019",
+      "ten": "Chứng thực di chúc",
+      "loai": "Phí chứng thực",
+      "vanBan": "Thông tư 226/2016/TT-BTC (phí chứng thực)",
+      "ghiChu": "Mức thu theo dữ liệu hướng dẫn DVCQG của từng thủ tục; không thuộc NQ 23/2026.",
+      "phiOnlineText": ""
+    },
+    {
+      "ma": "2.000913",
+      "ten": "Chứng thực việc sửa đổi, bổ sung, hủy bỏ giao dịch",
+      "loai": "Phí chứng thực",
+      "vanBan": "Thông tư 226/2016/TT-BTC (phí chứng thực)",
+      "ghiChu": "Mức thu theo dữ liệu hướng dẫn DVCQG của từng thủ tục; không thuộc NQ 23/2026.",
+      "phiOnlineText": ""
+    },
+    {
+      "ma": "2.000927",
+      "ten": "Sửa lỗi sai sót trong giao dịch",
+      "loai": "Phí chứng thực",
+      "vanBan": "Thông tư 226/2016/TT-BTC (phí chứng thực)",
+      "ghiChu": "Mức thu theo dữ liệu hướng dẫn DVCQG của từng thủ tục; không thuộc NQ 23/2026.",
+      "phiOnlineText": ""
+    },
+    {
+      "ma": "2.000942",
+      "ten": "Thủ tục cấp bản sao có chứng thực từ bản chính hợp đồng, giao dịch đã được chứng thực",
+      "loai": "Phí chứng thực",
+      "vanBan": "Thông tư 226/2016/TT-BTC (phí chứng thực)",
+      "ghiChu": "Mức thu theo dữ liệu hướng dẫn DVCQG của từng thủ tục; không thuộc NQ 23/2026.",
+      "phiOnlineText": ""
+    },
+    {
+      "ma": "2.001016",
+      "ten": "Chứng thực văn bản từ chối nhận di sản",
+      "loai": "Phí chứng thực",
+      "vanBan": "Thông tư 226/2016/TT-BTC (phí chứng thực)",
+      "ghiChu": "Mức thu theo dữ liệu hướng dẫn DVCQG của từng thủ tục; không thuộc NQ 23/2026.",
+      "phiOnlineText": ""
+    },
+    {
+      "ma": "2.001035",
+      "ten": "Chứng thực giao dịch liên quan đến tài sản là động sản, quyền sử dụng đất, nhà ở",
+      "loai": "Phí chứng thực",
+      "vanBan": "Thông tư 226/2016/TT-BTC (phí chứng thực)",
+      "ghiChu": "Mức thu theo dữ liệu hướng dẫn DVCQG của từng thủ tục; không thuộc NQ 23/2026.",
+      "phiOnlineText": ""
+    },
+    {
+      "ma": "2.001406",
+      "ten": "Chứng thực văn bản phân chia di sản mà di sản là động sản, quyền sử dụng đất, nhà ở",
+      "loai": "Phí chứng thực",
+      "vanBan": "Thông tư 226/2016/TT-BTC (phí chứng thực)",
+      "ghiChu": "Mức thu theo dữ liệu hướng dẫn DVCQG của từng thủ tục; không thuộc NQ 23/2026.",
+      "phiOnlineText": ""
+    },
+    {
+      "ma": "2.000635",
+      "ten": "Cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh",
+      "loai": "Phí cấp bản sao trích lục hộ tịch",
+      "vanBan": "Thông tư 281/2016/TT-BTC",
+      "ghiChu": "Phí (không phải lệ phí hộ tịch) nên không thuộc NQ 23/2026; mức 8.000 đồng theo dữ liệu hướng dẫn DVCQG.",
+      "phiOnlineText": ""
+    },
+    {
+      "ma": "1.001612",
+      "ten": "Đăng ký thành lập hộ kinh doanh",
+      "loai": "Lệ phí đăng ký hộ kinh doanh",
+      "vanBan": "Mức do HĐND thành phố quyết định (căn cứ TT 85/2019/TT-BTC)",
+      "ghiChu": "Không thuộc NQ 23/2026. Mức 150.000 đồng theo dữ liệu DVCQG; nghị quyết HĐND TP Hải Phòng về lệ phí đăng ký kinh doanh: [cần bổ sung] (Sở Tài chính đã đề nghị ban hành 05/2026, chưa xác định đã ban hành).",
+      "phiOnlineText": ""
+    }
+  ]
+}

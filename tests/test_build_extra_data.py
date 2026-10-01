@@ -88,3 +88,15 @@ class Nq23MappingTests(unittest.TestCase):
         for t in self.master:
             if t["mienPhiTrucTuyen"]:
                 self.assertIn("NQ 23/2026/NQ-HĐND", t["phiOnline"])
+
+
+class SpecializedFeeTests(unittest.TestCase):
+    def test_specialized_codes_not_flagged_as_nq23(self):
+        root = Path(__file__).resolve().parents[1]
+        spec = json.loads((root / "data/phu-luc/phi-le-phi-chuyen-nganh.json").read_text(encoding="utf-8"))
+        nq23 = json.loads((root / "data/phu-luc/NQ-23-anh-xa-tthc.json").read_text(encoding="utf-8"))
+        flagged = {c["ma"] for c in nq23["confirmed"]}
+        self.assertFalse({i["ma"] for i in spec["items"]} & flagged)
+        master = {t["ma"]: t for t in json.loads((root / "data/thu-tuc.json").read_text(encoding="utf-8"))["thuTuc"]}
+        for item in spec["items"]:
+            self.assertFalse(master[item["ma"]]["mienPhiTrucTuyen"], item["ma"])

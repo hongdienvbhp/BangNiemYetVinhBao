@@ -507,7 +507,7 @@
         <div><strong>Cấp giải quyết</strong><span>${esc(tt.cap)}</span></div>
         <div><strong>Thời hạn</strong><span>${esc(tt.thoiHan)}</span></div>
         <div><strong>Phí/lệ phí</strong><span>${esc(tt.phi)}</span></div>
-        ${isTrueFlag(tt.mienPhiTrucTuyen) && tt.phiOnline ? `<div><strong>Khi nộp trực tuyến</strong><span>${esc(tt.phiOnline)}</span></div>` : ""}
+        ${tt.phiOnline ? `<div><strong>Khi nộp trực tuyến</strong><span>${esc(tt.phiOnline)}</span></div>` : ""}
         <div><strong>Kết quả</strong><span>${esc(tt.ketQua)}</span></div>
         <div><strong>Địa chỉ tiếp nhận</strong><span>Trung tâm PVHCC xã Vĩnh Bảo — Đường 20/8, xã Vĩnh Bảo, TP Hải Phòng</span></div>
         <div><strong>Hotline</strong><span>0823.919.686</span></div>

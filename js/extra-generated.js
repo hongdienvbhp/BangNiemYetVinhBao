@@ -923,7 +923,7 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
     }
   ],
   "phiLePhi": {
-    "ghiChuChung": "Cập nhật 01/10/2026. Từ 08/8/2026, NQ 23/2026/NQ-HĐND quy định mức thu 0 đồng đối với 04 loại lệ phí và 07 loại phí khi thực hiện TTHC trực tuyến tại Cổng DVCQG hoặc VNeID; NQ 07/2025 (Hải Dương) và NQ 08/2025 (Hải Phòng) hết hiệu lực (hồ sơ nộp trước 08/8/2026 vẫn theo nghị quyết cũ). Nộp trực tiếp hoặc qua bưu chính: áp dụng mức thu theo từng loại phí, lệ phí. Mức thu cụ thể của từng TTHC xem trong chi tiết thủ tục (nguồn Cổng DVCQG). Phí đăng ký giao dịch bảo đảm (NQ 34/2025, Phụ lục III) có mức thu riêng cho hình thức trực tiếp và trực tuyến; khi nộp trực tuyến mức thu là 0 đồng theo NQ 23/2026 (Điều 2 khoản 2 điểm a). Bảng mức thu trực tiếp xem toàn văn NQ 34/2025. Mức lệ phí hộ tịch khi nộp trực tiếp/bưu chính: [cần bổ sung] — chưa đối chiếu được văn bản gốc của HĐND TP đang còn hiệu lực; xem mục Phí/lệ phí trong từng TTHC (nguồn Cổng DVCQG). NQ 23/2026/NQ-HĐND đã được Giám đốc Trung tâm PVHCC xác nhận (01/10/2026); mapping TTHC tại data/phu-luc/NQ-23-anh-xa-tthc.json. NQ 12/2018, 45/2018, 19/2022 (phần còn lại): [cần bổ sung] toàn văn/hiệu lực.",
+    "ghiChuChung": "Cập nhật 01/10/2026. Từ 08/8/2026, NQ 23/2026/NQ-HĐND quy định mức thu 0 đồng đối với 04 loại lệ phí và 07 loại phí khi thực hiện TTHC trực tuyến tại Cổng DVCQG hoặc VNeID; NQ 07/2025 (Hải Dương) và NQ 08/2025 (Hải Phòng) hết hiệu lực (hồ sơ nộp trước 08/8/2026 vẫn theo nghị quyết cũ). Nộp trực tiếp hoặc qua bưu chính: áp dụng mức thu theo từng loại phí, lệ phí. Mức thu cụ thể của từng TTHC xem trong chi tiết thủ tục (nguồn Cổng DVCQG). Phí đăng ký giao dịch bảo đảm (NQ 34/2025, Phụ lục III) có mức thu riêng cho hình thức trực tiếp và trực tuyến; khi nộp trực tuyến mức thu là 0 đồng theo NQ 23/2026 (Điều 2 khoản 2 điểm a). Bảng mức thu trực tiếp xem toàn văn NQ 34/2025. Mức lệ phí hộ tịch khi nộp trực tiếp/bưu chính: [cần bổ sung] — chưa đối chiếu được văn bản gốc của HĐND TP đang còn hiệu lực; xem mục Phí/lệ phí trong từng TTHC (nguồn Cổng DVCQG). NQ 23/2026/NQ-HĐND đã được Giám đốc Trung tâm PVHCC xác nhận (01/10/2026); mapping TTHC tại data/phu-luc/NQ-23-anh-xa-tthc.json. NQ 12/2018, 45/2018, 19/2022 (phần còn lại): [cần bổ sung] toàn văn/hiệu lực. Chỉ các TTHC thuộc loại phí/lệ phí nêu tại NQ 23/2026 được gắn cờ 0 đồng khi nộp trực tuyến. TTHC khác theo văn bản chuyên ngành: xem data/phu-luc/phi-le-phi-chuyen-nganh.json (chứng thực: TT 226/2016 và NQ 43/2025; bản sao trích lục hộ tịch: TT 281/2016; hộ kinh doanh: nghị quyết HĐND TP [cần bổ sung]).",
     "nghiQuyetHP": [
       {
         "so": "23/2026/NQ-HĐND",
@@ -951,6 +951,24 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
         "nhom": "dang_ap_dung",
         "ghiChu": "Được NQ 23/2026 viện dẫn làm căn cứ; theo nguồn thứ cấp thay thế NĐ 120/2016/NĐ-CP. [cần đối chiếu CSDL quốc gia về VBPL].",
         "link": "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Nghi-dinh-362-2025-ND-CP-huong-dan-Luat-Phi-va-le-phi-687493.aspx"
+      },
+      {
+        "so": "43/2025/NQ-HĐND",
+        "ngay": "10/12/2025",
+        "trichYeu": "Quy định việc hỗ trợ phí chứng thực bản sao điện tử từ bản chính trên địa bàn thành phố Hải Phòng",
+        "trangThai": "Đang áp dụng · hiệu lực từ 01/01/2026 · hết hiệu lực từ 31/12/2026 · mới có nguồn thứ cấp",
+        "nhom": "dang_ap_dung",
+        "ghiChu": "Ngân sách hỗ trợ 100% phí chứng thực bản sao điện tử từ bản chính tại Trung tâm PVHCC xã, phường, đặc khu (mức phí theo TT 226/2016/TT-BTC). Số hiệu và hiệu lực theo Báo và Phát thanh, Truyền hình Hải Phòng, cổng Kiến An; [cần bổ sung toàn văn].",
+        "link": "https://kienan.haiphong.gov.vn/cai-cach-hanh-chinh/mien-phi-chung-thuc-ban-sao-dien-tu-tu-nam-2026-833828"
+      },
+      {
+        "so": "226/2016/TT-BTC",
+        "ngay": "11/11/2016",
+        "trichYeu": "Quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí chứng thực",
+        "trangThai": "Đang áp dụng · mới có nguồn thứ cấp",
+        "nhom": "dang_ap_dung",
+        "ghiChu": "Còn được áp dụng năm 2026 (được NQ 43/2025 của HĐND TP viện dẫn). Mức: bản sao từ bản chính 2.000 đ/trang (từ trang thứ 3: 1.000 đ/trang, tối đa 200.000 đ/bản); chữ ký 10.000 đ/trường hợp. [cần đối chiếu CSDL quốc gia về VBPL].",
+        "link": "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Thong-tu-226-2016-TT-BTC-phi-chung-thuc-322363.aspx"
       },
       {
         "so": "12/2018/NQ-HĐND",
@@ -1135,6 +1153,24 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
           }
         ],
         "ghiChu": "Miễn: chấp hành viên, điều tra viên, kiểm sát viên, thẩm phán theo yêu cầu nghiệp vụ; tự tra cứu trên Hệ thống đăng ký trực tuyến của Bộ Tư pháp. Đơn vị: đồng/hồ sơ."
+      },
+      {
+        "nhom": "Phí, lệ phí theo văn bản chuyên ngành (không thuộc NQ 23/2026, không miễn khi nộp trực tuyến)",
+        "muc": [
+          {
+            "ten": "Phí chứng thực (11 TTHC)",
+            "muc": "Thông tư 226/2016/TT-BTC (phí chứng thực); NQ 43/2025/NQ-HĐND (hỗ trợ phí chứng thực bản sao điện tử)"
+          },
+          {
+            "ten": "Phí cấp bản sao trích lục hộ tịch (1 TTHC)",
+            "muc": "Thông tư 281/2016/TT-BTC"
+          },
+          {
+            "ten": "Lệ phí đăng ký hộ kinh doanh (1 TTHC)",
+            "muc": "Mức do HĐND thành phố quyết định (căn cứ TT 85/2019/TT-BTC)"
+          }
+        ],
+        "ghiChu": "TTHC không thuộc NQ 23/2026/NQ-HĐND thì áp dụng văn bản phí, lệ phí chuyên ngành tương ứng; không gắn cờ miễn lệ phí trực tuyến. Chi tiết mức thu và căn cứ xem tại từng thủ tục."
       }
     ],
     "capNhat": "2026-10-01"

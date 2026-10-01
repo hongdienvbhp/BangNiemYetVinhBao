@@ -6,7 +6,7 @@
 - TTHC công khai sau: **510**
 - Thêm mới: **1**
 - Loại khỏi danh mục công khai: **0**
-- Thay đổi thông tin: **69**
+- Thay đổi thông tin: **70**
 
 > Báo cáo này chỉ mô tả chênh lệch dữ liệu. Căn cứ pháp lý nằm trong sourceEvidence/sourceArticleUrl/sourceAttachmentUrl của từng bản ghi.
 
@@ -215,6 +215,9 @@
 
 ### 2.000806 — Thủ tục đăng ký kết hôn có yếu tố nước ngoài
 - **phiOnline**:  → 0 đồng khi nộp hồ sơ trực tuyến (NQ 23/2026/NQ-HĐND, hiệu lực từ 08/8/2026)
+
+### 2.000815 — Chứng thực bản sao từ bản chính giấy tờ, văn bản do cơ quan, tổ chức có thẩm quyền của Việt Nam; cơ quan, tổ chức có thẩm quyền của nước ngoài; cơ quan, tổ chức có thẩm quyền của Việt Nam liên kết với cơ quan, tổ chức có thẩm quyền của nước ngoài cấp hoặc chứng nhận
+- **phiOnline**:  → Chứng thực bản sao điện tử từ bản chính tại Trung tâm PVHCC xã, phường, đặc khu: ngân sách hỗ trợ 100% phí (NQ 43/2025/NQ-HĐND, 01/01/2026–31/12/2026). Không thuộc NQ 23/2026.
 
 ### 2.002189 — Thủ tục ghi vào Sổ hộ tịch việc kết hôn của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài
 - **phiOnline**:  → 0 đồng khi nộp hồ sơ trực tuyến (NQ 23/2026/NQ-HĐND, hiệu lực từ 08/8/2026)
