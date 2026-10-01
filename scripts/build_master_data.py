@@ -575,6 +575,8 @@ CITY_SPACING_FIXES = {
     "th ục": "thục", "t ừ": "từ", "phê duy ệt": "phê duyệt",
     # Bổ sung 29/9/2026 (khóa có khoảng trắng đầu để chỉ khớp đầu từ; PDF QĐ 1635, 1747, 1847, 1897, 2032, 3856, 3878, 3904, 3957, 4016).
     "Th ời": "Thời", " b ệnh": " bệnh", " b ố": " bố", " bi ểu": " biểu", " c ảng": " cảng", " c ấm": " cấm", " ch ế": " chế", " ch ỉ": " chỉ", " ch ỉnh": " chỉnh", " ch ống": " chống", " ch ứng": " chứng", " ch ữa": " chữa", " chuy ển": " chuyển", " d ục": " dục", " di ện": " diện", " g ọi": " gọi", " g ốc": " gốc", " gi ảm": " giảm", " h ệ": " hệ", " h ồ": " hồ", " h ợp": " hợp", " kh ẩu": " khẩu", " ki ện": " kiện", " l ấy": " lấy", " l ực": " lực", " li ệu": " liệu", " lu ật": " luật", " lư ợng": " lượng", " m ầm": " mầm", " ng ạch": " ngạch", " ngh ệ": " nghệ", " ngu ồn": " nguồn", " nh ất": " nhất", " nh ập": " nhập", " nhi ều": " nhiều", " ph ố": " phố", " ph ổ": " phổ", " ph ủ": " phủ", " s ản": " sản", " s ửa": " sửa", " t ại": " tại", " t ật": " tật", " t ỉnh": " tỉnh", " th ải": " thải", " th ể": " thể", " th ủy": " thủy", " thu ộc": " thuộc", " thư ờng": " thường", " ti ền": " tiền", " tr ả": " trả", " tr ẻ": " trẻ", " tr ợ": " trợ", " tu ất": " tuất", " v ật": " vật", "Đi ều": "Điều", " đ ảm": " đảm", " đ ầu": " đầu", " đ ể": " để", " đ ủ": " đủ", " đi ều": " điều", " tr ồng": " trồng",
+    # Bổ sung 01/10/2026 (PDF QĐ đợt QLVB; khóa chữ thường có khoảng trắng đầu để chỉ khớp đầu từ).
+    "Ch ủ": "Chủ", "H ệ": "Hệ", "Ho ạt": "Hoạt", "L ập": "Lập", "Lu ật": "Luật", "Ph ục": "Phục", "Qu ỹ": "Quỹ", "Tr ồng": "Trồng", "Trư ờng": "Trường", " b ến": " bến", " bi ển": " biển", " c ải": " cải", " c ấu": " cấu", " c ắt": " cắt", " c ổ": " cổ", " ch ất": " chất", " ch ợ": " chợ", " ch ủ": " chủ", " ch ức": " chức", " d ụng": " dụng", " d ữ": " dữ", " gi ả": " giả", " h ạ": " hạ", " h ết": " hết", " h ộ": " hộ", " hi ểm": " hiểm", " ho ạch": " hoạch", " k ế": " kế", " k ể": " kể", " k ỹ": " kỹ", " kho ản": " khoản", " khuy ến": " khuyến", " l ẻ": " lẻ", " l ịch": " lịch", " l ồng": " lồng", " l ỗi": " lỗi", " l ộ": " lộ", " l ợi": " lợi", " lu ồng": " luồng", " m ại": " mại", " m ặt": " mặt", " m ới": " mới", " n ạo": " nạo", " n ối": " nối", " ng ầm": " ngầm", " ph ạm": " phạm", " qu ản": " quản", " qu ảng": " quảng", " quy ền": " quyền", " r ừng": " rừng", " s ử": " sử", " t ận": " tận", " t ự": " tự", " th ẩm": " thẩm", " th ị": " thị", " th ủ": " thủ", " thi ết": " thiết", " thu ỷ": " thuỷ", " ti ến": " tiến", " tr úc": " trúc", " tr ị": " trị", " tr ời": " trời", " tri ển": " triển", " v ệ": " vệ", " v ị": " vị", " v ốn": " vốn", " đ ất": " đất", " đ ặt": " đặt", " đ ề": " đề", " đi ện": " điện", " đư ợc": " được",
 }
 
 
@@ -590,7 +592,26 @@ def repair_city_name(value: str, code: str) -> str:
         value = value.replace(bad, good)
     value = unicodedata.normalize("NFC", value)
     value = re.sub(r"^Thủ tục\\s+Thủ tục\\s+", "Thủ tục ", value, flags=re.IGNORECASE)
+    # Cột "Thời hạn"/"Căn cứ pháp lý" bị dính vào tên khi trích PDF dạng bảng.
+    cut = re.search(
+        r"\s(?:-\s*Thời hạn|Trong thời hạn|Thời hạn quyết toán|-\s*Trường hợp|-\s*Đối với|\(1\)\s|Thông tư số|"
+        r"-\s*\d+(?:,\d+)?\s*ngày|\d+(?:,\d+)?\s*ngày làm việc|Tổng số:)",
+        value,
+    )
+    if cut and cut.start() >= 12:
+        value = value[: cut.start()]
     return value.strip(" -–—;,.|")
+
+
+def good_city_name(name: str) -> bool:
+    """Tên trích từ PDF đủ tin cậy để thay tên đang có."""
+    name = name or ""
+    return (
+        looks_like_name(name)
+        and name[:1].isalpha()
+        and name.count("(") == name.count(")")
+        and not re.search(r"(?<!điểm) [bcdfghjklmnpqrstvxđ] [a-zà-ỹ]{2,}", name, re.I)
+    )
 
 
 def city_source_evidence(row: dict) -> dict:
@@ -771,7 +792,9 @@ def apply_city_updates(public_rows: list[dict], excluded: list[dict], audit_rows
             record = by_code[code]
             # Hàng được duyệt theo ngày quyết định tăng dần: với bản ghi lấy tên
             # từ PDF quyết định thành phố, tên theo quyết định mới nhất được ưu tiên.
-            if not record.get("ten") or (name and record.get("nameSource") == "official_city_decision_pdf"):
+            if not record.get("ten") or (
+                good_city_name(name) and record.get("nameSource") == "official_city_decision_pdf"
+            ):
                 record["ten"] = name
             if not record.get("linhVuc") or record.get("linhVuc") == "CHƯA XÁC MINH LĨNH VỰC":
                 record["linhVuc"] = item.get("field") or record.get("linhVuc")
