@@ -766,10 +766,11 @@
     const qdBox = document.getElementById("qdCongBoBox");
     if (qdBox && extra.quyetDinhCongBo) {
       qdBox.innerHTML = extra.quyetDinhCongBo
-        .map(
-          (q) =>
-            `<article class="doc-card"><div class="doc-so">${esc(q.so)}</div><div class="doc-ngay">Ngày ${esc(q.ngay)}</div><h3>${esc(q.trichYeu)}</h3><span class="tag tag-lv">${esc(q.linhVuc)}</span>${q.link ? `<a class="doc-link" href="${esc(q.link)}" target="_blank" rel="noopener">Xem nguồn ↗</a>` : ""}</article>`
-        )
+        .map((q) => {
+          const hl = q.hieuLuc ? ` · Hiệu lực: ${esc(q.hieuLuc)}` : "";
+          const cnt = q.soTTHC ? ` · ${esc(q.soTTHC)} TTHC trong danh mục` : "";
+          return `<article class="doc-card"><div class="doc-so">${esc(q.so)}</div><div class="doc-ngay">Ngày ${esc(q.ngay)}${hl}${cnt}</div><h3>${esc(q.trichYeu)}</h3><span class="tag tag-lv">${esc(q.linhVuc)}</span>${q.trangThai ? `<span class="tag tag-phi">${esc(q.trangThai)}</span>` : ""}${q.link ? `<a class="doc-link" href="${esc(q.link)}" target="_blank" rel="noopener">Xem nguồn ↗</a>` : ""}</article>`;
+        })
         .join("");
     }
     const qdTheo = document.getElementById("qdTheoBox");
@@ -793,25 +794,18 @@
     const phiBox = document.getElementById("phiBox");
     if (phiBox && extra.phiLePhi) {
       const p = extra.phiLePhi;
-      let html = `<p class="doc-intro">${esc(p.ghiChuChung)}</p><h3 class="sub-h">Nghị quyết HĐND TP Hải Phòng</h3><div class="doc-list-cards">`;
+      let html = `<p class="doc-intro">${esc(p.ghiChuChung)}</p><h3 class="sub-h">Văn bản về phí, lệ phí (cập nhật ${esc(p.capNhat || "")})</h3><div class="doc-list-cards">`;
       html += (p.nghiQuyetHP || [])
         .map(
           (q) =>
-            `<article class="doc-card"><div class="doc-so">${esc(q.so)}</div><div class="doc-ngay">Ngày ${esc(q.ngay)}</div><h3>${esc(q.trichYeu)}</h3></article>`
-        )
-        .join("");
-      html += `</div><h3 class="sub-h">Thông tư / quyết định Bộ ngành</h3><div class="doc-list-cards">`;
-      html += (p.thongTuBo || [])
-        .map(
-          (q) =>
-            `<article class="doc-card"><div class="doc-so">${esc(q.so)}</div><div class="doc-ngay">${esc(q.cq)} · ${esc(q.ngay)}</div><h3>${esc(q.trichYeu)}</h3></article>`
+            `<article class="doc-card"><div class="doc-so">${esc(q.so)}</div><div class="doc-ngay">Ngày ${esc(q.ngay)}</div><h3>${esc(q.trichYeu)}</h3>${q.trangThai ? `<span class="tag tag-phi">${esc(q.trangThai)}</span>` : ""}${q.ghiChu ? `<p class="doc-note">${esc(q.ghiChu)}</p>` : ""}${q.link ? `<a class="doc-link" href="${esc(q.link)}" target="_blank" rel="noopener">Xem nguồn ↗</a>` : ""}</article>`
         )
         .join("");
       html += `</div>`;
       (p.mucThamKhao || []).forEach((nh) => {
-        html += `<h3 class="sub-h">${esc(nh.nhom)}</h3><div class="table-wrap"><table class="data-table fee-table"><thead><tr><th>Nội dung</th><th>Mức thu (tham khảo)</th></tr></thead><tbody>`;
+        html += `<h3 class="sub-h">${esc(nh.nhom)}</h3><div class="table-wrap"><table class="data-table fee-table"><thead><tr><th>Nội dung</th><th>Mức thu</th></tr></thead><tbody>`;
         html += nh.muc.map((m) => `<tr><td>${esc(m.ten)}</td><td><strong>${esc(m.muc)}</strong></td></tr>`).join("");
-        html += `</tbody></table></div>`;
+        html += `</tbody></table></div>${nh.ghiChu ? `<p class="doc-note">${esc(nh.ghiChu)}</p>` : ""}`;
       });
       phiBox.innerHTML = html;
     }

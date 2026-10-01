@@ -920,6 +920,12 @@ body {
   line-height: 1.4;
   margin-bottom: 0.5rem;
 }
+.doc-note {
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--muted);
+  margin-top: 0.5rem;
+}
 .doc-link {
   display: inline-block;
   margin-top: 0.5rem;

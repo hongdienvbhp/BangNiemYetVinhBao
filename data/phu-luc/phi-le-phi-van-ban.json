@@ -1,0 +1,285 @@
+{
+  "format": "bangniemyet-fee-legal-registry",
+  "version": 1,
+  "verifiedAt": "2026-10-01",
+  "purpose": "Nguồn chuẩn duy nhất cho tab Phí/lệ phí. js/extra-generated.js được sinh từ file này bởi scripts/build_extra_data.py; không sửa tay file sinh.",
+  "scope": "Phí, lệ phí thuộc thẩm quyền HĐND TP Hải Phòng áp dụng cho TTHC tiếp nhận tại Trung tâm PVHCC xã Vĩnh Bảo.",
+  "verificationLevels": {
+    "primary_text_read": "Đã tải và đọc toàn văn từ cổng chính thức của TP Hải Phòng; có SHA-256 của tệp.",
+    "secondary_only": "Chỉ có nguồn thứ cấp (báo chí, cơ sở dữ liệu pháp luật tư nhân); chưa đối chiếu văn bản gốc.",
+    "unverified": "Chưa đối chiếu được trong phiên rà soát; không được dùng làm căn cứ công bố mức thu."
+  },
+  "documents": [
+    {
+      "id": "NQ-23-2026",
+      "so": "23/2026/NQ-HĐND",
+      "ngay": "28/7/2026",
+      "coQuan": "HĐND thành phố Hải Phòng (khóa XVII, kỳ họp thứ 3)",
+      "trichYeu": "Quy định mức thu phí, lệ phí thuộc thẩm quyền của HĐND thành phố đối với việc thực hiện thủ tục hành chính qua hình thức trực tuyến trên địa bàn thành phố Hải Phòng",
+      "hieuLuc": "08/8/2026",
+      "trangThai": "current",
+      "nhomHienThi": "dang_ap_dung",
+      "pham_vi": "Mức thu 0 đồng đối với 04 loại lệ phí và 07 loại phí khi tổ chức, cá nhân thực hiện TTHC trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1, Điều 2).",
+      "mienPhiTrucTuyen": {
+        "lePhi": [
+          "Lệ phí hộ tịch",
+          "Lệ phí cấp giấy phép lao động cho người nước ngoài làm việc tại Việt Nam",
+          "Lệ phí cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất",
+          "Lệ phí cấp giấy phép xây dựng"
+        ],
+        "phi": [
+          "Phí đăng ký giao dịch bảo đảm",
+          "Phí thẩm định hồ sơ cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất",
+          "Phí thẩm định cấp, cấp lại, điều chỉnh giấy phép môi trường",
+          "Phí thẩm định báo cáo đánh giá tác động môi trường",
+          "Phí thẩm định hồ sơ cấp giấy phép trong lĩnh vực tài nguyên nước",
+          "Phí bình tuyển, công nhận cây mẹ, cây đầu dòng, vườn giống cây lâm nghiệp, rừng giống",
+          "Phí thẩm định cấp giấy chứng nhận đủ điều kiện kinh doanh hoạt động cơ sở thể thao, câu lạc bộ thể thao chuyên nghiệp"
+        ]
+      },
+      "thayThe": [
+        "07/2025/NQ-HĐND ngày 10/6/2025 của HĐND tỉnh Hải Dương",
+        "08/2025/NQ-HĐND ngày 17/6/2025 của HĐND thành phố Hải Phòng"
+      ],
+      "chuyenTiep": "Hồ sơ TTHC nộp qua hình thức trực tuyến trước 08/8/2026 tiếp tục thực hiện theo NQ 07/2025 (Hải Dương) và NQ 08/2025 (Hải Phòng) (Điều 3 khoản 3).",
+      "verification": "primary_text_read",
+      "sources": [
+        {
+          "role": "primary_text",
+          "url": "https://cdn.haiphong.gov.vn/gov-hpg/6298/tintuc/2026/8/nq-23.2026.nq-hdnd639222298143062830.pdf",
+          "sha256": "6437d5562e94e5a4eab835459cddd17038046370e40d447eae81d0fdcf8a4eb7",
+          "note": "Tệp PDF công khai là bản có chỗ trống số/ngày ban hành; số 23/2026/NQ-HĐND và ngày 28/7/2026 lấy từ tiêu đề trang Sở Tư pháp và báo Hải Phòng. [cần đối chiếu bản đã ký trên Công báo TP]"
+        },
+        {
+          "role": "official_listing",
+          "url": "https://sotp.haiphong.gov.vn/van-ban-quy-pham-phap-luat/nghi-quyet-so-23-2026-nq-hdnd-ngay-28-7-2026-cua-hoi-dong-nhan-dan-thanh-pho-quy-dinh-muc-thu-ph-948475"
+        },
+        {
+          "role": "secondary_confirmation",
+          "url": "https://baohaiphong.vn/11-loai-le-phi-phi-thuc-hien-thu-tuc-hanh-chinh-qua-hinh-thuc-truc-tuyen-co-muc-thu-0-dong-550660.html"
+        }
+      ]
+    },
+    {
+      "id": "NQ-34-2025",
+      "so": "34/2025/NQ-HĐND",
+      "ngay": "10/12/2025",
+      "coQuan": "HĐND thành phố Hải Phòng (khóa XVI, kỳ họp thứ 32)",
+      "trichYeu": "Quy định mức thu, chế độ thu, nộp, quản lý và sử dụng các loại phí, lệ phí trong lĩnh vực đất đai trên địa bàn thành phố",
+      "hieuLuc": "01/01/2026",
+      "trangThai": "current",
+      "nhomHienThi": "dang_ap_dung",
+      "pham_vi": "Lệ phí cấp GCN; phí thẩm định hồ sơ cấp GCN; phí đăng ký giao dịch bảo đảm; phí cung cấp thông tin giao dịch bảo đảm; phí khai thác, sử dụng tài liệu đất đai. Mức thu trực tuyến của nghị quyết này áp dụng khi NQ 07/2025 (Hải Dương) và NQ 08/2025 (Hải Phòng) hết hiệu lực (Điều 6 khoản 2); các khoản NQ 23/2026 quy định 0 đồng khi nộp trực tuyến được ưu tiên áp dụng từ 08/8/2026.",
+      "baiBo": [
+        "Khoản 5, khoản 6 Điều 1 và Phụ lục 05, 06 của NQ 45/2018/NQ-HĐND (HP)",
+        "Khoản 1 Điều 1 và Phụ lục 01 của NQ 12/2018/NQ-HĐND (HP)",
+        "Các thứ tự I.12, I.13, I.14, I.15, II.5 Phụ lục NQ 08/2025/NQ-HĐND ngày 26/6/2025 của HĐND tỉnh Hải Dương",
+        "Toàn bộ NQ 17/2024/NQ-HĐND ngày 06/12/2024 (HP)"
+      ],
+      "verification": "primary_text_read",
+      "sources": [
+        {
+          "role": "primary_text",
+          "url": "https://dbndhaiphong.gov.vn/SiteFolders/dbndhp/2472/Documents/NQ-34-2025.pdf",
+          "sha256": "9a78589b05b9c648f161750faba361cbbb64cedc4b04284a2996f8bf299f9faf",
+          "note": "Bản PDF công khai trên cổng HĐND TP (trống số/ngày); thời điểm thông qua 10/12/2025 và hiệu lực 01/01/2026 đọc trực tiếp trong văn bản."
+        },
+        {
+          "role": "official_listing",
+          "url": "https://dbndhaiphong.gov.vn/ky-hop-thu-32/Nghi-quyet-so-34-2025-NQ-HDND-ve-Quy-dinh-muc-thu--che-do-thu--nop--quan-ly-va-su-dung-cac-loai-phi--le-phi-trong-linh-vuc-dat-dai-tren-dia-ban-thanh-pho-2944"
+        }
+      ]
+    },
+    {
+      "id": "NQ-08-2025-HP",
+      "so": "08/2025/NQ-HĐND",
+      "ngay": "17/6/2025",
+      "coQuan": "HĐND thành phố Hải Phòng",
+      "trichYeu": "Quy định mức thu phí, lệ phí thuộc thẩm quyền của HĐND thành phố đối với việc thực hiện thủ tục hành chính trực tuyến",
+      "hieuLuc": "",
+      "hetHieuLuc": "08/8/2026",
+      "trangThai": "expired",
+      "nhomHienThi": "het_hieu_luc",
+      "ghiChu": "Hết hiệu lực từ 08/8/2026 theo NQ 23/2026 (Điều 3 khoản 2 điểm b). Chỉ còn áp dụng cho hồ sơ nộp trực tuyến trước 08/8/2026. Không nhầm với NQ 08/2025/NQ-HĐND ngày 26/6/2025 của HĐND tỉnh Hải Dương.",
+      "verification": "primary_text_read",
+      "sources": [
+        {
+          "role": "cited_by",
+          "url": "https://cdn.haiphong.gov.vn/gov-hpg/6298/tintuc/2026/8/nq-23.2026.nq-hdnd639222298143062830.pdf"
+        }
+      ]
+    },
+    {
+      "id": "NQ-07-2025-HD",
+      "so": "07/2025/NQ-HĐND",
+      "ngay": "10/6/2025",
+      "coQuan": "HĐND tỉnh Hải Dương (cũ)",
+      "trichYeu": "Quy định mức thu phí, lệ phí đối với hoạt động cung cấp dịch vụ công trực tuyến trên địa bàn tỉnh Hải Dương",
+      "hetHieuLuc": "08/8/2026",
+      "trangThai": "expired",
+      "nhomHienThi": "het_hieu_luc",
+      "ghiChu": "Hết hiệu lực từ 08/8/2026 theo NQ 23/2026 (Điều 3 khoản 2 điểm a); còn áp dụng chuyển tiếp cho hồ sơ nộp trực tuyến trước 08/8/2026. Văn bản của tỉnh Hải Dương cũ, ghi để tra cứu và đối chiếu quy định chuyển tiếp.",
+      "verification": "primary_text_read",
+      "sources": [
+        {
+          "role": "cited_by",
+          "url": "https://cdn.haiphong.gov.vn/gov-hpg/6298/tintuc/2026/8/nq-23.2026.nq-hdnd639222298143062830.pdf"
+        }
+      ]
+    },
+    {
+      "id": "NQ-17-2024-HP",
+      "so": "17/2024/NQ-HĐND",
+      "ngay": "06/12/2024",
+      "coQuan": "HĐND thành phố Hải Phòng",
+      "trichYeu": "Quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí thẩm định hồ sơ và lệ phí cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất",
+      "hetHieuLuc": "01/01/2026",
+      "trangThai": "repealed",
+      "nhomHienThi": "het_hieu_luc",
+      "ghiChu": "Bãi bỏ toàn bộ bởi NQ 34/2025/NQ-HĐND (Điều 6 khoản 3 điểm d), hiệu lực từ 01/01/2026.",
+      "verification": "primary_text_read",
+      "sources": [
+        {
+          "role": "cited_by",
+          "url": "https://dbndhaiphong.gov.vn/SiteFolders/dbndhp/2472/Documents/NQ-34-2025.pdf"
+        }
+      ]
+    },
+    {
+      "id": "NQ-12-2018-HP",
+      "so": "12/2018/NQ-HĐND",
+      "ngay": "12/7/2018",
+      "coQuan": "HĐND thành phố Hải Phòng",
+      "trichYeu": "Quy định một số loại phí, lệ phí thuộc thẩm quyền HĐND thành phố trên địa bàn thành phố Hải Phòng",
+      "trangThai": "partially_repealed",
+      "nhomHienThi": "can_xac_minh",
+      "ghiChu": "Đã bãi bỏ khoản 1 Điều 1 và Phụ lục 01 (NQ 34/2025). Phần còn lại, gồm mức lệ phí hộ tịch khi nộp trực tiếp/bưu chính: [cần xác minh toàn văn và tình trạng hiệu lực mới nhất] — chưa đối chiếu được văn bản gốc trong phiên rà soát.",
+      "verification": "unverified",
+      "sources": [
+        {
+          "role": "cited_by",
+          "url": "https://dbndhaiphong.gov.vn/SiteFolders/dbndhp/2472/Documents/NQ-34-2025.pdf"
+        }
+      ]
+    },
+    {
+      "id": "NQ-45-2018-HP",
+      "so": "45/2018/NQ-HĐND",
+      "ngay": "10/12/2018",
+      "coQuan": "HĐND thành phố Hải Phòng",
+      "trichYeu": "Quy định một số loại phí, lệ phí trên địa bàn thành phố Hải Phòng",
+      "trangThai": "partially_repealed",
+      "nhomHienThi": "can_xac_minh",
+      "ghiChu": "Đã bãi bỏ khoản 5, khoản 6 Điều 1 và Phụ lục 05, 06 (NQ 34/2025). Phần còn lại: [cần xác minh toàn văn và tình trạng hiệu lực mới nhất]. NQ 19/2022/NQ-HĐND (09/12/2022) sửa đổi NQ này từng được ghi trong dữ liệu cũ nhưng chưa đối chiếu được văn bản gốc: [cần xác minh].",
+      "verification": "unverified",
+      "sources": [
+        {
+          "role": "cited_by",
+          "url": "https://dbndhaiphong.gov.vn/SiteFolders/dbndhp/2472/Documents/NQ-34-2025.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ND-362-2025",
+      "so": "362/2025/NĐ-CP",
+      "ngay": "31/12/2025",
+      "coQuan": "Chính phủ",
+      "trichYeu": "Quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Phí và lệ phí",
+      "hieuLuc": "01/01/2026",
+      "trangThai": "current",
+      "nhomHienThi": "dang_ap_dung",
+      "ghiChu": "Được NQ 23/2026 viện dẫn làm căn cứ; theo nguồn thứ cấp thay thế NĐ 120/2016/NĐ-CP. [cần đối chiếu CSDL quốc gia về VBPL].",
+      "verification": "secondary_only",
+      "sources": [
+        {
+          "role": "cited_by",
+          "url": "https://cdn.haiphong.gov.vn/gov-hpg/6298/tintuc/2026/8/nq-23.2026.nq-hdnd639222298143062830.pdf"
+        },
+        {
+          "role": "secondary_confirmation",
+          "url": "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Nghi-dinh-362-2025-ND-CP-huong-dan-Luat-Phi-va-le-phi-687493.aspx"
+        }
+      ]
+    },
+    {
+      "id": "TT-281-2016",
+      "so": "281/2016/TT-BTC",
+      "ngay": "14/11/2016",
+      "coQuan": "Bộ Tài chính",
+      "trichYeu": "Phí khai thác, sử dụng thông tin trong cơ sở dữ liệu hộ tịch; phí xác nhận có quốc tịch Việt Nam, xác nhận là người gốc Việt Nam",
+      "trangThai": "current",
+      "nhomHienThi": "can_xac_minh",
+      "ghiChu": "Nguồn thứ cấp cho thấy còn hiệu lực năm 2026 (phí cấp bản sao trích lục hộ tịch). [cần đối chiếu CSDL quốc gia về VBPL].",
+      "verification": "secondary_only",
+      "sources": [
+        {
+          "role": "secondary_confirmation",
+          "url": "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Thong-tu-281-2016-TT-BTC-phi-khai-thac-su-dung-thong-tin-ho-tich-phi-xac-nhan-co-quoc-tich-Viet-Nam-322135.aspx"
+        }
+      ]
+    },
+    {
+      "id": "TT-85-2019",
+      "so": "85/2019/TT-BTC (sửa đổi bởi 106/2021/TT-BTC)",
+      "ngay": "29/11/2019",
+      "coQuan": "Bộ Tài chính",
+      "trichYeu": "Hướng dẫn về phí và lệ phí thuộc thẩm quyền quyết định của HĐND tỉnh, thành phố trực thuộc Trung ương",
+      "trangThai": "unverified",
+      "nhomHienThi": "can_xac_minh",
+      "ghiChu": "Được NQ 34/2025 (12/2025) viện dẫn; NQ 23/2026 không viện dẫn mà dẫn NĐ 362/2025/NĐ-CP. [cần xác minh tình trạng hiệu lực sau 01/01/2026].",
+      "verification": "unverified",
+      "sources": [
+        {
+          "role": "cited_by",
+          "url": "https://dbndhaiphong.gov.vn/SiteFolders/dbndhp/2472/Documents/NQ-34-2025.pdf"
+        }
+      ]
+    }
+  ],
+  "feeTables": [
+    {
+      "id": "NQ-34-2025-PL-I",
+      "nhom": "Đất đai – Lệ phí cấp GCN (NQ 34/2025, Phụ lục I) – nộp trực tiếp/bưu chính",
+      "donVi": "đồng/hồ sơ hoặc Giấy chứng nhận (Đất | Tài sản | Đất + Tài sản)",
+      "ghiChu": "Miễn: trẻ em, hộ nghèo, người cao tuổi, người khuyết tật, người có công; đăng ký biến động do tặng cho quyền sử dụng đất cho Nhà nước/cộng đồng theo mục đích công cộng. Khi nộp trực tuyến: 0 đồng theo NQ 23/2026 từ 08/8/2026.",
+      "rows": [
+        ["Cá nhân – cấp GCN lần đầu", "35.000 | 35.000 | 35.000"],
+        ["Cá nhân – cấp đổi, cấp lại GCN", "25.000 | 25.000 | 30.000"],
+        ["Cá nhân – đăng ký biến động trên GCN đã cấp", "25.000 | 25.000 | 30.000"],
+        ["Tổ chức – cấp GCN lần đầu", "40.000 | 40.000 | 45.000"],
+        ["Tổ chức – cấp đổi, cấp lại GCN", "30.000 | 30.000 | 35.000"],
+        ["Tổ chức – đăng ký biến động trên GCN đã cấp", "30.000 | 30.000 | 35.000"]
+      ],
+      "source": "NQ-34-2025"
+    },
+    {
+      "id": "NQ-34-2025-PL-II",
+      "nhom": "Đất đai – Phí thẩm định hồ sơ cấp GCN (NQ 34/2025, Phụ lục II) – nộp trực tiếp/bưu chính",
+      "donVi": "đồng/hồ sơ hoặc Giấy chứng nhận (Đất | Tài sản | Đất + Tài sản)",
+      "ghiChu": "Cùng nhóm đối tượng miễn như Phụ lục I. Khi nộp trực tuyến: 0 đồng theo NQ 23/2026 từ 08/8/2026.",
+      "rows": [
+        ["Cá nhân – cấp GCN lần đầu", "100.000 | 100.000 | 155.000"],
+        ["Cá nhân – cấp đổi, cấp lại GCN", "100.000 | 100.000 | 115.000"],
+        ["Cá nhân – đăng ký biến động trên GCN đã cấp", "125.000 | 155.000 | 170.000"],
+        ["Tổ chức – cấp GCN lần đầu", "215.000 | 215.000 | 215.000"],
+        ["Tổ chức – cấp đổi, cấp lại GCN", "155.000 | 155.000 | 175.000"],
+        ["Tổ chức – đăng ký biến động trên GCN đã cấp", "290.000 | 290.000 | 355.000"]
+      ],
+      "source": "NQ-34-2025"
+    },
+    {
+      "id": "NQ-34-2025-PL-IV",
+      "nhom": "Đất đai – Phí cung cấp thông tin về giao dịch bảo đảm (NQ 34/2025, Phụ lục IV)",
+      "donVi": "đồng/hồ sơ",
+      "ghiChu": "Miễn: chấp hành viên, điều tra viên, kiểm sát viên, thẩm phán theo yêu cầu nghiệp vụ; tự tra cứu trên Hệ thống đăng ký trực tuyến của Bộ Tư pháp.",
+      "rows": [
+        ["Phí cung cấp thông tin về giao dịch bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất", "30.000"]
+      ],
+      "source": "NQ-34-2025"
+    }
+  ],
+  "notes": [
+    "Phí đăng ký giao dịch bảo đảm (NQ 34/2025, Phụ lục III) có mức thu riêng cho hình thức trực tiếp và trực tuyến; khi nộp trực tuyến mức thu là 0 đồng theo NQ 23/2026 (Điều 2 khoản 2 điểm a). Bảng mức thu trực tiếp xem toàn văn NQ 34/2025.",
+    "Mức lệ phí hộ tịch khi nộp trực tiếp/bưu chính: [cần bổ sung] — chưa đối chiếu được văn bản gốc của HĐND TP đang còn hiệu lực; xem mục Phí/lệ phí trong từng TTHC (nguồn Cổng DVCQG)."
+  ]
+}
