@@ -576,6 +576,46 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
       "trangThai": "Còn hiệu lực",
       "soTTHC": 2,
       "link": "https://sonnmt.haiphong.gov.vn/thu-tuc-hanh-chinh/quyet-dinh-so-394-qd-ubnd-ngay-29-01-2026-cua-uy-ban-nhan-dan-thanh-pho-hai-phong-cong-bo-danh-m-854758"
+    },
+    {
+      "so": "190/QĐ-UBND",
+      "ngay": "16/01/2026",
+      "trichYeu": "Quyết định số 190/QĐ-UBND ngày 16/01/2026 của UBND thành phố quyết định về việc công bố danh mục thủ tục hành chính sửa đổi, bổ sung thuộc phạm vi, chức năng quản lý của Sở Công Thương",
+      "linhVuc": "CÔNG THƯƠNG",
+      "hieuLuc": "16/01/2026",
+      "trangThai": "Còn hiệu lực",
+      "soTTHC": 17,
+      "link": "https://cathai.haiphong.gov.vn/linh-vuc-cong-thuong/quyet-dinh-so-190-qd-ubnd-ngay-16-01-2026-cua-ubnd-thanh-pho-hai-phong-v-v-cong-bo-danh-muc-thu--848220"
+    },
+    {
+      "so": "186/QĐ-UBND",
+      "ngay": "15/01/2026",
+      "trichYeu": "Quyết định số 186/QĐ-UBND ngày 15/01/2026 của UBND thành phố về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung lĩnh vực thủy sản thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường",
+      "linhVuc": "THỦY SẢN",
+      "hieuLuc": "15/01/2026",
+      "trangThai": "Còn hiệu lực",
+      "soTTHC": 9,
+      "link": "https://cathai.haiphong.gov.vn/linh-vuc-thuy-san-va-kiem-ngu/quyet-dinh-so-186-qd-ubnd-ngay-15-01-2026-cua-ubnd-thanh-pho-hai-phong-v-v-cong-khai-danh-muc-th-851534"
+    },
+    {
+      "so": "115/QĐ-UBND",
+      "ngay": "12/01/2026",
+      "trichYeu": "Quyết định số 115/QĐ-UBND ngày 12/01/2026 của UBND thành phố về việc công bố Danh mục thủ tục hành chính mới ban hành, sửa đổi, bổ sung, và bãi bỏ thuộc phạm vi chức năng quản lý của Sở Văn hoá, Thể thao và Du lịch",
+      "linhVuc": "VĂN HÓA, THỂ THAO VÀ DU LỊCH",
+      "hieuLuc": "12/01/2026",
+      "trangThai": "Còn hiệu lực",
+      "soTTHC": 0,
+      "link": "https://cathai.haiphong.gov.vn/van-hoa-the-thao-va-du-lich/quyet-dinh-so-115-qd-ubnd-ngay-12-01-2026-cua-ubnd-thanh-pho-hai-phong-v-v-cong-bo-danh-muc-thu--848988"
+    },
+    {
+      "so": "3729/QĐ-UBND",
+      "ngay": "12/09/2025",
+      "trichYeu": "Quyết định số 3729/QĐ-UBND ngày 12/09/2025 của UBND thành phố về việc công bố danh mục thủ tục hành chính sửa đổi, bổ sung lĩnh vực quy hoạch đô thị và nông thôn thuộc phạm vi, chức năng quản lý của Sở Xây dựng",
+      "linhVuc": "QUY HOẠCH ĐÔ THỊ VÀ NÔNG THÔN",
+      "hieuLuc": "12/09/2025",
+      "trangThai": "Còn hiệu lực",
+      "soTTHC": 4,
+      "link": "https://cathai.haiphong.gov.vn/linh-vuc-hoat-dong-xay-dung-va-kien-truc/quyet-dinh-3729-qd-ubnd-ngay-12-9-2025-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-sua-doi-bo-su-819277"
     }
   ],
   "quyetDinhTheoTTHC": [
@@ -606,10 +646,10 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
       ]
     },
     {
-      "nhom": "XÂY DỰNG (45 TTHC)",
+      "nhom": "XÂY DỰNG (43 TTHC)",
       "vanBan": [
         "1846/QĐ-UBND – 16 TTHC",
-        "2281/QĐ-UBND – 12 TTHC",
+        "2281/QĐ-UBND – 10 TTHC",
         "669/QĐ-UBND – 9 TTHC",
         "2657/QĐ-UBND – 6 TTHC",
         "777/QĐ-UBND – 6 TTHC",
@@ -621,6 +661,16 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
       "nhom": "HỘ TỊCH (34 TTHC)",
       "vanBan": [
         "467/QĐ-UBND – 34 TTHC"
+      ]
+    },
+    {
+      "nhom": "CÔNG THƯƠNG (33 TTHC)",
+      "vanBan": [
+        "190/QĐ-UBND – 17 TTHC",
+        "2692/QĐ-UBND – 11 TTHC",
+        "2127/QĐ-UBND – 5 TTHC",
+        "3584/QĐ-UBND – 5 TTHC",
+        "1349/QĐ-UBND – 2 TTHC"
       ]
     },
     {
@@ -655,14 +705,6 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
       ]
     },
     {
-      "nhom": "CÔNG THƯƠNG (16 TTHC)",
-      "vanBan": [
-        "2692/QĐ-UBND – 11 TTHC",
-        "2127/QĐ-UBND – 5 TTHC",
-        "3584/QĐ-UBND – 5 TTHC"
-      ]
-    },
-    {
       "nhom": "XUẤT NHẬP KHẨU (13 TTHC)",
       "vanBan": [
         "3584/QĐ-UBND – 10 TTHC",
@@ -686,6 +728,12 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
       "nhom": "GIÁM ĐỊNH TƯ PHÁP (9 TTHC)",
       "vanBan": [
         "3904/QĐ-UBND – 9 TTHC"
+      ]
+    },
+    {
+      "nhom": "THỦY SẢN (9 TTHC)",
+      "vanBan": [
+        "186/QĐ-UBND – 9 TTHC"
       ]
     },
     {
@@ -720,9 +768,10 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
       ]
     },
     {
-      "nhom": "LƯU THÔNG HÀNG HÓA TRONG NƯỚC (4 TTHC)",
+      "nhom": "QUY HOẠCH ĐÔ THỊ VÀ NÔNG THÔN (4 TTHC)",
       "vanBan": [
-        "1349/QĐ-UBND – 4 TTHC"
+        "3729/QĐ-UBND – 4 TTHC",
+        "2281/QĐ-UBND – 2 TTHC"
       ]
     },
     {
@@ -779,6 +828,12 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
       "nhom": "HỘI (2 TTHC)",
       "vanBan": [
         "[cần bổ sung] – Master Data chưa ghi quyết định công bố cho nhóm này"
+      ]
+    },
+    {
+      "nhom": "LƯU THÔNG HÀNG HÓA TRONG NƯỚC (2 TTHC)",
+      "vanBan": [
+        "1349/QĐ-UBND – 2 TTHC"
       ]
     },
     {

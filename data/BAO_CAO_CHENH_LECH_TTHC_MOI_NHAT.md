@@ -2,8 +2,8 @@
 
 - Snapshot trước: **2026-09-29**
 - Snapshot sau: **2026-10-01**
-- TTHC công khai trước: **509**
-- TTHC công khai sau: **510**
+- TTHC công khai trước: **535**
+- TTHC công khai sau: **536**
 - Thêm mới: **1**
 - Loại khỏi danh mục công khai: **0**
 - Thay đổi thông tin: **78**

@@ -2,14 +2,14 @@
 
 - Canonical dataset: `2026.10.01`
 - Baseline: 2026-07-20 — 323 TTHC (257 cấp xã + 66 dùng chung)
-- Canonical hiện có: **510** bản ghi
-- Mã có khả năng thuộc Phase 1: **315**
-- TTHC cấp tỉnh ngoài Phase 1: **195**
+- Canonical hiện có: **536** bản ghi
+- Mã có khả năng thuộc Phase 1: **321**
+- TTHC cấp tỉnh ngoài Phase 1: **215**
 - Mã được parser heading chính thức phân loại: **36**
 - Xung đột phân loại với evidence chính thức: **3**
 - Nhãn còn mơ hồ xã/dùng chung: **129**
-- Số thiếu tối thiểu so với baseline aggregate: **8**
-- Tổng hợp chính thức mới nhất (Q3/2026): **348** TTHC cấp xã + dùng chung; thiếu tối thiểu: **33**
+- Số thiếu tối thiểu so với baseline aggregate: **2**
+- Tổng hợp chính thức mới nhất (Q3/2026): **348** TTHC cấp xã + dùng chung; thiếu tối thiểu: **27**
 
 ## Kết luận
 
