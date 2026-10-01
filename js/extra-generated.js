@@ -1,8 +1,8 @@
 /* Sinh tự động bởi scripts/build_extra_data.py từ data/thu-tuc.json, city-updates-current.json và data/phu-luc/phi-le-phi-van-ban.json. Không sửa tay. */
 window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
   "generated": {
-    "dataset_version": "2026.09.29",
-    "cityUpdatesAsOf": "2026-09-29",
+    "dataset_version": "2026.10.01",
+    "cityUpdatesAsOf": "2026-10-01",
     "feeRegistryVerifiedAt": "2026-10-01",
     "note": "Sinh tự động bởi scripts/build_extra_data.py — không sửa tay."
   },
@@ -16,6 +16,16 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
       "trangThai": "Còn hiệu lực",
       "soTTHC": 2,
       "link": "https://sonnmt.haiphong.gov.vn/thu-tuc-hanh-chinh/quyet-dinh-so-4016-qd-ubnd-ngay-28-9-2026-cua-uy-ban-nhan-dan-thanh-pho-hai-phong-ve-viec-cong-b-972671"
+    },
+    {
+      "so": "3981/QĐ-UBND",
+      "ngay": "24/09/2026",
+      "trichYeu": "Quyết định số 3981/QĐ-UBND ngày 24/9/2026 về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung trong lĩnh vực kinh doanh bất động sản thuộc phạm vi chức năng quản lý của Sở Xây dựng",
+      "linhVuc": "KINH DOANH BẤT ĐỘNG SẢN",
+      "hieuLuc": "24/09/2026",
+      "trangThai": "Còn hiệu lực",
+      "soTTHC": 1,
+      "link": "https://giavien.haiphong.gov.vn/so-xay-dung-92283/quyet-dinh-so-3981-qd-ubnd-ngay-24-9-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-975849"
     },
     {
       "so": "3965/QĐ-UBND",
@@ -248,6 +258,86 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
       "link": "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/quyet-dinh-so-3433-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-thu-tuc-hanh-chinh-dac-thu-duoc-sua-doi-bo-956002"
     },
     {
+      "so": "3249/QĐ-UBND",
+      "ngay": "14/08/2026",
+      "trichYeu": "Quyết định số 3249/QĐ-UBND ngày 14/08/2026 của UBND thành phố về việc công bố danh mục thủ tục hành chính mới ban hành, bị bãi bỏ lĩnh vực giảm nghèo thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường",
+      "linhVuc": "GIẢM NGHÈO",
+      "hieuLuc": "01/09/2026",
+      "trangThai": "Còn hiệu lực",
+      "soTTHC": 0,
+      "link": "https://cathai.haiphong.gov.vn/linh-vuc-giam-ngheo-93737/quyet-dinh-so-3249-qd-ubnd-ngay-14-8-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-danh-muc--950142"
+    },
+    {
+      "so": "3204/QĐ-UBND",
+      "ngay": "11/08/2026",
+      "trichYeu": "Quyết định số 3204/QĐ-UBND ngày 11/08/2026 của UBND thành phố về việc công bố thủ tục hành chính được sửa đổi, bổ sung, bị bãi bỏ thuộc phạm vi chức năng quản lý của Sở Tài chính",
+      "linhVuc": "TÀI CHÍNH",
+      "hieuLuc": "11/08/2026",
+      "trangThai": "Còn hiệu lực",
+      "soTTHC": 36,
+      "link": "https://cathai.haiphong.gov.vn/linh-vuc-so-tai-chinh/quyet-dinh-so-3204-qd-ubnd-ngay-11-8-2026-cua-ubnd-dac-khu-ve-viec-cong-bo-thu-tuc-hanh-chinh-du-948822"
+    },
+    {
+      "so": "3180/QĐ-UBND",
+      "ngay": "10/08/2026",
+      "trichYeu": "Quyết định số 3180/QĐ-UBND ngày 10/08/2026 của UBND thành phố về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung, lĩnh vực trồng trọt và bảo vệ thực vật thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường",
+      "linhVuc": "TRỒNG TRỌT VÀ BẢO VỆ THỰC VẬT",
+      "hieuLuc": "10/08/2026",
+      "trangThai": "Còn hiệu lực",
+      "soTTHC": 1,
+      "link": "https://sonnmt.haiphong.gov.vn/thu-tuc-hanh-chinh/quyet-dinh-so-3180-qd-ubnd-ngay-10-8-2026-cua-uy-ban-nhan-dan-thanh-pho-hai-phong-ve-viec-cong-b-946712"
+    },
+    {
+      "so": "3091/QĐ-UBND",
+      "ngay": "05/08/2026",
+      "trichYeu": "Quyết định số 3091/QĐ-UBND ngày 05/08/2026 của UBND thành phố về việc công bố thủ tục hành chính ban hành mới, được sửa đổi, bổ sung thuộc phạm vi chức năng quản lý của Sở Tài chính",
+      "linhVuc": "TÀI CHÍNH",
+      "hieuLuc": "05/08/2026",
+      "trangThai": "Còn hiệu lực",
+      "soTTHC": 9,
+      "link": "https://cathai.haiphong.gov.vn/linh-vuc-so-tai-chinh/quyet-dinh-so-3091-qd-ubnd-ngay-05-8-2026-cua-uy-ban-nhan-dan-thanh-pho-hai-phong-ve-viec-cong-b-945019"
+    },
+    {
+      "so": "2692/QĐ-UBND",
+      "ngay": "14/07/2026",
+      "trichYeu": "Quyết định số 2692/QĐ-UBND ngày 14/07/2026 của UBND thành phố về việc công bố danh mục thủ tục hành chính ban hành mới, được sửa đổi, bổ sung lĩnh vực hội nhập kinh tế quốc tế, điện lực, xúc tiến thương mại thuộc phạm vi, chức năng quản lý của Sở Công Thương",
+      "linhVuc": "CÔNG THƯƠNG",
+      "hieuLuc": "14/07/2026",
+      "trangThai": "Còn hiệu lực",
+      "soTTHC": 11,
+      "link": "https://cathai.haiphong.gov.vn/linh-vuc-cong-thuong/quyet-dinh-so-2692-qd-ubnd-ngay-14-7-2026-cua-uy-ban-nhan-dan-thanh-pho-hai-phong-ve-viec-cong-b-933633"
+    },
+    {
+      "so": "2657/QĐ-UBND",
+      "ngay": "10/07/2026",
+      "trichYeu": "Quyết định số 2657/QĐ-UBND ngày 10/07/2026 của UBND thành phố về việc công bố danh mục thủ tục hành chính được thay thế, bị bãi bỏ thuộc phạm vi chức năng quản lý của Sở Xây dựng",
+      "linhVuc": "XÂY DỰNG",
+      "hieuLuc": "10/07/2026",
+      "trangThai": "Còn hiệu lực",
+      "soTTHC": 6,
+      "link": "https://cathai.haiphong.gov.vn/linh-vuc-xay-dung-93424/quyet-dinh-so-2657-qd-ubnd-ngay-10-7-2026-cua-uy-ban-nhan-dan-thanh-pho-hai-phong-ve-viec-cong-b-932509"
+    },
+    {
+      "so": "2577/QĐ-UBND",
+      "ngay": "06/07/2026",
+      "trichYeu": "Quyết định số 2577/QĐ-UBND ngày 06/07/2026 của UBND thành phố về việc công bố danh mục thủ tục hành chính mới ban hành, sửa đổi, bổ sung, thay thế và bị bãi bỏ thuộc phạm vi chức năng quản lý của Sở Xây dựng",
+      "linhVuc": "XÂY DỰNG",
+      "hieuLuc": "06/07/2026",
+      "trangThai": "Còn hiệu lực",
+      "soTTHC": 3,
+      "link": "https://cathai.haiphong.gov.vn/linh-vuc-xay-dung-93424/quyet-dinh-so-2577-qd-ubnd-ngay-06-7-2026-cua-uy-ban-nhan-dan-thanh-pho-hai-phong-ve-viec-cong-b-929122"
+    },
+    {
+      "so": "2448/QĐ-UBND",
+      "ngay": "29/06/2026",
+      "trichYeu": "Quyết định số 2448/QĐ-UBND ngày 29/06/2026 của UBND thành phố về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung thuộc phạm vi chức năng quản lý của Sở Xây dựng",
+      "linhVuc": "XÂY DỰNG",
+      "hieuLuc": "01/07/2026",
+      "trangThai": "Còn hiệu lực",
+      "soTTHC": 4,
+      "link": "https://cathai.haiphong.gov.vn/linh-vuc-xay-dung-93424/quyet-dinh-so-2448-qd-ubnd-ngay-29-6-2026-cua-uy-ban-nhan-dan-thanh-pho-hai-phong-ve-viec-cong-b-926859"
+    },
+    {
       "so": "2380/QĐ-UBND",
       "ngay": "26/06/2026",
       "trichYeu": "Quyết định số 2380/QĐ-UBND ngày 26/6/2026 về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung và bị bãi bỏ lĩnh vực quản lý lao động ngoài nước, lao động - tiền lương, lưu trữ, việc làm, an toàn, vệ sinh lao động thuộc phạm vi, chức năng quản lý của Sở Nội vụ",
@@ -256,6 +346,26 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
       "trangThai": "Còn hiệu lực",
       "soTTHC": 3,
       "link": "https://giavien.haiphong.gov.vn/so-noi-vu-92287/quyet-dinh-so-2380-qd-ubnd-ngay-26-6-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-933048"
+    },
+    {
+      "so": "2295/QĐ-UBND",
+      "ngay": "19/06/2026",
+      "trichYeu": "Quyết định số 2295/QĐ-UBND ngày 19/06/2026 của UBND thành phố quyết định công bố danh mục thủ tục hành chính được thay thế, bị bãi bỏ thuộc phạm vi, chức năng quản lý của Sở Giáo dục và Đào tạo",
+      "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
+      "hieuLuc": "19/06/2026",
+      "trangThai": "Còn hiệu lực",
+      "soTTHC": 6,
+      "link": "https://cathai.haiphong.gov.vn/giao-duc-va-dao-tao/quyet-dinh-so-2295-qd-ubnd-ngay-19-6-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-danh-muc--921113"
+    },
+    {
+      "so": "2281/QĐ-UBND",
+      "ngay": "18/06/2026",
+      "trichYeu": "Quyết định số 2281/QĐ-UBND ngày 18/06/2026 của UBND thành phố về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung, bị bãi bỏ thuộc phạm vi chức năng quản lý của Sở Xây dựng",
+      "linhVuc": "XÂY DỰNG",
+      "hieuLuc": "18/06/2026",
+      "trangThai": "Còn hiệu lực",
+      "soTTHC": 12,
+      "link": "https://cathai.haiphong.gov.vn/linh-vuc-xay-dung/quyet-dinh-so-2281-qd-ubnd-ngay-18-6-2026-cua-ubnd-thanh-pho-hai-phong-v-v-cong-bo-danh-muc-thu--920826"
     },
     {
       "so": "2127/QĐ-UBND",
@@ -288,6 +398,16 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
       "link": "https://giavien.haiphong.gov.vn/so-nong-nghiep-va-moi-truong-92289/quyet-dinh-so-1897-qd-ubnd-ngay-25-5-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-ha-904676"
     },
     {
+      "so": "1857/QĐ-UBND",
+      "ngay": "20/05/2026",
+      "trichYeu": "Quyết định số 1857/QĐ-UBND ngày 20/05/2026 của UBND thành phố về việc công bố Danh mục thủ tục hành chính mới ban hành, được sửa đổi, bổ sung thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường",
+      "linhVuc": "NÔNG NGHIỆP VÀ MÔI TRƯỜNG",
+      "hieuLuc": "20/05/2026",
+      "trangThai": "Còn hiệu lực",
+      "soTTHC": 12,
+      "link": "https://cathai.haiphong.gov.vn/linh-vuc-moi-truong/quyet-dinh-so-1857-qd-ubnd-ngay-20-5-2026-cua-ubnd-thanh-pho-hai-phong-v-v-cong-bo-danh-muc-thu--908004"
+    },
+    {
       "so": "1847/QĐ-UBND",
       "ngay": "19/05/2026",
       "trichYeu": "Quyết định số 1847/QĐ-UBND ngày 19/5/2026 của UBND thành phố về việc công bố Danh mục thủ tục hành chính mới ban hành, bị bãi bỏ thuộc phạm vi chức năng quản lý của Sở Giáo dục và Đào tạo",
@@ -298,13 +418,23 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
       "link": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/qd-1877-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-bi-bai-bo-thuoc-pham-vi-chuc-na-906998"
     },
     {
+      "so": "1846/QĐ-UBND",
+      "ngay": "19/05/2026",
+      "trichYeu": "Quyết định số 1846/QĐ-UBND ngày 19/05/2026 của UBND thành phố về việc công bố Danh mục thủ tục hành chính mới ban hành, được sửa đổi, bổ sung, bị bãi bỏ thuộc phạm vi chức năng quản lý của Sở Xây dựng",
+      "linhVuc": "XÂY DỰNG",
+      "hieuLuc": "19/05/2026",
+      "trangThai": "Còn hiệu lực",
+      "soTTHC": 17,
+      "link": "https://cathai.haiphong.gov.vn/linh-vuc-xay-dung/quyet-dinh-so-1846-qd-ubnd-ngay-19-5-2026-cua-ubnd-thanh-pho-hai-phong-v-v-cong-bo-danh-muc-thu--905913"
+    },
+    {
       "so": "1747/QĐ-UBND",
       "ngay": "09/05/2026",
       "trichYeu": "Quyết định số 1747/QĐ-UBND ngày 09/5/2026 của UBND thành phố về việc công khai Danh mục thủ tục hành chính sửa đổi bổ sung thuộc phạm vi, chức năng quản lí của Sở Giáo dục và Đào tạo",
       "linhVuc": "GIÁO DỤC VÀ ĐÀO TẠO",
       "hieuLuc": "09/05/2026",
       "trangThai": "Còn hiệu lực",
-      "soTTHC": 19,
+      "soTTHC": 17,
       "link": "https://giavien.haiphong.gov.vn/so-giao-duc-va-dao-tao-92279/quyet-dinh-so-1747-qd-ubnd-ngay-09-5-2026-cua-ubnd-thanh-pho-ve-viec-cong-khai-danh-muc-thu-tuc--900189"
     },
     {
@@ -348,6 +478,56 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
       "link": "https://giavien.haiphong.gov.vn/so-noi-vu-92287/quyet-dinh-so-1039-qd-ubnd-ngay-20-3-2026-ve-viec-cong-bo-thu-tuc-hanh-chinh-moi-ban-hanh-va-bi--878050"
     },
     {
+      "so": "777/QĐ-UBND",
+      "ngay": "03/03/2026",
+      "trichYeu": "Quyết định số 777/QĐ-UBND ngày 03/03/2026 của UBND thành phố về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung và bị bãi bỏ thuộc phạm vi chức năng quản lý của Sở Xây dựng",
+      "linhVuc": "XÂY DỰNG",
+      "hieuLuc": "03/03/2026",
+      "trangThai": "Còn hiệu lực",
+      "soTTHC": 6,
+      "link": "https://cathai.haiphong.gov.vn/linh-vuc-duong-bo/quyet-dinh-so-777-qd-ubnd-ngay-3-3-2026-cua-ubnd-thanh-pho-hai-phong-v-v-cong-bo-danh-muc-thu-tu-868508"
+    },
+    {
+      "so": "716/QĐ-UBND",
+      "ngay": "27/02/2026",
+      "trichYeu": "Quyết định số 716/QĐ-UBND ngày 27/02/2026 của UBND thành phố về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường",
+      "linhVuc": "NÔNG NGHIỆP VÀ MÔI TRƯỜNG",
+      "hieuLuc": "27/02/2026",
+      "trangThai": "Còn hiệu lực",
+      "soTTHC": 5,
+      "link": "https://cathai.haiphong.gov.vn/bien-va-hai-dao/quyet-dinh-so-716-qd-ubnd-ngay-27-2-2026-cua-ubnd-thanh-pho-hai-phong-v-v-cong-khai-danh-muc-thu-865584"
+    },
+    {
+      "so": "676/QĐ-UBND",
+      "ngay": "15/02/2026",
+      "trichYeu": "Quyết định số 676/QĐ-UBND ngày 15/02/2026 của UBND thành phố về việc công bố danh mục thủ tục hành chính mới ban hành, sửa đổi, bổ sung và bị bãi bỏ thuộc phạm vi chức năng quản lý của Sở Tài chính",
+      "linhVuc": "TÀI CHÍNH",
+      "hieuLuc": "15/02/2026",
+      "trangThai": "Còn hiệu lực",
+      "soTTHC": 12,
+      "link": "https://daison.haiphong.gov.vn/thu-tuc-hanh-chinh/ubnd-xa-dai-son-ban-hanh-thong-bao-so-41-tb-ubnd-cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-sua-d-866283"
+    },
+    {
+      "so": "669/QĐ-UBND",
+      "ngay": "14/02/2026",
+      "trichYeu": "Quyết định số 669/QĐ-UBND ngày 14/02/2026 của UBND thành phố về việc công bố danh mục thủ tục hành chính sửa đổi, bổ sung thuộc phạm vi chức năng quản lý của Sở Xây dựng",
+      "linhVuc": "XÂY DỰNG",
+      "hieuLuc": "14/02/2026",
+      "trangThai": "Còn hiệu lực",
+      "soTTHC": 9,
+      "link": "https://cathai.haiphong.gov.vn/linh-vuc-hoat-dong-xay-dung-va-kien-truc/quyet-dinh-so-669-qd-ubnd-ngay-14-2-2026-cua-ubnd-thanh-pho-hai-phong-v-v-cong-khai-danh-muc-thu-862422"
+    },
+    {
+      "so": "617/QĐ-UBND",
+      "ngay": "12/02/2026",
+      "trichYeu": "Quyết định số 617/QĐ-UBND ngày 12/02/2026 của UBND thành phố về việc công bố danh mục thủ tục hành chính mới ban hành, được sửa đổi, bổ sung và bị bãi bỏ lĩnh vực địa chất và khoáng sản thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường",
+      "linhVuc": "ĐỊA CHẤT VÀ KHOÁNG SẢN",
+      "hieuLuc": "12/02/2026",
+      "trangThai": "Còn hiệu lực",
+      "soTTHC": 5,
+      "link": "https://cathai.haiphong.gov.vn/linh-vuc-dia-chat-va-khoang-san/quyet-dinh-so-617-qd-ubnd-ngay-12-2-2026-cua-ubnd-thanh-pho-hai-phong-v-v-cong-khai-danh-muc-thu-862042"
+    },
+    {
       "so": "556/QĐ-UBND",
       "ngay": "09/02/2026",
       "trichYeu": "Quyết định số 556/QĐ-UBND ngày 09/2/2026 về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung lĩnh vực nuôi con nuôi thuộc phạm vi, chức năng quản lý của Sở Tư pháp",
@@ -358,6 +538,16 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
       "link": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-556-qd-ubnd-ngay-09-2-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-do-884409"
     },
     {
+      "so": "541/QĐ-UBND",
+      "ngay": "07/02/2026",
+      "trichYeu": "Quyết định số 541/QĐ-UBND ngày 07/02/2026 của UBND thành phố về việc công bố danh mục thủ tục hành chính mới ban hành; được sửa đổi, bổ sung; thay thế và bị bãi bỏ lĩnh vực lâm nghiệp, kiểm lâm, bảo tồn thiên nhiên và đa dạng sinh học, thuỷ sản và kiểm ngư, biển và hải đảo thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường",
+      "linhVuc": "NÔNG NGHIỆP VÀ MÔI TRƯỜNG",
+      "hieuLuc": "07/02/2026",
+      "trangThai": "Còn hiệu lực",
+      "soTTHC": 21,
+      "link": "https://cathai.haiphong.gov.vn/bao-ton-thien-nhien-va-da-dang-sinh-hoc/quyet-dinh-so-541-qd-ubnd-ngay-7-2-2026-cua-ubnd-thanh-pho-v-v-cong-khai-thu-tuc-hanh-chinh-moi--859548"
+    },
+    {
       "so": "467/QĐ-UBND",
       "ngay": "31/01/2026",
       "trichYeu": "Quyết định số 467/QĐ-UBND ngày 31/01/2026 về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung lĩnh vực công chứng, chứng thực, quản tài viên và hộ tịch thuộc phạm vi, chức năng quản lý của Sở Tư pháp",
@@ -366,6 +556,26 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
       "trangThai": "Còn hiệu lực",
       "soTTHC": 41,
       "link": "https://giavien.haiphong.gov.vn/so-tu-phap-92285/quyet-dinh-so-467-qd-ubnd-ngay-31-01-2026-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-d-884412"
+    },
+    {
+      "so": "454/QĐ-UBND",
+      "ngay": "31/01/2026",
+      "trichYeu": "Quyết định số 454/QĐ-UBND ngày 31/01/2026 của UBND thành phố về việc công bố Danh mục thủ tục hành chính được sửa đổi, bổ sung và bị bãi bỏ lĩnh vực thể dục thể thao thuộc phạm vi chức năng quản lý của Sở Văn hoá, Thể thao và Du lịch",
+      "linhVuc": "THỂ DỤC THỂ THAO",
+      "hieuLuc": "31/01/2026",
+      "trangThai": "Còn hiệu lực",
+      "soTTHC": 0,
+      "link": "https://cathai.haiphong.gov.vn/linh-vuc-the-duc-the-thao/quyet-dinh-so-454-qd-ubnd-ngay-31-01-2026-cua-ubnd-thanh-pho-hai-phong-ve-viec-cong-bo-danh-muc--856436"
+    },
+    {
+      "so": "394/QĐ-UBND",
+      "ngay": "29/01/2026",
+      "trichYeu": "Quyết định số 394/QĐ-UBND ngày 29/01/2026 của UBND thành phố về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung, thay thế lĩnh vực tài nguyên nước thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường",
+      "linhVuc": "TÀI NGUYÊN NƯỚC",
+      "hieuLuc": "29/01/2026",
+      "trangThai": "Còn hiệu lực",
+      "soTTHC": 2,
+      "link": "https://sonnmt.haiphong.gov.vn/thu-tuc-hanh-chinh/quyet-dinh-so-394-qd-ubnd-ngay-29-01-2026-cua-uy-ban-nhan-dan-thanh-pho-hai-phong-cong-bo-danh-m-854758"
     }
   ],
   "quyetDinhTheoTTHC": [
@@ -377,9 +587,49 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
       ]
     },
     {
+      "nhom": "NÔNG NGHIỆP VÀ MÔI TRƯỜNG (53 TTHC)",
+      "vanBan": [
+        "541/QĐ-UBND – 21 TTHC",
+        "1897/QĐ-UBND – 15 TTHC",
+        "1857/QĐ-UBND – 12 TTHC",
+        "716/QĐ-UBND – 5 TTHC",
+        "Văn bản công bố khác viện dẫn trong Master Data (Bộ, ngành, QĐ UBND TP đợt trước; số hiệu theo trích xuất Master Data, chưa đối chiếu từng văn bản): 1646/QĐ-UBND (3), 1858/QĐ-BNNMT (3), 1869/QĐ-BNNMT (3), 1877/QĐ-BNNMT (3), 1878/QĐ-BNNMT (3), 1883/QĐ-BNNMT (3), 1897/QĐ-BNNMT (3), 1908/QĐ-BNNMT (3), 1931/QĐ-BNNMT (3), 2198/QĐ-UBND (3), 2881/QĐ-UBND (3), 519/QĐ-UBND (3), 684/QĐ-UBND (3), 01/QĐ-BNNMT (2), 04/QĐ-BNNMT (2), 2168/QĐ-UBND (2), 2787/QĐ-UBND (2), 5891/QĐ-BNNMT (2)"
+      ]
+    },
+    {
+      "nhom": "TÀI CHÍNH (50 TTHC)",
+      "vanBan": [
+        "3204/QĐ-UBND – 36 TTHC",
+        "676/QĐ-UBND – 12 TTHC",
+        "3091/QĐ-UBND – 9 TTHC",
+        "Văn bản công bố khác viện dẫn trong Master Data (Bộ, ngành, QĐ UBND TP đợt trước; số hiệu theo trích xuất Master Data, chưa đối chiếu từng văn bản): 1996/QĐ-BTC (4), 1998/QĐ-BTC (4), 2884/QĐ-UBND (4)"
+      ]
+    },
+    {
+      "nhom": "XÂY DỰNG (45 TTHC)",
+      "vanBan": [
+        "1846/QĐ-UBND – 16 TTHC",
+        "2281/QĐ-UBND – 12 TTHC",
+        "669/QĐ-UBND – 9 TTHC",
+        "2657/QĐ-UBND – 6 TTHC",
+        "777/QĐ-UBND – 6 TTHC",
+        "2448/QĐ-UBND – 4 TTHC",
+        "2577/QĐ-UBND – 3 TTHC"
+      ]
+    },
+    {
       "nhom": "HỘ TỊCH (34 TTHC)",
       "vanBan": [
         "467/QĐ-UBND – 34 TTHC"
+      ]
+    },
+    {
+      "nhom": "GIÁO DỤC VÀ ĐÀO TẠO (32 TTHC)",
+      "vanBan": [
+        "1747/QĐ-UBND – 17 TTHC",
+        "1635/QĐ-UBND – 8 TTHC",
+        "2295/QĐ-UBND – 6 TTHC",
+        "1847/QĐ-UBND – 4 TTHC"
       ]
     },
     {
@@ -390,24 +640,9 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
       ]
     },
     {
-      "nhom": "GIÁO DỤC VÀ ĐÀO TẠO (30 TTHC)",
-      "vanBan": [
-        "1747/QĐ-UBND – 19 TTHC",
-        "1635/QĐ-UBND – 8 TTHC",
-        "1847/QĐ-UBND – 4 TTHC"
-      ]
-    },
-    {
       "nhom": "ĐƯỜNG BỘ (23 TTHC)",
       "vanBan": [
         "3508/QĐ-UBND – 23 TTHC"
-      ]
-    },
-    {
-      "nhom": "NÔNG NGHIỆP VÀ MÔI TRƯỜNG (20 TTHC)",
-      "vanBan": [
-        "1897/QĐ-UBND – 15 TTHC",
-        "Văn bản công bố khác viện dẫn trong Master Data (Bộ, ngành, QĐ UBND TP đợt trước; số hiệu theo trích xuất Master Data, chưa đối chiếu từng văn bản): 1646/QĐ-UBND (3), 1858/QĐ-BNNMT (3), 1869/QĐ-BNNMT (3), 1877/QĐ-BNNMT (3), 1878/QĐ-BNNMT (3), 1883/QĐ-BNNMT (3), 1897/QĐ-BNNMT (3), 1908/QĐ-BNNMT (3), 1931/QĐ-BNNMT (3), 2198/QĐ-UBND (3), 2881/QĐ-UBND (3), 519/QĐ-UBND (3), 684/QĐ-UBND (3), 01/QĐ-BNNMT (2), 04/QĐ-BNNMT (2), 2168/QĐ-UBND (2), 2787/QĐ-UBND (2), 5891/QĐ-BNNMT (2)"
       ]
     },
     {
@@ -417,6 +652,14 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
         "467/QĐ-UBND – 1 TTHC",
         "556/QĐ-UBND – 1 TTHC",
         "Văn bản công bố khác viện dẫn trong Master Data (Bộ, ngành, QĐ UBND TP đợt trước; số hiệu theo trích xuất Master Data, chưa đối chiếu từng văn bản): 1444/QĐ-BTP (7), 1458/QĐ-BTP (7)"
+      ]
+    },
+    {
+      "nhom": "CÔNG THƯƠNG (16 TTHC)",
+      "vanBan": [
+        "2692/QĐ-UBND – 11 TTHC",
+        "2127/QĐ-UBND – 5 TTHC",
+        "3584/QĐ-UBND – 5 TTHC"
       ]
     },
     {
@@ -465,16 +708,9 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
       ]
     },
     {
-      "nhom": "CÔNG THƯƠNG (5 TTHC)",
+      "nhom": "ĐỊA CHẤT VÀ KHOÁNG SẢN (5 TTHC)",
       "vanBan": [
-        "2127/QĐ-UBND – 5 TTHC",
-        "3584/QĐ-UBND – 5 TTHC"
-      ]
-    },
-    {
-      "nhom": "ĐĂNG KÝ HỘ KINH DOANH (5 TTHC)",
-      "vanBan": [
-        "[cần bổ sung] – Master Data chưa ghi quyết định công bố cho nhóm này"
+        "617/QĐ-UBND – 5 TTHC"
       ]
     },
     {
@@ -487,12 +723,6 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
       "nhom": "LƯU THÔNG HÀNG HÓA TRONG NƯỚC (4 TTHC)",
       "vanBan": [
         "1349/QĐ-UBND – 4 TTHC"
-      ]
-    },
-    {
-      "nhom": "TÀI CHÍNH (4 TTHC)",
-      "vanBan": [
-        "Văn bản công bố khác viện dẫn trong Master Data (Bộ, ngành, QĐ UBND TP đợt trước; số hiệu theo trích xuất Master Data, chưa đối chiếu từng văn bản): 1996/QĐ-BTC (4), 1998/QĐ-BTC (4), 2884/QĐ-UBND (4)"
       ]
     },
     {
@@ -541,6 +771,7 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
     {
       "nhom": "HÀNG HẢI VÀ ĐƯỜNG THỦY (2 TTHC)",
       "vanBan": [
+        "1846/QĐ-UBND – 1 TTHC",
         "Văn bản công bố khác viện dẫn trong Master Data (Bộ, ngành, QĐ UBND TP đợt trước; số hiệu theo trích xuất Master Data, chưa đối chiếu từng văn bản): 1136/QĐ-BXD (2)"
       ]
     },
@@ -567,6 +798,12 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
       "nhom": "TIẾP CẬN THÔNG TIN (2 TTHC)",
       "vanBan": [
         "3957/QĐ-UBND – 2 TTHC"
+      ]
+    },
+    {
+      "nhom": "TÀI NGUYÊN NƯỚC (2 TTHC)",
+      "vanBan": [
+        "394/QĐ-UBND – 2 TTHC"
       ]
     },
     {
@@ -606,6 +843,12 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
       ]
     },
     {
+      "nhom": "KINH DOANH BẤT ĐỘNG SẢN (1 TTHC)",
+      "vanBan": [
+        "3981/QĐ-UBND – 1 TTHC"
+      ]
+    },
+    {
       "nhom": "LAO ĐỘNG (1 TTHC)",
       "vanBan": [
         "Văn bản công bố khác viện dẫn trong Master Data (Bộ, ngành, QĐ UBND TP đợt trước; số hiệu theo trích xuất Master Data, chưa đối chiếu từng văn bản): 1561/QĐ-BNV (1), 4/QĐ-BNV (1)"
@@ -640,6 +883,12 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
       "nhom": "TRẺ EM (1 TTHC)",
       "vanBan": [
         "Văn bản công bố khác viện dẫn trong Master Data (Bộ, ngành, QĐ UBND TP đợt trước; số hiệu theo trích xuất Master Data, chưa đối chiếu từng văn bản): 2082/QĐ-BYT (1), 2183/QĐ-BYT (1), 2224/QĐ-BYT (1), 2778/QĐ-BYT (1), 2922/QĐ-BYT (1), 3740/QĐ-BYT (1)"
+      ]
+    },
+    {
+      "nhom": "TRỒNG TRỌT VÀ BẢO VỆ THỰC VẬT (1 TTHC)",
+      "vanBan": [
+        "3180/QĐ-UBND – 1 TTHC"
       ]
     },
     {

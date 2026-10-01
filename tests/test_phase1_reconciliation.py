@@ -23,9 +23,9 @@ class Phase1ReconciliationTests(unittest.TestCase):
         result = MODULE.reconcile(canonical, city, baseline, table_levels)
 
         self.assertEqual(result["baselineTarget"], 323)
-        self.assertEqual(result["canonicalTotal"], 509)
+        self.assertEqual(result["canonicalTotal"], 510)
         self.assertEqual(result["summary"]["phase1CandidateCodes"], 315)
-        self.assertEqual(result["summary"]["outOfScopeProvinceReceptionOnly"], 194)
+        self.assertEqual(result["summary"]["outOfScopeProvinceReceptionOnly"], 195)
         self.assertEqual(result["summary"]["misclassifiedByOfficialEvidence"], 3)  # cờ rà soát: lệch giữa bảng phân loại chính thức và QĐ thành phố
         self.assertEqual(result["summary"]["minimumMissingAgainstAggregateBaseline"], 8)
         self.assertEqual(result["COUNT_DRIFT"]["delta"], -8)

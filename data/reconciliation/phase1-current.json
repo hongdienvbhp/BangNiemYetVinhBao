@@ -1,14 +1,14 @@
 {
   "format": "phase1-reconciliation",
   "version": 2,
-  "canonicalDatasetVersion": "2026.09.29",
-  "canonicalSourceCommit": "d40bee941c77817909add8e6e3e68763cdaa60f1",
+  "canonicalDatasetVersion": "2026.10.01",
+  "canonicalSourceCommit": "561864722a2cc2e98cf7d1582e0b2c60a1d52010",
   "baselineAsOf": "2026-07-20",
   "baselineTarget": 323,
-  "canonicalTotal": 509,
+  "canonicalTotal": 510,
   "summary": {
     "phase1CandidateCodes": 315,
-    "outOfScopeProvinceReceptionOnly": 194,
+    "outOfScopeProvinceReceptionOnly": 195,
     "misclassifiedByOfficialEvidence": 3,
     "ambiguousCommuneOrShared": 129,
     "provisionalCommuneCapLabel": 152,
@@ -1180,7 +1180,7 @@
   },
   "EXTRA": {
     "status": "phase1_out_of_scope",
-    "count": 194,
+    "count": 195,
     "items": [
       "1.000302",
       "1.000321",
@@ -1266,6 +1266,7 @@
       "1.012890",
       "1.012893",
       "1.012898",
+      "1.012905",
       "1.012921",
       "1.012944",
       "1.012953",
@@ -1422,7 +1423,7 @@
     "phase1CandidatesCurrent": 315,
     "delta": -8,
     "minimumMissing": 8,
-    "canonicalTotalVsBaselineDelta": 186,
+    "canonicalTotalVsBaselineDelta": 187,
     "latestOfficialAggregate": {
       "period": "Q3/2026",
       "target": 348,
