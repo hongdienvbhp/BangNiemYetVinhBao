@@ -1,0 +1,52 @@
+{
+  "format": "official-fee-policy-evidence",
+  "version": 1,
+  "policy": "Evidence layer only. Values here are transcribed from the official PDF published on Cong bao Hai Phong; they are not promoted into data/thu-tuc.json.",
+  "document": {
+    "decisionNo": "23/2026/NQ-HĐND",
+    "title": "Nghị quyết quy định mức thu phí, lệ phí thuộc thẩm quyền của Hội đồng nhân dân thành phố đối với việc thực hiện thủ tục hành chính qua hình thức trực tuyến trên địa bàn thành phố Hải Phòng",
+    "issuer": "Hội đồng nhân dân thành phố Hải Phòng",
+    "adoptedDate": "2026-07-28",
+    "effectiveDate": "2026-08-08",
+    "expiryDate": null,
+    "expiryNote": "Nghị quyết không quy định thời hạn áp dụng (Điều 3 chỉ quy định ngày có hiệu lực).",
+    "publishedDate": "2026-07-30",
+    "numberAndDateSource": "Lớp văn bản của bản PDF ký số để trống số và ngày ở phần số/ký hiệu; số hiệu lấy từ metadata Công báo (code=23/2026/NQ-HĐND, issueTime=28/07/2026), ngày thông qua lấy từ câu cuối Nghị quyết (Kỳ họp thứ 3, ngày 28/7/2026).",
+    "repeals": [
+      "07/2025/NQ-HĐND ngày 10/6/2025 của HĐND tỉnh Hải Dương",
+      "08/2025/NQ-HĐND ngày 17/6/2025 của HĐND thành phố Hải Phòng"
+    ]
+  },
+  "evidence": {
+    "sourceRole": "local_fee_policy",
+    "classification": "fee_policy_online_submission",
+    "url": "https://congbao.haiphong.gov.vn/upload/105430/20260730/NQ_QPPL_23_ce7a8.pdf",
+    "articleUrl": "https://congbao.haiphong.gov.vn/van-ban-tinh/hoi-dong-nhan-dan-tinh/nghi-quyet-23-2026-nq-hdnd-nghi-quyet-quy-dinh-muc-thu-phi-le-phi-doi-voi-viec-thuc-hien-thu-tuc-hanh-chinh-qua-hinh-thu.html",
+    "attachmentUrl": "https://congbao.haiphong.gov.vn/upload/105430/20260730/NQ_QPPL_23_ce7a8.pdf",
+    "attachmentSha256": "6437d5562e94e5a4eab835459cddd17038046370e40d447eae81d0fdcf8a4eb7",
+    "filePath": "data/source-audit/fee-policy/NQ-23-2026-NQ-HDND-HP.pdf",
+    "decisionNumbers": ["23/2026/NQ-HĐND"],
+    "publishedDate": "2026-07-30",
+    "effectiveDate": "2026-08-08",
+    "repealContext": false,
+    "retrievedAt": "2026-09-29"
+  },
+  "scope": {
+    "territory": "Toàn thành phố Hải Phòng; Nghị quyết không giới hạn cấp giải quyết (áp dụng cả TTHC cấp xã có phát sinh các loại phí, lệ phí nêu tại Điều 2).",
+    "onlineCondition": "Tổ chức, cá nhân yêu cầu giải quyết TTHC qua hình thức trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (Điều 1 khoản 2 điểm a). Nghị quyết không phân biệt dịch vụ công trực tuyến toàn trình hay một phần.",
+    "transition": "Hồ sơ nộp trực tuyến trước ngày 08/8/2026 tiếp tục thực hiện theo Nghị quyết 07/2025/NQ-HĐND (Hải Dương) và 08/2025/NQ-HĐND (Hải Phòng) (Điều 3 khoản 3)."
+  },
+  "feeItems": [
+    {"point": "Điều 2 khoản 1 điểm a", "kind": "lệ phí", "name": "Lệ phí hộ tịch", "onlineRate": "0 đồng"},
+    {"point": "Điều 2 khoản 1 điểm b", "kind": "lệ phí", "name": "Lệ phí cấp giấy phép lao động cho người nước ngoài làm việc tại Việt Nam", "onlineRate": "0 đồng"},
+    {"point": "Điều 2 khoản 1 điểm c", "kind": "lệ phí", "name": "Lệ phí cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất trên địa bàn thành phố Hải Phòng", "onlineRate": "0 đồng"},
+    {"point": "Điều 2 khoản 1 điểm d", "kind": "lệ phí", "name": "Lệ phí cấp giấy phép xây dựng trên địa bàn thành phố Hải Phòng", "onlineRate": "0 đồng"},
+    {"point": "Điều 2 khoản 2 điểm a", "kind": "phí", "name": "Phí đăng ký giao dịch bảo đảm trên địa bàn thành phố", "onlineRate": "0 đồng"},
+    {"point": "Điều 2 khoản 2 điểm b", "kind": "phí", "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất trên địa bàn thành phố", "onlineRate": "0 đồng"},
+    {"point": "Điều 2 khoản 2 điểm c", "kind": "phí", "name": "Phí thẩm định cấp, cấp lại, điều chỉnh giấy phép môi trường", "onlineRate": "0 đồng"},
+    {"point": "Điều 2 khoản 2 điểm d", "kind": "phí", "name": "Phí thẩm định báo cáo đánh giá tác động môi trường", "onlineRate": "0 đồng"},
+    {"point": "Điều 2 khoản 2 điểm đ", "kind": "phí", "name": "Phí thẩm định hồ sơ cấp giấy phép trong lĩnh vực tài nguyên nước trên địa bàn thành phố Hải Phòng", "onlineRate": "0 đồng"},
+    {"point": "Điều 2 khoản 2 điểm e", "kind": "phí", "name": "Phí bình tuyển, công nhận cây mẹ, cây đầu dòng, vườn giống cây lâm nghiệp, rừng giống", "onlineRate": "0 đồng"},
+    {"point": "Điều 2 khoản 2 điểm g", "kind": "phí", "name": "Phí thẩm định cấp giấy chứng nhận đủ điều kiện kinh doanh hoạt động cơ sở thể thao, câu lạc bộ thể thao chuyên nghiệp trên địa bàn thành phố Hải Phòng", "onlineRate": "0 đồng"}
+  ]
+}
