@@ -1,7 +1,7 @@
 {
   "format": "haiphong-city-tthc-updates",
   "version": 2,
-  "asOf": "2026-10-01",
+  "asOf": "2026-10-03",
   "scope": "Public TTHC decisions in the official decision manifest. Internal/process-only decisions are retained in the manifest/source index but excluded here.",
   "decisions": [
     {
@@ -10606,6 +10606,34 @@
           "communeReceptionEvidence": true,
           "page": 3,
           "context": "quyết Địa điểm thực hiện Phí, lệ phí Căn cứ pháp lý 1 1.003666 Cấp, cấp lại Giấy chứng nhận ngu ồn g ốc th ủy sản khai thác (theo yêu cầu) 02 ngày làm việc kể từ ngày nhận đủ hồ sơ - Trung tâm Phục vụ hành chính công thành phố - Trung tâm Phục vụ hành chính công cấp xã Không quy định - Luật Thủy s ản s ố 18/2017/QH14 được s ửa đ ổi, bổ sung b ởi Lu ật s ố 146/2025/QH15;"
+        }
+      ]
+    },
+    {
+      "decisionNo": "4123/QĐ-UBND",
+      "decisionDate": "2026-10-01",
+      "publishedDate": "",
+      "effectiveDate": "2026-10-01",
+      "effectiveDateSource": "default_effective_from_signing_date",
+      "currentStateAtAsOf": "current_or_immediate_unless_repealed",
+      "classification": "public_tthc",
+      "ingestStatus": "auto_discovered",
+      "field": "KHOA HỌC VÀ CÔNG NGHỆ",
+      "title": "Quyết định số 4123/QĐ-UBND ngày 01/10/2026 của Uỷ ban nhân dân thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung, lĩnh vực khoa học và công nghệ thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường",
+      "articleUrl": "https://sonnmt.haiphong.gov.vn/thu-tuc-hanh-chinh/quyet-dinh-so-4123-qd-ubnd-ngay-01-10-2026-cua-uy-ban-nhan-dan-thanh-pho-hai-phong-ve-viec-cong--976579",
+      "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/5892/tintuc/2026/10/qd-4123-ngay-01.10.2026-ubnd-hp-cong-bo-dm-tthc-sua-doi-bo-sung-lvuc-khcn639265459707126878.pdf",
+      "filePath": "data/source-audit/city-decisions/QD-4123.pdf",
+      "pdfSha256": "606e9b9365476a363184508768e18aca58bb06c9bea147c2fdc99db442b4f45d",
+      "pageCount": 3,
+      "rows": [
+        {
+          "code": "2.001576",
+          "name": "Công nh ận ti ến b ộ kỹ thuật",
+          "sectionStatus": "modified",
+          "levelHint": "province",
+          "communeReceptionEvidence": true,
+          "page": 3,
+          "context": "Địa điểm thực hiện Phí, lệ phí Căn cứ pháp lý Theo quy định Sau cắt giảm 1 2.001576 Công nh ận ti ến b ộ kỹ thuật 20 ngày làm việc 11,5 ngày làm việc - Trung tâm Phục v ụ hành chính công thành phố - Trung tâm Phục v ụ hành chính công cấp xã Không quy định Thông tư s ố 38/2026/TT- BNNMT ngày 10 tháng 9 năm 2026 của B ộ trưởng"
         }
       ]
     }
@@ -32643,12 +32671,33 @@
       "communeReceptionEvidence": true,
       "page": 3,
       "context": "quyết Địa điểm thực hiện Phí, lệ phí Căn cứ pháp lý 1 1.003666 Cấp, cấp lại Giấy chứng nhận ngu ồn g ốc th ủy sản khai thác (theo yêu cầu) 02 ngày làm việc kể từ ngày nhận đủ hồ sơ - Trung tâm Phục vụ hành chính công thành phố - Trung tâm Phục vụ hành chính công cấp xã Không quy định - Luật Thủy s ản s ố 18/2017/QH14 được s ửa đ ổi, bổ sung b ởi Lu ật s ố 146/2025/QH15;"
+    },
+    {
+      "decisionNo": "4123/QĐ-UBND",
+      "decisionDate": "2026-10-01",
+      "publishedDate": "",
+      "effectiveDate": "2026-10-01",
+      "effectiveDateSource": "default_effective_from_signing_date",
+      "currentStateAtAsOf": "current_or_immediate_unless_repealed",
+      "classification": "public_tthc",
+      "ingestStatus": "auto_discovered",
+      "field": "KHOA HỌC VÀ CÔNG NGHỆ",
+      "articleUrl": "https://sonnmt.haiphong.gov.vn/thu-tuc-hanh-chinh/quyet-dinh-so-4123-qd-ubnd-ngay-01-10-2026-cua-uy-ban-nhan-dan-thanh-pho-hai-phong-ve-viec-cong--976579",
+      "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/5892/tintuc/2026/10/qd-4123-ngay-01.10.2026-ubnd-hp-cong-bo-dm-tthc-sua-doi-bo-sung-lvuc-khcn639265459707126878.pdf",
+      "pdfSha256": "606e9b9365476a363184508768e18aca58bb06c9bea147c2fdc99db442b4f45d",
+      "code": "2.001576",
+      "name": "Công nh ận ti ến b ộ kỹ thuật",
+      "sectionStatus": "modified",
+      "levelHint": "province",
+      "communeReceptionEvidence": true,
+      "page": 3,
+      "context": "Địa điểm thực hiện Phí, lệ phí Căn cứ pháp lý Theo quy định Sau cắt giảm 1 2.001576 Công nh ận ti ến b ộ kỹ thuật 20 ngày làm việc 11,5 ngày làm việc - Trung tâm Phục v ụ hành chính công thành phố - Trung tâm Phục v ụ hành chính công cấp xã Không quy định Thông tư s ố 38/2026/TT- BNNMT ngày 10 tháng 9 năm 2026 của B ộ trưởng"
     }
   ],
   "summary": {
-    "decisions": 60,
-    "uniqueCodes": 911,
-    "communeReceptionCodes": 459,
+    "decisions": 61,
+    "uniqueCodes": 912,
+    "communeReceptionCodes": 460,
     "repealedCodes": 249,
     "futureEffectiveCodes": 6,
     "needsReviewDecisions": 0
