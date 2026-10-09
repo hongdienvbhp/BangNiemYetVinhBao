@@ -108,6 +108,10 @@ jobs:
         if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
         run: python scripts/build_tthc_tracking.py
 
+      - name: Reconcile Priority 51 crosswalk to canonical Master Data
+        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
+        run: python scripts/reconcile_priority51_crosswalk.py
+
       - name: Candidate validation
         if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
         id: validation
