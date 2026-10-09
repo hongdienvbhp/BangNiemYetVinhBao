@@ -107,7 +107,9 @@ CI trên Pull Request chạy kiểm tra Master Data, HTML/assets và cú pháp J
 
 ## Phát hành website
 
-Website được phát hành bằng GitHub Pages qua `.github/workflows/pages.yml`. Workflow chạy kiểm tra Master Data trước khi đóng gói đúng 13 tài nguyên runtime và chỉ deploy khi `main` được cập nhật hoặc khi chạy thủ công; Pull Request chỉ chạy phần validation/build, không deploy.
+**Phương án công khai chính: Google Firebase Hosting** qua `.github/workflows/firebase-hosting.yml` (địa chỉ `https://<FIREBASE_PROJECT_ID>.web.app`). Hướng dẫn cấu hình một lần: `docs/FIREBASE_HOSTING.md`. Cả hai workflow dùng chung `scripts/build_site.py` để đóng gói.
+
+GitHub Pages được giữ song song trong giai đoạn chuyển đổi. Website được phát hành bằng GitHub Pages qua `.github/workflows/pages.yml`. Workflow chạy kiểm tra Master Data trước khi đóng gói đúng 12 tài nguyên runtime và chỉ deploy khi `main` được cập nhật hoặc khi chạy thủ công; Pull Request chỉ chạy phần validation/build, không deploy.
 
 URL dự kiến sau khi GitHub Pages được bật cho repository:
 
