@@ -1,0 +1,95 @@
+{
+  "format": "official-fee-policy-evidence",
+  "version": 1,
+  "policy": "Evidence layer only. Mức thu chép nguyên văn từ Phụ lục I–III của PDF đăng Công báo Hải Phòng; không promote vào data/thu-tuc.json.",
+  "document": {
+    "decisionNo": "34/2025/NQ-HĐND",
+    "title": "Nghị quyết quy định mức thu, chế độ thu, nộp, quản lý và sử dụng các loại phí, lệ phí trong lĩnh vực đất đai trên địa bàn thành phố",
+    "issuer": "Hội đồng nhân dân thành phố Hải Phòng",
+    "adoptedDate": "2025-12-10",
+    "effectiveDate": "2026-01-01",
+    "expiryDate": null,
+    "numberAndDateSource": "Lớp văn bản của PDF ký số để trống số/ngày; số hiệu và issueTime (10/12/2025) lấy từ metadata Công báo; ngày thông qua lấy từ câu kết (khóa XVI, Kỳ họp thứ 32, ngày 10/12/2025).",
+    "onlineRateClause": "Điều 6 khoản 2: mức thu tại Nghị quyết này đối với việc thực hiện TTHC trực tuyến được áp dụng khi NQ 07/2025/NQ-HĐND (Hải Dương) và NQ 08/2025/NQ-HĐND (Hải Phòng) hết hiệu lực thi hành.",
+    "collectionClause": "Điều 4: tổ chức, cá nhân nộp phí, lệ phí cho cơ quan tiếp nhận hồ sơ.",
+    "scopeNote": "Điều 1 khoản 1 điểm b: lệ phí cấp GCN và phí thẩm định hồ sơ cấp GCN áp dụng cả thủ tục đăng ký biến động trên Giấy chứng nhận."
+  },
+  "evidence": {
+    "sourceRole": "local_fee_policy",
+    "classification": "fee_policy_direct_rate",
+    "url": "https://congbao.haiphong.gov.vn/upload/105430/20251225/NQ_QPPL_34_14f42.pdf",
+    "articleUrl": "https://congbao.haiphong.gov.vn/van-ban-tinh/hoi-dong-nhan-dan-tinh/34-2025-nq-hdnd-quy-dinh-muc-thu-che-do-thu-nop-quan-ly-va-su-dung-cac-loai-phi-le-phi-trong-linh-vuc-dat-dai-tren-dia-b.html",
+    "attachmentUrl": "https://congbao.haiphong.gov.vn/upload/105430/20251225/NQ_QPPL_34_14f42.pdf",
+    "attachmentSha256": "9a78589b05b9c648f161750faba361cbbb64cedc4b04284a2996f8bf299f9faf",
+    "filePath": "data/source-audit/fee-policy/NQ-34-2025-NQ-HDND-HP.pdf",
+    "decisionNumbers": ["34/2025/NQ-HĐND"],
+    "publishedDate": "2025-12-25",
+    "effectiveDate": "2026-01-01",
+    "repealContext": false,
+    "retrievedAt": "2026-09-29"
+  },
+  "rateColumns": ["dat", "taiSan", "datVaTaiSan"],
+  "currency": "VND",
+  "rateTables": {
+    "PL1": {
+      "name": "Lệ phí cấp giấy chứng nhận",
+      "nq23Point": "Điều 2 khoản 1 điểm c",
+      "exemptions": [
+        "Trẻ em, hộ nghèo, người cao tuổi, người khuyết tật, người có công với cách mạng",
+        "Đăng ký biến động do tặng cho quyền sử dụng đất cho Nhà nước, cộng đồng dân cư để xây dựng công trình công cộng, mở rộng đường giao thông theo quy hoạch, hoặc làm nhà tình nghĩa, nhà tình thương, nhà đại đoàn kết"
+      ],
+      "rows": {
+        "canhan.lanDau": [35000, 35000, 35000],
+        "canhan.capDoiCapLai": [25000, 25000, 30000],
+        "canhan.bienDong": [25000, 25000, 30000],
+        "tochuc.lanDau": [40000, 40000, 45000],
+        "tochuc.capDoiCapLai": [30000, 30000, 35000],
+        "tochuc.bienDong": [30000, 30000, 35000]
+      }
+    },
+    "PL2": {
+      "name": "Phí thẩm định hồ sơ cấp giấy chứng nhận",
+      "nq23Point": "Điều 2 khoản 2 điểm b",
+      "exemptions": "Như Phụ lục I",
+      "rows": {
+        "canhan.lanDau": [100000, 100000, 155000],
+        "canhan.capDoiCapLai": [100000, 100000, 115000],
+        "canhan.bienDong": [125000, 155000, 170000],
+        "tochuc.lanDau": [215000, 215000, 215000],
+        "tochuc.capDoiCapLai": [155000, 155000, 175000],
+        "tochuc.bienDong": [290000, 290000, 355000]
+      }
+    },
+    "PL3": {
+      "name": "Phí đăng ký giao dịch bảo đảm",
+      "nq23Point": "Điều 2 khoản 2 điểm a",
+      "exemptions": ["Cá nhân vay vốn tại tổ chức tín dụng thuộc lĩnh vực cho vay phục vụ phát triển nông nghiệp, nông thôn (Điều 4, Điều 9 Nghị định 55/2015/NĐ-CP sửa đổi bởi Nghị định 156/2025/NĐ-CP)"],
+      "rows": {
+        "canhan.dangKy.trucTiep": [120000, 150000, 180000],
+        "canhan.dangKy.trucTuyen": [115000, 145000, 175000],
+        "canhan.thayDoi.trucTiep": [120000, 150000, 180000],
+        "canhan.thayDoi.trucTuyen": [115000, 145000, 175000],
+        "canhan.xoa.trucTiep": [120000, 145000, 175000],
+        "canhan.xoa.trucTuyen": [115000, 140000, 170000],
+        "canhan.chuyenTiep.trucTiep": [null, 150000, null],
+        "canhan.chuyenTiep.trucTuyen": [null, 145000, null],
+        "tochuc.dangKy.trucTiep": [280000, 280000, 350000],
+        "tochuc.dangKy.trucTuyen": [275000, 275000, 345000],
+        "tochuc.thayDoi.trucTiep": [280000, 280000, 350000],
+        "tochuc.thayDoi.trucTuyen": [275000, 275000, 345000],
+        "tochuc.xoa.trucTiep": [280000, 280000, 350000],
+        "tochuc.xoa.trucTuyen": [275000, 275000, 345000],
+        "tochuc.chuyenTiep.trucTiep": [null, 280000, null],
+        "tochuc.chuyenTiep.trucTuyen": [null, 275000, null]
+      }
+    }
+  },
+  "conflictWithNq23": {
+    "status": "needs_authority_confirmation",
+    "facts": "NQ 34/2025 Điều 6 khoản 2 cho áp dụng mức thu trực tuyến của chính Nghị quyết này khi NQ 07/2025 và 08/2025 hết hiệu lực; NQ 23/2026 Điều 3 khoản 2 làm hai nghị quyết đó hết hiệu lực từ 08/8/2026, đồng thời Điều 2 quy định mức thu 0 đồng khi thực hiện trực tuyến cho cùng các khoản thu (lệ phí cấp GCN, phí thẩm định hồ sơ cấp GCN, phí đăng ký giao dịch bảo đảm).",
+    "analysis": "Phân tích (chưa kiểm chứng với cơ quan có thẩm quyền): hai nghị quyết cùng do HĐND thành phố ban hành, NQ 23/2026 ban hành sau và quy định riêng về hình thức trực tuyến, nên nhiều khả năng mức 0 đồng được áp dụng. Cần Sở Tài chính/Sở Tư pháp xác nhận."
+  },
+  "unresolved": {
+    "civilStatusFee": "[cần bổ sung] Văn bản quy định mức lệ phí hộ tịch khi nộp trực tiếp trên địa bàn (khu vực Hải Phòng cũ) chưa xác định được: không có trên danh mục Công báo mới; vbpl.vn bị chặn trong phiên rà soát."
+  }
+}
