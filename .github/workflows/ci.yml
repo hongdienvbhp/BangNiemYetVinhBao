@@ -48,6 +48,8 @@ jobs:
             scripts/extract_city_updates.py \
             scripts/build_master_data.py \
             scripts/reconcile_priority51_crosswalk.py \
+            .github/workflows/ci.yml \
+            .github/workflows/official-data-update.yml \
             scripts/fetch_dvc_mapping.py | grep -q .; then
             echo "changed=true" >> "$GITHUB_OUTPUT"
           else
