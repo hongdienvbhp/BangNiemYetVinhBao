@@ -1,12 +1,22 @@
 /* Sinh tự động bởi scripts/build_extra_data.py từ data/thu-tuc.json, city-updates-current.json và data/phu-luc/phi-le-phi-van-ban.json. Không sửa tay. */
 window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
   "generated": {
-    "dataset_version": "2026.10.01",
-    "cityUpdatesAsOf": "2026-10-01",
+    "dataset_version": "2026.10.09",
+    "cityUpdatesAsOf": "2026-10-09",
     "feeRegistryVerifiedAt": "2026-10-01",
     "note": "Sinh tự động bởi scripts/build_extra_data.py — không sửa tay."
   },
   "quyetDinhCongBo": [
+    {
+      "so": "4123/QĐ-UBND",
+      "ngay": "01/10/2026",
+      "trichYeu": "UBND thành phố vừa ban hành Quyết định 4123/QĐ-UBND về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung, lĩnh vực khoa học và công nghệ thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường",
+      "linhVuc": "KHOA HỌC VÀ CÔNG NGHỆ",
+      "hieuLuc": "01/10/2026",
+      "trangThai": "Còn hiệu lực",
+      "soTTHC": 1,
+      "link": "https://ngoquyen.haiphong.gov.vn/linh-vuc-tai-nguyen-va-moi-truong/ubnd-thanh-pho-vua-ban-hanh-quyet-dinh-4123-qd-ubnd-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh--979394"
+    },
     {
       "so": "4016/QĐ-UBND",
       "ngay": "28/09/2026",
@@ -633,6 +643,7 @@ window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
         "1897/QĐ-UBND – 15 TTHC",
         "1857/QĐ-UBND – 12 TTHC",
         "716/QĐ-UBND – 5 TTHC",
+        "4123/QĐ-UBND – 1 TTHC",
         "Văn bản công bố khác viện dẫn trong Master Data (Bộ, ngành, QĐ UBND TP đợt trước; số hiệu theo trích xuất Master Data, chưa đối chiếu từng văn bản): 1646/QĐ-UBND (3), 1858/QĐ-BNNMT (3), 1869/QĐ-BNNMT (3), 1877/QĐ-BNNMT (3), 1878/QĐ-BNNMT (3), 1883/QĐ-BNNMT (3), 1897/QĐ-BNNMT (3), 1908/QĐ-BNNMT (3), 1931/QĐ-BNNMT (3), 2198/QĐ-UBND (3), 2881/QĐ-UBND (3), 519/QĐ-UBND (3), 684/QĐ-UBND (3), 01/QĐ-BNNMT (2), 04/QĐ-BNNMT (2), 2168/QĐ-UBND (2), 2787/QĐ-UBND (2), 5891/QĐ-BNNMT (2)"
       ]
     },

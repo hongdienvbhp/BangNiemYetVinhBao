@@ -1,8 +1,8 @@
 {
   "format": "phase1-reconciliation",
   "version": 2,
-  "canonicalDatasetVersion": "2026.10.01",
-  "canonicalSourceCommit": "7a8e316e717d34b43ab51ac0f12533537bf553a4",
+  "canonicalDatasetVersion": "2026.10.09",
+  "canonicalSourceCommit": "870b9f9f9dc5f60ff7f6dfb523e496fbbbb519c9",
   "baselineAsOf": "2026-07-20",
   "baselineTarget": 323,
   "canonicalTotal": 536,

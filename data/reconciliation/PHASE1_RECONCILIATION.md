@@ -1,6 +1,6 @@
 # PHASE 1 — RECONCILIATION TTHC
 
-- Canonical dataset: `2026.10.01`
+- Canonical dataset: `2026.10.09`
 - Baseline: 2026-07-20 — 323 TTHC (257 cấp xã + 66 dùng chung)
 - Canonical hiện có: **536** bản ghi
 - Mã có khả năng thuộc Phase 1: **321**
