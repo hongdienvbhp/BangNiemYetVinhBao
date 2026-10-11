@@ -101,6 +101,14 @@ class OfficialSourceScannerTests(unittest.TestCase):
         self.assertEqual(scanner.reconcile_missing_manifest_dates(manifest, candidates), {})
         self.assertEqual(manifest["3726/QĐ-UBND"]["decisionDate"], "")
 
+    def test_source_snapshot_is_incomplete_when_any_source_fails(self):
+        self.assertFalse(scanner.source_snapshot_is_complete([
+            {"sourceId": "broken", "error": "temporary TLS failure"}
+        ]))
+
+    def test_source_snapshot_is_complete_when_no_source_fails(self):
+        self.assertTrue(scanner.source_snapshot_is_complete([]))
+
     def test_one_source_failure_does_not_abort_other_sources(self):
         config = {
             "listingSources": [
