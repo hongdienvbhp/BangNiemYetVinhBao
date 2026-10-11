@@ -155,5 +155,77 @@ class OfficialSourceScannerTests(unittest.TestCase):
         self.assertIn("temporary TLS failure", errors[0]["error"])
 
 
+    def test_discover_candidates_follows_all_next_pages_and_records_snapshot(self):
+        source_url = "https://good.haiphong.gov.vn/thu-tuc-hanh-chinh"
+        page_two = "https://good.haiphong.gov.vn/thu-tuc-hanh-chinh?page=2"
+        pages = {
+            source_url: (
+                b'<a href="/quyet-dinh-so-123-qd-ubnd-ngay-18-9-2026-cong-bo-thu-tuc-hanh-chinh">Quyet dinh cong bo thu tuc hanh chinh</a>'
+                b'<a rel="next" href="/thu-tuc-hanh-chinh?page=2">Trang sau</a>',
+                "text/html; charset=utf-8",
+            ),
+            page_two: (
+                b'<a href="/quyet-dinh-so-124-qd-ubnd-ngay-19-9-2026-cong-bo-thu-tuc-hanh-chinh">Quyet dinh cong bo thu tuc hanh chinh</a>',
+                "text/html; charset=utf-8",
+            ),
+        }
+        config = {"listingSources": [{
+            "id": "good", "url": source_url, "authority": "Good",
+            "authorityType": "department", "sourceRole": "primary_decision_listing",
+            "legalUse": "primary_publication",
+        }]}
+        snapshot = {}
+
+        with patch.object(scanner, "fetch_bytes", side_effect=lambda url, timeout=35: pages[url]):
+            candidates, errors = scanner.discover_candidates(config, snapshot)
+
+        self.assertEqual(errors, [])
+        self.assertEqual({x.decision_no for x in candidates}, {"123/QĐ-UBND", "124/QĐ-UBND"})
+        self.assertEqual(snapshot["sources"][0]["pagesFetched"], 2)
+        self.assertEqual(snapshot["sources"][0]["candidateCount"], 2)
+        self.assertEqual(len(snapshot["sources"][0]["pages"]), 2)
+        self.assertTrue(all(len(x["sha256"]) == 64 for x in snapshot["sources"][0]["pages"]))
+
+    def test_discover_candidates_fails_closed_on_pagination_loop(self):
+        source_url = "https://good.haiphong.gov.vn/thu-tuc-hanh-chinh"
+        page_two = "https://good.haiphong.gov.vn/thu-tuc-hanh-chinh?page=2"
+        pages = {
+            source_url: (b'<a rel="next" href="/thu-tuc-hanh-chinh?page=2">Trang sau</a>', "text/html"),
+            page_two: (b'<a rel="next" href="/thu-tuc-hanh-chinh">Trang sau</a>', "text/html"),
+        }
+        config = {"listingSources": [{"id": "good", "url": source_url}]}
+
+        with patch.object(scanner, "fetch_bytes", side_effect=lambda url, timeout=35: pages[url]):
+            _, errors = scanner.discover_candidates(config)
+
+        self.assertEqual(len(errors), 1)
+        self.assertIn("pagination loop detected", errors[0]["error"])
+
+    def test_discover_candidates_fails_closed_when_page_limit_is_reached(self):
+        source_url = "https://good.haiphong.gov.vn/thu-tuc-hanh-chinh"
+        html = b'<a rel="next" href="/thu-tuc-hanh-chinh?page=2">Trang sau</a>'
+        config = {"maxPagesPerSource": 1, "listingSources": [{"id": "good", "url": source_url}]}
+
+        with patch.object(scanner, "fetch_bytes", return_value=(html, "text/html")):
+            _, errors = scanner.discover_candidates(config)
+
+        self.assertEqual(len(errors), 1)
+        self.assertIn("pagination page limit reached", errors[0]["error"])
+
+    def test_discover_candidates_fails_closed_on_ambiguous_next_links(self):
+        source_url = "https://good.haiphong.gov.vn/thu-tuc-hanh-chinh"
+        html = (
+            b'<a rel="next" href="?page=2">Trang sau</a>'
+            b'<a rel="next" href="?page=3">Trang sau</a>'
+        )
+        config = {"listingSources": [{"id": "good", "url": source_url}]}
+
+        with patch.object(scanner, "fetch_bytes", return_value=(html, "text/html")):
+            _, errors = scanner.discover_candidates(config)
+
+        self.assertEqual(len(errors), 1)
+        self.assertIn("ambiguous pagination", errors[0]["error"])
+
+
 if __name__ == "__main__":
     unittest.main()
