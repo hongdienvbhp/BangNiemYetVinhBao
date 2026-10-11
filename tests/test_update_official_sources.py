@@ -33,6 +33,15 @@ class OfficialSourceScannerTests(unittest.TestCase):
 
         self.assertEqual(scanner.source_ids_requiring_baseline(config, index_rows), set())
 
+    def test_page_parser_detects_rel_next_and_vietnamese_next_label(self):
+        parser = scanner.PageParser()
+        parser.feed(
+            '<a href="/listing?page=2" rel="next">Trang sau</a>'
+            '<a href="/unrelated">Tin mới</a>'
+        )
+        self.assertEqual(parser.next_links, ["/listing?page=2"])
+        self.assertEqual(len(parser.links), 2)
+
     def test_external_ministry_reference_is_not_treated_as_city_decision(self):
         title = (
             "Công khai Quyết định số 2841/QĐ-UBND ngày 08/9/2026 của Bộ Y tế "
