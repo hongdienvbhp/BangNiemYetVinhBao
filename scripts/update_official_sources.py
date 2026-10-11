@@ -24,16 +24,17 @@ import json
 import re
 import sys
 import unicodedata
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urljoin, urlparse
+from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlunparse
 from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = ROOT / "data/source-audit/official-source-config.json"
 MANIFEST_PATH = ROOT / "data/source-audit/official-decision-manifest.json"
 INDEX_PATH = ROOT / "data/source-audit/official-source-index.json"
+SNAPSHOT_PATH = ROOT / "data/source-audit/official-source-snapshot.json"
 AUTO_PDF_DIR = ROOT / "data/source-audit/city-decisions"
 
 USER_AGENT = "BangNiemYetVinhBao-Official-TTHC-Monitor/1.0"
@@ -101,9 +102,11 @@ class PageParser(HTMLParser):
     def __init__(self) -> None:
         super().__init__(convert_charrefs=True)
         self.links: list[tuple[str, str]] = []
+        self.next_links: list[str] = []
         self.title_parts: list[str] = []
         self.in_title = False
         self._anchor_href = ""
+        self._anchor_attrs: dict[str, str] = {}
         self._anchor_parts: list[str] = []
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
@@ -112,6 +115,7 @@ class PageParser(HTMLParser):
             self.in_title = True
         if tag.lower() == "a":
             self._anchor_href = attrs_map.get("href", "")
+            self._anchor_attrs = attrs_map
             self._anchor_parts = []
 
     def handle_endtag(self, tag: str) -> None:
@@ -120,7 +124,20 @@ class PageParser(HTMLParser):
         if tag.lower() == "a" and self._anchor_href:
             text = re.sub(r"\s+", " ", " ".join(self._anchor_parts)).strip()
             self.links.append((self._anchor_href, text))
+            rel_tokens = set(self._anchor_attrs.get("rel", "").lower().split())
+            class_tokens = set(re.split(r"\s+", self._anchor_attrs.get("class", "").lower()))
+            label = fold(" ".join((text, self._anchor_attrs.get("aria-label", ""), self._anchor_attrs.get("title", ""))).strip())
+            next_classes = {"next", "pager-next", "pagination-next", "page-next", "next-page", "older"}
+            next_labels = {"next", "older", "newer", "trang sau", "sau", "tiep", "tiep theo", "ke tiep", "»", "›", "→"}
+            if (
+                "next" in rel_tokens
+                or bool(class_tokens & next_classes)
+                or label in next_labels
+                or label.startswith(("next ", "older ", "trang sau", "tiep theo", "ke tiep"))
+            ):
+                self.next_links.append(self._anchor_href)
             self._anchor_href = ""
+            self._anchor_attrs = {}
             self._anchor_parts = []
 
     def handle_data(self, data: str) -> None:
