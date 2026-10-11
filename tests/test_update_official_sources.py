@@ -40,6 +40,19 @@ class OfficialSourceScannerTests(unittest.TestCase):
         )
         self.assertEqual(scanner.classify_title(title, {}), "external_reference")
 
+    def test_invalid_calendar_date_is_preserved_as_unknown(self):
+        number, date = scanner.parse_decision_identity(
+            "https://example.gov.vn/quyet-dinh-so-9170-qd-ubnd-ngay-31-2-2026-cong-bo-thu-tuc-hanh-chinh",
+            "",
+        )
+        self.assertEqual(number, "9170/QĐ-UBND")
+        self.assertEqual(date, "")
+
+    def test_strict_iso_date_rejects_out_of_range_month_and_day(self):
+        self.assertEqual(scanner.strict_iso_date("2026", "13", "01"), "")
+        self.assertEqual(scanner.strict_iso_date("2026", "06", "31"), "")
+        self.assertEqual(scanner.strict_iso_date("2024", "02", "29"), "2024-02-29")
+
     def test_decision_identity_accepts_colon_without_word_so(self):
         number, date = scanner.parse_decision_identity(
             "https://namsach.haiphong.gov.vn/article",
