@@ -337,6 +337,11 @@ def discover_candidates(config: dict) -> tuple[list[Candidate], list[dict[str, s
     )
 
 
+def source_snapshot_is_complete(source_errors: list[dict[str, str]]) -> bool:
+    """A snapshot is complete only when every configured listing source was fetched."""
+    return not source_errors
+
+
 def source_ids_requiring_baseline(config: dict, index_rows: list[dict]) -> set[str]:
     """Return configured source IDs that have never been observed in the source index.
 
@@ -440,7 +445,7 @@ def main() -> int:
     candidates, source_errors = discover_candidates(config)
     # Fail closed before processing candidates or writing index/manifest/PDFs.
     # A partial listing scan is not a complete snapshot and must not be published.
-    if source_errors:
+    if not source_snapshot_is_complete(source_errors):
         print(
             json.dumps(
                 {
