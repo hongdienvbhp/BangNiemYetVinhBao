@@ -317,46 +317,106 @@ def download_pdf(url: str, decision_no: str) -> tuple[str, str]:
     return path.relative_to(ROOT).as_posix(), digest
 
 
-def discover_candidates(config: dict) -> tuple[list[Candidate], list[dict[str, str]]]:
+def discover_candidates(
+    config: dict,
+    snapshot_metadata: dict | None = None,
+) -> tuple[list[Candidate], list[dict[str, str]]]:
+    """Read every reachable listing page; any pagination failure invalidates the snapshot."""
     found: dict[str, Candidate] = {}
     source_errors: list[dict[str, str]] = []
+    source_snapshots: list[dict] = []
+
     for source in config.get("listingSources", []):
-        source_url = source["url"]
+        source_url = str(source["url"])
+        source_id = str(source.get("id", ""))
+        max_pages = source.get("maxPages", config.get("maxPagesPerSource", 100))
+        source_snapshot = {
+            "sourceId": source_id,
+            "sourceUrl": source_url,
+            "pagesFetched": 0,
+            "candidateCount": 0,
+            "pages": [],
+        }
         try:
-            body, content_type = fetch_bytes(source_url)
+            max_pages = int(max_pages)
+            if max_pages < 1 or max_pages > 500:
+                raise ValueError("maxPagesPerSource must be between 1 and 500")
+
+            next_url = source_url
+            seen_urls: set[str] = set()
+            while next_url:
+                current_url = urlunparse(urlparse(next_url)._replace(fragment=""))
+                if current_url in seen_urls:
+                    raise RuntimeError(f"pagination loop detected at {current_url}")
+                if source_snapshot["pagesFetched"] >= max_pages:
+                    raise RuntimeError(f"pagination page limit reached ({max_pages}) while a next page remained")
+                if (
+                    urlparse(current_url).scheme != urlparse(source_url).scheme
+                    or urlparse(current_url).netloc != urlparse(source_url).netloc
+                ):
+                    raise RuntimeError(f"pagination next link leaves source origin: {current_url}")
+
+                seen_urls.add(current_url)
+                body, content_type = fetch_bytes(current_url)
+                page = decode_html(body, content_type)
+                page_parser = PageParser()
+                page_parser.feed(page)
+                digest = sha256_bytes(body)
+                page_candidate_count = 0
+
+                for href, anchor in page_parser.links:
+                    if not href:
+                        continue
+                    article_url = urljoin(current_url, href)
+                    if urlparse(article_url).netloc != urlparse(source_url).netloc:
+                        continue
+                    if not is_candidate_link(article_url, anchor):
+                        continue
+                    decision_no, decision_date = parse_decision_identity(article_url, anchor)
+                    key = article_url.rstrip("/")
+                    found[key] = Candidate(
+                        source_id=source_id,
+                        source_url=source_url,
+                        source_authority=source.get("authority", ""),
+                        authority_type=source.get("authorityType", ""),
+                        source_role=source.get("sourceRole", ""),
+                        legal_use=source.get("legalUse", ""),
+                        article_url=article_url,
+                        anchor_text=anchor,
+                        decision_no=decision_no,
+                        decision_date=decision_date,
+                    )
+                    page_candidate_count += 1
+
+                source_snapshot["pages"].append({
+                    "url": current_url,
+                    "sha256": digest,
+                    "linkCount": len(page_parser.links),
+                    "candidateCount": page_candidate_count,
+                })
+                source_snapshot["pagesFetched"] += 1
+                source_snapshot["candidateCount"] += page_candidate_count
+
+                next_links = []
+                for href in page_parser.next_links:
+                    resolved = urlunparse(urlparse(urljoin(current_url, href))._replace(fragment=""))
+                    if resolved not in next_links:
+                        next_links.append(resolved)
+                if len(next_links) > 1:
+                    raise RuntimeError(f"ambiguous pagination: {len(next_links)} distinct next links")
+                next_url = next_links[0] if next_links else ""
         except Exception as exc:
             source_errors.append({
-                "sourceId": str(source.get("id", "")),
+                "sourceId": source_id,
                 "sourceUrl": source_url,
                 "authority": str(source.get("authority", "")),
+                "pagesFetched": str(source_snapshot["pagesFetched"]),
                 "error": f"{type(exc).__name__}: {exc}",
             })
-            continue
-        page = decode_html(body, content_type)
-        parser = PageParser()
-        parser.feed(page)
-        for href, anchor in parser.links:
-            if not href:
-                continue
-            article_url = urljoin(source_url, href)
-            if urlparse(article_url).netloc != urlparse(source_url).netloc:
-                continue
-            if not is_candidate_link(article_url, anchor):
-                continue
-            decision_no, decision_date = parse_decision_identity(article_url, anchor)
-            key = article_url.rstrip("/")
-            found[key] = Candidate(
-                source_id=source.get("id", ""),
-                source_url=source_url,
-                source_authority=source.get("authority", ""),
-                authority_type=source.get("authorityType", ""),
-                source_role=source.get("sourceRole", ""),
-                legal_use=source.get("legalUse", ""),
-                article_url=article_url,
-                anchor_text=anchor,
-                decision_no=decision_no,
-                decision_date=decision_date,
-            )
+        source_snapshots.append(source_snapshot)
+
+    if snapshot_metadata is not None:
+        snapshot_metadata["sources"] = source_snapshots
     return (
         sorted(found.values(), key=lambda x: (x.decision_date, x.decision_no, x.article_url)),
         source_errors,
@@ -468,7 +528,8 @@ def main() -> int:
     initializing = args.initialize or not INDEX_PATH.exists()
     source_baselines = source_ids_requiring_baseline(config, index_rows)
 
-    candidates, source_errors = discover_candidates(config)
+    snapshot_metadata = {}
+    candidates, source_errors = discover_candidates(config, snapshot_metadata)
     # Fail closed before processing candidates or writing index/manifest/PDFs.
     # A partial listing scan is not a complete snapshot and must not be published.
     if not source_snapshot_is_complete(source_errors):
@@ -478,6 +539,7 @@ def main() -> int:
                     "snapshotComplete": False,
                     "sourceErrors": source_errors,
                     "sourceErrorCount": len(source_errors),
+                    "sources": snapshot_metadata.get("sources", []),
                     "indexChanged": False,
                     "manifestChanged": False,
                     "status": "blocked_incomplete_source_snapshot",
@@ -496,7 +558,23 @@ def main() -> int:
     ]
     work_articles = new_articles + retry_articles
 
+    snapshot_payload = {
+        "format": "official-tthc-source-snapshot",
+        "version": 1,
+        "generatedAt": dt.datetime.now(dt.timezone.utc).isoformat(),
+        "snapshotComplete": True,
+        "sourceCount": len(snapshot_metadata.get("sources", [])),
+        "sources": snapshot_metadata.get("sources", []),
+    }
+    snapshot_payload["snapshotSha256"] = sha256_bytes(
+        json.dumps(snapshot_payload["sources"], ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    )
+    snapshot_changed = write_json_if_changed(SNAPSHOT_PATH, snapshot_payload)
+
     stats = {
+        "snapshotComplete": True,
+        "snapshotChanged": snapshot_changed,
+        "snapshotSha256": snapshot_payload["snapshotSha256"],
         "observedArticles": len(candidates),
         "newArticles": len(new_articles),
         "pendingRetries": len(retry_articles),
