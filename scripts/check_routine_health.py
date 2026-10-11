@@ -82,70 +82,97 @@ def evaluate(history: dict, records: dict[str, dict], now: datetime) -> dict:
             "reason": "expected run missing",
         }
 
+    def sort_key(run: dict) -> datetime:
+        created = run.get("created_at")
+        return parse_ts(created) if created else datetime.min.replace(tzinfo=LOCAL_TZ)
+
+    today = sorted(today, key=sort_key)
     today_ids = {str(run.get("id") or "") for run in today}
     today_records = {
         run_id: record
         for run_id, record in records.items()
         if run_id in today_ids and record.get("period_key") == period_key
     }
-    statuses = {str(record.get("status") or "") for record in today_records.values()}
 
-    if statuses & HEALTHY_TERMINAL:
+    latest = today[-1]
+    latest_id = str(latest.get("id") or "")
+    latest_record = today_records.get(latest_id)
+
+    if latest.get("status") in {"queued", "in_progress", "waiting", "requested", "pending"}:
         return {
-            "state": "HEALTHY",
+            "state": "RUNNING",
             "period_key": period_key,
-            "reason": "terminal OK record observed",
+            "reason": "latest workflow run still active",
         }
 
-    if "SKIPPED_ALREADY_RAN" in statuses:
+    if latest.get("conclusion") not in {"success", "skipped"}:
         return {
             "state": "STOPPED_LOUDLY",
             "period_key": period_key,
-            "reason": "duplicate-skip observed without an OK run record for the period",
+            "reason": "latest workflow run completed unsuccessfully",
         }
 
-    if "SKIPPED_PAUSED" in statuses:
+    if latest_record is None:
+        return {
+            "state": "STOPPED_LOUDLY",
+            "period_key": period_key,
+            "reason": "latest workflow run observed without terminal routine record",
+        }
+
+    latest_status = str(latest_record.get("status") or "")
+    if latest_status in HEALTHY_TERMINAL:
+        return {
+            "state": "HEALTHY",
+            "period_key": period_key,
+            "reason": "latest terminal routine record is OK",
+        }
+
+    if latest_status == "SKIPPED_ALREADY_RAN":
+        # A duplicate-skip is healthy only when the immediately preceding workflow
+        # run itself ended with a valid OK record. Never let an earlier OK hide a
+        # later PARTIAL/FAILED run.
+        previous = today[-2] if len(today) > 1 else None
+        previous_record = (
+            today_records.get(str(previous.get("id") or ""))
+            if previous is not None
+            else None
+        )
+        if (
+            previous is not None
+            and previous.get("conclusion") == "success"
+            and previous_record is not None
+            and previous_record.get("status") == "OK"
+        ):
+            return {
+                "state": "HEALTHY",
+                "period_key": period_key,
+                "reason": "duplicate-skip follows the immediately preceding OK routine record",
+            }
+        return {
+            "state": "STOPPED_LOUDLY",
+            "period_key": period_key,
+            "reason": "duplicate-skip observed without an immediately preceding OK record",
+        }
+
+    if latest_status == "SKIPPED_PAUSED":
         return {
             "state": "PAUSED",
             "period_key": period_key,
             "reason": "routine explicitly paused",
         }
 
-    loud_statuses = sorted(statuses & LOUD_TERMINAL)
-    if loud_statuses:
+    if latest_status in LOUD_TERMINAL:
         return {
             "state": "STOPPED_LOUDLY",
             "period_key": period_key,
-            "reason": "terminal routine status: " + ",".join(loud_statuses),
-        }
-
-    if any(run.get("status") in {"queued", "in_progress", "waiting", "requested", "pending"} for run in today):
-        return {
-            "state": "RUNNING",
-            "period_key": period_key,
-            "reason": "workflow run still active",
-        }
-
-    if len(today_records) < len(today):
-        return {
-            "state": "STOPPED_LOUDLY",
-            "period_key": period_key,
-            "reason": "workflow run observed without terminal routine record",
-        }
-
-    if any(run.get("conclusion") not in {"success", "skipped"} for run in today):
-        return {
-            "state": "STOPPED_LOUDLY",
-            "period_key": period_key,
-            "reason": "workflow completed unsuccessfully",
+            "reason": "latest terminal routine status: " + latest_status,
         }
 
     return {
         "state": "STOPPED_LOUDLY",
         "period_key": period_key,
-        "reason": "no healthy terminal routine status observed",
+        "reason": "unrecognized latest terminal routine status: " + (latest_status or "<empty>"),
     }
-
 
 def main() -> int:
     p = argparse.ArgumentParser()
