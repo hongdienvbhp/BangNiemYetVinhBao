@@ -438,6 +438,25 @@ def main() -> int:
     source_baselines = source_ids_requiring_baseline(config, index_rows)
 
     candidates, source_errors = discover_candidates(config)
+    # Fail closed before processing candidates or writing index/manifest/PDFs.
+    # A partial listing scan is not a complete snapshot and must not be published.
+    if source_errors:
+        print(
+            json.dumps(
+                {
+                    "snapshotComplete": False,
+                    "sourceErrors": source_errors,
+                    "sourceErrorCount": len(source_errors),
+                    "indexChanged": False,
+                    "manifestChanged": False,
+                    "status": "blocked_incomplete_source_snapshot",
+                },
+                ensure_ascii=True,
+                indent=2,
+            )
+        )
+        return 2
+
     new_articles = [x for x in candidates if x.article_url.rstrip("/") not in known_urls]
     retry_articles = [
         x for x in candidates
