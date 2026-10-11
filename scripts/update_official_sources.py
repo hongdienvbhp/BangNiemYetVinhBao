@@ -17,6 +17,7 @@ re-imported as if they were new.
 from __future__ import annotations
 
 import argparse
+import datetime as dt
 import hashlib
 import html
 import json
@@ -147,11 +148,19 @@ class Candidate:
     decision_date: str
 
 
+def strict_iso_date(year: str, month: str, day: str) -> str:
+    """Return an ISO date only when it is a real calendar date; otherwise unknown."""
+    try:
+        return dt.date(int(year), int(month), int(day)).isoformat()
+    except (TypeError, ValueError):
+        return ""
+
+
 def parse_decision_identity(url: str, text: str = "") -> tuple[str, str]:
     match = DECISION_URL_RE.search(url)
     if match:
         number = match.group("num")
-        date = f"{int(match.group('year')):04d}-{int(match.group('month')):02d}-{int(match.group('day')):02d}"
+        date = strict_iso_date(match.group("year"), match.group("month"), match.group("day"))
         return f"{number}/QĐ-UBND", date
 
     text_decision = DECISION_TEXT_RE.search(text or "")
@@ -159,7 +168,7 @@ def parse_decision_identity(url: str, text: str = "") -> tuple[str, str]:
     number = text_decision.group("num") if text_decision else ""
     date = ""
     if text_date:
-        date = f"{int(text_date.group('year')):04d}-{int(text_date.group('month')):02d}-{int(text_date.group('day')):02d}"
+        date = strict_iso_date(text_date.group("year"), text_date.group("month"), text_date.group("day"))
     return (f"{number}/QĐ-UBND" if number else ""), date
 
 
@@ -250,9 +259,9 @@ def extract_article_details(url: str, config: dict) -> dict:
         raw = match.group(1)
         if "/" in raw:
             d, m, y = raw.split("/")
-            published_date = f"{int(y):04d}-{int(m):02d}-{int(d):02d}"
+            published_date = strict_iso_date(y, m, d)
         else:
-            published_date = raw[:10]
+            published_date = strict_iso_date(raw[0:4], raw[5:7], raw[8:10])
         break
 
     return {
