@@ -1056,6 +1056,20 @@
       "ingestStatus": "applied",
       "title": "Quyết định số 4016/QĐ-UBND ngày 28/9/2026 của Uỷ ban nhân dân thành phố Hải Phòng về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung, lĩnh vực thủy sản và kiểm ngư thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường",
       "reviewNote": "Rà soát 29/9/2026: QĐ không có điều khoản hiệu lực; sửa đổi 1.003593, 1.003666 (thủy sản, có tiếp nhận tại TTPVHCC cấp xã) chưa có trong canonical – chờ xác định hiệu lực và phạm vi áp dụng tại Vĩnh Bảo. | 29/9/2026: áp dụng quy tắc \"không ghi điều khoản hiệu lực thì có hiệu lực kể từ ngày ký\" (chỉ đạo của Giám đốc TTPVHCC)."
+    },
+    {
+      "decisionNo": "4123/QĐ-UBND",
+      "decisionDate": "2026-10-01",
+      "publishedDate": "",
+      "classification": "public_tthc",
+      "field": "KHOA HỌC VÀ CÔNG NGHỆ",
+      "articleUrl": "https://ngoquyen.haiphong.gov.vn/linh-vuc-tai-nguyen-va-moi-truong/ubnd-thanh-pho-vua-ban-hanh-quyet-dinh-4123-qd-ubnd-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh--979394",
+      "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6837/tintuc/2026/10/4123639269784667642303.pdf",
+      "filePath": "data/source-audit/city-decisions/QD-4123.pdf",
+      "pdfSha256": "606e9b9365476a363184508768e18aca58bb06c9bea147c2fdc99db442b4f45d",
+      "effectiveDate": null,
+      "ingestStatus": "auto_discovered",
+      "title": "UBND thành phố vừa ban hành Quyết định 4123/QĐ-UBND về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung, lĩnh vực khoa học và công nghệ thuộc phạm vi chức năng của Sở Nông nghiệp và Môi trường"
     }
   ]
 }

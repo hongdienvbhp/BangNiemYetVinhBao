@@ -156,6 +156,12 @@ def sync_target(
     scope_name: str,
     projected_rows: list[dict[str, str]],
 ) -> dict[str, Any]:
+    # Fail closed before any Sheet read/write when the canonical projection is empty.
+    if not projected_rows:
+        raise RuntimeError(
+            f"Refusing to sync an empty {scope_name} projection; existing Sheet data was not modified."
+        )
+
     old_by_code, old_physical_count = existing_rows(session, spreadsheet_id)
     new_by_code: dict[str, dict[str, str]] = {}
     logs: list[list[Any]] = []
@@ -184,22 +190,19 @@ def sync_target(
             continue
         held = unresolved_old_row(old)
         new_by_code[code] = held
-        logs.append([
-            now, scope_name, code, "Cần xác minh",
-            json.dumps({"Tình trạng hiệu lực":old.get("Tình trạng hiệu lực","")}, ensure_ascii=False),
-            json.dumps({"Tình trạng hiệu lực":"Cần xác minh"}, ensure_ascii=False),
-            old.get("Nguồn chính thức",""), "AUTO_PIPELINE", "HELD_NOT_DELETED",
-        ])
+        # Log only the transition into review, not every subsequent idempotent sync.
+        if held != old:
+            logs.append([
+                now, scope_name, code, "Cần xác minh",
+                json.dumps({"Tình trạng hiệu lực":old.get("Tình trạng hiệu lực","")}, ensure_ascii=False),
+                json.dumps({"Tình trạng hiệu lực":"Cần xác minh"}, ensure_ascii=False),
+                old.get("Nguồn chính thức",""), "AUTO_PIPELINE", "HELD_NOT_DELETED",
+            ])
 
     ordered = sorted(
         new_by_code.values(),
         key=lambda r: (r.get("Lĩnh vực","").casefold(), r.get("Thủ tục hành chính","").casefold(), r.get("Mã TTHC","")),
     )
-    if not ordered:
-        raise RuntimeError(
-            f"Refusing to sync an empty {scope_name} projection; existing Sheet data was not modified."
-        )
-
     b_to_z: list[list[str]] = []
     ab_to_ac: list[list[str]] = []
     for row in ordered:
