@@ -63,6 +63,35 @@ class RoutineHealthTests(unittest.TestCase):
         r = evaluate(history, records, datetime(2026, 9, 21, 12, 30, tzinfo=TZ))
         self.assertEqual(r["state"], "STOPPED_LOUDLY")
 
+    def test_latest_partial_is_not_masked_by_earlier_ok(self):
+        history = {"workflow_runs": [
+            run(2, created_at="2026-09-21T02:00:00Z"),
+            run(1, created_at="2026-09-21T00:40:00Z"),
+        ]}
+        records = {"2": record(2, "PARTIAL"), "1": record(1, "OK")}
+        r = evaluate(history, records, datetime(2026, 9, 21, 12, 30, tzinfo=TZ))
+        self.assertEqual(r["state"], "STOPPED_LOUDLY")
+        self.assertIn("PARTIAL", r["reason"])
+
+    def test_latest_failed_is_not_masked_by_earlier_ok(self):
+        history = {"workflow_runs": [
+            run(2, created_at="2026-09-21T02:00:00Z", conclusion="failure"),
+            run(1, created_at="2026-09-21T00:40:00Z"),
+        ]}
+        records = {"2": record(2, "FAILED"), "1": record(1, "OK")}
+        r = evaluate(history, records, datetime(2026, 9, 21, 12, 30, tzinfo=TZ))
+        self.assertEqual(r["state"], "STOPPED_LOUDLY")
+        self.assertIn("FAILED", r["reason"])
+
+    def test_latest_ok_recovers_after_earlier_partial(self):
+        history = {"workflow_runs": [
+            run(2, created_at="2026-09-21T02:00:00Z"),
+            run(1, created_at="2026-09-21T00:40:00Z"),
+        ]}
+        records = {"2": record(2, "OK"), "1": record(1, "PARTIAL")}
+        r = evaluate(history, records, datetime(2026, 9, 21, 12, 30, tzinfo=TZ))
+        self.assertEqual(r["state"], "HEALTHY")
+
     def test_paused_is_explicit_state(self):
         history = {"workflow_runs": [run(1)]}
         records = {"1": record(1, "SKIPPED_PAUSED")}
