@@ -63,57 +63,57 @@ jobs:
           set -euo pipefail
           number="$(gh pr list --state open --head "$AUTO_BRANCH" --json number --jq '.[0].number // empty')"
           if [ -n "$number" ]; then
-            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "review_pending=true" >> "$GITHUB_OUTPUT"
             echo "pr_number=$number" >> "$GITHUB_OUTPUT"
-            echo "Automated PR #$number is still open; skip duplicate scan."
+            echo "Automated PR #$number is still open; continue the source scan without changing its branch."
           else
-            echo "skip=false" >> "$GITHUB_OUTPUT"
+            echo "review_pending=false" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Setup Python
-        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
+        if: steps.guard.outputs.run == 'true'
         uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v5
         with:
           python-version: "3.12"
 
       - name: Install PDF dependency
-        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
+        if: steps.guard.outputs.run == 'true'
         run: python -m pip install --disable-pip-version-check pypdf==6.17.0
 
       - name: Preserve before snapshot
-        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
+        if: steps.guard.outputs.run == 'true'
         run: cp data/thu-tuc.json /tmp/master-before.json
 
       - name: Scan official sources
-        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
+        if: steps.guard.outputs.run == 'true'
         run: python scripts/update_official_sources.py --online
 
       - name: Extract official decision evidence
-        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
+        if: steps.guard.outputs.run == 'true'
         run: python scripts/extract_city_updates.py --as-of "$(date +%F)"
 
       - name: Rebuild Master Data
-        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
+        if: steps.guard.outputs.run == 'true'
         run: python scripts/build_master_data.py
 
       - name: Validate guidance enrichment
-        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
+        if: steps.guard.outputs.run == 'true'
         run: python scripts/validate_tthc_guidance.py
 
       - name: Apply guidance enrichment
-        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
+        if: steps.guard.outputs.run == 'true'
         run: python scripts/apply_guidance_enrichment.py
 
       - name: Build lifecycle tracking projection
-        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
+        if: steps.guard.outputs.run == 'true'
         run: python scripts/build_tthc_tracking.py
 
       - name: Reconcile Priority 51 crosswalk to canonical Master Data
-        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
+        if: steps.guard.outputs.run == 'true'
         run: python scripts/reconcile_priority51_crosswalk.py
 
       - name: Candidate validation
-        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
+        if: steps.guard.outputs.run == 'true'
         id: validation
         continue-on-error: true
         run: |
@@ -123,7 +123,7 @@ jobs:
           git diff --check
 
       - name: Detect semantic/source changes
-        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
+        if: steps.guard.outputs.run == 'true'
         id: changes
         shell: bash
         run: |
@@ -135,12 +135,29 @@ jobs:
           fi
 
       - name: Build delta report
-        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true' && steps.changes.outputs.changed == 'true'
+        if: steps.guard.outputs.run == 'true' && steps.changes.outputs.changed == 'true'
         run: |
           python scripts/build_master_delta.py             --before /tmp/master-before.json             --after data/thu-tuc.json             --json-out data/source-audit/latest-master-delta.json             --md-out data/BAO_CAO_CHENH_LECH_TTHC_MOI_NHAT.md
 
+      - name: Preserve delta while candidate review is pending
+        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.review_pending == 'true' && steps.changes.outputs.changed == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git diff --binary -- data js/master-data-fallback.js > /tmp/pending-candidate-review-delta.diff
+          git diff --check
+
+      - name: Upload pending candidate review delta
+        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.review_pending == 'true' && steps.changes.outputs.changed == 'true'
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v4
+        with:
+          name: pending-candidate-review-delta-${{ github.run_id }}
+          path: /tmp/pending-candidate-review-delta.diff
+          if-no-files-found: error
+          retention-days: 90
+
       - name: Create Issue, branch and Pull Request
-        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true' && steps.changes.outputs.changed == 'true'
+        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.review_pending != 'true' && steps.changes.outputs.changed == 'true'
         id: publish
         shell: bash
         run: |
@@ -219,13 +236,13 @@ jobs:
           echo "Pull request: $pr_url"
 
       - name: Fail unchanged baseline if validation regressed
-        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true' && steps.changes.outputs.changed != 'true' && steps.validation.outcome != 'success'
+        if: steps.guard.outputs.run == 'true' && steps.changes.outputs.changed != 'true' && steps.validation.outcome != 'success'
         run: |
           echo "No source change, but the committed baseline failed validation."
           exit 1
 
       - name: No change
-        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true' && steps.changes.outputs.changed != 'true' && steps.validation.outcome == 'success'
+        if: steps.guard.outputs.run == 'true' && steps.changes.outputs.changed != 'true' && steps.validation.outcome == 'success'
         run: echo "No official-source or Master Data changes detected."
 
       - name: Write terminal routine record
@@ -238,7 +255,8 @@ jobs:
           GUARD_RUN: ${{ steps.guard.outputs.run }}
           GUARD_STATUS: ${{ steps.guard.outputs.status }}
           PERIOD_KEY: ${{ steps.guard.outputs.period_key }}
-          EXISTING_PR: ${{ steps.existing.outputs.skip }}
+          REVIEW_PENDING: ${{ steps.existing.outputs.review_pending }}
+          EXISTING_PR_NUMBER: ${{ steps.existing.outputs.pr_number }}
           VALIDATION_OUTCOME: ${{ steps.validation.outcome }}
           CHANGED: ${{ steps.changes.outputs.changed }}
         run: |
@@ -255,12 +273,12 @@ jobs:
           elif [ "$JOB_STATUS" = "failure" ]; then
             status="FAILED"
             note="one or more execution steps failed"
-          elif [ "${EXISTING_PR:-}" = "true" ]; then
-            status="PARTIAL"
-            note="existing automated PR still open"
           elif [ "${VALIDATION_OUTCOME:-}" != "success" ] && [ "${VALIDATION_OUTCOME:-}" != "skipped" ]; then
             status="PARTIAL"
             note="candidate validation needs review"
+          elif [ "${REVIEW_PENDING:-}" = "true" ]; then
+            status="BLOCKED_HUMAN_APPROVAL"
+            note="official source scan completed; automated PR #${EXISTING_PR_NUMBER:-unknown} remains under review and its branch was not changed"
           fi
 
           period="${PERIOD_KEY:-$(TZ=Asia/Ho_Chi_Minh date +%F)}"
