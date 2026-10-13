@@ -13,13 +13,14 @@ LOCAL_TZ = ZoneInfo("Asia/Ho_Chi_Minh")
 EXPECTED_BY = time(12, 15)
 UNHEALTHY_STATES = {"STOPPED_LOUDLY", "STOPPED_SILENTLY"}
 HEALTHY_TERMINAL = {"OK"}
+# A pending human approval is an explicit review gate, not an operational failure.
+# It is handled as BLOCKED_FOR_REVIEW below and must remain outside LOUD_TERMINAL.
 LOUD_TERMINAL = {
     "PARTIAL",
     "FAILED",
     "SKIPPED_OUT_OF_WINDOW",
     "BLOCKED_AUTH",
     "BLOCKED_SOURCE",
-    "BLOCKED_HUMAN_APPROVAL",
 }
 
 
