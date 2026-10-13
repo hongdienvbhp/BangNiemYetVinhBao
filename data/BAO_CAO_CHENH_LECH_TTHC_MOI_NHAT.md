@@ -13,6 +13,7 @@
 ## 3. Thủ tục thay đổi thông tin
 
 ### 2.001576 — Công nhận tiến bộ kỹ thuật
+- **thoiHan**: 23 ngày làm việc → 11,5 ngày làm việc
 - **quyetDinh**: 1646/QĐ-UBND; 1858/QĐ-BNNMT; 1869/QĐ-BNNMT; 1877/QĐ-BNNMT; 1878/QĐ-BNNMT; 1883/QĐ-BNNMT; 1897/QĐ-BNNMT; 1908/QĐ-BNNMT; 1931/QĐ-BNNMT; 2198/QĐ-UBND; 2881/QĐ-UBND; 519/QĐ-UBND; 684/QĐ-UBND → 1646/QĐ-UBND; 1858/QĐ-BNNMT; 1869/QĐ-BNNMT; 1877/QĐ-BNNMT; 1878/QĐ-BNNMT; 1883/QĐ-BNNMT; 1897/QĐ-BNNMT; 1908/QĐ-BNNMT; 1931/QĐ-BNNMT; 2198/QĐ-UBND; 2881/QĐ-UBND; 519/QĐ-UBND; 684/QĐ-UBND; 4123/QĐ-UBND
 - **verificationStatus**: official_commune_evidence_no_later_repeal_in_snapshot → official_city_decision_commune_reception
 - **sourceLatestDate**: 2026-05-30 → 2026-10-01
