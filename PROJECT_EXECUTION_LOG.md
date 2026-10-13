@@ -213,3 +213,11 @@ An HTTP 200 empty response is not a verified final page. Do not infer removed TT
 2. Review whether the Google Sheets idempotency commit should be isolated rather than carried as unrelated scope in the candidate data PR.
 3. Continue the 11-source live pagination blocker from PR #161. The current exact-head scan-only result remains blocked; no source snapshot is complete until all required endpoints have reliable terminal-page evidence.
 4. Reconcile the local-only Windows commit `cf88456` with PR #161 before any push.
+## Vĩnh Bảo non-AJAX fallback probe — 2026-10-13
+
+- Tested the plausible read-only fallback URL `https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh?page=2` against the official listing. It returned HTTP 200, `text/html; charset=utf-8`, 160,356 bytes, SHA-256 `e6e4430bfbf41de041e60e18281155dac29f16f0a110d01900f6aa692125ba03`, title `Thủ tục hành chính - Xã Vĩnh Bảo`, 192 links and 22 candidate-shaped links.
+- Its response size/hash/title matched the server-rendered initial listing, so `?page=2` did not produce a distinct page. The 22 candidate-shaped links include internal-process links and related-site widgets; they are not evidence of complete listing coverage. Do not substitute this GET parameter for the AJAX page sequence.
+- This fallback experiment made no repository/data writes. Vĩnh Bảo remains incomplete; the authoritative exact-head scan-only result remains blocked.
+
+### NEXT_SAFE_ACTION
+Find a genuine official archive/category/sitemap or working page traversal that demonstrates all relevant public decision article URLs. Require distinct page hashes/URLs and a verifiable terminal condition; otherwise retain the source blocker and document the portal-side AJAX issue.
