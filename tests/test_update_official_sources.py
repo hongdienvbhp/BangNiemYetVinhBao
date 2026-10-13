@@ -1,4 +1,9 @@
-﻿import unittest
+﻿import contextlib
+import io
+import json
+import tempfile
+import unittest
+from pathlib import Path
 from unittest.mock import patch
 
 from scripts import update_official_sources as scanner
@@ -306,6 +311,328 @@ class OfficialSourceScannerTests(unittest.TestCase):
         self.assertEqual(len(errors), 1)
         self.assertIn("ambiguous pagination", errors[0]["error"])
 
+
+    def test_ajax_pagination_uses_declared_pages_and_records_response_hashes(self):
+        source_url = "https://good.haiphong.gov.vn/thu-tuc-hanh-chinh"
+        endpoint = "/DesktopModule/UIArticleInMenu/ArticleInMenuPagination.aspx/LoadArticle"
+        html = f"""
+        <div class="Pagination">
+          <a class="RightArrow" href="#">→</a>
+        </div>
+        <a href="/quyet-dinh-so-999-qd-ubnd-ngay-18-9-2026-cong-bo-thu-tuc-hanh-chinh">Unrelated static widget</a>
+        <script>
+          var maxPage = parseInt(3);
+          $.ajax({{
+            url: "{endpoint}",
+            type: "POST",
+            data: {{
+              article_category_id: 123,
+              categoryIds: "123, 124",
+              site_id: 77,
+              page: chosenPage,
+              page_size: 10,
+              keyword: "",
+              date_begin: "",
+              date_end: "",
+              show_no: "False",
+              show_post_date: "False",
+              num_of_text: 0,
+              show_view_count: "False",
+              filter_order_in_list: "False",
+              is_default: "False",
+              new: "False",
+              number_of_day: 3,
+              no: -15,
+              articlelang: "vi-VN",
+              is_authenticated: "False"
+            }},
+            success: function (result) {{}}
+          }});
+        </script>
+        """.encode()
+        ajax_pages = {
+            "1": (
+                b'<ul class="ArticleList"><a href="/quyet-dinh-so-123-qd-ubnd-ngay-18-9-2026-cong-bo-thu-tuc-hanh-chinh">Quyet dinh 123</a></ul>',
+                "text/html; charset=utf-8",
+            ),
+            "2": (
+                b'<ul class="ArticleList"><a href="/quyet-dinh-so-124-qd-ubnd-ngay-19-9-2026-cong-bo-thu-tuc-hanh-chinh">Quyet dinh 124</a></ul>',
+                "text/html; charset=utf-8",
+            ),
+            "3": (b"", "text/html; charset=utf-8"),
+        }
+        config = {
+            "maxPagesPerSource": 4,
+            "listingSources": [{
+                "id": "good",
+                "url": source_url,
+                "authority": "Good",
+                "authorityType": "city_portal",
+                "sourceRole": "primary_decision_listing",
+                "legalUse": "primary_publication",
+            }],
+        }
+        snapshot = {}
+
+        with (
+            patch.object(scanner, "fetch_bytes", return_value=(html, "text/html; charset=utf-8")),
+            patch.object(
+                scanner,
+                "fetch_form_bytes",
+                side_effect=lambda url, form_data, referer, timeout=35: ajax_pages[form_data["page"]],
+            ) as fetch_form,
+        ):
+            candidates, errors = scanner.discover_candidates(config, snapshot)
+
+        self.assertEqual(errors, [])
+        self.assertEqual({item.decision_no.split("/", 1)[0] for item in candidates}, {"123", "124"})
+        self.assertEqual(fetch_form.call_count, 3)
+        source = snapshot["sources"][0]
+        self.assertEqual(source["paginationMode"], "ajax_form_post")
+        self.assertEqual(source["ajaxDeclaredMaxPage"], 3)
+        self.assertEqual(source["ajaxLastNonEmptyPage"], 2)
+        self.assertEqual(source["ajaxEmptyPages"], [3])
+        self.assertEqual(source["pagesFetched"], 4)
+        self.assertEqual(source["candidateCount"], 2)
+        ajax_entries = source["pages"][1:]
+        self.assertEqual([entry["pageNumber"] for entry in ajax_entries], [1, 2, 3])
+        self.assertTrue(all(len(entry["sha256"]) == 64 for entry in source["pages"]))
+        self.assertTrue(all(len(entry["payloadSha256"]) == 64 for entry in ajax_entries))
+        self.assertNotIn("999/QD-UBND", {item.decision_no for item in candidates})
+
+    def test_ajax_pagination_fails_closed_if_data_returns_after_an_empty_page(self):
+        source_url = "https://good.haiphong.gov.vn/thu-tuc-hanh-chinh"
+        html = b"""
+        <script>
+          var maxPage = parseInt(3);
+          $.ajax({
+            url: "/DesktopModule/UIArticleInMenu/ArticleInMenuPagination.aspx/LoadArticle",
+            data: {
+              article_category_id: 123, categoryIds: "123, 124", site_id: 77,
+              page: chosenPage, page_size: 10, keyword: "", date_begin: "", date_end: "",
+              show_no: "False", show_post_date: "False", num_of_text: 0,
+              show_view_count: "False", filter_order_in_list: "False", is_default: "False",
+              new: "False", number_of_day: 3, no: 0, articlelang: "vi-VN",
+              is_authenticated: "False"
+            },
+            success: function (result) {}
+          });
+        </script>
+        """
+        ajax_pages = {
+            "1": (
+                b'<ul class="ArticleList"><a href="/quyet-dinh-so-123-qd-ubnd-ngay-18-9-2026-cong-bo-thu-tuc-hanh-chinh">Quyet dinh 123</a></ul>',
+                "text/html; charset=utf-8",
+            ),
+            "2": (b"", "text/html; charset=utf-8"),
+            "3": (
+                b'<ul class="ArticleList"><a href="/quyet-dinh-so-124-qd-ubnd-ngay-19-9-2026-cong-bo-thu-tuc-hanh-chinh">Quyet dinh 124</a></ul>',
+                "text/html; charset=utf-8",
+            ),
+        }
+        config = {
+            "maxPagesPerSource": 4,
+            "listingSources": [{"id": "good", "url": source_url}],
+        }
+
+        with (
+            patch.object(scanner, "fetch_bytes", return_value=(html, "text/html; charset=utf-8")),
+            patch.object(
+                scanner,
+                "fetch_form_bytes",
+                side_effect=lambda url, form_data, referer, timeout=35: ajax_pages[form_data["page"]],
+            ),
+        ):
+            _, errors = scanner.discover_candidates(config)
+
+        self.assertEqual(len(errors), 1)
+        self.assertIn("pagination returned data on page 3 after empty page(s) [2]", errors[0]["error"])
+
+    def test_ajax_pagination_uses_server_rendered_first_page_when_ajax_page_one_is_empty(self):
+        source_url = "https://good.haiphong.gov.vn/thu-tuc-hanh-chinh"
+        html = b"""
+        <div class="ArticleOfCat">
+          <a href="/quyet-dinh-so-777-qd-ubnd-ngay-20-9-2026-cong-bo-danh-muc-thu-tuc-hanh-chinh">
+            Quyet dinh so 777/QD-UBND cong bo danh muc thu tuc hanh chinh
+          </a>
+        </div>
+        <script>
+          var maxPage = parseInt(3);
+          $.ajax({
+            url: "/DesktopModule/UIArticleInMenu/ArticleInMenuPagination.aspx/LoadArticle",
+            data: {
+              article_category_id: 123, categoryIds: "123, 124", site_id: 77,
+              page: chosenPage, page_size: 10, keyword: "", date_begin: "", date_end: "",
+              show_no: "False", show_post_date: "True", num_of_text: 0,
+              show_view_count: "False", filter_order_in_list: "False", is_default: "False",
+              new: "False", number_of_day: 3, no: -15, articlelang: "vi-VN",
+              is_authenticated: "False"
+            },
+            success: function (result) {}
+          });
+        </script>
+        """
+        ajax_pages = {
+            "1": (b"", "text/html; charset=utf-8"),
+            "2": (
+                b'<ul class="ArticleList"><a href="/quyet-dinh-so-778-qd-ubnd-ngay-21-9-2026-cong-bo-danh-muc-thu-tuc-hanh-chinh">Quyet dinh so 778/QD-UBND cong bo danh muc thu tuc hanh chinh</a></ul>',
+                "text/html; charset=utf-8",
+            ),
+            "3": (b"", "text/html; charset=utf-8"),
+        }
+        config = {
+            "maxPagesPerSource": 4,
+            "listingSources": [{
+                "id": "good",
+                "url": source_url,
+                "authority": "Good",
+                "authorityType": "city_portal",
+                "sourceRole": "primary_decision_listing",
+                "legalUse": "primary_publication",
+            }],
+        }
+        snapshot = {}
+        with (
+            patch.object(scanner, "fetch_bytes", return_value=(html, "text/html; charset=utf-8")),
+            patch.object(
+                scanner,
+                "fetch_form_bytes",
+                side_effect=lambda url, form_data, referer, timeout=35: ajax_pages[form_data["page"]],
+            ) as fetch_form,
+        ):
+            candidates, errors = scanner.discover_candidates(config, snapshot)
+
+        self.assertEqual(errors, [])
+        self.assertEqual({item.decision_no.split("/", 1)[0] for item in candidates}, {"777", "778"})
+        self.assertEqual(fetch_form.call_count, 3)
+        source = snapshot["sources"][0]
+        self.assertEqual(source["pages"][0]["candidateCollection"], "server_rendered_html")
+        self.assertEqual(source["pages"][0]["candidateCount"], 1)
+        self.assertEqual(source["ajaxEmptyPages"], [1, 3])
+        self.assertEqual(source["ajaxLastNonEmptyPage"], 2)
+        self.assertEqual(source["pagesFetched"], 4)
+        self.assertEqual(source["candidateCount"], 2)
+
+    def test_ajax_pagination_blocks_when_static_page_one_has_no_following_ajax_data(self):
+        source_url = "https://good.haiphong.gov.vn/thu-tuc-hanh-chinh"
+        html = b"""
+        <div class="ArticleOfCat">
+          <a href="/quyet-dinh-so-777-qd-ubnd-ngay-20-9-2026-cong-bo-danh-muc-thu-tuc-hanh-chinh">
+            Quyet dinh so 777/QD-UBND cong bo danh muc thu tuc hanh chinh
+          </a>
+        </div>
+        <script>
+          var maxPage = parseInt(3);
+          $.ajax({
+            url: "/DesktopModule/UIArticleInMenu/ArticleInMenuPagination.aspx/LoadArticle",
+            data: {
+              article_category_id: 123, categoryIds: "123, 124", site_id: 77,
+              page: chosenPage, page_size: 10, keyword: "", date_begin: "", date_end: "",
+              show_no: "False", show_post_date: "True", num_of_text: 0,
+              show_view_count: "False", filter_order_in_list: "False", is_default: "False",
+              new: "False", number_of_day: 3, no: -15, articlelang: "vi-VN",
+              is_authenticated: "False"
+            },
+            success: function (result) {}
+          });
+        </script>
+        """
+        config = {
+            "maxPagesPerSource": 4,
+            "listingSources": [{"id": "good", "url": source_url}],
+        }
+        with (
+            patch.object(scanner, "fetch_bytes", return_value=(html, "text/html; charset=utf-8")),
+            patch.object(
+                scanner,
+                "fetch_form_bytes",
+                return_value=(b"", "text/html; charset=utf-8"),
+            ) as fetch_form,
+        ):
+            candidates, errors = scanner.discover_candidates(config)
+
+        self.assertEqual({item.decision_no.split("/", 1)[0] for item in candidates}, {"777"})
+        self.assertEqual(fetch_form.call_count, 3)
+        self.assertEqual(len(errors), 1)
+        self.assertIn("AJAX pages 2..3 returned no content", errors[0]["error"])
+
+    def test_ajax_pagination_fails_closed_on_empty_page_before_declared_final_page(self):
+        source_url = "https://good.haiphong.gov.vn/thu-tuc-hanh-chinh"
+        html = b"""
+        <script>
+          var maxPage = parseInt(3);
+          $.ajax({
+            url: "/DesktopModule/UIArticleInMenu/ArticleInMenuPagination.aspx/LoadArticle",
+            data: {
+              article_category_id: 123, categoryIds: "123, 124", site_id: 77,
+              page: chosenPage, page_size: 10, keyword: "", date_begin: "", date_end: "",
+              show_no: "False", show_post_date: "True", num_of_text: 0,
+              show_view_count: "False", filter_order_in_list: "False", is_default: "False",
+              new: "False", number_of_day: 3, no: -15, articlelang: "vi-VN",
+              is_authenticated: "False"
+            },
+            success: function (result) {}
+          });
+        </script>
+        """
+        ajax_pages = {
+            "1": (
+                b'<ul class="ArticleList"><a href="/quyet-dinh-so-123-qd-ubnd-ngay-18-9-2026-cong-bo-thu-tuc-hanh-chinh">Quyet dinh so 123</a></ul>',
+                "text/html; charset=utf-8",
+            ),
+            "2": (b"", "text/html; charset=utf-8"),
+            "3": (b"", "text/html; charset=utf-8"),
+        }
+        config = {
+            "maxPagesPerSource": 4,
+            "listingSources": [{"id": "good", "url": source_url}],
+        }
+
+        with (
+            patch.object(scanner, "fetch_bytes", return_value=(html, "text/html; charset=utf-8")),
+            patch.object(
+                scanner,
+                "fetch_form_bytes",
+                side_effect=lambda url, form_data, referer, timeout=35: ajax_pages[form_data["page"]],
+            ),
+        ):
+            candidates, errors = scanner.discover_candidates(config)
+
+        self.assertEqual({item.decision_no.split("/", 1)[0] for item in candidates}, {"123"})
+        self.assertEqual(len(errors), 1)
+        self.assertIn("empty page(s) [2] before declared final page 3", errors[0]["error"])
+
+    def test_scan_only_does_not_write_snapshot_index_manifest_or_pdfs(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            config_path = root / "config.json"
+            manifest_path = root / "manifest.json"
+            index_path = root / "index.json"
+            snapshot_path = root / "snapshot.json"
+            config_path.write_text(json.dumps({"baselineDate": "2026-09-07", "listingSources": []}), encoding="utf-8")
+            manifest_path.write_text(json.dumps({"decisions": []}), encoding="utf-8")
+            index_path.write_text(json.dumps({"articles": []}), encoding="utf-8")
+            before = {path: path.read_bytes() for path in (config_path, manifest_path, index_path)}
+
+            with (
+                patch.object(scanner, "CONFIG_PATH", config_path),
+                patch.object(scanner, "MANIFEST_PATH", manifest_path),
+                patch.object(scanner, "INDEX_PATH", index_path),
+                patch.object(scanner, "SNAPSHOT_PATH", snapshot_path),
+                patch.object(scanner, "discover_candidates", return_value=([], [])),
+                patch.object(scanner, "write_json_if_changed") as write_json,
+                patch.object(scanner.sys, "argv", ["update_official_sources.py", "--online", "--scan-only"]),
+                contextlib.redirect_stdout(io.StringIO()) as output,
+            ):
+                result = scanner.main()
+
+            self.assertEqual(result, 0)
+            payload = json.loads(output.getvalue())
+            self.assertEqual(payload["status"], "scan_only_complete")
+            self.assertFalse(payload["writesPerformed"])
+            write_json.assert_not_called()
+            self.assertEqual({path: path.read_bytes() for path in before}, before)
+            self.assertFalse(snapshot_path.exists())
 
 if __name__ == "__main__":
     unittest.main()

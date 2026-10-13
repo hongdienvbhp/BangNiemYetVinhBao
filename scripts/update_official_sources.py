@@ -87,6 +87,32 @@ def fetch_bytes(url: str, timeout: int = 35) -> tuple[bytes, str]:
     return body, content_type
 
 
+def fetch_form_bytes(
+    url: str,
+    form_data: dict[str, str],
+    referer: str,
+    timeout: int = 35,
+) -> tuple[bytes, str]:
+    parsed_referer = urlparse(referer)
+    req = Request(
+        url,
+        data=urlencode(form_data).encode("utf-8"),
+        headers={
+            "User-Agent": USER_AGENT,
+            "Accept": "text/html,application/xhtml+xml,*/*;q=0.8",
+            "Referer": referer,
+            "Origin": f"{parsed_referer.scheme}://{parsed_referer.netloc}",
+            "X-Requested-With": "XMLHttpRequest",
+            "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+        },
+        method="POST",
+    )
+    with urlopen(req, timeout=timeout) as resp:
+        body = resp.read()
+        content_type = resp.headers.get("Content-Type", "")
+    return body, content_type
+
+
 def decode_html(body: bytes, content_type: str) -> str:
     charset = "utf-8"
     match = re.search(r"charset=([\w-]+)", content_type or "", re.I)
@@ -96,6 +122,116 @@ def decode_html(body: bytes, content_type: str) -> str:
         return body.decode(charset, errors="replace")
     except LookupError:
         return body.decode("utf-8", errors="replace")
+
+
+def extract_ajax_pagination_config(page_html: str, source_url: str) -> dict | None:
+    """Read the existing official portal's AJAX pagination contract from its script."""
+    script_blocks = re.findall(
+        r"<script\b[^>]*>(.*?)</script\s*>",
+        page_html,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+    matching_scripts = [
+        script for script in script_blocks
+        if "ArticleInMenuPagination.aspx/LoadArticle" in script
+    ]
+    if not matching_scripts:
+        return None
+    if len(matching_scripts) != 1:
+        raise RuntimeError(
+            f"ambiguous AJAX pagination configuration: {len(matching_scripts)} scripts"
+        )
+
+    script = matching_scripts[0]
+    endpoint_match = re.search(
+        r"\burl\s*:\s*([\"'])([^\"']*ArticleInMenuPagination\.aspx/LoadArticle)\1",
+        script,
+        flags=re.IGNORECASE,
+    )
+    if not endpoint_match:
+        raise RuntimeError("AJAX pagination endpoint was not recognized")
+    endpoint = urljoin(source_url, endpoint_match.group(2))
+    source_parts = urlparse(source_url)
+    endpoint_parts = urlparse(endpoint)
+    expected_path = "/DesktopModule/UIArticleInMenu/ArticleInMenuPagination.aspx/LoadArticle"
+    if (
+        endpoint_parts.scheme not in {"http", "https"}
+        or endpoint_parts.scheme != source_parts.scheme
+        or endpoint_parts.netloc.lower() != source_parts.netloc.lower()
+        or not endpoint_parts.path.endswith(expected_path)
+        or endpoint_parts.query
+        or endpoint_parts.fragment
+    ):
+        raise RuntimeError("AJAX pagination endpoint is outside the approved source origin/path")
+
+    ajax_start = script.rfind("$.ajax", 0, endpoint_match.start())
+    if ajax_start < 0:
+        raise RuntimeError("AJAX pagination request wrapper was not found")
+    ajax_script = script[ajax_start:]
+    data_match = re.search(
+        r"\bdata\s*:\s*\{(.*?)\}\s*,\s*success\s*:",
+        ajax_script,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+    if not data_match:
+        raise RuntimeError("AJAX pagination form data was not recognized")
+
+    form_data: dict[str, str] = {}
+    property_pattern = re.compile(
+        r"""(?P<key>[A-Za-z_]\w*)\s*:\s*"""
+        r"""(?P<value>"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'|[^,\r\n}]+)(?=[,\r\n}]|$)"""
+    )
+    for match in property_pattern.finditer(data_match.group(1)):
+        key = match.group("key")
+        raw_value = match.group("value").strip()
+        if raw_value.startswith('"') and raw_value.endswith('"'):
+            try:
+                value = json.loads(raw_value)
+            except json.JSONDecodeError as exc:
+                raise RuntimeError(f"invalid AJAX form string for {key}") from exc
+        elif raw_value.startswith("'") and raw_value.endswith("'"):
+            value = raw_value[1:-1].replace(r"\'", "'").replace(r"\\", "\\")
+        elif re.fullmatch(r"(?:-?\d+|[A-Za-z_]\w*)", raw_value):
+            value = raw_value
+        else:
+            raise RuntimeError(f"unsupported AJAX form value for {key}")
+        form_data[key] = str(value)
+
+    required_fields = {
+        "article_category_id", "categoryIds", "site_id", "page", "page_size",
+        "keyword", "date_begin", "date_end", "show_no", "show_post_date",
+        "num_of_text", "show_view_count", "filter_order_in_list", "is_default",
+        "new", "number_of_day", "no", "articlelang", "is_authenticated",
+    }
+    missing_fields = sorted(required_fields - form_data.keys())
+    if missing_fields:
+        raise RuntimeError("AJAX pagination form missing fields: " + ", ".join(missing_fields))
+    if form_data["page"].strip() != "chosenPage":
+        raise RuntimeError("AJAX pagination page field is not bound to the selected page")
+    if not form_data["categoryIds"].strip() or not form_data["article_category_id"].isdigit():
+        raise RuntimeError("AJAX pagination category configuration is invalid")
+    if not form_data["site_id"].isdigit() or not form_data["page_size"].isdigit():
+        raise RuntimeError("AJAX pagination site/page-size configuration is invalid")
+    if int(form_data["page_size"]) < 1:
+        raise RuntimeError("AJAX pagination page size must be positive")
+
+    max_page_match = re.search(
+        r"\bmaxPage\s*=\s*parseInt\(\s*(\d+)\s*\)",
+        script,
+        flags=re.IGNORECASE,
+    )
+    if not max_page_match:
+        raise RuntimeError("AJAX pagination declared maximum page was not recognized")
+    max_page = int(max_page_match.group(1))
+    if max_page < 1 or max_page > 500:
+        raise RuntimeError(f"AJAX pagination declared page count is invalid: {max_page}")
+
+    return {
+        "endpoint": endpoint,
+        "formData": form_data,
+        "maxPage": max_page,
+        "pageSize": int(form_data["page_size"]),
+    }
 
 
 class PageParser(HTMLParser):
@@ -390,8 +526,178 @@ def discover_candidates(
                 page_parser = PageParser()
                 page_parser.feed(page)
                 digest = sha256_bytes(body)
-                page_candidate_count = 0
+                ajax_config = (
+                    extract_ajax_pagination_config(page, source_url)
+                    if current_url == source_url
+                    else None
+                )
 
+                if ajax_config:
+                    ajax_max_page = ajax_config["maxPage"]
+                    if source_snapshot["pagesFetched"] + 1 + ajax_max_page > max_pages:
+                        raise RuntimeError(
+                            f"AJAX pagination page limit reached ({max_pages}) "
+                            f"for {ajax_max_page} declared pages plus initial HTML"
+                        )
+
+                    # The static HTML contains unrelated article widgets and # placeholder
+                    # arrow controls. Candidate collection must use the configured AJAX list.
+                    source_snapshot["paginationMode"] = "ajax_form_post"
+                    source_snapshot["ajaxEndpoint"] = ajax_config["endpoint"]
+                    source_snapshot["ajaxDeclaredMaxPage"] = ajax_max_page
+                    source_snapshot["ajaxPageSize"] = ajax_config["pageSize"]
+                    source_snapshot["pages"].append({
+                        "url": current_url,
+                        "requestMethod": "GET",
+                        "sha256": digest,
+                        "linkCount": len(page_parser.links),
+                        "candidateCount": 0,
+                        "candidateCollection": "ajax",
+                    })
+                    source_snapshot["pagesFetched"] += 1
+
+                    empty_pages: list[int] = []
+                    last_non_empty_page = 0
+                    server_rendered_initial_page = False
+                    nonempty_ajax_page_after_initial = False
+                    for page_number in range(1, ajax_max_page + 1):
+                        form_data = dict(ajax_config["formData"])
+                        form_data["page"] = str(page_number)
+                        encoded_form = urlencode(form_data).encode("utf-8")
+                        response_body, response_type = fetch_form_bytes(
+                            ajax_config["endpoint"],
+                            form_data,
+                            source_url,
+                        )
+                        response_html = decode_html(response_body, response_type)
+                        response_parser = PageParser()
+                        response_parser.feed(response_html)
+                        response_empty = not response_body.strip()
+                        page_candidate_count = 0
+
+                        if not response_empty:
+                            if "ArticleList" not in response_html:
+                                raise RuntimeError(
+                                    f"AJAX page {page_number} lacks the expected ArticleList container"
+                                )
+                            for href, anchor in response_parser.links:
+                                if not href:
+                                    continue
+                                article_url = urljoin(source_url, href)
+                                if urlparse(article_url).netloc.lower() != urlparse(source_url).netloc.lower():
+                                    continue
+                                if not is_candidate_link(article_url, anchor):
+                                    continue
+                                decision_no, decision_date = parse_decision_identity(article_url, anchor)
+                                key = article_url.rstrip("/")
+                                found[key] = Candidate(
+                                    source_id=source_id,
+                                    source_url=source_url,
+                                    source_authority=source.get("authority", ""),
+                                    authority_type=source.get("authorityType", ""),
+                                    source_role=source.get("sourceRole", ""),
+                                    legal_use=source.get("legalUse", ""),
+                                    article_url=article_url,
+                                    anchor_text=anchor,
+                                    decision_no=decision_no,
+                                    decision_date=decision_date,
+                                )
+                                page_candidate_count += 1
+
+                        source_snapshot["pages"].append({
+                            "url": ajax_config["endpoint"],
+                            "requestMethod": "POST",
+                            "listingUrl": source_url,
+                            "pageNumber": page_number,
+                            "pageSize": ajax_config["pageSize"],
+                            "payloadSha256": sha256_bytes(encoded_form),
+                            "sha256": sha256_bytes(response_body),
+                            "linkCount": len(response_parser.links),
+                            "candidateCount": page_candidate_count,
+                        })
+                        source_snapshot["pagesFetched"] += 1
+                        source_snapshot["candidateCount"] += page_candidate_count
+
+                        if response_empty:
+                            empty_pages.append(page_number)
+                            if page_number == 1:
+                                # Some official portals render page 1 in the GET HTML and
+                                # only use the AJAX endpoint for navigation after page 1.
+                                # Accept that fallback only when the GET page itself contains
+                                # candidate links; still require actual AJAX data for later pages.
+                                static_candidate_count = 0
+                                for href, anchor in page_parser.links:
+                                    if not href:
+                                        continue
+                                    article_url = urljoin(source_url, href)
+                                    if urlparse(article_url).netloc.lower() != urlparse(source_url).netloc.lower():
+                                        continue
+                                    if not is_candidate_link(article_url, anchor):
+                                        continue
+                                    decision_no, decision_date = parse_decision_identity(article_url, anchor)
+                                    key = article_url.rstrip("/")
+                                    found[key] = Candidate(
+                                        source_id=source_id,
+                                        source_url=source_url,
+                                        source_authority=source.get("authority", ""),
+                                        authority_type=source.get("authorityType", ""),
+                                        source_role=source.get("sourceRole", ""),
+                                        legal_use=source.get("legalUse", ""),
+                                        article_url=article_url,
+                                        anchor_text=anchor,
+                                        decision_no=decision_no,
+                                        decision_date=decision_date,
+                                    )
+                                    static_candidate_count += 1
+                                if static_candidate_count == 0:
+                                    raise RuntimeError(
+                                        "AJAX page 1 was empty and the initial HTML contained no candidate links"
+                                    )
+                                server_rendered_initial_page = True
+                                last_non_empty_page = 1
+                                source_snapshot["pages"][0]["candidateCollection"] = "server_rendered_html"
+                                source_snapshot["pages"][0]["candidateCount"] = static_candidate_count
+                                source_snapshot["candidateCount"] += static_candidate_count
+                        else:
+                            invalid_empty_pages = [
+                                value for value in empty_pages
+                                if value > 1 or not server_rendered_initial_page
+                            ]
+                            if invalid_empty_pages:
+                                raise RuntimeError(
+                                    f"AJAX pagination returned data on page {page_number} "
+                                    f"after empty page(s) {invalid_empty_pages}"
+                                )
+                            last_non_empty_page = page_number
+                            if page_number > 1:
+                                nonempty_ajax_page_after_initial = True
+
+                    source_snapshot["ajaxEmptyPages"] = empty_pages
+                    source_snapshot["ajaxLastNonEmptyPage"] = last_non_empty_page
+                    if (
+                        server_rendered_initial_page
+                        and ajax_max_page > 1
+                        and not nonempty_ajax_page_after_initial
+                    ):
+                        raise RuntimeError(
+                            f"AJAX pages 2..{ajax_max_page} returned no content after the server-rendered first page"
+                        )
+
+                    premature_empty_pages = [
+                        page_number
+                        for page_number in empty_pages
+                        if page_number < ajax_max_page
+                        and not (page_number == 1 and server_rendered_initial_page)
+                    ]
+                    if premature_empty_pages:
+                        raise RuntimeError(
+                            f"AJAX pagination returned empty page(s) {premature_empty_pages} "
+                            f"before declared final page {ajax_max_page}"
+                        )
+                    next_url = ""
+                    continue
+
+                page_candidate_count = 0
                 for href, anchor in page_parser.links:
                     if not href:
                         continue
@@ -418,6 +724,7 @@ def discover_candidates(
 
                 source_snapshot["pages"].append({
                     "url": current_url,
+                    "requestMethod": "GET",
                     "sha256": digest,
                     "linkCount": len(page_parser.links),
                     "candidateCount": page_candidate_count,
@@ -567,8 +874,15 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--online", action="store_true", help="Fetch official listing pages and stage newly discovered decisions.")
     parser.add_argument("--initialize", action="store_true", help="Create the baseline source index from current official listings.")
+    parser.add_argument(
+        "--scan-only",
+        action="store_true",
+        help="Scan official sources and emit page hashes without writing snapshot, index, manifest, or PDFs.",
+    )
     args = parser.parse_args()
 
+    if args.scan_only and (not args.online or args.initialize):
+        parser.error("--scan-only requires --online and cannot be combined with --initialize")
     if not args.online and not args.initialize:
         parser.error("Use --online or --initialize")
 
@@ -621,6 +935,8 @@ def main() -> int:
                     "sources": snapshot_metadata.get("sources", []),
                     "indexChanged": False,
                     "manifestChanged": False,
+                    "snapshotChanged": False,
+                    "writesPerformed": False,
                     "status": "blocked_incomplete_source_snapshot",
                 },
                 ensure_ascii=True,
@@ -628,6 +944,26 @@ def main() -> int:
             )
         )
         return 2
+
+    if args.scan_only:
+        print(json.dumps(
+            {
+                "snapshotComplete": True,
+                "sourceCount": len(snapshot_metadata.get("sources", [])),
+                "sourceErrorCount": 0,
+                "sourceErrors": [],
+                "sources": snapshot_metadata.get("sources", []),
+                "candidateUrlCount": len(candidates),
+                "indexChanged": False,
+                "manifestChanged": False,
+                "snapshotChanged": False,
+                "writesPerformed": False,
+                "status": "scan_only_complete",
+            },
+            ensure_ascii=True,
+            indent=2,
+        ))
+        return 0
 
     new_articles = [x for x in candidates if x.article_url.rstrip("/") not in known_urls]
     retry_articles = [
