@@ -42,6 +42,17 @@ class OfficialSourceScannerTests(unittest.TestCase):
         self.assertEqual(parser.next_links, ["/listing?page=2"])
         self.assertEqual(len(parser.links), 2)
 
+    def test_page_parser_ignores_hash_only_carousel_arrows(self):
+        parser = scanner.PageParser()
+        parser.feed(
+            '<div class="ArticleCat"><div class="ArticleInMenu"><div class="Pagination">'
+            '<a href="#" class="LeftArrow">&#8592;</a>'
+            '<a href="#" class="RightArrow">&#8594;</a>'
+            '</div></div></div>'
+        )
+        self.assertEqual(parser.next_links, [])
+        self.assertEqual(len(parser.links), 2)
+
     def test_external_ministry_reference_is_not_treated_as_city_decision(self):
         title = (
             "Công khai Quyết định số 2841/QĐ-UBND ngày 08/9/2026 của Bộ Y tế "

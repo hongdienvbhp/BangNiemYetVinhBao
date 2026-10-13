@@ -129,13 +129,19 @@ class PageParser(HTMLParser):
             label = fold(" ".join((text, self._anchor_attrs.get("aria-label", ""), self._anchor_attrs.get("title", ""))).strip())
             next_classes = {"next", "pager-next", "pagination-next", "page-next", "next-page", "older"}
             next_labels = {"next", "older", "newer", "trang sau", "sau", "tiep", "tiep theo", "ke tiep", "»", "›", "→"}
-            if (
+            href = self._anchor_href.strip()
+            is_non_navigable = (
+                not href
+                or href.startswith("#")
+                or href.lower().startswith(("javascript:", "mailto:"))
+            )
+            if not is_non_navigable and (
                 "next" in rel_tokens
                 or bool(class_tokens & next_classes)
                 or label in next_labels
                 or label.startswith(("next ", "older ", "trang sau", "tiep theo", "ke tiep"))
             ):
-                self.next_links.append(self._anchor_href)
+                self.next_links.append(href)
             self._anchor_href = ""
             self._anchor_attrs = {}
             self._anchor_parts = []
