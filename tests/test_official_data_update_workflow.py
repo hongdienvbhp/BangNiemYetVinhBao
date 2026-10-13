@@ -34,5 +34,16 @@ class OfficialDataUpdateWorkflowTests(unittest.TestCase):
         self.assertIn("official source scan completed; automated PR", self.workflow)
 
 
+    def test_pending_review_delta_includes_untracked_source_evidence(self):
+        self.assertIn(
+            "git ls-files --others --exclude-standard -z -- data js/master-data-fallback.js | xargs -0 -r git add -N --",
+            self.workflow,
+        )
+        self.assertIn(
+            "git diff --binary -- data js/master-data-fallback.js > /tmp/pending-candidate-review-delta.diff",
+            self.workflow,
+        )
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -144,6 +144,8 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          # Include newly downloaded/untracked source evidence (e.g. PDFs) in the review artifact.
+          git ls-files --others --exclude-standard -z -- data js/master-data-fallback.js | xargs -0 -r git add -N --
           git diff --binary -- data js/master-data-fallback.js > /tmp/pending-candidate-review-delta.diff
           git diff --check
 
