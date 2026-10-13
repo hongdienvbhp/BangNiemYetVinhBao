@@ -15,7 +15,14 @@
     "liveVerifiedIdentity": 36,
     "liveVerifiedIdentityAndAgency": 0,
     "liveUnresolved": 15,
-    "liveWafRejected": 0
+    "liveWafRejected": 0,
+    "legalVerificationCovered": 37,
+    "legalCurrentOfficialCommune": 34,
+    "legalRepealedOfficial": 3,
+    "legalNeedsVerification": 0,
+    "missingFromMasterWithRepealedOfficialEvidence": 3,
+    "missingFromMasterWithCurrentLegalEvidence": 0,
+    "missingFromMasterWithoutLegalEvidence": 0
   },
   "items": [
     {
@@ -39,7 +46,19 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": "2874/QĐ-UBND",
+        "decisionDate": "2025-07-16",
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6819/tintuc/2025/7/dm-tthc-chuan-hoa-syt638893087955858786.pdf"
+        ]
+      }
     },
     {
       "ordinal": 2,
@@ -62,7 +81,19 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": "2874/QĐ-UBND",
+        "decisionDate": "2025-07-16",
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6819/tintuc/2025/7/dm-tthc-chuan-hoa-syt638893087955858786.pdf"
+        ]
+      }
     },
     {
       "ordinal": 3,
@@ -85,7 +116,19 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": null,
+        "decisionDate": null,
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6815/tintuc/2025/7/dm-tthc-chuan-hoa-so-van-hoa-tt-trang-2638883643696552431.pdf"
+        ]
+      }
     },
     {
       "ordinal": 4,
@@ -108,7 +151,20 @@
       "liveVerificationResult": "UNRESOLVED_VISIBLE_IDENTITY",
       "liveNameVisible": false,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "repealed_official_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": "1847/QĐ-UBND",
+        "decisionDate": "2026-05-19",
+        "checkedAt": "2026-09-29",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/5/qd-1847639156687053039888.pdf",
+          "https://cdn.haiphong.gov.vn/gov-hpg/6805/tintuc/2025/12/thong-bao-danh-muc-thu-tuc-hanh-chinh-phi-dia-gioi.signed639004671669010703.pdf"
+        ]
+      }
     },
     {
       "ordinal": 5,
@@ -131,7 +187,19 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": "2874/QĐ-UBND",
+        "decisionDate": "2025-07-16",
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6819/tintuc/2025/7/dm-tthc-chuan-hoa-syt638893087955858786.pdf"
+        ]
+      }
     },
     {
       "ordinal": 6,
@@ -154,7 +222,19 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": "2874/QĐ-UBND",
+        "decisionDate": "2025-07-16",
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6819/tintuc/2025/7/dm-tthc-chuan-hoa-syt638893087955858786.pdf"
+        ]
+      }
     },
     {
       "ordinal": 7,
@@ -177,7 +257,19 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": "2874/QĐ-UBND",
+        "decisionDate": "2025-07-16",
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6819/tintuc/2025/7/dm-tthc-chuan-hoa-syt638893087955858786.pdf"
+        ]
+      }
     },
     {
       "ordinal": 8,
@@ -200,7 +292,19 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": null,
+        "decisionDate": null,
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6856/tintuc/2025/11/13.11.dmtthc.signed638989743120385193.pdf"
+        ]
+      }
     },
     {
       "ordinal": 9,
@@ -223,7 +327,19 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": null,
+        "decisionDate": null,
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6856/tintuc/2025/11/13.11.dmtthc.signed638989743120385193.pdf"
+        ]
+      }
     },
     {
       "ordinal": 10,
@@ -246,7 +362,19 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": null,
+        "decisionDate": null,
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6823/tintuc/2026/4/danh_muc_tthc_bo_noi_vu639109961034637945.pdf"
+        ]
+      }
     },
     {
       "ordinal": 11,
@@ -269,7 +397,19 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": null,
+        "decisionDate": null,
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6823/tintuc/2026/4/danh_muc_tthc_bo_noi_vu639109961034637945.pdf"
+        ]
+      }
     },
     {
       "ordinal": 12,
@@ -292,7 +432,19 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": null,
+        "decisionDate": null,
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6812/tintuc/2025/8/quyet-dinh-2025-cong-bo-dmttc-thuc-hien-phi-dia-gioi-so-nn-va-moi-truong-ttr443-..signed638917970880695305.pdf"
+        ]
+      }
     },
     {
       "ordinal": 13,
@@ -315,7 +467,19 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": null,
+        "decisionDate": null,
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6812/tintuc/2025/8/quyet-dinh-2025-cong-bo-dmttc-thuc-hien-phi-dia-gioi-so-nn-va-moi-truong-ttr443-..signed638917970880695305.pdf"
+        ]
+      }
     },
     {
       "ordinal": 14,
@@ -338,7 +502,19 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": "2874/QĐ-UBND",
+        "decisionDate": "2025-07-16",
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6819/tintuc/2025/7/dm-tthc-chuan-hoa-syt638893087955858786.pdf"
+        ]
+      }
     },
     {
       "ordinal": 15,
@@ -361,7 +537,19 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": null,
+        "decisionDate": null,
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6823/tintuc/2026/4/danh_muc_tthc_bo_noi_vu639109961034637945.pdf"
+        ]
+      }
     },
     {
       "ordinal": 16,
@@ -384,7 +572,11 @@
       "liveVerificationResult": "UNRESOLVED_VISIBLE_IDENTITY",
       "liveNameVisible": false,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "not_covered_by_legal_verification_manifest",
+        "manifest": "data/priority-51-legal-verification.json"
+      }
     },
     {
       "ordinal": 17,
@@ -407,7 +599,11 @@
       "liveVerificationResult": "UNRESOLVED_VISIBLE_IDENTITY",
       "liveNameVisible": false,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "not_covered_by_legal_verification_manifest",
+        "manifest": "data/priority-51-legal-verification.json"
+      }
     },
     {
       "ordinal": 18,
@@ -430,7 +626,20 @@
       "liveVerificationResult": "UNRESOLVED_VISIBLE_IDENTITY",
       "liveNameVisible": false,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "repealed_official_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": "2127/QĐ-UBND",
+        "decisionDate": "2026-06-06",
+        "checkedAt": "2026-09-29",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6798/tintuc/2026/6/qd-2127.2026-so-cong-thuong639179180236944152.pdf",
+          "https://cdn.haiphong.gov.vn/gov-hpg/6822/tintuc/2026/5/27.5-tb-niem-yet-tthc.signed639154720526079683.pdf"
+        ]
+      }
     },
     {
       "ordinal": 19,
@@ -453,7 +662,19 @@
       "liveVerificationResult": "UNRESOLVED_VISIBLE_IDENTITY",
       "liveNameVisible": false,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": null,
+        "decisionDate": null,
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6822/tintuc/2026/5/27.5-tb-niem-yet-tthc.signed639154720526079683.pdf"
+        ]
+      }
     },
     {
       "ordinal": 20,
@@ -476,7 +697,19 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": null,
+        "decisionDate": null,
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6822/tintuc/2026/5/27.5-tb-niem-yet-tthc.signed639154720526079683.pdf"
+        ]
+      }
     },
     {
       "ordinal": 21,
@@ -499,7 +732,19 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": null,
+        "decisionDate": null,
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6822/tintuc/2026/5/27.5-tb-niem-yet-tthc.signed639154720526079683.pdf"
+        ]
+      }
     },
     {
       "ordinal": 22,
@@ -522,7 +767,19 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": null,
+        "decisionDate": null,
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6822/tintuc/2026/5/27.5-tb-niem-yet-tthc.signed639154720526079683.pdf"
+        ]
+      }
     },
     {
       "ordinal": 23,
@@ -545,7 +802,19 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": null,
+        "decisionDate": null,
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6822/tintuc/2026/5/27.5-tb-niem-yet-tthc.signed639154720526079683.pdf"
+        ]
+      }
     },
     {
       "ordinal": 24,
@@ -568,7 +837,11 @@
       "liveVerificationResult": "UNRESOLVED_VISIBLE_IDENTITY",
       "liveNameVisible": false,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "not_covered_by_legal_verification_manifest",
+        "manifest": "data/priority-51-legal-verification.json"
+      }
     },
     {
       "ordinal": 25,
@@ -591,7 +864,11 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "not_covered_by_legal_verification_manifest",
+        "manifest": "data/priority-51-legal-verification.json"
+      }
     },
     {
       "ordinal": 26,
@@ -614,7 +891,11 @@
       "liveVerificationResult": "UNRESOLVED_VISIBLE_IDENTITY",
       "liveNameVisible": false,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "not_covered_by_legal_verification_manifest",
+        "manifest": "data/priority-51-legal-verification.json"
+      }
     },
     {
       "ordinal": 27,
@@ -637,7 +918,19 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": null,
+        "decisionDate": null,
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf"
+        ]
+      }
     },
     {
       "ordinal": 28,
@@ -660,7 +953,19 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": null,
+        "decisionDate": null,
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf"
+        ]
+      }
     },
     {
       "ordinal": 29,
@@ -683,7 +988,19 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": null,
+        "decisionDate": null,
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf"
+        ]
+      }
     },
     {
       "ordinal": 30,
@@ -706,7 +1023,19 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": null,
+        "decisionDate": null,
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf"
+        ]
+      }
     },
     {
       "ordinal": 31,
@@ -729,7 +1058,19 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": null,
+        "decisionDate": null,
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf"
+        ]
+      }
     },
     {
       "ordinal": 32,
@@ -752,7 +1093,19 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": "93/QĐ-UBND",
+        "decisionDate": "2026-01-10",
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6811/tintuc/2026/2/qd-cong-bo-dm-tthc-sua-doi-bo-sung-cac-linh-vuc-thuoc-tham-quyen-cua-so-tu-phap..signed639056177100499762.pdf"
+        ]
+      }
     },
     {
       "ordinal": 33,
@@ -775,7 +1128,11 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "not_covered_by_legal_verification_manifest",
+        "manifest": "data/priority-51-legal-verification.json"
+      }
     },
     {
       "ordinal": 34,
@@ -798,7 +1155,19 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": null,
+        "decisionDate": null,
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf"
+        ]
+      }
     },
     {
       "ordinal": 35,
@@ -821,7 +1190,19 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": null,
+        "decisionDate": null,
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf"
+        ]
+      }
     },
     {
       "ordinal": 36,
@@ -844,7 +1225,19 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": null,
+        "decisionDate": null,
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf"
+        ]
+      }
     },
     {
       "ordinal": 37,
@@ -867,7 +1260,11 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "not_covered_by_legal_verification_manifest",
+        "manifest": "data/priority-51-legal-verification.json"
+      }
     },
     {
       "ordinal": 38,
@@ -890,7 +1287,19 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": null,
+        "decisionDate": null,
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf"
+        ]
+      }
     },
     {
       "ordinal": 39,
@@ -913,7 +1322,11 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "not_covered_by_legal_verification_manifest",
+        "manifest": "data/priority-51-legal-verification.json"
+      }
     },
     {
       "ordinal": 40,
@@ -936,7 +1349,11 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "not_covered_by_legal_verification_manifest",
+        "manifest": "data/priority-51-legal-verification.json"
+      }
     },
     {
       "ordinal": 41,
@@ -959,7 +1376,19 @@
       "liveVerificationResult": "UNRESOLVED_VISIBLE_IDENTITY",
       "liveNameVisible": false,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": null,
+        "decisionDate": null,
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf"
+        ]
+      }
     },
     {
       "ordinal": 42,
@@ -982,7 +1411,19 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": null,
+        "decisionDate": null,
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6868/tintuc/2026/4/qd-658639112645712936429.pdf"
+        ]
+      }
     },
     {
       "ordinal": 43,
@@ -1005,7 +1446,20 @@
       "liveVerificationResult": "UNRESOLVED_VISIBLE_IDENTITY",
       "liveNameVisible": false,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": null,
+        "decisionDate": null,
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6799/tintuc/2026/3/26.02-kh-ngay-thu-5-hanh-chinh.signed639080565000341409.pdf",
+          "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vuc-chung-thuc-thuoc-pham-vi--810099"
+        ]
+      }
     },
     {
       "ordinal": 44,
@@ -1028,7 +1482,20 @@
       "liveVerificationResult": "UNRESOLVED_VISIBLE_IDENTITY",
       "liveNameVisible": false,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": null,
+        "decisionDate": null,
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6799/tintuc/2026/3/26.02-kh-ngay-thu-5-hanh-chinh.signed639080565000341409.pdf",
+          "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vuc-chung-thuc-thuoc-pham-vi--810099"
+        ]
+      }
     },
     {
       "ordinal": 45,
@@ -1051,7 +1518,20 @@
       "liveVerificationResult": "UNRESOLVED_VISIBLE_IDENTITY",
       "liveNameVisible": false,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "repealed_official_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": "4517/QĐ-UBND",
+        "decisionDate": "2025-11-10",
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6841/tintuc/2026/1/13-01-thong-bao-dmtthc-thuc-hien-theo-qd-so-93.10.01.signed639040640584481095.pdf",
+          "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vuc-chung-thuc-thuoc-pham-vi--811088"
+        ]
+      }
     },
     {
       "ordinal": 46,
@@ -1074,7 +1554,20 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "current_official_commune_evidence",
+        "communeScopeEvidence": true,
+        "decisionNo": null,
+        "decisionDate": null,
+        "checkedAt": "2026-09-07",
+        "basis": "official_haiphong_source",
+        "dvcqgRole": "technical_identity_only",
+        "sourceUrls": [
+          "https://cdn.haiphong.gov.vn/gov-hpg/6799/tintuc/2026/3/26.02-kh-ngay-thu-5-hanh-chinh.signed639080565000341409.pdf",
+          "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vuc-chung-thuc-thuoc-pham-vi--810099"
+        ]
+      }
     },
     {
       "ordinal": 47,
@@ -1097,7 +1590,11 @@
       "liveVerificationResult": "UNRESOLVED_VISIBLE_IDENTITY",
       "liveNameVisible": false,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "not_covered_by_legal_verification_manifest",
+        "manifest": "data/priority-51-legal-verification.json"
+      }
     },
     {
       "ordinal": 48,
@@ -1120,7 +1617,11 @@
       "liveVerificationResult": "UNRESOLVED_VISIBLE_IDENTITY",
       "liveNameVisible": false,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "not_covered_by_legal_verification_manifest",
+        "manifest": "data/priority-51-legal-verification.json"
+      }
     },
     {
       "ordinal": 49,
@@ -1143,7 +1644,11 @@
       "liveVerificationResult": "VERIFIED_VISIBLE_IDENTITY",
       "liveNameVisible": true,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "not_covered_by_legal_verification_manifest",
+        "manifest": "data/priority-51-legal-verification.json"
+      }
     },
     {
       "ordinal": 50,
@@ -1166,7 +1671,11 @@
       "liveVerificationResult": "UNRESOLVED_VISIBLE_IDENTITY",
       "liveNameVisible": false,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "not_covered_by_legal_verification_manifest",
+        "manifest": "data/priority-51-legal-verification.json"
+      }
     },
     {
       "ordinal": 51,
@@ -1189,7 +1698,11 @@
       "liveVerificationResult": "UNRESOLVED_VISIBLE_IDENTITY",
       "liveNameVisible": false,
       "liveAgencyVisible": false,
-      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z"
+      "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
+      "legalVerification": {
+        "status": "not_covered_by_legal_verification_manifest",
+        "manifest": "data/priority-51-legal-verification.json"
+      }
     }
   ],
   "canonicalDatasetVersion": "2026.10.13",
@@ -1197,5 +1710,6 @@
   "canonicalContract": "data/thu-tuc.json",
   "liveVerificationManifest": "data/source-audit/dvcqg-live-verification-current.json",
   "liveVerifiedAt": "2026-09-20T14:04:02.5394062Z",
-  "namePolicy": "Crosswalk name is a technical snapshot only. currentMasterName from data/thu-tuc.json is the canonical display name; legal status is never inferred from this crosswalk."
+  "namePolicy": "Crosswalk name and formalityId are technical snapshots only. currentMasterName from data/thu-tuc.json is the canonical display name. legalVerification is copied from the separately reviewed official-source manifest data/priority-51-legal-verification.json; DVCQG identity evidence never establishes legal status.",
+  "legalVerificationManifest": "data/priority-51-legal-verification.json"
 }
