@@ -31,7 +31,7 @@
           "official_decision_4123_annex_pdf"
         ]
       },
-      "verificationNotes": "QĐ 4123/QĐ-UBND xác nhận thời hạn giải quyết giảm từ 20 ngày làm việc xuống 11,5 ngày làm việc. Mirror sang trường legacy top-level thoiHan để không tiếp tục hiển thị giá trị cũ 23 ngày; không thay đổi thẩm quyền cấp tỉnh hoặc phạm vi tiếp nhận tại Trung tâm PVHCC cấp xã."
+      "verificationNotes": "Phụ lục QĐ 4123/QĐ-UBND ghi thời hạn trước cắt giảm là 20 ngày làm việc và sau cắt giảm là 11,5 ngày làm việc. Giá trị top-level thoiHan trong Master trước override là 23 ngày làm việc, vì vậy delta dữ liệu Master ghi 23 → 11,5; không đồng nhất giá trị legacy 23 với thời hạn trước cắt giảm 20 trong phụ lục. Nguồn/quyết định tạo ra chênh lệch 23 so với 20 chưa được truy nguyên trong lượt rà soát này và cần tiếp tục kiểm tra các quyết định lịch sử. Giá trị hiện hành được hiển thị theo QĐ 4123; không thay đổi thẩm quyền cấp tỉnh hoặc phạm vi tiếp nhận tại Trung tâm PVHCC cấp xã."
     }
   ]
 }
