@@ -103,6 +103,7 @@ class PageParser(HTMLParser):
         super().__init__(convert_charrefs=True)
         self.links: list[tuple[str, str]] = []
         self.next_links: list[str] = []
+        self.numbered_page_links: list[tuple[str, str]] = []
         self.title_parts: list[str] = []
         self.in_title = False
         self._anchor_href = ""
@@ -124,6 +125,8 @@ class PageParser(HTMLParser):
         if tag.lower() == "a" and self._anchor_href:
             text = re.sub(r"\s+", " ", " ".join(self._anchor_parts)).strip()
             self.links.append((self._anchor_href, text))
+            if re.fullmatch(r"\d{1,3}", text):
+                self.numbered_page_links.append((self._anchor_href.strip(), text))
             rel_tokens = set(self._anchor_attrs.get("rel", "").lower().split())
             class_tokens = set(re.split(r"\s+", self._anchor_attrs.get("class", "").lower()))
             label = fold(" ".join((text, self._anchor_attrs.get("aria-label", ""), self._anchor_attrs.get("title", ""))).strip())
@@ -327,7 +330,11 @@ def discover_candidates(
     config: dict,
     snapshot_metadata: dict | None = None,
 ) -> tuple[list[Candidate], list[dict[str, str]]]:
-    """Read every reachable listing page; any pagination failure invalidates the snapshot."""
+    """Read configured official listings, following explicit next and numbered page URLs.
+
+    No page URL is synthesized. If a contiguous numbered pagination control exists but
+    its navigable same-origin URLs cannot be extracted, the source snapshot is incomplete.
+    """
     found: dict[str, Candidate] = {}
     source_errors: list[dict[str, str]] = []
     source_snapshots: list[dict] = []
@@ -335,6 +342,7 @@ def discover_candidates(
     for source in config.get("listingSources", []):
         source_url = str(source["url"])
         source_id = str(source.get("id", ""))
+        source_origin = (urlparse(source_url).scheme.lower(), urlparse(source_url).netloc.lower())
         max_pages = source.get("maxPages", config.get("maxPagesPerSource", 100))
         source_snapshot = {
             "sourceId": source_id,
@@ -343,26 +351,40 @@ def discover_candidates(
             "candidateCount": 0,
             "pages": [],
         }
+
+        def normalized_url(value: str) -> str:
+            return urlunparse(urlparse(value)._replace(fragment=""))
+
+        def is_same_origin_page(value: str) -> bool:
+            parsed = urlparse(value)
+            return (
+                parsed.scheme.lower() in {"http", "https"}
+                and (parsed.scheme.lower(), parsed.netloc.lower()) == source_origin
+            )
+
         try:
             max_pages = int(max_pages)
             if max_pages < 1 or max_pages > 500:
                 raise ValueError("maxPagesPerSource must be between 1 and 500")
 
-            next_url = source_url
-            seen_urls: set[str] = set()
-            while next_url:
-                current_url = urlunparse(urlparse(next_url)._replace(fragment=""))
-                if current_url in seen_urls:
-                    raise RuntimeError(f"pagination loop detected at {current_url}")
-                if source_snapshot["pagesFetched"] >= max_pages:
-                    raise RuntimeError(f"pagination page limit reached ({max_pages}) while a next page remained")
-                if (
-                    urlparse(current_url).scheme != urlparse(source_url).scheme
-                    or urlparse(current_url).netloc != urlparse(source_url).netloc
-                ):
-                    raise RuntimeError(f"pagination next link leaves source origin: {current_url}")
+            source_url = normalized_url(source_url)
+            page_queue = [source_url]
+            queued_urls = {source_url}
+            visited_urls: set[str] = set()
 
-                seen_urls.add(current_url)
+            while page_queue:
+                if source_snapshot["pagesFetched"] >= max_pages:
+                    raise RuntimeError(
+                        f"pagination page limit reached ({max_pages}) while listing pages remained"
+                    )
+
+                current_url = normalized_url(page_queue.pop(0))
+                if current_url in visited_urls:
+                    continue
+                if not is_same_origin_page(current_url):
+                    raise RuntimeError(f"pagination next link leaves source origin: {current_url}")
+                visited_urls.add(current_url)
+
                 body, content_type = fetch_bytes(current_url)
                 page = decode_html(body, content_type)
                 page_parser = PageParser()
@@ -374,7 +396,7 @@ def discover_candidates(
                     if not href:
                         continue
                     article_url = urljoin(current_url, href)
-                    if urlparse(article_url).netloc != urlparse(source_url).netloc:
+                    if (urlparse(article_url).netloc or "").lower() != source_origin[1]:
                         continue
                     if not is_candidate_link(article_url, anchor):
                         continue
@@ -382,7 +404,7 @@ def discover_candidates(
                     key = article_url.rstrip("/")
                     found[key] = Candidate(
                         source_id=source_id,
-                        source_url=source_url,
+                        source_url=source["url"],
                         source_authority=source.get("authority", ""),
                         authority_type=source.get("authorityType", ""),
                         source_role=source.get("sourceRole", ""),
@@ -403,18 +425,69 @@ def discover_candidates(
                 source_snapshot["pagesFetched"] += 1
                 source_snapshot["candidateCount"] += page_candidate_count
 
-                next_links = []
+                # Some official portals expose numbered page links but no rel=next.
+                # Only follow URLs actually present in HTML; never invent ?page=N.
+                numeric_labels = sorted({
+                    int(label)
+                    for _href, label in page_parser.numbered_page_links
+                    if re.fullmatch(r"\d{1,3}", label)
+                })
+                has_numbered_pagination = len(numeric_labels) >= 3 and any(
+                    numeric_labels[i + 1] == numeric_labels[i] + 1
+                    and numeric_labels[i + 2] == numeric_labels[i] + 2
+                    for i in range(len(numeric_labels) - 2)
+                )
+
+                numeric_targets: list[tuple[int, str]] = []
+                if has_numbered_pagination:
+                    for href, label in page_parser.numbered_page_links:
+                        if not re.fullmatch(r"\d{1,3}", label) or not href:
+                            continue
+                        if href.startswith("#") or href.lower().startswith(("javascript:", "mailto:")):
+                            continue
+                        resolved = normalized_url(urljoin(current_url, href.strip()))
+                        if not is_same_origin_page(resolved):
+                            continue
+                        numeric_targets.append((int(label), resolved))
+
+                    distinct_numeric_urls = {url for _label, url in numeric_targets}
+                    if len(distinct_numeric_urls) < 3:
+                        raise RuntimeError(
+                            "numeric pagination controls detected but fewer than 3 navigable "
+                            "same-origin page URLs were found; refusing a partial source snapshot"
+                        )
+
+                    for _label, target_url in sorted(set(numeric_targets), key=lambda item: (item[0], item[1])):
+                        if target_url in visited_urls or target_url in queued_urls:
+                            continue
+                        page_queue.append(target_url)
+                        queued_urls.add(target_url)
+
+                next_urls: list[str] = []
                 for href in page_parser.next_links:
-                    resolved = urlunparse(urlparse(urljoin(current_url, href))._replace(fragment=""))
-                    if resolved not in next_links:
-                        next_links.append(resolved)
-                if len(next_links) > 1:
-                    raise RuntimeError(f"ambiguous pagination: {len(next_links)} distinct next links")
-                next_url = next_links[0] if next_links else ""
+                    if not href:
+                        continue
+                    target_url = normalized_url(urljoin(current_url, href))
+                    if target_url not in next_urls:
+                        next_urls.append(target_url)
+
+                if len(next_urls) > 1:
+                    raise RuntimeError(f"ambiguous pagination: {len(next_urls)} distinct next links")
+
+                if next_urls:
+                    target_url = next_urls[0]
+                    if not is_same_origin_page(target_url):
+                        raise RuntimeError(f"pagination next link leaves source origin: {target_url}")
+                    if target_url in visited_urls:
+                        raise RuntimeError(f"pagination loop detected at {target_url}")
+                    if target_url not in queued_urls:
+                        page_queue.append(target_url)
+                        queued_urls.add(target_url)
+
         except Exception as exc:
             source_errors.append({
                 "sourceId": source_id,
-                "sourceUrl": source_url,
+                "sourceUrl": str(source.get("url", "")),
                 "authority": str(source.get("authority", "")),
                 "pagesFetched": str(source_snapshot["pagesFetched"]),
                 "error": f"{type(exc).__name__}: {exc}",

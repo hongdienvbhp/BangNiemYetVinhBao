@@ -53,6 +53,20 @@ class OfficialSourceScannerTests(unittest.TestCase):
         self.assertEqual(parser.next_links, [])
         self.assertEqual(len(parser.links), 2)
 
+    def test_page_parser_captures_numbered_page_links(self):
+        parser = scanner.PageParser()
+        parser.feed(
+            '<nav class="pagination">'
+            '<a href="/listing">1</a>'
+            '<a href="/listing?page=2">2</a>'
+            '<a href="/listing?page=3">3</a>'
+            '</nav>'
+        )
+        self.assertEqual(
+            parser.numbered_page_links,
+            [("/listing", "1"), ("/listing?page=2", "2"), ("/listing?page=3", "3")],
+        )
+
     def test_external_ministry_reference_is_not_treated_as_city_decision(self):
         title = (
             "Công khai Quyết định số 2841/QĐ-UBND ngày 08/9/2026 của Bộ Y tế "
@@ -196,6 +210,61 @@ class OfficialSourceScannerTests(unittest.TestCase):
         self.assertEqual(snapshot["sources"][0]["candidateCount"], 2)
         self.assertEqual(len(snapshot["sources"][0]["pages"]), 2)
         self.assertTrue(all(len(x["sha256"]) == 64 for x in snapshot["sources"][0]["pages"]))
+
+    def test_discover_candidates_follows_numbered_listing_pages_without_guessing_urls(self):
+        source_url = "https://good.haiphong.gov.vn/thu-tuc-hanh-chinh"
+        page_two = source_url + "?page=2"
+        page_three = source_url + "?page=3"
+
+        def page(code):
+            return (
+                f'<a href="/quyet-dinh-so-{code}-qd-ubnd-ngay-18-9-2026-cong-bo-thu-tuc-hanh-chinh">'
+                "Quyet dinh cong bo thu tuc hanh chinh</a>"
+                '<nav class="pagination">'
+                '<a href="/thu-tuc-hanh-chinh">1</a>'
+                '<a href="/thu-tuc-hanh-chinh?page=2">2</a>'
+                '<a href="/thu-tuc-hanh-chinh?page=3">3</a>'
+                '</nav>'
+            ).encode(), "text/html; charset=utf-8"
+
+        responses = {
+            source_url: page("123"),
+            page_two: page("124"),
+            page_three: page("125"),
+        }
+        config = {"listingSources": [{
+            "id": "numbered",
+            "url": source_url,
+            "authority": "Official portal",
+            "authorityType": "city_portal",
+            "sourceRole": "primary_decision_listing",
+            "legalUse": "primary_publication",
+        }]}
+        snapshot = {}
+
+        with patch.object(scanner, "fetch_bytes", side_effect=lambda url, timeout=35: responses[url]) as fetch:
+            candidates, errors = scanner.discover_candidates(config, snapshot)
+
+        self.assertEqual(errors, [])
+        self.assertEqual({item.decision_no for item in candidates}, {
+            "123/QĐ-UBND", "124/QĐ-UBND", "125/QĐ-UBND"
+        })
+        self.assertEqual(fetch.call_count, 3)
+        self.assertEqual(snapshot["sources"][0]["pagesFetched"], 3)
+        self.assertEqual(len(snapshot["sources"][0]["pages"]), 3)
+
+    def test_discover_candidates_fails_closed_when_numbered_pages_have_no_navigable_urls(self):
+        source_url = "https://good.haiphong.gov.vn/thu-tuc-hanh-chinh"
+        page_html = (
+            '<a href="#">1</a><a href="#">2</a><a href="#">3</a>'
+        ).encode()
+        config = {"listingSources": [{"id": "numbered", "url": source_url}]}
+
+        with patch.object(scanner, "fetch_bytes", return_value=(page_html, "text/html")):
+            _candidates, errors = scanner.discover_candidates(config)
+
+        self.assertEqual(len(errors), 1)
+        self.assertIn("numeric pagination controls detected", errors[0]["error"])
 
     def test_discover_candidates_fails_closed_on_pagination_loop(self):
         source_url = "https://good.haiphong.gov.vn/thu-tuc-hanh-chinh"
