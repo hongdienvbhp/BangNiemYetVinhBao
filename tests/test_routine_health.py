@@ -2,7 +2,7 @@ import unittest
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
-from scripts.check_routine_health import UNHEALTHY_STATES, evaluate
+from scripts.check_routine_health import LOUD_TERMINAL, UNHEALTHY_STATES, evaluate
 
 TZ = ZoneInfo("Asia/Ho_Chi_Minh")
 
@@ -58,6 +58,10 @@ class RoutineHealthTests(unittest.TestCase):
         self.assertEqual(r["state"], "BLOCKED_FOR_REVIEW")
         self.assertIn("human approval", r["reason"])
         self.assertNotIn("BLOCKED_FOR_REVIEW", UNHEALTHY_STATES)
+
+    def test_human_approval_status_is_not_a_loud_terminal_failure(self):
+        self.assertNotIn("BLOCKED_HUMAN_APPROVAL", LOUD_TERMINAL)
+        self.assertEqual(UNHEALTHY_STATES, {"STOPPED_LOUDLY", "STOPPED_SILENTLY"})
 
     def test_failed_workflow_cannot_be_masked_by_human_approval_gate(self):
         history = {"workflow_runs": [run(1, conclusion="failure")]}
