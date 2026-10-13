@@ -17,6 +17,10 @@
       "ma": "2.001576",
       "ten": "Công nhận tiến bộ kỹ thuật",
       "fields": {
+        "thoiHan": {
+          "before": "23 ngày làm việc",
+          "after": "11,5 ngày làm việc"
+        },
         "quyetDinh": {
           "before": "1646/QĐ-UBND; 1858/QĐ-BNNMT; 1869/QĐ-BNNMT; 1877/QĐ-BNNMT; 1878/QĐ-BNNMT; 1883/QĐ-BNNMT; 1897/QĐ-BNNMT; 1908/QĐ-BNNMT; 1931/QĐ-BNNMT; 2198/QĐ-UBND; 2881/QĐ-UBND; 519/QĐ-UBND; 684/QĐ-UBND",
           "after": "1646/QĐ-UBND; 1858/QĐ-BNNMT; 1869/QĐ-BNNMT; 1877/QĐ-BNNMT; 1878/QĐ-BNNMT; 1883/QĐ-BNNMT; 1897/QĐ-BNNMT; 1908/QĐ-BNNMT; 1931/QĐ-BNNMT; 2198/QĐ-UBND; 2881/QĐ-UBND; 519/QĐ-UBND; 684/QĐ-UBND; 4123/QĐ-UBND"
