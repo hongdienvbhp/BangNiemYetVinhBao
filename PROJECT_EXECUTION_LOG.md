@@ -242,3 +242,28 @@ Do not scrape related widgets or treat a search-engine index as a complete sourc
 1. Verify CI on PR #164 head `447788f51cb013706d1c609c053c5a27ec8000e6` completes successfully.
 2. Continue source-completeness blockage; no alternate complete official route is proven for Vĩnh Bảo or the other 10 incomplete sources.
 3. Keep PRs #158/#161/#163/#164 Draft. Reconcile Windows-only `cf88456` with #161 before push; no merge/publish.
+## Final checkpoint — pagination contract and PR164 CI — 2026-10-13
+
+### Vĩnh Bảo pagination index mapping
+- The live HTML emits numeric list items with `data-page="1"` for page 1 and `data-page="2"` for page 2; it does not use zero-based indices.
+- Inline jQuery uses `var chosenPage = $parent.data('page')` and posts `page: chosenPage`; the request is one-based. The scanner sending `page=2` is therefore aligned with the observed UI mapping; no off-by-one patch is justified.
+- This does not explain the blank response: the actual page-2 form-urlencoded POST still returned HTTP 200 with zero bytes, matching separate browser DevTools evidence. Treat it as unresolved upstream endpoint/session behaviour, not proof of a parser offset bug.
+- Other official route probes: `/thu-tuc-hanh-chinh?page=2` returns identical initial-page bytes/hash; `/cong-khai-tthc` returns maxPage=1 and only 4 candidate-shaped links, so it is not a complete source substitute; `/phong-van-van-hoa-xa-hoi` timed out; robots.txt has no sitemap declaration and standard sitemap endpoints return 404.
+
+### PR #164 exact-head result
+- Latest head at this checkpoint: `a95958f734d74e732ae3880fbc57d05f5ae84744`.
+- CI run `38335772560`: SUCCESS (static-site job completed with no failed steps). Pages workflow `38335772523`: SUCCESS.
+- The actual workflow/code change is commit `447788f fix: include untracked evidence in pending review artifact`; it adds NUL-safe intent-to-add for untracked files before binary diff generation so newly discovered PDFs/evidence appear in the pending-review artifact. Targeted workflow tests: 3 passed; full repository pytest: 173 passed; diff check: PASS.
+- PR #164 remains Draft and depends on #161. No merge, production update, or candidate branch overwrite occurred.
+
+### Current authoritative blockers
+- Eleven configured official sources still fail complete pagination on PR #161 exact-head scan-only; no alternative complete traversal has been proven. Do not classify the source snapshot as complete or merge #161 merely for CI green.
+- PR #158 source provenance/date and duration have been corrected and tests pass (candidate canonical: 536 rows, no additions/removals, only `2.001576` semantic change beyond snapshot/lifecycle); keep Draft due official/legal scope review and the extra Google Sheets idempotency commit in the 24-file diff.
+- Windows-only `cf88456` remains unpushed and overlaps PR #161; reconcile before any push.
+
+### NEXT_SAFE_ACTION
+1. Keep PRs #158/#161/#163/#164 Draft. Review current live state before each work package.
+2. For the 11 blocked sources, require either a verified official traversal with complete page/hash/termination evidence or explicit source-owner/ project-owner resolution; do not weaken fail-closed and do not infer removals from missing pages.
+3. Reconcile local Windows commit `cf88456` with PR #161 before push.
+4. After source completeness is accepted, rebase/verify PR #164 against #161 and rerun CI. Do not merge automatically.
+5. Continue updating this file and Issue #162 at work-package boundaries.
