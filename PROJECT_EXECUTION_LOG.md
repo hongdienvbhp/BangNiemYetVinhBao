@@ -185,3 +185,31 @@ An HTTP 200 empty response is not a verified final page. Do not infer removed TT
 1. Find/verify an alternate official Vĩnh Bảo listing traversal or document the endpoint failure for the portal owner; require an independently verifiable complete set of article URLs before treating that source as complete.
 2. Do not retry a large all-source scan until progress/terminal evidence is available. If needed, run one source per bounded scan-only job and preserve per-source terminal JSON plus source-data hash guard.
 3. Preserve PR #161 fail-closed gate and keep the PR Draft until owner review of source completeness limitations.
+## PR #158 canonical scope and test review — 2026-10-13
+
+### Canonical row-level comparison against origin/main
+- Candidate and baseline both contain 536 records; no added or removed codes.
+- All 536 rows show snapshot/lifecycle date refresh from 2026-10-01 to 2026-10-09.
+- Exactly one code, `2.001576`, has semantic fields beyond `sourceSnapshotDate`/`lifecycle` changed.
+- For `2.001576`, the canonical legacy top-level `thoiHan` changes from `23 ngày làm việc` to `11,5 ngày làm việc`; `cap` remains `Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã`; the candidate lifecycle `effectiveFrom` is 2026-10-01. The updated field provenance has an official PDF evidence ID. The top-level legacy `huongDan.thoiHan` is absent in this record, so the canonical top-level `thoiHan` field is what controls the visible legacy duration.
+- The date provenance mismatch is fixed: `official-decision-manifest.json` records the explicit official `effectiveDate` 2026-10-01, and `city-updates-current.json` now emits `effectiveDateSource: manifest` instead of defaulting to signing date.
+
+### PR #158 local validation on exact open candidate branch
+- Python syntax compilation: PASS.
+- Focused regressions for guidance promotion and Google Sheets idempotency: 5 passed.
+- Full repository pytest in candidate worktree: 175 passed in 1.43s.
+- `validate_canonical_contract.py`: PASS, 536 procedures, v4 contract, dataset version 2026.10.13, 536 verified submission links, 49 official guidance records.
+- `migrate_canonical_v4.py --check`: PASS.
+- `validate_tthc_guidance.py`: PASS, 48 priority rows and 1 legacy override row.
+- `git diff --check`: PASS; candidate worktree clean and aligned with remote candidate branch.
+
+### Scope warning / disposition
+- PR #158 currently includes 24 changed files. History shows commit `c3689a7 fix: make Google Sheets sync idempotent` (scripts/test) alongside the candidate data and provenance commits. This sync guard is useful but not strictly the same work unit as reviewing decision 4123; do not rewrite the existing draft branch blindly. Review whether to separate this follow-up before approval.
+- PR #158 exact-head CI #38332105826, Pages #38332105993 and Sheets validation #38332105802 are green. The PR-triggered Sheets workflow validates/dry-runs only; the live sync job remains gated to pushes/dispatches on main.
+- PR remains Draft. No merge, publication, live Google Sheets sync, or production write was performed.
+
+### NEXT_SAFE_ACTION
+1. Keep PR #158 Draft; source/legal review and scope review remain mandatory even though local tests/CI are green.
+2. Review whether the Google Sheets idempotency commit should be isolated rather than carried as unrelated scope in the candidate data PR.
+3. Continue the 11-source live pagination blocker from PR #161. The current exact-head scan-only result remains blocked; no source snapshot is complete until all required endpoints have reliable terminal-page evidence.
+4. Reconcile the local-only Windows commit `cf88456` with PR #161 before any push.
