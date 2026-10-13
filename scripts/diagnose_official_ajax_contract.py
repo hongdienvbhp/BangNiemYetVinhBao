@@ -19,9 +19,10 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode, urlparse
 from urllib.request import HTTPCookieProcessor, Request, build_opener
 
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
 from scripts import update_official_sources as scanner
 
-ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = ROOT / "data/source-audit/official-source-config.json"
 TARGET_IDS = {
     "haiphong-city-official-tthc",
