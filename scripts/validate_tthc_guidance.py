@@ -27,6 +27,8 @@ SUBSTANTIVE_FIELDS = {
     "submissionUrl",
 }
 
+ALLOWED_LEGACY_OVERRIDES = {"thoiHan"}
+
 
 def is_official_url(value: str) -> bool:
     try:
@@ -175,6 +177,37 @@ def validate(payload: object) -> list[str]:
                             f"{label}: {field} chỉ được provenance từ local_execution"
                         )
 
+        legacy_overrides = row.get("legacyOverrides")
+        if legacy_overrides is not None:
+            if not isinstance(legacy_overrides, dict):
+                errors.append(f"{label}: legacyOverrides phải là object")
+            else:
+                source_by_id = {
+                    str(item.get("id") or "").strip(): item
+                    for item in (sources if isinstance(sources, list) else [])
+                    if isinstance(item, dict) and str(item.get("id") or "").strip()
+                }
+                for field, override_value in legacy_overrides.items():
+                    if field not in ALLOWED_LEGACY_OVERRIDES:
+                        errors.append(f"{label}: legacyOverrides.{field} không được hỗ trợ")
+                        continue
+                    if not isinstance(override_value, str) or not override_value.strip():
+                        errors.append(f"{label}: legacyOverrides.{field} phải là chuỗi không rỗng")
+                    refs = provenance.get(field) if isinstance(provenance, dict) else None
+                    if not isinstance(refs, list) or not refs:
+                        errors.append(f"{label}: legacyOverrides.{field} cần fieldProvenance.{field}")
+                        continue
+                    missing_refs = [ref for ref in refs if str(ref).strip() not in source_by_id]
+                    if missing_refs:
+                        errors.append(f"{label}: legacyOverrides.{field} tham chiếu nguồn không tồn tại")
+                        continue
+                    if field == "thoiHan":
+                        roles = {
+                            str(source_by_id[str(ref).strip()].get("sourceRole") or "").strip()
+                            for ref in refs
+                        }
+                        if "local_legal_effect" not in roles:
+                            errors.append(f"{label}: legacyOverrides.thoiHan phải có nguồn pháp lý địa phương")
         submission_url = str(row.get("submissionUrl") or "").strip()
         if submission_url:
             for message in validate_vinhbao_submission_url(
@@ -184,12 +217,57 @@ def validate(payload: object) -> list[str]:
     return errors
 
 
+def validate_legacy_field_overrides(payload: object) -> list[str]:
+    """Validate independent legal mirrors; these rows are not priority guidance."""
+    errors: list[str] = []
+    if not isinstance(payload, dict): return ["legacy field overrides: payload ph?i l? object"]
+    if payload.get("format") != "official-legacy-field-overrides-v1": errors.append("legacy field overrides: format kh?ng h?p l?")
+    if payload.get("version") != 1: errors.append("legacy field overrides: version kh?ng h?p l?")
+    rows = payload.get("rows")
+    if not isinstance(rows, list): return errors + ["legacy field overrides: rows ph?i l? danh s?ch"]
+    seen: set[str] = set()
+    for i, row in enumerate(rows):
+        label = f"legacy field overrides[{i}]"
+        if not isinstance(row, dict): errors.append(f"{label}: ph?i l? object"); continue
+        code = str(row.get("ma") or "").strip()
+        if not (len(code) == 8 and code[0].isdigit() and code[1] == "." and code[2:].isdigit()): errors.append(f"{label}: m? TTHC kh?ng h?p l?")
+        if code in seen: errors.append(f"{label}: m? TTHC tr?ng l?p {code}")
+        seen.add(code)
+        if row.get("verificationStatus") != "verified_official": errors.append(f"{label}: verificationStatus ph?i l? verified_official")
+        legacy = row.get("legacyOverrides")
+        if not isinstance(legacy, dict) or not legacy: errors.append(f"{label}: legacyOverrides ph?i l? object kh?ng r?ng"); continue
+        for field, value in legacy.items():
+            if field != "thoiHan": errors.append(f"{label}: legacyOverrides.{field} kh?ng ???c h? tr?")
+            elif not isinstance(value, str) or not value.strip(): errors.append(f"{label}: legacyOverrides.thoiHan ph?i l? chu?i kh?ng r?ng")
+        sources = row.get("sources"); sources = sources if isinstance(sources, list) else []
+        source_by_id = {str(x.get("id") or "").strip(): x for x in sources if isinstance(x, dict) and str(x.get("id") or "").strip()}
+        provenance = row.get("fieldProvenance"); provenance = provenance if isinstance(provenance, dict) else {}
+        for field in legacy:
+            refs = provenance.get(field)
+            if not isinstance(refs, list) or not refs: errors.append(f"{label}: legacyOverrides.{field} c?n fieldProvenance.{field}"); continue
+            if any(str(ref).strip() not in source_by_id for ref in refs): errors.append(f"{label}: {field} tham chi?u source id kh?ng t?n t?i"); continue
+            roles = {str(source_by_id[str(ref).strip()].get("sourceRole") or "").strip() for ref in refs}
+            if field == "thoiHan" and "local_legal_effect" not in roles: errors.append(f"{label}: thoiHan ph?i c? ngu?n hi?u l?c ph?p l? ??a ph??ng")
+        if not str(row.get("formalityId") or "").strip(): errors.append(f"{label}: formalityId kh?ng ???c ?? tr?ng")
+        for source in sources:
+            if not isinstance(source, dict): continue
+            url = str(source.get("url") or "").strip()
+            if not is_official_url(url): errors.append(f"{label}: ngu?n ph?i l? URL ch?nh th?c")
+            if not str(source.get("contentHash") or "").strip(): errors.append(f"{label}: ngu?n thi?u contentHash")
+    return errors
+
+
 def main() -> int:
     payload = json.loads(DATA.read_text(encoding="utf-8"))
     errors = validate(payload)
+    sidecar_path = ROOT / "data/source-audit/official-legacy-field-overrides.json"
+    sidecar = {"rows": []}
+    if sidecar_path.exists():
+        sidecar = json.loads(sidecar_path.read_text(encoding="utf-8"))
+        errors.extend(validate_legacy_field_overrides(sidecar))
     if errors:
         raise SystemExit("\n".join(errors))
-    print(json.dumps({"rows": len(payload["rows"]), "status": "PASS"}, ensure_ascii=False))
+    print(json.dumps({"rows": len(payload["rows"]), "legacyOverrideRows": len(sidecar.get("rows", [])), "status": "PASS"}, ensure_ascii=False))
     return 0
 
 

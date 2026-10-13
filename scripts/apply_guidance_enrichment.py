@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MASTER = ROOT / "data/thu-tuc.json"
 PRIORITY51 = ROOT / "data/priority-51-crosswalk.json"
 GUIDANCE = ROOT / "data/tthc-guidance-enrichment.json"
+LEGACY_OVERRIDES = ROOT / "data/source-audit/official-legacy-field-overrides.json"
 FALLBACK = ROOT / "js/master-data-fallback.js"
 NQ23_MAPPING = ROOT / "data/phu-luc/NQ-23-anh-xa-tthc.json"
 SPECIALIZED_MAPPING = ROOT / "data/phu-luc/phi-le-phi-chuyen-nganh.json"
@@ -105,7 +106,39 @@ def apply_specialized_fee_notes(rows: list, mapping: dict) -> int:
     return count
 
 
-def apply_enrichment(master: dict, priority: dict, guidance: dict, nq23: dict | None = None, specialized: dict | None = None) -> dict:
+def _source_evidence_key(source: dict[str, Any]) -> tuple[str, str, str, str, str]:
+    return tuple(
+        str(source.get(key) or "").strip()
+        for key in ("url", "sourceRole", "classification", "publishedDate", "effectiveDate")
+    )
+
+
+def _legacy_override_evidence_ids(
+    record: dict[str, Any], guidance_row: dict[str, Any], field: str
+) -> list[str]:
+    source_by_id = {
+        str(source.get("id") or "").strip(): source
+        for source in (guidance_row.get("sources") or [])
+        if isinstance(source, dict) and str(source.get("id") or "").strip()
+    }
+    evidence_by_key = {
+        _source_evidence_key(evidence): str(evidence.get("evidenceId") or "").strip()
+        for evidence in (record.get("sourceEvidence") or [])
+        if isinstance(evidence, dict) and str(evidence.get("evidenceId") or "").strip()
+    }
+    refs = (guidance_row.get("fieldProvenance") or {}).get(field) or []
+    evidence_ids = []
+    for source_id in refs:
+        source = source_by_id.get(str(source_id).strip())
+        if not source:
+            continue
+        evidence_id = evidence_by_key.get(_source_evidence_key(source))
+        if evidence_id:
+            evidence_ids.append(evidence_id)
+    return list(dict.fromkeys(evidence_ids))
+
+
+def apply_enrichment(master: dict, priority: dict, guidance: dict, nq23: dict | None = None, specialized: dict | None = None, legacy_overrides_payload: dict | None = None) -> dict:
     errors = validate(guidance)
     if errors:
         raise ValueError("\n".join(errors))
@@ -176,12 +209,77 @@ def apply_enrichment(master: dict, priority: dict, guidance: dict, nq23: dict | 
     if specialized:
         apply_specialized_fee_notes(rows, specialized)
 
+    # Attach sidecar evidence/provenance before canonical v4 upgrade normalizes sourceEvidence.
+    for override in (legacy_overrides_payload or {}).get("rows") or []:
+        code = str(override.get("ma") or "").strip()
+        row = by_code.get(code)
+        if not row:
+            continue
+        expected_formality_id = str(override.get("formalityId") or "").strip()
+        actual_formality_id = str(row.get("formalityId") or "").strip()
+        if expected_formality_id and expected_formality_id != actual_formality_id:
+            raise ValueError(f"{code}: legacy override formalityId kh?ng kh?p canonical")
+        guide = row.setdefault("huongDan", {})
+        if not isinstance(guide, dict):
+            raise ValueError(f"{code}: huongDan ph?i l? object khi th?m provenance ph?p l?")
+        guide["verificationStatus"] = override.get("verificationStatus")
+        guide["verifiedAt"] = override.get("verifiedAt")
+        if override.get("verificationNotes"):
+            guide["verificationNotes"] = override["verificationNotes"]
+        known_sources = {str(source.get("id") or "").strip() for source in (guide.get("sources") or []) if isinstance(source, dict)}
+        merged_sources = list(guide.get("sources") or [])
+        for source in override.get("sources") or []:
+            source_id = str(source.get("id") or "").strip() if isinstance(source, dict) else ""
+            if source_id and source_id not in known_sources:
+                merged_sources.append(deepcopy(source))
+                known_sources.add(source_id)
+        guide["sources"] = merged_sources
+        merged_provenance = guide.setdefault("fieldProvenance", {})
+        if not isinstance(merged_provenance, dict):
+            raise ValueError(f"{code}: huongDan.fieldProvenance ph?i l? object")
+        if not isinstance(override.get("fieldProvenance"), dict):
+            raise ValueError(f"{code}: sidecar thi?u fieldProvenance")
+        for field, refs in override["fieldProvenance"].items():
+            if not isinstance(refs, list):
+                raise ValueError(f"{code}: fieldProvenance.{field} ph?i l? danh s?ch")
+            merged_provenance[field] = list(dict.fromkeys([*(merged_provenance.get(field) or []), *refs]))
+
     as_of = str(result.get("sourceSnapshotDate") or result.get("updatedAt") or "")
     result["thuTuc"] = [
         upgrade_record_to_v4(row, as_of)
         for row in rows
         if isinstance(row, dict)
     ]
+    output_by_code = {
+        str(row.get("ma") or "").strip(): row
+        for row in result["thuTuc"]
+        if isinstance(row, dict) and str(row.get("ma") or "").strip()
+    }
+    # Apply separately validated legal mirrors without enlarging the priority guide set.
+    for override in (legacy_overrides_payload or {}).get("rows") or []:
+        code = str(override.get("ma") or "").strip()
+        row = output_by_code.get(code)
+        if not row:
+            continue
+        expected_formality_id = str(override.get("formalityId") or "").strip()
+        actual_formality_id = str(row.get("formalityId") or "").strip()
+        if expected_formality_id and expected_formality_id != actual_formality_id:
+            raise ValueError(f"{code}: legacy override formalityId kh?ng kh?p canonical")
+        legacy_values = override.get("legacyOverrides") or {}
+        if not isinstance(legacy_values, dict):
+            raise ValueError(f"{code}: legacyOverrides ph?i l? object")
+        field_sources = row.setdefault("fieldSources", {})
+        if not isinstance(field_sources, dict):
+            raise ValueError(f"{code}: fieldSources kh?ng ph?i object khi ?p d?ng legacy override")
+        for field, value in legacy_values.items():
+            if field != "thoiHan":
+                raise ValueError(f"{code}: legacy override kh?ng ???c h? tr? cho tr??ng {field}")
+            evidence_ids = _legacy_override_evidence_ids(row, override, field)
+            if not evidence_ids:
+                raise ValueError(f"{code}: kh?ng ?nh x? ???c ngu?n ch?ng c? cho legacy override {field}")
+            row[field] = deepcopy(value)
+            current = field_sources.get(field) or []
+            field_sources[field] = list(dict.fromkeys([*current, *evidence_ids]))
 
     summary = result.setdefault("summary", {})
     summary["priority51VinhBaoSubmissionLinks"] = priority_links
@@ -211,7 +309,8 @@ def main() -> int:
     guidance = json.loads(GUIDANCE.read_text(encoding="utf-8"))
     nq23 = json.loads(NQ23_MAPPING.read_text(encoding="utf-8"))
     specialized = json.loads(SPECIALIZED_MAPPING.read_text(encoding="utf-8"))
-    enriched = apply_enrichment(master, priority, guidance, nq23, specialized)
+    legacy_overrides_payload = json.loads(LEGACY_OVERRIDES.read_text(encoding="utf-8"))
+    enriched = apply_enrichment(master, priority, guidance, nq23, specialized, legacy_overrides_payload)
     MASTER.write_text(json.dumps(enriched, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     write_fallback(enriched)
     print(json.dumps({

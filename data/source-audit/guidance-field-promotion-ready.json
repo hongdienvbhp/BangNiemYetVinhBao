@@ -2975,7 +2975,7 @@
       "ma": "2.001576",
       "field": "thoiHan",
       "reason": "multiple_or_ambiguous_duration_tokens",
-      "currentValue": "23 ngày làm việc",
+      "currentValue": "11,5 ngày làm việc",
       "candidateValue": "23 ngày làm việc 11,5 ngày làm việc",
       "sources": [
         {

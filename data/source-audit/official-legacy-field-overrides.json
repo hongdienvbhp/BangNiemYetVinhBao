@@ -1,0 +1,37 @@
+{
+  "format": "official-legacy-field-overrides-v1",
+  "version": 1,
+  "scope": "Allowlisted, provenance-backed mirrors from authoritative official sources into legacy top-level canonical fields. Separate from the active 48-row priority guidance contract.",
+  "rows": [
+    {
+      "ma": "2.001576",
+      "formalityId": "019d2bfa-ada4-75cb-aeeb-700cdfe0bb26",
+      "verificationStatus": "verified_official",
+      "verifiedAt": "2026-10-13T07:12:00+07:00",
+      "legacyOverrides": {
+        "thoiHan": "11,5 ngày làm việc"
+      },
+      "sources": [
+        {
+          "id": "official_decision_4123_annex_pdf",
+          "url": "https://cdn.haiphong.gov.vn/gov-hpg/6837/tintuc/2026/10/4123639269784667642303.pdf",
+          "sourceRole": "local_legal_effect",
+          "classification": "official_city_decision_annex_pdf",
+          "publishedDate": "2026-10-01",
+          "effectiveDate": "2026-10-01",
+          "verifiedAt": "2026-10-13T07:12:00+07:00",
+          "contentHash": "606e9b9365476a363184508768e18aca58bb06c9bea147c2fdc99db442b4f45d",
+          "recordUrl": "https://www.haiphong.gov.vn/?p_steering=129020&pageid=27218",
+          "decisionNo": "4123/QĐ-UBND",
+          "title": "Phụ lục Quyết định số 4123/QĐ-UBND ngày 01/10/2026"
+        }
+      ],
+      "fieldProvenance": {
+        "thoiHan": [
+          "official_decision_4123_annex_pdf"
+        ]
+      },
+      "verificationNotes": "QĐ 4123/QĐ-UBND xác nhận thời hạn giải quyết giảm từ 20 ngày làm việc xuống 11,5 ngày làm việc. Mirror sang trường legacy top-level thoiHan để không tiếp tục hiển thị giá trị cũ 23 ngày; không thay đổi thẩm quyền cấp tỉnh hoặc phạm vi tiếp nhận tại Trung tâm PVHCC cấp xã."
+    }
+  ]
+}
