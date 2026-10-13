@@ -1,10 +1,10 @@
 {
   "format": "bangniemyet-vinhbao-master-data",
   "version": 4,
-  "dataset_version": "2026.10.09",
-  "source_commit": "870b9f9f9dc5f60ff7f6dfb523e496fbbbb519c9",
+  "dataset_version": "2026.10.13",
+  "source_commit": "86fc09ff674a5543ca7e5ed4571af456456ba764",
   "source_commit_kind": "verified_source_bundle_git_sha1",
-  "updatedAt": "2026-10-09",
+  "updatedAt": "2026-10-13",
   "sourceSnapshotDate": "2026-10-09",
   "source": "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh",
   "sourceSites": [
@@ -32385,7 +32385,7 @@
       "lienThong": false,
       "phi": "",
       "phiOnline": "",
-      "thoiHan": "23 ngày làm việc",
+      "thoiHan": "11,5 ngày làm việc",
       "dvctt": "",
       "coQuan": "",
       "quyetDinh": "1646/QĐ-UBND; 1858/QĐ-BNNMT; 1869/QĐ-BNNMT; 1877/QĐ-BNNMT; 1878/QĐ-BNNMT; 1883/QĐ-BNNMT; 1897/QĐ-BNNMT; 1908/QĐ-BNNMT; 1931/QĐ-BNNMT; 2198/QĐ-UBND; 2881/QĐ-UBND; 519/QĐ-UBND; 684/QĐ-UBND; 4123/QĐ-UBND",
@@ -32455,6 +32455,15 @@
           "classification": "dvcqg_submission_link",
           "repealContext": false,
           "evidenceId": "ev_abf93df9943f7f76527f1ac8"
+        },
+        {
+          "url": "https://cdn.haiphong.gov.vn/gov-hpg/6837/tintuc/2026/10/4123639269784667642303.pdf",
+          "sourceRole": "local_legal_effect",
+          "classification": "official_city_decision_annex_pdf",
+          "publishedDate": "2026-10-01",
+          "effectiveDate": "2026-10-01",
+          "repealContext": false,
+          "evidenceId": "ev_4165a7a16bcd9134853b5e59"
         }
       ],
       "dvcMappingStatus": "technical_exact_code_candidate",
@@ -32480,31 +32489,38 @@
       "fieldSources": {
         "ma": [
           "ev_c0c2ab76955f5946ecae3987",
-          "ev_6ccf2818d5467dec867e9311"
+          "ev_6ccf2818d5467dec867e9311",
+          "ev_4165a7a16bcd9134853b5e59"
         ],
         "ten": [
           "ev_c0c2ab76955f5946ecae3987",
-          "ev_6ccf2818d5467dec867e9311"
+          "ev_6ccf2818d5467dec867e9311",
+          "ev_4165a7a16bcd9134853b5e59"
         ],
         "linhVuc": [
           "ev_c0c2ab76955f5946ecae3987",
-          "ev_6ccf2818d5467dec867e9311"
+          "ev_6ccf2818d5467dec867e9311",
+          "ev_4165a7a16bcd9134853b5e59"
         ],
         "cap": [
           "ev_c0c2ab76955f5946ecae3987",
-          "ev_6ccf2818d5467dec867e9311"
+          "ev_6ccf2818d5467dec867e9311",
+          "ev_4165a7a16bcd9134853b5e59"
         ],
         "quyetDinh": [
           "ev_c0c2ab76955f5946ecae3987",
-          "ev_6ccf2818d5467dec867e9311"
+          "ev_6ccf2818d5467dec867e9311",
+          "ev_4165a7a16bcd9134853b5e59"
         ],
         "lifecycle.status": [
           "ev_c0c2ab76955f5946ecae3987",
-          "ev_6ccf2818d5467dec867e9311"
+          "ev_6ccf2818d5467dec867e9311",
+          "ev_4165a7a16bcd9134853b5e59"
         ],
         "lifecycle.effectiveFrom": [
           "ev_c0c2ab76955f5946ecae3987",
-          "ev_6ccf2818d5467dec867e9311"
+          "ev_6ccf2818d5467dec867e9311",
+          "ev_4165a7a16bcd9134853b5e59"
         ],
         "formalityId": [
           "ev_7306723bebe82830c91a63e6",
@@ -32521,7 +32537,35 @@
         "submissionLinkStatus": [
           "ev_7306723bebe82830c91a63e6",
           "ev_abf93df9943f7f76527f1ac8"
+        ],
+        "thoiHan": [
+          "ev_4165a7a16bcd9134853b5e59"
         ]
+      },
+      "huongDan": {
+        "verificationStatus": "verified_official",
+        "verifiedAt": "2026-10-13T07:12:00+07:00",
+        "verificationNotes": "QĐ 4123/QĐ-UBND xác nhận thời hạn giải quyết giảm từ 20 ngày làm việc xuống 11,5 ngày làm việc. Mirror sang trường legacy top-level thoiHan để không tiếp tục hiển thị giá trị cũ 23 ngày; không thay đổi thẩm quyền cấp tỉnh hoặc phạm vi tiếp nhận tại Trung tâm PVHCC cấp xã.",
+        "sources": [
+          {
+            "id": "official_decision_4123_annex_pdf",
+            "url": "https://cdn.haiphong.gov.vn/gov-hpg/6837/tintuc/2026/10/4123639269784667642303.pdf",
+            "sourceRole": "local_legal_effect",
+            "classification": "official_city_decision_annex_pdf",
+            "publishedDate": "2026-10-01",
+            "effectiveDate": "2026-10-01",
+            "verifiedAt": "2026-10-13T07:12:00+07:00",
+            "contentHash": "606e9b9365476a363184508768e18aca58bb06c9bea147c2fdc99db442b4f45d",
+            "recordUrl": "https://www.haiphong.gov.vn/?p_steering=129020&pageid=27218",
+            "decisionNo": "4123/QĐ-UBND",
+            "title": "Phụ lục Quyết định số 4123/QĐ-UBND ngày 01/10/2026"
+          }
+        ],
+        "fieldProvenance": {
+          "thoiHan": [
+            "official_decision_4123_annex_pdf"
+          ]
+        }
       }
     },
     {

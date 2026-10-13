@@ -1,7 +1,7 @@
 /* Sinh tự động bởi scripts/build_extra_data.py từ data/thu-tuc.json, city-updates-current.json và data/phu-luc/phi-le-phi-van-ban.json. Không sửa tay. */
 window.TTHC_EXTRA = Object.assign(window.TTHC_EXTRA || {}, {
   "generated": {
-    "dataset_version": "2026.10.09",
+    "dataset_version": "2026.10.13",
     "cityUpdatesAsOf": "2026-10-09",
     "feeRegistryVerifiedAt": "2026-10-01",
     "note": "Sinh tự động bởi scripts/build_extra_data.py — không sửa tay."

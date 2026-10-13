@@ -47,6 +47,7 @@ SOURCE_BUNDLE_PATHS = (
     "data/source-audit/dvcqg-live-verification-current.json",
     "data/source-audit/dvcqg-formality-candidates-current.json",
     "data/tthc-guidance-enrichment.json",
+    "data/source-audit/official-legacy-field-overrides.json",
     "js/data.js",
 )
 
