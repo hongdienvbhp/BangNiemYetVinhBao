@@ -106,3 +106,29 @@ URL: https://github.com/hongdienvbhp/BangNiemYetVinhBao/pull/163
 - Offline work may continue for code review, fixture tests, local validation, documentation and handoff.
 - Live HTTP pagination and GitHub synchronization require network access.
 - The project is not complete or production-ready yet: real-source pagination proof and legal/data review remain open.
+
+
+## Live pagination investigation — 2026-10-13
+
+### Changes / evidence
+- Work is continuing in ChatCode project `BangNiemYetVinhBao`; primary tracker remains Issue #162.
+- PR #161 AJAX-pagination changes are being validated in an isolated worktree based on head `634aacef40401358f634e9f456df961f5de42181`; not committed/pushed yet.
+- Added an isolated `--scan-only` mode to the worktree scanner. It requires `--online`, cannot combine with `--initialize`, and is covered by a regression test proving it does not write snapshot, index, manifest or PDFs.
+- Live scan-only returned `blocked_incomplete_source_snapshot`, 22 configured source listings, 388 page-response records and 388 valid SHA-256 hashes. Index, manifest, snapshot, PDF hashes, and isolated worktree remained unchanged.
+- 21 sources completed current traversal logic; Vĩnh Bảo source `https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh` remains blocked. Browser-level Chrome DevTools inspection clicked page 2 as a user; the official page itself posts to `/DesktopModule/UIArticleInMenu/ArticleInMenuPagination.aspx/LoadArticle` with `page=2`, `page_size=15`, `site_id=3017`, `article_category_id=86962`, `no=-15` and the page's own category list, then receives HTTP 200 with empty body. The same issue occurs in direct HTTP tests. This is real source/endpoint behaviour, not a parser guess.
+- Other portals also expose declared `maxPage` values larger than the last non-empty AJAX response. The scanner was further tightened to fail closed when an empty response occurs before a declared final page (except a server-rendered initial HTML page when following AJAX pages actually return data). This last refinement still requires re-running targeted/full tests and a live scan-only.
+- Tests before the last early-empty-page refinement: scanner suite 23 passed; repository suite 184 passed; diff check passed. Do not claim those tests validate the newest refinement until re-run.
+
+### Open risks / blockers
+- Source snapshot remains incomplete. Do not merge PR #161 or write candidate/index/manifest data until every required source has reliable end-of-pagination evidence.
+- Vĩnh Bảo page 2 endpoint is empty even when clicked in Chrome. Need an authorized, verified alternate official listing endpoint or upstream site fix; do not silently exclude the source or call the scan complete.
+- Some pages may be returning empty responses before their declared final page; current fail-closed refinement must be tested and the affected source IDs reported.
+- PR #158 remains Draft. Manifest for `4123/QĐ-UBND` now records explicit `effectiveDate: 2026-10-01`, but the derived `city-updates-current.json` still needs regeneration so `effectiveDateSource` becomes `manifest` instead of `default_effective_from_signing_date`. Keep procedure `2.001576` classified at provincial level; 20 days reduced to 11.5 working days; commune centres are reception points only.
+- Local-only scanner commit `cf88456` still overlaps PR #161; do not push it without reconciling the diff.
+
+### NEXT_SAFE_ACTION
+1. Re-run Python syntax, scanner unit tests, full pytest, and `git diff --check` in the isolated PR #161 worktree after the new premature-empty-page guard.
+2. Re-run `--online --scan-only`; record all configured sources, page counts, terminal evidence, hashes, empty-page errors, unique candidates, and write-safety hash comparison.
+3. Keep all incomplete sources fail-closed. Resolve the Vĩnh Bảo source via a verified alternate official endpoint or keep the scan blocked.
+4. Rebuild only the derived artifacts in PR #158 from the corrected manifest, inspect diff and CI, and keep PR Draft.
+5. Update this log and Issue #162 at each handoff; no main merge or candidate publication.
