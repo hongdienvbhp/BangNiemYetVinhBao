@@ -48,7 +48,7 @@ def request(opener, url: str, *, data: bytes | None = None, headers: dict | None
 
 
 def find_ajax_script(page_html: str) -> str:
-    blocks = re.findall(r"<script\\b[^>]*>(.*?)</script\\s*>", page_html, re.I | re.S)
+    blocks = re.findall(r"<script\b[^>]*>(.*?)</script\s*>", page_html, re.I | re.S)
     matches = [block for block in blocks if "ArticleInMenuPagination.aspx/LoadArticle" in block]
     if len(matches) != 1:
         raise RuntimeError(f"expected exactly one AJAX script; found {len(matches)}")
@@ -74,7 +74,7 @@ def response_summary(status: int, content_type: str, body: bytes) -> dict:
         "bodySha256": hashlib.sha256(body).hexdigest(),
         "isJson": "json" in (content_type or "").lower() or text.lstrip().startswith(("{", "[")),
         "hasArticleList": "ArticleList" in html_text,
-        "hrefCount": len(re.findall(r"\\bhref\\s*=", html_text, re.I)),
+        "hrefCount": len(re.findall(r"\bhref\s*=", html_text, re.I)),
         "tthcDecisionSignalCount": len(re.findall(r"quyet[-_ ]dinh|thu[-_ ]tuc[-_ ]hanh[-_ ]chinh", html_text, re.I)),
         "errorPreview": text[:180] if status == 0 or status >= 400 else "",
     }
@@ -107,10 +107,10 @@ def run_source(source: dict) -> list[dict]:
         result_rows.append({"sourceId": source["id"], "kind": "skipped", "reason": "no declared AJAX pagination"})
         return result_rows
 
-    type_match = re.search(r"\\btype\\s*:\\s*(['\"])(.*?)\\1", ajax_script, re.I | re.S)
-    method_match = re.search(r"\\bmethod\\s*:\\s*(['\"])(.*?)\\1", ajax_script, re.I | re.S)
-    content_match = re.search(r"\\bcontentType\\s*:\\s*(['\"])(.*?)\\1", ajax_script, re.I | re.S)
-    stringify_match = re.search(r"\\bdata\\s*:\\s*(?:JSON\\.stringify|jQuery\\.toJSON|\\$\\.toJSON)\\s*\\(", ajax_script, re.I)
+    type_match = re.search(r"\btype\s*:\s*(['\"])(.*?)\1", ajax_script, re.I | re.S)
+    method_match = re.search(r"\bmethod\s*:\s*(['\"])(.*?)\1", ajax_script, re.I | re.S)
+    content_match = re.search(r"\bcontentType\s*:\s*(['\"])(.*?)\1", ajax_script, re.I | re.S)
+    stringify_match = re.search(r"\bdata\s*:\s*(?:JSON\.stringify|jQuery\.toJSON|\$\.toJSON)\s*\(", ajax_script, re.I)
     result_rows.append({
         "sourceId": source["id"],
         "kind": "js_contract",
