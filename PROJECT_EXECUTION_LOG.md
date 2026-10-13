@@ -132,3 +132,43 @@ URL: https://github.com/hongdienvbhp/BangNiemYetVinhBao/pull/163
 3. Keep all incomplete sources fail-closed. Resolve the Vĩnh Bảo source via a verified alternate official endpoint or keep the scan blocked.
 4. Rebuild only the derived artifacts in PR #158 from the corrected manifest, inspect diff and CI, and keep PR Draft.
 5. Update this log and Issue #162 at each handoff; no main merge or candidate publication.
+
+
+## Authoritative follow-up — 2026-10-13 (refresh supersedes earlier pagination estimates)
+
+### Changes / Tests/CI
+- Current ChatCode executor project: `bangniemyetvinhbao-git`; main ChatCode checkout was fast-forwarded to PR #164 head `9b70d27f6f6383ab05dc329c1091c9daeaaa3dc1`. Only untracked `.chatcode/` is present; preserve it.
+- On the isolated worktree `C:\Users\ADMIN\AppData\Local\Temp\VB-TTHC-PR161-empty-page-9c1e701`, after the empty-interior-page guard:
+  - `py_compile`: PASS.
+  - `tests/test_update_official_sources.py`: 28 passed.
+  - full repository pytest: 189 passed.
+  - `git diff --check`: PASS; tracked working tree clean.
+- PR #161 head remains `18ca72b3c35d498bbcc32c7af4974e7c544c5140`; CI #38332983923 and Pages #38332984038 success. This is code/test evidence, not proof every live source is complete.
+- Refreshed PR #161 body reports its exact-head live `--online --scan-only` result: **22 configured sources, 11 source errors**, status `blocked_incomplete_source_snapshot`, and no snapshot/index/manifest/PDF writes. The source list is explicit below. This supersedes the earlier shorthand “21 sources completed” unless reconciliation of the two run records proves the later run differs.
+- PR #158 head is now `debc5c960f106dce2c999007d6973c4fcf0443e9`; open Draft. Its current diff includes the official explicit `effectiveDate: 2026-10-01`, detailed source reviewNote, and regenerated `city-updates-current.json` with `effectiveDateSource: manifest`. Row `2.001576` still has `levelHint: province`, commune-reception evidence true, and context showing 20 working days reduced to 11.5. PR #158 CI #38332105826, Pages #38332105993, and Google Sheets workflow #38332105802 all succeeded; the Sheets workflow's PR path runs validation only, while live sync requires push/workflow_dispatch on `main`. Keep PR #158 Draft: its current diff touches 24 files, so scope and canonical diff still need review.
+
+### Live pagination failures confirmed by PR #161 scan-only
+The exact-head scan-only run did not prove complete enumeration. It failed closed for 11 sources with empty AJAX responses before declared terminal pages or no follow-up data after server-rendered page 1:
+1. City official TTHC listing: pages 2–30 empty; final page declared 31.
+2. Vĩnh Bảo official TTHC listing: pages 2–31 empty after rendered page 1. Independent browser evidence: AJAX POST to `/DesktopModule/UIArticleInMenu/ArticleInMenuPagination.aspx/LoadArticle`, HTTP 200 with empty body on page 2.
+3. Culture/Tourism department: pages 2–18 empty; final page 19.
+4. Agriculture & Environment department: pages 30–42 empty; final page 43.
+5. Construction department (commune TTHC): pages 3–9 empty; final page 10.
+6. Nhi Chiều: pages 4–17 empty; final page 18.
+7. An Dương: pages 3–23 empty; final page 24.
+8. Ngô Quyền: pages 2–22 empty; final page 23.
+9. Gia Viên: pages 2–12 empty; final page 13.
+10. Bạch Long Vĩ: pages 2–54 empty; final page 55.
+11. Cát Hải: pages 2–29 empty; final page 30.
+
+An HTTP 200 empty response is not a verified final page. Do not infer removed TTHC from absent list pages, do not disable configured sources just to obtain a green run, and do not merge #161 while the completeness gate is unmet without an explicit owner acceptance of the remaining source limitation. The PR remains Draft and the canonical data was not changed by the scan-only validation.
+
+### Additional scan attempt
+- A later ChatCode scan-only rerun was interrupted/has not returned a terminal result; do not count it as evidence or launch another whole-repository scan blindly. The exact-head scan result recorded in PR #161 is currently the authoritative available evidence. If retrying, run one configured source per bounded scan-only process and record that process’s own terminal JSON and hash guard.
+
+### NEXT_SAFE_ACTION
+1. Resolve/verify an official source-specific pagination contract or independently verified alternative traversal for the 11 blocked sources; especially Vĩnh Bảo. Keep fail-closed while unresolved.
+2. Review PR #158's full 24-file diff and tests, despite the effective-date provenance correction now being present; keep it Draft and do not merge/publish.
+3. Reconcile local-only Windows commit `cf88456` with PR #161; do not push overlapping scanner changes.
+4. Review #163 separately (latest-terminal health fix; CI/Pages green) and #164 after #161 acceptance.
+5. Update this log and Issue #162 at the next package boundary. No merge, production write, Google Sheets live sync, or publication without the prescribed gates.
