@@ -25,11 +25,9 @@ from scripts import update_official_sources as scanner
 
 CONFIG_PATH = ROOT / "data/source-audit/official-source-config.json"
 TARGET_IDS = {
-    "haiphong-city-official-tthc",
     "vinhbao-official-tthc",
-    "haiphong-dept-agri-env",
 }
-TIMEOUT_SECONDS = 12
+TIMEOUT_SECONDS = 4
 
 
 def request(opener, url: str, *, data: bytes | None = None, headers: dict | None = None):
@@ -123,7 +121,7 @@ def run_source(source: dict) -> list[dict]:
         "dataUsesJsonSerializer": bool(stringify_match),
     })
 
-    pages = list(dict.fromkeys([1, min(2, ajax["maxPage"]), ajax["maxPage"]]))
+    pages = list(dict.fromkeys([1, min(2, ajax["maxPage"])]))
     for page_number in pages:
         data = dict(ajax["formData"])
         data["page"] = str(page_number)
