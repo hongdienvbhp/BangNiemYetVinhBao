@@ -117,6 +117,24 @@ def evaluate(history: dict, records: dict[str, dict], now: datetime) -> dict:
             "reason": reason,
         }
 
+    # A terminal record cannot override a failed or cancelled GitHub run.
+    # This guards against post-step/runner failures after an OK record was written.
+    if (
+        latest_status in HEALTHY_TERMINAL | {"SKIPPED_ALREADY_RAN", "SKIPPED_PAUSED"}
+        and latest_run.get("conclusion") != "success"
+    ):
+        conclusion = str(latest_run.get("conclusion") or "unknown")
+        return {
+            "state": "STOPPED_LOUDLY",
+            "period_key": period_key,
+            "reason": (
+                "latest workflow conclusion is "
+                + conclusion
+                + " despite terminal routine status: "
+                + latest_status
+            ),
+        }
+
     if latest_status in HEALTHY_TERMINAL:
         return {
             "state": "HEALTHY",

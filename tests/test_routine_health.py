@@ -44,6 +44,13 @@ class RoutineHealthTests(unittest.TestCase):
         self.assertEqual(r["state"], "STOPPED_LOUDLY")
         self.assertIn("without terminal", r["reason"])
 
+    def test_failed_workflow_conclusion_overrides_ok_terminal_record(self):
+        history = {"workflow_runs": [run(1, conclusion="failure")]}
+        records = {"1": record(1, "OK")}
+        r = evaluate(history, records, datetime(2026, 9, 21, 12, 30, tzinfo=TZ))
+        self.assertEqual(r["state"], "STOPPED_LOUDLY")
+        self.assertIn("failure", r["reason"])
+
     def test_ok_terminal_record_is_healthy(self):
         history = {"workflow_runs": [run(1)]}
         records = {"1": record(1, "OK")}
