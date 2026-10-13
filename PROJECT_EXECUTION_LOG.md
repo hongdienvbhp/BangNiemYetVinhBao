@@ -267,3 +267,15 @@ Do not scrape related widgets or treat a search-engine index as a complete sourc
 3. Reconcile local Windows commit `cf88456` with PR #161 before push.
 4. After source completeness is accepted, rebase/verify PR #164 against #161 and rerun CI. Do not merge automatically.
 5. Continue updating this file and Issue #162 at work-package boundaries.
+## PR #161 Unicode pagination-label fix — 2026-10-13
+
+- Read-only differential review of Windows-only commit `cf88456` against its parent showed it must not be pushed as a branch because the branch diff includes candidate data; only small parser/test behaviors were considered for selective porting.
+- A concrete gap was reproduced in the current PR #161 parser: Unicode arrow-only labels `➜`, `❯`, and `>>` were not recognized, even though `›`, `»`, and `→` worked. The cause was matching only the normalized `fold()` label set, which omitted the three variants.
+- Selective fix pushed to the existing PR #161 branch from its exact previous head `18ca72b3c35d498bbcc32c7af4974e7c544c5140`: commit `0691599ff0f13159449faac6bd633a78cb8b9f7d` (`fix: recognize Unicode pagination arrow labels`). It preserves a `raw_label` before folding, recognizes six explicit arrow-only labels via Unicode escapes, and adds `test_page_parser_detects_unicode_arrow_next_labels`. Existing hash-only carousel arrows remain rejected because non-navigable hrefs are filtered before next-link acceptance.
+- Validation before commit/push on the exact PR #161 worktree: `py_compile` PASS; `tests/test_update_official_sources.py`: 29 passed, 6 subtests; full repository pytest: 190 passed, 6 subtests in 1.04s; `git diff --check`: PASS. These are local results; exact-head CI for `0691599` was still running when checkpointed.
+- PR #161 remains Draft. This is parser hardening only; it does not remove the 11 live-source pagination blockers, and it does not establish that the live Vĩnh Bảo endpoint returns page 2. No snapshot/index/manifest/PDF/canonical data was changed by this patch.
+
+### NEXT_SAFE_ACTION
+1. Refresh CI on PR #161 head `0691599ff0f13159449faac6bd633a78cb8b9f7d`.
+2. Keep the source-snapshot guard fail-closed for the 11 sources with empty pages before their declared terminal page; seek a genuine official pagination endpoint or portal-owner resolution.
+3. Keep PR #158/#161/#163/#164 Draft; reconcile local-only Windows `cf88456` by selective code comparison only, never push the candidate-containing branch wholesale.
