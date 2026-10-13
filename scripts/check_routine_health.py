@@ -120,7 +120,7 @@ def evaluate(history: dict, records: dict[str, dict], now: datetime) -> dict:
     # A terminal record cannot override a failed or cancelled GitHub run.
     # This guards against post-step/runner failures after an OK record was written.
     if (
-        latest_status in HEALTHY_TERMINAL | {"SKIPPED_ALREADY_RAN", "SKIPPED_PAUSED"}
+        latest_status in HEALTHY_TERMINAL | {"SKIPPED_ALREADY_RAN", "SKIPPED_PAUSED", "BLOCKED_HUMAN_APPROVAL"}
         and latest_run.get("conclusion") != "success"
     ):
         conclusion = str(latest_run.get("conclusion") or "unknown")
@@ -133,6 +133,19 @@ def evaluate(history: dict, records: dict[str, dict], now: datetime) -> dict:
                 + " despite terminal routine status: "
                 + latest_status
             ),
+        }
+
+    if latest_status == "BLOCKED_HUMAN_APPROVAL":
+        # A completed scan awaiting a person is a visible gate, not a failed routine.
+        # The workflow-conclusion guard above still prevents this record masking failure.
+        note = str(latest_record.get("note") or "").strip()
+        reason = "human approval is required for the pending official TTHC candidate"
+        if note:
+            reason += ": " + note
+        return {
+            "state": "BLOCKED_FOR_REVIEW",
+            "period_key": period_key,
+            "reason": reason,
         }
 
     if latest_status in HEALTHY_TERMINAL:
