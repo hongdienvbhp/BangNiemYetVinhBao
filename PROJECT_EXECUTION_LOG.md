@@ -221,3 +221,24 @@ An HTTP 200 empty response is not a verified final page. Do not infer removed TT
 
 ### NEXT_SAFE_ACTION
 Find a genuine official archive/category/sitemap or working page traversal that demonstrates all relevant public decision article URLs. Require distinct page hashes/URLs and a verifiable terminal condition; otherwise retain the source blocker and document the portal-side AJAX issue.
+## Vĩnh Bảo sitemap/robots fallback check — 2026-10-13
+
+- Read-only GET `https://vinhbao.haiphong.gov.vn/robots.txt`: HTTP 200, 42 bytes, content `User-agent: facebookexternalhit\r\nAllow: /`; no sitemap location declared.
+- Read-only GET `https://vinhbao.haiphong.gov.vn/sitemap.xml`: HTTP 404.
+- Read-only GET `https://vinhbao.haiphong.gov.vn/sitemap_index.xml`: HTTP 404.
+- Combined with the earlier `?page=2` GET returning the same initial-page SHA, these common alternatives do not provide a distinct complete listing traversal. No project/source data files were changed by these probes.
+
+### Current fallback decision
+Do not scrape related widgets or treat a search-engine index as a complete source substitute. Keep the source blocked until an official category/archive/feed or source-owner-provided endpoint can demonstrate complete article URL coverage and terminal pagination.
+
+## PR #164 artifact hardening — 2026-10-13
+
+- Commit pushed to `codex/issue-162-candidate-review-recovery`: `447788f fix: include untracked evidence in pending review artifact`.
+- Workflow now applies NUL-safe `git ls-files --others --exclude-standard -z` plus `git add -N` to untracked files under `data`/`js/master-data-fallback.js` before `git diff --binary`. This means the 90-day pending-review artifact includes newly downloaded PDF evidence and other untracked source artifacts, while leaving contents unstaged for commit and preserving the open candidate branch.
+- Regression test added in `tests/test_official_data_update_workflow.py`.
+- Validation: targeted workflow tests 3 passed; full repository pytest 173 passed in 1.09s; `git diff --check` PASS. At log time, exact-head CI #38335659748 was still running; Pages workflow #38335659740 succeeded.
+
+### NEXT_SAFE_ACTION
+1. Verify CI on PR #164 head `447788f51cb013706d1c609c053c5a27ec8000e6` completes successfully.
+2. Continue source-completeness blockage; no alternate complete official route is proven for Vĩnh Bảo or the other 10 incomplete sources.
+3. Keep PRs #158/#161/#163/#164 Draft. Reconcile Windows-only `cf88456` with #161 before push; no merge/publish.
