@@ -172,3 +172,16 @@ An HTTP 200 empty response is not a verified final page. Do not infer removed TT
 3. Reconcile local-only Windows commit `cf88456` with PR #161; do not push overlapping scanner changes.
 4. Review #163 separately (latest-terminal health fix; CI/Pages green) and #164 after #161 acceptance.
 5. Update this log and Issue #162 at the next package boundary. No merge, production write, Google Sheets live sync, or publication without the prescribed gates.
+
+## Vĩnh Bảo AJAX request-contract verification — 2026-10-13
+
+- Fetched the official Vĩnh Bảo listing HTML successfully: 160,356 bytes, `text/html; charset=utf-8`, one inline script contains the pagination request.
+- The actual script calls `POST /DesktopModule/UIArticleInMenu/ArticleInMenuPagination.aspx/LoadArticle` with `page=chosenPage`, `page_size=15`, `site_id=3017`, `article_category_id=86962`, and the listing page's own `categoryIds` plus other filters. It does not set a custom `contentType`; jQuery's default form encoding applies. Therefore the configured URL-encoded request shape is consistent with the actual inline JavaScript contract.
+- A direct POST using the parsed form values/headers for page 2 returned HTTP 200 with a **zero-byte body**. An exploratory `application/json` request did not return within 20 seconds. This does not establish JSON as the correct contract. Together with the earlier browser DevTools page-2 observation, the configured endpoint currently provides no page-2 content to the scanner.
+- This is an upstream source/endpoint behaviour or a still-unverified browser/session requirement, not demonstrated parser failure. Do not change the scanner to treat empty content as terminal, infer removal, or silently omit Vĩnh Bảo.
+- A further all-sources per-source scan wrapper was interrupted without a terminal result; it is explicitly **not evidence** and should not be treated as a scan result. The exact-head scan-only result in PR #161 (22 sources, 11 errors, no writes) remains the authoritative live-scan evidence.
+
+### NEXT_SAFE_ACTION
+1. Find/verify an alternate official Vĩnh Bảo listing traversal or document the endpoint failure for the portal owner; require an independently verifiable complete set of article URLs before treating that source as complete.
+2. Do not retry a large all-source scan until progress/terminal evidence is available. If needed, run one source per bounded scan-only job and preserve per-source terminal JSON plus source-data hash guard.
+3. Preserve PR #161 fail-closed gate and keep the PR Draft until owner review of source completeness limitations.
