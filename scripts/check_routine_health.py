@@ -13,13 +13,14 @@ LOCAL_TZ = ZoneInfo("Asia/Ho_Chi_Minh")
 EXPECTED_BY = time(12, 15)
 UNHEALTHY_STATES = {"STOPPED_LOUDLY", "STOPPED_SILENTLY"}
 HEALTHY_TERMINAL = {"OK"}
+# A pending human approval is an explicit review gate, not an operational failure.
+# It is handled as BLOCKED_FOR_REVIEW below and must remain outside LOUD_TERMINAL.
 LOUD_TERMINAL = {
     "PARTIAL",
     "FAILED",
     "SKIPPED_OUT_OF_WINDOW",
     "BLOCKED_AUTH",
     "BLOCKED_SOURCE",
-    "BLOCKED_HUMAN_APPROVAL",
 }
 
 
@@ -88,62 +89,117 @@ def evaluate(history: dict, records: dict[str, dict], now: datetime) -> dict:
         for run_id, record in records.items()
         if run_id in today_ids and record.get("period_key") == period_key
     }
-    statuses = {str(record.get("status") or "") for record in today_records.values()}
 
-    if statuses & HEALTHY_TERMINAL:
+    # Evaluate the latest run, not any historical OK. GitHub returns runs by
+    # creation time; use the timestamp and preserve list order for equal times.
+    latest_index, latest_run = max(
+        enumerate(today),
+        key=lambda item: (str(item[1].get("created_at") or ""), -item[0]),
+    )
+    latest_run_id = str(latest_run.get("id") or "")
+    latest_record = today_records.get(latest_run_id)
+    latest_status = str((latest_record or {}).get("status") or "")
+
+    if latest_run.get("status") in {"queued", "in_progress", "waiting", "requested", "pending"}:
         return {
-            "state": "HEALTHY",
+            "state": "RUNNING",
             "period_key": period_key,
-            "reason": "terminal OK record observed",
+            "reason": "latest workflow run still active",
         }
 
-    if "SKIPPED_ALREADY_RAN" in statuses:
+    if not latest_record:
+        if latest_run.get("conclusion") not in {"success", "skipped"}:
+            reason = "workflow completed unsuccessfully"
+        else:
+            reason = "latest workflow run observed without terminal routine record"
         return {
             "state": "STOPPED_LOUDLY",
             "period_key": period_key,
-            "reason": "duplicate-skip observed without an OK run record for the period",
+            "reason": reason,
         }
 
-    if "SKIPPED_PAUSED" in statuses:
+    # A terminal record cannot override a failed or cancelled GitHub run.
+    # This guards against post-step/runner failures after an OK record was written.
+    if (
+        latest_status in HEALTHY_TERMINAL | {"SKIPPED_ALREADY_RAN", "SKIPPED_PAUSED", "BLOCKED_HUMAN_APPROVAL"}
+        and latest_run.get("conclusion") != "success"
+    ):
+        conclusion = str(latest_run.get("conclusion") or "unknown")
+        return {
+            "state": "STOPPED_LOUDLY",
+            "period_key": period_key,
+            "reason": (
+                "latest workflow conclusion is "
+                + conclusion
+                + " despite terminal routine status: "
+                + latest_status
+            ),
+        }
+
+    if latest_status == "BLOCKED_HUMAN_APPROVAL":
+        # A completed scan awaiting a person is a visible gate, not a failed routine.
+        # The workflow-conclusion guard above still prevents this record masking failure.
+        note = str(latest_record.get("note") or "").strip()
+        reason = "human approval is required for the pending official TTHC candidate"
+        if note:
+            reason += ": " + note
+        return {
+            "state": "BLOCKED_FOR_REVIEW",
+            "period_key": period_key,
+            "reason": reason,
+        }
+
+    if latest_status in HEALTHY_TERMINAL:
+        return {
+            "state": "HEALTHY",
+            "period_key": period_key,
+            "reason": "latest terminal OK record observed",
+        }
+
+    if latest_status == "SKIPPED_ALREADY_RAN":
+        latest_created = str(latest_run.get("created_at") or "")
+        # A duplicate skip is benign only when a prior run in this period
+        # has a real OK record. A later PARTIAL/FAILED run must never be masked.
+        prior_ok = False
+        for index, run in enumerate(today):
+            run_id = str(run.get("id") or "")
+            record = today_records.get(run_id)
+            if run_id == latest_run_id or not record or record.get("status") != "OK":
+                continue
+            created = str(run.get("created_at") or "")
+            if created < latest_created or (created == latest_created and index > latest_index):
+                prior_ok = True
+                break
+        if prior_ok:
+            return {
+                "state": "HEALTHY",
+                "period_key": period_key,
+                "reason": "latest run was a duplicate skip; prior OK record exists for period",
+            }
+        return {
+            "state": "STOPPED_LOUDLY",
+            "period_key": period_key,
+            "reason": "duplicate-skip observed without a prior OK run record for the period",
+        }
+
+    if latest_status == "SKIPPED_PAUSED":
         return {
             "state": "PAUSED",
             "period_key": period_key,
             "reason": "routine explicitly paused",
         }
 
-    loud_statuses = sorted(statuses & LOUD_TERMINAL)
-    if loud_statuses:
+    if latest_status in LOUD_TERMINAL:
         return {
             "state": "STOPPED_LOUDLY",
             "period_key": period_key,
-            "reason": "terminal routine status: " + ",".join(loud_statuses),
-        }
-
-    if any(run.get("status") in {"queued", "in_progress", "waiting", "requested", "pending"} for run in today):
-        return {
-            "state": "RUNNING",
-            "period_key": period_key,
-            "reason": "workflow run still active",
-        }
-
-    if len(today_records) < len(today):
-        return {
-            "state": "STOPPED_LOUDLY",
-            "period_key": period_key,
-            "reason": "workflow run observed without terminal routine record",
-        }
-
-    if any(run.get("conclusion") not in {"success", "skipped"} for run in today):
-        return {
-            "state": "STOPPED_LOUDLY",
-            "period_key": period_key,
-            "reason": "workflow completed unsuccessfully",
+            "reason": "latest terminal routine status: " + latest_status,
         }
 
     return {
         "state": "STOPPED_LOUDLY",
         "period_key": period_key,
-        "reason": "no healthy terminal routine status observed",
+        "reason": "no healthy latest terminal routine status observed",
     }
 
 
