@@ -36,7 +36,16 @@ jobs:
 
       - name: Diagnose official source AJAX transport (PR #161 only)
         if: github.event_name == 'pull_request' && github.event.pull_request.number == 161
-        run: python scripts/diagnose_official_ajax_contract.py
+        run: python scripts/diagnose_official_ajax_contract.py --output /tmp/official-source-ajax-contract.json
+
+      - name: Upload official source AJAX diagnostic JSON (PR #161 only)
+        if: always() && github.event_name == 'pull_request' && github.event.pull_request.number == 161
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v4
+        with:
+          name: official-source-ajax-contract-${{ github.run_id }}
+          path: /tmp/official-source-ajax-contract.json
+          if-no-files-found: warn
+          retention-days: 30
 
       - name: Detect canonical-build impact
         if: github.event_name == 'pull_request'
