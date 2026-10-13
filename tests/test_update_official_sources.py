@@ -47,6 +47,13 @@ class OfficialSourceScannerTests(unittest.TestCase):
         self.assertEqual(parser.next_links, ["/listing?page=2"])
         self.assertEqual(len(parser.links), 2)
 
+    def test_page_parser_detects_unicode_arrow_next_labels(self):
+        for label in ("\u203a", "\u00bb", "\u2192", "\u279c", "\u276f", ">>"):
+            with self.subTest(label=label):
+                parser = scanner.PageParser()
+                parser.feed(f'<a href="/listing?page=2">{label}</a>')
+                self.assertEqual(parser.next_links, ["/listing?page=2"])
+
     def test_page_parser_ignores_hash_only_carousel_arrows(self):
         parser = scanner.PageParser()
         parser.feed(

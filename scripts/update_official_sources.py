@@ -265,7 +265,15 @@ class PageParser(HTMLParser):
                 self.numbered_page_links.append((self._anchor_href.strip(), text))
             rel_tokens = set(self._anchor_attrs.get("rel", "").lower().split())
             class_tokens = set(re.split(r"\s+", self._anchor_attrs.get("class", "").lower()))
-            label = fold(" ".join((text, self._anchor_attrs.get("aria-label", ""), self._anchor_attrs.get("title", ""))).strip())
+            raw_label = " ".join(
+                (
+                    text,
+                    self._anchor_attrs.get("aria-label", ""),
+                    self._anchor_attrs.get("title", ""),
+                )
+            ).strip()
+            label = fold(raw_label)
+            arrow_only_labels = {"\u203a", "\u00bb", "\u2192", "\u279c", "\u276f", ">>"}
             next_classes = {"next", "pager-next", "pagination-next", "page-next", "next-page", "older"}
             next_labels = {"next", "older", "newer", "trang sau", "sau", "tiep", "tiep theo", "ke tiep", "»", "›", "→"}
             href = self._anchor_href.strip()
@@ -277,6 +285,7 @@ class PageParser(HTMLParser):
             if not is_non_navigable and (
                 "next" in rel_tokens
                 or bool(class_tokens & next_classes)
+                or raw_label.lower() in arrow_only_labels
                 or label in next_labels
                 or label.startswith(("next ", "older ", "trang sau", "tiep theo", "ke tiep"))
             ):
