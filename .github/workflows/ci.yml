@@ -76,6 +76,21 @@ jobs:
           python scripts/reconcile_priority51_crosswalk.py
           git diff --exit-code --             data/source-audit/city-updates-current.json             data/thu-tuc.json             data/priority-51-crosswalk.json             data/master-data-audit.csv             data/master-data-excluded.json             data/BAO_CAO_MASTER_DATA_HIEN_HANH.md             data/THEO_DOI_THAY_DOI_TTHC.csv             js/master-data-fallback.js
 
+      - name: Validate committed Master delta report
+        if: github.event_name == 'pull_request' && steps.canonical-impact.outputs.changed == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          base="${{ github.event.pull_request.base.sha }}"
+          git show "${base}:data/thu-tuc.json" > /tmp/master-before.json
+          python scripts/build_master_delta.py \
+            --before /tmp/master-before.json \
+            --after data/thu-tuc.json \
+            --json-out /tmp/latest-master-delta.json \
+            --md-out /tmp/latest-master-delta.md
+          diff -u /tmp/latest-master-delta.json data/source-audit/latest-master-delta.json
+          diff -u /tmp/latest-master-delta.md data/BAO_CAO_CHENH_LECH_TTHC_MOI_NHAT.md
+
       - name: Validate canonical field contract v5
         run: python scripts/validate_canonical_field_contract.py
 
