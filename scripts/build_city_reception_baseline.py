@@ -12,7 +12,7 @@ from pathlib import Path
 from statistics import median
 from urllib.request import Request, urlopen
 
-import pdfplumber
+import fitz
 
 ARTICLE_URL = "https://haiphong.gov.vn/thu-tuc-hanh-chinh-76761/danh-muc-thu-tuc-hanh-chinh-tiep-nhan-tai-trung-tam-phuc-vu-hanh-chinh-cong-thanh-pho-hai-phong--760833"
 PDF_URL = "https://cdn.haiphong.gov.vn/gov-hpg/1/tintuc/2025/7/danh-muc-thu-tuc-hanh-chinh-thuc-hien-tiep-nhan-tai-trung-tam-phuc-vu-hanh-chinh-cong-thanh-pho-hai-phong638871741697189500.pdf"
@@ -20,16 +20,18 @@ PUBLISHED_DATE = "2025-07-03"
 EXPECTED_SHA256 = "22c2a8ab6abc6aa0df4694da6eebafe51f5a75bf76bae97f22c19af5fa082425"
 EXPECTED_PAGES = 114
 CODE_RE = re.compile(r"^\d{1,2}\.\d{3,6}$")
+CODE_TOKEN_RE = re.compile(r"(?<!\d)(\d{1,2}\.\d{3,6})(?!\d)")
 AGENCY_RE = re.compile(r"^(?:[IVXLCDM]+\.|\d+\.)\s+(?:SỞ|BAN|VĂN PHÒNG|THANH TRA|CÔNG AN|UBND|ỦY BAN)", re.I)
 
-# Each page contains repeated table templates positioned side-by-side. Use
-# absolute page coordinates from pdfplumber; pypdf's visitor callback for this
-# source exposes local text matrices for form-based table blocks.
-CODE_COLUMN_GAP = 180.0
-BASE_CODE_X_CENTER = 125.9
-BASE_NAME_X_MIN = 160.0
-BASE_NAME_X_MAX = 443.0
-BASE_FIELD_X_MAX = 700.0
+# The official PDF places two repeated table templates side-by-side on each
+# A4 portrait page. These are the source template's local x coordinates.
+# PyMuPDF returns absolute page coordinates, so scale each template to half
+# the physical page width and apply the left/right column offset.
+CODE_COLUMN_GAP = 80.0
+LOCAL_TABLE_WIDTH = 700.0
+LOCAL_NAME_X_MIN = 160.0
+LOCAL_NAME_X_MAX = 443.0
+LOCAL_FIELD_X_MAX = 700.0
 
 
 def space(value: str) -> str:
@@ -45,7 +47,7 @@ def norm_code(value: str) -> str:
 
 
 def fetch_pdf() -> bytes:
-    req = Request(PDF_URL, headers={"User-Agent": "BangNiemYetVinhBao-City-Baseline/2.1"})
+    req = Request(PDF_URL, headers={"User-Agent": "BangNiemYetVinhBao-City-Baseline/2.2"})
     with urlopen(req, timeout=60) as response:
         data = response.read()
     if not data.startswith(b"%PDF"):
@@ -54,21 +56,15 @@ def fetch_pdf() -> bytes:
 
 
 def fragments(page):
-    """Return individual words with absolute page coordinates (y is bottom-origin)."""
+    """Return individual words in absolute page coordinates (y is bottom-origin)."""
     out = []
-    for word in page.extract_words(
-        x_tolerance=2,
-        y_tolerance=2,
-        keep_blank_chars=False,
-        use_text_flow=False,
-    ):
-        text = space(word.get("text", ""))
-        if not text:
+    for word in page.get_text("words", sort=False):
+        x0, y0, x1, y1, text = word[:5]
+        value = space(str(text))
+        if not value:
             continue
-        top = float(word["top"])
-        bottom = float(word["bottom"])
-        y = float(page.height) - ((top + bottom) / 2)
-        out.append((y, float(word["x0"]), text))
+        y = float(page.rect.height) - ((float(y0) + float(y1)) / 2)
+        out.append((y, float(x0), value))
     return out
 
 
@@ -133,9 +129,8 @@ def extract_rows(pages):
         items = fragments(page)
         code_fragments = []
         for y, x, text in items:
-            candidate = text.strip().rstrip(".")
-            if CODE_RE.fullmatch(candidate):
-                code_fragments.append((y, x, norm_code(candidate)))
+            for match in CODE_TOKEN_RE.finditer(text):
+                code_fragments.append((y, x, norm_code(match.group(1))))
 
         groups = cluster_code_columns(code_fragments)
         if not groups:
@@ -148,17 +143,20 @@ def extract_rows(pages):
                 nearest = min(range(len(centers)), key=lambda index: abs(x - centers[index]))
                 headings_by_group[nearest].append((y, text))
 
-        page_height = float(page.height)
+        page_width = float(page.rect.width)
+        page_height = float(page.rect.height)
+        column_width = page_width / 2
+        scale = column_width / LOCAL_TABLE_WIDTH
+
         for group_index, group in enumerate(groups):
             center = centers[group_index]
-            if len(groups) > 1:
-                slot = group_index
-            else:
-                slot = 1 if center > float(page.width) / 2 else 0
-
+            slot = 1 if center > page_width / 2 else 0
             headings = sorted(headings_by_group[group_index], key=lambda row: -row[0])
             codes = sorted(group, key=lambda row: -row[0])
-            shift = center - BASE_CODE_X_CENTER
+            shift = slot * column_width
+            name_x_min = LOCAL_NAME_X_MIN * scale + shift
+            name_x_max = LOCAL_NAME_X_MAX * scale + shift
+            field_x_max = LOCAL_FIELD_X_MAX * scale + shift
 
             for index, (y, x, code) in enumerate(codes):
                 upper = (codes[index - 1][0] + y) / 2 if index else min(page_height - 5.0, y + 58.0)
@@ -173,8 +171,8 @@ def extract_rows(pages):
 
                 rows.append({
                     "code": code,
-                    "name": column(items, lower, upper, BASE_NAME_X_MIN + shift, BASE_NAME_X_MAX + shift),
-                    "field": column(items, lower, upper, BASE_NAME_X_MAX + shift, BASE_FIELD_X_MAX + shift),
+                    "name": column(items, lower, upper, name_x_min, name_x_max),
+                    "field": column(items, lower, upper, name_x_max, field_x_max),
                     "agency": agency,
                     "page": page_no,
                 })
@@ -231,10 +229,10 @@ def build(data: bytes):
     if digest != EXPECTED_SHA256:
         raise RuntimeError(f"SHA256 changed: {digest}")
 
-    with pdfplumber.open(io.BytesIO(data)) as pdf:
-        if len(pdf.pages) != EXPECTED_PAGES:
-            raise RuntimeError(f"Page count changed: {len(pdf.pages)}")
-        rows, duplicate_conflicts = dedupe(extract_rows(pdf.pages))
+    with fitz.open(stream=data, filetype="pdf") as pdf:
+        if len(pdf) != EXPECTED_PAGES:
+            raise RuntimeError(f"Page count changed: {len(pdf)}")
+        rows, duplicate_conflicts = dedupe(extract_rows(pdf))
 
     if len(rows) < 300:
         raise RuntimeError(f"Implausibly small baseline: {len(rows)}")

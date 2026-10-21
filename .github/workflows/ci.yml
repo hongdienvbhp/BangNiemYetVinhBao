@@ -25,7 +25,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install PDF dependency
-        run: python -m pip install --disable-pip-version-check pypdf==6.17.0 pdfplumber==0.11.7
+        run: python -m pip install --disable-pip-version-check pypdf==6.17.0 PyMuPDF==1.26.7
 
       - name: Detect city baseline impact
         id: city-baseline-impact
@@ -119,15 +119,15 @@ jobs:
         if: failure() && steps.city-baseline-impact.outputs.changed == 'true'
         run: |
           python - <<'PY'
-          import io, json
-          import pdfplumber
+          import io, json, re
+          import fitz
           from scripts.build_city_reception_baseline import (
               AGENCY_RE, CODE_RE, cluster_code_columns, fetch_pdf, fragments,
               group_text_lines, norm_code, space,
           )
 
-          with pdfplumber.open(io.BytesIO(fetch_pdf())) as pdf:
-              page = pdf.pages[6]
+          with fitz.open(stream=fetch_pdf(), filetype="pdf") as pdf:
+              page = pdf[6]
               items = fragments(page)
               codes = []
               for y, x, text in items:
@@ -136,7 +136,7 @@ jobs:
                       codes.append((y, x, norm_code(candidate)))
               groups = cluster_code_columns(codes)
               headings = group_text_lines(items)
-              print("PAGE_SIZE", {"width": page.width, "height": page.height})
+              print("PAGE_SIZE", {"width": page.rect.width, "height": page.rect.height})
               print("CODE_COLUMN_GROUPS", json.dumps([
                   {"center": sorted(row[1] for row in group)[len(group)//2],
                    "count": len(group),
