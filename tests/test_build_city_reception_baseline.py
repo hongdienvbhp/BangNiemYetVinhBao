@@ -92,5 +92,32 @@ class CityReceptionBaselineParserTests(unittest.TestCase):
         self.assertEqual(norm_code("2.00018"), "2.000180")
 
 
+    def test_extracts_multiple_codes_in_one_pdf_block(self):
+        blocks = [
+            (83.42, 100.0, 545.98, 145.0,
+             "1.000001\\nFirst procedure\\nField A\\n2.000002\\nSecond procedure\\nField B", 1, 0),
+        ]
+        words = [
+            (125.9, 100.0, 174.5, 114.0, "1.000001", 1, 0, 0),
+            (196.85, 100.0, 217.73, 114.0, "First", 1, 0, 1),
+            (220.61, 100.0, 260.0, 114.0, "procedure", 1, 0, 2),
+            (443.26, 100.0, 469.19, 114.0, "Field", 1, 0, 3),
+            (472.43, 100.0, 486.0, 114.0, "A", 1, 0, 4),
+            (125.9, 125.0, 174.5, 139.0, "2.000002", 1, 1, 0),
+            (196.85, 125.0, 238.0, 139.0, "Second", 1, 1, 1),
+            (240.0, 125.0, 280.0, 139.0, "procedure", 1, 1, 2),
+            (443.26, 125.0, 469.19, 139.0, "Field", 1, 1, 3),
+            (472.43, 125.0, 486.0, 139.0, "B", 1, 1, 4),
+        ]
+
+        rows = extract_rows([FakePage(blocks, words)])
+
+        self.assertEqual([row["code"] for row in rows], ["1.000001", "2.000002"])
+        self.assertEqual(rows[0]["name"], "First procedure")
+        self.assertEqual(rows[0]["field"], "Field A")
+        self.assertEqual(rows[1]["name"], "Second procedure")
+        self.assertEqual(rows[1]["field"], "Field B")
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -91,10 +91,13 @@ jobs:
               "anchors": {code: rows.get(code) for code in ("1.000016", "1.000481")},
           }, ensure_ascii=False, indent=2))
           assert payload["rowCount"] >= 1900, f"implausibly small row count: {payload['rowCount']}"
-          assert payload["missingNameCount"] == 0, f"missing names: {payload['missingNameCodes'][:20]}"
-          assert payload["emptyFieldCount"] == 0, f"empty fields: {payload['emptyFieldCodes'][:20]}"
-          assert payload["missingAgencyCount"] == 0, f"missing agencies: {payload['missingAgencyCodes'][:20]}"
-          assert payload["duplicateConflictCount"] == 0, f"conflicting duplicate cells: {payload['duplicateConflicts'][:10]}"
+          assert all(rows[code].get("nameStatus") == "MANUAL_REVIEW" for code in payload["missingNameCodes"]), "unmarked missing name"
+          assert all(rows[code].get("fieldStatus") == "MANUAL_REVIEW" for code in payload["emptyFieldCodes"]), "unmarked empty field"
+          assert all(rows[code].get("agencyStatus") == "MANUAL_REVIEW" for code in payload["missingAgencyCodes"]), "unmarked missing agency"
+          for conflict in payload["duplicateConflicts"]:
+              status_key = {"name": "nameStatus", "field": "fieldStatus"}.get(conflict["field"])
+              assert status_key and rows[conflict["code"]].get(status_key) == "MANUAL_REVIEW", f"unmarked duplicate conflict: {conflict}"
+          assert generated_codes == committed_codes, f"source code set differs from baseline: missing={sorted(committed_codes - generated_codes)}, extra={sorted(generated_codes - committed_codes)}"
 
           expected = {
               "1.000016": (

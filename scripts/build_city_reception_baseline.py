@@ -87,26 +87,85 @@ def words_text(words, xmin: float, xmax: float, *, min_order=None, max_order=Non
 
 def agency_heading(blocks, index):
     text = space(str(blocks[index][4]))
-    if AGENCY_RE.match(text):
-        text = re.sub(r"\s+STT\s+Mã TTHC.*$", "", text, flags=re.I)
-        return space(text), 1
+    match = re.search(
+        r"(?:[IVXLCDM]+|\d+)\.\s+(?:SỞ|BAN|VĂN PHÒNG|THANH TRA|CÔNG AN|UBND|ỦY BAN)\b.*",
+        text,
+        flags=re.I,
+    )
+    if match:
+        heading = re.sub(r"\s+STT\s+Mã TTHC.*$", "", match.group(0), flags=re.I)
+        return space(heading), 1
     if AGENCY_PREFIX_RE.fullmatch(text) and index + 1 < len(blocks):
         following = space(str(blocks[index + 1][4]))
         if AGENCY_BODY_RE.match(following):
-            return f"{text} {following}", 2
+            heading = re.sub(r"\s+STT\s+Mã TTHC.*$", "", f"{text} {following}", flags=re.I)
+            return space(heading), 2
     return None, 0
 
 
-def collect_separate_cells(blocks, block_index, words_by_block, row_code_indices, row_code_orders, need_name, need_field):
+def agency_heading_records(blocks):
+    """Collect agency headings with page coordinates, not PDF content-stream order."""
+    headings = []
+    index = 0
+    while index < len(blocks):
+        heading, consumed = agency_heading(blocks, index)
+        if not heading:
+            index += 1
+            continue
+        heading_blocks = blocks[index:index + consumed]
+        headings.append({
+            "agency": heading,
+            "x0": min(float(block[0]) for block in heading_blocks),
+            "y0": min(float(block[1]) for block in heading_blocks),
+            "x1": max(float(block[2]) for block in heading_blocks),
+            "y1": max(float(block[3]) for block in heading_blocks),
+        })
+        index += consumed
+    return headings
+
+
+def heading_distance(x, heading):
+    if x < heading["x0"]:
+        return heading["x0"] - x
+    if x > heading["x1"]:
+        return x - heading["x1"]
+    return 0.0
+
+
+def resolve_agency(code_record, headings, previous_headings):
+    """Resolve the agency by matching the table column and preceding visual heading."""
+    x = code_record["x"]
+    y = code_record["y"]
+    eligible = [heading for heading in headings if heading["y0"] <= y]
+    if eligible:
+        min_distance = min(heading_distance(x, heading) for heading in eligible)
+        same_column = [
+            heading for heading in eligible
+            if heading_distance(x, heading) <= min_distance + 5.0
+        ]
+        return max(same_column, key=lambda heading: heading["y0"])["agency"]
+
+    if previous_headings:
+        min_distance = min(heading_distance(x, heading) for heading in previous_headings)
+        same_column = [
+            heading for heading in previous_headings
+            if heading_distance(x, heading) <= min_distance + 5.0
+        ]
+        return max(same_column, key=lambda heading: heading["page"])["agency"]
+    return ""
+
+
+def collect_separate_cells(blocks, block_index, words_by_block, row_codes_by_block, need_name, need_field):
     """Collect cell text following a row, including a previous row's field before the next code."""
     name_parts = []
     field_parts = []
     for candidate_index in range(block_index + 1, len(blocks)):
         candidate = blocks[candidate_index]
         candidate_words = words_by_block.get(int(candidate[5]), [])
-        candidate_code_order = row_code_orders.get(candidate_index)
+        candidate_codes = row_codes_by_block.get(candidate_index, [])
 
-        if candidate_code_order is not None:
+        if candidate_codes:
+            candidate_code_order = candidate_codes[0]["order"]
             if need_name:
                 part = words_text(candidate_words, 160.0, 443.0, max_order=candidate_code_order)
                 if part:
@@ -118,7 +177,8 @@ def collect_separate_cells(blocks, block_index, words_by_block, row_code_indices
             break
 
         candidate_text = space(str(candidate[4]))
-        if AGENCY_RE.match(candidate_text) or HEADER_RE.match(candidate_text):
+        candidate_heading, _ = agency_heading(blocks, candidate_index)
+        if candidate_heading or HEADER_RE.match(candidate_text):
             break
 
         if need_name:
@@ -134,80 +194,94 @@ def collect_separate_cells(blocks, block_index, words_by_block, row_code_indices
 
 
 def extract_rows(pages):
-    """Extract row and cell words by code-column position, preserving PDF block order."""
+    """Extract each code token and associate cells/headings by source order and geometry."""
     page_records = []
 
     for page_no, page in enumerate(pages, start=1):
         blocks = page.get_text("blocks", sort=False)
         block_no_to_index = {int(block[5]): index for index, block in enumerate(blocks)}
         words_by_block = {}
+        row_codes_by_block = {}
         words = page.get_text("words", sort=False)
         for word in words:
-            words_by_block.setdefault(int(word[5]), []).append(word)
-
-        row_code_indices = {}
-        row_code_orders = {}
-        for word in words:
+            block_no = int(word[5])
+            words_by_block.setdefault(block_no, []).append(word)
             code_token = space(str(word[4])).rstrip(".")
             if float(word[0]) >= 160.0 or not CODE_RE.fullmatch(code_token):
                 continue
-            block_index = block_no_to_index.get(int(word[5]))
+            block_index = block_no_to_index.get(block_no)
             if block_index is None:
                 continue
-            row_code_indices[block_index] = norm_code(code_token)
-            row_code_orders[block_index] = (int(word[6]), int(word[7]))
+            row_codes_by_block.setdefault(block_index, []).append({
+                "code": norm_code(code_token),
+                "order": (int(word[6]), int(word[7])),
+                "x": float(word[0]),
+                "y": (float(word[1]) + float(word[3])) / 2.0,
+            })
 
-        page_records.append((page_no, blocks, words_by_block, row_code_indices, row_code_orders))
+        for code_records in row_codes_by_block.values():
+            code_records.sort(key=lambda item: item["order"])
+        page_records.append((
+            page_no, blocks, words_by_block, row_codes_by_block,
+            agency_heading_records(blocks),
+        ))
 
-    current_agency = ""
+    previous_headings = []
     rows = []
 
-    for page_no, blocks, words_by_block, row_code_indices, row_code_orders in page_records:
+    for page_no, blocks, words_by_block, row_codes_by_block, headings in page_records:
         block_index = 0
         while block_index < len(blocks):
-            block = blocks[block_index]
-            heading, consumed = agency_heading(blocks, block_index)
-            if heading:
-                current_agency = heading
-                block_index += consumed
-                continue
-
-            code = row_code_indices.get(block_index)
-            if not code:
+            code_records = row_codes_by_block.get(block_index, [])
+            if not code_records:
                 block_index += 1
                 continue
 
-            block_words = words_by_block.get(int(block[5]), [])
-            code_order = row_code_orders[block_index]
-            name = words_text(block_words, 160.0, 443.0, min_order=code_order)
-            field = words_text(block_words, 443.0, 700.0, min_order=code_order)
-
-            if not name or not field:
-                extra_name, extra_field = collect_separate_cells(
-                    blocks,
-                    block_index,
-                    words_by_block,
-                    row_code_indices,
-                    row_code_orders,
-                    need_name=not name,
-                    need_field=not field,
+            block_words = words_by_block.get(int(blocks[block_index][5]), [])
+            for code_index, code_record in enumerate(code_records):
+                code_order = code_record["order"]
+                next_code_order = (
+                    code_records[code_index + 1]["order"]
+                    if code_index + 1 < len(code_records)
+                    else None
                 )
-                if not name:
-                    name = extra_name
-                if not field:
-                    field = extra_field
+                name = words_text(
+                    block_words, 160.0, 443.0,
+                    min_order=code_order, max_order=next_code_order,
+                )
+                field = words_text(
+                    block_words, 443.0, 700.0,
+                    min_order=code_order, max_order=next_code_order,
+                )
 
-            rows.append({
-                "code": code,
-                "name": name,
-                "field": field,
-                "agency": current_agency,
-                "page": page_no,
-            })
+                # Only the final code in a block may borrow cell text from later blocks;
+                # earlier codes in the same block are bounded by the next code token.
+                if (not name or not field) and code_index == len(code_records) - 1:
+                    extra_name, extra_field = collect_separate_cells(
+                        blocks,
+                        block_index,
+                        words_by_block,
+                        row_codes_by_block,
+                        need_name=not name,
+                        need_field=not field,
+                    )
+                    if not name:
+                        name = extra_name
+                    if not field:
+                        field = extra_field
+
+                rows.append({
+                    "code": code_record["code"],
+                    "name": name,
+                    "field": field,
+                    "agency": resolve_agency(code_record, headings, previous_headings),
+                    "page": page_no,
+                })
             block_index += 1
 
-    return rows
+        previous_headings.extend({**heading, "page": page_no} for heading in headings)
 
+    return rows
 
 def dedupe(rows):
     """Deduplicate exact repeats; expose conflicting official cells instead of guessing."""
@@ -250,6 +324,15 @@ def dedupe(rows):
     return sorted(out.values(), key=lambda row: row["code"]), conflicts
 
 
+def mark_manual_review(rows):
+    """Keep unresolved source cells blank and label them for explicit human review."""
+    for row in rows:
+        for field_name in ("name", "field", "agency"):
+            if not space(str(row.get(field_name, ""))):
+                row[f"{field_name}Status"] = "MANUAL_REVIEW"
+    return rows
+
+
 def build(data: bytes):
     digest = hashlib.sha256(data).hexdigest()
     if digest != EXPECTED_SHA256:
@@ -259,6 +342,7 @@ def build(data: bytes):
         if len(pdf) != EXPECTED_PAGES:
             raise RuntimeError(f"Page count changed: {len(pdf)}")
         rows, duplicate_conflicts = dedupe(extract_rows(pdf))
+        rows = mark_manual_review(rows)
 
     if len(rows) < 300:
         raise RuntimeError(f"Implausibly small baseline: {len(rows)}")
@@ -282,6 +366,9 @@ def build(data: bytes):
         "emptyFieldCodes": empty_field,
         "missingAgencyCount": len(missing_agency),
         "missingAgencyCodes": missing_agency,
+        "manualReviewNameCount": len(missing_name),
+        "manualReviewFieldCount": len(empty_field),
+        "manualReviewAgencyCount": len(missing_agency),
         "duplicateConflictCount": len(duplicate_conflicts),
         "duplicateConflicts": duplicate_conflicts,
         "rows": rows,
