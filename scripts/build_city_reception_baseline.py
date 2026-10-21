@@ -112,7 +112,7 @@ def block_line_records(blocks, words_by_block):
         for word in block_words:
             by_line.setdefault(int(word[6]), []).append(word)
         for line_no, line_words in by_line.items():
-            line_words.sort(key=lambda word: int(word[7]))
+            line_words.sort(key=lambda word: float(word[0]))
             text = space(" ".join(str(word[4]) for word in line_words))
             if not text:
                 continue
@@ -138,12 +138,12 @@ def agency_heading_records(blocks, words_by_block):
             continue
         text = line["text"]
         match = re.search(
-            r"((?:[IVXLCDM]+|\\d+)\\.\\s+(?:SỞ|BAN|VĂN PHÒNG|THANH TRA|CÔNG AN|UBND|ỦY BAN)\\b.*)",
+            r"((?:[IVXLCDM]+|\d+)\.\s+(?:SỞ|BAN|VĂN PHÒNG|THANH TRA|CÔNG AN|UBND|ỦY BAN)\b.*)",
             text,
             flags=re.I,
         )
         if match:
-            heading = re.sub(r"\\s+STT\\s+Mã TTHC.*$", "", match.group(1), flags=re.I)
+            heading = re.sub(r"\s+STT\s+Mã TTHC.*$", "", match.group(1), flags=re.I)
             headings.append({**line, "agency": space(heading)})
             continue
         if AGENCY_PREFIX_RE.fullmatch(text):
@@ -170,7 +170,7 @@ def section_field_records(blocks, words_by_block):
     """Extract explicit field names from the appendix's lettered field headings."""
     sections = []
     for line in block_line_records(blocks, words_by_block):
-        match = re.match(r"^[A-I]\\s+LĨNH VỰC\\s+(.+)$", line["text"], flags=re.I)
+        match = re.match(r"^[A-I]\s+LĨNH VỰC\s+(.+)$", line["text"], flags=re.I)
         if not match:
             continue
         field = re.sub(r"\\s+STT\\s+Mã TTHC.*$", "", match.group(1), flags=re.I)
