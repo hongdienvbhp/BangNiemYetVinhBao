@@ -37,6 +37,15 @@ def norm_code(value: str) -> str:
     return f"{prefix}.{suffix.ljust(6, '0')}"
 
 
+def fetch_pdf() -> bytes:
+    req = Request(PDF_URL, headers={"User-Agent": "BangNiemYetVinhBao-City-Baseline/3.0"})
+    with urlopen(req, timeout=60) as response:
+        data = response.read()
+    if not data.startswith(b"%PDF"):
+        raise RuntimeError("Official attachment is not PDF")
+    return data
+
+
 def code_from_block(block_text: str):
     """Only accept a code on one of the first three standalone text lines."""
     lines = [space(line) for line in (block_text or "").splitlines()]
