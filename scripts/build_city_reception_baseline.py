@@ -93,7 +93,7 @@ def words_text(words, xmin: float, xmax: float) -> str:
 def agency_heading(blocks, index):
     text = space(str(blocks[index][4]))
     if AGENCY_RE.match(text):
-        text = re.sub(r"\\s+STT\\s+Mã TTHC.*$", "", text, flags=re.I)
+        text = re.sub(r"\s+STT\s+Mã TTHC.*$", "", text, flags=re.I)
         return space(text), 1
     if AGENCY_PREFIX_RE.fullmatch(text) and index + 1 < len(blocks):
         following = space(str(blocks[index + 1][4]))
@@ -144,8 +144,7 @@ def extract_rows(pages):
         }
         page_records.append((page_no, blocks, words_by_block, row_code_indices, row_series))
 
-    agency_by_series = {}
-    pending_agencies = []
+    current_agency = ""
     rows = []
 
     for page_no, blocks, words_by_block, row_code_indices, row_series in page_records:
@@ -154,7 +153,7 @@ def extract_rows(pages):
             block = blocks[block_index]
             heading, consumed = agency_heading(blocks, block_index)
             if heading:
-                pending_agencies.append(heading)
+                current_agency = heading
                 block_index += consumed
                 continue
 
@@ -162,10 +161,6 @@ def extract_rows(pages):
             if not code:
                 block_index += 1
                 continue
-
-            series = row_series[block_index]
-            if pending_agencies:
-                agency_by_series[series] = pending_agencies.pop(0)
 
             block_words = words_by_block.get(int(block[5]), [])
             name = words_text(block_words, 160.0, 443.0)
@@ -188,7 +183,7 @@ def extract_rows(pages):
                 "code": code,
                 "name": name,
                 "field": field,
-                "agency": agency_by_series.get(series, ""),
+                "agency": current_agency,
                 "page": page_no,
             })
             block_index += 1
