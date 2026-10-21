@@ -142,7 +142,7 @@ jobs:
           import fitz
           from scripts.build_city_reception_baseline import code_from_block, fetch_pdf, space
 
-          targets = {"1.011441", "2.001496", "2.001594", "2.002047"}
+          targets = {"1.011441", "2.001496", "2.001594", "2.002047", "2.002725", "2.002726", "2.002727", "2.002732", "1.013230", "1.013231", "1.013233", "1.013235", "1.013236", "1.013238"}
           with fitz.open(stream=fetch_pdf(), filetype="pdf") as pdf:
               for page_index, page in enumerate(pdf):
                   blocks = page.get_text("blocks", sort=False)

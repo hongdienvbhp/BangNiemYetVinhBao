@@ -60,19 +60,22 @@ def code_from_block(block_text: str):
     return None
 
 
-def words_text(words, xmin: float, xmax: float, *, min_line_no=None, max_line_no=None) -> str:
-    """Join words from one table cell using the source block's line/word order."""
-    by_line = {}
+def words_text(words, xmin: float, xmax: float, *, min_order=None, max_order=None) -> str:
+    """Join cell words by source text order, which disambiguates overlapped rows."""
+    selected = []
     for word in words:
         x0 = float(word[0])
-        line_no = int(word[6])
+        order = (int(word[6]), int(word[7]))
         if not (xmin <= x0 < xmax):
             continue
-        if min_line_no is not None and line_no < min_line_no:
+        if min_order is not None and order < min_order:
             continue
-        if max_line_no is not None and line_no >= max_line_no:
+        if max_order is not None and order >= max_order:
             continue
-        by_line.setdefault(line_no, []).append(word)
+        selected.append(word)
+    by_line = {}
+    for word in selected:
+        by_line.setdefault(int(word[6]), []).append(word)
     lines = []
     for line_no in sorted(by_line):
         ordered = sorted(by_line[line_no], key=lambda word: int(word[7]))
@@ -94,22 +97,22 @@ def agency_heading(blocks, index):
     return None, 0
 
 
-def collect_separate_cells(blocks, block_index, words_by_block, row_code_indices, row_code_lines, need_name, need_field):
+def collect_separate_cells(blocks, block_index, words_by_block, row_code_indices, row_code_orders, need_name, need_field):
     """Collect cell text following a row, including a previous row's field before the next code."""
     name_parts = []
     field_parts = []
     for candidate_index in range(block_index + 1, len(blocks)):
         candidate = blocks[candidate_index]
         candidate_words = words_by_block.get(int(candidate[5]), [])
-        candidate_code_line = row_code_lines.get(candidate_index)
+        candidate_code_order = row_code_orders.get(candidate_index)
 
-        if candidate_code_line is not None:
+        if candidate_code_order is not None:
             if need_name:
-                part = words_text(candidate_words, 160.0, 443.0, max_line_no=candidate_code_line)
+                part = words_text(candidate_words, 160.0, 443.0, max_order=candidate_code_order)
                 if part:
                     name_parts.append(part)
             if need_field:
-                part = words_text(candidate_words, 443.0, 700.0, max_line_no=candidate_code_line)
+                part = words_text(candidate_words, 443.0, 700.0, max_order=candidate_code_order)
                 if part:
                     field_parts.append(part)
             break
@@ -143,7 +146,7 @@ def extract_rows(pages):
             words_by_block.setdefault(int(word[5]), []).append(word)
 
         row_code_indices = {}
-        row_code_lines = {}
+        row_code_orders = {}
         for word in words:
             code_token = space(str(word[4])).rstrip(".")
             if float(word[0]) >= 160.0 or not CODE_RE.fullmatch(code_token):
@@ -152,14 +155,14 @@ def extract_rows(pages):
             if block_index is None:
                 continue
             row_code_indices[block_index] = norm_code(code_token)
-            row_code_lines[block_index] = int(word[6])
+            row_code_orders[block_index] = (int(word[6]), int(word[7]))
 
-        page_records.append((page_no, blocks, words_by_block, row_code_indices, row_code_lines))
+        page_records.append((page_no, blocks, words_by_block, row_code_indices, row_code_orders))
 
     current_agency = ""
     rows = []
 
-    for page_no, blocks, words_by_block, row_code_indices, row_code_lines in page_records:
+    for page_no, blocks, words_by_block, row_code_indices, row_code_orders in page_records:
         block_index = 0
         while block_index < len(blocks):
             block = blocks[block_index]
@@ -175,9 +178,9 @@ def extract_rows(pages):
                 continue
 
             block_words = words_by_block.get(int(block[5]), [])
-            code_line_no = row_code_lines[block_index]
-            name = words_text(block_words, 160.0, 443.0, min_line_no=code_line_no)
-            field = words_text(block_words, 443.0, 700.0, min_line_no=code_line_no)
+            code_order = row_code_orders[block_index]
+            name = words_text(block_words, 160.0, 443.0, min_order=code_order)
+            field = words_text(block_words, 443.0, 700.0, min_order=code_order)
 
             if not name or not field:
                 extra_name, extra_field = collect_separate_cells(
@@ -185,7 +188,7 @@ def extract_rows(pages):
                     block_index,
                     words_by_block,
                     row_code_indices,
-                    row_code_lines,
+                    row_code_orders,
                     need_name=not name,
                     need_field=not field,
                 )
