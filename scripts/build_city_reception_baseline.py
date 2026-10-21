@@ -20,6 +20,9 @@ PUBLISHED_DATE = "2025-07-03"
 EXPECTED_SHA256 = "22c2a8ab6abc6aa0df4694da6eebafe51f5a75bf76bae97f22c19af5fa082425"
 EXPECTED_PAGES = 114
 CODE_RE = re.compile(r"^\d{1,2}\.\d{3,6}$")
+ROW_CODE_LINE_RE = re.compile(r"^(?:\d{1,3}\.\s+)?(\d{1,2}\.\d{3,6})$")
+ROW_ORDINAL_RE = re.compile(r"^\d{1,3}\.$")
+HEADER_RE = re.compile(r"^STT\s+Mã TTHC\b", re.I)
 AGENCY_RE = re.compile(r"^(?:[IVXLCDM]+\.|\d+\.)\s+(?:SỞ|BAN|VĂN PHÒNG|THANH TRA|CÔNG AN|UBND|ỦY BAN)", re.I)
 AGENCY_BODY_RE = re.compile(r"^(?:SỞ|BAN|VĂN PHÒNG|THANH TRA|CÔNG AN|UBND|ỦY BAN)\b", re.I)
 AGENCY_PREFIX_RE = re.compile(r"^(?:[IVXLCDM]+\.|\d+\.)$")
@@ -65,7 +68,8 @@ def series_key_from_block(block_text: str) -> str:
         return "code-first"
     if ROW_ORDINAL_RE.fullmatch(lines[0]):
         return "ordinal-first"
-    if ROW_CODE_LINE_RE.fullmatch(lines[0]) and ROW_CODE_LINE_RE.fullmatch(lines[0]).group(0) != lines[0]:
+    first_match = ROW_CODE_LINE_RE.fullmatch(lines[0])
+    if first_match and first_match.group(1) != lines[0]:
         return "ordinal-first"
     return "code-first"
 

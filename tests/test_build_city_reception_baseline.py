@@ -25,6 +25,7 @@ class CityReceptionBaselineParserTests(unittest.TestCase):
     def test_code_must_be_a_standalone_early_row_line(self):
         self.assertEqual(code_from_block("78.\n1.000016\nThông báo tăng vốn"), "1.000016")
         self.assertEqual(code_from_block("1.000481\nCấp điều chỉnh giấy chứng nhận"), "1.000481")
+        self.assertEqual(code_from_block("79. 2.000005\nThủ tục đăng ký thay đổi"), "2.000005")
         self.assertIsNone(code_from_block("Tên thủ tục\nSố tham chiếu 5.000000"))
 
     def test_words_text_splits_name_and_field_cells(self):
