@@ -145,6 +145,22 @@ jobs:
                   for word in words if int(word[5]) in target_block_ids
               ], ensure_ascii=False))
               print("PDF_PAGE_TEXT_ORDER", page.get_text("text", sort=False)[:7000])
+              for page_no in (4, 5, 6, 7):
+                  if page_no >= len(pdf):
+                      continue
+                  diagnostic_page = pdf[page_no]
+                  entries = []
+                  for block_index, block in enumerate(diagnostic_page.get_text("blocks", sort=False)):
+                      block_text = space(str(block[4]))
+                      codes_in_block = re.findall(r"(?<!\\d)(\\d{1,2}\\.\\d{3,6})(?!\\d)", block_text)
+                      if AGENCY_RE.match(block_text) or codes_in_block:
+                          entries.append({
+                              "index": block_index,
+                              "bbox": [round(float(v), 2) for v in block[:4]],
+                              "text": block_text[:150],
+                              "codes": codes_in_block,
+                          })
+                  print("PAGE_SERIES", page_no + 1, json.dumps(entries[:100], ensure_ascii=False))
               code_words = []
               for word in page.get_text("words", sort=False):
                   for match in re.finditer(r"(?<!\\d)(\\d{1,2}\\.\\d{3,6})(?!\\d)", str(word[4])):
