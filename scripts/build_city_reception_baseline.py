@@ -47,23 +47,27 @@ def fetch_pdf() -> bytes:
 
 
 def code_from_block(block_text: str):
-    """Only accept a code on one of the first three standalone text lines."""
+    """Read a standalone code line, optionally sharing a line with its row ordinal."""
     lines = [space(line) for line in (block_text or "").splitlines()]
     lines = [line for line in lines if line]
-    for line in lines[:3]:
-        if CODE_RE.fullmatch(line):
-            return norm_code(line)
+    for line in lines[:5]:
+        match = ROW_CODE_LINE_RE.fullmatch(line)
+        if match:
+            return norm_code(match.group(1))
     return None
 
 
-def cluster_centers(values, gap: float = 20.0):
-    groups = []
-    for value in sorted(float(value) for value in values):
-        if not groups or value - median(groups[-1]) > gap:
-            groups.append([value])
-        else:
-            groups[-1].append(value)
-    return [median(group) for group in groups]
+def series_key_from_block(block_text: str) -> str:
+    """The source PDF has two row-block shapes; keep their agency state separate."""
+    lines = [space(line) for line in (block_text or "").splitlines()]
+    lines = [line for line in lines if line]
+    if not lines:
+        return "code-first"
+    if ROW_ORDINAL_RE.fullmatch(lines[0]):
+        return "ordinal-first"
+    if ROW_CODE_LINE_RE.fullmatch(lines[0]) and ROW_CODE_LINE_RE.fullmatch(lines[0]).group(0) != lines[0]:
+        return "ordinal-first"
+    return "code-first"
 
 
 def words_text(words, xmin: float, xmax: float) -> str:
@@ -85,7 +89,8 @@ def words_text(words, xmin: float, xmax: float) -> str:
 def agency_heading(blocks, index):
     text = space(str(blocks[index][4]))
     if AGENCY_RE.match(text):
-        return text, 1
+        text = re.sub(r"\\s+STT\\s+Mã TTHC.*$", "", text, flags=re.I)
+        return space(text), 1
     if AGENCY_PREFIX_RE.fullmatch(text) and index + 1 < len(blocks):
         following = space(str(blocks[index + 1][4]))
         if AGENCY_BODY_RE.match(following):
@@ -93,59 +98,59 @@ def agency_heading(blocks, index):
     return None, 0
 
 
-def separate_field(blocks, block_index, row_block, words_by_block, row_code_indices):
-    """Find a field cell stored as its own text block immediately after a row block."""
-    row_top, row_bottom = float(row_block[1]), float(row_block[3])
+def collect_separate_cells(blocks, block_index, words_by_block, row_code_indices, need_name, need_field):
+    """Collect name/field cell blocks following a code block until the next row starts."""
+    name_parts = []
+    field_parts = []
     for candidate_index in range(block_index + 1, len(blocks)):
         candidate = blocks[candidate_index]
         if candidate_index in row_code_indices:
             break
         candidate_text = space(str(candidate[4]))
-        if AGENCY_RE.match(candidate_text):
+        if AGENCY_RE.match(candidate_text) or HEADER_RE.match(candidate_text):
             break
-        if float(candidate[0]) < 400.0:
-            continue
-        overlap = min(row_bottom, float(candidate[3])) - max(row_top, float(candidate[1]))
-        if overlap <= 0:
-            continue
-        field = words_text(words_by_block.get(int(candidate[5]), []), 443.0, 700.0)
-        if field:
-            return field
-    return ""
+        candidate_words = words_by_block.get(int(candidate[5]), [])
+        if need_name:
+            part = words_text(candidate_words, 160.0, 443.0)
+            if part:
+                name_parts.append(part)
+        if need_field:
+            part = words_text(candidate_words, 443.0, 700.0)
+            if part:
+                field_parts.append(part)
+    return space(" ".join(name_parts)), space(" ".join(field_parts))
 
 
 def extract_rows(pages):
-    """Extract row blocks independently; do not merge cells by page-wide y coordinates."""
+    """Extract row blocks and adjacent cell blocks in PDF content order."""
     page_records = []
-    series_x_values = []
-
     for page_no, page in enumerate(pages, start=1):
         blocks = page.get_text("blocks", sort=False)
         words_by_block = {}
         for word in page.get_text("words", sort=False):
             words_by_block.setdefault(int(word[5]), []).append(word)
+        row_code_indices = {
+            index: code
+            for index, block in enumerate(blocks)
+            if (code := code_from_block(str(block[4]))) is not None
+        }
+        row_series = {
+            index: series_key_from_block(str(blocks[index][4]))
+            for index in row_code_indices
+        }
+        page_records.append((page_no, blocks, words_by_block, row_code_indices, row_series))
 
-        row_code_indices = {}
-        for block_index, block in enumerate(blocks):
-            code = code_from_block(str(block[4]))
-            if code:
-                row_code_indices[block_index] = code
-                series_x_values.append(float(block[0]))
-
-        page_records.append((page_no, blocks, words_by_block, row_code_indices))
-
-    series_centers = cluster_centers(series_x_values)
     agency_by_series = {}
     pending_agencies = []
     rows = []
 
-    for page_no, blocks, words_by_block, row_code_indices in page_records:
+    for page_no, blocks, words_by_block, row_code_indices, row_series in page_records:
         block_index = 0
         while block_index < len(blocks):
             block = blocks[block_index]
             heading, consumed = agency_heading(blocks, block_index)
             if heading:
-                pending_agencies.append((heading, float(block[0])))
+                pending_agencies.append(heading)
                 block_index += consumed
                 continue
 
@@ -154,31 +159,32 @@ def extract_rows(pages):
                 block_index += 1
                 continue
 
-            series_index = min(
-                range(len(series_centers)),
-                key=lambda index: abs(float(block[0]) - series_centers[index]),
-            )
+            series = row_series[block_index]
             if pending_agencies:
-                if len(pending_agencies) == 1:
-                    pending_index = 0
-                else:
-                    pending_index = min(
-                        range(len(pending_agencies)),
-                        key=lambda index: abs(pending_agencies[index][1] - series_centers[series_index]),
-                    )
-                agency_by_series[series_index] = pending_agencies.pop(pending_index)[0]
+                agency_by_series[series] = pending_agencies.pop(0)
 
             block_words = words_by_block.get(int(block[5]), [])
             name = words_text(block_words, 160.0, 443.0)
             field = words_text(block_words, 443.0, 700.0)
-            if not field:
-                field = separate_field(blocks, block_index, block, words_by_block, row_code_indices)
+            if not name or not field:
+                extra_name, extra_field = collect_separate_cells(
+                    blocks,
+                    block_index,
+                    words_by_block,
+                    row_code_indices,
+                    need_name=not name,
+                    need_field=not field,
+                )
+                if not name:
+                    name = extra_name
+                if not field:
+                    field = extra_field
 
             rows.append({
                 "code": code,
                 "name": name,
                 "field": field,
-                "agency": agency_by_series.get(series_index, ""),
+                "agency": agency_by_series.get(series, ""),
                 "page": page_no,
             })
             block_index += 1
