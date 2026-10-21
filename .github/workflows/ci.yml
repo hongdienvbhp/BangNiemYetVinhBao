@@ -134,6 +134,16 @@ jobs:
                   {"bbox": [round(float(v), 2) for v in block[:4]], "text": str(block[4])[:220], "block_no": block[5] if len(block) > 5 else None}
                   for block in blocks[:100]
               ], ensure_ascii=False))
+              target_block_ids = {
+                  int(block[5]) for block in blocks
+                  if len(block) > 5 and ("1.000481" in str(block[4]) or "1.000016" in str(block[4]))
+              }
+              words = page.get_text("words", sort=False)
+              print("ANCHOR_BLOCK_WORDS", json.dumps([
+                  {"block": word[5], "line": word[6], "word": word[7],
+                   "bbox": [round(float(v), 2) for v in word[:4]], "text": word[4]}
+                  for word in words if int(word[5]) in target_block_ids
+              ], ensure_ascii=False))
               print("PDF_PAGE_TEXT_ORDER", page.get_text("text", sort=False)[:7000])
               code_words = []
               for word in page.get_text("words", sort=False):
