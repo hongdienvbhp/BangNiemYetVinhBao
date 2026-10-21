@@ -27,9 +27,83 @@ jobs:
       - name: Install PDF dependency
         run: python -m pip install --disable-pip-version-check pypdf==6.17.0
 
+      - name: Detect city baseline impact
+        id: city-baseline-impact
+        shell: bash
+        run: |
+          set -euo pipefail
+          paths=(
+            data/source-audit/city-reception-baseline.json
+            scripts/build_city_reception_baseline.py
+            scripts/google_sheets_projection.py
+            tests/test_build_city_reception_baseline.py
+            .github/workflows/ci.yml
+          )
+          if [[ "$GITHUB_EVENT_NAME" == "pull_request" ]]; then
+            changed="$(git diff --name-only "${{ github.event.pull_request.base.sha }}...HEAD" -- "${paths[@]}")"
+          else
+            changed="$(git diff --name-only "${{ github.event.before }}" "$GITHUB_SHA" -- "${paths[@]}")"
+          fi
+          if [[ -n "$changed" ]]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Python syntax
         run: |
-          python -m py_compile             scripts/canonical_v4.py             scripts/validate_canonical_field_contract.py             scripts/classify_official_tables.py             scripts/extract_guidance_field_candidates.py             scripts/validate_guidance_field_candidates.py             scripts/validate_online_service_candidates.py             scripts/validate_fee_candidates.py             scripts/validate_legal_basis_candidates.py             scripts/validate_official_guidance_fields.py             scripts/build_guidance_promotion_plan.py             scripts/reconcile_phase1.py             scripts/migrate_canonical_v4.py             scripts/build_priority50_guidance.py             scripts/validate_priority50_guidance.py             scripts/audit_vinhbao_submission_links.py             scripts/validate_single_submit_link_ui.py             scripts/update_official_sources.py             scripts/extract_city_updates.py             scripts/build_master_data.py             scripts/reconcile_priority51_crosswalk.py             scripts/build_master_delta.py             scripts/fetch_dvc_mapping.py             scripts/validate_tthc_guidance.py             scripts/apply_guidance_enrichment.py             scripts/build_tthc_tracking.py             scripts/check_static_site.py             scripts/build_extra_data.py             scripts/routine_guard.py             scripts/write_routine_run_record.py             scripts/check_routine_health.py
+          python -m py_compile             scripts/canonical_v4.py             scripts/validate_canonical_field_contract.py             scripts/classify_official_tables.py             scripts/extract_guidance_field_candidates.py             scripts/validate_guidance_field_candidates.py             scripts/validate_online_service_candidates.py             scripts/validate_fee_candidates.py             scripts/validate_legal_basis_candidates.py             scripts/validate_official_guidance_fields.py             scripts/build_guidance_promotion_plan.py             scripts/reconcile_phase1.py             scripts/migrate_canonical_v4.py             scripts/build_priority50_guidance.py             scripts/validate_priority50_guidance.py             scripts/audit_vinhbao_submission_links.py             scripts/validate_single_submit_link_ui.py             scripts/update_official_sources.py             scripts/extract_city_updates.py             scripts/build_master_data.py             scripts/reconcile_priority51_crosswalk.py             scripts/build_master_delta.py             scripts/fetch_dvc_mapping.py             scripts/build_city_reception_baseline.py             scripts/validate_tthc_guidance.py             scripts/apply_guidance_enrichment.py             scripts/build_tthc_tracking.py             scripts/check_static_site.py             scripts/build_extra_data.py             scripts/routine_guard.py             scripts/write_routine_run_record.py             scripts/check_routine_health.py
+
+      - name: Rebuild and validate city baseline from official PDF
+        if: steps.city-baseline-impact.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          python scripts/build_city_reception_baseline.py --output /tmp/city-reception-baseline.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          payload = json.loads(Path("/tmp/city-reception-baseline.json").read_text(encoding="utf-8"))
+          rows = {row["code"]: row for row in payload["rows"]}
+          assert payload["rowCount"] == len(payload["rows"]), "rowCount does not match extracted rows"
+          assert payload["rowCount"] >= 1900, f"unexpectedly small city baseline: {payload['rowCount']}"
+          assert payload["missingNameCount"] == 0, f"missing names: {payload['missingNameCount']} {payload.get('missingNameCodes', [])[:20]}"
+          assert payload["emptyFieldCount"] == 0, f"empty fields: {payload['emptyFieldCount']} {payload.get('emptyFieldCodes', [])[:20]}"
+          assert payload["duplicateConflictCount"] == 0, f"conflicting duplicate cells: {payload['duplicateConflicts'][:10]}"
+
+          expected = {
+              "1.000016": (
+                  "Thông báo tăng, giảm vốn góp của quỹ đầu tư khởi nghiệp sáng tạo (cấp tỉnh)",
+                  "Hỗ trợ doanh nghiệp nhỏ và vừa",
+              ),
+              "1.000481": (
+                  "Cấp điều chỉnh Giấy chứng nhận đủ điều kiện thương nhân kinh doanh mua bán CNG",
+                  "Kinh doanh khí",
+              ),
+          }
+          for code, (name, field) in expected.items():
+              row = rows.get(code)
+              assert row is not None, f"missing official anchor code: {code}"
+              assert row["name"] == name, f"{code} name mismatch: {row['name']!r}"
+              assert row["field"] == field, f"{code} field mismatch: {row['field']!r}"
+
+          print(json.dumps({
+              "rowCount": payload["rowCount"],
+              "missingNameCount": payload["missingNameCount"],
+              "emptyFieldCount": payload["emptyFieldCount"],
+              "duplicateConflictCount": payload["duplicateConflictCount"],
+              "anchors": {code: {"name": rows[code]["name"], "field": rows[code]["field"]} for code in expected},
+          }, ensure_ascii=False, indent=2))
+          PY
+
+      - name: Upload regenerated city baseline for inspection
+        if: always() && steps.city-baseline-impact.outputs.changed == 'true'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: city-reception-baseline-generated
+          path: /tmp/city-reception-baseline.json
+          if-no-files-found: ignore
+          retention-days: 7
 
       - name: Python unit tests
         run: python -m unittest discover -s tests -v
