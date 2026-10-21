@@ -173,6 +173,55 @@ jobs:
           if-no-files-found: ignore
           retention-days: 7
 
+      - name: Inspect alternate official city baseline PDFs
+        if: failure() && steps.city-baseline-impact.outputs.changed == 'true'
+        run: |
+          python - <<'PY'
+          import fitz, hashlib, json
+          from pathlib import Path
+          from urllib.request import Request, urlopen
+
+          sources = {
+              "june27": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/6/danh-muc-thu-tuc-hanh-chinh-thuc-hien-tiep-nhan-tai-trung-tam-phuc-vu-hanh-chinh-cong-thanh-pho-hai-phong-chuan-27.6-638867204782347930.pdf",
+              "sep26": "https://cdn.haiphong.gov.vn/gov-hpg/6872/tintuc/2025/9/tp-danh-muc-thu-tuc-hanh-chinh-thuc-hien-tiep-nhan-tai-trung-tam-phuc-vu-hanh-chinh-cong-thanh-pho-hai-phong638944811458835891.pdf",
+          }
+          result = {}
+          for name, url in sources.items():
+              req = Request(url, headers={"User-Agent": "BangNiemYetVinhBao-City-Baseline-QC/1.0"})
+              with urlopen(req, timeout=60) as response:
+                  data = response.read()
+              with fitz.open(stream=data, filetype="pdf") as pdf:
+                  page_count = len(pdf)
+                  if page_count > 6:
+                      pdf[6].get_pixmap(matrix=fitz.Matrix(1.5, 1.5), alpha=False).save(f"/tmp/city-pdf-{name}-page7.png")
+                      excerpt = pdf[6].get_text()[:500]
+                  else:
+                      excerpt = pdf[0].get_text()[:500] if page_count else ""
+              result[name] = {
+                  "url": url,
+                  "bytes": len(data),
+                  "sha256": hashlib.sha256(data).hexdigest(),
+                  "pageCount": page_count,
+                  "page7TextExcerpt": excerpt,
+              }
+          Path("/tmp/city-pdf-source-alternatives.json").write_text(
+              json.dumps(result, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8"
+          )
+          print(json.dumps(result, ensure_ascii=False, indent=2))
+          PY
+
+      - name: Upload alternate official PDF previews
+        if: always() && steps.city-baseline-impact.outputs.changed == 'true'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: city-pdf-source-alternatives
+          path: |
+            /tmp/city-pdf-source-alternatives.json
+            /tmp/city-pdf-june27-page7.png
+            /tmp/city-pdf-sep26-page7.png
+          if-no-files-found: ignore
+          retention-days: 7
+
       - name: Python unit tests
         run: python -m unittest discover -s tests -v
 
