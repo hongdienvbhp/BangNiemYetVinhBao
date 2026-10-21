@@ -19,6 +19,7 @@ PDF_URL = "https://cdn.haiphong.gov.vn/gov-hpg/1/tintuc/2025/7/danh-muc-thu-tuc-
 PUBLISHED_DATE = "2025-07-03"
 EXPECTED_SHA256 = "22c2a8ab6abc6aa0df4694da6eebafe51f5a75bf76bae97f22c19af5fa082425"
 EXPECTED_PAGES = 114
+REVIEWED_CELLS_PATH = Path(__file__).resolve().parents[1] / "data/source-audit/city-baseline-reviewed-cells.json"
 CODE_RE = re.compile(r"^\d{1,2}\.\d{3,6}$")
 ROW_CODE_LINE_RE = re.compile(r"^(?:\d{1,3}\.\s+)?(\d{1,2}\.\d{3,6})$")
 ROW_ORDINAL_RE = re.compile(r"^\d{1,3}\.$")
@@ -472,27 +473,88 @@ def dedupe(rows):
     return sorted(out.values(), key=lambda row: row["code"]), conflicts
 
 
-def mark_manual_review(rows):
-    """Keep unresolved source cells blank and label them for explicit human review."""
-    for row in rows:
-        for field_name in ("name", "field", "agency"):
-            value = space(str(row.get(field_name, "")))
-            if not value or (field_name == "agency" and "; " in value):
-                row[f"{field_name}Status"] = "MANUAL_REVIEW"
+def load_review_config():
+    if not REVIEWED_CELLS_PATH.exists():
+        raise RuntimeError(f"Reviewed cell sidecar missing: {REVIEWED_CELLS_PATH}")
+    return json.loads(REVIEWED_CELLS_PATH.read_text(encoding="utf-8"))
+
+
+def apply_reviewed_corrections(rows, review_config):
+    """Apply cell values verified against the exact official PDF page."""
+    by_code = {row["code"]: row for row in rows}
+    for correction in review_config.get("corrections", []):
+        code = correction["code"]
+        field_name = correction["field"]
+        if field_name not in {"name", "field", "agency"}:
+            raise RuntimeError(f"Unsupported reviewed field: {field_name}")
+        if code not in by_code:
+            raise RuntimeError(f"Reviewed code missing from official PDF extraction: {code}")
+        value = space(str(correction.get("value", "")))
+        if not value:
+            raise RuntimeError(f"Reviewed value is empty: {code}.{field_name}")
+        by_code[code][field_name] = value
     return rows
 
+
+def mark_manual_review(rows, duplicate_conflicts, review_config):
+    """Label unresolved blank cells and source-context conflicts without guessing."""
+    by_code = {row["code"]: row for row in rows}
+    status_by_field = {"name": "nameStatus", "field": "fieldStatus", "agency": "agencyStatus"}
+
+    for row in rows:
+        for field_name, status_key in status_by_field.items():
+            if not space(str(row.get(field_name, ""))):
+                row[status_key] = "MANUAL_REVIEW"
+
+    for conflict in duplicate_conflicts:
+        row = by_code.get(conflict["code"])
+        status_key = status_by_field.get(conflict["field"])
+        if row is not None and status_key:
+            row[status_key] = "MANUAL_REVIEW"
+
+    for item in review_config.get("manualReview", []):
+        row = by_code.get(item["code"])
+        if row is None:
+            continue
+        for field_name in item.get("fields", []):
+            status_key = status_by_field.get(field_name)
+            if status_key:
+                row[status_key] = "MANUAL_REVIEW"
+    return rows
 
 def build(data: bytes):
     digest = hashlib.sha256(data).hexdigest()
     if digest != EXPECTED_SHA256:
         raise RuntimeError(f"SHA256 changed: {digest}")
+    review_config = load_review_config()
 
     with fitz.open(stream=data, filetype="pdf") as pdf:
         if len(pdf) != EXPECTED_PAGES:
             raise RuntimeError(f"Page count changed: {len(pdf)}")
-        rows, duplicate_conflicts = dedupe(extract_rows(pdf))
-        rows = mark_manual_review(rows)
+        all_rows, duplicate_conflicts = dedupe(extract_rows(pdf))
 
+    all_rows = apply_reviewed_corrections(all_rows, review_config)
+    all_rows = mark_manual_review(all_rows, duplicate_conflicts, review_config)
+    all_rows_by_code = {row["code"]: row for row in all_rows}
+    source_review_specs = review_config["sourceSetReconciliation"]["sourceReviewCodes"]
+    source_review_codes = {item["code"] for item in source_review_specs}
+    source_review_rows = []
+    for item in source_review_specs:
+        if item["code"] not in all_rows_by_code:
+            raise RuntimeError(f"Source-review code missing from official PDF: {item['code']}")
+        row = dict(all_rows_by_code[item["code"]])
+        row["baselineStatus"] = "MANUAL_REVIEW"
+        row["reviewReason"] = item["reason"]
+        source_review_rows.append(row)
+    rows = [row for row in all_rows if row["code"] not in source_review_codes]
+    rows.sort(key=lambda row: row["code"])
+
+    expected_active_count = int(review_config["sourceSetReconciliation"]["activeBaselineRowCount"])
+    expected_source_count = int(review_config["sourceSetReconciliation"]["pdfUniqueCodeCount"])
+    if len(rows) != expected_active_count:
+        raise RuntimeError(f"Active baseline count changed: expected {expected_active_count}, got {len(rows)}")
+    if len(all_rows) != expected_source_count:
+        raise RuntimeError(f"Official PDF unique code count changed: expected {expected_source_count}, got {len(all_rows)}")
     if len(rows) < 300:
         raise RuntimeError(f"Implausibly small baseline: {len(rows)}")
 
@@ -501,7 +563,7 @@ def build(data: bytes):
     missing_agency = [row["code"] for row in rows if not space(str(row.get("agency", "")))]
     return {
         "format": "haiphong-city-reception-baseline",
-        "version": 3,
+        "version": 4,
         "publishedDate": PUBLISHED_DATE,
         "articleUrl": ARTICLE_URL,
         "pdfUrl": PDF_URL,
@@ -515,11 +577,14 @@ def build(data: bytes):
         "emptyFieldCodes": empty_field,
         "missingAgencyCount": len(missing_agency),
         "missingAgencyCodes": missing_agency,
-        "manualReviewNameCount": len(missing_name),
-        "manualReviewFieldCount": len(empty_field),
+        "manualReviewNameCount": sum(1 for row in rows if row.get("nameStatus") == "MANUAL_REVIEW"),
+        "manualReviewFieldCount": sum(1 for row in rows if row.get("fieldStatus") == "MANUAL_REVIEW"),
         "manualReviewAgencyCount": sum(1 for row in rows if row.get("agencyStatus") == "MANUAL_REVIEW"),
         "duplicateConflictCount": len(duplicate_conflicts),
         "duplicateConflicts": duplicate_conflicts,
+        "sourceReviewRowCount": len(source_review_rows),
+        "sourceReviewRows": source_review_rows,
+        "sourceSetReconciliation": review_config["sourceSetReconciliation"],
         "rows": rows,
     }
 

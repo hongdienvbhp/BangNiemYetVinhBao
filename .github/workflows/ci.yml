@@ -71,11 +71,14 @@ jobs:
           committed = json.loads(Path("data/source-audit/city-reception-baseline.json").read_text(encoding="utf-8"))
           committed_codes = {row["code"] for row in committed["rows"]}
           generated_codes = set(rows)
+          source_review_codes = {row["code"] for row in payload.get("sourceReviewRows", [])}
+          committed_source_review_codes = {row["code"] for row in committed.get("sourceReviewRows", [])}
           print("CODE_SET_DIFF", json.dumps({
               "committedCount": len(committed_codes),
               "generatedCount": len(generated_codes),
               "missingFromGenerated": sorted(committed_codes - generated_codes),
               "extraInGenerated": sorted(generated_codes - committed_codes),
+              "sourceReviewCodes": sorted(source_review_codes),
           }, ensure_ascii=False))
           print("EMPTY_FIELD_ROWS", json.dumps([rows[code] for code in payload.get("emptyFieldCodes", [])], ensure_ascii=False))
           print("CITY_BASELINE_QC", json.dumps({
@@ -97,7 +100,13 @@ jobs:
           for conflict in payload["duplicateConflicts"]:
               status_key = {"name": "nameStatus", "field": "fieldStatus", "agency": "agencyStatus"}.get(conflict["field"])
               assert status_key and rows[conflict["code"]].get(status_key) == "MANUAL_REVIEW", f"unmarked duplicate conflict: {conflict}"
-          assert generated_codes == committed_codes, f"source code set differs from baseline: missing={sorted(committed_codes - generated_codes)}, extra={sorted(generated_codes - committed_codes)}"
+          assert len(committed_codes) == 1928, f"active baseline must remain 1,928 codes: {len(committed_codes)}"
+          assert generated_codes == committed_codes, f"active source code set differs from baseline: missing={sorted(committed_codes - generated_codes)}, extra={sorted(generated_codes - committed_codes)}"
+          assert source_review_codes == committed_source_review_codes == {"1.000502", "1.013888"}, f"official PDF codes outside active 1,928-code set must remain visible for review: generated={sorted(source_review_codes)}, committed={sorted(committed_source_review_codes)}"
+          assert payload["sourceReviewRowCount"] == len(source_review_codes) == 2
+          assert all(row.get("baselineStatus") == "MANUAL_REVIEW" for row in payload.get("sourceReviewRows", []))
+          assert all(row["name"].strip() for row in committed["rows"]), "committed baseline has blank names"
+          assert all(row["field"].strip() for row in committed["rows"]), "committed baseline has blank fields"
 
           expected = {
               "1.000016": (
@@ -136,52 +145,6 @@ jobs:
           path: /tmp/city-reception-baseline.json
           if-no-files-found: ignore
           retention-days: 7
-
-      - name: Export generated baseline payload for controlled update (temporary)
-        if: always() && steps.city-baseline-impact.outputs.changed == 'true'
-        run: |
-          python - <<'PY'
-          import base64
-          from pathlib import Path
-          path = Path("/tmp/city-reception-baseline.json")
-          if not path.exists():
-              print("BASELINE_JSON_MISSING")
-          else:
-              encoded = base64.b64encode(path.read_bytes()).decode("ascii")
-              print("BASELINE_JSON_CHUNKS_BEGIN")
-              for index, offset in enumerate(range(0, len(encoded), 8000)):
-                  print(f"BASELINE_JSON_CHUNK:{index:04d}:{encoded[offset:offset + 8000]}")
-              print("BASELINE_JSON_CHUNKS_END")
-          PY
-
-      - name: Diagnose city baseline cells on failed QC
-        if: failure() && steps.city-baseline-impact.outputs.changed == 'true'
-        run: |
-          python - <<'PY'
-          import json
-          import fitz
-          from scripts.build_city_reception_baseline import code_from_block, fetch_pdf, space
-
-          targets = {"1.011441", "2.001496", "2.001594", "2.002047", "2.002725", "2.002726", "2.002727", "2.002732", "1.013230", "1.013231", "1.013233", "1.013235", "1.013236", "1.013238"}
-          with fitz.open(stream=fetch_pdf(), filetype="pdf") as pdf:
-              for page_index, page in enumerate(pdf):
-                  blocks = page.get_text("blocks", sort=False)
-                  for index, block in enumerate(blocks):
-                      code = code_from_block(str(block[4]))
-                      if code in targets:
-                          window = []
-                          for j in range(max(0, index - 2), min(len(blocks), index + 7)):
-                              b = blocks[j]
-                              window.append({
-                                  "index": j,
-                                  "bbox": [round(float(v), 2) for v in b[:4]],
-                                  "text": space(str(b[4]))[:220],
-                              })
-                          print("CELL_DEBUG", json.dumps({
-                              "code": code, "page": page_index + 1, "rowBlockIndex": index,
-                              "window": window,
-                          }, ensure_ascii=False))
-          PY
 
       - name: Detect canonical-build impact
         if: github.event_name == 'pull_request'

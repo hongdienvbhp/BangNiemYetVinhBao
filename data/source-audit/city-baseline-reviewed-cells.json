@@ -1,0 +1,399 @@
+{
+  "format": "haiphong-city-baseline-cell-review",
+  "version": 1,
+  "sourcePdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/1/tintuc/2025/7/danh-muc-thu-tuc-hanh-chinh-thuc-hien-tiep-nhan-tai-trung-tam-phuc-vu-hanh-chinh-cong-thanh-pho-hai-phong638871741697189500.pdf",
+  "sourcePdfSha256": "22c2a8ab6abc6aa0df4694da6eebafe51f5a75bf76bae97f22c19af5fa082425",
+  "corrections": [
+    {
+      "code": "1.000016",
+      "field": "name",
+      "value": "Thông báo tăng, giảm vốn góp của quỹ đầu tư khởi nghiệp sáng tạo (cấp tỉnh)",
+      "page": 7,
+      "reason": "Đã đối chiếu dòng PDF; sửa ô bị ghép tên của thủ tục kế tiếp."
+    },
+    {
+      "code": "1.000016",
+      "field": "field",
+      "value": "Hỗ trợ doanh nghiệp nhỏ và vừa",
+      "page": 7,
+      "reason": "Đã đối chiếu cột lĩnh vực trong PDF."
+    },
+    {
+      "code": "1.000481",
+      "field": "name",
+      "value": "Cấp điều chỉnh Giấy chứng nhận đủ điều kiện thương nhân kinh doanh mua bán CNG",
+      "page": 70,
+      "reason": "Đã đối chiếu dòng PDF; sửa ô tên bị ghép/cắt."
+    },
+    {
+      "code": "1.000481",
+      "field": "field",
+      "value": "Kinh doanh khí",
+      "page": 70,
+      "reason": "Đã đối chiếu cột lĩnh vực trong PDF."
+    },
+    {
+      "code": "1.013230",
+      "field": "name",
+      "value": "Cấp giấy phép di dời đối với công trình cấp đặc biệt, cấp I và cấp II (Công trình không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án)",
+      "page": 55,
+      "reason": "Chép theo dòng danh mục chính của PDF; cùng mã xuất hiện thêm trong phụ lục Ban Quản lý nên vẫn cần rà soát ngữ cảnh."
+    },
+    {
+      "code": "1.013231",
+      "field": "name",
+      "value": "Cấp điều chỉnh giấy phép xây dựng đối với công trình cấp đặc biệt, cấp I, cấp II (công trình Không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án)",
+      "page": 54,
+      "reason": "Chép theo dòng danh mục chính của PDF; cùng mã xuất hiện thêm trong phụ lục Ban Quản lý nên vẫn cần rà soát ngữ cảnh."
+    },
+    {
+      "code": "1.013233",
+      "field": "name",
+      "value": "Gia hạn giấy phép xây dựng đối với công trình cấp đặc biệt, cấp I, cấp II (Công trình không theo tuyến/theo tuyến trong đô thị/tín ngưỡng, tôn giáo/tượng đài, tranh hoành tráng/sửa chữa, cải tạo/theo giai đoạn cho công trình không theo tuyến/theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án)",
+      "page": 54,
+      "reason": "Chép theo dòng danh mục chính của PDF; cùng mã xuất hiện thêm trong phụ lục Ban Quản lý nên vẫn cần rà soát ngữ cảnh."
+    },
+    {
+      "code": "1.013235",
+      "field": "name",
+      "value": "Cấp lại giấy phép xây dựng đối với công trình cấp đặc biệt, cấp I, cấp II (công trình không theo tuyến/theo tuyến trong đô thị/tín ngưỡng, tôn giáo/tượng đài, tranh hoành tráng/sửa chữa, cải tạo/theo giai đoạn cho công trình không theo tuyến/theo giai đoạn cho công trình theo tuyến trong đô thị/dự án)",
+      "page": 54,
+      "reason": "Chép theo dòng danh mục chính của PDF; cùng mã xuất hiện thêm trong phụ lục Ban Quản lý nên vẫn cần rà soát ngữ cảnh."
+    },
+    {
+      "code": "1.013236",
+      "field": "name",
+      "value": "Cấp giấy phép xây dựng mới công trình cấp đặc biệt, cấp I, cấp II (Công trình không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án)",
+      "page": 54,
+      "reason": "Chép theo dòng danh mục chính của PDF; cùng mã xuất hiện thêm trong phụ lục Ban Quản lý nên vẫn cần rà soát ngữ cảnh."
+    },
+    {
+      "code": "1.013238",
+      "field": "name",
+      "value": "Cấp giấy phép xây dựng sửa chữa, cải tạo đối với công trình cấp đặc biệt, cấp I, cấp II (công trình Không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án)",
+      "page": 54,
+      "reason": "Chép theo dòng danh mục chính của PDF; cùng mã xuất hiện thêm trong phụ lục Ban Quản lý nên vẫn cần rà soát ngữ cảnh."
+    },
+    {
+      "code": "1.013230",
+      "field": "agency",
+      "value": "VII. SỞ XÂY DỰNG",
+      "page": 55,
+      "reason": "Lấy theo tiêu đề cơ quan của danh mục chính; mã trùng xuất hiện ở phụ lục Ban Quản lý nên đánh dấu rà soát."
+    },
+    {
+      "code": "1.013231",
+      "field": "agency",
+      "value": "VII. SỞ XÂY DỰNG",
+      "page": 54,
+      "reason": "Lấy theo tiêu đề cơ quan của danh mục chính; mã trùng xuất hiện ở phụ lục Ban Quản lý nên đánh dấu rà soát."
+    },
+    {
+      "code": "1.013233",
+      "field": "agency",
+      "value": "VII. SỞ XÂY DỰNG",
+      "page": 54,
+      "reason": "Lấy theo tiêu đề cơ quan của danh mục chính; mã trùng xuất hiện ở phụ lục Ban Quản lý nên đánh dấu rà soát."
+    },
+    {
+      "code": "1.013235",
+      "field": "agency",
+      "value": "VII. SỞ XÂY DỰNG",
+      "page": 54,
+      "reason": "Lấy theo tiêu đề cơ quan của danh mục chính; mã trùng xuất hiện ở phụ lục Ban Quản lý nên đánh dấu rà soát."
+    },
+    {
+      "code": "1.013236",
+      "field": "agency",
+      "value": "VII. SỞ XÂY DỰNG",
+      "page": 54,
+      "reason": "Lấy theo tiêu đề cơ quan của danh mục chính; mã trùng xuất hiện ở phụ lục Ban Quản lý nên đánh dấu rà soát."
+    },
+    {
+      "code": "1.013238",
+      "field": "agency",
+      "value": "VII. SỞ XÂY DỰNG",
+      "page": 54,
+      "reason": "Lấy theo tiêu đề cơ quan của danh mục chính; mã trùng xuất hiện ở phụ lục Ban Quản lý nên đánh dấu rà soát."
+    },
+    {
+      "code": "2.000238",
+      "field": "field",
+      "value": "Chứng nhận lãnh sự, hợp pháp hóa lãnh sự",
+      "page": 109,
+      "reason": "Đối chiếu trực tiếp cột lĩnh vực trong danh mục chính; loại bỏ chữ đầu cột bị ghép."
+    },
+    {
+      "code": "2.002725",
+      "field": "name",
+      "value": "Thủ tục cấp Giấy chứng nhận đăng ký đầu tư theo thủ tục đầu tư đặc biệt",
+      "page": 111,
+      "reason": "Đối chiếu dòng mã và tên ở phụ lục lĩnh vực đầu tư tại Việt Nam."
+    },
+    {
+      "code": "2.002725",
+      "field": "field",
+      "value": "Đầu tư tại Việt Nam",
+      "page": 111,
+      "reason": "Lấy từ tiêu đề mục A “LĨNH VỰC ĐẦU TƯ TẠI VIỆT NAM” trong PDF."
+    },
+    {
+      "code": "2.002726",
+      "field": "field",
+      "value": "Đầu tư tại Việt Nam",
+      "page": 111,
+      "reason": "Lấy từ tiêu đề mục A “LĨNH VỰC ĐẦU TƯ TẠI VIỆT NAM” trong PDF."
+    },
+    {
+      "code": "2.002727",
+      "field": "name",
+      "value": "Thủ tục cấp đổi Giấy chứng nhận đăng ký đầu tư theo thủ tục đầu tư đặc biệt",
+      "page": 111,
+      "reason": "Đối chiếu dòng mã và tên ở phụ lục; loại bỏ phần tiêu đề lĩnh vực bị ghép vào tên."
+    },
+    {
+      "code": "2.002727",
+      "field": "field",
+      "value": "Đầu tư tại Việt Nam",
+      "page": 111,
+      "reason": "Lấy từ tiêu đề mục A “LĨNH VỰC ĐẦU TƯ TẠI VIỆT NAM” trong PDF."
+    },
+    {
+      "code": "2.002728",
+      "field": "field",
+      "value": "Quản lý nhà nước về khu công nghiệp, khu kinh tế",
+      "page": 9,
+      "reason": "Đối chiếu đầy đủ tên lĩnh vực trong PDF."
+    },
+    {
+      "code": "2.002729",
+      "field": "field",
+      "value": "Quản lý nhà nước về khu công nghiệp, khu kinh tế",
+      "page": 9,
+      "reason": "Đối chiếu đầy đủ tên lĩnh vực trong PDF; giá trị cũ bị cắt giữa dòng."
+    },
+    {
+      "code": "2.002731",
+      "field": "field",
+      "value": "Quản lý nhà nước về khu công nghiệp, khu kinh tế",
+      "page": 9,
+      "reason": "Đối chiếu đầy đủ tên lĩnh vực trong PDF."
+    },
+    {
+      "code": "2.002732",
+      "field": "name",
+      "value": "Thủ tục Chấm dứt hiệu lực và thu hồi Giấy chứng nhận doanh nghiệp sinh thái",
+      "page": 9,
+      "reason": "Đối chiếu dòng danh mục chính; bản trích xuất thứ hai bị ghép nội dung của cột khác."
+    },
+    {
+      "code": "2.002732",
+      "field": "field",
+      "value": "Quản lý nhà nước về khu công nghiệp, khu kinh tế",
+      "page": 9,
+      "reason": "Đối chiếu đầy đủ tên lĩnh vực trong PDF."
+    },
+    {
+      "code": "1.001248",
+      "field": "name",
+      "value": "Cấp lại Giấy đăng ký hoạt động của Trung tâm trọng tài, Chi nhánh Trung tâm trọng tài, Chi nhánh của Tổ chức trọng tài nước ngoài tại Việt Nam",
+      "page": 79,
+      "reason": "Khôi phục tên bị cắt trong baseline hiện tại bằng dòng trích xuất đầy đủ từ PDF."
+    },
+    {
+      "code": "1.003011",
+      "field": "name",
+      "value": "Thẩm định đồ án, đồ án điều chỉnh quy hoạch chi tiết của dự án đầu tư xây dựng công trình theo hình thức kinh doanh thuộc thẩm quyền phê duyệt của UBND cấp tỉnh",
+      "page": 66,
+      "reason": "Khôi phục tên bị cắt trong baseline hiện tại bằng dòng trích xuất đầy đủ từ PDF."
+    },
+    {
+      "code": "1.003878",
+      "field": "name",
+      "value": "Tàu thuyền có trọng tải từ 200 tấn trở xuống, mang cờ quốc tịch của quốc gia có chung đường biên giới với Việt Nam nhập cảnh, xuất cảnh tại khu vực biên giới của Việt Nam và quốc gia đó",
+      "page": 65,
+      "reason": "Khôi phục tên bị cắt trong baseline hiện tại bằng dòng trích xuất đầy đủ từ PDF."
+    },
+    {
+      "code": "1.004312",
+      "field": "name",
+      "value": "Tàu biển hoạt động tuyến nội địa có chở hàng nhập khẩu, hàng quá cảnh hoặc có hành khách hoặc thuyền viên mang quốc tịch nước ngoài vào cảng và tàu biển nước ngoài đã nhập cảnh sau đó vào cảng biển khác của Việt Nam",
+      "page": 63,
+      "reason": "Khôi phục tên bị cắt trong baseline hiện tại bằng dòng trích xuất đầy đủ từ PDF."
+    },
+    {
+      "code": "1.010696",
+      "field": "name",
+      "value": "Cấp Giấy tiếp nhận thông báo kinh doanh xăng dầu bằng thiết bị bán xăng dầu quy mô nhỏ",
+      "page": 8,
+      "reason": "Khôi phục tên bị cắt/ghép trong baseline hiện tại bằng dòng trích xuất đầy đủ từ PDF."
+    },
+    {
+      "code": "1.012886",
+      "field": "name",
+      "value": "Điều chỉnh chấp thuận chủ trương đầu tư đồng thời với chấp thuận nhà đầu tư làm chủ đầu tư đối với dự án cải tạo, xây dựng lại nhà chung cư không bằng nguồn vốn đầu tư công",
+      "page": 57,
+      "reason": "Khôi phục tên bị cắt trong baseline hiện tại bằng dòng trích xuất đầy đủ từ PDF."
+    },
+    {
+      "code": "1.013239",
+      "field": "name",
+      "value": "Thẩm định Báo cáo nghiên cứu khả thi đầu tư xây dựng/Báo cáo nghiên cứu khả thi đầu tư xây dựng điều chỉnh",
+      "page": 54,
+      "reason": "Khôi phục tên bị ghép từ thủ tục kế tiếp trong baseline hiện tại bằng dòng trích xuất đầy đủ từ PDF."
+    },
+    {
+      "code": "1.013719",
+      "field": "name",
+      "value": "Xác nhận người lao động nước ngoài không thuộc diện cấp giấy phép lao động (thuộc thẩm quyền của Chủ tịch Uỷ ban nhân dân cấp tỉnh)",
+      "page": 41,
+      "reason": "Khôi phục tên bị cắt trong baseline hiện tại bằng dòng trích xuất đầy đủ từ PDF."
+    },
+    {
+      "code": "1.013783",
+      "field": "name",
+      "value": "Thủ tục cấp giấy phép sửa đổi, bổ sung những nội dung ghi trong giấy phép xuất bản thêm ấn phẩm đối với cơ quan báo chí của địa phương",
+      "page": 81,
+      "reason": "Khôi phục tên bị cắt trong baseline hiện tại bằng dòng trích xuất đầy đủ từ PDF."
+    },
+    {
+      "code": "3.000475",
+      "field": "name",
+      "value": "Thủ tục cấp Giấy xác nhận đủ điều kiện tư vấn Hệ thống quản lý chất lượng theo Tiêu chuẩn quốc gia TCVN ISO 9001 đối với cơ quan, tổ chức thuộc hệ thống hành chính nhà nước cho tổ chức tư vấn",
+      "page": 93,
+      "reason": "Khôi phục tên bị lỗi tách dòng trong baseline hiện tại bằng dòng trích xuất đầy đủ từ PDF."
+    }
+  ],
+  "manualReview": [
+    {
+      "code": "1.013230",
+      "fields": [
+        "name",
+        "agency"
+      ],
+      "reason": "Mã xuất hiện trong cả danh mục chính và phụ lục Ban Quản lý với ngữ cảnh tên/cơ quan khác nhau; đã giữ tên từ danh mục chính nhưng cần rà soát cách biểu diễn một mã cho nhiều ngữ cảnh."
+    },
+    {
+      "code": "1.013231",
+      "fields": [
+        "name",
+        "agency"
+      ],
+      "reason": "Mã xuất hiện trong cả danh mục chính và phụ lục Ban Quản lý với ngữ cảnh tên/cơ quan khác nhau; đã giữ tên từ danh mục chính nhưng cần rà soát cách biểu diễn một mã cho nhiều ngữ cảnh."
+    },
+    {
+      "code": "1.013233",
+      "fields": [
+        "name",
+        "agency"
+      ],
+      "reason": "Mã xuất hiện trong cả danh mục chính và phụ lục Ban Quản lý với ngữ cảnh tên/cơ quan khác nhau; đã giữ tên từ danh mục chính nhưng cần rà soát cách biểu diễn một mã cho nhiều ngữ cảnh."
+    },
+    {
+      "code": "1.013235",
+      "fields": [
+        "name",
+        "agency"
+      ],
+      "reason": "Mã xuất hiện trong cả danh mục chính và phụ lục Ban Quản lý với ngữ cảnh tên/cơ quan khác nhau; đã giữ tên từ danh mục chính nhưng cần rà soát cách biểu diễn một mã cho nhiều ngữ cảnh."
+    },
+    {
+      "code": "1.013236",
+      "fields": [
+        "name",
+        "agency"
+      ],
+      "reason": "Mã xuất hiện trong cả danh mục chính và phụ lục Ban Quản lý với ngữ cảnh tên/cơ quan khác nhau; đã giữ tên từ danh mục chính nhưng cần rà soát cách biểu diễn một mã cho nhiều ngữ cảnh."
+    },
+    {
+      "code": "1.013238",
+      "fields": [
+        "name",
+        "agency"
+      ],
+      "reason": "Mã xuất hiện trong cả danh mục chính và phụ lục Ban Quản lý với ngữ cảnh tên/cơ quan khác nhau; đã giữ tên từ danh mục chính nhưng cần rà soát cách biểu diễn một mã cho nhiều ngữ cảnh."
+    },
+    {
+      "code": "2.002732",
+      "fields": [
+        "name",
+        "agency"
+      ],
+      "reason": "Mã lặp giữa danh mục chính và phụ lục; đã sửa tên/lĩnh vực theo dòng PDF nhưng cần rà soát cơ quan/nguồn lặp."
+    },
+    {
+      "code": "2.002725",
+      "fields": [
+        "agency"
+      ],
+      "reason": "Thứ tự chữ trong tiêu đề cơ quan của PDF bị tách/đảo khi trích xuất; chưa chuẩn hóa cơ quan khi chưa đối chiếu hình ảnh trang gốc."
+    },
+    {
+      "code": "2.002726",
+      "fields": [
+        "agency"
+      ],
+      "reason": "Thứ tự chữ trong tiêu đề cơ quan của PDF bị tách/đảo khi trích xuất; chưa chuẩn hóa cơ quan khi chưa đối chiếu hình ảnh trang gốc."
+    },
+    {
+      "code": "2.002727",
+      "fields": [
+        "agency"
+      ],
+      "reason": "Thứ tự chữ trong tiêu đề cơ quan của PDF bị tách/đảo khi trích xuất; chưa chuẩn hóa cơ quan khi chưa đối chiếu hình ảnh trang gốc."
+    },
+    {
+      "code": "2.002728",
+      "fields": [
+        "agency"
+      ],
+      "reason": "Mã xuất hiện trong nhiều ngữ cảnh/trang của PDF với cơ quan không thống nhất; không tự suy diễn cơ quan xử lý."
+    },
+    {
+      "code": "2.002729",
+      "fields": [
+        "agency"
+      ],
+      "reason": "Mã xuất hiện trong nhiều ngữ cảnh/trang của PDF với cơ quan không thống nhất; không tự suy diễn cơ quan xử lý."
+    },
+    {
+      "code": "2.002731",
+      "fields": [
+        "agency"
+      ],
+      "reason": "Mã xuất hiện trong nhiều ngữ cảnh/trang của PDF với cơ quan không thống nhất; không tự suy diễn cơ quan xử lý."
+    },
+    {
+      "code": "2.002732",
+      "fields": [
+        "agency"
+      ],
+      "reason": "Mã xuất hiện trong nhiều ngữ cảnh/trang của PDF với cơ quan không thống nhất; không tự suy diễn cơ quan xử lý."
+    }
+  ],
+  "sourceSetReconciliation": {
+    "activeBaselineRowCount": 1928,
+    "pdfUniqueCodeCount": 1930,
+    "sourceReviewCodes": [
+      {
+        "code": "1.000502",
+        "page": 49,
+        "name": "Nhận lại tiền ký quỹ của doanh nghiệp đưa người lao động đi đào tạo, nâng cao trình độ, kỹ năng nghề ở nước ngoài (hợp đồng dưới 90 ngày)",
+        "field": "Quản lý lao động ngoài nước",
+        "agency": "VI. SỞ NỘI VỤ",
+        "status": "MANUAL_REVIEW",
+        "reason": "Có mã, tên và lĩnh vực rõ ràng trong PDF chính thức nhưng không nằm trong bộ 1.928 mã đã commit; giữ ngoài baseline hoạt động để rà soát phạm vi, không tự ý thêm/bỏ."
+      },
+      {
+        "code": "1.013888",
+        "page": 102,
+        "name": "Ngừng kinh doanh dịch vụ viễn thông đối với doanh nghiệp viễn thông không phải là doanh nghiệp viễn thông nắm giữ phương tiện thiết yếu, doanh nghiệp viễn thông có vị trí thống lĩnh thị trường hoặc doanh nghiệp thuộc nhóm doanh nghiệp viễn thông có vị trí thống lĩnh thị trường đối với thị trường dịch vụ viễn thông Nhà nước quản lý, doanh nghiệp cung cấp dịch vụ viễn thông công ích (có giấy phép cung cấp dịch vụ không có hạ tầng mạng, loại hình dịch vụ viễn thông cố định mặt đất (dịch vụ viễn thông cung cấp trên mạng viễn thông cố định mặt đất)) khi ngừng kinh doanh một phần hoặc toàn bộ các dịch vụ viễn thông",
+        "field": "Tần số vô tuyến điện",
+        "agency": "X. SỞ KHOA HỌC VÀ CÔNG NGHỆ",
+        "status": "MANUAL_REVIEW",
+        "reason": "Có mã, tên và lĩnh vực rõ ràng trong PDF chính thức nhưng không nằm trong bộ 1.928 mã đã commit; giữ ngoài baseline hoạt động để rà soát phạm vi, không tự ý thêm/bỏ."
+      }
+    ],
+    "reason": "PDF có 1.930 mã duy nhất; bộ baseline trước đó có 1.928 mã và thiếu hai mã xuất hiện rõ trong PDF. Hai mã này được tách vào sourceReviewRows, không tự động nhập vào baseline hoạt động cho đến khi xác nhận phạm vi."
+  }
+}

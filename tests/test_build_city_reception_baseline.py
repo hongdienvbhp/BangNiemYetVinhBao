@@ -1,6 +1,7 @@
 import unittest
 
 from scripts.build_city_reception_baseline import (
+    apply_reviewed_corrections,
     code_from_block,
     extract_rows,
     norm_code,
@@ -90,6 +91,20 @@ class CityReceptionBaselineParserTests(unittest.TestCase):
 
     def test_normalizes_short_codes_without_losing_zeroes(self):
         self.assertEqual(norm_code("2.00018"), "2.000180")
+
+    def test_applies_reviewed_pdf_cell_correction(self):
+        rows = [{"code": "2.000238", "name": "Name", "field": "", "agency": "XI. SỞ NGOẠI VỤ"}]
+        config = {
+            "corrections": [{
+                "code": "2.000238",
+                "field": "field",
+                "value": "Chứng nhận lãnh sự, hợp pháp hóa lãnh sự",
+                "page": 109,
+                "reason": "Verified against official PDF",
+            }]
+        }
+        result = apply_reviewed_corrections(rows, config)
+        self.assertEqual(result[0]["field"], "Chứng nhận lãnh sự, hợp pháp hóa lãnh sự")
 
 
     def test_recovers_field_from_previous_aligned_block(self):
