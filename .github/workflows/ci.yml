@@ -128,6 +128,7 @@ jobs:
 
           with fitz.open(stream=fetch_pdf(), filetype="pdf") as pdf:
               page = pdf[6]
+              page.get_pixmap(matrix=fitz.Matrix(1.5, 1.5), alpha=False).save("/tmp/city-page7.png")
               items = fragments(page)
               codes = []
               for y, x, text in items:
@@ -162,6 +163,15 @@ jobs:
               "extraInGenerated": sorted(new_codes-old_codes)[:120],
           }, ensure_ascii=False))
           PY
+
+      - name: Upload rendered city PDF page for review
+        if: failure() && steps.city-baseline-impact.outputs.changed == 'true'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: city-pdf-page7-preview
+          path: /tmp/city-page7.png
+          if-no-files-found: ignore
+          retention-days: 7
 
       - name: Python unit tests
         run: python -m unittest discover -s tests -v
