@@ -1,0 +1,774 @@
+{
+  "format": "official-table-level-classification",
+  "version": 1,
+  "source": "data/source-audit/vinhbao-tthc-attachment-evidence-20260906.json",
+  "rule": "Chỉ phân loại khi heading chính thức cấp xã/dùng chung/cấp tỉnh xuất hiện trước Mã TTHC trong cửa sổ 1200 ký tự của snippet. Không suy diễn từ địa điểm tiếp nhận.",
+  "summary": {
+    "resolved": 36,
+    "conflicts": 0,
+    "commune": 6,
+    "shared": 2,
+    "province": 28
+  },
+  "rows": [
+    {
+      "ma": "1.000105",
+      "classification": "PROVINCE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 3,
+      "evidence": [
+        {
+          "classification": "PROVINCE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP TỈNH",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-17.8.2025-3325-ubnd-tp-cong-bo-tthc-cap-phep-nd219.signed638921816414037026.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-viec-lam/cong-khai-danh-muc-thu-tuc-hanh-chinh-ban-hanh-moi-bi-bai-bo-linh-vuc-lao-dong-viec-lam-thuoc-ph-777404"
+          ],
+          "decisionNumbers": [
+            "315/QĐ-BNV",
+            "636/QĐ-BNV",
+            "886/QĐ-BNV"
+          ],
+          "snippet": "h việc bãi bỏ TTHC Lĩnh vực Cơ quan thực hiện Quyết định công bố TTHC THỦ TỤC HÀNH CHÍNH CẤP TỈNH (11 TTHC) 1 1.000105 Báo cáo giải trình nhu cầu, thay đổi nhu cầu sử dụng người lao động nước ngoài Nghị định số 219/2025/NĐ -CP ngày 07/8/2025 của Chính phủ quy định về người lao động nước"
+        },
+        {
+          "classification": "PROVINCE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP TỈNH",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-886-bnv..signed638911046647963921.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-viec-lam/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-bi-bai-bo-linh-vuc-viec-lam-thuoc-pham-vi-chuc--772573"
+          ],
+          "decisionNumbers": [
+            "315/QĐ-BNV",
+            "636/QĐ-BNV",
+            "886/QĐ-BNV"
+          ],
+          "snippet": "h việc bãi bỏ TTHC Lĩnh vực Cơ quan thực hiện Quyết định công bố TTHC THỦ TỤC HÀNH CHÍNH CẤP TỈNH (11 TTHC) 1 1.000105 Báo cáo giải trình nhu cầu, thay đổi nhu cầu sử dụng người lao động nước ngoài Nghị định số 219/2025/NĐ -CP ngày 07/8/2025 của Chính phủ quy định về người lao động nước"
+        },
+        {
+          "classification": "PROVINCE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP TỈNH",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/qd-886-bnv..signed638911046707297679.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-viec-lam/cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-bi-bai-bo-linh-vuc-viec-lam-thuoc-pham-vi-chuc--772573"
+          ],
+          "decisionNumbers": [
+            "315/QĐ-BNV",
+            "636/QĐ-BNV",
+            "886/QĐ-BNV"
+          ],
+          "snippet": "h việc bãi bỏ TTHC Lĩnh vực Cơ quan thực hiện Quyết định công bố TTHC THỦ TỤC HÀNH CHÍNH CẤP TỈNH (11 TTHC) 1 1.000105 Báo cáo giải trình nhu cầu, thay đổi nhu cầu sử dụng người lao động nước ngoài Nghị định số 219/2025/NĐ -CP ngày 07/8/2025 của Chính phủ quy định về người lao động nước"
+        }
+      ]
+    },
+    {
+      "ma": "1.000957",
+      "classification": "PROVINCE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "PROVINCE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP TỈNH",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/qd-cong-bo-dm-tthc-theo-qd-1177-cua-bo-ct..signed639165260606585979.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-xay-dung-va-cong-thuong/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-bi-bai-bo-thuoc-pham-vi-chuc-nang--911891"
+          ],
+          "decisionNumbers": [
+            "1177/QĐ-BCT"
+          ],
+          "snippet": "pháp lý Theo quy định Sau cắt giảm THỦ TỤC HÀNH CHÍNH CẤP TỈNH (03 TTHC) LĨNH VỰC XUẤT NHẬP KHẨU (03 TTHC) 1. 1.000957 Thủ tục cấp Giấy phép tạm nhập, tái xuất theo hình thức khác 05 ngày làm việc kể từ khi nhận được hồ sơ hợp lệ 2,5 ngày làm việc kể từ khi nhận được hồ sơ hợp lệ. - Trun"
+        }
+      ]
+    },
+    {
+      "ma": "1.001122",
+      "classification": "PROVINCE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "PROVINCE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP TỈNH",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/4/qd-cong-bo-danh-muc-tthc-linh-vuc-giam-dinh-tu-phap_so-tu-phap..signed639110905953652281.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-giam-dinh-tu-phap-thuoc-pham-vi-chuc-n-881298"
+          ],
+          "decisionNumbers": [
+            "862/QĐ-BTP"
+          ],
+          "snippet": "ăn cứ pháp lý Theo quy định Sau cắt giảm Toàn trình Một phần DANH MỤC THỦ TỤC HÀNH CHÍNH CẤP TỈNH (06 TTHC) 1 1.001122 Bổ nhiệm và c ấp th ẻ giám định viên tư pháp 30 ngày làm việc 15 ngày làm việc - Trung tâm Ph ục vụ hành chính công thành phố; - Trung tâm Ph ục vụ hành chính công xã, p"
+        }
+      ]
+    },
+    {
+      "ma": "1.002407",
+      "classification": "PROVINCE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "PROVINCE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP TỈNH",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/4/qd-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-gd-dt..signed639129677063242252.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-giao-duc-mam-non/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-thay-the-bi-bai-bo-linh-vuc-giao-duc-mam-non-gi-891324",
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-giao-duc-nghe-nghiep/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-thay-the-bi-bai-bo-linh-vuc-giao-duc-mam-non-gi-891324",
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-giao-duc-trung-hoc/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-thay-the-bi-bai-bo-linh-vuc-giao-duc-mam-non-gi-891324",
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-giao-duc-va-dao-tao-thuoc-he-thong-giao-duc-quoc-dan/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-thay-the-bi-bai-bo-linh-vuc-giao-duc-mam-non-gi-891324"
+          ],
+          "decisionNumbers": [],
+          "snippet": "iảm A. THỦ TỤC HÀNH CHÍNH CẤP TỈNH (01 TTHC) LĨNH VỰC GIÁO DỤC VÀ ĐÀO TẠO THUỘC HỆ THỐNG GIÁO DỤC QUỐC DÂN 1. 1.002407 Xét, c ấp h ọc bổng chính sách Xét, c ấp học b ổng chính sách đối với sinh viên theo chế độ cử tuyển 10 ngày làm việc kể từ ngày k ết thúc nh ận hồ sơ 05 ngày làm vi ệc"
+        }
+      ]
+    },
+    {
+      "ma": "1.003915",
+      "classification": "PROVINCE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "PROVINCE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP TỈNH",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/quyet-dinh-so-2320-cong-bo-dm-tthc-sua-doi-bo-sung-va-bai-bo-thuoc-quan-ly-cua-so-tu-phap639178246917435630639180044385831717.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/quyet-dinh-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vu-921702"
+          ],
+          "decisionNumbers": [
+            "1444/QĐ-BTP",
+            "1458/QĐ-BTP"
+          ],
+          "snippet": "ứ pháp lý Theo quy định Sau cắt giảm A. THỦ TỤC HÀNH CHÍNH CẤP TỈNH (12 TTHC) A1. LĨNH VỰC ĐẤU GIÁ TÀI SẢN 1. 1.003915 Cấp Ch ứng chỉ hành nghề đấu giá 10 ngày làm việc 5 ngày làm việc Trung tâm Phục vụ hành chính công thành ph ố và cấp xã 800.000 đ ồng (áp dụng m ức phí 400.000 đ ồng/hồ"
+        }
+      ]
+    },
+    {
+      "ma": "1.004321",
+      "classification": "PROVINCE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "PROVINCE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP TỈNH",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/7/qd-2995-ubnd-ngay-29.7.2026-dm-tthc-moi-ban-hanh-sua-doi-bo-sung-linh-vuc-ptthttdt639210827674078254.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-phat-thanh-truyen-hinh-va-thong-tin-dien-tu/quyet-dinh-so-2995-qd-ubnd-ngay-29-7-2026-cua-uy-ban-nhan-dan-thanh-pho-ve-viec-cong-bo-danh-muc-941119"
+          ],
+          "decisionNumbers": [
+            "1759/QĐ-BVHTTDL"
+          ],
+          "snippet": "nh Sau cắt giảm THỦ TỤC HÀNH CHÍNH CẤP TỈNH (02 TTHC) LĨNH VỰC PHÁT THANH TRUYỀN HÌNH VÀ THÔNG TIN ĐIỆN TỬ 1. 1.004321 Thủ tục sửa đ ổi, b ổ sung Giấy phép cung cấp d ịch v ụ phát thanh, truyền hình tr ả tiền 10 ngày làm việc 05 ngày làm việc - Trung tâm PVHCC thành phố; - Trung tâm PVHC"
+        }
+      ]
+    },
+    {
+      "ma": "1.008667",
+      "classification": "PROVINCE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "PROVINCE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP TỈNH",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/5/qd-cong-bo-danh-muc-tthc-sua-doi-bo-sung-linh.....signed639143767216672403.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-xay-dung-va-cong-thuong/danh-muc-thu-tuc-hanh-chinh-sua-doi-bo-sung-trong-linh-vuc-xuat-nhap-khau-thuoc-pham-vi-chuc-nan-899194"
+          ],
+          "decisionNumbers": [
+            "603/QĐ-UBND",
+            "937/QĐ-BCT"
+          ],
+          "snippet": "điểm thực hiện Phí, lệ phí Căn cứ pháp lý Theo quy định Sau cắt giảm THỦ TỤC HÀNH CHÍNH CẤP TỈNH (01 TTHC) 1. 1.008667 Cấp Giấy chứng nhận xuất xứ hàng hoá (C/O) ưu đãi Mẫu EUR.1 - Đối với trường hợp hồ sơ đề nghị C/O của thương nhân được đính kèm trên Hệ thống eCoSys dưới dạng điện tử:"
+        }
+      ]
+    },
+    {
+      "ma": "1.008720",
+      "classification": "PROVINCE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "PROVINCE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP TỈNH",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/4/qd-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-gd-dt..signed639129677063242252.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-giao-duc-mam-non/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-thay-the-bi-bai-bo-linh-vuc-giao-duc-mam-non-gi-891324",
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-giao-duc-nghe-nghiep/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-thay-the-bi-bai-bo-linh-vuc-giao-duc-mam-non-gi-891324",
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-giao-duc-trung-hoc/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-thay-the-bi-bai-bo-linh-vuc-giao-duc-mam-non-gi-891324",
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-giao-duc-va-dao-tao-thuoc-he-thong-giao-duc-quoc-dan/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-thay-the-bi-bai-bo-linh-vuc-giao-duc-mam-non-gi-891324"
+          ],
+          "decisionNumbers": [],
+          "snippet": "pháp lý Theo quy định Sau cắt giảm A. THỦ TỤC HÀNH CHÍNH CẤP TỈNH (04 TTHC) A1. LĨNH VỰC GIÁO DỤC MẦM NON 1. 1.008720 Chuyển đ ổi nhà tr ẻ, trư ờng m ẫu giáo, trư ờng m ầm non tư th ục do cơ quan đại diện ngo ại giao nước ngoài, t ổ chức qu ốc t ế liên chính phủ đề nghị sang nhà tr ẻ, t"
+        }
+      ]
+    },
+    {
+      "ma": "1.008725",
+      "classification": "COMMUNE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "COMMUNE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP XÃ",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/4/qd-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-gd-dt..signed639129677063242252.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-giao-duc-mam-non/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-thay-the-bi-bai-bo-linh-vuc-giao-duc-mam-non-gi-891324",
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-giao-duc-nghe-nghiep/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-thay-the-bi-bai-bo-linh-vuc-giao-duc-mam-non-gi-891324",
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-giao-duc-trung-hoc/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-thay-the-bi-bai-bo-linh-vuc-giao-duc-mam-non-gi-891324",
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-giao-duc-va-dao-tao-thuoc-he-thong-giao-duc-quoc-dan/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-thay-the-bi-bai-bo-linh-vuc-giao-duc-mam-non-gi-891324"
+          ],
+          "decisionNumbers": [],
+          "snippet": "ti ết một s ố điều c ủa Lu ật G iáo dục B. THỦ TỤC HÀNH CHÍNH CẤP XÃ (01 TTHC) LĨNH VỰC GIÁO DỤC TRUNG HỌC 1. 1.008725 Chuyển đ ổi trư ờng ti ểu h ọc tư thục, trư ờng trung h ọc cơ s ở tư thục, trường phổ thông tư th ục có nhiều cấp học có cấp học cao nhất là trung h ọc cơ s ở do nhà đ ầ"
+        }
+      ]
+    },
+    {
+      "ma": "1.009397",
+      "classification": "PROVINCE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "PROVINCE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP TỈNH",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/8/qd-3203639227264498644665.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-van-hoa-khoa-hoc-va-thong-tin/quyet-dinh-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-linh-vuc-nghe-thuat-bieu-die-950815"
+          ],
+          "decisionNumbers": [
+            "1874/QĐ-BVHTTDL"
+          ],
+          "snippet": "cứ pháp lý Theo quy định Sau cắt giảm THỦ TỤC HÀNH CHÍNH CẤP TỈNH (04 TTHC) LĨNH VỰC NGHỆ THUẬT BIỂU DIỄN 1. 1.009397 Thủ tục tổ chức bi ểu diễn ngh ệ thuật 05 ngày làm việc 2,5 ngày làm việc - Trung tâm PVHCC thành phố; - Trung tâm PVHCC các xã, phường, đặc khu - Đến dư ới 50 phút: 1.0"
+        }
+      ]
+    },
+    {
+      "ma": "1.010595",
+      "classification": "PROVINCE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "PROVINCE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP TỈNH",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/4/qd-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-gd-dt..signed639129677063242252.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-giao-duc-mam-non/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-thay-the-bi-bai-bo-linh-vuc-giao-duc-mam-non-gi-891324",
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-giao-duc-nghe-nghiep/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-thay-the-bi-bai-bo-linh-vuc-giao-duc-mam-non-gi-891324",
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-giao-duc-trung-hoc/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-thay-the-bi-bai-bo-linh-vuc-giao-duc-mam-non-gi-891324",
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-giao-duc-va-dao-tao-thuoc-he-thong-giao-duc-quoc-dan/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-thay-the-bi-bai-bo-linh-vuc-giao-duc-mam-non-gi-891324"
+          ],
+          "decisionNumbers": [],
+          "snippet": "ạm pháp luật quy định việc bãi bỏ TTHC THỦ TỤC HÀNH CHÍNH CẤP TỈNH (02 TTHC) LĨNH VỰC GIÁO DỤC NGHỀ NGHIỆP 1. 1.010595 Công nhận hiệu trưởng trường trung cấp tư thục Nghị định s ố 66/2026/NĐ-CP ngày 02/3/2026 c ủa Chính ph ủ quy đ ịnh chi ti ết m ột s ố điều c ủa Lu ật Giáo dục 2. 1.0105"
+        }
+      ]
+    },
+    {
+      "ma": "1.012812",
+      "classification": "COMMUNE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "COMMUNE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP XÃ",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/8/noi-dung-linh-vuc-dat-dai-cap-xa638912181802758696.docx",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-dat-dai/cong-khai-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-linh-vuc-lam-nghiep-kiem-lam-ung--773283"
+          ],
+          "decisionNumbers": [
+            "15/QĐ-UBND"
+          ],
+          "snippet": "NỘI DUNG TTHC LĨNH VỰC ĐẤT ĐAI THỦ TỤC HÀNH CHÍNH CẤP XÃ 1. Hoà giải tranh chấp đất đai - 1.012812 (1) Trình tự thực hiện: Bước 1 : Người có đơn yêu cầu giải quyết tranh chấp đất đai nộp đơn đến Trung tâm Phục vụ hành chính công hoặc Ủy ban nhân dân cấp xã. Trường hợp"
+        }
+      ]
+    },
+    {
+      "ma": "1.013723",
+      "classification": "PROVINCE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "PROVINCE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP TỈNH",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/qd-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-noi-vu-ttr-632-654-snv-..signed639240220478223314.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/quyet-dinh-so-3500-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-danh-muc-thu-tuc-hanh-chinh-ban-hanh-moi-d-957960"
+          ],
+          "decisionNumbers": [
+            "946/QĐ-BNV",
+            "958/QĐ-BNV"
+          ],
+          "snippet": "chính Tên VB QPPL quy định việc bãi bỏ TTHC THỦ TỤC HÀNH CHÍNH CẤP TỈNH LĨNH VỰC AN TOÀN, VỆ SINH LAO ĐỘNG 1. 1.013723 Thủ tục kiểm tra nhà nước về chất lượng hàng hóa hàng hóa nhóm 2 nhập khẩu Nghị định số 37/2026/NĐ -CP ngày 23/01/2026 của Chính phủ 2. 1.013337 Đăng ký công bố hợp quy"
+        }
+      ]
+    },
+    {
+      "ma": "1.013724",
+      "classification": "COMMUNE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "COMMUNE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP XÃ",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/1.-qd-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-noi-vu..signed639040667148325665.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-quan-ly-lao-dong-ngoai-nuoc/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-bi-bai-bo-linh-vuc-nguoi-lao-dong-di-lam-viec-o-nuoc-ng-845673"
+          ],
+          "decisionNumbers": [
+            "1561/QĐ-BNV",
+            "4/QĐ-BNV"
+          ],
+          "snippet": "t số điều của Luật Việc làm v ề dịch vụ việc làm B THỦ TỤC HÀNH CHÍNH CẤP XÃ (02 TTHC) B1 LĨNH VỰC VIỆC LÀM 1 1.013724 Vay vốn hỗ trợ tạo việc làm, duy trì và mở rộng việc làm từ Quỹ quốc gia v ề việc làm đ ối với người lao đ ộng (dự án thuộc nguồn vốn do Uỷ ban nhân dân cấp tỉnh quản lý"
+        }
+      ]
+    },
+    {
+      "ma": "1.013729",
+      "classification": "PROVINCE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "PROVINCE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP TỈNH",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/5/quyet-dinh-2026-cong-bo-dmtthc-so-noi-vu-ttr332-qdbnv-458-..signed639137660255387575.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-va-bi-bai-bo-thuoc-pham-vi-chuc-na-895721"
+          ],
+          "decisionNumbers": [
+            "458/QĐ-BNV"
+          ],
+          "snippet": "h Tên VB QPPL quy định việc bãi bỏ TTHC THỦ TỤC HÀNH CHÍNH CẤP TỈNH I LĨNH VỰC QUẢN LÝ LAO ĐỘNG NGOÀI NƯỚC 1. 1.013729.H24 Báo cáo đưa người lao động Việt Nam đi làm việc ở nước ngoài của doanh nghiệp trúng thầu, nhận thầu công trình, dự án ở nước ngoài Nghị quyết số 66.16/2026/NQ -CP ng"
+        }
+      ]
+    },
+    {
+      "ma": "1.013860",
+      "classification": "PROVINCE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "PROVINCE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP TỈNH",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/qd-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-y-te-ttr-228-syt-..signed639240219206328924.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-y-te/quyet-dinh-so-3501-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-b-957957"
+          ],
+          "decisionNumbers": [
+            "2023/QĐ-TTG",
+            "2026/QĐ-TTG",
+            "2612/QĐ-BYT"
+          ],
+          "snippet": "VBQPPL quy định nội dung sửa đổi, bổ sung Theo quy định Sau cắt giảm THỦ TỤC HÀNH CHÍNH CẤP TỈNH (02 TTHC) 1. 1.013860 Cấp gi ấy chứng nhận bị phơi nhi ễm với HIV do tai nạn r ủi ro nghề nghiệp 03 ngày làm việc kể từ ngày ghi trên phi ếu tiếp nh ận hồ sơ 2,5 ngày làm việc kể từ ngày ghi"
+        }
+      ]
+    },
+    {
+      "ma": "1.014111",
+      "classification": "SHARED",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "SHARED",
+          "marker": "THỦ TỤC HÀNH CHÍNH DÙNG CHUNG",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/qd-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-noi-vu-ttr-632-654-snv-..signed639240220478223314.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/quyet-dinh-so-3500-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-danh-muc-thu-tuc-hanh-chinh-ban-hanh-moi-d-957960"
+          ],
+          "decisionNumbers": [
+            "946/QĐ-BNV",
+            "958/QĐ-BNV"
+          ],
+          "snippet": "lý Theo quy định Sau cắt giảm THỦ TỤC HÀNH CHÍNH DÙNG CHUNG (CẤP BỘ, CẤP TỈNH, CẤP XÃ) LĨNH VỰC CÔNG CHỨC 1. 1.014111 Thủ tục thi tuyển công chức Tối đa 140 ngày kể từ ngày hết thời hạn nhận Phiếu đăng ký dự tuyển cho đến khi người đứng đầu cơ quan có thẩm quyền tuyển dụng ra quyết định"
+        }
+      ]
+    },
+    {
+      "ma": "1.014116",
+      "classification": "SHARED",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "SHARED",
+          "marker": "THỦ TỤC HÀNH CHÍNH DÙNG CHUNG",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/qd-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-noi-vu-ttr-632-654-snv-..signed639240220478223314.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/quyet-dinh-so-3500-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-danh-muc-thu-tuc-hanh-chinh-ban-hanh-moi-d-957960"
+          ],
+          "decisionNumbers": [
+            "946/QĐ-BNV",
+            "958/QĐ-BNV"
+          ],
+          "snippet": "rưởng Bộ Khoa học và Công nghệ THỦ TỤC HÀNH CHÍNH DÙNG CHUNG (CẤP BỘ, CẤP TỈNH, CẤP XÃ) LĨNH VỰC CÔNG CHỨC 1. 1.014116 Thủ tục tiếp nhận vào công chức không giữ chức vụ lãnh đạo, quản lý Nghị định số 300/2026/NĐ-CP ngày 29 tháng 7 năm 2026 của Chính phủ sửa đổi, bổ sung một số điều của N"
+        }
+      ]
+    },
+    {
+      "ma": "1.014262",
+      "classification": "PROVINCE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "PROVINCE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP TỈNH",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/qd-2037-noi-dung-lvuc-dia-chat-va-khoang-san639165286738812786.doc",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-nong-nghiep-va-moi-truong/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-sua-doi-bo-sung-thay-the-bi-bai-bo-thuoc-pham-vi-chuc-n-911934"
+          ],
+          "decisionNumbers": [],
+          "snippet": "ỘI DUNG THỦ TỤC HÀNH CHÍNH CẤP TỈNH LĨNH VỰC ĐỊA CHẤT VÀ KHOÁNG SẢN 1. Cấp lại giấy phép thăm dò khoáng sản - 1.014262 a. Trình tự thực hiện * Bước 1. Nộp hồ sơ (tổ chức, cá nhân) Tổ chức, cá nhân đề nghị cấp lại giấy phép thăm dò khoáng sản nhóm I, nhóm II, nhóm III lựa chọn nộp hồ sơ t"
+        }
+      ]
+    },
+    {
+      "ma": "1.014741",
+      "classification": "PROVINCE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "PROVINCE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP TỈNH",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/qd-2037-noi-dung-lvuc-chan-nuoi639165286671000227.docx",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-nong-nghiep-va-moi-truong/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-sua-doi-bo-sung-thay-the-bi-bai-bo-thuoc-pham-vi-chuc-n-911934"
+          ],
+          "decisionNumbers": [],
+          "snippet": "I DUNG THỦ TỤC HÀNH CHÍNH CẤP TỈNH LĨNH VỰC CHĂN NUÔI 1. Công nhận kết quả khảo nghiệm dòng, giống vật nuôi - 1.014741 Trình tự thực hiện: - Bước 1: Tổ chức, cá nhân gửi hồ sơ đến Cơ quan được Chủ tịch Ủy ban nhân dân cấp tỉnh giao giải quyết thủ tục hành chính lĩnh vực chăn nuôi và thú"
+        }
+      ]
+    },
+    {
+      "ma": "1.116316",
+      "classification": "PROVINCE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "PROVINCE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP TỈNH",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/9/qd-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-noi-vu-ttr-632-654-snv-..signed639240220478223314.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-noi-vu/quyet-dinh-so-3500-qd-ubnd-cua-ubnd-thanh-pho-cong-bo-danh-muc-thu-tuc-hanh-chinh-ban-hanh-moi-d-957960"
+          ],
+          "decisionNumbers": [
+            "946/QĐ-BNV",
+            "958/QĐ-BNV"
+          ],
+          "snippet": "í Căn cứ pháp lý Theo quy định Sau cắt giảm THỦ TỤC HÀNH CHÍNH CẤP TỈNH LĨNH VỰC AN TOÀN, VỆ SINH LAO ĐỘNG 1. 1.116316 Kiểm tra chất lượng hàng hóa nhập khẩu có mức độ rủi ro cao thuộc trách nhiệm quản lý nhà nước của Bộ Nội vụ tại Danh mục ban hành kèm theo Thông tư số 16/2026/TT- BNV 0"
+        }
+      ]
+    },
+    {
+      "ma": "2.000230",
+      "classification": "PROVINCE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "PROVINCE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP TỈNH",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/4/4.-pl-kem-qd639130554627382603.xlsx",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tai-chinh-ke-hoach/danh-muc-thu-tuc-hanh-chinh-bi-bai-bo-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-tai-chinh-892213"
+          ],
+          "decisionNumbers": [],
+          "snippet": "cơ quan ngang bộ, cơ quan thuộc Chính phủ I Thủ tục hành chính cấp Trung ương Thủ tục hành chính cấp Tỉnh II 2.000230 Ngày 31/12/2025, Chính phủ đã ban hành Nghị định số 366/2025/NĐ-CP về quản lý và đầu tư vốn nhà nước tại doanh nghiệp, trong đó tại điểm đ khoản 3 Điều 35 đã bãi bỏ Chươ"
+        }
+      ]
+    },
+    {
+      "ma": "2.000309",
+      "classification": "PROVINCE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "PROVINCE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP TỈNH",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/qd-cong-bo-dm-tthc-theo-qd-1289-cua-bo-ct..signed639165256172474387.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-bao-ve-quyen-loi-nguoi-tieu-dung/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-trong-linh-vuc-quan-ly-ban-hang-da-911878"
+          ],
+          "decisionNumbers": [
+            "1298/QĐ-BCT"
+          ],
+          "snippet": "heo quy định Sau cắt giảm THỦ TỤC HÀNH CHÍNH CẤP TỈNH (06 TTHC) LĨNH VỰC QUẢN LÝ BÁN HÀNG ĐA CẤP (06 TTHC) 1. 2.000309 Đăng ký hoạt động bán hàng đa cấp tại địa phương 05 ngày làm việc kể từ khi nhận được hồ sơ hợp lệ 05 ngày làm việc kể từ khi nhận được hồ sơ hợp lệ - Trung tâm PVHCC th"
+        }
+      ]
+    },
+    {
+      "ma": "2.000578",
+      "classification": "PROVINCE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "PROVINCE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP TỈNH",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/qd-cong-bo-dm-tthc-theo-qd-1177-cua-bo-ct..signed639165260606585979.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-xay-dung-va-cong-thuong/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-duoc-sua-doi-bo-sung-bi-bai-bo-thuoc-pham-vi-chuc-nang--911891"
+          ],
+          "decisionNumbers": [
+            "1177/QĐ-BCT"
+          ],
+          "snippet": ". THỦ TỤC HÀNH CHÍNH CẤP TỈNH (03 TTHC) A1. LĨNH VỰC VẬT LIỆU NỔ CÔNG NGHIỆP, TIỀN CHẤT THUỐC NỔ (01 TTHC) 1. 2.000578 Cấp giấy phép xuất khẩu, nhập khẩu vật liệu nổ công nghiệp 05 ngày làm việc kể từ ngày nhận đủ hồ sơ 05 ngày làm việc kể từ ngày nhận đủ hồ sơ - Trung tâm Phục vụ hành c"
+        }
+      ]
+    },
+    {
+      "ma": "2.000619",
+      "classification": "PROVINCE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "PROVINCE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP TỈNH",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/qd-cong-bo-dm-tthc-theo-qd-1289-cua-bo-ct..signed639165256172474387.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-bao-ve-quyen-loi-nguoi-tieu-dung/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-trong-linh-vuc-quan-ly-ban-hang-da-911878"
+          ],
+          "decisionNumbers": [
+            "1298/QĐ-BCT"
+          ],
+          "snippet": "QPPL quy định TTHC bãi bỏ THỦ TỤC HÀNH CHÍNH CẤP TỈNH (01 TTHC) LĨNH VỰC QUẢN LÝ BÁN HÀNG ĐA CẤP (01 TTHC) 1. 2.000619 Thông báo chấm dứt hoạt động |bán hàng đa cấp |tại địa phương Nghị định số 137 /2026/NĐ -CP ngày 07 tháng 4 năm 2026 của Chính phủ về quản lý hoạt động kinh doanh theo p"
+        }
+      ]
+    },
+    {
+      "ma": "2.001035",
+      "classification": "COMMUNE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "COMMUNE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP XÃ",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/11/phuluc-i-qd-3152-bo-tu-phap638984589798308803.docx",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vuc-chung-thuc-thuoc-pham-vi--810099"
+          ],
+          "decisionNumbers": [],
+          "snippet": "ố 23/2015/NĐ-CP ; - Thông tư số 01/2020/TT-BTP ; - Thông tư số 226/2016/TT-BTC; II. Thủ tục hành chính cấp xã 2.001035 Chứng thực giao dịch liên quan đến tài sản là động sản, quyền sử dụng đất, nhà ở Không quá 02 (hai) ngày làm việc, kể từ ngày nhận đủ hồ sơ yêu cầu chứng thực hoặc có th"
+        }
+      ]
+    },
+    {
+      "ma": "2.001395",
+      "classification": "PROVINCE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "PROVINCE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP TỈNH",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/quyet-dinh-so-2320-cong-bo-dm-tthc-sua-doi-bo-sung-va-bai-bo-thuoc-quan-ly-cua-so-tu-phap639178246917435630639180044385831717.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-tu-phap/quyet-dinh-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vu-921702"
+          ],
+          "decisionNumbers": [
+            "1444/QĐ-BTP",
+            "1458/QĐ-BTP"
+          ],
+          "snippet": "Tên TTHC Tên VBQPPL là căn cứ bãi bỏ A. THỦ TỤC HÀNH CHÍNH CẤP TỈNH (15 TTHC) A1. LĨNH VỰC ĐẤU GIÁ TÀI SẢN 1. 2.001395 Đăng ký ho ạt động của doanh nghi ệp đấu giá tài sản Nghị quyết số 66.18/2026/NQ-CP ngày 18/5/2026 c ủa Chính phủ quy định phân quyền, cắt giảm, đơn giản hóa thủ tục hàn"
+        }
+      ]
+    },
+    {
+      "ma": "2.001576",
+      "classification": "PROVINCE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "PROVINCE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP TỈNH",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/qd-2037-noi-dung-lvuc-khoa-hoc-va-cong-nghe639165286925427733.docx",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-nong-nghiep-va-moi-truong/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-sua-doi-bo-sung-thay-the-bi-bai-bo-thuoc-pham-vi-chuc-n-911934"
+          ],
+          "decisionNumbers": [],
+          "snippet": "NỘI DUNG THỦ TỤC HÀNH CHÍNH CẤP TỈNH LĨNH VỰC KHOA HỌC VÀ CÔNG NGHỆ 1. Công nhận tiến bộ kỹ thuật - 2.001576 Trình tự thực hiện: Bước 1: Tổ chức, cá nhân có nhu cầu đăng ký công nhận tiến bộ kỹ thuật (sau đây viết tắt là tổ chức, cá nhân đăng ký) nộp 01 bộ hồ sơ đến c ơ quan có"
+        }
+      ]
+    },
+    {
+      "ma": "2.001616",
+      "classification": "PROVINCE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "PROVINCE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP TỈNH",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/6/qd-2225-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vuc-quang-cao-du-lich-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-vhttdl639172071191846683639173648731271419.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-van-hoa-khoa-hoc-va-thong-tin/danh-muc-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-bi-bai-bo-linh-vuc-quang-cao-du-lich-thuoc-p-917462"
+          ],
+          "decisionNumbers": [
+            "1325/QĐ-BVHTTDL",
+            "1326/QĐ-BVHTTDL"
+          ],
+          "snippet": "C) STT Mã số TTHC Tên TTHC Tên Văn bản QPPL quy định THỦ TỤC HÀNH CHÍNH CẤP TỈNH (02 TTHC) LĨNH VỰC DU LỊCH 1 2.001616 Thủ tục cấp lại giấy phép kinh doanh dịch vụ lữ hành nội địa - Nghị quyết s ố 66.16/2026/NQ-CP ngày 07/4/2026 của Chính phủ - Nghị quyết s ố 66.18/2026/NQ-CP ngày 18/5/2"
+        }
+      ]
+    },
+    {
+      "ma": "2.001765",
+      "classification": "PROVINCE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "PROVINCE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP TỈNH",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/7/qd-2995-ubnd-ngay-29.7.2026-dm-tthc-moi-ban-hanh-sua-doi-bo-sung-linh-vuc-ptthttdt639210827674078254.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-phat-thanh-truyen-hinh-va-thong-tin-dien-tu/quyet-dinh-so-2995-qd-ubnd-ngay-29-7-2026-cua-uy-ban-nhan-dan-thanh-pho-ve-viec-cong-bo-danh-muc-941119"
+          ],
+          "decisionNumbers": [
+            "1759/QĐ-BVHTTDL"
+          ],
+          "snippet": "nh Sau cắt giảm THỦ TỤC HÀNH CHÍNH CẤP TỈNH (02 TTHC) LĨNH VỰC PHÁT THANH TRUYỀN HÌNH VÀ THÔNG TIN ĐIỆN TỬ 1. 2.001765 Thủ tục Cấp Gi ấy chứng nh ận đăng ký thu tín hi ệu truy ền hình nư ớc ngoài tr ực tiếp từ vệ tinh 10 ngày làm việc 06 ngày làm việc - Trung tâm PVHCC thành phố; - Trung"
+        }
+      ]
+    },
+    {
+      "ma": "2.002105",
+      "classification": "PROVINCE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "PROVINCE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP TỈNH",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/1.-qd-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-noi-vu..signed639040667148325665.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-quan-ly-lao-dong-ngoai-nuoc/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-bi-bai-bo-linh-vuc-nguoi-lao-dong-di-lam-viec-o-nuoc-ng-845673"
+          ],
+          "decisionNumbers": [
+            "1561/QĐ-BNV",
+            "4/QĐ-BNV"
+          ],
+          "snippet": "C A THỦ TỤC HÀNH CHÍNH CẤP TỈNH (09 TTHC) A1 LĨNH VỰC NGƯỜI LAO ĐỘNG ĐI LÀM VIỆC Ở NƯỚC NGOÀI THEO HỢP ĐỒNG 1 2.002105 Hỗ trợ cho người lao động thuộc đối tượng là người dân tộc thiểu số, người thuộc hộ nghèo, cận nghèo, thân nhân người có công với cách mạng đi làm việc ở nước ngoài theo"
+        }
+      ]
+    },
+    {
+      "ma": "2.002165",
+      "classification": "COMMUNE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "COMMUNE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP XÃ",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/7/qd-2661639196356943255565639197987966351622.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-boi-thuong-nha-nuoc/quyet-dinh-so-2661-qd-ubnd-ngay-12-7-2026-cua-uy-ban-nhan-dan-thanh-pho-hai-phong-ve-viec-cong-b-933107"
+          ],
+          "decisionNumbers": [
+            "1539/QĐ-BTP"
+          ],
+          "snippet": "pháp; - Thông tư s ố 08/2025/TT- BTP ngày 12/6/2025 của Bộ Tư pháp. B THỦ TỤC HÀNH CHÍNH CẤP XÃ (01 TTHC) 1. 2.002165 Thủ tục gi ải quyết yêu c ầu bồi thư ờng t ại cơ quan tr ực tiếp qu ản lý người thi hành công v ụ gây thiệt hại - Trường hợp có yêu c ầu bồi thường thiệt h ại về tài s ả"
+        }
+      ]
+    },
+    {
+      "ma": "2.002192",
+      "classification": "PROVINCE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "PROVINCE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP TỈNH",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/7/qd-2661639196356943255565639197987966351622.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-boi-thuong-nha-nuoc/quyet-dinh-so-2661-qd-ubnd-ngay-12-7-2026-cua-uy-ban-nhan-dan-thanh-pho-hai-phong-ve-viec-cong-b-933107"
+          ],
+          "decisionNumbers": [
+            "1539/QĐ-BTP"
+          ],
+          "snippet": "quả Phí, lệ phí (nếu có) Căn cứ pháp lý Theo quy định Sau cắt giảm A THỦ TỤC HÀNH CHÍNH CẤP TỈNH (02 TTHC) 1. 2.002192 Thủ tục gi ải quyết yêu c ầu bồi thư ờng t ại cơ quan tr ực tiếp qu ản lý người thi hành công v ụ gây thiệt hại - Trường hợp có yêu c ầu bồi thường thiệt h ại về tài s ả"
+        }
+      ]
+    },
+    {
+      "ma": "2.002193",
+      "classification": "PROVINCE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "PROVINCE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP TỈNH",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/7/qd-2661639196356943255565639197987966351622.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-boi-thuong-nha-nuoc/quyet-dinh-so-2661-qd-ubnd-ngay-12-7-2026-cua-uy-ban-nhan-dan-thanh-pho-hai-phong-ve-viec-cong-b-933107"
+          ],
+          "decisionNumbers": [
+            "1539/QĐ-BTP"
+          ],
+          "snippet": "BỊ BÃI BỎ (01 TTHC) STT Mã TTHC Tên TTHC Tên VBQPPL quy định bãi bỏ THỦ TỤC HÀNH CHÍNH CẤP TỈNH (01 TTHC) 1. 2.002193 Thủ tục xác định cơ quan giải quyết bồi thường Nghị quyết số 66.18/2026/NQ-CP ngày 18/5/2026 của Chính phủ về phân quyền, cắt giảm, đơn giản hóa thủ tục hành chính, điều"
+        }
+      ]
+    },
+    {
+      "ma": "2.002820",
+      "classification": "PROVINCE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "PROVINCE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP TỈNH",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/1.-qd-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-noi-vu..signed639040667148325665.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-quan-ly-lao-dong-ngoai-nuoc/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-bi-bai-bo-linh-vuc-nguoi-lao-dong-di-lam-viec-o-nuoc-ng-845673"
+          ],
+          "decisionNumbers": [
+            "1561/QĐ-BNV",
+            "4/QĐ-BNV"
+          ],
+          "snippet": "n A THỦ TỤC HÀNH CHÍNH CẤP TỈNH (06 TTHC) A1 LĨNH VỰC NGƯỜI LAO ĐỘNG ĐI LÀM VIỆC Ở NƯỚC NGOÀI THEO HỢP ĐỒNG 1 2.002820 Hỗ trợ người lao động đi làm vi ệc ở nước ngoài theo hợp đồng 07 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ 05 ngày làm việc kể từ ngày nhận hồ sơ đầy đủ, hợp lệ - Tr"
+        }
+      ]
+    },
+    {
+      "ma": "2.002821",
+      "classification": "COMMUNE",
+      "verificationStatus": "strong_official_section_heading",
+      "evidenceCount": 1,
+      "evidence": [
+        {
+          "classification": "COMMUNE",
+          "marker": "THỦ TỤC HÀNH CHÍNH CẤP XÃ",
+          "attachmentUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2026/1/1.-qd-cong-bo-danh-muc-tthc-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-noi-vu..signed639040667148325665.pdf",
+          "articleUrls": [
+            "https://vinhbao.haiphong.gov.vn/linh-vuc-quan-ly-lao-dong-ngoai-nuoc/danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-bi-bai-bo-linh-vuc-nguoi-lao-dong-di-lam-viec-o-nuoc-ng-845673"
+          ],
+          "decisionNumbers": [
+            "1561/QĐ-BNV",
+            "4/QĐ-BNV"
+          ],
+          "snippet": "điều của Luật Việc làm về dịch vụ việc làm. B THỦ TỤC HÀNH CHÍNH CẤP XÃ (01 TTHC) B1 LĨNH VỰC ĐÀO TẠO NGHỀ 1 2.002821 Hỗ trợ đào t ạo nghề cho người lao động ở khu v ực nông thôn, ngư ời lao đ ộng là thanh niên 07 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ 05 ngày làm vi ệc kể từ ngà"
+        }
+      ]
+    }
+  ],
+  "conflicts": []
+}

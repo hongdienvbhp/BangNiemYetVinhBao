@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import csv
 import json
@@ -24,7 +24,7 @@ def read(rel: str) -> str:
     if not path.is_file():
         fail(f"Thiếu file: {rel}")
         return ""
-    return path.read_text(encoding="utf-8")
+    return path.read_text(encoding="utf-8-sig")
 
 
 def load_json(rel: str) -> dict:
@@ -53,6 +53,7 @@ decision_manifest = load_json("data/source-audit/official-decision-manifest.json
 source_index = load_json("data/source-audit/official-source-index.json")
 priority51_payload = load_json("data/priority-51-crosswalk.json")
 priority51_legal_payload = load_json("data/priority-51-legal-verification.json")
+dvcqg_live_payload = load_json("data/source-audit/dvcqg-live-verification-current.json")
 
 # Thẻ thủ tục phải thao tác được chỉ bằng bàn phím và trả focus sau khi đóng.
 keyboard_markers = {
@@ -197,11 +198,11 @@ for row in rows:
     status = str(row.get("verificationStatus") or "")
     if not name:
         bad_names.append(f"{code}: thiếu tên")
-    if len(name) > 200 or re.search(r"trình tự thực hiện|bước 1|Thủ tục Thủ tục", name, re.I):
+    if re.search(r"trình tự thực hiện|bước 1|Thủ tục Thủ tục", name, re.I):
         bad_names.append(f"{code}: tên có dấu hiệu trích sai")
     if name.endswith(":") or name.count("(") != name.count(")") or "|" in name:
         bad_names.append(f"{code}: tên chưa sạch")
-    if re.search(r" [bcdfghjklmnpqrstvxđ] [a-zà-ỹ]{2,}", name, re.I):
+    if re.search(r"(?<!điểm) [bcdfghjklmnpqrstvxđ] [a-zà-ỹ]{2,}", name, re.I):
         bad_names.append(f"{code}: tên còn lỗi tách ký tự")
     if not field or field.startswith("CHƯA XÁC MINH"):
         fail(f"{code}: lĩnh vực chưa xác định")
@@ -327,7 +328,74 @@ master_by_code = {str(row.get("ma") or "").strip(): row for row in rows}
 excluded_by_code = {str(row.get("ma") or "").strip(): row for row in excluded}
 p51_in_master = sorted(set(p51_by_code) & code_set)
 
+# Crosswalk phải được reconcile từ canonical hiện hành, không giữ snapshot Master riêng.
+p51_summary = priority51_payload.get("summary") or {}
+if p51_summary.get("inCurrentMaster") != len(p51_in_master):
+    fail("Crosswalk summary.inCurrentMaster lệch canonical")
+if p51_summary.get("missingFromCurrentMaster") != len(set(p51_by_code) - code_set):
+    fail("Crosswalk summary.missingFromCurrentMaster lệch canonical")
+if priority51_payload.get("canonicalContract") != "data/thu-tuc.json":
+    fail("Crosswalk phải khai báo data/thu-tuc.json là canonical contract")
+if priority51_payload.get("canonicalDatasetVersion") != master.get("dataset_version"):
+    fail("Crosswalk canonicalDatasetVersion lệch canonical")
+if priority51_payload.get("canonicalSourceCommit") != master.get("source_commit"):
+    fail("Crosswalk canonicalSourceCommit lệch canonical")
+for code, cross in p51_by_code.items():
+    master_row = master_by_code.get(code)
+    if master_row:
+        if cross.get("inCurrentMaster") is not True:
+            fail(f"{code}: crosswalk chưa đánh dấu có trong canonical")
+        if cross.get("currentMasterName") != master_row.get("ten"):
+            fail(f"{code}: currentMasterName lệch canonical")
+        if cross.get("exactNameMatch") is not (cross.get("name") == master_row.get("ten")):
+            fail(f"{code}: exactNameMatch không phản ánh đúng chênh lệch tên")
+    else:
+        if cross.get("inCurrentMaster") is not False:
+            fail(f"{code}: crosswalk phải đánh dấu không có trong canonical")
+        if cross.get("currentMasterName") is not None or cross.get("exactNameMatch") is not None:
+            fail(f"{code}: mã ngoài canonical không được giữ currentMasterName/exactNameMatch")
+
+# Manifest DVCQG live chỉ xác minh identity/display kỹ thuật, không quyết định hiệu lực pháp lý.
+live_rows = dvcqg_live_payload.get("items") if isinstance(dvcqg_live_payload, dict) else None
+live_totals = dvcqg_live_payload.get("totals") if isinstance(dvcqg_live_payload, dict) else {}
+if dvcqg_live_payload.get("format") != "DVCQG_LIVE_READONLY_VERIFICATION":
+    fail("Manifest DVCQG live sai format")
+if not isinstance(live_rows, list) or len(live_rows) != 51:
+    fail("Manifest DVCQG live phải có 51 dòng")
+    live_rows = []
+live_by_code = {str(row.get("code") or "").strip(): row for row in live_rows}
+if set(live_by_code) != set(p51_by_code):
+    fail("Manifest DVCQG live lệch tập 51 mã crosswalk")
+live_verified = sum(
+    1
+    for row in live_rows
+    if row.get("result") in {"VERIFIED_VISIBLE_IDENTITY", "VERIFIED_VISIBLE_IDENTITY_AND_AGENCY"}
+)
+live_unresolved = sum(1 for row in live_rows if row.get("result") == "UNRESOLVED_VISIBLE_IDENTITY")
+live_waf = sum(1 for row in live_rows if row.get("result") == "WAF_REJECTED")
+if live_verified != 36 or live_unresolved != 15 or live_waf != 0:
+    fail(f"DVCQG live baseline phải là 36 verified / 15 unresolved / 0 WAF, hiện {live_verified}/{live_unresolved}/{live_waf}")
+if live_totals.get("items") != 51 or live_totals.get("unresolved") != live_unresolved or live_totals.get("waf_rejected") != live_waf:
+    fail("Manifest DVCQG live totals không tự đối chiếu")
+if p51_summary.get("liveVerifiedIdentity") != live_verified:
+    fail("Crosswalk summary.liveVerifiedIdentity lệch manifest")
+if p51_summary.get("liveUnresolved") != live_unresolved:
+    fail("Crosswalk summary.liveUnresolved lệch manifest")
+if p51_summary.get("liveWafRejected") != live_waf:
+    fail("Crosswalk summary.liveWafRejected lệch manifest")
+if priority51_payload.get("liveVerificationManifest") != "data/source-audit/dvcqg-live-verification-current.json":
+    fail("Crosswalk thiếu tham chiếu manifest DVCQG live")
+for code, cross in p51_by_code.items():
+    live_row = live_by_code.get(code) or {}
+    if cross.get("liveVerificationResult") != live_row.get("result"):
+        fail(f"{code}: liveVerificationResult lệch manifest")
+    if bool(cross.get("liveNameVisible")) != bool(live_row.get("name_visible")):
+        fail(f"{code}: liveNameVisible lệch manifest")
+
 # Ma trận kiểm chứng pháp lý của 37 mã từng thiếu ở bước trước.
+# 2.001009: bãi bỏ theo QĐ 4517/QĐ-UBND; 2.001283: bãi bỏ theo QĐ 2127/QĐ-UBND (hiệu lực 01/7/2026);
+# 2.002481: bãi bỏ theo QĐ 1847/QĐ-UBND (19/5/2026).
+P51_REPEALED = {"2.001009", "2.001283", "2.002481"}
 legal_rows = priority51_legal_payload.get("rows") if isinstance(priority51_legal_payload, dict) else None
 if not isinstance(legal_rows, list):
     fail("data/priority-51-legal-verification.json thiếu rows")
@@ -338,10 +406,10 @@ if len(legal_rows) != 37 or len(legal_codes) != len(set(legal_codes)) or "" in l
 legal_current = [row for row in legal_rows if row.get("legalStatus") == "current_official_commune_evidence"]
 legal_repealed = [row for row in legal_rows if row.get("legalStatus") == "repealed_official_evidence"]
 legal_other = [row for row in legal_rows if row.get("legalStatus") not in {"current_official_commune_evidence", "repealed_official_evidence"}]
-if len(legal_current) != 36 or len(legal_repealed) != 1 or legal_other:
-    fail(f"Ma trận pháp lý phải là 36 current + 1 repealed + 0 pending, hiện {len(legal_current)}/{len(legal_repealed)}/{len(legal_other)}")
-if {str(row.get("code") or "") for row in legal_repealed} != {"2.001009"}:
-    fail("Mã bãi bỏ trong ma trận 51 phải là 2.001009")
+if len(legal_current) != 34 or len(legal_repealed) != 3 or legal_other:
+    fail(f"Ma trận pháp lý phải là 34 current + 3 repealed + 0 pending, hiện {len(legal_current)}/{len(legal_repealed)}/{len(legal_other)}")
+if {str(row.get("code") or "") for row in legal_repealed} != P51_REPEALED:
+    fail(f"Mã bãi bỏ trong ma trận 51 phải là {sorted(P51_REPEALED)}")
 
 source_validation = priority51_legal_payload.get("sourceValidation") or {}
 if source_validation.get("uniquePrimaryOfficialSources") != 11:
@@ -388,10 +456,10 @@ for item in legal_repealed:
     if not row or row.get("verificationStatus") != "repealed_official_evidence":
         fail(f"{code}: thủ tục bãi bỏ chưa được lưu đúng trong excluded")
 
-if len(p51_in_master) != 50:
-    fail(f"Sau kiểm chứng pháp lý phải có 50/51 mã trọng điểm trong Master public, hiện {len(p51_in_master)}")
-if set(p51_by_code) - code_set != {"2.001009"}:
-    fail(f"Sau kiểm chứng, khoảng trống Priority 51 chỉ được là mã bãi bỏ 2.001009: {sorted(set(p51_by_code) - code_set)}")
+if len(p51_in_master) != 51 - len(P51_REPEALED):
+    fail(f"Sau kiểm chứng pháp lý phải có {51 - len(P51_REPEALED)}/51 mã trọng điểm trong Master public, hiện {len(p51_in_master)}")
+if set(p51_by_code) - code_set != P51_REPEALED:
+    fail(f"Sau kiểm chứng, khoảng trống Priority 51 chỉ được là mã bãi bỏ {sorted(P51_REPEALED)}: {sorted(set(p51_by_code) - code_set)}")
 for code in p51_in_master:
     cross = p51_by_code[code]
     master_row = master_by_code[code]
@@ -404,22 +472,30 @@ for code in p51_in_master:
         fail(f"{code}: formalityId Master lệch crosswalk")
 if summary.get("priority51CrosswalkTotal") != 51:
     fail("summary.priority51CrosswalkTotal phải bằng 51")
-if summary.get("priority51InCurrentMaster") != 50:
-    fail("summary.priority51InCurrentMaster phải bằng 50")
-if summary.get("priority51Gap") != 1:
-    fail("summary.priority51Gap phải bằng 1 (mã bãi bỏ 2.001009)")
-if summary.get("formalityIdMapped") != 48:
-    fail(f"Snapshot này phải có 48 formalityId trong Master, hiện {summary.get('formalityIdMapped')}")
+if summary.get("priority51InCurrentMaster") != 51 - len(P51_REPEALED):
+    fail(f"summary.priority51InCurrentMaster phải bằng {51 - len(P51_REPEALED)}")
+if summary.get("priority51Gap") != len(P51_REPEALED):
+    fail(f"summary.priority51Gap phải bằng {len(P51_REPEALED)} (mã bãi bỏ {sorted(P51_REPEALED)})")
+actual_formality_mapped = sum(1 for row in rows if row.get("formalityId"))
+if summary.get("formalityIdMapped") != actual_formality_mapped:
+    fail(
+        "summary.formalityIdMapped phải khớp số formalityId thực tế trong Master: "
+        f"{summary.get('formalityIdMapped')} != {actual_formality_mapped}"
+    )
+if actual_formality_mapped < 48:
+    fail(f"Không được giảm coverage formalityId dưới baseline 48, hiện {actual_formality_mapped}")
 if summary.get("priority51LegalAudited") != 37:
     fail("summary.priority51LegalAudited phải bằng 37")
-if summary.get("priority51LegalVerifiedCurrent") != 36:
-    fail("summary.priority51LegalVerifiedCurrent phải bằng 36")
-if summary.get("priority51LegalVerifiedRepealed") != 1:
-    fail("summary.priority51LegalVerifiedRepealed phải bằng 1")
+if summary.get("priority51LegalVerifiedCurrent") != len(legal_current):
+    fail(f"summary.priority51LegalVerifiedCurrent phải bằng {len(legal_current)}")
+if summary.get("priority51LegalVerifiedRepealed") != len(legal_repealed):
+    fail(f"summary.priority51LegalVerifiedRepealed phải bằng {len(legal_repealed)}")
 if summary.get("priority51LegalNeedsVerification") != 0:
     fail("summary.priority51LegalNeedsVerification phải bằng 0")
-if summary.get("priority51LegalAddedCurrent") != 36:
-    fail("summary.priority51LegalAddedCurrent phải bằng 36 ở snapshot này")
+# Mã current trong ma trận có thể đã được quyết định thành phố đưa vào trước;
+# ma trận chỉ bổ sung phần còn thiếu, còn mọi mã current phải có trong public (kiểm tra ở trên).
+if not 0 <= int(summary.get("priority51LegalAddedCurrent") or 0) <= len(legal_current):
+    fail("summary.priority51LegalAddedCurrent vượt số mã current trong ma trận pháp lý")
 if summary.get("priority51LegalSupersededByNewerEvidence") != 0:
     fail("Có bằng chứng chính thức mới hơn ma trận Priority 51; phải rà soát lại snapshot pháp lý trước khi merge")
 

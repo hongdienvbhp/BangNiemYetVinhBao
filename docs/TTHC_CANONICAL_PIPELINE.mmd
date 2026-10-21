@@ -1,0 +1,20 @@
+flowchart TD
+    A[Official Sources] --> B[Source Adapters]
+    B --> C[Parser / Normalizer]
+    C --> D[Diff Engine]
+    D --> E[Deterministic Validators]
+    E -->|PASS| F[Canonical TTHC]
+    E -->|Exception| G[AI Exception Review]
+    G --> H[Human QC]
+    H --> F
+    F --> I[Website View]
+    F --> J[Dashboard View]
+    F --> K[Monitor]
+    F --> L[Agent Guidance]
+    F --> M[Reports]
+    N[Policy Registry] --> E
+    O[Single Writer] --> F
+    P[Many Readers] --> I
+    P --> J
+    P --> K
+    P --> L

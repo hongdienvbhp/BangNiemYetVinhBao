@@ -137,31 +137,101 @@
     return DVC_SUBMIT_SEARCH + "?" + params.toString();
   }
 
+  function structuredText(value, fallback = CHUA_XAC_MINH) {
+    if (value === null || value === undefined || value === "") return fallback;
+    if (typeof value === "string" || typeof value === "number") return String(value);
+    if (Array.isArray(value)) {
+      const parts = value.map((item) => {
+        if (item === null || item === undefined) return "";
+        if (typeof item === "string" || typeof item === "number") return String(item);
+        if (typeof item === "object") {
+          const channel = item.hinhThuc ? String(item.hinhThuc) + ": " : "";
+          const main = item.giaTri ?? item.mucThu ?? item.ten ?? item.ketQua ?? "";
+          const note = item.moTa ?? item.ghiChu ?? "";
+          const status = item.trangThai === "not_published" && !main
+            ? "Nguồn chính thức không công bố mức thu"
+            : "";
+          return [channel + String(main || status), note].filter(Boolean).join(" — ");
+        }
+        return String(item);
+      }).filter(Boolean);
+      return parts.length ? parts.join("; ") : fallback;
+    }
+    if (typeof value === "object") {
+      if (value.accessUrl) return "Có dịch vụ trực tuyến";
+      return Object.values(value).filter((v) => typeof v === "string" || typeof v === "number").join(" · ") || fallback;
+    }
+    return fallback;
+  }
+
+  function dossierItems(value) {
+    if (!Array.isArray(value)) return [];
+    return value.map((item) => {
+      if (typeof item === "string") return item;
+      if (!item || typeof item !== "object") return "";
+      const copies = [];
+      if (item.banChinh) copies.push("bản chính: " + item.banChinh);
+      if (item.banSao) copies.push("bản sao: " + item.banSao);
+      const template = item.bieuMau ? "Biểu mẫu: " + item.bieuMau : "";
+      return [item.ten || "", copies.length ? "(" + copies.join(", ") + ")" : "", template]
+        .filter(Boolean)
+        .join(" ");
+    }).filter(Boolean);
+  }
+
   function enrich(tt) {
     const ma = normalizeMa(tt.ma) || tt.ma || "";
     const nganh = guessNganh(tt);
     const formalityId = resolveFormalityId(tt);
     const dvcTraCuu = dvcSearchByName(tt.ten);
+    const guidance = tt.huongDan && typeof tt.huongDan === "object" ? tt.huongDan : {};
+    const guidanceDvctt = guidance.dvctt && typeof guidance.dvctt === "object" ? guidance.dvctt : null;
+    const canonicalSubmissionUrl = String(tt.nopHoSoUrl || "").trim();
+    const guidanceSubmissionUrl = String(
+      guidance.submissionUrl || guidanceDvctt?.accessUrl || ""
+    ).trim();
+    const guidanceDocs = dossierItems(guidance.thanhPhanHoSo);
+    const legacyDocs = Array.isArray(tt.thanhPhan) ? tt.thanhPhan : [];
+    const guidanceSteps = Array.isArray(guidance.quyTrinh) ? guidance.quyTrinh : [];
+    const legacySteps = Array.isArray(tt.quyTrinh) ? tt.quyTrinh : [];
+    const feeOverride = (Array.isArray(tt.phiCanCu) ? tt.phiCanCu : []).find((c) => c.thayMucHuongDan);
+    const feeText = feeOverride
+      ? `${feeOverride.mucTrucTiep} (${feeOverride.canCu})`
+      : structuredText(guidance.lePhi, tt.phi || CHUA_XAC_MINH);
+    const timeText = structuredText(guidance.thoiHan, tt.thoiHan || CHUA_XAC_MINH);
+    const agencyText = structuredText(guidance.coQuanThucHien, tt.coQuan || CHUA_XAC_MINH);
+    const resultText = structuredText(guidance.ketQua, tt.ketQua || CHUA_XAC_MINH);
+    const dvcttText = guidanceDvctt
+      ? (guidanceDvctt.verificationStatus ? "Đã xác minh · " + guidanceDvctt.verificationStatus : "Đã xác minh")
+      : structuredText(tt.dvctt, CHUA_XAC_MINH);
+
     return {
       ...tt,
       ma,
       nganh,
       formalityId,
       cap: tt.cap || CHUA_XAC_MINH,
-      dvctt: tt.dvctt || CHUA_XAC_MINH,
-      phi: tt.phi || CHUA_XAC_MINH,
+      dvctt: dvcttText,
+      phi: feeText,
       quyetDinh: tt.quyetDinh || CHUA_XAC_MINH,
-      thoiHan: tt.thoiHan || CHUA_XAC_MINH,
-      coQuan: tt.coQuan || CHUA_XAC_MINH,
+      thoiHan: timeText,
+      coQuan: agencyText,
+      ketQua: resultText,
       dvcLink: tt.dvcLink || dvcDetailUrlById(formalityId) || dvcTraCuu,
-      dvcNop: tt.dvcNop || dvcSubmitUrl(formalityId),
+      dvcNop: canonicalSubmissionUrl || guidanceSubmissionUrl,
       dvcTraCuu,
       dvcTthcHome: DVC_TTHC_HOME,
       dvcHp: DVC_HP,
       maNgan: shortMa(tt.ma),
-      quyTrinh: Array.isArray(tt.quyTrinh) ? tt.quyTrinh : [],
-      thanhPhan: Array.isArray(tt.thanhPhan) ? tt.thanhPhan : [],
-      daXacMinh: Boolean(tt.daXacMinh)
+      quyTrinh: guidanceSteps.length ? guidanceSteps : legacySteps,
+      thanhPhan: guidanceDocs.length ? guidanceDocs : legacyDocs,
+      daXacMinh: Boolean(
+        tt.daXacMinh ||
+        tt.verificationStatus === "verified_official" ||
+        Object.keys(guidance).length
+      ),
+      hasGuidance: Object.keys(guidance).length > 0,
+      submitRoute: String(tt.cap || "").trim().toLowerCase().startsWith("cấp tỉnh") ? "province" : "ward"
     };
   }
 
@@ -304,6 +374,7 @@
       ${status}
       <span class="tag tag-dvc">DVCTT: ${esc(tt.dvctt)}</span>
       <span class="tag tag-phi">Phí/lệ phí: ${esc(tt.phi)}</span>
+      ${isTrueFlag(tt.mienPhiTrucTuyen) ? '<span class="tag tag-ok">Miễn lệ phí khi nộp trực tuyến</span>' : ""}
       <span class="tag tag-lv">LV: ${esc(tt.linhVuc)}</span>
       <span class="tag tag-nganh">Ngành: ${esc(tt.nganh)}</span>
       ${tt.nhanh ? '<span class="tag tag-unverified">Giải quyết trong ngày: chưa xác minh</span>' : ""}`;
@@ -438,52 +509,37 @@
         <div><strong>Cơ quan thực hiện</strong><span>${esc(tt.coQuan)}</span></div>
         <div><strong>Cấp giải quyết</strong><span>${esc(tt.cap)}</span></div>
         <div><strong>Thời hạn</strong><span>${esc(tt.thoiHan)}</span></div>
+        <div><strong>Phí/lệ phí</strong><span>${esc(tt.phi)}</span></div>
+        ${tt.phiOnline ? `<div><strong>Khi nộp trực tuyến</strong><span>${esc(tt.phiOnline)}</span></div>` : ""}
+        ${Array.isArray(tt.phiCanCu) && tt.phiCanCu.length ? `<div class="fee-basis"><strong>Căn cứ phí/lệ phí hiện hành</strong>${tt.phiCanCu
+          .map(
+            (c) =>
+              `<table class="data-table fee-table"><tbody><tr><th>Khoản phí/lệ phí</th><td>${esc(c.khoanPhi)}</td></tr><tr><th>Nghị quyết/văn bản căn cứ</th><td>${esc(c.canCu)}</td></tr><tr><th>Mức thu trực tiếp/bưu chính</th><td>${esc(c.mucTrucTiep)}</td></tr><tr><th>Mức thu trực tuyến</th><td>${esc(c.mucTrucTuyen)}</td></tr><tr><th>Áp dụng từ</th><td>${esc(c.apDungTu)}</td></tr><tr><th>Quy định chuyển tiếp</th><td>${esc(c.chuyenTiep || "Không có")}</td></tr></tbody></table>`
+          )
+          .join("")}</div>` : ""}
+        <div><strong>Kết quả</strong><span>${esc(tt.ketQua)}</span></div>
         <div><strong>Địa chỉ tiếp nhận</strong><span>Trung tâm PVHCC xã Vĩnh Bảo — Đường 20/8, xã Vĩnh Bảo, TP Hải Phòng</span></div>
         <div><strong>Hotline</strong><span>0823.919.686</span></div>
       </div>
 
       <div class="detail-box">
-        <div class="box-label">🚩 QUY TRÌNH THỰC HIỆN & NỘP HỒ SƠ</div>
+        <div class="box-label">🚩 QUY TRÌNH THỰC HIỆN</div>
         <ol class="step-list">${steps}</ol>
-        <a class="link-row" href="${esc(tt.dvcLink)}" target="_blank" rel="noopener">
-          <span class="link-ico">📄</span>
-          <span>
-            <strong>${tt.formalityId ? "Xem chi tiết TTHC trên Cổng DVC Quốc gia" : "Tra cứu TTHC trên Cổng DVC Quốc gia"}</strong>
-            <small>${tt.formalityId ? "formalityId: " + esc(tt.formalityId) : "Chưa có formalityId; mở kết quả tra cứu theo tên thủ tục"}</small>
-          </span>
-          <span class="link-go">Mở xem ↗</span>
-        </a>
-        <a class="link-row" href="${esc(tt.dvcTraCuu)}" target="_blank" rel="noopener" style="margin-top:0.5rem">
-          <span class="link-ico">🔍</span>
-          <span>
-            <strong>Tìm “${esc(tt.ten)}” trên Cổng DVC</strong>
-            <small>Tìm kiếm theo tên thủ tục (kết quả từ dichvucong.gov.vn)</small>
-          </span>
-          <span class="link-go">Tra cứu ↗</span>
-        </a>
-        <a class="link-row" href="${esc(tt.dvcTthcHome)}" target="_blank" rel="noopener" style="margin-top:0.5rem">
-          <span class="link-ico">📋</span>
-          <span>
-            <strong>Danh mục TTHC Quốc gia</strong>
-            <small>Trang chủ tra cứu thủ tục trên Cổng DVCQG</small>
-          </span>
-          <span class="link-go">Mở ↗</span>
-        </a>
       </div>
 
       <div class="detail-box">
-        <div class="box-label">📁 THÀNH PHẦN HỒ SƠ (tham khảo)</div>
+        <div class="box-label">📁 THÀNH PHẦN HỒ SƠ</div>
         <ul class="doc-list">${docs}</ul>
-        <p class="muted-note">Thành phần hồ sơ chính thức theo từng mã TTHC được công bố trên Cổng Dịch vụ công Quốc gia.</p>
+        <p class="muted-note">${tt.hasGuidance ? "Nội dung đã được đồng bộ vào canonical và gắn nguồn chứng minh theo từng trường dữ liệu." : "Thành phần hồ sơ chính thức theo từng mã TTHC được công bố trên Cổng Dịch vụ công Quốc gia."}</p>
       </div>
 
       <a class="btn-dvc" href="${esc(tt.dvcNop)}" target="_blank" rel="noopener">
-        ${tt.formalityId ? "✨ NỘP HỒ SƠ / CHỌN ĐƠN VỊ TRÊN CỔNG DVC QUỐC GIA ↗" : "🔎 MỞ CỔNG DVC QUỐC GIA ĐỂ TRA CỨU, NỘP HỒ SƠ ↗"}
+        ✨ NỘP HỒ SƠ TRỰC TUYẾN ↗
       </a>
       <p class="dvc-hint">
-        ${tt.formalityId ? "Liên kết đã gắn formalityId và địa bàn Thành phố Hải Phòng → xã Vĩnh Bảo." : "Chưa có formalityId của thủ tục này; cần tra cứu, chọn đúng thủ tục và địa bàn Thành phố Hải Phòng → xã Vĩnh Bảo trước khi nộp."}<br/>
-        Cổng DVC Quốc gia: <a href="${esc(tt.dvcNop)}" target="_blank" rel="noopener">dichvucong.gov.vn</a>
-        · Cổng Hải Phòng: <a href="${esc(tt.dvcHp)}" target="_blank" rel="noopener">dichvucong.haiphong.gov.vn</a>
+        ${tt.submitRoute === "province"
+          ? "Mở Cổng Dịch vụ công Quốc gia tại đúng cấp thành phố Hải Phòng. Nếu thủ tục được tiếp nhận tại Trung tâm PVHCC xã Vĩnh Bảo thì đây chỉ là điểm tiếp nhận, không thay đổi cấp có thẩm quyền giải quyết."
+          : "Mở Cổng Dịch vụ công Quốc gia tại đúng xã Vĩnh Bảo, thành phố Hải Phòng."}
       </p>
     `;
 
@@ -721,10 +777,11 @@
     const qdBox = document.getElementById("qdCongBoBox");
     if (qdBox && extra.quyetDinhCongBo) {
       qdBox.innerHTML = extra.quyetDinhCongBo
-        .map(
-          (q) =>
-            `<article class="doc-card"><div class="doc-so">${esc(q.so)}</div><div class="doc-ngay">Ngày ${esc(q.ngay)}</div><h3>${esc(q.trichYeu)}</h3><span class="tag tag-lv">${esc(q.linhVuc)}</span>${q.link ? `<a class="doc-link" href="${esc(q.link)}" target="_blank" rel="noopener">Xem nguồn ↗</a>` : ""}</article>`
-        )
+        .map((q) => {
+          const hl = q.hieuLuc ? ` · Hiệu lực: ${esc(q.hieuLuc)}` : "";
+          const cnt = q.soTTHC ? ` · ${esc(q.soTTHC)} TTHC trong danh mục` : "";
+          return `<article class="doc-card"><div class="doc-so">${esc(q.so)}</div><div class="doc-ngay">Ngày ${esc(q.ngay)}${hl}${cnt}</div><h3>${esc(q.trichYeu)}</h3><span class="tag tag-lv">${esc(q.linhVuc)}</span>${q.trangThai ? `<span class="tag tag-phi">${esc(q.trangThai)}</span>` : ""}${q.link ? `<a class="doc-link" href="${esc(q.link)}" target="_blank" rel="noopener">Xem nguồn ↗</a>` : ""}</article>`;
+        })
         .join("");
     }
     const qdTheo = document.getElementById("qdTheoBox");
@@ -748,25 +805,18 @@
     const phiBox = document.getElementById("phiBox");
     if (phiBox && extra.phiLePhi) {
       const p = extra.phiLePhi;
-      let html = `<p class="doc-intro">${esc(p.ghiChuChung)}</p><h3 class="sub-h">Nghị quyết HĐND TP Hải Phòng</h3><div class="doc-list-cards">`;
+      let html = `<p class="doc-intro">${esc(p.ghiChuChung)}</p><h3 class="sub-h">Văn bản về phí, lệ phí (cập nhật ${esc(p.capNhat || "")})</h3><div class="doc-list-cards">`;
       html += (p.nghiQuyetHP || [])
         .map(
           (q) =>
-            `<article class="doc-card"><div class="doc-so">${esc(q.so)}</div><div class="doc-ngay">Ngày ${esc(q.ngay)}</div><h3>${esc(q.trichYeu)}</h3></article>`
-        )
-        .join("");
-      html += `</div><h3 class="sub-h">Thông tư / quyết định Bộ ngành</h3><div class="doc-list-cards">`;
-      html += (p.thongTuBo || [])
-        .map(
-          (q) =>
-            `<article class="doc-card"><div class="doc-so">${esc(q.so)}</div><div class="doc-ngay">${esc(q.cq)} · ${esc(q.ngay)}</div><h3>${esc(q.trichYeu)}</h3></article>`
+            `<article class="doc-card"><div class="doc-so">${esc(q.so)}</div><div class="doc-ngay">Ngày ${esc(q.ngay)}</div><h3>${esc(q.trichYeu)}</h3>${q.trangThai ? `<span class="tag tag-phi">${esc(q.trangThai)}</span>` : ""}${q.ghiChu ? `<p class="doc-note">${esc(q.ghiChu)}</p>` : ""}${q.link ? `<a class="doc-link" href="${esc(q.link)}" target="_blank" rel="noopener">Xem nguồn ↗</a>` : ""}</article>`
         )
         .join("");
       html += `</div>`;
       (p.mucThamKhao || []).forEach((nh) => {
-        html += `<h3 class="sub-h">${esc(nh.nhom)}</h3><div class="table-wrap"><table class="data-table fee-table"><thead><tr><th>Nội dung</th><th>Mức thu (tham khảo)</th></tr></thead><tbody>`;
+        html += `<h3 class="sub-h">${esc(nh.nhom)}</h3><div class="table-wrap"><table class="data-table fee-table"><thead><tr><th>Nội dung</th><th>Mức thu</th></tr></thead><tbody>`;
         html += nh.muc.map((m) => `<tr><td>${esc(m.ten)}</td><td><strong>${esc(m.muc)}</strong></td></tr>`).join("");
-        html += `</tbody></table></div>`;
+        html += `</tbody></table></div>${nh.ghiChu ? `<p class="doc-note">${esc(nh.ghiChu)}</p>` : ""}`;
       });
       phiBox.innerHTML = html;
     }

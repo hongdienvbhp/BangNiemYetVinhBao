@@ -1,0 +1,128 @@
+{
+  "format": "priority50-official-time-overrides",
+  "version": 1,
+  "verifiedAt": "2026-09-21",
+  "rows": [
+    {
+      "ma": "1.001612",
+      "thoiHan": [
+        {
+          "hinhThuc": "Trực tiếp",
+          "giaTri": "Trong thời hạn 03 (ba) ngày làm việc kể từ ngày nhận hồ sơ."
+        }
+      ],
+      "sourceUrl": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=2350",
+      "sourceRole": "central_content_reference"
+    },
+    {
+      "ma": "1.012812",
+      "thoiHan": [
+        {
+          "hinhThuc": "Theo quy định Hải Phòng",
+          "giaTri": "30 ngày làm việc"
+        }
+      ],
+      "sourceUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6825/steeringdocument/2025/7/tb-2-cong-khai-niem-yet-dmtthc-linh-vuc-nn-mt-tham-quyen-giai-quyet-cap-xa.signed638886076010096014.pdf",
+      "sourceRole": "local_legal_effect"
+    },
+    {
+      "ma": "2.000635",
+      "thoiHan": [
+        {
+          "hinhThuc": "Trực tiếp/Trực tuyến/Bưu chính",
+          "giaTri": "Ngay trong ngày tiếp nhận hồ sơ; trường hợp nhận hồ sơ sau 15 giờ mà không giải quyết được ngay thì trả kết quả trong ngày làm việc tiếp theo."
+        }
+      ],
+      "sourceUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6376/tintuc/2025/9/230-cong-khai-quy-trinh-noi-bo-giam-thoi-gian-thuc-hien-tthc-linh-vuc-tu-phap_223-qd-stp_27-8-2025.signed638936462397153411.pdf",
+      "sourceRole": "local_legal_effect"
+    },
+    {
+      "ma": "2.000815",
+      "thoiHan": [
+        {
+          "hinhThuc": "Trực tiếp",
+          "giaTri": "Thực hiện ngay trong ngày tiếp nhận yêu cầu hoặc trong ngày làm việc tiếp theo nếu tiếp nhận sau 15 giờ; trường hợp khối lượng lớn/phức tạp có thể kéo dài theo quy định."
+        }
+      ],
+      "sourceUrl": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=2630",
+      "sourceRole": "central_content_reference"
+    },
+    {
+      "ma": "2.000884",
+      "thoiHan": [
+        {
+          "hinhThuc": "Trực tiếp",
+          "giaTri": "Ngay trong ngày cơ quan, tổ chức tiếp nhận yêu cầu hoặc trong ngày làm việc tiếp theo nếu tiếp nhận sau 15 giờ."
+        }
+      ],
+      "sourceUrl": "https://dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=2886&open_popup=1",
+      "sourceRole": "central_content_reference"
+    },
+    {
+      "ma": "2.000913",
+      "thoiHan": [
+        {
+          "hinhThuc": "Trực tiếp",
+          "giaTri": "Ngay trong ngày cơ quan, tổ chức tiếp nhận yêu cầu hoặc trong ngày làm việc tiếp theo nếu tiếp nhận sau 15 giờ."
+        }
+      ],
+      "sourceUrl": "https://dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=3014",
+      "sourceRole": "central_content_reference"
+    },
+    {
+      "ma": "2.000942",
+      "thoiHan": [
+        {
+          "hinhThuc": "Trực tiếp",
+          "giaTri": "Trong ngày cơ quan, tổ chức tiếp nhận yêu cầu hoặc trong ngày làm việc tiếp theo nếu tiếp nhận sau 15 giờ."
+        }
+      ],
+      "sourceUrl": "https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=3113",
+      "sourceRole": "central_content_reference"
+    },
+    {
+      "ma": "2.000992",
+      "thoiHan": [
+        {
+          "hinhThuc": "Trực tiếp",
+          "giaTri": "Trong ngày cơ quan, tổ chức tiếp nhận yêu cầu hoặc trong ngày làm việc tiếp theo nếu tiếp nhận sau 15 giờ; có thể kéo dài hơn theo thỏa thuận bằng văn bản."
+        }
+      ],
+      "sourceUrl": "https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=3304",
+      "sourceRole": "central_content_reference"
+    },
+    {
+      "ma": "2.001016",
+      "thoiHan": [
+        {
+          "hinhThuc": "Trực tiếp",
+          "giaTri": "Không quá 02 (hai) ngày làm việc kể từ ngày nhận đủ hồ sơ yêu cầu chứng thực; có thể kéo dài hơn theo thỏa thuận bằng văn bản."
+        }
+      ],
+      "sourceUrl": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=3388",
+      "sourceRole": "central_content_reference"
+    },
+    {
+      "ma": "2.001035",
+      "thoiHan": [
+        {
+          "hinhThuc": "Trực tiếp",
+          "giaTri": "Không quá 02 (hai) ngày làm việc kể từ ngày nhận đủ hồ sơ yêu cầu chứng thực; có thể kéo dài hơn theo thỏa thuận bằng văn bản."
+        }
+      ],
+      "sourceUrl": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=3496",
+      "sourceRole": "central_content_reference"
+    },
+    {
+      "ma": "2.001406",
+      "thoiHan": [
+        {
+          "hinhThuc": "Trực tiếp",
+          "giaTri": "Không quá 02 (hai) ngày làm việc kể từ ngày nhận đủ hồ sơ yêu cầu chứng thực; có thể kéo dài hơn theo thỏa thuận bằng văn bản."
+        }
+      ],
+      "sourceUrl": "https://dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=4780",
+      "sourceRole": "central_content_reference"
+    }
+  ]
+}

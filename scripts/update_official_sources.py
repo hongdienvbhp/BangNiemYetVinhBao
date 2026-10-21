@@ -41,7 +41,7 @@ DECISION_URL_RE = re.compile(
     re.IGNORECASE,
 )
 DECISION_TEXT_RE = re.compile(
-    r"(?:Quyết\s*định\s*(?:số\s*:?)?\s*)(?P<num>\d+)\s*/\s*Q(?:Đ|D)-UBND",
+    r"(?:Quyết\s*định\s*(?:số\s*)?:?\s*)(?P<num>\d+)\s*/\s*Q(?:Đ|D)-UBND",
     re.IGNORECASE,
 )
 DATE_TEXT_RE = re.compile(
@@ -177,6 +177,10 @@ def classify_title(title: str, config: dict) -> str:
     for marker in config.get("internalDecisionMarkers", []):
         if fold(marker) in value:
             return "internal_process"
+    # Quyết định ủy quyền/phân công giải quyết TTHC là quyết định tổ chức thực hiện,
+    # không phải quyết định công bố danh mục TTHC cho người dân.
+    if "uy quyen cho" in value and "thu tuc hanh chinh" in value:
+        return "internal_process"
     # Local portals can republish ministry decisions and occasionally carry a
     # misleading QD-UBND slug. Do not ingest those as city legal decisions.
     if re.search(r"\bcua bo\b", value) and not any(
@@ -188,6 +192,9 @@ def classify_title(title: str, config: dict) -> str:
             return "public_tthc"
     if "cong bo" in value and "thu tuc hanh chinh" in value:
         return "public_tthc"
+    # Trang TTHC có thể lẫn quyết định/kế hoạch CCHC không công bố TTHC.
+    if "thu tuc hanh chinh" not in value:
+        return "non_tthc"
     return "needs_review"
 
 
@@ -499,6 +506,30 @@ def main() -> int:
         )
         classification = details["classification"]
 
+        # Các bài không tạo danh mục/hiệu lực TTHC public được loại theo nội dung
+        # trước khi yêu cầu số quyết định; mirror có thể không hiển thị số trong URL/tiêu đề.
+        if classification == "external_reference":
+            set_index_record(
+                index_record(
+                    candidate,
+                    classification="external_reference",
+                    title=details["title"],
+                    status="excluded_external_authority",
+                )
+            )
+            continue
+        if classification == "non_tthc":
+            set_index_record(
+                index_record(candidate, classification="non_tthc", title=details["title"], status="excluded_non_tthc")
+            )
+            continue
+        if classification == "internal_process" and not decision_no:
+            set_index_record(
+                index_record(candidate, classification="internal_process", title=details["title"], status="excluded_internal_unidentified")
+            )
+            stats["internalDecisionsRecorded"] += 1
+            continue
+
         if not decision_no:
             set_index_record(
                 index_record(candidate, classification="needs_review", title=details["title"], status="missing_decision_number")
@@ -526,17 +557,6 @@ def main() -> int:
                 index_record(candidate, classification=classification, title=details["title"], status="excluded_internal")
             )
             stats["internalDecisionsRecorded"] += 1
-            continue
-
-        if classification == "external_reference":
-            set_index_record(
-                index_record(
-                    candidate,
-                    classification="external_reference",
-                    title=details["title"],
-                    status="excluded_external_authority",
-                )
-            )
             continue
 
         if classification != "public_tthc" or not details.get("pdfUrl"):

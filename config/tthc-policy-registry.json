@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "canonicalOwner": "BangNiemYetVinhBao/data/thu-tuc.json",
+  "writePolicy": "single-writer",
+  "consumerPolicy": "read-transform-display-only",
+  "rules": {
+    "uniqueProcedureCode": {"severity": "error"},
+    "requiredCanonicalFields": {
+      "severity": "error",
+      "fields": ["ma", "ten", "linhVuc", "cap", "sourceSnapshotDate", "sourceEvidence"]
+    },
+    "provenance": {
+      "severity": "error",
+      "minimumEvidenceFields": ["classification", "sourceRole", "evidenceId"]
+    },
+    "activePublication": {
+      "severity": "error",
+      "requireCommuneReceptionEvidence": true
+    },
+    "onlineSubmission": {
+      "severity": "error",
+      "requireLevelMatchedEndpointWhenPresent": true
+    },
+    "consumerMasterDuplication": {
+      "severity": "error",
+      "forbiddenPatterns": ["master-data.json", "thu-tuc-master.json", "tthc-master.json"]
+    }
+  },
+  "agentPolicy": {
+    "readers": "many",
+    "writer": "canonical-patch-tool-only",
+    "aiUse": ["semantic-diff", "exception-review", "document-interpretation"],
+    "deterministicFirst": ["schema", "duplicate", "url", "enum", "counts", "drift"]
+  }
+}

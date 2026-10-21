@@ -40,6 +40,25 @@ class OfficialSourceScannerTests(unittest.TestCase):
         )
         self.assertEqual(scanner.classify_title(title, {}), "external_reference")
 
+    def test_decision_identity_accepts_colon_without_word_so(self):
+        number, date = scanner.parse_decision_identity(
+            "https://namsach.haiphong.gov.vn/article",
+            "Công khai Quyết định: 3879/QĐ-UBND ngày 20/9/2026 của UBND thành phố Hải Phòng",
+        )
+        self.assertEqual(number, "3879/QĐ-UBND")
+        self.assertEqual(date, "2026-09-20")
+
+    def test_delegation_decision_is_internal_process(self):
+        title = (
+            "Quyết định 3871/QĐ-UBND ủy quyền cho Giám đốc Sở Văn hóa, Thể thao và Du lịch "
+            "thực hiện nhiệm vụ giải quyết các thủ tục hành chính lĩnh vực Báo chí"
+        )
+        self.assertEqual(scanner.classify_title(title, {}), "internal_process")
+
+    def test_unrelated_decision_on_tthc_listing_is_non_tthc(self):
+        title = "Quyết định ban hành Kế hoạch tổ chức Hội thi trực tuyến tìm hiểu công tác cải cách hành chính"
+        self.assertEqual(scanner.classify_title(title, {}), "non_tthc")
+
     def test_missing_manifest_date_is_enriched_from_consistent_official_listing(self):
         manifest = {
             "3726/QĐ-UBND": {

@@ -1,0 +1,31 @@
+{
+  "format": "priority50-local-agency-overrides",
+  "version": 1,
+  "verifiedAt": "2026-09-21",
+  "rows": [
+    {
+      "ma": "1.012812",
+      "coQuanThucHien": "Ủy ban nhân dân cấp xã",
+      "sourceUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6825/steeringdocument/2025/7/tb-2-cong-khai-niem-yet-dmtthc-linh-vuc-nn-mt-tham-quyen-giai-quyet-cap-xa.signed638886076010096014.pdf",
+      "note": "Danh mục Hải Phòng xác định tiếp nhận tại Trung tâm phục vụ hành chính công cấp xã."
+    },
+    {
+      "ma": "2.000806",
+      "coQuanThucHien": "Ủy ban nhân dân cấp xã",
+      "sourceUrl": "https://cdn.haiphong.gov.vn/gov-hpg/6825/tintuc/2025/12/thong-bao-niem-yet-linh-vuc-ho-tich.signed-1-639011359985618976.pdf",
+      "note": "Danh mục hộ tịch Hải Phòng hiện hành công khai thủ tục tại cấp xã."
+    },
+    {
+      "ma": "2.000942",
+      "coQuanThucHien": "Ủy ban nhân dân cấp xã",
+      "sourceUrl": "https://sotp.haiphong.gov.vn/van-ban-chi-dao-dieu-hanh-68017/cong-bo-thu-tuc-hanh-chinh-linh-vuc-chung-thuc-769850",
+      "note": "Sở Tư pháp Hải Phòng công bố TTHC chứng thực thuộc phạm vi cấp xã."
+    },
+    {
+      "ma": "2.001035",
+      "coQuanThucHien": "Ủy ban nhân dân cấp xã",
+      "sourceUrl": "https://sotp.haiphong.gov.vn/van-ban-chi-dao-dieu-hanh-68017/cong-bo-thu-tuc-hanh-chinh-linh-vuc-chung-thuc-769850",
+      "note": "Sở Tư pháp Hải Phòng công bố TTHC chứng thực thuộc phạm vi cấp xã."
+    }
+  ]
+}

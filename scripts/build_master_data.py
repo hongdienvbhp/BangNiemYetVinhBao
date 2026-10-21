@@ -19,14 +19,34 @@ from difflib import SequenceMatcher
 from pathlib import Path
 from urllib.parse import urlparse
 
+try:
+    from scripts.canonical_v4 import (
+        SOURCE_COMMIT_KIND,
+        compute_source_commit,
+        derive_dataset_date,
+        upgrade_record_to_v4,
+        build_scoped_submission_url,
+    )
+except ModuleNotFoundError:
+    from canonical_v4 import (
+        SOURCE_COMMIT_KIND,
+        compute_source_commit,
+        derive_dataset_date,
+        upgrade_record_to_v4,
+        build_scoped_submission_url,
+    )
+
 ROOT = Path(__file__).resolve().parents[1]
 CANDIDATES = ROOT / "data/source-audit/web010-vinhbao-commune-code-candidates-20260906.json"
 ATTACHMENTS = ROOT / "data/source-audit/vinhbao-tthc-attachment-evidence-20260906.json"
 DVC_MAPPING = ROOT / "data/source-audit/dvcqg-mapping-candidates-20260907.json"
+DVC_FORMALITY_CANDIDATES = ROOT / "data/source-audit/dvcqg-formality-candidates-current.json"
 VERIFIED_DVC_CSV = ROOT / "data/formalityId-mapping-mau.csv"
 PRIORITY51_CROSSWALK = ROOT / "data/priority-51-crosswalk.json"
 PRIORITY51_LEGAL_VERIFICATION = ROOT / "data/priority-51-legal-verification.json"
 CITY_UPDATES = ROOT / "data/source-audit/city-updates-current.json"
+OFFICIAL_TABLE_LEVELS = ROOT / "data/source-audit/official-table-level-classification.json"
+GUIDANCE_FIELD_PROMOTION_READY = ROOT / "data/source-audit/guidance-field-promotion-ready.json"
 LEGACY_JS = ROOT / "js/data.js"
 MASTER_JSON = ROOT / "data/thu-tuc.json"
 FALLBACK_JS = ROOT / "js/master-data-fallback.js"
@@ -50,7 +70,6 @@ def _source_snapshot_date() -> str:
 
 
 SOURCE_SNAPSHOT_DATE = _source_snapshot_date()
-BUILD_DATE = SOURCE_SNAPSHOT_DATE
 OFFICIAL_SOURCE = "https://vinhbao.haiphong.gov.vn/thu-tuc-hanh-chinh"
 CITY_OFFICIAL_SOURCE = "https://haiphong.gov.vn/thu-tuc-hanh-chinh-76761"
 
@@ -319,6 +338,22 @@ def load_dvc_mapping() -> dict[str, list[dict]]:
         payload = load_json(DVC_MAPPING)
         for row in payload.get("rows", []):
             grouped[normalize_code(row.get("code", ""))].append(row)
+    if DVC_FORMALITY_CANDIDATES.exists():
+        payload = load_json(DVC_FORMALITY_CANDIDATES)
+        for row in payload.get("rows", []):
+            code = normalize_code(row.get("ma", ""))
+            fid = str(row.get("formalityId") or "").strip()
+            if not code or not fid:
+                continue
+            grouped[code].append({
+                "code": code,
+                "formalityId": fid,
+                "sourceUrl": row.get("sourceUrl") or "",
+                "scrapedAt": row.get("scrapedAt") or "",
+                "verificationStatus": "technical_exact_code_candidate",
+                "is_ward": bool(row.get("isWard")),
+                "is_province": bool(row.get("isProvince")),
+            })
     if VERIFIED_DVC_CSV.exists():
         with VERIFIED_DVC_CSV.open("r", encoding="utf-8-sig", newline="") as f:
             for row in csv.DictReader(f):
@@ -399,20 +434,121 @@ CITY_NAME_OVERRIDES = {
     "1.000321": "Đăng ký khai thác tuyến, bổ sung hoặc thay thế phương tiện khai thác tuyến vận tải hành khách cố định giữa Việt Nam và Campuchia",
     "1.004878": "Giải quyết việc nuôi con nuôi có yếu tố nước ngoài đối với trường hợp cha dượng, mẹ kế nhận con riêng của vợ hoặc chồng; cô, cậu, dì, chú, bác ruột nhận cháu làm con nuôi",
     "1.008675": "Cấp giấy phép trao đổi, tặng cho mẫu vật của loài nguy cấp, quý, hiếm được ưu tiên bảo vệ",
-    "1.008725": "Chuyển đổi trường tiểu học, THCS tư thục sang hoạt động không vì lợi nhuận",
+    "1.008725": "Chuyển đổi trường tiểu học tư thục, trường trung học cơ sở tư thục, trường phổ thông tư thục có nhiều cấp học có cấp học cao nhất là trung học cơ sở do nhà đầu tư trong nước đầu tư sang trường tiểu học tư thục, trường trung học cơ sở tư thục, trường phổ thông tư thục có nhiều cấp học có cấp học cao nhất là trung học cơ sở hoạt động không vì lợi nhuận",
     "1.009374": "Cấp giấy phép xuất bản bản tin (địa phương)",
     "1.009386": "Văn bản chấp thuận thay đổi nội dung ghi trong giấy phép xuất bản bản tin (địa phương)",
     "1.013724": "Vay vốn hỗ trợ tạo việc làm, duy trì và mở rộng việc làm từ Quỹ quốc gia về việc làm đối với người lao động",
     "1.013781": "Thủ tục chấp thuận thay đổi nội dung ghi trong giấy phép hoạt động báo chí đối với cơ quan báo chí của địa phương",
-    "2.000424": "Hỗ trợ khi hòa giải viên gặp tai nạn hoặc rủi ro ảnh hưởng sức khỏe, tính mạng khi hòa giải",
+    "2.000424": "Thủ tục thực hiện hỗ trợ khi hòa giải viên gặp tai nạn hoặc rủi ro ảnh hưởng đến sức khỏe, tính mạng trong khi thực hiện hoạt động hòa giải",
     "2.000592": "Thủ tục giải quyết khiếu nại về trợ giúp pháp lý",
     "2.002821": "Hỗ trợ đào tạo nghề cho người lao động ở khu vực nông thôn, người lao động là thanh niên",
     "3.000242": "Cấp văn bản cho phép sử dụng thẻ ABTC tại địa phương",
+    "1.001138": "Cấp Giấy phép hoạt động đối với trạm sơ cấp cứu chữ thập đỏ",
+    "1.003915": "Thủ tục cấp Chứng chỉ hành nghề đấu giá",
+    "1.013822": "Hỗ trợ chi phí mai táng đối với nghệ nhân nhân dân, nghệ nhân ưu tú có thu nhập thấp, hoàn cảnh khó khăn",
+    "2.000559": "Cấp Giấy phép hoạt động đối với điểm sơ cấp cứu chữ thập đỏ",
+    "2.000815": "Chứng thực bản sao từ bản chính giấy tờ, văn bản do cơ quan, tổ chức có thẩm quyền của Việt Nam; cơ quan, tổ chức có thẩm quyền của nước ngoài; cơ quan, tổ chức có thẩm quyền của Việt Nam liên kết với cơ quan, tổ chức có thẩm quyền của nước ngoài cấp hoặc chứng nhận",
+    "1.003622": "Thông báo tổ chức lễ hội cấp xã",
+    "1.009453": "Thỏa thuận thông số kỹ thuật xây dựng bến khách ngang sông, bến thủy nội địa phục vụ thi công công trình chính",
+    "1.010803": "Giải quyết chế độ trợ cấp thờ cúng liệt sĩ.",
+    "1.012753": "Đăng ký đất đai, tài sản gắn liền với đất, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất lần đầu đối với tổ chức đang sử dụng đất",
+    "1.012812": "Hòa giải tranh chấp đất đai",
+    "1.012817": "Xác định lại diện tích đất ở của hộ gia đình, cá nhân đã được cấp Giấy chứng nhận trước ngày 01 tháng 7 năm 2004",
+    "1.013040": "Thủ tục khai, nộp phí bảo vệ môi trường đối với khí thải",
+    "1.013128": "Thủ tục thẩm định và phê duyệt kế hoạch ứng phó sự cố tràn dầu của các cửa hàng bán lẻ xăng dầu trên đất liền, trên sông, trên biển và các cơ sở, dự án trên địa bàn xã không thuộc đối tượng kinh doanh, vận chuyển xăng dầu có nguy cơ xảy ra sự cố tràn dầu mức độ nhỏ (dung tích chứa dưới 50 m3)",
+    "1.013734": "Đăng ký hợp đồng lao động trực tiếp giao kết.",
+    "1.013949": "Giao đất, cho thuê đất, chuyển mục đích sử dụng đất đối với trường hợp giao đất, cho thuê đất không đấu giá quyền sử dụng đất, không đấu thầu lựa chọn nhà đầu tư thực hiện dự án có sử dụng đất; trường hợp giao đất, cho thuê đất thông qua đấu thầu lựa chọn nhà đầu tư thực hiện dự án có sử dụng đất; giao đất và giao rừng; cho thuê đất và cho thuê rừng, gia hạn sử dụng đất khi hết thời hạn sử dụng đất",
+    "1.013950": "Chuyển hình thức giao đất, cho thuê đất.",
+    "1.013952": "Điều chỉnh quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất do thay đổi căn cứ quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất; điều chỉnh thời hạn sử dụng đất của dự án đầu tư.",
+    "1.013953": "Điều chỉnh quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất do sai sót về ranh giới, vị trí, diện tích, mục đích sử dụng giữa bản đồ quy hoạch, bản đồ địa chính, quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất và số liệu bàn giao đất trên thực địa",
+    "1.013962": "Giao đất ở có thu tiền sử dụng đất không thông qua đấu giá, không đấu thầu lựa chọn nhà đầu tư thực hiện dự án có sử dụng đất đối với cá nhân là cán bộ, công chức, viên chức, sĩ quan tại ngũ, quân nhân chuyên nghiệp, công chức quốc phòng, công nhân và viên chức quốc phòng, sĩ quan, hạ sĩ quan, công nhân công an, người làm công tác cơ yếu và người làm công tác khác trong tổ chức cơ yếu hưởng lương từ ngân sách nhà nước mà chưa được giao đất ở, nhà ở; giáo viên, nhân viên y tế đang công tác tại các xã biên giới, hải đảo thuộc vùng có điều kiện kinh tế - xã hội khó khăn, vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn nhưng chưa có đất ở, nhà ở tại nơi công tác hoặc chưa được hưởng chính sách hỗ trợ về nhà ở theo quy định của pháp luật về nhà ở; cá nhân thường trú tại xã mà không có đất ở và chưa được Nhà nước giao đất ở hoặc chưa được hưởng chính sách hỗ trợ về nhà ở theo quy định của pháp luật về nhà ở",
+    "1.013965": "Sử dụng đất kết hợp đa mục đích, gia hạn phương án sử dụng đất kết hợp đa mục đích.",
+    "1.013967": "Giải quyết tranh chấp đất đai thuộc thẩm quyền của Chủ tịch Ủy ban nhân dân cấp xã",
+    "1.013978": "Đăng ký đất đai, tài sản gắn liền với đất, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất lần đầu đối với hộ gia đình, cá nhân, cộng đồng dân cư, người gốc Việt Nam định cư ở nước ngoài",
+    "1.013979": "Tặng cho quyền sử dụng đất cho Nhà nước hoặc cộng đồng dân cư hoặc mở rộng đường giao thông đối với trường hợp thửa đất chưa được cấp Giấy chứng nhận",
+    "1.014111": "Thi tuyển công chức",
+    "1.014310": "Thủ tục hưởng trợ cấp sinh hoạt hàng tháng đối với Nghệ nhân nhân dân, Nghệ nhân ưu tú",
+    "1.014312": "Thủ tục thôi hưởng trợ cấp sinh hoạt hàng tháng, bảo hiểm y tế đối với Nghệ nhân nhân dân, Nghệ nhân ưu tú",
+    "1.115649": "Giao đất, cho thuê đất không thông qua hình thức đấu giá quyền sử dụng đất, không đấu thầu lựa chọn nhà đầu tư thực hiện dự án có sử dụng đất đối với trường hợp thuộc diện chấp thuận chủ trương đầu tư, chấp thuận nhà đầu tư",
+    "1.115648": "Giao đất, cho thuê đất không thông qua hình thức đấu giá quyền sử dụng đất, không đấu thầu lựa chọn nhà đầu tư thực hiện dự án có sử dụng đất đối với trường hợp không thuộc diện chấp thuận chủ trương đầu tư, chấp thuận nhà đầu tư theo pháp luật về đầu tư; giao rừng, cho thuê rừng",
+    "1.115646": "Cho phép chuyển mục đích sử dụng đất đối với trường hợp thuộc diện chấp thuận chủ trương đầu tư, chấp thuận nhà đầu tư theo quy định của pháp luật về đầu tư",
+    "1.115645": "Cho phép chuyển mục đích sử dụng đất đối với trường hợp không thuộc diện chấp thuận chủ trương đầu tư, chấp thuận nhà đầu tư theo quy định của pháp luật về đầu tư",
+    "1.115643": "Gia hạn sử dụng đất khi hết thời hạn sử dụng đất",
+    "1.115641": "Chuyển hình thức giao đất, cho thuê đất",
+    "1.115640": "Điều chỉnh quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất do thay đổi căn cứ quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất",
+    "1.115638": "Điều chỉnh thời hạn sử dụng đất của dự án đầu tư",
+    "1.115634": "Điều chỉnh quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất do sai sót về ranh giới, vị trí, diện tích, mục đích sử dụng giữa bản đồ quy hoạch, bản đồ địa chính, quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất và số liệu bàn giao đất trên thực địa",
+    "1.115630": "Đăng ký, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất đối với trường hợp tặng cho quyền sử dụng đất cho Nhà nước hoặc cộng đồng dân cư hoặc mở rộng đường giao thông",
+    "1.115628": "Đính chính Giấy chứng nhận đã cấp",
+    "1.115627": "Thu hồi Giấy chứng nhận đã cấp không đúng quy định của pháp luật đất đai do người sử dụng đất, chủ sở hữu tài sản gắn liền với đất phát hiện và cấp lại Giấy chứng nhận sau khi thu hồi",
+    "1.115626": "Xác định lại diện tích đất ở của hộ gia đình, cá nhân trong trường hợp thửa đất ở có vườn, ao, đất thổ cư đã được cấp giấy chứng nhận trước ngày 01 tháng 7 năm 2004 khi người sử dụng đất có nhu cầu",
+    "1.115625": "Giải quyết đối với trường hợp cá nhân, hộ gia đình đã được cấp Giấy chứng nhận một phần diện tích vào loại đất ở trước ngày 01 tháng 7 năm 2004, phần diện tích còn lại của thửa đất chưa được cấp Giấy chứng nhận",
+    "1.115624": "Đăng ký, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất đối với toàn bộ diện tích đất đang sử dụng quy định tại điểm b và điểm c khoản 2 Điều 24 Nghị định số 101/2024/NĐ-CP",
+    "1.115623": "Cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất đối với trường hợp hộ gia đình, cá nhân đã được cấp giấy chứng nhận đối với một phần diện tích của thửa đất, phần diện tích còn lại chưa đủ điều kiện cấp giấy chứng nhận theo quy định của pháp luật tại thời điểm cấp giấy chứng nhận trước đây mà nay đủ điều kiện cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất",
+    "1.115622": "Cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất đối với trường hợp người sử dụng đất đã thực hiện chuyển đổi quyền sử dụng đất nông nghiệp theo phương án “dồn điền đổi thửa” được cơ quan có thẩm quyền phê duyệt trước ngày 01 tháng 8 năm 2024",
+    "1.115593": "Xác nhận tiếp tục sử dụng đất nông nghiệp của cá nhân khi hết thời hạn sử dụng đất",
+    "1.115621": "Cấp lại Giấy chứng nhận do bị mất",
+    "1.115620": "Đăng ký đất đai, tài sản gắn liền với đất, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất lần đầu đối với cá nhân, cộng đồng dân cư, hộ gia đình đang sử dụng đất",
+    "2.000942": "Thủ tục cấp bản sao có chứng thực từ bản chính hợp đồng, giao dịch đã được chứng thực",
+    "2.000992": "Chứng thực chữ ký người dịch mà người dịch là cộng tác viên dịch thuật của Ủy ban nhân dân cấp xã, tổ chức hành nghề công chứng",
+    "2.001035": "Chứng thực giao dịch liên quan đến tài sản là động sản, quyền sử dụng đất, nhà ở",
+    "2.002481": "Chuyển trường đối với học sinh trung học cơ sở.",
 }
 
 NAME_OVERRIDE_SOURCES = {
-    "1.008725": "legacy_same_code",
-    "2.000424": "legacy_same_code",
+    "1.001138": "official_source_name_verified",
+    "1.003915": "dvcqg_name_by_code_verified",
+    "1.013822": "official_source_name_verified",
+    "2.000559": "official_source_name_verified",
+    "2.000815": "official_source_name_verified",
+    "1.008725": "dvcqg_name_by_code_verified",
+    "2.000424": "dvcqg_name_by_code_verified",
+    "1.003622": "official_city_decision_pdf",
+    "1.009453": "official_city_decision_pdf",
+    "1.010803": "dvcqg_name_by_code_verified",
+    "1.012753": "dvcqg_name_by_code_verified",
+    "1.012812": "dvcqg_name_by_code_verified",
+    "1.012817": "dvcqg_name_by_code_verified",
+    "1.013040": "dvcqg_name_by_code_verified",
+    "1.013128": "dvcqg_name_by_code_verified",
+    "1.013734": "dvcqg_name_by_code_verified",
+    "1.013949": "dvcqg_name_by_code_verified",
+    "1.013950": "dvcqg_name_by_code_verified",
+    "1.013952": "dvcqg_name_by_code_verified",
+    "1.013953": "dvcqg_name_by_code_verified",
+    "1.013962": "dvcqg_name_by_code_verified",
+    "1.013965": "dvcqg_name_by_code_verified",
+    "1.013967": "dvcqg_name_by_code_verified",
+    "1.013978": "dvcqg_name_by_code_verified",
+    "1.013979": "dvcqg_name_by_code_verified",
+    "1.014111": "dvcqg_name_by_code_verified",
+    "1.014310": "dvcqg_name_by_code_verified",
+    "1.014312": "dvcqg_name_by_code_verified",
+    "1.115649": "official_city_decision_pdf",
+    "1.115648": "official_city_decision_pdf",
+    "1.115646": "official_city_decision_pdf",
+    "1.115645": "official_city_decision_pdf",
+    "1.115643": "official_city_decision_pdf",
+    "1.115641": "official_city_decision_pdf",
+    "1.115640": "official_city_decision_pdf",
+    "1.115638": "official_city_decision_pdf",
+    "1.115634": "official_city_decision_pdf",
+    "1.115630": "official_city_decision_pdf",
+    "1.115628": "official_city_decision_pdf",
+    "1.115627": "official_city_decision_pdf",
+    "1.115626": "official_city_decision_pdf",
+    "1.115625": "official_city_decision_pdf",
+    "1.115624": "official_city_decision_pdf",
+    "1.115623": "official_city_decision_pdf",
+    "1.115622": "official_city_decision_pdf",
+    "1.115593": "official_city_decision_pdf",
+    "1.115621": "official_city_decision_pdf",
+    "1.115620": "official_city_decision_pdf",
+    "2.000884": "dvcqg_name_by_code_verified",
+    "2.000942": "dvcqg_name_by_code_verified",
+    "2.000992": "dvcqg_name_by_code_verified",
+    "2.001035": "dvcqg_name_by_code_verified",
+    "2.002481": "dvcqg_name_by_code_verified",
 }
 
 CITY_SPACING_FIXES = {
@@ -437,17 +573,45 @@ CITY_SPACING_FIXES = {
     "s ự": "sự", "t ập": "tập", "d ự": "dự", "ngh ề": "nghề", "duy ệt": "duyệt",
     "nhi ệm": "nhiệm", "ngư ời": "người", "trư ờng": "trường", "ti ểu": "tiểu",
     "th ục": "thục", "t ừ": "từ", "phê duy ệt": "phê duyệt",
+    # Bổ sung 29/9/2026 (khóa có khoảng trắng đầu để chỉ khớp đầu từ; PDF QĐ 1635, 1747, 1847, 1897, 2032, 3856, 3878, 3904, 3957, 4016).
+    "Th ời": "Thời", " b ệnh": " bệnh", " b ố": " bố", " bi ểu": " biểu", " c ảng": " cảng", " c ấm": " cấm", " ch ế": " chế", " ch ỉ": " chỉ", " ch ỉnh": " chỉnh", " ch ống": " chống", " ch ứng": " chứng", " ch ữa": " chữa", " chuy ển": " chuyển", " d ục": " dục", " di ện": " diện", " g ọi": " gọi", " g ốc": " gốc", " gi ảm": " giảm", " h ệ": " hệ", " h ồ": " hồ", " h ợp": " hợp", " kh ẩu": " khẩu", " ki ện": " kiện", " l ấy": " lấy", " l ực": " lực", " li ệu": " liệu", " lu ật": " luật", " lư ợng": " lượng", " m ầm": " mầm", " ng ạch": " ngạch", " ngh ệ": " nghệ", " ngu ồn": " nguồn", " nh ất": " nhất", " nh ập": " nhập", " nhi ều": " nhiều", " ph ố": " phố", " ph ổ": " phổ", " ph ủ": " phủ", " s ản": " sản", " s ửa": " sửa", " t ại": " tại", " t ật": " tật", " t ỉnh": " tỉnh", " th ải": " thải", " th ể": " thể", " th ủy": " thủy", " thu ộc": " thuộc", " thư ờng": " thường", " ti ền": " tiền", " tr ả": " trả", " tr ẻ": " trẻ", " tr ợ": " trợ", " tu ất": " tuất", " v ật": " vật", "Đi ều": "Điều", " đ ảm": " đảm", " đ ầu": " đầu", " đ ể": " để", " đ ủ": " đủ", " đi ều": " điều", " tr ồng": " trồng",
+    # Bổ sung 01/10/2026 (PDF QĐ đợt QLVB; khóa chữ thường có khoảng trắng đầu để chỉ khớp đầu từ).
+    "Ch ủ": "Chủ", "H ệ": "Hệ", "Ho ạt": "Hoạt", "L ập": "Lập", "Lu ật": "Luật", "Ph ục": "Phục", "Qu ỹ": "Quỹ", "Tr ồng": "Trồng", "Trư ờng": "Trường", " b ến": " bến", " bi ển": " biển", " c ải": " cải", " c ấu": " cấu", " c ắt": " cắt", " c ổ": " cổ", " ch ất": " chất", " ch ợ": " chợ", " ch ủ": " chủ", " ch ức": " chức", " d ụng": " dụng", " d ữ": " dữ", " gi ả": " giả", " h ạ": " hạ", " h ết": " hết", " h ộ": " hộ", " hi ểm": " hiểm", " ho ạch": " hoạch", " k ế": " kế", " k ể": " kể", " k ỹ": " kỹ", " kho ản": " khoản", " khuy ến": " khuyến", " l ẻ": " lẻ", " l ịch": " lịch", " l ồng": " lồng", " l ỗi": " lỗi", " l ộ": " lộ", " l ợi": " lợi", " lu ồng": " luồng", " m ại": " mại", " m ặt": " mặt", " m ới": " mới", " n ạo": " nạo", " n ối": " nối", " ng ầm": " ngầm", " ph ạm": " phạm", " qu ản": " quản", " qu ảng": " quảng", " quy ền": " quyền", " r ừng": " rừng", " s ử": " sử", " t ận": " tận", " t ự": " tự", " th ẩm": " thẩm", " th ị": " thị", " th ủ": " thủ", " thi ết": " thiết", " thu ỷ": " thuỷ", " ti ến": " tiến", " tr úc": " trúc", " tr ị": " trị", " tr ời": " trời", " tri ển": " triển", " v ệ": " vệ", " v ị": " vị", " v ốn": " vốn", " đ ất": " đất", " đ ặt": " đặt", " đ ề": " đề", " đi ện": " điện", " đư ợc": " được",
 }
 
 
 def repair_city_name(value: str, code: str) -> str:
     if code in CITY_NAME_OVERRIDES:
         return CITY_NAME_OVERRIDES[code]
-    value = re.sub(r"\\s+", " ", value or "").strip()
+    value = value or ""
+    if "\x07" in value:
+        parts = [part.strip() for part in value.split("\x07") if part.strip()]
+        value = parts[0] if parts else ""
+    value = re.sub(r"\s+", " ", value).strip()
     for bad, good in CITY_SPACING_FIXES.items():
         value = value.replace(bad, good)
+    value = unicodedata.normalize("NFC", value)
     value = re.sub(r"^Thủ tục\\s+Thủ tục\\s+", "Thủ tục ", value, flags=re.IGNORECASE)
+    # Cột "Thời hạn"/"Căn cứ pháp lý" bị dính vào tên khi trích PDF dạng bảng.
+    cut = re.search(
+        r"\s(?:-\s*Thời hạn|Trong thời hạn|Thời hạn quyết toán|-\s*Trường hợp|-\s*Đối với|\(1\)\s|Thông tư số|"
+        r"-\s*\d+(?:,\d+)?\s*ngày|\d+(?:,\d+)?\s*ngày làm việc|Tổng số:)",
+        value,
+    )
+    if cut and cut.start() >= 12:
+        value = value[: cut.start()]
     return value.strip(" -–—;,.|")
+
+
+def good_city_name(name: str) -> bool:
+    """Tên trích từ PDF đủ tin cậy để thay tên đang có."""
+    name = name or ""
+    return (
+        looks_like_name(name)
+        and name[:1].isalpha()
+        and name.count("(") == name.count(")")
+        and not re.search(r"(?<!điểm) [bcdfghjklmnpqrstvxđ] [a-zà-ỹ]{2,}", name, re.I)
+    )
 
 
 def city_source_evidence(row: dict) -> dict:
@@ -464,6 +628,25 @@ def city_source_evidence(row: dict) -> dict:
     }
 
 
+def canonical_cap_from_city_row(
+    row: dict,
+    fallback: str = "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+) -> str:
+    """Map an explicit extractor levelHint to the legal resolution level.
+
+    communeReceptionEvidence only proves a reception location. When levelHint
+    is absent, preserve the existing classification through the fallback value
+    rather than inventing a new legal level.
+    """
+    hint = str(row.get("levelHint") or "").strip().lower()
+    if hint == "commune":
+        return "Xã"
+    if hint == "shared_including_commune":
+        return "Dùng chung (cấp bộ, cấp tỉnh, cấp xã)"
+    if hint == "province":
+        return "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã"
+    return fallback
+
 def make_city_record(row: dict, legacy_row: dict | None, dvc: dict | None) -> dict:
     code = normalize_code(row.get("code", ""))
     name = repair_city_name(row.get("name") or "", code)
@@ -472,7 +655,7 @@ def make_city_record(row: dict, legacy_row: dict | None, dvc: dict | None) -> di
         "ma": code,
         "ten": name,
         "linhVuc": row.get("field") or "CHƯA XÁC MINH LĨNH VỰC",
-        "cap": "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã",
+        "cap": canonical_cap_from_city_row(row),
         "nhanh": bool((legacy_row or {}).get("nhanh")),
         "mienPhiTrucTuyen": bool((legacy_row or {}).get("mienPhiTrucTuyen")),
         "phiDiaGioi": bool((legacy_row or {}).get("phiDiaGioi")),
@@ -527,7 +710,12 @@ def apply_city_updates(public_rows: list[dict], excluded: list[dict], audit_rows
         current_state = str(item.get("currentStateAtAsOf") or "")
         needs_review = current_state.startswith("needs_")
         is_future = current_state == "future_effective"
-        is_repealed = item.get("sectionStatus") == "repealed" and not is_future and not needs_review
+        # Bãi bỏ chỉ áp dụng khi quyết định đã có hiệu lực; quyết định đang chờ
+        # xác định hiệu lực/phạm vi (reviewed_*) không được rút TTHC khỏi public.
+        is_repealed = (
+            item.get("sectionStatus") == "repealed"
+            and current_state == "current_or_immediate_unless_repealed"
+        )
         is_current = (
             bool(item.get("communeReceptionEvidence"))
             and current_state == "current_or_immediate_unless_repealed"
@@ -602,7 +790,11 @@ def apply_city_updates(public_rows: list[dict], excluded: list[dict], audit_rows
         if code in by_code:
             stats["updated"] += 1
             record = by_code[code]
-            if not record.get("ten"):
+            # Hàng được duyệt theo ngày quyết định tăng dần: với bản ghi lấy tên
+            # từ PDF quyết định thành phố, tên theo quyết định mới nhất được ưu tiên.
+            if not record.get("ten") or (
+                good_city_name(name) and record.get("nameSource") == "official_city_decision_pdf"
+            ):
                 record["ten"] = name
             if not record.get("linhVuc") or record.get("linhVuc") == "CHƯA XÁC MINH LĨNH VỰC":
                 record["linhVuc"] = item.get("field") or record.get("linhVuc")
@@ -618,6 +810,7 @@ def apply_city_updates(public_rows: list[dict], excluded: list[dict], audit_rows
                 "sourceArticleUrl": item.get("articleUrl"),
                 "sourceAttachmentUrl": item.get("pdfUrl"),
                 "tiepNhanCapXa": True,
+                "cap": canonical_cap_from_city_row(item, str(record.get("cap") or "")),
             })
             record["sourceEvidence"] = ([city_source_evidence(item)] + list(record.get("sourceEvidence") or []))[:8]
         else:
@@ -785,6 +978,11 @@ def apply_priority51_legal_verification(
             stats["alreadyCurrent"] += 1
             current = by_code[code]
             current["priority51LegalVerificationStatus"] = status
+            # Tên trích từ PDF quyết định thành phố dễ lỗi tách ký tự/dính cột;
+            # tên trong ma trận kiểm chứng pháp lý Priority 51 đã được rà soát.
+            if current.get("nameSource") == "official_city_decision_pdf" and record.get("ten"):
+                current["ten"] = record["ten"]
+                current["nameSource"] = "priority51_official_legal_verification"
             current["legalVerificationCheckedAt"] = item.get("verificationCheckedAt") or SOURCE_SNAPSHOT_DATE
             existing_urls = {str(x.get("articleUrl") or "") for x in current.get("sourceEvidence") or []}
             additions = [x for x in record.get("sourceEvidence") or [] if str(x.get("articleUrl") or "") not in existing_urls]
@@ -815,6 +1013,138 @@ def apply_priority51_legal_verification(
     excluded[:] = list(excluded_map.values())
     audit_rows[:] = sorted(audit_map.values(), key=lambda x: normalize_code(x.get("ma", "")))
     return stats
+
+
+
+def canonical_cap_from_table_classification(value: str, fallback: str) -> str:
+    classification = str(value or "").strip().upper()
+    if classification == "COMMUNE":
+        return "Xã"
+    if classification == "SHARED":
+        return "Dùng chung (cấp bộ, cấp tỉnh, cấp xã)"
+    if classification == "PROVINCE":
+        return "Cấp tỉnh - tiếp nhận tại Trung tâm PVHCC cấp xã"
+    return fallback
+
+
+def apply_official_table_levels(
+    public_rows: list[dict],
+) -> dict:
+    if not OFFICIAL_TABLE_LEVELS.exists():
+        return {"resolved": 0, "updatedPublic": 0}
+
+    payload = load_json(OFFICIAL_TABLE_LEVELS)
+    level_map = {
+        normalize_code(item.get("ma", "")): item
+        for item in payload.get("rows") or []
+        if normalize_code(item.get("ma", ""))
+    }
+    stats = {"resolved": len(level_map), "updatedPublic": 0}
+
+    for row in public_rows:
+        code = normalize_code(row.get("ma", ""))
+        item = level_map.get(code)
+        if not item:
+            continue
+        current = str(row.get("cap") or "")
+        target = canonical_cap_from_table_classification(
+            str(item.get("classification") or ""),
+            current,
+        )
+        if not target or target == current:
+            continue
+
+        row["cap"] = target
+        evidence_rows = item.get("evidence") or []
+        first = evidence_rows[0] if evidence_rows else {}
+        table_evidence = {
+            "sourceRole": "local_legal_effect",
+            "articleUrl": (first.get("articleUrls") or [None])[0],
+            "attachmentUrl": first.get("attachmentUrl"),
+            "decisionNumbers": first.get("decisionNumbers") or [],
+            "classification": "official_table_level_heading",
+            "repealContext": False,
+        }
+        row["sourceEvidence"] = (
+            [table_evidence] + list(row.get("sourceEvidence") or [])
+        )[:8]
+        stats["updatedPublic"] += 1
+
+    return stats
+
+
+def apply_duration_promotions(public_rows: list[dict], payload: dict) -> dict:
+    by_code = {
+        normalize_code(row.get("ma", "")): row
+        for row in public_rows
+        if normalize_code(row.get("ma", ""))
+    }
+    stats = {
+        "ready": 0,
+        "confirmedExisting": 0,
+        "promoted": 0,
+        "skippedExisting": 0,
+        "missingCode": 0,
+    }
+
+    promotion_items = [
+        ("ready", item) for item in (payload.get("ready") or [])
+    ] + [
+        ("confirmedExisting", item) for item in (payload.get("confirmedExisting") or [])
+    ]
+
+    for source_bucket, item in promotion_items:
+        if item.get("field") != "thoiHan":
+            continue
+        if source_bucket == "ready" and item.get("promotionStatus") != "ready":
+            continue
+        stats[source_bucket] += 1
+        code = normalize_code(item.get("ma", ""))
+        row = by_code.get(code)
+        if row is None:
+            stats["missingCode"] += 1
+            continue
+        if str(row.get("thoiHan") or "").strip():
+            stats["skippedExisting"] += 1
+            continue
+
+        value = str(item.get("candidateValue") or "").strip()
+        if not value:
+            continue
+
+        evidence = []
+        for source in item.get("sources") or []:
+            article_urls = source.get("articleUrls") or []
+            ev = {
+                "sourceRole": "local_legal_effect",
+                "articleUrl": article_urls[0] if article_urls else None,
+                "attachmentUrl": source.get("attachmentUrl"),
+                "decisionNumbers": source.get("decisionNumbers") or [],
+                "classification": "official_table_guidance_duration",
+                "repealContext": False,
+            }
+            if ev["articleUrl"] or ev["attachmentUrl"]:
+                evidence.append(ev)
+
+        row["thoiHan"] = value
+        row["sourceEvidence"] = (
+            evidence + list(row.get("sourceEvidence") or [])
+        )[:8]
+        stats["promoted"] += 1
+
+    return stats
+
+
+def apply_guidance_field_promotions(public_rows: list[dict]) -> dict:
+    if not GUIDANCE_FIELD_PROMOTION_READY.exists():
+        return {
+            "ready": 0,
+            "confirmedExisting": 0,
+            "promoted": 0,
+            "skippedExisting": 0,
+            "missingCode": 0,
+        }
+    return apply_duration_promotions(public_rows, load_json(GUIDANCE_FIELD_PROMOTION_READY))
 
 
 def main() -> int:
@@ -937,6 +1267,8 @@ def main() -> int:
     priority51_legal_stats = apply_priority51_legal_verification(
         public_rows, excluded, audit_rows, legacy, dvc_map, priority51_legal
     )
+    official_table_stats = apply_official_table_levels(public_rows)
+    guidance_promotion_stats = apply_guidance_field_promotions(public_rows)
 
     for row in public_rows:
         code = normalize_code(row.get("ma", ""))
@@ -988,11 +1320,50 @@ def main() -> int:
         "priority51LegalAddedCurrent": priority51_legal_stats["addedCurrent"],
         "priority51LegalSupersededByNewerEvidence": priority51_legal_stats["supersededByNewerEvidence"],
         "phiDiaGioi": sum(1 for x in public_rows if x.get("phiDiaGioi")),
+        "officialTableLevelResolved": official_table_stats["resolved"],
+        "officialTableLevelUpdatedPublic": official_table_stats["updatedPublic"],
+        "guidanceDurationReady": guidance_promotion_stats["ready"],
+        "guidanceDurationConfirmedExisting": guidance_promotion_stats["confirmedExisting"],
+        "guidanceDurationPromoted": guidance_promotion_stats["promoted"],
+        "guidanceDurationSkippedExisting": guidance_promotion_stats["skippedExisting"],
     }
+    existing_version = ""
+    if MASTER_JSON.exists():
+        try:
+            existing_version = str(load_json(MASTER_JSON).get("dataset_version") or "")
+        except (OSError, json.JSONDecodeError):
+            existing_version = ""
+    dataset_date = derive_dataset_date(ROOT, existing_version)
+    source_commit = compute_source_commit(ROOT)
+    for row in public_rows:
+        code = str(row.get("ma") or "").strip()
+        formality_id = str(row.get("formalityId") or "").strip()
+        if not code:
+            continue
+        row["nopHoSoUrl"] = build_scoped_submission_url(code, formality_id, str(row.get("cap") or ""))
+        route = "province" if str(row.get("cap") or "").strip().lower().startswith("cấp tỉnh") else "ward"
+        row["nopHoSoScope"] = {
+            "route": route,
+            "provinceCode": "31",
+            "provinceName": "Hải Phòng",
+            **({
+                "wardCode": "11824",
+                "wardName": "Vĩnh Bảo",
+                "commune": "WARD",
+            } if route == "ward" else {}),
+        }
+        row["submissionLinkStatus"] = "resolution_level_scope_verified"
+        row["submissionLinkMode"] = "formality_id" if formality_id else "keyword_fallback"
+
+    public_rows = [upgrade_record_to_v4(row, SOURCE_SNAPSHOT_DATE) for row in public_rows]
+
     master = {
         "format": "bangniemyet-vinhbao-master-data",
-        "version": 2,
-        "updatedAt": BUILD_DATE,
+        "version": 4,
+        "dataset_version": dataset_date.replace("-", "."),
+        "source_commit": source_commit,
+        "source_commit_kind": SOURCE_COMMIT_KIND,
+        "updatedAt": dataset_date,
         "sourceSnapshotDate": SOURCE_SNAPSHOT_DATE,
         "source": OFFICIAL_SOURCE,
         "sourceSites": [OFFICIAL_SOURCE, CITY_OFFICIAL_SOURCE],

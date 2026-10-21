@@ -5,8 +5,15 @@ on:
     # 07:30 Asia/Ho_Chi_Minh
     - cron: "30 0 * * *"
   workflow_dispatch:
+    inputs:
+      force:
+        description: "Run again in the same local-day period"
+        required: false
+        default: false
+        type: boolean
 
 permissions:
+  actions: read
   contents: write
   issues: write
   pull-requests: write
@@ -19,19 +26,37 @@ jobs:
   monitor:
     runs-on: ubuntu-latest
     env:
-      # Prefer an optional repository secret when Actions PR creation is disabled.
-      GH_TOKEN: ${{ secrets.PORTFOLIO_GH_TOKEN || github.token }}
+      GH_TOKEN: ${{ github.token }}
       AUTO_BRANCH: auto/official-tthc-update
+      ROUTINE_ID: tthc-official-source-update
+      ROUTINE_PAUSED: ${{ vars.OFFICIAL_TTHC_UPDATE_PAUSED || 'false' }}
 
     steps:
       - name: Checkout main
-        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v4
         with:
           ref: main
           fetch-depth: 0
           lfs: true
 
+      - name: Read workflow history
+        id: history
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh api -X GET "repos/${GITHUB_REPOSITORY}/actions/workflows/official-data-update.yml/runs"             -f per_page=100 > /tmp/official-data-update-runs.json
+
+      - name: Routine guard
+        id: guard
+        shell: bash
+        env:
+          FORCE_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.force || false }}
+        run: |
+          set -euo pipefail
+          python scripts/routine_guard.py             --history /tmp/official-data-update-runs.json             --event "${GITHUB_EVENT_NAME}"             --run-id "${GITHUB_RUN_ID}"             --paused "${ROUTINE_PAUSED}"             --force "${FORCE_RUN}"             --github-output "${GITHUB_OUTPUT}"
+
       - name: Check existing automated PR
+        if: steps.guard.outputs.run == 'true'
         id: existing
         shell: bash
         run: |
@@ -46,41 +71,59 @@ jobs:
           fi
 
       - name: Setup Python
-        if: steps.existing.outputs.skip != 'true'
-        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v5
         with:
           python-version: "3.12"
 
       - name: Install PDF dependency
-        if: steps.existing.outputs.skip != 'true'
+        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
         run: python -m pip install --disable-pip-version-check pypdf==6.17.0
 
       - name: Preserve before snapshot
-        if: steps.existing.outputs.skip != 'true'
+        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
         run: cp data/thu-tuc.json /tmp/master-before.json
 
       - name: Scan official sources
-        if: steps.existing.outputs.skip != 'true'
+        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
         run: python scripts/update_official_sources.py --online
 
       - name: Extract official decision evidence
-        if: steps.existing.outputs.skip != 'true'
+        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
         run: python scripts/extract_city_updates.py --as-of "$(date +%F)"
 
       - name: Rebuild Master Data
-        if: steps.existing.outputs.skip != 'true'
+        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
         run: python scripts/build_master_data.py
 
+      - name: Validate guidance enrichment
+        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
+        run: python scripts/validate_tthc_guidance.py
+
+      - name: Apply guidance enrichment
+        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
+        run: python scripts/apply_guidance_enrichment.py
+
+      - name: Build lifecycle tracking projection
+        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
+        run: python scripts/build_tthc_tracking.py
+
+      - name: Reconcile Priority 51 crosswalk to canonical Master Data
+        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
+        run: python scripts/reconcile_priority51_crosswalk.py
+
       - name: Candidate validation
-        if: steps.existing.outputs.skip != 'true'
+        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
         id: validation
         continue-on-error: true
         run: |
+          python scripts/validate_canonical_contract.py
+          python scripts/migrate_canonical_v4.py --check
           python scripts/check_static_site.py
           git diff --check
 
       - name: Detect semantic/source changes
-        if: steps.existing.outputs.skip != 'true'
+        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true'
         id: changes
         shell: bash
         run: |
@@ -92,12 +135,13 @@ jobs:
           fi
 
       - name: Build delta report
-        if: steps.existing.outputs.skip != 'true' && steps.changes.outputs.changed == 'true'
+        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true' && steps.changes.outputs.changed == 'true'
         run: |
           python scripts/build_master_delta.py             --before /tmp/master-before.json             --after data/thu-tuc.json             --json-out data/source-audit/latest-master-delta.json             --md-out data/BAO_CAO_CHENH_LECH_TTHC_MOI_NHAT.md
 
       - name: Create Issue, branch and Pull Request
-        if: steps.existing.outputs.skip != 'true' && steps.changes.outputs.changed == 'true'
+        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true' && steps.changes.outputs.changed == 'true'
+        id: publish
         shell: bash
         run: |
           set -euo pipefail
@@ -132,6 +176,7 @@ jobs:
 
           issue_url="$(gh issue create             --title "Cập nhật TTHC chính thức tự động $(date +%F)"             --body-file /tmp/issue-body.md)"
           issue_number="${issue_url##*/}"
+          echo "issue_number=$issue_number" >> "$GITHUB_OUTPUT"
 
           cat > /tmp/pr-body.md <<EOF
           Closes #$issue_number
@@ -140,7 +185,8 @@ jobs:
           - Quét nguồn chính thức Hải Phòng/Vĩnh Bảo.
           - Lưu provenance và PDF/hash quyết định mới (nếu có).
           - Tái tạo city-updates, Master Data JSON và fallback từ cùng pipeline.
-          - Sinh báo cáo chênh lệch trước/sau.
+          - Áp lớp hướng dẫn đã xác minh (hồ sơ/quy trình/biểu mẫu/phí/link nộp đúng Vĩnh Bảo).
+          - Sinh bảng theo dõi lifecycle và báo cáo chênh lệch trước/sau.
 
           ## Kiểm soát
           - Validation trước PR: **$validation**
@@ -165,19 +211,76 @@ jobs:
               echo "Branch: $AUTO_BRANCH"
               echo "Issue: #$issue_number"
               echo
-              echo "GitHub Actions token hiện tại không được phép tạo/approve Pull Request."
-              echo "Bật Allow GitHub Actions to create and approve pull requests hoặc cấu hình secret PORTFOLIO_GH_TOKEN với quyền contents/issues/pull-requests phù hợp."
+              echo "Native GitHub Actions token hiện tại không được phép tạo Pull Request."
+              echo "Kiểm tra repository Settings → Actions → General → Workflow permissions và bật quyền cho GitHub Actions tạo Pull Request nếu quy trình tự động cần chức năng này. Không dùng PAT portfolio làm fallback."
             } >> "$GITHUB_STEP_SUMMARY"
             exit 1
           fi
           echo "Pull request: $pr_url"
 
       - name: Fail unchanged baseline if validation regressed
-        if: steps.existing.outputs.skip != 'true' && steps.changes.outputs.changed != 'true' && steps.validation.outcome != 'success'
+        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true' && steps.changes.outputs.changed != 'true' && steps.validation.outcome != 'success'
         run: |
           echo "No source change, but the committed baseline failed validation."
           exit 1
 
       - name: No change
-        if: steps.existing.outputs.skip != 'true' && steps.changes.outputs.changed != 'true' && steps.validation.outcome == 'success'
+        if: steps.guard.outputs.run == 'true' && steps.existing.outputs.skip != 'true' && steps.changes.outputs.changed != 'true' && steps.validation.outcome == 'success'
         run: echo "No official-source or Master Data changes detected."
+
+      - name: Write terminal routine record
+        if: always()
+        id: record
+        shell: bash
+        env:
+          JOB_STATUS: ${{ job.status }}
+          HISTORY_OUTCOME: ${{ steps.history.outcome }}
+          GUARD_RUN: ${{ steps.guard.outputs.run }}
+          GUARD_STATUS: ${{ steps.guard.outputs.status }}
+          PERIOD_KEY: ${{ steps.guard.outputs.period_key }}
+          EXISTING_PR: ${{ steps.existing.outputs.skip }}
+          VALIDATION_OUTCOME: ${{ steps.validation.outcome }}
+          CHANGED: ${{ steps.changes.outputs.changed }}
+        run: |
+          set -euo pipefail
+          status="OK"
+          note="completed"
+
+          if [ "$HISTORY_OUTCOME" != "success" ]; then
+            status="FAILED"
+            note="workflow history could not be read"
+          elif [ "${GUARD_RUN:-}" != "true" ]; then
+            status="${GUARD_STATUS:-FAILED}"
+            note="guard did not authorize execution"
+          elif [ "$JOB_STATUS" = "failure" ]; then
+            status="FAILED"
+            note="one or more execution steps failed"
+          elif [ "${EXISTING_PR:-}" = "true" ]; then
+            status="PARTIAL"
+            note="existing automated PR still open"
+          elif [ "${VALIDATION_OUTCOME:-}" != "success" ] && [ "${VALIDATION_OUTCOME:-}" != "skipped" ]; then
+            status="PARTIAL"
+            note="candidate validation needs review"
+          fi
+
+          period="${PERIOD_KEY:-$(TZ=Asia/Ho_Chi_Minh date +%F)}"
+          python scripts/write_routine_run_record.py             --output /tmp/routine-run-record.json             --routine-id "$ROUTINE_ID"             --run-id "$GITHUB_RUN_ID"             --period-key "$period"             --event "$GITHUB_EVENT_NAME"             --status "$status"             --source-commit "$GITHUB_SHA"             --guard-status "${GUARD_STATUS:-UNKNOWN}"             --validation "${VALIDATION_OUTCOME:-unknown}"             --changed "${CHANGED:-unknown}"             --note "$note"
+
+          {
+            echo "## Routine record"
+            echo
+            echo "- Routine: $ROUTINE_ID"
+            echo "- Period: $period"
+            echo "- Status: $status"
+            echo "- Guard: ${GUARD_STATUS:-UNKNOWN}"
+            echo "- Source commit: $GITHUB_SHA"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload routine record
+        if: always()
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v4
+        with:
+          name: routine-run-${{ github.run_id }}
+          path: /tmp/routine-run-record.json
+          if-no-files-found: ignore
+          retention-days: 90

@@ -3,6 +3,12 @@
   "ngay": "28/07/2026",
   "hieuLuc": "08/08/2026",
   "trichYeu": "Quy định mức thu phí, lệ phí thuộc thẩm quyền HĐND TP đối với TTHC thực hiện qua hình thức trực tuyến",
+  "phamVi": "Tổ chức, cá nhân thực hiện TTHC trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (VNeID)",
+  "thayThe": [
+    "07/2025/NQ-HĐND ngày 10/6/2025 của HĐND tỉnh Hải Dương",
+    "08/2025/NQ-HĐND ngày 17/6/2025 của HĐND thành phố Hải Phòng"
+  ],
+  "chuyenTiep": "Hồ sơ nộp trực tuyến trước 08/08/2026 tiếp tục thực hiện theo NQ 07/2025 (Hải Dương) và NQ 08/2025 (Hải Phòng).",
   "mienPhiKhiTrucTuyen": {
     "lePhi": [
       "Lệ phí hộ tịch",
@@ -20,5 +26,13 @@
       "Phí thẩm định cấp GCN đủ ĐK kinh doanh cơ sở thể thao, CLB thể thao chuyên nghiệp"
     ]
   },
-  "ghiChuUI": "Khi nộp hồ sơ trực tuyến (Cổng DVCQG / VNeID): các loại phí/lệ phí nêu trên = 0 đồng theo NQ 23/2026/NQ-HĐND (HL 08/8/2026)."
+  "ghiChuUI": "Khi nộp hồ sơ trực tuyến (Cổng DVCQG / VNeID): các loại phí/lệ phí nêu trên = 0 đồng theo NQ 23/2026/NQ-HĐND (HL 08/8/2026). Nộp trực tiếp hoặc qua bưu chính: áp dụng mức thu theo quy định hiện hành của từng loại phí, lệ phí.",
+  "nguon": {
+    "banGoc": "https://cdn.haiphong.gov.vn/gov-hpg/6298/tintuc/2026/8/nq-23.2026.nq-hdnd639222298143062830.pdf",
+    "sha256": "6437d5562e94e5a4eab835459cddd17038046370e40d447eae81d0fdcf8a4eb7",
+    "trangSoTuPhap": "https://sotp.haiphong.gov.vn/van-ban-quy-pham-phap-luat/nghi-quyet-so-23-2026-nq-hdnd-ngay-28-7-2026-cua-hoi-dong-nhan-dan-thanh-pho-quy-dinh-muc-thu-ph-948475",
+    "daDocToanVan": "2026-10-01",
+    "luuY": "Tệp PDF công khai trống số/ngày; số và ngày theo trang Sở Tư pháp. Đã được Giám đốc Trung tâm PVHCC xác nhận (01/10/2026)."
+  },
+  "registry": "data/phu-luc/phi-le-phi-van-ban.json"
 }

@@ -1,0 +1,89 @@
+{
+  "format": "official-guidance-promotion-plan",
+  "version": 2,
+  "sources": [
+    "data/thu-tuc.json",
+    "data/source-audit/guidance-field-candidates.json",
+    "data/source-audit/official-guidance-candidates.json"
+  ],
+  "policy": "Plan an toàn chỉ tổng hợp candidate đã qua specialized field gate. Không mutate canonical và không phát lệnh promotion cho đến khi có PR migrate canonical v5 riêng, có provenance/validator/CI đầy đủ.",
+  "schemaGate": {
+    "requiredCanonicalContractVersion": 5,
+    "canonicalVersion": 4,
+    "status": "blocked",
+    "reason": "Canonical hiện chưa materialize đầy đủ contract v5; promotion phải thực hiện trong PR schema-gated riêng."
+  },
+  "summary": {
+    "procedures": 0,
+    "fieldPromotions": 0,
+    "safeReadyProcedures": 23,
+    "safeReadyFields": 27,
+    "byField": {
+      "onlineServiceLevel": 1,
+      "thoiHan": 0,
+      "phiLePhi": 12,
+      "canCuPhapLy": 14,
+      "coQuanThucHien": 0
+    },
+    "confirmedExisting": {
+      "onlineServiceLevel": 0,
+      "thoiHan": 20,
+      "phiLePhi": 0,
+      "canCuPhapLy": 0,
+      "coQuanThucHien": 0
+    },
+    "needsReview": {
+      "onlineServiceLevel": 0,
+      "thoiHan": 131,
+      "phiLePhi": 18,
+      "canCuPhapLy": 72,
+      "coQuanThucHien": {
+        "conflicting": 18,
+        "insufficient": 540
+      }
+    },
+    "pendingCanonicalPhase2": {
+      "onlineServiceLevel": 4,
+      "phiLePhi": 20,
+      "canCuPhapLy": 85
+    }
+  },
+  "readyCandidateCodes": {
+    "onlineServiceLevel": [
+      "1.013734"
+    ],
+    "thoiHan": [],
+    "phiLePhi": [
+      "1.000302",
+      "1.000321",
+      "1.008925",
+      "1.008926",
+      "1.008927",
+      "1.008928",
+      "1.012756",
+      "1.013734",
+      "1.014390",
+      "1.014953",
+      "2.001225",
+      "2.001576"
+    ],
+    "canCuPhapLy": [
+      "1.000321",
+      "1.003814",
+      "1.008928",
+      "1.011606",
+      "1.013822",
+      "1.013994",
+      "1.014310",
+      "1.014312",
+      "1.014390",
+      "1.116316",
+      "2.001008",
+      "2.001016",
+      "2.001019",
+      "2.001406"
+    ],
+    "coQuanThucHien": []
+  },
+  "procedures": []
+}
