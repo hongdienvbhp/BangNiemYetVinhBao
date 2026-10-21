@@ -338,22 +338,31 @@ def extract_rows(pages):
         heading_blocks = {heading["block_index"] for heading in headings}
         section_blocks = {section["block_index"] for section in sections}
 
+        if not code_records:
+            previous_headings.extend({**heading, "page": page_no} for heading in headings)
+            previous_sections.extend({**section, "page": page_no} for section in sections)
+            continue
+
         for block_index, block in enumerate(blocks):
             block_words = words_by_block.get(int(block[5]), [])
             if not block_words:
                 continue
             block_codes = row_codes_by_block.get(block_index, [])
+            codes_inside_block = [
+                record for record in code_records
+                if float(block[1]) - 1.0 <= record["y"] <= float(block[3]) + 1.0
+            ]
 
             if block_codes:
                 for word in block_words:
                     x = float(word[0])
                     if not (160.0 <= x < 700.0):
                         continue
-                    if len(block_codes) == 1:
+                    y = (float(word[1]) + float(word[3])) / 2.0
+                    if len(block_codes) == 1 and len(codes_inside_block) <= 1:
                         target = block_codes[0]
                     else:
-                        y = (float(word[1]) + float(word[3])) / 2.0
-                        target = min(block_codes, key=lambda record: abs(record["y"] - y))
+                        target = min(code_records, key=lambda record: abs(record["y"] - y))
                     if 160.0 <= x < 443.0:
                         name_words_by_id[target["id"]].append(word)
                     elif 443.0 <= x < 700.0:

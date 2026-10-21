@@ -137,6 +137,23 @@ jobs:
           if-no-files-found: ignore
           retention-days: 7
 
+      - name: Export generated baseline payload for controlled update (temporary)
+        if: always() && steps.city-baseline-impact.outputs.changed == 'true'
+        run: |
+          python - <<'PY'
+          import base64
+          from pathlib import Path
+          path = Path("/tmp/city-reception-baseline.json")
+          if not path.exists():
+              print("BASELINE_JSON_MISSING")
+          else:
+              encoded = base64.b64encode(path.read_bytes()).decode("ascii")
+              print("BASELINE_JSON_CHUNKS_BEGIN")
+              for index, offset in enumerate(range(0, len(encoded), 8000)):
+                  print(f"BASELINE_JSON_CHUNK:{index:04d}:{encoded[offset:offset + 8000]}")
+              print("BASELINE_JSON_CHUNKS_END")
+          PY
+
       - name: Diagnose city baseline cells on failed QC
         if: failure() && steps.city-baseline-impact.outputs.changed == 'true'
         run: |
