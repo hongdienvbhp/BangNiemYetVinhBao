@@ -115,6 +115,54 @@ jobs:
           if-no-files-found: ignore
           retention-days: 7
 
+      - name: Diagnose city PDF extraction on failed QC
+        if: failure() && steps.city-baseline-impact.outputs.changed == 'true'
+        run: |
+          python - <<'PY'
+          import io, json
+          import pdfplumber
+          from scripts.build_city_reception_baseline import (
+              AGENCY_RE, CODE_RE, cluster_code_columns, fetch_pdf, fragments,
+              group_text_lines, norm_code, space,
+          )
+
+          with pdfplumber.open(io.BytesIO(fetch_pdf())) as pdf:
+              page = pdf.pages[6]
+              items = fragments(page)
+              codes = []
+              for y, x, text in items:
+                  candidate = text.strip().rstrip(".")
+                  if CODE_RE.fullmatch(candidate):
+                      codes.append((y, x, norm_code(candidate)))
+              groups = cluster_code_columns(codes)
+              headings = group_text_lines(items)
+              print("PAGE_SIZE", {"width": page.width, "height": page.height})
+              print("CODE_COLUMN_GROUPS", json.dumps([
+                  {"center": sorted(row[1] for row in group)[len(group)//2],
+                   "count": len(group),
+                   "sample": [row[2] for row in sorted(group, key=lambda r: -r[0])[:12]]}
+                  for group in groups
+              ], ensure_ascii=False))
+              print("ANCHOR_WORDS", json.dumps([
+                  {"y": y, "x": x, "text": text}
+                  for y, x, text in items
+                  if "000016" in text or "000481" in text or "Thông báo" in text or "Cấp điều chỉnh" in text or "Hỗ trợ doanh" in text
+              ], ensure_ascii=False))
+              print("AGENCY_LINES", json.dumps([
+                  {"y": y, "x": x, "text": text}
+                  for y, x, text in headings if AGENCY_RE.match(text)
+              ], ensure_ascii=False))
+          old = json.load(open("data/source-audit/city-reception-baseline.json", encoding="utf-8"))
+          new = json.load(open("/tmp/city-reception-baseline.json", encoding="utf-8"))
+          old_codes = {row["code"] for row in old["rows"]}
+          new_codes = {row["code"] for row in new["rows"]}
+          print("CODE_SET_DIFF", json.dumps({
+              "oldCount": len(old_codes), "newCount": len(new_codes),
+              "missingFromGenerated": sorted(old_codes-new_codes)[:120],
+              "extraInGenerated": sorted(new_codes-old_codes)[:120],
+          }, ensure_ascii=False))
+          PY
+
       - name: Python unit tests
         run: python -m unittest discover -s tests -v
 
