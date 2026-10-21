@@ -54,6 +54,9 @@ jobs:
         run: |
           python -m py_compile             scripts/canonical_v4.py             scripts/validate_canonical_field_contract.py             scripts/classify_official_tables.py             scripts/extract_guidance_field_candidates.py             scripts/validate_guidance_field_candidates.py             scripts/validate_online_service_candidates.py             scripts/validate_fee_candidates.py             scripts/validate_legal_basis_candidates.py             scripts/validate_official_guidance_fields.py             scripts/build_guidance_promotion_plan.py             scripts/reconcile_phase1.py             scripts/migrate_canonical_v4.py             scripts/build_priority50_guidance.py             scripts/validate_priority50_guidance.py             scripts/audit_vinhbao_submission_links.py             scripts/validate_single_submit_link_ui.py             scripts/update_official_sources.py             scripts/extract_city_updates.py             scripts/build_master_data.py             scripts/reconcile_priority51_crosswalk.py             scripts/build_master_delta.py             scripts/fetch_dvc_mapping.py             scripts/build_city_reception_baseline.py             scripts/validate_tthc_guidance.py             scripts/apply_guidance_enrichment.py             scripts/build_tthc_tracking.py             scripts/check_static_site.py             scripts/build_extra_data.py             scripts/routine_guard.py             scripts/write_routine_run_record.py             scripts/check_routine_health.py
 
+      - name: Python unit tests
+        run: python -m unittest discover -s tests -v
+
       - name: Rebuild and validate city baseline from official PDF
         if: steps.city-baseline-impact.outputs.changed == 'true'
         run: |
@@ -69,40 +72,46 @@ jobs:
               "rowCount": payload["rowCount"],
               "missingNameCount": payload["missingNameCount"],
               "emptyFieldCount": payload["emptyFieldCount"],
+              "missingAgencyCount": payload["missingAgencyCount"],
               "duplicateConflictCount": payload["duplicateConflictCount"],
               "missingNameSample": payload.get("missingNameCodes", [])[:20],
               "emptyFieldSample": payload.get("emptyFieldCodes", [])[:20],
+              "missingAgencySample": payload.get("missingAgencyCodes", [])[:20],
               "duplicateConflictSample": payload.get("duplicateConflicts", [])[:5],
               "anchors": {code: rows.get(code) for code in ("1.000016", "1.000481")},
           }, ensure_ascii=False, indent=2))
-          assert payload["rowCount"] == len(payload["rows"]), "rowCount does not match extracted rows"
-          assert payload["rowCount"] >= 1900, f"unexpectedly small city baseline: {payload['rowCount']}"
-          assert payload["missingNameCount"] == 0, f"missing names: {payload['missingNameCount']} {payload.get('missingNameCodes', [])[:20]}"
-          assert payload["emptyFieldCount"] == 0, f"empty fields: {payload['emptyFieldCount']} {payload.get('emptyFieldCodes', [])[:20]}"
+          assert payload["rowCount"] == 1928, f"unexpected row count: {payload['rowCount']}"
+          assert payload["missingNameCount"] == 0, f"missing names: {payload['missingNameCodes'][:20]}"
+          assert payload["emptyFieldCount"] == 0, f"empty fields: {payload['emptyFieldCodes'][:20]}"
+          assert payload["missingAgencyCount"] == 0, f"missing agencies: {payload['missingAgencyCodes'][:20]}"
           assert payload["duplicateConflictCount"] == 0, f"conflicting duplicate cells: {payload['duplicateConflicts'][:10]}"
 
           expected = {
               "1.000016": (
                   "Thông báo tăng, giảm vốn góp của quỹ đầu tư khởi nghiệp sáng tạo (cấp tỉnh)",
                   "Hỗ trợ doanh nghiệp nhỏ và vừa",
+                  "SỞ TÀI CHÍNH",
               ),
               "1.000481": (
                   "Cấp điều chỉnh Giấy chứng nhận đủ điều kiện thương nhân kinh doanh mua bán CNG",
                   "Kinh doanh khí",
+                  "SỞ CÔNG THƯƠNG",
               ),
           }
-          for code, (name, field) in expected.items():
+          for code, (name, field, agency) in expected.items():
               row = rows.get(code)
               assert row is not None, f"missing official anchor code: {code}"
               assert row["name"] == name, f"{code} name mismatch: {row['name']!r}"
               assert row["field"] == field, f"{code} field mismatch: {row['field']!r}"
+              assert agency in row["agency"], f"{code} agency mismatch: {row['agency']!r}"
 
           print(json.dumps({
               "rowCount": payload["rowCount"],
               "missingNameCount": payload["missingNameCount"],
               "emptyFieldCount": payload["emptyFieldCount"],
+              "missingAgencyCount": payload["missingAgencyCount"],
               "duplicateConflictCount": payload["duplicateConflictCount"],
-              "anchors": {code: {"name": rows[code]["name"], "field": rows[code]["field"]} for code in expected},
+              "anchors": {code: {"name": rows[code]["name"], "field": rows[code]["field"], "agency": rows[code]["agency"]} for code in expected},
           }, ensure_ascii=False, indent=2))
           PY
 
@@ -114,157 +123,6 @@ jobs:
           path: /tmp/city-reception-baseline.json
           if-no-files-found: ignore
           retention-days: 7
-
-      - name: Diagnose city PDF extraction on failed QC
-        if: failure() && steps.city-baseline-impact.outputs.changed == 'true'
-        run: |
-          python - <<'PY'
-          import io, json, re
-          import fitz
-          from scripts.build_city_reception_baseline import (
-              AGENCY_RE, CODE_RE, cluster_code_columns, fetch_pdf, fragments,
-              group_text_lines, norm_code, space,
-          )
-
-          with fitz.open(stream=fetch_pdf(), filetype="pdf") as pdf:
-              page = pdf[6]
-              page.get_pixmap(matrix=fitz.Matrix(1.5, 1.5), alpha=False).save("/tmp/city-page7.png")
-              blocks = page.get_text("blocks", sort=False)
-              print("PDF_TEXT_BLOCKS", json.dumps([
-                  {"bbox": [round(float(v), 2) for v in block[:4]], "text": str(block[4])[:220], "block_no": block[5] if len(block) > 5 else None}
-                  for block in blocks[:100]
-              ], ensure_ascii=False))
-              target_block_ids = {
-                  int(block[5]) for block in blocks
-                  if len(block) > 5 and ("1.000481" in str(block[4]) or "1.000016" in str(block[4]))
-              }
-              words = page.get_text("words", sort=False)
-              print("ANCHOR_BLOCK_WORDS", json.dumps([
-                  {"block": word[5], "line": word[6], "word": word[7],
-                   "bbox": [round(float(v), 2) for v in word[:4]], "text": word[4]}
-                  for word in words if int(word[5]) in target_block_ids
-              ], ensure_ascii=False))
-              print("PDF_PAGE_TEXT_ORDER", page.get_text("text", sort=False)[:7000])
-              for page_no in (4, 5, 6, 7):
-                  if page_no >= len(pdf):
-                      continue
-                  diagnostic_page = pdf[page_no]
-                  entries = []
-                  for block_index, block in enumerate(diagnostic_page.get_text("blocks", sort=False)):
-                      block_text = space(str(block[4]))
-                      codes_in_block = re.findall(r"(?<!\\d)(\\d{1,2}\\.\\d{3,6})(?!\\d)", block_text)
-                      if AGENCY_RE.match(block_text) or codes_in_block:
-                          entries.append({
-                              "index": block_index,
-                              "bbox": [round(float(v), 2) for v in block[:4]],
-                              "text": block_text[:150],
-                              "codes": codes_in_block,
-                          })
-                  print("PAGE_SERIES", page_no + 1, json.dumps(entries[:100], ensure_ascii=False))
-              code_words = []
-              for word in page.get_text("words", sort=False):
-                  for match in re.finditer(r"(?<!\\d)(\\d{1,2}\\.\\d{3,6})(?!\\d)", str(word[4])):
-                      code_words.append({
-                          "code": match.group(1),
-                          "bbox": [round(float(v), 2) for v in word[:4]],
-                          "block": word[5], "line": word[6], "word": word[7],
-                      })
-              print("PDF_CODE_WORDS", json.dumps(code_words[:100], ensure_ascii=False))
-              items = fragments(page)
-              codes = []
-              for y, x, text in items:
-                  candidate = text.strip().rstrip(".")
-                  if CODE_RE.fullmatch(candidate):
-                      codes.append((y, x, norm_code(candidate)))
-              groups = cluster_code_columns(codes)
-              headings = group_text_lines(items)
-              print("PAGE_SIZE", {"width": page.rect.width, "height": page.rect.height})
-              print("CODE_COLUMN_GROUPS", json.dumps([
-                  {"center": sorted(row[1] for row in group)[len(group)//2],
-                   "count": len(group),
-                   "sample": [row[2] for row in sorted(group, key=lambda r: -r[0])[:12]]}
-                  for group in groups
-              ], ensure_ascii=False))
-              print("ANCHOR_WORDS", json.dumps([
-                  {"y": y, "x": x, "text": text}
-                  for y, x, text in items
-                  if "000016" in text or "000481" in text or "Thông báo" in text or "Cấp điều chỉnh" in text or "Hỗ trợ doanh" in text
-              ], ensure_ascii=False))
-              print("AGENCY_LINES", json.dumps([
-                  {"y": y, "x": x, "text": text}
-                  for y, x, text in headings if AGENCY_RE.match(text)
-              ], ensure_ascii=False))
-          old = json.load(open("data/source-audit/city-reception-baseline.json", encoding="utf-8"))
-          new = json.load(open("/tmp/city-reception-baseline.json", encoding="utf-8"))
-          old_codes = {row["code"] for row in old["rows"]}
-          new_codes = {row["code"] for row in new["rows"]}
-          print("CODE_SET_DIFF", json.dumps({
-              "oldCount": len(old_codes), "newCount": len(new_codes),
-              "missingFromGenerated": sorted(old_codes-new_codes)[:120],
-              "extraInGenerated": sorted(new_codes-old_codes)[:120],
-          }, ensure_ascii=False))
-          PY
-
-      - name: Upload rendered city PDF page for review
-        if: failure() && steps.city-baseline-impact.outputs.changed == 'true'
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
-        with:
-          name: city-pdf-page7-preview
-          path: /tmp/city-page7.png
-          if-no-files-found: ignore
-          retention-days: 7
-
-      - name: Inspect alternate official city baseline PDFs
-        if: failure() && steps.city-baseline-impact.outputs.changed == 'true'
-        run: |
-          python - <<'PY'
-          import fitz, hashlib, json
-          from pathlib import Path
-          from urllib.request import Request, urlopen
-
-          sources = {
-              "june27": "https://cdn.haiphong.gov.vn/gov-hpg/6874/tintuc/2025/6/danh-muc-thu-tuc-hanh-chinh-thuc-hien-tiep-nhan-tai-trung-tam-phuc-vu-hanh-chinh-cong-thanh-pho-hai-phong-chuan-27.6-638867204782347930.pdf",
-              "sep26": "https://cdn.haiphong.gov.vn/gov-hpg/6872/tintuc/2025/9/tp-danh-muc-thu-tuc-hanh-chinh-thuc-hien-tiep-nhan-tai-trung-tam-phuc-vu-hanh-chinh-cong-thanh-pho-hai-phong638944811458835891.pdf",
-          }
-          result = {}
-          for name, url in sources.items():
-              req = Request(url, headers={"User-Agent": "BangNiemYetVinhBao-City-Baseline-QC/1.0"})
-              with urlopen(req, timeout=60) as response:
-                  data = response.read()
-              with fitz.open(stream=data, filetype="pdf") as pdf:
-                  page_count = len(pdf)
-                  if page_count > 6:
-                      pdf[6].get_pixmap(matrix=fitz.Matrix(1.5, 1.5), alpha=False).save(f"/tmp/city-pdf-{name}-page7.png")
-                      excerpt = pdf[6].get_text()[:500]
-                  else:
-                      excerpt = pdf[0].get_text()[:500] if page_count else ""
-              result[name] = {
-                  "url": url,
-                  "bytes": len(data),
-                  "sha256": hashlib.sha256(data).hexdigest(),
-                  "pageCount": page_count,
-                  "page7TextExcerpt": excerpt,
-              }
-          Path("/tmp/city-pdf-source-alternatives.json").write_text(
-              json.dumps(result, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8"
-          )
-          print(json.dumps(result, ensure_ascii=False, indent=2))
-          PY
-
-      - name: Upload alternate official PDF previews
-        if: always() && steps.city-baseline-impact.outputs.changed == 'true'
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
-        with:
-          name: city-pdf-source-alternatives
-          path: |
-            /tmp/city-pdf-source-alternatives.json
-            /tmp/city-pdf-june27-page7.png
-            /tmp/city-pdf-sep26-page7.png
-          if-no-files-found: ignore
-          retention-days: 7
-
-      - name: Python unit tests
-        run: python -m unittest discover -s tests -v
 
       - name: Detect canonical-build impact
         if: github.event_name == 'pull_request'
