@@ -173,7 +173,7 @@ def section_field_records(blocks, words_by_block):
         match = re.match(r"^[A-I]\s+LĨNH VỰC\s+(.+)$", line["text"], flags=re.I)
         if not match:
             continue
-        field = re.sub(r"\\s+STT\\s+Mã TTHC.*$", "", match.group(1), flags=re.I)
+        field = re.sub(r"\s+STT\s+Mã TTHC.*$", "", match.group(1), flags=re.I)
         sections.append({**line, "field": space(field)})
     return sections
 
@@ -186,68 +186,60 @@ def heading_distance(x, heading):
 
 
 def resolve_agency(code_record, headings, previous_headings):
-    """Resolve the agency by nearest matching table column and preceding visual heading."""
+    """Choose the nearest matching table column, including section headings from prior pages."""
     x = code_record["x"]
     y = code_record["y"]
-    eligible = [heading for heading in headings if heading["y0"] <= y]
-    if eligible:
-        min_distance = min(heading_distance(x, heading) for heading in eligible)
-        same_column = [
-            heading for heading in eligible
-            if heading_distance(x, heading) <= min_distance + 5.0
-        ]
-        return max(same_column, key=lambda heading: heading["y0"])["agency"]
-
-    if previous_headings:
-        min_distance = min(heading_distance(x, heading) for heading in previous_headings)
-        same_column = [
-            heading for heading in previous_headings
-            if heading_distance(x, heading) <= min_distance + 5.0
-        ]
-        return max(same_column, key=lambda heading: heading["page"])["agency"]
-    return ""
+    candidates = [heading for heading in headings if heading["y0"] <= y] + previous_headings
+    if not candidates:
+        return ""
+    min_distance = min(heading_distance(x, heading) for heading in candidates)
+    same_column = [
+        heading for heading in candidates
+        if heading_distance(x, heading) <= min_distance + 5.0
+    ]
+    return max(same_column, key=lambda heading: (heading.get("page", 0), heading["y0"]))["agency"]
 
 
 def resolve_section_field(code_record, sections, previous_sections):
     """Use a field label only when the PDF explicitly supplies it as a section heading."""
     x = code_record["x"]
     y = code_record["y"]
-    eligible = [section for section in sections if section["y0"] <= y]
-    if eligible:
-        min_distance = min(heading_distance(x, section) for section in eligible)
-        same_column = [
-            section for section in eligible
-            if heading_distance(x, section) <= min_distance + 5.0
-        ]
-        return max(same_column, key=lambda section: section["y0"])["field"]
-    if previous_sections:
-        min_distance = min(heading_distance(x, section) for section in previous_sections)
-        same_column = [
-            section for section in previous_sections
-            if heading_distance(x, section) <= min_distance + 5.0
-        ]
-        return max(same_column, key=lambda section: section["page"])["field"]
-    return ""
+    candidates = [section for section in sections if section["y0"] <= y] + previous_sections
+    if not candidates:
+        return ""
+    min_distance = min(heading_distance(x, section) for section in candidates)
+    same_column = [
+        section for section in candidates
+        if heading_distance(x, section) <= min_distance + 5.0
+    ]
+    return max(same_column, key=lambda section: (section.get("page", 0), section["y0"]))["field"]
 
 
-def cell_text(words):
-    """Join cell words by physical line, independent of block-local text order."""
-    ordered = sorted(words, key=lambda word: ((float(word[1]) + float(word[3])) / 2.0, float(word[0])))
-    lines = []
-    current = []
-    current_y = None
-    for word in ordered:
-        y = (float(word[1]) + float(word[3])) / 2.0
-        if current and abs(y - current_y) > 2.5:
-            lines.append(space(" ".join(str(item[4]) for item in sorted(current, key=lambda item: float(item[0])))))
-            current = []
-            current_y = None
-        if not current:
-            current_y = y
-        current.append(word)
-    if current:
-        lines.append(space(" ".join(str(item[4]) for item in sorted(current, key=lambda item: float(item[0])))))
-    return space(" ".join(line for line in lines if line))
+def collect_nearest_field(blocks, block_index, words_by_block, row_codes_by_block, code_record, max_distance=24.0):
+    """Recover a field cell from a separate PDF text block aligned to the code row."""
+    candidates = []
+    for candidate_index, candidate in enumerate(blocks):
+        if candidate_index == block_index or row_codes_by_block.get(candidate_index):
+            continue
+        text = space(str(candidate[4]))
+        if HEADER_RE.match(text) or agency_heading(blocks, candidate_index)[0]:
+            continue
+        if re.match(r"^[A-I]\\s+LĨNH VỰC\\s+", text, flags=re.I):
+            continue
+        candidate_words = words_by_block.get(int(candidate[5]), [])
+        if not candidate_words:
+            continue
+        part = words_text(candidate_words, 443.0, 700.0)
+        if not part:
+            continue
+        center_y = (float(candidate[1]) + float(candidate[3])) / 2.0
+        distance = abs(center_y - code_record["y"])
+        if distance <= max_distance:
+            candidates.append((distance, part))
+    if not candidates:
+        return ""
+    candidates.sort(key=lambda item: item[0])
+    return candidates[0][1]
 
 def collect_separate_cells(blocks, block_index, words_by_block, row_codes_by_block, need_name, need_field):
     """Collect cell text following a row, including a previous row's field before the next code."""
@@ -288,146 +280,113 @@ def collect_separate_cells(blocks, block_index, words_by_block, row_codes_by_blo
 
 
 def extract_rows(pages):
-    """Extract code rows and associate each cell by its physical position in the PDF."""
+    """Extract each code token and associate cells/headings by source order and geometry."""
     page_records = []
 
     for page_no, page in enumerate(pages, start=1):
         blocks = page.get_text("blocks", sort=False)
         block_no_to_index = {int(block[5]): index for index, block in enumerate(blocks)}
         words_by_block = {}
+        row_codes_by_block = {}
         words = page.get_text("words", sort=False)
         for word in words:
-            words_by_block.setdefault(int(word[5]), []).append(word)
-
-        row_codes_by_block = {}
-        code_records = []
-        for word in words:
+            block_no = int(word[5])
+            words_by_block.setdefault(block_no, []).append(word)
             code_token = space(str(word[4])).rstrip(".")
             if float(word[0]) >= 160.0 or not CODE_RE.fullmatch(code_token):
                 continue
-            block_index = block_no_to_index.get(int(word[5]))
+            block_index = block_no_to_index.get(block_no)
             if block_index is None:
                 continue
-            record = {
-                "id": len(code_records),
+            row_codes_by_block.setdefault(block_index, []).append({
                 "code": norm_code(code_token),
                 "order": (int(word[6]), int(word[7])),
                 "x": float(word[0]),
                 "y": (float(word[1]) + float(word[3])) / 2.0,
-                "block_index": block_index,
-                "page": page_no,
-            }
-            code_records.append(record)
-            row_codes_by_block.setdefault(block_index, []).append(record)
+            })
 
-        code_records.sort(key=lambda record: (record["y"], record["x"]))
-        headings = agency_heading_records(blocks, words_by_block)
-        sections = section_field_records(blocks, words_by_block)
+        for code_records in row_codes_by_block.values():
+            code_records.sort(key=lambda item: item["order"])
+        headings = [{**heading, "page": page_no} for heading in agency_heading_records(blocks, words_by_block)]
+        sections = [{**section, "page": page_no} for section in section_field_records(blocks, words_by_block)]
         page_records.append((
-            page_no, blocks, words_by_block, row_codes_by_block,
-            code_records, headings, sections,
+            page_no, blocks, words_by_block, row_codes_by_block, headings, sections,
         ))
 
     previous_headings = []
     previous_sections = []
     rows = []
 
-    for page_no, blocks, words_by_block, row_codes_by_block, code_records, headings, sections in page_records:
-        name_words_by_id = {record["id"]: [] for record in code_records}
-        field_words_by_id = {record["id"]: [] for record in code_records}
-        heading_blocks = {heading["block_index"] for heading in headings}
-        section_blocks = {section["block_index"] for section in sections}
-
-        if not code_records:
-            previous_headings.extend({**heading, "page": page_no} for heading in headings)
-            previous_sections.extend({**section, "page": page_no} for section in sections)
-            continue
-
-        for block_index, block in enumerate(blocks):
-            block_words = words_by_block.get(int(block[5]), [])
-            if not block_words:
-                continue
-            block_codes = row_codes_by_block.get(block_index, [])
-            codes_inside_block = [
-                record for record in code_records
-                if float(block[1]) - 1.0 <= record["y"] <= float(block[3]) + 1.0
-            ]
-
-            if block_codes:
-                for word in block_words:
-                    x = float(word[0])
-                    if not (160.0 <= x < 700.0):
-                        continue
-                    y = (float(word[1]) + float(word[3])) / 2.0
-                    if len(block_codes) == 1 and len(codes_inside_block) <= 1:
-                        target = block_codes[0]
-                    else:
-                        target = min(code_records, key=lambda record: abs(record["y"] - y))
-                    if 160.0 <= x < 443.0:
-                        name_words_by_id[target["id"]].append(word)
-                    elif 443.0 <= x < 700.0:
-                        field_words_by_id[target["id"]].append(word)
+    for page_no, blocks, words_by_block, row_codes_by_block, headings, sections in page_records:
+        block_index = 0
+        while block_index < len(blocks):
+            code_records = row_codes_by_block.get(block_index, [])
+            if not code_records:
+                block_index += 1
                 continue
 
-            text = space(str(block[4]))
-            if (
-                HEADER_RE.match(text)
-                or block_index in heading_blocks
-                or block_index in section_blocks
-            ):
-                continue
+            block_words = words_by_block.get(int(blocks[block_index][5]), [])
+            for code_index, code_record in enumerate(code_records):
+                code_order = code_record["order"]
+                next_code_order = (
+                    code_records[code_index + 1]["order"]
+                    if code_index + 1 < len(code_records)
+                    else None
+                )
+                name = words_text(
+                    block_words, 160.0, 443.0,
+                    min_order=code_order, max_order=next_code_order,
+                )
+                field = words_text(
+                    block_words, 443.0, 700.0,
+                    min_order=code_order, max_order=next_code_order,
+                )
 
-            cell_words = [
-                word for word in block_words
-                if 160.0 <= float(word[0]) < 700.0
-            ]
-            if not cell_words:
-                continue
+                # Only the final code in a block may borrow cell text from later blocks;
+                # earlier codes in the same block are bounded by the next code token.
+                if (not name or not field) and code_index == len(code_records) - 1:
+                    extra_name, extra_field = collect_separate_cells(
+                        blocks,
+                        block_index,
+                        words_by_block,
+                        row_codes_by_block,
+                        need_name=not name,
+                        need_field=not field,
+                    )
+                    if not name:
+                        name = extra_name
+                    if not field:
+                        field = extra_field
 
-            block_center_y = (float(block[1]) + float(block[3])) / 2.0
-            codes_inside_block = [
-                record for record in code_records
-                if float(block[1]) - 1.0 <= record["y"] <= float(block[3]) + 1.0
-            ]
-            if len(codes_inside_block) > 1:
-                for word in cell_words:
-                    y = (float(word[1]) + float(word[3])) / 2.0
-                    target = min(code_records, key=lambda record: abs(record["y"] - y))
-                    if 160.0 <= float(word[0]) < 443.0:
-                        name_words_by_id[target["id"]].append(word)
-                    else:
-                        field_words_by_id[target["id"]].append(word)
-            else:
-                target = min(code_records, key=lambda record: abs(record["y"] - block_center_y))
-                for word in cell_words:
-                    if 160.0 <= float(word[0]) < 443.0:
-                        name_words_by_id[target["id"]].append(word)
-                    else:
-                        field_words_by_id[target["id"]].append(word)
+                field_source = None
+                if not field and page_no <= 109:
+                    near_field = collect_nearest_field(
+                        blocks, block_index, words_by_block, row_codes_by_block,
+                        code_record, max_distance=24.0,
+                    )
+                    if near_field:
+                        field = near_field
+                        field_source = "PDF_COORDINATE_CELL"
+                if not field:
+                    section_field = resolve_section_field(code_record, sections, previous_sections)
+                    if section_field:
+                        field = section_field
+                        field_source = "PDF_SECTION_HEADING"
 
-        for record in code_records:
-            name = cell_text(name_words_by_id[record["id"]])
-            field = cell_text(field_words_by_id[record["id"]])
-            field_source = None
-            if not field:
-                section_field = resolve_section_field(record, sections, previous_sections)
-                if section_field:
-                    field = section_field
-                    field_source = "PDF_SECTION_HEADING"
+                row = {
+                    "code": code_record["code"],
+                    "name": name,
+                    "field": field,
+                    "agency": resolve_agency(code_record, headings, previous_headings),
+                    "page": page_no,
+                }
+                if field_source:
+                    row["fieldSource"] = field_source
+                rows.append(row)
+            block_index += 1
 
-            row = {
-                "code": record["code"],
-                "name": name,
-                "field": field,
-                "agency": resolve_agency(record, headings, previous_headings),
-                "page": page_no,
-            }
-            if field_source:
-                row["fieldSource"] = field_source
-            rows.append(row)
-
-        previous_headings.extend({**heading, "page": page_no} for heading in headings)
-        previous_sections.extend({**section, "page": page_no} for section in sections)
+        previous_headings.extend(headings)
+        previous_sections.extend(sections)
 
     return rows
 
@@ -447,13 +406,6 @@ def dedupe(rows):
         for key in ("name", "field", "agency"):
             old = space(str(previous.get(key, "")))
             new = space(str(row.get(key, "")))
-            if key == "agency":
-                if old and new and old != new:
-                    previous[key] = "; ".join(dict.fromkeys([*old.split("; "), *new.split("; ")]))
-                elif not old and new:
-                    previous[key] = new
-                continue
-
             conflict_key = (code, key)
             if conflict_key in conflicted_fields:
                 continue

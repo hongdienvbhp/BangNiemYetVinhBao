@@ -92,6 +92,31 @@ class CityReceptionBaselineParserTests(unittest.TestCase):
         self.assertEqual(norm_code("2.00018"), "2.000180")
 
 
+    def test_recovers_field_from_previous_aligned_block(self):
+        blocks = [
+            (443.26, 61.41, 545.98, 90.23, "Kinh doanh khí", 1, 0),
+            (83.42, 61.41, 177.86, 90.23, "1.000481", 2, 0),
+            (196.85, 61.41, 435.5, 90.23, "Cấp điều kiện kinh doanh khí", 3, 0),
+        ]
+        words = [
+            (443.26, 68.58, 482.8, 83.51, "Kinh", 1, 0, 0),
+            (485.1, 68.58, 523.0, 83.51, "doanh", 1, 0, 1),
+            (525.0, 68.58, 545.9, 83.51, "khí", 1, 0, 2),
+            (125.9, 68.58, 174.5, 83.51, "1.000481", 2, 0, 0),
+            (196.85, 68.58, 217.7, 83.51, "Cấp", 3, 0, 0),
+            (220.0, 68.58, 250.0, 83.51, "điều", 3, 0, 1),
+            (253.0, 68.58, 290.0, 83.51, "kiện", 3, 0, 2),
+            (293.0, 68.58, 350.0, 83.51, "kinh", 3, 0, 3),
+            (353.0, 68.58, 390.0, 83.51, "doanh", 3, 0, 4),
+            (393.0, 68.58, 435.0, 83.51, "khí", 3, 0, 5),
+        ]
+
+        rows = extract_rows([FakePage(blocks, words)])
+
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["field"], "Kinh doanh khí")
+
+
     def test_extracts_multiple_codes_in_one_pdf_block(self):
         blocks = [
             (83.42, 100.0, 545.98, 145.0,

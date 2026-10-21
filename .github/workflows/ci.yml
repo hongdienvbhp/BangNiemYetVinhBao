@@ -95,7 +95,7 @@ jobs:
           assert all(rows[code].get("fieldStatus") == "MANUAL_REVIEW" for code in payload["emptyFieldCodes"]), "unmarked empty field"
           assert all(rows[code].get("agencyStatus") == "MANUAL_REVIEW" for code in payload["missingAgencyCodes"]), "unmarked missing agency"
           for conflict in payload["duplicateConflicts"]:
-              status_key = {"name": "nameStatus", "field": "fieldStatus"}.get(conflict["field"])
+              status_key = {"name": "nameStatus", "field": "fieldStatus", "agency": "agencyStatus"}.get(conflict["field"])
               assert status_key and rows[conflict["code"]].get(status_key) == "MANUAL_REVIEW", f"unmarked duplicate conflict: {conflict}"
           assert generated_codes == committed_codes, f"source code set differs from baseline: missing={sorted(committed_codes - generated_codes)}, extra={sorted(generated_codes - committed_codes)}"
 
