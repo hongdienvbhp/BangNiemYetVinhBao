@@ -129,6 +129,21 @@ jobs:
           with fitz.open(stream=fetch_pdf(), filetype="pdf") as pdf:
               page = pdf[6]
               page.get_pixmap(matrix=fitz.Matrix(1.5, 1.5), alpha=False).save("/tmp/city-page7.png")
+              blocks = page.get_text("blocks", sort=False)
+              print("PDF_TEXT_BLOCKS", json.dumps([
+                  {"bbox": [round(float(v), 2) for v in block[:4]], "text": str(block[4])[:220], "block_no": block[5] if len(block) > 5 else None}
+                  for block in blocks[:100]
+              ], ensure_ascii=False))
+              print("PDF_PAGE_TEXT_ORDER", page.get_text("text", sort=False)[:7000])
+              code_words = []
+              for word in page.get_text("words", sort=False):
+                  for match in re.finditer(r"(?<!\\d)(\\d{1,2}\\.\\d{3,6})(?!\\d)", str(word[4])):
+                      code_words.append({
+                          "code": match.group(1),
+                          "bbox": [round(float(v), 2) for v in word[:4]],
+                          "block": word[5], "line": word[6], "word": word[7],
+                      })
+              print("PDF_CODE_WORDS", json.dumps(code_words[:100], ensure_ascii=False))
               items = fragments(page)
               codes = []
               for y, x, text in items:
