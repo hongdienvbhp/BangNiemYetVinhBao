@@ -262,6 +262,13 @@
       "value": "Thủ tục cấp Giấy xác nhận đủ điều kiện tư vấn Hệ thống quản lý chất lượng theo Tiêu chuẩn quốc gia TCVN ISO 9001 đối với cơ quan, tổ chức thuộc hệ thống hành chính nhà nước cho tổ chức tư vấn",
       "page": 93,
       "reason": "Khôi phục tên bị lỗi tách dòng trong baseline hiện tại bằng dòng trích xuất đầy đủ từ PDF."
+    },
+    {
+      "code": "1.000481",
+      "field": "agency",
+      "value": "VI. SỞ CÔNG THƯƠNG",
+      "page": 70,
+      "reason": "Đối chiếu tên thủ tục mua bán CNG với tiêu đề cơ quan của danh mục chính; sửa nhầm gán sang Sở Tài chính."
     }
   ],
   "manualReview": [
