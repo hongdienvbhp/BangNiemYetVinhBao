@@ -12,7 +12,7 @@ from pathlib import Path
 from statistics import median
 from urllib.request import Request, urlopen
 
-from pypdf import PdfReader
+import pdfplumber
 
 ARTICLE_URL = "https://haiphong.gov.vn/thu-tuc-hanh-chinh-76761/danh-muc-thu-tuc-hanh-chinh-tiep-nhan-tai-trung-tam-phuc-vu-hanh-chinh-cong-thanh-pho-hai-phong--760833"
 PDF_URL = "https://cdn.haiphong.gov.vn/gov-hpg/1/tintuc/2025/7/danh-muc-thu-tuc-hanh-chinh-thuc-hien-tiep-nhan-tai-trung-tam-phuc-vu-hanh-chinh-cong-thanh-pho-hai-phong638871741697189500.pdf"
@@ -22,11 +22,11 @@ EXPECTED_PAGES = 114
 CODE_RE = re.compile(r"^\d{1,2}\.\d{3,6}$")
 AGENCY_RE = re.compile(r"^(?:[IVXLCDM]+\.|\d+\.)\s+(?:SỞ|BAN|VĂN PHÒNG|THANH TRA|CÔNG AN|UBND|ỦY BAN)", re.I)
 
-# The official PDF uses repeated, side-by-side tables. The old parser read tm
-# without composing cm, causing text from separate table columns to overlap.
-# These bounds are relative to the left edge of each repeated table template.
+# Each page contains repeated table templates positioned side-by-side. Use
+# absolute page coordinates from pdfplumber; pypdf's visitor callback for this
+# source exposes local text matrices for form-based table blocks.
 CODE_COLUMN_GAP = 180.0
-BASE_CODE_X_CENTER = 140.0
+BASE_CODE_X_CENTER = 125.9
 BASE_NAME_X_MIN = 160.0
 BASE_NAME_X_MAX = 443.0
 BASE_FIELD_X_MAX = 700.0
@@ -44,20 +44,65 @@ def norm_code(value: str) -> str:
     return f"{prefix}.{suffix.ljust(6, '0')}"
 
 
-def matrix_multiply(m1, m2):
-    """Compose pypdf's six-element affine matrices using its documented order."""
-    return (
-        m1[0] * m2[0] + m1[1] * m2[2],
-        m1[0] * m2[1] + m1[1] * m2[3],
-        m1[2] * m2[0] + m1[3] * m2[2],
-        m1[2] * m2[1] + m1[3] * m2[3],
-        m1[4] * m2[0] + m1[5] * m2[2] + m2[4],
-        m1[4] * m2[1] + m1[5] * m2[3] + m2[5],
-    )
+def fetch_pdf() -> bytes:
+    req = Request(PDF_URL, headers={"User-Agent": "BangNiemYetVinhBao-City-Baseline/2.1"})
+    with urlopen(req, timeout=60) as response:
+        data = response.read()
+    if not data.startswith(b"%PDF"):
+        raise RuntimeError("Official attachment is not PDF")
+    return data
+
+
+def fragments(page):
+    """Return individual words with absolute page coordinates (y is bottom-origin)."""
+    out = []
+    for word in page.extract_words(
+        x_tolerance=2,
+        y_tolerance=2,
+        keep_blank_chars=False,
+        use_text_flow=False,
+    ):
+        text = space(word.get("text", ""))
+        if not text:
+            continue
+        top = float(word["top"])
+        bottom = float(word["bottom"])
+        y = float(page.height) - ((top + bottom) / 2)
+        out.append((y, float(word["x0"]), text))
+    return out
+
+
+def group_words_by_y(items, tolerance: float = 2.5):
+    groups = []
+    for item in sorted(items, key=lambda row: -row[0]):
+        if not groups or abs(median([row[0] for row in groups[-1]]) - item[0]) > tolerance:
+            groups.append([item])
+        else:
+            groups[-1].append(item)
+    return groups
+
+
+def group_text_lines(items, *, y_tolerance: float = 2.5, x_gap: float = 120.0):
+    """Reconstruct heading lines but split distant side-by-side table columns."""
+    lines = []
+    for group in group_words_by_y(items, tolerance=y_tolerance):
+        segments = []
+        for item in sorted(group, key=lambda row: row[1]):
+            if not segments or item[1] - segments[-1][-1][1] <= x_gap:
+                if not segments:
+                    segments.append([])
+                segments[-1].append(item)
+            else:
+                segments.append([item])
+        for segment in segments:
+            text = space(" ".join(item[2] for item in segment))
+            if text:
+                lines.append((median([item[0] for item in segment]), min(item[1] for item in segment), text))
+    return sorted(lines, key=lambda row: (-row[0], row[1]))
 
 
 def cluster_code_columns(codes, gap: float = CODE_COLUMN_GAP):
-    """Group code fragments by physical x-column instead of mixing page rows."""
+    """Group code fragments by physical x-column instead of mixing table rows."""
     groups = []
     for item in sorted(codes, key=lambda row: row[1]):
         if not groups or item[1] - median([row[1] for row in groups[-1]]) > gap:
@@ -67,48 +112,24 @@ def cluster_code_columns(codes, gap: float = CODE_COLUMN_GAP):
     return groups
 
 
-def fetch_pdf() -> bytes:
-    req = Request(PDF_URL, headers={"User-Agent": "BangNiemYetVinhBao-City-Baseline/2.0"})
-    with urlopen(req, timeout=60) as response:
-        data = response.read()
-    if not data.startswith(b"%PDF"):
-        raise RuntimeError("Official attachment is not PDF")
-    return data
-
-
-def fragments(page):
-    out = []
-
-    def visitor(text, cm, tm, font, size):
-        value = space(text)
-        if value:
-            # Compose the text matrix with the current transformation matrix.
-            # Using tm[4]/tm[5] alone collapses transformed table columns.
-            matrix = matrix_multiply(tm, cm)
-            out.append((float(matrix[5]), float(matrix[4]), value))
-
-    page.extract_text(visitor_text=visitor)
-    return out
-
-
 def column(items, lower, upper, xmin, xmax):
-    selected = [item for item in items if lower < item[0] <= upper and xmin <= item[1] < xmax]
-    buckets = {}
-    for item in selected:
-        buckets.setdefault(round(item[0], 1), []).append(item)
+    selected = [
+        item for item in items
+        if lower < item[0] <= upper and xmin <= item[1] < xmax
+    ]
     lines = []
-    for y in sorted(buckets, reverse=True):
-        line = space(" ".join(item[2] for item in sorted(buckets[y], key=lambda row: row[1])))
+    for group in group_words_by_y(selected):
+        line = space(" ".join(item[2] for item in sorted(group, key=lambda row: row[1])))
         if line:
             lines.append(line)
     return space(" ".join(lines))
 
 
-def extract_rows(reader):
+def extract_rows(pages):
     rows = []
     carried_by_slot = {}
 
-    for page_no, page in enumerate(reader.pages, start=1):
+    for page_no, page in enumerate(pages, start=1):
         items = fragments(page)
         code_fragments = []
         for y, x, text in items:
@@ -122,29 +143,26 @@ def extract_rows(reader):
 
         centers = [median([row[1] for row in group]) for group in groups]
         headings_by_group = {index: [] for index in range(len(groups))}
-        for y, x, text in items:
-            heading = space(text)
-            if AGENCY_RE.match(heading):
+        for y, x, text in group_text_lines(items):
+            if AGENCY_RE.match(text):
                 nearest = min(range(len(centers)), key=lambda index: abs(x - centers[index]))
-                headings_by_group[nearest].append((y, heading))
+                headings_by_group[nearest].append((y, text))
 
+        page_height = float(page.height)
         for group_index, group in enumerate(groups):
             center = centers[group_index]
-            # With two columns, sorted group order gives stable left/right slots.
-            # On a page containing only one table, use its position on the page
-            # so a continuation in the right column does not inherit left agency.
             if len(groups) > 1:
                 slot = group_index
             else:
-                slot = 1 if center > float(page.mediabox.width) / 2 else 0
+                slot = 1 if center > float(page.width) / 2 else 0
 
             headings = sorted(headings_by_group[group_index], key=lambda row: -row[0])
             codes = sorted(group, key=lambda row: -row[0])
             shift = center - BASE_CODE_X_CENTER
 
             for index, (y, x, code) in enumerate(codes):
-                upper = (codes[index - 1][0] + y) / 2 if index else min(730.0, y + 58.0)
-                lower = (y + codes[index + 1][0]) / 2 if index + 1 < len(codes) else max(42.0, y - 58.0)
+                upper = (codes[index - 1][0] + y) / 2 if index else min(page_height - 5.0, y + 58.0)
+                lower = (y + codes[index + 1][0]) / 2 if index + 1 < len(codes) else max(5.0, y - 58.0)
 
                 agency = carried_by_slot.get(slot, "")
                 above = [heading for heading in headings if heading[0] > y]
@@ -212,11 +230,12 @@ def build(data: bytes):
     digest = hashlib.sha256(data).hexdigest()
     if digest != EXPECTED_SHA256:
         raise RuntimeError(f"SHA256 changed: {digest}")
-    reader = PdfReader(io.BytesIO(data))
-    if len(reader.pages) != EXPECTED_PAGES:
-        raise RuntimeError(f"Page count changed: {len(reader.pages)}")
 
-    rows, duplicate_conflicts = dedupe(extract_rows(reader))
+    with pdfplumber.open(io.BytesIO(data)) as pdf:
+        if len(pdf.pages) != EXPECTED_PAGES:
+            raise RuntimeError(f"Page count changed: {len(pdf.pages)}")
+        rows, duplicate_conflicts = dedupe(extract_rows(pdf.pages))
+
     if len(rows) < 300:
         raise RuntimeError(f"Implausibly small baseline: {len(rows)}")
 
@@ -229,7 +248,7 @@ def build(data: bytes):
         "articleUrl": ARTICLE_URL,
         "pdfUrl": PDF_URL,
         "pdfSha256": digest,
-        "pageCount": len(reader.pages),
+        "pageCount": EXPECTED_PAGES,
         "scope": "TTHC tiếp nhận tại Trung tâm Phục vụ hành chính công thành phố Hải Phòng",
         "rowCount": len(rows),
         "missingNameCount": len(missing_name),

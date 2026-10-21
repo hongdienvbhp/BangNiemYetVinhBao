@@ -25,7 +25,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install PDF dependency
-        run: python -m pip install --disable-pip-version-check pypdf==6.17.0
+        run: python -m pip install --disable-pip-version-check pypdf==6.17.0 pdfplumber==0.11.7
 
       - name: Detect city baseline impact
         id: city-baseline-impact
@@ -65,6 +65,16 @@ jobs:
 
           payload = json.loads(Path("/tmp/city-reception-baseline.json").read_text(encoding="utf-8"))
           rows = {row["code"]: row for row in payload["rows"]}
+          print("CITY_BASELINE_QC", json.dumps({
+              "rowCount": payload["rowCount"],
+              "missingNameCount": payload["missingNameCount"],
+              "emptyFieldCount": payload["emptyFieldCount"],
+              "duplicateConflictCount": payload["duplicateConflictCount"],
+              "missingNameSample": payload.get("missingNameCodes", [])[:20],
+              "emptyFieldSample": payload.get("emptyFieldCodes", [])[:20],
+              "duplicateConflictSample": payload.get("duplicateConflicts", [])[:5],
+              "anchors": {code: rows.get(code) for code in ("1.000016", "1.000481")},
+          }, ensure_ascii=False, indent=2))
           assert payload["rowCount"] == len(payload["rows"]), "rowCount does not match extracted rows"
           assert payload["rowCount"] >= 1900, f"unexpectedly small city baseline: {payload['rowCount']}"
           assert payload["missingNameCount"] == 0, f"missing names: {payload['missingNameCount']} {payload.get('missingNameCodes', [])[:20]}"
@@ -104,44 +114,6 @@ jobs:
           path: /tmp/city-reception-baseline.json
           if-no-files-found: ignore
           retention-days: 7
-
-      - name: Diagnose city PDF coordinate transforms on failed QC
-        if: failure() && steps.city-baseline-impact.outputs.changed == 'true'
-        run: |
-          python - <<'PY'
-          import io, json
-          from pypdf import PdfReader
-          from scripts.build_city_reception_baseline import CODE_RE, fetch_pdf, matrix_multiply, space
-
-          reader = PdfReader(io.BytesIO(fetch_pdf()))
-          page = reader.pages[6]
-          codes = []
-          snippets = []
-
-          def visitor(text, cm, tm, font, size):
-              value = space(text)
-              candidate = value.rstrip(".")
-              absolute = matrix_multiply(tm, cm)
-              if CODE_RE.fullmatch(candidate):
-                  codes.append({
-                      "code": candidate,
-                      "tm": [round(float(tm[4]), 2), round(float(tm[5]), 2)],
-                      "cm": [round(float(cm[4]), 2), round(float(cm[5]), 2)],
-                      "absolute": [round(float(absolute[4]), 2), round(float(absolute[5]), 2)],
-                  })
-              if any(term in value for term in ("Thông báo tăng", "Cấp điều chỉnh Giấy chứng nhận", "Hỗ trợ doanh nghiệp")):
-                  snippets.append({
-                      "text": value[:180],
-                      "tm": [round(float(tm[4]), 2), round(float(tm[5]), 2)],
-                      "cm": [round(float(cm[4]), 2), round(float(cm[5]), 2)],
-                      "absolute": [round(float(absolute[4]), 2), round(float(absolute[5]), 2)],
-                  })
-
-          page.extract_text(visitor_text=visitor)
-          print("PAGE", {"width": float(page.mediabox.width), "height": float(page.mediabox.height)})
-          print("CODES_BY_ABSOLUTE_X", json.dumps(sorted(codes, key=lambda item: item["absolute"][0])[:80], ensure_ascii=False))
-          print("ANCHOR_SNIPPETS", json.dumps(snippets[:80], ensure_ascii=False))
-          PY
 
       - name: Python unit tests
         run: python -m unittest discover -s tests -v
