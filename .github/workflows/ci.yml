@@ -25,14 +25,126 @@ jobs:
           python-version: "3.12"
 
       - name: Install PDF dependency
-        run: python -m pip install --disable-pip-version-check pypdf==6.17.0
+        run: python -m pip install --disable-pip-version-check pypdf==6.17.0 PyMuPDF==1.26.7
+
+      - name: Detect city baseline impact
+        id: city-baseline-impact
+        shell: bash
+        run: |
+          set -euo pipefail
+          paths=(
+            data/source-audit/city-reception-baseline.json
+            scripts/build_city_reception_baseline.py
+            scripts/google_sheets_projection.py
+            tests/test_build_city_reception_baseline.py
+            .github/workflows/ci.yml
+          )
+          if [[ "$GITHUB_EVENT_NAME" == "pull_request" ]]; then
+            changed="$(git diff --name-only "${{ github.event.pull_request.base.sha }}...HEAD" -- "${paths[@]}")"
+          else
+            changed="$(git diff --name-only "${{ github.event.before }}" "$GITHUB_SHA" -- "${paths[@]}")"
+          fi
+          if [[ -n "$changed" ]]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Python syntax
         run: |
-          python -m py_compile             scripts/canonical_v4.py             scripts/validate_canonical_field_contract.py             scripts/classify_official_tables.py             scripts/extract_guidance_field_candidates.py             scripts/validate_guidance_field_candidates.py             scripts/validate_online_service_candidates.py             scripts/validate_fee_candidates.py             scripts/validate_legal_basis_candidates.py             scripts/validate_official_guidance_fields.py             scripts/build_guidance_promotion_plan.py             scripts/reconcile_phase1.py             scripts/migrate_canonical_v4.py             scripts/build_priority50_guidance.py             scripts/validate_priority50_guidance.py             scripts/audit_vinhbao_submission_links.py             scripts/validate_single_submit_link_ui.py             scripts/update_official_sources.py             scripts/extract_city_updates.py             scripts/build_master_data.py             scripts/reconcile_priority51_crosswalk.py             scripts/build_master_delta.py             scripts/fetch_dvc_mapping.py             scripts/validate_tthc_guidance.py             scripts/apply_guidance_enrichment.py             scripts/build_tthc_tracking.py             scripts/check_static_site.py             scripts/build_extra_data.py             scripts/routine_guard.py             scripts/write_routine_run_record.py             scripts/check_routine_health.py
+          python -m py_compile             scripts/canonical_v4.py             scripts/validate_canonical_field_contract.py             scripts/classify_official_tables.py             scripts/extract_guidance_field_candidates.py             scripts/validate_guidance_field_candidates.py             scripts/validate_online_service_candidates.py             scripts/validate_fee_candidates.py             scripts/validate_legal_basis_candidates.py             scripts/validate_official_guidance_fields.py             scripts/build_guidance_promotion_plan.py             scripts/reconcile_phase1.py             scripts/migrate_canonical_v4.py             scripts/build_priority50_guidance.py             scripts/validate_priority50_guidance.py             scripts/audit_vinhbao_submission_links.py             scripts/validate_single_submit_link_ui.py             scripts/update_official_sources.py             scripts/extract_city_updates.py             scripts/build_master_data.py             scripts/reconcile_priority51_crosswalk.py             scripts/build_master_delta.py             scripts/fetch_dvc_mapping.py             scripts/build_city_reception_baseline.py             scripts/validate_tthc_guidance.py             scripts/apply_guidance_enrichment.py             scripts/build_tthc_tracking.py             scripts/check_static_site.py             scripts/build_extra_data.py             scripts/routine_guard.py             scripts/write_routine_run_record.py             scripts/check_routine_health.py
 
       - name: Python unit tests
         run: python -m unittest discover -s tests -v
+
+      - name: Rebuild and validate city baseline from official PDF
+        if: steps.city-baseline-impact.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          python scripts/build_city_reception_baseline.py --output /tmp/city-reception-baseline.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          payload = json.loads(Path("/tmp/city-reception-baseline.json").read_text(encoding="utf-8"))
+          rows = {row["code"]: row for row in payload["rows"]}
+          committed = json.loads(Path("data/source-audit/city-reception-baseline.json").read_text(encoding="utf-8"))
+          committed_codes = {row["code"] for row in committed["rows"]}
+          generated_codes = set(rows)
+          source_review_codes = {row["code"] for row in payload.get("sourceReviewRows", [])}
+          committed_source_review_codes = {row["code"] for row in committed.get("sourceReviewRows", [])}
+          print("CODE_SET_DIFF", json.dumps({
+              "committedCount": len(committed_codes),
+              "generatedCount": len(generated_codes),
+              "missingFromGenerated": sorted(committed_codes - generated_codes),
+              "extraInGenerated": sorted(generated_codes - committed_codes),
+              "sourceReviewCodes": sorted(source_review_codes),
+          }, ensure_ascii=False))
+          print("EMPTY_FIELD_ROWS", json.dumps([rows[code] for code in payload.get("emptyFieldCodes", [])], ensure_ascii=False))
+          print("CITY_BASELINE_QC", json.dumps({
+              "rowCount": payload["rowCount"],
+              "missingNameCount": payload["missingNameCount"],
+              "emptyFieldCount": payload["emptyFieldCount"],
+              "missingAgencyCount": payload["missingAgencyCount"],
+              "duplicateConflictCount": payload["duplicateConflictCount"],
+              "missingNameSample": payload.get("missingNameCodes", [])[:20],
+              "emptyFieldSample": payload.get("emptyFieldCodes", [])[:20],
+              "missingAgencySample": payload.get("missingAgencyCodes", [])[:20],
+              "duplicateConflictSample": payload.get("duplicateConflicts", [])[:5],
+              "anchors": {code: rows.get(code) for code in ("1.000016", "1.000481")},
+          }, ensure_ascii=False, indent=2))
+          assert payload["rowCount"] >= 1900, f"implausibly small row count: {payload['rowCount']}"
+          assert all(rows[code].get("nameStatus") == "MANUAL_REVIEW" for code in payload["missingNameCodes"]), "unmarked missing name"
+          assert all(rows[code].get("fieldStatus") == "MANUAL_REVIEW" for code in payload["emptyFieldCodes"]), "unmarked empty field"
+          assert all(rows[code].get("agencyStatus") == "MANUAL_REVIEW" for code in payload["missingAgencyCodes"]), "unmarked missing agency"
+          for conflict in payload["duplicateConflicts"]:
+              status_key = {"name": "nameStatus", "field": "fieldStatus", "agency": "agencyStatus"}.get(conflict["field"])
+              assert status_key and rows[conflict["code"]].get(status_key) == "MANUAL_REVIEW", f"unmarked duplicate conflict: {conflict}"
+          assert len(committed_codes) == 1928, f"active baseline must remain 1,928 codes: {len(committed_codes)}"
+          assert generated_codes == committed_codes, f"active source code set differs from baseline: missing={sorted(committed_codes - generated_codes)}, extra={sorted(generated_codes - committed_codes)}"
+          assert source_review_codes == committed_source_review_codes == {"1.000502", "1.013888"}, f"official PDF codes outside active 1,928-code set must remain visible for review: generated={sorted(source_review_codes)}, committed={sorted(committed_source_review_codes)}"
+          assert payload["sourceReviewRowCount"] == len(source_review_codes) == 2
+          assert all(row.get("baselineStatus") == "MANUAL_REVIEW" for row in payload.get("sourceReviewRows", []))
+          assert all(row["name"].strip() for row in committed["rows"]), "committed baseline has blank names"
+          assert all(row["field"].strip() for row in committed["rows"]), "committed baseline has blank fields"
+
+          expected = {
+              "1.000016": (
+                  "Thông báo tăng, giảm vốn góp của quỹ đầu tư khởi nghiệp sáng tạo (cấp tỉnh)",
+                  "Hỗ trợ doanh nghiệp nhỏ và vừa",
+                  "SỞ TÀI CHÍNH",
+              ),
+              "1.000481": (
+                  "Cấp điều chỉnh Giấy chứng nhận đủ điều kiện thương nhân kinh doanh mua bán CNG",
+                  "Kinh doanh khí",
+                  "SỞ CÔNG THƯƠNG",
+              ),
+          }
+          for code, (name, field, agency) in expected.items():
+              row = rows.get(code)
+              assert row is not None, f"missing official anchor code: {code}"
+              assert row["name"] == name, f"{code} name mismatch: {row['name']!r}"
+              assert row["field"] == field, f"{code} field mismatch: {row['field']!r}"
+              assert agency in row["agency"], f"{code} agency mismatch: {row['agency']!r}"
+
+          print(json.dumps({
+              "rowCount": payload["rowCount"],
+              "missingNameCount": payload["missingNameCount"],
+              "emptyFieldCount": payload["emptyFieldCount"],
+              "missingAgencyCount": payload["missingAgencyCount"],
+              "duplicateConflictCount": payload["duplicateConflictCount"],
+              "anchors": {code: {"name": rows[code]["name"], "field": rows[code]["field"], "agency": rows[code]["agency"]} for code in expected},
+          }, ensure_ascii=False, indent=2))
+          PY
+
+      - name: Upload regenerated city baseline for inspection
+        if: always() && steps.city-baseline-impact.outputs.changed == 'true'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: city-reception-baseline-generated
+          path: /tmp/city-reception-baseline.json
+          if-no-files-found: ignore
+          retention-days: 7
 
       - name: Detect canonical-build impact
         if: github.event_name == 'pull_request'

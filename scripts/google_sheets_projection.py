@@ -233,7 +233,7 @@ def build_city_rows() -> tuple[list[dict[str, str]], list[dict[str, Any]]]:
     for raw in master.get("thuTuc", []):
         if scope_for_master(raw) == "city":
             code = canonical_code(raw)
-            rows.append(base_projection(raw, status="Còn hiệu lực", note=notes.get(code, "Không thay đổi")))
+            rows.append(base_projection(raw, status="Còn hiệu lực", note=notes.get(code, "Đối soát từ canonical hiện hành"), snapshot_date=first(raw.get("sourceSnapshotDate"))))
     for raw in excluded.get("rows", []):
         if scope_for_master(raw) == "city":
             code = canonical_code(raw)

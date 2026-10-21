@@ -1,6 +1,6 @@
 {
   "format": "haiphong-city-reception-baseline",
-  "version": 1,
+  "version": 4,
   "publishedDate": "2025-07-03",
   "articleUrl": "https://haiphong.gov.vn/thu-tuc-hanh-chinh-76761/danh-muc-thu-tuc-hanh-chinh-tiep-nhan-tai-trung-tam-phuc-vu-hanh-chinh-cong-thanh-pho-hai-phong--760833",
   "pdfUrl": "https://cdn.haiphong.gov.vn/gov-hpg/1/tintuc/2025/7/danh-muc-thu-tuc-hanh-chinh-thuc-hien-tiep-nhan-tai-trung-tam-phuc-vu-hanh-chinh-cong-thanh-pho-hai-phong638871741697189500.pdf",
@@ -8,13 +8,13 @@
   "pageCount": 114,
   "scope": "TTHC tiếp nhận tại Trung tâm Phục vụ hành chính công thành phố Hải Phòng",
   "rowCount": 1928,
-  "missingNameCount": 86,
-  "emptyFieldCount": 98,
+  "missingNameCount": 0,
+  "emptyFieldCount": 0,
   "rows": [
     {
       "code": "1.000016",
-      "name": "Thông báo tăng, giảm vốn góp của quỹ đầu tư Cấp điều chỉnh Giấy chứng nhận đủ điều kiện",
-      "field": "Hỗ trợ doanh",
+      "name": "Thông báo tăng, giảm vốn góp của quỹ đầu tư khởi nghiệp sáng tạo (cấp tỉnh)",
+      "field": "Hỗ trợ doanh nghiệp nhỏ và vừa",
       "agency": "IV. SỞ TÀI CHÍNH",
       "page": 7
     },
@@ -34,8 +34,8 @@
     },
     {
       "code": "1.000045",
-      "name": "",
-      "field": "",
+      "name": "Xác nhận bảng kê lâm sản.",
+      "field": "Kiểm lâm",
       "agency": "III. SỞ GIÁO DỤC VÀ ĐÀO TẠO",
       "page": 39
     },
@@ -412,9 +412,9 @@
     },
     {
       "code": "1.000481",
-      "name": "đầu tư của UBND cấp tỉnh thương nhân kinh doanh mua bán C NG",
-      "field": "Kinh doanh khí nam",
-      "agency": "IV. SỞ TÀI CHÍNH",
+      "name": "Cấp điều chỉnh Giấy chứng nhận đủ điều kiện thương nhân kinh doanh mua bán CNG",
+      "field": "Kinh doanh khí",
+      "agency": "VI. SỞ CÔNG THƯƠNG",
       "page": 7
     },
     {
@@ -538,8 +538,8 @@
     },
     {
       "code": "1.000644",
-      "name": "",
-      "field": "",
+      "name": "Thủ tục cấp Giấy chứng nhận đủ điều kiện kinh doanh hoạt động thể thao đối với môn Thể dục thẩm mỹ",
+      "field": "Thể dục thể thao",
       "agency": "IX. SỞ VĂN HOÁ, THỂ THAO VÀ DU LỊCH",
       "page": 91
     },
@@ -587,8 +587,8 @@
     },
     {
       "code": "1.000688",
-      "name": "",
-      "field": "",
+      "name": "Cấp Chứng chỉ hành nghề luật sư đối với người được miễn đào tạo nghề luật sư, miễn tập sự hành nghề luật sư",
+      "field": "Luật sư",
       "agency": "VIII. SỞ TƯ PHÁP",
       "page": 80
     },
@@ -601,8 +601,8 @@
     },
     {
       "code": "1.000703",
-      "name": "",
-      "field": "",
+      "name": "Cấp Giấy phép kinh doanh vận tải bằng xe ô tô, bằng xe bốn bánh có gắn động cơ",
+      "field": "Đường bộ",
       "agency": "VII. SỞ XÂY DỰNG",
       "page": 70
     },
@@ -944,8 +944,8 @@
     },
     {
       "code": "1.000983",
-      "name": "",
-      "field": "",
+      "name": "Thủ tục cấp lại Giấy chứng nhận đủ điều kiện kinh doanh hoạt động thể thao trong trường hợp bị mất hoặc hư hỏng",
+      "field": "Thể dục thể thao",
       "agency": "IX. SỞ VĂN HOÁ, THỂ THAO VÀ DU LỊCH",
       "page": 90
     },
@@ -1175,8 +1175,8 @@
     },
     {
       "code": "1.001213",
-      "name": "",
-      "field": "",
+      "name": "Thủ tục cấp giấy chứng nhận đủ điều kiện kinh doanh hoạt động thể thao đối với môn Mô tô nước trên biển",
+      "field": "Thể dục thể thao",
       "agency": "IX. SỞ VĂN HOÁ, THỂ THAO VÀ DU LỊCH",
       "page": 89
     },
@@ -1210,15 +1210,15 @@
     },
     {
       "code": "1.001238",
-      "name": "",
-      "field": "",
+      "name": "Thủ tục cấp Giấy chứng nhận lưu hành tự do (CFS) đối với hàng hóa xuất khẩu",
+      "field": "Xuất nhập khẩu",
       "agency": "IV. SỞ TÀI CHÍNH",
       "page": 15
     },
     {
       "code": "1.001248",
-      "name": "tại Việt Nam",
-      "field": "",
+      "name": "Cấp lại Giấy đăng ký hoạt động của Trung tâm trọng tài, Chi nhánh Trung tâm trọng tài, Chi nhánh của Tổ chức trọng tài nước ngoài tại Việt Nam",
+      "field": "Trọng tài thương mại",
       "agency": "VIII. SỞ TƯ PHÁP",
       "page": 79
     },
@@ -1231,8 +1231,8 @@
     },
     {
       "code": "1.001271",
-      "name": "",
-      "field": "",
+      "name": "Cấp Giấy chứng nhận đăng ký hoạt động thử nghiệm",
+      "field": "Tiêu chuẩn đo lường chất lượng",
       "agency": "IV. SỞ TÀI CHÍNH",
       "page": 13
     },
@@ -1336,8 +1336,8 @@
     },
     {
       "code": "1.001441",
-      "name": "",
-      "field": "",
+      "name": "Gia hạn Giấy phép lập cơ sở bán lẻ",
+      "field": "Thương mại quốc tế",
       "agency": "IV. SỞ TÀI CHÍNH",
       "page": 11
     },
@@ -1399,8 +1399,8 @@
     },
     {
       "code": "1.001501",
-      "name": "",
-      "field": "",
+      "name": "Chấm dứt hoạt động Văn phòng đại diện giáo dục nước ngoài tại Việt Nam theo đề nghị của tổ chức, cơ sở giáo dục nước ngoài thành lập văn phòng đại diện",
+      "field": "Giáo dục, đào tạo với nước ngoài",
       "agency": "III. SỞ GIÁO DỤC VÀ ĐÀO TẠO",
       "page": 36
     },
@@ -1511,8 +1511,8 @@
     },
     {
       "code": "1.001693",
-      "name": "",
-      "field": "",
+      "name": "Cấp lại Giấy chứng nhận hoạt động cho văn phòng đại diện, chi nhánh của tổ chức khoa học và công nghệ",
+      "field": "Viễn thông và Internet",
       "agency": "X. SỞ KHOA HỌC VÀ CÔNG",
       "page": 108
     },
@@ -1539,8 +1539,8 @@
     },
     {
       "code": "1.001717",
-      "name": "",
-      "field": "",
+      "name": "Cấp lại chứng chỉ thẩm tra viên an toàn giao thông đường bộ",
+      "field": "Đường bộ",
       "agency": "VII. SỞ XÂY DỰNG",
       "page": 69
     },
@@ -1616,8 +1616,8 @@
     },
     {
       "code": "1.001782",
-      "name": "",
-      "field": "",
+      "name": "Thủ tục đăng cai tổ chức giải thi đấu vô địch từng môn thể thao của tỉnh, thành phố trực thuộc trung ương",
+      "field": "Thể dục thể thao",
       "agency": "IX. SỞ VĂN HOÁ, THỂ THAO VÀ DU LỊCH",
       "page": 88
     },
@@ -1791,8 +1791,8 @@
     },
     {
       "code": "1.002010",
-      "name": "",
-      "field": "",
+      "name": "Đăng ký hoạt động của tổ chức hành nghề luật sư",
+      "field": "Luật sư",
       "agency": "VIII. SỞ TƯ PHÁP",
       "page": 78
     },
@@ -1952,8 +1952,8 @@
     },
     {
       "code": "1.002374",
-      "name": "",
-      "field": "",
+      "name": "Cấp Giấy phép vận tải đường bộ quốc tế giữa Việt Nam và Trung Quốc loại D cho phương tiện của Trung Quốc",
+      "field": "Đường bộ",
       "agency": "VII. SỞ XÂY DỰNG",
       "page": 68
     },
@@ -1987,8 +1987,8 @@
     },
     {
       "code": "1.002398",
-      "name": "",
-      "field": "",
+      "name": "Đăng ký hoạt động của công ty luật Việt Nam chuyển đổi từ công ty luật nước ngoài",
+      "field": "Luật sư",
       "agency": "VIII. SỞ TƯ PHÁP",
       "page": 77
     },
@@ -2246,8 +2246,8 @@
     },
     {
       "code": "1.003011",
-      "name": "phê duyệt của UBND cấp tỉnh",
-      "field": "",
+      "name": "Thẩm định đồ án, đồ án điều chỉnh quy hoạch chi tiết của dự án đầu tư xây dựng công trình theo hình thức kinh doanh thuộc thẩm quyền phê duyệt của UBND cấp tỉnh",
+      "field": "Quy hoạch xây dựng, kiến trúc",
       "agency": "VII. SỞ XÂY DỰNG",
       "page": 66
     },
@@ -2274,8 +2274,8 @@
     },
     {
       "code": "1.003048",
-      "name": "",
-      "field": "",
+      "name": "Ký hợp đồng khám bệnh, chữa bệnh bảo hiểm y tế lần đầu",
+      "field": "Tài chính y tế",
       "agency": "II. SỞ Y TẾ",
       "page": 27
     },
@@ -2288,8 +2288,8 @@
     },
     {
       "code": "1.003058",
-      "name": "",
-      "field": "",
+      "name": "Gia hạn chỉ định cơ sở kiểm nghiệm thực phẩm phục vụ quản lý nhà nước",
+      "field": "Quản lý chất lượng nông lâm sản và thủy sản",
       "agency": "III. SỞ GIÁO DỤC VÀ ĐÀO TẠO",
       "page": 37
     },
@@ -2589,8 +2589,8 @@
     },
     {
       "code": "1.003646",
-      "name": "",
-      "field": "",
+      "name": "Thủ tục công nhận bảo vật quốc gia đối với bảo tàng cấp tỉnh, ban hoặc trung tâm quản lý di tích",
+      "field": "Di sản văn hóa",
       "agency": "IX. SỞ VĂN HOÁ, THỂ THAO VÀ DU LỊCH",
       "page": 86
     },
@@ -2841,8 +2841,8 @@
     },
     {
       "code": "1.003878",
-      "name": "xuất cảnh tại khu vực biên giới của Việt Nam và quốc gia đó Tàu biển hoạt động tuyến nội địa vào cảng",
-      "field": "",
+      "name": "Tàu thuyền có trọng tải từ 200 tấn trở xuống, mang cờ quốc tịch của quốc gia có chung đường biên giới với Việt Nam nhập cảnh, xuất cảnh tại khu vực biên giới của Việt Nam và quốc gia đó",
+      "field": "Hàng hải và đường thủy",
       "agency": "VII. SỞ XÂY DỰNG",
       "page": 65
     },
@@ -3023,8 +3023,8 @@
     },
     {
       "code": "1.004022",
-      "name": "",
-      "field": "",
+      "name": "Cấp giấy xác nhận nội dung quảng cáo thuốc thú y",
+      "field": "Thú y",
       "agency": "III. SỞ GIÁO DỤC VÀ ĐÀO TẠO",
       "page": 34
     },
@@ -3086,8 +3086,8 @@
     },
     {
       "code": "1.004066",
-      "name": "",
-      "field": "",
+      "name": "Công bố thông báo hàng hải về công trình ngầm, công trình vượt qua luồng hàng hải",
+      "field": "Hàng hải và đường thủy",
       "agency": "VII. SỞ XÂY DỰNG",
       "page": 64
     },
@@ -3338,8 +3338,8 @@
     },
     {
       "code": "1.004312",
-      "name": "vào cảng và tàu biển nước ngoài đã nhập cảnh sau đó vào cảng biển khác của Việt Nam",
-      "field": "",
+      "name": "Tàu biển hoạt động tuyến nội địa có chở hàng nhập khẩu, hàng quá cảnh hoặc có hành khách hoặc thuyền viên mang quốc tịch nước ngoài vào cảng và tàu biển nước ngoài đã nhập cảnh sau đó vào cảng biển khác của Việt Nam",
+      "field": "Hàng hải và đường thủy",
       "agency": "VII. SỞ XÂY DỰNG",
       "page": 63
     },
@@ -3373,8 +3373,8 @@
     },
     {
       "code": "1.004345",
-      "name": "",
-      "field": "",
+      "name": "Chuyển nhượng quyền khai thác khoáng sản (cấp tỉnh)",
+      "field": "Địa chất và khoáng sản",
       "agency": "III. SỞ GIÁO DỤC VÀ ĐÀO TẠO",
       "page": 32
     },
@@ -3499,8 +3499,8 @@
     },
     {
       "code": "1.004508",
-      "name": "",
-      "field": "",
+      "name": "Cấp giấy xác nhận thông báo phát hành trò chơi điện tử G2, G3, G4 trên mạng",
+      "field": "Phát thanh, truyền hình và thông tin điện tử",
       "agency": "IX. SỞ VĂN HOÁ, THỂ THAO VÀ DU LỊCH",
       "page": 84
     },
@@ -3989,8 +3989,8 @@
     },
     {
       "code": "1.005040",
-      "name": "",
-      "field": "",
+      "name": "Xác nhận trình báo đường thủy nội địa hoặc trình báo đường thủy nội địa bổ sung",
+      "field": "Hàng hải và đường thủy",
       "agency": "VII. SỞ XÂY DỰNG",
       "page": 62
     },
@@ -4031,8 +4031,8 @@
     },
     {
       "code": "1.005090",
-      "name": "",
-      "field": "",
+      "name": "Xét tuyển sinh vào trường phổ thông dân tộc nội trú",
+      "field": "Thi, tuyển sinh",
       "agency": "III. SỞ GIÁO DỤC VÀ ĐÀO TẠO",
       "page": 35
     },
@@ -4199,8 +4199,8 @@
     },
     {
       "code": "1.005357",
-      "name": "",
-      "field": "",
+      "name": "Thủ tục cấp Giấy chứng nhận đủ điều kiện kinh doanh hoạt động thể thao đối với môn Lặn biển thể thao giải trí",
+      "field": "Thể dục thể thao",
       "agency": "IX. SỞ VĂN HOÁ, THỂ THAO VÀ DU LỊCH",
       "page": 83
     },
@@ -4353,8 +4353,8 @@
     },
     {
       "code": "1.006427",
-      "name": "",
-      "field": "",
+      "name": "Thủ tục đánh giá kết quả thực hiện nhiệm vụ khoa học và công nghệ không sử dụng ngân sách nhà nước (cấp tỉnh)",
+      "field": "Tiêu chuẩn đo lường chất lượng",
       "agency": "X. SỞ KHOA HỌC VÀ CÔNG",
       "page": 106
     },
@@ -4514,8 +4514,8 @@
     },
     {
       "code": "1.008126",
-      "name": "",
-      "field": "",
+      "name": "Cấp Giấy chứng nhận đủ điều kiện sản xuất thức ăn chăn nuôi.",
+      "field": "Chăn nuôi",
       "agency": "II. SỞ Y TẾ",
       "page": 26
     },
@@ -4682,8 +4682,8 @@
     },
     {
       "code": "1.008727",
-      "name": "",
-      "field": "",
+      "name": "Thay đổi thành viên hợp danh của công ty hợp danh hoặc thay đổi chủ doanh nghiệp tư nhân của doanh nghiệp quản lý, thanh lý tài sản",
+      "field": "Quản tài viên",
       "agency": "VIII. SỞ TƯ PHÁP",
       "page": 75
     },
@@ -4829,8 +4829,8 @@
     },
     {
       "code": "1.008926",
-      "name": "",
-      "field": "",
+      "name": "Thay đổi nơi tập sự hành nghề Thừa phát lại",
+      "field": "Thừa phát lại",
       "agency": "VIII. SỞ TƯ PHÁP",
       "page": 73
     },
@@ -4976,8 +4976,8 @@
     },
     {
       "code": "1.009346",
-      "name": "",
-      "field": "",
+      "name": "Xét tặng giải thưởng Đặng Văn Ngữ trong lĩnh vực Y tế dự phòng",
+      "field": "Thi đua, khen thưởng",
       "agency": "II. SỞ Y TẾ",
       "page": 24
     },
@@ -5067,8 +5067,8 @@
     },
     {
       "code": "1.009444",
-      "name": "",
-      "field": "",
+      "name": "Gia hạn hoạt động cảng, bến thủy nội địa",
+      "field": "Hàng hải và đường thủy",
       "agency": "VII. SỞ XÂY DỰNG",
       "page": 60
     },
@@ -5263,8 +5263,8 @@
     },
     {
       "code": "1.009644",
-      "name": "",
-      "field": "",
+      "name": "Thủ tục điều chỉnh văn bản chấp thuận nhà đầu tư của UBND cấp tỉnh",
+      "field": "Đầu tư tại Việt nam",
       "agency": "IV. SỞ TÀI CHÍNH",
       "page": 7
     },
@@ -5459,8 +5459,8 @@
     },
     {
       "code": "1.009788",
-      "name": "",
-      "field": "",
+      "name": "Cho ý kiến về kết quả đánh giá an toàn công trình đối với công trình xây dựng nằm trên địa bàn tỉnh.",
+      "field": "Quản lý chất lượng công trình xây dựng",
       "agency": "VII. SỞ XÂY DỰNG",
       "page": 59
     },
@@ -5494,8 +5494,8 @@
     },
     {
       "code": "1.009873",
-      "name": "",
-      "field": "",
+      "name": "Thu hồi Giấy phép hoạt động dịch vụ việc làm của doanh nghiệp hoạt động dịch vụ việc làm",
+      "field": "Việc làm",
       "agency": "VI. SỞ NỘI VỤ",
       "page": 46
     },
@@ -5620,8 +5620,8 @@
     },
     {
       "code": "1.010696",
-      "name": "xăng dầu bằng thiết bị bán xăng dầu quy mô Thẩm định, phê duyệt, điều chỉnh, bổ sung Kế",
-      "field": "",
+      "name": "Cấp Giấy tiếp nhận thông báo kinh doanh xăng dầu bằng thiết bị bán xăng dầu quy mô nhỏ",
+      "field": "Lưu thông hàng hóa trong nước",
       "agency": "IV. SỞ TÀI CHÍNH",
       "page": 8
     },
@@ -5767,8 +5767,8 @@
     },
     {
       "code": "1.010792",
-      "name": "",
-      "field": "",
+      "name": "Khám giám định phúc quyết lần cuối của đối tượng hoặc người đại diện hợp pháp của đối tượng",
+      "field": "Người có công",
       "agency": "VI. SỞ NỘI VỤ",
       "page": 45
     },
@@ -5921,8 +5921,8 @@
     },
     {
       "code": "1.010819",
-      "name": "",
-      "field": "",
+      "name": "Giải quyết chế độ người hoạt động kháng chiến giải phóng dân tộc, bảo vệ tổ quốc và làm nghĩa vụ quốc tế",
+      "field": "Người có công",
       "agency": "VI. SỞ NỘI VỤ",
       "page": 44
     },
@@ -5977,8 +5977,8 @@
     },
     {
       "code": "1.010827",
-      "name": "",
-      "field": "",
+      "name": "Di chuyển hồ sơ khi người hưởng trợ cấp ưu đãi thay đổi nơi thường trú",
+      "field": "Người có công",
       "agency": "VI. SỞ NỘI VỤ",
       "page": 43
     },
@@ -6061,8 +6061,8 @@
     },
     {
       "code": "1.011443",
-      "name": "",
-      "field": "",
+      "name": "Xóa đăng ký biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất",
+      "field": "Đăng ký biện pháp bảo đảm",
       "agency": "VIII. SỞ TƯ PHÁP",
       "page": 72
     },
@@ -6131,8 +6131,8 @@
     },
     {
       "code": "1.011507",
-      "name": "",
-      "field": "",
+      "name": "Cấp lại giấy chứng nhận đủ điều kiện sản xuất và kinh doanh hóa chất sản xuất, kinh doanh có điều kiện trong lĩnh vực công nghiệp",
+      "field": "Hóa chất",
       "agency": "IV. SỞ TÀI CHÍNH",
       "page": 5
     },
@@ -6369,8 +6369,8 @@
     },
     {
       "code": "1.012070",
-      "name": "",
-      "field": "",
+      "name": "Chuyển giao quyền sử dụng giống cây trồng được bảo hộ theo quyết định bắt buộc",
+      "field": "Trồng trọt",
       "agency": "II. SỞ Y TẾ",
       "page": 23
     },
@@ -6425,8 +6425,8 @@
     },
     {
       "code": "1.012082",
-      "name": "",
-      "field": "",
+      "name": "Thủ tục cấp đổi giấy chứng nhận đăng ký thành lập cơ sở cung cấp dịch vụ trợ giúp phòng, chống bạo lực gia đình",
+      "field": "Gia đình",
       "agency": "IX. SỞ VĂN HOÁ, THỂ THAO VÀ DU LỊCH",
       "page": 82
     },
@@ -6754,8 +6754,8 @@
     },
     {
       "code": "1.012471",
-      "name": "",
-      "field": "",
+      "name": "Xét tặng danh hiệu “Nghệ nhân nhân dân”, “Nghệ nhân ưu tú” trong lĩnh vực nghề thủ công mỹ nghệ tại Hội đồng cấp tỉnh",
+      "field": "Nghề thủ công mỹ nghệ",
       "agency": "IV. SỞ TÀI CHÍNH",
       "page": 10
     },
@@ -6810,8 +6810,8 @@
     },
     {
       "code": "1.012507",
-      "name": "",
-      "field": "",
+      "name": "Cấp chứng chỉ nghiệp vụ chuyên môn về đấu thầu",
+      "field": "Đấu thầu",
       "agency": "IV. SỞ TÀI CHÍNH",
       "page": 3
     },
@@ -7048,8 +7048,8 @@
     },
     {
       "code": "1.012691",
-      "name": "",
-      "field": "",
+      "name": "Quyết định thu hồi rừng đối với tổ chức tự nguyện trả lại rừng",
+      "field": "Kiểm lâm",
       "agency": "II. SỞ Y TẾ",
       "page": 22
     },
@@ -7244,8 +7244,8 @@
     },
     {
       "code": "1.012886",
-      "name": "chung cư không bằng nguồn vốn đầu tư công",
-      "field": "",
+      "name": "Điều chỉnh chấp thuận chủ trương đầu tư đồng thời với chấp thuận nhà đầu tư làm chủ đầu tư đối với dự án cải tạo, xây dựng lại nhà chung cư không bằng nguồn vốn đầu tư công",
+      "field": "Nhà ở và công sở",
       "agency": "VII. SỞ XÂY DỰNG",
       "page": 57
     },
@@ -7363,8 +7363,8 @@
     },
     {
       "code": "1.012906",
-      "name": "",
-      "field": "",
+      "name": "Cấp mới chứng chỉ hành nghề môi giới bất động sản.",
+      "field": "Kinh doanh bất động sản",
       "agency": "VII. SỞ XÂY DỰNG",
       "page": 56
     },
@@ -7468,8 +7468,8 @@
     },
     {
       "code": "1.012948",
-      "name": "",
-      "field": "",
+      "name": "Thủ tục cho phép hội hoạt động trở lại sau khi bị đình chỉ có thời hạn (cấp tỉnh)",
+      "field": "Quản lý nhà nước về hội, quỹ",
       "agency": "VI. SỞ NỘI VỤ",
       "page": 42
     },
@@ -7664,8 +7664,8 @@
     },
     {
       "code": "1.013037",
-      "name": "",
-      "field": "",
+      "name": "Hủy hồ sơ công bố đủ điều kiện điều trị nghiện các chất dạng thuốc phiện bằng thuốc thay thế",
+      "field": "Phòng bệnh",
       "agency": "II. SỞ Y TẾ",
       "page": 21
     },
@@ -7769,24 +7769,30 @@
     },
     {
       "code": "1.013230",
-      "name": "Thủ tục cấp giấy phép di dời đối với công trình cấp đặc biệt, cấp I và cấp II (Công trình không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án)",
+      "name": "Cấp giấy phép di dời đối với công trình cấp đặc biệt, cấp I và cấp II (Công trình không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án)",
       "field": "Hoạt động xây dựng",
-      "agency": "VII. SỞ XÂY DỰNG; XI. SỞ NGOẠI",
-      "page": 55
+      "agency": "VII. SỞ XÂY DỰNG",
+      "page": 55,
+      "nameStatus": "MANUAL_REVIEW",
+      "agencyStatus": "MANUAL_REVIEW"
     },
     {
       "code": "1.013231",
       "name": "Cấp điều chỉnh giấy phép xây dựng đối với công trình cấp đặc biệt, cấp I, cấp II (công trình Không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án)",
       "field": "Hoạt động xây dựng",
-      "agency": "VII. SỞ XÂY DỰNG; XI. SỞ NGOẠI",
-      "page": 54
+      "agency": "VII. SỞ XÂY DỰNG",
+      "page": 54,
+      "nameStatus": "MANUAL_REVIEW",
+      "agencyStatus": "MANUAL_REVIEW"
     },
     {
       "code": "1.013233",
-      "name": "Thủ tục gia hạn giấy phép xây dựng đối với công trình cấp đặc biệt, cấp I, cấp II (công trình Không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Sửa chữa, cải tạo/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án)",
+      "name": "Gia hạn giấy phép xây dựng đối với công trình cấp đặc biệt, cấp I, cấp II (Công trình không theo tuyến/theo tuyến trong đô thị/tín ngưỡng, tôn giáo/tượng đài, tranh hoành tráng/sửa chữa, cải tạo/theo giai đoạn cho công trình không theo tuyến/theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án)",
       "field": "Hoạt động xây dựng",
-      "agency": "VII. SỞ XÂY DỰNG; XI. SỞ NGOẠI",
-      "page": 54
+      "agency": "VII. SỞ XÂY DỰNG",
+      "page": 54,
+      "nameStatus": "MANUAL_REVIEW",
+      "agencyStatus": "MANUAL_REVIEW"
     },
     {
       "code": "1.013234",
@@ -7799,15 +7805,19 @@
       "code": "1.013235",
       "name": "Cấp lại giấy phép xây dựng đối với công trình cấp đặc biệt, cấp I, cấp II (công trình không theo tuyến/theo tuyến trong đô thị/tín ngưỡng, tôn giáo/tượng đài, tranh hoành tráng/sửa chữa, cải tạo/theo giai đoạn cho công trình không theo tuyến/theo giai đoạn cho công trình theo tuyến trong đô thị/dự án)",
       "field": "Hoạt động xây dựng",
-      "agency": "VII. SỞ XÂY DỰNG; XI. SỞ NGOẠI",
-      "page": 54
+      "agency": "VII. SỞ XÂY DỰNG",
+      "page": 54,
+      "nameStatus": "MANUAL_REVIEW",
+      "agencyStatus": "MANUAL_REVIEW"
     },
     {
       "code": "1.013236",
-      "name": "Thủ tục cấp giấy phép xây dựng mới công trình cấp đặc biệt, cấp I, cấp II (Công trình không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công t theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án):",
+      "name": "Cấp giấy phép xây dựng mới công trình cấp đặc biệt, cấp I, cấp II (Công trình không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án)",
       "field": "Hoạt động xây dựng",
-      "agency": "VII. SỞ XÂY DỰNG; XI. SỞ NGOẠI",
-      "page": 54
+      "agency": "VII. SỞ XÂY DỰNG",
+      "page": 54,
+      "nameStatus": "MANUAL_REVIEW",
+      "agencyStatus": "MANUAL_REVIEW"
     },
     {
       "code": "1.013237",
@@ -7818,15 +7828,17 @@
     },
     {
       "code": "1.013238",
-      "name": "Thủ tục cấp giấy phép xây dựng sửa chữa, cảo tạo đối với công trình cấp đặc biệt, cấp I, cấp II (công trình Không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án)",
+      "name": "Cấp giấy phép xây dựng sửa chữa, cải tạo đối với công trình cấp đặc biệt, cấp I, cấp II (công trình Không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án)",
       "field": "Hoạt động xây dựng",
-      "agency": "VII. SỞ XÂY DỰNG; XI. SỞ NGOẠI",
-      "page": 54
+      "agency": "VII. SỞ XÂY DỰNG",
+      "page": 54,
+      "nameStatus": "MANUAL_REVIEW",
+      "agencyStatus": "MANUAL_REVIEW"
     },
     {
       "code": "1.013239",
-      "name": "Cấp giấy phép xây dựng sửa chữa, cải tạo đối",
-      "field": "",
+      "name": "Thẩm định Báo cáo nghiên cứu khả thi đầu tư xây dựng/Báo cáo nghiên cứu khả thi đầu tư xây dựng điều chỉnh",
+      "field": "Hoạt động xây dựng",
       "agency": "VII. SỞ XÂY DỰNG",
       "page": 54
     },
@@ -8098,8 +8110,8 @@
     },
     {
       "code": "1.013719",
-      "name": "cấp tỉnh)",
-      "field": "",
+      "name": "Xác nhận người lao động nước ngoài không thuộc diện cấp giấy phép lao động (thuộc thẩm quyền của Chủ tịch Uỷ ban nhân dân cấp tỉnh)",
+      "field": "Việc làm",
       "agency": "VI. SỞ NỘI VỤ",
       "page": 41
     },
@@ -8280,8 +8292,8 @@
     },
     {
       "code": "1.013758",
-      "name": "",
-      "field": "",
+      "name": "Giải thể trung tâm hỗ trợ phát triển giáo dục hòa nhập tư thục (theo đề nghị của tổ chức, cá nhân thành lập)",
+      "field": "Giáo dục thường xuyên",
       "agency": "III. SỞ GIÁO DỤC VÀ ĐÀO TẠO",
       "page": 31
     },
@@ -8392,8 +8404,8 @@
     },
     {
       "code": "1.013783",
-      "name": "phương",
-      "field": "",
+      "name": "Thủ tục cấp giấy phép sửa đổi, bổ sung những nội dung ghi trong giấy phép xuất bản thêm ấn phẩm đối với cơ quan báo chí của địa phương",
+      "field": "Báo chí",
       "agency": "IX. SỞ VĂN HOÁ, THỂ THAO VÀ DU LỊCH",
       "page": 81
     },
@@ -8798,8 +8810,8 @@
     },
     {
       "code": "1.013853",
-      "name": "",
-      "field": "",
+      "name": "Thay đổi nội dung đăng ký hoạt động của Văn phòng công chứng được bán",
+      "field": "Công chứng",
       "agency": "VIII. SỞ TƯ PHÁP",
       "page": 71
     },
@@ -8833,8 +8845,8 @@
     },
     {
       "code": "1.013858",
-      "name": "",
-      "field": "",
+      "name": "Đăng ký bản công bố sản phẩm nhập khẩu đối với thực phẩm dinh dưỡng y học, thực phẩm dùng cho chế độ ăn đặc biệt, sản phẩm dinh dƣỡng dùng cho trẻ đến 36 tháng tuổi",
+      "field": "An toàn thực phẩm",
       "agency": "II. SỞ Y TẾ",
       "page": 19
     },
@@ -8945,8 +8957,8 @@
     },
     {
       "code": "1.013874",
-      "name": "",
-      "field": "",
+      "name": "Gia hạn số đăng ký lưu hành chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế .",
+      "field": "Phòng bệnh",
       "agency": "II. SỞ Y TẾ",
       "page": 18
     },
@@ -9057,8 +9069,8 @@
     },
     {
       "code": "1.013892",
-      "name": "",
-      "field": "",
+      "name": "Đình chỉ lưu hành, thu hồi số đăng ký lưu hành chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế",
+      "field": "Phòng bệnh",
       "agency": "II. SỞ Y TẾ",
       "page": 17
     },
@@ -9267,8 +9279,8 @@
     },
     {
       "code": "1.013924",
-      "name": "",
-      "field": "",
+      "name": "Thủ tục ghi nhận tổ chức đủ điều kiện kinh doanh dịch vụ đại diện sở hữu công nghiệp",
+      "field": "Sở hữu trí tuệ",
       "agency": "X. SỞ KHOA HỌC VÀ CÔNG",
       "page": 98
     },
@@ -9302,8 +9314,8 @@
     },
     {
       "code": "1.013931",
-      "name": "",
-      "field": "",
+      "name": "Thủ tục Giấy chứng nhận đủ điều kiện hoạt động dịch vụ đánh giá công nghệ",
+      "field": "Hoạt động khoa học và công nghệ",
       "agency": "X. SỞ KHOA HỌC VÀ CÔNG",
       "page": 97
     },
@@ -9484,8 +9496,8 @@
     },
     {
       "code": "1.013961",
-      "name": "",
-      "field": "",
+      "name": "Thủ tục cấp Giấy chứng nhận doanh nghiệp công nghệ cao-",
+      "field": "Hoạt động khoa học và công nghệ",
       "agency": "X. SỞ KHOA HỌC VÀ CÔNG",
       "page": 95
     },
@@ -9519,8 +9531,8 @@
     },
     {
       "code": "1.013969",
-      "name": "",
-      "field": "",
+      "name": "Thủ tục cấp Giấy chứng nhận hoạt động nghiên cứu và phát triển công nghệ cao cho cá nhân.",
+      "field": "Hoạt động khoa học và công nghệ",
       "agency": "X. SỞ KHOA HỌC VÀ CÔNG",
       "page": 94
     },
@@ -9729,15 +9741,15 @@
     },
     {
       "code": "2.000046",
-      "name": "",
-      "field": "",
+      "name": "Cấp thông báo xác nhận công bố sản phẩm hàng hóa nhóm 2 phù hợp với quy chuẩn kỹ thuật tương ứng",
+      "field": "Khoa học, công nghệ",
       "agency": "IV. SỞ TÀI CHÍNH",
       "page": 6
     },
     {
       "code": "2.000051",
-      "name": "",
-      "field": "",
+      "name": "Cấp lại, điều chỉnh giấy phép hoạt động đối với cơ sở trợ giúp xã hội có giấy phép hoạt động do Sở Y tế",
+      "field": "Bảo trợ xã hội",
       "agency": "II. SỞ Y TẾ",
       "page": 30
     },
@@ -9848,8 +9860,8 @@
     },
     {
       "code": "2.000134",
-      "name": "",
-      "field": "",
+      "name": "Khai báo với Sở Nội vụ địa phương khi đưa vào sử dụng các loại máy, thiết bị, vật tư có yêu cầu nghiêm ngặt về an toàn lao động",
+      "field": "An toàn, vệ sinh lao động",
       "agency": "VI. SỞ NỘI VỤ",
       "page": 51
     },
@@ -9862,15 +9874,15 @@
     },
     {
       "code": "2.000136",
-      "name": "",
+      "name": "Cấp lại Giấy chứng nhận đủ điều kiện thương nhân kinh doanh mua bán LPG",
       "field": "Kinh doanh khí",
       "agency": "IV. SỞ TÀI CHÍNH",
       "page": 8
     },
     {
       "code": "2.000140",
-      "name": "",
-      "field": "",
+      "name": "Cấp chứng chỉ kiểm định viên",
+      "field": "An toàn vệ sinh lao động",
       "agency": "I. SỞ CÔNG THƯƠNG",
       "page": 2
     },
@@ -10115,7 +10127,7 @@
     {
       "code": "2.000238",
       "name": "Thủ tục chứng nhận xuất trình giấy tờ, tài liệu tại Bộ Ngoại giao TÊN TTHC",
-      "field": "Chứng nhận lãnh sự, hợp pháp hóa lãnh sự GHI CHÚ",
+      "field": "Chứng nhận lãnh sự, hợp pháp hóa lãnh sự",
       "agency": "XI. SỞ NGOẠI",
       "page": 109
     },
@@ -10219,8 +10231,8 @@
     },
     {
       "code": "2.000330",
-      "name": "",
-      "field": "",
+      "name": "Điều chỉnh Giấy phép kinh doanh cho tổ chức kinh tế có vốn đầu tư nước ngoài",
+      "field": "Thương mại quốc tế",
       "agency": "IV. SỞ TÀI CHÍNH",
       "page": 12
     },
@@ -10387,8 +10399,8 @@
     },
     {
       "code": "2.000472",
-      "name": "",
-      "field": "",
+      "name": "Gia hạn Giấy phép nhận chìm ở biển (cấp tỉnh)",
+      "field": "Biển và hải đảo",
       "agency": "III. SỞ GIÁO DỤC VÀ ĐÀO TẠO",
       "page": 38
     },
@@ -10436,8 +10448,8 @@
     },
     {
       "code": "2.000552",
-      "name": "",
-      "field": "",
+      "name": "Cấp lại Giấy phép hoạt động đối với trạm, điểm sơ cấp cứu chữ thập đỏ khi thay đổi địa điểm",
+      "field": "Khám bệnh, chữa bệnh",
       "agency": "II. SỞ Y TẾ",
       "page": 29
     },
@@ -10660,8 +10672,8 @@
     },
     {
       "code": "2.000666",
-      "name": "",
-      "field": "",
+      "name": "Cấp sửa đổi, bổ sung Giấy xác nhận đủ điều kiện làm tổng đại lý kinh doanh xăng dầu thuộc thẩm quyền cấp của Sở Công Thương",
+      "field": "Lưu thông hàng hóa trong nước",
       "agency": "IV. SỞ TÀI CHÍNH",
       "page": 9
     },
@@ -10849,8 +10861,8 @@
     },
     {
       "code": "2.000981",
-      "name": "",
-      "field": "",
+      "name": "Kiểm dịch y tế đối với hàng hóa",
+      "field": "Phòng bệnh",
       "agency": "II. SỞ Y TẾ",
       "page": 28
     },
@@ -10912,8 +10924,8 @@
     },
     {
       "code": "2.001091",
-      "name": "",
-      "field": "",
+      "name": "Gia hạn giấy phép thiết lập trang thông tin điện tử tổng hợp (địa phương)",
+      "field": "Phát thanh, truyền hình và thông tin điện tử",
       "agency": "IX. SỞ VĂN HOÁ, THỂ THAO VÀ DU LỊCH",
       "page": 87
     },
@@ -11101,8 +11113,8 @@
     },
     {
       "code": "2.001259",
-      "name": "",
-      "field": "",
+      "name": "Thủ tục kiểm tra nhà nước về chất lượng sản phẩm, hàng hóa hàng hóa nhóm 2 nhập khẩu",
+      "field": "Viễn thông và Internet",
       "agency": "X. SỞ KHOA HỌC VÀ CÔNG",
       "page": 107
     },
@@ -11325,8 +11337,8 @@
     },
     {
       "code": "2.001613",
-      "name": "",
-      "field": "",
+      "name": "Thủ tục xác nhận đủ điều kiện được cấp giấy phép hoạt động bảo tàng ngoài công lập",
+      "field": "Di sản văn hóa",
       "agency": "IX. SỞ VĂN HOÁ, THỂ THAO VÀ DU LỊCH",
       "page": 85
     },
@@ -11486,8 +11498,8 @@
     },
     {
       "code": "2.001716",
-      "name": "",
-      "field": "",
+      "name": "Đăng ký hoạt động của Chi nhánh Trung tâm hòa giải thương mại",
+      "field": "Hòa giải thương mại",
       "agency": "VIII. SỞ TƯ PHÁP",
       "page": 76
     },
@@ -11696,8 +11708,8 @@
     },
     {
       "code": "2.001953",
-      "name": "",
-      "field": "",
+      "name": "Chấm dứt hưởng trợ cấp thất nghiệp",
+      "field": "Việc làm",
       "agency": "VI. SỞ NỘI VỤ",
       "page": 49
     },
@@ -11857,8 +11869,8 @@
     },
     {
       "code": "2.002020",
-      "name": "",
-      "field": "",
+      "name": "Chấm dứt hoạt động chi nhánh, văn phòng đại diện, địa điểm kinh doanh",
+      "field": "Thành lập và hoạt động của doanh nghiệp",
       "agency": "IV. SỞ TÀI CHÍNH",
       "page": 14
     },
@@ -12158,8 +12170,8 @@
     },
     {
       "code": "2.002285",
-      "name": "",
-      "field": "",
+      "name": "Đăng ký khai thác tuyến vận tải hành khách cố định",
+      "field": "Đường bộ",
       "agency": "VII. SỞ XÂY DỰNG",
       "page": 61
     },
@@ -12200,8 +12212,8 @@
     },
     {
       "code": "2.002311",
-      "name": "",
-      "field": "",
+      "name": "Cho phép tổ chức hội nghị, hội thảo quốc tế thuộc thẩm quyền cho phép của Thủ tướng Chính phủ",
+      "field": "Hội nghị, hội thảo quốc tế",
       "agency": "XI. SỞ NGOẠI",
       "page": 109
     },
@@ -12340,8 +12352,8 @@
     },
     {
       "code": "2.002385",
-      "name": "",
-      "field": "",
+      "name": "Thủ tục khai báo thiết bị X-quang chẩn đoán trong y tế.",
+      "field": "Tiêu chuẩn đo lường chất lượng",
       "agency": "X. SỞ KHOA HỌC VÀ CÔNG",
       "page": 105
     },
@@ -12445,8 +12457,8 @@
     },
     {
       "code": "2.002606",
-      "name": "",
-      "field": "",
+      "name": "Cấp lại Giấy phép thành lập Văn phòng đại diện của tổ chức xúc tiến thương mại nước ngoài tại Việt Nam.",
+      "field": "Xúc tiến thương mại",
       "agency": "IV. SỞ TÀI CHÍNH",
       "page": 16
     },
@@ -12529,8 +12541,8 @@
     },
     {
       "code": "2.002676",
-      "name": "",
-      "field": "",
+      "name": "Thông báo phát triển điện mặt trời mái nhà tự sản xuất, tự tiêu thụ có đấu nối với hệ thống điện quốc gia",
+      "field": "Điện lực",
       "agency": "IV. SỞ TÀI CHÍNH",
       "page": 4
     },
@@ -12592,59 +12604,67 @@
     },
     {
       "code": "2.002724",
-      "name": "",
-      "field": "",
+      "name": "Thủ tục đánh giá, nghiệm thu nhiệm vụ cấp cơ sở sử dụng ngân sách nhà nước",
+      "field": "Tiêu chuẩn đo lường chất lượng",
       "agency": "X. SỞ KHOA HỌC VÀ CÔNG",
       "page": 103
     },
     {
       "code": "2.002725",
-      "name": "Thủ tục chấm dứt hoạt động văn phòng điều hành của nhà đầu tư nước ngoài trong hợp đồng BCC Thủ tục cấp Giấy chứng nhận đăng ký đầu tư theo thủ tục đầu tư đặc biệt",
-      "field": "",
+      "name": "Thủ tục cấp Giấy chứng nhận đăng ký đầu tư theo thủ tục đầu tư đặc biệt",
+      "field": "Đầu tư tại Việt Nam",
       "agency": "XI. SỞ NGOẠI",
-      "page": 111
+      "page": 111,
+      "agencyStatus": "MANUAL_REVIEW"
     },
     {
       "code": "2.002726",
       "name": "Thủ tục điều chỉnh mục tiêu hoạt động của dự án thực hiện theo thủ tục đầu tư đặc biệt",
-      "field": "",
+      "field": "Đầu tư tại Việt Nam",
       "agency": "XI. SỞ NGOẠI",
-      "page": 111
+      "page": 111,
+      "agencyStatus": "MANUAL_REVIEW"
     },
     {
       "code": "2.002727",
       "name": "Thủ tục cấp đổi Giấy chứng nhận đăng ký đầu tư theo thủ tục đầu tư đặc biệt",
-      "field": "",
+      "field": "Đầu tư tại Việt Nam",
       "agency": "XI. SỞ NGOẠI",
-      "page": 111
+      "page": 111,
+      "agencyStatus": "MANUAL_REVIEW"
     },
     {
       "code": "2.002728",
       "name": "Thủ tục cấp/cấp lại Giấy chứng nhận khu công nghiệp sinh thái",
-      "field": "về khu công Lưu thông hàng",
+      "field": "Quản lý nhà nước về khu công nghiệp, khu kinh tế",
       "agency": "IV. SỞ TÀI CHÍNH; XI. SỞ NGOẠI",
-      "page": 9
+      "page": 9,
+      "agencyStatus": "MANUAL_REVIEW"
     },
     {
       "code": "2.002729",
       "name": "Thủ tục cấp/cấp lại Giấy chứng nhận doanh nghiệp sinh thái",
-      "field": "hóa trong nước về khu công",
+      "field": "Quản lý nhà nước về khu công nghiệp, khu kinh tế",
       "agency": "IV. SỞ TÀI CHÍNH; XI. SỞ NGOẠI",
-      "page": 8
+      "page": 8,
+      "agencyStatus": "MANUAL_REVIEW"
     },
     {
       "code": "2.002731",
       "name": "Thủ tục chấm dứt hiệu lực và thu hồi Giấy chứng nhận khu công nghiệp sinh thái",
-      "field": "hóa trong nước nghiệp, khu kinh",
+      "field": "Quản lý nhà nước về khu công nghiệp, khu kinh tế",
       "agency": "IV. SỞ TÀI CHÍNH; XI. SỞ NGOẠI",
-      "page": 9
+      "page": 9,
+      "agencyStatus": "MANUAL_REVIEW"
     },
     {
       "code": "2.002732",
-      "name": "Thủ tục chấm dứt hiệu lực và thu hồi Giấy chứng nhận doanh nghiệp sinh thái Cấp Giấy phép thành lập Văn phòng đại diện",
-      "field": "về khu công Lưu thông hàng",
+      "name": "Thủ tục Chấm dứt hiệu lực và thu hồi Giấy chứng nhận doanh nghiệp sinh thái",
+      "field": "Quản lý nhà nước về khu công nghiệp, khu kinh tế",
       "agency": "IV. SỞ TÀI CHÍNH; XI. SỞ NGOẠI",
-      "page": 9
+      "page": 9,
+      "nameStatus": "MANUAL_REVIEW",
+      "agencyStatus": "MANUAL_REVIEW"
     },
     {
       "code": "2.002738",
@@ -12781,8 +12801,8 @@
     },
     {
       "code": "2.002785",
-      "name": "",
-      "field": "",
+      "name": "Cấp đổi giấy phép sử dụng tần số và thiết bị vô tuyến điện đối với đài tàu (trừ đài tàu hoạt động tuyến quốc tế)",
+      "field": "Sở hữu trí tuệ",
       "agency": "X. SỞ KHOA HỌC VÀ CÔNG",
       "page": 100
     },
@@ -12816,8 +12836,8 @@
     },
     {
       "code": "2.002790",
-      "name": "",
-      "field": "",
+      "name": "Sửa đổi, bổ sung giấy phép sử dụng tần số và thiết bị vô tuyến điện đối với mạng thông tin vô tuyến điện nội bộ",
+      "field": "Tần số vô tuyến điện",
       "agency": "X. SỞ KHOA HỌC VÀ CÔNG",
       "page": 101
     },
@@ -12837,8 +12857,8 @@
     },
     {
       "code": "2.002793",
-      "name": "",
-      "field": "",
+      "name": "Cấp đổi giấy công nhận tổ chức đủ điều kiện cấp chứng chỉ vô tuyến điện nghiệp dư",
+      "field": "Hoạt động khoa học và công nghệ",
       "agency": "X. SỞ KHOA HỌC VÀ CÔNG",
       "page": 96
     },
@@ -12928,8 +12948,8 @@
     },
     {
       "code": "3.000180",
-      "name": "",
-      "field": "",
+      "name": "Cấp lại Giấy phép xuất khẩu, nhập khẩu giống cây trồng lâm nghiệp do bị mất, bị hỏng",
+      "field": "Lâm nghiệp",
       "agency": "II. SỞ Y TẾ",
       "page": 25
     },
@@ -13005,8 +13025,8 @@
     },
     {
       "code": "3.000299",
-      "name": "",
-      "field": "",
+      "name": "Sáp nhập, chia, tách trường năng khiếu nghệ thuật, thể dục, thể thao",
+      "field": "Các cơ sở giáo dục khác",
       "agency": "III. SỞ GIÁO DỤC VÀ ĐÀO TẠO",
       "page": 33
     },
@@ -13117,8 +13137,8 @@
     },
     {
       "code": "3.000410",
-      "name": "",
-      "field": "",
+      "name": "Quyết định xác lập quyền sở hữu toàn dân đối với tài sản không có người thừa kế",
+      "field": "Quản lý công sản",
       "agency": "IV. SỞ TÀI CHÍNH",
       "page": 8
     },
@@ -13208,8 +13228,8 @@
     },
     {
       "code": "3.000437",
-      "name": "",
-      "field": "",
+      "name": "Gia hạn quyết định cấp phép nghiên cứu khoa học cấp tỉnh",
+      "field": "Biển và hải đảo",
       "agency": "II. SỞ Y TẾ",
       "page": 20
     },
@@ -13411,8 +13431,8 @@
     },
     {
       "code": "3.000475",
-      "name": "ch ứ c thu ộ c h ệ th ố ng hành chính nhà nư ớ c cho t ổ ch ứ c tư v ấ n Th ủ t ụ c c ấ p Gi ấ y xác nh ậ n đăng ký ho ạ t đ ộ ng",
-      "field": "",
+      "name": "Thủ tục cấp Giấy xác nhận đủ điều kiện tư vấn Hệ thống quản lý chất lượng theo Tiêu chuẩn quốc gia TCVN ISO 9001 đối với cơ quan, tổ chức thuộc hệ thống hành chính nhà nước cho tổ chức tư vấn",
+      "field": "Bưu chính",
       "agency": "X. SỞ KHOA HỌC VÀ CÔNG",
       "page": 93
     },
@@ -13507,5 +13527,273 @@
       "agency": "X. SỞ KHOA HỌC VÀ CÔNG",
       "page": 91
     }
-  ]
+  ],
+  "missingNameCodes": [],
+  "emptyFieldCodes": [],
+  "missingAgencyCount": 0,
+  "missingAgencyCodes": [],
+  "manualReviewNameCount": 7,
+  "manualReviewFieldCount": 0,
+  "manualReviewAgencyCount": 13,
+  "duplicateConflictCount": 17,
+  "duplicateConflicts": [
+    {
+      "code": "2.002728",
+      "field": "agency",
+      "values": [
+        "IV. SỞ TÀI CHÍNH",
+        "XII. BAN QUẢN CÁC LÝ KHU CÔNG NGHIỆP"
+      ],
+      "pages": [
+        9,
+        111
+      ]
+    },
+    {
+      "code": "2.002729",
+      "field": "agency",
+      "values": [
+        "IV. SỞ TÀI CHÍNH",
+        "XII. BAN QUẢN CÁC LÝ KHU CÔNG NGHIỆP"
+      ],
+      "pages": [
+        8,
+        111
+      ]
+    },
+    {
+      "code": "2.002731",
+      "field": "agency",
+      "values": [
+        "IV. SỞ TÀI CHÍNH",
+        "XII. BAN QUẢN CÁC LÝ KHU CÔNG NGHIỆP"
+      ],
+      "pages": [
+        9,
+        111
+      ]
+    },
+    {
+      "code": "2.002732",
+      "field": "name",
+      "values": [
+        "Thủ tục Chấm dứt hiệu lực và thu hồi Giấy chứng nhận doanh nghiệp sinh thái",
+        "Thủ tục chấm dứt hiệu lực và thu hồi Giấy chứng nhận doanh nghiệp sinh thái VỰC THƯƠNG MẠI QUỐC TẾ Cấp Giấy phép thành lập Văn phòng đại diện của thương nhân nước ngoài tại Việt Nam (Dùng chung của Sở Công thư Cấp lại Giấy phép thành lập Văn phòng đại diện của thương nhân nước ngoài tại Việt Nam"
+      ],
+      "pages": [
+        9,
+        111
+      ]
+    },
+    {
+      "code": "2.002732",
+      "field": "agency",
+      "values": [
+        "IV. SỞ TÀI CHÍNH",
+        "XII. BAN QUẢN CÁC LÝ KHU CÔNG NGHIỆP"
+      ],
+      "pages": [
+        9,
+        111
+      ]
+    },
+    {
+      "code": "1.013236",
+      "field": "name",
+      "values": [
+        "Cấp giấy phép xây dựng mới công trình cấp đặc biệt, cấp I, cấp II (Công trình không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án)",
+        "Thủ tục cấp giấy phép xây dựng mới công trình cấp đặc biệt, cấp I, cấp II (Công trình không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án):"
+      ],
+      "pages": [
+        54,
+        112
+      ]
+    },
+    {
+      "code": "1.013236",
+      "field": "agency",
+      "values": [
+        "VII. SỞ XÂY DỰNG",
+        "XII. BAN QUẢN CÁC LÝ KHU CÔNG NGHIỆP"
+      ],
+      "pages": [
+        54,
+        112
+      ]
+    },
+    {
+      "code": "1.013238",
+      "field": "name",
+      "values": [
+        "Cấp giấy phép xây dựng sửa chữa, cải tạo đối với công trình cấp đặc biệt, cấp I, cấp II (công trình Không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án)",
+        "Thủ tục cấp giấy phép xây dựng sửa chữa, cảo tạo đối với công trình cấp đặc biệt, cấp I, cấp II (công trình Không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án)"
+      ],
+      "pages": [
+        54,
+        112
+      ]
+    },
+    {
+      "code": "1.013238",
+      "field": "agency",
+      "values": [
+        "VII. SỞ XÂY DỰNG",
+        "XII. BAN QUẢN CÁC LÝ KHU CÔNG NGHIỆP"
+      ],
+      "pages": [
+        54,
+        112
+      ]
+    },
+    {
+      "code": "1.013230",
+      "field": "name",
+      "values": [
+        "Cấp giấy phép di dời đối với công trình cấp đặc biệt, cấp I và cấp II (Công trình không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án)",
+        "Thủ tục cấp giấy phép di dời đối với công trình cấp đặc biệt, cấp I và cấp II (Công trình không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án)"
+      ],
+      "pages": [
+        55,
+        112
+      ]
+    },
+    {
+      "code": "1.013230",
+      "field": "agency",
+      "values": [
+        "VII. SỞ XÂY DỰNG",
+        "XII. BAN QUẢN CÁC LÝ KHU CÔNG NGHIỆP"
+      ],
+      "pages": [
+        55,
+        112
+      ]
+    },
+    {
+      "code": "1.013231",
+      "field": "name",
+      "values": [
+        "Cấp điều chỉnh giấy phép xây dựng đối với công trình cấp đặc biệt, cấp I, cấp II (công trình Không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án)",
+        "Thủ tục cấp điều chỉnh giấy phép xây dựng đối với công trình cấp đặc biệt, cấp I, cấp II (công trình Không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án)"
+      ],
+      "pages": [
+        54,
+        113
+      ]
+    },
+    {
+      "code": "1.013231",
+      "field": "agency",
+      "values": [
+        "VII. SỞ XÂY DỰNG",
+        "XII. BAN QUẢN CÁC LÝ KHU CÔNG NGHIỆP"
+      ],
+      "pages": [
+        54,
+        113
+      ]
+    },
+    {
+      "code": "1.013233",
+      "field": "name",
+      "values": [
+        "Gia hạn giấy phép xây dựng đối với công trình cấp đặc biệt, cấp I, cấp II (Công trình không theo tuyến/theo tuyến trong đô thị/tín ngưỡng, tôn giáo/tượng đài, tranh hoành tráng/sửa chữa, cải tạo/theo giai đoạn cho công trình không theo tuyến/theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án)",
+        "Thủ tục gia hạn giấy phép xây dựng đối với công trình cấp đặc biệt, cấp I, cấp II (công trình Không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Sửa chữa, cải tạo/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án)"
+      ],
+      "pages": [
+        54,
+        113
+      ]
+    },
+    {
+      "code": "1.013233",
+      "field": "agency",
+      "values": [
+        "VII. SỞ XÂY DỰNG",
+        "XII. BAN QUẢN CÁC LÝ KHU CÔNG NGHIỆP"
+      ],
+      "pages": [
+        54,
+        113
+      ]
+    },
+    {
+      "code": "1.013235",
+      "field": "name",
+      "values": [
+        "Cấp lại giấy phép xây dựng đối với công trình cấp đặc biệt, cấp I, cấp II (công trình không theo tuyến/theo tuyến trong đô thị/tín ngưỡng, tôn giáo/tượng đài, tranh hoành tráng/sửa chữa, cải tạo/theo giai đoạn cho công trình không theo tuyến/theo giai đoạn cho công trình theo tuyến trong đô thị/dự án)",
+        "Thủ tục cấp lại giấy phép xây dựng đối với công trình cấp đặc biệt, cấp I, cấp II (công trình Không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Sửa chữa, cải tạo/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) VỰC QUẢN LÝ CHẤT LƯỢNG CÔNG XD Cho ý kiến về việc kéo dài thời hạn sử dụng của công trình hết thời hạn sử dụng theo thiết kế nhưng có nhu cầu sử dụng tiếp (trừ trường hợp nhà ở riêng lẻ) Kiểm tra công tác nghiệm thu hoàn thành công trình của cơ quan chuyên môn về xây dựng tại địa phương Cho ý kiến về kết quả đánh giá an toàn công trình đối với công trình xây dựng nằm trên địa bàn tỉnh. VỰC QUY HOẠCH, KIẾN TRÚC Thẩm định nhiệm vụ, nhiệm vụ điều chỉnh quy hoạch chi tiết của dự án đầu tư xây dựng công trình theo hình thức kinh doanh thuộc thẩm quyền phê duyệt của UBND cấp tỉnh Thẩm định đồ án, đồ án điều chỉnh quy hoạch chi tiết của dự án đầu tư xây dựng công trình theo hình thức kinh doanh thuộc thẩm quyền phê duyệt của UBND cấp tỉnh"
+      ],
+      "pages": [
+        54,
+        113
+      ]
+    },
+    {
+      "code": "1.013235",
+      "field": "agency",
+      "values": [
+        "VII. SỞ XÂY DỰNG",
+        "XII. BAN QUẢN CÁC LÝ KHU CÔNG NGHIỆP"
+      ],
+      "pages": [
+        54,
+        113
+      ]
+    }
+  ],
+  "sourceReviewRowCount": 2,
+  "sourceReviewRows": [
+    {
+      "code": "1.000502",
+      "name": "Nhận lại tiền ký quỹ của doanh nghiệp đưa người lao động đi đào tạo, nâng cao trình độ, kỹ năng nghề ở nước ngoài (hợp đồng dưới 90 ngày)",
+      "field": "Quản lý lao động ngoài nước",
+      "agency": "VI. SỞ NỘI VỤ",
+      "page": 50,
+      "baselineStatus": "MANUAL_REVIEW",
+      "reviewReason": "Có mã, tên và lĩnh vực rõ ràng trong PDF chính thức nhưng không nằm trong bộ 1.928 mã đã commit; giữ ngoài baseline hoạt động để rà soát phạm vi, không tự ý thêm/bỏ."
+    },
+    {
+      "code": "1.013888",
+      "name": "Ngừng kinh doanh dịch vụ viễn thông đối với doanh nghiệp viễn thông không phải là doanh nghiệp viễn thông nắm giữ phương tiện thiết yếu, doanh nghiệp viễn thông có vị trí thống lĩnh thị trường hoặc doanh nghiệp thuộc nhóm doanh nghiệp viễn thông có vị trí thống lĩnh thị trường đối với thị trường dịch vụ viễn thông Nhà nước quản lý, doanh nghiệp cung cấp dịch vụ viễn thông công ích (có giấy phép cung cấp dịch vụ không có hạ tầng mạng, loại hình dịch vụ viễn thông cố định mặt đất (dịch vụ viễn thông cung cấp trên mạng viễn thông cố định mặt đất)) khi ngừng kinh doanh một phần hoặc toàn bộ các dịch vụ viễn thông",
+      "field": "Tần số vô tuyến điện",
+      "agency": "X. SỞ KHOA HỌC VÀ CÔNG NGHỆ",
+      "page": 102,
+      "baselineStatus": "MANUAL_REVIEW",
+      "reviewReason": "Có mã, tên và lĩnh vực rõ ràng trong PDF chính thức nhưng không nằm trong bộ 1.928 mã đã commit; giữ ngoài baseline hoạt động để rà soát phạm vi, không tự ý thêm/bỏ."
+    }
+  ],
+  "sourceSetReconciliation": {
+    "activeBaselineRowCount": 1928,
+    "pdfUniqueCodeCount": 1930,
+    "sourceReviewCodes": [
+      {
+        "code": "1.000502",
+        "page": 49,
+        "name": "Nhận lại tiền ký quỹ của doanh nghiệp đưa người lao động đi đào tạo, nâng cao trình độ, kỹ năng nghề ở nước ngoài (hợp đồng dưới 90 ngày)",
+        "field": "Quản lý lao động ngoài nước",
+        "agency": "VI. SỞ NỘI VỤ",
+        "status": "MANUAL_REVIEW",
+        "reason": "Có mã, tên và lĩnh vực rõ ràng trong PDF chính thức nhưng không nằm trong bộ 1.928 mã đã commit; giữ ngoài baseline hoạt động để rà soát phạm vi, không tự ý thêm/bỏ."
+      },
+      {
+        "code": "1.013888",
+        "page": 102,
+        "name": "Ngừng kinh doanh dịch vụ viễn thông đối với doanh nghiệp viễn thông không phải là doanh nghiệp viễn thông nắm giữ phương tiện thiết yếu, doanh nghiệp viễn thông có vị trí thống lĩnh thị trường hoặc doanh nghiệp thuộc nhóm doanh nghiệp viễn thông có vị trí thống lĩnh thị trường đối với thị trường dịch vụ viễn thông Nhà nước quản lý, doanh nghiệp cung cấp dịch vụ viễn thông công ích (có giấy phép cung cấp dịch vụ không có hạ tầng mạng, loại hình dịch vụ viễn thông cố định mặt đất (dịch vụ viễn thông cung cấp trên mạng viễn thông cố định mặt đất)) khi ngừng kinh doanh một phần hoặc toàn bộ các dịch vụ viễn thông",
+        "field": "Tần số vô tuyến điện",
+        "agency": "X. SỞ KHOA HỌC VÀ CÔNG NGHỆ",
+        "status": "MANUAL_REVIEW",
+        "reason": "Có mã, tên và lĩnh vực rõ ràng trong PDF chính thức nhưng không nằm trong bộ 1.928 mã đã commit; giữ ngoài baseline hoạt động để rà soát phạm vi, không tự ý thêm/bỏ."
+      }
+    ],
+    "reason": "PDF có 1.930 mã duy nhất; bộ baseline trước đó có 1.928 mã và thiếu hai mã xuất hiện rõ trong PDF. Hai mã này được tách vào sourceReviewRows, không tự động nhập vào baseline hoạt động cho đến khi xác nhận phạm vi."
+  },
+  "cellReviewSummary": {
+    "originalBlankNameCount": 86,
+    "originalBlankFieldCount": 98,
+    "filledNameCount": 86,
+    "filledFieldCount": 98,
+    "unresolvedNameCount": 0,
+    "unresolvedFieldCount": 0
+  }
 }
