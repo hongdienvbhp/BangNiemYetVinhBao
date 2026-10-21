@@ -168,13 +168,60 @@ def agency_heading_records(blocks, words_by_block):
 
 def section_field_records(blocks, words_by_block):
     """Extract explicit field names from the appendix's lettered field headings."""
+    lines = block_line_records(blocks, words_by_block)
     sections = []
-    for line in block_line_records(blocks, words_by_block):
-        match = re.match(r"^[A-I]\s+LĨNH VỰC\s+(.+)$", line["text"], flags=re.I)
-        if not match:
+    index = 0
+    while index < len(lines):
+        line = lines[index]
+        text = line["text"]
+        match = re.match(r"^([A-I])[.)]?\s+LĨNH VỰC\s*(.*)$", text, flags=re.I)
+        if match:
+            field = space(match.group(2))
+            bbox = dict(line)
+            if not field and index + 1 < len(lines):
+                following = lines[index + 1]
+                if following["y0"] - line["y1"] <= 18.0 and abs(following["x0"] - line["x0"]) <= 25.0:
+                    field = following["text"]
+                    bbox.update({
+                        "x0": min(line["x0"], following["x0"]),
+                        "y0": min(line["y0"], following["y0"]),
+                        "x1": max(line["x1"], following["x1"]),
+                        "y1": max(line["y1"], following["y1"]),
+                    })
+                    index += 1
+            field = re.sub(r"\s+STT\s+Mã TTHC.*$", "", field, flags=re.I)
+            if field:
+                sections.append({**bbox, "field": space(field)})
+            index += 1
             continue
-        field = re.sub(r"\s+STT\s+Mã TTHC.*$", "", match.group(1), flags=re.I)
-        sections.append({**line, "field": space(field)})
+
+        if re.fullmatch(r"[A-I][.)]?", text) and index + 1 < len(lines):
+            following = lines[index + 1]
+            following_match = re.match(r"^LĨNH VỰC\s*(.*)$", following["text"], flags=re.I)
+            if following_match and following["y0"] - line["y1"] <= 18.0 and abs(following["x0"] - line["x0"]) <= 25.0:
+                field = space(following_match.group(1))
+                bbox = {
+                    "x0": min(line["x0"], following["x0"]),
+                    "y0": min(line["y0"], following["y0"]),
+                    "x1": max(line["x1"], following["x1"]),
+                    "y1": max(line["y1"], following["y1"]),
+                    "block_index": line["block_index"],
+                    "line_no": line["line_no"],
+                }
+                index += 2
+                if not field and index < len(lines):
+                    field = lines[index]["text"]
+                    bbox.update({
+                        "x0": min(bbox["x0"], lines[index]["x0"]),
+                        "y0": min(bbox["y0"], lines[index]["y0"]),
+                        "x1": max(bbox["x1"], lines[index]["x1"]),
+                        "y1": max(bbox["y1"], lines[index]["y1"]),
+                    })
+                    index += 1
+                if field:
+                    sections.append({**bbox, "field": space(field)})
+                continue
+        index += 1
     return sections
 
 def heading_distance(x, heading):
@@ -224,7 +271,7 @@ def collect_nearest_field(blocks, block_index, words_by_block, row_codes_by_bloc
         text = space(str(candidate[4]))
         if HEADER_RE.match(text) or agency_heading(blocks, candidate_index)[0]:
             continue
-        if re.match(r"^[A-I]\\s+LĨNH VỰC\\s+", text, flags=re.I):
+        if re.search(r"\bLĨNH VỰC\b", text, flags=re.I) or re.fullmatch(r"[A-I][.)]?", text):
             continue
         candidate_words = words_by_block.get(int(candidate[5]), [])
         if not candidate_words:
@@ -233,8 +280,9 @@ def collect_nearest_field(blocks, block_index, words_by_block, row_codes_by_bloc
         if not part:
             continue
         center_y = (float(candidate[1]) + float(candidate[3])) / 2.0
-        distance = abs(center_y - code_record["y"])
-        if distance <= max_distance:
+        contains_code_y = float(candidate[1]) - 1.0 <= code_record["y"] <= float(candidate[3]) + 1.0
+        distance = 0.0 if contains_code_y else abs(center_y - code_record["y"])
+        if contains_code_y or distance <= max_distance:
             candidates.append((distance, part))
     if not candidates:
         return ""
