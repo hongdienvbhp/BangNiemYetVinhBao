@@ -95,7 +95,7 @@ class CityReceptionBaselineParserTests(unittest.TestCase):
     def test_extracts_multiple_codes_in_one_pdf_block(self):
         blocks = [
             (83.42, 100.0, 545.98, 145.0,
-             "1.000001\\nFirst procedure\\nField A\\n2.000002\\nSecond procedure\\nField B", 1, 0),
+             "1.000001\nFirst procedure\nField A\n2.000002\nSecond procedure\nField B", 1, 0),
         ]
         words = [
             (125.9, 100.0, 174.5, 114.0, "1.000001", 1, 0, 0),
